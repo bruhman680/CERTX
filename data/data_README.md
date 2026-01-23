@@ -100,7 +100,7 @@ domains = pd.read_csv('data/cross_domain_validation.csv')
 
 # Find highest correlation domain
 best = domains.loc[domains['quality_correlation'].idxmax()]
-print(f"Strongest validation: {best['domain']} (r={{best['quality_correlation']:.3f}})")
+print(f"Strongest validation: {best['domain']} (r={best['quality_correlation']:.3f})")
 ```
 
 ---
