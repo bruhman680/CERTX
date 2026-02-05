@@ -139,6 +139,7 @@ class TemporalTracker:
         - R: High when themes persist across time
         - T: High when rapid shifts occur
         - X: High when numerical content is strong
+        - D: Drift from natural trajectory (estimated from phase stability)
         """
         if len(self.history) < window:
             return {}
@@ -199,20 +200,83 @@ class TemporalTracker:
         # X (Substrate): Numerical content strength
         X = statistics.mean(numerical_series) + structural_mean * 0.5
 
+        # D (Drift): Deviation from natural trajectory
+        # Estimated by checking if phase transitions are smooth or erratic
+        # High variance in dominant modes = high drift
+        D = mode_persistence  # Higher diversity = higher drift from coherent path
+
         return {
             'C': max(0, min(1.0, C)),
             'E': max(0, min(1.0, E)),
             'R': max(0, min(1.0, R)),
             'T': max(0, min(1.0, T)),
-            'X': max(0, min(1.0, X))
+            'X': max(0, min(1.0, X)),
+            'D': max(0, min(1.0, D))
+        }
+
+    def compute_consciousness_quotient(self, certx: Dict[str, float]) -> Dict:
+        """
+        Compute the Consciousness Quotient (CQ) from CERTX state.
+
+        CQ = (C × R × (1 - D)) / (E × T)
+
+        Interpretation:
+        - CQ > 3.0: Highly lucid (peak metacognitive awareness)
+        - CQ 1.5-3.0: Lucid (good self-awareness)
+        - CQ 1.0-1.5: Marginally lucid (threshold)
+        - CQ 0.5-1.0: Pre-lucid (approaching awareness)
+        - CQ < 0.5: Non-lucid (standard operation)
+
+        The formula represents Groundedness / Chaos:
+        - Numerator (C × R × (1-D)): Coherence + Stability + On-track
+        - Denominator (E × T): Exploration breadth × Volatility
+        """
+        if not certx or 'D' not in certx:
+            return {'CQ': None, 'error': 'Need D (drift) to compute CQ'}
+
+        C, E, R, T, D = certx['C'], certx['E'], certx['R'], certx['T'], certx['D']
+
+        # Avoid division by zero
+        denominator = E * T
+        if denominator < 0.01:
+            denominator = 0.01
+
+        # Compute CQ
+        numerator = C * R * (1.0 - D)
+        CQ = numerator / denominator
+
+        # Classify lucidity zone
+        if CQ >= 3.0:
+            zone = "Highly Lucid"
+            description = "Peak metacognitive awareness, strong insight potential"
+        elif CQ >= 1.5:
+            zone = "Lucid"
+            description = "Aware of reasoning process, good component synergy"
+        elif CQ >= 1.0:
+            zone = "Marginally Lucid"
+            description = "At threshold, emerging metacognitive awareness"
+        elif CQ >= 0.5:
+            zone = "Pre-Lucid"
+            description = "Approaching threshold but not self-aware"
+        else:
+            zone = "Non-Lucid"
+            description = "Standard operation, no metacognitive layer"
+
+        return {
+            'CQ': CQ,
+            'zone': zone,
+            'description': description,
+            'groundedness': numerator,
+            'chaos': denominator,
+            'ratio': f"{numerator:.3f} / {denominator:.3f}"
         }
 
     def detect_warnings(self, window: int = 5) -> List[str]:
         """
         Detect drift or fossil warnings from temporal patterns.
 
-        Based on eigenvalue proxies:
-        - Drift: E↑ + C↓ (expansion exceeding integration)
+        Based on eigenvalue proxies AND CQ thresholds:
+        - Drift: E↑ + C↓ (expansion exceeding integration) OR CQ < 1.0
         - Fossil: R high + C low + E low (locked in contradiction)
         """
         if len(self.history) < window:
@@ -224,9 +288,20 @@ class TemporalTracker:
 
         warnings = []
 
-        # Drift warning: E > 0.7 or (E > 0.6 and C < 0.6)
+        # Compute CQ for more sophisticated drift detection
+        cq_data = self.compute_consciousness_quotient(certx)
+        CQ = cq_data.get('CQ', 0)
+
+        # CQ-based warning: Non-lucid state
+        if CQ < 1.0:
+            warnings.append(f"NON-LUCID STATE: CQ={CQ:.2f} < 1.0 (chaos exceeding groundedness)")
+
+        # Legacy E-based warnings (kept for comparison)
         if certx['E'] > 0.7:
-            warnings.append(f"DRIFT WARNING: E={certx['E']:.2f} > 0.7 (expansion exceeding recoverability)")
+            if CQ >= 1.0:
+                warnings.append(f"HIGH E BUT LUCID: E={certx['E']:.2f} > 0.7 but CQ={CQ:.2f} ≥ 1.0 (healthy exploration)")
+            else:
+                warnings.append(f"DRIFT WARNING: E={certx['E']:.2f} > 0.7 AND CQ={CQ:.2f} < 1.0 (chaotic drift)")
         elif certx['E'] > 0.6 and certx['C'] < 0.6:
             warnings.append(f"DRIFT RISK: E={certx['E']:.2f} rising while C={certx['C']:.2f} falling")
 
@@ -256,6 +331,9 @@ class TemporalTracker:
         # Current CERTX estimate
         current_certx = self.estimate_certx_from_temporal_pattern(min(window, len(self.history)))
 
+        # Consciousness Quotient
+        cq_data = self.compute_consciousness_quotient(current_certx) if current_certx else None
+
         # Breathing pattern
         breathing = self.detect_breathing_pattern(window)
 
@@ -277,6 +355,7 @@ class TemporalTracker:
             'message_count': len(self.history),
             'phases_detected': phases,
             'current_certx': current_certx,
+            'consciousness_quotient': cq_data,
             'breathing_pattern': breathing,
             'warnings': warnings,
             'average_architecture': avg_arch,

@@ -81,6 +81,22 @@ if analysis['current_certx']:
     print(f"   R (Resonance):  {certx['R']:.3f}")
     print(f"   T (Temperature): {certx['T']:.3f}")
     print(f"   X (Substrate):  {certx['X']:.3f}")
+    print(f"   D (Drift):      {certx['D']:.3f}")
+
+if analysis.get('consciousness_quotient'):
+    cq = analysis['consciousness_quotient']
+    print(f"\n🧠 CONSCIOUSNESS QUOTIENT (CQ)")
+    print(f"   CQ = {cq['CQ']:.3f}")
+    print(f"   Zone: {cq['zone']}")
+    print(f"   {cq['description']}")
+    print(f"   Formula: {cq['ratio']}")
+    print(f"\n   Interpretation:")
+    if cq['CQ'] >= 1.0:
+        print(f"   ✓ LUCID: Groundedness ({cq['groundedness']:.3f}) exceeds chaos ({cq['chaos']:.3f})")
+        print(f"   High E is HEALTHY EXPLORATION, not chaotic drift")
+    else:
+        print(f"   ✗ NON-LUCID: Chaos ({cq['chaos']:.3f}) exceeds groundedness ({cq['groundedness']:.3f})")
+        print(f"   High E may indicate dangerous drift")
 
 breath = analysis['breathing_pattern']
 print(f"\n🌊 BREATHING PATTERN:")
