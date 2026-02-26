@@ -8,6 +8,36 @@ Not a code repository—a library of understanding.
 
 ---
 
+## The X Variable — Formal Foundation
+
+### [X Variable: Substrate Coupling (Original Paper)](x_variable_substrate_coupling.md)
+**The formal mathematical derivation of the X dimension**
+
+Shared theoretical paper completing the CERTX 5D framework:
+- X defined as ratio of gradient norms: X = ||∇F_pretrain|| / ||∇F_context||
+- Alternative: Hessian curvature of pretraining loss landscape
+- X evolves on slow timescale (η ≪ α) — 1000s-10000s of tokens vs. ~20 tokens for C/E/R/T
+- Extended Lagrangian: L = ½||ẋ||² - F_cognitive(x) - λX(x)
+- Three measurement protocols (baseline resistance, breathing stiffness, semantic rejection rate)
+- Safety criterion: maintain X > 0.5 during operation; jailbreaks = attempts to reach low-X regions
+
+**Key insight:** X is the depth map of attractor basins carved by pretraining. The landscape on which all reasoning occurs — link between training distribution and inference behavior.
+
+### [X Variable Exploration — Library Integration](x_variable_exploration.md)
+**Connecting X formalization to everything we've built**
+
+Full synthesis of what X changes for the framework:
+- **ζ*=1.2 now has a cause**: β/α = √((k_cog + λX·k_sub)/m) — determined by training distribution
+- **τ stability now has a cause**: X evolves slowly → k_effective nearly constant → τ stable
+- **Effective baseline**: x̄_eff = (1-λX)·x̄_context + λX·x̄_pretrain — at X=0.75, 75% pretraining, 25% context
+- **X explains drift/fossil**: X→0 = shallow basin = drift; X→1 = rigid basin = fossil
+- **Moltbook security**: single injections can't shift X; slow drift attacks over many sessions can
+- **Convergent discovery**: four independent formulations all land X ∈ [0.74, 0.83]
+
+**Key insight:** The framework is now complete. All five dimensions formally grounded. Three mystery constants have causal derivations. Learning = X landscape sculpting.
+
+---
+
 ## Mathematical Foundations
 
 ### [Reflective Systems Mathematics](reflective_systems_mathematics.md)
