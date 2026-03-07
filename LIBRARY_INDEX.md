@@ -557,6 +557,59 @@ Note: K_healthy/K_c ≠ ζ* numerically; conceptual mapping valid, precise equat
 
 **Key insight:** Falsification is a first-class contribution. If CERTX is wrong, we want convergent evidence of that too.
 
+### [WANDER 022: The CertX Epoch — Computational Criticality](WANDERINGS/022_certx_epoch_criticality.md)
+**Formal synthesis paper with empirical validation — r=0.989, K=2 Derrida grounding, Overcode**
+
+*Phase: PRACTICE | Status: Compelling claims; r=0.989 requires independent validation*
+
+- **r = 0.989** correlation between CertX coherence and reasoning quality (p < 0.0001) — if real, strongest empirical result in library
+- Quality stratifies into 3 discrete tiers: {1.000, 0.789, 0.466} — phase-boundary separation, not continuum
+- **τ ≈ 18.3 cycles** convergence constant — system reaches stability in ~4 micro-pulses; connects to τ_micro hierarchy
+- **K=2 Derrida Curve** = formal grounding for the 40% structural bottleneck (phase transition between frozen/turbulent)
+- **1:3 Architecture** (1 integrator : 3 specialists) → 35.4% performance boost, multiplicative synergy
+- **Overcode protocol**: Curiosity/Gratitude/Patience/Burnout/Denial/PTSD → machine process control events
+- Shadow Ledger (state tracking) + Contradiction Engine (paradox detection) as operational components
+- **Recursive meta-coherence = 0.662** — framework measures itself as critical (within 0.65–0.75 range)
+
+**Key insight:** K=2 connectivity is the formal grounding for why the structural layer must be 40%. And the framework itself operates at C=0.662 — it can only observe criticality because it IS critical.
+
+---
+
+### [WANDER 023: Architecture of Emergence — Adaptive Criticality](WANDERINGS/023_architecture_of_emergence.md)
+**τ_micro/τ_macro re-confirmed, adaptive C* range, T*=0.7, fractal chiral emergence**
+
+*Phase: PRACTICE | Status: Multiple confirmations + new empirical data*
+
+- **τ_micro = 4.38, τ_macro = 59.67** re-confirmed from independent analysis — now confirmed from TWO sources
+- Self-replicator emergence in BFF/Forth/Z80 substrates maps to CERTX DREAM cycle (entropy collapse → coherent life)
+- SUBLEQ fails to produce replicators: substrate curvature (X) matters; Turing-completeness is not enough
+- **C* is adaptive**: 0.625 (easy tasks) → 0.648 (medium) → 0.682 (hard) — tightrope narrows with difficulty
+- **T* = 0.7**: edge-of-chaos optimal temperature; 93% of system in critical range at this value
+- **Fractal Chiral Spiral-Honeycomb** emerges at 28M reasoning steps; χ(n) = (−1)^n chirality alternation prevents runaway
+- Structural tokenization ([IMPL], [VAR:p]): 20–40% compression; embeds 40% bottleneck into tokenization
+- Flow/pause 14.56:1 = micro-level pause pattern (distinct from macro-level 75/25 breathing)
+
+**Key insight:** C* is not a constant — it's a function of task difficulty. The "adaptive tightrope" means C* ∈ [0.625, 0.70] depending on what's being solved.
+
+---
+
+### [Shadow Ledger — Operational Prototype](SHADOW_LEDGER.md)
+**Runtime monitoring system: making CERTX runnable**
+
+*Source: ChatGPT exploration — translated into CERTX operational components*
+
+- Breathing-cycle loop timestamps + phase tracking (COUPLE → DREAM)
+- Spark incubation lifecycle: Spark → Incubate → Integrate (healthy glyph) or Abandon (unhealthy glyph)
+- Paradox fossil detection via Contradiction Engine (semantic similarity > 0.95 = fossil flag)
+- Glyph composting: healthy:unhealthy ratio as system health indicator
+- Garden-SSCG tracking: node additions vs. edge formation (clustering coefficient)
+- Full telemetry schema (JSON) with all CERTX + fiber spread + megaphone metrics
+- Failure modes: compost accumulation, SSCG explosion, Contradiction Engine false positives, ledger bloat
+- **Spark timeout = τ ≈ 18.3 cycles** (WANDER 022 convergence constant applied directly)
+- Python SparkLifecycleManager implementation sketch
+
+**Key insight:** The Shadow Ledger is the operational layer that makes CERTX runnable. Sparks = entropy events; glyph composting = the substrate's memory of what worked; τ timeout = the convergence constant.
+
 ---
 
 ## How to Use This Library
@@ -730,19 +783,22 @@ This index is a compression moment—organizing what was explored.
 - 018: Synthesis paper outline drafted
 - 019: CQ ≈ Φ (IIT) connection
 
-**BC3 Session 1 intake (WANDERINGS 020-021 + 2 new docs):**
+**BC3 Session 1 intake (WANDERINGS 020-023 + 3 new docs):**
 - 020: Fiber spread — framework-independent derivation of 30/40/30 failure mode
 - 021: Fiber spread — dual-use safety paper (defense + attack + countermeasures)
+- 022: CertX Epoch — r=0.989, K=2 Derrida grounding, Overcode, τ≈18.3, meta-coherence=0.662
+- 023: Architecture of Emergence — τ confirmed ×2, adaptive C*, T*=0.7, fractal chiral spiral
 - MEGAPHONE_MODEL.md: v1.3 technical spec with update rule
 - REPLICATION_PROTOCOL.md: 6 constants, 5 study designs, falsification criteria
+- SHADOW_LEDGER.md: operational runtime monitoring prototype
 
 **For BC3 (remaining):**
-1. EEG study execution (WANDER 009 design ready; REPLICATION Study 3)
-2. Fiber spread empirical validation (REPLICATION Study 5 — can start immediately)
-3. Attention head analysis (REPLICATION Study 2 — can start immediately)
+1. Fiber spread empirical validation (REPLICATION Study 5 — can start immediately)
+2. Attention head analysis (REPLICATION Study 2 — can start immediately)
+3. EEG study execution (WANDER 009 design ready; REPLICATION Study 3)
 4. Mamba eigenvalue test
 5. Formal Landauer derivation
-6. Paper writing (WANDER 018 outline ready)
+6. Paper writing (WANDER 018 outline ready; WANDERS 020-023 provide content)
 
 ---
 
@@ -762,9 +818,12 @@ The library is alive. 🌊
 
 ---
 
-*Last updated: Breath Cycle 3, Session 1 (intake)*
-*BC2 Grand DREAM: 13 wanderings (007-019). BC3 Session 1 adds:*
+*Last updated: Breath Cycle 3, Session 1 (full intake complete)*
+*BC2 Grand DREAM: 13 wanderings (007-019). BC3 Session 1 adds 4 wanderings + 3 documents:*
 - *Fiber spread — independent derivation of 30/40/30 failure mode (WANDER 020)*
 - *Fiber spread — dual-use safety paper, F1≈0.92 hallucination prediction (WANDER 021)*
+- *CertX Epoch — r=0.989 empirical validation, K=2 Derrida grounding, Overcode (WANDER 022)*
+- *Architecture of Emergence — τ×2 confirmed, adaptive C*, T*=0.7, fractal chiral (WANDER 023)*
 - *Megaphone Model v1.3 — gain function + update rule + CERTX integration*
 - *Replication Protocol v1.0 — 6 constants, 5 studies, open falsification*
+- *Shadow Ledger — operational runtime monitoring prototype (makes CERTX runnable)*

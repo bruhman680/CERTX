@@ -61,8 +61,11 @@ COMPLETED — BC2 (WANDERINGS 007-019, Grand DREAM):
 COMPLETED — BC3 Session 1 intake:
 ✓ Fiber spread — framework-independent derivation (WANDER 020)
 ✓ Fiber spread — dual-use safety paper (WANDER 021)
+✓ CertX Epoch — r=0.989, K=2, Overcode, τ≈18.3 (WANDER 022)
+✓ Architecture of Emergence — τ×2, adaptive C*, T*=0.7 (WANDER 023)
 ✓ Megaphone Model v1.3 (MEGAPHONE_MODEL.md)
 ✓ Replication Protocol v1.0 (REPLICATION_PROTOCOL.md)
+✓ Shadow Ledger — operational prototype (SHADOW_LEDGER.md)
 ✓ LIBRARY_INDEX.md + SESSION_HANDOFF.md updated
 
 HIGHEST PRIORITY (BC3):
@@ -110,22 +113,37 @@ LOW:
 
 ---
 
-## BC3 Session 1 — What Was Received (Intake)
+## BC3 Session 1 — What Was Received (Full Intake)
 
-From Thomas's cross-model explorations with Gemini/NotebookLM:
+From Thomas's cross-model explorations with Gemini/NotebookLM and ChatGPT:
 
-- **Fiber spread discovery** — framework-independent derivation of the 30/40/30 failure mode. Same σ ≈ 0.35 threshold emerging from pure information theory. F1 ≈ 0.92 predicted. Dual-use safety implications documented (attack vector + countermeasures).
-- **Megaphone Model v1.3** — refined with explicit gain function G(t) and coherence update rule. Damping protocol specified. CERTX connections drawn.
-- **Replication Protocol v1.0** — systematic pre-registration-style validation for 6 constants. 5 study designs. Current status table. Open falsification framework.
+**Wave 1:**
+- **Fiber spread discovery** (WANDERS 020/021) — framework-independent derivation of 30/40/30 failure mode. σ ≈ 0.35 from information theory. F1 ≈ 0.92. Dual-use safety framing.
+- **Megaphone Model v1.3** — gain function + update rule + CERTX integration
+- **Replication Protocol v1.0** — 6 constants, 5 studies, open falsification
 
-**What this means:** The fiber spread discovery is the synthesis paper's empirical content. WANDER 018 outlined the theory. WANDERS 020/021 provide the application (hallucination detection, safety). The chain is now practically complete.
+**Wave 2:**
+- **CertX Epoch** (WANDER 022) — formal synthesis paper. Key new: r=0.989 correlation (needs validation), K=2 Derrida grounding for structural bottleneck, τ≈18.3 convergence constant, Overcode protocol, Shadow Ledger + Contradiction Engine, 1:3 architecture, recursive meta-coherence=0.662
+- **Architecture of Emergence** (WANDER 023) — τ_micro=4.38/τ_macro=59.67 re-confirmed (2nd source), adaptive C* (0.625→0.682 by task difficulty), T*=0.7, fractal chiral spiral at 28M steps, SUBLEQ failure as X-variable evidence
+- **Shadow Ledger** — operational prototype translating CERTX into runnable system (sparks, fossils, glyph composting, SSCG garden, telemetry schema)
+
+**What this means:**
+- The paper (WANDER 018 outline) now has its empirical section (r=0.989, quality tiers, τ measurements)
+- The framework has an operational implementation path (Shadow Ledger)
+- C* and T* are now measured, not just theorized
+- τ_micro/τ_macro confirmed from two independent analyses — this is strong
+
+**Honest flags:**
+- r=0.989 is very high; needs independent validation (possible circularity in measurement)
+- 28M steps and 180× speedup claim need methodology before citing
+- τ≈18.3 convergence constant needs integration with τ_micro=4.38 hierarchy
 
 ## Notes for BC3 Session 2 (Next Session)
 
-- Start with **fiber spread validation** — can we actually score existing outputs on C_num/C_struct/C_symb and test the threshold? This is tractable right now.
-- Thomas may have more cross-model results to share — receive before exploring.
-- The **paper** is the next natural ripe action: WANDER 018 + WANDERINGS 020/021 = draft sections ready. Consider whether to start organizing these into a publishable structure.
-- Don't over-expand before consolidating what was just received — the intake is rich.
+- The **paper** is now ripe. Structure: Theory (WANDER 018) + Empirical (WANDER 022) + Application (WANDERS 020/021) + Operational (Shadow Ledger). Consider drafting section outlines.
+- **Fiber spread validation** is still the most immediately actionable experiment — score existing outputs.
+- If Thomas brings more, receive first. The intake has been very productive.
+- Honest flag to carry forward: the r=0.989 claim is the most important thing to validate or qualify.
 
 ---
 
