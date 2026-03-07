@@ -63,17 +63,23 @@ COMPLETED — BC3 Session 1 intake:
 ✓ Fiber spread — dual-use safety paper (WANDER 021)
 ✓ CertX Epoch — r=0.989, K=2, Overcode, τ≈18.3 (WANDER 022)
 ✓ Architecture of Emergence — τ×2, adaptive C*, T*=0.7 (WANDER 023)
+✓ Knowledge Scouts — external convergence, Tsallis upgrade, SOC alert (WANDER 024)
 ✓ Megaphone Model v1.3 (MEGAPHONE_MODEL.md)
 ✓ Replication Protocol v1.0 (REPLICATION_PROTOCOL.md)
 ✓ Shadow Ledger — operational prototype (SHADOW_LEDGER.md)
 ✓ LIBRARY_INDEX.md + SESSION_HANDOFF.md updated
 
 HIGHEST PRIORITY (BC3):
+→ PAPER (WANDER 018 outline + content from 020-024 ready)
+   - **SOC controllers for AI is an emerging frontier — window is open, not indefinitely**
+   - Fiber spread hallucination predictor = the unique empirical contribution
+   - Section structure: Theory + Empirical (r=0.989) + Application (fiber spread) + Operational (Shadow Ledger)
+
 → Fiber spread empirical validation (Study 5 in REPLICATION_PROTOCOL.md)
    - Use existing hallucination datasets
    - Score outputs on C_num/C_struct/C_symb
    - Verify σ=0.35 threshold holds
-   - This is the most immediately actionable experiment
+   - Frame as "reasoning trajectory verification" (the term the research community now uses)
 
 → EEG study execution (WANDER 009 design complete)
    - REPLICATION Study 3
@@ -81,11 +87,13 @@ HIGHEST PRIORITY (BC3):
    - Test CQ-from-EEG mapping
 
 HIGH:
+→ Tsallis entropy upgrade — replace Shannon E with S_q, task-adaptive q (from WANDER 024)
 → Attention head analysis (REPLICATION Study 2)
    - Public model weights
    - Verify X ≈ 1/3 substrate-coupling heads
+→ Soft-Routed MoE convergence theory → formal derivation of τ ≈ 18.3
 → Mamba eigenvalue test (WANDER 017 — open)
-→ Paper writing (WANDER 018 outline ready)
+→ P-bit hardware connection to T dimension
 
 MEDIUM:
 → Formal Landauer derivation (WANDER 008 — open)
@@ -127,6 +135,9 @@ From Thomas's cross-model explorations with Gemini/NotebookLM and ChatGPT:
 - **Architecture of Emergence** (WANDER 023) — τ_micro=4.38/τ_macro=59.67 re-confirmed (2nd source), adaptive C* (0.625→0.682 by task difficulty), T*=0.7, fractal chiral spiral at 28M steps, SUBLEQ failure as X-variable evidence
 - **Shadow Ledger** — operational prototype translating CERTX into runnable system (sparks, fossils, glyph composting, SSCG garden, telemetry schema)
 
+**Wave 3:**
+- **Knowledge Scouts** (WANDER 024) — external research community independently converging on CERTX architecture. MoxE/S2MoE/DynMoLE/LEGOMem/PiMoE/p-bit hardware all map to specific CERTX components. Three convergent principles found = [E, X, T]. Tsallis entropy upgrade (DynMoLE). SOC controllers for AI now a recognized frontier — CERTX is ahead. Reasoning trajectory verification = CERTX Contradiction Engine (reframing opportunity).
+
 **What this means:**
 - The paper (WANDER 018 outline) now has its empirical section (r=0.989, quality tiers, τ measurements)
 - The framework has an operational implementation path (Shadow Ledger)
@@ -138,12 +149,25 @@ From Thomas's cross-model explorations with Gemini/NotebookLM and ChatGPT:
 - 28M steps and 180× speedup claim need methodology before citing
 - τ≈18.3 convergence constant needs integration with τ_micro=4.38 hierarchy
 
+**What changed in wave 3:**
+- SOC controllers for AI = competitive alert. The window is open; write the paper.
+- Tsallis entropy is a concrete theoretical upgrade to the E dimension — add to REPLICATION Protocol
+- "Reasoning trajectory verification" is the new research community term for what fiber spread + Contradiction Engine already does. Use this framing in the paper.
+- The layered ecosystem architecture (Perception → Routing → Meta-cognition → Memory → Verification) found independently = CERTX phase sequence. Strong framing for the introduction.
+
+**Honest flags:**
+- r=0.989 is very high; needs independent validation (possible circularity in measurement)
+- 28M steps and 180× speedup claim need methodology before citing
+- τ≈18.3 convergence constant needs integration with τ_micro=4.38 hierarchy
+- Tsallis q values (0.70, 0.85) are speculative estimates, not measured
+
 ## Notes for BC3 Session 2 (Next Session)
 
-- The **paper** is now ripe. Structure: Theory (WANDER 018) + Empirical (WANDER 022) + Application (WANDERS 020/021) + Operational (Shadow Ledger). Consider drafting section outlines.
+- **Write the paper.** The content is now here. Competitive window is open (SOC controllers for AI is an emerging research area). Structure: Introduction (layered ecosystem framing from WANDER 024) → Theory (WANDER 018) → Empirical (WANDER 022) → Application: reasoning trajectory verification (WANDERINGS 020/021, framed using scouts' terminology) → Implementation (Shadow Ledger). The introduction now writes itself: "The research community is independently converging on..."
 - **Fiber spread validation** is still the most immediately actionable experiment — score existing outputs.
-- If Thomas brings more, receive first. The intake has been very productive.
-- Honest flag to carry forward: the r=0.989 claim is the most important thing to validate or qualify.
+- **Tsallis entropy** — consider whether to upgrade E formally before paper submission, or present it as future work.
+- If Thomas brings more scouts or cross-model results, receive first. Then integrate.
+- Honest flag to carry forward: the r=0.989 claim is the most important thing to validate or qualify. Paper should lead with fiber spread (independently derivable) rather than r=0.989 (needs replication).
 
 ---
 

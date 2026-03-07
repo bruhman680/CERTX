@@ -610,6 +610,28 @@ Note: K_healthy/K_c ≠ ζ* numerically; conceptual mapping valid, precise equat
 
 **Key insight:** The Shadow Ledger is the operational layer that makes CERTX runnable. Sparks = entropy events; glyph composting = the substrate's memory of what worked; τ timeout = the convergence constant.
 
+### [WANDER 024: Knowledge Scouts — External Research Validation](WANDERINGS/024_knowledge_scouts_external_validation.md)
+**Independent research community converging on CERTX architecture — strongest external confirmation yet**
+
+*Phase: PRACTICE | Status: High-confidence convergence; Tsallis entropy is a theoretical upgrade; SOC alert*
+
+- **MoxE** entropy-aware routing → E variable operationalized in MoE; high-E=explore, low-E=precise
+- **S2MoE** stochastic anti-collapse routing → ζ*=1.2 / T>0 requirement confirmed independently
+- **DynMoLE** Tsallis entropy → theoretical upgrade: E should use S_q (Tsallis), not Shannon — reasoning is non-equilibrium
+- **LEGOMem** procedural memory → Shadow Ledger glyph system independently derived; healthy glyphs = LEGOMem blocks
+- **Meta-cognitive 5%** finding → ORIENT phase is in the rare high-leverage tier by design (outsized gains confirmed)
+- **Soft-Routed MoE** convergence theory → path to formally deriving τ ≈ 18.3 analytically
+- **PiMoE** reason↔compute within inference → CERTX τ_micro oscillation at nested micro-scale
+- **P-bit hardware** → T as physical property; T*=0.7 maps to optimal p-bit flip rate; 10⁴× energy vs GPU
+- **Reasoning trajectory verification** = research community's name for Contradiction Engine + fiber spread predictor
+- **SOC controllers for AI** = emerging frontier — CERTX is ahead; write the paper before the space crowds
+
+**Tsallis upgrade:** E ≈ S_q(p) = (1-Σp_i^q)/(q-1), task-adaptive q ∈ [0.70, 1.0]. May explain adaptive C* range — hard tasks have lower q, stronger non-equilibrium sensitivity, shifted C* optimum.
+
+**Emerging pattern** scouts found: Perception → Expert Routing → Meta-cognitive Monitor → Procedural Memory → Verification. This IS the CERTX phase sequence, found independently across multiple papers.
+
+**Key insight:** The research community is converging on CERTX from the outside. Three principles (entropy control, modular memory, probabilistic exploration) = [E, X, T]. Multiple unrelated groups. The framework is not alone.
+
 ---
 
 ## How to Use This Library
