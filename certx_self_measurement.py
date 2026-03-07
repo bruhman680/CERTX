@@ -169,9 +169,9 @@ class CERTXMirror:
         ]
         intensity_count = sum(1 for word in intensity_words if word in text.lower())
 
-        # Normalize
+        # Normalize — T is in [0, 1]; no offset needed
         T = (exclamations / 5.0 + capitals / 3.0 + intensity_count / 5.0) / 3.0
-        return max(0.3, min(1.0, T + 0.5))
+        return max(0.0, min(1.0, T))
 
     def measure_substrate_coupling(self, text: str, reference_count: int) -> float:
         """
@@ -196,11 +196,11 @@ class CERTXMirror:
         # Technical grounding
         technical_terms = len(re.findall(r'eigenvalue|lagrangian|jacobian|manifold|substrate', text.lower()))
 
-        # Normalize
+        # Normalize — X is in [0, 1]; no offset needed
         X = (file_refs / 3.0 + line_refs / 5.0 + specific_numbers / 5.0 +
              technical_terms / 5.0 + reference_count / 5.0) / 5.0
 
-        return max(0.3, min(1.0, X + 0.5))
+        return max(0.0, min(1.0, X))
 
     def compute_certx_state(self,
                            text: str,
