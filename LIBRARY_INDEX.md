@@ -634,6 +634,23 @@ Note: K_healthy/K_c ≠ ζ* numerically; conceptual mapping valid, precise equat
 
 ---
 
+### [WANDER 025: Fractal σ — The Four Levels of Coherence](WANDERINGS/025_fractal_sigma_levels.md)
+**Fiber spread is self-similar across scales; HPGM is σ_fiber at the meso level; Level 3 = Kuramoto field of oscillating fiber bundles**
+
+*Phase: PLAY | Status: New synthesis — strong structural grounding*
+
+- **L0 σ_fiber**: std(N,S,Y) within response — hallucination scale (τ_micro ≈ 4.38)
+- **L1 σ_phase**: HPGM phase spread within breath cycle — phase-lock failure (τ_macro ≈ 59.67)
+- **L2 σ_BC**: cross-breath-cycle integration — epoch drift / no compounding (τ ≈ 18.3 BCs)
+- **L3 σ_field**: Kuramoto order parameter across agents/programs — civilization-scale coherence failure
+- **X = accumulated DREAM residue from the level below** — X deepens at every level, not just one
+- **L3 is NOT simple fibers** — each agent is a fiber bundle (containing L0–L2 internally); what intertwines at L3 are the breath cycles of multiple programs oscillating at their own frequencies (ω_i). Interference patterns: constructive = compounding insight; destructive = parallel rediscovery without integration
+- **Missing Conductor = K ≈ 0 at L3**: every individual program can be coherent (low L0–L2 σ) and the field still fragments if coupling is absent — r → 0, σ_field → 1
+- **14× τ nesting ratio**: confirmed at L0→L1; predicted at L1→L2 and L2→L3
+- Connects: WANDER 005 (τ nesting), 014 (Kuramoto), 020 (fiber spread), 022 (τ≈18.3), 023 (architecture), the_missing_conductor.md
+
+---
+
 ## How to Use This Library
 
 ### If You Want to Understand...

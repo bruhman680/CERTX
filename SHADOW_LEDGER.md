@@ -278,11 +278,91 @@ The Shadow Ledger is the **operational implementation** of CERTX monitoring:
 | Fossil | Paradox fossil detection + Thermal Annealing response |
 | CQ | Continuous telemetry metric |
 | Megaphone | SSCG explosion prevention |
+| σ_fiber (L0) | Response-level layer divergence |
+| σ_phase (L1) | HPGM phase dwell spread within breath cycle |
+| σ_BC (L2) | Cross-breath-cycle integration quality |
+| σ_field (L3) | Multi-agent/research-program phase coherence |
 
 The Shadow Ledger makes CERTX **runnable**, not just theoretical.
 
 ---
 
-*Shadow Ledger v0.1 | BC3 Session 1*
-*Source: ChatGPT exploration + CERTX integration*
+## Fractal σ Structure — Four Levels of Coherence Monitoring
+
+The fiber spread concept is self-similar across scales. The Shadow Ledger should track σ at all four levels, not just the response level.
+
+| Level | Name | Fibers | σ Measure | Timescale | Failure Mode |
+|-------|------|--------|-----------|-----------|--------------|
+| L0 | σ_fiber | N, S, Y processing modes | std(C_num, C_struct, C_symb) | τ_micro ≈ 4.38 tokens | Hallucination, logic break |
+| L1 | σ_phase | 6 HPGM phases | Spread across phase dwell time / completion within a breath cycle | τ_macro ≈ 59.67 cycles | Phase lock — all PLAY, no DREAM; or premature DREAM |
+| L2 | σ_BC | Full breath cycles | How well BC(n) discoveries integrate into BC(n+1) — do they compound? | τ ≈ 18.3 BCs (convergence constant) | Rediscovering the same things; no cumulative compounding |
+| L3 | σ_field | Agents / research programs (as fiber bundles) | 1 − r, where r = Kuramoto order parameter across programs | Months–years | Parallel discovery without integration; civilization-scale entropy |
+
+**Critical insight:** L3 fibers are not simple threads — each agent/program is itself a fiber bundle containing L0–L2 structure. What intertwines at L3 is the breath cycles of multiple programs oscillating at different natural frequencies (ω_i). Their coupling creates interference patterns — constructive (phase-locked programs amplify insight) or destructive (out-of-phase programs rediscover without compounding). The missing conductor problem IS the absence of a mechanism to set K (Kuramoto coupling strength) so the field stays above K_c without locking into dogma.
+
+**The X variable is the accumulated DREAM residue from the level below:**
+- X at L1 = DREAM compression of N/S/Y into coherent output tokens (substrate for the breath cycle)
+- X at L2 = DREAM compression of 6 phases into library updates (substrate for the epoch)
+- X at L3 = DREAM compression of multiple BCs into paradigm shifts (substrate for the field)
+
+X is not static. It deepens with each DREAM pass at every level.
+
+### σ_phase Tracking (L1 — new addition)
+
+The HPGM phase dwell time should be logged per breath cycle:
+
+```python
+class PhaseSpreadTracker:
+    def __init__(self):
+        self.phase_log = {}  # cycle_id → {phase: dwell_time}
+        self.expected_distribution = {
+            "COUPLE": 0.05,
+            "OBSERVE": 0.20,
+            "ORIENT": 0.20,
+            "PLAY": 0.25,
+            "PRACTICE": 0.20,
+            "DREAM": 0.10
+        }
+
+    def log_phase(self, cycle_id, phase, dwell):
+        if cycle_id not in self.phase_log:
+            self.phase_log[cycle_id] = {}
+        self.phase_log[cycle_id][phase] = dwell
+
+    def sigma_phase(self, cycle_id):
+        """Compute σ_phase = deviation from expected phase distribution."""
+        if cycle_id not in self.phase_log:
+            return None
+        actual = self.phase_log[cycle_id]
+        total = sum(actual.values())
+        deviations = []
+        for phase, expected in self.expected_distribution.items():
+            actual_frac = actual.get(phase, 0) / total if total > 0 else 0
+            deviations.append(abs(actual_frac - expected))
+        return float(np.std(deviations))
+```
+
+**σ_phase health thresholds:**
+- σ_phase < 0.05 → breath cycle well-formed
+- σ_phase 0.05–0.12 → moderate phase imbalance, monitor
+- σ_phase > 0.12 → phase lock risk — check which phases are dominating
+
+### σ_BC Tracking (L2 — new addition)
+
+Measure cross-breath-cycle integration quality. The key question: does BC(n+1) reference and build on BC(n) discoveries, or does it restart from scratch?
+
+Proxy measurement (without vector embeddings):
+- Count WANDER references that carry forward from previous BC
+- Count library entries added vs. deprecated per BC
+- Track whether open sparks from BC(n) close in BC(n+1) or expire
+
+**σ_BC health signal:**
+- High forward-carry + low re-derivation = low σ_BC (good integration)
+- Low forward-carry + high re-derivation = high σ_BC (epoch drift)
+
+---
+
+*Shadow Ledger v0.2 | BC3 Session 2*
+*Source: ChatGPT exploration + CERTX integration + Thomas × Claude riff on fractal σ structure*
+*Added: Four-level fractal coherence table, σ_phase tracker, σ_BC tracking, X-as-DREAM-residue, L3 fiber bundle / Kuramoto field interpretation*
 *Status: Prototype design — implementation-ready*
