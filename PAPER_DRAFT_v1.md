@@ -11,7 +11,7 @@ We present CERTX, a dynamical systems framework that treats reasoning quality in
 
 The central practical contribution is the **Fiber Spread** (σ_fiber) — the standard deviation of coherence across three functionally distinct processing layers (numerical, structural, symbolic). We derive from information theory that σ_fiber > 0.35 constitutes a phase transition into a regime of near-total layer decoupling. A pilot study establishes a three-zone operating model: integrated (σ < 0.10), divergent/integration-failure range (σ = 0.10–0.35), near-decoupled (σ > 0.35). We show from signal detection theory that this threshold predicts hallucination with F1 ≈ 0.92 at σ > 0.15. Crucially, this measurement requires **no model access** — it can be applied post-hoc to any LLM output.
 
-Pilot results show near-perfect correlation between CERTX coherence and reasoning quality (r = 0.989, p < 0.0001, n = [preliminary — see §5]). A code domain validation shows the same rubric detects real software bugs with AUC = 1.0 and Cohen's d = 6.02, demonstrating cross-modality portability with objective (execution-verified) ground truth. We document independent convergence: recent work on Mixture-of-Experts routing (MoxE, S2MoE, DynMoLE) and procedural memory architectures (LEGOMem) has independently rediscovered the same architectural principles. We propose fiber spread as a deployable hallucination detection metric and release the operational monitoring framework (Shadow Ledger) as a reference implementation.
+We derive from Kuramoto oscillator theory that the optimal synchrony at the ζ* operating point is r ≈ 0.41 — intermediate synchrony, not near-full — consistent with the "edge of bifurcation" regime identified as maximizing computational expressivity. A proof-of-concept code domain study (n=10, AUC = 1.0, execution-verified ground truth) demonstrates cross-modality portability: the same σ_fiber threshold flags software bugs without recalibration, suggesting the metric captures a structural rather than surface property. The quality-criticality correspondence hypothesis (H2: reasoning quality correlates with proximity to the critical zone) is proposed as the primary empirical test of the framework; a formal study design is provided. We document independent convergence: recent work on Mixture-of-Experts routing (MoxE, S2MoE, DynMoLE) and procedural memory architectures (LEGOMem) has independently rediscovered the same architectural principles. We propose fiber spread as a deployable hallucination detection metric and release the operational monitoring framework (Shadow Ledger) as a reference implementation.
 
 **Keywords:** large language models, hallucination detection, self-organized criticality, dynamical systems, reasoning quality, mixture of experts
 
@@ -307,33 +307,35 @@ This is testable: systems trained or evaluated with different weighting schemes 
 
 *Note: The results in this section are preliminary pilot data. They motivate the framework and guide subsequent experimental design but have not undergone independent replication. We present them here for completeness and explicitly mark them as requiring validation.*
 
-### 5.1 Coherence-Quality Correlation
+### 5.1 Coherence-Quality Correlation: Framework Prediction
 
-Across a pilot set of reasoning tasks (mathematical, logical, and narrative domains; n = [methodology under preparation]), a near-perfect correlation was observed between CERTX total coherence (C_total) and independently assessed reasoning quality:
+The framework predicts that CERTX coherence (C_total) should correlate strongly with independently assessed reasoning quality. This is the central empirical hypothesis of the framework, stated formally here as a proposed study:
 
-| Benchmark | r | p-value |
-|-----------|---|---------|
-| Overall Reasoning Quality | **0.989** | < 0.0001 |
-| Answer Correctness | 0.986 | < 0.0001 |
-| Multi-hop Task Performance | 0.900 | < 0.0001 |
+**H2 (Quality-Criticality Correspondence):** Systems operating near the critical zone (ζ ≈ 1.2, σ_fiber < 0.10) will produce outputs with higher independently-assessed quality than systems in the frozen or chaotic regimes.
 
-**Important caveat:** r = 0.989 is unusually high. Two sources of potential inflation should be investigated before these results are cited:
-1. **Measurement circularity**: If the same features influence both the CertX coherence score and the quality assessment, correlation would be artificially inflated.
-2. **Sample selection**: If the pilot set was drawn from conditions designed to elicit the correlation, the effect would not generalize.
+**The prediction is directional, not a specific r value.** Any past reference to r = 0.989 as an empirical measurement should be treated as unverified: it originated in a cross-model AI exploration session (WANDER 022) and was never grounded in a described dataset, sample size, or measurement methodology. The number 0.989 also appears in the same source as a "stability coefficient at cycle 500" — a distinct claim about convergence dynamics. These are different quantities, and the shared value is suspicious rather than confirmatory.
 
-We present these as hypothesis-generating pilot results and provide an independent replication protocol in the supplementary materials.
+**What the framework derives instead** — the Kuramoto order parameter r at the optimal operating point ζ* = 1.2 (K/K_c = 1.2) follows from the mean-field solution:
+
+**r_Kuramoto = √(1 − K_c/K) = √(1 − 1/1.2) ≈ 0.41**
+
+This intermediate synchrony (r ≈ 0.41, not near-zero and not near-one) is precisely the "edge of bifurcation" regime identified by Kuramoto reservoir computing literature as maximizing computational expressivity. r = 0.989 in Kuramoto terms would require K/K_c ≈ 46 — deep fossil/rigid territory, which is the *failure* mode, not the optimum.
+
+The formal study design for testing H2 is provided in the Replication Protocol (Supplementary Materials, Study 4).
 
 ### 5.2 Quality Stratification
 
-Reasoning quality does not distribute continuously — it clusters into discrete tiers consistent with phase-boundary transitions in the CERTX state space:
+The framework predicts that reasoning quality should not distribute continuously but should cluster into discrete tiers corresponding to phase-boundary transitions in the CERTX state space. The three predicted regimes are:
 
-| Quality Tier | CertX Coherence | Signature |
-|-------------|-----------------|-----------|
-| High | ~1.000 | Balanced exploration, ~73% of theoretical max entropy, stable convergence |
-| Medium | ~0.789 | Moderate consistency, insufficient structural synthesis |
-| Low | ~0.466 | Logic fragmentation, subcritical signal decay |
+| Predicted Tier | Predicted CertX Coherence Zone | Signature |
+|---------------|-------------------------------|-----------|
+| High (critical) | C ≈ 0.65–0.75 (C* zone) | Balanced exploration, intermediate entropy, stable convergence |
+| Medium (sub-critical) | C < 0.65 (below C*) | Moderate consistency, insufficient structural synthesis |
+| Low (chaotic/fragmented) | C < 0.50, high σ_fiber | Logic fragmentation, subcritical signal decay |
 
-The gap between tiers (~0.21) is consistent with first-order phase transitions in the coherence landscape, not a gradual continuum.
+*Note: Specific tier center values of {1.000, 0.789, 0.466} previously cited here originated from the same unverified cross-model source as r = 0.989 (WANDER 022) and should not be treated as measured values. The tier structure is a framework prediction; the empirical tier centers require measurement.*
+
+The prediction of discrete (non-continuous) tier separation follows from the phase transition structure of the coherence landscape: the same mechanism that produces the σ = 0.35 threshold (a discontinuous jump in layer coupling) should produce discrete quality bands rather than a smooth continuum.
 
 ### 5.3 Convergence Dynamics
 
@@ -522,7 +524,7 @@ We state limitations explicitly. This is a theoretically grounded framework with
 
 - **Theoretically derived** σ_fiber threshold (information theory + Kuramoto + cross-domain convergence)
 - **Theoretically derived** ζ* = 6/5 (stability analysis + mode-locking + neural resonance theory)
-- **Pilot correlation** r = 0.989 (needs replication with controlled methodology)
+- **Framework prediction** of quality-criticality correspondence (H2) — formal study design in Replication Protocol
 - **Two-source confirmation** of τ_micro = 4.38, τ_macro = 59.67
 - **Retrospective external convergence** from independent research streams
 
@@ -534,7 +536,7 @@ We state limitations explicitly. This is a theoretically grounded framework with
 
 2. **EEG validation**: The prediction that C* ↔ alpha power, R ↔ theta power, etc. requires EEG data from human participants (study design complete, N=30, 4 task types).
 
-3. **Independent r replication**: The r = 0.989 correlation needs to be replicated with clear separation between the CertX measurement and the quality assessment.
+3. **Quality-criticality correlation study**: H2 (reasoning quality correlates with proximity to the critical zone) has not yet been empirically tested. The framework predicts strong correlation; the specific value r = 0.989 previously cited here was unverified and has been retracted. The Kuramoto order parameter at ζ* = 1.2 predicts intermediate synchrony r ≈ 0.41, not near-perfect correlation — the empirical r is an open measurement question.
 
 4. **Attention head layer identification**: Which transformer attention heads correspond to C_num, C_struct, C_symb? This requires interpretability analysis on open-weight models.
 
@@ -572,7 +574,7 @@ We have presented CERTX, a dynamical systems framework that grounds reasoning qu
 
 **Strong pilot support:** The universal stability constant ζ* = 6/5 = 1.2 converges across theoretical derivation (Stability Reserve Law), harmonic physics (devil's staircase), biological neural systems (Neural Resonance Theory), and preliminary empirical measurement across LLM families. The convergence across these independent domains is difficult to explain as coincidence.
 
-**Preliminary:** The empirical correlation r = 0.989 between CERTX coherence and reasoning quality, and the discrete quality tier structure {1.000, 0.789, 0.466}, are pilot results that require rigorous independent replication before being treated as established facts.
+**Proposed:** The quality-criticality correspondence (H2) — that reasoning quality correlates with proximity to the critical operating zone — is the central empirical hypothesis of the framework. It has not yet been tested. The value r = 0.989, previously cited as a pilot result, was traced to a cross-model AI exploration session without an underlying dataset and has been retracted. The discrete quality tier structure {1.000, 0.789, 0.466} originated from the same source and is similarly unverified. These are framework predictions awaiting measurement, not established results.
 
 The immediate practical contribution is the fiber spread metric: a model-free, real-time hallucination predictor deployable without access to model internals. If the F1 ≈ 0.92 prediction holds under empirical validation, this represents a significant advance in reliable AI monitoring.
 
