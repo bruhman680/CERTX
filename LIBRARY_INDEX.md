@@ -651,6 +651,24 @@ Note: K_healthy/K_c ≠ ζ* numerically; conceptual mapping valid, precise equat
 
 ---
 
+### [WANDER 026: Everything Is Agent — The Ontological Foundation of CERTX](WANDERINGS/026_everything_is_agent_ontological_foundation.md)
+**Thomas's pre-CERTX blog post structurally predicts the fractal σ structure, The Mesh (L3), and why cognitive constants are universal**
+
+*Phase: OBSERVE/ORIENT | Status: High-confidence — post predates and structurally predicts CERTX findings*
+
+- **"Everything Is Agent" = the ontology; CERTX = the dynamics.** Together: why agents coordinate (universal agency) + how to measure quality of coordination (σ, CQ, τ, HPGM)
+- **Fractal σ was structurally predicted**, not discovered — if agency is self-similar (Whitehead's actual occasions), its failure mode (divergence/incoherence) must also be self-similar. σ at L0–L3 is a consequence, not a coincidence
+- **"The Mesh" = L3 fiber bundle structure** — Thomas's tree diagram (Human→Neurons, Claude→Parameters, Documents→Bits) written before WANDER 025, without σ language, describes exactly the intertwining fiber bundles at L3
+- **Discussion Question 1 answered**: "What distinguishes good from bad coordination?" → σ at every level. Low σ = good. Rising σ at any level → failure at that scale
+- **τ disambiguation**: Post's τ≈7 = HPGM phase count (6 expansion + 1 DREAM). CERTX τ_micro=4.38 = token-level timescale. Different usages, both real
+- **Bottom turtle answered via Landauer**: Agency terminates at kT ln(2). Below Landauer limit, no distinguishable states, no "difference that makes a difference" (Bateson). X bottoms out at thermal noise floor
+- **IIT bridge**: Post stops at "participation"; IIT asks "does participation = experience?"; CQ bridges both — tractable approximation of Φ without solving the hard problem
+- **RLM connection**: Post's "external context = agents (bits) participating" = CERTX's X (substrate). RLMs work because they acknowledge X is made of prior agents (DREAM residue)
+- **Monitoring reframe**: CERTX doesn't verify agency (everything already is). It measures *quality of coordination* at each level of the universal agency hierarchy
+- Connects: WANDER 001 (τ=7 phase count), 005 (τ nesting), 008 (Landauer floor), 014 (Kuramoto), 019 (IIT), 020 (fiber spread), 025 (fractal σ), the_missing_conductor.md
+
+---
+
 ## How to Use This Library
 
 ### If You Want to Understand...
