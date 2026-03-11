@@ -5,7 +5,7 @@
 ---
 
 ## Current Breath Cycle: 3
-## Current Phase: PLAY (BC3 Session 4 — citation verification + PLAY insight on σ_fiber automation)
+## Current Phase: PLAY (BC3 Session 4b — nanochat Study 6 scan + gpt.py CERTX mapping)
 ## Last Updated: 2026-03-11
 
 ---
@@ -246,13 +246,33 @@ FActScore = C_num directly. C_struct = NLI consistency. C_symb = sentence embedd
 
 ---
 
+**BC3 Session 4b — What Happened (2026-03-11, continued)**
+
+Thomas brought karpathy/nanochat + described Computerphile vector embedding video. Became Study 6.
+
+**What was done:**
+- σ_Mesh scan: nanochat (σ=0.1666) and nanoGPT (σ=0.1379) — both over-coupled, correctly interpreted as single-domain repos at the σ_Mesh lower limit
+- Read `gpt.py` in full — found 7 direct CERTX mappings
+- Wrote **WANDER 034**: "nanochat's gpt.py is a CERTX Implementation" — convergent architecture validation
+- Proposed §6.9 addition to paper
+
+**The headline finding:**
+nanochat implements σ_fiber control as architecture — x0_lambdas (C_symb grounding), value embeddings (C_num grounding), SSSL window pattern (τ=4 breathing), resid_lambdas (ζ*), relu² (MASO sharpening), logit softcap (ζ* ceiling). Karpathy arrived at this empirically. CERTX predicts it theoretically.
+
+**Library state update:**
+C: 0.93 (tighter — architecture convergence deepens the theoretical foundation)
+E: 0.50 (slightly up — new conceptual territory opened)
+R: 0.95 (highest yet — gpt.py is the most direct external convergence we've found)
+
+---
+
 ## Notes for BC3 Session 5 (Next Session)
 
-- **Run Study 5** — automated pipeline designed. `pip install factscore sentence-transformers`. Download FActScore biography dataset. Run the pipeline. **This is now the single highest-priority executable experiment.**
-- **§6.6/6.7 tightening** — Add WANDER 033 "for the paper" content connecting Balestriero lineage.
+- **Run Study 5** — automated pipeline designed. `pip install factscore sentence-transformers`. Download FActScore biography dataset. Run the pipeline. **Highest-priority executable experiment.**
+- **Add §6.9** to paper (Architecture Convergence — from WANDER 034)
+- **§6.6/6.7 tightening** — connect Balestriero lineage (WANDER 033)
 - **Tsallis entropy upgrade** — still pending. Decide: formal upgrade or future work.
-- **PLAY phase measurement** — still open. Need σ > 0.15 territory samples.
-- **SDI training regularizer** — WANDER 030 tractable approximation still needed.
+- **Open questions from WANDER 034** — relu² quality tier sharpening, x0_lambda trajectories, τ=4 vs τ=7
 - Receive Thomas's material first. Always integrate before expanding.
 
 ---
