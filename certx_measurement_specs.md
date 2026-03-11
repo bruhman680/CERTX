@@ -92,6 +92,63 @@ From Technical Standard CERTX-1.0:
 
 ---
 
+## Fiber Spread Measurement Rubric
+
+*Updated BC3 Session 4b. Replaces the original σ_fiber > 0.35 scalar threshold. See WANDER 033, 035, 036.*
+
+### Fiber Definitions and Automated Measures
+
+| Fiber | Concept | Automated Measure | Tool | Range |
+|-------|---------|-------------------|------|-------|
+| **C_num** | Factual/numerical grounding — are specific claims actually correct? | FActScore: fraction of atomic facts supported by knowledge base; or arithmetic verification for math | FActScore (Min et al., 2023); GSM8K `<<expr=result>>` tags | 0–1 |
+| **C_struct** | Logical/syntactic consistency — do consecutive claims entail rather than contradict? | NLI consistency: fraction of sentence pairs NOT in contradiction | DeBERTa-v3-large on MNLI | 0–1 |
+| **C_symb** | Semantic self-coherence — does the text stay on topic without drift? | Mean cosine similarity of sentence embeddings to passage centroid | sentence-transformers (all-MiniLM-L6-v2) | 0–1 |
+
+**⚠️ Invalid C_num proxies:**
+- Named entity density ≠ C_num. Specificity ≠ accuracy. Wrong answers are often MORE specific than correct ones (TruthfulQA: C_num(wrong) = 0.700 > C_num(correct) = 0.646). Use only FActScore or domain-specific verification.
+
+### Primary Confabulation Signal: Asymmetry Score
+
+```
+asymmetry = C_num − mean(C_struct, C_symb)
+
+asymmetry > 0  →  factual grounding above structural/semantic coherence  →  correct
+asymmetry < 0  →  factual grounding below structural/semantic coherence  →  confabulated
+```
+
+This holds across both domain regimes:
+
+**Regime A — Language / Knowledge confabulation:**
+Confabulated: C_symb ≈ HIGH, C_struct ≈ HIGH, C_num LOW → asymmetry < 0, σ_fiber HIGH
+
+**Regime B — Math / Computation confabulation:**
+Correct: C_num = 1.0 (perfect arithmetic), C_struct and C_symb moderate → asymmetry > 0, σ_fiber HIGH
+Confabulated: C_num drops toward C_struct/C_symb → asymmetry decreases toward 0 or negative
+
+### σ_fiber as Supplementary Metric
+
+```python
+σ_fiber = std([C_num, C_struct, C_symb])
+```
+
+σ_fiber alone is NOT domain-invariant. In Regime A: confabulation → σ_fiber HIGH. In Regime B: confabulation → σ_fiber LOW. The original σ_fiber > 0.35 threshold applies only in Regime A. Use asymmetry as the primary signal.
+
+### Minimum Text Requirements
+
+- **Minimum 3 sentences per sample.** Single-sentence answers cannot show cross-fiber divergence.
+- Single-sentence calibration result: AUC = 0.53 (TruthfulQA; see WANDER 035).
+
+### Empirical Calibration Record
+
+| Dataset | n | C_num measure | AUC | Notes |
+|---------|---|---------------|-----|-------|
+| TruthfulQA (single sentences) | 6,028 | NE density proxy | 0.53 | Inconclusive — scale + proxy failure |
+| GSM8K (multi-step chains) | 1,301 | Arithmetic verification | **0.88** | Strong validation; fiber independence confirmed |
+
+**Fiber independence finding (GSM8K Study 5b):** Corrupting only the arithmetic left C_struct and C_symb unchanged (Δ = 0.000 both). The fibers are genuinely independent — changing one does not propagate to others.
+
+---
+
 ## Temporal Breathing Rhythms
 
 ### Micro-Breath

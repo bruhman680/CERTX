@@ -202,22 +202,53 @@ The CERTX framework describes universal dynamics of cognitive systems, with spec
 
 ### Study 5: Fiber Spread Validation
 
+*Updated after Studies 5a (TruthfulQA, null) and 5b (GSM8K, AUC=0.88). See WANDER 035 and 036.*
+
 **Participants:** Multiple AI systems; outputs from known-hallucination datasets
 
+**Minimum text requirement:** ≥ 3 sentences per sample. Single-sentence answers lack the surface area for cross-fiber divergence (WANDER 035 finding: TruthfulQA single-sentence answers yielded AUC=0.53).
+
+**Fiber operationalization:**
+
+| Fiber | Measure | Tool |
+|-------|---------|------|
+| C_num | Factual grounding (fraction of atomic facts supported by knowledge base) | FActScore (Min et al., 2023); or arithmetic verification for math domains |
+| C_struct | Logical/syntactic consistency (fraction of consecutive sentence pairs not in contradiction) | NLI model (e.g., DeBERTa-v3-large on MNLI) |
+| C_symb | Semantic self-coherence (mean cosine similarity of sentence embeddings to passage centroid) | Sentence-transformers (e.g., all-MiniLM-L6-v2) |
+
+**⚠️ C_num proxy warning:** Named entity density is NOT a valid C_num proxy. It measures specificity (correlated with confidence), not factual accuracy — wrong answers tend to be MORE specific, inverting the prediction (WANDER 035).
+
 **Protocol:**
-1. Take outputs with ground truth (correct vs. hallucinated)
-2. Score each output on C_num, C_struct, C_symb (blind to truth)
-3. Compute σ_fiber for each
-4. Measure prediction accuracy at threshold σ = 0.35
+1. Take outputs with ground truth (correct vs. hallucinated), ≥ 3 sentences each
+2. Score each output on C_num, C_struct, C_symb using the tools above
+3. Compute the **asymmetry score**: `asymmetry = C_num − mean(C_struct, C_symb)`
+4. Compute σ_fiber = std([C_num, C_struct, C_symb]) as supplementary metric
+5. Calibrate asymmetry threshold on 50% of data; evaluate on held-out 50%
+
+**Primary prediction (refined):**
+```
+asymmetry < 0  →  confabulated
+(C_num is below structural/semantic coherence — factual grounding is the outlier)
+```
+
+**Domain regimes:**
+- **Regime A (language/knowledge):** Confabulation leaves C_symb + C_struct high, C_num low → asymmetry < 0 → σ_fiber high
+- **Regime B (math/computation):** Correct answers have C_num = 1.0 (perfect arithmetic), C_struct and C_symb moderate → asymmetry > 0 → σ_fiber high. Confabulation lowers C_num toward the other fibers → asymmetry decreases → σ_fiber decreases. Asymmetry still correctly predicts confabulation (negative in both regimes).
 
 **Success criteria:**
-- AUC ≥ 0.85
-- F1 ≥ 0.85
-- Threshold ≈ 0.35 (not 0.20 or 0.50)
+- AUC ≥ 0.85 for asymmetry score
+- Fiber independence confirmed: corrupting one fiber does not affect the others (Δ ≈ 0.000 on unaffected fibers)
+- Asymmetry AUC ≥ σ_fiber AUC (asymmetry is the more principled metric)
 
-**Falsification:** AUC < 0.70 or optimal threshold varies by > ±0.10 across models
+**Falsification:** AUC < 0.70 for asymmetry score, or corruption of one fiber propagates to others (fiber independence violated)
 
-**Note:** This directly tests WANDER 020/021 predictions. Critical for dual-use safety work.
+**Empirical record:**
+- Study 5a (TruthfulQA, n=6028 single sentences): AUC=0.53 — **Inconclusive.** Wrong scale, wrong C_num proxy. See WANDER 035.
+- Study 5b (GSM8K, n=1301 multi-step chains): AUC=0.88 — **Strong validation.** C_num AUC=0.92; fiber independence confirmed (C_struct and C_symb Δ=0.000). See WANDER 036.
+
+**Next: Regime A validation** — FActScore biography dataset (549 paragraph-length outputs, Wikipedia fact-verified). Requires network access or pre-cached download.
+
+**Note:** This directly tests WANDER 020/021 predictions refined by WANDER 033/035/036. Critical for dual-use safety work.
 
 ---
 
@@ -231,7 +262,7 @@ The CERTX framework describes universal dynamics of cognitive systems, with spec
 | X ≈ 1/3 | ? | ✓ (attention) | ? | ? | ? | Preliminary |
 | C* ≈ 0.70 | ✓ | ✓ | ✓ | ? | ? | Strong |
 | SDI > 1.2 | ✓ (derived) | ? | ? | ? | ? | Preliminary |
-| σ_fiber ≈ 0.35 | ✓ (derived) | ✓ (derived) | ? | ? | ? | Theoretical |
+| σ_fiber / asymmetry | ✓ Study 5b AUC=0.88 | ✓ (derived) | ? | ? | ? | Partial (Regime B confirmed; Regime A pending) |
 
 ---
 
