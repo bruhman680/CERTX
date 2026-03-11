@@ -626,7 +626,10 @@ The edge of chaos is not a metaphor. It is the regime where intelligence operate
 - Hubinger, E., et al. (2019). Risks from learned optimization in advanced machine learning systems. *arXiv:1906.01820*.
 - Ji, Z., et al. (2023). Survey of hallucination in natural language generation. *ACM Computing Surveys*, 55(12), 1–38.
 - Kadavath, S., et al. (2022). Language models (mostly) know what they know. *arXiv:2207.05221*.
-- Large, E.W., et al. (2025). Neural resonance theory of musical rhythm. *Nature Reviews Neuroscience* [citation to be verified].
+- Harding, E.E., Kim, J-C., Demos, A.P., Roman, I.R., Tichko, P., Palmer, C., & Large, E.W. (2025). Musical neurodynamics. *Nature Reviews Neuroscience*, 26(5), 293–307. DOI: 10.1038/s41583-025-00915-4.
+- Humayun, A.I., Balestriero, R., & Baraniuk, R. (2024). Deep networks always grok and here is why. *arXiv preprint arXiv:2402.15555*. DOI: 10.48550/arXiv.2402.15555.
+- Balestriero, R., & Baraniuk, R. (2018). A spline theory of deep networks. In *Proceedings of the 35th International Conference on Machine Learning (ICML)*, Vol. 80, pp. 374–383. arXiv:1805.06576.
+- Min, S., Krishna, K., Lyu, X., Lewis, M., Yih, W-T., Koh, P., Iyyer, M., Zettlemoyer, L., & Hajishirzi, H. (2023). FActScore: Fine-grained atomic evaluation of factual precision in long form text generation. In *Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing* (pp. 12076–12100). ACL. DOI: 10.18653/v1/2023.emnlp-main.741.
 - Maynez, J., et al. (2020). On faithfulness and factuality in abstractive summarization. *ACL*, 1906–1919.
 - Shazeer, N., et al. (2017). Outrageously large neural networks: the sparsely-gated mixture-of-experts layer. *ICLR*.
 - Shew, W.L. & Plenz, D. (2013). The functional benefits of criticality in the cortex. *The Neuroscientist*, 19(1), 88–100.
@@ -658,7 +661,7 @@ The edge of chaos is not a metaphor. It is the regime where intelligence operate
 
 *Dataset:* TruthfulQA (817 questions with human truth labels) + HaluEval (10,000 hallucination-labeled examples).
 
-*Measurement:* For each LLM output, three raters score C_num, C_struct, C_symb on 0–1 scales using the rubric in S3. Interrater reliability (Krippendorff's α) measured before analysis.
+*Measurement (automated pipeline):* C_num = FActScore (Min et al., 2023) — fraction of atomic facts supported by knowledge base. C_struct = NLI consistency score — fraction of consecutive claim pairs not in contradiction (DeBERTa-v3-large on MNLI). C_symb = semantic self-coherence — mean cosine similarity of sentence embeddings to passage centroid (all-MiniLM-L6-v2). σ_fiber = std([C_num, C_struct, C_symb]). The threshold σ* is calibrated on a 50% held-out split before evaluation; F1 reported on held-out 50%. No human raters required.
 
 *Prediction:* σ_fiber > 0.35 predicts hallucination label with F1 ≥ 0.85 (lower bound) to F1 ≈ 0.92 (theoretical prediction).
 
