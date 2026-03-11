@@ -268,7 +268,7 @@ R: 0.95 (highest yet — gpt.py is the most direct external convergence we've fo
 
 ## Notes for BC3 Session 5 (Next Session)
 
-- **Run Study 5** — automated pipeline designed. `pip install factscore sentence-transformers`. Download FActScore biography dataset. Run the pipeline. **Highest-priority executable experiment.**
+- **Run Study 5 (proper)** — TruthfulQA calibration DONE (null result, expected, informative). Real Study 5 needs FActScore biography dataset (network required). Modified prediction: `C_num < mean([C_symb, C_struct]) AND σ_fiber > 0.20` not just `σ_fiber > 0.35`. exp_005 written, WANDER 035 complete.
 - **Add §6.9** to paper (Architecture Convergence — from WANDER 034)
 - **§6.6/6.7 tightening** — connect Balestriero lineage (WANDER 033)
 - **Tsallis entropy upgrade** — still pending. Decide: formal upgrade or future work.
