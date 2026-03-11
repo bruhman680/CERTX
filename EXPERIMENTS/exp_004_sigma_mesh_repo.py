@@ -14,7 +14,8 @@ Healthy range: σ_Mesh ∈ [0.30, 0.50]
   - Too high: siloed, no knowledge transfer
 
 Requires:
-  pip install pydriller networkx
+  pip install networkx
+  (uses git log directly — no pydriller, works on shallow clones)
 
 Optional (for semantic drift analysis):
   pip install sentence-transformers
@@ -31,16 +32,11 @@ import math
 import collections
 import argparse
 import os
+import subprocess
 
 # ─────────────────────────────────────────────
 # Optional imports with graceful fallbacks
 # ─────────────────────────────────────────────
-
-try:
-    from pydriller import Repository
-    HAS_PYDRILLER = True
-except ImportError:
-    HAS_PYDRILLER = False
 
 try:
     import networkx as nx
@@ -57,12 +53,14 @@ except ImportError:
 
 
 # ─────────────────────────────────────────────
-# Git history mining
+# Git history mining (via git log — works on shallow clones)
 # ─────────────────────────────────────────────
 
 def mine_commits(repo_path, max_commits=500):
     """
-    Walk git history and build:
+    Walk git history using git log directly.
+    Works on shallow clones, no diff computation needed.
+    Builds:
       - file_authors: file → set of contributors who touched it
       - author_files: contributor → set of files they touched
       - commit_messages: list of commit messages (for semantic analysis)
@@ -70,25 +68,44 @@ def mine_commits(repo_path, max_commits=500):
     file_authors = collections.defaultdict(set)
     author_files = collections.defaultdict(set)
     commit_messages = []
-    commit_count = 0
 
     print(f"  Mining up to {max_commits} commits from {repo_path}...")
 
+    # git log: emit "AUTHOR|<name>" then one filename per changed file
+    cmd = [
+        "git", "-C", repo_path, "log",
+        f"-n{max_commits}",
+        "--pretty=format:AUTHOR|%an|SUBJECT|%s",
+        "--name-only",
+        "--no-merges",
+    ]
     try:
-        for commit in Repository(repo_path).traverse_commits():
-            commit_messages.append(commit.msg[:200].strip())
-            author = commit.author.name or "unknown"
-            for f in commit.modified_files:
-                if f.filename:
-                    file_authors[f.filename].add(author)
-                    author_files[author].add(f.filename)
+        result = subprocess.run(cmd, capture_output=True, text=True,
+                                errors="replace", timeout=120)
+        output = result.stdout
+    except Exception as e:
+        print(f"  ERROR running git log: {e}")
+        return file_authors, author_files, commit_messages
+
+    current_author = None
+    commit_count = 0
+    for line in output.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        if line.startswith("AUTHOR|"):
+            parts = line.split("|")
+            current_author = parts[1] if len(parts) > 1 else "unknown"
+            subject = parts[3] if len(parts) > 3 else ""
+            commit_messages.append(subject[:200])
             commit_count += 1
             if commit_count % 200 == 0:
                 print(f"    {commit_count} commits processed...")
-            if commit_count >= max_commits:
-                break
-    except Exception as e:
-        print(f"  WARNING: Mining stopped early — {e}")
+        elif current_author and line:
+            # This is a filename
+            fname = os.path.basename(line)  # just the filename, drop path
+            file_authors[line].add(current_author)
+            author_files[current_author].add(line)
 
     print(f"  Done: {commit_count} commits | "
           f"{len(author_files)} contributors | "
@@ -409,11 +426,6 @@ Suggested sweep (popular repos):
     args = parser.parse_args()
 
     # Check requirements
-    if not HAS_PYDRILLER:
-        print("ERROR: pydriller not installed.")
-        print("  pip install pydriller")
-        sys.exit(1)
-
     if not HAS_NETWORKX:
         print("WARNING: networkx not installed — using density approximation.")
         print("  For full analysis: pip install networkx")
