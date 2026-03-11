@@ -119,7 +119,18 @@ def compute_sigma_mesh_networkx(file_authors, author_files):
 
     n = G.number_of_nodes()
     if n < 2:
-        return {"sigma_mesh": 0.5, "r_network": 0.5, "note": "too few contributors"}
+        return {
+            "sigma_mesh": 0.0,
+            "r_network": 1.0,
+            "avg_clustering": 1.0,
+            "density": 1.0,
+            "n_contributors": n,
+            "n_files": len(file_authors),
+            "n_edges": 0,
+            "avg_degree": 0.0,
+            "method": "networkx_clustering",
+            "note": "solo repo — σ_Mesh undefined (single contributor = fully coupled)",
+        }
 
     avg_clustering = nx.average_clustering(G)
     density = nx.density(G)
@@ -150,7 +161,16 @@ def compute_sigma_mesh_manual(file_authors, author_files):
     contributors = list(author_files.keys())
     n = len(contributors)
     if n < 2:
-        return {"sigma_mesh": 0.5, "r_network": 0.5, "note": "too few contributors"}
+        return {
+            "sigma_mesh": 0.0,
+            "r_network": 1.0,
+            "density": 1.0,
+            "n_contributors": n,
+            "n_files": len(file_authors),
+            "n_shared_pairs": 0,
+            "method": "density_approx (install networkx for full analysis)",
+            "note": "solo repo — σ_Mesh undefined (single contributor = fully coupled)",
+        }
 
     # Count unique co-author pairs
     pairs = set()
