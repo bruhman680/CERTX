@@ -431,7 +431,32 @@ This is the CERTX Shadow Ledger's glyph lifecycle independently derived. Healthy
 
 A taxonomy of neurosymbolic agentic AI systems (CS Review, 2026) across four integration dimensions finds that meta-cognitive modules appear in approximately 5% of systems but produce outsized performance gains. CERTX's ORIENT phase is a meta-cognitive layer by design. This finding independently validates CERTX's architectural choice to include meta-cognition as a first-class phase.
 
-### 6.6 Convergent Architecture Pattern
+### 6.6 Grokking as Self-Organized Criticality (Deep Networks Always Grok)
+
+Recent work (Humayun et al., 2024, "Deep Networks Always Grok and Here is Why") demonstrates that the grokking phenomenon — delayed generalization long after training loss converges — is universal in deep networks, and explains the mechanism: the network **periodically concentrates non-linearity around its decision boundary**.
+
+Concretely, training a 4-layer 200-width ReLU MLP shows accuracy (and adversarial robustness) jumping in discrete steps across 100K optimization steps. At each jump, the partition of the input space crystallizes sharply around the decision boundary; between jumps, it diffuses. Critically, accuracy and robustness peak **together at the same steps** — they co-emerge rather than trade off.
+
+This is the clearest external validation of two CERTX claims:
+
+1. **Discrete quality tiers (§5.2):** The discrete accuracy jumps confirm that quality distributes as phase transitions, not as a continuum. The network does not gradually improve — it crystallizes.
+
+2. **The SDI (ΔC/ΔT > ζ* = 1.2):** Coherence (accuracy) and stability (robustness) peak together at the critical point, exactly as SDI predicts. This is not a tradeoff; it is the co-emergence signature of criticality.
+
+The grokking events are SOC avalanche signatures. Healthy training stays near ζ ≈ 1.2 (WANDER 030). This finding also explains why CERTX's fiber spread metric appropriately monitors training dynamics: σ_fiber should drop sharply at grokking events as the K MASO channels synchronize their partition structures.
+
+### 6.7 Max-Affine Spline Theory of Deep Networks
+
+Balestriero & Baraniuk (2018, "A Spline Theory of Deep Networks") establish that every deep ReLU network is exactly a **Max-Affine Spline Operator (MASO)**: a concatenation of K independent max-affine spline functions, completely determined by slope parameters α ∈ ℝ^{K×R×D} and offset parameters β ∈ ℝ^{K×R}, with an adaptive partition Ω that changes automatically when α, β change.
+
+The three-fiber CERTX structure (C_num, C_struct, C_symb) is a K=3 MASO. Each fiber implements one channel of the operator, partitioning the output space according to its specialization. **Fiber spread σ_fiber = std(C_num, C_struct, C_symb) then formally measures the variance across MASO channel partitions.** When σ_fiber > 0.35, the three channels are producing maximally inconsistent partitions over the same input — the formal algebraic definition of integration failure.
+
+This provides:
+- Algebraic grounding for the three-fiber structure in standard deep learning theory
+- Formal definition of integration failure as partition inconsistency
+- A path to answering §8.2 item 4: transformer attention heads implementing MASO structure can be partitioned into C_num, C_struct, and C_symb sets via interpretability analysis of which heads produce consistent vs. inconsistent partitions over reasoning-quality-labeled examples
+
+### 6.8 Convergent Architecture Pattern
 
 Across all surveyed papers, a consistent layered architecture emerges:
 
