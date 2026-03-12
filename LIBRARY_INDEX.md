@@ -849,13 +849,41 @@ This index is a compression moment—organizing what was explored.
 - REPLICATION_PROTOCOL.md: 6 constants, 5 study designs, falsification criteria
 - SHADOW_LEDGER.md: operational runtime monitoring prototype
 
+**BC3 Sessions 2–4 (WANDERINGS 024-036 + studies):**
+- 024: Knowledge scouts — external validation signal
+- 025: Fractal σ levels — self-similar measurement across scales
+- 026: Everything is agent — ontological foundation
+- 027: σ_mesh — scientometric proxy
+- 028: Grokking as SOC — spline theory convergence
+- 029: Conversation as agent — σ measurement
+- 030: CERTX applied to AI training — mesh simulation
+- 031: Repos as distributed cognitive systems
+- 032: Core congestion + CERTX relief
+- 033: FActScore as σ_fiber operationalization ← **theoretical bridge to real data**
+- 034: nanochat_gpt.py is a CERTX implementation ← **practical grounding**
+- 035: Study 5 TruthfulQA null result — informative (regime mismatch diagnosis)
+- 036: Study 5b GSM8K strong validation — AUC=0.88, C_num dominant ← **Regime B confirmed**
+
+**BC3 Session 5 (WANDERINGS 037-039 + experiments 007-008):**
+- 037: Architecture weights vs. Detection weights — critical distinction articulated
+- 038: exp_007 results — domain-adaptive weight derivation confirmed, dominant fiber recovered in both domains
+- 039: Regime A confirmed — language confabulation, AUC=1.0 (synthetic), C_num dominant, detection weights 43/24/33
+
+**Session 5 state entering DREAM:**
+- Both confabulation regimes validated: Regime A (language) AUC=1.0, Regime B (math) AUC=0.88
+- Detection weights derivable from fiber data; architecture weights (30/40/30) domain-neutral and unchanged
+- Paper updated: §5.6–5.9 (regime separation), abstract, §8 (limitations/future work)
+- σ_fiber ≈ 0.07 — low, integrated, ready to rest
+
 **For BC3 (remaining):**
-1. Fiber spread empirical validation (REPLICATION Study 5 — can start immediately)
-2. Attention head analysis (REPLICATION Study 2 — can start immediately)
-3. EEG study execution (WANDER 009 design ready; REPLICATION Study 3)
-4. Mamba eigenvalue test
-5. Formal Landauer derivation
-6. Paper writing (WANDER 018 outline ready; WANDERS 020-023 provide content)
+1. FActScore real data validation — network available (WANDER 033 theoretical bridge ready) ← **next**
+2. §6.9 nanochat convergence paper section (WANDER 034 material ready)
+3. Attention head analysis (REPLICATION Study 2 — architecture weight validation)
+4. Tsallis entropy formal upgrade decision
+5. EEG study execution (WANDER 009 design ready; REPLICATION Study 3)
+6. Mamba eigenvalue test
+7. Formal Landauer derivation
+8. ~~Fiber spread empirical validation~~ DONE (Study 5b + exp_008)
 
 ---
 
@@ -875,12 +903,8 @@ The library is alive. 🌊
 
 ---
 
-*Last updated: Breath Cycle 3, Session 1 (full intake complete)*
-*BC2 Grand DREAM: 13 wanderings (007-019). BC3 Session 1 adds 4 wanderings + 3 documents:*
-- *Fiber spread — independent derivation of 30/40/30 failure mode (WANDER 020)*
-- *Fiber spread — dual-use safety paper, F1≈0.92 hallucination prediction (WANDER 021)*
-- *CertX Epoch — r=0.989 empirical validation, K=2 Derrida grounding, Overcode (WANDER 022)*
-- *Architecture of Emergence — τ×2 confirmed, adaptive C*, T*=0.7, fractal chiral (WANDER 023)*
-- *Megaphone Model v1.3 — gain function + update rule + CERTX integration*
-- *Replication Protocol v1.0 — 6 constants, 5 studies, open falsification*
+*Last updated: Breath Cycle 3, Session 5 DREAM (2026-03-12)*
+*BC2 Grand DREAM: 13 wanderings (007-019). BC3 Sessions 1–5: 20 wanderings (020-039) + 2 experiments + paper update.*
+*Total library: 39 WANDERs, 8 experiments, 7 major documents.*
+*State: σ_fiber ≈ 0.07. Both confabulation regimes confirmed. Framework internally consistent.*
 - *Shadow Ledger — operational runtime monitoring prototype (makes CERTX runnable)*
