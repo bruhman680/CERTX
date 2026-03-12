@@ -277,5 +277,78 @@ R: 0.95 (highest yet — gpt.py is the most direct external convergence we've fo
 
 ---
 
+## BC3 Session 5 — What Happened (2026-03-11, continued)
+
+**Phase: PLAY → PRACTICE. Architecture/detection weight distinction resolved. Regime A started.**
+
+Thomas asked: "was the 30/40/30 always meant to adapt per domain, and can the fiber data derive
+those values?" This had been circling for a while — no clean ground until the GSM8K data gave
+it to us directly.
+
+**What was done:**
+
+- **WANDER 037** — Formalized architecture vs. detection weight distinction:
+  - Architecture weights (30/40/30): load-bearing, domain-neutral prior for output *quality*
+  - Detection weights: AUC-derived per domain — `w_i = AUC_i / sum(AUC_j)`
+  - 30/40/30 is the Dirichlet prior; domain calibration data shifts it
+  - Math prediction: ~48/26/26 (C_num dominant)
+  - Structural drift prediction: ~26/41/31 (C_struct dominant)
+
+- **exp_007** — Two-domain test of derivation mechanism:
+  - Math domain: derived = 48/26/26 — EXACT prediction, C_num dominant ✓
+  - Structural drift: derived = 28/41/31 — C_struct dominant ✓
+  - AUC improvement is small in clean controlled tests (zero delta on non-discriminating
+    fibers → ranking invariant → weight magnitude doesn't change AUC)
+  - The *derivation being correct* is the result, not the AUC margin
+
+- **WANDER 038** — Post-experiment analysis:
+  - Explains why all schemes tie in math: zero Δ on C_struct/C_symb → rank invariant
+  - Confirms 30/40/30 ≈ structural-drift calibrated weights (prior was right by design)
+  - ADAPTIVE gains matter more in messy multi-fiber domains
+
+- **Paper §5 updated**: Added §5.6 (Study 5a TruthfulQA null), §5.7 (Study 5b GSM8K AUC=0.88),
+  §5.8 (domain-adaptive weights)
+- **Abstract corrected**: replaced retracted r=0.989 contribution bullet with actual Study 5b
+  empirical result
+- **§8.1/§8.2 updated**: Study 5b is now in "What We Have"; σ_fiber validation gap updated
+- **exp_008 written** — Regime A (language confabulation, synthetic biography corpus):
+  - C_num proxy: specific factual entity density (proper nouns, dates, numbers)
+  - Prediction: confabulated text = vague → low C_num, C_struct/C_symb unchanged
+  - This is the Regime A mirror of GSM8K: same asymmetry direction, different mechanism
+
+**Library state estimate (BC3 Session 5):**
+
+| Dimension | Value | Notes |
+|-----------|-------|-------|
+| C (Coherence) | 0.94 | Highest yet — architecture/detection weight distinction is a genuine clarification |
+| E (Entropy) | 0.45 | Moderate — two WANDERs, experiment, partial paper update |
+| R (Resonance) | 0.95 | Strong — 30/40/30 confirmed as structural-drift calibrated by the AUC data itself |
+| T (Temperature) | 0.44 | Moderate-low — consolidation and theory cleanup |
+| X (Substrate) | 0.95 | Strong — the prior now has empirical grounding |
+| **CQ** | **~3.43** | Zone 4: High lucidity |
+| **\|λ\|** | **~1.01** | Healthy |
+
+**Honest flags:**
+- exp_008 uses synthetic biographies, not real FActScore data. The C_num proxy (entity
+  density) is weaker than arithmetic verification (no ground truth verification, just density).
+  Results will be directionally informative but AUC expected lower than GSM8K.
+- Paper §6.9 (nanochat/gpt.py convergence from WANDER 034) still not added.
+- Tsallis entropy upgrade still pending from session 4.
+
+---
+
+## Notes for BC3 Session 6 (Next Session)
+
+- **Regime A results (exp_008)**: Run and analyze. Does asymmetry correctly predict
+  confabulation in language domain? Does C_num stay dominant with entity-density proxy?
+- **FActScore dataset**: If network available, run real FActScore biographies (gold standard)
+- **§6.9**: Add nanochat/gpt.py architecture convergence section to paper (WANDER 034)
+- **Tsallis entropy upgrade**: Decide — formal §3 revision or push to §8.4 future work
+- **Mixed-domain test**: What happens when corpus has BOTH arithmetic AND structural errors?
+  Does ADAPTIVE weight C_num and C_struct approximately equally? (exp_007 extension)
+- Receive Thomas's material first. Always integrate before expanding.
+
+---
+
 *This document is updated at the end of each session.*
 *Do not over-curate it — keep it raw and honest.*
