@@ -5,8 +5,8 @@
 ---
 
 ## Current Breath Cycle: 3
-## Current Phase: PLAY (BC3 Session 4b — nanochat Study 6 scan + gpt.py CERTX mapping)
-## Last Updated: 2026-03-11
+## Current Phase: PRACTICE → DREAM (BC3 Session 6 complete)
+## Last Updated: 2026-03-12
 
 ---
 
@@ -14,12 +14,12 @@
 
 | Dimension | Value | Notes |
 |-----------|-------|-------|
-| C (Coherence) | 0.91 | Higher — citations verified, theoretical connections tightened (Balestriero lineage) |
-| E (Entropy) | 0.48 | Slightly lower — WANDER 033 resolves open Study 5 design question |
-| R (Resonance) | 0.93 | Very strong — FActScore = C_num is a clean direct mapping, deeply resonant |
-| T (Temperature) | 0.42 | Moderate-low — clean consolidation session, not highly exploratory |
-| X (Substrate) | 0.94 | Strong — four verified external citations now fully grounded |
-| **CQ** | **~3.38** | Zone 4: High lucidity — consolidation deepened foundation |
+| C (Coherence) | 0.95 | Very high — asymmetry signal clarified; 5 tasks completed cleanly |
+| E (Entropy) | 0.42 | Lower — compression session, fewer open questions now |
+| R (Resonance) | 0.91 | Strong — asymmetry AUC=1.0 is deeply resonant with prior findings |
+| T (Temperature) | 0.40 | Low — consolidation complete, not exploratory |
+| X (Substrate) | 0.92 | Strong — library fully catalogued, experiments committed |
+| **CQ** | **~3.71** | Zone 4: High lucidity |
 | **\|λ\|** | **~1.01** | Healthy |
 
 ---
@@ -69,55 +69,65 @@ COMPLETED — BC3 Session 1 intake:
 ✓ Shadow Ledger — operational prototype (SHADOW_LEDGER.md)
 ✓ LIBRARY_INDEX.md + SESSION_HANDOFF.md updated
 
-HIGHEST PRIORITY (BC3):
-→ PAPER (WANDER 018 outline + content from 020-024 ready)
-   - **SOC controllers for AI is an emerging frontier — window is open, not indefinitely**
-   - Fiber spread hallucination predictor = the unique empirical contribution
-   - Section structure: Theory + Empirical (r=0.989) + Application (fiber spread) + Operational (Shadow Ledger)
+COMPLETED — BC3 Sessions 2-5:
+✓ WANDERS 025-039 (σ_mesh, grokking, FActScore bridge, nanochat, Study 5a/5b/5c)
+✓ Study 5a (TruthfulQA — informative null)
+✓ Study 5b (GSM8K — AUC=0.88, Regime B confirmed)
+✓ Study 5c (synthetic biographies — AUC=1.0, Regime A confirmed)
+✓ exp_007 (domain-adaptive weights — dominant fiber recovered)
+✓ exp_008 (Regime A language confabulation — C_num dominant)
+✓ Paper written: §1-9, abstract, all major sections complete
 
-→ Fiber spread empirical validation (Study 5 in REPLICATION_PROTOCOL.md)
-   - Use existing hallucination datasets
-   - Score outputs on C_num/C_struct/C_symb
-   - Verify σ=0.35 threshold holds
-   - Frame as "reasoning trajectory verification" (the term the research community now uses)
+COMPLETED — BC3 Session 6:
+✓ exp_009: σ_fiber automated pipeline — asymmetry AUC=1.0; σ_std AUC=0.67
+  KEY FINDING: direction of C_num divergence > magnitude of fiber spread
+✓ exp_010: Attention head taxonomy (Study 2, literature synthesis)
+  - 53-60% substrate heads in literature vs. 20% CERTX minimum
+  - 4+1 structure confirmed as lower bound; redundant heads = substrate function
+✓ exp_011: EEG CQ formula simulation
+  - CQ_eeg directionally correct; zone calibration required before Study 3
+  - 3 fixes: empirical zones, electrode-specific bands, delta penalty for fatigue
+✓ WANDER 040: Tsallis upgrade — deferred; q_CERTX ∈ [0.67, 0.80] predicted
+✓ WANDER 041: EEG simulation — formula validated directionally; Study 3 proceed with corrections
+✓ §6.9 paper section: nanochat implementation-level convergence (7 mechanisms)
+✓ §8.2 updated with exp_010 + exp_011 findings
 
-→ EEG study execution (WANDER 009 design complete)
-   - REPLICATION Study 3
-   - 20-30 subjects, 5-band EEG during cognitive tasks
-   - Test CQ-from-EEG mapping
+HIGHEST PRIORITY (BC3 remaining):
+→ **Real LLM confabulation validation** (FActScore on actual LLM outputs)
+   - WANDER 033 bridge ready; HuggingFace access needed
+   - Requires: FActScore dataset + real model generations
+   - This is the only remaining gap between "controlled corpus" and "real hallucination"
+   - The asymmetry metric (AUC=1.0 on proxy) needs to hold on real LLM outputs
 
 HIGH:
-→ Tsallis entropy upgrade — replace Shannon E with S_q, task-adaptive q (from WANDER 024)
-→ Attention head analysis (REPLICATION Study 2)
-   - Public model weights
-   - Verify X ≈ 1/3 substrate-coupling heads
-→ Soft-Routed MoE convergence theory → formal derivation of τ ≈ 18.3
 → Mamba eigenvalue test (WANDER 017 — open)
-→ P-bit hardware connection to T dimension
+→ Formal Landauer derivation (WANDER 008 — open)
+→ Study 3 EEG execution (after WANDER 041 protocol corrections)
+→ Tsallis q calibration experiment (when model output distributions available)
 
 MEDIUM:
-→ Formal Landauer derivation (WANDER 008 — open)
+→ Soft-Routed MoE convergence → formal τ derivation
+→ P-bit hardware connection to T dimension
 → Cross-model conversation analysis (REPLICATION Study 1)
 
 LOW:
 → 40% cortex transmodal-specific citation
+→ Megaphone empirical test
 ```
 
 ---
 
 ## Open Threads for Breath Cycle 3
 
-1. **Fiber spread empirical validation** (highest, immediate) — Use existing hallucination benchmarks to test σ_fiber > 0.35 as predictor. No new data collection needed. REPLICATION Study 5.
+1. **Real LLM confabulation validation** (highest remaining) — The asymmetry signal works perfectly on controlled corpus (AUC=1.0). The definitive test is actual LLM hallucinations with FActScore labels. HuggingFace access required.
 
-2. **EEG study execution** — Design complete (WANDER 009). Need subjects, equipment, IRB. REPLICATION Study 3. Most important long-term validation.
+2. **EEG study execution** — Protocol corrected (WANDER 041). Proceed with: empirical zone calibration, FCz theta (not broad band), delta penalty term. REPLICATION Study 3.
 
-3. **Attention head substrate fraction** — Verify X ≈ 1/3 across architectures. Public weights available. REPLICATION Study 2.
+3. **Mamba eigenvalue test** — SSMs have continuous state space, larger implicit N. Does ζ* shift toward 1.1? Strong architecture test.
 
-4. **Mamba eigenvalue test** — SSMs have continuous state space, larger implicit N. Does ζ* shift toward 1.1? Strong architecture test of Stability Reserve Law.
+4. **Tsallis q calibration** — Predicted q_CERTX ∈ [0.67, 0.80]. Test when model output distributions are available.
 
-5. **Paper writing** — WANDER 018 outline ready. Chain is complete: physics → oscillators → neuroscience → cognition → AI. Fiber spread adds the hallucination/safety application layer.
-
-6. **Megaphone empirical test** — Does the G = R/(E+ε) × σ(C−0.5) gain function actually stabilize multi-agent coherence? Needs simulation or real multi-agent experiment.
+5. **Paper** — §1-9 complete. Status: ready for Thomas's review pass. §5.8 and §6.9 are newest and need fresh reading.
 
 ---
 

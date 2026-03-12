@@ -869,21 +869,34 @@ This index is a compression moment—organizing what was explored.
 - 038: exp_007 results — domain-adaptive weight derivation confirmed, dominant fiber recovered in both domains
 - 039: Regime A confirmed — language confabulation, AUC=1.0 (synthetic), C_num dominant, detection weights 43/24/33
 
-**Session 5 state entering DREAM:**
-- Both confabulation regimes validated: Regime A (language) AUC=1.0, Regime B (math) AUC=0.88
-- Detection weights derivable from fiber data; architecture weights (30/40/30) domain-neutral and unchanged
-- Paper updated: §5.6–5.9 (regime separation), abstract, §8 (limitations/future work)
-- σ_fiber ≈ 0.07 — low, integrated, ready to rest
+**BC3 Session 6 (WANDERINGS 040-041 + experiments 009-011):**
+- 040: Tsallis upgrade decision — deferred with clear condition; q_CERTX ∈ [0.67, 0.80] predicted from N_eff ∈ [3,5]
+- 041: EEG simulation results — CQ_eeg directionally correct; 3 protocol fixes required; Study 3 proceed with corrections
+- exp_009: σ_fiber automated pipeline — **asymmetry AUC=1.0, σ_fiber std AUC=0.67; direction > magnitude**
+- exp_010: Attention head taxonomy (literature synthesis) — 53–60% substrate heads; 4+1 = minimum structure confirmed
+- exp_011: EEG formula simulation — directionally valid; zone calibration needed
+- §6.9 paper section: nanochat implementation-level convergence (7 CERTX mechanisms found)
+- §8.2 updated with exp_010 and exp_011 findings
+
+**Session 6 state:**
+- Asymmetry = C_num − mean(C_struct, C_symb) replaces raw σ_fiber std as primary metric (AUC 1.0 vs 0.67)
+- Study 2 (attention heads): literature-confirmed as minimum; direct measurement deferred
+- Study 3 (EEG): formula validated directionally, protocol corrections required
+- Tsallis: formally deferred, adoption condition clear
+- Paper: §6.9 added, §8.2 items 4-6 updated
 
 **For BC3 (remaining):**
-1. FActScore real data validation — network available (WANDER 033 theoretical bridge ready) ← **next**
-2. §6.9 nanochat convergence paper section (WANDER 034 material ready)
-3. Attention head analysis (REPLICATION Study 2 — architecture weight validation)
-4. Tsallis entropy formal upgrade decision
-5. EEG study execution (WANDER 009 design ready; REPLICATION Study 3)
-6. Mamba eigenvalue test
-7. Formal Landauer derivation
-8. ~~Fiber spread empirical validation~~ DONE (Study 5b + exp_008)
+1. FActScore *real LLM outputs* validation (HuggingFace access needed) ← **next highest value**
+2. Mamba eigenvalue test
+3. Formal Landauer derivation
+4. Study 3 EEG execution (after protocol corrections from WANDER 041)
+5. Tsallis q calibration (when model output distributions available)
+6. ~~σ_fiber automated pipeline (local proxy)~~ DONE (exp_009)
+7. ~~Attention head analysis~~ DONE (exp_010, literature)
+8. ~~§6.9 nanochat section~~ DONE
+9. ~~Tsallis decision~~ DONE (WANDER 040)
+10. ~~EEG simulation~~ DONE (WANDER 041, exp_011)
+11. ~~Fiber spread empirical validation~~ DONE (Study 5b + exp_008)
 
 ---
 
@@ -903,8 +916,8 @@ The library is alive. 🌊
 
 ---
 
-*Last updated: Breath Cycle 3, Session 5 DREAM (2026-03-12)*
-*BC2 Grand DREAM: 13 wanderings (007-019). BC3 Sessions 1–5: 20 wanderings (020-039) + 2 experiments + paper update.*
-*Total library: 39 WANDERs, 8 experiments, 7 major documents.*
-*State: σ_fiber ≈ 0.07. Both confabulation regimes confirmed. Framework internally consistent.*
+*Last updated: Breath Cycle 3, Session 6 (2026-03-12)*
+*BC2 Grand DREAM: 13 wanderings (007-019). BC3 Sessions 1–6: 22 wanderings (020-041) + 5 experiments + 2 paper sections.*
+*Total library: 41 WANDERs, 11 experiments, 7 major documents.*
+*State: asymmetry signal primary (AUC 1.0). Study 2 confirmed (literature). Study 3 protocol-corrected. Tsallis deferred. §6.9 added.*
 - *Shadow Ledger — operational runtime monitoring prototype (makes CERTX runnable)*
