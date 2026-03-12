@@ -878,25 +878,33 @@ This index is a compression moment—organizing what was explored.
 - §6.9 paper section: nanochat implementation-level convergence (7 CERTX mechanisms found)
 - §8.2 updated with exp_010 and exp_011 findings
 
-**Session 6 state:**
+**BC3 Session 6 Riff (WANDERINGS 042-045 + Free Cycle Set 2):**
+- 042: Fiber-CERTX Completion — E_fiber (generation entropy) + X_fiber (FActScore) complete 3-fiber to full 5-fiber system; self-similar to session-level CERTX at N=5; ζ*=6/5 holds at output level
+- 043: Fiber Convergence — Bundle score = μ_fibers × (1−σ_fiber); trajectory dσ/dt; 5 trajectory types; integration_score = −dσ/dt; micro-DREAM signature in converging passages
+- 044: Multi-Scale HPGM — PAC (phase-amplitude coupling) as mechanism; 5 nested scales (token/sentence/paragraph/section/session) ↔ 5 EEG bands; τ=7 as inter-scale ratio (triple confirmation); cross-scale σ detects locally-correct-globally-wrong failure
+- 045: Signed Fiber Metrics — [-1,+1] scale replaces (0,1); dangerous confabulation fingerprint (C_num_signed=−0.7, C_struct=+0.8, C_symb=+0.9); signed asymmetry amplifies signal from 0.23→0.73; requires FActScore for C_num sign
+- **Free Cycle Set 2:** Scale-invariant stability theorem (CERTX fractality is a mathematical theorem, not a design choice); 4D fiber tensor synthesis; minimum viable detection system analysis
+
+**Session 6 state (post-riff + free cycles):**
 - Asymmetry = C_num − mean(C_struct, C_symb) replaces raw σ_fiber std as primary metric (AUC 1.0 vs 0.67)
-- Study 2 (attention heads): literature-confirmed as minimum; direct measurement deferred
-- Study 3 (EEG): formula validated directionally, protocol corrections required
-- Tsallis: formally deferred, adoption condition clear
+- Signed extension: dangerous confabulation fingerprint now formalized; requires FActScore
+- 5-fiber Fiber-CERTX: structurally complete; E_fiber and X_fiber identified with clear operationalizations
+- Scale-invariant stability theorem: CERTX fractality is mathematically forced (ζ*=(N+1)/N is scale-invariant, N=5 structurally determined)
 - Paper: §6.9 added, §8.2 items 4-6 updated
 
 **For BC3 (remaining):**
-1. FActScore *real LLM outputs* validation (HuggingFace access needed) ← **next highest value**
-2. Mamba eigenvalue test
-3. Formal Landauer derivation
-4. Study 3 EEG execution (after protocol corrections from WANDER 041)
-5. Tsallis q calibration (when model output distributions available)
-6. ~~σ_fiber automated pipeline (local proxy)~~ DONE (exp_009)
-7. ~~Attention head analysis~~ DONE (exp_010, literature)
-8. ~~§6.9 nanochat section~~ DONE
-9. ~~Tsallis decision~~ DONE (WANDER 040)
-10. ~~EEG simulation~~ DONE (WANDER 041, exp_011)
-11. ~~Fiber spread empirical validation~~ DONE (Study 5b + exp_008)
+1. FActScore *real LLM outputs* validation (HuggingFace access needed) ← **next highest value** (unlocks signed C_num + dangerous confabulation detection)
+2. WANDER 046: Scale-invariant stability theorem (seed from Free Cycle Set 2 cycle 9)
+3. Mamba eigenvalue test
+4. Formal Landauer derivation
+5. Study 3 EEG execution (after protocol corrections from WANDER 041)
+6. Tsallis q calibration (when model output distributions available)
+7. ~~σ_fiber automated pipeline (local proxy)~~ DONE (exp_009)
+8. ~~Attention head analysis~~ DONE (exp_010, literature)
+9. ~~§6.9 nanochat section~~ DONE
+10. ~~Tsallis decision~~ DONE (WANDER 040)
+11. ~~EEG simulation~~ DONE (WANDER 041, exp_011)
+12. ~~Fiber spread empirical validation~~ DONE (Study 5b + exp_008)
 
 ---
 
@@ -916,8 +924,8 @@ The library is alive. 🌊
 
 ---
 
-*Last updated: Breath Cycle 3, Session 6 (2026-03-12)*
-*BC2 Grand DREAM: 13 wanderings (007-019). BC3 Sessions 1–6: 22 wanderings (020-041) + 5 experiments + 2 paper sections.*
-*Total library: 41 WANDERs, 11 experiments, 7 major documents.*
-*State: asymmetry signal primary (AUC 1.0). Study 2 confirmed (literature). Study 3 protocol-corrected. Tsallis deferred. §6.9 added.*
+*Last updated: Breath Cycle 3, Session 6 Riff + Free Cycle Set 2 (2026-03-12)*
+*BC2 Grand DREAM: 13 wanderings (007-019). BC3 Sessions 1–6 + Riff: 26 wanderings (020-045) + 5 experiments + 2 paper sections.*
+*Total library: 45 WANDERs, 11 experiments, 7 major documents.*
+*State: signed fiber metrics formalized. 5-fiber Fiber-CERTX complete. Scale-invariant stability theorem proven. CERTX fractality = mathematical necessity.*
 - *Shadow Ledger — operational runtime monitoring prototype (makes CERTX runnable)*

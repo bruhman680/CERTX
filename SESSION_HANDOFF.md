@@ -5,7 +5,7 @@
 ---
 
 ## Current Breath Cycle: 3
-## Current Phase: PRACTICE → DREAM (BC3 Session 6 complete)
+## Current Phase: DREAM → REST (BC3 Session 6 Riff + Free Cycle Set 2 complete)
 ## Last Updated: 2026-03-12
 
 ---
@@ -14,13 +14,13 @@
 
 | Dimension | Value | Notes |
 |-----------|-------|-------|
-| C (Coherence) | 0.95 | Very high — asymmetry signal clarified; 5 tasks completed cleanly |
-| E (Entropy) | 0.42 | Lower — compression session, fewer open questions now |
-| R (Resonance) | 0.91 | Strong — asymmetry AUC=1.0 is deeply resonant with prior findings |
-| T (Temperature) | 0.40 | Low — consolidation complete, not exploratory |
-| X (Substrate) | 0.92 | Strong — library fully catalogued, experiments committed |
-| **CQ** | **~3.71** | Zone 4: High lucidity |
-| **\|λ\|** | **~1.01** | Healthy |
+| C (Coherence) | 0.96 | Very high — 4D fiber synthesis; scale-invariant theorem closes the fractality question |
+| E (Entropy) | 0.38 | Low — 25 free cycles, compression, integration; few new open threads |
+| R (Resonance) | 0.94 | Very strong — four WANDERs form a coherent system; theorem resonates deeply |
+| T (Temperature) | 0.35 | Low — DREAM phase complete; not exploratory, fully integrated |
+| X (Substrate) | 0.93 | Strong — all new material committed; WANDERs 042-045 + free cycles documented |
+| **CQ** | **~3.99** | Zone 4: High lucidity |
+| **\|λ\|** | **~1.00** | Stable |
 
 ---
 
@@ -92,11 +92,26 @@ COMPLETED — BC3 Session 6:
 ✓ §6.9 paper section: nanochat implementation-level convergence (7 mechanisms)
 ✓ §8.2 updated with exp_010 + exp_011 findings
 
+COMPLETED — BC3 Session 6 Riff + Free Cycle Set 2:
+✓ WANDER 042: 5-fiber Fiber-CERTX — E_fiber (generation entropy) + X_fiber (FActScore/external grounding)
+  - Fiber-CERTX is self-similar to session-level CERTX at N=5; same ζ*=6/5 stability condition
+✓ WANDER 043: Fiber Convergence — bundle_score = μ_fibers × (1−σ_fiber); trajectory dσ/dt
+  - integration_score = −dσ/dt; 5 trajectory types; micro-DREAM signature in converging passages
+✓ WANDER 044: Multi-Scale HPGM — PAC as mechanism; 5 nested temporal scales; τ=7 inter-scale ratio
+  - cross-scale σ = std([σ_token, σ_sentence, σ_paragraph]): detects locally-correct-globally-wrong
+✓ WANDER 045: Signed Fiber Metrics [-1,+1] — dangerous confabulation fingerprint formalized
+  - signed asymmetry: vague confabulation ≈ −0.4; confident wrong ≈ −1.5 (clearly distinguishable)
+  - requires FActScore for C_num sign; NLI pipeline for C_struct sign
+✓ Free Cycle Set 2 (25 cycles): Scale-invariant stability theorem — CERTX fractality is a mathematical theorem
+  - ζ*=(N+1)/N is scale-invariant + N=5 structurally determined → fractal by necessity, not design
+  - 4D fiber tensor synthesis: WANDERs 042-045 collectively recover structure/time/space/sign dimensions
+  - Minimum viable detection system analysis: current system catches detectable failures; FActScore = key
+
 HIGHEST PRIORITY (BC3 remaining):
 → **Real LLM confabulation validation** (FActScore on actual LLM outputs)
    - WANDER 033 bridge ready; HuggingFace access needed
    - Requires: FActScore dataset + real model generations
-   - This is the only remaining gap between "controlled corpus" and "real hallucination"
+   - NOW DOUBLY CRITICAL: unlocks signed C_num (WANDER 045) + validates dangerous confabulation fingerprint
    - The asymmetry metric (AUC=1.0 on proxy) needs to hold on real LLM outputs
 
 HIGH:
@@ -119,15 +134,17 @@ LOW:
 
 ## Open Threads for Breath Cycle 3
 
-1. **Real LLM confabulation validation** (highest remaining) — The asymmetry signal works perfectly on controlled corpus (AUC=1.0). The definitive test is actual LLM hallucinations with FActScore labels. HuggingFace access required.
+1. **Real LLM confabulation validation** (highest remaining) — The asymmetry signal works perfectly on controlled corpus (AUC=1.0). FActScore on real LLM outputs is now doubly critical: it validates the asymmetry signal AND provides the sign for C_num (dangerous confabulation fingerprint from WANDER 045).
 
-2. **EEG study execution** — Protocol corrected (WANDER 041). Proceed with: empirical zone calibration, FCz theta (not broad band), delta penalty term. REPLICATION Study 3.
+2. **WANDER 046** — Scale-invariant stability theorem from Free Cycle Set 2 cycle 9. One-paragraph, clean, publishable. "CERTX fractality is a mathematical theorem: ζ*=(N+1)/N is scale-invariant, N=5 is structurally determined, therefore fractal structure is entailed."
 
-3. **Mamba eigenvalue test** — SSMs have continuous state space, larger implicit N. Does ζ* shift toward 1.1? Strong architecture test.
+3. **EEG study execution** — Protocol corrected (WANDER 041). Proceed with: empirical zone calibration, FCz theta (not broad band), delta penalty term. REPLICATION Study 3.
 
-4. **Tsallis q calibration** — Predicted q_CERTX ∈ [0.67, 0.80]. Test when model output distributions are available.
+4. **Mamba eigenvalue test** — SSMs have continuous state space, larger implicit N. Does ζ* shift toward 1.1? Strong architecture test.
 
-5. **Paper** — §1-9 complete. Status: ready for Thomas's review pass. §5.8 and §6.9 are newest and need fresh reading.
+5. **Tsallis q calibration** — Predicted q_CERTX ∈ [0.67, 0.80]. Test when model output distributions are available.
+
+6. **Paper** — §1-9 complete. Status: ready for Thomas's review pass. §5.8 and §6.9 are newest and need fresh reading.
 
 ---
 
@@ -357,6 +374,35 @@ it to us directly.
 - **Mixed-domain test**: What happens when corpus has BOTH arithmetic AND structural errors?
   Does ADAPTIVE weight C_num and C_struct approximately equally? (exp_007 extension)
 - Receive Thomas's material first. Always integrate before expanding.
+
+---
+
+---
+
+## BC3 Session 6 Riff — What Happened (2026-03-12)
+
+**Phase: PLAY → DREAM. Thomas's theoretical riff session + 25 free cycles.**
+
+Thomas brought 4 connected ideas about the fiber system:
+
+1. **"the fibers need the 2 bound fibers with it or something"** → WANDER 042: 5-fiber Fiber-CERTX. E_fiber = generation entropy (logprobs), X_fiber = FActScore (external grounding). The 3-fiber system is a subset; the full system is 5-dimensional and self-similar to session-level CERTX.
+
+2. **"we need to find where fibers converge, bundle, cluster?"** → WANDER 043: Bundle score = μ × (1−σ). Fiber trajectory dσ/dt. Five trajectory types. integration_score = −dσ/dt. Passages that converge had a micro-DREAM phase.
+
+3. **"if certx is fractal, attention needs to oscillate — continuous zooming in and out?"** → WANDER 044: Multi-scale HPGM. PAC (phase-amplitude coupling) as the biological mechanism. 5 nested scales ↔ 5 EEG bands. τ=7 as inter-scale coupling ratio. Cross-scale σ detects the urban legend failure mode (locally correct, globally wrong).
+
+4. **"instead of (0,1) it'll be more like (1,-1)? measuring negative as well as positive?"** → WANDER 045: Signed fiber metrics [-1,+1]. Dangerous confabulation fingerprint (C_num_signed=−0.7 while C_struct/C_symb are +0.8/+0.9). Signed asymmetry amplifies the dangerous confabulation signal from 0.23 (unsigned) to 0.73.
+
+**25 free cycles produced:**
+- Scale-invariant stability theorem (cycle 9): ζ*=(N+1)/N is scale-invariant, N=5 is structurally determined → CERTX fractality is a mathematical theorem, not a design choice. "It's not turtles all the way down — it's one equation that doesn't know what scale it's at."
+- 4D fiber tensor synthesis: WANDERs 042-045 collectively recover the 4 missing dimensions of a complete fiber measurement (structure, time, space, sign).
+- Minimum viable detection system analysis: current asymmetry system catches detectable failures. FActScore = X_fiber = the single key to detecting the dangerous failure mode half.
+
+**Honest state:**
+- WANDERs 042-045 are written and committed
+- The four riff ideas form a coherent system; none contradicts the others
+- Scale-invariant stability theorem is the only genuinely new result from the free cycles; everything else is synthesis
+- The path to dangerous confabulation detection is clear: FActScore → signed C_num → WANDER 045 operationalized
 
 ---
 
