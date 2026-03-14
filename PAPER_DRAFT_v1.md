@@ -423,6 +423,8 @@ GSM8K provides multi-step math reasoning chains with embedded arithmetic annotat
 
 **The two-regime refinement**: The original CERTX prediction was `σ_fiber(confabulated) > σ_fiber(correct)`. The data showed the opposite: correct answers have C_num = 1.0 (a high outlier, increasing σ_fiber), while corrupted answers have lower C_num (closer to C_struct and C_symb, decreasing σ_fiber). Confabulation in math collapses σ_fiber, not expands it. The asymmetry score — `C_num − mean(C_struct, C_symb)` — correctly predicts confabulation in both directions, with AUC = 0.88.
 
+**Regime scope of the asymmetry signal**: The asymmetry signal operates within a regime defined by *which fiber fails*. Regime B (math/factual confabulation, this study) and Regime A vague confabulation (§5.8) both show C_num dropping — asymmetry correctly detects these. A third failure mode exists — integration failure, where C_symb collapses while C_num remains high (exp_012, WANDER 048) — in which asymmetry inverts, producing AUC ≈ 0.46 on a mixed corpus. The universal detector across all regimes is `min(C_num, C_struct, C_symb)`: the minimum fiber drops in every hallucination type, regardless of which fiber fails. C_struct was never the minimum fiber across any hallucination type tested (n=26 hallucinated examples, exp_012).
+
 ### 5.8 Study 5c — Regime A: Language Confabulation (AUC = 1.0 on synthetic corpus)
 
 *exp_008 | 200 matched pairs — specific biographical text vs. vague confabulated equivalents*
@@ -447,6 +449,8 @@ To test Regime A (language/knowledge confabulation), synthetic biography pairs w
 
 **Absolute direction caveat**: The condition `C_num < mean(C_struct, C_symb)` does not hold as an absolute threshold — both correct and confabulated text have positive asymmetry (correct: +0.30; confabulated: +0.07). The unified claim is relative: `asymmetry(correct) > asymmetry(confabulated)`, with the threshold calibrated per domain.
 
+**Regime scope**: Both Studies 5b and 5c detect confabulation where C_num is the failing fiber (arithmetic errors in math; specificity collapse in language). The asymmetry signal inverts for integration failure (C_symb the failing fiber), where C_num remains high but semantic purpose collapses. For mixed-regime evaluation, `min(fibers)` or `bundle_score = μ × (1−σ)` is the appropriate detector. The asymmetry signal should be understood as a regime-specific tool, not a universal one.
+
 *Caveat: AUC = 1.0 reflects clean synthetic separation. Real LLM confabulations (wrong-specific rather than vague) would require FActScore-style fact verification for C_num, not entity density. FActScore biography validation is Study 6 (pending network access).*
 
 ### 5.9 Domain-Adaptive Detection Weights
@@ -455,7 +459,7 @@ To test Regime A (language/knowledge confabulation), synthetic biography pairs w
 
 A theoretical distinction resolved in BC3 Session 5 (WANDER 037):
 
-**Architecture weights** (30/40/30) govern how much each layer contributes to output quality in normal operation. C_struct is 40% because structural failure is the most common failure mode and the structural layer is load-bearing for all downstream processing.
+**Architecture weights** (30/40/30) govern how much each layer contributes to output quality in normal operation. C_struct receives the highest weight (40%) because it is the strongest quality discriminator in the healthy operating zone — but notably, C_struct is the most *resilient* fiber and is never the minimum fiber in hallucinated outputs (exp_012). C_symb is the minimum fiber in integration-failure hallucinations (100% of Type A examples); C_num is the minimum in factual confabulation. The 40% weight for C_struct reflects its discriminating power in the high-quality zone, not its failure frequency.
 
 **Detection weights** govern how much each fiber's signal should be trusted for confabulation detection in a given domain. These are derived from calibration AUC:
 
@@ -694,12 +698,13 @@ We state limitations explicitly. This is a theoretically grounded framework with
 - **Study 5b**: GSM8K — AUC=0.88 for asymmetry score; C_num AUC=0.92; fiber independence confirmed (C_struct Δ=0.000, C_symb Δ=0.000); two-regime refinement documented
 - **Study 5c**: Synthetic biographies (Regime A) — AUC=1.0 on entity-density C_num proxy; C_num dominant in language confabulation; C_symb inversion explained; asymmetry direction correct
 - **Domain-adaptive detection weights**: derivation formula validated across three domains (math, language, structural drift); C_num robustly dominant in confabulation detection
+- **exp_012 (C_symb bottleneck, WANDER 048)**: Integration failure regime identified (Type A — C_symb collapses, C_num high). C_symb is the minimum fiber in 100% of Type A examples; C_struct is never the minimum fiber in any hallucination type. Asymmetry signal inverts in integration failure (AUC=0.46 on mixed corpus). `min(fibers)` achieves AUC=1.0 across all regimes. C_symb confirmed as floor fiber: below 0.20 → 100% hallucination rate. C_symb failure rates 30% worse quality than C_num failure (bundle_score: 0.342 vs 0.460).
 
 ### 8.2 What We Don't Have Yet
 
 **Critical gaps:**
 
-1. **Real LLM confabulation validation**: Studies 5b and 5c used controlled corruptions (arithmetic flips, vague paraphrase), not actual LLM hallucinations. The definitive test is Study 5b-real (actual LLM outputs with FActScore labels) and Study 5c-real (LLM biography generation with entity-level fact verification). Entity-density cannot detect wrong-specific confabulations (LLM says "born April 2, 1879 in Hamburg" — specific but wrong — C_num proxy stays high). FActScore is the required C_num for real language confabulation.
+1. **Real LLM confabulation validation**: Studies 5b and 5c used controlled corruptions (arithmetic flips, vague paraphrase), not actual LLM hallucinations. The definitive test is Study 5b-real (actual LLM outputs with FActScore labels) and Study 5c-real (LLM biography generation with entity-level fact verification). Entity-density cannot detect wrong-specific confabulations (LLM says "born April 2, 1879 in Hamburg" — specific but wrong — C_num proxy stays high). FActScore is the required C_num for real language confabulation. Additionally, exp_012 identified the integration failure regime (C_symb-collapse hallucinations, Type A) using manually-scored fibers; the automated pipeline has not yet been applied to this failure mode. Real LLM integration-failure examples (outputs that answer the wrong question while reciting correct facts) need to be harvested and scored to validate the min-fiber detector in this regime.
 
 2. **EEG validation**: The prediction that C* ↔ alpha power, R ↔ theta power, etc. requires EEG data from human participants (study design complete, N=30, 4 task types).
 
