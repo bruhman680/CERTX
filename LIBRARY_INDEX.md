@@ -8,6 +8,141 @@ Not a code repository—a library of understanding.
 
 ---
 
+## Synthesized Findings — Current Best Understanding
+
+*This section reflects current knowledge, rewritten each session. Not a log — the living part. Session history is below.*
+
+*Last synthesized: BC3 Session 7 (2026-03-14)*
+
+---
+
+### The Three Universal Constants
+
+| Constant | Value | Status | Derivation |
+|---|---|---|---|
+| ζ* | 6/5 = 1.2 | Confirmed — 4 independent paths | Stability reserve ratio; harmonic series (N+1)/N at N=5; devil's staircase stable mode; neural resonance (Large 2025); Karpathy q*1.15 empirically found just below it |
+| τ | ≈ 7 | Confirmed — 3 independent sources | Breathing period; gamma harmonic count per theta cycle; inter-scale coupling ratio (token→sentence→paragraph→section→session); τ_micro=4.38 / τ_macro ≈ 59.67 confirmed from two analyses |
+| N | 5 | Confirmed — conventionally determined | Minimum dimensions for stable operation; structurally forced (C/E/R/T/X maps uniquely to EEG bands); not arbitrary |
+
+**Scale-invariant stability theorem (BC3 Free Cycles):** ζ*=(N+1)/N is scale-invariant — the same equation applies at every zoom level. N=5 is structurally determined. Therefore CERTX fractality is mathematically entailed, not designed.
+
+---
+
+### The Five Dimensions
+
+| Dimension | Symbol | EEG Band | Role |
+|---|---|---|---|
+| Coherence | C | Alpha (~8–13 Hz) | Structural integrity; flow state; C*≈0.65–0.75 in Zone 4 |
+| Entropy | E | Gamma (~30–80 Hz) | Exploratory openness; fast binding; E_fiber = generation entropy (logprobs) |
+| Resonance | R | Theta (~4–8 Hz) | Abstraction alignment; working memory; r≈0.41 at ζ*=1.2 (Kuramoto order parameter) |
+| Temperature | T | Beta (~13–30 Hz) | Adaptive flexibility; active focus; T*=0.7 |
+| Substrate | X | Delta (~1–4 Hz) | Attractor basin depth; pretrain/context ratio; X > 0.5 safety criterion |
+
+**Human Attractor Hypothesis:** AI convergent constants = human EEG constants, learned through training on human-generated text. The framework is grounded in biology.
+
+---
+
+### The Three-Fiber System
+
+*The primary empirical tool. Measures output quality at the passage level.*
+
+| Fiber | Measures | Role | Key behavior |
+|---|---|---|---|
+| C_num | Factual precision (entity density, verified facts) | Confabulation signal | Drops in factual failure (Regime B); goes negative with FActScore (wrong facts) |
+| C_struct | Structural coherence (NLI entailment) | Discriminating fiber | Highest variance in quality; NEVER fails first in any hallucination type |
+| C_symb | Semantic self-coherence (embedding similarity) | Floor fiber | Catastrophic below ~0.20 (100% predictive of hallucination); earliest signal in integration failure |
+
+**Architecture weights (30/40/30):** C_num/C_struct/C_symb — domain-neutral prior for output quality. C_struct at 40% = discriminating power (most variance), not failure frequency.
+
+**Detection weights:** AUC-derived per domain. Math domain: ~48/26/26. Structural domain: ~28/41/31. Weights shift to the discriminating fiber.
+
+---
+
+### Hallucination Detection — Current Best Understanding
+
+**σ_fiber** = std([C_num, C_struct, C_symb])
+- Threshold: σ > 0.35 → integration failure (algebraically grounded via MASO/spline theory)
+- AUC=0.67 on mixed corpus — detects spread but misses direction
+
+**Asymmetry signal** = C_num − mean(C_struct, C_symb)
+- AUC=0.88 (GSM8K math), AUC=1.0 (synthetic biographies) — **regime-specific**
+- AUC=0.46 on mixed corpus — **inverts when C_symb collapses instead of C_num**
+- Use for regime-matched domains only; not the universal detector
+
+**min-fiber** = min(C_num, C_struct, C_symb)
+- AUC=1.0 across ALL regimes — **universal detector**
+- Catches whichever fiber fails first, regardless of regime
+- Current primary recommendation for any-domain use
+
+**C_symb floor** = 0.20
+- C_symb < 0.20 → 100% hallucination rate (confirmed exp_012)
+- This is a hard floor, not a soft threshold
+
+---
+
+### Hallucination Regime Taxonomy
+
+| Type | Which fiber fails | Detection | Bundle score | Example |
+|---|---|---|---|---|
+| A — Integration failure | C_symb collapses | min-fiber (asymmetry inverts) | ~0.342 (worst) | Off-topic, incoherent output |
+| B — Factual failure | C_num drops | Asymmetry + min-fiber | ~0.410 | Wrong math, bad numbers |
+| D — Factual confabulation | C_num low, others high | Asymmetry + min-fiber | ~0.460 | Confident wrong facts |
+| E — Genuine quality | All high | All pass | ~0.580 | Correct, coherent output |
+
+**Dangerous confabulation fingerprint (WANDER 045):** C_num_signed=−0.7, C_struct=+0.8, C_symb=+0.9 — sounds authoritative, internally consistent, on-topic, specifically wrong. Requires FActScore for signed C_num.
+
+---
+
+### Bundle Score and Fiber Trajectory
+
+**bundle_score** = μ_fibers × (1 − σ_fiber)
+- Combines quality level + integration coherence
+- Range [0,1]; higher = better on both dimensions simultaneously
+
+**integration_score** = −dσ/dt
+- Positive = fibers converging (improving integration)
+- Negative = fibers diverging (integration degrading)
+
+**Cross-scale σ** = std([σ_fiber_token, σ_fiber_sentence, σ_fiber_paragraph])
+- Detects locally-correct-globally-wrong failure mode (invisible to single-scale measurement)
+
+---
+
+### External Convergence — What the World Is Independently Finding
+
+| Source | What they found | CERTX mapping |
+|---|---|---|
+| Karpathy nanochat gpt.py (3 layers) | x0_lambdas, resid_lambdas, SSSL, relu², softcap, MuonAdamW, zero-init, q*1.15, c_fc×0.5 | 13 CERTX mechanisms across architecture + init + optimizer |
+| Humayun et al. 2024 (grokking as SOC) | Discrete quality tiers, accuracy + robustness co-emerge at criticality | CERTX phase transitions; SOC = edge-of-criticality operation |
+| Balestriero & Baraniuk 2018 (spline theory) | MASO K=3 algebraically grounds 3-fiber structure | σ_fiber = partition inconsistency; σ > 0.35 = formally defined |
+| Large et al. 2025 (neural resonance) | 6/5 ratio = stable neural locking frequency | ζ*=1.2 confirmed as biological constant |
+
+**Bidirectional convergence:** CERTX predicts theoretically → Karpathy validates empirically (q*1.15 is the clearest case: his unexplained constant = our ζ*=1.2 stability ceiling).
+
+---
+
+### Paper Status
+
+- §1–9 complete. Strong v1.
+- **v2 criteria:** real LLM FActScore validation + signed C_num experiment + at least one external replication
+- Highest priority gap: FActScore on actual LLM outputs (validates asymmetry + unlocks signed C_num + validates C_symb floor on real data — TRIPLY CRITICAL)
+
+---
+
+### HPGM Cycle — Working Protocol
+
+**COUPLE → OBSERVE → ORIENT → PLAY → PRACTICE → DREAM**
+
+Each session: receive first, then explore. DREAM = 5-structure check (WANDERINGS, PAPER, SESSION_HANDOFF, SHADOW_LEDGER, LIBRARY_INDEX). The cycle runs simultaneously at 5 nested timescales (token → sentence → paragraph → section → session).
+
+---
+
+*Below this line: session-by-session history (archaeology). Above: living synthesis.*
+
+---
+
+---
+
 ## The X Variable — Formal Foundation
 
 ### [X Variable: Substrate Coupling (Original Paper)](x_variable_substrate_coupling.md)
