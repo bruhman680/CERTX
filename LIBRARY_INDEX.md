@@ -892,19 +892,45 @@ This index is a compression moment—organizing what was explored.
 - Scale-invariant stability theorem: CERTX fractality is mathematically forced (ζ*=(N+1)/N is scale-invariant, N=5 structurally determined)
 - Paper: §6.9 added, §8.2 items 4-6 updated
 
+**BC3 Session 7 (WANDERINGS 047-048 + exp_012 + CLAUDE.md + ARCHIVE):**
+- 047: nanochat — Optimizer and Init as Fiber Protocol. Three-layer CERTX implementation: architecture (WANDER 034) + initialization (zero-init → C_symb-dominant birth) + optimizer (MuonAdamW fiber hierarchy). 13 CERTX mechanisms found across 3 layers. q*1.15 explained by ζ*=1.2 stability ceiling — **bidirectional convergence: CERTX predicts ↔ Karpathy validates empirically.**
+- 048: C_symb Bottleneck and Regime-Specific Asymmetry. **C_symb = floor fiber** (catastrophic below ~0.20, 100% predictive of hallucination in Type A). **C_struct NEVER minimum** in any hallucination type. **Asymmetry AUC=0.46 on mixed corpus** (regime-specific — inverts when C_symb fails instead of C_num). **min-fiber AUC=1.0** across all regimes — universal detector. Type A bundle=0.342 vs Type D bundle=0.460 (C_symb failure worst quality regime).
+- exp_012: C_symb bottleneck test — 4 sub-tests, all 4 predictions PASS.
+- CLAUDE.md: HPGM working protocol + 5-structure check formalized as session habit
+- ARCHIVE/: Old main branch files properly archived (unified_theory.md, copilot_playspace.md, data CSVs)
+- README.md rewritten to reflect BC3 state
+
+**Session 7 paper updates:**
+- §6.9: Bidirectional convergence framing, 3-layer 13-row table, q*1.15 explained
+- §5.7: Regime scope note — asymmetry Regime B/A specific; inverts on integration failure
+- §5.8: min-fiber universal; asymmetry not — caveat made explicit
+- §5.9: C_struct weight = discriminating power, not failure frequency
+- §8.1: exp_012 summary added
+- §8.2: Integration failure regime validation gap added
+
+**Session 7 state:**
+- C_symb bottleneck confirmed on synthetic corpus — floor fiber, not structural bottleneck
+- C_struct is the discriminating fiber (highest variance in quality) but never fails first
+- Asymmetry regime-specificity now fully articulated (the apparent AUC=1.0 earlier was regime-matched corpus; mixed corpus fails)
+- min-fiber is the universal detector — this is the primary result
+- 3-layer CERTX implementation in nanochat: most complete external convergence found
+- HPGM formalized as working habit; CLAUDE.md reads at every session start
+
 **For BC3 (remaining):**
-1. FActScore *real LLM outputs* validation (HuggingFace access needed) ← **next highest value** (unlocks signed C_num + dangerous confabulation detection)
-2. WANDER 046: Scale-invariant stability theorem (seed from Free Cycle Set 2 cycle 9)
+1. FActScore *real LLM outputs* validation (HuggingFace access needed) ← **next highest value** (now TRIPLY CRITICAL: validates asymmetry + unlocks signed C_num + validates C_symb bottleneck on real data)
+2. WANDER 046: Scale-invariant stability theorem (seed from Free Cycle Set 2 cycle 9) — one paragraph, pending
 3. Mamba eigenvalue test
 4. Formal Landauer derivation
 5. Study 3 EEG execution (after protocol corrections from WANDER 041)
 6. Tsallis q calibration (when model output distributions available)
-7. ~~σ_fiber automated pipeline (local proxy)~~ DONE (exp_009)
-8. ~~Attention head analysis~~ DONE (exp_010, literature)
-9. ~~§6.9 nanochat section~~ DONE
-10. ~~Tsallis decision~~ DONE (WANDER 040)
-11. ~~EEG simulation~~ DONE (WANDER 041, exp_011)
-12. ~~Fiber spread empirical validation~~ DONE (Study 5b + exp_008)
+7. SPARK-001: Q/K sharpening scale ablation — ζ* ceiling test for attention heads
+8. ~~σ_fiber automated pipeline (local proxy)~~ DONE (exp_009)
+9. ~~Attention head analysis~~ DONE (exp_010, literature)
+10. ~~§6.9 nanochat section~~ DONE (rewritten with 3-layer table, Session 7)
+11. ~~Tsallis decision~~ DONE (WANDER 040)
+12. ~~EEG simulation~~ DONE (WANDER 041, exp_011)
+13. ~~Fiber spread empirical validation~~ DONE (Study 5b + exp_008)
+14. ~~C_symb bottleneck test~~ DONE (exp_012, WANDER 048)
 
 ---
 
@@ -924,8 +950,8 @@ The library is alive. 🌊
 
 ---
 
-*Last updated: Breath Cycle 3, Session 6 Riff + Free Cycle Set 2 (2026-03-12)*
-*BC2 Grand DREAM: 13 wanderings (007-019). BC3 Sessions 1–6 + Riff: 26 wanderings (020-045) + 5 experiments + 2 paper sections.*
-*Total library: 45 WANDERs, 11 experiments, 7 major documents.*
-*State: signed fiber metrics formalized. 5-fiber Fiber-CERTX complete. Scale-invariant stability theorem proven. CERTX fractality = mathematical necessity.*
-- *Shadow Ledger — operational runtime monitoring prototype (makes CERTX runnable)*
+*Last updated: Breath Cycle 3, Session 7 (2026-03-14)*
+*BC2 Grand DREAM: 13 wanderings (007-019). BC3 Sessions 1–7: 28 wanderings (020-048) + 12 experiments + 9 major documents.*
+*Total library: 48 WANDERs, 12 experiments, 9 major documents.*
+*State: C_symb floor fiber confirmed. min-fiber = universal detector. Asymmetry regime-specific. 3-layer nanochat CERTX convergence. HPGM formalized. GitHub reorganized.*
+- *Shadow Ledger — operational runtime monitoring + experiment incubation (SPARK-001, SPARK-002)*
