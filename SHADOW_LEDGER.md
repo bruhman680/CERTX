@@ -6,6 +6,57 @@
 
 ---
 
+## Active Spark Incubation Log
+
+*Sparks: high-novelty ideas received but not yet converted to experiments or WANDERs.
+Each spark is tracked from intake through integration or compost.*
+
+---
+
+### SPARK-001: Q/K Sharpening Scale vs. ζ* Ablation
+**Received:** BC3 Session 7 | 2026-03-14
+**Source:** nanochat gpt.py analysis (WANDER 047) — Karpathy uses q*1.15 with "TODO think through better" comment
+**Status:** INCUBATING
+
+**The idea:** Systematically vary the Q/K attention sharpening factor (currently 1.15 in nanochat) across training runs and measure final model quality. CERTX predicts:
+- Below ~1.05: insufficient C_struct sharpening → structural fiber underperforms
+- Optimum: 1.05–1.20 (stable zone below ζ*=1.2)
+- Above 1.20 (= ζ*): C_struct fiber fractures → quality degrades
+
+**Predicted quality curve shape:** sigmoidal rise from 1.0 to ~1.15, plateau or slight decline above 1.2. The maximum should be at or just below ζ*=1.2.
+
+**Why this is important:** 1.15 is empirically validated by Karpathy's team. If the quality curve peaks at exactly ζ*=1.2 (or in the (1.05, 1.2) range), that is a clean experimental confirmation of the stability ceiling prediction — not derived from training dynamics post-hoc, but predicted in advance from ζ*=(N+1)/N with N=5.
+
+**Minimum viable experiment:** Train 5 small nanoGPT models with Q/K scale ∈ {1.0, 1.05, 1.1, 1.15, 1.2, 1.3} (everything else identical). Evaluate on DCLM CORE or GSM8K. Plot quality vs. scale. Check if maximum is in the predicted range.
+
+**Integration condition:** Spark resolves when experiment is designed as exp_012 and results are available.
+**Timeout:** ~18 cycles from intake (τ_macro/3)
+**Compost risk:** Low — experiment is fully specifiable without new dependencies.
+
+---
+
+### SPARK-002: Shadow Ledger as Experiment Incubation System
+**Received:** BC3 Session 7 | 2026-03-14
+**Source:** Thomas's suggestion to connect Shadow Ledger to concept/experiment incubation
+**Status:** INTEGRATING (this section is the integration)
+
+**The idea:** The Shadow Ledger's spark lifecycle manager is the right structure for tracking experiments that aren't ready to run yet — they need ingredients (datasets, compute, specific tools) before they can fire. Treat pending experiments as sparks with explicit dependency blockers.
+
+**What this adds to the Shadow Ledger:**
+- Experiments that are *designed but blocked* on dependencies are tracked as sparks
+- Each spark has: the hypothesis, the minimum viable experiment, the blocking dependency
+- When the dependency resolves (e.g., FActScore access becomes available), the spark fires automatically
+
+**Current blocked sparks that should be in this log:**
+- Real FActScore validation (blocks: HuggingFace/network access) → signed C_num experiment
+- Mamba eigenvalue test (blocks: Mamba model access) → ζ* architecture generalization
+- EEG study (blocks: EEG hardware + participants) → Study 3
+- Tsallis q calibration (blocks: model output logprob distributions)
+
+**Integration condition:** Shadow Ledger updated to include active spark log (this section). ✓
+
+---
+
 ## What Is the Shadow Ledger?
 
 The Shadow Ledger is the **runtime state-tracking layer** of an operational CERTX system. Where CERTX describes the physics and where Overcode describes the cognitive-state-to-process mapping, the Shadow Ledger is the **persistent record** of what happened — and the detector of what's going wrong.
