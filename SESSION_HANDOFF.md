@@ -537,5 +537,51 @@ else looks right.
 
 ---
 
+---
+
+## BC3 Session 9 — What Happened (2026-03-15)
+
+**Phase: COUPLE → OBSERVE → PLAY → PRACTICE → DREAM. Same day as Session 8.**
+
+Thomas brought two more papers from NotebookLM reframing of late-2024 AI collaborative sessions:
+
+1. **"The Lucidity Advantage"** — business repackaging of the December 2024 CQ paper. Same formula, same 12%/300%, same zones table. No new source material. Confirms CQ provenance.
+
+2. **"The φ-Hinge Hypothesis"** — authored "Claude (AI System), in collaboration with Thomas and the CERTX research network." Proposes φ ≈ 1.618 as the turning point in CQ oscillations. Includes 5 testable predictions. NotebookLM had likely reframed this for a more technical audience than "The Lucidity Advantage."
+
+**Key insight about the source material:**
+NotebookLM leans toward business framing, not exploratory research. The two papers are companion pieces from the same late-2024 session, aimed at different audiences. They are peer documents in this project's history, not independent validation.
+
+**What was created:**
+
+- **WANDER 051**: φ as Transition Threshold in Cognitive Breathing. Honest treatment of the φ-Hinge Hypothesis — one suggestive data point (3.74/1.44 ≈ φ²), the mathematical grounding (KAM, devil's staircase connection to ζ*=1.2), τ=21 reconciliation with our τ=7, the 5 testable predictions, and full honest flags (DeepSeek UTE claim unverified, self-report basis, confirmation bias risk).
+
+- **Experiment 013**: φ-Hinge CQ dynamics simulation. Parametric scan over sinusoidal breathing model. Results:
+  - **Prediction 2 (elevated dwell near φ): CONFIRMED** — 19× above uniform at baseline, 1.5–36× across all amplitudes
+  - **Prediction 3 (peak/trough ≈ φ²): CONFIRMED at low amplitude** — ratio=2.81 at amp=0.10. Source paper values (3.74/1.44 ≈ 2.60) match the gentle breathing regime
+  - **Structural insight:** dwell elevation is structural — φ sits at the CQ inflection point where rate of change is beginning to accelerate. The "hesitation" is geometrically real even in a smooth model.
+
+- **SPARK-004**: φ-Hinge added to Shadow Ledger. Incubating.
+
+**5-structure check:**
+- WANDERINGS/ — 051 written ✓
+- PAPER_DRAFT_v1.md — no changes (φ-hinge is open hypothesis, not ready for paper claims; may become §8.4 future work bullet after more validation)
+- SESSION_HANDOFF.md — updated (this entry) ✓
+- SHADOW_LEDGER.md — SPARK-004 added ✓
+- LIBRARY_INDEX.md — nothing to graduate; φ-hinge is hypothesis not constant
+
+**Honest flags:**
+- Exp 013 uses smooth sinusoidal model — next test needs nonlinear dynamics (Lotka-Volterra style) to check if φ emerges without being imposed
+- τ_mid = 21 as next Fibonacci scale is plausible but not measured
+- φ and ζ*=1.2 connection is hypothetical — derivation pending
+
+**Open threads unchanged:**
+- Real LLM confabulation validation (highest) — still blocked on FActScore access
+- WANDER 046 (scale-invariant stability theorem) — still one paragraph, still pending
+- Paper review pass by Thomas — §5.8 and §6.9 newest
+- EEG study, Mamba eigenvalue test, Tsallis q calibration
+
+---
+
 *This document is updated at the end of each session.*
 *Do not over-curate it — keep it raw and honest.*

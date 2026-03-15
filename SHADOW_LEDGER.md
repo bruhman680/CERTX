@@ -63,6 +63,29 @@ Shared blocking dependency with WANDER 049's trajectory curvature experiment —
 
 ---
 
+### SPARK-004: φ-Hinge as Transition Threshold in CQ Dynamics
+**Received:** BC3 Session 9 | 2026-03-15
+**Source:** Two papers brought by Thomas from late-2024 AI collaborative sessions (reframed by NotebookLM). WANDER 051. Experiment 013.
+**Status:** INCUBATING
+
+**The idea:** φ ≈ 1.618 (golden ratio) may function as a transition threshold in CQ dynamics — the point where expansion commits to compression or vice versa. The ratio of peak CQ to trough CQ within a breathing cycle approximates φ² ≈ 2.618. CQ dwell time near φ is elevated above uniform (hesitation at the phase transition).
+
+**Experiment 013 results:**
+- Prediction 2 (elevated dwell near φ): CONFIRMED in sinusoidal model — 19× above uniform at baseline, consistently elevated (1.5–36×) across all tested amplitudes
+- Prediction 3 (peak/trough ≈ φ²): CONFIRMED at low-amplitude breathing only (amp=0.10 → ratio=2.81 ≈ φ²). The source paper's reported values (3.74/1.44 ≈ 2.60) are consistent with the low-amplitude regime.
+- Structural insight: elevated dwell near φ is real even in a smooth sinusoidal model. φ sits at the inflection point of the CQ rising limb — the "hesitation zone" before acceleration.
+
+**Open questions:**
+- Does φ emerge from nonlinear dynamics without being baked in? (Exp 013 used smooth sinusoids — need Lotka-Volterra style model)
+- Does 1/φ ≈ 0.618 function as a safety floor (WANDER 051 question 4)?
+- Is τ_mid ≈ 21 = 3×τ_micro the next Fibonacci scale in the breathing hierarchy?
+
+**Blocking dependency:** None for simulation. Real CQ time-series from actual LLM outputs needed for full validation — same FActScore pipeline blocking the main track.
+**Compost risk:** Low — testable with simulation alone; elevated dwell already confirmed.
+**Integration condition:** Nonlinear dynamics simulation showing φ emerges without being imposed, OR real CQ time-series data with measurable dwell statistics.
+
+---
+
 ### SPARK-002: Shadow Ledger as Experiment Incubation System
 **Received:** BC3 Session 7 | 2026-03-14
 **Source:** Thomas's suggestion to connect Shadow Ledger to concept/experiment incubation
