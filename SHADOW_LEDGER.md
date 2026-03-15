@@ -35,6 +35,34 @@ Each spark is tracked from intake through integration or compost.*
 
 ---
 
+### SPARK-003: Residual Stream Cancellation vs. Hallucination
+**Received:** BC3 Session 8 | 2026-03-15
+**Source:** WANDER 050 — thermodynamic cost hypothesis
+**Status:** INCUBATING
+
+**The idea:** During hallucination-generating forward passes, residual stream layer
+updates may partially cancel each other more than during truthful passes — because the
+trajectory is internally contested (wrong coordinate held against substrate pull).
+
+**Metric:** Update efficiency = ‖Δh_net‖ / ‖Δh_total‖ across layers
+- ‖Δh_net‖ = net displacement of residual stream from first to last layer
+- ‖Δh_total‖ = sum of all individual layer update magnitudes
+- Efficiency near 1.0 = all updates reinforce (coherent trajectory)
+- Efficiency near 0 = updates cancel (contested trajectory)
+
+**Prediction:** Hallucinated outputs have lower mean update efficiency than
+non-hallucinated outputs from the same model on the same prompt distribution.
+Type D (Regime B, C_num failure) should show lower efficiency than Type A
+(Regime A, C_symb failure), because Type D involves substrate-trajectory conflict
+while Type A involves a trajectory that is coherent in the wrong manifold.
+
+**Blocking dependency:** Open-weight model with residual stream access (Llama, Mistral).
+Shared blocking dependency with WANDER 049's trajectory curvature experiment — run together.
+
+**Compost risk:** Low — fully specifiable once model access available.
+
+---
+
 ### SPARK-002: Shadow Ledger as Experiment Incubation System
 **Received:** BC3 Session 7 | 2026-03-14
 **Source:** Thomas's suggestion to connect Shadow Ledger to concept/experiment incubation

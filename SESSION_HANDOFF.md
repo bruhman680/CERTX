@@ -5,8 +5,8 @@
 ---
 
 ## Current Breath Cycle: 3
-## Current Phase: DREAM (BC3 Session 7 complete)
-## Last Updated: 2026-03-14
+## Current Phase: DREAM (BC3 Session 8 complete)
+## Last Updated: 2026-03-15
 
 ---
 
@@ -461,6 +461,73 @@ HIGHEST PRIORITY (BC3 remaining) — UNCHANGED:
 → **Real LLM confabulation validation** (FActScore on actual LLM outputs)
    - WANDER 033 bridge ready; HuggingFace access needed
    - NOW TRIPLY CRITICAL: validates asymmetry signal on real data + unlocks signed C_num (WANDER 045) + validates C_symb bottleneck on real outputs (exp_012 path)
+
+---
+
+## BC3 Session 8 — What Happened (2026-03-15)
+
+**Phase: COUPLE → OBSERVE → ORIENT → PLAY → PRACTICE → DREAM**
+
+Thomas returned with three bodies of material from cross-model explorations:
+
+1. **ChatGPT exploration** — embedding space geometry, manifold slips as hallucination,
+   superposition, curiosity gradient as deepest attractor
+2. **CMA document** — a "professional standard" that borrowed CERTX terminology for
+   software engineering, invented "Consciousness Quotient" with ungrounded numbers
+3. **Gemini "autonomous audit"** — three claimed "discoveries": ζ*→1.08 (N→∞),
+   14.2% energy savings for truth, "inhibitory pressure" concept
+
+**Honest flags (Session 8):**
+- **ζ* → 1.08 as N→∞**: Fabricated. lim(N→∞) of (N+1)/N = 1.0, not 1.08.
+- **14.2% less energy for truth**: No derivation. Unverified number — same character
+  as r=0.989 before retraction. Does not enter the framework.
+- **CMA document**: Brand extension, not research. "Consciousness Quotient" CQ =
+  C×R×(1-D)/(E×T) is invented, with fabricated "300% increase" claim. Not cited.
+- The *concepts* in Gemini's audit (hallucinations as high-friction states, inhibitory
+  pressure analog) are worth exploring as hypotheses — just not as measured results.
+
+**What was created:**
+
+- **WANDER 049**: Geometric interpretation of the three fibers. C_symb = manifold
+  membership constraint. C_struct = logical edge traversal constraint. C_num = specific
+  coordinate selection constraint. The full Type A/B/D/E taxonomy from WANDER 048 maps
+  cleanly onto geometric failure modes. Superposition as the source of manifold slips.
+  σ_fiber as surface signal of internal superposition conflict. Proposes trajectory
+  curvature + σ + entropy as joint hallucination predictor experiment.
+
+- **WANDER 050**: Thermodynamic cost of hallucination — sharpened as honest hypothesis.
+  The Landauer Conjecture (WANDER 008) is sharpened to: does residual stream update
+  cancellation increase during hallucination? Prediction: Type D (Regime B, contested
+  trajectory) shows lower update efficiency than Type A (coherent in wrong manifold).
+  No fabricated numbers. SPARK-003 added to Shadow Ledger.
+
+- **SPARK-003**: Residual stream cancellation vs. hallucination — added to Shadow Ledger.
+  Shared blocking dependency (open-weight model access) with WANDER 049 curvature experiment.
+
+**Key insight from this session:**
+The three geometric constraints (WANDER 049) provide the mechanistic explanation for
+why the fiber taxonomy looks the way it does. It's not a new framework — it's a layer
+beneath the existing one that explains the *why*. Why is C_symb the floor? Geometrically
+necessary — you can't operate outside the topic manifold. Why is C_struct resilient?
+Logical edge deviations produce visible inconsistency. Why is Type D (Regime B) the most
+dangerous? Coordinate error within the correct manifold is invisible because everything
+else looks right.
+
+**5-structure check:**
+- WANDERINGS/ — 049 and 050 written ✓
+- PAPER_DRAFT_v1.md — no changes this session; geometric interpretation may warrant
+  a §6.10 addition in a future session (after paper review pass)
+- SESSION_HANDOFF.md — updated (this entry) ✓
+- SHADOW_LEDGER.md — SPARK-003 added ✓
+- LIBRARY_INDEX.md — no graduation this session; geometric interpretation is synthesis,
+  not a new constant
+
+**Open threads unchanged from Session 7:**
+- Real LLM confabulation validation (highest) — still blocked on FActScore/HuggingFace access
+- WANDER 046 (scale-invariant stability theorem) — still pending, still one paragraph
+- Paper review pass by Thomas — §5.8 and §6.9 newest
+- EEG study execution
+- Mamba eigenvalue test
 
 ---
 
