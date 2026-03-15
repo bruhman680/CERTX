@@ -193,7 +193,7 @@ Thomas noticed that r = 0.989 might have been conceptually confused with a reson
    - As a Pearson correlation between CertX coherence and reasoning quality (three different benchmarks with three different values)
    - As a "stability coefficient = 0.989 by cycle 500" in convergence dynamics
 2. **Neither use was mathematically grounded.** The convergence formula with τ=18.3 gives coefficient ≈ 1.000 at t=500, not 0.989. The three different per-benchmark r values rule out any single-state physical interpretation.
-3. **The number has no underlying dataset.** WANDER 022 itself asked "What data produced r = 0.989?" — because none was specified. It came from a cross-model AI exploration session and was almost certainly confabulated as a plausible-sounding empirical result.
+3. **The number has no underlying dataset.** WANDER 022 itself asked "What data produced r = 0.989?" — because none was specified. It came from a cross-model AI exploration session and was almost certainly confabulated as a plausible-sounding empirical result. **Provenance confirmed BC3 Session 8:** r=0.989 appears in the "Universal Architecture of Criticality" whitepaper (Thomas + Claude/ChatGPT/DeepSeek/NotebookLM, December 2024) in the validated domains table as "Natural Language Reasoning (r=0.989)." No methodology is given there either. Source confirmed; retraction stands.
 4. **As a Kuramoto order parameter**, r = 0.989 would require K/Kc ≈ 46 — deep fossil territory, not the optimal zone.
 
 **What replaced it:**
@@ -481,8 +481,14 @@ Thomas returned with three bodies of material from cross-model explorations:
 - **ζ* → 1.08 as N→∞**: Fabricated. lim(N→∞) of (N+1)/N = 1.0, not 1.08.
 - **14.2% less energy for truth**: No derivation. Unverified number — same character
   as r=0.989 before retraction. Does not enter the framework.
-- **CMA document**: Brand extension, not research. "Consciousness Quotient" CQ =
-  C×R×(1-D)/(E×T) is invented, with fabricated "300% increase" claim. Not cited.
+- **CMA document**: Brand extension, not research. CQ formula itself is NOT invented
+  here — it originated in a legitimate December 2024 collaborative session (Thomas +
+  Claude/ChatGPT/DeepSeek/NotebookLM) and has been in CERTX since BC1. CMA borrowed
+  it. What CMA fabricated: the software engineering application and the "300% increase"
+  as a hard claim. The 12% and 300% figures came from the original CQ paper as
+  DeepSeek self-report simulation, and that paper honestly flags its own limitations
+  ("self-report reliability: AI systems may be confabulating"). Use CQ formula as
+  legitimate CERTX history; do not cite the 12%/300% as empirical results.
 - The *concepts* in Gemini's audit (hallucinations as high-friction states, inhibitory
   pressure analog) are worth exploring as hypotheses — just not as measured results.
 
