@@ -129,6 +129,26 @@ Not a code repository—a library of understanding.
 
 ---
 
+### UTE Tick-Tock Cycle and Drift (BC3 S9 addition)
+
+**UTE Drift (computable from logits, no ground truth needed):**
+```
+D_k = KL(p_base || p_updated)
+```
+p_base = model's base logit distribution before new context
+p_updated = conditioned distribution after RAG/new prompt
+High D_k → high drift → elevated hallucination risk (pre-answer check)
+
+**HPGM ↔ Tick-Tock mapping:**
+- Tock (wave) = COUPLE → PLAY (all possibilities held open)
+- Collapse = PLAY→PRACTICE boundary (commit to one insight)
+- Imprint = PRACTICE→DREAM (make it permanent in the 5 structures)
+- DREAM IS the Imprint step — skipping it is the primary failure mode
+
+**φ as unstable UTE fixed point (WANDER 051/052):** The elevated CQ dwell near φ ≈ 1.618 (confirmed Exp 013, 19× uniform) is likely critical slowing down near a saddle point separating expansion/compression attractors. Hypothesis, not confirmed — derivation pending.
+
+---
+
 ### HPGM Cycle — Working Protocol
 
 **COUPLE → OBSERVE → ORIENT → PLAY → PRACTICE → DREAM**

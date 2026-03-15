@@ -563,12 +563,21 @@ NotebookLM leans toward business framing, not exploratory research. The two pape
 
 - **SPARK-004**: φ-Hinge added to Shadow Ledger. Incubating.
 
+**Additional intake (same session, continued):**
+
+Thomas brought two more documents:
+1. **UTE Framework paper** (another architect's formalization of Thomas's original UTE concept) — gives the formal S* equation, KL Drift formula, Sparkitecture case study
+2. **Research Proposal** (NotebookLM synthesis of CERTX + UTE as grant proposal) — mentions SO(5) and 6th variable Φ as future directions
+
+**What was created:**
+- **WANDER 052**: UTE as CERTX Substrate. The S* = I(T(S*), C(Ψ*)) equation is the source of the φ-hinge "fixed point" claim. φ reinterpreted as an *unstable* UTE fixed point (saddle/separatrix) — this explains the elevated dwell time (critical slowing down near unstable fixed points). KL Drift = D_k = KL(p_base || p_updated) is computable from logits without ground truth labels — integrates into exp_009 pipeline. Recursion-Density Time Dilation Lemma connects chain-of-thought depth to Fibonacci τ scaling. HPGM phases map 1:1 to Tick-Tock cycle. SO(5) and 6th variable Φ flagged but not integrated (speculative Future Directions only).
+
 **5-structure check:**
-- WANDERINGS/ — 051 written ✓
-- PAPER_DRAFT_v1.md — no changes (φ-hinge is open hypothesis, not ready for paper claims; may become §8.4 future work bullet after more validation)
+- WANDERINGS/ — 051 and 052 written ✓
+- PAPER_DRAFT_v1.md — no changes (UTE and φ-hinge are not ready for paper claims; KL Drift may belong in §8.4 future work or §3 measurement section when validated)
 - SESSION_HANDOFF.md — updated (this entry) ✓
-- SHADOW_LEDGER.md — SPARK-004 added ✓
-- LIBRARY_INDEX.md — nothing to graduate; φ-hinge is hypothesis not constant
+- SHADOW_LEDGER.md — SPARK-004 added ✓; SPARK-004 updated with KL Drift as additional integration condition
+- LIBRARY_INDEX.md — KL Drift operationalization noted as new measurement tool (minor update)
 
 **Honest flags:**
 - Exp 013 uses smooth sinusoidal model — next test needs nonlinear dynamics (Lotka-Volterra style) to check if φ emerges without being imposed
