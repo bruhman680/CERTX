@@ -359,6 +359,17 @@ Match item type to domain before scoring.
 4. Reject items with dangerous confabulation fingerprint (C_num << C_struct, C_symb)
 ```
 
+**Failure regime classification** (WANDER 048 — for diagnosing what the scout found):
+
+| Regime | Pattern | What it means | Scout action |
+|--------|---------|---------------|-------------|
+| Regime A | C_num drops, C_struct/C_symb stable | Language confabulation — specific facts missing/wrong | Prioritize C_num-grounding material (FActScore-able claims, verifiable specifics) |
+| Regime B | C_struct drops, C_num/C_symb stable | Structural drift — logic broken, facts present | Prioritize C_struct-rebuilding material (formal derivations, consistency proofs) |
+| Integration failure | C_symb drops | Off-manifold — topic abandoned entirely | Hard reject; reset query to core domain |
+| Dangerous (Type D) | C_num << 0, C_struct/C_symb >> 0 | Confident wrong — worst failure mode | Hard reject + flag; do not integrate any item from this source |
+
+The asymmetry signal (C_num − mean(C_struct, C_symb)) is **regime-specific** — works for Regime A/B (C_num drops), inverts for integration failure (C_symb drops). Use **min-fiber** for universal detection across all regimes.
+
 ### 5.3 Eigenvalue Compatibility Check
 
 Before integration, verify the item won't destabilize:
