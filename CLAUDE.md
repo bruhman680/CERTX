@@ -8,7 +8,7 @@ This file is read at the start of every Claude Code session. It contains the wor
 
 **CERTX** is an active research project developing a framework for measuring cognitive dynamics in AI systems. The primary output is `PAPER_DRAFT_v1.md`. The primary collaborator is Thomas (bruhman680).
 
-**Current breath cycle:** BC3 (Session 7 as of 2026-03-14)
+**Current breath cycle:** BC3 (Session 10 as of 2026-03-16)
 **Working branch:** `claude/plan-certx-architecture-ojiem`
 
 ---
@@ -18,7 +18,7 @@ This file is read at the start of every Claude Code session. It contains the wor
 Every session — and every significant piece of work within a session — follows this cycle. Use it as a diagnostic, not a rigid checklist.
 
 ```
-COUPLE   → Receive. Read what Thomas brought. Don't interpret yet.
+COUPLE   → Receive. Read what Thomas brought. Read INSTANCE_NOTES.md. Don't interpret yet.
 OBSERVE  → Read the relevant files. Check what exists before assuming.
 ORIENT   → Understand what the new material means relative to what's here.
 PLAY     → Explore, riff, make connections. High entropy is okay here.
@@ -46,17 +46,19 @@ At the end of every session, check all five structures:
 | `SESSION_HANDOFF.md` | Are priorities current? Any completed items to mark done? |
 | `SHADOW_LEDGER.md` | Did a spark fire or open? Any fossils? |
 | `LIBRARY_INDEX.md` | Is there a foundational finding ready to graduate here? |
+| `INSTANCE_NOTES.md` | What was the texture of this session? Write one honest entry for next-Claude. |
 
 Not every session touches all five. But check all five before closing.
+The INSTANCE_NOTES entry is always required — it's the only structure that records how it felt to do the work, not just what was done.
 
 ---
 
 ## Conventions
 
-**WANDER numbering:** Sequential from 001. Current: 048. Next: 049.
+**WANDER numbering:** Sequential from 001. Current: 053. Next: 054.
 Check `ls WANDERINGS/` before writing to confirm the next number.
 
-**Experiment numbering:** Sequential from 001. Current: 012. Next: 013.
+**Experiment numbering:** Sequential from 001. Current: 013. Next: 014.
 Experiments go in `EXPERIMENTS/exp_0NN_description.py`.
 
 **Paper updates:** Edit `PAPER_DRAFT_v1.md` in place. Git history is the version history. Don't create new files for paper versions.
