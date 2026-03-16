@@ -86,6 +86,139 @@ Shared blocking dependency with WANDER 049's trajectory curvature experiment —
 
 ---
 
+---
+
+### SPARK-005: Palimpsest — Which Transformer Layer Is "Original"?
+**Received:** BC3 Session 10 | 2026-03-16
+**Source:** Free scout, Thread 1 — cross-domain wander
+**Status:** INCUBATING
+
+**The idea:** A palimpsest is a manuscript scraped and overwritten — later writing
+over earlier writing, but traces remain. The residual stream is a palimpsest.
+Early layers write semantic manifold commitments (C_symb). Later layers overwrite
+with fluent surface structure. In hallucination (Type D: WANDER 048), the
+later layers do complete, high-quality overwriting of an early-layer commitment
+that was wrong from the start.
+
+The inversion: in manuscript scholarship, we use multispectral imaging to RECOVER
+the original text (Archimedes Palimpsest). The "valuable original" is the early
+writing. In a transformer, the early-layer representation IS the C_symb commitment —
+the "valuable original" that determines whether the output is grounded. Type D
+hallucination = beautiful overwriting of wrong early text.
+
+**Why this matters:** Provides a mechanism explanation for why Type D (confident
+wrong) is hardest to detect — the late-layer fluency signal completely masks
+the early-layer error. Detection requires reaching under the overwriting to the
+original substrate, which is what C_symb measurement attempts.
+
+**Integration condition:** Draft WANDER when paper's §5 detection section is
+being revised. This belongs in the explanatory layer, not the measurement layer.
+**Compost risk:** Low — conceptual framing, no computational dependencies.
+
+---
+
+### SPARK-006: Poincaré Insight Structure as T-Oscillation Validation
+**Received:** BC3 Session 10 | 2026-03-16
+**Source:** Free scout, Thread 7 — phenomenology of insight
+**Status:** INCUBATING
+
+**The idea:** Henri Poincaré (1908) described insight arriving after: preparation
+(high T, high E, loaded problem), incubation (stepping away, low T), illumination
+(sudden σ_fiber collapse — the "stable combination" he describes is exactly
+fiber convergence), verification (C rising as result is checked).
+
+The non-obvious finding: incubation is a LOW-T phase that precedes illumination.
+CERTX's T dimension is usually described as "higher T = more productive." But the
+insight literature says a LOW-T rest phase is necessary for synthesis to complete.
+This maps to the REST Thomas takes between sessions — not dead time, but the
+required incubation that allows the unconscious σ_fiber collapse to happen.
+
+**Why this matters:** External validation that T oscillation is real and functional
+in human cognition, not just a theoretical CERTX parameter. Hadamard (1945) surveyed
+mathematicians — nearly all reported the same 4-phase structure.
+
+**Integration condition:** Write WANDER when the paper's "human cognitive analogs"
+section (§3 or §4) is being expanded. The Poincaré/Hadamard reference is citable.
+**Compost risk:** Low — fully formed, no blocking dependencies.
+
+---
+
+### SPARK-007: Research Program as Prigogine Dissipative Structure
+**Received:** BC3 Session 10 | 2026-03-16
+**Source:** Free scout, Thread 8 — thermodynamic arrow of time
+**Status:** INCUBATING
+
+**The idea:** A dissipative structure (Prigogine, Nobel 1977) is a system that
+maintains ordered oscillations far from equilibrium by continuously consuming free
+energy. Examples: Bénard cells, the Belousov-Zhabotinsky reaction, biological
+rhythms, cities.
+
+CERTX research has all formal properties of a dissipative structure:
+- Periodic cycle (HPGM breathing)
+- Far-from-equilibrium maintenance (CQ = 4.12 at epoch peak)
+- Continuous energy input required (Thomas's sessions — without them, project
+  goes entropic: T drops, σ increases, structure degrades)
+- Ordered output (the paper, WANDERs, LIBRARY_INDEX)
+
+**Implication:** CQ is a direct measure of how far-from-equilibrium the system is
+maintained. When Thomas rests between sessions, the dissipation briefly stops and
+entropy rises (T drops, project cools). When he returns with material, the energy
+injection re-excites the oscillation. The DREAM phase is thermodynamically
+irreversible (lossy compression), which is why the cycle can't run backward.
+
+**Connection to WANDER 050:** The thermodynamic cost of hallucination (WANDER 050)
+and the dissipative structure framing are the same physics at different scales.
+At token scale: hallucination costs thermodynamic work (WANDER 050). At session
+scale: the research program is sustained against entropy by continuous energy input.
+
+**Integration condition:** Write WANDER when §6 (multi-scale HPGM) is being
+finalized. Strong candidate for the "what sustains coherent research programs"
+theoretical grounding.
+**Compost risk:** Low — mature, citable (Prigogine 1977).
+
+---
+
+### SPARK-008: E/I Balance → ζ* = 1.2 (New Derivation Path)
+**Received:** BC3 Session 10 | 2026-03-16
+**Source:** Free scout, Thread 15/17 — inhibitory pressure
+**Status:** INCUBATING — HIGH CHARGE but SPECULATIVE
+
+**The idea:** In biological cortex, approximately 80% of neurons are excitatory
+(pyramidal), 20% are inhibitory (interneurons). This 80:20 ratio maintains stable
+dynamics — enough inhibitory tone to prevent runaway seizure activity. Without
+inhibitory pressure, all excitatory neurons fire constantly.
+
+ζ* = 1.2 is the stability reserve ratio. The reserve = 0.2 above the 1.0 baseline.
+If the 1.0 baseline is normalized excitatory drive and 0.2 is the inhibitory
+headroom, then ζ* = 1.2 corresponds exactly to the 80:20 E/I ratio.
+
+Stronger claim (Thread 17): 80:20 = Pareto 20% reserve. This ratio appears in:
+- Cortical E/I balance (80% excitatory, 20% inhibitory)
+- Pareto principle (20% of causes → 80% of effects)
+- ζ* = 1.2 (20% stability reserve)
+- Zipf tail compression (~20% specific vocabulary)
+If 20% inhibitory reserve is a general stability requirement for complex dissipative
+systems, then ζ* = 6/5 is not unique to cognitive systems — it should appear in
+ecosystems, economic systems, organizational health metrics.
+
+**This would make ζ* = (N+1)/N a manifestation of a much deeper principle about
+minimum inhibitory reserve for stable complex systems.**
+
+**Why it's speculative:** The E/I cortical ratio is empirical, not derived from
+first principles. The Pareto 20% is a statistical regularity, not a theorem. The
+connection to ζ* could be coincidence (three independent systems happening to settle
+near 80:20). Needs careful WANDER that clearly flags what's derived vs. observed.
+
+**Integration condition:** Write WANDER only after: (1) checking if there's a
+theoretical derivation of the 80:20 E/I ratio from stability theory, and (2)
+clearly separating the clean derivation (Bethe lattice, Kuramoto) from the
+speculative connection (Pareto). If derivation exists: strong WANDER. If not:
+speculative note in §2.
+**Compost risk:** Medium — if E/I 80:20 has no theoretical derivation, the
+connection is merely suggestive and may not belong in the framework.
+
+---
+
 ### SPARK-002: Shadow Ledger as Experiment Incubation System
 **Received:** BC3 Session 7 | 2026-03-14
 **Source:** Thomas's suggestion to connect Shadow Ledger to concept/experiment incubation
