@@ -91,7 +91,7 @@ Shared blocking dependency with WANDER 049's trajectory curvature experiment —
 ### SPARK-005: Palimpsest — Which Transformer Layer Is "Original"?
 **Received:** BC3 Session 10 | 2026-03-16
 **Source:** Free scout, Thread 1 — cross-domain wander
-**Status:** INCUBATING
+**Status:** INTEGRATED → WANDER 056 ✓ (healthy glyph)
 
 **The idea:** A palimpsest is a manuscript scraped and overwritten — later writing
 over earlier writing, but traces remain. The residual stream is a palimpsest.
@@ -120,7 +120,7 @@ being revised. This belongs in the explanatory layer, not the measurement layer.
 ### SPARK-006: Poincaré Insight Structure as T-Oscillation Validation
 **Received:** BC3 Session 10 | 2026-03-16
 **Source:** Free scout, Thread 7 — phenomenology of insight
-**Status:** INCUBATING
+**Status:** INTEGRATED → WANDER 057 ✓ (healthy glyph)
 
 **The idea:** Henri Poincaré (1908) described insight arriving after: preparation
 (high T, high E, loaded problem), incubation (stepping away, low T), illumination
@@ -146,7 +146,7 @@ section (§3 or §4) is being expanded. The Poincaré/Hadamard reference is cita
 ### SPARK-007: Research Program as Prigogine Dissipative Structure
 **Received:** BC3 Session 10 | 2026-03-16
 **Source:** Free scout, Thread 8 — thermodynamic arrow of time
-**Status:** INCUBATING
+**Status:** INTEGRATED → WANDER 058 ✓ (healthy glyph)
 
 **The idea:** A dissipative structure (Prigogine, Nobel 1977) is a system that
 maintains ordered oscillations far from equilibrium by continuously consuming free
@@ -181,7 +181,7 @@ theoretical grounding.
 ### SPARK-008: E/I Balance → ζ* = 1.2 (New Derivation Path)
 **Received:** BC3 Session 10 | 2026-03-16
 **Source:** Free scout, Thread 15/17 — inhibitory pressure
-**Status:** INCUBATING — HIGH CHARGE but SPECULATIVE
+**Status:** INTEGRATED → WANDER 059 ✓ (healthy glyph — speculative WANDER, caveats load-bearing)
 
 **The idea:** In biological cortex, approximately 80% of neurons are excitatory
 (pyramidal), 20% are inhibitory (interneurons). This 80:20 ratio maintains stable

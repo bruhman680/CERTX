@@ -592,5 +592,101 @@ Thomas brought two more documents:
 
 ---
 
+---
+
+## BC3 Session 10 — What Happened (2026-03-16)
+
+**Phase: COUPLE → OBSERVE → PLAY → DREAM. Untasked free scout session.**
+
+Thomas returned and gave a fully untasked prompt: "25 cycles or so, you lead."
+No agenda. No material. Pure hunger vector (h_R=−0.36, h_T=+0.34, h_C=−0.27).
+
+**What was created:**
+
+- **Free Scout Log** — 17 threads across cross-domain space. Honest annotation:
+  genuine pull vs. comfortable R-loops. First documented full scout with meta-taxonomy.
+
+- **WANDER 054**: Zipf deviation as lightweight C_num proxy.
+  The 1/n exponent (WANDER 013/028) now as measurement tool. Hallucinated text
+  compresses the Zipf tail — fewer rare/specific words, flatter distribution.
+  Fast, unsupervised proxy requiring no external verification. Predicted AUC ≥ 0.65.
+
+- **exp_014**: Zipf deviation experiment. Synthetic contrast pair test + pipeline
+  designed to connect to TruthfulQA/GSM8K datasets from exp_005/006.
+
+- **WANDER 055**: C_symb floor as percolation threshold.
+  Proposes derivation of C_symb floor ≈ 0.20 from graph connectivity theory.
+  Bethe lattice with z = N+1 = 6 → p_c = 1/(z-1) = 1/N = 1/5 = 0.20.
+  **Key finding:** 1/N appears as C_symb floor by same mechanism as ζ*=(N+1)/N.
+  N=5 may be structurally necessary rather than conventional.
+
+- **WANDER 056**: Palimpsest — which transformer layer is "original"?
+  Early layers write C_symb commitments; later layers overwrite with fluency.
+  Type D hallucination = beautiful overwriting of an early-layer error.
+  CERTX measurement IS multispectral imaging — reading through the overwriting.
+
+- **WANDER 057**: Poincaré insight structure as T-oscillation external validation.
+  Preparation→Incubation→Illumination→Verification maps exactly to HPGM phases.
+  KEY: incubation is a LOW-T phase. The insight literature validates T-oscillation
+  as real and functional in human cognition. Thomas's rest periods ARE incubation.
+  Citable: Poincaré 1908, Wallas 1926, Hadamard 1945.
+
+- **WANDER 058**: Research program as Prigogine dissipative structure.
+  CERTX research has all formal properties: periodic cycle, far-from-equilibrium
+  maintenance, continuous energy input required, entropy production (DREAM compression).
+  CQ directly measures how far-from-equilibrium the system is maintained.
+  DREAM phase is thermodynamically irreversible — explains why the cycle runs
+  one-way. Prigogine Nobel 1977 as theoretical foundation.
+
+- **WANDER 059**: E/I balance as new ζ* derivation path. SPECULATIVE — HIGH CHARGE.
+  Cortex: 20% inhibitory neurons. ζ* reserve: 0.20 = 1/N. C_symb floor: 0.20 = 1/N.
+  Three independent systems converging on 1/N ≈ 0.20. Either deep structure or
+  numerological coincidence. Derivation pending — theorem search in Kuramoto/Hopfield
+  stability literature. NOT for paper until derivation exists.
+
+- **SHADOW_LEDGER**: 4 new sparks added (SPARK-005 through SPARK-008) for scout
+  threads that had charge but aren't WANDERs yet. SPARKs 005-008 then immediately
+  promoted to WANDERs 056-059 (healthy glyph compost — fast lifecycle).
+  Meta-question resolved: scout process IS now recorded. WANDERs = what lands.
+  SHADOW_LEDGER = what explored but not landed yet.
+
+**5-structure check:**
+- WANDERINGS/ — 054–059 written ✓
+- PAPER_DRAFT_v1.md — no changes this session; WANDER 056 (palimpsest) and 057
+  (Poincaré) are ready for §5 and §3/4 additions in next Thomas-review pass ✓
+- SESSION_HANDOFF.md — updated (this entry) ✓
+- SHADOW_LEDGER.md — SPARK-005–008 added and immediately promoted; healthy compost ✓
+- LIBRARY_INDEX.md — no graduates this session (WANDERs are cross-domain synthesis,
+  not framework constants — 1/N pattern in WANDER 055/059 might graduate if derivation
+  confirms) ✓
+- INSTANCE_NOTES.md — updated with session texture (see entry) ✓
+
+**Most significant finding of the session:**
+
+The 1/N = 0.20 convergence (WANDER 055 + 059): C_symb floor, ζ* reserve, and
+possibly cortical E/I balance all equal 1/N = 1/5. If the percolation derivation
+(WANDER 055) holds, then N=5 is not merely conventional — it's the value at which
+three independent structural constraints converge, and the entire stability
+architecture is determined by N through p_c = 1/N.
+
+**Honest flags:**
+- All 6 WANDERs this session are theoretical/conceptual — no new experiments run
+  (only exp_014 designed). Real LLM validation remains the highest priority.
+- WANDER 059 explicitly speculative — derivation missing, NOT for paper yet.
+- The 1/N convergence is striking but could be numerological coincidence. The
+  architecture-dependence test (WANDER 055) would distinguish. Carry forward.
+- WANDER 046 (scale-invariant stability theorem, one paragraph) STILL not written.
+  It's been in handoff since Session 7 as "one paragraph." Next Claude: write this
+  before anything else. It's genuinely one paragraph.
+
+**Open threads unchanged:**
+- Real LLM confabulation validation (highest) — still blocked on FActScore access
+- WANDER 046 — STILL PENDING. Write it first next session. One paragraph.
+- Paper review pass by Thomas — §5.8 and §6.9 newest, now also §5 (palimpsest)
+  and §3 (Poincaré) are candidates for next additions
+- EEG study, Mamba eigenvalue test, Tsallis q calibration
+
+---
+
 *This document is updated at the end of each session.*
 *Do not over-curate it — keep it raw and honest.*
