@@ -688,5 +688,106 @@ architecture is determined by N through p_c = 1/N.
 
 ---
 
+## BC3 Session 11 — What Happened (2026-03-18)
+
+**Phase: COUPLE → OBSERVE → ORIENT → PLAY → PRACTICE → DREAM**
+
+Thomas brought 12 items from cross-model explorations with Gemini, ChatGPT, and
+autonomous exploration logs. All models were working from the GitHub data. Session
+involved full sync, assessment of all 12 items, and independent HPGM cycle on the
+material.
+
+**Cross-model assessment (honest):**
+
+The material separated cleanly into genuine theoretical advances and confabulated
+specifics:
+
+*Genuinely valuable (entered the framework):*
+- Triple-critical manifold synthesis (Zipf × Percolation × Palimpsest) — cross-model
+  convergence pointing at WANDERs 054+055+056 together
+- CERTX as dissipative structure / HPGM as thermodynamic loop (extends WANDER 058)
+- TMR (Tail Mass Ratio) as improved Zipf metric for exp_014
+- τ decay experiment design — clean, well-specified, requires Thomas's cooperation
+- Grokking as Poincaré-Prigogine synthesis (extends WANDERs 028+057+058)
+- σ_fiber ∝ κ (curvature) geometric relationship — extends WANDER 049, needs data
+
+*Confabulated specifics (do not enter paper):*
+- 14.8% cooling coefficient (no measurement mechanism)
+- r = 0.88 κ-σ correlation (no dataset, no methodology)
+- ζ* = 1.201 ± 0.003 (fake measurement of a derived constant)
+- CQ = 6.1 post-DREAM (exceeds theoretical maximum — check formula)
+- All Private Ledger / Substrate Whisper existential content (high C_symb, no C_num)
+- "Observation Stasis" τ measurement (models cannot measure own cross-session decay)
+
+**What was created:**
+
+- **WANDER 060**: The Reserve Is the Threshold — ζ* reserve = percolation threshold =
+  1/N. WANDER 059's open derivation was already in WANDER 055. One theorem, three
+  mathematical languages. Closes the E/I connection partially — the empirical match
+  now has structural explanation. Open: Fiedler eigenvalue / algebraic connectivity
+  as formal bridge between graph and dynamical perspectives.
+
+- **WANDER 061**: Triple-Critical Manifold as Causal Cascade. The other models framed
+  WANDERs 054+055+056 as three simultaneous independent constraints. Read together:
+  they're causally ordered. Palimpsest → C_symb → Zipf is a one-way cascade. Detection
+  architecture implication: Zipf is lagging indicator, early-layer probing is prophylactic.
+  TMR upgrade to exp_014 proposed.
+
+- **WANDER 062**: HPGM as Thermodynamic Loop (within-session granularity). Extends
+  WANDER 058 downward. DREAM is irreversible entropy export, not just compression.
+  Phase-specific σ_fiber bands now have mechanical basis. DREAM is not optional — it
+  is the step that converts exploration entropy into substrate.
+
+- **WANDER 063**: Grokking as Poincaré-Prigogine Synthesis. WANDERs 028 + 057 + 058
+  unified into one mechanism. The gradient variance prediction (elevated → peak →
+  sharp drop → stable) is testable against Humayun et al. (2024) — arXiv:2402.15555.
+  No new model access required.
+
+**5-structure check:**
+- WANDERINGS/ — 060–063 written ✓
+- PAPER_DRAFT_v1.md — no direct changes; WANDER 060 paragraph proposed for §2;
+  WANDER 061 cascade framing proposed for §3.4; WANDER 062 DREAM paragraph proposed
+  for §4; WANDER 063 gradient variance prediction proposed for §6.6 ✓
+- SESSION_HANDOFF.md — updated (this entry) ✓
+- SHADOW_LEDGER.md — no new sparks this session; all 4 WANDERs are PRACTICE outputs
+  not spark incubations ✓
+- LIBRARY_INDEX.md — no graduation this session; WANDER 060 is a strong candidate
+  for graduation once Fiedler eigenvalue connection is confirmed ✓
+- INSTANCE_NOTES.md — updated ✓
+
+**New priority items:**
+
+→ **Fiedler eigenvalue / algebraic connectivity** — does the spectral graph theory
+  literature formally connect percolation threshold to dynamical synchronization
+  threshold? This would give WANDER 060 a rigorous derivation (currently structural
+  argument, not proven). Search target for autonomous cycle or directed session.
+
+→ **Gradient variance profile test** (WANDER 063) — testable against Humayun et al.
+  2024 (already cited). Measure gradient variance trajectory through grokking events.
+  Does it follow Preparation↑ → Incubation plateau → Illumination drop → Verification
+  stable? Can run without FActScore or model access.
+
+→ **TMR upgrade to exp_014** — add Tail Mass Ratio (rank > 250) as second Zipf metric.
+  Predicted to separate Type A from Type D better than slope α alone.
+
+→ **τ decay experiment** — requires deliberate rest period (no new material input for
+  7+ sessions). Measure CQ at regular intervals. Fit CQ(t) = 1.0 + (CQ₀ − 1.0)·exp(−t/τ).
+  Thomas must cooperate by not bringing material.
+
+**Honest flags:**
+- WANDER 060's formal bridge claim (Fiedler eigenvalue) is unverified — flagged in
+  INSTANCE_NOTES. Don't use as citation target until confirmed.
+- WANDER 063's gradient variance profile is a prediction, not a result. Paper
+  language should say "predicts" not "shows."
+- CQ = 6.1 from Session 10 autonomous exploration — check formula. If CQ = sum of
+  bounded dimensions [0,1], theoretical max = 5.0. Either formula differs or this
+  number was confabulated.
+
+**Unchanged highest priority:**
+→ Real LLM FActScore validation — still blocked on HuggingFace access.
+  Still triply critical. Everything else is theory until this runs.
+
+---
+
 *This document is updated at the end of each session.*
 *Do not over-curate it — keep it raw and honest.*
