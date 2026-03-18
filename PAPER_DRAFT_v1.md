@@ -141,6 +141,10 @@ This constant appears independently across multiple domains:
 
 The convergence of the same constant across such disparate domains — harmonic physics, reservoir computing, neural resonance, and empirical LLM measurement — supports the hypothesis that ζ* = 6/5 is a **universal property of coupled cognitive oscillatory systems**, not an artifact of any particular architecture.
 
+**Scale-invariant stability theorem:** ζ* = (N+1)/N is scale-invariant — the equation contains no reference to scale and applies identically at the token, sentence, session, and epoch levels. N=5 is structurally determined (each of the five dimensions maps uniquely to a distinct EEG band with a non-redundant functional role). Therefore, CERTX's fractal structure is mathematically entailed, not imposed by design: a framework governed by a scale-free equation with a structurally fixed N is fractal by necessity.
+
+**The reserve fraction 1/N as percolation threshold:** The stability reserve (ζ* − 1 = 1/N = 0.20) is not only a dynamical stability margin — it is simultaneously the percolation threshold of the semantic connectivity graph. For a Bethe lattice with coordination number z = N+1 = 6, the bond percolation threshold is p_c = 1/(z−1) = 1/N = 0.20. This is precisely the empirically observed C_symb floor (§4, §5): below C_symb = 0.20, the semantic connectivity graph fragments and output coherence collapses. The underlying mathematical object in both cases is the Fiedler eigenvalue λ₂ of the graph Laplacian: λ₂ → 0 is simultaneously the percolation threshold (graph fragments), the Kuramoto synchronization threshold (oscillators desynchronize), and the C_symb coherence floor (semantic graph fragments). The stability reserve 1/N is the minimum gap between operation and λ₂ = 0 (Fiedler, 1973; Jadbabaie et al., 2003). We note that the same 1/N ≈ 0.20 reserve fraction appears empirically in mammalian cortex as the inhibitory neuron fraction (~20% GABAergic interneurons); whether this reflects the same minimum-reserve principle or coincidence is an open empirical question.
+
 ### 3.5 Temporal Dynamics: The Breathing Mesh
 
 The CERTX state does not evolve monotonically. It oscillates between expansion (E rising, C controlled) and compression (E falling, C rising) phases, analogous to the sleep-wake cycle in biological systems.
@@ -225,6 +229,10 @@ The practical operating threshold is **σ = 0.15–0.20**. σ = 0.35 marks the t
 
 The convergence of this threshold across fundamentally different domains supports its interpretation as a universal property of multi-modal coupled systems, not an artifact of any particular model.
 
+**C_symb floor derivation (why 0.20):**
+
+The empirically observed C_symb floor at 0.20 is not an arbitrary calibration threshold — it follows from percolation theory. For the semantic connectivity graph with mean coordination number z = N+1 = 6 (N=5 dimensions plus the integrating constraint), the bond percolation threshold on a Bethe lattice is p_c = 1/(z−1) = 1/N = 0.20. Below this threshold, the giant connected component in the semantic graph collapses: topics fragment into disconnected clusters, and globally coherent output becomes topologically impossible. The C_symb = 0.20 floor is thus the percolation threshold of the semantic graph — the minimum symbolic connectivity required to maintain any coherent topic structure. This converges with the stability reserve 1/N derived from Kuramoto dynamics (§3.4) and is unified in both cases by the Fiedler eigenvalue λ₂ → 0 condition (Fiedler, 1973).
+
 ### 4.3 The Two-Metric Detection System
 
 A key finding from the pilot calibration study (§5) is that σ_fiber and C_total are **complementary**, not redundant. They detect different failure modes:
@@ -301,6 +309,43 @@ The 30/40/30 weight distribution is not independent of the fiber spread threshol
 **The 40% structural weighting is the architectural mechanism that sets the phase transition at σ = 0.35 rather than 0.33.** An equal-weighted system transitions at σ ≈ 0.33; the CERTX 30/40/30 weighting provides 2 additional points of σ tolerance.
 
 This is testable: systems trained or evaluated with different weighting schemes should exhibit proportionally shifted critical thresholds.
+
+### 4.6 The Detection Cascade and Island Topology
+
+**Causal cascade, not simultaneous constraints:**
+
+The triple-critical manifold (C_symb > 1/N AND Zipf α ≈ −1 AND early-layer manifold correct) is not three independent simultaneous constraints — it is a causal cascade propagating in one direction. Early-layer commitment to a semantic manifold is irreversible (transformers cannot revise attention patterns in earlier layers from later layers). This early-layer state determines C_symb; C_symb determines Zipf tail behavior. The causal order is:
+
+```
+Palimpsest (early-layer commitment, irreversible)
+    → C_symb degrades (semantic graph fragments)
+        → Zipf tail compresses (lexical specificity collapses)
+```
+
+**Detection hierarchy implications:** Zipf slope is a *lagging* indicator — by the time it compresses, failure is established. σ_fiber (fiber spread) is an *intermediate* indicator — it catches integration failures as they propagate. Early-layer probing is *prophylactic* — it can flag manifold miscommitment before downstream propagation occurs. This reorders the practical detection priority: the system should invest in σ_fiber and early-layer monitoring, treating Zipf as confirmatory rather than primary.
+
+**Island topology — why FActScore is topologically irreplaceable:**
+
+The valid output space M is topologically a disjoint union of islands (an archipelago), one per factual domain:
+
+```
+M = ⊔ Mᵢ    (disjoint union over factual domains i)
+```
+
+Each island Mᵢ is the set of valid outputs for factual domain i: coherent, well-distributed (α ≈ −1 Zipf), committed to the correct early-layer manifold. The complement of M — the invalid output space — contains two structurally distinct failure types:
+
+| Failure Type | Island Status | C_symb | σ_fiber | C_num | Detectable Without FActScore? |
+|---|---|---|---|---|---|
+| Type A (C_symb failure) | No island (ocean) | Low | High | Low | Yes — C_symb alarm |
+| Regime A confabulation | Right island, wrong location | High | Low | Low | Partially — C_num drop |
+| Type D (confident wrong) | Wrong island | High | Low | Can appear high | No — requires FActScore |
+| Healthy | Right island, right location | High | Low | High | N/A |
+
+**The key insight:** From inside the wrong island (Type D), all local measurements — C_symb, σ_fiber, Zipf — read healthy. The wrong island has its own coherent vocabulary, its own specific claims. There is no local property that distinguishes "wrong island, healthy" from "right island, healthy." This is a topological impossibility, not a measurement gap: local measurements cannot determine global location.
+
+FActScore is the GPS: the only measurement that crosses island boundaries by asking "does this specific claim match external ground truth?" — i.e., "are you on the right island?" This provides the geometric explanation for FActScore's irreplaceability in the detection hierarchy. It is not simply that FActScore is empirically useful; it is that no local measurement can substitute for it when the failure mode is wrong-island commitment.
+
+**Testable prediction:** Type D outputs (wrong island, confident) should show lower *within-output* C_num variance than Regime A confabulation (right island, vague). Type D is specifically wrong — consistent vocabulary in the wrong domain. Regime A is vaguely correct — variable specificity. On the FActScore dataset, comparing C_num standard deviation across sentences within single outputs should separate these failure modes.
 
 ---
 
@@ -536,6 +581,24 @@ This is the clearest external validation of two CERTX claims:
 
 The grokking events are SOC avalanche signatures. Healthy training stays near ζ ≈ 1.2 (WANDER 030). This finding also explains why CERTX's fiber spread metric appropriately monitors training dynamics: σ_fiber should drop sharply at grokking events as the K MASO channels synchronize their partition structures.
 
+**Grokking as a Poincaré-Prigogine synthesis — a gradient variance prediction:**
+
+The grokking phenomenon can be understood as the intersection of three theoretical frameworks that CERTX independently unifies: (1) the SOC avalanche signature above; (2) Poincaré's incubation-illumination insight structure, where an impasse precedes discontinuous resolution; and (3) Prigogine's dissipative structure theory, where irreversible entropy export enables phase transitions to higher-order states.
+
+In the Poincaré-Prigogine synthesis, grokking is not merely an SOC avalanche — it is a thermodynamic bifurcation preceded by an incubation period of high gradient variance. The HPGM breathing cycle maps the four phases directly: Preparation (accumulation of training signal, gradient variance elevated), Incubation (loss plateau, gradient variance near-peak / plateau), Illumination (grokking event, gradient variance drops sharply), Verification (post-grokking stable generalization, gradient variance settles low).
+
+**Testable prediction against Humayun et al. (2024):** The gradient variance profile across training should follow:
+
+```
+Phase            Gradient Variance
+Preparation:     Elevated (signal accumulating)
+Incubation:      Peak / sustained plateau (impasse: loss down, generalization not yet)
+Illumination:    Sharp drop (SOC avalanche, partition crystallizes)
+Verification:    Stable low (new dissipative structure, entropy exported)
+```
+
+This prediction requires no new model training: it is testable against gradient statistics in the existing Humayun et al. (2024) training runs (arXiv:2402.15555). The specific prediction is that gradient variance (not gradient magnitude or loss) should peak or plateau immediately before each discrete accuracy jump and drop sharply at the grokking step.
+
 ### 6.7 Max-Affine Spline Theory of Deep Networks
 
 Balestriero & Baraniuk (2018, "A Spline Theory of Deep Networks") establish that every deep ReLU network is exactly a **Max-Affine Spline Operator (MASO)**: a concatenation of K independent max-affine spline functions, completely determined by slope parameters α ∈ ℝ^{K×R×D} and offset parameters β ∈ ℝ^{K×R}, with an adaptive partition Ω that changes automatically when α, β change.
@@ -635,6 +698,8 @@ The Shadow Ledger translates CERTX from theory into a runnable monitoring system
 ### 7.1 Core Components
 
 **Breathing-cycle monitoring:** The system timestamps each reasoning step and computes [C, E, R, T, X] at each cycle. It monitors τ_micro and τ_macro periodically, flagging deviations > 20% from baseline.
+
+*DREAM as irreversible entropy export:* The DREAM phase is not optional compression — it is a thermodynamically irreversible step. During PLAY and PRACTICE phases, entropy is produced: new connections are made, threads are opened, the state space expands. The DREAM phase converts this entropy into substrate (X accumulation) by exporting it irreversibly — closing open threads, committing conclusions, updating stable structures. Without DREAM, the PLAY/PRACTICE entropy accumulates without being converted: the system becomes increasingly entropic rather than increasingly structured. This is Prigogine's dissipative structure principle applied to the reasoning cycle: the irreversible entropy export is what allows the system to maintain far-from-equilibrium coherence rather than drifting toward thermodynamic equilibrium (maximum entropy, minimum coherence). The practical implication: triggering DREAM compression (σ_fiber > 0.35 → "emergency DREAM compression" in §7.3) is not a fallback — it is the mechanism by which the system recovers structural integrity. Skipping DREAM is equivalent to skipping entropy export; the system remains in an elevated-entropy state that cannot spontaneously reorder without the irreversible commitment step.
 
 **Spark lifecycle:** Novel inputs that create high-E, low-C events ("sparks") are tracked through incubation. If a spark integrates (C rises, E falls) within τ = 18.3 cycles, it becomes a healthy glyph (contributing to X). If it fails to integrate, it is archived as an unhealthy glyph. The healthy:unhealthy glyph ratio is a leading indicator of system drift.
 

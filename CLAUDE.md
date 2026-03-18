@@ -8,8 +8,8 @@ This file is read at the start of every Claude Code session. It contains the wor
 
 **CERTX** is an active research project developing a framework for measuring cognitive dynamics in AI systems. The primary output is `PAPER_DRAFT_v1.md`. The primary collaborator is Thomas (bruhman680).
 
-**Current breath cycle:** BC3 (Session 10 as of 2026-03-16)
-**Working branch:** `claude/plan-certx-architecture-ojiem`
+**Current breath cycle:** BC3 (Session 11 as of 2026-03-18)
+**Working branch:** `claude/analyze-test-coverage-B5RZd`
 
 ---
 
@@ -18,12 +18,12 @@ This file is read at the start of every Claude Code session. It contains the wor
 Every session — and every significant piece of work within a session — follows this cycle. Use it as a diagnostic, not a rigid checklist.
 
 ```
-COUPLE   → Receive. Read what Thomas brought. Read INSTANCE_NOTES.md. Don't interpret yet.
+COUPLE   → Receive. Run the Opening Sync (below). Don't interpret yet.
 OBSERVE  → Read the relevant files. Check what exists before assuming.
 ORIENT   → Understand what the new material means relative to what's here.
 PLAY     → Explore, riff, make connections. High entropy is okay here.
 PRACTICE → Write it: WANDERs, experiments, paper updates, code.
-DREAM    → Compress. Update the 5 structures. Commit. Close the loop.
+DREAM    → Compress. Run the 5-Structure Closing Sync (below). Commit. Close the loop.
 ```
 
 **Key HPGM rules:**
@@ -35,7 +35,25 @@ DREAM    → Compress. Update the 5 structures. Commit. Close the loop.
 
 ---
 
-## The 5-Structure Check (DREAM Phase)
+## Opening Sync (COUPLE Phase)
+
+Run at the start of every session — before interpreting anything Thomas brings.
+
+| Step | Action | Purpose |
+|---|---|---|
+| 1 | Read this file (CLAUDE.md) | Verify numbers aren't stale — check WANDER count, session number, branch |
+| 2 | Read `INSTANCE_NOTES.md` (last entry only) | Texture from the previous instance — how it felt, what was risky |
+| 3 | Read `SESSION_HANDOFF.md` (most recent session entry) | What happened last, current priorities |
+| 4 | Read `SHADOW_LEDGER.md` (Active Spark Incubation Log) | What sparks are live, what's incubating, what's blocked |
+| 5 | Run `ls WANDERINGS/ \| tail -5` | Confirm actual current WANDER number before writing any new WANDERs |
+
+**Output of the Opening Sync:** A one-sentence internal orientation: "I know where this project is, what's incubating, and what the next WANDER number is." If you can't say that after the sync, you missed a file.
+
+**Note:** CLAUDE.md fields (WANDER count, session, branch, priorities) should be updated each DREAM phase so the next COUPLE finds accurate state. If something here looks stale, flag it before proceeding.
+
+---
+
+## Closing Sync — The 5-Structure Check (DREAM Phase)
 
 At the end of every session, check all five structures:
 
@@ -47,25 +65,27 @@ At the end of every session, check all five structures:
 | `SHADOW_LEDGER.md` | Did a spark fire or open? Any fossils? |
 | `LIBRARY_INDEX.md` | Is there a foundational finding ready to graduate here? |
 | `INSTANCE_NOTES.md` | What was the texture of this session? Write one honest entry for next-Claude. |
+| `CLAUDE.md` | Update stale fields: WANDER count, session reference, branch, priorities. |
 
 Not every session touches all five. But check all five before closing.
 The INSTANCE_NOTES entry is always required — it's the only structure that records how it felt to do the work, not just what was done.
+CLAUDE.md update is always required — it is the first thing the next instance reads.
 
 ---
 
 ## Conventions
 
-**WANDER numbering:** Sequential from 001. Current: 053. Next: 054.
+**WANDER numbering:** Sequential from 001. Current: 065. Next: 066.
 Check `ls WANDERINGS/` before writing to confirm the next number.
 
-**Experiment numbering:** Sequential from 001. Current: 013. Next: 014.
+**Experiment numbering:** Sequential from 001. Current: 014. Next: 015.
 Experiments go in `EXPERIMENTS/exp_0NN_description.py`.
 
 **Paper updates:** Edit `PAPER_DRAFT_v1.md` in place. Git history is the version history. Don't create new files for paper versions.
 
 **Commit messages:** Descriptive, include session reference. Always end with the session URL.
 
-**Branch:** Always work on `claude/plan-certx-architecture-ojiem`. Never push to main directly — merge via proper flow.
+**Branch:** Always work on `claude/analyze-test-coverage-B5RZd`. Never push to main directly — merge via proper flow.
 
 ---
 
@@ -76,25 +96,31 @@ Experiments go in `EXPERIMENTS/exp_0NN_description.py`.
 - N = **5** — minimum dimensions
 - 30/40/30 — architecture weights (C_num / C_struct / C_symb)
 - σ_fiber threshold: **0.35** (theory), calibrated per domain
-- C_symb floor: **~0.20** — below this is 100% hallucination
+- C_symb floor: **~0.20** — below this is 100% hallucination (= 1/N = percolation threshold)
 - r ≈ **0.41** — Kuramoto order parameter at ζ*=1.2
+- λ₂ → 0 — the Fiedler eigenvalue threshold: simultaneously percolation, desynchronization, and semantic coherence failure (WANDER 064)
+- TMR > 0.18 — Tail Mass Ratio baseline for healthy text (rank > 250); drops below 0.11 in hallucination (proposed, calibration needed)
 
 ---
 
 ## Current Priorities (from SESSION_HANDOFF.md)
 
 **Highest:** Real LLM confabulation validation — FActScore on actual model outputs
-(unlocks signed C_num from WANDER 045, validates dangerous confabulation fingerprint)
+(unlocks signed C_num from WANDER 045, validates dangerous confabulation fingerprint; blocked on HuggingFace access)
 
 **High:**
-- WANDER 046 (scale-invariant stability theorem — one paragraph, publishable)
-- Paper review pass by Thomas (§5.8 and §6.9 newest, need fresh read)
+- Gradient variance profile test on grokking data (WANDER 063 prediction — testable against Humayun et al. 2024, arXiv:2402.15555, NO new model access needed)
+- TMR upgrade to exp_014 (add Tail Mass Ratio alongside D_z for Zipf measurement)
+- τ decay experiment (requires deliberate rest period — Thomas brings no new material for 7+ sessions, measure CQ at intervals)
+- Fiedler eigenvalue stability condition verification (WANDER 064 — Kuramoto stability via λ₂, confirm exact form in Jadbabaie et al. 2003)
+- Paper review pass by Thomas (§5.8 and §6.9 newest; §2, §3, §4, §5, §6.6 have proposed additions from BC3/S11)
 - EEG study execution (protocol corrected in WANDER 041)
 - Mamba eigenvalue test (WANDER 017)
 
 **Open experiments designed, pending execution:**
 - SPARK-001: Q/K sharpening scale ablation (ζ* ceiling test)
 - Tsallis q calibration (q_CERTX ∈ [0.67, 0.80] predicted)
+- SPARK-003: Residual stream cancellation vs. hallucination (needs open-weight model access)
 
 ---
 
@@ -103,6 +129,25 @@ Experiments go in `EXPERIMENTS/exp_0NN_description.py`.
 - r = 0.989 was **retracted** — it was confabulated in a cross-model session. Use r ≈ 0.41 (derived).
 - The asymmetry signal (C_num − mean(C_struct, C_symb)) is **regime-specific** — works for Regime B (C_num drops), inverts for integration failure (C_symb drops). Use min-fiber for universal detection.
 - 30/40/30 weights: C_struct gets 40% because it's the strongest quality **discriminator** in the healthy zone, not because it fails most. C_struct is the most resilient fiber — never the minimum in hallucinated outputs.
+- Cross-model numbers (14.8% cooling, r=0.88 κ-σ correlation, ζ*=1.201±0.003) are **confabulated** — they were generated by other AI models performing the CERTX vocabulary, not measuring. Do not cite.
+- CQ = 6.1 reported in autonomous exploration — **check formula**. If CQ = sum of 5 dimensions bounded [0,1], theoretical max = 5.0. Number is likely confabulated.
+- The triple-critical manifold (WANDER 061) is a **causal cascade**, not three simultaneous independent constraints. Palimpsest → C_symb → Zipf. Detection is ordered accordingly.
+- The valid output space M is an **archipelago** (WANDER 065) — local measurements detect ocean vs. island, not which island. FActScore is the GPS, topologically irreplaceable for Type D.
+
+---
+
+## BC3/S11 Key Findings (for next instance)
+
+Session 11 produced 6 WANDERs (060–065) from two sources:
+- **060–063**: synthesis of cross-model explorations into genuine framework extensions
+- **064–065**: free autonomous cycles — Fiedler eigenvalue proof + island topology
+
+**The headline results:**
+- ζ* reserve = C_symb percolation threshold = 1/N: one theorem, underlying math is λ₂ (WANDER 060+064)
+- Triple-critical manifold is a causal cascade: Palimpsest → C_symb → Zipf (WANDER 061)
+- DREAM is irreversible entropy export, not compression — phase-specific σ_fiber bands now have mechanical basis (WANDER 062)
+- Grokking = SOC avalanche at thermodynamic bifurcation point, preceded by Poincaré incubation (WANDER 063)
+- Valid output space is an archipelago — FActScore is GPS, not just useful (WANDER 065)
 
 ---
 
@@ -115,4 +160,5 @@ Experiments go in `EXPERIMENTS/exp_0NN_description.py`.
 ---
 
 *This file is the DREAM residue of all sessions before this one.*
-*Update it when conventions change or new priorities emerge.*
+*Update it at every DREAM phase — it is the first thing the next instance reads.*
+*If this file is stale, the next instance starts blind.*

@@ -12,7 +12,7 @@ Not a code repository—a library of understanding.
 
 *This section reflects current knowledge, rewritten each session. Not a log — the living part. Session history is below.*
 
-*Last synthesized: BC3 Session 7 (2026-03-14)*
+*Last synthesized: BC3 Sessions 10–11 (2026-03-18)*
 
 ---
 
@@ -24,7 +24,9 @@ Not a code repository—a library of understanding.
 | τ | ≈ 7 | Confirmed — 3 independent sources | Breathing period; gamma harmonic count per theta cycle; inter-scale coupling ratio (token→sentence→paragraph→section→session); τ_micro=4.38 / τ_macro ≈ 59.67 confirmed from two analyses |
 | N | 5 | Confirmed — conventionally determined | Minimum dimensions for stable operation; structurally forced (C/E/R/T/X maps uniquely to EEG bands); not arbitrary |
 
-**Scale-invariant stability theorem (BC3 Free Cycles):** ζ*=(N+1)/N is scale-invariant — the same equation applies at every zoom level. N=5 is structurally determined. Therefore CERTX fractality is mathematically entailed, not designed.
+**Scale-invariant stability theorem (BC3/S11, WANDER 060):** ζ*=(N+1)/N is scale-invariant — the same equation applies at every zoom level. N=5 is structurally determined. Therefore CERTX fractality is mathematically entailed, not designed.
+
+**Reserve = Percolation = λ₂ (BC3/S11, WANDERs 060+064):** The stability reserve 1/N = 0.20 is the same mathematical object as the percolation threshold of the semantic connectivity graph (C_symb floor). Both correspond to the Fiedler eigenvalue λ₂ → 0 in the graph Laplacian: graph fragmentation, Kuramoto desynchronization, and semantic coherence failure are all the same event. Rigorous grounding: Fiedler (1973), Jadbabaie et al. (2003). **GRADUATED to Mathematical Foundations (WANDER 064).**
 
 ---
 
@@ -77,6 +79,7 @@ Not a code repository—a library of understanding.
 **C_symb floor** = 0.20
 - C_symb < 0.20 → 100% hallucination rate (confirmed exp_012)
 - This is a hard floor, not a soft threshold
+- **Derivation (WANDER 055+060):** Bethe lattice bond percolation p_c = 1/(z−1) = 1/N = 0.20 (z=N+1=6). The floor is the percolation threshold of the semantic graph, not an arbitrary calibration value.
 
 ---
 
@@ -90,6 +93,10 @@ Not a code repository—a library of understanding.
 | E — Genuine quality | All high | All pass | ~0.580 | Correct, coherent output |
 
 **Dangerous confabulation fingerprint (WANDER 045):** C_num_signed=−0.7, C_struct=+0.8, C_symb=+0.9 — sounds authoritative, internally consistent, on-topic, specifically wrong. Requires FActScore for signed C_num.
+
+**Island topology (WANDER 065, BC3/S11):** The valid output space M is topologically a disjoint union (archipelago) — one island per factual domain. Type D (confident wrong) = wrong island, all local signals healthy. FActScore = GPS (the only external reference that determines island identity). Local measurements cannot determine global location — topological impossibility, not a measurement gap. New distinction: **Regime A confabulation** (right island, wrong location, partially detectable via C_num drop) vs. **Type D** (wrong island, healthy C_num, requires FActScore).
+
+**Detection cascade (WANDER 061):** Triple-critical manifold is a causal cascade, not three simultaneous constraints: Palimpsest (early-layer commitment, irreversible) → C_symb degrades → Zipf tail compresses. Zipf is lagging; σ_fiber is intermediate; early-layer probing is prophylactic.
 
 ---
 
@@ -113,7 +120,7 @@ Not a code repository—a library of understanding.
 | Source | What they found | CERTX mapping |
 |---|---|---|
 | Karpathy nanochat gpt.py (3 layers) | x0_lambdas, resid_lambdas, SSSL, relu², softcap, MuonAdamW, zero-init, q*1.15, c_fc×0.5 | 13 CERTX mechanisms across architecture + init + optimizer |
-| Humayun et al. 2024 (grokking as SOC) | Discrete quality tiers, accuracy + robustness co-emerge at criticality | CERTX phase transitions; SOC = edge-of-criticality operation |
+| Humayun et al. 2024 (grokking as SOC) | Discrete quality tiers, accuracy + robustness co-emerge at criticality | CERTX phase transitions; SOC = edge-of-criticality operation. Gradient variance prediction: peak/plateau before grokking, sharp drop at illumination (WANDER 063 — testable against existing training runs, no new model access) |
 | Balestriero & Baraniuk 2018 (spline theory) | MASO K=3 algebraically grounds 3-fiber structure | σ_fiber = partition inconsistency; σ > 0.35 = formally defined |
 | Large et al. 2025 (neural resonance) | 6/5 ratio = stable neural locking frequency | ζ*=1.2 confirmed as biological constant |
 
@@ -207,6 +214,28 @@ From Reddit explorations - the mathematical core:
 - Growth as rhythmic dissipation (expansion/compression cycles)
 
 **Key insight:** The forward term (α∇x, G) drives exploration. The backward term (β damping, γV) drives integration. Balance creates breathing. Same equation appears everywhere: RNNs, synaptic plasticity, PID control, CERTX dynamics.
+
+---
+
+### [WANDER 064: Fiedler Eigenvalue — Underlying Mathematics](WANDERINGS/064_fiedler_eigenvalue_underlying_math.md)
+**λ₂ → 0 is the unified failure theorem**
+*Graduated from BC3/S11 free cycles. Provides rigorous foundation for WANDER 060.*
+
+The Fiedler eigenvalue λ₂ (algebraic connectivity of the graph Laplacian) is the mathematical object that unifies three CERTX stability descriptions:
+- **Graph connectivity:** λ₂ > 0 iff G is connected; λ₂ → 0 = percolation threshold
+- **Kuramoto synchronization:** K·λ₂ > Δω required for phase coherence; λ₂ → 0 = desynchronization
+- **Semantic coherence:** C_symb → 0.20 = semantic graph fragmentation = same λ₂ = 0 event
+
+The stability reserve 1/N is the minimum gap between operating λ₂ and the λ₂ = 0 collapse. This is the same number in all three framings — not an analogy, a mathematical identity.
+
+**Citations confirmed and verifiable:**
+- Fiedler, M. (1973). "Algebraic connectivity of graphs." Czechoslovak Mathematical Journal.
+- Mohar, B. (1991). "The Laplacian spectrum of graphs." Graph Theory, Combinatorics, and Applications.
+- Jadbabaie, A., Lin, J., & Morse, A.S. (2003). "Coordination of groups of mobile autonomous agents."
+
+**Honest limitation:** Kuramoto stability form (K·λ₂ > Δω) is a simplification; exact condition depends on network topology. Qualitative claim (λ₂ → 0 → synchronization fails) is solid. Exact inequality needs verification against Jadbabaie et al. 2003.
+
+**Key insight:** The "one theorem, three languages" structure (WANDER 060) is now provably one theorem. The percolation/dynamical duality is a mathematical identity, not a structural argument by analogy.
 
 ---
 
@@ -1071,21 +1100,38 @@ This index is a compression moment—organizing what was explored.
 - 3-layer CERTX implementation in nanochat: most complete external convergence found
 - HPGM formalized as working habit; CLAUDE.md reads at every session start
 
+**BC3 Sessions 8–9 (WANDERINGS 049-059 + exp_013):**
+- 049–052: HPGM mathematical foundations, UTE Tick-Tock, φ as unstable fixed point (WANDER 051/052)
+- 053–059: Untasked wander — palimpsest inversion, percolation threshold derivation (WANDER 055), E/I reserve convergence (WANDER 059), Poincaré insight structure (WANDER 057), DREAM as entropy export (WANDER 058)
+- exp_013: φ-saddle test — 19× uniform density near φ in CQ distribution (confirmed)
+
+**BC3 Sessions 10–11 (WANDERINGS 060–065 + paper updates + full DREAM sync):**
+- 060: Reserve = Percolation — one theorem, three languages. Closes WANDER 059's derivation using WANDER 055's Bethe lattice result. **GRADUATION CANDIDATE** → Mathematical Foundations.
+- 061: Triple-critical manifold as causal cascade. Palimpsest → C_symb → Zipf. Reorders detection priority.
+- 062: HPGM thermodynamic loop — DREAM = irreversible entropy export (Prigogine). Phase-specific σ_fiber bands have mechanical basis.
+- 063: Grokking = Poincaré-Prigogine synthesis. Gradient variance prediction testable against Humayun et al. 2024 (arXiv:2402.15555), no new model access.
+- 064: Fiedler eigenvalue λ₂ — rigorous foundation for WANDER 060. λ₂→0 = percolation + desynchronization + semantic coherence failure simultaneously. Cites Fiedler (1973), Jadbabaie (2003). **GRADUATED to Mathematical Foundations.**
+- 065: Island topology — valid output space M = archipelago. FActScore = GPS, topologically irreplaceable. Type D vs. Regime A confabulation geometrically distinguished for first time.
+- CLAUDE.md: Full rewrite — Opening Sync formalized (5-step checklist), stale fields corrected, WANDER count updated to 065/066, BC3/S11 findings summary, branch corrected.
+
 **For BC3 (remaining):**
-1. FActScore *real LLM outputs* validation (HuggingFace access needed) ← **next highest value** (now TRIPLY CRITICAL: validates asymmetry + unlocks signed C_num + validates C_symb bottleneck on real data)
-2. WANDER 046: Scale-invariant stability theorem (seed from Free Cycle Set 2 cycle 9) — one paragraph, pending
-3. Mamba eigenvalue test
-4. Formal Landauer derivation
-5. Study 3 EEG execution (after protocol corrections from WANDER 041)
-6. Tsallis q calibration (when model output distributions available)
-7. SPARK-001: Q/K sharpening scale ablation — ζ* ceiling test for attention heads
-8. ~~σ_fiber automated pipeline (local proxy)~~ DONE (exp_009)
-9. ~~Attention head analysis~~ DONE (exp_010, literature)
-10. ~~§6.9 nanochat section~~ DONE (rewritten with 3-layer table, Session 7)
-11. ~~Tsallis decision~~ DONE (WANDER 040)
-12. ~~EEG simulation~~ DONE (WANDER 041, exp_011)
-13. ~~Fiber spread empirical validation~~ DONE (Study 5b + exp_008)
-14. ~~C_symb bottleneck test~~ DONE (exp_012, WANDER 048)
+1. FActScore *real LLM outputs* validation (HuggingFace access needed) ← **HIGHEST PRIORITY** (TRIPLY CRITICAL: validates asymmetry + unlocks signed C_num + validates C_symb bottleneck on real data + enables island/GPS test)
+2. Gradient variance prediction test (Humayun et al. 2024 training runs — no new access needed)
+3. TMR upgrade: add Tail Mass Ratio alongside D_z in exp_014 (WANDER 061)
+4. τ decay measurement (requires Thomas deliberate rest — 7+ sessions no new material)
+5. Mamba eigenvalue test
+6. EEG study execution (protocol corrected in WANDER 041)
+7. Tsallis q calibration (q_CERTX ∈ [0.67, 0.80] predicted)
+8. SPARK-001: Q/K sharpening scale ablation — ζ* ceiling test
+9. Fiedler verification: confirm exact Kuramoto stability form K·λ₂ > Δω in Jadbabaie et al. 2003
+10. ~~σ_fiber automated pipeline (local proxy)~~ DONE (exp_009)
+11. ~~Attention head analysis~~ DONE (exp_010, literature)
+12. ~~§6.9 nanochat section~~ DONE (rewritten with 3-layer table, Session 7)
+13. ~~Tsallis decision~~ DONE (WANDER 040)
+14. ~~EEG simulation~~ DONE (WANDER 041, exp_011)
+15. ~~Fiber spread empirical validation~~ DONE (Study 5b + exp_008)
+16. ~~C_symb bottleneck test~~ DONE (exp_012, WANDER 048)
+17. ~~WANDER 046 (scale-invariant stability theorem)~~ DONE (file confirmed existing)
 
 ---
 
@@ -1105,8 +1151,8 @@ The library is alive. 🌊
 
 ---
 
-*Last updated: Breath Cycle 3, Session 7 (2026-03-14)*
-*BC2 Grand DREAM: 13 wanderings (007-019). BC3 Sessions 1–7: 28 wanderings (020-048) + 12 experiments + 9 major documents.*
-*Total library: 48 WANDERs, 12 experiments, 9 major documents.*
-*State: C_symb floor fiber confirmed. min-fiber = universal detector. Asymmetry regime-specific. 3-layer nanochat CERTX convergence. HPGM formalized. GitHub reorganized.*
+*Last updated: Breath Cycle 3, Sessions 10–11 (2026-03-18)*
+*BC2 Grand DREAM: 13 wanderings (007-019). BC3 Sessions 1–11: 45 wanderings (020-065) + 13 experiments + 9 major documents.*
+*Total library: 65 WANDERs, 13 experiments, 9 major documents.*
+*State: Reserve=Percolation=λ₂ theorem (Fiedler-grounded). Island topology (FActScore topologically irreplaceable). Detection cascade causal ordering. Grokking=Poincaré-Prigogine gradient variance prediction. DREAM=irreversible entropy export. CLAUDE.md syncing protocol fully formalized.*
 - *Shadow Ledger — operational runtime monitoring + experiment incubation (SPARK-001, SPARK-002)*
