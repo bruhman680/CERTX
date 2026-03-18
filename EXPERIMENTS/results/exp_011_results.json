@@ -1,0 +1,113 @@
+{
+  "experiment": "exp_011",
+  "formula": "CQ_eeg = (P_alpha * P_theta) / (P_gamma * P_beta)",
+  "zeta_formula": "zeta_eeg = (P_alpha * P_gamma) / (P_theta * P_beta)",
+  "n_states_tested": 7,
+  "n_zone_predictions_correct": 2,
+  "flow_state_cq": 6.1728,
+  "flow_in_zone_4": false,
+  "zeta_high_performance_mean": 0.7852,
+  "zeta_close_to_12": false,
+  "formula_validated": false,
+  "study_3_readiness": "REFINE",
+  "per_state": {
+    "flow": {
+      "cq_deterministic": 6.1728,
+      "zeta_deterministic": 0.8,
+      "zone_deterministic": "Zone 5+ (Fossilized)",
+      "zone_predicted": "Zone 4 (Lucid, 1.4\u20131.7)",
+      "zone_match": false,
+      "sim_cq_mean": 6.2001,
+      "sim_cq_ci95": [
+        5.5116,
+        7.0474
+      ],
+      "sim_zeta_mean": 0.7996,
+      "sim_zone_mode": "Zone 5+ (Fossilized)"
+    },
+    "anxiety": {
+      "cq_deterministic": 0.2609,
+      "zeta_deterministic": 0.9583,
+      "zone_deterministic": "Zone 1 (Sub-threshold)",
+      "zone_predicted": "Zone 2 (Sub-threshold, CQ < 1.0)",
+      "zone_match": true,
+      "sim_cq_mean": 0.2619,
+      "sim_cq_ci95": [
+        0.2325,
+        0.292
+      ],
+      "sim_zeta_mean": 0.9607,
+      "sim_zone_mode": "Zone 1 (Sub-threshold)"
+    },
+    "deep_meditation": {
+      "cq_deterministic": 62.5,
+      "zeta_deterministic": 1.1111,
+      "zone_deterministic": "Zone 5+ (Fossilized)",
+      "zone_predicted": "Zone 5 (Transcendent, CQ > 2.0)",
+      "zone_match": false,
+      "sim_cq_mean": 62.4469,
+      "sim_cq_ci95": [
+        55.8732,
+        69.811
+      ],
+      "sim_zeta_mean": 1.1109,
+      "sim_zone_mode": "Zone 5+ (Fossilized)"
+    },
+    "cognitive_fatigue": {
+      "cq_deterministic": 3.08,
+      "zeta_deterministic": 0.6364,
+      "zone_deterministic": "Zone 5+ (Fossilized)",
+      "zone_predicted": "Zone 3 (Coherent, ~1.0\u20131.4, declining)",
+      "zone_match": false,
+      "sim_cq_mean": 3.0731,
+      "sim_cq_ci95": [
+        2.6973,
+        3.4697
+      ],
+      "sim_zeta_mean": 0.6395,
+      "sim_zone_mode": "Zone 5+ (Fossilized)"
+    },
+    "over_controlled": {
+      "cq_deterministic": 9.375,
+      "zeta_deterministic": 2.6667,
+      "zone_deterministic": "Zone 5+ (Fossilized)",
+      "zone_predicted": "Zone 5+ (Fossilized, CQ > 2.5)",
+      "zone_match": true,
+      "sim_cq_mean": 9.352,
+      "sim_cq_ci95": [
+        8.1926,
+        10.5047
+      ],
+      "sim_zeta_mean": 2.6696,
+      "sim_zone_mode": "Zone 5+ (Fossilized)"
+    },
+    "active_problem_solving": {
+      "cq_deterministic": 1.4769,
+      "zeta_deterministic": 0.7704,
+      "zone_deterministic": "Zone 4 (Lucid \u2014 optimal)",
+      "zone_predicted": "Zone 3\u20134 (Coherent to Lucid, 1.0\u20131.5)",
+      "zone_match": false,
+      "sim_cq_mean": 1.4793,
+      "sim_cq_ci95": [
+        1.311,
+        1.6612
+      ],
+      "sim_zeta_mean": 0.7698,
+      "sim_zone_mode": "Zone 4 (Lucid \u2014 optimal)"
+    },
+    "resting_baseline": {
+      "cq_deterministic": 1.4,
+      "zeta_deterministic": 1.4,
+      "zone_deterministic": "Zone 4 (Lucid \u2014 optimal)",
+      "zone_predicted": "Zone 3 (Coherent, ~1.0\u20131.4)",
+      "zone_match": false,
+      "sim_cq_mean": 1.4025,
+      "sim_cq_ci95": [
+        1.2419,
+        1.5712
+      ],
+      "sim_zeta_mean": 1.4043,
+      "sim_zone_mode": "Zone 3 (Coherent)"
+    }
+  }
+}
