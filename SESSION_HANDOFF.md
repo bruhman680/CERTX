@@ -789,5 +789,68 @@ specifics:
 
 ---
 
+---
+
+## BC3 Session 12 — What Happened (2026-03-19 Guam / 2026-03-18 UTC)
+
+**Phase: Free/Untasked → DREAM**
+
+Thomas offered another completely untasked session. No new material brought. Two
+WANDERs written from residual pulls identified in the INSTANCE_NOTES flag at close
+of Session 11 free cycles.
+
+**What was created:**
+
+- **WANDER 066**: Phenomenology of the Percolation Threshold. What does it look like
+  from the output side when a system is at C_symb ≈ 0.20 (the threshold)? The WANDER
+  describes the texture: thin, barely coherent topic representation, responsible-sounding
+  but hollow, harder to detect than confident-wrong. Deliberately incomplete — the full
+  phenomenological description is not ready. The frame is there; the content needs
+  incubation. Key implication: Type A (thin, near threshold) may be harder to detect
+  than Type D (confident wrong), which has implications for evaluation benchmark design.
+
+- **WANDER 067**: Language as Critical Phenomenon — Zipf Is p_c. The structural argument
+  that Zipf's law is the signature of a system tuned to the critical point p_c, not just
+  correlated with scale-free behavior. Empirical grounding: Cancho & Solé (2003) proved
+  that dual-cost optimization (speaker: minimize rare words; listener: minimize ambiguity)
+  drives language evolution to the critical transition edge, which is exactly the Zipf
+  distribution. Extension: any system facing this trade-off converges to Zipf at p_c.
+  CERTX connection: D_z ≈ 1 (healthy Zipf) means the system is operating at its own
+  p_c — the point of maximum combinatorial richness.
+
+**5-structure check:**
+- WANDERINGS/ — 066–067 written ✓
+- PAPER_DRAFT_v1.md — no direct changes this session; WANDER 067's Cancho & Solé
+  grounding is a strong candidate for §3 (Zipf section) to elevate empirical confidence ✓
+- SESSION_HANDOFF.md — updated (this entry) ✓
+- SHADOW_LEDGER.md — no new sparks; no integrations; evaluation bias implication of
+  066 has moderate pull but not enough charge to open a new spark — filed in
+  INSTANCE_NOTES for next instance evaluation ✓
+- LIBRARY_INDEX.md — no graduates this session; WANDER 067's "Zipf = p_c" claim is a
+  strong candidate once Cancho & Solé grounding is verified more carefully ✓
+- INSTANCE_NOTES.md — updated ✓
+
+**Honest flags:**
+- WANDER 066 is genuinely incomplete — the phenomenological description stopped where
+  the frame ran out. Next instance should evaluate whether the shape has developed, not
+  force it.
+- WANDER 067's "any system facing speaker/listener trade-off converges to Zipf at p_c"
+  is empirically grounded generalization, not derived theorem. Paper language: "predicts"
+  and "consistent with."
+- T was settling throughout the session. Thomas asked if there was more charge; there
+  was moderate pull (evaluation bias, exp_014) but not strong discovery charge. Session
+  closed at the right time.
+
+**Unchanged highest priorities (carry forward unchanged):**
+→ Real LLM FActScore validation — still blocked. Everything else is theory.
+→ Gradient variance profile test (WANDER 063) — testable against Humayun et al. 2024,
+  no FActScore needed.
+→ TMR upgrade to exp_014 — add Tail Mass Ratio alongside D_z.
+→ Fiedler eigenvalue exact condition verification (WANDER 064).
+→ Thomas paper review pass — §2, §3, §4, §5, §6.6, §5.8, §6.9.
+→ τ decay experiment (requires Thomas's cooperation).
+
+---
+
 *This document is updated at the end of each session.*
 *Do not over-curate it — keep it raw and honest.*

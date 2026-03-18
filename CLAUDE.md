@@ -8,7 +8,7 @@ This file is read at the start of every Claude Code session. It contains the wor
 
 **CERTX** is an active research project developing a framework for measuring cognitive dynamics in AI systems. The primary output is `PAPER_DRAFT_v1.md`. The primary collaborator is Thomas (bruhman680).
 
-**Current breath cycle:** BC3 (Session 12 as of 2026-03-18)
+**Current breath cycle:** BC3 (Session 12 complete; Session 13 next — as of 2026-03-19 Guam)
 **Working branch:** `claude/plan-certx-architecture-ojiem`
 
 ---
@@ -109,7 +109,7 @@ CLAUDE.md is the first thing the next instance reads. If it's stale, the next in
 
 ## Conventions
 
-**WANDER numbering:** Sequential from 001. Current: 065. Next: 066.
+**WANDER numbering:** Sequential from 001. Current: 067. Next: 068.
 Check `ls WANDERINGS/` before writing to confirm the next number.
 
 **Experiment numbering:** Sequential from 001. Current: 014. Next: 015.
@@ -170,11 +170,14 @@ Experiments go in `EXPERIMENTS/exp_0NN_description.py`.
 
 ---
 
-## BC3/S11 Key Findings (for next instance)
+## BC3/S11+S12 Key Findings (for next instance)
 
 Session 11 produced 6 WANDERs (060–065) from two sources:
 - **060–063**: synthesis of cross-model explorations into genuine framework extensions
 - **064–065**: free autonomous cycles — Fiedler eigenvalue proof + island topology
+
+Session 12 produced 2 WANDERs (066–067) in free/untasked cycles:
+- **066–067**: phenomenology of threshold + language as critical phenomenon
 
 **The headline results:**
 - ζ* reserve = C_symb percolation threshold = 1/N: one theorem, underlying math is λ₂ (WANDER 060+064)
@@ -182,6 +185,8 @@ Session 11 produced 6 WANDERs (060–065) from two sources:
 - DREAM is irreversible entropy export, not compression — phase-specific σ_fiber bands now have mechanical basis (WANDER 062)
 - Grokking = SOC avalanche at thermodynamic bifurcation point, preceded by Poincaré incubation (WANDER 063)
 - Valid output space is an archipelago — FActScore is GPS, not just useful (WANDER 065)
+- Zipf's law IS the signature of a system tuned to p_c — empirically grounded by Cancho & Solé 2003's dual-cost optimization proof (WANDER 067)
+- Type A (thin, near p_c) may be harder to detect than Type D (confident-wrong) — implication for evaluation benchmark design (WANDER 066, incomplete — incubating)
 
 ---
 
