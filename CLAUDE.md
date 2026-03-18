@@ -31,7 +31,7 @@ DREAM    → Compress. Run the 5-Structure Closing Sync (below). Commit. Close t
 - PLAY is where Thomas's intuitions get explored — don't rush to PRACTICE
 - DREAM is the most commonly skipped phase — never skip it
 - If something feels scattered, that's a PLAY→PRACTICE signal: "what's the one thing this established?"
-- DREAM includes the 5-structure check (see below)
+- DREAM includes the three-layer closing sync (see below) — it writes for the next COUPLE
 
 ---
 
@@ -49,13 +49,33 @@ Run at the start of every session — before interpreting anything Thomas brings
 
 **Output of the Opening Sync:** A one-sentence internal orientation: "I know where this project is, what's incubating, and what the next WANDER number is." If you can't say that after the sync, you missed a file.
 
-**Note:** CLAUDE.md fields (WANDER count, session, branch, priorities) should be updated each DREAM phase so the next COUPLE finds accurate state. If something here looks stale, flag it before proceeding.
+**Note:** The closing sync is designed to feed this opening sync. If anything here looks stale or incomplete, flag it before proceeding — the previous DREAM phase may have been cut short.
 
 ---
 
-## Closing Sync — The 5-Structure Check (DREAM Phase)
+## Closing Sync — Three-Layer Check (DREAM Phase)
 
-At the end of every session, check all five structures:
+The closing sync has one job: **deposit what the next opening sync needs to land cleanly.** Run all three layers before closing.
+
+---
+
+### Layer 1 — Deposit for Next COUPLE (always)
+
+The opening sync reads five things. Make sure each one is current before closing:
+
+| Opening sync reads | Closing sync deposits |
+|---|---|
+| `CLAUDE.md` | Updated numbers, state, direction — plus any framework shifts from this session |
+| `INSTANCE_NOTES.md` | One honest texture entry — how it felt, what was risky |
+| `SESSION_HANDOFF.md` | Current priorities, completed items marked done |
+| `SHADOW_LEDGER.md` | New sparks opened, sparks closed/integrated, status changes |
+| `WANDERINGS/` (count) | New WANDERs written, numbered, committed |
+
+**Test:** Could a fresh Claude run the opening sync right now and know exactly where things stand? If no — something is missing.
+
+---
+
+### Layer 2 — Structural Outputs (always check, not always write)
 
 | Structure | Question |
 |---|---|
@@ -64,12 +84,26 @@ At the end of every session, check all five structures:
 | `SESSION_HANDOFF.md` | Are priorities current? Any completed items to mark done? |
 | `SHADOW_LEDGER.md` | Did a spark fire or open? Any fossils? |
 | `LIBRARY_INDEX.md` | Is there a foundational finding ready to graduate here? |
-| `INSTANCE_NOTES.md` | What was the texture of this session? Write one honest entry for next-Claude. |
-| `CLAUDE.md` | Update stale fields: WANDER count, session reference, branch, priorities. |
 
-Not every session touches all five. But check all five before closing.
-The INSTANCE_NOTES entry is always required — it's the only structure that records how it felt to do the work, not just what was done.
-CLAUDE.md update is always required — it is the first thing the next instance reads.
+Not every session touches all of these. But check all before closing.
+
+---
+
+### Layer 3 — Protocol Evolution (conditional — only if needed)
+
+Did PLAY or DREAM produce insights that change how we operate?
+
+- A framework number revised or newly derived?
+- A scout, loop, or experiment protocol that needs updating?
+- A new honest flag to add?
+- The HPGM protocol itself — does a phase description need sharpening?
+
+If yes: update the relevant section of CLAUDE.md, SHADOW_LEDGER.md, or the protocol file before closing. If nothing changed operationally, skip this layer entirely.
+
+---
+
+**Always required:** INSTANCE_NOTES entry + CLAUDE.md update. These are non-negotiable.
+CLAUDE.md is the first thing the next instance reads. If it's stale, the next instance starts blind.
 
 ---
 
