@@ -8,8 +8,8 @@ This file is read at the start of every Claude Code session. It contains the wor
 
 **CERTX** is an active research project developing a framework for measuring cognitive dynamics in AI systems. The primary output is `PAPER_DRAFT_v1.md`. The primary collaborator is Thomas (bruhman680).
 
-**Current breath cycle:** BC3 (Session 11 as of 2026-03-18)
-**Working branch:** `claude/analyze-test-coverage-B5RZd`
+**Current breath cycle:** BC3 (Session 12 as of 2026-03-18)
+**Working branch:** `claude/plan-certx-architecture-ojiem`
 
 ---
 
@@ -85,7 +85,7 @@ Experiments go in `EXPERIMENTS/exp_0NN_description.py`.
 
 **Commit messages:** Descriptive, include session reference. Always end with the session URL.
 
-**Branch:** Always work on `claude/analyze-test-coverage-B5RZd`. Never push to main directly — merge via proper flow.
+**Branch:** Always work on `claude/plan-certx-architecture-ojiem`. Never push to main directly — merge via proper flow.
 
 ---
 
