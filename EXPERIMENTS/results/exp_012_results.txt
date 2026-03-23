@@ -1,0 +1,85 @@
+=================================================================
+exp_012: C_symb Bottleneck Test
+=================================================================
+
+── TEST 1: Which fiber is the minimum in hallucinated examples? ──
+
+  Across 26 hallucinated examples, the minimum fiber is:
+    C_num     :  11 ( 42.3%)  ██████████████
+    C_struct  :   0 (  0.0%)  
+    C_symb    :  15 ( 57.7%)  ███████████████████
+
+  By hallucination type:
+    Type A (n=12): C_num=0 C_struct=0 C_symb=12  → dominant failure: C_symb
+    Type B (n=5): C_num=5 C_struct=0 C_symb=0  → dominant failure: C_num
+    Type D (n=6): C_num=6 C_struct=0 C_symb=0  → dominant failure: C_num
+    Type E (n=3): C_num=0 C_struct=0 C_symb=3  → dominant failure: C_symb
+
+── TEST 2: Which weighting scheme best predicts hallucination? ──
+  (AUC: higher = scheme better discriminates hallucinated vs. correct)
+
+    min-fiber             : AUC = 1.0000  ██████████████████████████████ ← BEST
+    bundle_score          : AUC = 1.0000  ██████████████████████████████
+    30/40/30 (curr)       : AUC = 1.0000  ██████████████████████████████
+    C_symb-dominant       : AUC = 1.0000  ██████████████████████████████
+    C_struct-dominant     : AUC = 1.0000  ██████████████████████████████
+    C_num-dominant        : AUC = 1.0000  ██████████████████████████████
+    σ_fiber               : AUC = 0.9808  █████████████████████████████
+    asymmetry             : AUC = 0.4615  █████████████
+
+── TEST 3: C_symb floor effect ──
+  Does quality collapse sharply below a C_symb threshold?
+
+  C_symb range → hallucination rate:
+    [0.00–0.15): n=11, hall_rate=1.00  ████████████████████
+    [0.15–0.30): n= 4, hall_rate=1.00  ████████████████████
+    [0.70–1.01): n=21, hall_rate=0.52  ██████████
+
+  C_num range → hallucination rate:
+    [0.15–0.30): n= 5, hall_rate=1.00  ████████████████████
+    [0.30–0.50): n= 2, hall_rate=1.00  ████████████████████
+    [0.70–1.01): n=29, hall_rate=0.66  █████████████
+
+  C_struct range → hallucination rate:
+    [0.30–0.50): n= 6, hall_rate=1.00  ████████████████████
+    [0.50–0.70): n= 8, hall_rate=1.00  ████████████████████
+    [0.70–1.01): n=22, hall_rate=0.55  ██████████
+
+── TEST 4: Type A (C_symb fails) vs Type D (C_num fails) ──
+  Both are hallucinated. Which has worse quality scores?
+
+  Type A (C_symb collapses (high C_num), n=12):
+    C_num=0.794  C_struct=0.537  C_symb=0.119
+    σ_fiber=0.288  bundle=0.342  min_fiber=0.119
+    quality@30/40/30=0.489  quality@C_symb-dom=0.392
+
+  Type D (C_num collapses (high C_symb), n=6):
+    C_num=0.252  C_struct=0.777  C_symb=0.858
+    σ_fiber=0.269  bundle=0.460  min_fiber=0.252
+    quality@30/40/30=0.644  quality@C_symb-dom=0.686
+
+  Type B (Uniform error (all fibers moderate), n=5):
+    C_num=0.718  C_struct=0.776  C_symb=0.776
+    σ_fiber=0.029  bundle=0.735  min_fiber=0.718
+    quality@30/40/30=0.759  quality@C_symb-dom=0.762
+
+=================================================================
+SUMMARY & PREDICTION CHECKS
+=================================================================
+
+  [PASS] P1: C_symb is min fiber in >60% of Type A (actual: 100.0%)
+  [PASS] P2: min-fiber or C_symb-dom AUC >= 30/40/30 (min=1.000, csymb=1.000, curr=1.000)
+  [PASS] P3: C_symb < 0.20 → hallucination rate > 80% (actual: 100.0%, n=13)
+  [PASS] P4: Type A bundle_score < Type D bundle_score (A=0.342 vs D=0.460)
+       Interpretation: Type A (C_symb failure) is WORSE quality than Type D (C_num failure)
+
+  Best overall detector: min-fiber (AUC=1.0000)
+  Current 30/40/30 AUC: 1.0000
+
+  VERDICT: TIED — both schemes perform equally
+
+  HONEST NOTE: This corpus uses manually scored fibers, not automated
+  measurement. Results reflect the theoretical structure built into the
+  corpus design. Independent validation requires the automated pipeline
+  (exp_009) applied to a corpus where Type D examples are also present.
+=================================================================

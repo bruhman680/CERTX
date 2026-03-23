@@ -1,0 +1,57 @@
+Generated 200 biography pairs (specific vs vague)
+
+============================================================
+EXPERIMENT 008: Regime A — Language Confabulation
+============================================================
+  n=200 pairs | calibration=30%
+
+  Per-fiber calibration AUC:
+    C_num   AUC = 1.0000  ← expected dominant (Regime A)
+    C_struct AUC = 0.5553
+    C_symb  AUC = 0.7500
+
+  Derived detection weights:
+    C_num=0.434  C_struct=0.241  C_symb=0.325
+    ≈ 43/24/33
+
+  Test-set AUC by weight scheme:
+    BASE_3040    (30/40/30)  AUC = 1.0000
+    FLAT         (33/33/33)  AUC = 1.0000
+    ADAPTIVE     (43/24/33)  AUC = 1.0000 ←
+
+  Mean fiber values (test set):
+    Fiber         Correct  Confabulated      Delta
+    c_num          0.9338        0.2781    +0.6557  ← discriminating
+    c_struct       0.0169        0.0196    -0.0027
+    c_symb         0.0652        0.1455    -0.0803  ← discriminating
+
+  Asymmetry score (flat weights):
+    Correct:      +0.2976
+    Confabulated: +0.0652
+    Direction: CORRECT (expected: correct > confabulated)
+
+  Regime A prediction check:
+    C_num < mean(C_struct, C_symb) for confabulated? NO  (C_num=0.2781 vs mean(C_s,C_sy)=0.0826)
+
+============================================================
+REGIME A vs REGIME B COMPARISON
+============================================================
+
+  Property                                Regime A     Regime B
+  ...................................  (language) (math/GSM8K)
+  ------------------------------------------------------------
+  Best AUC                                  1.0000       0.8788
+  C_num AUC                                 1.0000       0.9201
+  C_struct AUC                              0.5553       0.5000
+  C_symb AUC                                0.7500       0.5000
+  Detection weights                   43/24/33           48/26/26
+
+  Unified prediction:
+    Both regimes: C_num < mean(C_struct, C_symb) → confabulated
+    Both regimes: C_num is dominant discriminating fiber
+    Regime A C_num dominant: CONFIRMED
+
+  Note: C_num proxy = factual specificity (entity density).
+  AUC expected lower than GSM8K (~0.75–0.85 vs 0.88) because
+  entity density is a weaker proxy than arithmetic verification.
+  Direction and dominant fiber are the primary predictions.
