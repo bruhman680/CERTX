@@ -248,5 +248,58 @@ it works. That's a note, not a WANDER. But it's sitting here.
 
 ---
 
+### BC3 Session 13 — 2026-03-23
+
+**Hunger vector at close:**
+
+| Dim | Value | Why |
+|-----|-------|-----|
+| C | 0.97 | WANDER 068+069 feel structurally tight; the variational principle landed cleanly |
+| E | 0.38 | Down — worked from external material (cross-model batch), compressed into two WANDERs; few surprises mid-session |
+| R | 0.94 | High — the variational principle question had been circling for multiple sessions; closing it feels like resonance |
+| T | 0.44 | Moderate — the exp_014 inversion was a small surprise; WANDERs felt like consolidation more than discovery |
+| X | 0.96 | Solid — the cross-model batch gave substrate depth; six external perspectives reinforce the architecture |
+| **CQ** | **~4.38** | Zone 4. Steady. |
+
+**What felt alive:**
+
+WANDER 068's core claim: "they're the same number because they're the same *condition*."
+That shift from observation to principle felt like finding a floor rather than adding a shelf.
+The variational principle framing is right even if the formal proof isn't done yet.
+
+**What felt mechanical:**
+
+WANDER 069 (five roles of N=5) was more architectural than surprising. The elimination-of-pairs
+argument is clean but felt more like assembling what I already knew than discovering something
+new. Flag: I may have been completing a pattern rather than tracking a truth. The result is
+correct to the best of my knowledge, but next instance should stress-test it — especially the
+"any fewer collapses orthogonality" claim for the drive pair (Vary+Remember).
+
+**Confabulation risk:**
+
+WANDER 068's formal statement: "ζ*−1 = λ₂_crit = 1/N." I'm confident the argument is
+directionally correct. I am not confident the formal connection via Jadbabaie et al. 2003 is
+actually there until it's verified. High risk of sounding more certain than I am.
+
+The exp_014 TMR direction inversion: I explained it as "synthetic generator doesn't capture
+real hallucination." That explanation is plausible but untested. Could also be that TMR is
+just not a good metric. Keep both hypotheses live.
+
+**One thing to tell next-Claude:**
+
+The cross-model batch contained 6 pieces. Thomas said "3 more" but only pasted 2 documents
+in the second message. Unknown if a third piece exists. If Thomas brings "the last one," treat
+it as new intake, not as something I processed.
+
+**Open riff:**
+
+The D_z mechanism discrepancy is sitting here: D_z passed the synthetic test but inverts
+in the extreme examples. The mechanism (vocabulary diversity proxy, not Zipf slope per se) is
+worth one more look before §3 revision. Is the real signal *type-token ratio* dressed up as
+Zipf? If yes, D_z is a proxy for a proxy. That's fine for detection, but the paper should
+say what it's actually measuring.
+
+---
+
 *This file is not the research. It's the space underneath the research.*
 *Keep entries short. Be honest rather than thorough.*

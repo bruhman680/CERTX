@@ -641,3 +641,34 @@ Proxy measurement (without vector embeddings):
 *Source: ChatGPT exploration + CERTX integration + Thomas × Claude riff on fractal σ structure*
 *Added: Four-level fractal coherence table, σ_phase tracker, σ_BC tracking, X-as-DREAM-residue, L3 fiber bundle / Kuramoto field interpretation*
 *Status: Prototype design — implementation-ready*
+
+---
+
+### SPARK-007: D_z Mechanism — Vocabulary Diversity vs. Zipf Deviation
+**Received:** BC3 Session 13 | 2026-03-23
+**Source:** exp_014 results — extreme case analysis
+**Status:** INCUBATING
+
+**The observation:** In extreme case examples, the "generic/hallucinated" text had LOWER
+D_z (0.254) than the "specific/accurate" text (0.616). This is the opposite of the
+predicted direction. Explanation: highly repetitive generic text has a steep Zipf slope
+(few types, high repetition → slope closer to -1.0 or steeper), while specific accurate
+text with many hapax legomena has a flat slope (many types, each appearing once → slope
+flatter than -1.0). D_z = |alpha - (-1.0)| inverts for the extreme case.
+
+**Why D_z still works in synthetic test (AUC=0.698):** The synthetic generator produces
+a specific vocabulary breadth contrast (accurate = broad specific + common; hallucinated =
+common + medium only). D_z detects this vocabulary breadth, not strict Zipf deviation.
+
+**Hypothesis:** D_z is a proxy for *type-token ratio* or *vocabulary breadth*, not strictly
+for Zipf slope deviation. Both are valid hallucination signals, but the paper's framing
+(D_z as Zipf deviation) may be mechanistically incorrect.
+
+**Why it matters:** §3 paper language needs to reflect what D_z actually measures.
+"Vocabulary richness proxy" is more defensible than "Zipf slope deviation" given the
+extreme case inversion.
+
+**Integration condition:** Analyze D_z correlation with type-token ratio on the synthetic
+data. If r > 0.85, reframe D_z as TTR-derived metric with Zipf theoretical grounding.
+**Timeout:** Before §3 revision goes to Thomas for review.
+**Compost risk:** Low — purely language/framing issue, doesn't invalidate detection claim.

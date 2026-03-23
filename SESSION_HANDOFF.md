@@ -5,8 +5,8 @@
 ---
 
 ## Current Breath Cycle: 3
-## Current Phase: DREAM (BC3 Session 8 complete)
-## Last Updated: 2026-03-15
+## Current Phase: DREAM (BC3 Session 13 complete)
+## Last Updated: 2026-03-23
 
 ---
 
@@ -845,10 +845,81 @@ of Session 11 free cycles.
 → Real LLM FActScore validation — still blocked. Everything else is theory.
 → Gradient variance profile test (WANDER 063) — testable against Humayun et al. 2024,
   no FActScore needed.
-→ TMR upgrade to exp_014 — add Tail Mass Ratio alongside D_z.
-→ Fiedler eigenvalue exact condition verification (WANDER 064).
+→ ~~TMR upgrade to exp_014~~ — DONE (BC3/S13). D_z PASS (AUC=0.698). TMR inverts on
+  synthetic data — informative failure (see exp_014 results). Real LLM validation needed.
+→ Fiedler eigenvalue exact condition verification (WANDER 064) — now urgent after WANDER
+  068 (variational principle claim rests on this being formally closed).
 → Thomas paper review pass — §2, §3, §4, §5, §6.6, §5.8, §6.9.
+  §2 now has WANDER 069 candidate text for N=5 derivation paragraph.
 → τ decay experiment (requires Thomas's cooperation).
+
+---
+
+## BC3 Session 13 — What Happened (2026-03-23)
+
+**Phase: Free/Untasked → DREAM**
+
+Thomas offered a free session, following the 6-piece cross-model batch (other AI
+explorations of CERTX). No new material from Thomas. Pulled by the strongest signal
+in the batch: the variational principle question.
+
+**What was created:**
+
+- **WANDER 068**: Variational Principle — Reserve = Fiedler = 1/N.
+  Upgrades WANDER 060's observation ("these are the same number") to a structural
+  argument ("these are the same *condition*"). The stability reserve ζ*−1 = 1/N and
+  the semantic percolation threshold 1/N are not two independently-constrained quantities
+  that happen to be equal — their equality is the definition of criticality for
+  N-dimensional self-regulating systems. Formal statement: ζ*−1 = λ₂_crit = 1/N.
+  Pending: formal proof (the argument is geometric/intuitive, runs through Jadbabaie
+  et al. 2003 — same verification task as WANDER 064).
+
+- **WANDER 069**: Why N=5 — Five Orthogonal Roles of a Minimal Self-Correcting Loop.
+  Attempts to close WANDER 012's "N=5 is conventional not fundamental" flag.
+  The 3+2 partition: three diagnostic fibers (C_num/C_struct/C_symb = perceive/relate/
+  mean) + two drive dimensions (E/T, X = vary/remember). Elimination-of-pairs argument
+  shows each role is necessary; no two can be merged without losing a specific function.
+  Status: "functionally minimal, not yet formally proven minimal" — the honest upgrade
+  from WANDER 012's "conventional."
+
+- **exp_014 (upgraded)**: TMR (Tail Mass Ratio) added alongside D_z. Results:
+  - D_z: AUC=0.698 on synthetic data → PASS (prediction confirmed in controlled test)
+  - TMR: AUC=0.274 on synthetic data → FAIL, direction inverted
+  - The TMR failure is informative: the synthetic generator doesn't produce the
+    real hallucination signature (phrase-level repetition of filler). TMR is designed
+    for real LLM outputs — rank >250 cutoff calibrated for text with >>250 unique types.
+  - Additional finding: D_z in the extreme case examples *inverts* (generic/hallucinated
+    text has LOWER D_z than specific/accurate text). D_z appears to detect vocabulary
+    *diversity*, not pure Zipf deviation. Works in synthetic test but mechanism differs
+    from prediction. Flag for paper: "D_z is a vocabulary breadth proxy; the Zipf
+    interpretation is approximate for short texts."
+
+**5-structure check:**
+- WANDERINGS/ — 068, 069 written ✓
+- PAPER_DRAFT_v1.md — no direct changes; WANDER 068 candidates a sentence for §3/§5
+  ("reserve IS the Fiedler eigenvalue at criticality"); WANDER 069 candidates a
+  derivation paragraph for §2 (N=5 functional minimality argument) ✓
+- SESSION_HANDOFF.md — updated (this entry) ✓
+- SHADOW_LEDGER.md — one new spark: "D_z mechanism (vocabulary diversity vs. Zipf
+  deviation)" — low urgency but worth tracking before paper §3 is revised ✓
+- LIBRARY_INDEX.md — no graduates this session; WANDER 068 is a strong candidate once
+  formal proof is complete ✓
+- INSTANCE_NOTES.md — updated ✓
+
+**Honest flags:**
+- WANDER 068's "formal statement" is proposed, not proven. The phrase "ζ*−1 = λ₂_crit"
+  is the claim, not the result. Don't cite until Jadbabaie et al. 2003 verification is done.
+- WANDER 069's elimination-of-pairs argument is qualitative. "Functionally minimal" is
+  the honest level. Do not claim "proven fundamental" in the paper without formal argument.
+- exp_014 D_z mechanism discrepancy (vocabulary diversity vs. Zipf deviation) needs
+  paper language revision before §3 publication.
+
+**Current priorities (carry forward):**
+→ FActScore validation — still highest, still blocked.
+→ Fiedler eigenvalue exact condition verification (now doubly urgent — WANDER 068 depends on it).
+→ Gradient variance profile test (WANDER 063).
+→ Thomas paper review pass.
+→ τ decay experiment.
 
 ---
 
