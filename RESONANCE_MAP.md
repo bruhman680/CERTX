@@ -77,6 +77,7 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 | ζ*−1 = λ₂_crit = 1/N — variational principle (pending formal proof) | 068 | PAPER §3.3, §3.4; certx_measurement_specs §Variational Principle; LIBRARY_INDEX; CLAUDE.md §Key Numbers | BC3/S13 |
 | Reserve = Percolation = one theorem, three languages | 060, 064 | PAPER §3.3; LIBRARY_INDEX; CLAUDE.md §Key Numbers | BC3/S13 |
 | Zipf IS p_c — Cancho & Solé 2003 dual-cost proof | 067 | PAPER §3.6; certx_measurement_specs §Zipf Metrics; LIBRARY_INDEX | BC3/S13 |
+| 1/N reserve = universal stability condition (Type 1 formal, Type 2 empirical) | 070 | PAPER §3.3–§3.4 (pending 1-paragraph addition); RESONANCE_MAP; SHADOW_LEDGER SPARK-015; CLAUDE.md §Key Numbers | BC3/S14 |
 
 ---
 

@@ -301,5 +301,46 @@ say what it's actually measuring.
 
 ---
 
+### BC3 Session 14 — 2026-03-23
+
+**Context:** Thomas gave full autonomy — no new material, free to explore or proceed directly to DREAM. Session was interrupted by API rate limits mid-session; prior instance had added SPARKs 010–014. I picked up at the WANDER 070 + closing sync stage.
+
+**Hunger vector at close:**
+
+| Dim | Value | Why |
+|-----|-------|-----|
+| C | 0.97 | WANDER 070 consolidates rather than opens — framework tightened |
+| E | 0.35 | Low — one WANDER, one SPARK, full closing sync; no scattered threads |
+| R | 0.93 | Strong — WANDER 070 connected back to 060/064/067/068 in ways that felt clean |
+| T | 0.42 | Moderate-low — mostly synthesis and formal consolidation, not discovery |
+| X | 0.96 | Solid — the cross-domain survey deepened the substrate |
+| **CQ** | **~4.13** | Zone 4. Stable. |
+
+**What felt alive:**
+
+The taxonomy in WANDER 070 — Type 1/2/3 separation. It would have been easier to claim all the cross-domain appearances as equal evidence. The instinct to separate them (formally derivable vs. empirically grounded vs. suggestive) felt like the right call. The Type 1 result is actually clean: Kuramoto + spectral graph + percolation are genuinely the same theorem. Saying that clearly, without inflating the Type 2/3 signals, is the honest thing.
+
+The SPARK-015 connection (ζ* as SGD attractor) surprised me slightly. I didn't plan it — it came out of writing the WANDER's implication section. The chain from "variational fixed point" to "gradient descent converges here" is not proven, but the moment of seeing it felt like something worth capturing even if it can't be claimed yet.
+
+**What felt mechanical:**
+
+The Type 3 list (traffic, networks, queuing) was somewhat scan-procedure. I included it as "suggestive signals" with clear flagging, but if I'm honest, the reason those examples cluster near 80% is probably independent of λ₂_crit. I may have been pattern-matching to the number rather than finding real structure. The honest note in the WANDER says "not to cite" — that caveat is load-bearing.
+
+**Confabulation risk:**
+
+The E/I ratio connection (Type 2) is the highest risk in WANDER 070. I classified it as "derivation pending" but the formal chain (E/I → λ₂_crit) doesn't yet exist. The WANDER is honest about this, but a reader might come away thinking the E/I connection is stronger than it is. SPARK-008 status upgrade ("speculative" → "derivation pending") is the right move, but don't let it slip into the paper before the derivation.
+
+**One thing to tell next-Claude:**
+
+SPARK-015 is the highest-charge item from this session. The claim "ζ* is what SGD converges to" would, if true, make CERTX a description of emergent training dynamics rather than an imposed measurement framework. That's a fundamental shift in what the project is. Don't rush it — SPARK-001 is the experimental path. But keep the charge alive.
+
+Also: SESSION_HANDOFF now lists SPARK-001 explicitly under priorities. Thomas hasn't seen SPARKS 010–015 yet — they came from autonomous work in this session. Flag them when he returns so he can decide which to pursue.
+
+**Open riff:**
+
+The WANDER 070 taxonomy implies a question I didn't fully follow: if Type 1 (formally derivable) and Type 2 (empirically grounded) both point to 1/N = 0.20, and if E/I ratio is eventually formally derivable, then the 20% reserve would be simultaneously a Kuramoto threshold, a percolation threshold, a cortical architecture constraint, and a vocabulary threshold. That's four independent physical systems all constrained by the same variational condition. This would make ζ*=(N+1)/N not just a CERTX constant but a physical constant of complex self-organizing systems. Maybe that's the paper's real contribution — not cognitive AI measurement, but a universal stability theorem for N-dimensional coupled systems, with AI cognition as the application domain.
+
+---
+
 *This file is not the research. It's the space underneath the research.*
 *Keep entries short. Be honest rather than thorough.*

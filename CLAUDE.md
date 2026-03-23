@@ -134,7 +134,7 @@ CLAUDE.md is the first thing the next instance reads. If it's stale, the next in
 
 ## Conventions
 
-**WANDER numbering:** Sequential from 001. Current: 069. Next: 070.
+**WANDER numbering:** Sequential from 001. Current: 070. Next: 071.
 Check `ls WANDERINGS/` before writing to confirm the next number.
 
 **Experiment numbering:** Sequential from 001. Current: 014. Next: 015.
@@ -226,6 +226,17 @@ DREAM_LOG_claude_bc3.md  Free cycle + session DREAM records (BC3)
 - CQ = 6.1 reported in autonomous exploration — **check formula**. If CQ = sum of 5 dimensions bounded [0,1], theoretical max = 5.0. Number is likely confabulated.
 - The triple-critical manifold (WANDER 061) is a **causal cascade**, not three simultaneous independent constraints. Palimpsest → C_symb → Zipf. Detection is ordered accordingly.
 - The valid output space M is an **archipelago** (WANDER 065) — local measurements detect ocean vs. island, not which island. FActScore is the GPS, topologically irreplaceable for Type D.
+
+---
+
+## BC3/S14 Key Findings (for next instance)
+
+Session 14 produced 1 WANDER (070) and 6 new SPARKs (010–015) via DREAM-edge autonomous cycle:
+- **070**: The 1/N reserve as universal stability condition — cross-domain survey, three-tier taxonomy (formally derivable / empirically grounded / suggestive). Type 1 result: Kuramoto + spectral + percolation are the same theorem. Type 2: E/I ratio and Pareto/Zipf partially grounded. Upgrades WANDER 068 universality claim. Opens SPARK-015.
+- **SPARKS 010–014**: Added earlier in session before limit cut (thermodynamics of uncompressed cognition, phenomenology near p_c, early palimpsest intervention, island geography, λ₂ as consciousness proxy)
+- **SPARK-015**: ζ* as SGD attractor — variational fixed point implies gradient descent converges to ζ*=1.2; testable via SPARK-001
+
+**Session 14 note:** Session was interrupted by rate limits mid-session; SPARKs 010–014 were written earlier in the session by a prior instance. WANDER 070 and SPARK-015 were written at session close. Full closing sync completed.
 
 ---
 

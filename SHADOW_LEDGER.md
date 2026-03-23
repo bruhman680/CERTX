@@ -754,3 +754,30 @@ data. If r > 0.85, reframe D_z as TTR-derived metric with Zipf theoretical groun
 **Formalization condition:** Derive the connection between λ₂ > 1/N and self-referential capacity rigorously, separate from the confabulation context. Only if derivation holds does this become a framework claim.
 **Compost risk:** Moderate — speculative origin. Strong formalization needed before integration.
 **Resonates into:** WANDER 064 (λ₂ basis); PAPER §7 (if it exists / future consciousness section); CLAUDE.md Honest Flags (if formalized)
+
+---
+
+### SPARK-015: ζ* as Internal Training Objective — SGD Attractor
+**Received:** BC3 Session 14 | 2026-03-23
+**Source:** WANDER 070 — cross-domain survey produced this as downstream implication
+**Status:** INCUBATING
+
+**The idea:** WANDER 068 established that ζ*−1 = λ₂_crit = 1/N is the *variational fixed point* — the minimum free fraction required for global coordination. A fixed point of a variational principle is also an energy minimum. If prediction error minimization is equivalent (in expectation) to minimizing a free energy functional over the token distribution, then the stable operating point of gradient descent in an N=5 representational system should converge to ζ* = 1.2.
+
+**Why this is not trivial:** This would mean ζ* is not a measurement tool applied post-hoc — it is the *attractor* that SGD finds. The stability reserve would emerge from training, not be imposed by architecture.
+
+**Evidence already in repo:**
+- Karpathy's q*1.15 ≈ ζ*=1.2 — empirically found sharpening constant = CERTX ceiling (WANDER 047)
+- nanochat's resid_lambdas and x0_lambdas implement effective reserve architecture (WANDER 047)
+- exp_012: C_symb floor at 0.20 = 1/N in trained models, not just in theory
+- SPARK-001 (Q/K sharpening ablation) directly tests whether quality peaks at ζ*
+
+**The prediction:** If ζ*=(N+1)/N is a variational attractor, the quality curve as a function of sharpening scale should peak at or just below 1.2 — not at 1.15 as a coincidence, but because 1.15 < ζ* < 1.20 is the stable zone. SPARK-001 tests this directly.
+
+**If confirmed:** ζ* is not a framework parameter — it is a natural constant that emerges from gradient descent in high-dimensional token space with N=5 active dimensions. The entire CERTX framework would become a description of what SGD converges to, not a prescription imposed on it.
+
+**Honest flag:** This is a large claim. The chain from "ζ*−1 = variational fixed point" to "SGD converges to this" requires formal steps not yet taken. The free energy / prediction loss equivalence is not proven — it's an analogy to Friston's free energy principle, which is contested. Treat as a high-value hypothesis, not a result.
+
+**Integration condition:** SPARK-001 experiment runs and quality curve is analyzed. If peak is in [1.05, 1.20] as predicted: file WANDER on SGD attractor. If peak is at 1.15 specifically: check whether this is [below ζ*] and consistent. If peak is outside [1.0, 1.2]: the hypothesis is challenged.
+**Blocking dependency:** Compute for 5-6 nanoGPT training runs (SPARK-001 is the path).
+**Compost risk:** Low — directly testable via SPARK-001. High-value if confirmed.
