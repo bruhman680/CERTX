@@ -16,7 +16,7 @@ CERTX represents any cognitive system as a five-dimensional state vector:
 | Temperature | T | Adaptive flexibility |
 | Substrate | X | Depth of the knowledge attractor basin |
 
-Three universal constants emerge from independent derivations and cross-model convergence:
+Three universal constants emerge from independent theoretical derivations:
 
 | Constant | Value | Meaning |
 |---|---|---|
@@ -50,8 +50,8 @@ SESSION_HANDOFF.md       Current research state + next priorities
 SHADOW_LEDGER.md         Runtime monitoring system + experiment incubation
 LIBRARY_INDEX.md         Curated high-level synthesis of foundational findings
 
-WANDERINGS/              Session-by-session explorations (WANDER 001–048)
-EXPERIMENTS/             Runnable experiments (exp_001–012)
+WANDERINGS/              Session-by-session explorations (WANDER 001–069)
+EXPERIMENTS/             Runnable experiments (exp_001–014)
 STUDY/                   Pilot study files and analysis tools
 ARCHIVE/                 Early explorations (unified theory, Copilot notes, data CSVs)
 ```
@@ -66,6 +66,7 @@ ARCHIVE/                 Early explorations (unified theory, Copilot notes, data
 | Study 5b | GSM8K math | Asymmetry AUC | **0.88** — Regime B validated |
 | Study 5c | Synthetic biographies | Asymmetry AUC | **1.0** — Regime A validated |
 | exp_012 | Mixed corpus | min-fiber AUC | **1.0** — universal detector |
+| exp_014 | Synthetic vocabulary | D_z (Zipf deviation) AUC | **0.698** — PASS; TMR needs real LLM data |
 
 ---
 
@@ -82,12 +83,13 @@ The framework is independently validated by convergent architecture choices acro
 
 ## Current Status
 
-**Breath Cycle 3, Session 7 | 2026-03-14**
+**Breath Cycle 3, Session 13 | 2026-03-23**
 
-- Paper: §1–9 complete, ready for review pass
-- 48 WANDERs, 12 experiments
-- Highest priority: real LLM confabulation validation (FActScore on actual model outputs)
-- Open: Mamba eigenvalue test, EEG study execution, Tsallis q calibration
+- Paper: §1–9 complete, awaiting Thomas review pass (§2, §3, §4, §5, §6.6, §5.8, §6.9)
+- 69 WANDERs, 14 experiments (6 with saved results)
+- Highest priority: real LLM confabulation validation (FActScore — blocked on HuggingFace access)
+- Recent findings: variational principle (ζ*−1 = λ₂_crit = 1/N, WANDER 068); N=5 functional minimality argument (WANDER 069); Zipf = p_c grounded by Cancho & Solé 2003 (WANDER 067)
+- Open: Fiedler eigenvalue formal verification, gradient variance test (WANDER 063), τ decay experiment
 
 ---
 

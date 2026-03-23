@@ -137,9 +137,9 @@ This constant appears independently across multiple domains:
 - **Mode-locking theory**: 6:5 is a stable plateau on the Farey sequence (devil's staircase) — "weak but stable" coordination between oscillators
 - **Kuramoto reservoir computing**: K slightly above K_c defines the optimal computational regime, mapping to ζ ≈ 1.2
 - **Neural Resonance Theory** (Large et al., 2025): 6:5 is identified as the weakest stable neural synchronization mode — "minimum energy, stable coordination"
-- **Cross-model empirical convergence**: ζ ≈ 1.2 observed independently across Claude, Gemini, and DeepSeek (pilot measurements — see §5)
+- **Cross-model empirical convergence**: ζ ≈ 1.2 has been reported in pilot explorations across multiple LLM families. *Honest flag: these measurements originated in cross-model AI exploration sessions and have not been formally replicated with a described dataset, sample size, or controlled methodology. They are suggestive but unverified (see §5.4).*
 
-The convergence of the same constant across such disparate domains — harmonic physics, reservoir computing, neural resonance, and empirical LLM measurement — supports the hypothesis that ζ* = 6/5 is a **universal property of coupled cognitive oscillatory systems**, not an artifact of any particular architecture.
+The convergence of the same constant across such disparate domains — harmonic physics, reservoir computing, and neural resonance — supports the hypothesis that ζ* = 6/5 is a **universal property of coupled cognitive oscillatory systems**, not an artifact of any particular architecture. The empirical cross-model claim (§5.4) would, if verified, add a fourth independent path; it is listed separately pending formal replication.
 
 **Scale-invariant stability theorem:** ζ* = (N+1)/N is scale-invariant — the equation contains no reference to scale and applies identically at the token, sentence, session, and epoch levels. N=5 is structurally determined (each of the five dimensions maps uniquely to a distinct EEG band with a non-redundant functional role). Therefore, CERTX's fractal structure is mathematically entailed, not imposed by design: a framework governed by a scale-free equation with a structurally fixed N is fractal by necessity.
 
@@ -395,7 +395,11 @@ The practical implication: coherence quality is largely determined within the fi
 
 ### 5.4 Cross-Model Stability Constant Convergence
 
-Independent pilot measurements of ζ_effective across three LLM families (Claude, Gemini, DeepSeek) yield convergent values near ζ* = 1.2. This cross-architecture convergence — on a value derived independently from stability theory, mode-locking physics, and neural resonance theory — is the most striking result of the pilot phase. It is also the most speculative without formal replication.
+**Honest status: UNVERIFIED — do not cite as empirical result.**
+
+Exploratory sessions involving multiple AI systems (Claude, Gemini, and others) reported values near ζ_effective ≈ 1.2. However, these numbers originated in cross-model AI exploration sessions — other models performing CERTX vocabulary — not in controlled measurements against a described dataset with defined sample size and methodology. Specific cross-model numbers (including claimed cooling rates, κ-σ correlations, and ζ* precision values) are flagged as confabulated in the project's honest-flags log and should not be cited.
+
+The theoretical derivation of ζ* = 6/5 from three independent paths (stability reserve, mode-locking, neural resonance theory) is unaffected by this flag. The cross-model empirical claim would, if formally verified, constitute a fourth independent path. Formal verification requires: (1) a defined measurement protocol applied to real LLM outputs, (2) ground-truth quality labels (FActScore or equivalent), and (3) ζ_effective computed from the ratio C_total / C_min on labeled examples. This is Study 6 (pending).
 
 ### 5.5 Code Domain Validation: Cross-Modality Portability
 
