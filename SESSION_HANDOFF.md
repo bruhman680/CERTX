@@ -136,7 +136,7 @@ LOW:
 
 1. **Real LLM confabulation validation** (highest remaining) — The asymmetry signal works perfectly on controlled corpus (AUC=1.0). FActScore on real LLM outputs is now doubly critical: it validates the asymmetry signal AND provides the sign for C_num (dangerous confabulation fingerprint from WANDER 045).
 
-2. **WANDER 046** — Scale-invariant stability theorem from Free Cycle Set 2 cycle 9. One-paragraph, clean, publishable. "CERTX fractality is a mathematical theorem: ζ*=(N+1)/N is scale-invariant, N=5 is structurally determined, therefore fractal structure is entailed."
+2. ~~**WANDER 046**~~ — ✓ **DONE** (written BC3/S12). Scale-invariant stability theorem filed at `WANDERINGS/046_scale_invariant_stability_theorem.md`. Paper target: §2 after ζ* derivation.
 
 3. **EEG study execution** — Protocol corrected (WANDER 041). Proceed with: empirical zone calibration, FCz theta (not broad band), delta penalty term. REPLICATION Study 3.
 
@@ -675,13 +675,12 @@ architecture is determined by N through p_c = 1/N.
 - WANDER 059 explicitly speculative — derivation missing, NOT for paper yet.
 - The 1/N convergence is striking but could be numerological coincidence. The
   architecture-dependence test (WANDER 055) would distinguish. Carry forward.
-- WANDER 046 (scale-invariant stability theorem, one paragraph) STILL not written.
-  It's been in handoff since Session 7 as "one paragraph." Next Claude: write this
-  before anything else. It's genuinely one paragraph.
+- WANDER 046 — confirmed written BC3/S12. Stale "pending" notes throughout handoff
+  are historical artifacts. The file exists: `WANDERINGS/046_scale_invariant_stability_theorem.md`.
 
 **Open threads unchanged:**
 - Real LLM confabulation validation (highest) — still blocked on FActScore access
-- WANDER 046 — STILL PENDING. Write it first next session. One paragraph.
+- ~~WANDER 046~~ ✓ DONE BC3/S12
 - Paper review pass by Thomas — §5.8 and §6.9 newest, now also §5 (palimpsest)
   and §3 (Poincaré) are candidates for next additions
 - EEG study, Mamba eigenvalue test, Tsallis q calibration
