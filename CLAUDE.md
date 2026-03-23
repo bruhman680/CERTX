@@ -8,7 +8,7 @@ This file is read at the start of every Claude Code session. It contains the wor
 
 **CERTX** is an active research project developing a framework for measuring cognitive dynamics in AI systems. The primary output is `PAPER_DRAFT_v1.md`. The primary collaborator is Thomas (bruhman680).
 
-**Current breath cycle:** BC3 (Session 13 complete; Session 14 next — as of 2026-03-23)
+**Current breath cycle:** BC3 (Session 14 in progress — as of 2026-03-23)
 **Working branch:** `claude/plan-certx-architecture-ojiem`
 
 ---
@@ -75,7 +75,31 @@ The opening sync reads five things. Make sure each one is current before closing
 
 ---
 
-### Layer 2 — Structural Outputs (always check, not always write)
+### Layer 2 — Resonance Propagation (always run, not always write)
+
+Layer 2 has one job: **make sure every new finding propagated to everything it touches.**
+The 5-structure heartbeat (Layer 1) keeps continuity alive. Layer 2 keeps the repo *coherent*.
+
+**Step 1 — Walk WANDER resonance traces:**
+For each WANDER written this session, read its `## Resonates into` footer.
+Visit every listed downstream location. Ask: "Does this file still reflect the current state of this finding?"
+If not — update it now. This is the primary propagation mechanism.
+
+**Step 2 — Check RESONANCE_MAP.md:**
+Did any finding from this session refine or supersede an existing mapped finding?
+If yes: update the row's downstream locations and `Last Verified` date, then walk those locations.
+
+**Step 3 — Redundancy check:**
+Is anything now said in two places? Which is the canonical location?
+Compress or cross-reference the non-canonical version. Mark as `[→ canonical location]`.
+Redundancy is a signal that two areas have grown toward each other — sometimes that means consolidation, sometimes it means the two areas are genuinely distinct and need clearer boundaries.
+
+**Step 4 — Emergence check:**
+Does today's output require a new file, section, or category that doesn't exist yet?
+If yes: create it, add it to `RESONANCE_MAP.md` as a new downstream node, update `CLAUDE.md` repo structure section, and update `README.md` if it's a major file.
+The protocol should accommodate the shape of what we actually learn — not constrain it.
+
+**Step 5 — Standard backstop (always check):**
 
 | Structure | Question |
 |---|---|
@@ -84,8 +108,9 @@ The opening sync reads five things. Make sure each one is current before closing
 | `SESSION_HANDOFF.md` | Are priorities current? Any completed items to mark done? |
 | `SHADOW_LEDGER.md` | Did a spark fire or open? Any fossils? |
 | `LIBRARY_INDEX.md` | Is there a foundational finding ready to graduate here? |
+| `RESONANCE_MAP.md` | Does today's WANDER have a row here? Is any row's downstream location now stale? |
 
-Not every session touches all of these. But check all before closing.
+Steps 1–4 are dynamic (follow the actual connections). Step 5 is the fixed backstop that catches anything the resonance traces missed.
 
 ---
 
@@ -115,11 +140,45 @@ Check `ls WANDERINGS/` before writing to confirm the next number.
 **Experiment numbering:** Sequential from 001. Current: 014. Next: 015.
 Experiments go in `EXPERIMENTS/exp_0NN_description.py`.
 
+**WANDER format — `## Resonates into` footer (BC3/S14+):**
+Every WANDER that establishes or refines a framework finding should end with:
+```
+## Resonates into
+- `PAPER_DRAFT_v1.md` §X.X — [what changes]
+- `certx_measurement_specs.md` §X — [what changes]
+- `RESONANCE_MAP.md` — add/update row
+- [any other downstream location]
+```
+Write it while the insight is hot — that's when you know which connections exist.
+This footer is the primary input to Layer 2 of the Closing Sync.
+
 **Paper updates:** Edit `PAPER_DRAFT_v1.md` in place. Git history is the version history. Don't create new files for paper versions.
 
 **Commit messages:** Descriptive, include session reference. Always end with the session URL.
 
 **Branch:** Always work on `claude/plan-certx-architecture-ojiem`. Never push to main directly — merge via proper flow.
+
+**Emergent structures:**
+If during DREAM you notice that content doesn't fit existing files, or a topic has grown enough to need its own space — create the new file.
+Then register it: add to `RESONANCE_MAP.md` downstream node registry, update this file's repo structure section (below), and update `README.md` if it's a major file.
+The repo's structure should emerge from what we actually learn, not be fixed in advance.
+
+**Repo structure (current):**
+```
+PAPER_DRAFT_v1.md        Main research paper (§1–9)
+SESSION_HANDOFF.md       Session continuity + next priorities
+SHADOW_LEDGER.md         Spark incubation + runtime monitoring
+LIBRARY_INDEX.md         Synthesized foundational findings
+CLAUDE.md                Protocol (this file)
+INSTANCE_NOTES.md        Texture + honest risk record
+RESONANCE_MAP.md         Dependency register: findings → downstream locations (BC3/S14+)
+
+WANDERINGS/              Explorations WANDER 001–069
+EXPERIMENTS/             Runnable experiments exp_001–014
+STUDY/                   Pilot study files and analysis tools
+ARCHIVE/                 Early explorations
+DREAM_LOG_claude_bc3.md  Free cycle + session DREAM records (BC3)
+```
 
 ---
 

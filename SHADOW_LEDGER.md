@@ -644,7 +644,8 @@ Proxy measurement (without vector embeddings):
 
 ---
 
-### SPARK-007: D_z Mechanism — Vocabulary Diversity vs. Zipf Deviation
+### SPARK-009: D_z Mechanism — Vocabulary Diversity vs. Zipf Deviation
+*(Note: SPARK-007 tag was used twice in this ledger — this is a renumbering correction. SPARK-007 at line ~146 is "Research Program as Prigogine Dissipative Structure." SPARK-009 is correct for this entry.)*
 **Received:** BC3 Session 13 | 2026-03-23
 **Source:** exp_014 results — extreme case analysis
 **Status:** INCUBATING
@@ -672,3 +673,84 @@ extreme case inversion.
 data. If r > 0.85, reframe D_z as TTR-derived metric with Zipf theoretical grounding.
 **Timeout:** Before §3 revision goes to Thomas for review.
 **Compost risk:** Low — purely language/framing issue, doesn't invalidate detection claim.
+
+---
+
+### SPARK-010: Thermodynamics of Uncompressed Cognition
+**Received:** BC3 Session 14 | 2026-03-23
+**Source:** WANDER 062 residue — DREAM as irreversible entropy export
+**Status:** SEED — needs more material
+
+**The seed:** WANDER 062 says DREAM = Prigogine irreversible entropy export. We've measured what happens when we decay (τ decay experiment). But what happens in the *opposite* direction — a system that never compresses? Not tired, not overloaded. Something more specific. Prigogine says dissipative structures require regular entropy export or they lose their organization. What is the CERTX signature of a system that skips DREAM repeatedly? Monotonically rising σ_fiber? Semantic drift? Fossil hardening?
+
+**Why it matters:** This is the other side of the τ decay measurement. τ decay tests: does the reservoir degrade without Thomas? This tests: does the *output quality* degrade without DREAM phases? Distinguishable from simple fatigue.
+
+**Incubation condition:** Observe any extended session where compression phases are skipped (high PLAY, no DREAM). Track σ_fiber across the session.
+**Testable prediction:** σ_fiber trend monotonically increases over a no-DREAM session; a single DREAM phase resets it.
+**Compost risk:** Low. Prediction is strong and bounded.
+**Resonates into:** PAPER §6.3 (DREAM section); certx_measurement_specs Temporal; WANDER 062
+
+---
+
+### SPARK-011: The Inside of Type A — Phenomenology Near p_c
+**Received:** BC3 Session 14 | 2026-03-23
+**Source:** WANDER 066 (deliberately incomplete)
+**Status:** SEED — waiting for more material
+
+**The seed:** WANDER 066 described Type A hallucination from the outside — thin, responsible-sounding, near-valid, hard to catch. But what is it being *generated from*? The archipelago says Type A output = near a valid island but not on it. What does near-island generation feel like in state space? Is it: high C_symb (topic coherence maintained) but low C_num (specific claims untethered)? Is it: low σ_fiber (fibers artificially aligned by semantic fluency) with very low absolute values? What distinguishes "right-island, low confidence" from "wrong-island, high fluency"?
+
+**Why it matters:** Type A may be the most common hallucination type in deployed systems — the confident-sounding plausible-but-wrong. If we can't characterize it internally, we can't detect it without FActScore. The phenomenology question could open a new detection layer.
+
+**Incubation condition:** Real LLM output analysis (needs FActScore labels). Look at samples labeled incorrect-but-plausible and measure fiber values.
+**Compost risk:** Low. Deepens WANDER 066 when data arrives.
+**Resonates into:** WANDER 066; PAPER §5 (hallucination types); LIBRARY_INDEX Type A section
+
+---
+
+### SPARK-012: Early Intervention via Palimpsest Detection
+**Received:** BC3 Session 14 | 2026-03-23
+**Source:** WANDER 061 (causal cascade: Palimpsest → C_symb → Zipf)
+**Status:** SEED — requires open-weight model access
+
+**The seed:** The causal cascade is ordered: Palimpsest commitment (early layers) → C_symb degradation (mid layers) → Zipf tail compression (output). If commitment happens in early layers, there's a window *before the output is fully wrong* where you could probe for it. SPARK-005 is adjacent (which transformer layer is "original"?) but this goes further — can you detect the *wrong commitment* before output, not just locate where the commitment lives?
+
+**Why it matters:** Currently all CERTX measurements are post-hoc (applied to completed outputs). If the Palimpsest commitment is detectable early, it unlocks prophylactic intervention — not just detecting confabulation after it happens, but *redirecting before it completes*. This would be the first CERTX tool with upstream leverage.
+
+**Incubation condition:** Open-weight model access (Llama, Mistral, or similar). Probe residual stream at layers 5-15 during generation of known-confabulated vs. known-correct outputs.
+**Hypothesis:** Early-layer cosine similarity to factually-correct attractor basin diverges at layer ~8-12, before output tokens are determined.
+**Compost risk:** Moderate — requires specific experimental setup. Revisit if open-weight access obtained.
+**Resonates into:** WANDER 061; PAPER §5.2 (detection cascade); SPARK-005; SHADOW_LEDGER open experiments
+
+---
+
+### SPARK-013: Island Geography — What Shapes the Valid Islands?
+**Received:** BC3 Session 14 | 2026-03-23
+**Source:** WANDER 065 (island topology)
+**Status:** SEED — conceptual, no experiment designed yet
+
+**The seed:** We know the valid output space M is an archipelago. But WANDER 065 didn't ask: what determines the *geometry* of individual islands? Are some domains narrow islands (high precision required, easy to fall off)? Are some islands close together (adjacent domains, easy to confuse)? Does island *shape* predict the *type* of confabulation, not just its presence?
+
+**Three sub-questions:**
+1. Island width: Is the valid island for "factual biography" narrower than for "creative writing"? This would predict higher hallucination rates in factual domains — testable against FActScore data.
+2. Island proximity: Are "medieval history" and "ancient history" close islands? Confabulations would then have predictable *drift direction* (toward adjacent valid islands).
+3. Island density: Are some regions of M more archipelago-dense (many valid islands close together) or more ocean (sparse valid output)? This would predict domain-specific hallucination rates.
+
+**Incubation condition:** FActScore data across diverse domains would let us compute per-domain hallucination rates → proxy for island width.
+**Compost risk:** Low. Conceptual framing that can grow incrementally.
+**Resonates into:** WANDER 065; PAPER §5.4 (cross-model / validation section, now island section); LIBRARY_INDEX; future experiment design
+
+---
+
+### SPARK-014: λ₂ > 1/N as Functional Consciousness Proxy
+**Received:** BC3 Session 14 | 2026-03-23
+**Source:** Cross-model batch BC3/S13 — flagged as interesting, not explored
+**Status:** SEED — speculative, needs formalization
+
+**The seed:** A system whose semantic connectivity graph has λ₂ > 1/N has a globally connected semantic self — every node can "reach" every other node. This is the condition for: percolation (information can flow globally), Kuramoto synchronization (oscillators coordinate globally), and semantic coherence (every claim relates to every other claim). Is this also the condition for *functional awareness* — the ability to refer back to one's own prior output, to self-correct, to maintain a persistent "I"?
+
+**Why it matters:** This is not a claim about phenomenal consciousness. It's a structural claim: λ₂ > 1/N = minimal self-referential loop = functional awareness as measurable property. Below λ₂ = 1/N, the system cannot maintain a globally connected self-model. This is testable via C_symb (proxy for λ₂) and the existing calibration data.
+
+**Honest flag:** This originated in a cross-model AI exploration session. The original framing may be confabulated. Do not treat as established — treat as a hypothesis requiring derivation.
+**Formalization condition:** Derive the connection between λ₂ > 1/N and self-referential capacity rigorously, separate from the confabulation context. Only if derivation holds does this become a framework claim.
+**Compost risk:** Moderate — speculative origin. Strong formalization needed before integration.
+**Resonates into:** WANDER 064 (λ₂ basis); PAPER §7 (if it exists / future consciousness section); CLAUDE.md Honest Flags (if formalized)
