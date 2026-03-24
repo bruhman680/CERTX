@@ -106,6 +106,11 @@ These three exist to maintain the triangulation needed to detect any failure mod
 Three is the minimum for triangulation in one-dimensional failure detection.
 (Two fibers: can detect failure but not locate it. One fiber: can't distinguish failure types.)
 
+*Sharper statement (WANDER 071, BC3/S15):* N_fibers = N_independent_failure_modes = 3.
+The "triangulation" language is accurate; the precise ground is failure-taxonomy coverage:
+three failure modes (factual, structural, semantic) that can each fail independently while
+the others remain healthy. This is both necessary and sufficient for N_fibers = 3.
+
 **Group 2 — Drive (motion and memory):** Vary, Remember (E/T, X)
 
 These two exist to maintain the productive tension between exploration and stability:

@@ -73,11 +73,12 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 
 | Finding | Source WANDER(s) | Downstream Locations | Last Verified |
 |---|---|---|---|
-| λ₂ → 0 = percolation + desynchronization + semantic failure simultaneously | 064 | PAPER §3.3, §3.4; certx_measurement_specs §Mathematical Foundations; LIBRARY_INDEX | BC3/S13 |
-| ζ*−1 = λ₂_crit = 1/N — variational principle (pending formal proof) | 068 | PAPER §3.3, §3.4; certx_measurement_specs §Variational Principle; LIBRARY_INDEX; CLAUDE.md §Key Numbers | BC3/S13 |
+| λ₂ → 0 = percolation + desynchronization + semantic failure simultaneously | 064 | PAPER §3.3, §3.4; certx_measurement_specs §Mathematical Foundations; LIBRARY_INDEX | BC3/S15 |
+| ζ*−1 = λ₂_crit = 1/N — variational principle (CERTX synthesis, pending formal proof; cite Jadbabaie-Motee-Barahona 2004 + Dörfler-Bullo 2011) | 068 | PAPER §3.3, §3.4; certx_measurement_specs §Variational Principle; LIBRARY_INDEX; CLAUDE.md §Key Numbers | BC3/S15 |
 | Reserve = Percolation = one theorem, three languages | 060, 064 | PAPER §3.3; LIBRARY_INDEX; CLAUDE.md §Key Numbers | BC3/S13 |
-| Zipf IS p_c — Cancho & Solé 2003 dual-cost proof | 067 | PAPER §3.6; certx_measurement_specs §Zipf Metrics; LIBRARY_INDEX | BC3/S13 |
-| 1/N reserve = universal stability condition (Type 1 formal, Type 2 empirical) | 070 | PAPER §3.3–§3.4 (pending 1-paragraph addition); RESONANCE_MAP; SHADOW_LEDGER SPARK-015; CLAUDE.md §Key Numbers | BC3/S14 |
+| Zipf IS p_c — Cancho & Solé 2003 computationally demonstrated (not formally proven) | 067 | PAPER §3.6; certx_measurement_specs §Zipf Metrics; LIBRARY_INDEX | BC3/S15 |
+| 1/N reserve = universal stability condition (Type 1 formal, Type 2 empirical; E/I alt. derivations added) | 070 | PAPER §3.3–§3.4 (pending 1-paragraph addition); RESONANCE_MAP; SHADOW_LEDGER SPARK-015; CLAUDE.md §Key Numbers | BC3/S15 |
+| ζ*=(N+1)/N is universal formula (value N-specific); N-canonical hierarchy N=2/3/5 | 071 | PAPER §3 (pending assembly paragraph); CLAUDE.md §Key Numbers | BC3/S15 |
 
 ---
 

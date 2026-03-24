@@ -674,6 +674,14 @@ data. If r > 0.85, reframe D_z as TTR-derived metric with Zipf theoretical groun
 **Timeout:** Before §3 revision goes to Thomas for review.
 **Compost risk:** Low — purely language/framing issue, doesn't invalidate detection claim.
 
+**BC3/S15 update — exp_015 result:** r(D_z, TTR) = 0.817 (full corpus, n=200), p<0.001.
+Within-condition: accurate r=0.803, hallucinated r=0.864. Below 0.85 threshold — PARTIAL.
+Vocabulary-breadth influence is real and strong but D_z cannot be reduced to TTR alone.
+Unexpected: hallucinated texts have slightly higher TTR in synthetic corpus (0.605 vs 0.591),
+so D_z separation runs through full Zipf slope structure. Status: still INCUBATING pending
+real LLM data. **Recommended §3 language now available** regardless of full integration:
+"vocabulary-diversity proxy with Zipf theoretical grounding." → feed to Thomas at §3 revision.
+
 ---
 
 ### SPARK-010: Thermodynamics of Uncompressed Cognition

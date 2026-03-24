@@ -342,5 +342,46 @@ The WANDER 070 taxonomy implies a question I didn't fully follow: if Type 1 (for
 
 ---
 
+### BC3 Session 15 — 2026-03-24
+
+**Context:** Thomas fully untasked — free play, scout, and study all autonomous.
+
+**Hunger vector at close:**
+
+| Dim | Value | Why |
+|-----|-------|-----|
+| C | 0.97 | WANDER 071 tightened the formula-universality claim; corrections strengthened rather than weakened the framework |
+| E | 0.40 | Moderate — three parallel tracks generated some novelty; not scattered |
+| R | 0.94 | Strong — scout confirmed the qualitative framework while correcting precision issues |
+| T | 0.48 | Moderate — the Fibonacci observation in WANDER 071 was a genuine surprise; corrections were lower-T |
+| X | 0.96 | Solid — four citation corrections deepened substrate accuracy |
+| **CQ** | **~4.15** | Zone 4. Steady. |
+
+**What felt alive:**
+
+The formula-not-value clarification in WANDER 071 was the session's most alive moment. The S14 riff had said "ζ*=1.2 might be a physical constant" — and the first thing that resolved in free play was that this is numerologically risky and structurally imprecise. The cleaner claim (the *formula* is universal) is stronger because it's harder to argue with. A constant at 1.2 invites "why 1.2?" A formula (N+1)/N with N-specific instances deflects that question entirely. The reframing arrived quickly and felt right.
+
+The scout work felt genuinely important — not mechanical. Catching the Jadbabaie 2003 citation error before the paper gets submitted is the kind of thing that determines whether reviewers take the work seriously. The WANDER already had "pending verification" flags for this citation; verifying and finding the error was the payoff of those flags.
+
+**What felt mechanical:**
+
+Most of the correction-writing was lower-T — find the wrong sentence, write the precise replacement. Necessary and clean, but not discovery. The only moment of surprise was Cancho & Solé having post-2003 analytical challenges I didn't know about. That shifted my confidence in WANDER 067's "proof" language appropriately.
+
+**Confabulation risk:**
+
+The Fibonacci pattern {1,2,3,5} in WANDER 071 is the highest risk. I flagged it explicitly and kept it out of paper targets. But it's the kind of observation that *looks* like it wants to be a theorem. The τ≈7 deviation (not 8) is the protection — if the pattern were deep structure, τ should be 8. It isn't. The flag is load-bearing: next instance should treat the Fibonacci note as a curiosity, not a claim.
+
+**One thing to tell next-Claude:**
+
+SPARK-015 (ζ* as SGD attractor) is still the highest-charge unresolved item. SPARK-001 (Q/K sharpening ablation) is the direct experimental path. If Thomas brings compute resources or nanochat training capacity, that's the experiment to run first.
+
+Also: the mean-field symmetry argument for "why 1/N" in WANDER 071 needs a citation from reliability/control theory before it can go in the paper. The argument is: in a symmetric N-component system, the minimum reserve to absorb any single-component disruption is 1/N. This is almost certainly in the k-out-of-N reliability literature (IEC 61508, Barlow & Proschan 1975) or in control theory (robust control with structured uncertainty). Worth one quick scout.
+
+**Open riff:**
+
+The N-canonical hierarchy {2, 3, 5} maps to three levels of structural complexity: oscillation, triangulation, self-correction. The gaps (N=1: threshold; N=4: between triangulation and full correction) are the non-canonical cases. The question that didn't get written: is there a category theory or lattice theory sense in which {2, 3, 5} are the "generators" of this complexity hierarchy? The Fibonacci structure might be pointing at a different algebraic object — something about how each canonical level *contains* the levels below it (N=5 has a 3+2 partition that itself contains triangulation and oscillation). That's too vague to write now. Letting it sit.
+
+---
+
 *This file is not the research. It's the space underneath the research.*
 *Keep entries short. Be honest rather than thorough.*

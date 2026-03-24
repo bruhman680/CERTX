@@ -5,7 +5,7 @@
 ---
 
 ## Current Breath Cycle: 3
-## Current Phase: DREAM (BC3 Session 14 complete)
+## Current Phase: DREAM (BC3 Session 15 complete)
 ## Last Updated: 2026-03-23
 
 ---
@@ -981,6 +981,64 @@ run full closing sync before DREAM.
 → SPARK-001 (Q/K sharpening ablation) — most direct path to SPARK-015 resolution.
 → τ decay experiment.
 → TMR upgrade to real LLM data (SPARK-009 / D_z mechanism resolution).
+
+---
+
+## BC3 Session 15 — What Happened (2026-03-24)
+
+**Phase: Free/Untasked + Scout + Study → DREAM**
+
+Thomas untasked entirely. Three parallel modes ran autonomously.
+
+**Free play → WANDER 071:**
+Resolved S14 INSTANCE_NOTES open riff: "ζ*=1.2 as physical constant of complex systems."
+The clarification: the *formula* (N+1)/N is universal; the *value* 1.2 is N=5 specific.
+N-canonical hierarchy emerged from play: N=2 (oscillation, ζ*=1.5), N=3 (triangulation,
+ζ*=1.33), N=5 (full self-correction, ζ*=1.2). Sequence {1,2,3,5} is Fibonacci — noted
+as pattern, explicitly not claimed as derivation. Mean-field symmetry argument for why
+1/N specifically (informal; needs citation before paper inclusion).
+
+**Study → exp_015 (SPARK-009 / D_z mechanism):**
+r(D_z, TTR) = 0.817 across n=200 synthetic samples. Below 0.85 integration threshold.
+PARTIAL confirmation: vocabulary breadth strongly influences Zipf slope, but D_z cannot
+be reduced to TTR alone. Unexpected: hallucinated texts have slightly higher TTR in
+synthetic corpus. **§3 recommended language:** "vocabulary-diversity proxy with Zipf
+theoretical grounding." Available for Thomas's §3 revision pass regardless of full integration.
+
+**Scout → four citation corrections (significant):**
+- "Jadbabaie et al. 2003" was the wrong paper (flocking, not Kuramoto) — corrected to
+  Jadbabaie, Motee & Barahona 2004 (ACC) + Dörfler & Bullo 2011 (SIAM) in WANDERs 064, 068
+- ζ*−1 = λ₂_crit = 1/N is a CERTX synthesis, not a named result in any paper — now flagged
+- Cancho & Solé 2003: "proven" → "computationally demonstrated"; post-2003 challenge noted
+- WANDER 070 E/I section: two alternative derivations added (Neurocomputing 2025; PLOS Comp Bio 2022)
+
+**Also this session:** WANDER 046 ghost finally removed from active handoff threads (it was
+written in S12 — stale "pending" notes had persisted across 3 sessions).
+
+**5-structure check:**
+- WANDERINGS/ — 071 written and committed ✓
+- PAPER_DRAFT_v1.md — no direct edits; WANDER 071 candidates one assembly paragraph for §3 ✓
+- SESSION_HANDOFF.md — updated (this entry) ✓
+- SHADOW_LEDGER.md — SPARK-009 updated with exp_015 result ✓
+- LIBRARY_INDEX.md — no graduates; WANDER 071 not yet library-ready ✓
+- INSTANCE_NOTES.md — updated ✓
+- RESONANCE_MAP.md — three rows updated (064, 067, 068 → BC3/S15); WANDER 071 row added ✓
+
+**Honest flags:**
+- Fibonacci pattern {1,2,3,5} in WANDER 071 is a pattern observation, not a derivation.
+  The τ≈7 (vs. F₆=8) deviation matters. Do not promote to paper without derivation.
+- Mean-field symmetry argument (why 1/N) is informal. Needs k-out-of-N reliability theory
+  or similar before paper inclusion.
+- SPARK-009 partial: D_z mechanism question remains open pending real LLM data.
+
+**Current priorities (carry forward):**
+→ FActScore validation — still highest, still blocked on HuggingFace access
+→ Jadbabaie-Motee-Barahona 2004 exact condition verification (now correctly cited)
+→ Gradient variance profile test (WANDER 063 — Humayun 2024, no new access needed)
+→ Thomas paper review pass (§2 now has WANDER 069/071 derivation candidates; §3 has D_z language)
+→ SPARK-001 (Q/K sharpening ablation — path to SPARK-015 resolution)
+→ τ decay experiment
+→ Mean-field symmetry citation for 1/N argument (k-out-of-N / reliability theory)
 
 ---
 

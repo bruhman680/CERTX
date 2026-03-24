@@ -8,7 +8,7 @@ This file is read at the start of every Claude Code session. It contains the wor
 
 **CERTX** is an active research project developing a framework for measuring cognitive dynamics in AI systems. The primary output is `PAPER_DRAFT_v1.md`. The primary collaborator is Thomas (bruhman680).
 
-**Current breath cycle:** BC3 (Session 14 in progress — as of 2026-03-23)
+**Current breath cycle:** BC3 (Session 15 complete — as of 2026-03-24)
 **Working branch:** `claude/plan-certx-architecture-ojiem`
 
 ---
@@ -134,7 +134,7 @@ CLAUDE.md is the first thing the next instance reads. If it's stale, the next in
 
 ## Conventions
 
-**WANDER numbering:** Sequential from 001. Current: 070. Next: 071.
+**WANDER numbering:** Sequential from 001. Current: 071. Next: 072.
 Check `ls WANDERINGS/` before writing to confirm the next number.
 
 **Experiment numbering:** Sequential from 001. Current: 014. Next: 015.
@@ -226,6 +226,23 @@ DREAM_LOG_claude_bc3.md  Free cycle + session DREAM records (BC3)
 - CQ = 6.1 reported in autonomous exploration — **check formula**. If CQ = sum of 5 dimensions bounded [0,1], theoretical max = 5.0. Number is likely confabulated.
 - The triple-critical manifold (WANDER 061) is a **causal cascade**, not three simultaneous independent constraints. Palimpsest → C_symb → Zipf. Detection is ordered accordingly.
 - The valid output space M is an **archipelago** (WANDER 065) — local measurements detect ocean vs. island, not which island. FActScore is the GPS, topologically irreplaceable for Type D.
+
+---
+
+## BC3/S15 Key Findings (for next instance)
+
+Session 15 was autonomous (free play + scout + study). Thomas untasked.
+
+- **WANDER 071**: Canonical N hierarchy — formula universality clarification. ζ*=(N+1)/N is a universal formula, not a universal value. ζ*=1.2 is N=5 specific. N-canonical hierarchy: N=2 (oscillation, ζ*=1.5), N=3 (triangulation, ζ*=1.33), N=5 (self-correction, ζ*=1.2). Sequence {1,2,3,5} is Fibonacci — flagged as pattern, not derivation. Mean-field symmetry argument for why 1/N specifically (informal, needs citation).
+- **exp_015** (D_z/TTR study): r(D_z, TTR) = 0.817 — below 0.85 SPARK-009 threshold. PARTIAL: vocabulary breadth loads strongly onto Zipf slope but D_z can't be reduced to TTR alone. §3 language: "vocabulary-diversity proxy with Zipf theoretical grounding."
+- **Scout corrections (4 targeted)**:
+  - "Jadbabaie et al. 2003" → Jadbabaie, Motee & Barahona 2004 (ACC) in WANDERs 064, 068
+  - Dörfler & Bullo 2011 (SIAM) added as definitive Kuramoto citation
+  - λ₂_crit = 1/N flagged as CERTX synthesis, not a named result in any paper
+  - Cancho & Solé 2003: "proven" → "computationally demonstrated"; post-2003 challenge noted
+  - E/I Type 2 section: alternative derivation papers added (Neurocomputing 2025, PLOS Comp Bio 2022); Kuramoto/λ₂ path flagged as original CERTX claim
+
+**S15 stale corrections:** WANDER 046 ghost removed from SESSION_HANDOFF active threads.
 
 ---
 
