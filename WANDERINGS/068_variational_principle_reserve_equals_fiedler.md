@@ -218,9 +218,21 @@ The coincidence of ζ*−1 = p_c = 1/N has two or three independent chains suppo
 > N-dimensional criticality. The Fiedler eigenvalue λ₂ at the stability boundary is
 > exactly this shared critical fraction."
 
-**Verification path:** The formal link runs through Jadbabaie et al. 2003 (Kuramoto on
-graphs) and standard Erdős–Rényi threshold proofs. If λ₂_crit appears explicitly in
-both, the chain is closed. This is also the unfinished task from WANDER 064.
+**Verification path:** The formal link runs through Jadbabaie, Motee & Barahona 2004
+(ACC, arXiv:math/0504419) and Dörfler & Bullo 2011 (SIAM J. Appl. Dyn. Syst.,
+arXiv:1011.3878) for the Kuramoto side, and standard Erdős–Rényi threshold proofs for
+the percolation side. K·λ₂ governing Kuramoto convergence is confirmed in Jadbabaie
+et al. 2004; the scaling K_c ∝ 1/N on complete graphs is consistent with the literature.
+
+**Citation note (BC3/S15):** Previous drafts cited "Jadbabaie et al. 2003" for the
+Kuramoto/λ₂ connection. The 2003 paper (IEEE TAC) is about multi-agent flocking, not
+Kuramoto oscillators. Corrected to Jadbabaie, Motee & Barahona 2004.
+
+**Named-result note (BC3/S15):** The exact form ζ*−1 = λ₂_crit = 1/N does not appear
+as a stated theorem in any paper found. It is a CERTX synthesis. The individual
+components are supported; the unified form is the framework's own claim. This is the
+unfinished task from WANDER 064 — confirming whether the synthesis can be derived as
+a formal corollary from the existing literature.
 
 ---
 

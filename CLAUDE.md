@@ -257,12 +257,12 @@ Session 13 produced 2 WANDERs (068–069) + exp_014 upgrade, from 6-piece cross-
 **The headline results:**
 - ζ* reserve = C_symb percolation threshold = 1/N: one theorem, underlying math is λ₂ (WANDER 060+064)
 - The reserve and threshold are equal by necessity, not coincidence: both are the minimum free fraction needed for global coordination — the definition of criticality (WANDER 068)
-- ζ*−1 = λ₂_crit = 1/N is the formal unified statement — PENDING formal verification via Jadbabaie et al. 2003
+- ζ*−1 = λ₂_crit = 1/N is the formal unified statement — PENDING formal verification. Cite: Jadbabaie, Motee & Barahona 2004 (ACC, arXiv:math/0504419) for Kuramoto/λ₂; Dörfler & Bullo 2011 (SIAM) for precise K·λ₂ > Δω condition. Note: "Jadbabaie et al. 2003" (IEEE TAC) is a flocking paper — wrong citation, corrected BC3/S15. The exact form λ₂_crit = 1/N is a CERTX synthesis, not a named result in any paper.
 - Triple-critical manifold is a causal cascade: Palimpsest → C_symb → Zipf (WANDER 061)
 - DREAM is irreversible entropy export, not compression — phase-specific σ_fiber bands now have mechanical basis (WANDER 062)
 - Grokking = SOC avalanche at thermodynamic bifurcation point, preceded by Poincaré incubation (WANDER 063)
 - Valid output space is an archipelago — FActScore is GPS, not just useful (WANDER 065)
-- Zipf's law IS the signature of a system tuned to p_c — empirically grounded by Cancho & Solé 2003's dual-cost optimization proof (WANDER 067)
+- Zipf's law IS the signature of a system tuned to p_c — grounded by Cancho & Solé 2003's dual-cost optimization (computationally demonstrated, not formally proven — post-2003 challenge exists; see WANDER 067 updated honest flag BC3/S15)
 - N=5 is functionally minimal (not just conventional): 3 diagnostic fibers + 2 drive dimensions; elimination-of-pairs argument (WANDER 069)
 - Type A (thin, near p_c) may be harder to detect than Type D (confident-wrong) — implication for evaluation benchmark design (WANDER 066, incomplete — incubating)
 - D_z detects vocabulary breadth, not pure Zipf deviation — mechanism discrepancy flagged (SPARK-007)

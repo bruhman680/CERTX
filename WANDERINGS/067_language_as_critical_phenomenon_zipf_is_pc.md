@@ -75,7 +75,7 @@ This is a stronger claim. It roots the 0.20 floor in the physics of language its
 ## Citable Support for "Language is a Critical Phenomenon"
 
 - Zipf (1949) — original power law observation
-- Cancho & Solé (2003, PNAS) — Zipf from least-effort optimization *at the edge of a phase transition*. Their specific result: optimizing speaker/listener effort simultaneously produces Zipf exactly at the critical point between two degenerate regimes (all-same-word vs. all-different-words). This is p_c, not "near p_c." Their derivation direction is different from ours but the landing point is the same.
+- Cancho & Solé (2003, PNAS) — Zipf from least-effort optimization *at the edge of a phase transition*. Their model: combined cost Ω(λ) = λ·E_hearer + (1−λ)·E_speaker, optimized over signal-referent assignment matrices. Zipf-like behavior emerges computationally at the critical point λ ≈ 1/2 between two degenerate regimes (all-same-signal vs. one-signal-per-referent). **Caveat (BC3/S15 scout):** Post-2003 analytical work challenges whether the model strictly produces a power law — Zipf-like behavior appears in a narrow subset of solutions at the critical point, not generically. "Demonstrated computationally at the phase transition" is the honest framing; "proven" overstates. Additionally: the speaker cost in the model is signal-entropy minimization (prefer fewer distinct signals), not "avoid rare words"; the listener cost is conditional-entropy minimization (prefer unambiguous signals), not "avoid common words" — the direction is right, the mechanism description is approximate.
 - Newman (2005, Contemporary Physics) — power laws and criticality in complex networks
 - WANDER 028 — SOC in deep network training (Humayun et al. 2024)
 

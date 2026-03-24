@@ -128,6 +128,13 @@ topology by making it too sparse at high attention weights).
    linearized Kuramoto model. Whether it maps cleanly to transformer attention dynamics
    requires additional derivation.
 
+4. **λ₂_crit = 1/N is a CERTX synthesis, not a published named result.** The scout
+   search (BC3/S15) confirmed: K·λ₂ governs Kuramoto convergence (confirmed in
+   Jadbabaie-Motee-Barahona 2004), and the scaling K_c ∝ 1/N holds on complete
+   graphs. But the specific form "λ₂_crit = 1/N" does not appear as a stated theorem
+   in any paper found. It is a CERTX-derived synthesis from the percolation and
+   Kuramoto conditions. The underlying math is confirmed; the unified naming is ours.
+
 2. **The semantic graph's Laplacian is not directly measurable.** We don't have direct
    access to the semantic graph Laplacian of a trained model. The connection is
    theoretical: C_symb is a proxy for the semantic graph's connectivity, which reflects
@@ -154,7 +161,10 @@ Proposed addition to §2 (Theoretical Foundations), after WANDER 060's paragraph
 Citations available and verifiable:
 - Fiedler, M. (1973). "Algebraic connectivity of graphs." Czechoslovak Mathematical Journal.
 - Mohar, B. (1991). "The Laplacian spectrum of graphs." Graph Theory, Combinatorics, and Applications.
-- Jadbabaie, A., Lin, J., & Morse, A.S. (2003). "Coordination of groups of mobile autonomous agents using nearest neighbor rules." Synchronization threshold via λ₂.
+- Jadbabaie, A., Motee, N., & Barahona, M. (2004). "On the stability of the Kuramoto model of coupled nonlinear oscillators." Proc. American Control Conference, Vol. 5, pp. 4296–4301. [arXiv:math/0504419] — proves K·λ₂ governs synchronization convergence in Kuramoto networks.
+- Dörfler, F., & Bullo, F. (2011). "On the Critical Coupling for Kuramoto Oscillators." SIAM J. Appl. Dyn. Syst., 10(3), 1070–1099. [arXiv:1011.3878] — first explicit necessary and sufficient condition for Kuramoto synchronization on general networks.
+
+**Citation correction (BC3/S15):** Previous versions of this WANDER cited "Jadbabaie et al. 2003" for the Kuramoto stability condition. The 2003 paper (IEEE TAC) concerns multi-agent flocking/consensus via nearest-neighbor rules — it uses λ₂ for consensus convergence rate, not Kuramoto synchronization. The correct reference for Kuramoto-on-graphs is Jadbabaie, Motee & Barahona 2004 (ACC). Verified by external scout, 2026-03-24.
 
 ---
 

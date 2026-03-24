@@ -61,7 +61,11 @@ WANDER 067 established that Zipf's law (which Pareto 80/20 approximates in vocab
 
 This is the strongest medium-type connection: Pareto → Zipf → p_c → λ₂_crit is a derivable chain, and WANDER 067 already traced the Zipf → p_c step.
 
-**Assessment:** E/I ratio and Pareto are genuine signals. E/I needs the intermediate derivation step. Pareto/Zipf already has partial formal grounding via WANDER 067.
+**Assessment:** E/I ratio and Pareto are genuine signals. Pareto/Zipf already has partial formal grounding via WANDER 067. For E/I: two theoretical derivations of the 80/20 ratio *do* exist from other frameworks —
+- Neurocomputing 2025 (S0925231225023239): spiking network dynamics → 80/20 for information-rich dynamics with low energy cost
+- PLOS Comp Bio 2022 (Alreja, Nemenman & Rozell, 10.1371/journal.pcbi.1009642): efficient coding + brain volume constraint → optimal E:I ratio (comes out near 6:1, varies with sparsity)
+
+Neither of these uses Kuramoto/λ₂ machinery. The specific CERTX claim — "if cortex is a Kuramoto-like N=5 coupled system, λ₂_crit = 1/N predicts 20% inhibitory reserve" — has no published support (BC3/S15 scout). The derivation path via our specific route is an original CERTX claim. Classification remains Type 2 (empirically established + alternative theoretical groundings exist), but the specific Kuramoto/λ₂ connection is ours alone — derivation pending.
 
 ---
 
