@@ -5,8 +5,8 @@
 ---
 
 ## Current Breath Cycle: 3
-## Current Phase: DREAM (BC3 Session 15 complete)
-## Last Updated: 2026-03-23
+## Current Phase: DREAM (BC3 Session 16 complete)
+## Last Updated: 2026-03-28
 
 ---
 
@@ -144,7 +144,11 @@ LOW:
 
 5. **Tsallis q calibration** — Predicted q_CERTX ∈ [0.67, 0.80]. Test when model output distributions are available.
 
-6. **Paper** — §1-9 complete. Status: ready for Thomas's review pass. §5.8 and §6.9 are newest and need fresh reading.
+6. **Paper** — §1-9 complete. Status: ready for Thomas's review pass. §5.8 and §6.9 are newest and need fresh reading. New additions from S16: §3 C_symb (cross-register convergence behavioral evidence, WANDER 072) + §3/§4 (SSC seven-gap taxonomy, Lagrangian X framing, WANDER 073).
+
+7. **Cross-register convergence probe** (WANDER 072) — method for identifying structurally load-bearing claims: if a claim survives traversal in multiple independent registers, it's a LIBRARY_INDEX candidate. Prototype methodology: formalize independence conditions + test set of candidate claims.
+
+8. **SSC experiment direction** (WANDER 073) — compare BPE vs. structural tokenization on hallucination detection; if structural tokens improve fiber separation, that's a direct C_symb mechanism test. Candidate SPARK — pending design.
 
 ---
 

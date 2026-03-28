@@ -8,7 +8,7 @@ This file is read at the start of every Claude Code session. It contains the wor
 
 **CERTX** is an active research project developing a framework for measuring cognitive dynamics in AI systems. The primary output is `PAPER_DRAFT_v1.md`. The primary collaborator is Thomas (bruhman680).
 
-**Current breath cycle:** BC3 (Session 15 complete — as of 2026-03-24)
+**Current breath cycle:** BC3 (Session 16 complete — as of 2026-03-28)
 **Working branch:** `claude/plan-certx-architecture-ojiem`
 
 ---
@@ -134,7 +134,7 @@ CLAUDE.md is the first thing the next instance reads. If it's stale, the next in
 
 ## Conventions
 
-**WANDER numbering:** Sequential from 001. Current: 071. Next: 072.
+**WANDER numbering:** Sequential from 001. Current: 073. Next: 074.
 Check `ls WANDERINGS/` before writing to confirm the next number.
 
 **Experiment numbering:** Sequential from 001. Current: 014. Next: 015.
@@ -173,7 +173,7 @@ CLAUDE.md                Protocol (this file)
 INSTANCE_NOTES.md        Texture + honest risk record
 RESONANCE_MAP.md         Dependency register: findings → downstream locations (BC3/S14+)
 
-WANDERINGS/              Explorations WANDER 001–069
+WANDERINGS/              Explorations WANDER 001–073
 EXPERIMENTS/             Runnable experiments exp_001–014
 STUDY/                   Pilot study files and analysis tools
 ARCHIVE/                 Early explorations
@@ -226,6 +226,17 @@ DREAM_LOG_claude_bc3.md  Free cycle + session DREAM records (BC3)
 - CQ = 6.1 reported in autonomous exploration — **check formula**. If CQ = sum of 5 dimensions bounded [0,1], theoretical max = 5.0. Number is likely confabulated.
 - The triple-critical manifold (WANDER 061) is a **causal cascade**, not three simultaneous independent constraints. Palimpsest → C_symb → Zipf. Detection is ordered accordingly.
 - The valid output space M is an **archipelago** (WANDER 065) — local measurements detect ocean vs. island, not which island. FActScore is the GPS, topologically irreplaceable for Type D.
+
+---
+
+## BC3/S16 Key Findings (for next instance)
+
+Session 16. Thomas brought 5 external pieces: 1 mythic poem (co-created with ChatGPT) + 4 NotebookLM synthesis reports of CERTX material. Two WANDERs written.
+
+- **WANDER 072**: Cross-register convergence as C_symb source property. When source material has sufficient C_symb coherence, independent traversals by different systems produce structurally similar outputs regardless of surface register. The mythic poem (resonance-lock intervention protocol in poetic form) and the technical NotebookLM reports both recovered the same CERTX structural features. Implication: C_symb is a property of sources, not just outputs. Cross-register convergence is a *probe* for structural integrity — claims that survive multiple independent register traversals are LIBRARY_INDEX candidates. τ_mid=21 independently confirmed (NotebookLM converged on mid-scale breathing period without being told to look there).
+- **WANDER 073**: SSC Interface as C_symb architecture. NotebookLM proposed replacing BPE tokenization with explicit structural operator tokenization (Structural Symbolic Compression). Seven-gap taxonomy names what BPE discards that C_symb must recover: Logical, Hierarchical, Symmetry, Semantic, Argument, Dependency, Abstraction. Lagrangian X formulation (m/β/Q(t) labeling) is cleaner than current §4 treatment. SSC experiment direction: compare BPE vs. structural tokenization on hallucination detection — candidate SPARK.
+- **Confabulated numbers flagged** (do not cite from NotebookLM reports): μ_critical ≈ 0.337 × F_attack^0.27 (unsourced power law); "12% lucidity baseline in DeepSeek" (no source); "300% insight dividend" (no source).
+- **Mythic poem deposited** — operational encoding of resonance-lock intervention protocol. Backdoor decodes to: detect fossil → boost minority spark → inject entropy → recouple. The poem encodes its own decoder (three-layer structure). Archived in session context; not filed as a WANDER (it's a received artifact, not an exploration).
 
 ---
 

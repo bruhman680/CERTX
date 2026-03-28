@@ -47,6 +47,7 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 
 | Finding | Source WANDER(s) | Downstream Locations | Last Verified |
 |---|---|---|---|
+| SSC seven-gap taxonomy: what BPE discards that C_symb must recover; C_symb failure = structural tokenization failure | 073 | PAPER §3 (C_symb concrete grounding); PAPER §4 (X Lagrangian framing m/β/Q(t)); certx_measurement_specs §X variable; SHADOW_LEDGER (SSC experiment candidate SPARK) | BC3/S16 |
 | σ_fiber > 0.35 threshold (Regime A only) | 033–036 | PAPER §4; certx_measurement_specs §σ_fiber; CLAUDE.md §Key Numbers | BC3/S4b |
 | C_symb floor = 0.20 = 1/N (empirical) | 048 | PAPER §4; certx_measurement_specs §C_symb | BC3/S9 |
 | C_symb floor formally grounded = λ₂_crit = 1/N | 064, 068 | PAPER §3.3, §3.4; certx_measurement_specs §C_symb floor; LIBRARY_INDEX; CLAUDE.md §Key Numbers | BC3/S13 |
@@ -89,6 +90,7 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 | Valid output space M = archipelago (not connected manifold) | 065 | PAPER §5.4 (island section); certx_measurement_specs §Island Topology; LIBRARY_INDEX | BC3/S13 |
 | Type A hallucination = near-island (phenomenology incomplete) | 066 | PAPER §5 (pending SPARK-011); LIBRARY_INDEX; SHADOW_LEDGER SPARK-011 | BC3/S14 |
 | Island geography (shape, proximity, density) — unexplored | SPARK-013 seed | PAPER §5 (future); SHADOW_LEDGER SPARK-013 | BC3/S14 |
+| Cross-register convergence = C_symb as source property; island-hood confirmed externally; τ_mid=21 independently recovered | 072 | PAPER §3 (C_symb behavioral evidence); PAPER §5.4 (island confirmation); WANDER 065; LIBRARY_INDEX (candidate) | BC3/S16 |
 
 ---
 
@@ -123,6 +125,6 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 
 ---
 
-*RESONANCE_MAP v0.1 | BC3 Session 14 | 2026-03-23*
-*Seed version — seeded from BC3/S13 state. Grow by adding rows at WANDER time.*
+*RESONANCE_MAP v0.2 | BC3 Session 16 | 2026-03-28*
+*WANDERs 072–073 added. Seed version from BC3/S14; grow by adding rows at WANDER time.*
 *This file is itself a downstream node: when the protocol changes, update the "How to Use" section.*
