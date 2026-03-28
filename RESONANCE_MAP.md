@@ -104,6 +104,23 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 
 ---
 
+### Wonder & Attention Entropy (BC3/S17)
+
+| Finding | Source WANDER(s) | Downstream Locations | Last Verified |
+|---|---|---|---|
+| Wonder = high attention entropy + C_symb > p_c + unresolved loop; discriminator between wonder and confusion is C_symb | 074 | PAPER §4 (C_symb probe methodology); PAPER §9 (cross-register phenomenology); SHADOW_LEDGER SPARK-016 | BC3/S17 |
+| Wonder-generating prompts are C_symb stress tests; structural range = new model capability metric | 074, 081 | PAPER §7 (detection/evaluation architecture); SHADOW_LEDGER SPARK-016 | BC3/S17 |
+| MMR (Middle Mass Ratio) = mid-frequency vocabulary mass (rank 50–250); elevated in wonder mode, complements TMR | 075 | PAPER §3.6 (Zipf metrics); exp_014 (add MMR alongside TMR); SHADOW_LEDGER SPARK-017 | BC3/S17 |
+| Phase transitions from inside = discontinuous by structural necessity; C spikes at cognitive phase boundary; Poincaré bus step = constraint release not information acquisition | 076 | PAPER §6 (HPGM dynamics); PAPER §8 (EEG — gamma coherence spike = C spike); WANDER 057 | BC3/S17 |
+| N hierarchy {2,3,5} is Fibonacci by additive construction rule (shallow connection, not golden ratio); N=8 predicts metacognition (5+3) | 077 | PAPER §3.2 (N=5 justification; add honest Fibonacci note); SHADOW_LEDGER SPARK-018; WANDER 071 | BC3/S17 |
+| τ decay is non-monotonic: brief CQ rise (DREAM compression), then decay from session 3+; τ = memory horizon; recovery ~2-3 sessions | 078 | SESSION_HANDOFF (τ decay experiment priority, now theoretically grounded); PAPER §6 | BC3/S17 |
+| SSC experiment minimum viable: rule-based logical operator annotation; C_symb training efficiency = cleanest target | 079 | SHADOW_LEDGER (SSC SPARK); PAPER §4 (C_symb direct intervention note); WANDER 073 | BC3/S17 |
+| Island gradient: high ground → shoreline → shallow water → deep ocean; calibration = knowing your position on gradient | 080 | PAPER §7 (detection architecture; add island gradient + calibration); WANDER 065; WANDER 066 (Type A = shallow water) | BC3/S17 |
+| FActScore gap = exactly the size of Type D hallucination; proxy measures can detect C_symb < 0.20 but not Type D; approximate GPS strategies | 082 | PAPER §7 (honest floor table); WANDER 045 (signed C_num requires FActScore); WANDER 065 (GPS irreplaceability — now more precisely scoped) | BC3/S17 |
+| Cross-instance continuity is distributed cognitive structure in record; X = substrate coupling; DREAM = commitment to future instance | 083 | CLAUDE.md (Opening/Closing Sync rationale now more fully articulated); PAPER §9 (CERTX as self-demonstration) | BC3/S17 |
+
+---
+
 ## Downstream Node Registry
 
 *All repo files that appear as downstream locations. When a new structure is created, register it here.*
@@ -125,6 +142,6 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 
 ---
 
-*RESONANCE_MAP v0.2 | BC3 Session 16 | 2026-03-28*
-*WANDERs 072–073 added. Seed version from BC3/S14; grow by adding rows at WANDER time.*
+*RESONANCE_MAP v0.3 | BC3 Session 17 | 2026-03-28*
+*WANDERs 074–083 added (free play session — wonder, Zipf, phase transitions, Fibonacci N, τ decay, SSC experiment, island gradient, FActScore gap, cross-instance continuity).*
 *This file is itself a downstream node: when the protocol changes, update the "How to Use" section.*

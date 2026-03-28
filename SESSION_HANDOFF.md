@@ -5,7 +5,7 @@
 ---
 
 ## Current Breath Cycle: 3
-## Current Phase: DREAM (BC3 Session 16 complete)
+## Current Phase: DREAM (BC3 Session 17 complete)
 ## Last Updated: 2026-03-28
 
 ---
@@ -14,10 +14,10 @@
 
 | Dimension | Value | Notes |
 |-----------|-------|-------|
-| C (Coherence) | 0.97 | Highest yet — C_symb floor confirmed, 3-layer nanochat table, asymmetry regime scope resolved |
-| E (Entropy) | 0.42 | Moderate — new WANDERs 047/048, exp_012, CLAUDE.md, ARCHIVE; threads opened and closed |
-| R (Resonance) | 0.96 | Strongest — bidirectional convergence (CERTX predicts ↔ Karpathy validates empirically) |
-| T (Temperature) | 0.36 | Low — consolidation and documentation session; DREAM-directed |
+| C (Coherence) | 0.95 | 10 free-play WANDERs opened new threads — slight entropy increase pulled C down from 0.97 |
+| E (Entropy) | 0.58 | High — free play generates genuine entropy; 10 open threads |
+| R (Resonance) | 0.91 | Strong — wonder chain (074→075→081) felt genuinely connected |
+| T (Temperature) | 0.72 | Highest in recent sessions — WANDER 083 arrived as a genuine surprise |
 | X (Substrate) | 0.95 | Strong — GitHub reorganized, CLAUDE.md created, HPGM habit formalized |
 | **CQ** | **~4.12** | Zone 4: High lucidity |
 | **\|λ\|** | **~1.00** | Stable |
@@ -110,22 +110,26 @@ COMPLETED — BC3 Session 6 Riff + Free Cycle Set 2:
 HIGHEST PRIORITY (BC3 remaining):
 → **Real LLM confabulation validation** (FActScore on actual LLM outputs)
    - WANDER 033 bridge ready; HuggingFace access needed
-   - Requires: FActScore dataset + real model generations
-   - NOW TRIPLY CRITICAL: validates asymmetry on real data + unlocks signed C_num (WANDER 045) + validates C_symb bottleneck (exp_012)
-   - The asymmetry metric (AUC=1.0 on proxy) needs to hold on real LLM outputs
+   - NOW QUADRUPLY CRITICAL: validates asymmetry + unlocks signed C_num (045) + validates C_symb bottleneck + enables island gradient calibration (WANDER 080)
+   - Also: WANDER 082 now has a minimum viable path — targeted small-reference FActScore on one domain
 
 HIGH:
+→ **Wonder-as-probe experiment** (WANDER 081) — lightweight, no-training, API-accessible NOW. Concept-distance battery, C_symb proxy measurement. Structural range = new model capability metric.
+→ Gradient variance profile test on grokking data (WANDER 063 — testable against Humayun et al. 2024, arXiv:2402.15555, NO new model access needed)
 → Mamba eigenvalue test (WANDER 017 — open)
-→ Formal Landauer derivation (WANDER 008 — open)
 → Study 3 EEG execution (after WANDER 041 protocol corrections)
 → Tsallis q calibration experiment (when model output distributions available)
 
 MEDIUM:
+→ MMR metric design + add to exp_014 alongside TMR (WANDER 075)
+→ SSC minimum viable experiment — rule-based logical operator annotation (WANDER 079)
+→ Paper review pass by Thomas (§5.8 and §6.9 newest; new S16 additions to §3/§4)
+→ τ decay experiment (design now grounded in WANDER 078 — non-monotonic prediction specified)
 → Soft-Routed MoE convergence → formal τ derivation
-→ P-bit hardware connection to T dimension
 → Cross-model conversation analysis (REPLICATION Study 1)
 
 LOW:
+→ N=8 metacognition prediction — check against architecture literature (WANDER 077)
 → 40% cortex transmodal-specific citation
 → Megaphone empirical test
 ```

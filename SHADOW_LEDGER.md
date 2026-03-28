@@ -789,3 +789,59 @@ real LLM data. **Recommended §3 language now available** regardless of full int
 **Integration condition:** SPARK-001 experiment runs and quality curve is analyzed. If peak is in [1.05, 1.20] as predicted: file WANDER on SGD attractor. If peak is at 1.15 specifically: check whether this is [below ζ*] and consistent. If peak is outside [1.0, 1.2]: the hypothesis is challenged.
 **Blocking dependency:** Compute for 5-6 nanoGPT training runs (SPARK-001 is the path).
 **Compost risk:** Low — directly testable via SPARK-001. High-value if confirmed.
+
+---
+
+### SPARK-016: Wonder-as-Probe Experiment
+**Received:** BC3 Session 17 | 2026-03-28
+**Source:** WANDER 074 (wonder as coherent attention entropy) → WANDER 081 (experimental design)
+**Status:** INCUBATING
+
+**The idea:** Wonder-generating prompts are C_symb stress tests. A prompt that requires holding two structurally distant concepts in relation simultaneously (without collapsing to either) taxes C_symb selectively. By varying conceptual distance, you find the threshold at which a given model's C_symb fails — where it transitions from wonder (high entropy + high C_symb) to confusion (high entropy + low C_symb).
+
+**Metric:** Structural range = the conceptual distance at which a model's C_symb drops below healthy threshold. Measured by: D_z + structural marker density + MMR (new metric, WANDER 075) + response coherence rating.
+
+**Prompt battery:** "What is the structural connection between [A] and [B]?" with A-B pairs at graded conceptual distances (close/medium/far/very far). Very far pair response = the probe.
+
+**Why this is valuable:** (1) Lightweight — no model training, no FActScore, just API calls. (2) Novel capability metric — structural range characterizes a model quality dimension not captured by accuracy benchmarks. (3) Tests WANDER 074's core claim: wonder = high entropy + C_symb, confusion = high entropy - C_symb.
+
+**Integration condition:** Run ~50 prompt-response pairs, plot C_symb proxy vs. conceptual distance, identify inflection point per model. If clean separation between models is visible, file as WANDER + paper addition.
+**Blocking dependency:** None. Ready to run now.
+**Compost risk:** Low — fully executable without new infrastructure.
+
+---
+
+### SPARK-017: MMR — Middle Mass Ratio Metric Design
+**Received:** BC3 Session 17 | 2026-03-28
+**Source:** WANDER 075 (wonder Zipf signature)
+**Status:** INCUBATING
+
+**The idea:** Current Zipf metrics (D_z, TMR) miss the mid-frequency vocabulary band (word rank 50–250). Wonder-mode text should show elevated MMR: not rare words (rank > 250) but *uncommon-but-precise* words (rank 50–250), selected from a broader conceptual neighborhood.
+
+**Metric:** MMR = sum of token probabilities for words in rank 50–250 (normalized to total probability mass). Complements TMR (rank > 250) and D_z (overall slope).
+
+**Predicted profiles:**
+- Resolution mode: low D_z, low MMR, low TMR
+- Wonder mode: slight positive D_z, elevated MMR, moderate TMR
+- Confusion mode: elevated D_z, elevated TMR, possibly elevated MMR (undiscriminated from wonder without C_symb)
+
+**Integration condition:** Add MMR to exp_014 alongside TMR. Test on synthetic corpus first. If wonder vs. confusion separation is visible with MMR + C_symb proxy combination, add to paper §3.
+**Blocking dependency:** exp_014 code is the base; MMR adds one metric to existing pipeline.
+**Compost risk:** Low — additive to existing experiment infrastructure.
+
+---
+
+### SPARK-018: N=8 Metacognition Architecture Test
+**Received:** BC3 Session 17 | 2026-03-28
+**Source:** WANDER 077 (Fibonacci N hierarchy)
+**Status:** INCUBATING
+
+**The idea:** The N canonical hierarchy {2, 3, 5} is Fibonacci because of the additive construction rule. The predicted next term is N=8 = 5+3. Interpretation: N=8 adds a meta-triangulation (3 new fibers checking the existing 3 diagnostic fibers). This is metacognition — detecting when the correction mechanism itself has failed.
+
+**The prediction:** Systems with demonstrably metacognitive capabilities (knowing when they don't know; flagging their own uncertainty) should show signatures consistent with N=8 architecture: 8-dimensional fiber structure, ζ*=9/8=1.125 stability reserve.
+
+**Why this is interesting:** If N=5 → self-correction and N=8 → metacognition, then the architectural distinction between "competent and occasionally wrong" systems and "well-calibrated" systems is N=5 vs. N=8 (or more precisely, whether the correction mechanism is itself monitored).
+
+**Integration condition:** Check architecture literature for 8-dimensional cognitive models. Check calibration literature for evidence that well-calibrated systems behave differently in ways consistent with a meta-monitoring layer.
+**Blocking dependency:** Literature search, no compute required.
+**Compost risk:** Medium — the Fibonacci pattern is shallow (WANDER 077 honest assessment). This spark depends on whether the N=8 prediction finds genuine grounding in architecture literature.
