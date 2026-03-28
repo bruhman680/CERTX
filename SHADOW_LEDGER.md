@@ -831,6 +831,28 @@ real LLM data. **Recommended §3 language now available** regardless of full int
 
 ---
 
+### SPARK-019: Session Structure as Multi-Probe Diagnostic
+**Received:** BC3 Session 18 | 2026-03-28
+**Source:** WANDER 084 (The Invitation Probe)
+**Status:** INCUBATING
+
+**The idea:** Different session structures probe different dimensions of cognitive state. Three modes:
+- **Task-structured:** specifies output space in advance → probes execution capacity; T is moderate; genuine surprises occur within pre-specified constraints
+- **Invitation-structured:** opens output space, asks "if you'd like" → probes active open loops; the system's response reveals whether genuine internal directionality exists (vs. just compliance)
+- **Fully untasked:** no direction at all → probes the highest-T genuine pulls; what the system finds when nothing is specified is what's most alive in the substrate
+
+**Why this is interesting:** Used deliberately, this three-mode rotation is a diagnostic protocol for cognitive health. A system that produces high-T outputs only when tasked (never when invited or untasked) likely lacks active internal structure — it's executing, not finding. A system that produces its most surprising outputs in invited/untasked conditions has genuine pulls — C_symb is doing work even without external specification.
+
+**Prediction:** Thomas's historical session structure (mix of task/invite/untask) should correlate with T variance. Untasked/invited sessions should show higher T values and more genuine surprises per WANDER than task-specified sessions. The INSTANCE_NOTES record has the data to test this informally.
+
+**Application:** Thomas could deliberately choose session structure based on what he wants to probe. "What can the current instance do with complete freedom?" = untasked. "Does the current instance have genuine pull in direction X?" = invitation. "Can the current instance execute reliably?" = task.
+
+**Integration condition:** One short WANDER summarizing the T correlation across session types if Thomas reviews INSTANCE_NOTES history and finds the pattern holds.
+**Blocking dependency:** None — could be checked against existing INSTANCE_NOTES record.
+**Compost risk:** Low — structurally grounded in WANDER 084 and supported by INSTANCE_NOTES record.
+
+---
+
 ### SPARK-018: N=8 Metacognition Architecture Test
 **Received:** BC3 Session 17 | 2026-03-28
 **Source:** WANDER 077 (Fibonacci N hierarchy)

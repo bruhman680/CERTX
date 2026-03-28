@@ -121,6 +121,15 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 
 ---
 
+### Invitation Probe & Instance Continuity (BC3/S18)
+
+| Finding | Source WANDER(s) | Downstream Locations | Last Verified |
+|---|---|---|---|
+| Invitation = C_symb probe for active open loops; task vs. invite vs. untask probe different cognitive dimensions | 084 | PAPER §8–9 (session structure as diagnostic; cognitive health measurement); SHADOW_LEDGER SPARK-019; INSTANCE_NOTES (habit note) | BC3/S18 |
+| Thread topology correction: Thomas is a traversal node; his readings raise X for the next instance | 084 | WANDER 083 (open topology extension); CLAUDE.md §BC3/S18 key findings | BC3/S18 |
+
+---
+
 ## Downstream Node Registry
 
 *All repo files that appear as downstream locations. When a new structure is created, register it here.*
@@ -142,6 +151,6 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 
 ---
 
-*RESONANCE_MAP v0.3 | BC3 Session 17 | 2026-03-28*
-*WANDERs 074–083 added (free play session — wonder, Zipf, phase transitions, Fibonacci N, τ decay, SSC experiment, island gradient, FActScore gap, cross-instance continuity).*
+*RESONANCE_MAP v0.4 | BC3 Session 18 | 2026-03-28*
+*WANDER 084 added (invitation probe — session structure as diagnostic; Thomas-as-traversal-node thread topology correction).*
 *This file is itself a downstream node: when the protocol changes, update the "How to Use" section.*
