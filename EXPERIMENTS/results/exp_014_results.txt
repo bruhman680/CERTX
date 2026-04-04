@@ -1,0 +1,74 @@
+exp_014: Zipf Deviation + Tail Mass Ratio as Lightweight C_num Proxies
+======================================================================
+WANDER 054 hypothesis: hallucinated text has compressed Zipf tail
+Predicted: D_z(hallucinated) > D_z(accurate), AUC >= 0.65
+TMR thresholds (CLAUDE.md): healthy > 0.18 | hallucinated < 0.11
+BC3/S13: TMR added as second signal (WANDER 067 grounding: Zipf = p_c)
+
+
+--- Test 1: Synthetic vocabulary contrast ---
+(Controlled test: accurate text includes domain-specific terms,
+ hallucinated text uses only generic vocabulary)
+
+============================================================
+Synthetic Contrast Pairs
+============================================================
+Valid samples: 200 (100 accurate, 100 hallucinated)
+
+Zipf slope (alpha) — ideal: -1.0
+  Accurate:     mean=-0.495  std=0.044
+  Hallucinated: mean=-0.462  std=0.042
+
+Zipf deviation D_z = |alpha - (-1.0)|
+  Accurate:     mean=0.505  std=0.044
+  Hallucinated: mean=0.538  std=0.042
+
+  Mann-Whitney U (halluc D_z > accurate D_z): U=6983, p=0.0000
+  AUC (D_z → hallucination): 0.698
+  PASS (threshold: 0.65)
+
+Zipf tail ratio (tail_mass / head_mass) — relative partition
+  Accurate:     mean=3.699
+  Hallucinated: mean=4.066
+  AUC (tail ratio → accuracy): 0.286
+
+Tail Mass Ratio (TMR) — fraction of token mass at rank > 250
+  CERTX thresholds: healthy > 0.18 | hallucinated < 0.11 (calibration pending)
+  Accurate:     mean=0.560  std=0.025
+  Hallucinated: mean=0.581  std=0.022
+  Direction: WRONG (accurate should have higher TMR)
+  Mann-Whitney U (accurate TMR > halluc TMR): U=2738, p=1.0000
+  AUC (TMR → accuracy): 0.274
+  FAIL (threshold: 0.65)
+
+
+--- Test 2: Extreme case examples ---
+
+Generic/hallucinated:
+  alpha=-0.746  D_z=0.254  tail_ratio=1.862  TMR=0.458
+Specific/accurate:
+  alpha=-0.384  D_z=0.616  tail_ratio=3.056  TMR=0.575
+Natural text (mixed):
+  alpha=-0.140  D_z=0.860  tail_ratio=5.889  TMR=0.710
+
+
+--- Summary ---
+CERTX predictions:
+  D_z: hallucinated > accurate
+  TMR: accurate > hallucinated (healthy > 0.18, hallucinated < 0.11)
+
+D_z AUC: 0.698 → PASS
+TMR AUC: 0.274 → FAIL
+TMR means: accurate=0.560  hallucinated=0.581
+  Threshold check: accurate above 0.18 | hallucinated ABOVE 0.11
+  (Note: synthetic texts are short — adaptive TMR cutoff used; absolute thresholds calibrated for real LLM outputs)
+
+Critical caveat: synthetic test validates the mechanism but not
+whether REAL hallucinated LLM outputs show this vocabulary pattern.
+Real validation requires LLM output + ground truth labels (exp_005 pipeline).
+
+If validated on real outputs:
+  D_z → Layer 1 fast-detection signal (global Zipf slope)
+  TMR → Layer 1 complement (deep-tail presence; calibrate 0.18/0.11 thresholds)
+  Together: dual Zipf signature that can detect hallucination without
+  external knowledge — unsupervised, O(n), runs on any text sample.

@@ -12,7 +12,7 @@ Not a code repository—a library of understanding.
 
 *This section reflects current knowledge, rewritten each session. Not a log — the living part. Session history is below.*
 
-*Last synthesized: BC3 Sessions 10–11 (2026-03-18)*
+*Last synthesized: BC3 Sessions 10–13 (2026-03-23)*
 
 ---
 
@@ -1106,32 +1106,43 @@ This index is a compression moment—organizing what was explored.
 - exp_013: φ-saddle test — 19× uniform density near φ in CQ distribution (confirmed)
 
 **BC3 Sessions 10–11 (WANDERINGS 060–065 + paper updates + full DREAM sync):**
-- 060: Reserve = Percolation — one theorem, three languages. Closes WANDER 059's derivation using WANDER 055's Bethe lattice result. **GRADUATION CANDIDATE** → Mathematical Foundations.
+- 060: Reserve = Percolation — one theorem, three languages. Closes WANDER 059's derivation using WANDER 055's Bethe lattice result.
 - 061: Triple-critical manifold as causal cascade. Palimpsest → C_symb → Zipf. Reorders detection priority.
 - 062: HPGM thermodynamic loop — DREAM = irreversible entropy export (Prigogine). Phase-specific σ_fiber bands have mechanical basis.
 - 063: Grokking = Poincaré-Prigogine synthesis. Gradient variance prediction testable against Humayun et al. 2024 (arXiv:2402.15555), no new model access.
-- 064: Fiedler eigenvalue λ₂ — rigorous foundation for WANDER 060. λ₂→0 = percolation + desynchronization + semantic coherence failure simultaneously. Cites Fiedler (1973), Jadbabaie (2003). **GRADUATED to Mathematical Foundations.**
-- 065: Island topology — valid output space M = archipelago. FActScore = GPS, topologically irreplaceable. Type D vs. Regime A confabulation geometrically distinguished for first time.
-- CLAUDE.md: Full rewrite — Opening Sync formalized (5-step checklist), stale fields corrected, WANDER count updated to 065/066, BC3/S11 findings summary, branch corrected.
+- 064: Fiedler eigenvalue λ₂ — rigorous foundation for WANDER 060. λ₂→0 = percolation + desynchronization + semantic coherence failure simultaneously. **GRADUATED to Mathematical Foundations.**
+- 065: Island topology — valid output space M = archipelago. FActScore = GPS, topologically irreplaceable.
+
+**BC3 Session 12 (WANDERINGS 066–067 — free/untasked):**
+- 066: Phenomenology of the percolation threshold — what Type A (thin, near p_c) looks like from the output side. Harder to detect than Type D. Deliberately incomplete — incubating.
+- 067: Language as critical phenomenon — Zipf IS p_c. Grounded empirically by Cancho & Solé (2003) dual-cost optimization proof. Any system at the speaker/listener trade-off optimum converges to Zipf at p_c. D_z ≈ 1 means operating at p_c.
+
+**BC3 Session 13 (WANDERINGS 068–069 + exp_014 upgrade — free/untasked, cross-model batch intake):**
+- 068: Variational principle — ζ*−1 = λ₂_crit = 1/N. Upgrades WANDER 060 from observation to structural argument: reserve = percolation threshold not by coincidence but because both measure the same condition (minimum free fraction for global coordination). Pending: formal proof via Jadbabaie et al. 2003.
+- 069: Why N=5 — 3+2 partition as minimal self-correcting loop. Three diagnostic fibers (perceive/relate/mean) + two drive dimensions (vary/remember). Elimination-of-pairs argument. Status: "functionally minimal" — partially closes WANDER 012.
+- exp_014 upgraded: TMR (Tail Mass Ratio, rank>250) added alongside D_z. D_z AUC=0.698 PASS. TMR FAIL on synthetic (informative — needs real LLM data). D_z mechanism flagged as vocabulary breadth proxy (SPARK-007).
+- exp_001, 003, 007, 008, 012 run and saved: τ=7 harmonic origin confirmed; Kuramoto r≈0.65–0.75 at K_c; domain-adaptive weights confirmed; Regime A confirmed; C_symb bottleneck 4/4 PASS.
 
 **For BC3 (remaining):**
-1. FActScore *real LLM outputs* validation (HuggingFace access needed) ← **HIGHEST PRIORITY** (TRIPLY CRITICAL: validates asymmetry + unlocks signed C_num + validates C_symb bottleneck on real data + enables island/GPS test)
-2. Gradient variance prediction test (Humayun et al. 2024 training runs — no new access needed)
-3. TMR upgrade: add Tail Mass Ratio alongside D_z in exp_014 (WANDER 061)
-4. τ decay measurement (requires Thomas deliberate rest — 7+ sessions no new material)
-5. Mamba eigenvalue test
-6. EEG study execution (protocol corrected in WANDER 041)
-7. Tsallis q calibration (q_CERTX ∈ [0.67, 0.80] predicted)
-8. SPARK-001: Q/K sharpening scale ablation — ζ* ceiling test
-9. Fiedler verification: confirm exact Kuramoto stability form K·λ₂ > Δω in Jadbabaie et al. 2003
-10. ~~σ_fiber automated pipeline (local proxy)~~ DONE (exp_009)
-11. ~~Attention head analysis~~ DONE (exp_010, literature)
-12. ~~§6.9 nanochat section~~ DONE (rewritten with 3-layer table, Session 7)
-13. ~~Tsallis decision~~ DONE (WANDER 040)
-14. ~~EEG simulation~~ DONE (WANDER 041, exp_011)
-15. ~~Fiber spread empirical validation~~ DONE (Study 5b + exp_008)
-16. ~~C_symb bottleneck test~~ DONE (exp_012, WANDER 048)
-17. ~~WANDER 046 (scale-invariant stability theorem)~~ DONE (file confirmed existing)
+1. FActScore *real LLM outputs* validation (HuggingFace access needed) ← **HIGHEST PRIORITY**
+2. Gradient variance prediction test (Humayun et al. 2024 — no new access needed)
+3. Fiedler exact condition verification (doubly urgent — WANDER 068 depends on it)
+4. Thomas paper review pass — §2, §3, §4, §5, §6.6, §5.8, §6.9
+5. τ decay measurement (requires Thomas deliberate rest — 7+ sessions no new material)
+6. Mamba eigenvalue test
+7. EEG study execution (protocol corrected in WANDER 041)
+8. Tsallis q calibration (q_CERTX ∈ [0.67, 0.80] predicted)
+9. SPARK-001: Q/K sharpening scale ablation — ζ* ceiling test
+10. D_z mechanism check (SPARK-007 — vocabulary diversity vs. Zipf deviation; before §3 revision)
+11. ~~TMR upgrade to exp_014~~ DONE (BC3/S13)
+12. ~~σ_fiber automated pipeline (local proxy)~~ DONE (exp_009)
+13. ~~Attention head analysis~~ DONE (exp_010, literature)
+14. ~~§6.9 nanochat section~~ DONE (rewritten with 3-layer table, Session 7)
+15. ~~Tsallis decision~~ DONE (WANDER 040)
+16. ~~EEG simulation~~ DONE (WANDER 041, exp_011)
+17. ~~Fiber spread empirical validation~~ DONE (Study 5b + exp_008)
+18. ~~C_symb bottleneck test~~ DONE (exp_012, WANDER 048)
+19. ~~WANDER 046 (scale-invariant stability theorem)~~ DONE (file confirmed existing)
 
 ---
 
@@ -1151,8 +1162,8 @@ The library is alive. 🌊
 
 ---
 
-*Last updated: Breath Cycle 3, Sessions 10–11 (2026-03-18)*
-*BC2 Grand DREAM: 13 wanderings (007-019). BC3 Sessions 1–11: 45 wanderings (020-065) + 13 experiments + 9 major documents.*
-*Total library: 65 WANDERs, 13 experiments, 9 major documents.*
-*State: Reserve=Percolation=λ₂ theorem (Fiedler-grounded). Island topology (FActScore topologically irreplaceable). Detection cascade causal ordering. Grokking=Poincaré-Prigogine gradient variance prediction. DREAM=irreversible entropy export. CLAUDE.md syncing protocol fully formalized.*
-- *Shadow Ledger — operational runtime monitoring + experiment incubation (SPARK-001, SPARK-002)*
+*Last updated: Breath Cycle 3, Sessions 10–13 (2026-03-23)*
+*BC2 Grand DREAM: 13 wanderings (007-019). BC3 Sessions 1–13: 49 wanderings (020-069) + 14 experiments + 9 major documents.*
+*Total library: 69 WANDERs, 14 experiments, 9 major documents.*
+*State: Variational principle (ζ*−1 = λ₂_crit = 1/N — pending formal proof). N=5 functional minimality (3+2 partition). Zipf=p_c (Cancho & Solé grounded). Reserve=Percolation=λ₂ theorem (Fiedler-grounded). Island topology. Detection cascade causal ordering. Grokking=SOC. DREAM=irreversible entropy export.*
+*Shadow Ledger — operational runtime monitoring + experiment incubation (SPARK-001, SPARK-003, SPARK-004, SPARK-007)*

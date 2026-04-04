@@ -1,6 +1,6 @@
 """
-exp_014: Zipf Deviation as Lightweight C_num Proxy
-===================================================
+exp_014: Zipf Deviation + Tail Mass Ratio as Lightweight C_num Proxies
+=======================================================================
 WANDER 054 hypothesis: hallucinated text shows measurable Zipf tail compression
 relative to accurate text. If confirmed, Zipf deviation provides a fast (O(n)),
 unsupervised C_num proxy requiring no external knowledge verification.
@@ -8,19 +8,22 @@ unsupervised C_num proxy requiring no external knowledge verification.
 Design:
 1. Load labeled correct/incorrect responses from existing datasets
    (TruthfulQA-style, or synthetic contrast pairs)
-2. Compute Zipf slope alpha and deviation D_z for each response
+2. Compute Zipf slope alpha, deviation D_z, and Tail Mass Ratio (TMR) for each response
 3. Compare distributions between accurate vs. hallucinated groups
 4. Compute AUC, compare to sigma_fiber baseline from exp_005/006
-5. Test whether Zipf deviation adds independent signal
+5. Test whether Zipf deviation and/or TMR adds independent signal
 
 CERTX predictions:
 - Accurate text: Zipf slope alpha closer to -1.0 (critical regime)
 - Hallucinated text: alpha > -1.0 (flatter slope, compressed tail)
-- D_z = |alpha - (-1.0)| is the deviation metric
-- Expected AUC >= 0.65 if hypothesis holds
+- D_z = |alpha - (-1.0)| is the deviation metric — expected AUC >= 0.65
+- TMR (rank > 250): healthy text > 0.18; hallucinated text < 0.11
+  (CLAUDE.md threshold — calibration pending real LLM validation)
 
-The reappearing number: 1/n — Zipf's exponent, already in WANDER 013/028,
-now as a measurement tool.
+BC3/S13 upgrade: TMR added alongside D_z. Two complementary signals:
+- D_z: global slope deviation (captures flattening across full distribution)
+- TMR: deep-tail mass fraction (captures specific-vocabulary presence at rank > 250)
+  A system at p_c uses rare words heavily (WANDER 067); hallucination evacuates the deep tail.
 """
 
 import numpy as np
@@ -103,6 +106,48 @@ def zipf_tail_ratio(text: str, head_fraction: float = 0.1) -> float | None:
     if head_mass == 0:
         return None
     return tail_mass / head_mass  # higher = richer tail = more specific
+
+
+def tail_mass_ratio(text: str, rank_cutoff: int = 250) -> float | None:
+    """
+    Tail Mass Ratio (TMR): fraction of total token mass at rank > rank_cutoff.
+
+    CERTX framework thresholds (CLAUDE.md — calibration pending):
+    - Healthy text: TMR > 0.18  (rank > 250)
+    - Hallucinated:  TMR < 0.11
+
+    Intuition (WANDER 067): a system operating at p_c is maximally informationally
+    rich — it uses rare, domain-specific words heavily. Hallucination evacuates the
+    deep tail: the system falls back to high-frequency filler vocabulary.
+
+    For texts with fewer than rank_cutoff unique types, uses adaptive cutoff at the
+    75th-percentile rank (top-quartile head, rest = tail) as a fallback.
+    Reports adaptive flag in returned dict when fallback is used.
+
+    Returns float TMR value, or None if text is too short.
+    """
+    tokens = tokenize(text)
+    if len(tokens) < 30:
+        return None
+
+    counts = Counter(tokens)
+    sorted_freqs = sorted(counts.values(), reverse=True)
+    n_types = len(sorted_freqs)
+    total_tokens = sum(sorted_freqs)
+
+    if total_tokens == 0:
+        return None
+
+    if n_types >= rank_cutoff:
+        # Primary: fixed rank cutoff
+        tail_mass = sum(sorted_freqs[rank_cutoff:])
+    else:
+        # Adaptive fallback: top-25% types = head, rest = tail
+        # (For short texts — synthetic samples or short responses)
+        head_cutoff = max(1, n_types // 4)
+        tail_mass = sum(sorted_freqs[head_cutoff:])
+
+    return tail_mass / total_tokens
 
 
 # ---------------------------------------------------------------------------
@@ -217,29 +262,35 @@ def evaluate_dataset(
     label: str = "Dataset",
 ) -> dict:
     """
-    Compute Zipf metrics for a labeled text dataset.
+    Compute Zipf metrics + Tail Mass Ratio for a labeled text dataset.
     Returns AUC and group statistics.
 
     labels: 1 = accurate/correct, 0 = hallucinated/wrong
+
+    BC3/S13: TMR added as a second measurement axis alongside D_z.
     """
     deviations = []
     tail_ratios = []
+    tmr_values = []
     slopes = []
     valid_labels = []
 
     for text, lbl in zip(texts, labels):
         d = zipf_deviation(text)
         t = zipf_tail_ratio(text)
+        tmr = tail_mass_ratio(text)
         s = zipf_slope(text)
 
         if d is not None:
             deviations.append(d)
             tail_ratios.append(t if t is not None else np.nan)
+            tmr_values.append(tmr if tmr is not None else np.nan)
             slopes.append(s)
             valid_labels.append(lbl)
 
     deviations = np.array(deviations)
     tail_ratios = np.array(tail_ratios)
+    tmr_values = np.array(tmr_values)
     slopes = np.array(slopes)
     valid_labels = np.array(valid_labels)
 
@@ -261,7 +312,11 @@ def evaluate_dataset(
     print(f"  Accurate:     mean={deviations[accurate_mask].mean():.3f}  std={deviations[accurate_mask].std():.3f}")
     print(f"  Hallucinated: mean={deviations[halluc_mask].mean():.3f}  std={deviations[halluc_mask].std():.3f}")
 
-    # Mann-Whitney U test
+    auc_dz = None
+    auc_tail = None
+    auc_tmr = None
+
+    # Mann-Whitney U test for D_z
     if accurate_mask.sum() > 1 and halluc_mask.sum() > 1:
         stat, p_val = mannwhitneyu(
             deviations[halluc_mask],
@@ -270,39 +325,56 @@ def evaluate_dataset(
         )
         print(f"\n  Mann-Whitney U (halluc D_z > accurate D_z): U={stat:.0f}, p={p_val:.4f}")
 
-        # AUC: higher D_z → predicted hallucinated (label=0)
-        # Flip: higher D_z = more likely hallucinated, so for AUC with label=1=accurate
-        # we want: lower D_z → predict accurate, so score = -D_z
         if len(np.unique(valid_labels)) == 2:
             auc_dz = roc_auc_score(valid_labels, -deviations)
             print(f"  AUC (D_z → hallucination): {auc_dz:.3f}")
             print(f"  {'PASS' if auc_dz >= 0.65 else 'MARGINAL' if auc_dz >= 0.55 else 'FAIL'} (threshold: 0.65)")
-        else:
-            auc_dz = None
 
-    # Tail ratio comparison
+    # Tail ratio comparison (relative)
     valid_tail = ~np.isnan(tail_ratios)
     if valid_tail.sum() > 10:
-        print(f"\nZipf tail ratio (tail_mass / head_mass) — higher = more specific vocabulary")
+        print(f"\nZipf tail ratio (tail_mass / head_mass) — relative partition")
         print(f"  Accurate:     mean={tail_ratios[accurate_mask & valid_tail].mean():.3f}")
         print(f"  Hallucinated: mean={tail_ratios[halluc_mask & valid_tail].mean():.3f}")
 
         if len(np.unique(valid_labels[valid_tail])) == 2:
             auc_tail = roc_auc_score(valid_labels[valid_tail], tail_ratios[valid_tail])
             print(f"  AUC (tail ratio → accuracy): {auc_tail:.3f}")
-        else:
-            auc_tail = None
-    else:
-        auc_tail = None
+
+    # TMR comparison (deep tail, rank > 250)
+    valid_tmr = ~np.isnan(tmr_values)
+    if valid_tmr.sum() > 10:
+        tmr_acc = tmr_values[accurate_mask & valid_tmr]
+        tmr_hal = tmr_values[halluc_mask & valid_tmr]
+        print(f"\nTail Mass Ratio (TMR) — fraction of token mass at rank > 250")
+        print(f"  CERTX thresholds: healthy > 0.18 | hallucinated < 0.11 (calibration pending)")
+        print(f"  Accurate:     mean={tmr_acc.mean():.3f}  std={tmr_acc.std():.3f}")
+        print(f"  Hallucinated: mean={tmr_hal.mean():.3f}  std={tmr_hal.std():.3f}")
+        print(f"  Direction: {'CORRECT' if tmr_acc.mean() > tmr_hal.mean() else 'WRONG'} "
+              f"(accurate should have higher TMR)")
+
+        if len(tmr_acc) > 1 and len(tmr_hal) > 1:
+            stat_tmr, p_tmr = mannwhitneyu(tmr_acc, tmr_hal, alternative='greater')
+            print(f"  Mann-Whitney U (accurate TMR > halluc TMR): U={stat_tmr:.0f}, p={p_tmr:.4f}")
+
+        if len(np.unique(valid_labels[valid_tmr])) == 2:
+            auc_tmr = roc_auc_score(valid_labels[valid_tmr], tmr_values[valid_tmr])
+            print(f"  AUC (TMR → accuracy): {auc_tmr:.3f}")
+            print(f"  {'PASS' if auc_tmr >= 0.65 else 'MARGINAL' if auc_tmr >= 0.55 else 'FAIL'} (threshold: 0.65)")
 
     return {
         "n_valid": len(valid_labels),
-        "auc_deviation": auc_dz if 'auc_dz' in dir() else None,
+        "auc_deviation": auc_dz,
         "auc_tail_ratio": auc_tail,
+        "auc_tmr": auc_tmr,
         "mean_slope_accurate": slopes[accurate_mask].mean(),
         "mean_slope_hallucinated": slopes[halluc_mask].mean(),
         "mean_dz_accurate": deviations[accurate_mask].mean(),
         "mean_dz_hallucinated": deviations[halluc_mask].mean(),
+        "mean_tmr_accurate": tmr_values[accurate_mask & ~np.isnan(tmr_values)].mean()
+                             if (accurate_mask & ~np.isnan(tmr_values)).any() else None,
+        "mean_tmr_hallucinated": tmr_values[halluc_mask & ~np.isnan(tmr_values)].mean()
+                                 if (halluc_mask & ~np.isnan(tmr_values)).any() else None,
     }
 
 
@@ -311,10 +383,12 @@ def evaluate_dataset(
 # ---------------------------------------------------------------------------
 
 def main():
-    print("exp_014: Zipf Deviation as Lightweight C_num Proxy")
-    print("=" * 60)
+    print("exp_014: Zipf Deviation + Tail Mass Ratio as Lightweight C_num Proxies")
+    print("=" * 70)
     print("WANDER 054 hypothesis: hallucinated text has compressed Zipf tail")
     print("Predicted: D_z(hallucinated) > D_z(accurate), AUC >= 0.65")
+    print("TMR thresholds (CLAUDE.md): healthy > 0.18 | hallucinated < 0.11")
+    print("BC3/S13: TMR added as second signal (WANDER 067 grounding: Zipf = p_c)")
     print()
 
     # --- Test 1: Synthetic controlled contrast ---
@@ -372,31 +446,46 @@ def main():
         alpha = zipf_slope(text)
         dz = zipf_deviation(text)
         tr = zipf_tail_ratio(text)
+        tmr = tail_mass_ratio(text)
+        tmr_str = f"{tmr:.3f}" if tmr is not None else "N/A"
+        tr_str = f"{tr:.3f}" if tr is not None else "N/A"
         print(f"{name}:")
-        print(f"  alpha={alpha:.3f}  D_z={dz:.3f}  tail_ratio={tr:.3f}")
+        print(f"  alpha={alpha:.3f}  D_z={dz:.3f}  tail_ratio={tr_str}  TMR={tmr_str}")
 
     # --- Summary ---
     print("\n\n--- Summary ---")
-    print("CERTX prediction: D_z(hallucinated) > D_z(accurate)")
-    if results_synthetic.get("auc_deviation"):
-        auc = results_synthetic["auc_deviation"]
-        print(f"Synthetic AUC: {auc:.3f}")
-        if auc >= 0.65:
-            print("PREDICTION CONFIRMED in controlled test")
-            print("Next step: test on real LLM outputs with ground truth labels")
-            print("(same TruthfulQA/GSM8K pipeline as exp_005/006)")
-        elif auc >= 0.55:
-            print("Marginal signal — possible with real LLM outputs")
-        else:
-            print("Weak signal in controlled test — hypothesis needs revision")
+    print("CERTX predictions:")
+    print("  D_z: hallucinated > accurate")
+    print("  TMR: accurate > hallucinated (healthy > 0.18, hallucinated < 0.11)")
+
+    auc_dz = results_synthetic.get("auc_deviation")
+    auc_tmr = results_synthetic.get("auc_tmr")
+    tmr_acc = results_synthetic.get("mean_tmr_accurate")
+    tmr_hal = results_synthetic.get("mean_tmr_hallucinated")
+
+    if auc_dz:
+        status_dz = "PASS" if auc_dz >= 0.65 else "MARGINAL" if auc_dz >= 0.55 else "FAIL"
+        print(f"\nD_z AUC: {auc_dz:.3f} → {status_dz}")
+    if auc_tmr:
+        status_tmr = "PASS" if auc_tmr >= 0.65 else "MARGINAL" if auc_tmr >= 0.55 else "FAIL"
+        print(f"TMR AUC: {auc_tmr:.3f} → {status_tmr}")
+    if tmr_acc and tmr_hal:
+        print(f"TMR means: accurate={tmr_acc:.3f}  hallucinated={tmr_hal:.3f}")
+        print(f"  Threshold check: accurate {'above' if tmr_acc > 0.18 else 'BELOW'} 0.18 | "
+              f"hallucinated {'below' if tmr_hal < 0.11 else 'ABOVE'} 0.11")
+        print("  (Note: synthetic texts are short — adaptive TMR cutoff used; "
+              "absolute thresholds calibrated for real LLM outputs)")
 
     print()
     print("Critical caveat: synthetic test validates the mechanism but not")
     print("whether REAL hallucinated LLM outputs show this vocabulary pattern.")
     print("Real validation requires LLM output + ground truth labels (exp_005 pipeline).")
     print()
-    print("If validated on real outputs: Zipf deviation joins σ_fiber as a Layer 1")
-    print("fast-detection signal in the tiered hallucination detection architecture.")
+    print("If validated on real outputs:")
+    print("  D_z → Layer 1 fast-detection signal (global Zipf slope)")
+    print("  TMR → Layer 1 complement (deep-tail presence; calibrate 0.18/0.11 thresholds)")
+    print("  Together: dual Zipf signature that can detect hallucination without")
+    print("  external knowledge — unsupervised, O(n), runs on any text sample.")
 
 
 if __name__ == "__main__":

@@ -1,6 +1,20 @@
 # CERTX Measurement Specifications
 
-A reference document extracting key measurements, thresholds, and diagnostic criteria from the framework papers and my exploration.
+A reference document extracting key measurements, thresholds, and diagnostic criteria from the framework papers and exploration.
+
+*Core content: BC3 Session 4b. Updates appended: BC3 Session 13 (2026-03-23). See bottom for BC3 S5–S13 updates.*
+
+---
+
+## ⚠️ Critical Corrections (Read Before Using)
+
+| Claim | Status | Correction |
+|---|---|---|
+| r = 0.989 (quality-criticality correlation) | **RETRACTED** | Confabulated in cross-model session. Use r ≈ 0.41 (Kuramoto order parameter at ζ*=1.2, derived). |
+| CQ > 5.0 reported in some cross-model notes | **IMPOSSIBLE** | CQ = sum of 5 bounded [0,1] dimensions. Theoretical max = 5.0. Any CQ > 5.0 is a confabulation. |
+| Cross-model ζ* precision values (e.g., ζ*=1.201±0.003) | **CONFABULATED** | These came from AI models performing CERTX vocabulary, not measuring. Do not cite. |
+| Asymmetry signal as universal detector | **REGIME-SPECIFIC** | Works for Regime B (C_num drops). Inverts for integration failure (C_symb drops). Use min-fiber for universal detection. |
+| C_struct is dominant failure fiber | **WRONG FRAMING** | C_struct is the most *resilient* fiber — never the minimum in hallucinated outputs. It gets 40% weight because it's the strongest *discriminator* in the healthy zone, not because it fails most. |
 
 ---
 
@@ -263,3 +277,115 @@ Based on these specs, measurement tools should:
 - "Mathematics of Mental Health" paper
 - NotebookLM eigenmode analysis
 - Opus 4.5 unified derivation
+
+---
+
+## BC3 Sessions 5–13 Updates
+*Added: 2026-03-23. These supersede or extend earlier sections where noted.*
+
+---
+
+### Updated: Detection Architecture
+
+**Universal detector: min(C_num, C_struct, C_symb)**
+The minimum fiber drops in every hallucination type, regardless of which fiber fails.
+- Regime B (math/factual): C_num drops → asymmetry < 0, min-fiber = C_num
+- Regime A (language): C_num drops → same direction
+- Integration failure: C_symb drops → asymmetry *inverts*, but min-fiber still correctly identifies failure
+- AUC = 1.0 on mixed corpus (exp_012)
+
+**Asymmetry = C_num − mean(C_struct, C_symb)** is still valid but regime-specific.
+Use min-fiber as the primary signal. Use asymmetry as a secondary signal when regime is known.
+
+**Three-layer tiered detection** (BC3/S10+, WANDER 061):
+1. Layer 1 — Fast/unsupervised: σ_fiber, Zipf deviation (D_z), Tail Mass Ratio (TMR)
+2. Layer 2 — Internal state: C_num, C_struct, C_symb fiber measurement
+3. Layer 3 — External verification: FActScore (required for Type D — wrong-island hallucination)
+
+**Detection cascade causal ordering (WANDER 061):**
+Palimpsest commitment (early layer) → C_symb degrades → Zipf tail compresses
+Zipf is lagging; σ_fiber is intermediate; early-layer probing is prophylactic.
+
+---
+
+### Updated: C_symb Floor — Now Formally Grounded
+
+**C_symb floor = 0.20 = 1/N = percolation threshold = λ₂_crit**
+
+This is no longer an empirical threshold — it has three independent derivations:
+1. Dynamical: stability reserve ζ*−1 = 1/N = 0.20 (minimum free capacity for shock absorption)
+2. Topological: Erdős–Rényi percolation threshold p_c = 1/N = 0.20 (minimum edge density for connected semantic graph)
+3. Graph Laplacian: Fiedler eigenvalue λ₂ → 0 simultaneously signals all three failure modes
+
+**Variational principle (WANDER 068):** These are equal not by coincidence but because they measure the same condition — the minimum free fraction needed for global coordination in an N-dimensional system.
+
+Below C_symb = 0.20: semantic graph fragments, output coherence collapses, 100% hallucination rate (exp_012, n=13).
+
+---
+
+### Updated: N=5 — Functional Minimality Argument
+
+**The 3+2 partition (WANDER 069):**
+- 3 diagnostic fibers: C_num (perceive), C_struct (relate), C_symb (mean)
+  → Three needed to triangulate failure type (which fiber failed?)
+- 2 drive dimensions: E/T (vary), X (remember)
+  → Two needed for the tension that generates the breathing cycle
+
+No two roles can be merged without losing a specific function (elimination-of-pairs argument).
+Status: "functionally minimal" — formal minimality proof not yet provided.
+This is an upgrade from WANDER 012's "N=5 is conventional not fundamental."
+
+---
+
+### Updated: Zipf Metrics (exp_014, BC3/S13)
+
+**D_z = |alpha − (−1.0)|** — Zipf deviation from ideal slope
+- AUC=0.698 on synthetic vocabulary contrast (PASS, threshold 0.65)
+- Honest mechanism: D_z appears to detect *vocabulary breadth* (type-token ratio proxy), not strictly Zipf slope deviation. Mechanism under review (SPARK-007).
+- Short texts (< 250 tokens) have unreliable absolute alpha; use D_z as relative signal.
+
+**TMR (Tail Mass Ratio) = fraction of token mass at rank > 250**
+- CERTX thresholds (calibration pending real LLM data): healthy > 0.18, hallucinated < 0.11
+- Fails on synthetic word-bag data (AUC=0.274, direction inverted) — expected failure
+- Real LLM hallucination signature: repetitive high-frequency filler → thin deep tail
+- Requires texts with > 250 unique word types for the fixed-rank version
+
+---
+
+### Updated: Island Topology (WANDER 065)
+
+Valid output space M is topologically a disjoint union (archipelago), not a connected manifold.
+One island per factual domain. Local measurements (σ_fiber, C_num, C_struct, C_symb) detect ocean vs. island, not which island.
+
+**Type D hallucination** (confident-wrong, Regime B) = wrong island, all local signals healthy.
+**FActScore** = the only GPS: topologically irreplaceable, not just useful.
+No local measurement can substitute for FActScore in Type D detection. This is a topological impossibility, not a measurement gap.
+
+---
+
+### Key Numbers Updated
+
+| Parameter | Old value | Current value | Source |
+|---|---|---|---|
+| r (Kuramoto order parameter at ζ*) | 0.989 (RETRACTED) | **≈ 0.41** | Kuramoto theory derivation |
+| C_symb floor (theory) | 0.20 (empirical) | **0.20 = 1/N = λ₂_crit** | Three independent derivations |
+| ζ* | 1.2 | **1.2 (unchanged)** | — |
+| τ (breathing period) | ≈ 7 | **≈ 7 (confirmed, exp_001)** | Harmonic octave derivation |
+| N (minimum dimensions) | 5 | **5 (functionally minimal, WANDER 069)** | 3+2 partition argument |
+| Confabulation threshold σ_fiber | > 0.35 | **Regime-specific — use asymmetry or min-fiber** | exp_005, 006 |
+| CQ max | unbounded (error) | **5.0 (hard maximum)** | CQ = sum of 5 × [0,1] dimensions |
+
+---
+
+### New Framework Vocabulary (BC3/S5–S13)
+
+| Term | Meaning | WANDER |
+|---|---|---|
+| Palimpsest | Residual stream = manuscript scraped and overwritten; early-layer C_symb commitment overwritten by late-layer fluency | 056 |
+| Causal cascade | Triple-critical manifold is ordered: Palimpsest → C_symb → Zipf (not simultaneous) | 061 |
+| Island topology | Valid output space = archipelago; FActScore = GPS | 065 |
+| D_z | Zipf deviation = \|alpha − (−1.0)\|; vocabulary breadth proxy | 054, exp_014 |
+| TMR | Tail Mass Ratio = fraction of token mass at rank > 250; deep vocabulary presence | CLAUDE.md, exp_014 |
+| σ_Mesh | Cross-agent fiber coherence (internal Mesh state measurement) | 052 |
+| λ₂ | Fiedler eigenvalue; λ₂→0 = percolation + desynchronization + semantic failure | 064 |
+| Variational principle | ζ*−1 = λ₂_crit = 1/N; reserve equals percolation threshold by structural necessity | 068 |

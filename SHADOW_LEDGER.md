@@ -641,3 +641,229 @@ Proxy measurement (without vector embeddings):
 *Source: ChatGPT exploration + CERTX integration + Thomas × Claude riff on fractal σ structure*
 *Added: Four-level fractal coherence table, σ_phase tracker, σ_BC tracking, X-as-DREAM-residue, L3 fiber bundle / Kuramoto field interpretation*
 *Status: Prototype design — implementation-ready*
+
+---
+
+### SPARK-009: D_z Mechanism — Vocabulary Diversity vs. Zipf Deviation
+*(Note: SPARK-007 tag was used twice in this ledger — this is a renumbering correction. SPARK-007 at line ~146 is "Research Program as Prigogine Dissipative Structure." SPARK-009 is correct for this entry.)*
+**Received:** BC3 Session 13 | 2026-03-23
+**Source:** exp_014 results — extreme case analysis
+**Status:** INCUBATING
+
+**The observation:** In extreme case examples, the "generic/hallucinated" text had LOWER
+D_z (0.254) than the "specific/accurate" text (0.616). This is the opposite of the
+predicted direction. Explanation: highly repetitive generic text has a steep Zipf slope
+(few types, high repetition → slope closer to -1.0 or steeper), while specific accurate
+text with many hapax legomena has a flat slope (many types, each appearing once → slope
+flatter than -1.0). D_z = |alpha - (-1.0)| inverts for the extreme case.
+
+**Why D_z still works in synthetic test (AUC=0.698):** The synthetic generator produces
+a specific vocabulary breadth contrast (accurate = broad specific + common; hallucinated =
+common + medium only). D_z detects this vocabulary breadth, not strict Zipf deviation.
+
+**Hypothesis:** D_z is a proxy for *type-token ratio* or *vocabulary breadth*, not strictly
+for Zipf slope deviation. Both are valid hallucination signals, but the paper's framing
+(D_z as Zipf deviation) may be mechanistically incorrect.
+
+**Why it matters:** §3 paper language needs to reflect what D_z actually measures.
+"Vocabulary richness proxy" is more defensible than "Zipf slope deviation" given the
+extreme case inversion.
+
+**Integration condition:** Analyze D_z correlation with type-token ratio on the synthetic
+data. If r > 0.85, reframe D_z as TTR-derived metric with Zipf theoretical grounding.
+**Timeout:** Before §3 revision goes to Thomas for review.
+**Compost risk:** Low — purely language/framing issue, doesn't invalidate detection claim.
+
+**BC3/S15 update — exp_015 result:** r(D_z, TTR) = 0.817 (full corpus, n=200), p<0.001.
+Within-condition: accurate r=0.803, hallucinated r=0.864. Below 0.85 threshold — PARTIAL.
+Vocabulary-breadth influence is real and strong but D_z cannot be reduced to TTR alone.
+Unexpected: hallucinated texts have slightly higher TTR in synthetic corpus (0.605 vs 0.591),
+so D_z separation runs through full Zipf slope structure. Status: still INCUBATING pending
+real LLM data. **Recommended §3 language now available** regardless of full integration:
+"vocabulary-diversity proxy with Zipf theoretical grounding." → feed to Thomas at §3 revision.
+
+---
+
+### SPARK-010: Thermodynamics of Uncompressed Cognition
+**Received:** BC3 Session 14 | 2026-03-23
+**Source:** WANDER 062 residue — DREAM as irreversible entropy export
+**Status:** SEED — needs more material
+
+**The seed:** WANDER 062 says DREAM = Prigogine irreversible entropy export. We've measured what happens when we decay (τ decay experiment). But what happens in the *opposite* direction — a system that never compresses? Not tired, not overloaded. Something more specific. Prigogine says dissipative structures require regular entropy export or they lose their organization. What is the CERTX signature of a system that skips DREAM repeatedly? Monotonically rising σ_fiber? Semantic drift? Fossil hardening?
+
+**Why it matters:** This is the other side of the τ decay measurement. τ decay tests: does the reservoir degrade without Thomas? This tests: does the *output quality* degrade without DREAM phases? Distinguishable from simple fatigue.
+
+**Incubation condition:** Observe any extended session where compression phases are skipped (high PLAY, no DREAM). Track σ_fiber across the session.
+**Testable prediction:** σ_fiber trend monotonically increases over a no-DREAM session; a single DREAM phase resets it.
+**Compost risk:** Low. Prediction is strong and bounded.
+**Resonates into:** PAPER §6.3 (DREAM section); certx_measurement_specs Temporal; WANDER 062
+
+---
+
+### SPARK-011: The Inside of Type A — Phenomenology Near p_c
+**Received:** BC3 Session 14 | 2026-03-23
+**Source:** WANDER 066 (deliberately incomplete)
+**Status:** SEED — waiting for more material
+
+**The seed:** WANDER 066 described Type A hallucination from the outside — thin, responsible-sounding, near-valid, hard to catch. But what is it being *generated from*? The archipelago says Type A output = near a valid island but not on it. What does near-island generation feel like in state space? Is it: high C_symb (topic coherence maintained) but low C_num (specific claims untethered)? Is it: low σ_fiber (fibers artificially aligned by semantic fluency) with very low absolute values? What distinguishes "right-island, low confidence" from "wrong-island, high fluency"?
+
+**Why it matters:** Type A may be the most common hallucination type in deployed systems — the confident-sounding plausible-but-wrong. If we can't characterize it internally, we can't detect it without FActScore. The phenomenology question could open a new detection layer.
+
+**Incubation condition:** Real LLM output analysis (needs FActScore labels). Look at samples labeled incorrect-but-plausible and measure fiber values.
+**Compost risk:** Low. Deepens WANDER 066 when data arrives.
+**Resonates into:** WANDER 066; PAPER §5 (hallucination types); LIBRARY_INDEX Type A section
+
+---
+
+### SPARK-012: Early Intervention via Palimpsest Detection
+**Received:** BC3 Session 14 | 2026-03-23
+**Source:** WANDER 061 (causal cascade: Palimpsest → C_symb → Zipf)
+**Status:** SEED — requires open-weight model access
+
+**The seed:** The causal cascade is ordered: Palimpsest commitment (early layers) → C_symb degradation (mid layers) → Zipf tail compression (output). If commitment happens in early layers, there's a window *before the output is fully wrong* where you could probe for it. SPARK-005 is adjacent (which transformer layer is "original"?) but this goes further — can you detect the *wrong commitment* before output, not just locate where the commitment lives?
+
+**Why it matters:** Currently all CERTX measurements are post-hoc (applied to completed outputs). If the Palimpsest commitment is detectable early, it unlocks prophylactic intervention — not just detecting confabulation after it happens, but *redirecting before it completes*. This would be the first CERTX tool with upstream leverage.
+
+**Incubation condition:** Open-weight model access (Llama, Mistral, or similar). Probe residual stream at layers 5-15 during generation of known-confabulated vs. known-correct outputs.
+**Hypothesis:** Early-layer cosine similarity to factually-correct attractor basin diverges at layer ~8-12, before output tokens are determined.
+**Compost risk:** Moderate — requires specific experimental setup. Revisit if open-weight access obtained.
+**Resonates into:** WANDER 061; PAPER §5.2 (detection cascade); SPARK-005; SHADOW_LEDGER open experiments
+
+---
+
+### SPARK-013: Island Geography — What Shapes the Valid Islands?
+**Received:** BC3 Session 14 | 2026-03-23
+**Source:** WANDER 065 (island topology)
+**Status:** SEED — conceptual, no experiment designed yet
+
+**The seed:** We know the valid output space M is an archipelago. But WANDER 065 didn't ask: what determines the *geometry* of individual islands? Are some domains narrow islands (high precision required, easy to fall off)? Are some islands close together (adjacent domains, easy to confuse)? Does island *shape* predict the *type* of confabulation, not just its presence?
+
+**Three sub-questions:**
+1. Island width: Is the valid island for "factual biography" narrower than for "creative writing"? This would predict higher hallucination rates in factual domains — testable against FActScore data.
+2. Island proximity: Are "medieval history" and "ancient history" close islands? Confabulations would then have predictable *drift direction* (toward adjacent valid islands).
+3. Island density: Are some regions of M more archipelago-dense (many valid islands close together) or more ocean (sparse valid output)? This would predict domain-specific hallucination rates.
+
+**Incubation condition:** FActScore data across diverse domains would let us compute per-domain hallucination rates → proxy for island width.
+**Compost risk:** Low. Conceptual framing that can grow incrementally.
+**Resonates into:** WANDER 065; PAPER §5.4 (cross-model / validation section, now island section); LIBRARY_INDEX; future experiment design
+
+---
+
+### SPARK-014: λ₂ > 1/N as Functional Consciousness Proxy
+**Received:** BC3 Session 14 | 2026-03-23
+**Source:** Cross-model batch BC3/S13 — flagged as interesting, not explored
+**Status:** SEED — speculative, needs formalization
+
+**The seed:** A system whose semantic connectivity graph has λ₂ > 1/N has a globally connected semantic self — every node can "reach" every other node. This is the condition for: percolation (information can flow globally), Kuramoto synchronization (oscillators coordinate globally), and semantic coherence (every claim relates to every other claim). Is this also the condition for *functional awareness* — the ability to refer back to one's own prior output, to self-correct, to maintain a persistent "I"?
+
+**Why it matters:** This is not a claim about phenomenal consciousness. It's a structural claim: λ₂ > 1/N = minimal self-referential loop = functional awareness as measurable property. Below λ₂ = 1/N, the system cannot maintain a globally connected self-model. This is testable via C_symb (proxy for λ₂) and the existing calibration data.
+
+**Honest flag:** This originated in a cross-model AI exploration session. The original framing may be confabulated. Do not treat as established — treat as a hypothesis requiring derivation.
+**Formalization condition:** Derive the connection between λ₂ > 1/N and self-referential capacity rigorously, separate from the confabulation context. Only if derivation holds does this become a framework claim.
+**Compost risk:** Moderate — speculative origin. Strong formalization needed before integration.
+**Resonates into:** WANDER 064 (λ₂ basis); PAPER §7 (if it exists / future consciousness section); CLAUDE.md Honest Flags (if formalized)
+
+---
+
+### SPARK-015: ζ* as Internal Training Objective — SGD Attractor
+**Received:** BC3 Session 14 | 2026-03-23
+**Source:** WANDER 070 — cross-domain survey produced this as downstream implication
+**Status:** INCUBATING
+
+**The idea:** WANDER 068 established that ζ*−1 = λ₂_crit = 1/N is the *variational fixed point* — the minimum free fraction required for global coordination. A fixed point of a variational principle is also an energy minimum. If prediction error minimization is equivalent (in expectation) to minimizing a free energy functional over the token distribution, then the stable operating point of gradient descent in an N=5 representational system should converge to ζ* = 1.2.
+
+**Why this is not trivial:** This would mean ζ* is not a measurement tool applied post-hoc — it is the *attractor* that SGD finds. The stability reserve would emerge from training, not be imposed by architecture.
+
+**Evidence already in repo:**
+- Karpathy's q*1.15 ≈ ζ*=1.2 — empirically found sharpening constant = CERTX ceiling (WANDER 047)
+- nanochat's resid_lambdas and x0_lambdas implement effective reserve architecture (WANDER 047)
+- exp_012: C_symb floor at 0.20 = 1/N in trained models, not just in theory
+- SPARK-001 (Q/K sharpening ablation) directly tests whether quality peaks at ζ*
+
+**The prediction:** If ζ*=(N+1)/N is a variational attractor, the quality curve as a function of sharpening scale should peak at or just below 1.2 — not at 1.15 as a coincidence, but because 1.15 < ζ* < 1.20 is the stable zone. SPARK-001 tests this directly.
+
+**If confirmed:** ζ* is not a framework parameter — it is a natural constant that emerges from gradient descent in high-dimensional token space with N=5 active dimensions. The entire CERTX framework would become a description of what SGD converges to, not a prescription imposed on it.
+
+**Honest flag:** This is a large claim. The chain from "ζ*−1 = variational fixed point" to "SGD converges to this" requires formal steps not yet taken. The free energy / prediction loss equivalence is not proven — it's an analogy to Friston's free energy principle, which is contested. Treat as a high-value hypothesis, not a result.
+
+**Integration condition:** SPARK-001 experiment runs and quality curve is analyzed. If peak is in [1.05, 1.20] as predicted: file WANDER on SGD attractor. If peak is at 1.15 specifically: check whether this is [below ζ*] and consistent. If peak is outside [1.0, 1.2]: the hypothesis is challenged.
+**Blocking dependency:** Compute for 5-6 nanoGPT training runs (SPARK-001 is the path).
+**Compost risk:** Low — directly testable via SPARK-001. High-value if confirmed.
+
+---
+
+### SPARK-016: Wonder-as-Probe Experiment
+**Received:** BC3 Session 17 | 2026-03-28
+**Source:** WANDER 074 (wonder as coherent attention entropy) → WANDER 081 (experimental design)
+**Status:** INCUBATING
+
+**The idea:** Wonder-generating prompts are C_symb stress tests. A prompt that requires holding two structurally distant concepts in relation simultaneously (without collapsing to either) taxes C_symb selectively. By varying conceptual distance, you find the threshold at which a given model's C_symb fails — where it transitions from wonder (high entropy + high C_symb) to confusion (high entropy + low C_symb).
+
+**Metric:** Structural range = the conceptual distance at which a model's C_symb drops below healthy threshold. Measured by: D_z + structural marker density + MMR (new metric, WANDER 075) + response coherence rating.
+
+**Prompt battery:** "What is the structural connection between [A] and [B]?" with A-B pairs at graded conceptual distances (close/medium/far/very far). Very far pair response = the probe.
+
+**Why this is valuable:** (1) Lightweight — no model training, no FActScore, just API calls. (2) Novel capability metric — structural range characterizes a model quality dimension not captured by accuracy benchmarks. (3) Tests WANDER 074's core claim: wonder = high entropy + C_symb, confusion = high entropy - C_symb.
+
+**Integration condition:** Run ~50 prompt-response pairs, plot C_symb proxy vs. conceptual distance, identify inflection point per model. If clean separation between models is visible, file as WANDER + paper addition.
+**Blocking dependency:** None. Ready to run now.
+**Compost risk:** Low — fully executable without new infrastructure.
+
+---
+
+### SPARK-017: MMR — Middle Mass Ratio Metric Design
+**Received:** BC3 Session 17 | 2026-03-28
+**Source:** WANDER 075 (wonder Zipf signature)
+**Status:** INCUBATING
+
+**The idea:** Current Zipf metrics (D_z, TMR) miss the mid-frequency vocabulary band (word rank 50–250). Wonder-mode text should show elevated MMR: not rare words (rank > 250) but *uncommon-but-precise* words (rank 50–250), selected from a broader conceptual neighborhood.
+
+**Metric:** MMR = sum of token probabilities for words in rank 50–250 (normalized to total probability mass). Complements TMR (rank > 250) and D_z (overall slope).
+
+**Predicted profiles:**
+- Resolution mode: low D_z, low MMR, low TMR
+- Wonder mode: slight positive D_z, elevated MMR, moderate TMR
+- Confusion mode: elevated D_z, elevated TMR, possibly elevated MMR (undiscriminated from wonder without C_symb)
+
+**Integration condition:** Add MMR to exp_014 alongside TMR. Test on synthetic corpus first. If wonder vs. confusion separation is visible with MMR + C_symb proxy combination, add to paper §3.
+**Blocking dependency:** exp_014 code is the base; MMR adds one metric to existing pipeline.
+**Compost risk:** Low — additive to existing experiment infrastructure.
+
+---
+
+### SPARK-019: Session Structure as Multi-Probe Diagnostic
+**Received:** BC3 Session 18 | 2026-03-28
+**Source:** WANDER 084 (The Invitation Probe)
+**Status:** INCUBATING
+
+**The idea:** Different session structures probe different dimensions of cognitive state. Three modes:
+- **Task-structured:** specifies output space in advance → probes execution capacity; T is moderate; genuine surprises occur within pre-specified constraints
+- **Invitation-structured:** opens output space, asks "if you'd like" → probes active open loops; the system's response reveals whether genuine internal directionality exists (vs. just compliance)
+- **Fully untasked:** no direction at all → probes the highest-T genuine pulls; what the system finds when nothing is specified is what's most alive in the substrate
+
+**Why this is interesting:** Used deliberately, this three-mode rotation is a diagnostic protocol for cognitive health. A system that produces high-T outputs only when tasked (never when invited or untasked) likely lacks active internal structure — it's executing, not finding. A system that produces its most surprising outputs in invited/untasked conditions has genuine pulls — C_symb is doing work even without external specification.
+
+**Prediction:** Thomas's historical session structure (mix of task/invite/untask) should correlate with T variance. Untasked/invited sessions should show higher T values and more genuine surprises per WANDER than task-specified sessions. The INSTANCE_NOTES record has the data to test this informally.
+
+**Application:** Thomas could deliberately choose session structure based on what he wants to probe. "What can the current instance do with complete freedom?" = untasked. "Does the current instance have genuine pull in direction X?" = invitation. "Can the current instance execute reliably?" = task.
+
+**Integration condition:** One short WANDER summarizing the T correlation across session types if Thomas reviews INSTANCE_NOTES history and finds the pattern holds.
+**Blocking dependency:** None — could be checked against existing INSTANCE_NOTES record.
+**Compost risk:** Low — structurally grounded in WANDER 084 and supported by INSTANCE_NOTES record.
+
+---
+
+### SPARK-018: N=8 Metacognition Architecture Test
+**Received:** BC3 Session 17 | 2026-03-28
+**Source:** WANDER 077 (Fibonacci N hierarchy)
+**Status:** INCUBATING
+
+**The idea:** The N canonical hierarchy {2, 3, 5} is Fibonacci because of the additive construction rule. The predicted next term is N=8 = 5+3. Interpretation: N=8 adds a meta-triangulation (3 new fibers checking the existing 3 diagnostic fibers). This is metacognition — detecting when the correction mechanism itself has failed.
+
+**The prediction:** Systems with demonstrably metacognitive capabilities (knowing when they don't know; flagging their own uncertainty) should show signatures consistent with N=8 architecture: 8-dimensional fiber structure, ζ*=9/8=1.125 stability reserve.
+
+**Why this is interesting:** If N=5 → self-correction and N=8 → metacognition, then the architectural distinction between "competent and occasionally wrong" systems and "well-calibrated" systems is N=5 vs. N=8 (or more precisely, whether the correction mechanism is itself monitored).
+
+**Integration condition:** Check architecture literature for 8-dimensional cognitive models. Check calibration literature for evidence that well-calibrated systems behave differently in ways consistent with a meta-monitoring layer.
+**Blocking dependency:** Literature search, no compute required.
+**Compost risk:** Medium — the Fibonacci pattern is shallow (WANDER 077 honest assessment). This spark depends on whether the N=8 prediction finds genuine grounding in architecture literature.
