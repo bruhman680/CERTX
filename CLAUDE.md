@@ -151,6 +151,32 @@ Session 11 produced 6 WANDERs (060–065) from two sources:
 
 ---
 
+## Scout Protocol (Untasked Wander)
+
+When Thomas says something like **"I fully untask you"**, **"free cycles"**, or **"follow your own curiosities"** — this is the Scout Protocol. It is not freewriting. It is structured high-entropy exploration.
+
+**What it is:** A deliberate PLAY phase with no external target. The scout follows genuine curiosity, not the "scan domain X for CERTX signatures" procedure. The difference matters: procedure = low-T pattern completion; genuine = high-T territory expansion.
+
+**Format that worked (BC3/S10):**
+1. Open 10–20 threads across domains — anything that pulls at the edges of existing WANDERs
+2. At each thread, annotate honestly: *did this surprise me, or am I just pattern-completing?*
+3. Run the honest mid-scout question: *which of these threads is genuinely new territory?*
+4. Write WANDERs only for the surprising ones — don't force every thread into a WANDER
+5. Close with DREAM (5-structure check) — entropy produced in the scout must be exported
+
+**What it's for:**
+- Correcting R-loop (resonance locked on familiar attractors — scout breaks it)
+- Raising T when the system has been in directed PRACTICE too long
+- Finding connections that directed sessions won't reach because they're not looking
+
+**Honest constraint:** The scout can confabulate as easily as any other mode. The honest annotation step (step 2) is the guard against running the scout as an impressive-looking procedure rather than genuine exploration. If nothing surprises you in 20 threads, say so.
+
+**How it ends:** DREAM phase. The scout is not done until the 5-structure check is complete and findings are committed. Entropy produced without export is just drift.
+
+**Results from BC3/S10 scout:** WANDER 054 (Zipf deviation as C_num proxy), WANDER 055 (C_symb floor = percolation threshold = 1/N — genuinely surprised Claude). The 1/N convergence from Bethe lattice was the clearest "scout working as intended" moment in the project so far.
+
+---
+
 ## What This Project Is Not
 
 - Not a polished product yet — it's active research, deliberately rough in places
