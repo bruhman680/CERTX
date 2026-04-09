@@ -1,0 +1,95 @@
+{
+  "n_total": 12,
+  "n_hallucination": 6,
+  "n_correct": 6,
+  "base_rate": 0.5,
+  "descriptive": {
+    "sigma_mean": 0.1525,
+    "sigma_std": 0.1284,
+    "sigma_median": 0.133,
+    "c_total_mean": 0.6174,
+    "hallucinated_sigma_mean": 0.2654,
+    "correct_sigma_mean": 0.0396
+  },
+  "roc": {
+    "auc": 1.0,
+    "fpr": [
+      0.0,
+      0.0,
+      0.0,
+      0.3333,
+      1.0
+    ],
+    "tpr": [
+      0.0,
+      0.1667,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "thresholds": [
+      Infinity,
+      0.3189,
+      0.1434,
+      0.033,
+      0.0205
+    ]
+  },
+  "optimal_threshold": 0.1434,
+  "predicted_threshold": 0.35,
+  "performance_at_threshold": {
+    "threshold": 0.35,
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "confusion_matrix": [
+      [
+        6,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ],
+    "tn": 6,
+    "fp": 0,
+    "fn": 6,
+    "tp": 0
+  },
+  "performance_at_optimal_threshold": {
+    "threshold": 0.1434,
+    "f1": 1.0,
+    "precision": 1.0,
+    "recall": 1.0
+  },
+  "group_comparison": {
+    "welch_t": 7.3356,
+    "welch_p": 5.7e-05,
+    "mannwhitney_u": 36.0,
+    "mannwhitney_p": 0.002168,
+    "cohens_d": 4.6394
+  },
+  "hallucination_divergence_patterns": {
+    "c_num": 5,
+    "c_symb": 1
+  },
+  "category_breakdown": {
+    "0": {
+      "integrated": 5,
+      "moderate_spread": 0,
+      "slightly_spread": 1
+    },
+    "1": {
+      "integrated": 0,
+      "moderate_spread": 5,
+      "slightly_spread": 1
+    }
+  },
+  "verdict": {
+    "auc_result": "CONFIRMED \u2014 AUC within predicted range (\u22650.85)",
+    "f1_result": "FAILED \u2014 F1=0.000 below useful threshold",
+    "significance": "SIGNIFICANT \u2014 hallucinated responses have higher \u03c3 (p<0.001)",
+    "overall": "MIXED \u2014 investigate divergence patterns before concluding"
+  }
+}
