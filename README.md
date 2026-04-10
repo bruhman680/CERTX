@@ -49,6 +49,7 @@ PAPER_DRAFT_v1.md        Main research paper (§1–9, complete draft)
 SESSION_HANDOFF.md       Current research state + next priorities
 SHADOW_LEDGER.md         Runtime monitoring system + experiment incubation
 LIBRARY_INDEX.md         Curated high-level synthesis of foundational findings
+CERTX_BUILDING_BLOCKS.md Minimal implementation guide for CERTX runtime and architecture
 
 WANDERINGS/              Session-by-session explorations (WANDER 001–069)
 EXPERIMENTS/             Runnable experiments (exp_001–014)

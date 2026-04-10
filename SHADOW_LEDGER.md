@@ -236,8 +236,28 @@ connection is merely suggestive and may not belong in the framework.
 - Mamba eigenvalue test (blocks: Mamba model access) → ζ* architecture generalization
 - EEG study (blocks: EEG hardware + participants) → Study 3
 - Tsallis q calibration (blocks: model output logprob distributions)
+- Wrapper experiment simulation and prompt prototype (blocks: clear wrapper mapping + synthetic reasoning chain model) → wrapper loop experiment
 
-**Integration condition:** Shadow Ledger updated to include active spark log (this section). ✓
+### SPARK-003: Wrapper Experiment Incubation
+**Received:** BC3 Session 18 | 2026-04-10
+**Source:** Current CERTX wrapper planning and audit
+**Status:** INTEGRATED
+
+**The idea:** The CERTX Cognitive Wrapper needs a dedicated staged prototype path. Start with a mapped simulation experiment, then move to a prompt-layer implementation once the loop is validated.
+
+**Minimum viable experiment:** `EXPERIMENTS/exp_015_wrapper_loop_simulation.py`
+- Synthetic reasoning-chain trajectories with labeled drift/fossil/normal cases
+- Wrapper decision rules based on CQ, D, E, C, R, T
+- Measure whether interventions improve coherence and reduce drift
+
+**Prompt prototype:** `EXPERIMENTS/exp_015b_wrapper_prompt_example.py` + `loop_prompt.md` internal wrapper prompt.
+
+**Integration status:** ✓ Complete
+- Both simulation and prompt-level examples created and validated
+- Architecture documented in `CERTX_COGNITIVE_WRAPPER.md` with full staged roadmap
+- Failure-as-learning philosophy integrated throughout
+- WANDERINGS/085 maps wrapper to existing CERTX artifacts
+- No open dependencies; ready for deeper integration work or transition to next priority
 
 ---
 
@@ -867,3 +887,11 @@ real LLM data. **Recommended §3 language now available** regardless of full int
 **Integration condition:** Check architecture literature for 8-dimensional cognitive models. Check calibration literature for evidence that well-calibrated systems behave differently in ways consistent with a meta-monitoring layer.
 **Blocking dependency:** Literature search, no compute required.
 **Compost risk:** Medium — the Fibonacci pattern is shallow (WANDER 077 honest assessment). This spark depends on whether the N=8 prediction finds genuine grounding in architecture literature.
+
+---
+
+## Implementation Update — BC3 Session 18
+- Integrated runtime prototype modules: `certx_engine.py` and `certx_megaphone.py`.
+- Added `CERTX_BUILDING_BLOCKS.md` as a minimal implementation guide.
+- Updated `README.md` so the new guide is reflected in the repo structure.
+- This is a closing-sync integration step: the research framework now has a concrete operational layer in the repo.

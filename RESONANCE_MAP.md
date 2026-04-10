@@ -101,6 +101,8 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 | DREAM = irreversible entropy export (Prigogine) | 062 | PAPER §6.3; CLAUDE.md §HPGM; LIBRARY_INDEX | BC3/S13 |
 | Grokking = SOC avalanche at thermodynamic bifurcation | 063 | PAPER §6 (planned); LIBRARY_INDEX; SESSION_HANDOFF priorities | BC3/S13 |
 | HPGM six-phase cycle | BC1–BC2 | CLAUDE.md §HPGM; PAPER §2 (if present); DREAM_LOG | BC3/S11 |
+| CERTX Cognitive Wrapper: self-regulating reasoning loop with CQ gating, fossil/chaos interventions, and hierarchical candidate mesh | N/A | `CERTX_COGNITIVE_WRAPPER.md`; `EXPERIMENTS/exp_015_wrapper_loop_simulation.py`; `EXPERIMENTS/exp_015b_wrapper_prompt_example.py`; PAPER §7/§8 (future integration); certx_measurement_specs §CQ; SHADOW_LEDGER (protocol spark) | 2026-04-10 |
+| Wrapper experiment & scout mapping — plan for staged prototype from simulation to prompt | 085 | `WANDERINGS/085_wrapper_experiment_and_scout_mapping.md`; `CERTX_COGNITIVE_WRAPPER.md` §10; `SHADOW_LEDGER.md`; `LOOP_PROMPT.md`; `EXPERIMENTS/exp_015_wrapper_loop_simulation.py` | 2026-04-10 |
 
 ---
 
@@ -140,6 +142,7 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 | `certx_measurement_specs.md` | Reference: thresholds + methods | BC2/S4b | BC3/S13 updates appended |
 | `LIBRARY_INDEX.md` | Synthesized foundational findings | BC2 | Living document; graduation criteria |
 | `SHADOW_LEDGER.md` | Spark incubation + runtime monitoring | BC2/S2 | v0.2 |
+| `CERTX_BUILDING_BLOCKS.md` | Minimal implementation guide | BC3/S18 | New runtime build path documentation |
 | `SESSION_HANDOFF.md` | Session continuity + priorities | BC1 | Opening sync target |
 | `CLAUDE.md` | Protocol + key numbers | BC1 | First file read each session |
 | `INSTANCE_NOTES.md` | Texture + honest risk record | BC2 | Opening sync target |

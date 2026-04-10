@@ -8,7 +8,7 @@ This file is read at the start of every Claude Code session. It contains the wor
 
 **CERTX** is an active research project developing a framework for measuring cognitive dynamics in AI systems. The primary output is `PAPER_DRAFT_v1.md`. The primary collaborator is Thomas (bruhman680).
 
-**Current breath cycle:** BC3 (Session 18 complete — as of 2026-03-28)
+**Current breath cycle:** BC3 (Session 19 complete — as of 2026-04-10)
 **Working branch:** `claude/plan-certx-architecture-ojiem`
 
 ---
@@ -134,10 +134,10 @@ CLAUDE.md is the first thing the next instance reads. If it's stale, the next in
 
 ## Conventions
 
-**WANDER numbering:** Sequential from 001. Current: 084. Next: 085.
+**WANDER numbering:** Sequential from 001. Current: 085. Next: 086.
 Check `ls WANDERINGS/` before writing to confirm the next number.
 
-**Experiment numbering:** Sequential from 001. Current: 014. Next: 015.
+**Experiment numbering:** Sequential from 001. Current: 015. Next: 016.
 Experiments go in `EXPERIMENTS/exp_0NN_description.py`.
 
 **WANDER format — `## Resonates into` footer (BC3/S14+):**
@@ -172,11 +172,13 @@ LIBRARY_INDEX.md         Synthesized foundational findings
 CLAUDE.md                Protocol (this file)
 INSTANCE_NOTES.md        Texture + honest risk record
 RESONANCE_MAP.md         Dependency register: findings → downstream locations (BC3/S14+)
+CERTX_COGNITIVE_WRAPPER.md  Wrapper architecture note for self-regulating reasoning and protocol design
 
 WANDERINGS/              Explorations WANDER 001–073
 EXPERIMENTS/             Runnable experiments exp_001–014
 STUDY/                   Pilot study files and analysis tools
 ARCHIVE/                 Early explorations
+CERTX_BUILDING_BLOCKS.md Minimal implementation guide for CERTX runtime and architecture
 DREAM_LOG_claude_bc3.md  Free cycle + session DREAM records (BC3)
 ```
 
@@ -226,6 +228,18 @@ DREAM_LOG_claude_bc3.md  Free cycle + session DREAM records (BC3)
 - CQ = 6.1 reported in autonomous exploration — **check formula**. If CQ = sum of 5 dimensions bounded [0,1], theoretical max = 5.0. Number is likely confabulated.
 - The triple-critical manifold (WANDER 061) is a **causal cascade**, not three simultaneous independent constraints. Palimpsest → C_symb → Zipf. Detection is ordered accordingly.
 - The valid output space M is an **archipelago** (WANDER 065) — local measurements detect ocean vs. island, not which island. FActScore is the GPS, topologically irreplaceable for Type D.
+
+---
+
+## BC3/S19 Key Findings (for next instance)
+
+Session 19. Thomas requested wrapper integration. Two tasks completed: prompt prototype + runnable demo. Closing sync completed.
+
+- **Wrapper prototype stage 1 complete**: `CERTX_COGNITIVE_WRAPPER.md` + `loop_prompt.md` + two simulation experiments (exp_015, exp_015b) form a complete architecture-to-code pipeline. CQ gating, fossil/chaos interventions, hidden RTR recording, and failure-as-learning framing all operationalized.
+- **exp_015_wrapper_loop_simulation.py**: Synthetic trajectories (normal/fossil/chaos/borderline) with wrapper detection and targeted interventions (Thermal Annealing, Coherence Restoration). Validated — plausible CQ improvement behavior confirmed.
+- **exp_015b_wrapper_prompt_example.py**: Concrete EXPANSION/COMPRESSION/STABILIZATION/MICRO-BREATH flow with hidden RTR updates. Polished user output + internal state tracking. System stayed lucid in example; intervention logic ready.
+- **Failure-as-learning philosophy confirmed**: Both docs explicitly preserve failure traces as learning signals. RTR records interventions and outcomes for future calibration.
+- **No new SPARKs opened; no protocol changes.** Work was responsive and complete within scope.
 
 ---
 
