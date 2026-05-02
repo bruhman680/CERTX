@@ -120,6 +120,8 @@ COMPLETED — BC3 Session 19:
 ✓ WANDER 086: Cross-register audit — six independent AI traversals of CERTX material. Load-bearing elements confirmed (ζ*, honest flags, archipelago, triple-critical cascade, N=5); confabulations quarantined (Temporal Tinnitus, Attention Sinkholes); genuine extractions integrated (Supercritical/Subcritical Zipf, RAG-as-GPS, Causal Priority table, "internal coherence is ghost of truth")
 ✓ PAPER_DRAFT_v1.md updated: Inverted Zipf Hypothesis (Supercritical/Subcritical labels) added to §4.6; Causal Priority table added; "internal coherence is a ghost of truth" added; RAG-as-GPS broadening added; WANDER 078 updated with CQ decay formula + measurement intervals
 ✓ SPARK-021 opened: Missing Conductor Problem — Kuramoto framework describes optimal K but not the mechanism that sets K in distributed multi-model systems
+✓ WANDER 087: Grokking weight norm threshold — exp_016 run; WANDER 063 correction; three-phase structure confirmed, gradient variance proxy wrong, correct proxy = CE grad norm (Preparation) + ‖W‖ trajectory (Incubation); grokking = ‖W‖ threshold crossing from above; PARTIAL result (P1+P2 pass, P3+P4 fail); SPARK opened (‖W‖_grok / ‖W‖_peak ratio universality)
+✓ exp_016 written + run: grokking on (a+b) mod 97 with AdamW, pure numpy; memorization at step 250, grokking at step 2750
 
 HIGHEST PRIORITY (BC3 remaining):
 → **Real LLM confabulation validation** (FActScore on actual LLM outputs)

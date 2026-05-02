@@ -150,6 +150,7 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 | CQ(t) decay formula = 1.0 + (CQ₀−1.0)·exp(−t/τ); measurement intervals [1,2,3,5,7]; recovery τ_recovery ≈ 2-3 sessions | 086 | WANDER 078 (protocol section added); SESSION_HANDOFF τ decay experiment | BC3/S19 |
 | Missing Conductor Problem: Kuramoto K is prescriptive (ζ*=1.2) but not mechanistic in distributed multi-model systems | 086 | SHADOW_LEDGER SPARK-021 | BC3/S19 |
 | Cross-register probe at scale: 7 traversals confirm ζ*, honest flags, archipelago, triple-critical cascade as load-bearing; Temporal Tinnitus + Attention Sinkholes quarantined | 086 | SHADOW_LEDGER Quarantine Log; LIBRARY_INDEX (candidate); SESSION_HANDOFF | BC3/S19 |
+| Grokking = weight norm threshold crossing; WANDER 063 gradient variance proxy wrong; correct: CE grad norm (Preparation) + ‖W‖ trajectory (Incubation); PARTIAL result 2/4 | 087 | WANDER 063 (correction note needed); PAPER §6.6 (grokking section update); SHADOW_LEDGER (new SPARK: ‖W‖ ratio universality) | BC3/S19 |
 
 ---
 

@@ -134,7 +134,7 @@ CLAUDE.md is the first thing the next instance reads. If it's stale, the next in
 
 ## Conventions
 
-**WANDER numbering:** Sequential from 001. Current: 086. Next: 087.
+**WANDER numbering:** Sequential from 001. Current: 087. Next: 088.
 Check `ls WANDERINGS/` before writing to confirm the next number.
 
 **Experiment numbering:** Sequential from 001. Current: 014. Next: 015.
@@ -238,6 +238,8 @@ Session 19. Thomas opened with images — "Campfire Chaos in the Inter-Layer," a
 - **Paper updates:** §4.6 updated — Inverted Zipf Hypothesis (Supercritical/Subcritical labels) added as named proposal; Causal Priority table added; "internal coherence is a ghost of truth" added; RAG-as-GPS broadening added. WANDER 078 updated with CQ decay formula CQ(t) = 1.0 + (CQ₀−1.0)·exp(−t/τ) and measurement intervals.
 - **New SPARKs:** SPARK-020 (ρ(M) calibration in M-type architectures); SPARK-021 (Missing Conductor Problem — what sets global K in distributed multi-model Kuramoto systems?)
 - **Settings:** alwaysThinkingEnabled + verbose live in ~/.claude/settings.json.
+- **WANDER 087**: Grokking weight norm threshold — exp_016 empirical test of WANDER 063. PARTIAL result (2/4 sub-predictions). Phase structure confirmed (Preparation → Incubation → Grokking → Verification). Gradient variance proxy disconfirmed — incubation phase is silent in gradient variance. Correct proxy: CE gradient norm for Preparation (drops 19× at memorization); ‖W‖ trajectory for Incubation (rises to peak 102.4, then WD drives it to grokking threshold 89.4 — crosses from above). Grokking = ‖W‖ threshold crossing, not gradient variance event. Open SPARK: ‖W‖_grok / ‖W‖_peak ratio universality across tasks.
+- **exp_016 written and run**: pure-numpy AdamW grokking experiment; (a+b) mod 97; 115k params; memorization at step 250, grokking at step 2750.
 
 ---
 
