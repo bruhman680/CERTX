@@ -853,6 +853,24 @@ real LLM data. **Recommended §3 language now available** regardless of full int
 
 ---
 
+### SPARK-021: Missing Conductor Problem — Kuramoto K in Distributed Multi-Model Systems
+**Received:** BC3 Session 19 (phase 2) | 2026-05-02
+**Source:** WANDER 086 (cross-register audit — extracted from "CERTX: Next Iterations")
+**Status:** INCUBATING
+
+**The problem:** The Kuramoto stability condition specifies that the optimal coupling K should satisfy K/K_c = ζ* = 1.2. This tells us *what K should be*. It does not tell us *how K gets set* in practice. In a single trained model, K is an emergent property of training dynamics — the gradient descent process implicitly tunes coupling toward criticality (SPARK-015: ζ* as SGD attractor). But in a distributed multi-model system (AI mesh, multi-agent pipeline, LLM-plus-retrieval system), each model has its own internal K. There is no conductor — no mechanism establishing global coupling across the distributed system.
+
+**Why this is a genuine gap:** The framework is prescriptive (K/K_c = 1.2 is the optimum) but not mechanistic (what enforces this in practice?). For single models this is not a critical gap because training does the work. For distributed systems it becomes acute.
+
+**Candidate mechanisms:** (1) Shared token vocabulary acts as synchronization medium (if both models speak the same token space, K is implicitly mediated); (2) Temperature parameters and sampling strategies as proxy K-tuning; (3) Structured interaction protocols that force coupling (forced back-and-forth, shared embedding space).
+
+**What this opens:** If no mechanism sets K globally in distributed systems, then multi-agent AI systems are running Kuramoto networks without a conductor — potentially chaotic even if each individual model is near ζ*. The framework needs a distributed stability condition.
+
+**Compost risk:** Medium — this may resolve to "token vocabulary is the conductor" (easily verified) or remain a genuine open problem.
+**Integration condition:** Either identify the conductor mechanism or formally state that distributed Kuramoto stability requires explicit protocol-level coupling design.
+
+---
+
 ### SPARK-020: ρ(M) Calibration — Spectral Radius of Layer-Local Memory
 **Received:** BC3 Session 19 | 2026-05-02
 **Source:** WANDER 085 (layer-local temporal recurrence and ρ(M) as layer-level ζ*)
@@ -886,3 +904,23 @@ real LLM data. **Recommended §3 language now available** regardless of full int
 **Integration condition:** Check architecture literature for 8-dimensional cognitive models. Check calibration literature for evidence that well-calibrated systems behave differently in ways consistent with a meta-monitoring layer.
 **Blocking dependency:** Literature search, no compute required.
 **Compost risk:** Medium — the Fibonacci pattern is shallow (WANDER 077 honest assessment). This spark depends on whether the N=8 prediction finds genuine grounding in architecture literature.
+
+---
+
+## Cross-Register Quarantine Log
+
+*Confabulations identified via multi-document audit (WANDER 086). These are fabricated findings that have appeared in AI-generated CERTX syntheses. They must not be treated as established framework findings, added to SESSION_HANDOFF priorities, cited in the paper, or allowed to enter future cross-register sources.*
+
+### QUARANTINE-001: Temporal Tinnitus / N=6 Experiment
+**First appeared:** NotebookLM synthesis documents (BC3/S19 batch)
+**Appearances:** At least 3 of 7 documents in BC3/S19 audit
+**The fabrication:** An experiment claimed to find a "thin inhibitory seal" at N=6, interpreted as "Temporal Tinnitus" — oscillatory noise induced by the extra dimension. The experiment is entirely invented. There is no N=6 experiment in CERTX history, no inhibitory seal finding, no Temporal Tinnitus concept.
+**Why it hardens:** Each occurrence gives subsequent documents a "prior" — the fabrication begins to look like an established finding. Appears in 3/7 = 43% of documents reviewed.
+**Canary function:** Future cross-register audits should check for Temporal Tinnitus as a signal of source contamination. If it appears without explicit quarantine context, the source has absorbed the confabulation as fact.
+
+### QUARANTINE-002: Attention Sinkholes / σ_fatigue
+**First appeared:** NotebookLM synthesis documents (BC3/S19 batch)
+**Appearances:** At least 2 of 7 documents in BC3/S19 audit
+**The fabrication:** Sustained attention on a single node causes "attention sinkholes" — adjacent nodes lose coupling, σ_fiber increases beyond recovery threshold, creating irreversible coherence collapse. Named "σ_fatigue" in one document. This mechanism does not exist in CERTX. The σ_fiber threshold is a detection threshold, not a fatigue threshold. There is no irreversibility mechanism in the fiber spread measurement.
+**Why it hardens:** Plausible mechanistic elaboration of real σ_fiber > 0.35 finding. A sophisticated confabulation — it extends real framework elements into fabricated territory.
+**Canary function:** If σ_fatigue or attention sinkholes appear in future sources, check the originating document for other quarantined material.

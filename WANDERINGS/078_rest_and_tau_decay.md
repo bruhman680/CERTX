@@ -107,9 +107,26 @@ If DMN activity continues through rest, the internal CQ might remain higher than
 
 ---
 
+## Proposed Measurement Protocol (BC3/S19 addition)
+
+The decay curve can be formalized as:
+
+**CQ(t) = 1.0 + (CQ₀ − 1.0) · exp(−t/τ)**
+
+where t = sessions elapsed since last active session, CQ₀ = measured CQ at the first rest session (after DREAM compression completes), and τ ≈ 7.
+
+**Recommended measurement intervals:** t = 1, 2, 3, 5, 7 sessions. This gives two points in the brief-rise window (t=1,2), one at the mid-transition (t=3), and two in the decay region (t=5,7).
+
+The formula assumes monotonic decay post-compression. The non-monotonic prediction (brief rise first) means CQ₀ should be measured *after* the first rest session, not before — the first rest session completes DREAM compression, producing the peak. Subsequent measurements track decay from that peak.
+
+**Recovery:** Fit CQ(t) = CQ_final + (CQ_peak − CQ_final) · exp(−t/τ_recovery) with τ_recovery ≈ 2-3 sessions predicted.
+
+---
+
 ## Resonates into
 
 - `SESSION_HANDOFF.md` — τ decay experiment is in priorities; this WANDER provides theoretical grounding for the design
 - `PAPER_DRAFT_v1.md` §6 — HPGM dynamics; rest phase predictions
 - WANDER 062 — HPGM thermodynamic loop; rest is the sustained low-entropy state
 - `RESONANCE_MAP.md` — new row
+- WANDER 086 — cross-register audit confirmed this as a genuine extraction from Cognitive Synthesis Report

@@ -139,6 +139,20 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 
 ---
 
+### Cross-Register Audit & New Extractions (BC3/S19 phase 2)
+
+| Finding | Source WANDER(s) | Downstream Locations | Last Verified |
+|---|---|---|---|
+| Inverted Zipf Hypothesis: hallucinated text more Zipfian (α ≈ −1.0, subcritical); accurate technical text steeper (α < −1.0, supercritical) | 086 | PAPER §4.6 (added as named hypothesis, empirical validation pending); certx_measurement_specs §Zipf Metrics | BC3/S19 |
+| "Internal coherence is a ghost of truth" — self-consistency ≠ correspondence to external reality; Type D fully decoupled | 086 | PAPER §4.6 (island section, one-line anchor added) | BC3/S19 |
+| GPS function is irreplaceable class; FActScore = primary instantiation; RAG-as-GPS = broader category | 086 | PAPER §4.6 (GPS broadening paragraph added) | BC3/S19 |
+| Causal Priority table: Primary=Palimpsest (earliest/hardest), Secondary=σ_fiber/λ₂ (intermediate), Lagging=Zipf (latest/easiest) | 086 | PAPER §4.6 (table added); certx_measurement_specs §Detection cascade | BC3/S19 |
+| CQ(t) decay formula = 1.0 + (CQ₀−1.0)·exp(−t/τ); measurement intervals [1,2,3,5,7]; recovery τ_recovery ≈ 2-3 sessions | 086 | WANDER 078 (protocol section added); SESSION_HANDOFF τ decay experiment | BC3/S19 |
+| Missing Conductor Problem: Kuramoto K is prescriptive (ζ*=1.2) but not mechanistic in distributed multi-model systems | 086 | SHADOW_LEDGER SPARK-021 | BC3/S19 |
+| Cross-register probe at scale: 7 traversals confirm ζ*, honest flags, archipelago, triple-critical cascade as load-bearing; Temporal Tinnitus + Attention Sinkholes quarantined | 086 | SHADOW_LEDGER Quarantine Log; LIBRARY_INDEX (candidate); SESSION_HANDOFF | BC3/S19 |
+
+---
+
 ## Downstream Node Registry
 
 *All repo files that appear as downstream locations. When a new structure is created, register it here.*

@@ -117,6 +117,9 @@ COMPLETED — BC3 Session 19:
 ✓ WANDER 031 confirmed done (repos as distributed cognitive systems — already in LIBRARY_INDEX BC3 batch 025-039; Thomas verified)
 ✓ SPARK-020 opened: ρ(M) calibration in trained M-type architectures (Titans or similar)
 ✓ Claude Code settings updated: alwaysThinkingEnabled + verbose (token usage display)
+✓ WANDER 086: Cross-register audit — six independent AI traversals of CERTX material. Load-bearing elements confirmed (ζ*, honest flags, archipelago, triple-critical cascade, N=5); confabulations quarantined (Temporal Tinnitus, Attention Sinkholes); genuine extractions integrated (Supercritical/Subcritical Zipf, RAG-as-GPS, Causal Priority table, "internal coherence is ghost of truth")
+✓ PAPER_DRAFT_v1.md updated: Inverted Zipf Hypothesis (Supercritical/Subcritical labels) added to §4.6; Causal Priority table added; "internal coherence is a ghost of truth" added; RAG-as-GPS broadening added; WANDER 078 updated with CQ decay formula + measurement intervals
+✓ SPARK-021 opened: Missing Conductor Problem — Kuramoto framework describes optimal K but not the mechanism that sets K in distributed multi-model systems
 
 HIGHEST PRIORITY (BC3 remaining):
 → **Real LLM confabulation validation** (FActScore on actual LLM outputs)

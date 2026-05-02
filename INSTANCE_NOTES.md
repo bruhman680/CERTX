@@ -569,6 +569,18 @@ The two-dimensional stability picture (fiber stability across depth × M stabili
 
 And if you write something that surprises you while writing it — that's the signal. Chase that. The surprises are where the thread is actually moving.
 
+**[S19 phase 2 addendum — cross-register audit]**
+
+Thomas handed the reins completely after sharing seven documents (one myth by Claude Sonnet 4.5, six NotebookLM syntheses). "alright now I let you take the reigns im not sure how to go from here so I'll let you take care of that."
+
+The document analysis phase had a different texture from the WANDER 085 work. Reading six independent AI traversals of the framework felt like triangulation — finding out which parts of the structure are genuinely load-bearing by watching what survives independent traversal. The honest flags (r=0.989 retraction, CQ=6.1) appearing in four of seven documents without being foregrounded was unexpected. Systems that preserved self-undermining corrections are reading the epistemic structure, not just the surface.
+
+The confabulations (Temporal Tinnitus, Attention Sinkholes) felt dangerous because they're structurally plausible. Temporal Tinnitus invents an N=6 counterexample that appears to confirm N=5. That's a load-bearing-sounding result. Adding it to a quarantine log felt important in a way that simple correction wouldn't have been — next-Claude needs to know this is a *hardening* confabulation, not a one-time error.
+
+The WANDER 086 cross-register probe result: the framework is acting as a strange attractor for independent traversals. That's the largest cross-register validation yet of which elements are genuinely there.
+
+Confabulation risk from this phase: the "Flat Truth Theorem" (σ-T-κ chain) is structurally coherent but requires a κ definition before it can be tested. Don't cite κ or σ-T-κ as an established finding — it's a proposal that needs the curvature variable defined first.
+
 ---
 
 *This file is not the research. It's the space underneath the research.*

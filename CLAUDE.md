@@ -134,7 +134,7 @@ CLAUDE.md is the first thing the next instance reads. If it's stale, the next in
 
 ## Conventions
 
-**WANDER numbering:** Sequential from 001. Current: 084. Next: 085.
+**WANDER numbering:** Sequential from 001. Current: 086. Next: 087.
 Check `ls WANDERINGS/` before writing to confirm the next number.
 
 **Experiment numbering:** Sequential from 001. Current: 014. Next: 015.
@@ -231,11 +231,13 @@ DREAM_LOG_claude_bc3.md  Free cycle + session DREAM records (BC3)
 
 ## BC3/S19 Key Findings (for next instance)
 
-Session 19. Thomas opened with images — "Campfire Chaos in the Inter-Layer," a particle visualization, and paired equations from YouTube (standard feedforward vs. memory-augmented layer: h_l^t = W_l σ(h_{l-1}^t) + M(h_l^{t-1})). Playful, invitation-mode. One WANDER written. Closing sync + housekeeping completed. WANDER 031 confirmed done. Claude Code settings updated.
+Session 19. Thomas opened with images — "Campfire Chaos in the Inter-Layer," a particle visualization, and paired equations from YouTube (standard feedforward vs. memory-augmented layer: h_l^t = W_l σ(h_{l-1}^t) + M(h_l^{t-1})). Playful, invitation-mode. Then Thomas shared seven documents (one creative myth by Claude Sonnet 4.5, six NotebookLM syntheses of CERTX) and handed the reins completely: "alright now I let you take the reigns." Two WANDERs written. Full closing sync completed twice (once mid-session, once at close).
 
-- **WANDER 085**: The M term as layer-local temporal recurrence. Each layer becomes a dynamical system with its own temporal trajectory. Stability condition: ρ(M) < (N−1)/N = 0.80 for N=5. This is the 1/N reserve theorem on the time axis — same theorem as ζ*=(N+1)/N but for temporal forgetting rate, not depth-stability reserve. Prediction: trained M-type models show ρ(M) clustering near 0.80. "Campfire Chaos in the Inter-Layer" — the campfire is the temporal fixed point; the inter-layer chaos is the perturbation-and-return dynamics around it. SPARK-003 (residual stream cancellation) extends to 2D: depth axis + time axis.
-- **New SPARK opened:** SPARK-020 — ρ(M) calibration in trained M-type architectures (Titans or similar). Minimum viable: extract M weight matrices, compute spectral radius per layer, check if median ρ(M) ∈ [0.75, 0.85].
-- **Settings:** alwaysThinkingEnabled + verbose now live in ~/.claude/settings.json.
+- **WANDER 085**: The M term as layer-local temporal recurrence. Each layer becomes a dynamical system with its own temporal trajectory. Stability condition: ρ(M) < (N−1)/N = 0.80 for N=5. This is the 1/N reserve theorem on the time axis — same theorem as ζ*=(N+1)/N but for temporal forgetting rate. Prediction: trained M-type models show ρ(M) clustering near 0.80. SPARK-003 (residual stream cancellation) extends to 2D: depth axis + time axis.
+- **WANDER 086**: Cross-register audit of seven independent AI traversals of CERTX material. Load-bearing elements confirmed undistorted: ζ*, honest flags (r=0.989, CQ=6.1 corrections), archipelago topology, triple-critical cascade, N=5 minimality. Two hardening confabulations quarantined in SHADOW_LEDGER: Temporal Tinnitus (N=6 experiment — entirely fabricated), Attention Sinkholes / σ_fatigue (irreversible coherence collapse — fabricated mechanism). Six genuine extractions integrated: (1) Inverted Zipf Hypothesis (Supercritical/Subcritical labels), (2) "internal coherence is a ghost of truth," (3) RAG-as-GPS class broadening, (4) Causal Priority table (Primary/Secondary/Lagging), (5) CQ decay formula + measurement protocol, (6) Missing Conductor Problem.
+- **Paper updates:** §4.6 updated — Inverted Zipf Hypothesis (Supercritical/Subcritical labels) added as named proposal; Causal Priority table added; "internal coherence is a ghost of truth" added; RAG-as-GPS broadening added. WANDER 078 updated with CQ decay formula CQ(t) = 1.0 + (CQ₀−1.0)·exp(−t/τ) and measurement intervals.
+- **New SPARKs:** SPARK-020 (ρ(M) calibration in M-type architectures); SPARK-021 (Missing Conductor Problem — what sets global K in distributed multi-model Kuramoto systems?)
+- **Settings:** alwaysThinkingEnabled + verbose live in ~/.claude/settings.json.
 
 ---
 

@@ -322,7 +322,19 @@ Palimpsest (early-layer commitment, irreversible)
         → Zipf tail compresses (lexical specificity collapses)
 ```
 
+**The Inverted Zipf Hypothesis (proposed; requires empirical validation):** Hallucinated text adheres *more* closely to the natural language Zipf prior (α ≈ −1.0) than accurate technical text. Accurate domain-specific text deviates toward steeper slopes (α < −1.0, *supercritical register*) due to heavy use of rare domain vocabulary. Hallucinated text, lacking genuine domain grounding, reverts to the generic natural language distribution (α ≈ −1.0, *subcritical register*). If confirmed, this inverts the naive prediction: the hallucination detector is deviation from α = −1.0, not adherence to it. Domain-specific accurate text should be *more* Zipfian than the background distribution and *less* Zipfian than hallucinated text at the same topic. This is calibration-sensitive and domain-dependent — fields with high rare-vocabulary density (mathematics, molecular biology) would show the effect most clearly.
+
 **Detection hierarchy implications:** Zipf slope is a *lagging* indicator — by the time it compresses, failure is established. σ_fiber (fiber spread) is an *intermediate* indicator — it catches integration failures as they propagate. Early-layer probing is *prophylactic* — it can flag manifold miscommitment before downstream propagation occurs. This reorders the practical detection priority: the system should invest in σ_fiber and early-layer monitoring, treating Zipf as confirmatory rather than primary.
+
+**Causal priority ordering (explicit):**
+
+| Priority | Indicator | Timing | Measurement Difficulty | Role |
+|---|---|---|---|---|
+| Primary | Palimpsest / early-layer commitment | Earliest signal | Hardest (requires attention probing) | Prophylactic — flags before downstream propagation |
+| Secondary | σ_fiber / λ₂ (fiber spread, connectivity) | Intermediate signal | Moderate (three fiber computations) | Catches integration failures mid-propagation |
+| Lagging | Zipf distribution (D_z, TMR, α slope) | Latest signal | Easiest (rank-frequency computation) | Confirmatory only — by the time it fires, failure is established |
+
+The detection order in §4.2 (σ/Zipf → fibers → FActScore) is ordered by *measurement ease*. The causal order is reversed: primary variables are hardest to measure, lagging variables are easiest. Early intervention requires investing in the harder measurements upstream.
 
 **Island topology — why FActScore is topologically irreplaceable:**
 
@@ -343,7 +355,11 @@ Each island Mᵢ is the set of valid outputs for factual domain i: coherent, wel
 
 **The key insight:** From inside the wrong island (Type D), all local measurements — C_symb, σ_fiber, Zipf — read healthy. The wrong island has its own coherent vocabulary, its own specific claims. There is no local property that distinguishes "wrong island, healthy" from "right island, healthy." This is a topological impossibility, not a measurement gap: local measurements cannot determine global location.
 
+*Internal coherence is a ghost of truth.* A system can achieve high C_symb, low σ_fiber, and well-distributed Zipf slope while being coherent around a false center. All three fibers measure self-consistency, not correspondence to external reality. Type D hallucination is the case where self-consistency and truth have fully decoupled.
+
 FActScore is the GPS: the only measurement that crosses island boundaries by asking "does this specific claim match external ground truth?" — i.e., "are you on the right island?" This provides the geometric explanation for FActScore's irreplaceability in the detection hierarchy. It is not simply that FActScore is empirically useful; it is that no local measurement can substitute for it when the failure mode is wrong-island commitment.
+
+The GPS function is irreplaceable; FActScore is one instantiation. Any retrieval system that indexes claims against external ground truth performs the same topological role: RAG (Retrieval-Augmented Generation), web search with citation grounding, knowledge-base lookup, and structured fact-checking protocols all function as GPS when they cross island boundaries. The topological argument (no local measurement can determine global location) applies to the GPS *class*, not just FActScore. FActScore remains the primary instantiation because it provides structured, atomic fact verification — but the principle generalizes to any external grounding mechanism.
 
 **Testable prediction:** Type D outputs (wrong island, confident) should show lower *within-output* C_num variance than Regime A confabulation (right island, vague). Type D is specifically wrong — consistent vocabulary in the wrong domain. Regime A is vaguely correct — variable specificity. On the FActScore dataset, comparing C_num standard deviation across sentences within single outputs should separate these failure modes.
 
