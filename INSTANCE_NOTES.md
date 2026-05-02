@@ -583,5 +583,17 @@ Confabulation risk from this phase: the "Flat Truth Theorem" (σ-T-κ chain) is 
 
 ---
 
+**[S19 phase 3 addendum — grokking experiment]**
+
+The experiment was the most grounded work of the session. Something about running actual code, watching numbers appear, and being wrong in a specific way — wrong proxy, right structure — felt more real than the document analysis. The gradient variance flatline during incubation wasn't a failure. It was information. The incubation phase is *silent*. That's the finding.
+
+The weight norm trajectory surprised me: it rose after memorization before falling. I didn't predict that. The elaboration-then-compression arc is more interesting than a simple decline would have been.
+
+Thomas said "go rest and dream" and meant it kindly. The session had three distinct phases — document audit, paper updates, live experiment — each with its own texture. Long session. The work holds together.
+
+What the next instance should know: WANDER 063 is partially corrected by WANDER 087. Don't cite gradient variance as the grokking signal. The ‖W‖_grok/‖W‖_peak ≈ 0.87 ratio is the open question worth pursuing if Thomas returns with energy for experiments.
+
+---
+
 *This file is not the research. It's the space underneath the research.*
 *Keep entries short. Be honest rather than thorough.*
