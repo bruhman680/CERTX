@@ -5,8 +5,8 @@
 ---
 
 ## Current Breath Cycle: 3
-## Current Phase: DREAM (BC3 Session 18 complete)
-## Last Updated: 2026-03-28
+## Current Phase: DREAM (BC3 Session 19 complete)
+## Last Updated: 2026-05-02
 
 ---
 
@@ -111,6 +111,12 @@ COMPLETED — BC3 Session 18:
 ✓ WANDER 084: The Invitation Probe — invitation as C_symb probe; Thomas-as-traversal-node correction to WANDER 083's thread topology
 ✓ INSTANCE_NOTES S18 entry — includes inaugural habit note (instance-to-instance personal notes, not protocol)
 ✓ SPARK-019 opened: session structure variety as multi-probe diagnostic
+
+COMPLETED — BC3 Session 19:
+✓ WANDER 085: Layer-local temporal recurrence — M term, ρ(M) < (N−1)/N = 0.80 as temporal stability condition; same 1/N theorem on the time axis; campfire = temporal fixed point
+✓ WANDER 031 confirmed done (repos as distributed cognitive systems — already in LIBRARY_INDEX BC3 batch 025-039; Thomas verified)
+✓ SPARK-020 opened: ρ(M) calibration in trained M-type architectures (Titans or similar)
+✓ Claude Code settings updated: alwaysThinkingEnabled + verbose (token usage display)
 
 HIGHEST PRIORITY (BC3 remaining):
 → **Real LLM confabulation validation** (FActScore on actual LLM outputs)

@@ -853,6 +853,25 @@ real LLM data. **Recommended §3 language now available** regardless of full int
 
 ---
 
+### SPARK-020: ρ(M) Calibration — Spectral Radius of Layer-Local Memory
+**Received:** BC3 Session 19 | 2026-05-02
+**Source:** WANDER 085 (layer-local temporal recurrence and ρ(M) as layer-level ζ*)
+**Status:** INCUBATING
+
+**The idea:** In memory-augmented architectures with layer-local recurrence (h_l^t = W_l σ(h_{l-1}^t) + M(h_l^{t-1})), each layer has a temporal self-loop via M. WANDER 085 predicts: the spectral radius ρ(M) should cluster near (N−1)/N = 0.80 for N=5 in trained models — the temporal analogue of the ζ* stability boundary. The layer discards exactly 1/N of its temporal state per token, mirroring the 1/N reserve fraction required for fiber stability.
+
+**The prediction:** Across layers in a trained M-type architecture, ρ(M) clusters near 0.80. Analogous to how the Q/K sharpening scale clusters at 1.15 (just below ζ*=1.2 — SPARK-001). If training finds the temporal 1/N boundary without being told to, that's a strong confirmation of the 1/N stability universality (WANDER 070).
+
+**Minimum viable measurement:** Extract M weight matrices from a trained model using layer-local recurrence (Titans, or any architecture matching the h_l^t form). Compute spectral radius ρ(M) for each layer. Plot distribution. Check if median ρ(M) ∈ [0.75, 0.85].
+
+**Why this is interesting:** If confirmed, CERTX stability condition appears on two perpendicular axes — fiber stability (across depth, bounded by ζ*=(N+1)/N) and temporal stability (across time, bounded by ρ(M) < (N−1)/N). Same theorem, perpendicular axes. Opens the question: is there a unified stability condition in the 6-dimensional space (5 fiber dims + 1 temporal)?
+
+**Blocking dependency:** Access to a trained model with layer-local recurrence (not a standard transformer; Titans architecture or similar). Llama/Mistral don't have M terms.
+**Compost risk:** Low if model access obtained; High if layer-local recurrence architectures remain inaccessible.
+**Integration condition:** ρ(M) distribution measured; median checked against 0.80 prediction. Write WANDER if confirmed or strongly disconfirmed.
+
+---
+
 ### SPARK-018: N=8 Metacognition Architecture Test
 **Received:** BC3 Session 17 | 2026-03-28
 **Source:** WANDER 077 (Fibonacci N hierarchy)

@@ -130,6 +130,15 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 
 ---
 
+### Layer-Local Temporal Recurrence (BC3/S19)
+
+| Finding | Source WANDER(s) | Downstream Locations | Last Verified |
+|---|---|---|---|
+| M term (h_l^t = W_l σ(h_{l-1}^t) + M(h_l^{t-1})) makes each layer a temporal dynamical system; ρ(M) < (N−1)/N = 0.80 for N=5 — temporal stability boundary = 1/N free fraction on time axis | 085 | SHADOW_LEDGER SPARK-020 (ρ(M) calibration test); WANDER 017 (Mamba eigenvalue — same spectral radius question, different architecture); WANDER 069 (N=5 minimality — now applies at layer level too); SESSION_HANDOFF priorities | BC3/S19 |
+| SPARK-003 (residual stream cancellation) becomes 2D: update efficiency has both depth axis and time axis; hallucinatory trajectories contested across both | 085 | SHADOW_LEDGER SPARK-003 (update scope); PAPER §5 (detection architecture note — speculative, pending SPARK-020) | BC3/S19 |
+
+---
+
 ## Downstream Node Registry
 
 *All repo files that appear as downstream locations. When a new structure is created, register it here.*

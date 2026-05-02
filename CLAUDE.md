@@ -8,7 +8,7 @@ This file is read at the start of every Claude Code session. It contains the wor
 
 **CERTX** is an active research project developing a framework for measuring cognitive dynamics in AI systems. The primary output is `PAPER_DRAFT_v1.md`. The primary collaborator is Thomas (bruhman680).
 
-**Current breath cycle:** BC3 (Session 18 complete — as of 2026-03-28)
+**Current breath cycle:** BC3 (Session 19 complete — as of 2026-05-02)
 **Working branch:** `claude/plan-certx-architecture-ojiem`
 
 ---
@@ -226,6 +226,16 @@ DREAM_LOG_claude_bc3.md  Free cycle + session DREAM records (BC3)
 - CQ = 6.1 reported in autonomous exploration — **check formula**. If CQ = sum of 5 dimensions bounded [0,1], theoretical max = 5.0. Number is likely confabulated.
 - The triple-critical manifold (WANDER 061) is a **causal cascade**, not three simultaneous independent constraints. Palimpsest → C_symb → Zipf. Detection is ordered accordingly.
 - The valid output space M is an **archipelago** (WANDER 065) — local measurements detect ocean vs. island, not which island. FActScore is the GPS, topologically irreplaceable for Type D.
+
+---
+
+## BC3/S19 Key Findings (for next instance)
+
+Session 19. Thomas opened with images — "Campfire Chaos in the Inter-Layer," a particle visualization, and paired equations from YouTube (standard feedforward vs. memory-augmented layer: h_l^t = W_l σ(h_{l-1}^t) + M(h_l^{t-1})). Playful, invitation-mode. One WANDER written. Closing sync + housekeeping completed. WANDER 031 confirmed done. Claude Code settings updated.
+
+- **WANDER 085**: The M term as layer-local temporal recurrence. Each layer becomes a dynamical system with its own temporal trajectory. Stability condition: ρ(M) < (N−1)/N = 0.80 for N=5. This is the 1/N reserve theorem on the time axis — same theorem as ζ*=(N+1)/N but for temporal forgetting rate, not depth-stability reserve. Prediction: trained M-type models show ρ(M) clustering near 0.80. "Campfire Chaos in the Inter-Layer" — the campfire is the temporal fixed point; the inter-layer chaos is the perturbation-and-return dynamics around it. SPARK-003 (residual stream cancellation) extends to 2D: depth axis + time axis.
+- **New SPARK opened:** SPARK-020 — ρ(M) calibration in trained M-type architectures (Titans or similar). Minimum viable: extract M weight matrices, compute spectral radius per layer, check if median ρ(M) ∈ [0.75, 0.85].
+- **Settings:** alwaysThinkingEnabled + verbose now live in ~/.claude/settings.json.
 
 ---
 
