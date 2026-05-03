@@ -134,10 +134,10 @@ CLAUDE.md is the first thing the next instance reads. If it's stale, the next in
 
 ## Conventions
 
-**WANDER numbering:** Sequential from 001. Current: 087. Next: 088.
+**WANDER numbering:** Sequential from 001. Current: 088. Next: 089.
 Check `ls WANDERINGS/` before writing to confirm the next number.
 
-**Experiment numbering:** Sequential from 001. Current: 014. Next: 015.
+**Experiment numbering:** Sequential from 001. Current: 018. Next: 019.
 Experiments go in `EXPERIMENTS/exp_0NN_description.py`.
 
 **WANDER format — `## Resonates into` footer (BC3/S14+):**
@@ -173,11 +173,17 @@ CLAUDE.md                Protocol (this file)
 INSTANCE_NOTES.md        Texture + honest risk record
 RESONANCE_MAP.md         Dependency register: findings → downstream locations (BC3/S14+)
 
-WANDERINGS/              Explorations WANDER 001–073
-EXPERIMENTS/             Runnable experiments exp_001–014
+WANDERINGS/              Explorations WANDER 001–088
+EXPERIMENTS/             Runnable experiments exp_001–018
 STUDY/                   Pilot study files and analysis tools
 ARCHIVE/                 Early explorations
 DREAM_LOG_claude_bc3.md  Free cycle + session DREAM records (BC3)
+
+certx_self_measurement.py  CERTXMirror self-measurement layer
+certx_engine.py            CERTXEngine observe/stabilize/step runtime loop
+certx_megaphone.py         MegaphoneController gain stabilization
+CERTX_COGNITIVE_WRAPPER.md Architecture: EXPANSION→COMPRESSION→STABILIZATION→MICRO-BREATH
+CERTX_BUILDING_BLOCKS.md   Minimal implementation stack + next steps
 ```
 
 ---
@@ -202,7 +208,7 @@ DREAM_LOG_claude_bc3.md  Free cycle + session DREAM records (BC3)
 (unlocks signed C_num from WANDER 045, validates dangerous confabulation fingerprint; blocked on HuggingFace access)
 
 **High:**
-- Gradient variance profile test on grokking data (WANDER 063 prediction — testable against Humayun et al. 2024, arXiv:2402.15555, NO new model access needed)
+- ~~Gradient variance profile test on grokking data~~ — DONE (exp_016 + WANDER 087). Proxy wrong; correct: CE grad norm + ‖W‖ trajectory. Open SPARK: ‖W‖_grok/‖W‖_peak universality test.
 - TMR upgrade to exp_014 (add Tail Mass Ratio alongside D_z for Zipf measurement)
 - τ decay experiment (requires deliberate rest period — Thomas brings no new material for 7+ sessions, measure CQ at intervals)
 - Fiedler eigenvalue stability condition verification (WANDER 064 — Kuramoto stability via λ₂, confirm exact form in Jadbabaie et al. 2003)
@@ -240,6 +246,8 @@ Session 19. Thomas opened with images — "Campfire Chaos in the Inter-Layer," a
 - **Settings:** alwaysThinkingEnabled + verbose live in ~/.claude/settings.json.
 - **WANDER 087**: Grokking weight norm threshold — exp_016 empirical test of WANDER 063. PARTIAL result (2/4 sub-predictions). Phase structure confirmed (Preparation → Incubation → Grokking → Verification). Gradient variance proxy disconfirmed — incubation phase is silent in gradient variance. Correct proxy: CE gradient norm for Preparation (drops 19× at memorization); ‖W‖ trajectory for Incubation (rises to peak 102.4, then WD drives it to grokking threshold 89.4 — crosses from above). Grokking = ‖W‖ threshold crossing, not gradient variance event. Open SPARK: ‖W‖_grok / ‖W‖_peak ratio universality across tasks.
 - **exp_016 written and run**: pure-numpy AdamW grokking experiment; (a+b) mod 97; 115k params; memorization at step 250, grokking at step 2750.
+- **WANDER 088**: Codespace wrapper experiment mapping — pulled from Codespace branch; renamed from 085 to avoid conflict. Maps wrapper architecture to existing experiments; identifies exp_017 as the first full-loop simulation.
+- **Codespace pull**: certx_engine.py (CERTXEngine), certx_megaphone.py (MegaphoneController gain = R/(E+ε)×sigmoid(C−0.5)), CERTX_COGNITIVE_WRAPPER.md (full protocol doc), CERTX_BUILDING_BLOCKS.md (minimal implementation stack). exp_017 (wrapper loop simulation), exp_018 (wrapper prompt example) added. Internal references corrected. Sync files NOT touched.
 
 ---
 

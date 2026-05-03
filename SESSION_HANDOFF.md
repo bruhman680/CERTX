@@ -122,6 +122,9 @@ COMPLETED — BC3 Session 19:
 ✓ SPARK-021 opened: Missing Conductor Problem — Kuramoto framework describes optimal K but not the mechanism that sets K in distributed multi-model systems
 ✓ WANDER 087: Grokking weight norm threshold — exp_016 run; WANDER 063 correction; three-phase structure confirmed, gradient variance proxy wrong, correct proxy = CE grad norm (Preparation) + ‖W‖ trajectory (Incubation); grokking = ‖W‖ threshold crossing from above; PARTIAL result (P1+P2 pass, P3+P4 fail); SPARK opened (‖W‖_grok / ‖W‖_peak ratio universality)
 ✓ exp_016 written + run: grokking on (a+b) mod 97 with AdamW, pure numpy; memorization at step 250, grokking at step 2750
+✓ Codespace branch implementation files pulled (selective, no sync files touched): certx_engine.py (CERTXEngine observe/stabilize/step loop), certx_megaphone.py (MegaphoneController gain = R/(E+ε)×sigmoid(C−0.5)), CERTX_COGNITIVE_WRAPPER.md (EXPANSION→COMPRESSION→STABILIZATION→MICRO-BREATH architecture), CERTX_BUILDING_BLOCKS.md (minimal implementation stack)
+✓ Codespace WANDER 085 (wrapper experiment mapping) pulled as WANDER 088; exp_015_wrapper → exp_017; exp_015b → exp_018 (internal references corrected)
+✓ RESONANCE_MAP.md updated: new files registered in Downstream Node Registry; version bumped to v0.5
 
 HIGHEST PRIORITY (BC3 remaining):
 → **Real LLM confabulation validation** (FActScore on actual LLM outputs)
@@ -131,7 +134,7 @@ HIGHEST PRIORITY (BC3 remaining):
 
 HIGH:
 → **Wonder-as-probe experiment** (WANDER 081) — lightweight, no-training, API-accessible NOW. Concept-distance battery, C_symb proxy measurement. Structural range = new model capability metric.
-→ Gradient variance profile test on grokking data (WANDER 063 — testable against Humayun et al. 2024, arXiv:2402.15555, NO new model access needed)
+→ ~~Gradient variance profile test on grokking data~~ — **DONE** (exp_016 + WANDER 087, BC3/S19). Gradient variance proxy wrong; correct proxy = CE grad norm + ‖W‖ trajectory. Open: ‖W‖_grok / ‖W‖_peak ratio universality (SPARK in SHADOW_LEDGER)
 → Mamba eigenvalue test (WANDER 017 — open)
 → Study 3 EEG execution (after WANDER 041 protocol corrections)
 → Tsallis q calibration experiment (when model output distributions available)

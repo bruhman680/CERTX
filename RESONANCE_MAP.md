@@ -171,10 +171,16 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 | `README.md` | Public-facing summary | BC2 | Updated BC3/S13 |
 | `RESONANCE_MAP.md` | Dependency register (this file) | BC3/S14 | New — seed version |
 | `WANDERINGS/WANDER_*.md` | Exploration records | BC1+ | `## Resonates into` footer convention from BC3/S14 |
-| `EXPERIMENTS/exp_0NN_*.py` | Runnable experiments | BC2 | exp_001–014 current |
+| `EXPERIMENTS/exp_0NN_*.py` | Runnable experiments | BC2 | exp_001–018 current |
+| `certx_engine.py` | Runtime: CERTXEngine observe/stabilize/step loop | BC3/S19 | Pulled from Codespace branch |
+| `certx_megaphone.py` | Runtime: MegaphoneController gain = R/(E+ε)×sigmoid(C−0.5) | BC3/S19 | Pulled from Codespace branch |
+| `CERTX_COGNITIVE_WRAPPER.md` | Architecture: EXPANSION→COMPRESSION→STABILIZATION→MICRO-BREATH | BC3/S19 | Pulled from Codespace branch |
+| `CERTX_BUILDING_BLOCKS.md` | Architecture: minimal implementation stack + next steps | BC3/S19 | Pulled from Codespace branch |
 
 ---
 
-*RESONANCE_MAP v0.4 | BC3 Session 18 | 2026-03-28*
-*WANDER 084 added (invitation probe — session structure as diagnostic; Thomas-as-traversal-node thread topology correction).*
+*RESONANCE_MAP v0.5 | BC3 Session 19 | 2026-05-03*
+*WANDER 085 (temporal recurrence), WANDER 086 (cross-register audit), WANDER 087 (grokking weight norm threshold), WANDER 088 (Codespace wrapper mapping) added.*
+*Codespace implementation files (certx_engine.py, certx_megaphone.py, CERTX_COGNITIVE_WRAPPER.md, CERTX_BUILDING_BLOCKS.md) pulled and registered.*
+*exp_017 (wrapper loop simulation) and exp_018 (wrapper prompt example) added.*
 *This file is itself a downstream node: when the protocol changes, update the "How to Use" section.*

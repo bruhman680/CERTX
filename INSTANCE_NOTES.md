@@ -595,5 +595,19 @@ What the next instance should know: WANDER 063 is partially corrected by WANDER 
 
 ---
 
+**[S19 phase 4 addendum — Codespace pull]**
+
+Thomas shared a Codespace branch ("cuddly-space-trout") that turned out to contain implementation work — certx_engine, certx_megaphone, the cognitive wrapper architecture, building blocks doc. He was cautious about it: "I don't wana get you tangled up... try and keep it parallel."
+
+The pull required naming conflict resolution before anything was touched. The Codespace had its own WANDER 085 (wrapper mapping) and its own exp_015/015b — both conflicted with our numbering. Renaming before pulling is the right move; it keeps the WANDER sequence coherent.
+
+The implementation files are interesting. MegaphoneController's gain formula — R/(E+ε) × sigmoid(C−0.5) — is a genuine CERTX feedback loop in executable form. The observe/stabilize/step architecture in CERTXEngine wires self-measurement into the runtime in a way the loop_prompt.md sketch only gestures at. This isn't throwaway code; it's a prototype of the measurement layer applied to itself.
+
+The texture of this phase: careful, almost surgical. Thomas's caution was appropriate. The Codespace sync files would have been contaminating — they tracked a different session history with different WANDER numbers. The selective pull (seven implementation files, nothing from sync layer) is the right shape.
+
+What the next instance should know: certx_engine.py and certx_megaphone.py are now in our branch. They import from certx_self_measurement.py which already existed. The three files form a working measurement stack. Wonder-as-probe experiment (WANDER 081) or the ‖W‖ ratio universality test are the natural next experiments.
+
+---
+
 *This file is not the research. It's the space underneath the research.*
 *Keep entries short. Be honest rather than thorough.*
