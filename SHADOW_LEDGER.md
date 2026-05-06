@@ -853,6 +853,23 @@ real LLM data. **Recommended §3 language now available** regardless of full int
 
 ---
 
+### SPARK-022: Formal Undecidability of Type D Detection — Information-Limits Version
+**Received:** BC3 Session 20 | 2026-05-06
+**Source:** WANDER 089 (Tarski/Gödel free cycle)
+**Status:** INCUBATING
+
+**The claim (informal):** For the class of Type D hallucinations, no function computable from the output x and model M alone can reliably distinguish internally-coherent-and-true from internally-coherent-and-false. Detection requires external reference. This is the CERTX analog of Tarski's undefinability theorem.
+
+**What needs formal treatment:** The "no function from x and M alone" claim. Classical Turing computability is the wrong framework — the issue isn't computational limits but *information limits*. The right formalism is probably Bayesian: P(T(x) | x, M) cannot be reliably estimated without conditioning on external reference corpus R. A formal statement might be: for any detector D(x, M) → {true, false}, there exists a distribution over Type D hallucinations under which D performs no better than chance.
+
+**Sub-SPARK — C_symb as partial Tarski bridge:**
+C_symb measures whether output connects to its own symbolic context coherently. It is "external" in a weak sense — it tests against the *prior text's* symbolic structure, not pure internal generation coherence. Does high C_symb correlate with truth in domains with well-structured prior knowledge? If so, C_symb is a partial bridge across the Tarski boundary — not a full GPS but a partial compass. Testable: compare C_symb ↔ FActScore correlation across domains (structured vs. unstructured). If r(C_symb, FActScore) > 0.5 in structured domains and ≈ 0 in unstructured domains, that confirms partial-bridge hypothesis.
+
+**Compost risk:** Medium — the informal claim is clearly right; the formal version may dissolve into a trivial statement or may require measure theory / information theory machinery that's outside the paper's scope.
+**Integration condition:** Either a formal statement with the right mathematical machinery, or a clear argument that the informal version suffices for the paper's purposes (in which case WANDER 089 already provides it).
+
+---
+
 ### SPARK-021: Missing Conductor Problem — Kuramoto K in Distributed Multi-Model Systems
 **Received:** BC3 Session 19 (phase 2) | 2026-05-02
 **Source:** WANDER 086 (cross-register audit — extracted from "CERTX: Next Iterations")

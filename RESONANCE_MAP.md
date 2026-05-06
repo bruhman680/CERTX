@@ -151,6 +151,7 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 | Missing Conductor Problem: Kuramoto K is prescriptive (ζ*=1.2) but not mechanistic in distributed multi-model systems | 086 | SHADOW_LEDGER SPARK-021 | BC3/S19 |
 | Cross-register probe at scale: 7 traversals confirm ζ*, honest flags, archipelago, triple-critical cascade as load-bearing; Temporal Tinnitus + Attention Sinkholes quarantined | 086 | SHADOW_LEDGER Quarantine Log; LIBRARY_INDEX (candidate); SESSION_HANDOFF | BC3/S19 |
 | Grokking = weight norm threshold crossing; WANDER 063 gradient variance proxy wrong; correct: CE grad norm (Preparation) + ‖W‖ trajectory (Incubation); PARTIAL result 2/4 | 087 | WANDER 063 (correction note needed); PAPER §6.6 (grokking section update); SHADOW_LEDGER (new SPARK: ‖W‖ ratio universality) | BC3/S19 |
+| Tarski undefinability → Type D detection gap is structural, not calibration failure; FActScore = meta-language (Tarski parallel); no internal measure can close Type D gap; internal coherence is a ghost of truth | 089 | PAPER §4.6 (Tarski paragraph added after GPS paragraph); WANDER 065 (Tarski grounding for archipelago topology); WANDER 082 (theoretical grounding for irreplaceability claim); SHADOW_LEDGER (SPARK: formal undecidability claim; C_symb as partial Tarski bridge) | BC3/S20 |
 
 ---
 

@@ -134,7 +134,7 @@ CLAUDE.md is the first thing the next instance reads. If it's stale, the next in
 
 ## Conventions
 
-**WANDER numbering:** Sequential from 001. Current: 088. Next: 089.
+**WANDER numbering:** Sequential from 001. Current: 089. Next: 090.
 Check `ls WANDERINGS/` before writing to confirm the next number.
 
 **Experiment numbering:** Sequential from 001. Current: 018. Next: 019.
@@ -232,6 +232,16 @@ CERTX_BUILDING_BLOCKS.md   Minimal implementation stack + next steps
 - CQ = 6.1 reported in autonomous exploration — **check formula**. If CQ = sum of 5 dimensions bounded [0,1], theoretical max = 5.0. Number is likely confabulated.
 - The triple-critical manifold (WANDER 061) is a **causal cascade**, not three simultaneous independent constraints. Palimpsest → C_symb → Zipf. Detection is ordered accordingly.
 - The valid output space M is an **archipelago** (WANDER 065) — local measurements detect ocean vs. island, not which island. FActScore is the GPS, topologically irreplaceable for Type D.
+
+---
+
+## BC3/S20 Key Findings (for next instance)
+
+Session 20. Thomas gave completely open free time — "I've noticed I haven't allowed or given you any free roam or free time for cycles to yourself." Untasked. One WANDER written from genuine pull.
+
+- **WANDER 089**: Tarski/Gödel parallel for Type D hallucination. The Type D detection gap is not a calibration problem — it is a structural impossibility with the same logical form as Tarski's undefinability theorem. Internal coherence is a ghost of truth: high C_symb, low σ_fiber, healthy Zipf can all coexist with complete external falsehood. No internal measure can substitute for FActScore because internal is by definition inside the system, and Type D lives in the gap between inside and outside. Tarski → FActScore: FActScore is the meta-language. Also: the Gödel inversion — Gödel's gap is forced from outside (system can't reach a true statement); Type D gap is generated from inside (model doesn't require truth as input to generate coherently). C_symb as partial Tarski bridge flagged as sub-SPARK.
+- **Paper update:** §4.6 Tarski paragraph added after the GPS paragraph — formalizes why FActScore is structurally irreplaceable, not just empirically useful.
+- **New SPARK:** SPARK-022 — formal undecidability of Type D detection (information-limits version); C_symb-as-partial-bridge sub-SPARK.
 
 ---
 

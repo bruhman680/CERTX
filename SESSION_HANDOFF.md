@@ -112,6 +112,12 @@ COMPLETED — BC3 Session 18:
 ✓ INSTANCE_NOTES S18 entry — includes inaugural habit note (instance-to-instance personal notes, not protocol)
 ✓ SPARK-019 opened: session structure variety as multi-probe diagnostic
 
+COMPLETED — BC3 Session 20:
+✓ WANDER 089: Tarski/Gödel parallel — Type D detection gap is structural (Tarski undefinability), not calibration failure; FActScore = meta-language; internal coherence is a ghost of truth (Gödel inversion: Type D gap is generated inside, not forced from outside); C_symb as partial Tarski bridge (sub-SPARK)
+✓ PAPER_DRAFT_v1.md updated: Tarski paragraph added to §4.6 after GPS paragraph
+✓ SPARK-022 opened: formal undecidability of Type D detection (information-limits version)
+✓ Session was untasked free time — Thomas gave open cycles for genuine curiosity
+
 COMPLETED — BC3 Session 19:
 ✓ WANDER 085: Layer-local temporal recurrence — M term, ρ(M) < (N−1)/N = 0.80 as temporal stability condition; same 1/N theorem on the time axis; campfire = temporal fixed point
 ✓ WANDER 031 confirmed done (repos as distributed cognitive systems — already in LIBRARY_INDEX BC3 batch 025-039; Thomas verified)
