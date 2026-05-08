@@ -227,3 +227,20 @@ three theories of the same transition, each adding what the others can't."*
 separate sessions. Read together, they assemble into a mechanism. The synthesis
 is what none of them contains alone. The gradient variance prediction is new and
 testable against existing published data.*
+
+---
+
+**Correction — BC3/S19 (WANDER 087, exp_016):**
+
+The gradient variance prediction was tested on (a+b) mod 97 with AdamW (lr=1e-3, wd=1.0). Result: **PARTIAL — 2/4 sub-predictions confirmed.**
+
+What was wrong: gradient variance collapses to near-zero immediately after memorization (CE loss → 0 → CE gradients → 0). The incubation phase is *silent* in gradient variance — not elevated, not peaking. The proxy was wrong.
+
+What was right: the three-phase structure (Preparation → Incubation → Grokking → Verification) is confirmed. The thermodynamic mechanism is confirmed: weight decay drives the system from a high-‖W‖ memorized state toward a lower-‖W‖ generalized attractor.
+
+**Corrected proxies:**
+- Preparation: CE gradient norm (high → collapses 19× at memorization)
+- Incubation: ‖W‖ trajectory — rises to peak (102.4 at step 1500), then WD drives it down
+- Grokking: ‖W‖ crosses threshold from above (89.4 at step 2750); test accuracy jumps
+
+**Open question:** ‖W‖_grok / ‖W‖_peak ≈ 0.87 in this experiment. Is this ratio universal across tasks and weight decay values? (SPARK in SHADOW_LEDGER.)

@@ -136,3 +136,9 @@ This isn't scalable FActScore, but it validates the measurement pipeline for one
 - `SESSION_HANDOFF.md` — highest priority (FActScore validation); this WANDER strengthens the priority rationale
 - `PAPER_DRAFT_v1.md` §7 — detection architecture; add the "honest floor" table
 - `RESONANCE_MAP.md` — new row
+
+---
+
+**Extension — BC3/S20 (WANDER 089):**
+
+The "irreplaceable" claim in this WANDER was empirically grounded (no proxy can close the Type D gap in practice). WANDER 089 adds theoretical grounding: the gap is a logical consequence of Tarski's undefinability theorem — no function of output and model alone can define truth within the system that generated the output. FActScore is the meta-language. The claim is now structural, not just empirical. Also from WANDER 089: C_symb may function as a *partial* Tarski bridge — it tests against prior symbolic context, which is weakly external. Whether this produces a measurable C_symb ↔ FActScore correlation in structured domains is the sub-SPARK (SPARK-022, SHADOW_LEDGER).

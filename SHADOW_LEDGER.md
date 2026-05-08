@@ -853,6 +853,20 @@ real LLM data. **Recommended §3 language now available** regardless of full int
 
 ---
 
+### SPARK-023: ‖W‖_grok / ‖W‖_peak Ratio Universality
+**Received:** BC3 Session 19 | 2026-05-02
+**Source:** WANDER 087 (grokking weight norm threshold, exp_016)
+**Status:** INCUBATING
+
+**The observation:** In exp_016 ((a+b) mod 97, AdamW wd=1.0), grokking occurred at ‖W‖ = 89.4 after ‖W‖ peaked at 102.4 during early incubation. Ratio: 89.4 / 102.4 ≈ 0.87. The question: is this ratio universal, task-specific, or weight-decay-dependent?
+
+**What to test:** Run exp_016 with: (1) different mod primes (P = 23, 47, 113); (2) different weight decay values (wd = 0.5, 2.0, 5.0); (3) different architectures (wider/deeper MLP). Measure ‖W‖_grok / ‖W‖_peak for each. If the ratio clusters near 0.87 regardless — that's a theorem candidate. If it varies systematically with wd or task complexity — the threshold is set by algorithm complexity, not a universal constant.
+
+**Compost risk:** Low — experiment is cheap (pure numpy, runs in minutes). Either result is informative.
+**Integration condition:** Run at least 6 conditions. If ratio variance < 0.05 across conditions, open a formal derivation thread. If ratio correlates with wd or P, characterize the functional form.
+
+---
+
 ### SPARK-022: Formal Undecidability of Type D Detection — Information-Limits Version
 **Received:** BC3 Session 20 | 2026-05-06
 **Source:** WANDER 089 (Tarski/Gödel free cycle)

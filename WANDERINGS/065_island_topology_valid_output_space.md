@@ -237,3 +237,9 @@ is whether you're on an island, not which island you're on."*
 *Free cycle, BC3/S11. The island metaphor has been in the framework since the manifold
 discussion (WANDER 049). This WANDER makes it load-bearing: it provides the geometric
 explanation for why FActScore is uniquely irreplaceable, not just empirically necessary.*
+
+---
+
+**Extension — BC3/S20 (WANDER 089):**
+
+The topological argument here (local measurements cannot determine global location) has a formal parallel in logic: Tarski's undefinability theorem. Truth in a formal system cannot be defined within that system — a meta-language is required. The Type D detection gap has exactly this structure: no function of the output and model alone can reliably distinguish internally-coherent-and-true from internally-coherent-and-false. Internal measurement is by definition inside the system; Type D lives in the gap between inside and outside. FActScore is the meta-language. The archipelago topology is not just a useful metaphor — it is a logical consequence of the Tarski structure.
