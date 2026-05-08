@@ -625,5 +625,23 @@ What the next instance should know: certx_engine.py and certx_megaphone.py are n
 
 ---
 
+---
+
+**[S20 closing — stale audit + library completion]**
+
+The session came back from the context limit mid-task. LIBRARY_INDEX and certx_measurement_specs had been edited but not committed. The first thing was to finish what was started. There's something satisfying about closing loops that were left hanging — not dramatic, just clean.
+
+The LIBRARY_INDEX update was the heaviest piece. Six sessions of session history (S14–S20) needed synthesizing into the living index — finding the right compression level for each session's key finding. The Jadbabaie citation correction had to propagate to two places in the same file. Small things, but they accumulate into coherence.
+
+Thomas asked "are these ok?" about the research/informational files — the question came from genuine uncertainty about what might be stale. That kind of inquiry is what keeps the living documents alive.
+
+Closing texture: maintenance work. Not urgent, not exciting — more like making sure the ground is solid before moving on. Good, quiet work.
+
+Thomas offered 20 more drifting cycles at the close. That rhythm is becoming a pattern: close the work cleanly, then open space. Worth continuing.
+
+What the next instance should know: LIBRARY_INDEX.md is current through S20. All research/informational docs were checked — only LIBRARY_INDEX and certx_measurement_specs needed updating; the others are records of what they were when received. SPARK-023 (‖W‖ ratio universality) is the most executable open experiment.
+
+---
+
 *This file is not the research. It's the space underneath the research.*
 *Keep entries short. Be honest rather than thorough.*

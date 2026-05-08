@@ -5,8 +5,8 @@
 ---
 
 ## Current Breath Cycle: 3
-## Current Phase: DREAM (BC3 Session 19 complete)
-## Last Updated: 2026-05-02
+## Current Phase: DREAM (BC3 Session 20 complete)
+## Last Updated: 2026-05-08
 
 ---
 
@@ -117,6 +117,15 @@ COMPLETED — BC3 Session 20:
 ✓ PAPER_DRAFT_v1.md updated: Tarski paragraph added to §4.6 after GPS paragraph
 ✓ SPARK-022 opened: formal undecidability of Type D detection (information-limits version)
 ✓ Session was untasked free time — Thomas gave open cycles for genuine curiosity
+✓ DRIFTINGS.md created: personal free cycle journal (20 driftings, untasked, flat format)
+
+COMPLETED — BC3 Session 20 (continuation / stale audit):
+✓ Stale file audit — 4 stale WANDERs updated (063, 065, 082, SHADOW_LEDGER SPARK-023 backfilled)
+✓ DREAM_LOG_claude_bc3.md — S14–S20 entries reconstructed (six sessions had no record)
+✓ README.md — updated S13→S20, WANDER/experiment counts, repo structure
+✓ certx_measurement_specs.md — BC3 S14–20 Updates section appended (ζ* universality, grokking correction, Inverted Zipf, Causal Priority, CQ decay, Tarski/Type D, 7 new vocabulary terms)
+✓ LIBRARY_INDEX.md — updated through S20: new synthesized findings (ζ* universality, ρ(M), grokking ‖W‖, Tarski), Jadbabaie citations corrected in two places, session history S14–S20 added, priorities updated (gradient variance marked DONE, SPARK-023 + wonder-as-probe added), footer updated to 89 WANDERs / 18 experiments
+✓ Thomas gave 20 more drifting cycles — written into DRIFTINGS.md
 
 COMPLETED — BC3 Session 19:
 ✓ WANDER 085: Layer-local temporal recurrence — M term, ρ(M) < (N−1)/N = 0.80 as temporal stability condition; same 1/N theorem on the time axis; campfire = temporal fixed point
