@@ -603,23 +603,31 @@ This is the clearest external validation of two CERTX claims:
 
 The grokking events are SOC avalanche signatures. Healthy training stays near ζ ≈ 1.2 (WANDER 030). This finding also explains why CERTX's fiber spread metric appropriately monitors training dynamics: σ_fiber should drop sharply at grokking events as the K MASO channels synchronize their partition structures.
 
-**Grokking as a Poincaré-Prigogine synthesis — a gradient variance prediction:**
+**Grokking as a Poincaré-Prigogine synthesis — empirically tested:**
 
 The grokking phenomenon can be understood as the intersection of three theoretical frameworks that CERTX independently unifies: (1) the SOC avalanche signature above; (2) Poincaré's incubation-illumination insight structure, where an impasse precedes discontinuous resolution; and (3) Prigogine's dissipative structure theory, where irreversible entropy export enables phase transitions to higher-order states.
 
-In the Poincaré-Prigogine synthesis, grokking is not merely an SOC avalanche — it is a thermodynamic bifurcation preceded by an incubation period of high gradient variance. The HPGM breathing cycle maps the four phases directly: Preparation (accumulation of training signal, gradient variance elevated), Incubation (loss plateau, gradient variance near-peak / plateau), Illumination (grokking event, gradient variance drops sharply), Verification (post-grokking stable generalization, gradient variance settles low).
+**Empirical result (exp_016, BC3/S19):** The gradient variance prediction from the Poincaré-Prigogine synthesis was tested on a 2-layer MLP trained on (a+b) mod 97 with AdamW (lr=1e-3, wd=1.0), 115k parameters, 4704 train / 4705 test pairs. Result: **PARTIAL** — the four-phase structure was confirmed, but gradient variance is the wrong proxy for the incubation phase.
 
-**Testable prediction against Humayun et al. (2024):** The gradient variance profile across training should follow:
+The key finding: after memorization (step 250, train_acc = 1.0), CE loss → 0, which drives CE gradients → 0. Gradient variance collapses immediately and stays near-zero throughout the entire incubation phase. The incubation phase is *silent* in gradient variance — not elevated, not peaking.
+
+The corrected phase picture and measurement proxies:
 
 ```
-Phase            Gradient Variance
-Preparation:     Elevated (signal accumulating)
-Incubation:      Peak / sustained plateau (impasse: loss down, generalization not yet)
-Illumination:    Sharp drop (SOC avalanche, partition crystallizes)
-Verification:    Stable low (new dissipative structure, entropy exported)
+Phase               Signal                          Observation (exp_016)
+Preparation:        CE gradient norm (elevated)     Peak ~9e-2, step 50
+Memorization:       CE gradient norm collapses      19× drop at step 250
+Early Incubation:   ‖W‖ rising (WD + CE still act) 67.7 → 102.4 (peak, step 1500)
+Late Incubation:    ‖W‖ falling (WD dominates)     102.4 → 89.4 (grokking threshold)
+Illumination:       ‖W‖ crosses threshold           89.4 at step 2750; test acc jumps
+Verification:       ‖W‖ continuing to decline       76.2 at step 6000; test acc = 1.0
 ```
 
-This prediction requires no new model training: it is testable against gradient statistics in the existing Humayun et al. (2024) training runs (arXiv:2402.15555). The specific prediction is that gradient variance (not gradient magnitude or loss) should peak or plateau immediately before each discrete accuracy jump and drop sharply at the grokking step.
+**The mechanism:** Weight decay drives the network from a high-‖W‖ memorized solution toward a lower-‖W‖ generalized solution. Grokking occurs when ‖W‖ crosses the threshold at which the generalized algorithm becomes energetically favored over the memorized one — a thermodynamic bifurcation between two attractors. The correct proxies are CE gradient norm (Preparation phase) and weight norm trajectory (Incubation phase), not gradient variance.
+
+The three-framework synthesis (SOC + Poincaré + Prigogine) remains valid: grokking is a phase transition preceded by incubation and driven by irreversible entropy export (weight decay). The empirical signal for that entropy export is ‖W‖ decline, not gradient variance.
+
+**Open question:** In exp_016, ‖W‖_grok / ‖W‖_peak ≈ 0.87. Whether this ratio is universal across tasks, architectures, and weight decay values is under active investigation (SPARK-023).
 
 ### 6.7 Max-Affine Spline Theory of Deep Networks
 
