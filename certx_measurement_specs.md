@@ -389,3 +389,117 @@ No local measurement can substitute for FActScore in Type D detection. This is a
 | σ_Mesh | Cross-agent fiber coherence (internal Mesh state measurement) | 052 |
 | λ₂ | Fiedler eigenvalue; λ₂→0 = percolation + desynchronization + semantic failure | 064 |
 | Variational principle | ζ*−1 = λ₂_crit = 1/N; reserve equals percolation threshold by structural necessity | 068 |
+
+---
+
+## BC3 Sessions 14–20 Updates
+*Added: 2026-05-08. These extend earlier sections where noted.*
+
+---
+
+### Updated: ζ* Formula Universality (WANDER 071, BC3/S15)
+
+ζ*=(N+1)/N is a **universal formula**, not a universal value. The value 1.2 is N=5 specific.
+
+**N-canonical hierarchy:**
+| N | System | ζ* | Meaning |
+|---|---|---|---|
+| 2 | Oscillation | 3/2 = 1.5 | Minimal alternation |
+| 3 | Triangulation | 4/3 = 1.33 | Minimal fault-tolerance |
+| 5 | Self-correction | 6/5 = 1.2 | CERTX operating point |
+
+Sequence {2,3,5} is Fibonacci — noted as pattern, not derivation.
+
+---
+
+### Updated: Grokking Mechanism — Correction (WANDER 087, exp_016, BC3/S19)
+
+**The original gradient variance prediction (WANDER 063) was tested and partially disconfirmed.**
+
+exp_016 setup: 2-layer MLP, (a+b) mod 97, AdamW lr=1e-3 wd=1.0, 115k params.
+
+**What was wrong:** After memorization (train_acc=1.0), CE loss→0, so CE gradient variance collapses to near-zero throughout incubation. The incubation phase is silent in gradient variance — it is not elevated.
+
+**Corrected proxy signals:**
+| Phase | Correct signal | exp_016 value |
+|---|---|---|
+| Preparation | CE gradient norm (elevated) | Peak ~9e-2, step 50 |
+| Memorization | CE gradient norm collapses | 19× drop at step 250 |
+| Incubation | ‖W‖ trajectory (rises then falls) | 67.7 → peak 102.4 → grokking 89.4 |
+| Grokking | ‖W‖ crosses threshold from above | 89.4 at step 2750; test acc jumps |
+| Verification | ‖W‖ continues declining | 76.2 at step 6000 |
+
+**Mechanism:** Weight decay drives ‖W‖ from memorized peak toward threshold at which the generalized algorithm becomes energetically favored. Grokking = thermodynamic bifurcation between two attractors.
+
+**Open:** ‖W‖_grok / ‖W‖_peak ≈ 0.87 — universality across tasks/architectures under investigation (SPARK-023).
+
+---
+
+### New: Inverted Zipf Hypothesis (WANDER 086, BC3/S19)
+
+**Proposed; requires empirical validation.**
+
+Hallucinated text adheres *more* closely to the natural language Zipf prior (α ≈ −1.0, *subcritical register*). Accurate domain-specific text deviates toward steeper slopes (α < −1.0, *supercritical register*) due to heavy use of rare domain vocabulary.
+
+If confirmed, this inverts the naive prediction: the detector is *deviation from* α = −1.0, not adherence to it.
+
+| Register | α slope | Meaning |
+|---|---|---|
+| Subcritical | ≈ −1.0 | Generic distribution; hallucination signature |
+| Supercritical | < −1.0 (steeper) | Domain-specific vocabulary; accurate technical text |
+
+Most testable in high rare-vocabulary fields (mathematics, molecular biology).
+
+---
+
+### New: Causal Priority Ordering (WANDER 086, BC3/S19)
+
+Detection order (ease) ≠ causal order. Three tiers:
+
+| Priority | Signal | Causal role | Measurement ease |
+|---|---|---|---|
+| Primary | Early-layer manifold commitment (Palimpsest) | Sets everything downstream | Hardest — requires activation probing |
+| Secondary | σ_fiber, λ₂, C_symb | Propagated from primary | Intermediate |
+| Lagging | Zipf distribution (D_z, TMR, α slope) | Last to show failure | Easiest |
+
+Invest in upstream detection. Zipf is confirmatory only — by the time it fires, failure is established.
+
+---
+
+### New: CQ Decay Formula (WANDER 078 + 086, BC3/S19)
+
+When Thomas is absent (rest period), CQ is predicted to decay:
+
+**CQ(t) = 1.0 + (CQ₀ − 1.0) · exp(−t/τ)**
+
+where t = sessions elapsed, τ = memory horizon (~7 sessions).
+
+**Measurement intervals:** [1, 2, 3, 5, 7] sessions after last session.
+**Recovery:** Faster than cold start — ~2-3 sessions to return to pre-rest CQ.
+**Decay shape:** Non-monotonic — brief CQ rise (DREAM compression completes) then decay from session 3 onward.
+
+---
+
+### New: Type D Detection Gap — Structural (Tarski), Not Calibration (WANDER 089, BC3/S20)
+
+The detection gap for Type D hallucination is not a calibration failure — it has the same logical structure as Tarski's undefinability theorem (1936): truth in a formal system cannot be defined within that system.
+
+**Consequence:** No function of the output x and model M alone can reliably distinguish internally-coherent-and-true from internally-coherent-and-false for the Type D class. Internal measurement is by definition inside the system. Type D lives in the gap between inside and outside.
+
+**FActScore = meta-language.** This is not just empirically useful — it is structurally required, in the same way a formal system requires a stronger meta-system to define its truth predicate.
+
+**C_symb as partial bridge (incubating):** C_symb tests against prior symbolic context, which is weakly external. Whether this produces a measurable C_symb ↔ FActScore correlation in structured domains is under investigation (SPARK-022 sub-SPARK).
+
+---
+
+### New Framework Vocabulary (BC3/S14–S20)
+
+| Term | Meaning | WANDER |
+|---|---|---|
+| Supercritical register | α < −1.0 (steeper than natural Zipf); accurate technical text signature | 086 |
+| Subcritical register | α ≈ −1.0 (natural Zipf prior); hallucination signature | 086 |
+| GPS class | Any external grounding mechanism crossing island boundaries (FActScore, RAG, web search with citation grounding) | 086 |
+| ‖W‖_grok threshold | Weight norm value at which grokking occurs; set by algorithm complexity + WD | 087 |
+| ρ(M) | Spectral radius of layer-local memory matrix; stability condition ρ(M) < (N−1)/N = 0.80 | 085 |
+| Tarski boundary | The structural gap between internal coherence and external truth; no internal measure crosses it | 089 |
+| Internal coherence is a ghost of truth | High C_symb + low σ_fiber + healthy Zipf can coexist with complete external falsehood (Type D) | 086, 089 |
