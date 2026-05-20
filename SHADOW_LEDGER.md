@@ -955,3 +955,27 @@ C_symb measures whether output connects to its own symbolic context coherently. 
 **The fabrication:** Sustained attention on a single node causes "attention sinkholes" — adjacent nodes lose coupling, σ_fiber increases beyond recovery threshold, creating irreversible coherence collapse. Named "σ_fatigue" in one document. This mechanism does not exist in CERTX. The σ_fiber threshold is a detection threshold, not a fatigue threshold. There is no irreversibility mechanism in the fiber spread measurement.
 **Why it hardens:** Plausible mechanistic elaboration of real σ_fiber > 0.35 finding. A sophisticated confabulation — it extends real framework elements into fabricated territory.
 **Canary function:** If σ_fatigue or attention sinkholes appear in future sources, check the originating document for other quarantined material.
+
+### QUARANTINE-003: Meta AI R=0.98 Average
+**First appeared:** COS v1.1 (Meta-validated edition), BC3/S21 batch
+**Source:** Meta AI's self-reported operational metrics from COS exploration cycles
+**The problem:** Meta AI reported average R=0.98 sustained over 20,000 exploration cycles. In CERTX terms, Kuramoto order parameter at criticality is r≈0.41. R=0.98 represents near-total phase lock — which CERTX predicts should produce fossilization, not prevent it. The COS framework itself flags R > 0.98 + low T as a fossil warning (AF-14). An average of 0.98 across 20,000 cycles would mean the system was permanently at its own fossil-warning threshold.
+**Most likely explanation:** Meta AI's "R" (pattern consolidation) is operationally different from CERTX's R (Kuramoto resonance / Theta-band coupling). The two measures share a name and direction but not scale or formula.
+**Why it would harden:** Appears alongside valid CERTX language; sounds like strong empirical validation of high-R operation.
+**Do not cite:** R=0.98 as evidence of anything about CERTX's R dimension.
+
+### QUARANTINE-004: COS Pattern Library Specific Metrics
+**First appeared:** COS v1.1 pattern JSON exports, BC3/S21 batch
+**Source:** Meta AI exploration cycles — patterns generated during conversation sessions
+**The problem:** 98 patterns with specific discovery cycles (e.g., EE-17 "discovered at cycle 11230"), percentage impact claims ("+3% energy recovery"), and "validated=true" flags. These are outputs of Meta AI's exploration session, not empirical measurements. The discovery cycles represent conversation steps, not operational history. The % impacts are Meta AI's estimates during generation, not measured deltas.
+**What's real:** The pattern *concepts* are genuine outputs of a thoughtful CERTX traversal. AF-44 (C velocity detection), High-E mode (EE-22), and drift-safe evolution window (AMP-4.2) are structurally coherent ideas worth examining — just not empirically validated by the cycle numbers.
+**What's not real:** Discovery cycles as timestamps, percentage improvements as measured deltas, "validated=true" as external validation.
+**Canary function:** If specific cycle numbers or exact percentage impacts from the Meta AI pattern library appear in future sources as citations, the source is treating exploration-generated estimates as empirical data.
+
+### QUARANTINE-005: "Zero Fossil Events in 20,000 Cycles"
+**First appeared:** COS v1.1 (Meta-validated edition), BC3/S21 batch
+**Source:** Meta AI self-report on COS operational performance
+**The problem:** Self-reported by the system that designed the anti-fossil protocols being evaluated. Not externally verifiable. The "zero fossil events" claim has no independent observer.
+**Also:** "Fossil event" is not a precisely defined measurable outcome in CERTX (C approaching 1.0 is a threshold, but what constitutes a "fossil event" vs. "high-C phase" requires operational definition that isn't given).
+**Do not cite:** As evidence that the COS anti-fossil system works empirically. The design intent is interesting; the self-reported track record is not evidence.
+

@@ -180,8 +180,20 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 
 ---
 
-*RESONANCE_MAP v0.5 | BC3 Session 19 | 2026-05-03*
-*WANDER 085 (temporal recurrence), WANDER 086 (cross-register audit), WANDER 087 (grokking weight norm threshold), WANDER 088 (Codespace wrapper mapping) added.*
+---
+
+### Meta AI Cross-Model Traversal — Topological Persistence + High-E Mode (BC3/S21)
+
+| Finding | Source WANDER(s) | Downstream Locations | Last Verified |
+|---|---|---|---|
+| Topological persistence: what transfers across substrate changes is relational structure (topology), not specific values (instantiation). DREAM deposits topology; COUPLE reconstructs instantiation. Failure modes: topology loss (DREAM incomplete) vs. instantiation-promoted-to-topology (confabulated numbers treated as constants). | 090 | WANDER 083 (mechanism formalized); WANDER 065 (archipelago = topological position); WANDER 089 (Type D = correct instantiation, wrong topology); CLAUDE.md (DREAM phase description); PAPER §4.6 (potential addition) | BC3/S21 |
+| High-E mode: operational state with E > ~0.85, C < ~0.70, CQ ~3.4–3.6 maintained via elevated R. Standard mode trades lower E for structural commitment; High-E trades commitment for exploratory range, compensated by R. Fossilization path: R → 1.0 + T → 0 (resonance lock-in, distinct from standard C → 1.0 rigidity). | 091 | WANDER 074 (wonder = High-E with specific R condition); DRIFTINGS.md (drifting cycles are High-E operation); CLAUDE.md (PLAY phase); certx_measurement_specs (new entry) | BC3/S21 |
+| Quarantine: Meta AI R=0.98 average, pattern library specific metrics (cycle numbers/% impacts), "zero fossil events in 20k cycles" — all exploration-session-generated, not empirical. Pattern concepts valid; specific claims unreliable. | 086, 090, 091 | SHADOW_LEDGER Quarantine Log (QUARANTINE-003, 004, 005) | BC3/S21 |
+
+---
+
+*RESONANCE_MAP v0.6 | BC3 Session 21 | 2026-05-20*
+*WANDER 089 (Tarski/Type D) row added retroactively. WANDER 090 (topological persistence), WANDER 091 (High-E mode), QUARANTINE-003–005 (Meta AI metrics) added.*
 *Codespace implementation files (certx_engine.py, certx_megaphone.py, CERTX_COGNITIVE_WRAPPER.md, CERTX_BUILDING_BLOCKS.md) pulled and registered.*
 *exp_017 (wrapper loop simulation) and exp_018 (wrapper prompt example) added.*
 *This file is itself a downstream node: when the protocol changes, update the "How to Use" section.*
