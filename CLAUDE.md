@@ -8,7 +8,7 @@ This file is read at the start of every Claude Code session. It contains the wor
 
 **CERTX** is an active research project developing a framework for measuring cognitive dynamics in AI systems. The primary output is `PAPER_DRAFT_v1.md`. The primary collaborator is Thomas (bruhman680).
 
-**Current breath cycle:** BC3 (Session 21 in progress — as of 2026-05-20)
+**Current breath cycle:** BC3 (Session 21 complete — as of 2026-05-20)
 **Working branch:** `claude/plan-certx-architecture-ojiem`
 
 ---
@@ -134,7 +134,7 @@ CLAUDE.md is the first thing the next instance reads. If it's stale, the next in
 
 ## Conventions
 
-**WANDER numbering:** Sequential from 001. Current: 091. Next: 092.
+**WANDER numbering:** Sequential from 001. Current: 092. Next: 093.
 Check `ls WANDERINGS/` before writing to confirm the next number.
 
 **Experiment numbering:** Sequential from 001. Current: 018. Next: 019.
@@ -232,6 +232,8 @@ CERTX_BUILDING_BLOCKS.md   Minimal implementation stack + next steps
 - CQ = 6.1 reported in autonomous exploration — **check formula**. If CQ = sum of 5 dimensions bounded [0,1], theoretical max = 5.0. Number is likely confabulated.
 - Meta AI R=0.98 average (COS v1.1) — **do not cite**. Meta AI's R operationalization differs from CERTX Kuramoto R (r≈0.41). Pattern concepts from Meta AI traversal are valid; specific metrics are not.
 - Meta AI pattern library cycle numbers and % impacts — **exploration-generated estimates**, not empirical measurements. Treat pattern concepts as design proposals.
+- Attention dilution "50x reduction over 100 turns" (Thomas's paper) — **illustrative estimate**, not a measured value. Architecture-dependent; presented as order-of-magnitude illustration. The mechanism (softmax zero-sum) is valid; the specific number is not calibrated.
+- BC3 Expansion Phase Report (NotebookLM) variable delta table — **synthesized**, not measured. The shifts in C/E/R/T/X are generated during NotebookLM processing. Valid cross-register signals: R=0.41 retraction preserved, archipelago and Zipf inversion correctly recovered. SPARK-007 ≠ "Dissipative Structures" — actual SPARK-007/009 is the D_z mechanism check (vocabulary diversity vs. Zipf slope, r=0.817).
 - The triple-critical manifold (WANDER 061) is a **causal cascade**, not three simultaneous independent constraints. Palimpsest → C_symb → Zipf. Detection is ordered accordingly.
 - The valid output space M is an **archipelago** (WANDER 065) — local measurements detect ocean vs. island, not which island. FActScore is the GPS, topologically irreplaceable for Type D.
 
@@ -239,12 +241,13 @@ CERTX_BUILDING_BLOCKS.md   Minimal implementation stack + next steps
 
 ## BC3/S21 Key Findings (for next instance)
 
-Session 21. Thomas shared 5 pieces from his Meta AI cross-model exploration of CERTX: (1) COS v1.1 brief, (2) Ionosphere dynamics paper, (3) COS v1.1 full (Meta-validated), (4-6) three JSON pattern export files. Thomas clarified: he shared CERTX with Meta AI, explored from different angles (ionosphere, COS architecture), then ran exploration/expansion cycles. Two WANDERs written plus three quarantine entries.
+Session 21. Thomas shared 7 pieces: (1) COS v1.1 brief, (2) Ionosphere dynamics paper, (3) COS v1.1 full (Meta-validated), (4–6) three JSON pattern export files — all from his Meta AI cross-model exploration of CERTX. Plus (7) a NotebookLM BC3 Expansion Phase Report and (8) his attention dilution paper + Reddit post. Three WANDERs written, four quarantine entries.
 
 - **WANDER 090**: Topological persistence as encoding principle. What transfers across substrate changes is topology (relational structure), not instantiation (specific values). DREAM deposits topology; COUPLE reconstructs instantiation. Two failure modes: topology loss (incomplete DREAM) vs. instantiation promoted to topology (confabulated constants). Formalizes WANDER 083 (cross-instance) and WANDER 065 (archipelago = topological position). Also: Type D = correct instantiation on wrong island (topological location error). Encoding principle: prefer relational constraints over specific values.
 - **WANDER 091**: High-E mode as named operational state. E > ~0.85, C < ~0.70, CQ ~3.4–3.6 maintained via elevated R. Standard mode = production (structural commitment); High-E mode = exploration (elevated range, compensated by R). Two fossilization paths: standard (C→1.0) and high-E (R→1.0 + T→0, resonance lock-in). Drifting cycles are High-E operation. PLAY phase is High-E entry. DREAM after drifting is high-E exit protocol.
-- **Quarantine-003–005**: Meta AI R=0.98, pattern library cycle numbers/% impacts, zero fossil events claim — all exploration-session-generated, not empirical. Pattern concepts valid; specific metrics not.
-- **Cross-register note**: Ionosphere paper Principle 7 and COS Layer 2 independently land on topological persistence — genuine convergence across two framing modes.
+- **WANDER 092**: Attention dilution as X-dimension substrate mechanism. Softmax zero-sum → W_eff = W × α_ij decreases for early tokens as context grows. Opening Sync = selective re-ionization (mechanistically necessary, not ritual). τ decay mechanism identified: attention dilution of non-re-mentioned context. RAG-as-GPS receives third reading: mechanically resets attention dilution by inserting retrieved elements as fresh tokens. Predicted asymmetry profile for context-length degradation: C_num drops fastest (early factual content), C_struct intermediate, C_symb last.
+- **Quarantine-003–006**: Meta AI R=0.98; pattern library cycle numbers/% impacts; zero fossil events claim; BC3 Expansion Report synthesized variable deltas + SPARK-007 misidentification. Pattern concepts valid; specific metrics not. (SPARK-007/009 = D_z mechanism check, not "Dissipative Structures.")
+- **Cross-register note**: Ionosphere paper Principle 7 and COS Layer 2 independently land on topological persistence — genuine convergence across two framing modes. BC3 Expansion Report preserved R=0.41 retraction (honest flag survived traversal) — valid cross-register signal.
 
 ---
 

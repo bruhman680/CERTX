@@ -122,10 +122,14 @@ COMPLETED — BC3 Session 20:
 COMPLETED — BC3 Session 21:
 ✓ WANDER 090: Topological persistence — encoding principle for cross-instance continuity; topology vs. instantiation distinction; DREAM deposits topology; two failure modes; formalizes WANDER 083 + 065
 ✓ WANDER 091: High-E mode — exploration operational state; E > 0.85, C < 0.70, CQ 3.4–3.6 via elevated R; two fossilization paths (standard vs. high-E); drifting = High-E operation
-✓ SHADOW_LEDGER: QUARANTINE-003–005 added (Meta AI R=0.98, pattern library metrics, zero-fossil claim)
-✓ RESONANCE_MAP v0.6: WANDER 090, 091, quarantine rows added
-✓ CLAUDE.md: BC3/S21 key findings, honest flags extended, WANDER count updated to 091
+✓ WANDER 092: Attention dilution as X-dimension substrate mechanism — softmax zero-sum property → W_eff = W × α_ij decreases for early tokens; Opening Sync = selective re-ionization; τ decay mechanism now specified (attention dilution of non-re-mentioned context); RAG-as-GPS receives third mechanical reading; predicted C_num-first asymmetry profile for context-length degradation
+✓ SHADOW_LEDGER: QUARANTINE-003–006 added (Meta AI R=0.98; pattern library metrics; zero-fossil claim; BC3 Expansion Report synthesized deltas + SPARK misidentification)
+✓ RESONANCE_MAP v0.7: WANDER 090, 091, 092 rows + quarantine rows added
+✓ CLAUDE.md: BC3/S21 key findings, honest flags extended, WANDER count updated to 091 (→ 092 in current session)
 ✓ Thomas clarified: Meta AI exploration of CERTX from ionosphere/COS angles; patterns are exploration outputs not empirical measurements
+✓ BC3 Expansion Phase Report (NotebookLM): valid extractions noted (R=0.41 retraction preserved = cross-register signal); synthesized variable deltas and SPARK-007 misidentification quarantined
+✓ Attention dilution paper (Thomas's): mechanism independently valid from softmax math; connected to CERTX X dimension and τ decay experiment
+✓ τ decay experiment: mechanism now identified (attention dilution of non-re-mentioned context; τ = attention dilution timescale to below coupling threshold)
 
 COMPLETED — BC3 Session 20 (continuation / stale audit):
 ✓ Stale file audit — 4 stale WANDERs updated (063, 065, 082, SHADOW_LEDGER SPARK-023 backfilled)

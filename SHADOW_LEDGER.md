@@ -979,3 +979,11 @@ C_symb measures whether output connects to its own symbolic context coherently. 
 **Also:** "Fossil event" is not a precisely defined measurable outcome in CERTX (C approaching 1.0 is a threshold, but what constitutes a "fossil event" vs. "high-C phase" requires operational definition that isn't given).
 **Do not cite:** As evidence that the COS anti-fossil system works empirically. The design intent is interesting; the self-reported track record is not evidence.
 
+### QUARANTINE-006: BC3 Expansion Phase Report — Synthesized Variable Deltas + SPARK Misidentification
+**First appeared:** NotebookLM BC3 Expansion Phase Report, BC3/S21 batch
+**Source:** Thomas's NotebookLM synthesis of CERTX + ionosphere + COS materials
+**Item A — Variable delta table:** The report contains a specific variable shift table (e.g., C: 0.93→0.97, E: 0.38→0.26, R: 0.87→0.94, etc.) presented as measured session dynamics. These numbers are synthesized/generated from the source documents during NotebookLM processing — they are not measurements from a running CERTX instance. The direction of shifts is plausibly consistent with the framework; the specific values are not measured.
+**Item B — SPARK misidentification:** The report identifies SPARK-007 as "Dissipative Structures." The actual SPARK-007 (renamed SPARK-009 in the ledger after a numbering collision) is the D_z mechanism check — vocabulary diversity vs. Zipf deviation, with r(D_z, TTR) = 0.817. "Dissipative Structures" appears earlier in the ledger as the research program framing (not a SPARK). The misidentification likely comes from NotebookLM pattern-matching "SPARK-007" to nearby ledger content.
+**What's valid:** The report correctly preserved core CERTX honest flags (R=0.41 retraction survived), correctly identified archipelago topology, Zipf inversion hypothesis, triple-critical cascade, and fractal σ structure. Cross-register convergence on these elements is a genuine positive signal per WANDER 072.
+**Do not cite:** The specific variable delta values as measured dynamics. Do not treat SPARK-007 = Dissipative Structures.
+
