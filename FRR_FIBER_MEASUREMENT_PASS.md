@@ -45,6 +45,31 @@ Construct paired passages with similar whole-passage counts and topic words but 
 
 A one-step or whole-output summary may be adequate for one task and inadequate for another. If path information matters, test a trajectory-aware statistic against the original tuple on held-out pairs; do not automatically relabel the missing distinction as model memory.
 
+## What the eight-state experiments clarify
+
+The eight-state work is a *measurement analogy*, not a claim that an LLM output has eight hidden states or that the three fibers are Markov states. Its useful object is the many-to-one map: several underlying configurations or trajectories can receive the same visible description. A fiber scorer likewise maps a rich passage and its claim history to three numbers.
+
+Three different adequacy questions follow:
+
+1. **Present description:** If two passages receive similar fiber tuples, do they agree on the independently measured property at issue? A specific false claim and a specific true claim can have the same entity-count proxy. This is a present hidden distinction (an FRR shadow) relative to that scorer.
+2. **Continuation:** Does the tuple retain what matters as a passage unfolds? The supplied eight-state shadow/echo construction agrees for one visible transition but separates over longer visible paths. For text, score successive claims and their cross-claim relations before assuming a whole-passage average preserves contradiction or correction.
+3. **Intervention:** Does the tuple predict what happens when a source is supplied, a claim is challenged, or a sentence is replaced? A score that predicts passive labels need not predict response to checking. This requires a separately declared intervention and outcome; an output-only score cannot identify a model's internal mechanism by itself.
+
+For a declared target `Y` and observable fiber tuple `F`, a practical sufficiency question is whether knowing the underlying passage details or path `H` changes prediction after `F` is known: `Pr(Y | F, H) ≈ Pr(Y | F)` on held-out cases. The approximation depends on the chosen target, population, horizon, and tolerance. It is a research test, not an identity supplied by the fiber definitions. For interventions `a`, ask the question separately for `Pr(Y^a | F, H)`; passive prediction does not grant interventional sufficiency.
+
+The thermodynamic eight-state construction supplies a second warning: a two-state visible summary can report zero stationary current while an internal driven cycle dissipates. Its 100% hidden fraction depends partly on that two-state coarse-graining, and its normalized equilibrium chain does not have the stated Boltzmann distribution. Thus it motivates looking for process information erased by a score; it does **not** license calling fiber spread physical entropy production or reading hidden computational cost from three output scores.
+
+### A minimal measurement translation
+
+| Eight-state question | Fiber question | Direct check |
+|---|---|---|
+| What distinction did the quotient merge? | Did a proxy merge specificity with truth, or topic continuity with logical consistency? | Cross the properties independently and seek matched-score counterexamples. |
+| Does agreement persist across horizons? | Do final scores conceal a contradiction, correction, or drift in the claim sequence? | Compare whole-output and time-resolved scores on paired passages. |
+| Does a probe expose or create a difference? | Does checking against a source alter the measured outcome or the continuation? | Record pre-check output, probe, and post-check response separately. |
+| Is the same visible result evidence of one mechanism? | Could different model processes produce the same three scores? | Compare rival baselines and interventions; keep mechanism claims open. |
+
+The lesson is to measure the **behavior we ask the fibers to preserve**, then find a pair they currently treat alike that behaves differently. A repair may change a proxy, retain a path, or narrow a claim. It need not immediately add a fourth fiber.
+
 ## Interpretation boundary
 
 Treat `F` as a proposed task-relative compression. Its adequacy depends on the observation, target, horizon, intervention family, and tolerance. If two cases with matched `F` differ on the declared target, locate the residual before adding dimensions or asserting an internal mechanism. Possible repairs include changing the scorer, retaining a verified truth channel, preserving the sequence, narrowing the claim, or refining the fiber partition.
