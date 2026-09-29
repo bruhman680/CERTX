@@ -107,6 +107,14 @@ If the target observation is refined at the same time, the numerical defects are
 - They do not show that a specific failure lies inside a model. A score can fail because of its observable, its abstraction, its target, its horizon, or its data construction.
 - They preserve a useful residual: define the integration behavior before deciding whether a fourth score, pairwise tests, a joint projection, or a trajectory representation is needed.
 
+## The scale of a score is part of the claim
+
+Even if each component measures something useful, `sigma_fiber` compares their *numerical scales*. A monotone recalibration of one component can preserve every within-component ranking while changing the spread. For example, `(0.8, 0.8, 0.8)` has zero spread; applying `x -> x²` to the first component yields `(0.64, 0.8, 0.8)` with positive spread, although no case changed its order under that component.
+
+The toy's `C_i=1-d_i` scores share a unit because each defect is the same worst-case total-variation question on a binary target. A real factuality score, contradiction score, and semantic score do not acquire comparable units merely by being mapped into [0,1]. Before pooling them, specify calibration population, state weighting, horizon, error cost, uncertainty, and missing or out-of-scope values. Compare raw channel results and serious baselines before trusting an aggregate. A missing external reference is `unknown`, not a healthy `C_num` and not automatically a failed one.
+
+This also separates **worst-case** from **average** preservation. A worst-case defect asks whether *any* merged pair can disagree; an average needs an explicit distribution over states or trajectories. A rare, high-cost factual error and a frequent, mild topic drift can reverse their priority under different costs. The measurement contract should say which decision a scalar supports, while retaining the underlying vector and path.
+
 ## What the eight-state experiments clarify
 
 The eight-state work is a *measurement analogy*, not a claim that an LLM output has eight hidden states or that the three fibers are Markov states. Its useful object is the many-to-one map: several underlying configurations or trajectories can receive the same visible description. A fiber scorer likewise maps a rich passage and its claim history to three numbers.
