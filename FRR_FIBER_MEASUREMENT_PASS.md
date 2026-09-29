@@ -45,6 +45,34 @@ Construct paired passages with similar whole-passage counts and topic words but 
 
 A one-step or whole-output summary may be adequate for one task and inadequate for another. If path information matters, test a trajectory-aware statistic against the original tuple on held-out pairs; do not automatically relabel the missing distinction as model memory.
 
+## Three projections of one process
+
+In the earlier A/B/C example, A, B, and C are *macrostates of one projection*. They are not `C_num`, `C_struct`, and `C_symb`. A more precise mathematical candidate uses one micro-dynamics `P` and three maps `Q_num`, `Q_struct`, and `Q_symb`, each merging states for a different declared purpose. Strictly, the fibers are the preimages of a map (the states it merges); `C_i` is a proposed *score of preservation* under that map.
+
+For a hard projection `Q_i`, let `[u]_i` be the projected class of microstate `u`. One possible defect at horizon `t` is
+
+```text
+d_i(t) = max over u,v with [u]_i = [v]_i
+         TV( row_u(P^t Q_i), row_v(P^t Q_i) ).
+```
+
+It asks whether states merged now have the same distribution over *their own projected future* after `t` steps. `d_i(1)=0` is the strong lumpability condition for this finite hard partition; `d_i(t)>0` locates a lost distinction. The marginal at one horizon is not the full visible-path law. A provisional toy score `C_i(t)=1-d_i(t)` is normalized here because total variation lies in [0,1]; it is not a calibrated CERTX measurement or evidence that three real cognitive mechanisms exist.
+
+The [reproducible three-projection sandbox](EXPERIMENTS/three_projection_sandbox.py) uses eight states `(b0,b1,b2)` and three binary coordinate projections of the *same* transition matrix. A tunable coupling makes the future of coordinate `i` depend on a bit erased by `Q_i`. The coordinate labels are placeholders: permuting them changes no mathematics and says nothing by itself about numerical, structural, or symbolic cognition.
+
+| Constructed case | One-step defects | Minimum score | Mean score | Score spread (population SD) |
+|---|---:|---:|---:|---:|
+| All exact | (0, 0, 0) | 1.000 | 1.000 | 0 |
+| Only one fails | (0.4, 0, 0) | 0.600 | 0.867 | 0.189 |
+| One approximate | (0.05, 0, 0) | 0.950 | 0.983 | 0.024 |
+| All fail equally | (0.4, 0.4, 0.4) | 0.600 | 0.600 | 0 |
+
+The script asserts the analytic one-step defects for all cases and shows that a refinement from `Q_0` to `(Q_0,Q_1)` repairs its one-channel failure in this construction. It also reports two-step defects. These vary with dynamics and horizon; a one-step ranking should not silently become an all-horizon claim.
+
+The lesson for `sigma_fiber` is exact within this toy: *zero spread* occurs for uniform health and uniform failure. Minimum, mean, and spread answer different questions. No single statistic is an automatic detector. The toy checks the algebra and the measurement contract; it cannot validate CERTX on language.
+
+For a real numerical/factual component, the preserved behavior may require an external observable or reference `g_num` rather than merely `P^tQ_num`. Structural preservation might concern dependency or transition relations; symbolic preservation might concern task-conditioned meaning. Each needs its own observation, cost, horizon, and legitimate `unknown` state. A shared formula is an optional scaffold, not an obligation to force unlike phenomena into identical scores.
+
 ## What the eight-state experiments clarify
 
 The eight-state work is a *measurement analogy*, not a claim that an LLM output has eight hidden states or that the three fibers are Markov states. Its useful object is the many-to-one map: several underlying configurations or trajectories can receive the same visible description. A fiber scorer likewise maps a rich passage and its claim history to three numbers.
