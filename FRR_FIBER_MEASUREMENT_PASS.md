@@ -73,6 +73,40 @@ The lesson for `sigma_fiber` is exact within this toy: *zero spread* occurs for 
 
 For a real numerical/factual component, the preserved behavior may require an external observable or reference `g_num` rather than merely `P^tQ_num`. Structural preservation might concern dependency or transition relations; symbolic preservation might concern task-conditioned meaning. Each needs its own observation, cost, horizon, and legitimate `unknown` state. A shared formula is an optional scaffold, not an obligation to force unlike phenomena into identical scores.
 
+## Further pressure: local preservation need not compose
+
+The same sandbox now includes a separate joint-only construction. Let the source microstate be three bits `(a,b,c)`. In the next state, `a'` and `b'` are each individually fair coins, but their parity `a' XOR b'` equals the source bit `c`; `c'` is fair. Each one-bit projection is exact at every tested marginal horizon. Yet the joint projection `(a,b)` merges states with different source `c` and has the maximum one-step defect:
+
+```text
+(d_a(1), d_b(1), d_c(1)) = (0, 0, 0)
+d_(a,b)(1) = 1
+d_(a,b)(2) = 0
+```
+
+At the second horizon the joint *marginal* defect vanishes because `c'` was randomized. The first-step joint distribution, and potentially a visible path law, still carry information that the separate one-bit tests discard. The vector of *three scores* `(1,1,1)` is therefore insufficient to infer joint preservation. Observing all three coordinate *values* is a different, finer representation; in this eight-state construction their joint tuple identifies the microstate. Do not confuse a tuple of adequacy scores with the joint observation itself.
+
+For CERTX this opens an **integration question** distinct from each component's health: can locally adequate numerical, structural, and symbolic descriptions be used together for a declared task? One might compare joint behaviors or check cross-component constraints. This is a mathematical reason to test integration; it does not establish that real language fibers have this form or supply a universal integration score.
+
+### Refinement needs a fixed target
+
+The original defect uses the same `Q` twice: once to decide which present states are grouped, and again to decide what future behavior is observed. Separate those jobs:
+
+```text
+d(A, O, t) = max over u,v grouped together by A
+             TV( row_u(P^t O), row_v(P^t O) ).
+```
+
+Here `A` is the current abstraction and `O` is the declared target observable. If `O` stays fixed, refining `A` removes pairs from the maximum, so this worst-case defect cannot increase. In the sandbox's single-failure case, keeping the target at bit 0 while refining the current grouping from bit 0 to bits (0,1) changes the defect from 0.4 to 0. This is a scoped repair, paid for with a larger effective state.
+
+If the target observation is refined at the same time, the numerical defects are not comparable by that monotonic argument. The joint-only construction makes this vivid: each one-bit self-defect is zero while the two-bit self-defect is one. This is no contradiction; the question changed. Record separately **what states are merged now** and **what future distinction must survive**. In factual language, the latter may be a reference-checked claim outcome that is not available from text alone.
+
+### What the controlled cases do and do not establish
+
+- They establish mathematical possibilities and expose insufficiencies in using spread alone or inferring global adequacy from local scores.
+- They do not choose the correct observational lenses, costs, or thresholds for language.
+- They do not show that a specific failure lies inside a model. A score can fail because of its observable, its abstraction, its target, its horizon, or its data construction.
+- They preserve a useful residual: define the integration behavior before deciding whether a fourth score, pairwise tests, a joint projection, or a trajectory representation is needed.
+
 ## What the eight-state experiments clarify
 
 The eight-state work is a *measurement analogy*, not a claim that an LLM output has eight hidden states or that the three fibers are Markov states. Its useful object is the many-to-one map: several underlying configurations or trajectories can receive the same visible description. A fiber scorer likewise maps a rich passage and its claim history to three numbers.
