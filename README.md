@@ -9,6 +9,7 @@ The repository contains several depths of work: conceptual architecture, mathema
 ## Evidence map
 
 - [Experiment Status Ledger](EXPERIMENT_STATUS_LEDGER.md) — claim-by-claim status for Experiments 001–018
+- [FRR Fiber Measurement Pass](FRR_FIBER_MEASUREMENT_PASS.md) — specificity versus truth, trajectory preservation, and a held-out test design
 - [Codex Branch Orientation](CODEX_BRANCH_ORIENTATION.md) — ancestry, guardrails, vocabulary, and rehydration order
 - [Original Claude research branch](https://github.com/bruhman680/CERTX/tree/claude/plan-certx-architecture-ojiem) — upstream historical lineage
 - [Paper draft](PAPER_DRAFT_v1.md) — current theory manuscript; not yet reconciled with the ledger
