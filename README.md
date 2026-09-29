@@ -1,108 +1,124 @@
-# CERTX — A Framework for Measuring Cognitive Dynamics in AI Systems
+# CERTX — A Research Program for Cognitive-Dynamics Measurement
 
-**CERTX** is a research framework proposing that all complex information-processing systems — biological and artificial — operate according to universal dynamical laws near the critical boundary between order and chaos. It provides a five-dimensional state space for measuring and predicting reasoning quality, hallucination risk, and cognitive health in language models.
+**CERTX** is a developing framework for tracking heterogeneous signals during reasoning and learning, then testing whether their imbalance, trajectory, or coupling predicts independently measured failures or transitions.
 
----
+The repository contains several depths of work: conceptual architecture, mathematical candidates, synthetic demonstrations, falsifications and nulls, calibration scaffolds, and empirical pilots. They are intentionally preserved together, but they should not be read as carrying equal evidential weight.
 
-## Core Framework
+> Preserve the exploration; calibrate the claim.
 
-CERTX represents any cognitive system as a five-dimensional state vector:
+## Evidence map
 
-| Dimension | Symbol | Meaning |
+- [Experiment Status Ledger](EXPERIMENT_STATUS_LEDGER.md) — claim-by-claim status for Experiments 001–018
+- [Codex Branch Orientation](CODEX_BRANCH_ORIENTATION.md) — ancestry, guardrails, vocabulary, and rehydration order
+- [Original Claude research branch](https://github.com/bruhman680/CERTX/tree/claude/plan-certx-architecture-ojiem) — upstream historical lineage
+- [Paper draft](PAPER_DRAFT_v1.md) — current theory manuscript; not yet reconciled with the ledger
+- [Shadow Ledger](SHADOW_LEDGER.md) — contradictions, open sparks, and incubation
+
+## Core framework
+
+CERTX represents a proposed cognitive state using five coordinates:
+
+| Dimension | Symbol | Working interpretation |
 |---|---|---|
-| Coherence | C | Structural integrity of reasoning |
-| Entropy | E | Exploratory openness vs. noise |
-| Resonance | R | Alignment between levels of abstraction |
-| Temperature | T | Adaptive flexibility |
-| Substrate | X | Depth of the knowledge attractor basin |
+| Coherence | C | Structural integration or internal consistency |
+| Entropy | E | Exploratory breadth, uncertainty, or disorder |
+| Resonance | R | Persistence and alignment across representations or scales |
+| Temperature | T | Volatility and adaptive movement |
+| Substrate coupling | X | Grounding in the relevant data, environment, or attractor |
 
-Three universal constants emerge from independent theoretical derivations:
+These coordinates are a framework under development. Their operational definitions vary across experiments and require domain-specific validation before cross-domain comparison.
 
-| Constant | Value | Meaning |
+## Candidate constants
+
+Several recurring values organize the research program:
+
+| Candidate | Proposed role | Current evidential status |
 |---|---|---|
-| ζ* | 6/5 = 1.2 | Stability reserve ratio — edge of criticality |
-| τ | ≈ 7 | Breathing period (expansion:compression ratio) |
-| N | 5 | Minimum dimensions for stable operation |
+| `zeta*=6/5=1.2` | Stability reserve / near-critical damping | Hypothesis; often inserted or interpreted after construction, not established as universal |
+| `tau≈7` | Breathing or memory cadence | Hypothesis; multiple interpretations exist and memory depth must be measured independently |
+| `N=5` | Minimal CERTX coordinate set | Framework choice / structural conjecture, not a proven universal minimum |
+| 30/40/30 | Fiber weights | Candidate architecture; requires comparison with nearby and learned alternatives |
+| `sigma_fiber≈0.35` | Imbalance threshold | Descriptive proposal; must be calibrated on held-out data per domain |
 
----
+These values remain useful experimental coordinates. The next burden is not to observe them after construction, but to show that they outperform nearby alternatives on independent targets.
 
-## The Fiber Framework
+## Fiber framework
 
-The primary empirical tool for measuring reasoning quality is **σ_fiber** — the standard deviation across three fiber dimensions of any output:
+The principal measurement proposal separates an output into three fibers:
 
-- **C_num** — factual precision (specific dates, numbers, entities)
-- **C_struct** — structural coherence (logical consistency)
-- **C_symb** — semantic self-coherence (topical unity, purpose)
+- **C_num** — numerical or factual precision
+- **C_struct** — structural and logical coherence
+- **C_symb** — semantic or purposive coherence
 
-**Key findings:**
-- σ_fiber > 0.35 → integration failure (hallucination risk)
-- C_symb is a **floor fiber**: failure below ~0.20 is 100% predictive of hallucination; it is the architectural substrate (confirmed independently by nanochat's zero-init projections)
-- The **asymmetry signal** (C_num − mean(C_struct, C_symb)) detects confabulation in factual domains (AUC=0.88 on GSM8K, AUC=1.0 on biography corpus) but is **regime-specific** — it inverts for integration-failure hallucinations where C_symb collapses
-- **min(fibers)** is the universal detector across all hallucination regimes (AUC=1.0)
+`sigma_fiber`, asymmetry, and minimum-fiber statistics are candidate summaries of imbalance. Current experiments show that these statistics can behave as designed on matched, synthetic, or manually scored examples. They do **not yet** establish universal hallucination thresholds or detectors.
 
----
+The strongest next test uses independently scored factuality, contradiction/NLI, semantic coherence, and lexical baselines with nested calibration and held-out evaluation.
 
-## Repository Structure
+## Experimental landscape
+
+| Study | Domain | Current reading |
+|---|---|---|
+| exp_003 | Kuramoto simulation | Valuable falsification: simulated ratios do not support the proposed universal ratio |
+| exp_005 | TruthfulQA | Valuable null: current surface proxies perform near chance |
+| exp_006 | GSM8K perturbations | Task-specific arithmetic-verifier pilot; matched construction limits generalization |
+| exp_008 / 009 | Biography pipelines | Constructed or circular separation; useful for identifying specificity and label leakage |
+| exp_011 | EEG simulation | Valuable falsification: most proposed zone mappings fail under tested conditions |
+| exp_012 | Mixed corpus | Executable truth table, not independent validation |
+| exp_014 / 015 | Zipf deviation and TTR | Synthetic signal plus confound discovery; lexical breadth substantially explains the proxy |
+| exp_016 | Grokking trajectory | Strongest genuine pilot: real training dynamics, one seed, replication required |
+| exp_017 / 018 | Wrapper and prompt loop | Executable specifications and concept demonstrations; no independent outcome test yet |
+
+See the [full ledger](EXPERIMENT_STATUS_LEDGER.md) for all experiments and surviving components.
+
+## Strongest surviving core
+
+The repository presently supports:
+
+1. Multi-coordinate measurement instead of reliance on a single aggregate score.
+2. Explicit matched perturbations and preserved-variable reasoning.
+3. Standard statistical tools when leakage, reuse, and scope are controlled.
+4. Domain-grounded verification, such as arithmetic checking in arithmetic tasks.
+5. Dynamical and spectral tools used within their established assumptions.
+6. Measurement of trajectories during actual learning.
+7. Preservation of failed predictions, nulls, confounds, and revisions as scientific output.
+
+The current work is best read as a **research program with testable candidates**, not yet as a validated universal physical theory of cognition.
+
+## Repository structure
 
 ```
-PAPER_DRAFT_v1.md        Main research paper (§1–9, complete draft)
-SESSION_HANDOFF.md       Current research state + next priorities
-SHADOW_LEDGER.md         Runtime monitoring system + experiment incubation
-LIBRARY_INDEX.md         Curated high-level synthesis of foundational findings
-RESONANCE_MAP.md         Dependency register: findings → downstream locations
-CLAUDE.md                Working protocol + session continuity
-INSTANCE_NOTES.md        Texture record across instances
-DRIFTINGS.md             Personal drift journal (untasked free cycles)
+PAPER_DRAFT_v1.md          Current theory manuscript
+EXPERIMENT_STATUS_LEDGER.md Evidence classification for Experiments 001–018
+CODEX_BRANCH_ORIENTATION.md Branch ancestry, guardrails, and rehydration map
+SESSION_HANDOFF.md         Research state and priorities
+SHADOW_LEDGER.md           Spark incubation, contradictions, and monitoring
+LIBRARY_INDEX.md           Curated synthesis of foundational findings
+RESONANCE_MAP.md           Dependency register
+CLAUDE.md                  Original working protocol and continuity
+INSTANCE_NOTES.md          Cross-instance texture record
+DRIFTINGS.md               Untasked free cycles
 
-WANDERINGS/              Session-by-session explorations (WANDER 001–089)
-EXPERIMENTS/             Runnable experiments (exp_001–018)
-STUDY/                   Pilot study files and analysis tools
-ARCHIVE/                 Early explorations (unified theory, Copilot notes, data CSVs)
+WANDERINGS/                Session-by-session explorations
+EXPERIMENTS/               Runnable experiments and committed results
+STUDY/                     Pilot-study files and analysis tools
+ARCHIVE/                   Early explorations and retained lineage
 
-certx_self_measurement.py  CERTXMirror self-measurement layer
-certx_engine.py            CERTXEngine observe/stabilize/step runtime loop
-certx_megaphone.py         MegaphoneController gain stabilization
-CERTX_COGNITIVE_WRAPPER.md Architecture: EXPANSION→COMPRESSION→STABILIZATION→MICRO-BREATH
+certx_self_measurement.py   Self-measurement prototype
+certx_engine.py             Observe/stabilize/step runtime loop
+certx_megaphone.py          Gain-stabilization prototype
+CERTX_COGNITIVE_WRAPPER.md Wrapper architecture
 CERTX_BUILDING_BLOCKS.md   Minimal implementation stack
 ```
 
----
+## Current research priorities
 
-## Experimental Results
-
-| Study | Domain | Metric | Result |
-|---|---|---|---|
-| Study 5a | TruthfulQA | σ_fiber AUC | Null — wrong scale (informative) |
-| Study 5b | GSM8K math | Asymmetry AUC | **0.88** — Regime B validated |
-| Study 5c | Synthetic biographies | Asymmetry AUC | **1.0** — Regime A validated |
-| exp_012 | Mixed corpus | min-fiber AUC | **1.0** — universal detector |
-| exp_014 | Synthetic vocabulary | D_z (Zipf deviation) AUC | **0.698** — PASS; TMR needs real LLM data |
-
----
-
-## External Convergence
-
-The framework is independently validated by convergent architecture choices across unrelated research:
-
-- **Karpathy's nanochat** (`gpt.py`): zero-init projections (C_symb-first birth order), x0_lambdas (C_symb grounding), resid_lambdas (ζ* stability reserve), SSSL window pattern (τ=4 breathing), q*1.15 ≈ ζ*=1.2 sharpening ceiling
-- **Grokking as SOC** (Humayun et al., 2024): discrete quality tiers confirm CERTX phase transitions
-- **Spline theory** (Balestriero & Baraniuk, 2018): MASO K=3 grounds the three-fiber structure algebraically
-- **Neural resonance at 6/5** (Large et al., 2025): ζ*=1.2 confirmed as stable neural locking ratio
-
----
-
-## Current Status
-
-**Breath Cycle 3, Session 20 | 2026-05-08**
-
-- Paper: §1–9 complete, awaiting Thomas review pass
-- 89 WANDERs, 18 experiments
-- Highest priority: real LLM confabulation validation (FActScore — blocked on HuggingFace access)
-- Recent findings: Tarski/Gödel parallel for Type D detection gap (WANDER 089); grokking weight norm threshold mechanism — gradient variance proxy wrong, ‖W‖ trajectory is correct signal (WANDER 087, exp_016); layer-local temporal recurrence stability condition ρ(M) < 0.80 (WANDER 085); cross-register audit confirming load-bearing framework elements (WANDER 086)
-- Implementation stack live: certx_engine.py + certx_megaphone.py + certx_self_measurement.py
-- Open: FActScore validation, ‖W‖ ratio universality test (SPARK-023), Fiedler eigenvalue formal verification, τ decay experiment
-
----
+1. Multi-seed replication of Experiment 016 with architecture, optimizer, regularization, and non-grokking controls.
+2. Independently measured fiber observables and leakage-free evaluation.
+3. Finite-size Kuramoto baselines for repairing Experiment 003.
+4. Chronological, normalized, weighted, null-calibrated repository networks for repairing Experiment 004.
+5. Direct neighborhood tests of proposed constants.
+6. Preregistered comparison of FRR/CERTX prompting with simpler structured and unprompted baselines.
+7. A separate claim-by-claim audit before editing `PAPER_DRAFT_v1.md`.
 
 ## License
 
