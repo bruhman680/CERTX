@@ -42,6 +42,23 @@ def projection(coordinates):
                      for label in labels])
 
 
+def target_defect(P, grouping, observable, horizon=1):
+    """Maximum TV between target futures of states merged by grouping.
+
+    Keeping the observable fixed makes refinement comparisons meaningful.
+    If the observable is refined too, more distinctions become measurable and
+    the defect may increase even while the grouping gets finer.
+    """
+    visible = np.linalg.matrix_power(P, horizon) @ observable
+    labels = np.argmax(grouping, axis=1)
+    pairs = [
+        (i, j) for i in range(8) for j in range(i + 1, 8)
+        if labels[i] == labels[j]
+    ]
+    return max((0.5 * np.abs(visible[i] - visible[j]).sum()
+                for i, j in pairs), default=0.0)
+
+
 def defect(P, Q, horizon=1):
     """Maximum TV between projected futures of states merged by Q.
 
@@ -49,13 +66,22 @@ def defect(P, Q, horizon=1):
     horizons this measures a narrower marginal-future question, not the full
     visible path law or response to interventions.
     """
-    visible = np.linalg.matrix_power(P, horizon) @ Q
-    labels = np.argmax(Q, axis=1)
-    return max(
-        0.5 * np.abs(visible[i] - visible[j]).sum()
-        for i in range(8) for j in range(i + 1, 8)
-        if labels[i] == labels[j]
-    )
+    return target_defect(P, Q, Q, horizon)
+
+
+def joint_only_chain():
+    """Each binary coordinate is exact, but the (0,1) joint is not.
+
+    Given source bit c, the next two bits have parity c. Each individual
+    target bit is fair, and the third target bit is also fair.
+    """
+    P = np.zeros((8, 8))
+    for i, (_, _, c) in enumerate(STATES):
+        for j, (a_next, b_next, _) in enumerate(STATES):
+            if (a_next ^ b_next) == c:
+                P[i, j] = 0.25
+    assert np.allclose(P.sum(axis=1), 1)
+    return P
 
 
 def evaluate(name, coupling):
@@ -91,7 +117,26 @@ def main():
     assert defect(transition((0.4, 0, 0)), projection((0, 1))) < 1e-12
     assert results[0]["spread_population"] == 0
     assert results[-1]["spread_population"] < 1e-12
-    print(json.dumps(results, indent=2))
+    P_joint = joint_only_chain()
+    local = [defect(P_joint, projection((k,))) for k in range(3)]
+    joint = defect(P_joint, projection((0, 1)))
+    assert np.allclose(local, 0) and np.isclose(joint, 1)
+    P_one = transition((0.4, 0, 0))
+    fixed_target_refinement = {
+        "coarse": target_defect(P_one, projection((0,)), projection((0,))),
+        "refined": target_defect(P_one, projection((0, 1)), projection((0,))),
+    }
+    assert np.isclose(fixed_target_refinement["coarse"], 0.4)
+    assert np.isclose(fixed_target_refinement["refined"], 0)
+    print(json.dumps({
+        "independent_projection_cases": results,
+        "joint_only_case": {
+            "individual_defects": local,
+            "joint_01_defect": joint,
+            "joint_01_defect_t2": defect(P_joint, projection((0, 1)), 2),
+        },
+        "fixed_target_refinement": fixed_target_refinement,
+    }, indent=2))
 
 
 if __name__ == "__main__":
