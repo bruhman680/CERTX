@@ -1,0 +1,8 @@
+# Boundary repair source contact
+
+Parent follow-up to EXPANSION_BOUNDARY_SCOUT.md. Search roles: failure (fragmentation/isolation), repair (mutation, reconnection), rival dynamics (reinforced adoption rather than passive linear diffusion). This is a scoped scout, not a comprehensive literature review.
+
+- [Nematzadeh et al., Optimal network modularity for information diffusion (2014)](https://arxiv.org/abs/1401.1257): opened author abstract. In a linear threshold model, local reinforcement can let community structure facilitate global spread, with an optimal modularity for the studied criterion. This is a serious rival to a universal “boundaries inhibit transfer” claim. Linear diffusion in our toy and threshold adoption are different dynamics. The result does not establish truthful reasoning or the same optimum for any graph.
+- [Chodrow and Mucha, Local Symmetry and Global Structure in Adaptive Voter Models](https://epubs.siam.org/doi/10.1137/18M1232346): publisher abstract and references opened, full text gated. Their random mutation term makes the specified adaptive-voter system ergodic, supporting approximation of persistent disagreement and model-dependent transitions. This follows fragmentation into a repair/modification literature. Mutation is not evidence-sensitive correction; ergodicity is not useful memory or warranted consensus.
+
+Implication for our inquiry: boundary value depends on the read/write/update mechanism, not topology alone. Reconnection and randomness may restore passage, but correction also needs an evaluation rule distinguishing good evidence from merely new signals. No source licenses a universal entropy threshold, triad size, or 1,200-agent result.

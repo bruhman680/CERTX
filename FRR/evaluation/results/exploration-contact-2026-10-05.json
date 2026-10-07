@@ -1,0 +1,22 @@
+{
+  "kind": "illustrative constructed calculation, not independent model evaluation",
+  "assumptions": "Fixed two-choice softmax gap 5 with beta=2; independent repeated choices. No claim that a specific garden follows this model.",
+  "escape": [
+    {
+      "horizon": 100,
+      "per_step_escape_probability": 4.5397868702434395e-05,
+      "exact_escape_probability_independent_choices": 0.004529600198728389,
+      "union_bound": 0.004539992976248485
+    },
+    {
+      "horizon": 10000,
+      "per_step_escape_probability": 4.5397868702434395e-05,
+      "exact_escape_probability_independent_choices": 0.36491027583197133,
+      "union_bound": 0.45399929762484853
+    }
+  ],
+  "gradient_consistency": {
+    "consistent": 1.0,
+    "alternating": 0.0
+  }
+}

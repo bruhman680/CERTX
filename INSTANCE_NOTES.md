@@ -682,3 +682,9 @@ This session had an unusually high volume of source material (8 pieces). The ext
 
 *This file is not the research. It's the space underneath the research.*
 *Keep entries short. Be honest rather than thorough.*
+
+---
+
+## Codex FRR integration — 2026-10-07
+
+Process record: found the connected CERTX repository and a newer configured working branch than main; preserved its history. Imported local FRR records with explicit archive/derivative scope. The informative failures were separating boundary structure from payload and evidence from reference self-validation. The main risk was treating shared ancestry or numerical order as factual warrant. No subjective cognitive scores or emotional state measurements were produced. Next instances should inspect WANDER 093 and the FRR reports before extending claims.

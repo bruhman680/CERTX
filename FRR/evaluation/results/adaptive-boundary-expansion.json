@@ -1,0 +1,6161 @@
+{
+  "kind": "constructed adaptive substrate; no LLM agents",
+  "settings": {
+    "training_steps": 300,
+    "dt": 0.2,
+    "decay": 0.002,
+    "adaptation": 0.06,
+    "contrast_scale": 0.3,
+    "conductance_floor": 0.02,
+    "write_steps": 40,
+    "observation_noise": 0.08,
+    "calibration_cases": 160,
+    "evaluation_cases": 512,
+    "horizons": [
+      0,
+      20,
+      80,
+      200,
+      600
+    ],
+    "sizes": [
+      32,
+      64,
+      128
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "invariants": [
+    {
+      "size": 32,
+      "sign_reversal_same_graph": true,
+      "graph_cannot_discriminate_these_histories": true,
+      "geometry": "periodic nearest-neighbor ring",
+      "stats": {
+        "fiedler": 0.0026377332088522365,
+        "min_weight": 0.020623063010009306,
+        "mean_weight": 0.870797564263978,
+        "weak_edges": 4
+      }
+    },
+    {
+      "size": 64,
+      "sign_reversal_same_graph": true,
+      "graph_cannot_discriminate_these_histories": true,
+      "geometry": "periodic nearest-neighbor ring",
+      "stats": {
+        "fiedler": 0.001518756581639507,
+        "min_weight": 0.02656173699229019,
+        "mean_weight": 0.9342604087193154,
+        "weak_edges": 4
+      }
+    },
+    {
+      "size": 128,
+      "sign_reversal_same_graph": true,
+      "graph_cannot_discriminate_these_histories": true,
+      "geometry": "periodic nearest-neighbor ring",
+      "stats": {
+        "fiedler": 0.0006664415843047923,
+        "min_weight": 0.026954411551701894,
+        "mean_weight": 0.9677996443557791,
+        "weak_edges": 4
+      }
+    }
+  ],
+  "summary": [
+    {
+      "size": 32,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 32,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.9231527473462992
+    },
+    {
+      "size": 32,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.6353504492249687
+    },
+    {
+      "size": 32,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.2731882081983017
+    },
+    {
+      "size": 32,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.7459309895833334,
+      "mean_opposite_accuracy": 0.5275469577762564,
+      "seed_sd": 0.018212446992009076,
+      "mean_local_contrast": 0.012649494981093426
+    },
+    {
+      "size": 32,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 32,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.6788005191896397
+    },
+    {
+      "size": 32,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.4697636650964426
+    },
+    {
+      "size": 32,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.9972330729166666,
+      "mean_opposite_accuracy": 0.9958772244521095,
+      "seed_sd": 0.0045252079343938295,
+      "mean_local_contrast": 0.30278908181610964
+    },
+    {
+      "size": 32,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.8816731770833334,
+      "mean_opposite_accuracy": 0.8237744427799895,
+      "seed_sd": 0.06287883808681326,
+      "mean_local_contrast": 0.08758003169167537
+    },
+    {
+      "size": 32,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.5011393229166666,
+      "mean_opposite_accuracy": 0.50029928955129,
+      "seed_sd": 0.011519252785950843,
+      "mean_local_contrast": 0.0
+    },
+    {
+      "size": 32,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 32,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.5954398376956002
+    },
+    {
+      "size": 32,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.306827720312326
+    },
+    {
+      "size": 32,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.955078125,
+      "mean_opposite_accuracy": 0.9261883982169131,
+      "seed_sd": 0.005289087503018203,
+      "mean_local_contrast": 0.09540895284459566
+    },
+    {
+      "size": 32,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.73486328125,
+      "mean_opposite_accuracy": 0.500011140101433,
+      "seed_sd": 0.011399040556571047,
+      "mean_local_contrast": 0.001956465609261233
+    },
+    {
+      "size": 32,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 32,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.8378404174991259
+    },
+    {
+      "size": 32,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.47534076802699254
+    },
+    {
+      "size": 32,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.97607421875,
+      "mean_opposite_accuracy": 0.9749672835941819,
+      "seed_sd": 0.0025683160543716636,
+      "mean_local_contrast": 0.1633747322871166
+    },
+    {
+      "size": 32,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.5887044270833334,
+      "mean_opposite_accuracy": 0.5105687191760471,
+      "seed_sd": 0.012972934359367952,
+      "mean_local_contrast": 0.006230687895384633
+    },
+    {
+      "size": 32,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.6808268229166666,
+      "mean_opposite_accuracy": 0.577741736713089,
+      "seed_sd": 0.01776177812207534,
+      "mean_local_contrast": 0.022889643838332144
+    },
+    {
+      "size": 32,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 32,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.7245339819444775
+    },
+    {
+      "size": 32,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.5218415866621914
+    },
+    {
+      "size": 32,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.9943033854166666,
+      "mean_opposite_accuracy": 0.9914517137535336,
+      "seed_sd": 0.010584433911386137,
+      "mean_local_contrast": 0.3394330490464991
+    },
+    {
+      "size": 32,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.8798828125,
+      "mean_opposite_accuracy": 0.8288226115178231,
+      "seed_sd": 0.07012235574615719,
+      "mean_local_contrast": 0.0993640939099922
+    },
+    {
+      "size": 32,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 32,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.5975946417295287
+    },
+    {
+      "size": 32,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.31903877621305776
+    },
+    {
+      "size": 32,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.9674479166666666,
+      "mean_opposite_accuracy": 0.9496467267757452,
+      "seed_sd": 0.0056287814016245385,
+      "mean_local_contrast": 0.1115919612500823
+    },
+    {
+      "size": 32,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.7325846354166666,
+      "mean_opposite_accuracy": 0.5015955877756065,
+      "seed_sd": 0.010264235042596067,
+      "mean_local_contrast": 0.00341405600437612
+    },
+    {
+      "size": 64,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 64,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.9091529931932462
+    },
+    {
+      "size": 64,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.6005985731828641
+    },
+    {
+      "size": 64,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.9998372395833334,
+      "mean_opposite_accuracy": 0.9996936274509803,
+      "seed_sd": 0.00036394335571285634,
+      "mean_local_contrast": 0.2795446851662515
+    },
+    {
+      "size": 64,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.7379557291666666,
+      "mean_opposite_accuracy": 0.6985034655799005,
+      "seed_sd": 0.010971549183823384,
+      "mean_local_contrast": 0.04602062345245963
+    },
+    {
+      "size": 64,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 64,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.6326608206632324
+    },
+    {
+      "size": 64,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.4190178600216001
+    },
+    {
+      "size": 64,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.9964192708333334,
+      "mean_opposite_accuracy": 0.9967850166122046,
+      "seed_sd": 0.0018414239093399675,
+      "mean_local_contrast": 0.26952850034556236
+    },
+    {
+      "size": 64,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.8194986979166666,
+      "mean_opposite_accuracy": 0.8185089382979718,
+      "seed_sd": 0.008080853897985943,
+      "mean_local_contrast": 0.08403762701060809
+    },
+    {
+      "size": 64,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.48974609375,
+      "mean_opposite_accuracy": 0.48825955207446325,
+      "seed_sd": 0.01838904614235649,
+      "mean_local_contrast": 0.0
+    },
+    {
+      "size": 64,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 64,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.597367274848903
+    },
+    {
+      "size": 64,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.3401739867864537
+    },
+    {
+      "size": 64,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.986328125,
+      "mean_opposite_accuracy": 0.9881961907773521,
+      "seed_sd": 0.003139209232094061,
+      "mean_local_contrast": 0.18129322404639656
+    },
+    {
+      "size": 64,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.7127278645833334,
+      "mean_opposite_accuracy": 0.6451381363336252,
+      "seed_sd": 0.008796594477129988,
+      "mean_local_contrast": 0.036507666188782165
+    },
+    {
+      "size": 64,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 64,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.8042766751117294
+    },
+    {
+      "size": 64,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.4104586658237397
+    },
+    {
+      "size": 64,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.9327799479166666,
+      "mean_opposite_accuracy": 0.9385725555676915,
+      "seed_sd": 0.008370697181395697,
+      "mean_local_contrast": 0.12679249932587533
+    },
+    {
+      "size": 64,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.53515625,
+      "mean_opposite_accuracy": 0.5309167470946042,
+      "seed_sd": 0.016164985700436375,
+      "mean_local_contrast": 0.01205671002351646
+    },
+    {
+      "size": 64,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.6875,
+      "mean_opposite_accuracy": 0.6848759892265854,
+      "seed_sd": 0.010889146278436023,
+      "mean_local_contrast": 0.04162077655137788
+    },
+    {
+      "size": 64,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 64,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.6661266354228722
+    },
+    {
+      "size": 64,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.44315145624001784
+    },
+    {
+      "size": 64,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.9964192708333334,
+      "mean_opposite_accuracy": 0.9964681598314696,
+      "seed_sd": 0.0016598370812476513,
+      "mean_local_contrast": 0.28444091274949335
+    },
+    {
+      "size": 64,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.8203125,
+      "mean_opposite_accuracy": 0.8195484854300018,
+      "seed_sd": 0.010396301707468301,
+      "mean_local_contrast": 0.08563102630994518
+    },
+    {
+      "size": 64,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 64,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.5978726260430508
+    },
+    {
+      "size": 64,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.3403959428229774
+    },
+    {
+      "size": 64,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.986328125,
+      "mean_opposite_accuracy": 0.9881961907773521,
+      "seed_sd": 0.003139209232094061,
+      "mean_local_contrast": 0.18181897198340682
+    },
+    {
+      "size": 64,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.71240234375,
+      "mean_opposite_accuracy": 0.6566058203264733,
+      "seed_sd": 0.008656957126935027,
+      "mean_local_contrast": 0.03822444112498403
+    },
+    {
+      "size": 128,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 128,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.9082377123842287
+    },
+    {
+      "size": 128,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.5980526980531228
+    },
+    {
+      "size": 128,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.277961554179477
+    },
+    {
+      "size": 128,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.7477213541666666,
+      "mean_opposite_accuracy": 0.7473015515219771,
+      "seed_sd": 0.007430151178719614,
+      "mean_local_contrast": 0.05528642853652005
+    },
+    {
+      "size": 128,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 128,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.6368495295156239
+    },
+    {
+      "size": 128,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.396444182096682
+    },
+    {
+      "size": 128,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.99267578125,
+      "mean_opposite_accuracy": 0.9920017238497509,
+      "seed_sd": 0.002307527161256156,
+      "mean_local_contrast": 0.22057576849564367
+    },
+    {
+      "size": 128,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.7560221354166666,
+      "mean_opposite_accuracy": 0.7540123336153505,
+      "seed_sd": 0.016758000931746217,
+      "mean_local_contrast": 0.06178664886664668
+    },
+    {
+      "size": 128,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.4939778645833333,
+      "mean_opposite_accuracy": 0.4860618500071873,
+      "seed_sd": 0.021413358202738115,
+      "mean_local_contrast": 0.0
+    },
+    {
+      "size": 128,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 128,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.5973672748975712
+    },
+    {
+      "size": 128,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.34017986759998814
+    },
+    {
+      "size": 128,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.9890950520833334,
+      "mean_opposite_accuracy": 0.9891098034557843,
+      "seed_sd": 0.003355391947931039,
+      "mean_local_contrast": 0.1825820129335125
+    },
+    {
+      "size": 128,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.72216796875,
+      "mean_opposite_accuracy": 0.7212963933427555,
+      "seed_sd": 0.008601699389143106,
+      "mean_local_contrast": 0.04919480934187965
+    },
+    {
+      "size": 128,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 128,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.802152472843416
+    },
+    {
+      "size": 128,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.4066517401452661
+    },
+    {
+      "size": 128,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.93603515625,
+      "mean_opposite_accuracy": 0.9394821537153809,
+      "seed_sd": 0.00629737699288838,
+      "mean_local_contrast": 0.12477972305079559
+    },
+    {
+      "size": 128,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.5545247395833334,
+      "mean_opposite_accuracy": 0.5644890261104333,
+      "seed_sd": 0.007073995381543207,
+      "mean_local_contrast": 0.013618002912813579
+    },
+    {
+      "size": 128,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.7042643229166666,
+      "mean_opposite_accuracy": 0.7150527658855519,
+      "seed_sd": 0.012825066418028587,
+      "mean_local_contrast": 0.04196009278076476
+    },
+    {
+      "size": 128,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 128,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.6670176020262168
+    },
+    {
+      "size": 128,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.4070520598114029
+    },
+    {
+      "size": 128,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.99169921875,
+      "mean_opposite_accuracy": 0.9920017238497509,
+      "seed_sd": 0.002505664765354924,
+      "mean_local_contrast": 0.22138481517795408
+    },
+    {
+      "size": 128,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.748046875,
+      "mean_opposite_accuracy": 0.7463507633468754,
+      "seed_sd": 0.016321550959273012,
+      "mean_local_contrast": 0.061145938171561276
+    },
+    {
+      "size": 128,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 1.0183531746031746
+    },
+    {
+      "size": 128,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.5976059526595005
+    },
+    {
+      "size": 128,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "mean_bit_accuracy": 1.0,
+      "mean_opposite_accuracy": 1.0,
+      "seed_sd": 0.0,
+      "mean_local_contrast": 0.3402832915278465
+    },
+    {
+      "size": 128,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "mean_bit_accuracy": 0.9890950520833334,
+      "mean_opposite_accuracy": 0.9891098034557843,
+      "seed_sd": 0.003355391947931039,
+      "mean_local_contrast": 0.18263322866077958
+    },
+    {
+      "size": 128,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "mean_bit_accuracy": 0.72216796875,
+      "mean_opposite_accuracy": 0.7212963933427555,
+      "seed_sd": 0.008601699389143106,
+      "mean_local_contrast": 0.049214622623248584
+    }
+  ],
+  "records": [
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6073312324084689
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3129553075177841
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.9501953125,
+      "opposite_message_accuracy": 0.9136029411764706,
+      "raw_local_contrast": 0.09731434352488229
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.7177734375,
+      "opposite_message_accuracy": 0.5073529411764706,
+      "raw_local_contrast": 0.0019955377427145747
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8545727395241937
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4848336913046869
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.9765625,
+      "opposite_message_accuracy": 0.9724264705882353,
+      "raw_local_contrast": 0.1666374522207609
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.6064453125,
+      "opposite_message_accuracy": 0.49816176470588236,
+      "raw_local_contrast": 0.006355119558176046
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6664263277167549
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4916115829597127
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.9990234375,
+      "opposite_message_accuracy": 0.9981617647058824,
+      "raw_local_contrast": 0.33668768517878345
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.861328125,
+      "opposite_message_accuracy": 0.8272058823529411,
+      "raw_local_contrast": 0.1038308990736883
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6095290695477997
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.32541022766202776
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.9619140625,
+      "opposite_message_accuracy": 0.9375,
+      "raw_local_contrast": 0.11382053914158421
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.7158203125,
+      "opposite_message_accuracy": 0.5055147058823529,
+      "raw_local_contrast": 0.0034822373468892335
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9415888226707991
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6480388897599048
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.27864398829383524
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7177734375,
+      "opposite_message_accuracy": 0.5055147058823529,
+      "raw_local_contrast": 0.012902115192600892
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6729528708400985
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4454264265551317
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.30550853779932374
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.8818359375,
+      "opposite_message_accuracy": 0.8529411764705882,
+      "raw_local_contrast": 0.09555466259759078
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.669921875,
+      "opposite_message_accuracy": 0.5386029411764706,
+      "raw_local_contrast": 0.023346767753272043
+    },
+    {
+      "size": 32,
+      "seed": 0,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.521484375,
+      "opposite_message_accuracy": 0.5073529411764706,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5760075585306681
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.2968143460985288
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.9521484375,
+      "opposite_message_accuracy": 0.922,
+      "raw_local_contrast": 0.0922952656353468
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.74609375,
+      "opposite_message_accuracy": 0.504,
+      "raw_local_contrast": 0.0018926160253252844
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8104973546776736
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4598279421829552
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.9736328125,
+      "opposite_message_accuracy": 0.97,
+      "raw_local_contrast": 0.158042970444332
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.5771484375,
+      "opposite_message_accuracy": 0.492,
+      "raw_local_contrast": 0.006027348348871838
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.7729943972008664
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6085073638980057
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4178726260385745
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.9052734375,
+      "opposite_message_accuracy": 0.882,
+      "raw_local_contrast": 0.12339878121764647
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5780920401728417
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.30862689213791167
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.96484375,
+      "opposite_message_accuracy": 0.946,
+      "raw_local_contrast": 0.10795013884201825
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.736328125,
+      "opposite_message_accuracy": 0.494,
+      "raw_local_contrast": 0.0033026377129522534
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8930255023038237
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6146156805459269
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.26427266511535663
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.75,
+      "opposite_message_accuracy": 0.52,
+      "raw_local_contrast": 0.012236676586678784
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6599260869305041
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5132186353371461
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3432757966314673
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.8876953125,
+      "opposite_message_accuracy": 0.844,
+      "raw_local_contrast": 0.09920472577223315
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.705078125,
+      "opposite_message_accuracy": 0.594,
+      "raw_local_contrast": 0.02214263646513767
+    },
+    {
+      "size": 32,
+      "seed": 1,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.5048828125,
+      "opposite_message_accuracy": 0.51,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.567306538009057
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.29233074570429124
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.9609375,
+      "opposite_message_accuracy": 0.9294354838709677,
+      "raw_local_contrast": 0.09090107733269806
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.751953125,
+      "opposite_message_accuracy": 0.5040322580645161,
+      "raw_local_contrast": 0.0018640266593838149
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.7982541922203068
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4528819007602519
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.98046875,
+      "opposite_message_accuracy": 0.9798387096774194,
+      "raw_local_contrast": 0.15565561439532397
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.599609375,
+      "opposite_message_accuracy": 0.5161290322580645,
+      "raw_local_contrast": 0.00593630079073178
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.7299521955634427
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5443736983658557
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3741326659626866
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.955078125,
+      "opposite_message_accuracy": 0.9415322580645161,
+      "raw_local_contrast": 0.11437103484426422
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.569359532013131
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3039648544923239
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.97265625,
+      "opposite_message_accuracy": 0.9536290322580645,
+      "raw_local_contrast": 0.10631947209213884
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.75,
+      "opposite_message_accuracy": 0.5100806451612904,
+      "raw_local_contrast": 0.0032527489257475365
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8795356910907751
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6053314557642663
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.2602806308991126
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7734375,
+      "opposite_message_accuracy": 0.5463709677419355,
+      "raw_local_contrast": 0.012051832529478198
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6689199976354023
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.48095234388987845
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3310504758226851
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.94921875,
+      "opposite_message_accuracy": 0.9274193548387096,
+      "raw_local_contrast": 0.10072459621668471
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.6904296875,
+      "opposite_message_accuracy": 0.5685483870967742,
+      "raw_local_contrast": 0.021808155551767013
+    },
+    {
+      "size": 32,
+      "seed": 2,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.5,
+      "opposite_message_accuracy": 0.49798387096774194,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5934095995738908
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.305781546887004
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.951171875,
+      "opposite_message_accuracy": 0.9163498098859315,
+      "raw_local_contrast": 0.09508364224064428
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.7353515625,
+      "opposite_message_accuracy": 0.5,
+      "raw_local_contrast": 0.0019497947572082233
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8349836795924068
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.47372002502836164
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.9755859375,
+      "opposite_message_accuracy": 0.9695817490494296,
+      "raw_local_contrast": 0.16281768254234807
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.5869140625,
+      "opposite_message_accuracy": 0.5418250950570342,
+      "raw_local_contrast": 0.006209443465151954
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6429170016385176
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.33634879109808324
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.970703125,
+      "opposite_message_accuracy": 0.9543726235741445,
+      "raw_local_contrast": 0.11475373798162677
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7353515625,
+      "opposite_message_accuracy": 0.5057034220532319,
+      "raw_local_contrast": 0.004168744976756246
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5955570564922629
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.31795096742908724
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.9677734375,
+      "opposite_message_accuracy": 0.9486692015209125,
+      "raw_local_contrast": 0.11121147234177711
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.7353515625,
+      "opposite_message_accuracy": 0.5038022813688213,
+      "raw_local_contrast": 0.003402415287361687
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9200051247299212
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6331841301092479
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.27225673354784474
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7607421875,
+      "opposite_message_accuracy": 0.5551330798479087,
+      "raw_local_contrast": 0.012606364701079956
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6655504207057922
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.37095695515144833
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 0.9873046875,
+      "opposite_message_accuracy": 0.9790874524714829,
+      "raw_local_contrast": 0.1400813290366966
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.75,
+      "opposite_message_accuracy": 0.5209125475285171,
+      "raw_local_contrast": 0.006207830479785704
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.697265625,
+      "opposite_message_accuracy": 0.591254752851711,
+      "raw_local_contrast": 0.022811598291878992
+    },
+    {
+      "size": 32,
+      "seed": 3,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.5029296875,
+      "opposite_message_accuracy": 0.5171102661596958,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6055910283041466
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3120585874389366
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.9521484375,
+      "opposite_message_accuracy": 0.9312977099236641,
+      "raw_local_contrast": 0.09703550586435253
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.7294921875,
+      "opposite_message_accuracy": 0.49809160305343514,
+      "raw_local_contrast": 0.0019898198695262807
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8521241070327202
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4834444830201463
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.97265625,
+      "opposite_message_accuracy": 0.9732824427480916,
+      "raw_local_contrast": 0.16615998101095933
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.568359375,
+      "opposite_message_accuracy": 0.5076335877862596,
+      "raw_local_contrast": 0.006336910046548035
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.7730459363369381
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5719423215585377
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.998046875,
+      "opposite_message_accuracy": 0.9980916030534351,
+      "raw_local_contrast": 0.38988379788168004
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.908203125,
+      "opposite_message_accuracy": 0.8950381679389313,
+      "raw_local_contrast": 0.11922380068221321
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6077825679158577
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3244778201329102
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.9609375,
+      "opposite_message_accuracy": 0.9465648854961832,
+      "raw_local_contrast": 0.11349440579160833
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.728515625,
+      "opposite_message_accuracy": 0.49809160305343514,
+      "raw_local_contrast": 0.0034722595894482906
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9388908604281894
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6461820448035728
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.2778455814505864
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.732421875,
+      "opposite_message_accuracy": 0.5133587786259542,
+      "raw_local_contrast": 0.012865146381160774
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6805235975369205
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5027414408480053
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 0.998046875,
+      "opposite_message_accuracy": 0.9980916030534351,
+      "raw_local_contrast": 0.34671517571831556
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.9033203125,
+      "opposite_message_accuracy": 0.8854961832061069,
+      "raw_local_contrast": 0.10997020536226768
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.65625,
+      "opposite_message_accuracy": 0.5744274809160306,
+      "raw_local_contrast": 0.023279871570597913
+    },
+    {
+      "size": 32,
+      "seed": 4,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.494140625,
+      "opposite_message_accuracy": 0.5,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6229930693473692
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3210257882274118
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.9638671875,
+      "opposite_message_accuracy": 0.9444444444444444,
+      "raw_local_contrast": 0.09982388246965002
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.728515625,
+      "opposite_message_accuracy": 0.48659003831417624,
+      "raw_local_contrast": 0.00204699860140922
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8766104319474537
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.49733656586555275
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.9775390625,
+      "opposite_message_accuracy": 0.9846743295019157,
+      "raw_local_contrast": 0.17093469310897538
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.59375,
+      "opposite_message_accuracy": 0.5076628352490421,
+      "raw_local_contrast": 0.006519005162828152
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.7618680332103456
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5782657620929536
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.998046875,
+      "opposite_message_accuracy": 0.9980842911877394,
+      "raw_local_contrast": 0.40326778123564333
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.9140625,
+      "opposite_message_accuracy": 0.921455938697318,
+      "raw_local_contrast": 0.1311913026653848
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6252475842352789
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3338018954240858
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.9765625,
+      "opposite_message_accuracy": 0.9655172413793104,
+      "raw_local_contrast": 0.11675573929136718
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.7294921875,
+      "opposite_message_accuracy": 0.49808429118773945,
+      "raw_local_contrast": 0.003572037163857724
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9658704828542868
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6647504943668937
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.2858296498830745
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7412109375,
+      "opposite_message_accuracy": 0.524904214559387,
+      "raw_local_contrast": 0.013234834495561948
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.724930141489121
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5052861887970457
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 0.998046875,
+      "opposite_message_accuracy": 0.9980842911877394,
+      "raw_local_contrast": 0.35010317588816936
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.91796875,
+      "opposite_message_accuracy": 0.9118773946360154,
+      "raw_local_contrast": 0.11381816972149014
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.666015625,
+      "opposite_message_accuracy": 0.5996168582375478,
+      "raw_local_contrast": 0.023948833397339237
+    },
+    {
+      "size": 32,
+      "seed": 5,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.4833984375,
+      "opposite_message_accuracy": 0.46934865900383144,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6092971619744777
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3469675247592957
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.982421875,
+      "opposite_message_accuracy": 0.9797794117647058,
+      "raw_local_contrast": 0.18491379013792222
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.7197265625,
+      "opposite_message_accuracy": 0.6360294117647058,
+      "raw_local_contrast": 0.03723675255689715
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8203387032069953
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4186558432707797
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.9189453125,
+      "opposite_message_accuracy": 0.9246323529411765,
+      "raw_local_contrast": 0.12932464373520847
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.5380859375,
+      "opposite_message_accuracy": 0.5110294117647058,
+      "raw_local_contrast": 0.012297491860323171
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6114559796463999
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3774014637643647
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.99609375,
+      "opposite_message_accuracy": 0.9944852941176471,
+      "raw_local_contrast": 0.2573902485405363
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.8134765625,
+      "opposite_message_accuracy": 0.7977941176470589,
+      "raw_local_contrast": 0.09177153912672052
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6098126054233552
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3471939134297684
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.982421875,
+      "opposite_message_accuracy": 0.9797794117647058,
+      "raw_local_contrast": 0.185450037668414
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.7236328125,
+      "opposite_message_accuracy": 0.6507352941176471,
+      "raw_local_contrast": 0.0389878128181766
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9273094825848308
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6125929918387324
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.9990234375,
+      "opposite_message_accuracy": 0.9981617647058824,
+      "raw_local_contrast": 0.28512740902977624
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.740234375,
+      "opposite_message_accuracy": 0.6819852941176471,
+      "raw_local_contrast": 0.046939690944690915
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6103577371984257
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3728671895570394
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 0.9951171875,
+      "opposite_message_accuracy": 0.9944852941176471,
+      "raw_local_contrast": 0.2538175674664059
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.8115234375,
+      "opposite_message_accuracy": 0.7959558823529411,
+      "raw_local_contrast": 0.09044137937358972
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.68359375,
+      "opposite_message_accuracy": 0.7003676470588235,
+      "raw_local_contrast": 0.042451975693417084
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.46484375,
+      "opposite_message_accuracy": 0.46139705882352944,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5778720934485735
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.32907235156254117
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.9921875,
+      "opposite_message_accuracy": 0.992,
+      "raw_local_contrast": 0.17537668921390331
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.72265625,
+      "opposite_message_accuracy": 0.672,
+      "raw_local_contrast": 0.03531623236771621
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.7780289706633681
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3970632782883327
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.93359375,
+      "opposite_message_accuracy": 0.932,
+      "raw_local_contrast": 0.12265460480330656
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.5087890625,
+      "opposite_message_accuracy": 0.546,
+      "raw_local_contrast": 0.011663237265807936
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.584099959635102
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.36721962573441125
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.998046875,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.2301341720475226
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.8232421875,
+      "opposite_message_accuracy": 0.828,
+      "raw_local_contrast": 0.07159455144039913
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5783609524215776
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3292870640265139
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.9921875,
+      "opposite_message_accuracy": 0.992,
+      "raw_local_contrast": 0.1758852792786391
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.72265625,
+      "opposite_message_accuracy": 0.684,
+      "raw_local_contrast": 0.03697698006537666
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.879482632480169
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5809979378183966
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.2704216973892721
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.75390625,
+      "opposite_message_accuracy": 0.728,
+      "raw_local_contrast": 0.044518732672471896
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5796641009904873
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.35968142167151934
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 0.998046875,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.22574322330695756
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.8212890625,
+      "opposite_message_accuracy": 0.828,
+      "raw_local_contrast": 0.07110507959547159
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.6826171875,
+      "opposite_message_accuracy": 0.686,
+      "raw_local_contrast": 0.040262475514386976
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.51171875,
+      "opposite_message_accuracy": 0.524,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5691429077469333
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.32410147011899826
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.984375,
+      "opposite_message_accuracy": 0.9879032258064516,
+      "raw_local_contrast": 0.17272749451278693
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.7158203125,
+      "opposite_message_accuracy": 0.6431451612903226,
+      "raw_local_contrast": 0.03478275453738817
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.7662762671790272
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.39106534357098627
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.931640625,
+      "opposite_message_accuracy": 0.9294354838709677,
+      "raw_local_contrast": 0.12080181621111162
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.560546875,
+      "opposite_message_accuracy": 0.5524193548387096,
+      "raw_local_contrast": 0.011487055433998148
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8111745776868259
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6506469492692213
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.9931640625,
+      "opposite_message_accuracy": 0.9919354838709677,
+      "raw_local_contrast": 0.4285651369317953
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.8388671875,
+      "opposite_message_accuracy": 0.8487903225806451,
+      "raw_local_contrast": 0.11255076554081254
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5696243821433059
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3243129391922765
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.984375,
+      "opposite_message_accuracy": 0.9879032258064516,
+      "raw_local_contrast": 0.17322840194814604
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.7099609375,
+      "opposite_message_accuracy": 0.6451612903225806,
+      "raw_local_contrast": 0.03641841541182113
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8661973963399852
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5722215339238589
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.266336777489132
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7392578125,
+      "opposite_message_accuracy": 0.6915322580645161,
+      "raw_local_contrast": 0.043846244263522176
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6721069935841053
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5500866927933068
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 0.9931640625,
+      "opposite_message_accuracy": 0.9919354838709677,
+      "raw_local_contrast": 0.37266495798724264
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.8330078125,
+      "opposite_message_accuracy": 0.8387096774193549,
+      "raw_local_contrast": 0.10306246858353503
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.69921875,
+      "opposite_message_accuracy": 0.6713709677419355,
+      "raw_local_contrast": 0.03965428102021194
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.494140625,
+      "opposite_message_accuracy": 0.4899193548387097,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5953304648518536
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.339014114449627
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.984375,
+      "opposite_message_accuracy": 0.9866920152091255,
+      "raw_local_contrast": 0.18067507861613605
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.70703125,
+      "opposite_message_accuracy": 0.6482889733840305,
+      "raw_local_contrast": 0.036383188028372294
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8015343776320498
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.40905914772302543
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.947265625,
+      "opposite_message_accuracy": 0.9600760456273765,
+      "raw_local_contrast": 0.1263601819876965
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.525390625,
+      "opposite_message_accuracy": 0.5342205323193916,
+      "raw_local_contrast": 0.012015600929427514
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.7188605500280354
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4235072651622777
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.9970703125,
+      "opposite_message_accuracy": 0.9942965779467681,
+      "raw_local_contrast": 0.25083777241121896
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.80859375,
+      "opposite_message_accuracy": 0.8269961977186312,
+      "raw_local_contrast": 0.0717706930355305
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5958340929781207
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.33923531369498866
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.984375,
+      "opposite_message_accuracy": 0.9866920152091255,
+      "raw_local_contrast": 0.18119903393962516
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.7021484375,
+      "opposite_message_accuracy": 0.6634980988593155,
+      "raw_local_contrast": 0.03809410937248774
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9060531047605367
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.598550745607472
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.27859153718955215
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7265625,
+      "opposite_message_accuracy": 0.7053231939163498,
+      "raw_local_contrast": 0.04586370949037135
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6915614368644575
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4236788546153849
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 0.998046875,
+      "opposite_message_accuracy": 0.9961977186311787,
+      "raw_local_contrast": 0.24231428407162245
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.818359375,
+      "opposite_message_accuracy": 0.8365019011406845,
+      "raw_local_contrast": 0.07700456649887674
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.689453125,
+      "opposite_message_accuracy": 0.6787072243346007,
+      "raw_local_contrast": 0.04147886450273704
+    },
+    {
+      "size": 64,
+      "seed": 3,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.4794921875,
+      "opposite_message_accuracy": 0.4505703422053232,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6075513248341496
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3459733484705871
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.9873046875,
+      "opposite_message_accuracy": 0.9885496183206107,
+      "raw_local_contrast": 0.18438395119769896
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.71484375,
+      "opposite_message_accuracy": 0.6736641221374046,
+      "raw_local_contrast": 0.03713005699083155
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8179881625101272
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4174562563273105
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.935546875,
+      "opposite_message_accuracy": 0.9389312977099237,
+      "raw_local_contrast": 0.12895408601676944
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.5458984375,
+      "opposite_message_accuracy": 0.5820610687022901,
+      "raw_local_contrast": 0.012262255493961214
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6268242436577437
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4131285596110574
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.998046875,
+      "opposite_message_accuracy": 0.9980916030534351,
+      "raw_local_contrast": 0.25690449243727087
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.8115234375,
+      "opposite_message_accuracy": 0.799618320610687,
+      "raw_local_contrast": 0.06837996866093661
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6080652913677008
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.346199088462921
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.9873046875,
+      "opposite_message_accuracy": 0.9885496183206107,
+      "raw_local_contrast": 0.1849186622023154
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.7138671875,
+      "opposite_message_accuracy": 0.6812977099236641,
+      "raw_local_contrast": 0.03887609988746549
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.924652435356794
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6108377110598248
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.28431042504974824
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.74609375,
+      "opposite_message_accuracy": 0.7290076335877863,
+      "raw_local_contrast": 0.04680519326290097
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6124334291523854
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.39745624680349856
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 0.998046875,
+      "opposite_message_accuracy": 0.9980916030534351,
+      "raw_local_contrast": 0.24914767877433913
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.80859375,
+      "opposite_message_accuracy": 0.7977099236641222,
+      "raw_local_contrast": 0.06715383370517541
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.701171875,
+      "opposite_message_accuracy": 0.6965648854961832,
+      "raw_local_contrast": 0.04233033679458208
+    },
+    {
+      "size": 64,
+      "seed": 4,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.513671875,
+      "opposite_message_accuracy": 0.5419847328244275,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6250096962374299
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.35591511135767295
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.9873046875,
+      "opposite_message_accuracy": 0.9942528735632183,
+      "raw_local_contrast": 0.1896823405999317
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.6962890625,
+      "opposite_message_accuracy": 0.5977011494252874,
+      "raw_local_contrast": 0.038197012651487616
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8414935694788089
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4294521257620033
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.9296875,
+      "opposite_message_accuracy": 0.946360153256705,
+      "raw_local_contrast": 0.1326596632011594
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.5322265625,
+      "opposite_message_accuracy": 0.45977011494252873,
+      "raw_local_contrast": 0.01261461915758079
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6443445018831264
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.42700487389877473
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.99609375,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.28281365412861603
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.826171875,
+      "opposite_message_accuracy": 0.8160919540229885,
+      "raw_local_contrast": 0.09771864005527171
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.625538431924244
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3561473381313957
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.9873046875,
+      "opposite_message_accuracy": 0.9942528735632183,
+      "raw_local_contrast": 0.1902324168633015
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.7021484375,
+      "opposite_message_accuracy": 0.6149425287356322,
+      "raw_local_contrast": 0.039993229194576575
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9512229076371617
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6283905188489003
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.29248026485002837
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7216796875,
+      "opposite_message_accuracy": 0.6551724137931034,
+      "raw_local_contrast": 0.04815017008080043
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6298412261895328
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4103367546888516
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 0.99609375,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.2734832904668065
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.82421875,
+      "opposite_message_accuracy": 0.814176245210728,
+      "raw_local_contrast": 0.09545843430699996
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.6689453125,
+      "opposite_message_accuracy": 0.6762452107279694,
+      "raw_local_contrast": 0.04354672578293214
+    },
+    {
+      "size": 64,
+      "seed": 5,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.474609375,
+      "opposite_message_accuracy": 0.4616858237547893,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6092971620241181
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.346973523017231
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.9912109375,
+      "opposite_message_accuracy": 0.9908088235294118,
+      "raw_local_contrast": 0.18622831713725047
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.7314453125,
+      "opposite_message_accuracy": 0.7077205882352942,
+      "raw_local_contrast": 0.050177267784654644
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.818172078974239
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.414772890338133
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.9443359375,
+      "opposite_message_accuracy": 0.9466911764705882,
+      "raw_local_contrast": 0.12727167075906767
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.5537109375,
+      "opposite_message_accuracy": 0.5422794117647058,
+      "raw_local_contrast": 0.01388996497780401
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6095723735599629
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3470966110627744
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.9912109375,
+      "opposite_message_accuracy": 0.9908088235294118,
+      "raw_local_contrast": 0.18645904194806281
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.73828125,
+      "opposite_message_accuracy": 0.7150735294117647,
+      "raw_local_contrast": 0.053421727866257124
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6095406063658031
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.34707901240102795
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.9912109375,
+      "opposite_message_accuracy": 0.9908088235294118,
+      "raw_local_contrast": 0.18628055568225643
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.7314453125,
+      "opposite_message_accuracy": 0.7077205882352942,
+      "raw_local_contrast": 0.050197476752597434
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9263759229091939
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6099962736109299
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.28351266169109823
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.75390625,
+      "opposite_message_accuracy": 0.7352941176470589,
+      "raw_local_contrast": 0.056390541332427165
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0386904761904763
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6096831291052867
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3472664719410191
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 0.9912109375,
+      "opposite_message_accuracy": 0.9908088235294118,
+      "raw_local_contrast": 0.18657428451261418
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.73828125,
+      "opposite_message_accuracy": 0.7150735294117647,
+      "raw_local_contrast": 0.05346000735970892
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.6875,
+      "opposite_message_accuracy": 0.6746323529411765,
+      "raw_local_contrast": 0.04279806833069723
+    },
+    {
+      "size": 128,
+      "seed": 0,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.5166015625,
+      "opposite_message_accuracy": 0.5110294117647058,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5778720934956535
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.32907804045473765
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.9931640625,
+      "opposite_message_accuracy": 0.994,
+      "raw_local_contrast": 0.1766234182591115
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.72265625,
+      "opposite_message_accuracy": 0.706,
+      "raw_local_contrast": 0.04758932847197904
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.7759740920930464
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.39338059226911765
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.93359375,
+      "opposite_message_accuracy": 0.942,
+      "raw_local_contrast": 0.12070751582020459
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.568359375,
+      "opposite_message_accuracy": 0.592,
+      "raw_local_contrast": 0.01317357709929263
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.7183046174279489
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4598470082998586
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.9970703125,
+      "opposite_message_accuracy": 0.998,
+      "raw_local_contrast": 0.24776273559259868
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7802734375,
+      "opposite_message_accuracy": 0.764,
+      "raw_local_contrast": 0.061576083507916914
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.578102981968713
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3291780891253303
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.9931640625,
+      "opposite_message_accuracy": 0.994,
+      "raw_local_contrast": 0.17667296255251252
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.72265625,
+      "opposite_message_accuracy": 0.706,
+      "raw_local_contrast": 0.04760849514358095
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8785972220141638
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5785351477513404
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.2688902321482909
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.75390625,
+      "opposite_message_accuracy": 0.734,
+      "raw_local_contrast": 0.053482146650525475
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9851190476190477
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6464116728037581
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4276502869080198
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 0.9970703125,
+      "opposite_message_accuracy": 0.998,
+      "raw_local_contrast": 0.23688757086380025
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.7802734375,
+      "opposite_message_accuracy": 0.764,
+      "raw_local_contrast": 0.06115867548154672
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.7138671875,
+      "opposite_message_accuracy": 0.754,
+      "raw_local_contrast": 0.040590718101606825
+    },
+    {
+      "size": 128,
+      "seed": 1,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.4814453125,
+      "opposite_message_accuracy": 0.488,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5691429077933022
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3241070730762673
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.9892578125,
+      "opposite_message_accuracy": 0.9899193548387096,
+      "raw_local_contrast": 0.17395539079296174
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.712890625,
+      "opposite_message_accuracy": 0.7096774193548387,
+      "raw_local_contrast": 0.04687045644068027
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.7642524290704928
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.38743828724994667
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.9375,
+      "opposite_message_accuracy": 0.9294354838709677,
+      "raw_local_contrast": 0.11888413944829816
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.548828125,
+      "opposite_message_accuracy": 0.5846774193548387,
+      "raw_local_contrast": 0.012974580466372803
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5693102247732774
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3243491000126878
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.990234375,
+      "opposite_message_accuracy": 0.9899193548387096,
+      "raw_local_contrast": 0.17678657810460563
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7353515625,
+      "opposite_message_accuracy": 0.7318548387096774,
+      "raw_local_contrast": 0.05505629685405412
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.569370308525077
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.32420561043763646
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.9892578125,
+      "opposite_message_accuracy": 0.9899193548387096,
+      "raw_local_contrast": 0.17400418668313922
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.712890625,
+      "opposite_message_accuracy": 0.7096774193548387,
+      "raw_local_contrast": 0.04688933358552082
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8653253606544331
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5697959461236767
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.2648284461641777
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7333984375,
+      "opposite_message_accuracy": 0.7338709677419355,
+      "raw_local_contrast": 0.05267425923888612
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9702380952380952
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5694633345846916
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.32436442446260344
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 0.990234375,
+      "opposite_message_accuracy": 0.9899193548387096,
+      "raw_local_contrast": 0.1768000498609091
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.7353515625,
+      "opposite_message_accuracy": 0.7318548387096774,
+      "raw_local_contrast": 0.055061697903747896
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.7265625,
+      "opposite_message_accuracy": 0.7298387096774194,
+      "raw_local_contrast": 0.039977565260192825
+    },
+    {
+      "size": 128,
+      "seed": 2,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.4833984375,
+      "opposite_message_accuracy": 0.45161290322580644,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.595330464900356
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3390199752116784
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.98828125,
+      "opposite_message_accuracy": 0.9885931558935361,
+      "raw_local_contrast": 0.1819594731914109
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.708984375,
+      "opposite_message_accuracy": 0.7186311787072244,
+      "raw_local_contrast": 0.0490270725345766
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.7994174181381536
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.40526520230745955
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.9384765625,
+      "opposite_message_accuracy": 0.9372623574144486,
+      "raw_local_contrast": 0.12435426856401742
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.546875,
+      "opposite_message_accuracy": 0.5627376425855514,
+      "raw_local_contrast": 0.013571570365132285
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6928939208385158
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.47033636627534375
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.9912109375,
+      "opposite_message_accuracy": 0.9904942965779467,
+      "raw_local_contrast": 0.2669365912857573
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7578125,
+      "opposite_message_accuracy": 0.7718631178707225,
+      "raw_local_contrast": 0.07351090756729767
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.5955683288559852
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3391230465007179
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.98828125,
+      "opposite_message_accuracy": 0.9885931558935361,
+      "raw_local_contrast": 0.18201051429125914
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.708984375,
+      "opposite_message_accuracy": 0.7186311787072244,
+      "raw_local_contrast": 0.04904681825970122
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9051409447336247
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.596013551006668
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.2770138041165172
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7490234375,
+      "opposite_message_accuracy": 0.7566539923954373,
+      "raw_local_contrast": 0.0550979214738042
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0148809523809523
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.629614197224649
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.43080055665600636
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 0.9912109375,
+      "opposite_message_accuracy": 0.9904942965779467,
+      "raw_local_contrast": 0.24939552783709867
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.751953125,
+      "opposite_message_accuracy": 0.7623574144486692,
+      "raw_local_contrast": 0.07043640694699353
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.703125,
+      "opposite_message_accuracy": 0.6806083650190115,
+      "raw_local_contrast": 0.041817023784434824
+    },
+    {
+      "size": 128,
+      "seed": 3,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.4736328125,
+      "opposite_message_accuracy": 0.4828897338403042,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6075513248836477
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3459793295415369
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.982421875,
+      "opposite_message_accuracy": 0.9809160305343512,
+      "raw_local_contrast": 0.18569471164402052
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.7255859375,
+      "opposite_message_accuracy": 0.7194656488549618,
+      "raw_local_contrast": 0.05003349337839488
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8158277463697284
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4135844293342989
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.923828125,
+      "opposite_message_accuracy": 0.9274809160305344,
+      "raw_local_contrast": 0.1269069954846864
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.5576171875,
+      "opposite_message_accuracy": 0.5324427480916031,
+      "raw_local_contrast": 0.013850165651220044
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.7495175298621147
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4771647092768664
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.9912109375,
+      "opposite_message_accuracy": 0.9923664122137404,
+      "raw_local_contrast": 0.25677850980374833
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7412109375,
+      "opposite_message_accuracy": 0.7232824427480916,
+      "raw_local_contrast": 0.06417141561713938
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.607794071677076
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.34608451666348927
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.982421875,
+      "opposite_message_accuracy": 0.9809160305343512,
+      "raw_local_contrast": 0.18574680050838174
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.7255859375,
+      "opposite_message_accuracy": 0.7194656488549618,
+      "raw_local_contrast": 0.05005364444098541
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9237215506372477
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6082484332853971
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.28270030449427563
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7431640625,
+      "opposite_message_accuracy": 0.7385496183206107,
+      "raw_local_contrast": 0.056228963850099296
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0357142857142858
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6782474295031824
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.4458544194310474
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 0.994140625,
+      "opposite_message_accuracy": 0.9923664122137404,
+      "raw_local_contrast": 0.2466854407181755
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.755859375,
+      "opposite_message_accuracy": 0.7442748091603053,
+      "raw_local_contrast": 0.06405643292387782
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.6943359375,
+      "opposite_message_accuracy": 0.7270992366412213,
+      "raw_local_contrast": 0.04267543776241443
+    },
+    {
+      "size": 128,
+      "seed": 4,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.478515625,
+      "opposite_message_accuracy": 0.47900763358778625,
+      "raw_local_contrast": 0.0
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "fixed_uniform",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "fixed_uniform",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6250096962883502
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "fixed_uniform",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3559212642984776
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "fixed_uniform",
+      "horizon": 200,
+      "bit_accuracy": 0.990234375,
+      "opposite_message_accuracy": 0.9904214559386973,
+      "raw_local_contrast": 0.19103076657631998
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "fixed_uniform",
+      "horizon": 600,
+      "bit_accuracy": 0.7314453125,
+      "opposite_message_accuracy": 0.7662835249042146,
+      "raw_local_contrast": 0.05147123744099245
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "learned_frozen",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "learned_frozen",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.8392710724148357
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "learned_frozen",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.42546903937264086
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "learned_frozen",
+      "horizon": 200,
+      "bit_accuracy": 0.9384765625,
+      "opposite_message_accuracy": 0.9540229885057471,
+      "raw_local_contrast": 0.13055374822849922
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "learned_frozen",
+      "horizon": 600,
+      "bit_accuracy": 0.5517578125,
+      "opposite_message_accuracy": 0.5727969348659003,
+      "raw_local_contrast": 0.014248158917059703
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "shuffled_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "shuffled_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6625069456954817
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "shuffled_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.3635185639408865
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "shuffled_learned",
+      "horizon": 200,
+      "bit_accuracy": 0.9892578125,
+      "opposite_message_accuracy": 0.9904214559386973,
+      "raw_local_contrast": 0.19358543433295164
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "shuffled_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7353515625,
+      "opposite_message_accuracy": 0.7720306513409961,
+      "raw_local_contrast": 0.059139197616702485
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "uniform_same_mean",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "uniform_same_mean",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6252594185643483
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "uniform_same_mean",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.35602947403887686
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "uniform_same_mean",
+      "horizon": 200,
+      "bit_accuracy": 0.990234375,
+      "opposite_message_accuracy": 0.9904214559386973,
+      "raw_local_contrast": 0.19108435224712833
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "uniform_same_mean",
+      "horizon": 600,
+      "bit_accuracy": 0.7314453125,
+      "opposite_message_accuracy": 0.7662835249042146,
+      "raw_local_contrast": 0.05149196755710568
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "common_payload_learned",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "common_payload_learned",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.9502652733567087
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "common_payload_learned",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6257268365407247
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "common_payload_learned",
+      "horizon": 200,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.2908238764625019
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "common_payload_learned",
+      "horizon": 600,
+      "bit_accuracy": 0.7529296875,
+      "opposite_message_accuracy": 0.7854406130268199,
+      "raw_local_contrast": 0.05784473867337801
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "common_payload_shuffled",
+      "horizon": 0,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 1.0654761904761905
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "common_payload_shuffled",
+      "horizon": 20,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.6876774138721754
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "common_payload_shuffled",
+      "horizon": 80,
+      "bit_accuracy": 1.0,
+      "opposite_message_accuracy": 1.0,
+      "raw_local_contrast": 0.40272893318139585
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "common_payload_shuffled",
+      "horizon": 200,
+      "bit_accuracy": 0.9921875,
+      "opposite_message_accuracy": 0.9904214559386973,
+      "raw_local_contrast": 0.2271117371812644
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "common_payload_shuffled",
+      "horizon": 600,
+      "bit_accuracy": 0.7744140625,
+      "opposite_message_accuracy": 0.8065134099616859,
+      "raw_local_contrast": 0.06654667258400523
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "reopen_after_write",
+      "horizon": 200,
+      "bit_accuracy": 0.7001953125,
+      "opposite_message_accuracy": 0.7241379310344828,
+      "raw_local_contrast": 0.043901743445242426
+    },
+    {
+      "size": 128,
+      "seed": 5,
+      "condition": "erased_payload",
+      "horizon": 200,
+      "bit_accuracy": 0.5302734375,
+      "opposite_message_accuracy": 0.5038314176245211,
+      "raw_local_contrast": 0.0
+    }
+  ],
+  "transfer": [
+    {
+      "size": 32,
+      "receiver": 1,
+      "learned_received": 0.05351309985215137,
+      "restored_received": 0.06937995946227377,
+      "learned_total_mass": 1.0000000000000004,
+      "restored_total_mass": 1.0000000000000002
+    },
+    {
+      "size": 64,
+      "receiver": 1,
+      "learned_received": 0.06127536968053554,
+      "restored_received": 0.06937993994858081,
+      "learned_total_mass": 1.0000000000000002,
+      "restored_total_mass": 1.0000000000000002
+    },
+    {
+      "size": 128,
+      "receiver": 1,
+      "learned_received": 0.061704376358684164,
+      "restored_received": 0.06937993994858081,
+      "learned_total_mass": 1.0,
+      "restored_total_mass": 1.0000000000000002
+    }
+  ],
+  "limitations": [
+    "Local contrast-based resistance is programmed, not spontaneous discovery.",
+    "Prototype preparation writes a particular contrasting input; test all pairs including agreeing inputs.",
+    "Six seeds vary messages/shuffles/noise, not six independently prepared training graphs.",
+    "Reader targets and known source locations are explicit; decoding does not establish semantic truth.",
+    "Size varies ring distance; effects are not evidence of a scale-independent swarm law.",
+    "Fixed horizon and imposed read noise make persistence operational rather than permanent.",
+    "Conductance has a positive floor; all graphs stay connected. Boundaries are weak links, not walls.",
+    "No FRR-versus-baseline reasoning, nonlinear frequency birth, or autonomous role emergence tested."
+  ]
+}

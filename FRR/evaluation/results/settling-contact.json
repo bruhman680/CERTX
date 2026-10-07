@@ -1,0 +1,64 @@
+{
+  "kind": "focused local mathematical checks",
+  "model_comparison": false,
+  "results": [
+    {
+      "id": "fixed_row_dilution",
+      "before": 0.8807970779778824,
+      "after": 0.4018181280854504,
+      "scope": "Fixed query and original scores; positive added exponential mass."
+    },
+    {
+      "id": "normalization_not_universal_decay",
+      "rows": [
+        {
+          "tokens": 2,
+          "target_score": 1.3862943611198906,
+          "target_attention": 0.8
+        },
+        {
+          "tokens": 10,
+          "target_score": 3.58351893845611,
+          "target_attention": 0.8
+        },
+        {
+          "tokens": 100,
+          "target_score": 5.981414211254481,
+          "target_attention": 0.8
+        },
+        {
+          "tokens": 1000,
+          "target_score": 8.293049139768444,
+          "target_attention": 0.8
+        }
+      ],
+      "scope": "Constructed changing queries/scores; no claim that an actual model follows this family."
+    },
+    {
+      "id": "cq_tuple",
+      "formula_at_printed_values": 1.4862971175166297,
+      "printed_cq": 3.2,
+      "required_t_for_tuple": 0.2554573170731707,
+      "scope": "Ratio at means is not mean of ratios; this check alone does not falsify a reported time average."
+    },
+    {
+      "id": "drift_model_optimum",
+      "optimum": 0.15,
+      "gain_at_0_12": 0.2016,
+      "scope": "Maximum of displayed novelty model only; an unmodeled cost can change an efficiency optimum."
+    },
+    {
+      "id": "scan_frequency_direction",
+      "at_0_05": 16.666666666666664,
+      "at_0_20": 4.761904761904762,
+      "scope": "If this were an interval rather than frequency, interpretation would differ."
+    },
+    {
+      "id": "high_e_membership",
+      "e_passes": false,
+      "c_passes": false,
+      "cq_passes": false,
+      "scope": "The displayed mode averages do not satisfy their described bands; full trajectories are unavailable."
+    }
+  ]
+}

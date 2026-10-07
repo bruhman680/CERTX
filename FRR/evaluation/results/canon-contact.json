@@ -1,0 +1,101 @@
+{
+  "kind": "constructed local diagnostics",
+  "model_comparison": false,
+  "results": [
+    {
+      "id": "residual_information",
+      "before_bits": 1.0,
+      "after_bits": 0.0,
+      "status": "unconditional claim contradicted"
+    },
+    {
+      "id": "eigenvalue_band",
+      "eigenvalue": 1.1,
+      "initial_coordinate": 1,
+      "coordinate_after_100_steps": 13780.61233982238,
+      "status": "band does not guarantee discrete-time stability"
+    },
+    {
+      "id": "dirichlet_collapse",
+      "constant_energy": 0,
+      "separated_energy": 2,
+      "status": "smoothness alone cannot certify meaning"
+    },
+    {
+      "id": "softmax_support",
+      "probabilities": [
+        0.999954600070331,
+        4.539786860886666e-05,
+        2.061060046209062e-09
+      ],
+      "exact_nonzero_fraction": 1,
+      "status": "near-zero and exact-zero sparsity differ"
+    },
+    {
+      "id": "conductance_arithmetic",
+      "rows": [
+        {
+          "k": 512,
+          "formula": 512.0,
+          "printed": 512
+        },
+        {
+          "k": 256,
+          "formula": 181.01933598375618,
+          "printed": 181
+        },
+        {
+          "k": 128,
+          "formula": 64.0,
+          "printed": 90
+        },
+        {
+          "k": 64,
+          "formula": 22.627416997969522,
+          "printed": 45
+        },
+        {
+          "k": 32,
+          "formula": 8.0,
+          "printed": 23
+        }
+      ],
+      "status": "printed formula column inconsistent with listed inputs"
+    },
+    {
+      "id": "sscg_predictor",
+      "zero_after_5": 0.0,
+      "one_after_5": 3,
+      "two_after_5": 3,
+      "status": "heuristic saturates; no validated growth forecast"
+    },
+    {
+      "id": "loop_tuple",
+      "detection": false,
+      "caller_condition": true,
+      "status": "shown caller would enter loop handler even with no detection"
+    },
+    {
+      "id": "live_list_growth",
+      "initial_population": 1,
+      "diagnostic_cap": 20,
+      "visits": 20,
+      "status": "persistent spawn predicate can extend the same iteration without bound"
+    },
+    {
+      "id": "prune_zero_slice",
+      "keep": 0,
+      "survivors": [
+        "candidate"
+      ],
+      "status": "shown slicing fails to remove the sole candidate"
+    },
+    {
+      "id": "integration_rate",
+      "at_lower_bound": 0.19999999999999996,
+      "at_1_1": 0.04999999999999993,
+      "outside_upper_bound": -0.050000000000000044,
+      "status": "expression is not a two-sided boundary margin and can be negative"
+    }
+  ]
+}

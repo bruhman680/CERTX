@@ -124,3 +124,9 @@ CERTX_BUILDING_BLOCKS.md   Minimal implementation stack
 ## License
 
 MIT
+
+---
+
+## FRR substrate and role-switching record
+
+[FRR/EXPANSION.md](FRR/EXPANSION.md) indexes the imported reasoning framework candidate and controlled numerical experiments. [WANDER 093](WANDERINGS/093_substrate_boundaries_and_reference_gated_rotation.md) connects the findings to the existing library. Results are scoped synthetic contacts, not proof of universal cognitive laws or improved AI reasoning. Archive and compact-result limits: [record scope](FRR/GITHUB_RECORD_SCOPE.md).

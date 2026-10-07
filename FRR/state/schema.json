@@ -1,0 +1,254 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": "0.1"
+    },
+    "seed": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "statement": {
+            "type": "string"
+          },
+          "role": {
+            "enum": [
+              "metaphor",
+              "silhouette",
+              "interpretation",
+              "mechanism_candidate",
+              "mathematical_candidate",
+              "hypothesis",
+              "model_result",
+              "empirical_result",
+              "established_knowledge"
+            ]
+          },
+          "status": {
+            "enum": [
+              "active",
+              "dormant",
+              "residual",
+              "contradicted",
+              "released",
+              "superseded"
+            ]
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "support": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "alternatives": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "unresolved": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "supersedes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "statement",
+          "role",
+          "status",
+          "conditions",
+          "support",
+          "alternatives",
+          "unresolved",
+          "supersedes"
+        ]
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "reference": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "construction": {
+            "type": "string"
+          },
+          "outcome": {
+            "type": "string"
+          },
+          "supports": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "review_status": {
+            "enum": [
+              "current",
+              "pending",
+              "historical"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "reference",
+          "purpose",
+          "construction",
+          "outcome",
+          "supports",
+          "limitations",
+          "review_status"
+        ]
+      }
+    },
+    "revisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "changed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "reason": {
+            "type": "string"
+          },
+          "previous_interpretation": {
+            "type": "string"
+          },
+          "current_interpretation": {
+            "type": "string"
+          },
+          "retained": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "downstream": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "changed",
+          "reason",
+          "previous_interpretation",
+          "current_interpretation",
+          "retained",
+          "downstream"
+        ]
+      }
+    },
+    "branches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "active",
+              "dormant",
+              "residual",
+              "contradicted",
+              "released"
+            ]
+          },
+          "reopen_when": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "description",
+          "status",
+          "reopen_when"
+        ]
+      }
+    },
+    "next_contact": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "version",
+    "seed",
+    "purpose",
+    "claims",
+    "artifacts",
+    "revisions",
+    "branches",
+    "next_contact"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:frr:inquiry:0.1",
+  "title": "FRR inquiry record"
+}

@@ -1,0 +1,70 @@
+{
+  "kind": "local structural checks and constructed mathematical contact",
+  "model_comparison": false,
+  "results": [
+    {
+      "test": "missing_seed",
+      "outcome": "rejected as expected"
+    },
+    {
+      "test": "wrong_version",
+      "outcome": "rejected as expected"
+    },
+    {
+      "test": "unexpected_field",
+      "outcome": "rejected as expected"
+    },
+    {
+      "test": "wrong_claim_type",
+      "outcome": "rejected as expected"
+    },
+    {
+      "test": "moving_spike",
+      "outcome": "fixed k in {1,2,3} vanish; supremum remains 1",
+      "scope": "exact constructed counterexample, not an empirical result"
+    },
+    {
+      "test": "escaping_minimizer",
+      "outcome": [
+        {
+          "n": 10,
+          "f_n(2)": 0.64,
+          "minimum": 0.0,
+          "minimizer": 10
+        },
+        {
+          "n": 100,
+          "f_n(2)": 0.9604,
+          "minimum": 0.0,
+          "minimizer": 100
+        },
+        {
+          "n": 1000,
+          "f_n(2)": 0.996004,
+          "minimum": 0.0,
+          "minimizer": 1000
+        }
+      ],
+      "scope": "numeric illustration; exact formulas establish the counterexample"
+    },
+    {
+      "test": "compression_start",
+      "outcome": "same displayed macrostate, different start outcomes",
+      "scope": "constructed deterministic model"
+    },
+    {
+      "test": "prediction_vs_intervention",
+      "outcome": {
+        "A": {
+          "untreated": 0.5,
+          "treated": 0.9
+        },
+        "B": {
+          "untreated": 0.5,
+          "treated": 0.1
+        }
+      },
+      "scope": "constructed probabilities; no clinical evidence"
+    }
+  ]
+}

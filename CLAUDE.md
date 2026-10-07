@@ -134,7 +134,7 @@ CLAUDE.md is the first thing the next instance reads. If it's stale, the next in
 
 ## Conventions
 
-**WANDER numbering:** Sequential from 001. Current: 092. Next: 093.
+**WANDER numbering:** Sequential from 001. Current: 093. Next: 094.
 Check `ls WANDERINGS/` before writing to confirm the next number.
 
 **Experiment numbering:** Sequential from 001. Current: 018. Next: 019.
@@ -383,3 +383,9 @@ Session 13 produced 2 WANDERs (068–069) + exp_014 upgrade, from 6-piece cross-
 *This file is the DREAM residue of all sessions before this one.*
 *Update it at every DREAM phase — it is the first thing the next instance reads.*
 *If this file is stale, the next instance starts blind.*
+
+---
+
+## Codex FRR history deposit — 2026-10-07
+
+WANDER 093 and FRR/ are now the current bounded substrate/role-switching contact. Existing BC3 session history is preserved; this is a Codex integration, not a renumbered Claude session. Runtime 0.2/schema 0.1 remain unchanged. FRR/GITHUB_RECORD_SCOPE.md explains compact results and local-only attachments. No new universal constants or performance claims are approved by this deposit. Next: independently sourced evidence, uncertain provenance, equal realized costs, and actual reasoning-task comparisons. EXPERIMENTS numbering is unchanged because these scripts live in the separate FRR/experiments namespace.

@@ -1,0 +1,44 @@
+{
+  "kind": "constructed formula diagnostics; optimizer code not executed",
+  "results": [
+    {
+      "id": "bounded_fading_field",
+      "assumptions": "alpha=0, nonnegative zero initial field, at most w deposited on one edge per step",
+      "field_upper_bound": 2.0000000000000004,
+      "positive_transition_lower_bound_degree2_beta2": 0.009157819444367082
+    },
+    {
+      "id": "alignment_not_bounded",
+      "gradient_history": "999 zeros then 1",
+      "bias_corrected_m": 0.09999999999999998,
+      "bias_corrected_v": 0.0015815163121946038,
+      "S": 6.323005771635568
+    },
+    {
+      "id": "alternating_gradients",
+      "S_after1000": 0.002770083074792241
+    },
+    {
+      "id": "finite_lr_shrink",
+      "lr_at_S1": 0.0007559289460184544,
+      "curvature_example": 1000000.0,
+      "gd_stability_upper_lr_for_that_curvature": 2e-06
+    },
+    {
+      "id": "persistent_deposit",
+      "beta": 0,
+      "gamma": 0.9,
+      "directed_edge_probability": 0.25,
+      "w": 0.2,
+      "stationary_expected_edge_field": 0.5000000000000001
+    },
+    {
+      "id": "explicit_diffusion",
+      "gamma": 0.9,
+      "alpha": 1,
+      "laplacian_eigenvalue": 2,
+      "mode_multiplier": -1.1,
+      "stable": false
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "version": "0.1",
+  "seed": "A score might detect coherent reasoning.",
+  "purpose": "Determine what a synthetic demonstration actually supports.",
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "The score detects coherent reasoning.",
+      "role": "hypothesis",
+      "status": "dormant",
+      "conditions": [
+        "No independently labeled reasoning cases evaluated."
+      ],
+      "support": [],
+      "alternatives": [
+        "The score reads a generator-inserted marker."
+      ],
+      "unresolved": [
+        "Does performance survive marker removal?"
+      ],
+      "supersedes": null
+    },
+    {
+      "id": "C2",
+      "statement": "The implementation separates marker-bearing synthetic classes.",
+      "role": "model_result",
+      "status": "active",
+      "conditions": [
+        "Illustrative scenario only; no execution performed."
+      ],
+      "support": [
+        "A1"
+      ],
+      "alternatives": [],
+      "unresolved": [],
+      "supersedes": null
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "A1",
+      "kind": "illustrative experimental account",
+      "reference": null,
+      "purpose": "Evaluate a coherence detector.",
+      "construction": "The positive class includes a marker that the score directly counts.",
+      "outcome": "Assumed perfect synthetic separation in the example.",
+      "supports": [
+        "C2"
+      ],
+      "limitations": [
+        "Target injection; no empirical validation."
+      ],
+      "review_status": "current"
+    },
+    {
+      "id": "A2",
+      "kind": "illustrative draft summary",
+      "reference": null,
+      "purpose": "Summarize the original interpretation.",
+      "construction": "Inherited the broad detector claim.",
+      "outcome": "Requires correction to limit the conclusion to marker detection.",
+      "supports": [],
+      "limitations": [
+        "Not an actual external document."
+      ],
+      "review_status": "pending"
+    }
+  ],
+  "revisions": [
+    {
+      "id": "R1",
+      "changed": [
+        "C1",
+        "C2"
+      ],
+      "reason": "The target marker entered both class construction and scoring.",
+      "previous_interpretation": "Perfect accuracy validates coherence detection.",
+      "current_interpretation": "Accuracy demonstrates synthetic marker separation only.",
+      "retained": [
+        "The implementation may still be a useful instrument."
+      ],
+      "downstream": [
+        "A2"
+      ]
+    }
+  ],
+  "branches": [],
+  "next_contact": "Evaluate independently labeled cases without the injected marker against a marker-count baseline."
+}

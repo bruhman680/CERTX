@@ -200,3 +200,11 @@ Create it, add it to this map as a new downstream node, update CLAUDE.md repo st
 *Codespace implementation files (certx_engine.py, certx_megaphone.py, CERTX_COGNITIVE_WRAPPER.md, CERTX_BUILDING_BLOCKS.md) pulled and registered.*
 *exp_017 (wrapper loop simulation) and exp_018 (wrapper prompt example) added.*
 *This file is itself a downstream node: when the protocol changes, update the "How to Use" section.*
+
+---
+
+## FRR extension trace — 2026-10-07
+
+WANDER 093 -> FRR/EXPANSION.md -> boundary, role-switching, and evidence-gated reports -> optional host modules. SESSION_HANDOFF, SHADOW_LEDGER, CLAUDE, INSTANCE_NOTES, and README link this deposit. WANDER 090's topology framing is narrowed by sign/payload counterexample; WANDER 092's attention interpretation needs query/logit conditions. No PAPER/LIBRARY result promoted. Original history retained.
+
+New downstream node: FRR/ — operational prompt/schema candidate plus constructed experiments; scope in FRR/GITHUB_RECORD_SCOPE.md.

@@ -1098,3 +1098,9 @@ written in S12 — stale "pending" notes had persisted across 3 sessions).
 
 *This document is updated at the end of each session.*
 *Do not over-curate it — keep it raw and honest.*
+
+---
+
+## Latest Codex FRR handoff — 2026-10-07
+
+New record: WANDER 093 and FRR/EXPANSION.md. Completed: controlled substrate-boundary experiment; implemented numerical role switching; evidence/provenance-gated audit follow-up; optional host contracts; structural and numerical checks. Not completed: semantic FRR effectiveness, real provenance inference, thermal WANDERING, general swarm emergence. Next contact: uncertain-source observations and matched realized intervention costs, followed by independently authored reasoning tasks. Prior BC3 state-estimate tables remain historical; no new C/E/R/T/X numbers are assigned.

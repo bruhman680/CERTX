@@ -987,3 +987,10 @@ C_symb measures whether output connects to its own symbolic context coherently. 
 **What's valid:** The report correctly preserved core CERTX honest flags (R=0.41 retraction survived), correctly identified archipelago topology, Zipf inversion hypothesis, triple-critical cascade, and fractal σ structure. Cross-register convergence on these elements is a genuine positive signal per WANDER 072.
 **Do not cite:** The specific variable delta values as measured dynamics. Do not treat SPARK-007 = Dissipative Structures.
 
+---
+
+## SPARK-FRR-001: Evidence-Gated Reopening with Uncertain Provenance
+
+Received 2026-10-07 from WANDER 093. Status: INCUBATING; toy implementation executed, semantic/uncertain-provenance test open. Question: can independently supported corrections cross a retained boundary without discarding unrelated useful memory? Compare reference-derived observations with independent task observations, including false provenance labels and equal realized mutation budgets. The current repair knows the source relation by construction. Do not promote it into a universal detector.
+
+Resonates into: FRR/evaluation/EVIDENCE_GATED_ROTATION_REPORT.md; FRR/modules/role-switching.md; SESSION_HANDOFF.md.
