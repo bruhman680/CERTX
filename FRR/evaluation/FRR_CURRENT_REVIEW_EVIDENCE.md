@@ -1,0 +1,55 @@
+# Current FRR review: operational evidence and lineage
+
+Date: 2026-10-13 (user-facing date). Scope: documentary review of current runtime, lineage, source comparisons, and experiment reports. No core refinement, new experiment, or GitHub write performed in this review.
+
+## What FRR currently is
+
+FRR is an evolving reasoning discipline and usable instruction package, not a theory whose validity depends on one substrate simulation. Its current runtime preserves an originating conceptual seed while allowing representation and role to change; moves among forward, backward, lateral, structural, genealogical and evidential relations when useful; and permits open play, directed exploration and claim engineering to coexist. It asks for precision where a distinction begins affecting consequences, rather than formalizing every intuition at entry. Mathematical expressions acquire locally declared jobs, assumptions and boundaries. Domains retain their own laws.
+
+Its most distinctive operational commitments are faithful compression relative to a declared behavior and intervention family; locating what carries a returning distinction; checking artifact construction for answer leakage; tracing shared ancestry of apparent confirmations; factoring failure without discarding useful residues; and inspecting downstream records after a claim changes. Stabilization preserves enough lineage for reopening. Open play may properly end with an image, relationship or question. These are design commitments that can be enacted and evaluated, not measured evidence of superior cognition.
+
+The repository supplies runtime 0.2 derived from the user's v0.5, compact prompts, schema 0.1, optional host modules, source records, and authored evaluation cases. Package checks establish artifact consistency. No controlled comparison of actual AI models using FRR versus a matched baseline has established efficacy. No automatic substrate memory is granted by the prompt itself.
+
+## Evidence ledger by branch
+
+| Branch | Operational result actually available | Interpretation that remains unsupported |
+|---|---|---|
+| Canon mathematical audits | Counterexamples and local checks constrain residual preservation, eigenvalue stability, attention normalization and scoring claims | Universal cognitive metric, self-validation, unrestricted residual-information preservation |
+| True Garden | Original engine reproduced seed99/2000 steps; archive and genotype-indexed field have separable direct readers; transplanted field changes programmed fitness and promotion | Physical entropy production, interior self-regulation, independent verification by step count, general semantic growth |
+| Field-crystallization seed | Graph/optimizer formula checks and domain-specific source scouting expose missing assumptions | One universal critical persistence threshold, infinite barriers from finite persistence, exact equivalence between SAM/diffusion or sampling temperature/attention |
+| Gemini swarm reports | Source text and screenshots preserved; trigger arithmetic, graph monitor and annealing proposals audited | Claimed 1000/1200-agent cycles, emergent named layers, compute savings, benchmark predictions as measurements; no raw implementation/logs for these claims |
+| Substrate witness | Programmed travelling pulse leaves a retained spatial trace; no-write and erasure controls; a software-copy read differs from a consequential probe; final trace can be matched by another starting field | Unique historical retrodiction, physical noninvasive observation, permanent law, real agent benefit |
+| Adaptive boundaries | Local disagreement-sensitive conductance rule creates weak edges; controlled comparison separates inscription from retention; sign-inverted preparation yields identical topology | Naturally optimal swarm hierarchy, graph shape preserving all payload, connectivity threshold guaranteeing truth or memory |
+| Role rotation | Scheduled/random/spectrum-triggered numerical audit actions run; correct references can help, wrong references harm | Coherence as correctness; entropy-triggered role rotation validated for real reasoning; equal realized intervention costs |
+| Evidence-gated rotation | A reference can validate itself through reference-derived audit data; declared independent-source gating blocks this constructed harm | Autonomous provenance inference, general truth detector, optimal gate or FRR model improvement |
+| Claude shadow–echo sweep | Original finite-word distances reproduced; exact continuum within one kernel; shared-RNG simulation error isolated and corrected; rounding checked against future blocks | Universal identity of shadow/echo; finite counts proving infinite states; nonstationary initialization automatically satisfying stationary-process theory |
+| Wake reset transfer | Exact post-reset read laws match analytic field contrast, clearing null and delays; transfer is independently manipulable by construction | An independently established environmental ontology or unique history; emergent memory rather than stipulated read/write coupling |
+| Imperfect reset | Two explicit noisy carriers and leakage levels match analytic response in 72 correlated arms; keep/clear alone cannot distinguish exact erasure-side-effect rival | Unknown initial-field confounds resolved, arbitrary real-world carrier identification, universal selective erasure |
+| Population-law attribution | Observation-only function with stipulated probes avoids two naive false attributions in six authored worlds; abstains under off-target erase damage | Held-out validity, generic false-attribution guarantee, inference of probe selectivity from data, abstention proving no field exists |
+
+## Concrete turning points worth retaining
+
+1. **Specification to executable discipline:** the long v0.5 seed became selectable runtime instructions, external inquiry records and authored cases. The compression risk was recognized: a model may imitate the language of caution without making better decisions.
+2. **Canon to scoped lineage:** earlier seeds, COS claims and mathematical weaves were preserved rather than blended into one supposedly verified canon. Shared text and shared sources became ancestry, not corroboration.
+3. **Garden image to carrier intervention:** the soil metaphor became separate field and archive operations. Actual reproduction showed K hitting zero and archive-driven richness reaching one; the proposed regulation story changed while usable code and transplant effects survived.
+4. **Crystallization to timescale and intervention:** durable bias was separated from inaccessible transitions and fundamental law. A wake can persist within a horizon without becoming an invariant structural constraint.
+5. **Swarm scale to inspectable local mechanism:** Gemini's large collective narrative remained a seed. Trigger, graph and temperature checks showed why names, counts and residuals need execution and provenance before becoming measurements.
+6. **Boundary intuition to a writing/retention tradeoff:** disagreement-sensitive transport can protect an existing distinction while preventing its inscription or access. Topological continuity and payload continuity became separate questions.
+7. **Role diversity to reference lineage:** rotating jobs was implemented, then a wrong shared reference defeated the presumed benefit. Gating made provenance consequential; the repair still depends on provenance supplied by construction.
+8. **Observer angle to operational partition:** fresh reader, erased carrier, transplanted field and no-write conditions supplied testable memory-location claims. Unknown initial fields and access-changing erasures reopened attribution instead of being dismissed as noise.
+9. **Broad correction to local sufficiency:** our initial warning about next-symbol counts was sharpened. For Claude's particular kernel, exact one-step probabilities identify sufficient predictive statistics because symbol-conditioned ranges are disjoint; rounded equality and arbitrary kernels do not inherit that property. This is a useful example of FRR correcting its own overgeneralization while preserving the general caution.
+10. **Simple erase proof to meaningful refusal:** exact rival laws showed that more samples cannot fix a non-identifying intervention menu. A conservative attribution rule can appropriately abstain despite real environmental memory. Refusal to overclaim is a result about a bounded inference problem, not evidence that FRR always reasons well.
+
+## How to present the current framework
+
+A current Reddit account should lead with the reasoning idea: ideas can change form without losing origin; relations can be traversed in multiple directions; ambiguity is productive until it changes a consequence; open exploration and disciplined testing have different burdens. Then explain how artifacts can resist intuition, how compression and persistence are tested, and why source genealogy matters. Use one or two experiments as concrete examples of what the discipline changed, not as the definition or validation of FRR.
+
+The strongest honest claim is that FRR has acquired usable prompts, records, source-relative distinctions and reproducible small tests that have already revised several supplied interpretations. The strongest unresolved empirical question is whether these instructions improve actual model performance, calibration, useful exploration, or continuity under matched budgets and independent evaluation. Broad intellectual relatives and practical hypotheses remain available without being declared original discoveries.
+
+## Residuals for the next refinement
+
+Preserve open play rather than turning FRR into an audit checklist. Distinguish shared-state access from evidence independence and shared-weight geometry from writable environmental state. Make optional tools/host persistence explicit. Keep model-level execution successes separate from semantic or cross-domain claims. Test whether a compact runtime loses useful capabilities relative to the longer seed. An empirical FRR-versus-baseline evaluation should use independently authored tasks, comparable context and compute, blind scoring where feasible, and outcomes that can show both benefit and harm.
+
+A public account should preserve dated errata and source access depths. Do not promote missing original logs, unavailable artifacts or shallow source scouting into confirmation. Fresh agents in this session share context and artifacts; their critical review is useful but not independent replication.
+
+Review basis: LINEAGE.md; prompts/runtime.md; experiments/garden/REPRODUCTION.md; lineage/GEMINI_LOCAL_ANNEALING_EXPLORATION.md and earlier Gemini audits; substrate_witness_probe.py and prior witness results; evaluation/BOUNDARY_EXPANSION_REPORT.md, ROLE_ROTATION_GAP_MAP.md, EVIDENCE_GATED_ROTATION_REPORT.md, SWEEP_AUDIT_REPORT.md, IMPERFECT_RESET_SYNTHESIS.md, ATTRIBUTION_POPULATION_LAWS_REPORT.md; and this agent's prior reset/adversarial source/design reviews. Reported numerical findings above are inherited from those records; this pass did not independently rerun them.
