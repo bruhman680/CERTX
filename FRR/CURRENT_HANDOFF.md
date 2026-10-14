@@ -1,9 +1,9 @@
 # Current FRR handoff
 
-The shadow–echo intake has been reproduced, corrected, and extended through explicit carrier-isolation tests. Original copies remain local unchanged. Core runtime0.2 and schema0.1 unchanged.
+Read [sync/CURRENT_ORIENTATION.md](sync/CURRENT_ORIENTATION.md) for scoped current direction, completed contacts, dormant branches and next tests. Check the referenced artifacts before treating a summary as evidence.
 
-Read evaluation/SHADOW_ECHO_RESET_SYNTHESIS.md, then evaluation/IMPERFECT_RESET_SYNTHESIS.md. The latest pulse separates environmental persistence from private reset leakage and erase-induced reader alterations. It includes a 72-condition stochastic model, an exact observational-equivalence counterexample, and a six-family attribution challenge. All findings are scoped constructed-model results, not measured AI swarm effectiveness.
+The previous handoff is preserved at [commit a24ec58c](https://github.com/bruhman680/CERTX/blob/a24ec58cfc3fa914a9364ea647afc8fce56bd31a/FRR/CURRENT_HANDOFF.md). It described the reset pulse; pre-refinement/Reddit review, DecepEval research and the palimpsest sync study followed. Updating the present navigation view does not erase that layer or relabel its claims as independently validated.
 
-Next informational contact: held-out worlds with unknown initial correlations, imperfect/calibrated operator selectivity, and potential private-state spoofs. A guarded diagnostic should preserve ambiguity where candidate models agree. Do not treat abstention as field absence.
+The partial publication log is sync/DEPOSIT_EVENTS.jsonl. It contains six verified deposits through the DecepEval commit; this sync-study deposit follows them. The prototype is a navigation/integrity check, not full event-sourced replay or a test of improved AI reasoning.
 
-Optional host module: modules/carrier-interventions.md. Source access and shared ancestry documented in lineage/IMPERFECT_RESET_SOURCE_SCOUT.md and lineage/IMPERFECT_RESET_ADVERSARIAL_DESIGN.md. Runnable scripts and result tables are in experiments and evaluation/results. Raw original user attachments stay local. Earlier resting handoff is historical, not the current stopping point. No changes merged into main.
+Core runtime0.2 and schema0.1 remain unchanged, derived from conceptual FRRv0.5. Current user direction overrides old research priorities. General effectiveness comparisons and several deferred branches remain open.
