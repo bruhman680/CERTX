@@ -1,0 +1,742 @@
+{
+  "seed": 714,
+  "trials_per_condition": 200000,
+  "scope": "Designed two independent binary storage channels, known interventions and observer mixture; not learned mediation or real AI memory. Same random arrays across arms for paired comparison; distinct arrays by stochastic causal role.",
+  "checks": [
+    "72 matched arms",
+    "analytic expectation within six Monte Carlo SE",
+    "no-write null",
+    "independent measurement draws",
+    "q0 environment-blind",
+    "q1 private-blind",
+    "pure reader API excludes target"
+  ],
+  "contrasts": {
+    "zero_leakage_field_effect": 0.12795,
+    "expected_effect": 0.128,
+    "paired_se": 0.0010783524412268932,
+    "blind_accuracy": 0.49937
+  },
+  "records": [
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0,
+      "field_reader_share": 0,
+      "accuracy": 0.498775,
+      "expected": 0.5,
+      "se": 0.0011180306332453508
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0,
+      "field_reader_share": 0.5,
+      "accuracy": 0.500615,
+      "expected": 0.5,
+      "se": 0.001118033143012764
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0,
+      "field_reader_share": 1,
+      "accuracy": 0.50115,
+      "expected": 0.5,
+      "se": 0.001118031031546084
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0.05,
+      "field_reader_share": 0,
+      "accuracy": 0.49869,
+      "expected": 0.5,
+      "se": 0.0011180301514270535
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0.05,
+      "field_reader_share": 0.5,
+      "accuracy": 0.500815,
+      "expected": 0.5,
+      "se": 0.0011180325034966562
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0.05,
+      "field_reader_share": 1,
+      "accuracy": 0.50115,
+      "expected": 0.5,
+      "se": 0.001118031031546084
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0.5,
+      "field_reader_share": 0,
+      "accuracy": 0.499395,
+      "expected": 0.5,
+      "se": 0.0011180331702928138
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0.5,
+      "field_reader_share": 0.5,
+      "accuracy": 0.50088,
+      "expected": 0.5,
+      "se": 0.0011180322571375122
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0.5,
+      "field_reader_share": 1,
+      "accuracy": 0.50115,
+      "expected": 0.5,
+      "se": 0.001118031031546084
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0,
+      "field_reader_share": 0,
+      "accuracy": 0.50078,
+      "expected": 0.5,
+      "se": 0.0011180326283253097
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0,
+      "field_reader_share": 0.5,
+      "accuracy": 0.50145,
+      "expected": 0.5,
+      "se": 0.0011180292874070877
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0,
+      "field_reader_share": 1,
+      "accuracy": 0.50115,
+      "expected": 0.5,
+      "se": 0.001118031031546084
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0.05,
+      "field_reader_share": 0,
+      "accuracy": 0.50078,
+      "expected": 0.5,
+      "se": 0.0011180326283253097
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0.05,
+      "field_reader_share": 0.5,
+      "accuracy": 0.50145,
+      "expected": 0.5,
+      "se": 0.0011180292874070877
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0.05,
+      "field_reader_share": 1,
+      "accuracy": 0.50115,
+      "expected": 0.5,
+      "se": 0.001118031031546084
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0.5,
+      "field_reader_share": 0,
+      "accuracy": 0.50078,
+      "expected": 0.5,
+      "se": 0.0011180326283253097
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0.5,
+      "field_reader_share": 0.5,
+      "accuracy": 0.50145,
+      "expected": 0.5,
+      "se": 0.0011180292874070877
+    },
+    {
+      "wrote": false,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0.5,
+      "field_reader_share": 1,
+      "accuracy": 0.50115,
+      "expected": 0.5,
+      "se": 0.001118031031546084
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0,
+      "field_reader_share": 0,
+      "accuracy": 0.498775,
+      "expected": 0.5,
+      "se": 0.0011180306332453508
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0,
+      "field_reader_share": 0.5,
+      "accuracy": 0.499915,
+      "expected": 0.5,
+      "se": 0.0011180339725943035
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0,
+      "field_reader_share": 1,
+      "accuracy": 0.500775,
+      "expected": 0.5,
+      "se": 0.001118032645710759
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0.05,
+      "field_reader_share": 0,
+      "accuracy": 0.49869,
+      "expected": 0.5,
+      "se": 0.0011180301514270535
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0.05,
+      "field_reader_share": 0.5,
+      "accuracy": 0.500115,
+      "expected": 0.5,
+      "se": 0.0011180339591778954
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0.05,
+      "field_reader_share": 1,
+      "accuracy": 0.500775,
+      "expected": 0.5,
+      "se": 0.001118032645710759
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0.5,
+      "field_reader_share": 0,
+      "accuracy": 0.499395,
+      "expected": 0.5,
+      "se": 0.0011180331702928138
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0.5,
+      "field_reader_share": 0.5,
+      "accuracy": 0.50018,
+      "expected": 0.5,
+      "se": 0.00111803391630129
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0.5,
+      "field_reader_share": 1,
+      "accuracy": 0.500775,
+      "expected": 0.5,
+      "se": 0.001118032645710759
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0,
+      "field_reader_share": 0,
+      "accuracy": 0.50078,
+      "expected": 0.5,
+      "se": 0.0011180326283253097
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0,
+      "field_reader_share": 0.5,
+      "accuracy": 0.50075,
+      "expected": 0.5,
+      "se": 0.00111803273096095
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0,
+      "field_reader_share": 1,
+      "accuracy": 0.500775,
+      "expected": 0.5,
+      "se": 0.001118032645710759
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0.05,
+      "field_reader_share": 0,
+      "accuracy": 0.50078,
+      "expected": 0.5,
+      "se": 0.0011180326283253097
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0.05,
+      "field_reader_share": 0.5,
+      "accuracy": 0.50075,
+      "expected": 0.5,
+      "se": 0.00111803273096095
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0.05,
+      "field_reader_share": 1,
+      "accuracy": 0.500775,
+      "expected": 0.5,
+      "se": 0.001118032645710759
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0.5,
+      "field_reader_share": 0,
+      "accuracy": 0.50078,
+      "expected": 0.5,
+      "se": 0.0011180326283253097
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0.5,
+      "field_reader_share": 0.5,
+      "accuracy": 0.50075,
+      "expected": 0.5,
+      "se": 0.00111803273096095
+    },
+    {
+      "wrote": false,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0.5,
+      "field_reader_share": 1,
+      "accuracy": 0.500775,
+      "expected": 0.5,
+      "se": 0.001118032645710759
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0,
+      "field_reader_share": 0,
+      "accuracy": 0.498775,
+      "expected": 0.5,
+      "se": 0.0011180306332453508
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0,
+      "field_reader_share": 0.5,
+      "accuracy": 0.500615,
+      "expected": 0.5,
+      "se": 0.001118033143012764
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0,
+      "field_reader_share": 1,
+      "accuracy": 0.50115,
+      "expected": 0.5,
+      "se": 0.001118031031546084
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0.05,
+      "field_reader_share": 0,
+      "accuracy": 0.51193,
+      "expected": 0.5128,
+      "se": 0.0011177156952910702
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0.05,
+      "field_reader_share": 0.5,
+      "accuracy": 0.50726,
+      "expected": 0.5064,
+      "se": 0.0011179161247607085
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0.05,
+      "field_reader_share": 1,
+      "accuracy": 0.50115,
+      "expected": 0.5,
+      "se": 0.001118031031546084
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0.5,
+      "field_reader_share": 0,
+      "accuracy": 0.62738,
+      "expected": 0.628,
+      "se": 0.0010811436898026088
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0.5,
+      "field_reader_share": 0.5,
+      "accuracy": 0.5642,
+      "expected": 0.5640000000000001,
+      "se": 0.0011087794190009121
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": false,
+      "reset_leakage": 0.5,
+      "field_reader_share": 1,
+      "accuracy": 0.50115,
+      "expected": 0.5,
+      "se": 0.001118031031546084
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0,
+      "field_reader_share": 0,
+      "accuracy": 0.75589,
+      "expected": 0.756,
+      "se": 0.0009605214935127687
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0,
+      "field_reader_share": 0.5,
+      "accuracy": 0.62849,
+      "expected": 0.628,
+      "se": 0.001080486741936244
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0,
+      "field_reader_share": 1,
+      "accuracy": 0.50115,
+      "expected": 0.5,
+      "se": 0.001118031031546084
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0.05,
+      "field_reader_share": 0,
+      "accuracy": 0.75589,
+      "expected": 0.756,
+      "se": 0.0009605214935127687
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0.05,
+      "field_reader_share": 0.5,
+      "accuracy": 0.62849,
+      "expected": 0.628,
+      "se": 0.001080486741936244
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0.05,
+      "field_reader_share": 1,
+      "accuracy": 0.50115,
+      "expected": 0.5,
+      "se": 0.001118031031546084
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0.5,
+      "field_reader_share": 0,
+      "accuracy": 0.75589,
+      "expected": 0.756,
+      "se": 0.0009605214935127687
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0.5,
+      "field_reader_share": 0.5,
+      "accuracy": 0.62849,
+      "expected": 0.628,
+      "se": 0.001080486741936244
+    },
+    {
+      "wrote": true,
+      "field_retained": false,
+      "private_retained": true,
+      "reset_leakage": 0.5,
+      "field_reader_share": 1,
+      "accuracy": 0.50115,
+      "expected": 0.5,
+      "se": 0.001118031031546084
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0,
+      "field_reader_share": 0,
+      "accuracy": 0.498775,
+      "expected": 0.5,
+      "se": 0.0011180306332453508
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0,
+      "field_reader_share": 0.5,
+      "accuracy": 0.628565,
+      "expected": 0.628,
+      "se": 0.0010804421335152568
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0,
+      "field_reader_share": 1,
+      "accuracy": 0.757365,
+      "expected": 0.756,
+      "se": 0.0009585490513661782
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0.05,
+      "field_reader_share": 0,
+      "accuracy": 0.51193,
+      "expected": 0.5128,
+      "se": 0.0011177156952910702
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0.05,
+      "field_reader_share": 0.5,
+      "accuracy": 0.63521,
+      "expected": 0.6344000000000001,
+      "se": 0.001076378780680853
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0.05,
+      "field_reader_share": 1,
+      "accuracy": 0.757365,
+      "expected": 0.756,
+      "se": 0.0009585490513661782
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0.5,
+      "field_reader_share": 0,
+      "accuracy": 0.62738,
+      "expected": 0.628,
+      "se": 0.0010811436898026088
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0.5,
+      "field_reader_share": 0.5,
+      "accuracy": 0.69215,
+      "expected": 0.6920000000000001,
+      "se": 0.0010321782246782772
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": false,
+      "reset_leakage": 0.5,
+      "field_reader_share": 1,
+      "accuracy": 0.757365,
+      "expected": 0.756,
+      "se": 0.0009585490513661782
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0,
+      "field_reader_share": 0,
+      "accuracy": 0.75589,
+      "expected": 0.756,
+      "se": 0.0009605214935127687
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0,
+      "field_reader_share": 0.5,
+      "accuracy": 0.75644,
+      "expected": 0.756,
+      "se": 0.0009597878057154091
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0,
+      "field_reader_share": 1,
+      "accuracy": 0.757365,
+      "expected": 0.756,
+      "se": 0.0009585490513661782
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0.05,
+      "field_reader_share": 0,
+      "accuracy": 0.75589,
+      "expected": 0.756,
+      "se": 0.0009605214935127687
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0.05,
+      "field_reader_share": 0.5,
+      "accuracy": 0.75644,
+      "expected": 0.756,
+      "se": 0.0009597878057154091
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0.05,
+      "field_reader_share": 1,
+      "accuracy": 0.757365,
+      "expected": 0.756,
+      "se": 0.0009585490513661782
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0.5,
+      "field_reader_share": 0,
+      "accuracy": 0.75589,
+      "expected": 0.756,
+      "se": 0.0009605214935127687
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0.5,
+      "field_reader_share": 0.5,
+      "accuracy": 0.75644,
+      "expected": 0.756,
+      "se": 0.0009597878057154091
+    },
+    {
+      "wrote": true,
+      "field_retained": true,
+      "private_retained": true,
+      "reset_leakage": 0.5,
+      "field_reader_share": 1,
+      "accuracy": 0.757365,
+      "expected": 0.756,
+      "se": 0.0009585490513661782
+    }
+  ]
+}

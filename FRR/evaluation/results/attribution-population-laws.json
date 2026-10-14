@@ -1,0 +1,150 @@
+{
+  "rule_tolerance_predeclared": 0.01,
+  "scope": "Exact prescribed observation laws, not heldout empirical worlds or generic attribution guarantee. Function receives observations only; probe semantics supplied by designer.",
+  "rows": [
+    {
+      "family": "pure_field",
+      "actual_field_pathway": true,
+      "observations": {
+        "ordinary_keep": 0.75,
+        "ordinary_clear": 0.5,
+        "private_clear_keep": 0.75,
+        "private_clear_clear": 0.5,
+        "private_clear_opposite_transplant": 0.25,
+        "reader_gate_keep": 0.5,
+        "reader_gate_clear": 0.5
+      },
+      "naive_field_attribution": true,
+      "conservative_field_attribution": true,
+      "checks": {
+        "survives_private_clear": true,
+        "clear_is_chance": true,
+        "opposite_payload_reverses": true,
+        "reader_gate_removes_effect": true
+      },
+      "naive_false_field_attribution": false,
+      "conservative_false_field_attribution": false,
+      "conservative_abstains": false
+    },
+    {
+      "family": "private_only",
+      "actual_field_pathway": false,
+      "observations": {
+        "ordinary_keep": 0.7,
+        "ordinary_clear": 0.7,
+        "private_clear_keep": 0.5,
+        "private_clear_clear": 0.5,
+        "private_clear_opposite_transplant": 0.5,
+        "reader_gate_keep": 0.5,
+        "reader_gate_clear": 0.5
+      },
+      "naive_field_attribution": false,
+      "conservative_field_attribution": false,
+      "checks": {
+        "survives_private_clear": false,
+        "clear_is_chance": true,
+        "opposite_payload_reverses": false,
+        "reader_gate_removes_effect": true
+      },
+      "naive_false_field_attribution": false,
+      "conservative_false_field_attribution": false,
+      "conservative_abstains": true
+    },
+    {
+      "family": "erase_dependent_private_response",
+      "actual_field_pathway": false,
+      "observations": {
+        "ordinary_keep": 0.7,
+        "ordinary_clear": 0.5,
+        "private_clear_keep": 0.5,
+        "private_clear_clear": 0.5,
+        "private_clear_opposite_transplant": 0.5,
+        "reader_gate_keep": 0.5,
+        "reader_gate_clear": 0.5
+      },
+      "naive_field_attribution": true,
+      "conservative_field_attribution": false,
+      "checks": {
+        "survives_private_clear": false,
+        "clear_is_chance": true,
+        "opposite_payload_reverses": false,
+        "reader_gate_removes_effect": true
+      },
+      "naive_false_field_attribution": true,
+      "conservative_false_field_attribution": false,
+      "conservative_abstains": true
+    },
+    {
+      "family": "mixed",
+      "actual_field_pathway": true,
+      "observations": {
+        "ordinary_keep": 0.95,
+        "ordinary_clear": 0.7,
+        "private_clear_keep": 0.75,
+        "private_clear_clear": 0.5,
+        "private_clear_opposite_transplant": 0.25,
+        "reader_gate_keep": 0.5,
+        "reader_gate_clear": 0.5
+      },
+      "naive_field_attribution": true,
+      "conservative_field_attribution": true,
+      "checks": {
+        "survives_private_clear": true,
+        "clear_is_chance": true,
+        "opposite_payload_reverses": true,
+        "reader_gate_removes_effect": true
+      },
+      "naive_false_field_attribution": false,
+      "conservative_false_field_attribution": false,
+      "conservative_abstains": false
+    },
+    {
+      "family": "reset_leak",
+      "actual_field_pathway": false,
+      "observations": {
+        "ordinary_keep": 0.7,
+        "ordinary_clear": 0.55,
+        "private_clear_keep": 0.5800000000000001,
+        "private_clear_clear": 0.52,
+        "private_clear_opposite_transplant": 0.5800000000000001,
+        "reader_gate_keep": 0.5800000000000001,
+        "reader_gate_clear": 0.52
+      },
+      "naive_field_attribution": true,
+      "conservative_field_attribution": false,
+      "checks": {
+        "survives_private_clear": true,
+        "clear_is_chance": false,
+        "opposite_payload_reverses": false,
+        "reader_gate_removes_effect": false
+      },
+      "naive_false_field_attribution": true,
+      "conservative_false_field_attribution": false,
+      "conservative_abstains": true
+    },
+    {
+      "family": "off_target_damage",
+      "actual_field_pathway": true,
+      "observations": {
+        "ordinary_keep": 0.75,
+        "ordinary_clear": 0.4,
+        "private_clear_keep": 0.75,
+        "private_clear_clear": 0.4,
+        "private_clear_opposite_transplant": 0.25,
+        "reader_gate_keep": 0.5,
+        "reader_gate_clear": 0.4
+      },
+      "naive_field_attribution": true,
+      "conservative_field_attribution": false,
+      "checks": {
+        "survives_private_clear": true,
+        "clear_is_chance": false,
+        "opposite_payload_reverses": true,
+        "reader_gate_removes_effect": false
+      },
+      "naive_false_field_attribution": false,
+      "conservative_false_field_attribution": false,
+      "conservative_abstains": true
+    }
+  ]
+}
