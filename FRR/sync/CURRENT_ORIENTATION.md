@@ -31,3 +31,7 @@ Matched fresh-reader continuation with archive-only, summary-only and summary+ve
 ## Optional noticing contact
 
 See ../evaluation/NOTICING_SPACE_REVIEW.md and ../lineage/noticings/FRAME_RELEASE_NOTICINGS.md. An optional side space can preserve alternatives without requiring novelty/dissent; no model benefit or literal internal detension was measured. Permission to record an association does not promote it to current scientific guidance.
+
+## Wind-down after fresh-reader pilot
+
+See ../evaluation/RECOVERY_PILOT_REPORT.md. Twelve fresh reader contexts completed a four-arm, three-hop authored pilot; ordinary and full-FRR guidance both retained central corrections. Some scope details were lost in one summary-only chain; no general efficacy result. An incomplete scorer receipt was repaired with original/revised reviews preserved. Current stopping basis: enough exploratory contact for this pulse; harder independent tasks and matched-cost evaluation remain pending. Core runtime/schema unchanged.
