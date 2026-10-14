@@ -4,7 +4,7 @@ Scope: FRR work on codex/frr-progress-2026-10-07, not all CERTX branches or a re
 
 ## Latest purpose
 
-Examine whether opening/closing sync and preserved palimpsest layers improve recovery, orientation and reasoning. User has authorized exploration and recordkeeping. Do not infer that every archived direction is currently active.
+Examine whether opening/closing sync, preserved palimpsest layers, and optional noticing spaces support recovery, orientation, and changes of frame. User has authorized exploration and recordkeeping. Do not infer that every archived direction is currently active.
 
 ## Completed contacts
 
@@ -27,3 +27,7 @@ General FRR/model effectiveness; real transformer/optimizer tests; thermodynamic
 ## Next discriminating contact
 
 Matched fresh-reader continuation with archive-only, summary-only and summary+verified-history conditions. Include obsolete summaries, corrections, paused topics and missing sources; measure factual/version accuracy, useful authorized continuation and cost. No such model comparison has yet run.
+
+## Optional noticing contact
+
+See ../evaluation/NOTICING_SPACE_REVIEW.md and ../lineage/noticings/FRAME_RELEASE_NOTICINGS.md. An optional side space can preserve alternatives without requiring novelty/dissent; no model benefit or literal internal detension was measured. Permission to record an association does not promote it to current scientific guidance.
