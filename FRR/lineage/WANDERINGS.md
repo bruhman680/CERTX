@@ -84,3 +84,7 @@ User authorized adopting the useful execution practices. See ../evaluation/BOUND
 ## RR1: more history, or a different account of its beginning?
 
 The prospective study in ../evaluation/RESET_READER_STUDY.md failed its source-kernel reversal prediction once both readers used the same age/preparation assumption. A small reversal remained in another prespecified kernel, verified by exact rational path weights with high-precision logs. Matched readers benefited or tied throughout. Noticing: what appeared to be a contest between long and short memory partly compared different stories about how the present began. Preserve the failed prediction as a useful correction, not a reason to retune until it passes. Real-agent transfer is still open.
+
+## HPGM post: a rhythm of obligations
+
+User supplied an explicitly unvetted earlier Reddit post. Original preserved; review in ../evaluation/HPGM_POST_CONTACT.md. Useful distinction: phase labels can organize changes in the job—observing, exploring, testing, checking, preserving—without establishing an internal oscillator. Waiting, added compute, evidence review and external-memory updates must be separated before attributing benefit to a pause. The 75/25 arithmetic is internally consistent but not independent evidence of an optimum. No constants, physical mechanism or new mandatory cycle adopted. Next-reader use is a more direct test of a closing record than the author's impression of having consolidated it.

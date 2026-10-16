@@ -49,3 +49,7 @@ See ../evaluation/AUTORESEARCH_CONTACT.md for commit-pinned inspection of its ex
 User subsequently authorized adoption. The [bounded loop](../modules/bounded-experiment-loop.md) is now an adopted optional execution practice, linked from the README, artifact harness and evaluation protocol. Use the trial card or an equivalent existing protocol for the next measurable comparison. See ../evaluation/BOUNDED_LOOP_ADOPTION.md for a retrospective exercise on the existing evaluator repair and integrity checks. This adoption is not a new experiment or proof of improved reasoning; exploratory inquiry need not enter the loop.
 
 The later RR1 study is a new mathematical experiment under the adopted loop. It does not retroactively change the adoption exercise into a prospective trial or validate reasoning effectiveness.
+
+## HPGM post intake
+
+See [HPGM_POST_CONTACT.md](../evaluation/HPGM_POST_CONTACT.md) for the user's unvetted earlier post, preserved original, relation to current loops, arithmetic check and limited primary-source contact. Six-phase workflow ideas remain available as a candidate framing; universal ratios, cycle constants, calibration effects and physical analogies remain unverified. No additional cycle or core change was installed. The proposed label/operation/timing comparison has not run.
