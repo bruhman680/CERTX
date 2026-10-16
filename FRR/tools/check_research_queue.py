@@ -14,6 +14,7 @@ def check_queue(queue, root):
         raise ValueError('Duplicate queue ID')
     statuses = set(queue['status_values'])
     complete = {'completed_prior_scope', 'instrument_checked'}
+    has_contact_record = complete | {'partial_contact'}
     for entry in entries:
         if entry['status'] not in statuses or type(entry['priority']) is not int:
             raise ValueError('Invalid status or priority')
@@ -22,7 +23,7 @@ def check_queue(queue, root):
         for field in ['question', 'comparison', 'metrics', 'title']:
             if not entry[field]:
                 raise ValueError(f'Missing {field}: {entry["id"]}')
-        if (entry['status'] in complete) != bool(entry['result']):
+        if (entry['status'] in has_contact_record) != bool(entry['result']):
             raise ValueError(f'Status/result mismatch: {entry["id"]}')
         for field in ['source', 'protocol', 'result']:
             if entry.get(field):
@@ -32,7 +33,7 @@ def check_queue(queue, root):
                     raise ValueError(f'Missing or invalid local {field}: {entry["id"]}')
         if not set(entry['depends_on']) <= set(by_id) or entry['id'] in entry['depends_on']:
             raise ValueError(f'Invalid dependencies: {entry["id"]}')
-        if entry['status'] in {'blocked_inputs', 'awaiting_url'} and not entry['needs']:
+        if entry['status'] in {'blocked_inputs', 'awaiting_url', 'partial_contact'} and not entry['needs']:
             raise ValueError('Blocked entry lacks stated missing input')
     done, active = set(), set()
 
@@ -51,6 +52,7 @@ def check_queue(queue, root):
         visit(item)
     return dict(entries=len(entries), completed_prior_contacts=sum(e['status']=='completed_prior_scope' for e in entries),
                 checked_instruments=sum(e['status']=='instrument_checked' for e in entries),
+                partial_contacts=sum(e['status']=='partial_contact' for e in entries),
                 pending=sum(e['status'] not in complete for e in entries),
                 dependencies_acyclic=True, local_references_resolve=True)
 

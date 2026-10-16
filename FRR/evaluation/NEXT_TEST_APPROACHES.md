@@ -68,3 +68,7 @@ Compare natural conditioning, independent visible resets, fixed-environment rese
 For the next bounded comparison, use ../modules/bounded-experiment-loop.md and ../examples/bounded-trial-card.md, or an existing protocol with equivalent fields. The adoption exercise in BOUNDED_LOOP_ADOPTION.md is retrospective and does not count as executing any of these proposed experiments. Preserve rejected candidates and initial evaluator versions.
 
 RR1 in RESET_READER_STUDY.md subsequently executes the calibrated reset-reader part for finite toy models. The source reversal disappears when age/preparation assumptions are held fixed, while a small counterexample occurs in one additional kernel. Next distinguish unknown-preparation mixture inference from explicitly supplied provenance, and evaluate any real-agent retrieval intervention separately. Do not treat more context alone as the causal variable when reader assumptions also change.
+
+## Subreddit-derived directions
+
+See SUBREDDIT_FIRST_PASS.md and queue entries ARCHIVE-01/FIELD-01. Test whether rewrites preserve claim status, conditions and optional obligations; separately test verified versus biased/stale shared readouts with coordination and correctness scored apart. The first pass covers six selected posts, not the full subreddit. No behavioral experiment ran in that intake. Already-inspected posts can be development material but not relabeled independent untouched confirmation.

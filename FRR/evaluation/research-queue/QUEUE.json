@@ -9,7 +9,8 @@
     "protocol_draft",
     "queued",
     "blocked_inputs",
-    "awaiting_url"
+    "awaiting_url",
+    "partial_contact"
   ],
   "entries": [
     {
@@ -667,7 +668,7 @@
       "id": "SOURCE-REDDIT",
       "title": "Subreddit timeline and idea scouting",
       "kind": "source_intake",
-      "status": "awaiting_url",
+      "status": "partial_contact",
       "priority": 1,
       "source": "evaluation/HPGM_POST_CONTACT.md",
       "question": "What earlier ideas, corrections and unexplored directions can inform current work?",
@@ -678,7 +679,55 @@
         "obsolete/current separation"
       ],
       "needs": [
-        "User-provided subreddit URL"
+        "Broader topic/permalink coverage; first pass covers six selected pages only",
+        "Exact timestamps and edit histories not obtained; public JSON listing returned 403"
+      ],
+      "depends_on": [],
+      "result": "evaluation/SUBREDDIT_FIRST_PASS.md",
+      "url": "https://www.reddit.com/r/ImRightAndYoureWrong/"
+    },
+    {
+      "id": "ARCHIVE-01",
+      "title": "Claim scope across rewrites",
+      "kind": "test_family",
+      "status": "queued",
+      "priority": 2,
+      "source": "evaluation/SUBREDDIT_FIRST_PASS.md",
+      "question": "Do changes in style or representation silently change evidence status, conditions or optional obligations?",
+      "comparison": "Controlled rewrites with source conditions held fixed, and a separate factor deliberately changing scope; evaluate subsequent fresh-reader use.",
+      "metrics": [
+        "Preserved qualifications",
+        "unsupported promotion",
+        "source/version selection",
+        "appropriate continuation",
+        "cost"
+      ],
+      "needs": [
+        "Prospective protocol and frozen task/generator definitions",
+        "Independent source-based evaluation; already-read posts are development material only"
+      ],
+      "depends_on": [],
+      "result": null
+    },
+    {
+      "id": "FIELD-01",
+      "title": "Shared readout validity versus coordination",
+      "kind": "test_family",
+      "status": "queued",
+      "priority": 2,
+      "source": "evaluation/SUBREDDIT_FIRST_PASS.md",
+      "question": "Does a shared field improve correctness or merely coordination when its readout is biased or stale?",
+      "comparison": "Verified, biased, stale and absent aggregate readouts, with underlying evidence access and budgets controlled.",
+      "metrics": [
+        "Coordination",
+        "task correctness",
+        "evidence use",
+        "useful diversity",
+        "cost"
+      ],
+      "needs": [
+        "Prospective protocol and frozen task/generator definitions",
+        "Independent source-based evaluation; already-read posts are development material only"
       ],
       "depends_on": [],
       "result": null
