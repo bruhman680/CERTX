@@ -39,3 +39,7 @@ See ../evaluation/NOTICING_SPACE_REVIEW.md and ../lineage/noticings/FRAME_RELEAS
 ## Wind-down after fresh-reader pilot
 
 See ../evaluation/RECOVERY_PILOT_REPORT.md. Twelve fresh reader contexts completed a four-arm, three-hop authored pilot; ordinary and full-FRR guidance both retained central corrections. Some scope details were lost in one summary-only chain; no general efficacy result. An incomplete scorer receipt was repaired with original/revised reviews preserved. Current stopping basis: enough exploratory contact for this pulse; harder independent tasks and matched-cost evaluation remain pending. Core runtime/schema unchanged.
+
+## Latest source contact: Karpathy autoresearch
+
+See ../evaluation/AUTORESEARCH_CONTACT.md for commit-pinned inspection of its experiment loop, evaluation and recordkeeping. Optional adaptation is ../modules/bounded-experiment-loop.md. No upstream training or FRR comparison executed; core unchanged. Future continuation/retrieval work can use this bounded loop while preserving rejected trials.

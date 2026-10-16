@@ -72,3 +72,7 @@ Actual fresh-agent output pilot completed; see ../evaluation/RECOVERY_PILOT_REPO
 ## Claude relay: distinctions across a read
 
 Four supplied scripts executed; source originals preserved. See ../evaluation/CLAUDE_RELAY_SYNTHESIS.md. Noticing: fixed counts can conceal changing memberships, aggregate flux can conceal opposing routes, and the same present value can conceal different reset preparations. Related compression questions, not a common physical law. Preserve the relay and its corrections together.
+
+## Autoresearch contact: selected work versus preserved inquiry
+
+Read Karpathy autoresearch at commit 228791fb499afffb54b46200aca536f79142f117. See ../evaluation/AUTORESEARCH_CONTACT.md. Optional candidate/evaluator/record separation saved in ../modules/bounded-experiment-loop.md. The working branch can advance selectively while the evidence archive preserves failed or temporarily worse ideas. No GPU trial or FRR efficacy experiment was run. This is a bounded execution aid, not an automatic moving context field or a demonstrated swarm mechanism.
