@@ -1,5 +1,7 @@
 # Better test approaches — settled notes, 5 October 2026
 
+Current navigation: the user has reopened exploration. The [research queue](research-queue/README.md) supplies current priorities, dependencies and status, with [QUEUE.json](research-queue/QUEUE.json) as its machine-readable source. The original dormant/settled instructions below describe the older checkpoint; they are not a current request to stop. Historical proposals remain preserved, and queued does not mean executed.
+
 Saved at the user's request. These are proposed tests, not executed results. Source context: [research map](../lineage/RESEARCH_MAP.md). Keep the inquiry dormant until the user reopens it; no further searches or experiments are required now.
 
 ## Substrate continuity and future readers

@@ -14,6 +14,8 @@ Latest expansion: [boundaries, substrate memory, and reopening](EXPANSION.md), w
 
 For a bounded, measurable experiment, use the adopted optional [experiment loop](modules/bounded-experiment-loop.md) and [trial card](examples/bounded-trial-card.md), or an existing protocol supplying the same information. Preserve candidates and failed trials separately from the selected working version; version evaluator repairs explicitly. The [adoption record](evaluation/BOUNDED_LOOP_ADOPTION.md) explains the retrospective checks and the untested benefits. Open exploration does not require this form.
 
+Read the [research queue](evaluation/research-queue/README.md) for current proposed tests, dependencies and missing inputs. It is a saved plan, not a running scheduler. The HPGM comparison is a protocol draft; the forecast scorer has passed software fixtures, not an agent-performance trial.
+
 The files can be used manually with an assistant or incorporated into an application. This release does not call an API, host a service, or automatically update external documents.
 
 ## Contents

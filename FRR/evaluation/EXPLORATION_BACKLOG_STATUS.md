@@ -1,5 +1,7 @@
 # Exploration backlog status
 
+Current test navigation: [research queue](research-queue/README.md) consolidates the HPGM proposals and recent follow-ups, with links to the older families in this inventory. Its statuses distinguish prior results, checked instrumentation, protocol drafts and unexecuted work. This inventory remains the broader scope map, not a task scheduler.
+
 Current checkpoint after pre-refinement review and optional artifact-harness intake. This reconciles recorded work; it is not a fresh reproduction of every result. Older queued notes remain historical; later status below supersedes their current-state interpretation.
 
 ## Reusable guidance actually saved
@@ -28,6 +30,7 @@ Current checkpoint after pre-refinement review and optional artifact-harness int
 | Harness, continuation, public record | Files, checks, GitHub branch, pre-refinement review, Reddit draft and adopted optional execution guidance | Implement/test automatic host services and actual execution orchestration; saved guidance does not supply a running service |
 | Optional autoresearch loop | User-authorized procedure adopted; trial card, retrospective evaluator-repair record and integrity checks; see BOUNDED_LOOP_ADOPTION.md | Prospective quality/cost comparison and any actual scheduler or automated record service remain unimplemented |
 | Reset-reader calibration (RR1) | Prospective 675-cell finite-history comparison; matched information ordering, preparation penalties, failed source reversal prediction and a small additional-kernel counterexample; see RESET_READER_STUDY.md | Unknown-preparation mixture readers, independent model families and actual-agent provenance/history comparison; no general FRR efficacy claim |
+| HPGM gates, labels and timing | Unvetted post preserved and reviewed; all explicit test directions queued; HG1 protocol drafted and probability-scoring software checked | Independent task packets, exact prompts, scoped budgeted actor/reader run; calibration, timing, phase ratios and cross-family claims remain untested |
 | General FRR effectiveness | Authored dev/held-out protocol and structural checks | Matched ordinary/compact/full/checkpoint model evaluation on independent tasks with quality/cost measurements |
 
 ## What is resolved enough to move on

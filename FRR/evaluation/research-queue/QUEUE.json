@@ -1,0 +1,687 @@
+{
+  "version": "0.1",
+  "scope": "All explicit test directions in HPGM_POST_CONTACT plus recent relay/RR1 follow-ups and linked older test families. Older details remain canonical in NEXT_TEST_APPROACHES and EXPLORATION_BACKLOG_STATUS. Entries can be families, not individual run schedules.",
+  "execution": "Saved research queue, not an automatic scheduler. A queued entry has no executed scientific result. Instrument checks are separately labeled.",
+  "status_values": [
+    "completed_prior_scope",
+    "instrument_checked",
+    "prepared_unchecked",
+    "protocol_draft",
+    "queued",
+    "blocked_inputs",
+    "awaiting_url"
+  ],
+  "entries": [
+    {
+      "id": "PRIOR-RR1",
+      "title": "Reset-reader finite comparison",
+      "kind": "prior_contact",
+      "status": "completed_prior_scope",
+      "priority": 0,
+      "source": "evaluation/RESET_READER_STUDY.md",
+      "question": "Preparation assumptions versus retained history.",
+      "comparison": "675 finite toy cells; preserves failed source prediction.",
+      "metrics": [
+        "Scoped numerical results; no actual-agent efficacy"
+      ],
+      "needs": [],
+      "depends_on": [],
+      "result": "evaluation/RESET_READER_STUDY.md"
+    },
+    {
+      "id": "PRIOR-RECOVERY",
+      "title": "Fresh-reader recovery pilot",
+      "kind": "prior_contact",
+      "status": "completed_prior_scope",
+      "priority": 0,
+      "source": "evaluation/RECOVERY_PILOT_REPORT.md",
+      "question": "Can fresh readers preserve corrections through authored handoffs?",
+      "comparison": "Four arms and three hops, one chain per arm.",
+      "metrics": [
+        "Corrections retained; detail omissions; evaluator-input repair"
+      ],
+      "needs": [],
+      "depends_on": [],
+      "result": "evaluation/RECOVERY_PILOT_REPORT.md"
+    },
+    {
+      "id": "CAL-TOOLS",
+      "title": "Forecast scoring instrumentation",
+      "kind": "instrument",
+      "status": "instrument_checked",
+      "priority": 1,
+      "source": "evaluation/HPGM_POST_CONTACT.md",
+      "question": "Can we score explicit probability forecasts without equating Brier loss with calibration?",
+      "comparison": "Known-answer software fixtures and rejection of invalid inputs.",
+      "metrics": [
+        "Brier loss; exact-forecast-group descriptive decomposition"
+      ],
+      "needs": [],
+      "depends_on": [],
+      "result": "evaluation/research-queue/FORECAST_SOFTWARE_CHECKS.txt"
+    },
+    {
+      "id": "HPGM-01",
+      "title": "Operations versus phase labels",
+      "kind": "agent_experiment",
+      "status": "protocol_draft",
+      "priority": 1,
+      "source": "evaluation/HPGM_POST_CONTACT.md",
+      "question": "Do operations help, and do the HPGM names add anything?",
+      "comparison": "Competent ordinary, generic continuation, functional checkpoints, identical checkpoints with HPGM names.",
+      "metrics": [
+        "Correctness",
+        "unsupported revisions",
+        "source use",
+        "realized cost"
+      ],
+      "needs": [
+        "Independent cases and source-grounded answer keys",
+        "Freeze actor packets and scoring",
+        "Instrument model/settings/cost and exposure"
+      ],
+      "depends_on": [
+        "CAL-TOOLS"
+      ],
+      "result": null,
+      "protocol": "evaluation/hpgm-gates-study/PROTOCOL_DRAFT.md"
+    },
+    {
+      "id": "HPGM-02",
+      "title": "ORIENT and DREAM ablation",
+      "kind": "agent_experiment",
+      "status": "queued",
+      "priority": 2,
+      "source": "evaluation/HPGM_POST_CONTACT.md",
+      "question": "Which gate operations matter and do they interact?",
+      "comparison": "2x2 pre-action orientation / post-action review, same evidence and declared budget.",
+      "metrics": [
+        "Correctness",
+        "revision quality",
+        "handoff fidelity",
+        "cost"
+      ],
+      "needs": [
+        "Freeze operational gate definitions"
+      ],
+      "depends_on": [
+        "HPGM-01"
+      ],
+      "result": null
+    },
+    {
+      "id": "HPGM-03",
+      "title": "Closing record judged by next reader",
+      "kind": "agent_experiment",
+      "status": "protocol_draft",
+      "priority": 1,
+      "source": "evaluation/HPGM_POST_CONTACT.md",
+      "question": "Does the closing artifact improve the next agent's orientation?",
+      "comparison": "Identical reader guidance; writer condition varied; reader sees only assigned final record and common task.",
+      "metrics": [
+        "Recovery of corrections",
+        "appropriate next action",
+        "scope preservation",
+        "missing-source handling",
+        "cost"
+      ],
+      "needs": [
+        "Fresh reader packets; document shared-access limitations"
+      ],
+      "depends_on": [
+        "HPGM-01"
+      ],
+      "result": null,
+      "protocol": "evaluation/hpgm-gates-study/PROTOCOL_DRAFT.md"
+    },
+    {
+      "id": "HPGM-04",
+      "title": "Review versus extra generation versus retrieval",
+      "kind": "agent_experiment",
+      "status": "queued",
+      "priority": 2,
+      "source": "evaluation/HPGM_POST_CONTACT.md",
+      "question": "Is any effect from reviewing, more generation, or new evidence?",
+      "comparison": "Hold supplied evidence fixed for extra-generation/review contrast; vary retrieval as a separate factor.",
+      "metrics": [
+        "Correctness",
+        "unsupported changes",
+        "retrieval relevance",
+        "tokens/time"
+      ],
+      "needs": [
+        "Matched evidence and explicit retrieval access"
+      ],
+      "depends_on": [
+        "HPGM-01"
+      ],
+      "result": null
+    },
+    {
+      "id": "HPGM-05",
+      "title": "Literal waiting intervention",
+      "kind": "timing_experiment",
+      "status": "queued",
+      "priority": 3,
+      "source": "evaluation/HPGM_POST_CONTACT.md",
+      "question": "Does elapsed waiting change outcomes when information and computation are held fixed?",
+      "comparison": "Prespecified zero/short delay with identical inputs and call budgets; log external changes.",
+      "metrics": [
+        "Correctness",
+        "variance",
+        "wall time",
+        "runtime/environment changes"
+      ],
+      "needs": [
+        "Defined clock and runtime state",
+        "Short nonblocking scheduling; no evidence changes"
+      ],
+      "depends_on": [
+        "HPGM-04"
+      ],
+      "result": null
+    },
+    {
+      "id": "HPGM-06",
+      "title": "Flow/pause schedule sweep",
+      "kind": "agent_experiment",
+      "status": "queued",
+      "priority": 3,
+      "source": "evaluation/HPGM_POST_CONTACT.md",
+      "question": "Is 25% review allocation useful relative to alternatives?",
+      "comparison": "Prespecified several review-budget shares under one total budget; label token allocation versus elapsed time explicitly.",
+      "metrics": [
+        "Correctness",
+        "forecast scores",
+        "throughput",
+        "realized review share"
+      ],
+      "needs": [
+        "Operational allocation unit",
+        "Separate confirmation tasks"
+      ],
+      "depends_on": [
+        "HPGM-02",
+        "HPGM-04"
+      ],
+      "result": null
+    },
+    {
+      "id": "HPGM-07",
+      "title": "Calibration and skip-review effect",
+      "kind": "agent_experiment",
+      "status": "queued",
+      "priority": 2,
+      "source": "evaluation/HPGM_POST_CONTACT.md",
+      "question": "Does omitting a defined integration operation change forecast quality or reliability?",
+      "comparison": "Gate/no-gate with matched evidence and resource caps; do not assume the post's 22%.",
+      "metrics": [
+        "Binary forecast Brier loss",
+        "event frequency",
+        "descriptive reliability/resolution",
+        "task accuracy",
+        "cost"
+      ],
+      "needs": [
+        "Observed labels for explicit forecast events",
+        "Enough repeated tasks for any population calibration inference"
+      ],
+      "depends_on": [
+        "CAL-TOOLS",
+        "HPGM-02"
+      ],
+      "result": null
+    },
+    {
+      "id": "HPGM-08",
+      "title": "Cycle frequencies and nesting",
+      "kind": "timeseries_test",
+      "status": "blocked_inputs",
+      "priority": 4,
+      "source": "evaluation/HPGM_POST_CONTACT.md",
+      "question": "Are 4.4/60 rhythms observed rather than imposed by the schedule?",
+      "comparison": "Define cycle clock and observable; compare null/surrogate traces, driven schedule, and unconstrained behavior.",
+      "metrics": [
+        "Spectra",
+        "autocorrelation",
+        "uncertainty",
+        "out-of-sample period stability"
+      ],
+      "needs": [
+        "Raw time series",
+        "Defined clock/observable",
+        "Prespecified nulls; no harmonic claim from a ratio"
+      ],
+      "depends_on": [],
+      "result": null
+    },
+    {
+      "id": "HPGM-09",
+      "title": "Architecture transfer",
+      "kind": "agent_experiment",
+      "status": "queued",
+      "priority": 4,
+      "source": "evaluation/HPGM_POST_CONTACT.md",
+      "question": "Do any measured gate effects transfer across model families?",
+      "comparison": "Frozen protocol across separately configured models, same task families; log ancestry and access.",
+      "metrics": [
+        "Task outcomes",
+        "calibration components",
+        "cost",
+        "cross-family heterogeneity"
+      ],
+      "needs": [
+        "Configured model access and budget",
+        "Frozen successful or failed first-family protocol"
+      ],
+      "depends_on": [
+        "HPGM-01",
+        "HPGM-07"
+      ],
+      "result": null
+    },
+    {
+      "id": "HPGM-10",
+      "title": "Original quantitative-claim reconstruction",
+      "kind": "source_audit",
+      "status": "blocked_inputs",
+      "priority": 4,
+      "source": "evaluation/HPGM_POST_CONTACT.md",
+      "question": "Can million-cycle, 22% and p<.001 claims be reconstructed?",
+      "comparison": "Obtain original logs, definitions, analysis code, independent-unit structure and ablation specification.",
+      "metrics": [
+        "Reproducible denominators",
+        "score definition",
+        "test assumptions",
+        "recomputed effects"
+      ],
+      "needs": [
+        "Original experiment artifacts not supplied with the post"
+      ],
+      "depends_on": [],
+      "result": null
+    },
+    {
+      "id": "HPGM-11",
+      "title": "Phase count and ordering",
+      "kind": "agent_experiment",
+      "status": "queued",
+      "priority": 3,
+      "source": "evaluation/HPGM_POST_CONTACT.md",
+      "question": "Do six labels or one order add value beyond the same operations?",
+      "comparison": "Group identical checks into fewer stages; compare dependency-respecting orders without changing evidence or work.",
+      "metrics": [
+        "Task success",
+        "overhead",
+        "missed checks",
+        "continuation"
+      ],
+      "needs": [
+        "Fixed operation set and valid order constraints"
+      ],
+      "depends_on": [
+        "HPGM-01",
+        "HPGM-02"
+      ],
+      "result": null
+    },
+    {
+      "id": "HPGM-12",
+      "title": "Adaptive versus fixed gates",
+      "kind": "agent_experiment",
+      "status": "queued",
+      "priority": 3,
+      "source": "evaluation/HPGM_POST_CONTACT.md",
+      "question": "Can observable failures trigger useful review at lower cost?",
+      "comparison": "Fixed gate schedule versus prespecified triggers based on observable errors/missing evidence, matched intervention caps.",
+      "metrics": [
+        "Correction benefit",
+        "unnecessary reviews",
+        "false triggers",
+        "realized cost"
+      ],
+      "needs": [
+        "Triggers calibrated outside confirmation tasks"
+      ],
+      "depends_on": [
+        "HPGM-02",
+        "HPGM-04"
+      ],
+      "result": null
+    },
+    {
+      "id": "HPGM-13",
+      "title": "Physical analogy boundary",
+      "kind": "theory_audit",
+      "status": "blocked_inputs",
+      "priority": 5,
+      "source": "evaluation/HPGM_POST_CONTACT.md",
+      "question": "What operational observations would distinguish a time-crystal claim from an imposed workflow?",
+      "comparison": "Specify drive, observable and symmetry claim before any physical analogy is promoted.",
+      "metrics": [
+        "Definition consistency",
+        "discriminating predictions"
+      ],
+      "needs": [
+        "Actual physical or formal model; repeated labels alone are insufficient"
+      ],
+      "depends_on": [],
+      "result": null
+    },
+    {
+      "id": "RR2",
+      "title": "Unknown reset-preparation reader",
+      "kind": "numerical_experiment",
+      "status": "queued",
+      "priority": 1,
+      "source": "evaluation/RESET_READER_STUDY.md",
+      "question": "Can a reader average over unknown preparation protocols, and where does conditional risk remain?",
+      "comparison": "Known preparation, declared mixture over preparations, confident wrong preparation; no new kernel tuning.",
+      "metrics": [
+        "Expected log risk",
+        "per-preparation risk",
+        "history and metadata contributions"
+      ],
+      "needs": [
+        "Prospective mixture/prior rule and acceptance conditions"
+      ],
+      "depends_on": [
+        "PRIOR-RR1"
+      ],
+      "result": null
+    },
+    {
+      "id": "MEM-01",
+      "title": "Probability-weighted backward states",
+      "kind": "numerical_experiment",
+      "status": "queued",
+      "priority": 2,
+      "source": "evaluation/RELAY_LIFE_AUDIT.md",
+      "question": "How do backward support, multiplicity and probability partitions differ?",
+      "comparison": "Fixed finite Life system under separately declared initial and stationary ensembles.",
+      "metrics": [
+        "Membership changes",
+        "predictive sufficiency",
+        "ensemble dependence"
+      ],
+      "needs": [
+        "Explicit ensemble and time question"
+      ],
+      "depends_on": [],
+      "result": null
+    },
+    {
+      "id": "MEM-02",
+      "title": "Boundary-channel identity and dissipation",
+      "kind": "numerical_experiment",
+      "status": "queued",
+      "priority": 2,
+      "source": "evaluation/RELAY_THERMO_AUDIT.md",
+      "question": "Does recording route identity recover irreversibility erased by flux aggregation?",
+      "comparison": "Lumped labels versus boundary-channel record; histories matched at declared physical time.",
+      "metrics": [
+        "Path KL",
+        "channel aggregation loss",
+        "physical-time conversion"
+      ],
+      "needs": [
+        "Observation/clock convention fixed; preserve binary control"
+      ],
+      "depends_on": [],
+      "result": null
+    },
+    {
+      "id": "MEM-03",
+      "title": "Robust mixture recovery",
+      "kind": "numerical_experiment",
+      "status": "queued",
+      "priority": 2,
+      "source": "evaluation/RELAY_PRONY_AUDIT.md",
+      "question": "Do more probe counts and model checks improve recovery under near-collision or wrong response laws?",
+      "comparison": "Four-point versus overdetermined fits; held-out probe counts; one/two components; nonexponential/coupled rivals.",
+      "metrics": [
+        "All-fit failure rate",
+        "held-out prediction",
+        "parameter ambiguity",
+        "carrier-label limits"
+      ],
+      "needs": [
+        "Estimator comparison and data-generating laws fixed"
+      ],
+      "depends_on": [],
+      "result": null
+    },
+    {
+      "id": "MEM-04",
+      "title": "Real-agent provenance and moving context",
+      "kind": "agent_experiment",
+      "status": "queued",
+      "priority": 2,
+      "source": "evaluation/RESET_READER_STUDY.md",
+      "question": "Do correct, missing and wrong source-preparation metadata change use of a retained record?",
+      "comparison": "Matched summaries/context lengths with randomized provenance accuracy and retrievable originals.",
+      "metrics": [
+        "Task correctness",
+        "source use",
+        "false certainty",
+        "retrieval/cost"
+      ],
+      "needs": [
+        "Independent task families",
+        "Explicit knowledge/access treatment"
+      ],
+      "depends_on": [
+        "HPGM-03",
+        "RR2"
+      ],
+      "result": null
+    },
+    {
+      "id": "LEGACY-01",
+      "title": "Field/log observers and probe disturbance",
+      "kind": "test_family",
+      "status": "queued",
+      "priority": 4,
+      "source": "evaluation/NEXT_TEST_APPROACHES.md",
+      "question": "Which carrier or observation preserves continuity?",
+      "comparison": "Field/log/both/mismatched records; erase/sham; probe/no-probe; delays and positions.",
+      "metrics": [
+        "Discrimination",
+        "intervention cost",
+        "action effects"
+      ],
+      "needs": [
+        "Fixed decoders and held-out generators"
+      ],
+      "depends_on": [],
+      "result": null
+    },
+    {
+      "id": "LEGACY-02",
+      "title": "Wake-to-law escape and reversibility",
+      "kind": "test_family",
+      "status": "queued",
+      "priority": 4,
+      "source": "evaluation/NEXT_TEST_APPROACHES.md",
+      "question": "When are routes merely sticky versus inaccessible?",
+      "comparison": "Maintained/decaying/unbounded reinforcement versus support deletion across horizons/interventions.",
+      "metrics": [
+        "Escape probability",
+        "waiting times",
+        "fixed-observation defect"
+      ],
+      "needs": [
+        "Valid coupled model; domain-specific thresholds"
+      ],
+      "depends_on": [],
+      "result": null
+    },
+    {
+      "id": "LEGACY-03",
+      "title": "Transformer context/cache controls",
+      "kind": "test_family",
+      "status": "queued",
+      "priority": 4,
+      "source": "evaluation/NEXT_TEST_APPROACHES.md",
+      "question": "Separate token history, cache representations, position and decoding effects.",
+      "comparison": "Invented mappings; donor/neutral contexts; positions; eviction versus complete cache rebuild; fixed logits for temperature.",
+      "metrics": [
+        "Answer probabilities",
+        "repetition",
+        "execution stability",
+        "cost"
+      ],
+      "needs": [
+        "Local model/instrumented cache access"
+      ],
+      "depends_on": [],
+      "result": null
+    },
+    {
+      "id": "LEGACY-04",
+      "title": "Optimizer consistency versus curvature",
+      "kind": "test_family",
+      "status": "queued",
+      "priority": 4,
+      "source": "evaluation/NEXT_TEST_APPROACHES.md",
+      "question": "Does the corrected controller add value beyond ordinary or curvature-informed optimization?",
+      "comparison": "Matched-gradient quadratics, independent moment/parameter resets, AdamW and informative controller baselines.",
+      "metrics": [
+        "Loss/stability",
+        "held-out feature reliance",
+        "compute"
+      ],
+      "needs": [
+        "Correct implementation; matched calibration/evaluation budgets"
+      ],
+      "depends_on": [],
+      "result": null
+    },
+    {
+      "id": "LEGACY-05",
+      "title": "General FRR effectiveness",
+      "kind": "test_family",
+      "status": "queued",
+      "priority": 4,
+      "source": "evaluation/PROTOCOL.md",
+      "question": "Does FRR improve useful behavior at acceptable cost?",
+      "comparison": "Ordinary/compact/full guidance plus a separate record-access treatment on independently authored tasks.",
+      "metrics": [
+        "Task success",
+        "errors",
+        "revision fidelity",
+        "cost"
+      ],
+      "needs": [
+        "Independent cases",
+        "Matched budgets and repeated runs",
+        "Frozen scoring"
+      ],
+      "depends_on": [],
+      "result": null
+    },
+    {
+      "id": "LEGACY-06",
+      "title": "Role rotation and evidence lineage",
+      "kind": "test_family",
+      "status": "queued",
+      "priority": 4,
+      "source": "evaluation/EXPLORATION_BACKLOG_STATUS.md",
+      "question": "Do semantic role changes help when provenance is unknown or wrong?",
+      "comparison": "Role policies with equal realized intervention budgets and explicit provenance errors.",
+      "metrics": [
+        "Task quality",
+        "recovery",
+        "wasted interventions",
+        "cost"
+      ],
+      "needs": [
+        "Actual agent-role implementation and calibrated triggers"
+      ],
+      "depends_on": [],
+      "result": null
+    },
+    {
+      "id": "LEGACY-07",
+      "title": "Swarm boundaries and scale",
+      "kind": "test_family",
+      "status": "queued",
+      "priority": 5,
+      "source": "evaluation/EXPLORATION_BACKLOG_STATUS.md",
+      "question": "Do agent groups form useful boundaries beyond constructed conductance effects?",
+      "comparison": "Reasoning-agent groups with geometry, degree, evidence and budget controls.",
+      "metrics": [
+        "Task transfer",
+        "boundary usefulness",
+        "payload retention",
+        "cost"
+      ],
+      "needs": [
+        "Runnable bounded swarm and raw logs; no inherited scale constants"
+      ],
+      "depends_on": [],
+      "result": null
+    },
+    {
+      "id": "LEGACY-08",
+      "title": "Shared-weight subspace robustness",
+      "kind": "test_family",
+      "status": "queued",
+      "priority": 5,
+      "source": "evaluation/EXPLORATION_BACKLOG_STATUS.md",
+      "question": "Does the paper's shared structure survive functional and alignment controls?",
+      "comparison": "Architecture/provenance alignment and functional preservation checks.",
+      "metrics": [
+        "Robustness",
+        "functional behavior",
+        "genealogy"
+      ],
+      "needs": [
+        "Verified paper/code availability and exact claim selected"
+      ],
+      "depends_on": [],
+      "result": null
+    },
+    {
+      "id": "LEGACY-09",
+      "title": "DecepEval actor/evaluator contact",
+      "kind": "test_family",
+      "status": "queued",
+      "priority": 5,
+      "source": "evaluation/DECEPEVAL_FRR_CONTACT.md",
+      "question": "Separate delivery of evidence, access, use, behavior and strategy.",
+      "comparison": "Matched actor/evaluator experiments with actual evidence packets and known evaluator-error controls.",
+      "metrics": [
+        "Task behavior",
+        "evidence use",
+        "judge agreement versus truth",
+        "cost"
+      ],
+      "needs": [
+        "Frozen actors/evaluators and source-aware adjudication"
+      ],
+      "depends_on": [],
+      "result": null
+    },
+    {
+      "id": "SOURCE-REDDIT",
+      "title": "Subreddit timeline and idea scouting",
+      "kind": "source_intake",
+      "status": "awaiting_url",
+      "priority": 1,
+      "source": "evaluation/HPGM_POST_CONTACT.md",
+      "question": "What earlier ideas, corrections and unexplored directions can inform current work?",
+      "comparison": "Read posts as dated sources; trace original evidence and edits; avoid counting cross-posted claims as independent support.",
+      "metrics": [
+        "Source/provenance coverage",
+        "new testable questions",
+        "obsolete/current separation"
+      ],
+      "needs": [
+        "User-provided subreddit URL"
+      ],
+      "depends_on": [],
+      "result": null
+    }
+  ]
+}

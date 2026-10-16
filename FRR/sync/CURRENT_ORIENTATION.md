@@ -4,6 +4,8 @@ Scope: FRR work on codex/frr-progress-2026-10-07, not all CERTX branches or a re
 
 ## Latest purpose
 
+Current organizational checkpoint: user asked to queue the suggested tests and offered their subreddit as a later idea/history source. See the [research queue](../evaluation/research-queue/README.md) and machine-readable QUEUE.json there. All explicit HPGM directions and recent numerical follow-ups are queued; older test families link to their existing details. HG1 is a draft, forecast-scoring software fixtures passed, and no new scientific trial ran during this preparation. The subreddit URL has not yet been supplied.
+
 Latest completed research is [RR1](../evaluation/RESET_READER_STUDY.md): a prospective finite reset-reader comparison using the adopted loop. The source reversal prediction failed under a controlled age-aware comparison; a small counterexample survived in another fixed kernel. Preserve preparation assumptions beside any history-length claim. Core unchanged; no actual-agent efficacy comparison was run. The latest bounded next contact is an unknown-preparation mixture reader or a separate real-agent provenance experiment.
 
 Latest contact: user-supplied Claude relay and four executable scripts. All four ran unchanged; independent finite-domain checks and scoped extensions are recorded in ../evaluation/CLAUDE_RELAY_SYNTHESIS.md. Thermodynamic ring rebuild is now reproduced; broader physical interpretation remains open. Core guidance unchanged.
