@@ -43,3 +43,5 @@ See ../evaluation/RECOVERY_PILOT_REPORT.md. Twelve fresh reader contexts complet
 ## Latest source contact: Karpathy autoresearch
 
 See ../evaluation/AUTORESEARCH_CONTACT.md for commit-pinned inspection of its experiment loop, evaluation and recordkeeping. Optional adaptation is ../modules/bounded-experiment-loop.md. No upstream training or FRR comparison executed; core unchanged. Future continuation/retrieval work can use this bounded loop while preserving rejected trials.
+
+User subsequently authorized adoption. The [bounded loop](../modules/bounded-experiment-loop.md) is now an adopted optional execution practice, linked from the README, artifact harness and evaluation protocol. Use the trial card or an equivalent existing protocol for the next measurable comparison. See ../evaluation/BOUNDED_LOOP_ADOPTION.md for a retrospective exercise on the existing evaluator repair and integrity checks. This adoption is not a new experiment or proof of improved reasoning; exploratory inquiry need not enter the loop.

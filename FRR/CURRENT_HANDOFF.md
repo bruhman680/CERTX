@@ -9,3 +9,5 @@ The partial publication log is sync/DEPOSIT_EVENTS.jsonl. It contains six verifi
 Core runtime0.2 and schema0.1 remain unchanged, derived from conceptual FRRv0.5. Current user direction overrides old research priorities. General effectiveness comparisons and several deferred branches remain open.
 
 Latest deposit: [Claude relay synthesis](evaluation/CLAUDE_RELAY_SYNTHESIS.md), with unchanged originals, numerical reproductions and scope corrections. Read it before interpreting older thermodynamic rebuild status as still pending.
+
+Latest operational adoption: the optional [bounded experiment loop](modules/bounded-experiment-loop.md) is available for measurable trials, with a [trial card](examples/bounded-trial-card.md) or equivalent existing protocol. Preserve failed trials and version evaluator repairs. [Adoption checks](evaluation/BOUNDED_LOOP_ADOPTION.md) use the existing pilot retrospectively; no new efficacy experiment ran. Core runtime/schema remain unchanged. Open exploration stays available without this procedure.

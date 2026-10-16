@@ -12,6 +12,8 @@ Latest expansion: [boundaries, substrate memory, and reopening](EXPANSION.md), w
 4. Ask the assistant to return record updates when a claim materially changes or at a useful checkpoint. The host validates and saves updates; the prompt itself provides no durable memory.
 5. Run the evaluation protocol before making claims about effectiveness.
 
+For a bounded, measurable experiment, use the adopted optional [experiment loop](modules/bounded-experiment-loop.md) and [trial card](examples/bounded-trial-card.md), or an existing protocol supplying the same information. Preserve candidates and failed trials separately from the selected working version; version evaluator repairs explicitly. The [adoption record](evaluation/BOUNDED_LOOP_ADOPTION.md) explains the retrospective checks and the untested benefits. Open exploration does not require this form.
+
 The files can be used manually with an assistant or incorporated into an application. This release does not call an API, host a service, or automatically update external documents.
 
 ## Contents
@@ -21,6 +23,7 @@ The files can be used manually with an assistant or incorporated into an applica
 - `examples/`: an illustrative state and a worked evaluation response.
 - `evaluation/`: development cases, held-out cases, and a scoring protocol. Keep case expectations out of the responding model's context.
 - `tools/check_package.py`: local structural validation with Python's standard library; it does not test model quality or fully implement JSON Schema validation.
+- `tools/check_bounded_loop.py`: checks the optional loop's retrospective record, preserved evidence hashes, negative integrity controls and discovery links; does not run an experiment.
 - `LINEAGE.md`: source relationship, compressions, and unresolved risks.
 
 ## Persistence contract

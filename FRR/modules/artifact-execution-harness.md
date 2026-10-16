@@ -12,3 +12,5 @@ Use for a bounded artifact task when observable completion checks help. Do not i
 6. At delivery state what was checked, what passed, what remains unresolved, and where the record is saved. Preserve historical versions and update downstream current-status references when consequential.
 
 FRR supplies the inquiry orientation, artifact pressure, scope discipline, and recoverable revision. This optional harness makes some of those obligations operational for bounded execution. A prompt alone cannot grant storage, tools, runtime control, verification, or durable memory. No efficacy claim is made for the screenshot or this module.
+
+For an actual comparison, use the adopted [bounded experiment loop](bounded-experiment-loop.md): isolate candidate and evaluator versions, preserve unsuccessful trials before rollback, and keep development selection separate from confirmation. The [trial card](../examples/bounded-trial-card.md) can reference an existing protocol rather than duplicate it. This addition comes from inspection of the actual autoresearch repository, not verification of the screenshot's attribution.

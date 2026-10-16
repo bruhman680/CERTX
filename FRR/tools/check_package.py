@@ -45,7 +45,9 @@ def references(record):
 
 def main():
     schema = json.loads((ROOT / 'state/schema.json').read_text())
-    for name in ['state/empty.json', 'examples/marker-record.json']:
+    records = ['state/empty.json', 'examples/marker-record.json',
+               'examples/bounded-loop-retrospective.json']
+    for name in records:
         record = json.loads((ROOT / name).read_text())
         check(record, schema, name)
         references(record)
@@ -65,7 +67,7 @@ def main():
                  'prompts/compact.md', 'evaluation/PROTOCOL.md',
                  'examples/worked-response.md']:
         assert (ROOT / name).read_text().strip(), name
-    print(f'Package checks passed: two inquiry records; {counts}; required documents present.')
+    print(f'Package checks passed: {len(records)} inquiry records; {counts}; required documents present.')
     print('These checks establish structural consistency, not FRR effectiveness.')
 
 

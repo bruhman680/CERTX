@@ -25,7 +25,8 @@ Current checkpoint after pre-refinement review and optional artifact-harness int
 | Transformer context | Protocol, attention-math qualifications, induction/sinks/repetition source distinctions | Actual local-model context/cache interventions and separate retrieval/repetition/stability measurements |
 | Thermodynamics | Valid Boltzmann ring rebuild reproduced from new relay; stationary path KL, channel aggregation and rate units checked; see RELAY_THERMO_AUDIT.md | Broader networks, physical interpretation and missing original eight-state implementation; no physical cost inferred from logical erasure |
 | Shared weight subspace paper | Paper read and compared with environmental-memory hypothesis | Dedicated robustness/genealogy/architecture-alignment analysis and functional preservation tests; shared weights do not imply shared writable memory |
-| Harness, continuation, public record | Files, checks, GitHub branch, pre-refinement review and Reddit draft | Implement/test optional host services and bounded execution harness; latest artifact-harness module currently local only |
+| Harness, continuation, public record | Files, checks, GitHub branch, pre-refinement review, Reddit draft and adopted optional execution guidance | Implement/test automatic host services and actual execution orchestration; saved guidance does not supply a running service |
+| Optional autoresearch loop | User-authorized procedure adopted; trial card, retrospective evaluator-repair record and integrity checks; see BOUNDED_LOOP_ADOPTION.md | Prospective quality/cost comparison and any actual scheduler or automated record service remain unimplemented |
 | General FRR effectiveness | Authored dev/held-out protocol and structural checks | Matched ordinary/compact/full/checkpoint model evaluation on independent tasks with quality/cost measurements |
 
 ## What is resolved enough to move on

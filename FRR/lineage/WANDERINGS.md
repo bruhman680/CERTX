@@ -76,3 +76,7 @@ Four supplied scripts executed; source originals preserved. See ../evaluation/CL
 ## Autoresearch contact: selected work versus preserved inquiry
 
 Read Karpathy autoresearch at commit 228791fb499afffb54b46200aca536f79142f117. See ../evaluation/AUTORESEARCH_CONTACT.md. Optional candidate/evaluator/record separation saved in ../modules/bounded-experiment-loop.md. The working branch can advance selectively while the evidence archive preserves failed or temporarily worse ideas. No GPU trial or FRR efficacy experiment was run. This is a bounded execution aid, not an automatic moving context field or a demonstrated swarm mechanism.
+
+## Adoption: a working path and a preserved path
+
+User authorized adopting the useful execution practices. See ../evaluation/BOUNDED_LOOP_ADOPTION.md. The optional loop is integrated into saved navigation with a reusable trial card and a retrospective inquiry record for the prior continuation pilot. The original and repaired evaluator records remain intact. Integrity checks exercise changed, missing and out-of-root evidence using temporary fixtures. No fresh reasoning-effectiveness experiment occurred. The uncertainty remains concrete: this may improve organization, but its quality/cost benefit has not been measured.

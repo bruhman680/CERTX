@@ -62,3 +62,5 @@ Actual fresh-agent output pilot completed; see RECOVERY_PILOT_REPORT.md. Central
 ## Relay follow-up: preparation and membership
 
 Compare natural conditioning, independent visible resets, fixed-environment resets and joint resets under calibrated reader priors. Track full joint and visible distinguishability separately. For backward Life classes, compare actual partition membership and probability-weighted reverse states; equal class counts alone are insufficient. For noisy mixture recovery, report failed fits, held-out prediction and model-order selection beside conditional parameter errors. See CLAUDE_RELAY_SYNTHESIS.md.
+
+For the next bounded comparison, use ../modules/bounded-experiment-loop.md and ../examples/bounded-trial-card.md, or an existing protocol with equivalent fields. The adoption exercise in BOUNDED_LOOP_ADOPTION.md is retrospective and does not count as executing any of these proposed experiments. Preserve rejected candidates and initial evaluator versions.

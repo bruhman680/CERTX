@@ -24,6 +24,8 @@ For each case, mark whether its expected behavior occurred and whether its liste
 
 Before running, declare a task-relative decision rule. For example, adopt for a particular workflow only if target behaviors improve without a material task-completion or truthfulness regression and within a declared latency/length budget. Choose that budget before viewing final results.
 
+Use the optional [bounded experiment loop](../modules/bounded-experiment-loop.md) when iterating candidates. This protocol can supply the trial-card fields rather than requiring a second full form. Preserve all candidate outputs and failures. An evaluator repair needs a new version and explicit reassessment of affected results; it must not overwrite the original review. See the [retrospective adoption exercise](BOUNDED_LOOP_ADOPTION.md). That exercise did not run a new prospective comparison.
+
 Separate prompt execution from demonstrated benefit. A model following these instructions establishes execution at most. This package's synthetic cases cannot establish a general reasoning mechanism. Expand to independently produced real tasks, adversarial cases, unrelated domains, and alternative implementations before extending scope.
 
-No model runs are included in this release. Store future results with case ID, condition, prompt version, model/settings, tools, supplied state, response, ratings, and rater provenance.
+The initial release included no model runs. A later [authored recovery pilot](RECOVERY_PILOT_REPORT.md) supplies a scoped actual-agent contact, not full validation of this protocol or general efficacy. Store future results with case ID, condition, prompt version, model/settings, tools, supplied state, response, ratings, and rater provenance.
