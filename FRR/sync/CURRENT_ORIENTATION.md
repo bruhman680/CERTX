@@ -4,6 +4,8 @@ Scope: FRR work on codex/frr-progress-2026-10-07, not all CERTX branches or a re
 
 ## Latest purpose
 
+Latest contact: user-supplied Claude relay and four executable scripts. All four ran unchanged; independent finite-domain checks and scoped extensions are recorded in ../evaluation/CLAUDE_RELAY_SYNTHESIS.md. Thermodynamic ring rebuild is now reproduced; broader physical interpretation remains open. Core guidance unchanged.
+
 Examine whether opening/closing sync, preserved palimpsest layers, and optional noticing spaces support recovery, orientation, and changes of frame. User has authorized exploration and recordkeeping. Do not infer that every archived direction is currently active.
 
 ## Completed contacts
@@ -22,11 +24,13 @@ Original reports are retained. A historical assertion is evidence of what was as
 
 ## Open branches
 
-General FRR/model effectiveness; real transformer/optimizer tests; thermodynamic chain; observer placement/unknown baselines; learned provenance/held-out attribution; large-swarm emergence; shared-weight-subspace robustness. Preserve dormant directions without forcing them into active context. See ../evaluation/EXPLORATION_BACKLOG_STATUS.md; that inventory itself must be checked against later deposits.
+General FRR/model effectiveness; real transformer/optimizer tests; thermodynamic interpretation beyond the reproduced ring chain; observer placement/unknown baselines; learned provenance/held-out attribution; large-swarm emergence; shared-weight-subspace robustness. Preserve dormant directions without forcing them into active context. See ../evaluation/EXPLORATION_BACKLOG_STATUS.md; that inventory itself must be checked against later deposits.
 
 ## Next discriminating contact
 
-Matched fresh-reader continuation with archive-only, summary-only and summary+verified-history conditions. Include obsolete summaries, corrections, paused topics and missing sources; measure factual/version accuracy, useful authorized continuation and cost. No such model comparison has yet run.
+For the relay thread: compare natural conditioning and explicit reset preparations under matched reader priors; track joint as well as visible information. Backward partition counts require membership checks, not counts alone. This supersedes the older next-contact proposal below as the latest relay-specific direction.
+
+Matched fresh-reader continuation with archive-only, summary-only and summary+verified-history conditions. Include obsolete summaries, corrections, paused topics and missing sources; measure factual/version accuracy, useful authorized continuation and cost. The later authored recovery pilot below supplies a small related comparison; the harder independent comparison remains open.
 
 ## Optional noticing contact
 

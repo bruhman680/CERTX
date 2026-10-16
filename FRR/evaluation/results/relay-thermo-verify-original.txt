@@ -1,0 +1,24 @@
+V1: correct invariants. Claim A: d_n >= 0.  Claim B: D_n <= (n-1)*sigma for every n (data processing).
+    My original T2 (d_n nondecreasing AND d_n <= sigma) is checked separately.
+ A=2.0 3-ring {01}|{2}      min d_n=-1.2e-17  max D_n/((n-1)sigma)=0.0000  d_n nondecreasing? True  max d_n/sigma=0.000
+ A=2.0 4-ring binary        min d_n=-8.5e-18  max D_n/((n-1)sigma)=0.0000  d_n nondecreasing? True  max d_n/sigma=0.000
+ A=2.0 6-ring halves        min d_n=-8.7e-18  max D_n/((n-1)sigma)=0.0156  d_n nondecreasing? True  max d_n/sigma=0.023
+ A=2.0 6-ring alternating   min d_n=-2.9e-17  max D_n/((n-1)sigma)=0.0002  d_n nondecreasing? True  max d_n/sigma=0.000
+ A=2.0 6-ring tern 2-2-2    min d_n=+1.8e-02  max D_n/((n-1)sigma)=0.9487  d_n nondecreasing? False  max d_n/sigma=1.100
+ A=2.0 6-ring tern 1-4-1    min d_n=+1.5e-02  max D_n/((n-1)sigma)=0.8275  d_n nondecreasing? True  max d_n/sigma=0.994
+ A=6.0 3-ring {01}|{2}      min d_n=-2.0e-17  max D_n/((n-1)sigma)=0.0000  d_n nondecreasing? True  max d_n/sigma=0.000
+ A=6.0 4-ring binary        min d_n=-1.9e-17  max D_n/((n-1)sigma)=0.0000  d_n nondecreasing? True  max d_n/sigma=0.000
+ A=6.0 6-ring halves        min d_n=-1.3e-17  max D_n/((n-1)sigma)=0.0114  d_n nondecreasing? False  max d_n/sigma=0.016
+ A=6.0 6-ring alternating   min d_n=-3.7e-17  max D_n/((n-1)sigma)=0.0005  d_n nondecreasing? True  max d_n/sigma=0.001
+ A=6.0 6-ring tern 2-2-2    min d_n=+1.5e-01  max D_n/((n-1)sigma)=0.9453  d_n nondecreasing? False  max d_n/sigma=1.075
+ A=6.0 6-ring tern 1-4-1    min d_n=+1.4e-01  max D_n/((n-1)sigma)=0.8251  d_n nondecreasing? True  max d_n/sigma=0.990
+
+V2: edge decomposition. First-order lumped EPR should equal the dissipation carried by block-boundary edges.
+ tern 2-2-2: sum of edge terms=0.03558 (direct sigma 0.03558); boundary-edge share=0.01786; lumped first-order=0.01786
+ tern 1-4-1: sum of edge terms=0.03558 (direct sigma 0.03558); boundary-edge share=0.01497; lumped first-order=0.01497
+
+V3: wake, env kept (e0=1). Truncated-window history models M2, M4 vs belief B (millinats), t=0,1,2,4,8
+ h=0.05  M2:   39.7   45.8   44.0   44.5   46.2   M4:   39.7   45.8   44.9   40.5   41.1   B:   39.7   45.8   44.9   41.3   35.9
+ h=0.20  M2:   63.4   75.5   52.8   49.5   49.9   M4:   63.4   75.5   64.3   45.2   43.3   B:   63.4   75.5   64.3   49.1   41.1
+ h=0.50  M2:   99.6   85.8   45.2   34.3   33.5   M4:   99.6   85.8   50.6   29.1   27.4   B:   99.6   85.8   50.6   29.4   27.0
+ h=1.00  M2:  137.7    0.0    0.0    0.0    0.0   M4:  137.7    0.0   -0.0    0.0    0.0   B:  137.7    0.0    0.0    0.0    0.0

@@ -1,0 +1,25 @@
+T1 N=3 A=0: |pi - Boltzmann|max=5.32e-14  EPR=1.29e-17
+T1 N=4 A=0: |pi - Boltzmann|max=1.09e-14  EPR=1.24e-17
+T1 N=6 A=0: |pi - Boltzmann|max=6.38e-14  EPR=6.15e-18
+
+fraction of true EPR recovered by forward/reversed word statistics (d_n / sigma), A=2
+3-ring {01}|{2}  (binary)          sigma=0.15566 lumped1=0.00000 d_2=0.00000 | n2:0.000 n3:0.000 n4:-0.000 n6:0.000 n8:-0.000 n10:0.000 n12:0.000 n14:-0.000 | mono=True <=sigma=True
+4-ring {01}|{23} (binary)          sigma=0.08079 lumped1=0.00000 d_2=0.00000 | n2:0.000 n3:-0.000 n4:-0.000 n6:-0.000 n8:0.000 n10:-0.000 n12:-0.000 n14:-0.000 | mono=True <=sigma=True
+6-ring {012}|{345} (binary)        sigma=0.03558 lumped1=0.00000 d_2=0.00000 | n2:0.000 n3:0.000 n4:-0.000 n6:0.016 n8:0.021 n10:0.023 n12:0.023 n14:0.023 | mono=True <=sigma=True
+6-ring alternating (binary)        sigma=0.03558 lumped1=0.00000 d_2=0.00000 | n2:0.000 n3:-0.000 n4:0.000 n6:0.000 n8:0.000 n10:0.000 n12:0.000 n14:0.000 | mono=True <=sigma=True
+6-ring {01}|{23}|{45} (ternary)    sigma=0.03558 lumped1=0.01786 d_2=0.01786 | n2:0.502 n3:1.100 n4:0.986 n5:1.002 n6:1.000 n7:1.000 n8:1.000 n9:1.000 | mono=False <=sigma=False
+6-ring {0}|{1,2,3,4}|{5} (tern.)   sigma=0.03558 lumped1=0.01497 d_2=0.01497 | n2:0.421 n3:0.670 n4:0.760 n5:0.885 n6:0.935 n7:0.971 n8:0.985 n9:0.994 | mono=True <=sigma=True
+
+affinity sweep, 6-ring {012}|{345} binary
+  A=0.5                            sigma=0.00225 lumped1=0.00000 d_2=0.00000 | n2:0.000 n4:0.000 n8:0.022 n14:0.024 | mono=True <=sigma=True
+  A=1.0                            sigma=0.00897 lumped1=0.00000 d_2=0.00000 | n2:0.000 n4:0.000 n8:0.022 n14:0.024 | mono=True <=sigma=True
+  A=2.0                            sigma=0.03558 lumped1=0.00000 d_2=0.00000 | n2:0.000 n4:-0.000 n8:0.021 n14:0.023 | mono=True <=sigma=True
+  A=4.0                            sigma=0.13864 lumped1=0.00000 d_2=0.00000 | n2:0.000 n4:0.000 n8:0.019 n14:0.020 | mono=True <=sigma=True
+  A=6.0                            sigma=0.29952 lumped1=0.00000 d_2=0.00000 | n2:0.000 n4:0.000 n8:0.016 n14:0.016 | mono=False <=sigma=True
+
+affinity sweep, 6-ring ternary {01}|{23}|{45}
+  A=0.5                            sigma=0.00225 lumped1=0.00114 d_2=0.00114 | n2:0.505 n4:0.986 n6:1.000 n9:1.000 | mono=False <=sigma=False
+  A=1.0                            sigma=0.00897 lumped1=0.00452 d_2=0.00452 | n2:0.504 n4:0.986 n6:1.000 n9:1.000 | mono=False <=sigma=False
+  A=2.0                            sigma=0.03558 lumped1=0.01786 d_2=0.01786 | n2:0.502 n4:0.986 n6:1.000 n9:1.000 | mono=False <=sigma=False
+  A=4.0                            sigma=0.13864 lumped1=0.06923 d_2=0.06923 | n2:0.499 n4:0.987 n6:1.000 n9:1.000 | mono=False <=sigma=False
+  A=6.0                            sigma=0.29952 lumped1=0.14919 d_2=0.14919 | n2:0.498 n4:0.989 n6:1.000 n9:1.000 | mono=False <=sigma=False

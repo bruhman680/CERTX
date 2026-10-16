@@ -29,3 +29,36 @@ Use independently authored tasks, fresh model contexts, matched resource budgets
 ## Reopening choice
 
 Start with one declared burden rather than running every test. The nearest continuation is the substrate-only fresh-reader experiment, because it directly pressures the latest intuition. A general FRR performance claim requires the separate model comparison. Preserve original artifacts and record later changes rather than silently upgrading their evidential status.
+
+
+## 2026-10-11 — Claude shadow–echo sweeps queued
+
+See [continuation note](../lineage/CLAUDE_SHADOW_ECHO_CONTINUATION.md). Preserve originals; reproduce tables, fix coupled noisy-echo random draws in a working copy, distinguish one-step prediction counts from full predictive states, and add retained/cleared-environment reset tests. Intake only; reported outcomes remain unreproduced locally.
+
+
+## Shadow–echo reset research pulse
+
+The Claude sweeps are now reproduced and corrected in separate working copies. See SHADOW_ECHO_RESET_SYNTHESIS.md for exact predictive sufficiency, rounding counterexamples, stationary-limit distinctions, and the constructed reset/transfer test. Next contact: imperfect resets and distinct writer/reader implementations, then held-out kernels. No real-model effectiveness claim.
+
+
+## Imperfect-reset continuation
+
+Explicit private and environmental carriers now expose reset leakage; an exact erase-gate rival defeats keep/clear-only attribution. See IMPERFECT_RESET_SYNTHESIS.md and the optional modules/carrier-interventions.md contract. Source scouting separates controlled operation effects from unique mediation. Continue with blinded carrier attribution across adversarial worlds.
+
+## Current-status reconciliation
+
+See EXPLORATION_BACKLOG_STATUS.md for what actually ran and what remains proposed. Earlier intake-only or queued statuses above are historical; the latest source sweeps and carrier probes supersede those descriptions within their tested scopes. No implication that every deferred branch has been completed.
+
+
+## DecepEval research contact
+
+Method/source audit completed with scoped arithmetic and hypothetical judge-error sensitivity, not a model rerun. See DECEPEVAL_RESEARCH_SYNTHESIS.md. Preserve delivery versus use of evidence, prompt bundle versus material opportunity, behavioral versus strategic evidence, and construct validity versus judge agreement. Current FRR unchanged; matched actor/evaluator experiments proposed in DECEPEVAL_FRR_CONTACT.md.
+
+
+## Recovery pilot checkpoint
+
+Actual fresh-agent output pilot completed; see RECOVERY_PILOT_REPORT.md. Central corrections survived all four chains; source/guidance benefits not independently established. Scorer input omission corrected with preserved history. Next contact: harder heldout continuation families with source-aware scoring and measured costs.
+
+## Relay follow-up: preparation and membership
+
+Compare natural conditioning, independent visible resets, fixed-environment resets and joint resets under calibrated reader priors. Track full joint and visible distinguishability separately. For backward Life classes, compare actual partition membership and probability-weighted reverse states; equal class counts alone are insufficient. For noisy mixture recovery, report failed fits, held-out prediction and model-order selection beside conditional parameter errors. See CLAUDE_RELAY_SYNTHESIS.md.

@@ -38,3 +38,37 @@ Backward ambiguity check: a nonzero initial field prepared as m_0=m_T/rho^T repr
 ### Established relatives and changed questions
 
 The subsequent parallel source scout is indexed in [RESEARCH_MAP.md](RESEARCH_MAP.md). Stigmergy and ecological inheritance connect later recipients through changed environments; material memory supplies explicit write/read/erase protocols; observability separates distinguishable states from unique reconstructed histories. Reinforced walks separate maintained trails from unbounded reinforcement and actual support deletion. Sources also expose a productive reversal: stabilization can erase distinguishable earlier inputs, while noise preserves them in some studied materials. The live question is now what continuity preserves—historical discrimination, future behavior, or both—and under which reader, delay, and intervention conditions. These contacts do not close transport or renewal branches.
+
+
+## 2026-10-11 — Claude shadow–echo sweeps queued
+
+See [continuation note](CLAUDE_SHADOW_ECHO_CONTINUATION.md). Preserve originals; reproduce tables, fix coupled noisy-echo random draws in a working copy, distinguish one-step prediction counts from full predictive states, and add retained/cleared-environment reset tests. Intake only; reported outcomes remain unreproduced locally.
+
+
+## Shadow–echo reset research pulse
+
+The Claude sweeps are now reproduced and corrected in separate working copies. See ../evaluation/SHADOW_ECHO_RESET_SYNTHESIS.md for exact predictive sufficiency, rounding counterexamples, stationary-limit distinctions, and the constructed reset/transfer test. Next contact: imperfect resets and distinct writer/reader implementations, then held-out kernels. No real-model effectiveness claim.
+
+
+## Imperfect-reset continuation
+
+Explicit private and environmental carriers now expose reset leakage; an exact erase-gate rival defeats keep/clear-only attribution. See ../evaluation/IMPERFECT_RESET_SYNTHESIS.md and the optional modules/carrier-interventions.md contract. Source scouting separates controlled operation effects from unique mediation. Continue with blinded carrier attribution across adversarial worlds.
+
+
+## Optional artifact execution harness
+
+User authorized preserving selected practices from the Karpathy-inspired screenshot. See ../modules/artifact-execution-harness.md: saved-artifact checks, interrupted-write verification, distinct review, and concrete resumption records. Attribution/efficacy remain unverified. Core FRR unchanged; open play stays exempt from a compulsory completion checklist.
+
+
+## DecepEval research contact
+
+Method/source audit completed with scoped arithmetic and hypothetical judge-error sensitivity, not a model rerun. See ../evaluation/DECEPEVAL_RESEARCH_SYNTHESIS.md. Preserve delivery versus use of evidence, prompt bundle versus material opportunity, behavioral versus strategic evidence, and construct validity versus judge agreement. Current FRR unchanged; matched actor/evaluator experiments proposed in DECEPEVAL_FRR_CONTACT.md.
+
+
+## Recovery pilot checkpoint
+
+Actual fresh-agent output pilot completed; see ../evaluation/RECOVERY_PILOT_REPORT.md. Central corrections survived all four chains; source/guidance benefits not independently established. Scorer input omission corrected with preserved history. Next contact: harder heldout continuation families with source-aware scoring and measured costs.
+
+## Claude relay: distinctions across a read
+
+Four supplied scripts executed; source originals preserved. See ../evaluation/CLAUDE_RELAY_SYNTHESIS.md. Noticing: fixed counts can conceal changing memberships, aggregate flux can conceal opposing routes, and the same present value can conceal different reset preparations. Related compression questions, not a common physical law. Preserve the relay and its corrections together.
