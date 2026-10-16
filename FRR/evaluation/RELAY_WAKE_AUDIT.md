@@ -23,3 +23,7 @@ The extension explicitly tests the second preparation. At h=1, the conditional p
 ## Next discriminating contact
 
 Compare natural conditioning, independent visible resets, fixed-environment resets and joint resets under explicitly matched reader priors. Record both full joint distinguishability and visible distinguishability. This separates persistent information, observer access and prior mismatch without requiring a new universal memory metric.
+
+## Later controlled contact
+
+[RR1](RESET_READER_STUDY.md) subsequently compared five preparations, age-aware suffix/full readers and the older stationary one-symbol baseline. The source-kernel reversal against the stationary baseline does not survive as a pure history-length effect when the assumed preparation and elapsed-time law are held fixed. A small controlled reversal occurs in another prespecified kernel. This narrows the old comparison without changing its numerical output or establishing actual-agent transfer.

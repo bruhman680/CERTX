@@ -1,0 +1,18 @@
+{
+  "protocol_commit_before_execution": "c7d117d3ea6ccb3a1f51249746a79482cfa7b650",
+  "command": "timeout 60s python FRR/experiments/reset_reader_study.py > FRR/evaluation/reset-reader-study/RUN_STDOUT.txt 2> FRR/evaluation/reset-reader-study/RUN_STDERR.txt",
+  "exit_code": 0,
+  "measured_experiment_seconds": 7.605914798999947,
+  "measurement": "perf_counter inside the main program; excludes interpreter/import startup and output-file serialization",
+  "budget_seconds": 60,
+  "stdout": "RUN_STDOUT.txt",
+  "stderr": "RUN_STDERR.txt",
+  "launch_hashes_match_result_hashes": true,
+  "post_run_followup": "Independent rational-path selected-witness calculation added after results, no kernel tuning.",
+  "unmeasured": [
+    "LLM token counts",
+    "monetary cost",
+    "energy"
+  ],
+  "decision": "Accept the checked result for scoped interpretation. P3 failed for source; preserve that negative result. No FRR-core promotion."
+}

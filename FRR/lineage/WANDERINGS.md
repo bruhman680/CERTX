@@ -80,3 +80,7 @@ Read Karpathy autoresearch at commit 228791fb499afffb54b46200aca536f79142f117. S
 ## Adoption: a working path and a preserved path
 
 User authorized adopting the useful execution practices. See ../evaluation/BOUNDED_LOOP_ADOPTION.md. The optional loop is integrated into saved navigation with a reusable trial card and a retrospective inquiry record for the prior continuation pilot. The original and repaired evaluator records remain intact. Integrity checks exercise changed, missing and out-of-root evidence using temporary fixtures. No fresh reasoning-effectiveness experiment occurred. The uncertainty remains concrete: this may improve organization, but its quality/cost benefit has not been measured.
+
+## RR1: more history, or a different account of its beginning?
+
+The prospective study in ../evaluation/RESET_READER_STUDY.md failed its source-kernel reversal prediction once both readers used the same age/preparation assumption. A small reversal remained in another prespecified kernel, verified by exact rational path weights with high-precision logs. Matched readers benefited or tied throughout. Noticing: what appeared to be a contest between long and short memory partly compared different stories about how the present began. Preserve the failed prediction as a useful correction, not a reason to retune until it passes. Real-agent transfer is still open.

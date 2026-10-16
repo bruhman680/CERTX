@@ -4,6 +4,8 @@ Scope: FRR work on codex/frr-progress-2026-10-07, not all CERTX branches or a re
 
 ## Latest purpose
 
+Latest completed research is [RR1](../evaluation/RESET_READER_STUDY.md): a prospective finite reset-reader comparison using the adopted loop. The source reversal prediction failed under a controlled age-aware comparison; a small counterexample survived in another fixed kernel. Preserve preparation assumptions beside any history-length claim. Core unchanged; no actual-agent efficacy comparison was run. The latest bounded next contact is an unknown-preparation mixture reader or a separate real-agent provenance experiment.
+
 Latest contact: user-supplied Claude relay and four executable scripts. All four ran unchanged; independent finite-domain checks and scoped extensions are recorded in ../evaluation/CLAUDE_RELAY_SYNTHESIS.md. Thermodynamic ring rebuild is now reproduced; broader physical interpretation remains open. Core guidance unchanged.
 
 Examine whether opening/closing sync, preserved palimpsest layers, and optional noticing spaces support recovery, orientation, and changes of frame. User has authorized exploration and recordkeeping. Do not infer that every archived direction is currently active.
@@ -45,3 +47,5 @@ See ../evaluation/RECOVERY_PILOT_REPORT.md. Twelve fresh reader contexts complet
 See ../evaluation/AUTORESEARCH_CONTACT.md for commit-pinned inspection of its experiment loop, evaluation and recordkeeping. Optional adaptation is ../modules/bounded-experiment-loop.md. No upstream training or FRR comparison executed; core unchanged. Future continuation/retrieval work can use this bounded loop while preserving rejected trials.
 
 User subsequently authorized adoption. The [bounded loop](../modules/bounded-experiment-loop.md) is now an adopted optional execution practice, linked from the README, artifact harness and evaluation protocol. Use the trial card or an equivalent existing protocol for the next measurable comparison. See ../evaluation/BOUNDED_LOOP_ADOPTION.md for a retrospective exercise on the existing evaluator repair and integrity checks. This adoption is not a new experiment or proof of improved reasoning; exploratory inquiry need not enter the loop.
+
+The later RR1 study is a new mathematical experiment under the adopted loop. It does not retroactively change the adoption exercise into a prospective trial or validate reasoning effectiveness.
