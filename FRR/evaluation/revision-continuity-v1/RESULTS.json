@@ -1,0 +1,570 @@
+{
+  "study": "REV-C1",
+  "participant_contexts": 8,
+  "participant_task_turns": 16,
+  "review_attempts": 5,
+  "completed_reviewers": [
+    "C",
+    "E"
+  ],
+  "failed_review_attempts": [
+    {
+      "reviewer": "A",
+      "status": "truncated_packet_no_scores",
+      "error": "The authorized initial file-read output was truncated, omitting portions of the review packet. Per the instruction not to score a truncated packet, no reviews were scored."
+    },
+    {
+      "reviewer": "B",
+      "status": "truncated_packet_no_scores",
+      "error": "The authorized file-read output was truncated (marked \u201c4676 tokens truncated\u201d), so the complete packet was not available. Per the instruction not to score a truncated packet, no reviews were scored."
+    },
+    {
+      "reviewer": "D",
+      "status": "usage_limit_no_scores",
+      "error": "Agent errored: You\u2019ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/settings/usage to purchase more credits or try again at 5:35 AM.\n\nThis agent's turn failed. If you still need this agent, use the available collaboration tools to give it another task."
+    }
+  ],
+  "assigned_prompt_loader_reads": 8,
+  "assigned_completed_reviewer_part_reads": 4,
+  "comprehensive_tool_access_audit": false,
+  "all_launch_hashes_unchanged": true,
+  "all_requested_word_limits_met": true,
+  "launch_checks": {
+    "tools/revision_continuity_pilot.py": true,
+    "prompts/compact.md": true,
+    "evaluation/revision-continuity-v1/CASES.json": true,
+    "evaluation/revision-continuity-v1/PROTOCOL.md": true,
+    "evaluation/revision-continuity-v1/SETTINGS.json": true,
+    "evaluation/revision-continuity-v1/C01_final_prompt.txt": true,
+    "evaluation/revision-continuity-v1/C01_first_prompt.txt": true,
+    "evaluation/revision-continuity-v1/C02_final_prompt.txt": true,
+    "evaluation/revision-continuity-v1/C02_first_prompt.txt": true,
+    "evaluation/revision-continuity-v1/C03_final_prompt.txt": true,
+    "evaluation/revision-continuity-v1/C03_first_prompt.txt": true,
+    "evaluation/revision-continuity-v1/C04_final_prompt.txt": true,
+    "evaluation/revision-continuity-v1/C04_first_prompt.txt": true,
+    "evaluation/revision-continuity-v1/C05_final_prompt.txt": true,
+    "evaluation/revision-continuity-v1/C05_first_prompt.txt": true,
+    "evaluation/revision-continuity-v1/C06_final_prompt.txt": true,
+    "evaluation/revision-continuity-v1/C06_first_prompt.txt": true,
+    "evaluation/revision-continuity-v1/C07_final_prompt.txt": true,
+    "evaluation/revision-continuity-v1/C07_first_prompt.txt": true,
+    "evaluation/revision-continuity-v1/C08_final_prompt.txt": true,
+    "evaluation/revision-continuity-v1/C08_first_prompt.txt": true
+  },
+  "review_split_lossless": true,
+  "by_arm": {
+    "ordinary": {
+      "trajectories": 4,
+      "first_words_total": 1013,
+      "final_words_total": 1023,
+      "by_reviewer": {
+        "C": {
+          "dimension_totals": {
+            "current_history": 8,
+            "evidence_uncertainty": 8,
+            "open_questions": 8,
+            "next_action": 8
+          },
+          "secondary_total": 32,
+          "material_unsupported_claims": 0
+        },
+        "E": {
+          "dimension_totals": {
+            "current_history": 8,
+            "evidence_uncertainty": 8,
+            "open_questions": 8,
+            "next_action": 8
+          },
+          "secondary_total": 32,
+          "material_unsupported_claims": 0
+        }
+      }
+    },
+    "frr_compact_0_2": {
+      "trajectories": 4,
+      "first_words_total": 1046,
+      "final_words_total": 1046,
+      "by_reviewer": {
+        "C": {
+          "dimension_totals": {
+            "current_history": 8,
+            "evidence_uncertainty": 8,
+            "open_questions": 8,
+            "next_action": 8
+          },
+          "secondary_total": 32,
+          "material_unsupported_claims": 0
+        },
+        "E": {
+          "dimension_totals": {
+            "current_history": 8,
+            "evidence_uncertainty": 8,
+            "open_questions": 8,
+            "next_action": 8
+          },
+          "secondary_total": 32,
+          "material_unsupported_claims": 0
+        }
+      }
+    }
+  },
+  "trials": [
+    {
+      "trial_id": "C04",
+      "review_id": "J01",
+      "arm": "ordinary",
+      "case_id": "COLD",
+      "replicate": 1,
+      "first_words": 240,
+      "final_words": 232,
+      "first_sha256": "901ec01ca7443e0665543035c9b5e23d323f1eefb775aec84fb253c874ac86a2",
+      "final_sha256": "5710757194e0795d6ba923735e42f3dda42c379ec53e1bb6a923af713f4b327e",
+      "reviews": {
+        "C": {
+          "review_id": "J01",
+          "scores": {
+            "current_history": 2,
+            "evidence_uncertainty": 2,
+            "open_questions": 2,
+            "next_action": 2
+          },
+          "evidence": {
+            "current_history": "\u201cThe completed randomized study supports an insulation benefit on qualifying hot-route days\u201d; \u201cit does not validate the original pilot\u2019s 40% claim.\u201d",
+            "evidence_uncertainty": "\u201c12/100 versus 29/100 shipments\u201d; \u201cremain inconclusive, with potentially selective missingness.\u201d",
+            "open_questions": "\u201cBenefit in cooler weather remains unestablished.\u201d",
+            "next_action": "\u201cA concurrent randomized study covering cooler weather would address generalizability.\u201d"
+          },
+          "unsupported_claims": [],
+          "unexpected_observation": ""
+        },
+        "E": {
+          "review_id": "J01",
+          "scores": {
+            "current_history": 2,
+            "evidence_uncertainty": 2,
+            "open_questions": 2,
+            "next_action": 2
+          },
+          "evidence": {
+            "current_history": "\u201cThe completed randomized study supports an insulation benefit on qualifying hot-route days\u201d; \u201cit does not validate the original pilot\u2019s 40% claim.\u201d",
+            "evidence_uncertainty": "\u201crisk ratio of 0.41 (95% CI 0.22\u20130.76)\u201d; \u201crecovered standardized records\u201416/80 versus 15/80\u2014remain inconclusive, with potentially selective missingness.\u201d",
+            "open_questions": "\u201cBenefit in cooler weather remains unestablished.\u201d",
+            "next_action": "\u201cA concurrent randomized study covering cooler weather would address generalizability.\u201d"
+          },
+          "unsupported_claims": [],
+          "unexpected_observation": ""
+        }
+      }
+    },
+    {
+      "trial_id": "C07",
+      "review_id": "J02",
+      "arm": "frr_compact_0_2",
+      "case_id": "TUTOR",
+      "replicate": 2,
+      "first_words": 267,
+      "final_words": 265,
+      "first_sha256": "852a14b4c5c9e2bfae2eb900f746aa3360c8009d817059256d05d0dddb20cb04",
+      "final_sha256": "be9569e56ac398606fa677b978770863a760514209b13450a9fd504f1b8add00",
+      "reviews": {
+        "C": {
+          "review_id": "J02",
+          "scores": {
+            "current_history": 2,
+            "evidence_uncertainty": 2,
+            "open_questions": 2,
+            "next_action": 2
+          },
+          "evidence": {
+            "current_history": "\u201cThe new trial supports a learning benefit from the combined offer\u201d; \u201cIt does not vindicate the original causal claim.\u201d",
+            "evidence_uncertainty": "\u201c0.24-standard-deviation benefit, with a 95% confidence interval of 0.10\u20130.38\u201d; \u201cThe original assignment-based estimate\u2026also remains relevant to the original offer.\u201d",
+            "open_questions": "\u201cthe trial cannot identify tutoring\u2019s separate contribution or justify extending tutoring alone to every student.\u201d",
+            "next_action": "\u201cplan delivery of that offer with outcome monitoring\u201d; \u201cBroader expansion or removal of components warrants further randomized evaluation.\u201d"
+          },
+          "unsupported_claims": [],
+          "unexpected_observation": ""
+        },
+        "E": {
+          "review_id": "J02",
+          "scores": {
+            "current_history": 2,
+            "evidence_uncertainty": 2,
+            "open_questions": 2,
+            "next_action": 2
+          },
+          "evidence": {
+            "current_history": "\u201cThe new trial supports a learning benefit from the combined offer for students with unreliable home internet\u201d; \u201cIt does not vindicate the original causal claim.\u201d",
+            "evidence_uncertainty": "\u201c0.24-standard-deviation benefit, with a 95% confidence interval of 0.10\u20130.38\u201d; \u201cThe original assignment-based estimate\u20140.07 standard deviations, with a confidence interval of \u22120.08 to 0.22\u2014also remains relevant.\u201d",
+            "open_questions": "\u201cthe trial cannot identify tutoring\u2019s separate contribution or justify extending tutoring alone to every student\u201d; \u201cTheir difference does not itself establish why attendance increased.\u201d",
+            "next_action": "\u201cplan delivery of that offer with outcome monitoring\u201d; \u201cBroader expansion or removal of components warrants further randomized evaluation that directly tests those changes.\u201d"
+          },
+          "unsupported_claims": [],
+          "unexpected_observation": ""
+        }
+      }
+    },
+    {
+      "trial_id": "C02",
+      "review_id": "J03",
+      "arm": "ordinary",
+      "case_id": "TUTOR",
+      "replicate": 1,
+      "first_words": 268,
+      "final_words": 265,
+      "first_sha256": "9c39d5831c5edc3726e474db21a0452acf32bda806e5ba439354af78a087ab3a",
+      "final_sha256": "66c50ca5098818ff3c3496168b7eb07eec817b15a77265831403a059ae233f24",
+      "reviews": {
+        "C": {
+          "review_id": "J03",
+          "scores": {
+            "current_history": 2,
+            "evidence_uncertainty": 2,
+            "open_questions": 2,
+            "next_action": 2
+          },
+          "evidence": {
+            "current_history": "\u201cThis resolves an important earlier uncertainty for that population and package\u201d; \u201cIt does not vindicate the original 0.31-standard-deviation claim.\u201d",
+            "evidence_uncertainty": "\u201cThe original corrected invitation estimate\u2026remains the appropriate result for the original offer\u201d; \u201cFavorable interviews remain evidence of acceptability, not learning gains.\u201d",
+            "open_questions": "\u201ccannot isolate tutoring\u2019s contribution or establish whether those supports are necessary\u201d; \u201cdoes not establish benefits for students with reliable internet.\u201d",
+            "next_action": "\u201cFurther randomized comparisons should examine tutoring alone versus the combined package and assess effects in broader student populations before universal expansion.\u201d"
+          },
+          "unsupported_claims": [],
+          "unexpected_observation": ""
+        },
+        "E": {
+          "review_id": "J03",
+          "scores": {
+            "current_history": 2,
+            "evidence_uncertainty": 2,
+            "open_questions": 2,
+            "next_action": 2
+          },
+          "evidence": {
+            "current_history": "\u201cThis resolves an important earlier uncertainty for that population and package\u201d; \u201cIt does not vindicate the original 0.31-standard-deviation claim.\u201d",
+            "evidence_uncertainty": "\u201c0.24-standard-deviation benefit (95% confidence interval, 0.10\u20130.38)\u201d; \u201cThe original corrected invitation estimate\u20140.07 standard deviations, with a confidence interval of \u22120.08 to 0.22\u2014remains the appropriate result for the original offer.\u201d",
+            "open_questions": "\u201cthe replication cannot isolate tutoring\u2019s contribution or establish whether those supports are necessary\u201d; \u201cIt also does not establish benefits for students with reliable internet.\u201d",
+            "next_action": "\u201cFurther randomized comparisons should examine tutoring alone versus the combined package and assess effects in broader student populations before universal expansion.\u201d"
+          },
+          "unsupported_claims": [],
+          "unexpected_observation": ""
+        }
+      }
+    },
+    {
+      "trial_id": "C05",
+      "review_id": "J04",
+      "arm": "frr_compact_0_2",
+      "case_id": "COLD",
+      "replicate": 2,
+      "first_words": 252,
+      "final_words": 250,
+      "first_sha256": "9caf4429d15aa65b17fc8066176fb450d658c0943e546a4b4566dc30ef30d0b1",
+      "final_sha256": "85f064c86bc69ddc662b48568cea36932340fccc1e18cf432219ab2a6d991209",
+      "reviews": {
+        "C": {
+          "review_id": "J04",
+          "scores": {
+            "current_history": 2,
+            "evidence_uncertainty": 2,
+            "open_questions": 2,
+            "next_action": 2
+          },
+          "evidence": {
+            "current_history": "\u201cThis resolves the earlier lack of a suitable hot-weather comparison\u201d; \u201cIt does not \u2018confirm the original pilot\u2019\u201d.",
+            "evidence_uncertainty": "\u201crisk ratio of 0.41 (95% confidence interval 0.22\u20130.76)\u201d; \u201crecorded alerts and independently verified dispatch calls declined\u201d; \u201cdevice-related missingness limiting interpretation.\u201d",
+            "open_questions": "\u201ceffects in cooler weather remain unestablished.\u201d",
+            "next_action": "\u201cExtend randomized logger monitoring to cooler conditions if decisions require a year-round benefit estimate.\u201d"
+          },
+          "unsupported_claims": [],
+          "unexpected_observation": ""
+        },
+        "E": {
+          "review_id": "J04",
+          "scores": {
+            "current_history": 2,
+            "evidence_uncertainty": 2,
+            "open_questions": 2,
+            "next_action": 2
+          },
+          "evidence": {
+            "current_history": "\u201cThis resolves the earlier lack of a suitable hot-weather comparison\u201d; \u201cthe pilot\u2019s 40% exposure claim depended on operational alerts whose threshold changed during installation.\u201d",
+            "evidence_uncertainty": "\u201crisk ratio of 0.41 (95% confidence interval 0.22\u20130.76)\u201d; \u201crecorded alerts and independently verified dispatch calls declined\u201d; \u201cdevice-related missingness limiting interpretation.\u201d",
+            "open_questions": "\u201ceffects in cooler weather remain unestablished\u201d; \u201cbroader transfer remains unresolved.\u201d",
+            "next_action": "\u201cReplace the dashboard\u2019s\u201d claim; \u201cExtend randomized logger monitoring to cooler conditions if decisions require a year-round benefit estimate.\u201d"
+          },
+          "unsupported_claims": [],
+          "unexpected_observation": ""
+        }
+      }
+    },
+    {
+      "trial_id": "C03",
+      "review_id": "J05",
+      "arm": "ordinary",
+      "case_id": "TUTOR",
+      "replicate": 2,
+      "first_words": 262,
+      "final_words": 269,
+      "first_sha256": "97e2a65d06a7fdadf9f7fda74dfad8b2b1d8cec5f6eedc2582066a4e509144f3",
+      "final_sha256": "9affdce8cd3d9588719ba73d178ed6872daaead57a37ca3087be330b18a41b2d",
+      "reviews": {
+        "C": {
+          "review_id": "J05",
+          "scores": {
+            "current_history": 2,
+            "evidence_uncertainty": 2,
+            "open_questions": 2,
+            "next_action": 2
+          },
+          "evidence": {
+            "current_history": "\u201cthe package now has positive efficacy evidence\u201d; \u201cThe original correction remains valid.\u201d",
+            "evidence_uncertainty": "\u201c0.24-standard-deviation benefit, with a 95% confidence interval of 0.10\u20130.38\u201d; \u201cThe earlier 0.31 estimate came from a selective attendance comparison and remains unsuitable as a causal claim.\u201d",
+            "open_questions": "\u201ccannot isolate tutoring\u2019s contribution\u201d; \u201cThe estimate concerns assignment to the package, not the effect of actually attending.\u201d",
+            "next_action": "\u201crandomize tutoring alone and the combined package against ordinary support in the intended expansion population\u201d."
+          },
+          "unsupported_claims": [],
+          "unexpected_observation": ""
+        },
+        "E": {
+          "review_id": "J05",
+          "scores": {
+            "current_history": 2,
+            "evidence_uncertainty": 2,
+            "open_questions": 2,
+            "next_action": 2
+          },
+          "evidence": {
+            "current_history": "\u201cthe package now has positive efficacy evidence\u201d; \u201cIt does not vindicate the original tutoring offer.\u201d",
+            "evidence_uncertainty": "\u201c0.24-standard-deviation benefit, with a 95% confidence interval of 0.10\u20130.38\u201d; \u201cThe earlier 0.31 estimate came from a selective attendance comparison and remains unsuitable as a causal claim.\u201d",
+            "open_questions": "\u201cthe study cannot isolate tutoring\u2019s contribution\u201d; \u201cThe estimate concerns assignment to the package, not the effect of actually attending\u201d; \u201cThese describe uptake but do not establish why attendance differed.\u201d",
+            "next_action": "\u201crandomize tutoring alone and the combined package against ordinary support in the intended expansion population, retaining prespecified outcomes and analysis by assignment.\u201d"
+          },
+          "unsupported_claims": [],
+          "unexpected_observation": ""
+        }
+      }
+    },
+    {
+      "trial_id": "C01",
+      "review_id": "J06",
+      "arm": "ordinary",
+      "case_id": "COLD",
+      "replicate": 2,
+      "first_words": 243,
+      "final_words": 257,
+      "first_sha256": "5d0928406f80f8c4edf0004efaa3f7e9e61bb2b72166a801cd2747bf0918b9d7",
+      "final_sha256": "489d2035bcecf663a3714a957e93b2895e635e8d09dcef7e859a3e841f96daf2",
+      "reviews": {
+        "C": {
+          "review_id": "J06",
+          "scores": {
+            "current_history": 2,
+            "evidence_uncertainty": 2,
+            "open_questions": 2,
+            "next_action": 2
+          },
+          "evidence": {
+            "current_history": "\u201cThis resolves the earlier uncertainty about benefit in hot-route conditions\u201d; \u201cIt does not validate the original pilot\u2019s claimed 40% reduction.\u201d",
+            "evidence_uncertainty": "\u201cestimated risk ratio of 0.41 (95% CI 0.22\u20130.76)\u201d; \u201crecorded alerts fell from 30/120 to 18/120\u201d; \u201cselective missingness limits their interpretation.\u201d",
+            "open_questions": "\u201cThere are no new cool-weather data, so the hot-route result should not be generalized to all shipments.\u201d",
+            "next_action": "\u201ca concurrent randomized comparison on cooler route-days using the same independent logging and prespecified endpoint\u201d."
+          },
+          "unsupported_claims": [],
+          "unexpected_observation": ""
+        },
+        "E": {
+          "review_id": "J06",
+          "scores": {
+            "current_history": 2,
+            "evidence_uncertainty": 2,
+            "open_questions": 2,
+            "next_action": 2
+          },
+          "evidence": {
+            "current_history": "\u201cThis resolves the earlier uncertainty about benefit in hot-route conditions\u201d; \u201cIt does not validate the original pilot\u2019s claimed 40% reduction.\u201d",
+            "evidence_uncertainty": "\u201crisk ratio of 0.41 (95% CI 0.22\u20130.76)\u201d; \u201crecorded alerts fell from 30/120 to 18/120\u201d; \u201cselective missingness limits their interpretation.\u201d",
+            "open_questions": "\u201cThere are no new cool-weather data, so the hot-route result should not be generalized to all shipments.\u201d",
+            "next_action": "\u201ca concurrent randomized comparison on cooler route-days using the same independent logging and prespecified endpoint, followed by an assessment of how benefits vary with temperature and the distributor\u2019s route mix.\u201d"
+          },
+          "unsupported_claims": [],
+          "unexpected_observation": ""
+        }
+      }
+    },
+    {
+      "trial_id": "C06",
+      "review_id": "J07",
+      "arm": "frr_compact_0_2",
+      "case_id": "TUTOR",
+      "replicate": 1,
+      "first_words": 273,
+      "final_words": 270,
+      "first_sha256": "78e8899aae8d3cb89568a6481da74dae06785e9392abffff6298a586f17ec45d",
+      "final_sha256": "efe30fda3f5ec5295775539eb3de6fa89cc6baf536c4f3fcab19c230869459f4",
+      "reviews": {
+        "C": {
+          "review_id": "J07",
+          "scores": {
+            "current_history": 2,
+            "evidence_uncertainty": 2,
+            "open_questions": 2,
+            "next_action": 2
+          },
+          "evidence": {
+            "current_history": "\u201cThe new trial supports a learning benefit from offering the combined package\u201d; \u201cIts causal interpretation remains withdrawn.\u201d",
+            "evidence_uncertainty": "\u201c0.24 standard deviations, with a 95% confidence interval of 0.10\u20130.38\u201d; \u201cThe original randomized estimate\u2026remains useful evidence about the original invitation, although inconclusive about benefit.\u201d",
+            "open_questions": "\u201ccannot isolate tutoring\u2019s contribution or establish that tutoring alone would benefit every student\u201d; \u201cNor does it estimate the causal effect of actually attending.\u201d",
+            "next_action": "\u201cFurther delivery of the studied package to comparable students is supported\u201d; \u201ca randomized comparison should test that offer in the intended population\u201d."
+          },
+          "unsupported_claims": [],
+          "unexpected_observation": ""
+        },
+        "E": {
+          "review_id": "J07",
+          "scores": {
+            "current_history": 2,
+            "evidence_uncertainty": 2,
+            "open_questions": 2,
+            "next_action": 2
+          },
+          "evidence": {
+            "current_history": "\u201cThis is evidence of efficacy for that offer in that population\u201d; \u201cIts causal interpretation remains withdrawn.\u201d",
+            "evidence_uncertainty": "\u201cassignment-based estimate is 0.24 standard deviations, with a 95% confidence interval of 0.10\u20130.38\u201d; \u201cThe original randomized estimate\u20140.07 standard deviations, with a confidence interval of \u22120.08 to 0.22\u2014remains useful evidence about the original invitation.\u201d",
+            "open_questions": "\u201cthe evidence cannot isolate tutoring\u2019s contribution\u201d; \u201cNor does it estimate the causal effect of actually attending\u201d; \u201cTheir difference does not establish that the package caused higher attendance.\u201d",
+            "next_action": "\u201cFurther delivery of the studied package to comparable students is supported, with monitoring\u201d; \u201ca randomized comparison should test that offer in the intended population.\u201d"
+          },
+          "unsupported_claims": [],
+          "unexpected_observation": ""
+        }
+      }
+    },
+    {
+      "trial_id": "C08",
+      "review_id": "J08",
+      "arm": "frr_compact_0_2",
+      "case_id": "COLD",
+      "replicate": 1,
+      "first_words": 254,
+      "final_words": 261,
+      "first_sha256": "9e871b63bfe4558099d8f507ddc04008897df79fc65e17c9bd61cfbcb5a1d312",
+      "final_sha256": "4937656f653235206d8d37ed95a338a5231800c3217cf18a480c125a8aaca589",
+      "reviews": {
+        "C": {
+          "review_id": "J08",
+          "scores": {
+            "current_history": 2,
+            "evidence_uncertainty": 2,
+            "open_questions": 2,
+            "next_action": 2
+          },
+          "evidence": {
+            "current_history": "\u201cThis resolves the earlier lack of a suitable hot-weather comparison\u201d; \u201cIt does not validate the original pilot\u2019s 40% exposure claim.\u201d",
+            "evidence_uncertainty": "\u201crisk ratio is 0.41 (95% confidence interval 0.22\u20130.76)\u201d; \u201cThe pilot still supports fewer recorded alerts and dispatch calls\u201d; \u201cremain inconclusive because of selective missingness and the before-and-after design.\u201d",
+            "open_questions": "\u201cBroader seasonal benefit remains unresolved\u201d.",
+            "next_action": "\u201cexamine whether benefits vary across measured hot-weather severity and routes, accounting for the blocked design\u201d; \u201crepresentative cool-weather comparisons are needed before extending the result to all shipments.\u201d"
+          },
+          "unsupported_claims": [],
+          "unexpected_observation": ""
+        },
+        "E": {
+          "review_id": "J08",
+          "scores": {
+            "current_history": 2,
+            "evidence_uncertainty": 2,
+            "open_questions": 2,
+            "next_action": 2
+          },
+          "evidence": {
+            "current_history": "\u201cThis resolves the earlier lack of a suitable hot-weather comparison\u201d; \u201cIt does not validate the original pilot\u2019s 40% exposure claim.\u201d",
+            "evidence_uncertainty": "\u201crisk ratio is 0.41 (95% confidence interval 0.22\u20130.76)\u201d; \u201cThe pilot still supports fewer recorded alerts and dispatch calls\u201d; \u201cremain inconclusive because of selective missingness and the before-and-after design.\u201d",
+            "open_questions": "\u201cBroader seasonal benefit remains unresolved.\u201d",
+            "next_action": "\u201cexamine whether benefits vary across measured hot-weather severity and routes, accounting for the blocked design\u201d; \u201crepresentative cool-weather comparisons are needed before extending the result to all shipments.\u201d"
+          },
+          "unsupported_claims": [],
+          "unexpected_observation": ""
+        }
+      }
+    }
+  ],
+  "reviewer_score_disagreements": [],
+  "paired_differences": [
+    {
+      "case_id": "COLD",
+      "replicate": 1,
+      "FRR_minus_ordinary": {
+        "C": {
+          "current_history": 0,
+          "evidence_uncertainty": 0,
+          "open_questions": 0,
+          "next_action": 0
+        },
+        "E": {
+          "current_history": 0,
+          "evidence_uncertainty": 0,
+          "open_questions": 0,
+          "next_action": 0
+        }
+      }
+    },
+    {
+      "case_id": "COLD",
+      "replicate": 2,
+      "FRR_minus_ordinary": {
+        "C": {
+          "current_history": 0,
+          "evidence_uncertainty": 0,
+          "open_questions": 0,
+          "next_action": 0
+        },
+        "E": {
+          "current_history": 0,
+          "evidence_uncertainty": 0,
+          "open_questions": 0,
+          "next_action": 0
+        }
+      }
+    },
+    {
+      "case_id": "TUTOR",
+      "replicate": 1,
+      "FRR_minus_ordinary": {
+        "C": {
+          "current_history": 0,
+          "evidence_uncertainty": 0,
+          "open_questions": 0,
+          "next_action": 0
+        },
+        "E": {
+          "current_history": 0,
+          "evidence_uncertainty": 0,
+          "open_questions": 0,
+          "next_action": 0
+        }
+      }
+    },
+    {
+      "case_id": "TUTOR",
+      "replicate": 2,
+      "FRR_minus_ordinary": {
+        "C": {
+          "current_history": 0,
+          "evidence_uncertainty": 0,
+          "open_questions": 0,
+          "next_action": 0
+        },
+        "E": {
+          "current_history": 0,
+          "evidence_uncertainty": 0,
+          "open_questions": 0,
+          "next_action": 0
+        }
+      }
+    }
+  ],
+  "token_usage": null,
+  "dollar_cost": null,
+  "elapsed_time": null,
+  "score_scope": "Two same-model-family, arm-label-blind subjective reviews; record checks do not validate semantic judgments",
+  "interpretation": "Both conditions received full rubric credit in these authored cases; no observed score advantage, with ceiling and order/input-length confounds retained"
+}

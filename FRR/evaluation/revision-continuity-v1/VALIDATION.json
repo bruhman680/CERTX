@@ -1,0 +1,37 @@
+{
+  "scope": "Record integrity and schema controls, not reviewer validity or scientific replication",
+  "checks": 6,
+  "all_passed": true,
+  "results": [
+    {
+      "case": "none",
+      "valid_records_accepted": true
+    },
+    {
+      "case": "changed_source",
+      "rejected": true,
+      "reason": "Frozen launch artifact changed"
+    },
+    {
+      "case": "changed_memo",
+      "rejected": true,
+      "reason": "Reviewer memo differs"
+    },
+    {
+      "case": "changed_review_part",
+      "rejected": true,
+      "reason": "Review part changed"
+    },
+    {
+      "case": "invalid_score",
+      "rejected": true,
+      "reason": "Invalid ordinal score"
+    },
+    {
+      "case": "duplicate_review_id",
+      "rejected": true,
+      "reason": "Review IDs missing/duplicate"
+    }
+  ],
+  "checker_sha256": "ad10f3b0e95239f67a21f96e9ff6b22ae6e99f739efac81b38e563972c740d42"
+}
