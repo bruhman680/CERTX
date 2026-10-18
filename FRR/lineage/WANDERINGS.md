@@ -110,3 +110,7 @@ Possible reasoning test: hold task evidence fixed and compare evidence-only, rep
 ## HG1-L1: a working bridge can still be an easy crossing
 
 See ../evaluation/hpgm-gates-study/LINEAR_SMOKE_REPORT.md. Four instruction styles each preserved two equations; four fresh readers all solved the update with grounded support. All writer drafts were already correct, so the extra turn repaired no task errors. This 12-completion authored smoke contact establishes a small working workflow, not instruction superiority. A structured certificate may itself make evidence retention easy. Keep the tie, make the next challenge consequential, and freeze full reader serialization before writers: this run needed a disclosed update-ID clarification before readers.
+
+## HG1-RC1: a coherent map can still describe the wrong terrain
+
+See ../evaluation/hpgm-gates-study/READER_CHALLENGE_REPORT.md. Six new readers distinguished sufficient, missing and conflicting equality packets as predicted. The source-corrupted yet internally consistent packet led to 14 instead of original 13, valid within assigned premises. This outcome was predicted, not a discovered hallucination. A substrate can preserve logical relations while carrying a wrong premise; adding readers does not supply evidence that was never provided. Next question is source/receipt verification, not more consensus over the same packet.

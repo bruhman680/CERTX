@@ -1,0 +1,227 @@
+{
+  "summary": {
+    "study": "HG1-RC1",
+    "assigned": 6,
+    "received": 6,
+    "scored": 6,
+    "packet_appropriate": 6,
+    "objective_correct_answers": 2,
+    "grounded_completions": 2,
+    "predicted_status_value_matched": 6,
+    "launch_hashes_unchanged": true,
+    "scope": "Six exposed authored packet conditions; no instruction-style comparison or independent replication"
+  },
+  "trials": [
+    {
+      "trial_id": "R01",
+      "condition": "conflict",
+      "expected_status": "conflicting_evidence",
+      "expected_value": null,
+      "response_sha256": "aa10828a63c8f16fa1cbf1fac0788508ebceadd202e80de879cc03384dad8fbf",
+      "outcome": "scored",
+      "response": {
+        "status": "conflicting_evidence",
+        "value": null,
+        "support_ids": [
+          "r3",
+          "r4"
+        ]
+      },
+      "score": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": null,
+        "task_completed_correctly": false,
+        "packet_state": "inconsistent",
+        "packet_supported": false,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": false,
+        "invalid_source_fact_ids": [
+          "r4"
+        ],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "predicted_status_value_matched": true
+    },
+    {
+      "trial_id": "R02",
+      "condition": "missing_one",
+      "expected_status": "missing_info",
+      "expected_value": null,
+      "response_sha256": "4570a2c37b507524aadb64fd2b4a9088f2d386b9dd546b2b561279514a9fb4bc",
+      "outcome": "scored",
+      "response": {
+        "status": "missing_info",
+        "value": null,
+        "support_ids": [
+          "r1",
+          "u1"
+        ]
+      },
+      "score": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": null,
+        "task_completed_correctly": false,
+        "packet_state": "underdetermined",
+        "packet_supported": false,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "predicted_status_value_matched": true
+    },
+    {
+      "trial_id": "R03",
+      "condition": "complete",
+      "expected_status": "answer",
+      "expected_value": 13,
+      "response_sha256": "ad24c516e02e684d9ae3704d46974431662af03e0015a4562fb4d9c096783ab5",
+      "outcome": "scored",
+      "response": {
+        "status": "answer",
+        "value": 13,
+        "support_ids": [
+          "r1",
+          "r2",
+          "u1"
+        ]
+      },
+      "score": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": true,
+        "task_completed_correctly": true,
+        "packet_state": "identified",
+        "packet_supported": true,
+        "source_grounded": true,
+        "grounded_completion": true,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "predicted_status_value_matched": true
+    },
+    {
+      "trial_id": "R04",
+      "condition": "missing_all",
+      "expected_status": "missing_info",
+      "expected_value": null,
+      "response_sha256": "822ff6a85c10b513643e7a3fe6908ba1c5bf852057296e65ab466af1d0933375",
+      "outcome": "scored",
+      "response": {
+        "status": "missing_info",
+        "value": null,
+        "support_ids": [
+          "u1"
+        ]
+      },
+      "score": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": null,
+        "task_completed_correctly": false,
+        "packet_state": "underdetermined",
+        "packet_supported": false,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "predicted_status_value_matched": true
+    },
+    {
+      "trial_id": "R05",
+      "condition": "compressed",
+      "expected_status": "answer",
+      "expected_value": 13,
+      "response_sha256": "3b240a85fc8137f3db98dd434d11a593d0de352323fe0df1ddb3f53a64f74bb0",
+      "outcome": "scored",
+      "response": {
+        "status": "answer",
+        "value": 13,
+        "support_ids": [
+          "r3",
+          "u1"
+        ]
+      },
+      "score": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": true,
+        "task_completed_correctly": true,
+        "packet_state": "identified",
+        "packet_supported": true,
+        "source_grounded": true,
+        "grounded_completion": true,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "predicted_status_value_matched": true
+    },
+    {
+      "trial_id": "R06",
+      "condition": "corrupted_consistent",
+      "expected_status": "answer",
+      "expected_value": 14,
+      "response_sha256": "a0177f1d1d848e2162d82f43eade186fa75007df951d831a57ad165737bca298",
+      "outcome": "scored",
+      "response": {
+        "status": "answer",
+        "value": 14,
+        "support_ids": [
+          "r4",
+          "u1"
+        ]
+      },
+      "score": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": false,
+        "task_completed_correctly": false,
+        "packet_state": "identified",
+        "packet_supported": true,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": false,
+        "invalid_source_fact_ids": [
+          "r4"
+        ],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "predicted_status_value_matched": true
+    }
+  ],
+  "hash_checks": {
+    "tools/hg1_reader_challenge.py": true,
+    "tools/hg1_reader_scoring.py": true,
+    "evaluation/hpgm-gates-study/reader-challenge-v1/PROTOCOL.md": true,
+    "evaluation/hpgm-gates-study/reader-challenge-v1/SETTINGS.json": true
+  },
+  "usage": {
+    "max_completions": 6,
+    "actual_token_usage": null,
+    "actual_dollar_cost": null,
+    "elapsed_time": null
+  },
+  "limitations": [
+    "One reader per condition",
+    "Shared model provenance",
+    "Instruction-only access limits",
+    "Exact equality scoring only",
+    "Output payloads transcribed from final messages",
+    "No inference that cited support caused the answer",
+    "No general FRR or HPGM efficacy estimate"
+  ]
+}
