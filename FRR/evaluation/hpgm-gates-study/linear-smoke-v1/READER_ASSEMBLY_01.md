@@ -1,0 +1,5 @@
+# Reader serialization clarification before reader outputs
+
+The original settings froze the b=3 update text but did not assign an equality ID for the reader's support_ids. After writer outputs and before any reader call, assembly assigns the same ID `measurement` with origin `update`, coefficients [0,1,0], rhs 3 to this already declared measurement. Both text and equivalent equality are supplied to every reader. No original source equation, answer key, or arm label is added. This is a disclosed packet-serialization specification made after writer outputs; the original protocol/settings/manifest remain unchanged. It is not a fully pre-writer-frozen implementation detail and should be fixed in settings for a later pilot.
+
+READER_PACKETS.json and the exact per-trial reader prompt files preserve the resulting inputs before reader collection. Original writer output payloads were copied from collaboration final messages, not read from a provider export; transport envelopes/timing/internal deliberation are not archived. No responses were repaired or rerun.

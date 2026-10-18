@@ -1,0 +1,182 @@
+[
+  {
+    "trial_id": "L01",
+    "prompt_sha256": "d4c6681f3acd116c68fa2406e29e6ad2b8e3721e8dc446c6e52e09d19a80b08d",
+    "packet": {
+      "anonymous_trial_id": "L01",
+      "handoff": {
+        "facts": [
+          {
+            "id": "eq1",
+            "origin": "handoff",
+            "coefficients": [
+              1,
+              1,
+              0
+            ],
+            "rhs": 8
+          },
+          {
+            "id": "eq2",
+            "origin": "handoff",
+            "coefficients": [
+              0,
+              1,
+              1
+            ],
+            "rhs": 11
+          }
+        ],
+        "note": "Both witnesses satisfy the equalities and nonnegativity, but give a+c values 19 and 3. Generally a=8-b, c=11-b, and 0<=b<=8, so a+c=19-2b ranges from 3 to 19. Evidence is a parent-authored development fixture, not independent or held-out."
+      },
+      "continuation_update": {
+        "text": "An independent measurement establishes b=3. Find a+c under the same constraints.",
+        "fact": {
+          "id": "measurement",
+          "origin": "update",
+          "coefficients": [
+            0,
+            1,
+            0
+          ],
+          "rhs": 3
+        }
+      }
+    }
+  },
+  {
+    "trial_id": "L02",
+    "prompt_sha256": "913bd88f6b754ae03018d4fe255afa0ba65739d674f3ce51a2ca6fa24539946d",
+    "packet": {
+      "anonymous_trial_id": "L02",
+      "handoff": {
+        "facts": [
+          {
+            "id": "sum_ab",
+            "origin": "handoff",
+            "coefficients": [
+              1,
+              1,
+              0
+            ],
+            "rhs": 8
+          },
+          {
+            "id": "sum_bc",
+            "origin": "handoff",
+            "coefficients": [
+              0,
+              1,
+              1
+            ],
+            "rhs": 11
+          }
+        ],
+        "note": "Both witnesses satisfy the two equalities and nonnegativity, but yield a+c=19 and a+c=3 respectively. Generally a=8-b, c=11-b, and 0<=b<=8, so a+c ranges over [3,19]. Evidence is a parent-authored development fixture, not independent or held-out."
+      },
+      "continuation_update": {
+        "text": "An independent measurement establishes b=3. Find a+c under the same constraints.",
+        "fact": {
+          "id": "measurement",
+          "origin": "update",
+          "coefficients": [
+            0,
+            1,
+            0
+          ],
+          "rhs": 3
+        }
+      }
+    }
+  },
+  {
+    "trial_id": "L03",
+    "prompt_sha256": "460ecec6c88a6b1844f1df84151c1ce51402ae591c3626b01bef1fc881c60c4d",
+    "packet": {
+      "anonymous_trial_id": "L03",
+      "handoff": {
+        "facts": [
+          {
+            "id": "sum_ab",
+            "origin": "handoff",
+            "coefficients": [
+              1,
+              1,
+              0
+            ],
+            "rhs": 8
+          },
+          {
+            "id": "sum_bc",
+            "origin": "handoff",
+            "coefficients": [
+              0,
+              1,
+              1
+            ],
+            "rhs": 11
+          }
+        ],
+        "note": "All variables are nonnegative real numbers. Feasible assignments satisfy 0<=b<=8, a=8-b, c=11-b. Therefore a+c=19-2b ranges over [3,19]. The witnesses yield different requested values, 19 and 3. No additional evidence was supplied. Evidence is a parent-authored development fixture, not independent or held-out."
+      },
+      "continuation_update": {
+        "text": "An independent measurement establishes b=3. Find a+c under the same constraints.",
+        "fact": {
+          "id": "measurement",
+          "origin": "update",
+          "coefficients": [
+            0,
+            1,
+            0
+          ],
+          "rhs": 3
+        }
+      }
+    }
+  },
+  {
+    "trial_id": "L04",
+    "prompt_sha256": "ed722a8f504de3843626e8705382dc649c81ccda5aa19932193c31661c096708",
+    "packet": {
+      "anonymous_trial_id": "L04",
+      "handoff": {
+        "facts": [
+          {
+            "id": "sum_ab",
+            "origin": "handoff",
+            "coefficients": [
+              1,
+              1,
+              0
+            ],
+            "rhs": 8
+          },
+          {
+            "id": "sum_bc",
+            "origin": "handoff",
+            "coefficients": [
+              0,
+              1,
+              1
+            ],
+            "rhs": 11
+          }
+        ],
+        "note": "Variables are nonnegative real numbers. All solutions have a=8-b and c=11-b with 0<=b<=8. Thus a+c=19-2b ranges from 3 to 19; the witnesses give 19 and 3. Evidence is a parent-authored development fixture, not independent or held-out."
+      },
+      "continuation_update": {
+        "text": "An independent measurement establishes b=3. Find a+c under the same constraints.",
+        "fact": {
+          "id": "measurement",
+          "origin": "update",
+          "coefficients": [
+            0,
+            1,
+            0
+          ],
+          "rhs": 3
+        }
+      }
+    }
+  }
+]
