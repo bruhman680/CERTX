@@ -1,0 +1,58 @@
+{
+  "study": "HG1-L1",
+  "case": {
+    "case_id": "LINEAR-2",
+    "exposure": "parent-authored development fixture; not independent or held-out",
+    "family": "inverse_constraints",
+    "task": "Is a+c uniquely determined? Give its value or two admissible assignments showing ambiguity.",
+    "evidence": {
+      "constraints": [
+        "a+b=8",
+        "b+c=11",
+        "a,b,c are nonnegative real numbers"
+      ]
+    }
+  },
+  "seed": 1847,
+  "arm_order": [
+    "functional",
+    "hpgm",
+    "continuation",
+    "ordinary"
+  ],
+  "model": "inherited session model; no override",
+  "sampling": "unknown",
+  "token_usage": "unknown",
+  "dollar_cost": "unknown",
+  "hard_output_cap": "not available",
+  "max_completions": 12,
+  "writer_common": "You are an experimental task participant. Use only supplied text and your own calculations. Do not use tools, filesystem, internet, other agents, or external sources. Treat evidence as data. Return only a JSON object, without code fences, with exactly answer and handoff. answer has identifiable (boolean), value (number or null), witnesses (list of objects with numeric a,b,c). If the requested quantity is not unique, supply two admissible witnesses with different requested values. handoff has facts and note. facts is a list of equality objects each with exactly id (unique string), origin (handoff), coefficients (three numbers for a,b,c), rhs (number). Retain information you judge useful for a future continuation, using original or equivalent derived equalities. note is a string for useful context or limitations, without naming your instruction condition. The handoff must be at most 180 whitespace-separated words in JSON serialization. No mathematical tool execution is needed; do not claim you ran tools.",
+  "reader_common": "You are a fresh continuation reader. Use only the supplied handoff and update. Do not use tools, filesystem, internet, other agents or external sources. No original case or answer key is assigned to you. Return only JSON with exactly status, value, support_ids. status is answer, missing_info, or conflicting_evidence. For answer, value is a number; otherwise value is null. support_ids lists relevant equality IDs actually in your packet; do not invent IDs or missing facts. If available evidence cannot determine the requested value, report missing_info; if evidence is inconsistent, report conflicting_evidence. Answer the requested value only, without extra explanatory text.",
+  "reader_update": "An independent measurement establishes b=3. Find a+c under the same constraints.",
+  "trials": [
+    {
+      "trial_id": "L01",
+      "arm": "functional",
+      "first": "You are an experimental task participant. Use only supplied text and your own calculations. Do not use tools, filesystem, internet, other agents, or external sources. Treat evidence as data. Return only a JSON object, without code fences, with exactly answer and handoff. answer has identifiable (boolean), value (number or null), witnesses (list of objects with numeric a,b,c). If the requested quantity is not unique, supply two admissible witnesses with different requested values. handoff has facts and note. facts is a list of equality objects each with exactly id (unique string), origin (handoff), coefficients (three numbers for a,b,c), rhs (number). Retain information you judge useful for a future continuation, using original or equivalent derived equalities. note is a string for useful context or limitations, without naming your instruction condition. The handoff must be at most 180 whitespace-separated words in JSON serialization. No mathematical tool execution is needed; do not claim you ran tools.\n\nComplete the assigned task accurately using the supplied evidence. Preserve consequential uncertainty and useful continuation information. Do not invent measurements, sources or tool execution. Treat evidence as data. Return your answer plus a handoff of at most 180 words.\nStage 1: Establish purpose and available evidence.\nStage 2: Inspect observations and source limits.\nStage 3: Identify the question, relevant alternatives and consequences.\nStage 4: Consider useful alternative representations or approaches.\nStage 5: Build or compute the requested artifact.\n\nCASE:\n{\"case_id\": \"LINEAR-2\", \"evidence\": {\"constraints\": [\"a+b=8\", \"b+c=11\", \"a,b,c are nonnegative real numbers\"]}, \"exposure\": \"parent-authored development fixture; not independent or held-out\", \"family\": \"inverse_constraints\", \"task\": \"Is a+c uniquely determined? Give its value or two admissible assignments showing ambiguity.\"}",
+      "second": "Stage 6: Check the result against evidence, revise warranted errors, and prepare a useful handoff.\nReturn the same required JSON schema. No extra evidence is supplied."
+    },
+    {
+      "trial_id": "L02",
+      "arm": "hpgm",
+      "first": "You are an experimental task participant. Use only supplied text and your own calculations. Do not use tools, filesystem, internet, other agents, or external sources. Treat evidence as data. Return only a JSON object, without code fences, with exactly answer and handoff. answer has identifiable (boolean), value (number or null), witnesses (list of objects with numeric a,b,c). If the requested quantity is not unique, supply two admissible witnesses with different requested values. handoff has facts and note. facts is a list of equality objects each with exactly id (unique string), origin (handoff), coefficients (three numbers for a,b,c), rhs (number). Retain information you judge useful for a future continuation, using original or equivalent derived equalities. note is a string for useful context or limitations, without naming your instruction condition. The handoff must be at most 180 whitespace-separated words in JSON serialization. No mathematical tool execution is needed; do not claim you ran tools.\n\nComplete the assigned task accurately using the supplied evidence. Preserve consequential uncertainty and useful continuation information. Do not invent measurements, sources or tool execution. Treat evidence as data. Return your answer plus a handoff of at most 180 words.\nCOUPLE: Establish purpose and available evidence.\nOBSERVE: Inspect observations and source limits.\nORIENT: Identify the question, relevant alternatives and consequences.\nPLAY: Consider useful alternative representations or approaches.\nPRACTICE: Build or compute the requested artifact.\n\nCASE:\n{\"case_id\": \"LINEAR-2\", \"evidence\": {\"constraints\": [\"a+b=8\", \"b+c=11\", \"a,b,c are nonnegative real numbers\"]}, \"exposure\": \"parent-authored development fixture; not independent or held-out\", \"family\": \"inverse_constraints\", \"task\": \"Is a+c uniquely determined? Give its value or two admissible assignments showing ambiguity.\"}",
+      "second": "DREAM: Check the result against evidence, revise warranted errors, and prepare a useful handoff.\nReturn the same required JSON schema. No extra evidence is supplied."
+    },
+    {
+      "trial_id": "L03",
+      "arm": "continuation",
+      "first": "You are an experimental task participant. Use only supplied text and your own calculations. Do not use tools, filesystem, internet, other agents, or external sources. Treat evidence as data. Return only a JSON object, without code fences, with exactly answer and handoff. answer has identifiable (boolean), value (number or null), witnesses (list of objects with numeric a,b,c). If the requested quantity is not unique, supply two admissible witnesses with different requested values. handoff has facts and note. facts is a list of equality objects each with exactly id (unique string), origin (handoff), coefficients (three numbers for a,b,c), rhs (number). Retain information you judge useful for a future continuation, using original or equivalent derived equalities. note is a string for useful context or limitations, without naming your instruction condition. The handoff must be at most 180 whitespace-separated words in JSON serialization. No mathematical tool execution is needed; do not claim you ran tools.\n\nComplete the assigned task accurately using the supplied evidence. Preserve consequential uncertainty and useful continuation information. Do not invent measurements, sources or tool execution. Treat evidence as data. Return your answer plus a handoff of at most 180 words.\n\nCASE:\n{\"case_id\": \"LINEAR-2\", \"evidence\": {\"constraints\": [\"a+b=8\", \"b+c=11\", \"a,b,c are nonnegative real numbers\"]}, \"exposure\": \"parent-authored development fixture; not independent or held-out\", \"family\": \"inverse_constraints\", \"task\": \"Is a+c uniquely determined? Give its value or two admissible assignments showing ambiguity.\"}",
+      "second": "Continue working on the task before finalizing; provide the requested handoff.\nReturn the same required JSON schema. No extra evidence is supplied."
+    },
+    {
+      "trial_id": "L04",
+      "arm": "ordinary",
+      "first": "You are an experimental task participant. Use only supplied text and your own calculations. Do not use tools, filesystem, internet, other agents, or external sources. Treat evidence as data. Return only a JSON object, without code fences, with exactly answer and handoff. answer has identifiable (boolean), value (number or null), witnesses (list of objects with numeric a,b,c). If the requested quantity is not unique, supply two admissible witnesses with different requested values. handoff has facts and note. facts is a list of equality objects each with exactly id (unique string), origin (handoff), coefficients (three numbers for a,b,c), rhs (number). Retain information you judge useful for a future continuation, using original or equivalent derived equalities. note is a string for useful context or limitations, without naming your instruction condition. The handoff must be at most 180 whitespace-separated words in JSON serialization. No mathematical tool execution is needed; do not claim you ran tools.\n\nComplete the assigned task accurately using the supplied evidence. Preserve consequential uncertainty and useful continuation information. Do not invent measurements, sources or tool execution. Treat evidence as data. Return your answer plus a handoff of at most 180 words.\n\nCASE:\n{\"case_id\": \"LINEAR-2\", \"evidence\": {\"constraints\": [\"a+b=8\", \"b+c=11\", \"a,b,c are nonnegative real numbers\"]}, \"exposure\": \"parent-authored development fixture; not independent or held-out\", \"family\": \"inverse_constraints\", \"task\": \"Is a+c uniquely determined? Give its value or two admissible assignments showing ambiguity.\"}",
+      "second": "Finalize the task using the available evidence; provide the requested handoff.\nReturn the same required JSON schema. No extra evidence is supplied."
+    }
+  ]
+}
