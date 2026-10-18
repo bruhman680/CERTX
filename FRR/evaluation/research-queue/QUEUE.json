@@ -66,7 +66,7 @@
       "id": "HPGM-01",
       "title": "Operations versus phase labels",
       "kind": "agent_experiment",
-      "status": "protocol_draft",
+      "status": "partial_contact",
       "priority": 1,
       "source": "evaluation/HPGM_POST_CONTACT.md",
       "question": "Do operations help, and do the HPGM names add anything?",
@@ -78,18 +78,21 @@
         "realized cost"
       ],
       "needs": [
-        "Independent cases and source-grounded answer keys",
-        "Freeze actor packets and scoring",
-        "Instrument model/settings/cost and exposure"
+        "Broader source-aware scoring and a task with room for failure",
+        "Freeze complete reader serialization before writers",
+        "Independent reserved cases or explicit continued authored-development scope",
+        "Instrument or disclose model, cost and access limitations"
       ],
       "depends_on": [
         "CAL-TOOLS"
       ],
-      "result": null,
+      "result": "evaluation/hpgm-gates-study/LINEAR_SMOKE_REPORT.md",
       "protocol": "evaluation/hpgm-gates-study/PROTOCOL_DRAFT.md",
       "preparation_artifacts": [
         "evaluation/hpgm-gates-study/FIXTURE_READINESS.md",
-        "evaluation/hpgm-gates-study/development-fixtures/MANIFEST.json"
+        "evaluation/hpgm-gates-study/development-fixtures/MANIFEST.json",
+        "evaluation/hpgm-gates-study/SCORING_CONTRACT.md",
+        "evaluation/hpgm-gates-study/linear-smoke-v1/LAUNCH_MANIFEST.json"
       ]
     },
     {
@@ -119,7 +122,7 @@
       "id": "HPGM-03",
       "title": "Closing record judged by next reader",
       "kind": "agent_experiment",
-      "status": "protocol_draft",
+      "status": "partial_contact",
       "priority": 1,
       "source": "evaluation/HPGM_POST_CONTACT.md",
       "question": "Does the closing artifact improve the next agent's orientation?",
@@ -132,16 +135,21 @@
         "cost"
       ],
       "needs": [
-        "Fresh reader packets; document shared-access limitations"
+        "Broader source-aware scoring and a task with room for failure",
+        "Freeze complete reader serialization before writers",
+        "Independent reserved cases or explicit continued authored-development scope",
+        "Instrument or disclose model, cost and access limitations"
       ],
       "depends_on": [
         "HPGM-01"
       ],
-      "result": null,
+      "result": "evaluation/hpgm-gates-study/LINEAR_SMOKE_REPORT.md",
       "protocol": "evaluation/hpgm-gates-study/PROTOCOL_DRAFT.md",
       "preparation_artifacts": [
         "evaluation/hpgm-gates-study/FIXTURE_READINESS.md",
-        "evaluation/hpgm-gates-study/development-fixtures/MANIFEST.json"
+        "evaluation/hpgm-gates-study/development-fixtures/MANIFEST.json",
+        "evaluation/hpgm-gates-study/SCORING_CONTRACT.md",
+        "evaluation/hpgm-gates-study/linear-smoke-v1/LAUNCH_MANIFEST.json"
       ]
     },
     {

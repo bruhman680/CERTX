@@ -56,6 +56,8 @@ The later RR1 study is a new mathematical experiment under the adopted loop. It 
 
 ## HG1 design convening
 
+Subsequent scoped behavioral contact: ../evaluation/hpgm-gates-study/LINEAR_SMOKE_REPORT.md. Four styles tied on one authored linear task across 12 completions; all 4 fresh readers had grounded completion. No framework advantage demonstrated. Source/scorer launch hashes unchanged; update-ID serialization clarified after writers before readers. Bigger studies remain open. Treat the following convening paragraph as earlier preparation, not the latest run status.
+
 Six explicitly requested agent reviews sharpened the distinction between objective truth, available-evidence warrant and successful continuation. See ../evaluation/hpgm-gates-study/CONVENING_AND_NEXT_PILOT.md and READER_PACKET_CONTRACT.md in that folder. Instrument-only constructed controls do not establish behavioral effectiveness. Existing exposed fixtures remain development material; no actual-agent comparison launched. New indirect-disturbance hypothesis is preserved in lineage/WANDERINGS.md without priority change.
 
 ## HPGM post intake

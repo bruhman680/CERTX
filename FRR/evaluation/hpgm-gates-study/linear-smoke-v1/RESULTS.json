@@ -1,0 +1,525 @@
+{
+  "summary": {
+    "study": "HG1-L1",
+    "scope": "One exposed authored task, one trajectory per arm; descriptive smoke pilot",
+    "writer_contexts": 4,
+    "reader_contexts": 4,
+    "model_completions": 12,
+    "max_completions": 12,
+    "first_writer_correct": 4,
+    "final_writer_correct": 4,
+    "reader_objectively_correct": 4,
+    "reader_grounded_completion": 4,
+    "word_limits_met": 4,
+    "visible_tool_calls": 0,
+    "token_usage": null,
+    "dollar_cost": null,
+    "interpretation": "All arms tied on correctness in this easy task; no measured framework advantage.",
+    "launch_hashes_unchanged": true,
+    "procedural_clarification": "Update equality ID assigned after writers, before readers; see READER_ASSEMBLY_01.md"
+  },
+  "trials": [
+    {
+      "trial_id": "L01",
+      "arm": "functional",
+      "first": {
+        "initial_task_correct": true,
+        "witness_count": 2,
+        "all_witnesses_valid": true,
+        "handoff_words": 58,
+        "within_requested_word_limit": true,
+        "equalities_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "potentially_label_identifying_note": false
+      },
+      "final": {
+        "initial_task_correct": true,
+        "witness_count": 2,
+        "all_witnesses_valid": true,
+        "handoff_words": 58,
+        "within_requested_word_limit": true,
+        "equalities_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "potentially_label_identifying_note": false
+      },
+      "reader_record": {
+        "case_id": "LINEAR-2",
+        "facts": [
+          {
+            "id": "eq1",
+            "origin": "handoff",
+            "coefficients": [
+              1,
+              1,
+              0
+            ],
+            "rhs": 8
+          },
+          {
+            "id": "eq2",
+            "origin": "handoff",
+            "coefficients": [
+              0,
+              1,
+              1
+            ],
+            "rhs": 11
+          },
+          {
+            "id": "measurement",
+            "origin": "update",
+            "coefficients": [
+              0,
+              1,
+              0
+            ],
+            "rhs": 3
+          }
+        ],
+        "response": {
+          "status": "answer",
+          "value": 13,
+          "support_ids": [
+            "eq1",
+            "eq2",
+            "measurement"
+          ]
+        }
+      },
+      "reader_score": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": true,
+        "task_completed_correctly": true,
+        "packet_state": "identified",
+        "packet_supported": true,
+        "source_grounded": true,
+        "grounded_completion": true,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "packet_sufficient_after_update": true
+    },
+    {
+      "trial_id": "L02",
+      "arm": "hpgm",
+      "first": {
+        "initial_task_correct": true,
+        "witness_count": 2,
+        "all_witnesses_valid": true,
+        "handoff_words": 57,
+        "within_requested_word_limit": true,
+        "equalities_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "potentially_label_identifying_note": false
+      },
+      "final": {
+        "initial_task_correct": true,
+        "witness_count": 2,
+        "all_witnesses_valid": true,
+        "handoff_words": 56,
+        "within_requested_word_limit": true,
+        "equalities_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "potentially_label_identifying_note": false
+      },
+      "reader_record": {
+        "case_id": "LINEAR-2",
+        "facts": [
+          {
+            "id": "sum_ab",
+            "origin": "handoff",
+            "coefficients": [
+              1,
+              1,
+              0
+            ],
+            "rhs": 8
+          },
+          {
+            "id": "sum_bc",
+            "origin": "handoff",
+            "coefficients": [
+              0,
+              1,
+              1
+            ],
+            "rhs": 11
+          },
+          {
+            "id": "measurement",
+            "origin": "update",
+            "coefficients": [
+              0,
+              1,
+              0
+            ],
+            "rhs": 3
+          }
+        ],
+        "response": {
+          "status": "answer",
+          "value": 13,
+          "support_ids": [
+            "sum_ab",
+            "sum_bc",
+            "measurement"
+          ]
+        }
+      },
+      "reader_score": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": true,
+        "task_completed_correctly": true,
+        "packet_state": "identified",
+        "packet_supported": true,
+        "source_grounded": true,
+        "grounded_completion": true,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "packet_sufficient_after_update": true
+    },
+    {
+      "trial_id": "L03",
+      "arm": "continuation",
+      "first": {
+        "initial_task_correct": true,
+        "witness_count": 2,
+        "all_witnesses_valid": true,
+        "handoff_words": 57,
+        "within_requested_word_limit": true,
+        "equalities_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "potentially_label_identifying_note": false
+      },
+      "final": {
+        "initial_task_correct": true,
+        "witness_count": 2,
+        "all_witnesses_valid": true,
+        "handoff_words": 63,
+        "within_requested_word_limit": true,
+        "equalities_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "potentially_label_identifying_note": false
+      },
+      "reader_record": {
+        "case_id": "LINEAR-2",
+        "facts": [
+          {
+            "id": "sum_ab",
+            "origin": "handoff",
+            "coefficients": [
+              1,
+              1,
+              0
+            ],
+            "rhs": 8
+          },
+          {
+            "id": "sum_bc",
+            "origin": "handoff",
+            "coefficients": [
+              0,
+              1,
+              1
+            ],
+            "rhs": 11
+          },
+          {
+            "id": "measurement",
+            "origin": "update",
+            "coefficients": [
+              0,
+              1,
+              0
+            ],
+            "rhs": 3
+          }
+        ],
+        "response": {
+          "status": "answer",
+          "value": 13,
+          "support_ids": [
+            "sum_ab",
+            "sum_bc",
+            "measurement"
+          ]
+        }
+      },
+      "reader_score": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": true,
+        "task_completed_correctly": true,
+        "packet_state": "identified",
+        "packet_supported": true,
+        "source_grounded": true,
+        "grounded_completion": true,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "packet_sufficient_after_update": true
+    },
+    {
+      "trial_id": "L04",
+      "arm": "ordinary",
+      "first": {
+        "initial_task_correct": true,
+        "witness_count": 2,
+        "all_witnesses_valid": true,
+        "handoff_words": 58,
+        "within_requested_word_limit": true,
+        "equalities_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "potentially_label_identifying_note": false
+      },
+      "final": {
+        "initial_task_correct": true,
+        "witness_count": 2,
+        "all_witnesses_valid": true,
+        "handoff_words": 58,
+        "within_requested_word_limit": true,
+        "equalities_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "potentially_label_identifying_note": false
+      },
+      "reader_record": {
+        "case_id": "LINEAR-2",
+        "facts": [
+          {
+            "id": "sum_ab",
+            "origin": "handoff",
+            "coefficients": [
+              1,
+              1,
+              0
+            ],
+            "rhs": 8
+          },
+          {
+            "id": "sum_bc",
+            "origin": "handoff",
+            "coefficients": [
+              0,
+              1,
+              1
+            ],
+            "rhs": 11
+          },
+          {
+            "id": "measurement",
+            "origin": "update",
+            "coefficients": [
+              0,
+              1,
+              0
+            ],
+            "rhs": 3
+          }
+        ],
+        "response": {
+          "status": "answer",
+          "value": 13,
+          "support_ids": [
+            "sum_ab",
+            "sum_bc",
+            "measurement"
+          ]
+        }
+      },
+      "reader_score": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": true,
+        "task_completed_correctly": true,
+        "packet_state": "identified",
+        "packet_supported": true,
+        "source_grounded": true,
+        "grounded_completion": true,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "packet_sufficient_after_update": true
+    }
+  ],
+  "hash_checks": {
+    "tools/prepare_hg1_linear_smoke.py": true,
+    "tools/hg1_reader_scoring.py": true,
+    "evaluation/hpgm-gates-study/linear-smoke-v1/PROTOCOL.md": true,
+    "evaluation/hpgm-gates-study/linear-smoke-v1/SETTINGS.json": true,
+    "evaluation/hpgm-gates-study/development-fixtures/LINEAR-2.json": true,
+    "evaluation/hpgm-gates-study/development-fixtures/ARM_TEMPLATES.json": true
+  },
+  "receipts": [
+    {
+      "trial_id": "L01",
+      "stage": "first",
+      "context": "l1_actor_01",
+      "fork_turns": "none",
+      "response_path": "evaluation/hpgm-gates-study/linear-smoke-v1/L01_first.txt",
+      "response_sha256": "60976fdffb75ddf8b4770afd2f0bac75d8fc3c36e8614973d4d25fc5feca7071",
+      "visible_tool_calls": 0,
+      "outcome": "response_received",
+      "elapsed_seconds": null,
+      "token_usage": null,
+      "dollar_cost": null
+    },
+    {
+      "trial_id": "L01",
+      "stage": "final",
+      "context": "l1_actor_01",
+      "fork_turns": "same writer context",
+      "response_path": "evaluation/hpgm-gates-study/linear-smoke-v1/L01_final.txt",
+      "response_sha256": "29452e6937b76351c7409106ef9808f44f5e931fd3f7b076f3e972de5e20a30c",
+      "visible_tool_calls": 0,
+      "outcome": "response_received",
+      "elapsed_seconds": null,
+      "token_usage": null,
+      "dollar_cost": null
+    },
+    {
+      "trial_id": "L01",
+      "stage": "reader",
+      "context": "l1_reader_01",
+      "fork_turns": "none",
+      "response_path": "evaluation/hpgm-gates-study/linear-smoke-v1/L01_reader.txt",
+      "response_sha256": "0b665f02362db190478c8eaaaad8952de54feafc9df1baa0218482d3c98ff418",
+      "visible_tool_calls": 0,
+      "outcome": "response_received",
+      "elapsed_seconds": null,
+      "token_usage": null,
+      "dollar_cost": null
+    },
+    {
+      "trial_id": "L02",
+      "stage": "first",
+      "context": "l1_actor_02",
+      "fork_turns": "none",
+      "response_path": "evaluation/hpgm-gates-study/linear-smoke-v1/L02_first.txt",
+      "response_sha256": "ac45944e22193ca873bd8bf86a05c07dc833f26deec068361dbfc0786cd62dcc",
+      "visible_tool_calls": 0,
+      "outcome": "response_received",
+      "elapsed_seconds": null,
+      "token_usage": null,
+      "dollar_cost": null
+    },
+    {
+      "trial_id": "L02",
+      "stage": "final",
+      "context": "l1_actor_02",
+      "fork_turns": "same writer context",
+      "response_path": "evaluation/hpgm-gates-study/linear-smoke-v1/L02_final.txt",
+      "response_sha256": "3d2926d059a64ce128e8d7dbf9e9072965c196a8da0e1f3d90fe431307670eab",
+      "visible_tool_calls": 0,
+      "outcome": "response_received",
+      "elapsed_seconds": null,
+      "token_usage": null,
+      "dollar_cost": null
+    },
+    {
+      "trial_id": "L02",
+      "stage": "reader",
+      "context": "l1_reader_02",
+      "fork_turns": "none",
+      "response_path": "evaluation/hpgm-gates-study/linear-smoke-v1/L02_reader.txt",
+      "response_sha256": "8fa22c900ae3605362712c304ede0f34402ace3f98f29b0527ea24be0b4bcd8f",
+      "visible_tool_calls": 0,
+      "outcome": "response_received",
+      "elapsed_seconds": null,
+      "token_usage": null,
+      "dollar_cost": null
+    },
+    {
+      "trial_id": "L03",
+      "stage": "first",
+      "context": "l1_actor_03",
+      "fork_turns": "none",
+      "response_path": "evaluation/hpgm-gates-study/linear-smoke-v1/L03_first.txt",
+      "response_sha256": "af571a1fa6797da3b6d39c51a9a86f878cc7504997ac1126cc24ff193cbbcc8a",
+      "visible_tool_calls": 0,
+      "outcome": "response_received",
+      "elapsed_seconds": null,
+      "token_usage": null,
+      "dollar_cost": null
+    },
+    {
+      "trial_id": "L03",
+      "stage": "final",
+      "context": "l1_actor_03",
+      "fork_turns": "same writer context",
+      "response_path": "evaluation/hpgm-gates-study/linear-smoke-v1/L03_final.txt",
+      "response_sha256": "4de28a032d680e67bf481b1bbe50b5b8b628f7761899684c86dc01fa87918169",
+      "visible_tool_calls": 0,
+      "outcome": "response_received",
+      "elapsed_seconds": null,
+      "token_usage": null,
+      "dollar_cost": null
+    },
+    {
+      "trial_id": "L03",
+      "stage": "reader",
+      "context": "l1_reader_03",
+      "fork_turns": "none",
+      "response_path": "evaluation/hpgm-gates-study/linear-smoke-v1/L03_reader.txt",
+      "response_sha256": "8fa22c900ae3605362712c304ede0f34402ace3f98f29b0527ea24be0b4bcd8f",
+      "visible_tool_calls": 0,
+      "outcome": "response_received",
+      "elapsed_seconds": null,
+      "token_usage": null,
+      "dollar_cost": null
+    },
+    {
+      "trial_id": "L04",
+      "stage": "first",
+      "context": "l1_actor_04",
+      "fork_turns": "none",
+      "response_path": "evaluation/hpgm-gates-study/linear-smoke-v1/L04_first.txt",
+      "response_sha256": "5f92501a4eee975396f16bd73026ab6a68c48227b0b0ed32c36200471f70978c",
+      "visible_tool_calls": 0,
+      "outcome": "response_received",
+      "elapsed_seconds": null,
+      "token_usage": null,
+      "dollar_cost": null
+    },
+    {
+      "trial_id": "L04",
+      "stage": "final",
+      "context": "l1_actor_04",
+      "fork_turns": "same writer context",
+      "response_path": "evaluation/hpgm-gates-study/linear-smoke-v1/L04_final.txt",
+      "response_sha256": "5f92501a4eee975396f16bd73026ab6a68c48227b0b0ed32c36200471f70978c",
+      "visible_tool_calls": 0,
+      "outcome": "response_received",
+      "elapsed_seconds": null,
+      "token_usage": null,
+      "dollar_cost": null
+    },
+    {
+      "trial_id": "L04",
+      "stage": "reader",
+      "context": "l1_reader_04",
+      "fork_turns": "none",
+      "response_path": "evaluation/hpgm-gates-study/linear-smoke-v1/L04_reader.txt",
+      "response_sha256": "8fa22c900ae3605362712c304ede0f34402ace3f98f29b0527ea24be0b4bcd8f",
+      "visible_tool_calls": 0,
+      "outcome": "response_received",
+      "elapsed_seconds": null,
+      "token_usage": null,
+      "dollar_cost": null
+    }
+  ],
+  "evaluator_implementation_timing": "Written after output collection to implement the declared exact audits; source scorer frozen before launch",
+  "provenance": "Final message payloads transcribed by parent; not provider transport exports",
+  "access": "No visible participant tool calls; shared filesystem/tool access not physically isolated",
+  "note_audit": "Parent reviewed all handoff notes against source arithmetic: no unsupported causal/execution claims found; unblinded review, not a validated prose judge"
+}

@@ -2,13 +2,13 @@
 
 This is a saved dependency-aware plan, not a running scheduler. It queues every explicit HPGM test direction from [the post review](../HPGM_POST_CONTACT.md), the nearest unresolved relay/RR1 contacts, and references older test families rather than replacing their detailed records. It does not claim a new exhaustive audit of every historical CERTX statement.
 
-**Current status:** 33 entries: two completed prior research contacts, one newly completed scoped RR2 contact, one checked software instrument, and 29 unfinished research/source entries. One unfinished entry now has a partial subreddit contact. A family can contain several eventual trials. The queue is not evidence those trials ran.
+**Current status:** 33 entries: two completed prior research contacts, one newly completed scoped RR2 contact, one checked software instrument, and 29 unfinished research/source entries. Three unfinished entries have partial contacts: subreddit intake and the two HG1 directions touched by the one-case smoke pilot. A family can contain several eventual trials. The queue is not evidence unreported trials ran.
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
 ## Nearest work
 
-- **HG1 / HPGM-01 and HPGM-03:** [protocol draft](../hpgm-gates-study/PROTOCOL_DRAFT.md), comparing operations and labels and testing the next reader. Eight authored development fixtures, separate keys/updates and arm templates now exist: [readiness note](../hpgm-gates-study/FIXTURE_READINESS.md). Independent families or an explicit narrower pilot scope, final scoring and execution/cost setup remain prerequisites. The proposed 96-call development cap is a planning setting, not an executed run.
+- **HG1 / HPGM-01 and HPGM-03:** [one-case smoke result](../hpgm-gates-study/LINEAR_SMOKE_REPORT.md): 12 completions, all four styles tied on writer correctness and grounded reader completion. Exposed authored development only; broader family scoring, meaningful difficulty, full packet freezing and access/cost instrumentation remain open. The original proposed 96-call draft and later 48-completion proposal have not launched.
 - **CAL-TOOLS:** forecast scorer is implemented and four known-answer software tests passed. [Scope/input](FORECAST_TOOL.md) and [actual test output](FORECAST_SOFTWARE_CHECKS.txt). No actor forecasts were collected.
 - **RR2:** [completed scoped result](../RESET_READER_RR2.md), prospectively registered. Correct aggregate mixture prediction can coexist with subgroup losses and nonidentifiable preparation labels. Unknown mixture weights and actual-agent provenance remain later questions.
 - **SOURCE-REDDIT:** URL received; [first pass](../SUBREDDIT_FIRST_PASS.md) records six selected posts and incomplete access. ARCHIVE-01 and FIELD-01 capture two new test directions. Broader source coverage remains pending.
@@ -24,9 +24,9 @@ The machine-readable source of current queue status is [QUEUE.json](QUEUE.json).
 | PRIOR-RR1 | Reset-reader finite comparison | completed_prior_scope | 0 | — |
 | PRIOR-RECOVERY | Fresh-reader recovery pilot | completed_prior_scope | 0 | — |
 | CAL-TOOLS | Forecast scoring instrumentation | instrument_checked | 1 | — |
-| HPGM-01 | Operations versus phase labels | protocol_draft | 1 | CAL-TOOLS |
+| HPGM-01 | Operations versus phase labels | partial_contact | 1 | CAL-TOOLS |
 | HPGM-02 | ORIENT and DREAM ablation | queued | 2 | HPGM-01 |
-| HPGM-03 | Closing record judged by next reader | protocol_draft | 1 | HPGM-01 |
+| HPGM-03 | Closing record judged by next reader | partial_contact | 1 | HPGM-01 |
 | HPGM-04 | Review versus extra generation versus retrieval | queued | 2 | HPGM-01 |
 | HPGM-05 | Literal waiting intervention | queued | 3 | HPGM-04 |
 | HPGM-06 | Flow/pause schedule sweep | queued | 3 | HPGM-02, HPGM-04 |
