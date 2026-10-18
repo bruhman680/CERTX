@@ -2,7 +2,7 @@
 
 This is a saved dependency-aware plan, not a running scheduler. It queues every explicit HPGM test direction from [the post review](../HPGM_POST_CONTACT.md), the nearest unresolved relay/RR1 contacts, and references older test families rather than replacing their detailed records. It does not claim a new exhaustive audit of every historical CERTX statement.
 
-**Current status:** 33 entries: two completed prior research contacts, one newly completed scoped RR2 contact, one checked software instrument, and 29 unfinished research/source entries. Three unfinished entries have partial contacts: subreddit intake and the two HG1 directions touched by the one-case smoke pilot. A family can contain several eventual trials. The queue is not evidence unreported trials ran.
+**Current status:** 33 entries: two completed prior research contacts, one newly completed scoped RR2 contact, one checked software instrument, and 29 unfinished research/source entries. Four unfinished entries have partial contacts: subreddit intake, two HG1 directions, and direct broad-FRR comparison. A family can contain several eventual trials. The queue is not evidence unreported trials ran.
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
@@ -10,6 +10,7 @@ The machine-readable source of current queue status is [QUEUE.json](QUEUE.json).
 
 - **HG1 / HPGM-01 and HPGM-03:** [one-case smoke result](../hpgm-gates-study/LINEAR_SMOKE_REPORT.md): 12 completions, all four styles tied on writer correctness and grounded reader completion. Exposed authored development only; broader family scoring, meaningful difficulty, full packet freezing and access/cost instrumentation remain open. The original proposed 96-call draft and later 48-completion proposal have not launched.
 - **HG1 reader evidence challenge:** [six-condition result](../hpgm-gates-study/READER_CHALLENGE_REPORT.md): complete/compressed evidence solved, missing evidence and contradiction appropriately reported, consistent source corruption propagated into an objectively wrong answer. All six matched prospective status/value predictions. No additional instruction comparison or general robustness claim; source/version authority remains open.
+- **LEGACY-05 direct FRR contact:** [broad-orientation pilot](../broad-frr-pilot-v1/REPORT.md), nine new contexts and 18 turns comparing baseline/generic/verbatim compact FRR. Verification choices and parent-rated final correctness tied; emphasis differences preserved as post-run observations. General efficacy remains open.
 - **CAL-TOOLS:** forecast scorer is implemented and four known-answer software tests passed. [Scope/input](FORECAST_TOOL.md) and [actual test output](FORECAST_SOFTWARE_CHECKS.txt). No actor forecasts were collected.
 - **RR2:** [completed scoped result](../RESET_READER_RR2.md), prospectively registered. Correct aggregate mixture prediction can coexist with subgroup losses and nonidentifiable preparation labels. Unknown mixture weights and actual-agent provenance remain later questions.
 - **SOURCE-REDDIT:** URL received; [first pass](../SUBREDDIT_FIRST_PASS.md) records six selected posts and incomplete access. ARCHIVE-01 and FIELD-01 capture two new test directions. Broader source coverage remains pending.
@@ -47,7 +48,7 @@ The machine-readable source of current queue status is [QUEUE.json](QUEUE.json).
 | LEGACY-02 | Wake-to-law escape and reversibility | queued | 4 | — |
 | LEGACY-03 | Transformer context/cache controls | queued | 4 | — |
 | LEGACY-04 | Optimizer consistency versus curvature | queued | 4 | — |
-| LEGACY-05 | General FRR effectiveness | queued | 4 | — |
+| LEGACY-05 | General FRR effectiveness | partial_contact | 4 | — |
 | LEGACY-06 | Role rotation and evidence lineage | queued | 4 | — |
 | LEGACY-07 | Swarm boundaries and scale | queued | 5 | — |
 | LEGACY-08 | Shared-weight subspace robustness | queued | 5 | — |

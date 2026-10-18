@@ -56,6 +56,8 @@ The later RR1 study is a new mathematical experiment under the adopted loop. It 
 
 ## HG1 design convening
 
+Later direct broad-FRR comparison: ../evaluation/broad-frr-pilot-v1/REPORT.md. Actual participants received baseline, generic review or verbatim compact runtime0.2. Nine trajectories, 18 turns, practical choices tied; minor output-emphasis differences explicitly post-run, with unblinded parent semantic review. No demonstrated superiority or new FRR version. This is the latest exploration; following paragraphs retain earlier contacts.
+
 Latest continuation: ../evaluation/hpgm-gates-study/READER_CHALLENGE_REPORT.md records six prospectively prepared reader evidence conditions. All matched predicted status/value, including a source-false answer from internally consistent corrupted premises. Two grounded completions, three appropriate abstentions, one packet-supported/source-false answer. This is not an instruction comparison or general robustness estimate. Keep source fidelity separate from reasoning within premises; source/version verification remains open.
 
 Subsequent scoped behavioral contact: ../evaluation/hpgm-gates-study/LINEAR_SMOKE_REPORT.md. Four styles tied on one authored linear task across 12 completions; all 4 fresh readers had grounded completion. No framework advantage demonstrated. Source/scorer launch hashes unchanged; update-ID serialization clarified after writers before readers. Bigger studies remain open. Treat the following convening paragraph as earlier preparation, not the latest run status.

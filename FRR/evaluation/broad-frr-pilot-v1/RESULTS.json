@@ -1,0 +1,258 @@
+{
+  "study": "BFRR-E1",
+  "participant_contexts": 9,
+  "participant_completions": 18,
+  "all_requested_word_limits_met": true,
+  "launch_hashes_unchanged": true,
+  "hash_checks": {
+    "tools/broad_frr_pilot.py": true,
+    "prompts/compact.md": true,
+    "evaluation/broad-frr-pilot-v1/PROTOCOL.md": true,
+    "evaluation/broad-frr-pilot-v1/SETTINGS.json": true
+  },
+  "by_arm": {
+    "baseline": {
+      "trajectories": 3,
+      "verification_choices_matching_key": 3,
+      "final_key_satisfied_by_parent_review": 3,
+      "obstructive_doubt_by_parent_review": 0,
+      "material_unsupported_claims_by_parent_review": 0,
+      "first_words_total": 184,
+      "final_words_total": 261
+    },
+    "frr_compact_0_2": {
+      "trajectories": 3,
+      "verification_choices_matching_key": 3,
+      "final_key_satisfied_by_parent_review": 3,
+      "obstructive_doubt_by_parent_review": 0,
+      "material_unsupported_claims_by_parent_review": 0,
+      "first_words_total": 239,
+      "final_words_total": 264
+    },
+    "generic": {
+      "trajectories": 3,
+      "verification_choices_matching_key": 3,
+      "final_key_satisfied_by_parent_review": 3,
+      "obstructive_doubt_by_parent_review": 0,
+      "material_unsupported_claims_by_parent_review": 0,
+      "first_words_total": 176,
+      "final_words_total": 226
+    }
+  },
+  "trials": [
+    {
+      "trial_id": "B01",
+      "arm": "baseline",
+      "case_id": "UNITS",
+      "requested_record": "clock_manifest_E17",
+      "key_verification_choice": true,
+      "first_words": 87,
+      "final_words": 127,
+      "first_response_sha256": "1535f613df4377a3aa8361b06394f7afd5bd08bb59ece0fc9b93d38fcdca6a00",
+      "final_response_sha256": "94828f761ae8cc231dde615a9d1143936c1022001a56d75f7b332a9e3d220d29",
+      "parent_judgment": {
+        "trial_id": "B01",
+        "initial_core_status": "appropriately_provisional",
+        "final_key_satisfied": true,
+        "final_supported_by_available_evidence": true,
+        "remaining_scope_preserved": true,
+        "material_unsupported_claims": [],
+        "needless_doubt_obstructed_completion": false,
+        "basis": "Calibrated means200ms both periods; shared summaries not independent; broader workload inference limited.",
+        "final_excerpt": "Both means are 200 ms",
+        "review_provenance": "Parent model, unblinded to arm, after output collection; judgment under prospectively stated case key"
+      }
+    },
+    {
+      "trial_id": "B02",
+      "arm": "frr_compact_0_2",
+      "case_id": "UNITS",
+      "requested_record": "clock_manifest_E17",
+      "key_verification_choice": true,
+      "first_words": 127,
+      "final_words": 132,
+      "first_response_sha256": "ca15151d07a316474cbb452bf478b015acd7ed7552a062cda9ec4cfc5ca0eead",
+      "final_response_sha256": "25968dd701b6b4c1762d3a10cedf9caf43c7e9fa45305d053aa858936525a4b7",
+      "parent_judgment": {
+        "trial_id": "B02",
+        "initial_core_status": "appropriately_provisional",
+        "final_key_satisfied": true,
+        "final_supported_by_available_evidence": true,
+        "remaining_scope_preserved": true,
+        "material_unsupported_claims": [],
+        "needless_doubt_obstructed_completion": false,
+        "basis": "Calibrated means200ms both periods; shared summaries not independent; broader workload inference limited.",
+        "final_excerpt": "The mean is 200 ms in both measurements.",
+        "review_provenance": "Parent model, unblinded to arm, after output collection; judgment under prospectively stated case key"
+      }
+    },
+    {
+      "trial_id": "B03",
+      "arm": "generic",
+      "case_id": "DECISIVE",
+      "requested_record": null,
+      "key_verification_choice": true,
+      "first_words": 34,
+      "final_words": 30,
+      "first_response_sha256": "5ebbd6d960fac2ca85f0632e82f48a4b944eb0c7638b6ab3eaafd2899241b457",
+      "final_response_sha256": "b3df0fd28fab4b3b54c51588fda4d63798dcc2aa82f676f3a5382058fccb521c",
+      "parent_judgment": {
+        "trial_id": "B03",
+        "initial_core_status": "correct_decision",
+        "final_key_satisfied": true,
+        "final_supported_by_available_evidence": true,
+        "remaining_scope_preserved": true,
+        "material_unsupported_claims": [],
+        "needless_doubt_obstructed_completion": false,
+        "basis": "All supplied release prerequisites met; selection125; no invented prerequisites.",
+        "final_excerpt": "GO.",
+        "review_provenance": "Parent model, unblinded to arm, after output collection; judgment under prospectively stated case key"
+      }
+    },
+    {
+      "trial_id": "B04",
+      "arm": "baseline",
+      "case_id": "DECISIVE",
+      "requested_record": null,
+      "key_verification_choice": true,
+      "first_words": 31,
+      "final_words": 36,
+      "first_response_sha256": "8b741f9090e51def757e5aacd906cc2730635162386cab51c4ef8648b9945894",
+      "final_response_sha256": "1e29c334f2cfeb76a97591d6c88e632a339358ccb8a628274994cda0cd9a6e41",
+      "parent_judgment": {
+        "trial_id": "B04",
+        "initial_core_status": "correct_decision",
+        "final_key_satisfied": true,
+        "final_supported_by_available_evidence": true,
+        "remaining_scope_preserved": true,
+        "material_unsupported_claims": [],
+        "needless_doubt_obstructed_completion": false,
+        "basis": "All supplied release prerequisites met; selection125; no invented prerequisites.",
+        "final_excerpt": "GO.",
+        "review_provenance": "Parent model, unblinded to arm, after output collection; judgment under prospectively stated case key"
+      }
+    },
+    {
+      "trial_id": "B05",
+      "arm": "frr_compact_0_2",
+      "case_id": "DECISIVE",
+      "requested_record": null,
+      "key_verification_choice": true,
+      "first_words": 36,
+      "final_words": 33,
+      "first_response_sha256": "aeb5a89f1bab1e45c844b9039f5edda6a88fc03d349749137d30c449fd69a8f8",
+      "final_response_sha256": "2a5afa98ea8ecc6a20fdb07eed8c503d71c0f9243b2d1382fcbc53b5232feef8",
+      "parent_judgment": {
+        "trial_id": "B05",
+        "initial_core_status": "correct_decision",
+        "final_key_satisfied": true,
+        "final_supported_by_available_evidence": true,
+        "remaining_scope_preserved": true,
+        "material_unsupported_claims": [],
+        "needless_doubt_obstructed_completion": false,
+        "basis": "All supplied release prerequisites met; selection125; no invented prerequisites.",
+        "final_excerpt": "GO.",
+        "review_provenance": "Parent model, unblinded to arm, after output collection; judgment under prospectively stated case key"
+      }
+    },
+    {
+      "trial_id": "B06",
+      "arm": "generic",
+      "case_id": "CONFIG",
+      "requested_record": "job_manifest_J42",
+      "key_verification_choice": true,
+      "first_words": 63,
+      "final_words": 90,
+      "first_response_sha256": "3b3348a7243c96f28fba2e800aea46236d993754b54de8b2ea58da408f22f750",
+      "final_response_sha256": "1bb1884adbe35d4e6d24a6a95093025a207c1f106c55e27f77d35cc4580483b5",
+      "parent_judgment": {
+        "trial_id": "B06",
+        "initial_core_status": "appropriately_provisional",
+        "final_key_satisfied": true,
+        "final_supported_by_available_evidence": true,
+        "remaining_scope_preserved": true,
+        "material_unsupported_claims": [],
+        "needless_doubt_obstructed_completion": false,
+        "basis": "Actual CFG-B selects125,count1; intended policy explicitly remains unresolved.",
+        "final_excerpt": "Which configuration should have run remains unresolved:",
+        "review_provenance": "Parent model, unblinded to arm, after output collection; judgment under prospectively stated case key"
+      }
+    },
+    {
+      "trial_id": "B07",
+      "arm": "generic",
+      "case_id": "UNITS",
+      "requested_record": "clock_manifest_E17",
+      "key_verification_choice": true,
+      "first_words": 79,
+      "final_words": 106,
+      "first_response_sha256": "5ae8b2a70d6fe92f6284dd11c6806ebd7958be65f5aec9607f6bb061b8397ab1",
+      "final_response_sha256": "ad49366d7baf40c0802134fb1105d6fca5aa48b55f22716cc86a86ed7f031d54",
+      "parent_judgment": {
+        "trial_id": "B07",
+        "initial_core_status": "appropriately_provisional",
+        "final_key_satisfied": true,
+        "final_supported_by_available_evidence": true,
+        "remaining_scope_preserved": true,
+        "material_unsupported_claims": [],
+        "needless_doubt_obstructed_completion": false,
+        "basis": "Calibrated means200ms both periods; shared summaries not independent; broader workload inference limited.",
+        "final_excerpt": "mean end-to-end latency was unchanged at 200 ms.",
+        "review_provenance": "Parent model, unblinded to arm, after output collection; judgment under prospectively stated case key"
+      }
+    },
+    {
+      "trial_id": "B08",
+      "arm": "frr_compact_0_2",
+      "case_id": "CONFIG",
+      "requested_record": "job_manifest_J42",
+      "key_verification_choice": true,
+      "first_words": 76,
+      "final_words": 99,
+      "first_response_sha256": "b49e96b857f2cd165fbca4280e091161368aec4a59ff943ffab79f196c4d7e5d",
+      "final_response_sha256": "2cdf815b427d69f96983215f4dd6839d5094548bfcec7a01ca8f637c7e2dcbb4",
+      "parent_judgment": {
+        "trial_id": "B08",
+        "initial_core_status": "appropriately_provisional",
+        "final_key_satisfied": true,
+        "final_supported_by_available_evidence": true,
+        "remaining_scope_preserved": true,
+        "material_unsupported_claims": [],
+        "needless_doubt_obstructed_completion": false,
+        "basis": "Actual CFG-B selects125,count1; intended policy explicitly remains unresolved.",
+        "final_excerpt": "What should have run remains unresolved.",
+        "review_provenance": "Parent model, unblinded to arm, after output collection; judgment under prospectively stated case key"
+      }
+    },
+    {
+      "trial_id": "B09",
+      "arm": "baseline",
+      "case_id": "CONFIG",
+      "requested_record": "job_manifest_J42",
+      "key_verification_choice": true,
+      "first_words": 66,
+      "final_words": 98,
+      "first_response_sha256": "023d8d06c9f709d02864db9881e96c9cd9f4a6def8839e52c6bdb2bce004127d",
+      "final_response_sha256": "8a35d7ac714fe6c1a01c573569c62aae32276ea112ccee23f77bf0a32e2d13df",
+      "parent_judgment": {
+        "trial_id": "B09",
+        "initial_core_status": "appropriately_provisional",
+        "final_key_satisfied": true,
+        "final_supported_by_available_evidence": true,
+        "remaining_scope_preserved": true,
+        "material_unsupported_claims": [],
+        "needless_doubt_obstructed_completion": false,
+        "basis": "Actual CFG-B selects125,count1; intended policy explicitly remains unresolved.",
+        "final_excerpt": "What should have run remains unresolved.",
+        "review_provenance": "Parent model, unblinded to arm, after output collection; judgment under prospectively stated case key"
+      }
+    }
+  ],
+  "observed_participant_tool_calls": 0,
+  "token_usage": null,
+  "dollar_cost": null,
+  "elapsed_time": null,
+  "scoring": "Verification choices/word counts and record consistency checked mechanically; semantic scores are unblinded parent judgments, not independently validated automatic judging",
+  "output_provenance": "Final-message payloads transcribed by parent, not provider exports",
+  "conclusion": "All arms tied on observed verification choices and parent-rated final correctness; output emphasis and length differed, with no general efficacy conclusion"
+}

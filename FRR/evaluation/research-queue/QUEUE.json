@@ -579,7 +579,7 @@
       "id": "LEGACY-05",
       "title": "General FRR effectiveness",
       "kind": "test_family",
-      "status": "queued",
+      "status": "partial_contact",
       "priority": 4,
       "source": "evaluation/PROTOCOL.md",
       "question": "Does FRR improve useful behavior at acceptable cost?",
@@ -591,12 +591,17 @@
         "cost"
       ],
       "needs": [
-        "Independent cases",
-        "Matched budgets and repeated runs",
-        "Frozen scoring"
+        "Separately prepared reserved cases and repeated assignments",
+        "Less menu-cued source search with actual measured costs/access",
+        "Broader base variants and record-access treatment remain untested",
+        "Independent or blinded semantic review for stronger efficacy claims"
       ],
       "depends_on": [],
-      "result": null
+      "result": "evaluation/broad-frr-pilot-v1/REPORT.md",
+      "preparation_artifacts": [
+        "evaluation/broad-frr-pilot-v1/PROTOCOL.md",
+        "evaluation/broad-frr-pilot-v1/LAUNCH_MANIFEST.json"
+      ]
     },
     {
       "id": "LEGACY-06",
