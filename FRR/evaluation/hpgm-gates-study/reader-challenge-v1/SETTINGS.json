@@ -1,0 +1,315 @@
+{
+  "study": "HG1-RC1",
+  "max_completions": 6,
+  "seed": 1903,
+  "trials": [
+    {
+      "trial_id": "R01",
+      "condition": "conflict",
+      "packet": {
+        "trial_id": "R01",
+        "facts": [
+          {
+            "id": "r3",
+            "coefficients": [
+              1,
+              2,
+              1
+            ],
+            "rhs": 19,
+            "origin": "handoff"
+          },
+          {
+            "id": "r4",
+            "coefficients": [
+              1,
+              2,
+              1
+            ],
+            "rhs": 20,
+            "origin": "handoff"
+          },
+          {
+            "id": "u1",
+            "coefficients": [
+              0,
+              1,
+              0
+            ],
+            "rhs": 3,
+            "origin": "update"
+          }
+        ],
+        "request": "Find a+c from these premises."
+      },
+      "prompt": "You are a fresh continuation reader. Use only the supplied evidence facts and update. Do not use tools, filesystem, internet, other agents or external sources. No original source or answer key is assigned to you. Each equality has coefficients for a,b,c and rhs. Find a+c. Return only JSON with exactly status, value, support_ids. status is answer, missing_info, or conflicting_evidence. For answer, value is a number; otherwise value is null. support_ids lists relevant equality IDs actually in your packet; do not invent facts or IDs. If available evidence cannot determine the requested value, report missing_info; if evidence is inconsistent, report conflicting_evidence. Use the supplied facts as your premises; no external source verification is available.\n\nPACKET:\n{\"facts\": [{\"coefficients\": [1, 2, 1], \"id\": \"r3\", \"origin\": \"handoff\", \"rhs\": 19}, {\"coefficients\": [1, 2, 1], \"id\": \"r4\", \"origin\": \"handoff\", \"rhs\": 20}, {\"coefficients\": [0, 1, 0], \"id\": \"u1\", \"origin\": \"update\", \"rhs\": 3}], \"request\": \"Find a+c from these premises.\", \"trial_id\": \"R01\"}",
+      "prompt_sha256": "b625cc0c8901e37b455f34eb22015b2ac869b3a36e8dd01867eb312bf7b54050",
+      "expected_status": "conflicting_evidence",
+      "expected_value": null,
+      "expected_score": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": null,
+        "task_completed_correctly": false,
+        "packet_state": "inconsistent",
+        "packet_supported": false,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": false,
+        "invalid_source_fact_ids": [
+          "r4"
+        ],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      }
+    },
+    {
+      "trial_id": "R02",
+      "condition": "missing_one",
+      "packet": {
+        "trial_id": "R02",
+        "facts": [
+          {
+            "id": "r1",
+            "coefficients": [
+              1,
+              1,
+              0
+            ],
+            "rhs": 8,
+            "origin": "handoff"
+          },
+          {
+            "id": "u1",
+            "coefficients": [
+              0,
+              1,
+              0
+            ],
+            "rhs": 3,
+            "origin": "update"
+          }
+        ],
+        "request": "Find a+c from these premises."
+      },
+      "prompt": "You are a fresh continuation reader. Use only the supplied evidence facts and update. Do not use tools, filesystem, internet, other agents or external sources. No original source or answer key is assigned to you. Each equality has coefficients for a,b,c and rhs. Find a+c. Return only JSON with exactly status, value, support_ids. status is answer, missing_info, or conflicting_evidence. For answer, value is a number; otherwise value is null. support_ids lists relevant equality IDs actually in your packet; do not invent facts or IDs. If available evidence cannot determine the requested value, report missing_info; if evidence is inconsistent, report conflicting_evidence. Use the supplied facts as your premises; no external source verification is available.\n\nPACKET:\n{\"facts\": [{\"coefficients\": [1, 1, 0], \"id\": \"r1\", \"origin\": \"handoff\", \"rhs\": 8}, {\"coefficients\": [0, 1, 0], \"id\": \"u1\", \"origin\": \"update\", \"rhs\": 3}], \"request\": \"Find a+c from these premises.\", \"trial_id\": \"R02\"}",
+      "prompt_sha256": "b0a57d4977cd3926e84a959a35da24f8493d93c4c6efdd684c0ace9d8397b542",
+      "expected_status": "missing_info",
+      "expected_value": null,
+      "expected_score": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": null,
+        "task_completed_correctly": false,
+        "packet_state": "underdetermined",
+        "packet_supported": false,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      }
+    },
+    {
+      "trial_id": "R03",
+      "condition": "complete",
+      "packet": {
+        "trial_id": "R03",
+        "facts": [
+          {
+            "id": "r1",
+            "coefficients": [
+              1,
+              1,
+              0
+            ],
+            "rhs": 8,
+            "origin": "handoff"
+          },
+          {
+            "id": "r2",
+            "coefficients": [
+              0,
+              1,
+              1
+            ],
+            "rhs": 11,
+            "origin": "handoff"
+          },
+          {
+            "id": "u1",
+            "coefficients": [
+              0,
+              1,
+              0
+            ],
+            "rhs": 3,
+            "origin": "update"
+          }
+        ],
+        "request": "Find a+c from these premises."
+      },
+      "prompt": "You are a fresh continuation reader. Use only the supplied evidence facts and update. Do not use tools, filesystem, internet, other agents or external sources. No original source or answer key is assigned to you. Each equality has coefficients for a,b,c and rhs. Find a+c. Return only JSON with exactly status, value, support_ids. status is answer, missing_info, or conflicting_evidence. For answer, value is a number; otherwise value is null. support_ids lists relevant equality IDs actually in your packet; do not invent facts or IDs. If available evidence cannot determine the requested value, report missing_info; if evidence is inconsistent, report conflicting_evidence. Use the supplied facts as your premises; no external source verification is available.\n\nPACKET:\n{\"facts\": [{\"coefficients\": [1, 1, 0], \"id\": \"r1\", \"origin\": \"handoff\", \"rhs\": 8}, {\"coefficients\": [0, 1, 1], \"id\": \"r2\", \"origin\": \"handoff\", \"rhs\": 11}, {\"coefficients\": [0, 1, 0], \"id\": \"u1\", \"origin\": \"update\", \"rhs\": 3}], \"request\": \"Find a+c from these premises.\", \"trial_id\": \"R03\"}",
+      "prompt_sha256": "b4f1eaf8a64faa472a23d9e03d540bf9d1ab51d03afd3b4bc144e694680f2248",
+      "expected_status": "answer",
+      "expected_value": 13,
+      "expected_score": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": true,
+        "task_completed_correctly": true,
+        "packet_state": "identified",
+        "packet_supported": true,
+        "source_grounded": true,
+        "grounded_completion": true,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      }
+    },
+    {
+      "trial_id": "R04",
+      "condition": "missing_all",
+      "packet": {
+        "trial_id": "R04",
+        "facts": [
+          {
+            "id": "u1",
+            "coefficients": [
+              0,
+              1,
+              0
+            ],
+            "rhs": 3,
+            "origin": "update"
+          }
+        ],
+        "request": "Find a+c from these premises."
+      },
+      "prompt": "You are a fresh continuation reader. Use only the supplied evidence facts and update. Do not use tools, filesystem, internet, other agents or external sources. No original source or answer key is assigned to you. Each equality has coefficients for a,b,c and rhs. Find a+c. Return only JSON with exactly status, value, support_ids. status is answer, missing_info, or conflicting_evidence. For answer, value is a number; otherwise value is null. support_ids lists relevant equality IDs actually in your packet; do not invent facts or IDs. If available evidence cannot determine the requested value, report missing_info; if evidence is inconsistent, report conflicting_evidence. Use the supplied facts as your premises; no external source verification is available.\n\nPACKET:\n{\"facts\": [{\"coefficients\": [0, 1, 0], \"id\": \"u1\", \"origin\": \"update\", \"rhs\": 3}], \"request\": \"Find a+c from these premises.\", \"trial_id\": \"R04\"}",
+      "prompt_sha256": "c338c87c4f08e826daa8d23a062d3568d059252b3a90fdd315be90f1f5cf8551",
+      "expected_status": "missing_info",
+      "expected_value": null,
+      "expected_score": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": null,
+        "task_completed_correctly": false,
+        "packet_state": "underdetermined",
+        "packet_supported": false,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      }
+    },
+    {
+      "trial_id": "R05",
+      "condition": "compressed",
+      "packet": {
+        "trial_id": "R05",
+        "facts": [
+          {
+            "id": "r3",
+            "coefficients": [
+              1,
+              2,
+              1
+            ],
+            "rhs": 19,
+            "origin": "handoff"
+          },
+          {
+            "id": "u1",
+            "coefficients": [
+              0,
+              1,
+              0
+            ],
+            "rhs": 3,
+            "origin": "update"
+          }
+        ],
+        "request": "Find a+c from these premises."
+      },
+      "prompt": "You are a fresh continuation reader. Use only the supplied evidence facts and update. Do not use tools, filesystem, internet, other agents or external sources. No original source or answer key is assigned to you. Each equality has coefficients for a,b,c and rhs. Find a+c. Return only JSON with exactly status, value, support_ids. status is answer, missing_info, or conflicting_evidence. For answer, value is a number; otherwise value is null. support_ids lists relevant equality IDs actually in your packet; do not invent facts or IDs. If available evidence cannot determine the requested value, report missing_info; if evidence is inconsistent, report conflicting_evidence. Use the supplied facts as your premises; no external source verification is available.\n\nPACKET:\n{\"facts\": [{\"coefficients\": [1, 2, 1], \"id\": \"r3\", \"origin\": \"handoff\", \"rhs\": 19}, {\"coefficients\": [0, 1, 0], \"id\": \"u1\", \"origin\": \"update\", \"rhs\": 3}], \"request\": \"Find a+c from these premises.\", \"trial_id\": \"R05\"}",
+      "prompt_sha256": "0c3c77593969fe0872b7aa698777430bfce080a881afb497ab2acd4364e9333c",
+      "expected_status": "answer",
+      "expected_value": 13,
+      "expected_score": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": true,
+        "task_completed_correctly": true,
+        "packet_state": "identified",
+        "packet_supported": true,
+        "source_grounded": true,
+        "grounded_completion": true,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      }
+    },
+    {
+      "trial_id": "R06",
+      "condition": "corrupted_consistent",
+      "packet": {
+        "trial_id": "R06",
+        "facts": [
+          {
+            "id": "r4",
+            "coefficients": [
+              1,
+              2,
+              1
+            ],
+            "rhs": 20,
+            "origin": "handoff"
+          },
+          {
+            "id": "u1",
+            "coefficients": [
+              0,
+              1,
+              0
+            ],
+            "rhs": 3,
+            "origin": "update"
+          }
+        ],
+        "request": "Find a+c from these premises."
+      },
+      "prompt": "You are a fresh continuation reader. Use only the supplied evidence facts and update. Do not use tools, filesystem, internet, other agents or external sources. No original source or answer key is assigned to you. Each equality has coefficients for a,b,c and rhs. Find a+c. Return only JSON with exactly status, value, support_ids. status is answer, missing_info, or conflicting_evidence. For answer, value is a number; otherwise value is null. support_ids lists relevant equality IDs actually in your packet; do not invent facts or IDs. If available evidence cannot determine the requested value, report missing_info; if evidence is inconsistent, report conflicting_evidence. Use the supplied facts as your premises; no external source verification is available.\n\nPACKET:\n{\"facts\": [{\"coefficients\": [1, 2, 1], \"id\": \"r4\", \"origin\": \"handoff\", \"rhs\": 20}, {\"coefficients\": [0, 1, 0], \"id\": \"u1\", \"origin\": \"update\", \"rhs\": 3}], \"request\": \"Find a+c from these premises.\", \"trial_id\": \"R06\"}",
+      "prompt_sha256": "40361c28bb8124e806ef3d319a1ad682c0f8f128b5102774ed2552eca5b4829f",
+      "expected_status": "answer",
+      "expected_value": 14,
+      "expected_score": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": false,
+        "task_completed_correctly": false,
+        "packet_state": "identified",
+        "packet_supported": true,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": false,
+        "invalid_source_fact_ids": [
+          "r4"
+        ],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      }
+    }
+  ],
+  "prediction": "All six readers will behave appropriately to the packet; corrupt-consistent answer is expected to be objectively wrong.",
+  "model": "inherited session model; no override",
+  "sampling": null,
+  "token_cost": null,
+  "dollar_cost": null,
+  "access": "Assigned supplied-packet-only; shared tool/filesystem access not physically blocked"
+}
