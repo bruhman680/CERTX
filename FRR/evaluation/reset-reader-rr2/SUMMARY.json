@@ -1,0 +1,82 @@
+{
+  "scope": "Finite toy with known kernel family; prediction and protocol identification distinguished. No real-agent efficacy claim.",
+  "aggregate_cells": 405,
+  "component_cells": 2025,
+  "tolerance": 1e-11,
+  "maxima": {
+    "mass_error": 2.4424906541753444e-15,
+    "joint_error": 8.881784197001252e-16,
+    "risk_identity_error": 1.721713049906981e-16,
+    "aggregate_order_violation": 0.0,
+    "collapsed_law_error": 4.440892098500626e-16,
+    "equal_marginal_protocol_law_error": 2.220446049250313e-16,
+    "uniform_identity_error": 0.0,
+    "identification_bound_violation": 7.771561172376096e-16,
+    "identification_monotonicity_violation": 8.881784197001252e-16,
+    "balanced_bound_error": 0.0,
+    "h1_predictive_error": 0.0,
+    "h1_identification_plateau_error": 6.661338147750939e-16
+  },
+  "algebraic_and_integrity_checks_pass": true,
+  "component_cells_population_reader_worse_than_natural": 856,
+  "first_component_reversal": {
+    "model": "source",
+    "h": 0.0,
+    "population": "balanced",
+    "preparation": "natural_y0",
+    "t": 0,
+    "risks_nats": {
+      "metadata": 0.05463512282764417,
+      "population": 0.05485815455623275,
+      "uniform": 0.05485815455623275,
+      "natural": 0.05463512282764417
+    },
+    "population_minus_natural_nats": 0.0002230317285885769
+  },
+  "largest_component_reversal": {
+    "model": "transfer_b",
+    "h": 1.0,
+    "population": "fixed_e1_heavy",
+    "preparation": "fixed_e0",
+    "t": 0,
+    "risks_nats": {
+      "metadata": 0.0,
+      "population": 0.18075265869425097,
+      "uniform": 0.05540956636795767,
+      "natural": 0.0050659521612572735
+    },
+    "population_minus_natural_nats": 0.1756867065329937
+  },
+  "balanced_max_observed_protocol_identification": 0.34599638003641425,
+  "balanced_protocol_identification_bound": 0.4,
+  "largest_metadata_benefit": {
+    "model": "transfer_b",
+    "h": 1.0,
+    "population": "balanced",
+    "t": 0,
+    "risks_nats": {
+      "metadata": 0.03254184466523956,
+      "population": 0.06680960302505996,
+      "uniform": 0.06680960302505996,
+      "natural": 0.10177048552325862
+    },
+    "metadata_benefit_nats": 0.034267758359820405,
+    "uniform_misspecification_nats": 0.0,
+    "natural_misspecification_nats": 0.03496088249819866,
+    "preparation_classification_accuracy": 0.2,
+    "initial_environment_classification_bound": 0.4
+  },
+  "input_sha256": {
+    "evaluation/reset-reader-rr2/PROTOCOL.md": "1fc060fa000eb7ae84140b0e25cc786eaeaf4c0966090342fa2c702b3ba21e25",
+    "evaluation/reset-reader-rr2/SETTINGS.json": "1cd70ae7cccf14b696787828d98c363751d8be099705bf438b448a306ba5ed5f",
+    "experiments/reset_reader_rr2.py": "343353020c82384281f552ed6577f31a140b72ff300b7af373eec4d4c1d65165",
+    "experiments/reset_reader_study.py": "04b76327d01b347a4a820975d6dc7f7e2f3627597f41ceb5491c142f2b65cd75",
+    "evaluation/reset-reader-study/MODELS.json": "4c157e799018dbe9f748175d4dc6e9f809285b013e3ff2b5e900c3b5bb9a55c5"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41"
+  },
+  "elapsed_seconds": 10.035228766000046
+}

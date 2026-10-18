@@ -72,3 +72,7 @@ RR1 in RESET_READER_STUDY.md subsequently executes the calibrated reset-reader p
 ## Subreddit-derived directions
 
 See SUBREDDIT_FIRST_PASS.md and queue entries ARCHIVE-01/FIELD-01. Test whether rewrites preserve claim status, conditions and optional obligations; separately test verified versus biased/stale shared readouts with coordination and correctness scored apart. The first pass covers six selected posts, not the full subreddit. No behavioral experiment ran in that intake. Already-inspected posts can be development material but not relabeled independent untouched confirmation.
+
+## RR2 completed; HG1 packets prepared
+
+RESET_READER_RR2.md records the completed unknown-preparation comparison, including mixture-law collapse and bounded protocol attribution. Next numerical questions concern unknown population weights or protocol-dependent later dynamics, not another claim that the same observations uniquely recover protocol identity. HG1's FIXTURE_READINESS.md records eight authored development packets and keys/updates. They do not satisfy independent-confirmation requirements; actual model responses and cost-aware source-grounded scoring remain pending.

@@ -1,0 +1,23 @@
+{
+  "case_id": "SCHED-2",
+  "exposure": "parent-authored development fixture; not independent or held-out",
+  "family": "resource_schedule",
+  "task": "Find the minimum integer completion time and provide feasible start times. Jobs are nonpreemptive; two identical workers are available. A worker does one job at a time.",
+  "evidence": {
+    "jobs": {
+      "A": 4,
+      "B": 2,
+      "C": 3,
+      "D": 5
+    },
+    "dependencies": {
+      "C": [
+        "A"
+      ],
+      "D": [
+        "B"
+      ]
+    },
+    "start_times": "nonnegative integers"
+  }
+}

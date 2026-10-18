@@ -10,7 +10,8 @@
     "queued",
     "blocked_inputs",
     "awaiting_url",
-    "partial_contact"
+    "partial_contact",
+    "completed_scoped"
   ],
   "entries": [
     {
@@ -85,7 +86,11 @@
         "CAL-TOOLS"
       ],
       "result": null,
-      "protocol": "evaluation/hpgm-gates-study/PROTOCOL_DRAFT.md"
+      "protocol": "evaluation/hpgm-gates-study/PROTOCOL_DRAFT.md",
+      "preparation_artifacts": [
+        "evaluation/hpgm-gates-study/FIXTURE_READINESS.md",
+        "evaluation/hpgm-gates-study/development-fixtures/MANIFEST.json"
+      ]
     },
     {
       "id": "HPGM-02",
@@ -133,7 +138,11 @@
         "HPGM-01"
       ],
       "result": null,
-      "protocol": "evaluation/hpgm-gates-study/PROTOCOL_DRAFT.md"
+      "protocol": "evaluation/hpgm-gates-study/PROTOCOL_DRAFT.md",
+      "preparation_artifacts": [
+        "evaluation/hpgm-gates-study/FIXTURE_READINESS.md",
+        "evaluation/hpgm-gates-study/development-fixtures/MANIFEST.json"
+      ]
     },
     {
       "id": "HPGM-04",
@@ -373,7 +382,7 @@
       "id": "RR2",
       "title": "Unknown reset-preparation reader",
       "kind": "numerical_experiment",
-      "status": "queued",
+      "status": "completed_scoped",
       "priority": 1,
       "source": "evaluation/RESET_READER_STUDY.md",
       "question": "Can a reader average over unknown preparation protocols, and where does conditional risk remain?",
@@ -383,13 +392,12 @@
         "per-preparation risk",
         "history and metadata contributions"
       ],
-      "needs": [
-        "Prospective mixture/prior rule and acceptance conditions"
-      ],
+      "needs": [],
       "depends_on": [
         "PRIOR-RR1"
       ],
-      "result": null
+      "result": "evaluation/RESET_READER_RR2.md",
+      "scope": "405 aggregate and 2025 conditional finite-model cells; no real-agent efficacy or unknown mixture-weight inference."
     },
     {
       "id": "MEM-01",

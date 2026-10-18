@@ -96,3 +96,7 @@ User requested queuing the suggested tests and offered a subreddit URL later. Se
 ## Subreddit first pass: a record can preserve movement and also carry old claims
 
 URL received. See ../evaluation/SUBREDDIT_FIRST_PASS.md and subreddit/FIRST_PASS_CATALOG.json: six selected posts, limited feed coverage, exact timestamps/edits unknown. The common question of recoverable exploration persists across analogy, mesh, specification and current FRR posts. Rewriting can also change optional reasoning into mandatory procedure or present model output with stronger evidential status. ARCHIVE-01 queues that distinction. A visible population-mean signal can coordinate without itself locating truth; FIELD-01 queues verified versus biased/stale readouts. This is source contact plus elementary analysis, not a validation of the older constants or an agent experiment.
+
+## RR2: a prediction can outlive the identity of its preparation
+
+See ../evaluation/RESET_READER_RR2.md. Five preparation labels influence one initial bit, then share the same dynamics. Distinct protocol mixtures can therefore produce identical observation laws. Correct aggregate prediction does not identify which protocol happened, and aggregate optimality does not guarantee every subgroup benefits. Balanced identification is bounded at .4 in this construction even with direct initial-bit access; never generalize that number into a memory constant. Prospective protocol and full results retained. Eight HG1 development fixtures are also prepared, with explicit shared authorship and no actor runs.

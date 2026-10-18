@@ -2,20 +2,20 @@
 
 This is a saved dependency-aware plan, not a running scheduler. It queues every explicit HPGM test direction from [the post review](../HPGM_POST_CONTACT.md), the nearest unresolved relay/RR1 contacts, and references older test families rather than replacing their detailed records. It does not claim a new exhaustive audit of every historical CERTX statement.
 
-**Current status:** 33 entries: two completed prior research contacts, one checked software instrument, and 30 unfinished research/source entries. One unfinished entry now has a partial subreddit contact. A family can contain several eventual trials. The queue is not evidence those trials ran.
+**Current status:** 33 entries: two completed prior research contacts, one newly completed scoped RR2 contact, one checked software instrument, and 29 unfinished research/source entries. One unfinished entry now has a partial subreddit contact. A family can contain several eventual trials. The queue is not evidence those trials ran.
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
 ## Nearest work
 
-- **HG1 / HPGM-01 and HPGM-03:** [protocol draft](../hpgm-gates-study/PROTOCOL_DRAFT.md), comparing operations and labels and testing the next reader. Cases, exact actor/reader text, keys and cost instrumentation still need preparation before launch. The proposed 96-call development cap is a planning setting, not an executed run.
+- **HG1 / HPGM-01 and HPGM-03:** [protocol draft](../hpgm-gates-study/PROTOCOL_DRAFT.md), comparing operations and labels and testing the next reader. Eight authored development fixtures, separate keys/updates and arm templates now exist: [readiness note](../hpgm-gates-study/FIXTURE_READINESS.md). Independent families or an explicit narrower pilot scope, final scoring and execution/cost setup remain prerequisites. The proposed 96-call development cap is a planning setting, not an executed run.
 - **CAL-TOOLS:** forecast scorer is implemented and four known-answer software tests passed. [Scope/input](FORECAST_TOOL.md) and [actual test output](FORECAST_SOFTWARE_CHECKS.txt). No actor forecasts were collected.
-- **RR2:** unknown-preparation mixture reader is the nearest numerical follow-up to [RR1](../RESET_READER_STUDY.md). Its prospective mixture rule and acceptance conditions still need freezing; no second reset-reader result exists.
+- **RR2:** [completed scoped result](../RESET_READER_RR2.md), prospectively registered. Correct aggregate mixture prediction can coexist with subgroup losses and nonidentifiable preparation labels. Unknown mixture weights and actual-agent provenance remain later questions.
 - **SOURCE-REDDIT:** URL received; [first pass](../SUBREDDIT_FIRST_PASS.md) records six selected posts and incomplete access. ARCHIVE-01 and FIELD-01 capture two new test directions. Broader source coverage remains pending.
 
 ## Status meanings
 
-`protocol_draft` is a concrete design with open prerequisites, not final registration. `queued` is an unexecuted test or family. `blocked_inputs` identifies missing evidence/model definitions. `awaiting_url` identifies an offered source still awaiting a URL; `partial_contact` has an actual scoped report plus explicit remaining coverage needs. `completed_prior_scope` refers only to an existing scoped report; `instrument_checked` means software fixtures passed, not that a scientific hypothesis succeeded. No background process will silently change these states.
+`protocol_draft` is a concrete design with open prerequisites, not final registration. `queued` is an unexecuted test or family. `blocked_inputs` identifies missing evidence/model definitions. `awaiting_url` identifies an offered source still awaiting a URL; `partial_contact` has an actual scoped report plus explicit remaining coverage needs. `completed_prior_scope` refers only to an existing scoped report; `completed_scoped` is a newly executed bounded contact with a linked result; `instrument_checked` means software fixtures passed, not that a scientific hypothesis succeeded. No background process will silently change these states.
 
 ## Entries
 
@@ -37,7 +37,7 @@ The machine-readable source of current queue status is [QUEUE.json](QUEUE.json).
 | HPGM-11 | Phase count and ordering | queued | 3 | HPGM-01, HPGM-02 |
 | HPGM-12 | Adaptive versus fixed gates | queued | 3 | HPGM-02, HPGM-04 |
 | HPGM-13 | Physical analogy boundary | blocked_inputs | 5 | — |
-| RR2 | Unknown reset-preparation reader | queued | 1 | PRIOR-RR1 |
+| RR2 | Unknown reset-preparation reader | completed_scoped | 1 | PRIOR-RR1 |
 | MEM-01 | Probability-weighted backward states | queued | 2 | — |
 | MEM-02 | Boundary-channel identity and dissipation | queued | 2 | — |
 | MEM-03 | Robust mixture recovery | queued | 2 | — |

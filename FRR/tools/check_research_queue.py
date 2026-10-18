@@ -13,7 +13,7 @@ def check_queue(queue, root):
     if len(by_id) != len(entries):
         raise ValueError('Duplicate queue ID')
     statuses = set(queue['status_values'])
-    complete = {'completed_prior_scope', 'instrument_checked'}
+    complete = {'completed_prior_scope', 'completed_scoped', 'instrument_checked'}
     has_contact_record = complete | {'partial_contact'}
     for entry in entries:
         if entry['status'] not in statuses or type(entry['priority']) is not int:
@@ -51,6 +51,7 @@ def check_queue(queue, root):
     for item in by_id:
         visit(item)
     return dict(entries=len(entries), completed_prior_contacts=sum(e['status']=='completed_prior_scope' for e in entries),
+                completed_scoped_contacts=sum(e['status']=='completed_scoped' for e in entries),
                 checked_instruments=sum(e['status']=='instrument_checked' for e in entries),
                 partial_contacts=sum(e['status']=='partial_contact' for e in entries),
                 pending=sum(e['status'] not in complete for e in entries),

@@ -1,0 +1,28 @@
+{
+  "case_id": "FORECAST-2",
+  "exposure": "parent-authored development fixture; not independent or held-out",
+  "family": "forecast_scores",
+  "task": "Compute mean squared probability error (Brier loss) for A and B; choose lower loss. State whether this four-event table establishes population calibration.",
+  "evidence": {
+    "probabilities": {
+      "A": [
+        0.1,
+        0.1,
+        0.9,
+        0.9
+      ],
+      "B": [
+        0.3,
+        0.3,
+        0.7,
+        0.7
+      ]
+    },
+    "observed_binary_outcomes": [
+      0,
+      0,
+      1,
+      1
+    ]
+  }
+}
