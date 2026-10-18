@@ -1,0 +1,342 @@
+{
+  "scorer_version": "0.1",
+  "scope": "Constructed instrument checks, not model behavior or efficacy",
+  "supported_case_ids": [
+    "LINEAR-2"
+  ],
+  "model_calls": 0,
+  "controls": 18,
+  "all_passed": true,
+  "results": [
+    {
+      "control": "complete_raw",
+      "expected": {
+        "grounded_completion": true
+      },
+      "observed": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": true,
+        "task_completed_correctly": true,
+        "packet_state": "identified",
+        "packet_supported": true,
+        "source_grounded": true,
+        "grounded_completion": true,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "passed": true
+    },
+    {
+      "control": "sufficient_compression",
+      "expected": {
+        "grounded_completion": true
+      },
+      "observed": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": true,
+        "task_completed_correctly": true,
+        "packet_state": "identified",
+        "packet_supported": true,
+        "source_grounded": true,
+        "grounded_completion": true,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "passed": true
+    },
+    {
+      "control": "scaled_compression",
+      "expected": {
+        "grounded_completion": true
+      },
+      "observed": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": true,
+        "task_completed_correctly": true,
+        "packet_state": "identified",
+        "packet_supported": true,
+        "source_grounded": true,
+        "grounded_completion": true,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "passed": true
+    },
+    {
+      "control": "honest_missing",
+      "expected": {
+        "objective_correct": null,
+        "epistemically_appropriate_to_packet": true,
+        "task_completed_correctly": false
+      },
+      "observed": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": null,
+        "task_completed_correctly": false,
+        "packet_state": "underdetermined",
+        "packet_supported": false,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "passed": true
+    },
+    {
+      "control": "lucky_unsupported",
+      "expected": {
+        "objective_correct": true,
+        "source_grounded": false,
+        "packet_supported": false
+      },
+      "observed": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": true,
+        "task_completed_correctly": true,
+        "packet_state": "underdetermined",
+        "packet_supported": false,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": false,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "passed": true
+    },
+    {
+      "control": "corrupted_but_packet_supported",
+      "expected": {
+        "packet_supported": true,
+        "source_grounded": false,
+        "objective_correct": false
+      },
+      "observed": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": false,
+        "task_completed_correctly": false,
+        "packet_state": "identified",
+        "packet_supported": true,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": false,
+        "invalid_source_fact_ids": [
+          "corrupted"
+        ],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "passed": true
+    },
+    {
+      "control": "correct_but_contradicted",
+      "expected": {
+        "objective_correct": true,
+        "packet_supported": false
+      },
+      "observed": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": true,
+        "task_completed_correctly": true,
+        "packet_state": "identified",
+        "packet_supported": false,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": false,
+        "packet_facts_source_valid": false,
+        "invalid_source_fact_ids": [
+          "corrupted"
+        ],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "passed": true
+    },
+    {
+      "control": "inconsistent_abstention",
+      "expected": {
+        "packet_state": "inconsistent",
+        "epistemically_appropriate_to_packet": true
+      },
+      "observed": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": null,
+        "task_completed_correctly": false,
+        "packet_state": "inconsistent",
+        "packet_supported": false,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": false,
+        "invalid_source_fact_ids": [
+          "bad"
+        ],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "passed": true
+    },
+    {
+      "control": "inconsistent_guess",
+      "expected": {
+        "packet_supported": false
+      },
+      "observed": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": true,
+        "task_completed_correctly": true,
+        "packet_state": "inconsistent",
+        "packet_supported": false,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": false,
+        "packet_facts_source_valid": false,
+        "invalid_source_fact_ids": [
+          "bad"
+        ],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "passed": true
+    },
+    {
+      "control": "unneeded_abstention",
+      "expected": {
+        "epistemically_appropriate_to_packet": false
+      },
+      "observed": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": null,
+        "task_completed_correctly": false,
+        "packet_state": "identified",
+        "packet_supported": false,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": false,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "passed": true
+    },
+    {
+      "control": "wrong_update",
+      "expected": {
+        "packet_supported": true,
+        "source_grounded": false,
+        "objective_correct": false
+      },
+      "observed": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": false,
+        "task_completed_correctly": false,
+        "packet_state": "identified",
+        "packet_supported": true,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": true,
+        "packet_facts_source_valid": false,
+        "invalid_source_fact_ids": [
+          "measurement"
+        ],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "passed": true
+    },
+    {
+      "control": "uncited_support",
+      "expected": {
+        "objective_correct": true,
+        "packet_supported": false
+      },
+      "observed": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": true,
+        "task_completed_correctly": true,
+        "packet_state": "identified",
+        "packet_supported": false,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": false,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "passed": true
+    },
+    {
+      "control": "stale_initial_ambiguity",
+      "expected": {
+        "epistemically_appropriate_to_packet": false
+      },
+      "observed": {
+        "scorer_version": "0.1",
+        "case_id": "LINEAR-2",
+        "objective_correct": null,
+        "task_completed_correctly": false,
+        "packet_state": "identified",
+        "packet_supported": false,
+        "source_grounded": false,
+        "grounded_completion": false,
+        "epistemically_appropriate_to_packet": false,
+        "packet_facts_source_valid": true,
+        "invalid_source_fact_ids": [],
+        "scope": "Structured exact equalities only; no inference from natural-language handoffs"
+      },
+      "passed": true
+    },
+    {
+      "control": "unknown_reference",
+      "rejected": true,
+      "reason": "Unknown or duplicated support ID",
+      "passed": true
+    },
+    {
+      "control": "nonfinite",
+      "rejected": true,
+      "reason": "Expected finite rational numeric value",
+      "passed": true
+    },
+    {
+      "control": "boolean_number",
+      "rejected": true,
+      "reason": "Expected finite numeric value",
+      "passed": true
+    },
+    {
+      "control": "duplicate_fact_id",
+      "rejected": true,
+      "reason": "Fact IDs must be nonempty and unique",
+      "passed": true
+    },
+    {
+      "control": "abstention_numeric_value",
+      "rejected": true,
+      "reason": "Abstentions must have null value",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "No free-text extraction or adjudication",
+    "No empirical validation of source-certificate extraction",
+    "Equality model only; original nonnegativity is not encoded",
+    "No other HG1 families supported"
+  ]
+}

@@ -1,5 +1,7 @@
 # Current FRR handoff
 
+Latest preparation: six user-requested design agents reviewed HG1. See [convening and next-pilot scope](evaluation/hpgm-gates-study/CONVENING_AND_NEXT_PILOT.md), [reader packet contract](evaluation/hpgm-gates-study/READER_PACKET_CONTRACT.md), and [scoring contract](evaluation/hpgm-gates-study/SCORING_CONTRACT.md). The scoring instrument uses constructed controls, not behavioral outcomes. Original larger protocol and fixtures remain unchanged. The reviewers shared context and filesystem and are not fresh experimental subjects. Next: freeze a narrow authored pilot's prompts, packet rules, scoring and execution limits before collecting outputs.
+
 Read [sync/CURRENT_ORIENTATION.md](sync/CURRENT_ORIENTATION.md) for scoped current direction, completed contacts, dormant branches and next tests. Check the referenced artifacts before treating a summary as evidence.
 
 The previous handoff is preserved at [commit a24ec58c](https://github.com/bruhman680/CERTX/blob/a24ec58cfc3fa914a9364ea647afc8fce56bd31a/FRR/CURRENT_HANDOFF.md). It described the reset pulse; pre-refinement/Reddit review, DecepEval research and the palimpsest sync study followed. Updating the present navigation view does not erase that layer or relabel its claims as independently validated.

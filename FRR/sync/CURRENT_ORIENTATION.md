@@ -54,6 +54,10 @@ User subsequently authorized adoption. The [bounded loop](../modules/bounded-exp
 
 The later RR1 study is a new mathematical experiment under the adopted loop. It does not retroactively change the adoption exercise into a prospective trial or validate reasoning effectiveness.
 
+## HG1 design convening
+
+Six explicitly requested agent reviews sharpened the distinction between objective truth, available-evidence warrant and successful continuation. See ../evaluation/hpgm-gates-study/CONVENING_AND_NEXT_PILOT.md and READER_PACKET_CONTRACT.md in that folder. Instrument-only constructed controls do not establish behavioral effectiveness. Existing exposed fixtures remain development material; no actual-agent comparison launched. New indirect-disturbance hypothesis is preserved in lineage/WANDERINGS.md without priority change.
+
 ## HPGM post intake
 
 See [HPGM_POST_CONTACT.md](../evaluation/HPGM_POST_CONTACT.md) for the user's unvetted earlier post, preserved original, relation to current loops, arithmetic check and limited primary-source contact. Six-phase workflow ideas remain available as a candidate framing; universal ratios, cycle constants, calibration effects and physical analogies remain unverified. No additional cycle or core change was installed. The proposed label/operation/timing comparison has not run.
