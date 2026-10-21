@@ -1,0 +1,83 @@
+{
+  "scope": "Parser repair, authored disposition replay and local CLI contact; not independent behavioral confirmation",
+  "replay_evaluations": 44,
+  "all_expected_verdicts_matched": true,
+  "rejected_number_forms": [
+    "'1e999999999'",
+    "'1e-999999999'",
+    "'1e-1'",
+    "'.4'",
+    "'nan'",
+    "'inf'",
+    "'99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999'",
+    "True"
+  ],
+  "valid_number_controls": {
+    "0": "0",
+    "-2": "-2",
+    "3/4": "3/4",
+    "-0.4": "-2/5",
+    "+12": "12",
+    "1.25": "5/4"
+  },
+  "cli_checks": [
+    {
+      "claim_id": "literal_correct",
+      "returncode": 0,
+      "stdout_receipt": {
+        "claim_id": "literal_correct",
+        "contract_id": "literal_correct-contract-1",
+        "criterion_id": "rational-equality-v1",
+        "scope": "literal-case-A",
+        "ruleset": "0.2",
+        "checker_sha256": "595fd389538a747ddab0dc8885d323adaa3027c431b0569159afa04dd1af3905",
+        "contract_sha256": "1c6f3ac655110e7fb8e2eb3994d5624a7227cace93d706da8a5023d4f1b1d53d",
+        "verdict": "supported",
+        "checks": {
+          "integrity": "pass",
+          "scope": "pass",
+          "criterion": "pass",
+          "domain": "pass"
+        },
+        "assumptions": [
+          "Claim concerns the literal expression and exact rational semantics only."
+        ],
+        "reason": "Exact rational comparison completed",
+        "artifact_sha256": "3973805c7c138ab958059958dee72604666de8d96e8403769bad0af76fe87944",
+        "computed_value": "20"
+      },
+      "stderr": ""
+    },
+    {
+      "claim_id": "literal_incorrect",
+      "returncode": 0,
+      "stdout_receipt": {
+        "claim_id": "literal_incorrect",
+        "contract_id": "literal_incorrect-contract-1",
+        "criterion_id": "rational-equality-v1",
+        "scope": "literal-case-A",
+        "ruleset": "0.2",
+        "checker_sha256": "595fd389538a747ddab0dc8885d323adaa3027c431b0569159afa04dd1af3905",
+        "contract_sha256": "edf890c2d7f58b29decbaaefa3f4ba8faa8bf79a4974a899692971db7d4f2ee8",
+        "verdict": "contradicted",
+        "checks": {
+          "integrity": "pass",
+          "scope": "pass",
+          "criterion": "pass",
+          "domain": "fail"
+        },
+        "assumptions": [
+          "Claim concerns the literal expression and exact rational semantics only."
+        ],
+        "reason": "Exact rational comparison completed",
+        "artifact_sha256": "3973805c7c138ab958059958dee72604666de8d96e8403769bad0af76fe87944",
+        "computed_value": "20"
+      },
+      "stderr": ""
+    }
+  ],
+  "repaired_checker_sha256": "595fd389538a747ddab0dc8885d323adaa3027c431b0569159afa04dd1af3905",
+  "repair_hashes_unchanged": true,
+  "initial_protocol_and_results_preserved": true,
+  "model_calls": 0
+}

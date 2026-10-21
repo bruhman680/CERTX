@@ -780,7 +780,28 @@
       ],
       "depends_on": [],
       "result": "evaluation/pid-contact-v1/REPORT.md",
-      "diagnostic_contact": "evaluation/error-success-contact/REPORT.md"
+      "diagnostic_contact": "evaluation/error-success-contact/REPORT.md",
+      "verification_instrument": "evaluation/verification-layer-v1/REPORT.md"
+    },
+    {
+      "id": "VL-TOOLS",
+      "title": "Scoped verification receipts and versioned repair instrument",
+      "kind": "software_instrument",
+      "status": "instrument_checked",
+      "priority": 1,
+      "source": "modules/verification-layer.md",
+      "protocol": "evaluation/verification-layer-v1/PROTOCOL.md",
+      "question": "Can scoped checks preserve distinct verdicts and extend/repair a checker without overwriting prior outcomes?",
+      "comparison": "22 authored fixtures across two capability configurations; integrity-only and unresolved-only instrument comparators; separately frozen numeric parser repair replay and CLI/log checks.",
+      "metrics": [
+        "Expected authored dispositions",
+        "Unwarranted support and needless withholding",
+        "Earlier-case replay",
+        "Preserved history and disclosed hash-chain limitation"
+      ],
+      "needs": [],
+      "depends_on": [],
+      "result": "evaluation/verification-layer-v1/REPORT.md"
     }
   ]
 }

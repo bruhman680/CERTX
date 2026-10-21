@@ -1,0 +1,26 @@
+[
+  {
+    "command": "python frr/tools/check_package.py",
+    "chunk_id": "5971fa",
+    "wall_time_seconds": 0.000038326,
+    "exit_code": 0,
+    "original_token_count": 44,
+    "output": "Package checks passed: 3 inquiry records; {'development': 16, 'heldout': 8}; required documents present.\nThese checks establish structural consistency, not FRR effectiveness.\n"
+  },
+  {
+    "command": "python frr/tools/check_bounded_loop.py",
+    "chunk_id": "27ae22",
+    "wall_time_seconds": 0.000027386,
+    "exit_code": 0,
+    "original_token_count": 109,
+    "output": "{\n  \"record_schema_and_references\": \"pass (package subset validator)\",\n  \"original_pilot_artifacts_verified\": 7,\n  \"unchanged_core_hashes\": 3,\n  \"discovery_links\": 5,\n  \"negative_integrity_controls\": [\n    \"changed bytes rejected\",\n    \"missing evidence rejected\",\n    \"out-of-root evidence rejected\"\n  ],\n  \"scope\": \"Local structure and byte identity only; no new agent trial, scientific validation or immutable storage guarantee.\"\n}\n"
+  },
+  {
+    "command": "python frr/tools/check_research_queue.py",
+    "chunk_id": "6ab5f8",
+    "wall_time_seconds": 0.000031428,
+    "exit_code": 0,
+    "original_token_count": 88,
+    "output": "{\n  \"entries\": 35,\n  \"completed_prior_contacts\": 2,\n  \"completed_scoped_contacts\": 1,\n  \"checked_instruments\": 2,\n  \"partial_contacts\": 5,\n  \"pending\": 30,\n  \"dependencies_acyclic\": true,\n  \"local_references_resolve\": true,\n  \"core_hashes_unchanged\": true,\n  \"scope\": \"Saved-plan structure only; no queued scientific test is executed by this check.\"\n}\n"
+  }
+]

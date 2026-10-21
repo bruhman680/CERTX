@@ -2,12 +2,13 @@
 
 This is a saved dependency-aware plan, not a running scheduler. It queues every explicit HPGM test direction from [the post review](../HPGM_POST_CONTACT.md), the nearest unresolved relay/RR1 contacts, and references older test families rather than replacing their detailed records. It does not claim a new exhaustive audit of every historical CERTX statement.
 
-**Current status:** 34 entries: two completed prior contacts, one completed scoped RR2 contact, one checked instrument and 30 unfinished entries. Five unfinished entries have partial contacts, including PID-01: the numerical control illustration is completed, but the proposed reasoning procedure has no behavioral efficacy result.
+**Current status:** 35 entries: two completed prior contacts, one completed scoped RR2 contact, two checked software instruments and 30 unfinished entries. Five unfinished entries have partial contacts. VL-TOOLS checks the new verification instrument; PID-01 still has no actual-agent efficacy result.
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
 ## Nearest work
 
+- **VL-TOOLS:** [verification-layer instrument and repair](../verification-layer-v1/REPORT.md) passed scoped authored checks. The optional module is usable; broader semantic/behavioral effectiveness remains under PID-01.
 - **PID-01:** [PID-C1](../pid-contact-v1/REPORT.md) completed the registered scalar control illustration. Behavioral comparison of the optional feedback candidate against ordinary review and provenance-only remains unrun.
 - **HG1 / HPGM-01 and HPGM-03:** [one-case smoke result](../hpgm-gates-study/LINEAR_SMOKE_REPORT.md): 12 completions, all four styles tied on writer correctness and grounded reader completion. Exposed authored development only; broader family scoring, meaningful difficulty, full packet freezing and access/cost instrumentation remain open. The original proposed 96-call draft and later 48-completion proposal have not launched.
 - **HG1 reader evidence challenge:** [six-condition result](../hpgm-gates-study/READER_CHALLENGE_REPORT.md): complete/compressed evidence solved, missing evidence and contradiction appropriately reported, consistent source corruption propagated into an objectively wrong answer. All six matched prospective status/value predictions. No additional instruction comparison or general robustness claim; source/version authority remains open.
@@ -71,3 +72,5 @@ Read the supplied URL and accessible linked posts as a historical idea/source co
 Latest added family: **PID-01**, evidence-gated feedback versus simpler reasoning review; partial contact; priority 2; no dependencies.
 
 PID-01 diagnostic expansion: [ES-C1](../error-success-contact/REPORT.md) supplies source-based distinctions and six checked exact development witnesses; the semantic comparison remains unrun.
+
+Latest checked instrument: **VL-TOOLS**, scoped verification receipts and versioned repair; instrument_checked; priority 1; no dependencies.

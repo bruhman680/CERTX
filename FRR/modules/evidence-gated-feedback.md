@@ -30,3 +30,5 @@ This is a scheduling and acceptance procedure. Its investigations need domain-sp
 To test value rather than appeal, compare against ordinary review and a simpler provenance-only procedure on separately authored held-out tasks under matched budgets. Include wrong references, stale but coherent summaries, correct noisy observations and genuine new evidence. Score grounded decisions, justified changes, unnecessary interventions and cost separately. Prefer the simpler procedure if outcomes are comparable. Until that test, this module is optional and provisional.
 
 Further diagnostic guide: [ES-C1](../evaluation/error-success-contact/REPORT.md) separates premises, inference, measurement, objectives, actions and outcome luck before increasing correction. This is conceptual refinement with exact counterexamples, not a new efficacy result.
+
+Executable narrow checks and a versioned repair practice are now available in the optional [verification layer](verification-layer.md). Scheduling remains distinct from evidence-based acceptance; unsupported domains stay unresolved.

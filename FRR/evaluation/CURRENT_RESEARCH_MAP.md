@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Latest implementation: [VL-C1](verification-layer-v1/REPORT.md) turns earlier reference/measurement/version findings into an optional scoped verification layer. Instrument cases passed; a later parser-limit gap was preserved and repaired through separate replay. This establishes local checker/history behavior, not semantic truth or improved agent reasoning.
+
 Cross-domain follow-up: [ES-C1](error-success-contact/REPORT.md) separates inferential validity, empirical support, measured versus actual outcomes, task priorities and uncertainty. Six exact development witnesses passed; they constrain overbroad controller claims without establishing general reasoning efficacy.
 
 Latest addition: [PID-C1](pid-contact-v1/REPORT.md) supplies a constructed feedback-control comparison and an optional reasoning-control candidate. A controller can reduce displayed error while remaining wrong about the true state; control sophistication does not validate its sensor/reference. No behavioral transfer claim.

@@ -16,6 +16,8 @@ For a bounded, measurable experiment, use the adopted optional [experiment loop]
 
 Read the [research queue](evaluation/research-queue/README.md) for current proposed tests, dependencies and missing inputs. It is a saved plan, not a running scheduler. The HPGM comparison is a protocol draft; the forecast scorer has passed software fixtures, not an agent-performance trial.
 
+For consequential claims and builds, the optional [verification layer](modules/verification-layer.md) records scope, criterion, evidence, checker version and a supported/contradicted/unresolved verdict. Its [instrument contact and disclosed repair](evaluation/verification-layer-v1/REPORT.md) validate narrow software behavior, not general truth or model efficacy. Domain-specific checks are still necessary.
+
 The files can be used manually with an assistant or incorporated into an application. This release does not call an API, host a service, or automatically update external documents.
 
 ## Contents
