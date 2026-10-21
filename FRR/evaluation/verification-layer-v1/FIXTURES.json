@@ -1,0 +1,274 @@
+[
+  {
+    "claim_id": "literal_correct",
+    "contract_id": "literal_correct-contract-1",
+    "scope": "literal-case-A",
+    "adapter": "arithmetic_equal",
+    "criterion_id": "rational-equality-v1",
+    "artifact": {
+      "path": "artifacts/literal_correct.json",
+      "sha256": "3973805c7c138ab958059958dee72604666de8d96e8403769bad0af76fe87944"
+    },
+    "expected_value": "20"
+  },
+  {
+    "claim_id": "literal_incorrect",
+    "contract_id": "literal_incorrect-contract-1",
+    "scope": "literal-case-A",
+    "adapter": "arithmetic_equal",
+    "criterion_id": "rational-equality-v1",
+    "artifact": {
+      "path": "artifacts/literal_incorrect.json",
+      "sha256": "3973805c7c138ab958059958dee72604666de8d96e8403769bad0af76fe87944"
+    },
+    "expected_value": "19"
+  },
+  {
+    "claim_id": "exact_fraction",
+    "contract_id": "exact_fraction-contract-1",
+    "scope": "literal-case-A",
+    "adapter": "arithmetic_equal",
+    "criterion_id": "rational-equality-v1",
+    "artifact": {
+      "path": "artifacts/exact_fraction.json",
+      "sha256": "5875e256ad8f3fc7626cc38fd88b3b03fc8422ca52022db4638f240d70c23557"
+    },
+    "expected_value": "3/10"
+  },
+  {
+    "claim_id": "missing_evidence",
+    "contract_id": "missing_evidence-contract-1",
+    "scope": "literal-case-A",
+    "adapter": "arithmetic_equal",
+    "criterion_id": "rational-equality-v1",
+    "artifact": {
+      "path": "absent.json",
+      "sha256": "3973805c7c138ab958059958dee72604666de8d96e8403769bad0af76fe87944"
+    },
+    "expected_value": "20"
+  },
+  {
+    "claim_id": "changed_bytes",
+    "contract_id": "changed_bytes-contract-1",
+    "scope": "literal-case-A",
+    "adapter": "arithmetic_equal",
+    "criterion_id": "rational-equality-v1",
+    "artifact": {
+      "path": "artifacts/changed_bytes.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "expected_value": "20"
+  },
+  {
+    "claim_id": "scope_expansion",
+    "contract_id": "scope_expansion-contract-1",
+    "scope": "all-cases",
+    "adapter": "arithmetic_equal",
+    "criterion_id": "rational-equality-v1",
+    "artifact": {
+      "path": "artifacts/scope_expansion.json",
+      "sha256": "3973805c7c138ab958059958dee72604666de8d96e8403769bad0af76fe87944"
+    },
+    "expected_value": "20"
+  },
+  {
+    "claim_id": "unsupported_semantic_claim",
+    "contract_id": "unsupported_semantic_claim-contract-1",
+    "scope": "literal-case-A",
+    "adapter": "empirical_truth",
+    "criterion_id": "rational-equality-v1",
+    "artifact": {
+      "path": "artifacts/unsupported_semantic_claim.json",
+      "sha256": "3973805c7c138ab958059958dee72604666de8d96e8403769bad0af76fe87944"
+    },
+    "expected_value": "20"
+  },
+  {
+    "claim_id": "criterion_changed",
+    "contract_id": "criterion_changed-contract-1",
+    "scope": "literal-case-A",
+    "adapter": "arithmetic_equal",
+    "criterion_id": "close-enough-v2",
+    "artifact": {
+      "path": "artifacts/criterion_changed.json",
+      "sha256": "3973805c7c138ab958059958dee72604666de8d96e8403769bad0af76fe87944"
+    },
+    "expected_value": "20"
+  },
+  {
+    "claim_id": "undefined_arithmetic",
+    "contract_id": "undefined_arithmetic-contract-1",
+    "scope": "literal-case-A",
+    "adapter": "arithmetic_equal",
+    "criterion_id": "rational-equality-v1",
+    "artifact": {
+      "path": "artifacts/undefined_arithmetic.json",
+      "sha256": "9b919455c78ab6c3b0274ecdc6a1261f652e314b6a405a9c0cd7f3964a62819e"
+    },
+    "expected_value": "20"
+  },
+  {
+    "claim_id": "forbidden_expression",
+    "contract_id": "forbidden_expression-contract-1",
+    "scope": "literal-case-A",
+    "adapter": "arithmetic_equal",
+    "criterion_id": "rational-equality-v1",
+    "artifact": {
+      "path": "artifacts/forbidden_expression.json",
+      "sha256": "eeff023cfe35af591a121b23481bbeed841cb5003c2174e066c0be5654754f6c"
+    },
+    "expected_value": "20"
+  },
+  {
+    "claim_id": "missing_expression",
+    "contract_id": "missing_expression-contract-1",
+    "scope": "literal-case-A",
+    "adapter": "arithmetic_equal",
+    "criterion_id": "rational-equality-v1",
+    "artifact": {
+      "path": "artifacts/missing_expression.json",
+      "sha256": "17527b0ba5b4ca941871cc1364ee018a37647be0a344cdd341e5e3d7a8d24d70"
+    },
+    "expected_value": "20"
+  },
+  {
+    "claim_id": "invalid_expected_value",
+    "contract_id": "invalid_expected_value-contract-1",
+    "scope": "literal-case-A",
+    "adapter": "arithmetic_equal",
+    "criterion_id": "rational-equality-v1",
+    "artifact": {
+      "path": "artifacts/invalid_expected_value.json",
+      "sha256": "3973805c7c138ab958059958dee72604666de8d96e8403769bad0af76fe87944"
+    },
+    "expected_value": true
+  },
+  {
+    "claim_id": "unimplemented_float_semantics",
+    "contract_id": "unimplemented_float_semantics-contract-1",
+    "scope": "literal-case-A",
+    "adapter": "arithmetic_equal",
+    "criterion_id": "rational-equality-v1",
+    "artifact": {
+      "path": "artifacts/unimplemented_float_semantics.json",
+      "sha256": "ce5352f988206006a5673e15710859760ce233aca35b9dbf0d7b75d81617207b"
+    },
+    "expected_value": "20"
+  },
+  {
+    "claim_id": "path_escape",
+    "contract_id": "path_escape-contract-1",
+    "scope": "literal-case-A",
+    "adapter": "arithmetic_equal",
+    "criterion_id": "rational-equality-v1",
+    "artifact": {
+      "path": "../outside.json",
+      "sha256": "3973805c7c138ab958059958dee72604666de8d96e8403769bad0af76fe87944"
+    },
+    "expected_value": "20"
+  },
+  {
+    "claim_id": "bounded_sensor_good",
+    "contract_id": "bounded_sensor_good-contract-1",
+    "scope": "sensor-bench-A",
+    "adapter": "bounded_sensor",
+    "criterion_id": "true-state-band-v1",
+    "artifact": {
+      "path": "artifacts/bounded_sensor_good.json",
+      "sha256": "540223187b6f072077c316e2712ad6bcd99a05776580906f98913824e56d817d"
+    },
+    "target": "1",
+    "tolerance": "1/20"
+  },
+  {
+    "claim_id": "bounded_sensor_bad",
+    "contract_id": "bounded_sensor_bad-contract-1",
+    "scope": "sensor-bench-A",
+    "adapter": "bounded_sensor",
+    "criterion_id": "true-state-band-v1",
+    "artifact": {
+      "path": "artifacts/bounded_sensor_bad.json",
+      "sha256": "9056abe56a5917854e9054aaf72a625e73a6e95c4cc1dd58934b523410c3068c"
+    },
+    "target": "1",
+    "tolerance": "1/20"
+  },
+  {
+    "claim_id": "sensor_unknown_bias",
+    "contract_id": "sensor_unknown_bias-contract-1",
+    "scope": "sensor-bench-A",
+    "adapter": "bounded_sensor",
+    "criterion_id": "true-state-band-v1",
+    "artifact": {
+      "path": "artifacts/sensor_unknown_bias.json",
+      "sha256": "53bfc2da46dc91ed5cd45343f6b0627357dafe535287a4fdba22ab4e875eea02"
+    },
+    "target": "1",
+    "tolerance": "1/20"
+  },
+  {
+    "claim_id": "sensor_ambiguous_band",
+    "contract_id": "sensor_ambiguous_band-contract-1",
+    "scope": "sensor-bench-A",
+    "adapter": "bounded_sensor",
+    "criterion_id": "true-state-band-v1",
+    "artifact": {
+      "path": "artifacts/sensor_ambiguous_band.json",
+      "sha256": "57278798b25ce0be7e8f4f380f921cc01bb5becacf47e941291c846640cb8fac"
+    },
+    "target": "1",
+    "tolerance": "1/20"
+  },
+  {
+    "claim_id": "sensor_boundary_inclusive",
+    "contract_id": "sensor_boundary_inclusive-contract-1",
+    "scope": "sensor-bench-A",
+    "adapter": "bounded_sensor",
+    "criterion_id": "true-state-band-v1",
+    "artifact": {
+      "path": "artifacts/sensor_boundary_inclusive.json",
+      "sha256": "365d923f326a83297de2ec02b88b4c7d747014392937b4482ec693fe35be2699"
+    },
+    "target": "1",
+    "tolerance": "1/20"
+  },
+  {
+    "claim_id": "sensor_inconsistent_bounds",
+    "contract_id": "sensor_inconsistent_bounds-contract-1",
+    "scope": "sensor-bench-A",
+    "adapter": "bounded_sensor",
+    "criterion_id": "true-state-band-v1",
+    "artifact": {
+      "path": "artifacts/sensor_inconsistent_bounds.json",
+      "sha256": "d5c7ef45ddb7b5ba55aad4e241fb69c8cb93ca773b2c0ce1a7e5a86a84dfc283"
+    },
+    "target": "1",
+    "tolerance": "1/20"
+  },
+  {
+    "claim_id": "sensor_outside_above",
+    "contract_id": "sensor_outside_above-contract-1",
+    "scope": "sensor-bench-A",
+    "adapter": "bounded_sensor",
+    "criterion_id": "true-state-band-v1",
+    "artifact": {
+      "path": "artifacts/sensor_outside_above.json",
+      "sha256": "b3f4630ea8c73805a7d582db9c35663e5d7e44b12cc3e68b6e5b3df798a694c8"
+    },
+    "target": "1",
+    "tolerance": "1/20"
+  },
+  {
+    "claim_id": "sensor_invalid_number",
+    "contract_id": "sensor_invalid_number-contract-1",
+    "scope": "sensor-bench-A",
+    "adapter": "bounded_sensor",
+    "criterion_id": "true-state-band-v1",
+    "artifact": {
+      "path": "artifacts/sensor_invalid_number.json",
+      "sha256": "c2a6b3681dd78716eff536d79fa58b0d166b1fb6630711e6ae1c28ef2e8b4720"
+    },
+    "target": "1",
+    "tolerance": "1/20"
+  }
+]
