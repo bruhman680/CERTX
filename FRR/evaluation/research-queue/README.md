@@ -8,6 +8,8 @@ This is a saved dependency-aware plan, not a running scheduler. It queues every 
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
+Current pause: the user requested navigation maintenance and a wind-down. No queue entry was launched or promoted by this sweep. [EL-C1](../error-lineage-v1/REPORT.md) supplies a constructed precursor for FIELD-01/LEGACY-06; both remain queued.
+
 ## Nearest work
 
 - **MEM-04:** [MS-L1](../memory-task-shift-v1/REPORT.md),8 fresh readers/16 turns. Relevant originals resolved a changed question; truthful insufficient summaries and wrong-run records appropriately left it unresolved. Independent less-cued and longer-memory work remains pending.
@@ -74,8 +76,10 @@ Read the supplied URL and accessible linked posts as a historical idea/source co
 
 Latest added family: **PID-01**, evidence-gated feedback versus simpler reasoning review; partial contact; priority 2; no dependencies.
 
-PID-01 diagnostic expansion: [ES-C1](../error-success-contact/REPORT.md) supplies source-based distinctions and six checked exact development witnesses; the semantic comparison remains unrun.
+PID-01 diagnostic expansion: [ES-C1](../error-success-contact/REPORT.md) supplies source-based distinctions and six checked exact development witnesses; the broader semantic comparison remains open; the later small VP-L1 contact below has run.
 
 Latest checked instrument: **VL-TOOLS**, scoped verification receipts and versioned repair; instrument_checked; priority 1; no dependencies.
 
-Latest PID-01 contact: [VP-L1](../verification-practice-pilot-v1/REPORT.md),9 fresh contexts/18 turns, all three guidance arms tied; broader/longer tests remain open. Latest VL-TOOLS contact: [VA-C1](../verification-adoption-v1/REPORT.md), execution integration, real saved-claim checks and disclosed source-binding repair.
+Latest PID-01 contact: [VP-L1](../verification-practice-pilot-v1/REPORT.md),9 fresh contexts/18 turns, all three guidance arms tied; broader/longer tests remain open. Earlier VL-TOOLS integration contact: [VA-C1](../verification-adoption-v1/REPORT.md), execution integration, real saved-claim checks and disclosed source-binding repair.
+
+Latest practice contacts: [PG-C1](../practice-growth-v1/REPORT.md) adds the reopening helper and saved-data audit; [EL-C1](../error-lineage-v1/REPORT.md) adds error-route and repair distinctions. Neither completes broader agent-efficacy or shared-field families.

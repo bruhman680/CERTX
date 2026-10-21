@@ -4,7 +4,7 @@ Current working aim: useful habits for ongoing inquiry, construction and revisio
 
 This package translates the user's FRR v0.5 into instructions, a recoverable inquiry record, and behavioral evaluations. It is an unvalidated operational candidate, not evidence that FRR improves AI reasoning.
 
-Latest expansion: [boundaries, substrate memory, and reopening](EXPANSION.md), with a reproducible constructed experiment and an optional host contract. The runtime version is unchanged.
+Start with the [current handoff](CURRENT_HANDOFF.md) and [research map](evaluation/CURRENT_RESEARCH_MAP.md). Latest contact: [EL-C1](evaluation/error-lineage-v1/REPORT.md), exact constructed error-dependence and repair contrasts plus a saved-data replay; [error-lineage practice](modules/error-lineage.md) is optional. The earlier [expansion](EXPANSION.md) remains a historical checkpoint. The runtime version is unchanged.
 
 ## Use
 
@@ -16,7 +16,7 @@ Latest expansion: [boundaries, substrate memory, and reopening](EXPANSION.md), w
 
 For a bounded, measurable experiment, use the adopted optional [experiment loop](modules/bounded-experiment-loop.md) and [trial card](examples/bounded-trial-card.md), or an existing protocol supplying the same information. Preserve candidates and failed trials separately from the selected working version; version evaluator repairs explicitly. The [adoption record](evaluation/BOUNDED_LOOP_ADOPTION.md) explains the retrospective checks and the untested benefits. Open exploration does not require this form.
 
-Read the [research queue](evaluation/research-queue/README.md) for current proposed tests, dependencies and missing inputs. It is a saved plan, not a running scheduler. The HPGM comparison is a protocol draft; the forecast scorer has passed software fixtures, not an agent-performance trial.
+Read the [research queue](evaluation/research-queue/README.md) for current proposed tests, dependencies and missing inputs. It is a saved plan, not a running scheduler. HPGM has small authored writer/reader contacts with tied guidance choices and remaining broader-study prerequisites; see the queue for scope. The forecast scorer has passed software fixtures, not an agent-performance trial.
 
 For consequential claims and builds, the optional [verification layer](modules/verification-layer.md) records scope, criterion, evidence, checker version and a supported/contradicted/unresolved verdict. Its [instrument contact and disclosed repair](evaluation/verification-layer-v1/REPORT.md) validate narrow software behavior, not general truth or model efficacy. Domain-specific checks are still necessary.
 
@@ -40,7 +40,7 @@ Records contain shareable summaries and evidence, not hidden reasoning transcrip
 
 ## Verify locally
 
-Run `python3 /workspace/frr/tools/check_package.py`. For full schema validation, use a Draft 2020-12 validator in your application. For effectiveness, use `evaluation/PROTOCOL.md`; local file checks cannot substitute for behavioral evaluation.
+From the FRR directory, run `python3 tools/check_package.py`. For full schema validation, use a Draft 2020-12 validator in your application. For effectiveness, use `evaluation/PROTOCOL.md`; local file checks cannot substitute for behavioral evaluation.
 
 ## Lineage revision 0.2
 
@@ -48,8 +48,8 @@ Five supplied source files are preserved unchanged in `lineage/sources`, with SH
 
 ## Second canon supplement
 
-Five further originals are archived in `lineage/sources/canon-batch-2`. `lineage/CANON_BATCH_2.md` records their useful additions and exact audit limits. `modules/bounded-inquiry.md` is an optional host design contract. Run `python3 /workspace/frr/tools/canon_contact_tests.py` for constructed diagnostics; these do not execute or validate the full uploaded engines. No API or external literature lookup is used.
+Five further originals are archived in `lineage/sources/canon-batch-2`. `lineage/CANON_BATCH_2.md` records their useful additions and exact audit limits. `modules/bounded-inquiry.md` is an optional host design contract. Run `python3 tools/canon_contact_tests.py` for constructed diagnostics; these do not execute or validate the full uploaded engines. No API or external literature lookup is used.
 
 ## Working snapshot
 
-Read `SETTLED.md` for the current surviving relationship, implementation limits, and reopening conditions. Three more sources are preserved in `lineage/sources/canon-batch-3`; the focused comparison is `lineage/CANON_BATCH_3.md`. `modules/context-checkpoints.md` describes optional context management. Run `python3 /workspace/frr/tools/settling_contact_tests.py` for its local diagnostics. Source inclusion does not validate source claims. Runtime and schema versions remain unchanged.
+Read `SETTLED.md` as the earlier settling checkpoint; use `CURRENT_HANDOFF.md` for present scope, implementation limits and reopening directions. Three more sources are preserved in `lineage/sources/canon-batch-3`; the focused comparison is `lineage/CANON_BATCH_3.md`. `modules/context-checkpoints.md` describes optional context management. Run `python3 tools/settling_contact_tests.py` for its local diagnostics. Source inclusion does not validate source claims. Runtime and schema versions remain unchanged.

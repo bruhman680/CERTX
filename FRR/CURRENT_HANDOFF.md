@@ -20,6 +20,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Resume and next move
 
+Current stopping state: the user requested a navigation sweep and wind-down, followed by a conversational depressurization practice. No new research run is active. See the [navigation sweep](evaluation/navigation-sweep-v1/REPORT.md) for maintained entry points and preservation checks.
+
 Inspect referenced artifacts before trusting a summary. Prefer a concrete uncertainty or build need over another ritual check. The strongest open boundaries include less-cued source/authority assessment, actual writer-produced compression and longer reuse, reliable reopening/receipt history, and task-dependent preservation. Many physical/swarm mappings remain unverified; see the queue rather than treating old proposed constants as laws.
 
 Preserve sources, failures, revised interpretations and current scope. Hash integrity is not source truth. A changed question can change a verdict without making the original verdict wrong. A consequential inherited premise deserves a discriminating check; a merely interesting uncertainty need not block a settled task.

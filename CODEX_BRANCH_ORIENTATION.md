@@ -1,5 +1,7 @@
 # Codex Evidence-Lineage Branch Orientation
 
+Current-branch note: this inherited orientation describes the earlier `codex/evidence-lineage-audit` episode. Active FRR records are on `codex/frr-progress-2026-10-07`; use [FRR/CURRENT_HANDOFF.md](FRR/CURRENT_HANDOFF.md) for present scope and [the research queue](FRR/evaluation/research-queue/README.md) for current status. The original branch metadata, research sequence and boundaries below are preserved as historical context. Root `SESSION_HANDOFF.md` also retains earlier sessions; it is not the current FRR handoff.
+
 **Branch:** `codex/evidence-lineage-audit`  
 **Parent branch:** [`claude/plan-certx-architecture-ojiem`](https://github.com/bruhman680/CERTX/tree/claude/plan-certx-architecture-ojiem)  
 **Branch point:** `18b7e4eb86cfd0982b1b5a40376d574eb1cbb628`  

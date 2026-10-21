@@ -1,5 +1,7 @@
 # CERTX — A Research Program for Cognitive-Dynamics Measurement
 
+Current FRR work on `codex/frr-progress-2026-10-07`: start with the [current handoff](FRR/CURRENT_HANDOFF.md), [research map](FRR/evaluation/CURRENT_RESEARCH_MAP.md) and [queue](FRR/evaluation/research-queue/README.md). The user has requested a wind-down after a navigation sweep; no new research run is active. Earlier CERTX priorities and continuity records below retain their historical scope.
+
 **CERTX** is a developing framework for tracking heterogeneous signals during reasoning and learning, then testing whether their imbalance, trajectory, or coupling predicts independently measured failures or transitions.
 
 The repository contains several depths of work: conceptual architecture, mathematical candidates, synthetic demonstrations, falsifications and nulls, calibration scaffolds, and empirical pilots. They are intentionally preserved together, but they should not be read as carrying equal evidential weight.
@@ -111,7 +113,7 @@ CERTX_COGNITIVE_WRAPPER.md Wrapper architecture
 CERTX_BUILDING_BLOCKS.md   Minimal implementation stack
 ```
 
-## Current research priorities
+## Earlier CERTX research priorities (retained)
 
 1. Multi-seed replication of Experiment 016 with architecture, optimizer, regularization, and non-grokking controls.
 2. Independently measured fiber observables and leakage-free evaluation.
