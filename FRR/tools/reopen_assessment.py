@@ -49,6 +49,8 @@ def compare(old_contract,old_receipt,new_contract,root=None,current_checker_sha2
     method_known=isinstance(current_checker_sha256,str) and len(current_checker_sha256)==64
     result['binding_checks']['current_checker_identity_available']=method_known
     if method_known and old_receipt.get('checker_sha256')!=current_checker_sha256:changed.append('checker_revision')
+    # Field equality can collapse absent/null or Python 1/True; exact binding cannot.
+    if old_hash!=new_hash and not changed:changed.append('unclassified_contract_difference')
     result['changed_dimensions']=changed
     live=None
     if root is not None:
@@ -65,7 +67,7 @@ def compare(old_contract,old_receipt,new_contract,root=None,current_checker_sha2
     if changed:
         scientific={'claim_identity','scope','method','question_or_criterion','assertion','evidence_bytes_binding','checker_revision'}
         result['action']='perform_new_scoped_assessment' if scientific.intersection(changed) else 'review_metadata_and_bind_a_new_receipt'
-    elif old_receipt.get('verdict') in ['supported','contradicted']:
+    elif old_hash==new_hash and old_receipt.get('verdict') in ['supported','contradicted']:
         result['action']='reuse_historical_receipt_for_unchanged_contract'
     else:result['action']='reassess_unresolved_contract'
     return result
