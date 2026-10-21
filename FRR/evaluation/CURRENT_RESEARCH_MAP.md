@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Cross-domain follow-up: [ES-C1](error-success-contact/REPORT.md) separates inferential validity, empirical support, measured versus actual outcomes, task priorities and uncertainty. Six exact development witnesses passed; they constrain overbroad controller claims without establishing general reasoning efficacy.
+
 Latest addition: [PID-C1](pid-contact-v1/REPORT.md) supplies a constructed feedback-control comparison and an optional reasoning-control candidate. A controller can reduce displayed error while remaining wrong about the true state; control sophistication does not validate its sensor/reference. No behavioral transfer claim.
 
 This is a synthesis of saved reports and targeted rereads on the FRR progress branch, not a rerun of every experiment, a new literature survey or an exhaustive audit of all CERTX branches. Historical reports retain their original scope; latest navigation should link later contacts rather than treat older pending statements as current.

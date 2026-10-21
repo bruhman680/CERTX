@@ -1,5 +1,7 @@
 # Current FRR orientation
 
+Latest user-directed expansion: [ES-C1](../evaluation/error-success-contact/REPORT.md) maps error/success criteria and checks six authored counterexamples. General feedback architecture is a candidate, not a universal truth detector; distinguish source/measurement/model/action/objective failures and correct-but-unlucky predictions. No new participant experiment. Existing PID-01 includes this development contact; queue/core counts unchanged.
+
 Latest user-directed contact: [PID-C1](../evaluation/pid-contact-v1/REPORT.md) compares controller mechanics with reasoning limits, with 231 numerical runs and no model calls. Four prospective predictions met; no universal PID winner or demonstrated reasoning advantage. Optional [feedback candidate](../modules/evidence-gated-feedback.md) separates measurement/reference validation, bounded intervention effort and evidence-based acceptance. Core unchanged. Queue now 34 entries / 30 unfinished / five partial contacts; earlier checkpoint counts below are historical.
 
 Scope: FRR work on codex/frr-progress-2026-10-07, not all CERTX branches or a replacement for user direction. Historical FRR/CURRENT_HANDOFF.md at a24ec58cfc3fa914a9364ea647afc8fce56bd31a covered the reset pulse; later current views must also include review and paper work.

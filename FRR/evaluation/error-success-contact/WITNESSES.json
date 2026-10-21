@@ -1,0 +1,112 @@
+{
+  "study": "ES-C1",
+  "kind": "Authored exact counterexamples, not prospective empirical evidence",
+  "same_feedback_opposite_actions": {
+    "worlds": [
+      {
+        "gain": -1,
+        "observation": 0,
+        "target": 1,
+        "successful_action": -1
+      },
+      {
+        "gain": 1,
+        "observation": 0,
+        "target": 1,
+        "successful_action": 1
+      }
+    ],
+    "random_policy_success": "p and 1-p; min(p,1-p)<=1/2 for every p in [0,1]",
+    "scope": "One-shot decision, no distinguishing history, probe or extra observation. A later informative probe can change this bound."
+  },
+  "forecast_vs_outcome": {
+    "true_event_probability": "4/5",
+    "optimal_Brier_forecast": "4/5",
+    "expected_Brier_loss": "4/25",
+    "realized_loss_if_event_absent": "16/25",
+    "event_absent_probability": "1/5",
+    "identity": "E_loss(p)-E_loss(q)=(p-q)^2; rational grid is a consistency check, identity is algebraic"
+  },
+  "valid_inference_false_premise": {
+    "truth_table": [
+      {
+        "P": false,
+        "Q": false,
+        "P_implies_Q": true,
+        "premises_hold": false
+      },
+      {
+        "P": false,
+        "Q": true,
+        "P_implies_Q": true,
+        "premises_hold": false
+      },
+      {
+        "P": true,
+        "Q": false,
+        "P_implies_Q": false,
+        "premises_hold": false
+      },
+      {
+        "P": true,
+        "Q": true,
+        "P_implies_Q": true,
+        "premises_hold": true
+      }
+    ],
+    "example": {
+      "P": true,
+      "Q": false,
+      "P_implies_Q": false,
+      "conclusion_false": true
+    },
+    "scope": "Validity preserves truth conditional on true premises; this example is not a counterexample to modus ponens."
+  },
+  "objective_tradeoff": {
+    "options": {
+      "A": {
+        "quality": 9,
+        "cost": 9
+      },
+      "B": {
+        "quality": 6,
+        "cost": 1
+      }
+    },
+    "quality_minus_cost_penalty_choices": {
+      "1/10": "A",
+      "1": "B"
+    },
+    "scope": "Preference weights differ; outcome facts do not change."
+  },
+  "measurement_vs_state": {
+    "target": "1",
+    "true_state": "3/5",
+    "sensor_bias": "2/5",
+    "measured_error": "0",
+    "true_error": "2/5"
+  },
+  "compression_vs_future_control": {
+    "histories": [
+      {
+        "gain": -1,
+        "latest_y": 0
+      },
+      {
+        "gain": 1,
+        "latest_y": 0
+      }
+    ],
+    "common_summary": 0,
+    "required_actions": [
+      -1,
+      1
+    ],
+    "scope": "This chosen summary loses a task-relevant distinction; other summaries can retain it."
+  },
+  "checks": {
+    "all_assertions_passed": true,
+    "new_model_calls": 0,
+    "source_sha256": "1f7c2d2773a78f0718d7f181e2c3049fce5ca887ddb7b7b73b51aab2190e4527"
+  }
+}
