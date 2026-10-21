@@ -1,0 +1,27 @@
+{
+  "claim_id": "Q7-band",
+  "contract_id": "old-band",
+  "criterion_id": "true-state-band-v1",
+  "scope": "Q7",
+  "ruleset": "0.2",
+  "checker_sha256": "a0c9de67643fa1194c358aca89904a600742e1fd4bd44ac071bb45c7793dd94f",
+  "contract_sha256": "476ce09b90eacb1b4148639d509d5ad6471327bbbdf6cd607ed2552934696b2f",
+  "verdict": "supported",
+  "checks": {
+    "checker_binding": "pass",
+    "integrity": "pass",
+    "scope": "pass",
+    "criterion": "pass",
+    "domain": "pass"
+  },
+  "assumptions": [
+    "Supplied reading is faithful and supplied bias interval covers the actual bias.",
+    "Measurement equals true state plus bias; other measurement errors are absent or included in bounds."
+  ],
+  "reason": "State-band assessment conditional on supplied measurement assumptions",
+  "artifact_sha256": "7ee351becac8720cb65d9a683566dd70fc75b2d8c473ce155f3a8736eee030c6",
+  "computed_state_interval": [
+    "100039/1000",
+    "100041/1000"
+  ]
+}
