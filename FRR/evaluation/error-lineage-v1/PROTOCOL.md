@@ -1,0 +1,14 @@
+# EL-C1: Error dependence, transmission and repair
+
+Scope: exact constructed mechanism exercise, plus a retrospective contact with saved PID residuals. No new reasoning-agent trial, measured organizational culture or general efficacy claim. Prepared before this script's first execution; hypotheses were already reasoned through, so this is a development demonstration rather than blinded confirmation.
+
+1. For32 binary errors with marginal probability0.1, compare independent errors with a shared all-or-none error. Compute mean errors and probability of at least16 simultaneous errors analytically.
+2. Enumerate two binary causal models: common cause A=U,B=U and copying A=U,B=A, with U~Bernoulli(0.1). Compare their complete observational distributions. Apply do(A=0) before versus after B computes; late changes leave cached B unchanged. Include an off-target intervention that silences B in both models, and a sham that changes neither.
+3. Include a latent-difficulty rival: equiprobable easy/hard items with conditional independent error probabilities0/0.2. Compute covariance. This has the same marginal0.1 without direct copying. Mixed mechanisms are permitted in reality; this exercise does not classify all errors into exclusive kinds.
+4. For a stipulated wrong source and two cached dependent answers, compare no repair, output suppression, source repair only, and source repair plus recomputation. Count completed answers and wrong completed answers separately. Correct completed answers are the declared task; abstention can be appropriate in other tasks.
+5. Illustrate a model-specific threshold with a Galton–Watson process, Binomial(2,p) offspring, R=2p, Z0=1, generation20. Compute E[Z20], finite extinction and eventual extinction. At R=1 eventual extinction is1 despite E[Zt]=1. Do not infer a reasoning-system threshold from this construction.
+6. Recompute saved residual count, mean, MAE and threshold exceedances from PG-C1's published residual extract. Inspect simulator source for the shared seeded input route. Do not treat output equality alone as mechanism identification or recompute the whole original study.
+
+Predictions: joint tails differ despite equal means; common cause/copying observationally coincide but selective early intervention separates them; late repair does not update cached descendants; silence reduces visible errors without completed work; a shared difficulty variable produces covariance without transmission. The branching threshold belongs only to this offspring model.
+
+Controls/limits: selective interventions are stipulated, not learned; communication blocking may also change evidence access. A sham preserves both outputs. Gate damage can mask both causes. Human/agent source reliability, spontaneous correction, noisy copying and repair cost are outside this script. Save code/protocol hashes before run, reject drift, and preserve raw derived results. No efficacy-based parameter tuning.

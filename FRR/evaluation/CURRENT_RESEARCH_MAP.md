@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Latest contact: [EL-C1](error-lineage-v1/REPORT.md) distinguishes error dependence, transmission and repair timing with exact constructed witnesses plus a saved-data replay. [Optional practice](../modules/error-lineage.md) adds source/route/descendant checks; no actual agent efficacy or universal criticality threshold is established. Queue counts/statuses remain unchanged.
+
 Current orientation: [PG-C1](practice-growth-v1/REPORT.md) practices useful habits through a saved-data audit and reopening build. Small mean error did not imply a pointwise bound; duplicated controller traces were shared streams; a new criterion changed the warranted assessment without refuting the old one. Peer review found and repaired a contract-reuse bug. The user seeks ongoing growth, not competitive advantage; comparisons remain one optional diagnostic tool.
 
 Latest memory-access contact: [MS-L1](memory-task-shift-v1/REPORT.md) separates a faithful old summary, current original retrieval and accurate-but-wrong-run evidence across8 fresh readers/16 turns. All packet warrants matched; only relevant originals enabled four grounded completions. Missing and wrong-run evidence left four unresolved. Authored short access test, not a new reasoning-framework advantage or long-context benchmark.

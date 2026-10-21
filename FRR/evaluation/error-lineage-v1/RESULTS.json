@@ -1,0 +1,215 @@
+{
+  "scope": "EL-C1 exact development demonstration and retrospective saved-data replay",
+  "dependence": {
+    "n": 32,
+    "marginal_error_probability": {
+      "exact": "1/10",
+      "float": 0.1
+    },
+    "expected_errors_both": {
+      "exact": "16/5",
+      "float": 3.2
+    },
+    "independent_P_at_least_16_errors": {
+      "exact": "248405471258869716765959/20000000000000000000000000000000",
+      "float": 1.2420273562943486e-08
+    },
+    "common_P_at_least_16_errors": {
+      "exact": "1/10",
+      "float": 0.1
+    }
+  },
+  "interventions": {
+    "none": {
+      "common": {
+        "0,0": {
+          "exact": "9/10",
+          "float": 0.9
+        },
+        "1,1": {
+          "exact": "1/10",
+          "float": 0.1
+        }
+      },
+      "copy": {
+        "0,0": {
+          "exact": "9/10",
+          "float": 0.9
+        },
+        "1,1": {
+          "exact": "1/10",
+          "float": 0.1
+        }
+      }
+    },
+    "early": {
+      "common": {
+        "0,0": {
+          "exact": "9/10",
+          "float": 0.9
+        },
+        "0,1": {
+          "exact": "1/10",
+          "float": 0.1
+        }
+      },
+      "copy": {
+        "0,0": {
+          "exact": "1",
+          "float": 1.0
+        }
+      }
+    },
+    "late": {
+      "common": {
+        "0,0": {
+          "exact": "9/10",
+          "float": 0.9
+        },
+        "0,1": {
+          "exact": "1/10",
+          "float": 0.1
+        }
+      },
+      "copy": {
+        "0,0": {
+          "exact": "9/10",
+          "float": 0.9
+        },
+        "0,1": {
+          "exact": "1/10",
+          "float": 0.1
+        }
+      }
+    },
+    "sham": {
+      "common": {
+        "0,0": {
+          "exact": "9/10",
+          "float": 0.9
+        },
+        "1,1": {
+          "exact": "1/10",
+          "float": 0.1
+        }
+      },
+      "copy": {
+        "0,0": {
+          "exact": "9/10",
+          "float": 0.9
+        },
+        "1,1": {
+          "exact": "1/10",
+          "float": 0.1
+        }
+      }
+    },
+    "gate_damage": {
+      "common": {
+        "0,None": {
+          "exact": "9/10",
+          "float": 0.9
+        },
+        "1,None": {
+          "exact": "1/10",
+          "float": 0.1
+        }
+      },
+      "copy": {
+        "0,None": {
+          "exact": "9/10",
+          "float": 0.9
+        },
+        "1,None": {
+          "exact": "1/10",
+          "float": 0.1
+        }
+      }
+    }
+  },
+  "difficulty": {
+    "marginal": {
+      "exact": "1/10",
+      "float": 0.1
+    },
+    "covariance": {
+      "exact": "1/100",
+      "float": 0.01
+    }
+  },
+  "repair": {
+    "none": {
+      "source_wrong": true,
+      "cached_wrong": 2,
+      "completed": 2,
+      "wrong_completed": 2,
+      "correct_completed": 0
+    },
+    "suppress": {
+      "source_wrong": true,
+      "cached_wrong": 2,
+      "completed": 0,
+      "wrong_completed": 0,
+      "correct_completed": 0
+    },
+    "source_only": {
+      "source_wrong": false,
+      "cached_wrong": 2,
+      "completed": 2,
+      "wrong_completed": 2,
+      "correct_completed": 0
+    },
+    "source_and_recompute": {
+      "source_wrong": false,
+      "cached_wrong": 0,
+      "completed": 2,
+      "wrong_completed": 0,
+      "correct_completed": 2
+    }
+  },
+  "branching": [
+    {
+      "R": 0.5,
+      "generation": 20,
+      "expected_generation_size": 9.5367431640625e-07,
+      "extinction_by_generation": 0.9999992505895113,
+      "eventual_extinction": 1.0
+    },
+    {
+      "R": 1.0,
+      "generation": 20,
+      "expected_generation_size": 1.0,
+      "extinction_by_generation": 0.8461929127961622,
+      "eventual_extinction": 1.0
+    },
+    {
+      "R": 1.2,
+      "generation": 20,
+      "expected_generation_size": 38.33759992447472,
+      "extinction_by_generation": 0.4419955685971825,
+      "eventual_extinction": 0.44444444444444453
+    }
+  ],
+  "saved_data": {
+    "n": 12000,
+    "mean": -0.0002798957500694042,
+    "MAE": 0.059835331096037614,
+    "abs_above_0.08": 1855,
+    "scope": "One PI stream per seed; no independent-controller sample multiplication"
+  },
+  "checks": {
+    "equal_mean_different_tail": true,
+    "observational_equivalence": true,
+    "selective_early_discriminates": true,
+    "late_does_not_discriminate": true,
+    "sham_preserves": true,
+    "off_target_gate_masks": true,
+    "difficulty_positive_covariance_without_copy": true,
+    "source_repair_leaves_stale_descendants": true,
+    "suppression_not_task_completion": true,
+    "repair_and_reopen_completes": true,
+    "critical_mean_not_survival": true,
+    "saved_data_replay": true
+  },
+  "input_hashes_match": true
+}

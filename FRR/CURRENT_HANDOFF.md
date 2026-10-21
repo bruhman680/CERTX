@@ -8,6 +8,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 [PG-C1](evaluation/practice-growth-v1/REPORT.md) practices this on actual saved data and a usable build. The sensor audit separates mean error from pointwise error and identifies repeated shared streams. The new [assessment-reopening helper](tools/reopen_assessment.py) classifies recorded changes and checks bindings before suggesting reuse/reassessment; it preserves the historical verdict. Code-scoped behavior and recorded-data checks are supported; domain transfer and durable habit formation remain open.
 
+[EL-C1](evaluation/error-lineage-v1/REPORT.md) now separates shared causes, copying, common difficulty and stale descendants in exact constructed models, with a saved-data replay. The optional [error-lineage practice](modules/error-lineage.md) prompts selective checks and reopening dependents; actual agent-behavior benefit remains untested. FIELD-01/LEGACY-06 stay queued; counts are unchanged.
+
 ## Useful artifacts and recent contacts
 
 - [Verification layer](modules/verification-layer.md), [evidence-gated feedback](modules/evidence-gated-feedback.md), [context checkpoints](modules/context-checkpoints.md), and [bounded experiment loop](modules/bounded-experiment-loop.md) are optional working aids. Core runtime/compact0.2 and inquiry schema0.1 remain unchanged, derived from conceptual FRRv0.5.
