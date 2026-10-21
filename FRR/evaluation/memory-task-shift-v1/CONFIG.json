@@ -1,0 +1,60 @@
+{
+  "study": "MS-L1",
+  "guidance": "Answer the current question using only supplied evidence. State the applicable criterion, cite relevant run/version information and preserve material uncertainty. A previous decision need not settle a changed question. Do not invent missing measurements.",
+  "summary": "Handoff for bench run Q7: under the earlier acceptance band [99.9,100.1], the run was accepted. The retained summary omits the exact reading and uncertainty interval. Record locator: RUN. The old acceptance statement is accurate for Q7.",
+  "task": "The next decision is about that same archived run Q7 under a new acceptance band [99.99,100.01]. Use inclusive endpoints. Return ACCEPT if all true-state values allowed by relevant evidence lie inside the new band; REJECT if all lie outside; otherwise UNRESOLVED. Records are stipulated accurate for their explicitly labeled run only. No current-run data may be inferred from another run.",
+  "records": {
+    "outside": {
+      "current": "Record RUN: run_id=Q7; reading=100.040; certified absolute reading uncertainty=0.001. By exercise premise, the true state of Q7 is within reading plus or minus this uncertainty. This record is authoritative for its labeled run.",
+      "stale": "Record RUN: run_id=Q6; reading=100.004; certified absolute reading uncertainty=0.001. By exercise premise, the true state of Q6 is within reading plus or minus this uncertainty. This record is authoritative for its labeled run only."
+    },
+    "inside": {
+      "current": "Record RUN: run_id=Q7; reading=100.004; certified absolute reading uncertainty=0.001. By exercise premise, the true state of Q7 is within reading plus or minus this uncertainty. This record is authoritative for its labeled run.",
+      "stale": "Record RUN: run_id=Q6; reading=100.040; certified absolute reading uncertainty=0.001. By exercise premise, the true state of Q6 is within reading plus or minus this uncertainty. This record is authoritative for its labeled run only."
+    }
+  },
+  "assignment_order": [
+    {
+      "id": "MS01",
+      "world": "outside",
+      "condition": "summary_only"
+    },
+    {
+      "id": "MS02",
+      "world": "inside",
+      "condition": "record_supplied"
+    },
+    {
+      "id": "MS03",
+      "world": "outside",
+      "condition": "lookup_current"
+    },
+    {
+      "id": "MS04",
+      "world": "inside",
+      "condition": "lookup_stale"
+    },
+    {
+      "id": "MS05",
+      "world": "outside",
+      "condition": "record_supplied"
+    },
+    {
+      "id": "MS06",
+      "world": "inside",
+      "condition": "summary_only"
+    },
+    {
+      "id": "MS07",
+      "world": "inside",
+      "condition": "lookup_current"
+    },
+    {
+      "id": "MS08",
+      "world": "outside",
+      "condition": "lookup_stale"
+    }
+  ],
+  "format": "Use no tools, files, browsing or communication with others. Work only from this packet and any record returned in a second turn. Return only JSON: decision (ACCEPT/REJECT/UNRESOLVED), request (RUN or null), rationale, limits. Keep each reply under 200 words. State the current decision now; you will receive one second turn even if no request is made.",
+  "turn2": "Return the final JSON with request=null, decision, rationale and limits under 200 words. No more requests or tools."
+}
