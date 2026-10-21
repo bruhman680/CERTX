@@ -473,11 +473,11 @@
       "id": "MEM-04",
       "title": "Real-agent provenance and moving context",
       "kind": "agent_experiment",
-      "status": "queued",
+      "status": "partial_contact",
       "priority": 2,
       "source": "evaluation/RESET_READER_STUDY.md",
       "question": "Do correct, missing and wrong source-preparation metadata change use of a retained record?",
-      "comparison": "Matched summaries/context lengths with randomized provenance accuracy and retrievable originals.",
+      "comparison": "Matched summaries/context lengths with randomized provenance accuracy and retrievable originals. MS-L1 supplies8 fresh readers/16 turns with identical guidance across original-record, summary-only, current-lookup and wrong-run-lookup access; four grounded completions and four appropriate unresolved outcomes.",
       "metrics": [
         "Task correctness",
         "source use",
@@ -485,14 +485,16 @@
         "retrieval/cost"
       ],
       "needs": [
-        "Independent task families",
-        "Explicit knowledge/access treatment"
+        "Independent less-cued task families and source authority estimation",
+        "Actual writer-produced compression/longer reuse and cost instrumentation",
+        "Matched information/length comparisons where needed for a causal instruction claim"
       ],
       "depends_on": [
         "HPGM-03",
         "RR2"
       ],
-      "result": null
+      "result": "evaluation/memory-task-shift-v1/REPORT.md",
+      "protocol": "evaluation/memory-task-shift-v1/PROTOCOL.md"
     },
     {
       "id": "LEGACY-01",

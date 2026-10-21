@@ -2,14 +2,15 @@
 
 This is a saved dependency-aware plan, not a running scheduler. It queues every explicit HPGM test direction from [the post review](../HPGM_POST_CONTACT.md), the nearest unresolved relay/RR1 contacts, and references older test families rather than replacing their detailed records. It does not claim a new exhaustive audit of every historical CERTX statement.
 
-**Current status:** 35 entries: two completed prior contacts, one completed scoped RR2 contact, two checked software instruments and 30 unfinished entries. Five unfinished entries have partial contacts. VL-TOOLS checks the new verification instrument; PID-01 now has a small authored actual-agent contact with tied keyed choices; broader efficacy remains unresolved.
+**Current status:** 35 entries: two completed prior contacts, one completed scoped RR2 contact, two checked software instruments and 30 unfinished entries. Six unfinished entries have partial contacts. VL-TOOLS checks the new verification instrument; PID-01 now has a small authored actual-agent contact with tied keyed choices; broader efficacy remains unresolved.
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
 ## Nearest work
 
+- **MEM-04:** [MS-L1](../memory-task-shift-v1/REPORT.md),8 fresh readers/16 turns. Relevant originals resolved a changed question; truthful insufficient summaries and wrong-run records appropriately left it unresolved. Independent less-cued and longer-memory work remains pending.
 - **VL-TOOLS:** [verification-layer instrument and repair](../verification-layer-v1/REPORT.md) passed scoped authored checks. The optional module is usable; broader semantic/behavioral effectiveness remains under PID-01.
-- **PID-01:** [PID-C1](../pid-contact-v1/REPORT.md) completed the registered scalar control illustration. Behavioral comparison of the optional feedback candidate against ordinary review and provenance-only remains unrun.
+- **PID-01:** [PID-C1](../pid-contact-v1/REPORT.md) completed the registered scalar control illustration. [VP-L1](../verification-practice-pilot-v1/REPORT.md) has now compared compact verification, provenance-only and ordinary guidance on3 authored tasks; all keyed choices tied. Broader efficacy remains open.
 - **HG1 / HPGM-01 and HPGM-03:** [one-case smoke result](../hpgm-gates-study/LINEAR_SMOKE_REPORT.md): 12 completions, all four styles tied on writer correctness and grounded reader completion. Exposed authored development only; broader family scoring, meaningful difficulty, full packet freezing and access/cost instrumentation remain open. The original proposed 96-call draft and later 48-completion proposal have not launched.
 - **HG1 reader evidence challenge:** [six-condition result](../hpgm-gates-study/READER_CHALLENGE_REPORT.md): complete/compressed evidence solved, missing evidence and contradiction appropriately reported, consistent source corruption propagated into an objectively wrong answer. All six matched prospective status/value predictions. No additional instruction comparison or general robustness claim; source/version authority remains open.
 - **LEGACY-05 direct FRR contact:** [broad-orientation pilot](../broad-frr-pilot-v1/REPORT.md) found tied choices across nine contexts/18 turns. Later [REV-C1](../revision-continuity-v1/REPORT.md) repeated two revision histories with ordinary then compact-FRR guidance: 16 participant turns and two completed label-blind reviews, all full-credit. Failed review attempts remain recorded. General efficacy, actual lossy handoffs and longer continuity remain open.
@@ -45,7 +46,7 @@ The machine-readable source of current queue status is [QUEUE.json](QUEUE.json).
 | MEM-01 | Probability-weighted backward states | queued | 2 | — |
 | MEM-02 | Boundary-channel identity and dissipation | queued | 2 | — |
 | MEM-03 | Robust mixture recovery | queued | 2 | — |
-| MEM-04 | Real-agent provenance and moving context | queued | 2 | HPGM-03, RR2 |
+| MEM-04 | Real-agent provenance and moving context | partial_contact | 2 | HPGM-03, RR2 |
 | LEGACY-01 | Field/log observers and probe disturbance | queued | 4 | — |
 | LEGACY-02 | Wake-to-law escape and reversibility | queued | 4 | — |
 | LEGACY-03 | Transformer context/cache controls | queued | 4 | — |

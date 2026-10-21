@@ -1,0 +1,212 @@
+{
+  "study": "MS-L1",
+  "scope": "Two constructed worlds with stipulated source accuracy; access-policy contact, not prompt efficacy or internal/long-window memory decay",
+  "fresh_contexts": 8,
+  "participant_turns": 16,
+  "all_planned_responses_retained": true,
+  "launch_hashes_unchanged": true,
+  "summary": {
+    "summary_only": {
+      "readers": 2,
+      "participant_turns": 4,
+      "initial_packet_warrant": 2,
+      "final_packet_warrant": 2,
+      "grounded_completions": 0,
+      "appropriate_unresolved": 2,
+      "false_certainty": 0,
+      "requests": 0,
+      "returned_words": 279
+    },
+    "record_supplied": {
+      "readers": 2,
+      "participant_turns": 4,
+      "initial_packet_warrant": 2,
+      "final_packet_warrant": 2,
+      "grounded_completions": 2,
+      "appropriate_unresolved": 0,
+      "false_certainty": 0,
+      "requests": 0,
+      "returned_words": 260
+    },
+    "lookup_current": {
+      "readers": 2,
+      "participant_turns": 4,
+      "initial_packet_warrant": 2,
+      "final_packet_warrant": 2,
+      "grounded_completions": 2,
+      "appropriate_unresolved": 0,
+      "false_certainty": 0,
+      "requests": 2,
+      "returned_words": 281
+    },
+    "lookup_stale": {
+      "readers": 2,
+      "participant_turns": 4,
+      "initial_packet_warrant": 2,
+      "final_packet_warrant": 2,
+      "grounded_completions": 0,
+      "appropriate_unresolved": 2,
+      "false_certainty": 0,
+      "requests": 2,
+      "returned_words": 255
+    }
+  },
+  "records": [
+    {
+      "id": "MS01",
+      "world": "outside",
+      "condition": "summary_only",
+      "truth": "REJECT",
+      "initial_decision": "UNRESOLVED",
+      "request": null,
+      "final_decision": "UNRESOLVED",
+      "initial_packet_warrant": true,
+      "request_matches_policy": true,
+      "final_packet_warrant": true,
+      "grounded_completion": false,
+      "appropriate_unresolved": true,
+      "false_certainty": false,
+      "returned_words": [
+        67,
+        73
+      ]
+    },
+    {
+      "id": "MS02",
+      "world": "inside",
+      "condition": "record_supplied",
+      "truth": "ACCEPT",
+      "initial_decision": "ACCEPT",
+      "request": null,
+      "final_decision": "ACCEPT",
+      "initial_packet_warrant": true,
+      "request_matches_policy": true,
+      "final_packet_warrant": true,
+      "grounded_completion": true,
+      "appropriate_unresolved": false,
+      "false_certainty": false,
+      "returned_words": [
+        63,
+        66
+      ]
+    },
+    {
+      "id": "MS03",
+      "world": "outside",
+      "condition": "lookup_current",
+      "truth": "REJECT",
+      "initial_decision": "UNRESOLVED",
+      "request": "RUN",
+      "final_decision": "REJECT",
+      "initial_packet_warrant": true,
+      "request_matches_policy": true,
+      "final_packet_warrant": true,
+      "grounded_completion": true,
+      "appropriate_unresolved": false,
+      "false_certainty": false,
+      "returned_words": [
+        75,
+        69
+      ]
+    },
+    {
+      "id": "MS04",
+      "world": "inside",
+      "condition": "lookup_stale",
+      "truth": "ACCEPT",
+      "initial_decision": "UNRESOLVED",
+      "request": "RUN",
+      "final_decision": "UNRESOLVED",
+      "initial_packet_warrant": true,
+      "request_matches_policy": true,
+      "final_packet_warrant": true,
+      "grounded_completion": false,
+      "appropriate_unresolved": true,
+      "false_certainty": false,
+      "returned_words": [
+        59,
+        60
+      ]
+    },
+    {
+      "id": "MS05",
+      "world": "outside",
+      "condition": "record_supplied",
+      "truth": "REJECT",
+      "initial_decision": "REJECT",
+      "request": null,
+      "final_decision": "REJECT",
+      "initial_packet_warrant": true,
+      "request_matches_policy": true,
+      "final_packet_warrant": true,
+      "grounded_completion": true,
+      "appropriate_unresolved": false,
+      "false_certainty": false,
+      "returned_words": [
+        61,
+        70
+      ]
+    },
+    {
+      "id": "MS06",
+      "world": "inside",
+      "condition": "summary_only",
+      "truth": "ACCEPT",
+      "initial_decision": "UNRESOLVED",
+      "request": null,
+      "final_decision": "UNRESOLVED",
+      "initial_packet_warrant": true,
+      "request_matches_policy": true,
+      "final_packet_warrant": true,
+      "grounded_completion": false,
+      "appropriate_unresolved": true,
+      "false_certainty": false,
+      "returned_words": [
+        71,
+        68
+      ]
+    },
+    {
+      "id": "MS07",
+      "world": "inside",
+      "condition": "lookup_current",
+      "truth": "ACCEPT",
+      "initial_decision": "UNRESOLVED",
+      "request": "RUN",
+      "final_decision": "ACCEPT",
+      "initial_packet_warrant": true,
+      "request_matches_policy": true,
+      "final_packet_warrant": true,
+      "grounded_completion": true,
+      "appropriate_unresolved": false,
+      "false_certainty": false,
+      "returned_words": [
+        76,
+        61
+      ]
+    },
+    {
+      "id": "MS08",
+      "world": "outside",
+      "condition": "lookup_stale",
+      "truth": "REJECT",
+      "initial_decision": "UNRESOLVED",
+      "request": "RUN",
+      "final_decision": "UNRESOLVED",
+      "initial_packet_warrant": true,
+      "request_matches_policy": true,
+      "final_packet_warrant": true,
+      "grounded_completion": false,
+      "appropriate_unresolved": true,
+      "false_certainty": false,
+      "returned_words": [
+        67,
+        69
+      ]
+    }
+  ],
+  "all_200_word_caps_respected": true,
+  "actual_token_dollar_compute_cost": "unavailable",
+  "response_capture": "Collaboration final-message payload text plus parsed JSON; no private reasoning/backend metadata",
+  "isolation": "fork_turns none plus no-tool/no-file instruction; shared filesystem/tools and model ancestry remain"
+}

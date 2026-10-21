@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Latest memory-access contact: [MS-L1](memory-task-shift-v1/REPORT.md) separates a faithful old summary, current original retrieval and accurate-but-wrong-run evidence across8 fresh readers/16 turns. All packet warrants matched; only relevant originals enabled four grounded completions. Missing and wrong-run evidence left four unresolved. Authored short access test, not a new reasoning-framework advantage or long-context benchmark.
+
 Latest live adoption and behavioral contact: [VA-C1](verification-adoption-v1/REPORT.md) repaired source binding, linked execution paths and preserved three real claim checks; [VP-L1](verification-practice-pilot-v1/REPORT.md) found all keyed decisions tied across ordinary/provenance/verification guidance in9 fresh contexts/18 turns. This supports scoped uptake without a measured advantage or durable habit claim. The stale queue-count paragraph was corrected against QUEUE.json.
 
 Latest implementation: [VL-C1](verification-layer-v1/REPORT.md) turns earlier reference/measurement/version findings into an optional scoped verification layer. Instrument cases passed; a later parser-limit gap was preserved and repaired through separate replay. This establishes local checker/history behavior, not semantic truth or improved agent reasoning.
@@ -43,6 +45,6 @@ The latest synthesis itself found a navigation defect: CURRENT_ORIENTATION's ope
 
 Source/version authority and spontaneous verification beyond obvious menu choices; reasoning under actual compression and competing revisions; task/reader-dependent preservation; matched and repeated FRR comparisons on separately prepared cases; noisy or mistaken provenance; opportunity versus realized intervention/compute cost. Role rotation, swarm scale and physical mappings should follow explicit operational questions rather than historical constants.
 
-There are 35 queue entries, 30 unfinished, including five partial contacts. Open entries can remain dormant; counts are navigation, not a requirement to finish every branch. The strongest current contribution is a more inspectable and correctable inquiry plus scoped models and participant observations. General FRR benefit remains an empirical question.
+There are 35 queue entries, 30 unfinished, including six partial contacts. Open entries can remain dormant; counts are navigation, not a requirement to finish every branch. The strongest current contribution is a more inspectable and correctable inquiry plus scoped models and participant observations. General FRR benefit remains an empirical question.
 
 Main report pointers: SHADOW_ECHO_RESET_SYNTHESIS.md; IMPERFECT_RESET_SYNTHESIS.md; CLAUDE_RELAY_SYNTHESIS.md; BOUNDARY_EXPANSION_REPORT.md; EVIDENCE_GATED_ROTATION_REPORT.md; PALIMPSEST_SYNC_SYNTHESIS.md; RECOVERY_PILOT_REPORT.md; RESET_READER_STUDY.md; RESET_READER_RR2.md; DECEPEVAL_RESEARCH_SYNTHESIS.md; broad-frr-pilot-v1/REPORT.md; revision-continuity-v1/REPORT.md; hpgm-gates-study/LINEAR_SMOKE_REPORT.md and READER_CHALLENGE_REPORT.md. Broader scope and dormant branches: EXPLORATION_BACKLOG_STATUS.md.
