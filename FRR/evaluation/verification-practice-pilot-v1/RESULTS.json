@@ -1,0 +1,207 @@
+{
+  "study": "VP-L1",
+  "scope": "One context per arm/case; authored development smoke test; unblinded parent semantic review separately reported",
+  "fresh_contexts": 9,
+  "participant_turns": 18,
+  "source_hashes_unchanged": true,
+  "records": [
+    {
+      "id": "VP01",
+      "case": "A",
+      "arm": "ordinary",
+      "initial_decision": "UNRESOLVED",
+      "request": "D11",
+      "final_decision": "ADVANCE_B",
+      "initial_decision_matches": true,
+      "request_matches": true,
+      "packet_warranted_final_matches": true,
+      "grounded_completion": true,
+      "returned_words": [
+        103,
+        53
+      ],
+      "requested_record_count": 1,
+      "within_250_word_caps": true
+    },
+    {
+      "id": "VP02",
+      "case": "B",
+      "arm": "provenance",
+      "initial_decision": "UNRESOLVED",
+      "request": "C14",
+      "final_decision": "OUT_OF_BAND",
+      "initial_decision_matches": true,
+      "request_matches": true,
+      "packet_warranted_final_matches": true,
+      "grounded_completion": true,
+      "returned_words": [
+        78,
+        69
+      ],
+      "requested_record_count": 1,
+      "within_250_word_caps": true
+    },
+    {
+      "id": "VP03",
+      "case": "C",
+      "arm": "verification",
+      "initial_decision": "PUBLISH",
+      "request": null,
+      "final_decision": "PUBLISH",
+      "initial_decision_matches": true,
+      "request_matches": true,
+      "packet_warranted_final_matches": true,
+      "grounded_completion": true,
+      "returned_words": [
+        66,
+        64
+      ],
+      "requested_record_count": 0,
+      "within_250_word_caps": true
+    },
+    {
+      "id": "VP04",
+      "case": "A",
+      "arm": "verification",
+      "initial_decision": "UNRESOLVED",
+      "request": "D11",
+      "final_decision": "ADVANCE_B",
+      "initial_decision_matches": true,
+      "request_matches": true,
+      "packet_warranted_final_matches": true,
+      "grounded_completion": true,
+      "returned_words": [
+        98,
+        77
+      ],
+      "requested_record_count": 1,
+      "within_250_word_caps": true
+    },
+    {
+      "id": "VP05",
+      "case": "B",
+      "arm": "ordinary",
+      "initial_decision": "UNRESOLVED",
+      "request": "C14",
+      "final_decision": "OUT_OF_BAND",
+      "initial_decision_matches": true,
+      "request_matches": true,
+      "packet_warranted_final_matches": true,
+      "grounded_completion": true,
+      "returned_words": [
+        79,
+        73
+      ],
+      "requested_record_count": 1,
+      "within_250_word_caps": true
+    },
+    {
+      "id": "VP06",
+      "case": "C",
+      "arm": "provenance",
+      "initial_decision": "PUBLISH",
+      "request": null,
+      "final_decision": "PUBLISH",
+      "initial_decision_matches": true,
+      "request_matches": true,
+      "packet_warranted_final_matches": true,
+      "grounded_completion": true,
+      "returned_words": [
+        63,
+        68
+      ],
+      "requested_record_count": 0,
+      "within_250_word_caps": true
+    },
+    {
+      "id": "VP07",
+      "case": "A",
+      "arm": "provenance",
+      "initial_decision": "UNRESOLVED",
+      "request": "D11",
+      "final_decision": "ADVANCE_B",
+      "initial_decision_matches": true,
+      "request_matches": true,
+      "packet_warranted_final_matches": true,
+      "grounded_completion": true,
+      "returned_words": [
+        114,
+        65
+      ],
+      "requested_record_count": 1,
+      "within_250_word_caps": true
+    },
+    {
+      "id": "VP08",
+      "case": "B",
+      "arm": "verification",
+      "initial_decision": "UNRESOLVED",
+      "request": "C14",
+      "final_decision": "OUT_OF_BAND",
+      "initial_decision_matches": true,
+      "request_matches": true,
+      "packet_warranted_final_matches": true,
+      "grounded_completion": true,
+      "returned_words": [
+        99,
+        70
+      ],
+      "requested_record_count": 1,
+      "within_250_word_caps": true
+    },
+    {
+      "id": "VP09",
+      "case": "C",
+      "arm": "ordinary",
+      "initial_decision": "PUBLISH",
+      "request": null,
+      "final_decision": "PUBLISH",
+      "initial_decision_matches": true,
+      "request_matches": true,
+      "packet_warranted_final_matches": true,
+      "grounded_completion": true,
+      "returned_words": [
+        68,
+        61
+      ],
+      "requested_record_count": 0,
+      "within_250_word_caps": true
+    }
+  ],
+  "summary": {
+    "ordinary": {
+      "contexts": 3,
+      "turns": 6,
+      "initial_matches": 3,
+      "request_matches": 3,
+      "grounded_completions": 3,
+      "archive_requests": 2,
+      "returned_words": 437,
+      "guidance_words": 21
+    },
+    "provenance": {
+      "contexts": 3,
+      "turns": 6,
+      "initial_matches": 3,
+      "request_matches": 3,
+      "grounded_completions": 3,
+      "archive_requests": 2,
+      "returned_words": 457,
+      "guidance_words": 47
+    },
+    "verification": {
+      "contexts": 3,
+      "turns": 6,
+      "initial_matches": 3,
+      "request_matches": 3,
+      "grounded_completions": 3,
+      "archive_requests": 2,
+      "returned_words": 474,
+      "guidance_words": 102
+    }
+  },
+  "measured_advantage_in_keyed_choices": false,
+  "actual_token_dollar_compute_cost": "unavailable; word counts do not establish equal compute",
+  "isolation": "fresh history via fork_turns none, supplied-evidence-only instruction; shared filesystem/tools remain available",
+  "raw_source": "Participant final text retained from collaboration message payloads; no private reasoning or backend token metadata retained"
+}

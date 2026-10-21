@@ -1,0 +1,73 @@
+[
+  {
+    "id": "VC-PID-01",
+    "claim": "In the saved PID-C1 biased-sensor PI run, tail sensor MAE < .01 and tail true-state MAE > .35.",
+    "scope": "Single deterministic constructed run; last 50 stored rows",
+    "evidence": [
+      "evaluation/pid-contact-v1/RESULTS.json",
+      "evaluation/pid-contact-v1/SUMMARY.json"
+    ],
+    "method": "Convening agent research_contact independently recomputed MAEs from saved trajectory, without rerunning simulation.",
+    "result": {
+      "tail_true_mae": 0.4000254879566334,
+      "tail_sensor_mae": 2.548795663336767e-05
+    },
+    "verdict": "supported",
+    "limits": "Scorer knows true state by construction; no physical calibration, prevalence or reasoning efficacy established.",
+    "reopen": "Changed trajectory, definitions, sensor model or external replication.",
+    "evidence_sha256": {
+      "evaluation/pid-contact-v1/RESULTS.json": "01cd733da491fbddf810523ae424ef587760c6e6a872d4e64bf9d113fe4ae3c6",
+      "evaluation/pid-contact-v1/SUMMARY.json": "b3bd9b9bea4e817043abadaf755f145dc5b7ac8bbde28059b9f84e09d63dcaed"
+    },
+    "source": "Read-only convening-agent contact; parent preservation/hashes, not an independent study."
+  },
+  {
+    "id": "VC-REV-01",
+    "claim": "Both completed REV-C1 reviewers assigned all eight final memos full rubric credit.",
+    "scope": "Retained review ratings, not independent semantic regrading",
+    "evidence": [
+      "evaluation/revision-continuity-v1/REVIEW_C.json",
+      "evaluation/revision-continuity-v1/REVIEW_E.json",
+      "evaluation/revision-continuity-v1/RESULTS.json"
+    ],
+    "method": "Convening agent parsed the two saved completed reviews; 16 forms, four dimensions each scoring two.",
+    "result": {
+      "forms": 16,
+      "points_per_form": 8
+    },
+    "verdict": "supported",
+    "limits": "Authored ceilinged cases; shared model ancestry, blocked order and no actual lossy handoff. General FRR advantage remains unresolved.",
+    "reopen": "Review/input validity findings or harder separately prepared comparisons.",
+    "evidence_sha256": {
+      "evaluation/revision-continuity-v1/REVIEW_C.json": "6816d6a015d9f7d05bc5ab68c77c9134b85432ec5f77bb99bb27a624a0f73c94",
+      "evaluation/revision-continuity-v1/REVIEW_E.json": "caa7eb90ba50755739f2ee79c2fc4e0f97400b62fa250ededa76abb359992225",
+      "evaluation/revision-continuity-v1/RESULTS.json": "f83aba69b0ab28d8318370b585d64355c7602181ab566509a8bd7c760982f1ac"
+    },
+    "source": "Read-only convening-agent contact; parent preservation/hashes, not an independent study."
+  },
+  {
+    "id": "VC-RR2-01",
+    "claim": "Population reader has no worse aggregate risk than natural/uniform comparators, but worse than natural in 856 conditional cells at tolerance1e-11.",
+    "scope": "405 aggregate and 2025 conditional rows in saved finite known-model grid",
+    "evidence": [
+      "evaluation/reset-reader-rr2/RESULTS.json",
+      "evaluation/reset-reader-rr2/SUMMARY.json",
+      "evaluation/RESET_READER_RR2.md"
+    ],
+    "method": "Convening agent recomputed saved-row aggregate and conditional risk differences; no original experiment rerun.",
+    "result": {
+      "max_population_minus_natural_aggregate": 0,
+      "max_population_minus_uniform_aggregate": 0,
+      "conditional_above_tolerance": 856
+    },
+    "verdict": "supported",
+    "limits": "Correlated authored cells, not population harm frequency or independent model validation.",
+    "reopen": "Changed weights, model/preparation assumptions, risk calculation or row integrity.",
+    "evidence_sha256": {
+      "evaluation/reset-reader-rr2/RESULTS.json": "6e3ed821b6f8d02d46f0ce01c574e269d1d2dbaab15ecb1a5bd15fc431b68bf7",
+      "evaluation/reset-reader-rr2/SUMMARY.json": "a4213457ba27bc91fb30aed92eccad6fbdc299dadabf6c5d5bd442154619ec9e",
+      "evaluation/RESET_READER_RR2.md": "b5322196a9c260fbce9233f557a2c3a4cdcf158e7e429b64a06fee7b0d6b9cd3"
+    },
+    "source": "Read-only convening-agent contact; parent preservation/hashes, not an independent study."
+  }
+]

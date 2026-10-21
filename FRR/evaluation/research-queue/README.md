@@ -2,7 +2,7 @@
 
 This is a saved dependency-aware plan, not a running scheduler. It queues every explicit HPGM test direction from [the post review](../HPGM_POST_CONTACT.md), the nearest unresolved relay/RR1 contacts, and references older test families rather than replacing their detailed records. It does not claim a new exhaustive audit of every historical CERTX statement.
 
-**Current status:** 35 entries: two completed prior contacts, one completed scoped RR2 contact, two checked software instruments and 30 unfinished entries. Five unfinished entries have partial contacts. VL-TOOLS checks the new verification instrument; PID-01 still has no actual-agent efficacy result.
+**Current status:** 35 entries: two completed prior contacts, one completed scoped RR2 contact, two checked software instruments and 30 unfinished entries. Five unfinished entries have partial contacts. VL-TOOLS checks the new verification instrument; PID-01 now has a small authored actual-agent contact with tied keyed choices; broader efficacy remains unresolved.
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
@@ -74,3 +74,5 @@ Latest added family: **PID-01**, evidence-gated feedback versus simpler reasonin
 PID-01 diagnostic expansion: [ES-C1](../error-success-contact/REPORT.md) supplies source-based distinctions and six checked exact development witnesses; the semantic comparison remains unrun.
 
 Latest checked instrument: **VL-TOOLS**, scoped verification receipts and versioned repair; instrument_checked; priority 1; no dependencies.
+
+Latest PID-01 contact: [VP-L1](../verification-practice-pilot-v1/REPORT.md),9 fresh contexts/18 turns, all three guidance arms tied; broader/longer tests remain open. Latest VL-TOOLS contact: [VA-C1](../verification-adoption-v1/REPORT.md), execution integration, real saved-claim checks and disclosed source-binding repair.

@@ -1,5 +1,7 @@
 # Current FRR orientation
 
+Latest direct use: [VA-C1](../evaluation/verification-adoption-v1/REPORT.md) exercises the layer on saved claims and repairs a loaded-source attribution bug while adding execution checkpoints. [VP-L1](../evaluation/verification-practice-pilot-v1/REPORT.md) collected9 fresh contexts/18 turns: ordinary, shorter provenance guidance and verification practice all tied on3 authored tasks. Keep simpler review available. No automatic habitual-use or general efficacy conclusion; core/queue counts unchanged.
+
 Latest addition: [verification module](../modules/verification-layer.md) supplies an optional evidence contract, bounded checking practice and versioned repair workflow. [VL-C1](../evaluation/verification-layer-v1/REPORT.md) checks 22 authored fixtures across two adapter configurations, preserves initial results and separately verifies a real post-run parser repair. Original and repaired checker hashes differ intentionally. No actual-agent efficacy trial; core unchanged. Queue 35 entries, 30 unfinished, two checked instruments; older checkpoint counts below are historical.
 
 Latest user-directed expansion: [ES-C1](../evaluation/error-success-contact/REPORT.md) maps error/success criteria and checks six authored counterexamples. General feedback architecture is a candidate, not a universal truth detector; distinguish source/measurement/model/action/objective failures and correct-but-unlucky predictions. No new participant experiment. Existing PID-01 includes this development contact; queue/core counts unchanged.
