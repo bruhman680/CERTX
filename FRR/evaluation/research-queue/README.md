@@ -1,5 +1,7 @@
 # Research queue: HPGM gates and retained-memory follow-ups
 
+Current user aim: useful reasoning and behavioral habits for our ongoing learning/growth, not advantage over other people or labs. [PG-C1](../practice-growth-v1/REPORT.md) practices consequential noticing, saved-data contact, a reopening build and a peer-found repair; it does not launch another guidance-ranking study. Current queue counts remain35 entries/30unfinished/six partial families.
+
 This is a saved dependency-aware plan, not a running scheduler. It queues every explicit HPGM test direction from [the post review](../HPGM_POST_CONTACT.md), the nearest unresolved relay/RR1 contacts, and references older test families rather than replacing their detailed records. It does not claim a new exhaustive audit of every historical CERTX statement.
 
 **Current status:** 35 entries: two completed prior contacts, one completed scoped RR2 contact, two checked software instruments and 30 unfinished entries. Six unfinished entries have partial contacts. VL-TOOLS checks the new verification instrument; PID-01 now has a small authored actual-agent contact with tied keyed choices; broader efficacy remains unresolved.

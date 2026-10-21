@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Current orientation: [PG-C1](practice-growth-v1/REPORT.md) practices useful habits through a saved-data audit and reopening build. Small mean error did not imply a pointwise bound; duplicated controller traces were shared streams; a new criterion changed the warranted assessment without refuting the old one. Peer review found and repaired a contract-reuse bug. The user seeks ongoing growth, not competitive advantage; comparisons remain one optional diagnostic tool.
+
 Latest memory-access contact: [MS-L1](memory-task-shift-v1/REPORT.md) separates a faithful old summary, current original retrieval and accurate-but-wrong-run evidence across8 fresh readers/16 turns. All packet warrants matched; only relevant originals enabled four grounded completions. Missing and wrong-run evidence left four unresolved. Authored short access test, not a new reasoning-framework advantage or long-context benchmark.
 
 Latest live adoption and behavioral contact: [VA-C1](verification-adoption-v1/REPORT.md) repaired source binding, linked execution paths and preserved three real claim checks; [VP-L1](verification-practice-pilot-v1/REPORT.md) found all keyed decisions tied across ordinary/provenance/verification guidance in9 fresh contexts/18 turns. This supports scoped uptake without a measured advantage or durable habit claim. The stale queue-count paragraph was corrected against QUEUE.json.

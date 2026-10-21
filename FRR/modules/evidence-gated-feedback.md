@@ -32,3 +32,5 @@ To test value rather than appeal, compare against ordinary review and a simpler 
 Further diagnostic guide: [ES-C1](../evaluation/error-success-contact/REPORT.md) separates premises, inference, measurement, objectives, actions and outcome luck before increasing correction. This is conceptual refinement with exact counterexamples, not a new efficacy result.
 
 Executable narrow checks and a versioned repair practice are now available in the optional [verification layer](verification-layer.md). Scheduling remains distinct from evidence-based acceptance; unsupported domains stay unresolved.
+
+Growth-oriented practice: comparisons are useful when they clarify a working choice; superiority over people or labs is not the objective. A short pulse can suffice: what changed, what distinction could change the next useful action, which contact discriminates, and what follows? Where a consequential premise is inherited or stipulated, distinguish that from a derivation or an observation. [PG-C1](../evaluation/practice-growth-v1/REPORT.md) practices this with a saved-data audit, reopening build and peer-found repair; do not make it another mandatory form.

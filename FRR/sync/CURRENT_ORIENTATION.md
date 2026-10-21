@@ -1,5 +1,7 @@
 # Current FRR orientation
 
+Current user goal: useful reasoning and behavioral habits for learning/growth, not advantage over other people/labs. The new [PG-C1 practice run](../evaluation/practice-growth-v1/REPORT.md) follows an actual premise into saved data, builds an assessment-reopening helper and preserves a peer-found repair. Read the concise [current handoff](../CURRENT_HANDOFF.md) first; historical checkpoints below retain their old scope/budgets. No new frame-ranking participant study was run.
+
 Latest continuation: [MS-L1](../evaluation/memory-task-shift-v1/REPORT.md) tests a faithful old summary under a changed task criterion.8 fresh contexts/16 turns; source-supplied/current-lookup readers resolved4 decisions, summary-only/wrong-run readers appropriately left4 unresolved. No instruction advantage or full memory-system validation. Queue35/30unfinished/six partial; earlier counts below are historical. Stop expanding this run after saving results, per bounded response to the user's45% remaining-window update.
 
 Latest direct use: [VA-C1](../evaluation/verification-adoption-v1/REPORT.md) exercises the layer on saved claims and repairs a loaded-source attribution bug while adding execution checkpoints. [VP-L1](../evaluation/verification-practice-pilot-v1/REPORT.md) collected9 fresh contexts/18 turns: ordinary, shorter provenance guidance and verification practice all tied on3 authored tasks. Keep simpler review available. No automatic habitual-use or general efficacy conclusion; core/queue counts unchanged.

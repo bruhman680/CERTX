@@ -1,0 +1,58 @@
+{
+  "scope": "Disclosed local helper repair; authored regression and CLI checks, not semantic/source reliability validation",
+  "checks": {
+    "changed_question_preserves_old_support": true,
+    "formatting_only_reuses_binding": true,
+    "note_not_scientific_revision": true,
+    "mismatched_receipt_unresolved": true,
+    "mismatched_historical_evidence_unresolved": true,
+    "missing_contract_unresolved": true,
+    "missing_live_check_blocks_reuse": true,
+    "checker_change_reopens": true,
+    "changed_bytes_block_reuse": true,
+    "explicit_evidence_revision_detected": true,
+    "changed_assertion_not_criterion": true,
+    "absent_null_never_reuses": true,
+    "integer_boolean_never_reuses": true
+  },
+  "all_checks_passed": true,
+  "initial_output_hashes_preserved": {
+    "STDERR.txt": true,
+    "STDOUT.json": true,
+    "RESULTS.json": true,
+    "RESIDUALS.json": true,
+    "reopening/old_contract.json": true,
+    "reopening/record.json": true,
+    "reopening/new_receipt.json": true,
+    "reopening/literal.json": true,
+    "reopening/history.jsonl": true,
+    "reopening/proposed_contract.json": true,
+    "reopening/reopening_plan.json": true,
+    "reopening/old_receipt.json": true
+  },
+  "cli": {
+    "returncode": 0,
+    "receipt": {
+      "status": "ready_for_next_action",
+      "changed_dimensions": [
+        "question_or_criterion",
+        "contract_identity"
+      ],
+      "historical_verdict": "supported",
+      "action": "perform_new_scoped_assessment",
+      "notes": [
+        "Differences concern recorded fields; source reliability and semantic equivalence are not inferred."
+      ],
+      "binding_checks": {
+        "historical_contract": true,
+        "current_checker_identity_available": true,
+        "proposed_live_artifact": true
+      },
+      "old_contract_sha256": "476ce09b90eacb1b4148639d509d5ad6471327bbbdf6cd607ed2552934696b2f",
+      "proposed_contract_sha256": "1fbd5b2bf4d9003fdedd00202090504af985f350dba4450fb7f9b27ed5e7c209"
+    },
+    "stderr": ""
+  },
+  "repaired_helper_sha256": "40f4c1b400d4282cc4be3a62a02608ddf8386429001b42b92d2705128e6dd98c",
+  "repair_source_hashes_unchanged": true
+}

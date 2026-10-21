@@ -1,5 +1,7 @@
 # Fluid Relational Reasoning — operational candidate 0.2
 
+Current working aim: useful habits for ongoing inquiry, construction and revision. Comparative evaluations can inform a choice, but outperforming other people/labs is not the goal. [PG-C1](evaluation/practice-growth-v1/REPORT.md) shows concrete practice through saved-data inspection, a working reopening tool and a preserved repair.
+
 This package translates the user's FRR v0.5 into instructions, a recoverable inquiry record, and behavioral evaluations. It is an unvalidated operational candidate, not evidence that FRR improves AI reasoning.
 
 Latest expansion: [boundaries, substrate memory, and reopening](EXPANSION.md), with a reproducible constructed experiment and an optional host contract. The runtime version is unchanged.
