@@ -1,0 +1,77 @@
+{
+  "dt": 0.1,
+  "steps": 400,
+  "plant": "y_next=y+dt*(-y+u+disturbance); sensor=y+bias+noise; y0=0",
+  "gains": {
+    "kp": 0.8,
+    "ki": 0.4,
+    "kd": 0.2
+  },
+  "derivative_filter_memory": 0.85,
+  "controllers": [
+    "P",
+    "PI",
+    "PI_clamped",
+    "PID",
+    "PID_filtered",
+    "PID_clamped",
+    "PID_filtered_clamped"
+  ],
+  "scenarios": [
+    "constant_load",
+    "saturation_release",
+    "noisy_sensor",
+    "biased_sensor"
+  ],
+  "noise_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "ordinary_target": 1.0,
+  "load_disturbance": -0.4,
+  "ordinary_actuator": [
+    0.0,
+    2.0
+  ],
+  "saturation_target_before": 3.0,
+  "saturation_target_after": 0.2,
+  "saturation_change_step": 200,
+  "saturation_actuator": [
+    0.0,
+    1.0
+  ],
+  "noise_alternating_amplitude": 0.06,
+  "noise_gaussian_sd": 0.02,
+  "sensor_bias": 0.4,
+  "settling_tolerance": 0.05,
+  "summary_tail_steps": 50,
+  "scope": "One fixed constructed first-order plant; hand-chosen gains, no tuning or independent confirmation"
+}
