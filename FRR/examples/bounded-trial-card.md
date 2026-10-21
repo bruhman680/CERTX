@@ -13,3 +13,5 @@ Copy for a measurable trial, or link an existing protocol containing these field
 Preserve a rejected candidate's patch or immutable revision and its evidence before restoring working code. Keep archive status separate from selected-working-version status. Independently prepared confirmation remains necessary before extending a development claim.
 
 The [continuation-pilot retrospective record](bounded-loop-retrospective.json) shows how the existing inquiry schema can reference a trial and an evaluator repair without introducing another mandatory schema.
+
+For a consequential claim or delivery, use the optional [verification checkpoint](../modules/verification-layer.md): identify the claim/scope, criterion, evidence and checker; retain supported, contradicted or unresolved status with assumptions. Existing protocol fields can supply this record. Preserve checker/evaluator revisions and distinguish a completed check from a supported claim. Open exploration does not require a separate form.

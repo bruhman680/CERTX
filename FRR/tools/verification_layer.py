@@ -21,6 +21,10 @@ def digest(data):
     return hashlib.sha256(data).hexdigest()
 
 
+# Snapshot source identity once; refuse receipts if the local file changes later.
+SOURCE_SHA256_AT_IMPORT=digest(Path(__file__).read_bytes())
+
+
 def rational(text):
     if not isinstance(text,str) or len(text)>256:
         raise ValueError('Expected a bounded rational string')
@@ -58,11 +62,21 @@ def expression_value(text):
 
 def evaluate(contract,root,version='0.2'):
     if version not in VERSIONS:raise ValueError('Unknown ruleset')
-    record=dict(claim_id=contract.get('claim_id'),contract_id=contract.get('contract_id'),
-        criterion_id=contract.get('criterion_id'),scope=contract.get('scope'),ruleset=version,
-        checker_sha256=digest(Path(__file__).read_bytes()),contract_sha256=digest(canonical(contract)),
+    record=dict(claim_id=None,contract_id=None,criterion_id=None,scope=None,ruleset=version,
+        checker_sha256=SOURCE_SHA256_AT_IMPORT,contract_sha256=None,
         verdict='unresolved',checks={},assumptions=[],reason='')
     def stop(reason):record['reason']=reason;return record
+    try:
+        if digest(Path(__file__).read_bytes())!=SOURCE_SHA256_AT_IMPORT:
+            record['checks']['checker_binding']='fail'
+            return stop('Checker source changed after import; start a fresh process')
+    except OSError:
+        return stop('Checker source unavailable for identity check')
+    record['checks']['checker_binding']='pass'
+    if not isinstance(contract,dict):return stop('Contract must be a JSON object')
+    try:record['contract_sha256']=digest(canonical(contract))
+    except (TypeError,ValueError):return stop('Contract is not canonical finite JSON')
+    for key in ['claim_id','contract_id','criterion_id','scope']:record[key]=contract.get(key)
     if not all(isinstance(contract.get(k),str) and contract[k] for k in ['claim_id','contract_id','criterion_id','scope','adapter']):
         return stop('Missing contract identity, criterion or scope')
     try:

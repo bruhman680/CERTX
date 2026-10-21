@@ -1,0 +1,9 @@
+# VA-C1: live adoption and source-binding repair
+
+Six user-authorized convening agents share history/filesystem; they are engineering reviewers, not fresh study participants or independent replication. Read-only passes cover integration, code, live research claims, participant design, history and independent noticings. Preserve findings without claiming automatic habits.
+
+Concrete uptake: add a consequential-claim checkpoint/link to four execution entry points, using existing fields rather than duplicate forms. Recheck three actual saved claims (PID, REV-C1, RR2); record scope, method, evidence hash and unresolved transfer. Reconcile stale queue counts in the current research map. Check discoverability, unchanged core hashes and actual dispositions; file links alone do not prove consistent future use.
+
+Amendment 02 to VL-C1: a loaded Python function can execute older code while rereading a newer file hash. Record initial source identity on import and refuse a substantive verdict if local source bytes change. Also return structured unresolved for non-object/nonfinite contracts. Initial VL-C1 and first repair outputs stay unchanged; their manifests' source mismatches will now reflect this second disclosed revision. A source snapshot/hash is a trusted-workspace attribution aid, not proof against import races, monkeypatching or a malicious runtime.
+
+Before execution freeze code, this protocol and test driver. Replay 44 old authored dispositions; test loaded-source drift in a temporary copy, fresh import after drift, malformed contracts, eight integration links, 4 concurrent writers × 5 appends, and incomplete-tail rejection/preservation. No automatic ledger recovery. Separate new output files, no overwrite of original receipts. Existing tests are development regressions; new probes are engineering checks, not independently held-out efficacy.
