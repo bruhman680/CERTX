@@ -6,6 +6,7 @@ from fractions import Fraction
 import hashlib
 import json
 import os
+import re
 from pathlib import Path
 
 VERSIONS={'0.1','0.2'}
@@ -23,6 +24,9 @@ def digest(data):
 def rational(text):
     if not isinstance(text,str) or len(text)>256:
         raise ValueError('Expected a bounded rational string')
+    # A short exponent string can expand enormously before a post-parse bit check.
+    if re.fullmatch(r'[+-]?[0-9]+(?:/[0-9]+|\.[0-9]+)?',text) is None:
+        raise ValueError('Use plain integer, fraction or decimal syntax; no exponents')
     result=Fraction(text)
     if max(result.numerator.bit_length(),result.denominator.bit_length())>4096:
         raise ValueError('Rational magnitude limit')
