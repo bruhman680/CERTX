@@ -1,0 +1,439 @@
+{
+  "run_count": 231,
+  "seconds": 0.4320117890000006,
+  "validation": {
+    "finite_and_bounded": true,
+    "P_steady_state_expected": 0.22222222222222224,
+    "P_last_recorded_y": 0.22222222222222218,
+    "P_steady_state_absolute_error": 5.551115123125783e-17,
+    "launch_hashes_unchanged": true
+  },
+  "prediction_checks": {
+    "PI_reduces_tail_error_vs_P_in_constant_load": true,
+    "clamping_reduces_release_recovery_time": true,
+    "derivative_filter_reduces_actuator_variation": true,
+    "biased_sensor_can_track_with_wrong_true_state": true
+  },
+  "summary": [
+    {
+      "scenario": "constant_load",
+      "controller": "P",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 0.6101162212273323,
+        "tail_true_mae": 0.7777777777777779,
+        "tail_sensor_mae": 0.7777777777777779,
+        "actuator_total_variation": 0.1777777777777778,
+        "actuator_effort": 24.98765432098765,
+        "maximum_abs_integral": 0.0,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "constant_load",
+      "controller": "PI",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 0.040635313480472675,
+        "tail_true_mae": 6.519246691060853e-05,
+        "tail_sensor_mae": 6.519246691060853e-05,
+        "actuator_total_variation": 0.559975581896698,
+        "actuator_effort": 53.50009450610088,
+        "maximum_abs_integral": 1.3999494708763698,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "constant_load",
+      "controller": "PI_clamped",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 0.040635313480472675,
+        "tail_true_mae": 6.519246691060853e-05,
+        "tail_sensor_mae": 6.519246691060853e-05,
+        "actuator_total_variation": 0.559975581896698,
+        "actuator_effort": 53.50009450610088,
+        "maximum_abs_integral": 1.3999494708763698,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "constant_load",
+      "controller": "PID",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 0.04198165128229417,
+        "tail_true_mae": 4.549336738776555e-05,
+        "tail_sensor_mae": 4.549336738776555e-05,
+        "actuator_total_variation": 0.7299037430151376,
+        "actuator_effort": 53.50006029412721,
+        "maximum_abs_integral": 1.399967295930092,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "constant_load",
+      "controller": "PID_filtered",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 0.041795844851963394,
+        "tail_true_mae": 4.27256337698867e-05,
+        "tail_sensor_mae": 4.27256337698867e-05,
+        "actuator_total_variation": 0.5878363987976905,
+        "actuator_effort": 53.50005560739994,
+        "maximum_abs_integral": 1.3999697486169516,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "constant_load",
+      "controller": "PID_clamped",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 0.04198165128229417,
+        "tail_true_mae": 4.549336738776555e-05,
+        "tail_sensor_mae": 4.549336738776555e-05,
+        "actuator_total_variation": 0.7299037430151376,
+        "actuator_effort": 53.50006029412721,
+        "maximum_abs_integral": 1.399967295930092,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "constant_load",
+      "controller": "PID_filtered_clamped",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 0.041795844851963394,
+        "tail_true_mae": 4.27256337698867e-05,
+        "tail_sensor_mae": 4.27256337698867e-05,
+        "actuator_total_variation": 0.5878363987976905,
+        "actuator_effort": 53.50005560739994,
+        "maximum_abs_integral": 1.3999697486169516,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "saturation_release",
+      "controller": "P",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 2.124769386325628,
+        "tail_true_mae": 0.11111111111108084,
+        "tail_sensor_mae": 0.11111111111108084,
+        "actuator_total_variation": 1.088888888888889,
+        "actuator_effort": 21.592705275615305,
+        "maximum_abs_integral": 0.0,
+        "saturation_fraction": 0.54,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "saturation_release",
+      "controller": "PI",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 2.433157894638071,
+        "tail_true_mae": 0.7999999999999996,
+        "tail_sensor_mae": 0.7999999999999996,
+        "actuator_total_variation": 0.0,
+        "actuator_effort": 40.0,
+        "maximum_abs_integral": 16.399999999717807,
+        "saturation_fraction": 1.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "saturation_release",
+      "controller": "PI_clamped",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 2.1200115312793457,
+        "tail_true_mae": 0.0027548733576039874,
+        "tail_sensor_mae": 0.0027548733576039874,
+        "actuator_total_variation": 1.1989681509927057,
+        "actuator_effort": 23.19869157670078,
+        "maximum_abs_integral": 0.19786476347435844,
+        "saturation_fraction": 0.54,
+        "recovery_seconds": 5.9
+      }
+    },
+    {
+      "scenario": "saturation_release",
+      "controller": "PID",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 2.433157894638071,
+        "tail_true_mae": 0.7999999999999996,
+        "tail_sensor_mae": 0.7999999999999996,
+        "actuator_total_variation": 0.0,
+        "actuator_effort": 40.0,
+        "maximum_abs_integral": 16.399999999717807,
+        "saturation_fraction": 1.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "saturation_release",
+      "controller": "PID_filtered",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 2.433157894638071,
+        "tail_true_mae": 0.7999999999999996,
+        "tail_sensor_mae": 0.7999999999999996,
+        "actuator_total_variation": 0.0,
+        "actuator_effort": 40.0,
+        "maximum_abs_integral": 16.399999999717807,
+        "saturation_fraction": 1.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "saturation_release",
+      "controller": "PID_clamped",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 2.120034724145134,
+        "tail_true_mae": 0.0026549426824162238,
+        "tail_sensor_mae": 0.0026549426824162238,
+        "actuator_total_variation": 1.1990512601170944,
+        "actuator_effort": 23.189332116761125,
+        "maximum_abs_integral": 0.19809142619918327,
+        "saturation_fraction": 0.5325,
+        "recovery_seconds": 6.2
+      }
+    },
+    {
+      "scenario": "saturation_release",
+      "controller": "PID_filtered_clamped",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 2.120029713414952,
+        "tail_true_mae": 0.0028876058319338245,
+        "tail_sensor_mae": 0.0028876058319338245,
+        "actuator_total_variation": 1.1989780061453574,
+        "actuator_effort": 23.181328791275796,
+        "maximum_abs_integral": 0.1979554062859133,
+        "saturation_fraction": 0.53,
+        "recovery_seconds": 6.5
+      }
+    },
+    {
+      "scenario": "noisy_sensor",
+      "controller": "P",
+      "runs": 30,
+      "mean_metrics": {
+        "tracking_mse": 0.31694250472103747,
+        "tail_true_mae": 0.5559177442815844,
+        "tail_sensor_mae": 0.555345457827095,
+        "actuator_total_variation": 39.829461534675644,
+        "actuator_effort": 17.98159567738003,
+        "maximum_abs_integral": 0.0,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "noisy_sensor",
+      "controller": "PI",
+      "runs": 30,
+      "mean_metrics": {
+        "tracking_mse": 0.02431729571350304,
+        "tail_true_mae": 0.0035990330633726606,
+        "tail_sensor_mae": 0.06320882141125408,
+        "actuator_total_variation": 40.88932433823765,
+        "actuator_effort": 38.51141770007632,
+        "maximum_abs_integral": 1.0057860285510634,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "noisy_sensor",
+      "controller": "PI_clamped",
+      "runs": 30,
+      "mean_metrics": {
+        "tracking_mse": 0.02431729571350304,
+        "tail_true_mae": 0.0035990330633726606,
+        "tail_sensor_mae": 0.06320882141125408,
+        "actuator_total_variation": 40.88932433823765,
+        "actuator_effort": 38.51141770007632,
+        "maximum_abs_integral": 1.0057860285510634,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "noisy_sensor",
+      "controller": "PID",
+      "runs": 30,
+      "mean_metrics": {
+        "tracking_mse": 0.025907677579956098,
+        "tail_true_mae": 0.020547346692298026,
+        "tail_sensor_mae": 0.08100174088687598,
+        "actuator_total_variation": 307.4584986247577,
+        "actuator_effort": 38.52901364471916,
+        "maximum_abs_integral": 1.0060026745275181,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "noisy_sensor",
+      "controller": "PID_filtered",
+      "runs": 30,
+      "mean_metrics": {
+        "tracking_mse": 0.025268473308247393,
+        "tail_true_mae": 0.0045387934438034985,
+        "tail_sensor_mae": 0.06434952648628811,
+        "actuator_total_variation": 58.08633604347242,
+        "actuator_effort": 38.51270178645369,
+        "maximum_abs_integral": 1.005859529289512,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "noisy_sensor",
+      "controller": "PID_clamped",
+      "runs": 30,
+      "mean_metrics": {
+        "tracking_mse": 0.025907677579956098,
+        "tail_true_mae": 0.020547346692298026,
+        "tail_sensor_mae": 0.08100174088687598,
+        "actuator_total_variation": 307.4584986247577,
+        "actuator_effort": 38.52901364471916,
+        "maximum_abs_integral": 1.0060026745275181,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "noisy_sensor",
+      "controller": "PID_filtered_clamped",
+      "runs": 30,
+      "mean_metrics": {
+        "tracking_mse": 0.025268473308247393,
+        "tail_true_mae": 0.0045387934438034985,
+        "tail_sensor_mae": 0.06434952648628811,
+        "actuator_total_variation": 58.08633604347242,
+        "actuator_effort": 38.51270178645369,
+        "maximum_abs_integral": 1.005859529289512,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "biased_sensor",
+      "controller": "P",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 0.5437525437525439,
+        "tail_true_mae": 0.7333333333333336,
+        "tail_sensor_mae": 0.3333333333333334,
+        "actuator_total_variation": 0.2133333333333332,
+        "actuator_effort": 10.785185185185187,
+        "maximum_abs_integral": 0.0,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "biased_sensor",
+      "controller": "PI",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 0.19873113544923052,
+        "tail_true_mae": 0.40002548795663345,
+        "tail_sensor_mae": 2.548795663336767e-05,
+        "actuator_total_variation": 0.23834571544526917,
+        "actuator_effort": 23.10003694855426,
+        "maximum_abs_integral": 0.5999802448937304,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "biased_sensor",
+      "controller": "PI_clamped",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 0.19873113544923052,
+        "tail_true_mae": 0.40002548795663345,
+        "tail_sensor_mae": 2.548795663336767e-05,
+        "actuator_total_variation": 0.23834571544526917,
+        "actuator_effort": 23.10003694855426,
+        "maximum_abs_integral": 0.5999802448937304,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "biased_sensor",
+      "controller": "PID",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 0.19920424057370717,
+        "tail_true_mae": 0.4000172192768612,
+        "tail_sensor_mae": 1.721927686114677e-05,
+        "actuator_total_variation": 0.34595421074989885,
+        "actuator_effort": 23.100022821376587,
+        "maximum_abs_integral": 0.5999876214827222,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "biased_sensor",
+      "controller": "PID_filtered",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 0.19911079247982172,
+        "tail_true_mae": 0.400016060814264,
+        "tail_sensor_mae": 1.606081426402728e-05,
+        "actuator_total_variation": 0.2876916107032319,
+        "actuator_effort": 23.100020903145094,
+        "maximum_abs_integral": 0.5999886283291436,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "biased_sensor",
+      "controller": "PID_clamped",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 0.19920424057370717,
+        "tail_true_mae": 0.4000172192768612,
+        "tail_sensor_mae": 1.721927686114677e-05,
+        "actuator_total_variation": 0.34595421074989885,
+        "actuator_effort": 23.100022821376587,
+        "maximum_abs_integral": 0.5999876214827222,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    },
+    {
+      "scenario": "biased_sensor",
+      "controller": "PID_filtered_clamped",
+      "runs": 1,
+      "mean_metrics": {
+        "tracking_mse": 0.19911079247982172,
+        "tail_true_mae": 0.400016060814264,
+        "tail_sensor_mae": 1.606081426402728e-05,
+        "actuator_total_variation": 0.2876916107032319,
+        "actuator_effort": 23.100020903145094,
+        "maximum_abs_integral": 0.5999886283291436,
+        "saturation_fraction": 0.0,
+        "recovery_seconds": null
+      }
+    }
+  ]
+}
