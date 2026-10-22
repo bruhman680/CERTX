@@ -1,0 +1,9 @@
+# Cycle1 method review
+
+Separate scalar replay agrees with all216 saved population laws within2.23e-16. It checks101 survival values in each reported interval, plus the algebraic constructive representation. The pointwise formula a1=p1/v, a0=p0/(1-v), with zero-mass endpoint conventions, proves attainability throughout[p1,1-p0]; the dense finite check alone is not that proof. The zero-coded set[p1,1] follows because only readable surviving mass is observed.
+
+The counterexamples correctly separate two observation contracts. Coding unreadability as0 conflates absent and inaccessible state. Giving missingness its own symbol narrows the set, but does not generally identify survival: gate selection can depend on survival. Complete-case mean p1/(p1+p0) equals v only under the declared state-independent-readability assumption (and positive readability). The protocol's phrase "MCAR216 subset" is read as a subset of the216cell grid:30 MCAR cells have readable mass and6 have a closed gate. No216MCARcase claim is supported.
+
+Restoration matrices are valid and demonstrate a separate intervention contract. Setting G=1 while preserving S reveals original survival; rewriting S and then setting G=1 reveals the rewritten state. Restoration success alone does not authenticate conservation. Direct external witnesses are stipulated perfect witnesses, not empirical validation that an observer really can access latent state.
+
+Population intervals are sharp sets over the declared family with exact observed law, not confidence intervals for sampled data. The grid is a numerical witness, not a statement that all gate processes or physical memory obey this two-bit model. No stochastic datasets, actual-agent decisions or physical resets were produced. None of these qualifications undermines the useful scoped discovery: the meaning of missing output is part of the measurement contract.

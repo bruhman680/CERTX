@@ -1,0 +1,116 @@
+{
+  "scope": "Independent rational endpoint/state-enumeration audit plus byte replay; same authored loss/model, no empirical action validation",
+  "max_float_difference_from_rational": 1.1102230246251565e-16,
+  "records": [
+    {
+      "interval": [
+        "1/5",
+        "4/5"
+      ],
+      "exact_q_minimax_loss": "5/7",
+      "exact_q_minimax_regret": "19/28",
+      "probe_replay": [
+        {
+          "k": "3/100",
+          "d": "0",
+          "exact_worst_expected_loss": "3/20"
+        },
+        {
+          "k": "1/2",
+          "d": "0",
+          "exact_worst_expected_loss": "31/50"
+        },
+        {
+          "k": "3/100",
+          "d": "4/5",
+          "exact_worst_expected_loss": "199/250"
+        }
+      ]
+    },
+    {
+      "interval": [
+        "3/4",
+        "9/10"
+      ],
+      "exact_q_minimax_loss": "0",
+      "exact_q_minimax_regret": "0",
+      "probe_replay": [
+        {
+          "k": "3/100",
+          "d": "0",
+          "exact_worst_expected_loss": "27/400"
+        },
+        {
+          "k": "1/2",
+          "d": "0",
+          "exact_worst_expected_loss": "43/80"
+        },
+        {
+          "k": "3/100",
+          "d": "4/5",
+          "exact_worst_expected_loss": "873/1000"
+        }
+      ]
+    },
+    {
+      "interval": [
+        "1/10",
+        "3/10"
+      ],
+      "exact_q_minimax_loss": "1",
+      "exact_q_minimax_regret": "1",
+      "probe_replay": [
+        {
+          "k": "3/100",
+          "d": "0",
+          "exact_worst_expected_loss": "33/200"
+        },
+        {
+          "k": "1/2",
+          "d": "0",
+          "exact_worst_expected_loss": "127/200"
+        },
+        {
+          "k": "3/100",
+          "d": "4/5",
+          "exact_worst_expected_loss": "411/1000"
+        }
+      ]
+    },
+    {
+      "interval": [
+        "11/20",
+        "7/10"
+      ],
+      "exact_q_minimax_loss": "5/7",
+      "exact_q_minimax_regret": "8/21",
+      "probe_replay": [
+        {
+          "k": "3/100",
+          "d": "0",
+          "exact_worst_expected_loss": "39/400"
+        },
+        {
+          "k": "1/2",
+          "d": "0",
+          "exact_worst_expected_loss": "227/400"
+        },
+        {
+          "k": "3/100",
+          "d": "4/5",
+          "exact_worst_expected_loss": "719/1000"
+        }
+      ]
+    }
+  ],
+  "source_replay_sha256": "5f0030098dba6dd8ae7860ce6511820370f0a685c6043237ffaa3735cb9048d7",
+  "source_replay_returncode": 0,
+  "checks": {
+    "independent_rational_results": true,
+    "final_source_exit0": true,
+    "final_source_replay_byte_identical": true,
+    "protocol_bound": true,
+    "cycle1_bound": true,
+    "main_checks_pass": true
+  }
+}

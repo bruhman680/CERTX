@@ -1,0 +1,267 @@
+{
+  "scope": "Population observation-model enumeration, not empirical witness validation",
+  "protocol_sha256": "d4286d05976a2c8faa9daf3be667f365b8c384159302fc2acb6f2bc14fb17443",
+  "states_S_G": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "restoration_preserving_operator": [
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "restoration_rewriting_operator": [
+    [
+      0.0,
+      0.4,
+      0.0,
+      0.6
+    ],
+    [
+      0.0,
+      0.4,
+      0.0,
+      0.6
+    ],
+    [
+      0.0,
+      0.4,
+      0.0,
+      0.6
+    ],
+    [
+      0.0,
+      0.4,
+      0.0,
+      0.6
+    ]
+  ],
+  "examples": {
+    "same_zero_coded": [
+      {
+        "parameters": [
+          0.2,
+          1.0,
+          1.0
+        ],
+        "observations": {
+          "zero_coded": [
+            0.8,
+            0.2
+          ],
+          "ternary_1_0_missing": [
+            0.2,
+            0.8,
+            0.0
+          ],
+          "external_survival": 0.2
+        },
+        "preserving_restore": {
+          "zero_coded": [
+            0.8,
+            0.2
+          ],
+          "ternary_1_0_missing": [
+            0.2,
+            0.8,
+            0.0
+          ],
+          "external_survival": 0.2
+        },
+        "rewriting_restore": {
+          "zero_coded": [
+            0.4000000000000001,
+            0.6
+          ],
+          "ternary_1_0_missing": [
+            0.6,
+            0.4000000000000001,
+            0.0
+          ],
+          "external_survival": 0.6
+        }
+      },
+      {
+        "parameters": [
+          1.0,
+          0.2,
+          0.2
+        ],
+        "observations": {
+          "zero_coded": [
+            0.8,
+            0.2
+          ],
+          "ternary_1_0_missing": [
+            0.2,
+            0.0,
+            0.8
+          ],
+          "external_survival": 1.0
+        },
+        "preserving_restore": {
+          "zero_coded": [
+            0.0,
+            1.0
+          ],
+          "ternary_1_0_missing": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "external_survival": 1.0
+        },
+        "rewriting_restore": {
+          "zero_coded": [
+            0.4000000000000001,
+            0.6
+          ],
+          "ternary_1_0_missing": [
+            0.6,
+            0.4000000000000001,
+            0.0
+          ],
+          "external_survival": 0.6
+        }
+      }
+    ],
+    "same_ternary": [
+      {
+        "parameters": [
+          0.2,
+          1.0,
+          0.25
+        ],
+        "observations": {
+          "zero_coded": [
+            0.8,
+            0.2
+          ],
+          "ternary_1_0_missing": [
+            0.2,
+            0.2,
+            0.6000000000000001
+          ],
+          "external_survival": 0.2
+        },
+        "preserving_restore": {
+          "zero_coded": [
+            0.8,
+            0.2
+          ],
+          "ternary_1_0_missing": [
+            0.2,
+            0.8,
+            0.0
+          ],
+          "external_survival": 0.2
+        },
+        "rewriting_restore": {
+          "zero_coded": [
+            0.4000000000000001,
+            0.6000000000000001
+          ],
+          "ternary_1_0_missing": [
+            0.6000000000000001,
+            0.4000000000000001,
+            0.0
+          ],
+          "external_survival": 0.6000000000000001
+        }
+      },
+      {
+        "parameters": [
+          0.8,
+          0.25,
+          1.0
+        ],
+        "observations": {
+          "zero_coded": [
+            0.8,
+            0.2
+          ],
+          "ternary_1_0_missing": [
+            0.2,
+            0.19999999999999996,
+            0.6000000000000001
+          ],
+          "external_survival": 0.8
+        },
+        "preserving_restore": {
+          "zero_coded": [
+            0.19999999999999996,
+            0.8
+          ],
+          "ternary_1_0_missing": [
+            0.8,
+            0.19999999999999996,
+            0.0
+          ],
+          "external_survival": 0.8
+        },
+        "rewriting_restore": {
+          "zero_coded": [
+            0.4000000000000001,
+            0.6
+          ],
+          "ternary_1_0_missing": [
+            0.6,
+            0.4000000000000001,
+            0.0
+          ],
+          "external_survival": 0.6
+        }
+      }
+    ]
+  },
+  "max_interval_attainability_error": 2.220446049250313e-16,
+  "max_mcar_error": 1.1102230246251565e-16,
+  "mcar_readable_cells": 30,
+  "max_conditional_readable_bias": 0.8,
+  "checks": {
+    "cells216": true,
+    "ternary_interval_contains_truth": true,
+    "interval_endpoint_midpoint_attainable": true,
+    "mcar_identification_when_readable": true,
+    "same_binary_different_survival": true,
+    "same_ternary_different_survival": true,
+    "restoration_maps": true,
+    "restoration_matrices_stochastic": true
+  },
+  "elapsed_seconds": 0.012240511000072729
+}

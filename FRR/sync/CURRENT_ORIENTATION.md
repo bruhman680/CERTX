@@ -8,6 +8,8 @@ Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map]
 
 ## Recent contacts
 
+- [Second garden run](../evaluation/garden-three-cycle-v2/REPORT.md): missingness/selection, partial identification and action/probe costs. Three requested cycles complete; return for user review. Discovery/learning rather than superiority is the objective. Actual-agent transfer and witness credibility remain open.
+
 - [Three-cycle run](../evaluation/three-cycle-run-v1/REPORT.md): noisy calibration, joint-reset counterexample and review/guard repair completed. Three requested cycles fulfilled; await current user review before another cycle. No provider calls, background jobs, broad queue completion or core change.
 
 - [SR-C1](../evaluation/soil-reset-robustness-v1/REPORT.md): separately coded six-state model,8 world/readout combinations, leaky/off-target resets and interaction stress;120 normalized word laws and scalar cross-check. No empirical calibration, noisy trial, actual-agent effect or broad queue completion.
