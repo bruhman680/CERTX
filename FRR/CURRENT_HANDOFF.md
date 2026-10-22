@@ -1,6 +1,6 @@
 # Current FRR handoff
 
-The user's current goal is useful reasoning and behavioral habits for learning, building and revision—not advantage over other labs or people. Use comparisons when they clarify a practical choice, without turning winning a comparison into the objective. The user requested next-step prioritization and FRR-oriented arXiv scouting after the soil intake; the bounded source weave and design drafts are recorded below. Earlier budget/stopping instructions apply to their historical episode, not automatically to the current one. Usage limits are not programmatically visible.
+The user's current goal is useful reasoning and behavioral habits for learning, building and revision—not advantage over other labs or people. Use comparisons when they clarify a practical choice, without turning winning a comparison into the objective. The user requested broader peripheral scouting after the first source weave, with Terminal-RSI/LittleBit screenshot leads; the bounded readings and design refinements are recorded below. Earlier budget/stopping instructions apply to their historical episode, not automatically to the current one. Usage limits are not programmatically visible.
 
 ## Current practice
 
@@ -11,6 +11,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 [EL-C1](evaluation/error-lineage-v1/REPORT.md) now separates shared causes, copying, common difficulty and stale descendants in exact constructed models, with a saved-data replay. The optional [error-lineage practice](modules/error-lineage.md) prompts selective checks and reopening dependents; actual agent-behavior benefit remains untested. FIELD-01/LEGACY-06 stay queued; counts are unchanged.
 
 ## Useful artifacts and recent contacts
+
+- [AS-C2](evaluation/peripheral-scout-v1/REPORT.md) adds eight selected primary readings: screenshot papers Terminal-RSI/LittleBit plus fault diagnosis, decision-focused compression and collective influence. It narrows screenshot claims and proposes uncertainty-envelope, task/loss-transfer and influence-quality controls. No paper reproduction, new experiment or core change.
 
 - [AS-C1](evaluation/arxiv-scout-v1/REPORT.md) is a three-scout/coordinator primary-source weave across ten papers, including2026 causal/memory developments. It recommends a different-parameterization/leaky-reset contact with intervention-diversity controls, then information-matched prediction and a source/exposure/repair bridge. [Designs](evaluation/arxiv-scout-v1/NEXT_CONTACTS_DRAFT.md) are drafts, not launched or frozen protocols. No paper reproduction or FRR-efficacy claim.
 
@@ -28,7 +30,7 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Resume and next move
 
-Current stopping state: the earlier navigation sweep and conversational wind-down are complete. The user returned with the Claude bundle and authorized the next two contacts. CE-C1, PF-C1/PF-C2, ST-C1 and the later AS-C1 source scout are saved. The new design drafts are unexecuted; no broader research run is active. The [navigation sweep](evaluation/navigation-sweep-v1/REPORT.md) preserves its own resting checkpoint and maintenance scope.
+Current stopping state: the earlier navigation sweep and conversational wind-down are complete. The user returned with the Claude bundle and authorized the next two contacts. CE-C1, PF-C1/PF-C2, ST-C1 and the later AS-C1/AS-C2 source scouts are saved. The new design drafts are unexecuted; no broader research run is active. The [navigation sweep](evaluation/navigation-sweep-v1/REPORT.md) preserves its own resting checkpoint and maintenance scope.
 
 Inspect referenced artifacts before trusting a summary. Prefer a concrete uncertainty or build need over another ritual check. The strongest open boundaries include less-cued source/authority assessment, actual writer-produced compression and longer reuse, reliable reopening/receipt history, and task-dependent preservation. Many physical/swarm mappings remain unverified; see the queue rather than treating old proposed constants as laws.
 

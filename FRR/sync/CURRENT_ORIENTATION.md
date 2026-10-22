@@ -8,6 +8,8 @@ Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map]
 
 ## Recent contacts
 
+- [AS-C2](../evaluation/peripheral-scout-v1/REPORT.md): eight selected readings across the two screenshot leads and peripheral control/compression/collective-learning fields. New design controls are proposed; no training, quantization or participant experiment has launched.
+
 - [AS-C1](../evaluation/arxiv-scout-v1/REPORT.md): three scouts plus coordinator read ten selected primary papers across causal identification, prediction and agent memory. The [next designs](../evaluation/arxiv-scout-v1/NEXT_CONTACTS_DRAFT.md) prioritize leaky-reset robustness, history-matched prediction and a practical repair bridge; no follow-up experiment has launched.
 
 - [ST-C1](../evaluation/soil-intake-v1/REPORT.md): supplied soil toy reproduces unchanged; same-parameterization audit decomposes the score and qualifies passive/signature/reset claims. The five suggested follow-ups remain proposals. Source and failed audit harnesses are preserved.

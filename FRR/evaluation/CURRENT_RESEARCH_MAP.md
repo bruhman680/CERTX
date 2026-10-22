@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Latest peripheral weave: [AS-C2](peripheral-scout-v1/REPORT.md) checks Terminal-RSI/LittleBit screenshot leads and six primary sources outside agent-memory literature. [Design refinements](peripheral-scout-v1/DESIGN_REFINEMENTS.md) concern uncertain-instrument discrimination, decision-preserving compression and measured influence. This is source contact only; no reproduced paper result, new trial or status promotion.
+
 Latest source weave: [AS-C1](arxiv-scout-v1/REPORT.md) coordinates three scout lanes and ten selected primary papers. It sharpens intervention diversity/equivalence classes, history-matched prediction, and source-exposure/selective-repair evaluation. [Next-contact designs](arxiv-scout-v1/NEXT_CONTACTS_DRAFT.md) remain drafts; no new experiment or efficacy result.
 
 Latest intake: [ST-C1](soil-intake-v1/REPORT.md) reproduces Claude's soil toy, checks transition/tuning logic and separates hidden-state oracle advantage from predictive regret. In WK the combined KL excess rises while predictive excess falls. Different-parameterization, leaky-reset and estimator-sweep contacts remain proposals; no general carrier identification or efficacy.
