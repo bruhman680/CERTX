@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Latest source/implementation contact: [HI-C1](harness-interface-contact-v1/REPORT.md) extracts selective specialization, component attribution and history semantics from two papers and OpenResearch. Its [staged design](harness-interface-contact-v1/DESIGN.md) is proposed; no reproduction, model experiment or queue promotion.
+
 Latest bounded scout: [AS-C3](third-angle-scout-v1/REPORT.md) reads five training-free/compiled/external-memory relatives while preserving the user-recalled paper as unidentified. [Three-angle scouting practice](../modules/three-angle-scout.md) is optional saved guidance, not a tested efficacy result. No fourth sweep or new experiment is launched automatically.
 
 Latest peripheral weave: [AS-C2](peripheral-scout-v1/REPORT.md) checks Terminal-RSI/LittleBit screenshot leads and six primary sources outside agent-memory literature. [Design refinements](peripheral-scout-v1/DESIGN_REFINEMENTS.md) concern uncertain-instrument discrimination, decision-preserving compression and measured influence. This is source contact only; no reproduced paper result, new trial or status promotion.

@@ -1,6 +1,6 @@
 # Current FRR handoff
 
-The user's current goal is useful reasoning and behavioral habits for learning, building and revision—not advantage over other labs or people. Use comparisons when they clarify a practical choice, without turning winning a comparison into the objective. The user requested a final scout of a vaguely remembered untrained-transformer/harness claim and an optional reusable scouting habit. Exact paper identification remains open; the bounded source pass and saved routine are recorded below. Earlier budget/stopping instructions apply to their historical episode, not automatically to the current one. Usage limits are not programmatically visible.
+The user's current goal is useful reasoning and behavioral habits for learning, building and revision—not advantage over other labs or people. Use comparisons when they clarify a practical choice, without turning winning a comparison into the objective. The user then supplied OO-Harness, Evolving Agent Interfaces and OpenResearch and authorized a deeper extraction. HI-C1 saves selected source/implementation findings, optional specialization guidance and an unexecuted staged agent-test design. The earlier unidentified transformer post remains open. Earlier budget/stopping instructions apply to their historical episode, not automatically to the current one. Usage limits are not programmatically visible.
 
 ## Current practice
 
@@ -11,6 +11,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 [EL-C1](evaluation/error-lineage-v1/REPORT.md) now separates shared causes, copying, common difficulty and stale descendants in exact constructed models, with a saved-data replay. The optional [error-lineage practice](modules/error-lineage.md) prompts selective checks and reopening dependents; actual agent-behavior benefit remains untested. FIELD-01/LEGACY-06 stay queued; counts are unchanged.
 
 ## Useful artifacts and recent contacts
+
+- [HI-C1](evaluation/harness-interface-contact-v1/REPORT.md) separates records, observation, operations and routing; distinguishes editable navigation from preserved derivation; and adds optional [evidence-triggered specialization](modules/evidence-triggered-specialization.md). [Staged design](evaluation/harness-interface-contact-v1/DESIGN.md) is unexecuted. No scientific status or core change.
 
 - [AS-C3](evaluation/third-angle-scout-v1/REPORT.md) separates random-weight soft-prompt constructions, compiled algorithms, external count tables, pretrained inference loops and builder-created harnesses. Five sources; the exact X post remains unidentified. The optional [three-angle scout](modules/three-angle-scout.md) is adopted as saved guidance with early stopping, not a proven habit improvement. This completes the requested scouting sequence; return to testing rather than start another automatic sweep.
 

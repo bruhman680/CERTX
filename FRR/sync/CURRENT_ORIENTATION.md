@@ -8,6 +8,8 @@ Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map]
 
 ## Recent contacts
 
+- [HI-C1](../evaluation/harness-interface-contact-v1/REPORT.md): selected paper and implementation contact; optional specialization guidance and an unexecuted staged agent comparison. Separate editable navigation from historical derivation. No installation, model run or scientific completion.
+
 - [AS-C3](../evaluation/third-angle-scout-v1/REPORT.md): final five-source pass, exact X paper still unidentified; optional [three-angle scout](../modules/three-angle-scout.md) adopted with a concrete stopping rule. Distinguish supplied information from learned weights. No experiment or automatic next sweep launched.
 
 - [AS-C2](../evaluation/peripheral-scout-v1/REPORT.md): eight selected readings across the two screenshot leads and peripheral control/compression/collective-learning fields. New design controls are proposed; no training, quantization or participant experiment has launched.
