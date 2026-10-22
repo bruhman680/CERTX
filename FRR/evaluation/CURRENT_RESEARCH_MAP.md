@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Resting state: [settling checkpoint](../sync/checkpoints/SETTLING_AFTER_HARNESS_CONTACT.md) preserves HI-C1 and the deferred readable-code/history idea. Designs remain unexecuted; no new scientific status or core change.
+
 Latest source/implementation contact: [HI-C1](harness-interface-contact-v1/REPORT.md) extracts selective specialization, component attribution and history semantics from two papers and OpenResearch. Its [staged design](harness-interface-contact-v1/DESIGN.md) is proposed; no reproduction, model experiment or queue promotion.
 
 Latest bounded scout: [AS-C3](third-angle-scout-v1/REPORT.md) reads five training-free/compiled/external-memory relatives while preserving the user-recalled paper as unidentified. [Three-angle scouting practice](../modules/three-angle-scout.md) is optional saved guidance, not a tested efficacy result. No fourth sweep or new experiment is launched automatically.

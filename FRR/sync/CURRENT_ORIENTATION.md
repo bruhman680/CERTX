@@ -1,8 +1,8 @@
 # Current FRR orientation
 
-Scope: `codex/frr-progress-2026-10-07`, with the previous resting checkpoint at commit `09ab9d6f97ff4b18158c49ed68402f3de6d39a9e` and the CE-C1 intake linked below. This is a current navigation view, not a complete exploration history or a substitute for the user's latest direction.
+Scope: `codex/frr-progress-2026-10-07`, with source contacts and optional guidance saved through `9ea31d59749bb8527b796f6ffd07b5ffae80e9d2`. This is current navigation, not a complete history or a substitute for the user's latest direction.
 
-The earlier wind-down, GitHub navigation sweep and conversational depressurization practice are complete. The user returned with a Claude errata bundle and then authorized two follow-ups; CE-C1 and PF-C1/PF-C2 are saved. No broader research run is active. The goal remains useful reasoning and behavioral habits for learning and growth. Usage limits are not programmatically visible; old budget instructions describe their own episodes.
+The user requested a settling pause. [Resting checkpoint](checkpoints/SETTLING_AFTER_HARNESS_CONTACT.md) records what is saved, what remains untested and the deferred idea of readable pseudocode/intent/history beside code. No restructuring, model experiment or background run starts here. The goal remains useful reasoning and behavioral habits for learning and growth; account usage limits are not programmatically visible.
 
 Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map](../evaluation/CURRENT_RESEARCH_MAP.md) and the [queue](../evaluation/research-queue/README.md). QUEUE.json remains the status source: 35 entries, 30 unfinished, six partial families. A saved queue is not an automatic scheduler.
 
