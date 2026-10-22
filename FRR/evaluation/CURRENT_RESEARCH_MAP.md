@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Latest bounded scout: [AS-C3](third-angle-scout-v1/REPORT.md) reads five training-free/compiled/external-memory relatives while preserving the user-recalled paper as unidentified. [Three-angle scouting practice](../modules/three-angle-scout.md) is optional saved guidance, not a tested efficacy result. No fourth sweep or new experiment is launched automatically.
+
 Latest peripheral weave: [AS-C2](peripheral-scout-v1/REPORT.md) checks Terminal-RSI/LittleBit screenshot leads and six primary sources outside agent-memory literature. [Design refinements](peripheral-scout-v1/DESIGN_REFINEMENTS.md) concern uncertain-instrument discrimination, decision-preserving compression and measured influence. This is source contact only; no reproduced paper result, new trial or status promotion.
 
 Latest source weave: [AS-C1](arxiv-scout-v1/REPORT.md) coordinates three scout lanes and ten selected primary papers. It sharpens intervention diversity/equivalence classes, history-matched prediction, and source-exposure/selective-repair evaluation. [Next-contact designs](arxiv-scout-v1/NEXT_CONTACTS_DRAFT.md) remain drafts; no new experiment or efficacy result.

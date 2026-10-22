@@ -1,6 +1,6 @@
 # Current FRR handoff
 
-The user's current goal is useful reasoning and behavioral habits for learning, building and revision—not advantage over other labs or people. Use comparisons when they clarify a practical choice, without turning winning a comparison into the objective. The user requested broader peripheral scouting after the first source weave, with Terminal-RSI/LittleBit screenshot leads; the bounded readings and design refinements are recorded below. Earlier budget/stopping instructions apply to their historical episode, not automatically to the current one. Usage limits are not programmatically visible.
+The user's current goal is useful reasoning and behavioral habits for learning, building and revision—not advantage over other labs or people. Use comparisons when they clarify a practical choice, without turning winning a comparison into the objective. The user requested a final scout of a vaguely remembered untrained-transformer/harness claim and an optional reusable scouting habit. Exact paper identification remains open; the bounded source pass and saved routine are recorded below. Earlier budget/stopping instructions apply to their historical episode, not automatically to the current one. Usage limits are not programmatically visible.
 
 ## Current practice
 
@@ -11,6 +11,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 [EL-C1](evaluation/error-lineage-v1/REPORT.md) now separates shared causes, copying, common difficulty and stale descendants in exact constructed models, with a saved-data replay. The optional [error-lineage practice](modules/error-lineage.md) prompts selective checks and reopening dependents; actual agent-behavior benefit remains untested. FIELD-01/LEGACY-06 stay queued; counts are unchanged.
 
 ## Useful artifacts and recent contacts
+
+- [AS-C3](evaluation/third-angle-scout-v1/REPORT.md) separates random-weight soft-prompt constructions, compiled algorithms, external count tables, pretrained inference loops and builder-created harnesses. Five sources; the exact X post remains unidentified. The optional [three-angle scout](modules/three-angle-scout.md) is adopted as saved guidance with early stopping, not a proven habit improvement. This completes the requested scouting sequence; return to testing rather than start another automatic sweep.
 
 - [AS-C2](evaluation/peripheral-scout-v1/REPORT.md) adds eight selected primary readings: screenshot papers Terminal-RSI/LittleBit plus fault diagnosis, decision-focused compression and collective influence. It narrows screenshot claims and proposes uncertainty-envelope, task/loss-transfer and influence-quality controls. No paper reproduction, new experiment or core change.
 
@@ -30,7 +32,7 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Resume and next move
 
-Current stopping state: the earlier navigation sweep and conversational wind-down are complete. The user returned with the Claude bundle and authorized the next two contacts. CE-C1, PF-C1/PF-C2, ST-C1 and the later AS-C1/AS-C2 source scouts are saved. The new design drafts are unexecuted; no broader research run is active. The [navigation sweep](evaluation/navigation-sweep-v1/REPORT.md) preserves its own resting checkpoint and maintenance scope.
+Current stopping state: the earlier navigation sweep and conversational wind-down are complete. The user returned with the Claude bundle and authorized the next two contacts. CE-C1, PF-C1/PF-C2, ST-C1 and the later AS-C1/AS-C2/AS-C3 source scouts are saved. The new design drafts are unexecuted; no broader research run is active. The [navigation sweep](evaluation/navigation-sweep-v1/REPORT.md) preserves its own resting checkpoint and maintenance scope.
 
 Inspect referenced artifacts before trusting a summary. Prefer a concrete uncertainty or build need over another ritual check. The strongest open boundaries include less-cued source/authority assessment, actual writer-produced compression and longer reuse, reliable reopening/receipt history, and task-dependent preservation. Many physical/swarm mappings remain unverified; see the queue rather than treating old proposed constants as laws.
 

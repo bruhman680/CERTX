@@ -20,6 +20,8 @@ Read the [research queue](evaluation/research-queue/README.md) for current propo
 
 For consequential claims and builds, the optional [verification layer](modules/verification-layer.md) records scope, criterion, evidence, checker version and a supported/contradicted/unresolved verdict. Its [instrument contact and disclosed repair](evaluation/verification-layer-v1/REPORT.md) validate narrow software behavior, not general truth or model efficacy. Domain-specific checks are still necessary.
 
+For a source-based inquiry, the optional [three-angle scout](modules/three-angle-scout.md) looks directly, peripherally and critically, then stops when a useful decision change or no-change finding is clear. It need not use all three angles and is not a measured improvement claim.
+
 The files can be used manually with an assistant or incorporated into an application. This release does not call an API, host a service, or automatically update external documents.
 
 ## Contents
