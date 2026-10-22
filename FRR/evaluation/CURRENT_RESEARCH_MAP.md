@@ -1,6 +1,8 @@
 # Current research map: continuity, distinctions and their readers
 
-Latest contact: [EL-C1](error-lineage-v1/REPORT.md) distinguishes error dependence, transmission and repair timing with exact constructed witnesses plus a saved-data replay. [Optional practice](../modules/error-lineage.md) adds source/route/descendant checks; no actual agent efficacy or universal criticality threshold is established. Queue counts/statuses remain unchanged.
+Latest intake: [CE-C1](claude-errata-intake-v1/REPORT.md) preserves Claude's errata and four previously absent scripts, executes all four unchanged, and distinguishes reproduced results from unmatched carrier parameters and insufficient fit validation. Historical missing-source statements remain preserved; no queue status or core version changes.
+
+Earlier error-lineage contact: [EL-C1](error-lineage-v1/REPORT.md) distinguishes error dependence, transmission and repair timing with exact constructed witnesses plus a saved-data replay. [Optional practice](../modules/error-lineage.md) adds source/route/descendant checks; no actual agent efficacy or universal criticality threshold is established. Queue counts/statuses remain unchanged.
 
 Current orientation: [PG-C1](practice-growth-v1/REPORT.md) practices useful habits through a saved-data audit and reopening build. Small mean error did not imply a pointwise bound; duplicated controller traces were shared streams; a new criterion changed the warranted assessment without refuting the old one. Peer review found and repaired a contract-reuse bug. The user seeks ongoing growth, not competitive advantage; comparisons remain one optional diagnostic tool.
 

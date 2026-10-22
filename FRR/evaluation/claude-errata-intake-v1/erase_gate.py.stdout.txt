@@ -1,0 +1,27 @@
+field-only contrast F=0.12800  private-only share P=0.12800  (P2 linear split check)
+  field only (gate shut) + private only (field cleared): 0.25600 vs both 0.25600
+
+P1  keep vs ERASE.  ERASE = clear field AND close gate.  Matched strengths so worlds are comparable.
+  pure FIELD         keep=0.12800 erase=0.00000  naive 'field effect' = keep-erase = 0.12800
+  GATED private      keep=0.12800 erase=0.00000  naive 'field effect' = keep-erase = 0.12800
+  UNGATED private    keep=0.12800 erase=0.12800  naive 'field effect' = keep-erase = 0.00000
+  FIELD+GATED priv   keep=0.25600 erase=0.00000  naive 'field effect' = keep-erase = 0.25600
+
+P2/P3  openGate + clearP(s,d) applied k times.  enumeration vs closed form; single-probe bias.
+  s=0.9 d=0.0: max|enum-closed|=1.7e-16  1-probe est of F=0.14080 bias=+0.01280 (predicted +0.01280)
+  s=0.9 d=0.1: max|enum-closed|=2.6e-16  1-probe est of F=0.12800 bias=+0.00000 (predicted +0.00000)
+  s=0.7 d=0.2: max|enum-closed|=4.9e-16  1-probe est of F=0.14080 bias=+0.01280 (predicted +0.01280)
+  s=0.5 d=0.5: max|enum-closed|=1.4e-16  1-probe est of F=0.12800 bias=+0.00000 (predicted +0.00000)
+
+P4  Prony on c_0..c_3 = A r1^k + B r2^k :  recover (A,B,r1,r2). Noiseless, then noisy.
+  s=0.9 d=0.1: roots [0.1 0.9] (true [0.09999999999999998, 0.9]) amplitudes [0.128 0.128] (true F=0.12800, P=0.12800)
+  s=0.7 d=0.3: roots [0.3 0.7] (true [0.30000000000000004, 0.7]) amplitudes [0.128 0.128] (true F=0.12800, P=0.12800)
+  s=0.6 d=0.5: roots [0.4 0.5] (true [0.4, 0.5]) amplitudes [0.128 0.128] (true F=0.12800, P=0.12800)
+
+P5  finite-sample Prony, independent generator per condition, N samples per k, 400 repeats.
+   |s-d|   cond(Vandermonde)   median |F_hat-F|  frac failed(complex/NaN)   (root with 1-d matched to field via swap-probe label, ASSUMED)
+   0.80           3.2          0.00524          0.00
+   0.50           4.9          0.01792          0.00
+   0.20          11.6          0.11591          0.00
+   0.05          47.2          0.12779          0.03
+   0.02         116.8          0.12796          0.02

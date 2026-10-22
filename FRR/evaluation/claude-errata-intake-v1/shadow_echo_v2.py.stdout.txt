@@ -1,0 +1,30 @@
+== 1. passive visible-word law, y0 and e0 uniform ==
+ n= 2  TV(shadow,echo)=0.0000
+ n= 3  TV(shadow,echo)=0.1500
+ n= 4  TV(shadow,echo)=0.2231
+ n= 6  TV(shadow,echo)=0.2949
+ n= 8  TV(shadow,echo)=0.3604
+ n=10  TV(shadow,echo)=0.4099
+
+== 2. is each visible process Markov-1? max|P(y2|y1,y0)-P(y2|y1)| ==
+ shadow order-2 gap=0.1221   echo order-2 gap=0.3000
+ -> shadow also looks history-dependent passively (Bayesian inference of e)
+
+== 3. Hankel rank of word laws (prefix/suffix len<=3) ==
+ rank shadow=4  rank echo=4
+
+== 4. long-run switch-rate bimodality (per-trajectory, T=4000, 400 runs) ==
+ frozen mean=0.277 sd=0.152 hist(0.1..0.5)=[193, 0, 0, 0, 0, 0, 207, 0]
+ echo   mean=0.252 sd=0.009 hist(0.1..0.5)=[0, 0, 160, 240, 0, 0, 0, 0]
+
+== 5. rewiring interventions (TV of law vs own passive law, n=8) ==
+ shadow do(e~iid fair)     TV=0.1798
+ shadow do(e_t:=y_{t-1})   TV=0.3604
+ shadow do(e:=0)           TV=0.3318
+ shadow do(e:=1)           TV=0.3318
+ echo   do(e~iid fair)     TV=0.3407
+ echo   do(e_t:=y_{t-1})   TV=0.0000
+ echo   do(e:=0)           TV=0.4373
+ echo   do(e:=1)           TV=0.4313
+
+ do(e iid) laws equal across models? TV = 0.0

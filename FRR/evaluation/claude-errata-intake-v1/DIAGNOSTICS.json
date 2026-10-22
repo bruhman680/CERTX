@@ -1,0 +1,233 @@
+{
+  "scope": "Targeted development diagnostics; same conceptual ancestry, no physical/agent transfer test",
+  "inverse": {
+    "unequal_original_pure_keep": 0.128,
+    "unequal_original_gated_private_keep": 0.09599999999999997,
+    "original_P1_equality_holds": false,
+    "new_matched_private_route_weight": 0.5333333333333333,
+    "new_matched_private_keep": 0.1280000000000001,
+    "moment_determinant": 0.0049152,
+    "moment_expected": 0.0049152000000000015,
+    "amplitude_vandermonde_determinant": -0.8,
+    "equal_rates_only_sum": [
+      0.188,
+      0.094,
+      0.047,
+      0.0235
+    ]
+  },
+  "sampling_model": "Original unequal-carrier binomial sequence, same seed/parameters, new physical-admissibility classification; c=P(correct)-0.5 so nonnegative amplitudes sum<=0.5",
+  "sampling": [
+    {
+      "s": 0.9,
+      "d": 0.1,
+      "gap": 0.8,
+      "replicates": 400,
+      "original_accepted": 400,
+      "original_accepted_but_invalid": 26,
+      "classification": {
+        "valid": 374,
+        "linear_solve_failure": 0,
+        "complex": 0,
+        "rates_outside_unit": 26,
+        "nonphysical_amplitudes": 0
+      },
+      "example": {
+        "category": "rates_outside_unit",
+        "measurements": [
+          0.1894,
+          0.11933499999999997,
+          0.10499999999999998,
+          0.09193499999999999
+        ],
+        "original_roots": [
+          -0.010909735856722681,
+          0.8756241477737716
+        ],
+        "original_amplitudes": [
+          0.05246072874044477,
+          0.13693927125955524
+        ]
+      }
+    },
+    {
+      "s": 0.8,
+      "d": 0.3,
+      "gap": 0.5,
+      "replicates": 400,
+      "original_accepted": 400,
+      "original_accepted_but_invalid": 44,
+      "classification": {
+        "valid": 356,
+        "linear_solve_failure": 0,
+        "complex": 0,
+        "rates_outside_unit": 44,
+        "nonphysical_amplitudes": 0
+      },
+      "example": {
+        "category": "rates_outside_unit",
+        "measurements": [
+          0.18628500000000003,
+          0.10126500000000005,
+          0.06718000000000002,
+          0.043484999999999996
+        ],
+        "original_roots": [
+          -0.07476143600046702,
+          0.6489231854395741
+        ],
+        "original_amplitudes": [
+          0.02711078143483331,
+          0.15917421856516673
+        ]
+      }
+    },
+    {
+      "s": 0.7,
+      "d": 0.5,
+      "gap": 0.19999999999999996,
+      "replicates": 400,
+      "original_accepted": 397,
+      "original_accepted_but_invalid": 294,
+      "classification": {
+        "valid": 103,
+        "linear_solve_failure": 0,
+        "complex": 3,
+        "rates_outside_unit": 293,
+        "nonphysical_amplitudes": 1
+      },
+      "example": {
+        "category": "rates_outside_unit",
+        "measurements": [
+          0.18923999999999996,
+          0.08138999999999996,
+          0.03542500000000004,
+          0.018039999999999945
+        ],
+        "original_roots": [
+          0.42970706991265656,
+          6.245549455976482
+        ],
+        "original_amplitudes": [
+          0.18922757977177956,
+          1.2420228220410731e-05
+        ]
+      }
+    },
+    {
+      "s": 0.6,
+      "d": 0.55,
+      "gap": 0.04999999999999993,
+      "replicates": 400,
+      "original_accepted": 390,
+      "original_accepted_but_invalid": 355,
+      "classification": {
+        "valid": 35,
+        "linear_solve_failure": 0,
+        "complex": 10,
+        "rates_outside_unit": 334,
+        "nonphysical_amplitudes": 21
+      },
+      "example": {
+        "category": "rates_outside_unit",
+        "measurements": [
+          0.18900499999999998,
+          0.08120499999999997,
+          0.03476999999999997,
+          0.015029999999999988
+        ],
+        "original_roots": [
+          -1.1941649165257802,
+          0.42925600482897236
+        ],
+        "original_amplitudes": [
+          -4.525555038353817e-05,
+          0.18905025555038352
+        ]
+      }
+    },
+    {
+      "s": 0.6,
+      "d": 0.58,
+      "gap": 0.020000000000000018,
+      "replicates": 400,
+      "original_accepted": 390,
+      "original_accepted_but_invalid": 367,
+      "classification": {
+        "valid": 23,
+        "linear_solve_failure": 0,
+        "complex": 10,
+        "rates_outside_unit": 354,
+        "nonphysical_amplitudes": 13
+      },
+      "example": {
+        "category": "rates_outside_unit",
+        "measurements": [
+          0.18747499999999995,
+          0.08004500000000003,
+          0.030935000000000046,
+          0.014920000000000044
+        ],
+        "original_roots": [
+          -0.9424849482799671,
+          0.41433862735103805
+        ],
+        "original_amplitudes": [
+          -0.0017444167980818215,
+          0.18921941679808177
+        ]
+      }
+    }
+  ],
+  "thermal_direct_solve": [
+    {
+      "beta": 0.5,
+      "old_error": 0.034155749704419675,
+      "old_predicted_error": 5.551115123125783e-17,
+      "fixed_error": 8.326672684688674e-17,
+      "fixed_stationarity_residual": 2.7755575615628914e-17
+    },
+    {
+      "beta": 1.0,
+      "old_error": 0.0527654683042601,
+      "old_predicted_error": 8.326672684688674e-17,
+      "fixed_error": 8.326672684688674e-17,
+      "fixed_stationarity_residual": 2.7755575615628914e-17
+    },
+    {
+      "beta": 2.0,
+      "old_error": 0.08658348561083262,
+      "old_predicted_error": 1.1102230246251565e-16,
+      "fixed_error": 8.326672684688674e-17,
+      "fixed_stationarity_residual": 1.3877787807814457e-17
+    },
+    {
+      "beta": 5.0,
+      "old_error": 0.10981696953796594,
+      "old_predicted_error": 3.3306690738754696e-16,
+      "fixed_error": 2.220446049250313e-16,
+      "fixed_stationarity_residual": 1.1102230246251565e-16
+    }
+  ],
+  "shadow_echo": {
+    "n8_TV": 0.36042842109375,
+    "normalization": {
+      "frozen": 0.9999999999999992,
+      "echo": 0.9999999999999998
+    },
+    "finite_numeric_hankel_rank": {
+      "frozen": 4,
+      "echo": 4
+    }
+  },
+  "checks": {
+    "unequal_P1_not_matched": true,
+    "new_calibration_restores_matched_signal": true,
+    "moment_determinant_identity": true,
+    "original_accepts_nonphysical_fits": true,
+    "direct_Boltzmann_checks": true,
+    "word_laws_normalize": true,
+    "both_numeric_ranks_four": true
+  },
+  "diagnostic_source_sha256": "253468e64bef742c04407753a02537a4ff0d15c5b8833dc5988441f8c7fb6b6c"
+}
