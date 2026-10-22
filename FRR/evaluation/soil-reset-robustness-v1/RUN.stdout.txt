@@ -1,0 +1,149 @@
+{
+  "checks": {
+    "operator_algebra": true,
+    "additive_recovery": true,
+    "interaction_recovery": true,
+    "two_component_interaction_misspecification_detected": true,
+    "confounded_summary_ambiguous": true,
+    "shadow_has_zero_probe_contrast": true,
+    "shadow_reset_changes_baseline": true
+  },
+  "models": {
+    "shadow_additive": {
+      "contributions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "two_component_residual": 0.0,
+      "naive_bias": [
+        0.0,
+        0.0
+      ]
+    },
+    "echo_additive": {
+      "contributions": [
+        0.06399999999999999,
+        -2.7755575615628914e-17,
+        0.0
+      ],
+      "two_component_residual": 1.734723475976807e-17,
+      "naive_bias": [
+        -0.006400000000000003,
+        0.012799999999999978
+      ]
+    },
+    "wake_additive": {
+      "contributions": [
+        5.551115123125783e-18,
+        0.072,
+        0.0
+      ],
+      "two_component_residual": 1.97026712507607e-17,
+      "naive_bias": [
+        0.014399999999999993,
+        -0.007199999999999998
+      ]
+    },
+    "mixed_additive": {
+      "contributions": [
+        0.06399999999999999,
+        0.07199999999999997,
+        0.0
+      ],
+      "two_component_residual": 7.473417450352271e-17,
+      "naive_bias": [
+        0.008000000000000007,
+        0.00559999999999998
+      ]
+    },
+    "shadow_interaction": {
+      "contributions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "two_component_residual": 0.0,
+      "naive_bias": [
+        0.0,
+        0.0
+      ]
+    },
+    "echo_interaction": {
+      "contributions": [
+        0.06400000000000004,
+        -5.551115123125783e-18,
+        0.025600000000000015
+      ],
+      "two_component_residual": 0.010573509719490608,
+      "naive_bias": [
+        -0.001792000000000002,
+        0.017407999999999993
+      ]
+    },
+    "wake_interaction": {
+      "contributions": [
+        2.7755575615628915e-18,
+        0.07200000000000001,
+        0.014400000000000001
+      ],
+      "two_component_residual": 0.005947599217213444,
+      "naive_bias": [
+        0.016992000000000004,
+        -0.004607999999999973
+      ]
+    },
+    "mixed_interaction": {
+      "contributions": [
+        0.06399999999999995,
+        0.07199999999999993,
+        0.03319412855158263
+      ],
+      "two_component_residual": 0.01371009534649136,
+      "naive_bias": [
+        0.013974943139284879,
+        0.01157494313928488
+      ]
+    }
+  },
+  "minimum_word_TV": {
+    "sham": 0.05102965158201092,
+    "sham+shared": 0.04111944000000003,
+    "sham+agent+soil": 0.040792406133333334
+  },
+  "identification": {
+    "diverse_rank": 2,
+    "diverse_condition_number": 2.5594961238812726,
+    "interaction_rank": 3,
+    "interaction_condition_number": 5.598125535713118,
+    "confounded": {
+      "matrix": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          0.4,
+          0.4
+        ],
+        [
+          0.4,
+          0.4
+        ]
+      ],
+      "rank": 1,
+      "example_contributions": [
+        [
+          0.1,
+          0
+        ],
+        [
+          0,
+          0.1
+        ]
+      ],
+      "same_responses": true,
+      "scope": "Arbitrary two-component first-outcome response summary; not full-word-law equivalence."
+    }
+  }
+}

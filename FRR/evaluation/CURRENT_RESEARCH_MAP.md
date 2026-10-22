@@ -1,6 +1,8 @@
 # Current research map: continuity, distinctions and their readers
 
-Resting state: [settling checkpoint](../sync/checkpoints/SETTLING_AFTER_HARNESS_CONTACT.md) preserves HI-C1 and the deferred readable-code/history idea. Designs remain unexecuted; no new scientific status or core change.
+Latest executed contact: [SR-C1](soil-reset-robustness-v1/REPORT.md) tests known imperfect-reset operators in a new six-state construction. It exposes calibration bias and interaction misspecification while preserving the distinction between response-summary ambiguity and full-law discrimination. No finite-sample or actual-agent result.
+
+Earlier resting state: [settling checkpoint](../sync/checkpoints/SETTLING_AFTER_HARNESS_CONTACT.md) preserves HI-C1 and the deferred readable-code/history idea. Designs remain unexecuted; no new scientific status or core change.
 
 Latest source/implementation contact: [HI-C1](harness-interface-contact-v1/REPORT.md) extracts selective specialization, component attribution and history semantics from two papers and OpenResearch. Its [staged design](harness-interface-contact-v1/DESIGN.md) is proposed; no reproduction, model experiment or queue promotion.
 

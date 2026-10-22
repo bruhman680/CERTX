@@ -1,6 +1,6 @@
 # Current FRR handoff
 
-The user's current goal is useful reasoning and behavioral habits for learning, building and revision—not advantage over other labs or people. Use comparisons when they clarify a practical choice, without turning winning a comparison into the objective. The user then supplied OO-Harness, Evolving Agent Interfaces and OpenResearch and authorized a deeper extraction. HI-C1 saves selected source/implementation findings, optional specialization guidance and an unexecuted staged agent-test design. The earlier unidentified transformer post remains open. Earlier budget/stopping instructions apply to their historical episode, not automatically to the current one. Usage limits are not programmatically visible.
+The user's current goal is useful reasoning and behavioral habits for learning, building and revision—not advantage over other labs or people. Use comparisons when they clarify a practical choice, without turning winning a comparison into the objective. The user then supplied OO-Harness, Evolving Agent Interfaces and OpenResearch and authorized a deeper extraction. HI-C1 saves selected source/implementation findings, optional specialization guidance and an unexecuted staged agent-test design. On resumption, SR-C1 executes a bounded population-model slice of the soil/reset robustness design. The earlier unidentified transformer post remains open. Earlier budget/stopping instructions apply to their historical episode, not automatically to the current one. Usage limits are not programmatically visible.
 
 ## Current practice
 
@@ -11,6 +11,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 [EL-C1](evaluation/error-lineage-v1/REPORT.md) now separates shared causes, copying, common difficulty and stale descendants in exact constructed models, with a saved-data replay. The optional [error-lineage practice](modules/error-lineage.md) prompts selective checks and reopening dependents; actual agent-behavior benefit remains untested. FIELD-01/LEGACY-06 stay queued; counts are unchanged.
 
 ## Useful artifacts and recent contacts
+
+- [SR-C1](evaluation/soil-reset-robustness-v1/REPORT.md) executes the exact-population slice of the different-parameterization/imperfect-reset design:8 worlds, explicit off-target resets, interaction-readout stress and120 length4 laws. Scalar cross-check passes. Calibrated contributions are recoverable within the specified full-rank model; passive candidate laws already differ. No finite-sample/calibration-witness or real-agent result.
 
 - [HI-C1](evaluation/harness-interface-contact-v1/REPORT.md) separates records, observation, operations and routing; distinguishes editable navigation from preserved derivation; and adds optional [evidence-triggered specialization](modules/evidence-triggered-specialization.md). [Staged design](evaluation/harness-interface-contact-v1/DESIGN.md) is unexecuted. No scientific status or core change.
 
@@ -34,9 +36,9 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Resume and next move
 
-The user has requested a pause after a settling sync. [Resting checkpoint](sync/checkpoints/SETTLING_AFTER_HARNESS_CONTACT.md) preserves the latest state and the deferred readable-code/history idea. No restructuring or new experiments are authorized by the checkpoint itself; use the next user direction.
+The user returned and asked to begin. SR-C1 now records a bounded exact-population robustness test. [Earlier resting checkpoint](sync/checkpoints/SETTLING_AFTER_HARNESS_CONTACT.md) remains historical and preserves the still-deferred readable-code/history idea. The noisy calibration/equal-budget extension and practical agent bridge are not yet executed.
 
-Current stopping state: CE-C1, PF-C1/PF-C2, ST-C1, AS-C1/AS-C2/AS-C3 and HI-C1 are saved. HI-C1 source and guidance publication is anchored at `9ea31d59749bb8527b796f6ffd07b5ffae80e9d2`. The new design drafts remain unexecuted; no broader research run is active. The [navigation sweep](evaluation/navigation-sweep-v1/REPORT.md) preserves its own resting checkpoint and maintenance scope.
+Current stopping state: CE-C1, PF-C1/PF-C2, ST-C1, AS-C1/AS-C2/AS-C3 and HI-C1 are saved. HI-C1 source and guidance publication is anchored at `9ea31d59749bb8527b796f6ffd07b5ffae80e9d2`. The HI-C1 agent design remains unexecuted. SR-C1 executes only the population-model portion of the earlier soil/reset draft; broader calibration/noisy-trial work remains pending. The [navigation sweep](evaluation/navigation-sweep-v1/REPORT.md) preserves its own resting checkpoint and maintenance scope.
 
 Inspect referenced artifacts before trusting a summary. Prefer a concrete uncertainty or build need over another ritual check. The strongest open boundaries include less-cued source/authority assessment, actual writer-produced compression and longer reuse, reliable reopening/receipt history, and task-dependent preservation. Many physical/swarm mappings remain unverified; see the queue rather than treating old proposed constants as laws.
 
