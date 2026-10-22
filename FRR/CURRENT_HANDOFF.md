@@ -12,6 +12,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Useful artifacts and recent contacts
 
+- [MB-C1](evaluation/memory-byte-intake-v1/REPORT.md) records MemoryTax and byte-distillation primary readings: equal-information controls, writer/reader separation, all-attempt cost, conversion fidelity versus downstream performance. Source contact only; no new experiment or queue/core change.
+
 - [SR-C1](evaluation/soil-reset-robustness-v1/REPORT.md) executes the exact-population slice of the different-parameterization/imperfect-reset design:8 worlds, explicit off-target resets, interaction-readout stress and120 length4 laws. Scalar cross-check passes. Calibrated contributions are recoverable within the specified full-rank model; passive candidate laws already differ. No finite-sample/calibration-witness or real-agent result.
 
 - [HI-C1](evaluation/harness-interface-contact-v1/REPORT.md) separates records, observation, operations and routing; distinguishes editable navigation from preserved derivation; and adds optional [evidence-triggered specialization](modules/evidence-triggered-specialization.md). [Staged design](evaluation/harness-interface-contact-v1/DESIGN.md) is unexecuted. No scientific status or core change.
