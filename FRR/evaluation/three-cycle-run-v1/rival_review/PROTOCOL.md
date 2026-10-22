@@ -1,0 +1,7 @@
+# Cycle2 rival proposal: marginal calibration misses reset dependence
+
+This bounded exact calculation tests reset independence, not noisy calibration or physical memory. Before numerical execution: keep SR-C1 mixed_interaction stationary preparation, readout and forced0/1 update kernels. Replace only the joint law of coordinate erase events. Rates rA/rS stay unchanged. Compare independent q=rA*rS with positively coupled q=min(rA,rS) and negatively coupled q=max(0,rA+rS-1), where q is probability both coordinates erase. The four erase-event probabilities are (neither,A-only,S-only,both)=(1-rA-rS+q,rA-q,rS-q,q).
+
+Predictions: marginal coordinate witnesses cannot distinguish the operators. Joint survival J=1-rA-rS+q changes the interaction contribution. First-outcome response is (1-rA)a+(1-rS)b+J*c. An independence-assumed three-component fit on sham/agent/soil can interpolate exactly yet give incorrect contributions. Its prediction of a held-out shared reset may fail. A same-run joint-survival witness from known nonzero coordinates can recover J under direct-access assumptions. No claim that a gate-lost witness actually measures erasure.
+
+Use SR-C1 reset rates unchanged, no fitted parameter tuning. Verify stochastic matrices and exact-within1e-10 first-outcome equality. Save results; no Monte Carlo, source search, provider calls or GitHub modifications. Reader/tool patterns are proposed analogies only.

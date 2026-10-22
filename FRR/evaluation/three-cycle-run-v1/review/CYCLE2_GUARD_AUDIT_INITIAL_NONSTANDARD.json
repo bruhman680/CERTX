@@ -1,0 +1,51 @@
+{
+  "scope": "Separate scalar Cycle2 operator calculation and deterministic guard challenge; no new sampled efficacy data",
+  "cycle2_source_sha256": "eb586f069f552491c6c004eec7ccfa5447a965379fea2a09bfba2ff9c9dd303e",
+  "cycle2_cells_checked": 864,
+  "max_scalar_operator_difference": 1.5265566588595902e-16,
+  "envelope_failures": 0,
+  "errors": [],
+  "cycle2_protocol_hash_matches": true,
+  "guard_source_sha256": "99c363769a97880c14e176cf92b52b85e9382d11be41427609ae266b8f3cb169",
+  "guard_challenges": {
+    "nonfinite_X": {
+      "response": {
+        "status": "unresolved",
+        "reason": "invalid_input"
+      },
+      "warnings": []
+    },
+    "out_of_range_contrast": {
+      "response": {
+        "status": "conditional_interval",
+        "estimate": [
+          1.3084112149532714,
+          1.3084112149532714
+        ],
+        "half_width": [
+          0.04524254561637739,
+          0.045242545616377396
+        ],
+        "condition_number": 2.5594961238812726,
+        "scope": "Conditional on correct design, witness and simultaneous noise-bound assumptions; no physical carrier identification"
+      },
+      "warnings": []
+    },
+    "finite_overflow_radius": {
+      "response": {
+        "status": "conditional_interval",
+        "estimate": [
+          0.06542056074766357,
+          0.06542056074766357
+        ],
+        "half_width": [
+          Infinity,
+          Infinity
+        ],
+        "condition_number": 2.5594961238812726,
+        "scope": "Conditional on correct design, witness and simultaneous noise-bound assumptions; no physical carrier identification"
+      },
+      "warnings": []
+    }
+  }
+}

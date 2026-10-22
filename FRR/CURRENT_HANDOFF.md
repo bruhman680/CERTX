@@ -12,6 +12,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Useful artifacts and recent contacts
 
+- [Three-cycle run](evaluation/three-cycle-run-v1/REPORT.md): Cycle1 noisy calibration4800datasets, Cycle2 adaptive joint-reset stress864exact cells, Cycle3 review/guard repair. Numeric rank can be spurious; joint effects require more than marginal calibration. Raw data, failures and limited guard are saved. Three requested cycles complete; return for user review, no automatic fourth. No actual-agent efficacy or queue/core promotion.
+
 - [MB-C1](evaluation/memory-byte-intake-v1/REPORT.md) records MemoryTax and byte-distillation primary readings: equal-information controls, writer/reader separation, all-attempt cost, conversion fidelity versus downstream performance. Source contact only; no new experiment or queue/core change.
 
 - [SR-C1](evaluation/soil-reset-robustness-v1/REPORT.md) executes the exact-population slice of the different-parameterization/imperfect-reset design:8 worlds, explicit off-target resets, interaction-readout stress and120 length4 laws. Scalar cross-check passes. Calibrated contributions are recoverable within the specified full-rank model; passive candidate laws already differ. No finite-sample/calibration-witness or real-agent result.
@@ -38,7 +40,7 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Resume and next move
 
-The user returned and asked to begin. SR-C1 now records a bounded exact-population robustness test. [Earlier resting checkpoint](sync/checkpoints/SETTLING_AFTER_HARNESS_CONTACT.md) remains historical and preserves the still-deferred readable-code/history idea. The noisy calibration/equal-budget extension and practical agent bridge are not yet executed.
+The user authorized three autonomous cycles; the recorded run is complete and awaits their review. SR-C1 remains the preceding bounded population-model test. [Earlier resting checkpoint](sync/checkpoints/SETTLING_AFTER_HARNESS_CONTACT.md) remains historical and preserves the still-deferred readable-code/history idea. The noisy calibration/equal-budget extension and practical agent bridge are not yet executed.
 
 Current stopping state: CE-C1, PF-C1/PF-C2, ST-C1, AS-C1/AS-C2/AS-C3 and HI-C1 are saved. HI-C1 source and guidance publication is anchored at `9ea31d59749bb8527b796f6ffd07b5ffae80e9d2`. The HI-C1 agent design remains unexecuted. SR-C1 executes only the population-model portion of the earlier soil/reset draft; broader calibration/noisy-trial work remains pending. The [navigation sweep](evaluation/navigation-sweep-v1/REPORT.md) preserves its own resting checkpoint and maintenance scope.
 

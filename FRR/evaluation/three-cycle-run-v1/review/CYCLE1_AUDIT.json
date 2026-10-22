@@ -1,0 +1,24 @@
+{
+  "scope": "Separate scalar candidate checks/normal-equation interval replay over saved data; same authored model, not independent calibration validation",
+  "source_sha256": "a6e0bdcb82a052848667794d7a65d59e18fce6cad9cfdafbe2c4f1047493f671",
+  "unique_stochastic_datasets": 4800,
+  "analysis_rows": 14400,
+  "draw_total_unique_datasets": 213120000,
+  "source_protocol_hash_matches": true,
+  "max_estimate_or_width_difference": 1.7763568394002505e-15,
+  "observed_diverse_rank_deficient_cases": [],
+  "observed_design_mode_matrix_ranks": {
+    "diverse|known|2": 2400,
+    "diverse|estimated|2": 2400,
+    "redundant|known|1": 2400,
+    "redundant|estimated|2": 2338,
+    "redundant|estimated|1": 62
+  },
+  "errors": [],
+  "method_limits": [
+    "Current Cycle1 implementation has no rank guard for diverse estimated matrices. No rank deficiency was observed; add guard and exercise singular input as a separate Cycle3 repair, preserving original results.",
+    "point_identified is a finite-library singleton flag, not generic continuous point identification.",
+    "Hoeffding coverage is conditional on stipulated witness validity/independence and model class; empirical coverage here is conservative, not validation of real calibration.",
+    "Three inference modes share each sampled dataset; do not multiply their measurement costs."
+  ]
+}

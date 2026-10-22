@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Latest bounded run: [three-cycle contact](three-cycle-run-v1/REPORT.md) adds noisy calibration and an adaptive correlated-reset challenge, followed by independent numerical review and a preserved guard repair. Three requested cycles complete; no actual-agent efficacy or generic carrier-identification claim.
+
 Latest executed contact: [SR-C1](soil-reset-robustness-v1/REPORT.md) tests known imperfect-reset operators in a new six-state construction. It exposes calibration bias and interaction misspecification while preserving the distinction between response-summary ambiguity and full-law discrimination. No finite-sample or actual-agent result.
 
 Earlier resting state: [settling checkpoint](../sync/checkpoints/SETTLING_AFTER_HARNESS_CONTACT.md) preserves HI-C1 and the deferred readable-code/history idea. Designs remain unexecuted; no new scientific status or core change.

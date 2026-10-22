@@ -1,12 +1,14 @@
 # Current FRR orientation
 
-Scope: `codex/frr-progress-2026-10-07`, with source contacts and optional guidance saved through `9ea31d59749bb8527b796f6ffd07b5ffae80e9d2`. This is current navigation, not a complete history or a substitute for the user's latest direction.
+Scope: `codex/frr-progress-2026-10-07`; the latest three-cycle run is linked below. Earlier source contacts, experiments and optional guidance retain their own commit anchors. This is current navigation, not a complete history or a substitute for the user's latest direction.
 
 The user returned after the settling pause and authorized continuation; SR-C1 now records the exact-population robustness slice. The earlier pause is historical. [Resting checkpoint](checkpoints/SETTLING_AFTER_HARNESS_CONTACT.md) records what is saved, what remains untested and the deferred idea of readable pseudocode/intent/history beside code. Readable-code restructuring remains deferred; no actual-agent or background run has started. The goal remains useful reasoning and behavioral habits for learning and growth; account usage limits are not programmatically visible.
 
 Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map](../evaluation/CURRENT_RESEARCH_MAP.md) and the [queue](../evaluation/research-queue/README.md). QUEUE.json remains the status source: 35 entries, 30 unfinished, six partial families. A saved queue is not an automatic scheduler.
 
 ## Recent contacts
+
+- [Three-cycle run](../evaluation/three-cycle-run-v1/REPORT.md): noisy calibration, joint-reset counterexample and review/guard repair completed. Three requested cycles fulfilled; await current user review before another cycle. No provider calls, background jobs, broad queue completion or core change.
 
 - [SR-C1](../evaluation/soil-reset-robustness-v1/REPORT.md): separately coded six-state model,8 world/readout combinations, leaky/off-target resets and interaction stress;120 normalized word laws and scalar cross-check. No empirical calibration, noisy trial, actual-agent effect or broad queue completion.
 

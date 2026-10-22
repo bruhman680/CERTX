@@ -1,0 +1,7 @@
+# Cycle3: review and rank-aware estimator guard
+
+Adaptive review/repair, not independent efficacy confirmation. Cycle1's reviewer replay agrees with saved calculations. No estimated diverse matrix was singular in those2400 datasets, but its unguarded pseudoinverse would return a pair on a constructed singular input. Most estimated redundant matrices numerically look rank2 even though the declared population design is rank1. Original Cycle1 code/results stay unchanged.
+
+Before new execution: extract a small allocation helper with explicit calibration availability and population design contract. Return unresolved when calibration absent, population rank insufficient, estimated rank deficient, nonfinite/invalid inputs or invalid bounds. Only known/estimated full-rank admissible inputs return least-squares estimates and conservative intervals under the same stated Hoeffding event. This guard is not an automatic validator of witness semantics or a general scientific judge.
+
+Checks: a full-rank exact response; semantic rank1 despite noisy full-rank matrix; estimated singular matrix under nominal rank2; missing calibration; invalid shape/nonfinite/radius/bounds; full-rank guard reproduces every saved diverse continuous estimate/width. Preserve original outputs. Reviewer independently challenges fixtures/source. Record all failed tests and repairs. No frozen protocol/result edits to Cycle1/2, no new random datasets, no scientific queue completion, no fourth cycle.

@@ -1,0 +1,75 @@
+{
+  "scope": "Adaptive sandbox sensitivity analysis, not sealed confirmation or confidence coverage guarantee",
+  "cases": {
+    "independent": {
+      "joint_witness_calibrated_fit": [
+        0.06399999999999996,
+        0.07199999999999994,
+        0.033194128551582644
+      ],
+      "joint_witness_fit_error": [
+        1.3877787807814457e-17,
+        1.3877787807814457e-17,
+        1.3877787807814457e-17
+      ],
+      "shared_frechet_survival_interval": [
+        0,
+        0.4
+      ],
+      "out_of_fit_shared_prediction_interval_using_nominal_fit": [
+        0.05439999999999996,
+        0.06767765142063302
+      ],
+      "actual_shared_response": 0.05971106056825319,
+      "frechet_interval_covers_shared_response": true
+    },
+    "positive": {
+      "joint_witness_calibrated_fit": [
+        0.06399999999999996,
+        0.07199999999999994,
+        0.03319412855158265
+      ],
+      "joint_witness_fit_error": [
+        1.3877787807814457e-17,
+        1.3877787807814457e-17,
+        2.0816681711721685e-17
+      ],
+      "shared_frechet_survival_interval": [
+        0,
+        0.4
+      ],
+      "out_of_fit_shared_prediction_interval_using_nominal_fit": [
+        0.055117710887601756,
+        0.06767765142063303
+      ],
+      "actual_shared_response": 0.06767765142063302,
+      "frechet_interval_covers_shared_response": true
+    },
+    "negative": {
+      "joint_witness_calibrated_fit": [
+        0.06399999999999997,
+        0.07199999999999993,
+        0.03319412855158265
+      ],
+      "joint_witness_fit_error": [
+        2.7755575615628914e-17,
+        0.0,
+        2.0816681711721685e-17
+      ],
+      "shared_frechet_survival_interval": [
+        0,
+        0.4
+      ],
+      "out_of_fit_shared_prediction_interval_using_nominal_fit": [
+        0.05152915644959282,
+        0.06767765142063303
+      ],
+      "actual_shared_response": 0.05439999999999996,
+      "frechet_interval_covers_shared_response": true
+    }
+  },
+  "checks": {
+    "joint_witness_recovers": true,
+    "frechet_interval_covers_three_selected_cases": true
+  }
+}
