@@ -1,0 +1,7 @@
+# ST-C1: soil toy intake
+
+Preserve all three supplied files. Read script before executing unchanged with a 120-second timeout. Save stdout/stderr and compare to supplied output. No silent original repairs or automatic execution of the relay's proposed follow-ups.
+
+Source inspection already suggests scoped interpretation checks: all three finite passive laws differ, and the three do-effects alone differ, so neither a full passive impossibility claim nor necessity of the two-number signature follows. Exact reset maps establish coordinates by construction; the shadow do-effect is already zero, so the reset contrast does not say no soil carrier exists. Numerically enumerate the finite model; do not call floating-point power-method stationarity or fsolve tuning exact rational arithmetic.
+
+Add a separately implemented latent-state transition check using direct binary products/transition rules, independent stationary calculations (retain stated uniform soil mixture for reducible SH/EC), and enumerate estimator histories to decompose latent-oracle KL into posterior-predictive regret plus information inaccessible from that history. This is an implementation cross-check sharing model ancestry, not independent physical replication or the requested future different-parameterization study. Keep observations distinct from imposed errors and label causal operations explicitly. No tuning for a desired result and no efficacy or novelty claim.

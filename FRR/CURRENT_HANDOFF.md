@@ -1,6 +1,6 @@
 # Current FRR handoff
 
-The user's current goal is useful reasoning and behavioral habits for learning, building and revision—not advantage over other labs or people. Use comparisons when they clarify a practical choice, without turning winning a comparison into the objective. The user returned with a Claude errata bundle and authorized its two next contacts; the bounded follow-ups are recorded below. Earlier budget/stopping instructions apply to their historical episode, not automatically to the current one. Usage limits are not programmatically visible.
+The user's current goal is useful reasoning and behavioral habits for learning, building and revision—not advantage over other labs or people. Use comparisons when they clarify a practical choice, without turning winning a comparison into the objective. The user has supplied a further Claude soil toy/relay; bounded reproduction and interpretation checks are recorded below. Earlier budget/stopping instructions apply to their historical episode, not automatically to the current one. Usage limits are not programmatically visible.
 
 ## Current practice
 
@@ -11,6 +11,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 [EL-C1](evaluation/error-lineage-v1/REPORT.md) now separates shared causes, copying, common difficulty and stale descendants in exact constructed models, with a saved-data replay. The optional [error-lineage practice](modules/error-lineage.md) prompts selective checks and reopening dependents; actual agent-behavior benefit remains untested. FIELD-01/LEGACY-06 stay queued; counts are unchanged.
 
 ## Useful artifacts and recent contacts
+
+- [ST-C1](evaluation/soil-intake-v1/REPORT.md) preserves Claude's soil toy/relay/output and reproduces its output unchanged. A separate same-parameterization audit confirms transitions/tuning and decomposes latent-oracle KL: the wake model's predictive excess decreases despite a rising combined score. Broader parameterization/leaky-reset and real-agent contacts remain proposed. Two audit-harness failures/repairs are preserved.
 
 - [PF-C1/PF-C2](evaluation/probe-followups-v1/REPORT.md) distinguish stored information from read-gate access under explicit witness assumptions, then compare early/spread probe counts and one/two-component fits at equal sampling budget. Spread observations help the separated example; accurate prediction can coexist with poor decomposition. Sixty constructed replicates/240 selected fits; no actual carrier calibration or agent efficacy.
 
@@ -24,7 +26,7 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Resume and next move
 
-Current stopping state: the earlier navigation sweep and conversational wind-down are complete. The user returned with the Claude bundle and authorized the next two contacts. CE-C1 and PF-C1/PF-C2 are saved; no broader research run is active. The [navigation sweep](evaluation/navigation-sweep-v1/REPORT.md) preserves its own resting checkpoint and maintenance scope.
+Current stopping state: the earlier navigation sweep and conversational wind-down are complete. The user returned with the Claude bundle and authorized the next two contacts. CE-C1, PF-C1/PF-C2 and the later ST-C1 soil intake are saved; no broader research run is active. The [navigation sweep](evaluation/navigation-sweep-v1/REPORT.md) preserves its own resting checkpoint and maintenance scope.
 
 Inspect referenced artifacts before trusting a summary. Prefer a concrete uncertainty or build need over another ritual check. The strongest open boundaries include less-cued source/authority assessment, actual writer-produced compression and longer reuse, reliable reopening/receipt history, and task-dependent preservation. Many physical/swarm mappings remain unverified; see the queue rather than treating old proposed constants as laws.
 

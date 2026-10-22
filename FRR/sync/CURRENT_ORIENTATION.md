@@ -8,6 +8,8 @@ Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map]
 
 ## Recent contacts
 
+- [ST-C1](../evaluation/soil-intake-v1/REPORT.md): supplied soil toy reproduces unchanged; same-parameterization audit decomposes the score and qualifies passive/signature/reset claims. The five suggested follow-ups remain proposals. Source and failed audit harnesses are preserved.
+
 - [PF-C1/PF-C2](../evaluation/probe-followups-v1/REPORT.md): gate-independent witness assumptions separate access from stored information; sixty constructed fitting replicates compare early/spread positions and one/two-component models. Good prediction does not establish component identity. No actual carrier calibration or agent test.
 
 - [CE-C1](../evaluation/claude-errata-intake-v1/REPORT.md): five originals preserved; all four scripts executed unchanged. Reproduced rank/Boltzmann results, exposed unequal-carrier P1 mismatch and counted physically inadmissible noisy fits. Previously missing source availability is resolved; broader intervention selectivity and real-agent transfer remain open.

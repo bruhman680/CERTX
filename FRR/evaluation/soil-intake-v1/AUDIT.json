@@ -1,0 +1,435 @@
+{
+  "scope": "Same parameterization, separately coded transition/direct stationary audit; not a different-parameterization replication or real-world carrier identification",
+  "analytic_tuning": {
+    "high": 0.368421052631579,
+    "d": 0.014814814814814815,
+    "high_stationary_probability": 0.5166163141993958,
+    "soil_spectral_gap": 0.01935672514619883,
+    "soil_subdominant_eigenvalue": 0.9806432748538012
+  },
+  "rows": [
+    {
+      "world": "SH",
+      "parameters": {
+        "P": [
+          0.021114561800016834,
+          0.3788854381999832
+        ]
+      },
+      "stationary": [
+        0.4894427190999916,
+        0.010557280900008417,
+        0.3105572809000084,
+        0.1894427190999916
+      ],
+      "stationarity_residual": 0.0,
+      "transition_difference_to_source": 0.0,
+      "forced_transition_difference": 0.0,
+      "rate": 0.20000000000000004,
+      "covariances": [
+        0.032,
+        0.032,
+        0.032,
+        0.032,
+        0.032,
+        0.032
+      ],
+      "effects": {
+        "do": [
+          0.0,
+          2.7755575615628914e-17,
+          2.7755575615628914e-17,
+          2.7755575615628914e-17,
+          2.7755575615628914e-17,
+          2.7755575615628914e-17
+        ],
+        "observe": [
+          0.16000000000000003,
+          0.16000000000000003,
+          0.16000000000000003,
+          0.16000000000000003,
+          0.16000000000000003,
+          0.16000000000000003
+        ]
+      },
+      "EWMA_decomposition": {
+        "control": [
+          {
+            "lag": 1,
+            "latent_oracle_KL": 0.11747166549675099,
+            "posterior_predictive_regret": -4.440892098500625e-17,
+            "hidden_state_information_term": 0.11747166549675109,
+            "decomposition_residual": -5.551115123125783e-17
+          },
+          {
+            "lag": 2,
+            "latent_oracle_KL": 0.10341203661733034,
+            "posterior_predictive_regret": 0.0039232521789524305,
+            "hidden_state_information_term": 0.09948878443837794,
+            "decomposition_residual": -2.7755575615628914e-17
+          },
+          {
+            "lag": 3,
+            "latent_oracle_KL": 0.09343241901930034,
+            "posterior_predictive_regret": 0.011254848620005593,
+            "hidden_state_information_term": 0.08217757039929478,
+            "decomposition_residual": -4.163336342344337e-17
+          },
+          {
+            "lag": 4,
+            "latent_oracle_KL": 0.0862180214568494,
+            "posterior_predictive_regret": 0.019405064307284198,
+            "hidden_state_information_term": 0.06681295714956513,
+            "decomposition_residual": 6.938893903907228e-17
+          },
+          {
+            "lag": 5,
+            "latent_oracle_KL": 0.08112220342706755,
+            "posterior_predictive_regret": 0.027024820197512615,
+            "hidden_state_information_term": 0.05409738322955492,
+            "decomposition_residual": 1.3877787807814457e-17
+          },
+          {
+            "lag": 6,
+            "latent_oracle_KL": 0.07774988512842657,
+            "posterior_predictive_regret": 0.033653611237711975,
+            "hidden_state_information_term": 0.04409627389071452,
+            "decomposition_residual": 6.938893903907228e-17
+          }
+        ],
+        "probe": [
+          {
+            "lag": 1,
+            "latent_oracle_KL": 0.24512014857488273,
+            "posterior_predictive_regret": 0.1276484830781319,
+            "hidden_state_information_term": 0.11747166549675099,
+            "decomposition_residual": -1.5265566588595902e-16
+          },
+          {
+            "lag": 2,
+            "latent_oracle_KL": 0.1709158795502655,
+            "posterior_predictive_regret": 0.07142709511188758,
+            "hidden_state_information_term": 0.09948878443837794,
+            "decomposition_residual": -2.7755575615628914e-17
+          },
+          {
+            "lag": 3,
+            "latent_oracle_KL": 0.12874878960005237,
+            "posterior_predictive_regret": 0.04657121920075756,
+            "hidden_state_information_term": 0.08217757039929478,
+            "decomposition_residual": 2.7755575615628914e-17
+          },
+          {
+            "lag": 4,
+            "latent_oracle_KL": 0.10342974249485301,
+            "posterior_predictive_regret": 0.03661678534528787,
+            "hidden_state_information_term": 0.06681295714956513,
+            "decomposition_residual": 1.3877787807814457e-17
+          },
+          {
+            "lag": 5,
+            "latent_oracle_KL": 0.08791894992741502,
+            "posterior_predictive_regret": 0.03382156669786004,
+            "hidden_state_information_term": 0.05409738322955492,
+            "decomposition_residual": 5.551115123125783e-17
+          },
+          {
+            "lag": 6,
+            "latent_oracle_KL": 0.07852049226617908,
+            "posterior_predictive_regret": 0.0344242183754646,
+            "hidden_state_information_term": 0.04409627389071452,
+            "decomposition_residual": -4.85722573273506e-17
+          }
+        ]
+      },
+      "soil_reset_baseline_rate": 0.021114561800016834
+    },
+    {
+      "world": "EC",
+      "parameters": {
+        "c": 0.19999999999999996,
+        "p0": 0.16000000000000003
+      },
+      "stationary": [
+        0.4,
+        0.1,
+        0.4,
+        0.1
+      ],
+      "stationarity_residual": 1.3877787807814457e-17,
+      "transition_difference_to_source": 0.0,
+      "forced_transition_difference": 0.0,
+      "rate": 0.20000000000000004,
+      "covariances": [
+        0.032,
+        0.006400000000000003,
+        0.0012800000000000034,
+        0.00025600000000001316,
+        5.1200000000008183e-05,
+        1.0240000000001637e-05
+      ],
+      "effects": {
+        "do": [
+          0.15999999999999998,
+          0.032,
+          0.006400000000000017,
+          0.0012800000000000311,
+          0.0002560000000000062,
+          5.1200000000001245e-05
+        ],
+        "observe": [
+          0.16000000000000003,
+          0.03200000000000003,
+          0.006400000000000072,
+          0.0012800000000000866,
+          0.0002560000000000895,
+          5.1200000000056756e-05
+        ]
+      },
+      "EWMA_decomposition": {
+        "control": [
+          {
+            "lag": 1,
+            "latent_oracle_KL": 0.017982881058373062,
+            "posterior_predictive_regret": -4.440892098500625e-17,
+            "hidden_state_information_term": 0.017982881058373198,
+            "decomposition_residual": -9.020562075079397e-17
+          },
+          {
+            "lag": 2,
+            "latent_oracle_KL": 0.003923252178952478,
+            "posterior_predictive_regret": 0.003923252178952478,
+            "hidden_state_information_term": 0.0,
+            "decomposition_residual": 0.0
+          },
+          {
+            "lag": 3,
+            "latent_oracle_KL": 0.029330226566088906,
+            "posterior_predictive_regret": 0.029330226566088906,
+            "hidden_state_information_term": 0.0,
+            "decomposition_residual": 0.0
+          },
+          {
+            "lag": 4,
+            "latent_oracle_KL": 0.05225098942509948,
+            "posterior_predictive_regret": 0.052250989425099474,
+            "hidden_state_information_term": 3.095124156970996e-18,
+            "decomposition_residual": 3.843769746936232e-18
+          },
+          {
+            "lag": 5,
+            "latent_oracle_KL": 0.07030148603837576,
+            "posterior_predictive_regret": 0.07030148603837576,
+            "hidden_state_information_term": 0.0,
+            "decomposition_residual": 0.0
+          },
+          {
+            "lag": 6,
+            "latent_oracle_KL": 0.08455535330378847,
+            "posterior_predictive_regret": 0.08455535330378847,
+            "hidden_state_information_term": -1.6226840671151886e-18,
+            "decomposition_residual": 1.6226840671151886e-18
+          }
+        ],
+        "probe": [
+          {
+            "lag": 1,
+            "latent_oracle_KL": 0.013218640913320007,
+            "posterior_predictive_regret": 0.013218640913320007,
+            "hidden_state_information_term": 0.0,
+            "decomposition_residual": 0.0
+          },
+          {
+            "lag": 2,
+            "latent_oracle_KL": 0.08215498593245388,
+            "posterior_predictive_regret": 0.08215498593245388,
+            "hidden_state_information_term": 0.0,
+            "decomposition_residual": 0.0
+          },
+          {
+            "lag": 3,
+            "latent_oracle_KL": 0.08532046513142576,
+            "posterior_predictive_regret": 0.08532046513142576,
+            "hidden_state_information_term": 0.0,
+            "decomposition_residual": 0.0
+          },
+          {
+            "lag": 4,
+            "latent_oracle_KL": 0.07347870586192407,
+            "posterior_predictive_regret": 0.07347870586192407,
+            "hidden_state_information_term": 0.0,
+            "decomposition_residual": 0.0
+          },
+          {
+            "lag": 5,
+            "latent_oracle_KL": 0.0659289708721096,
+            "posterior_predictive_regret": 0.0659289708721096,
+            "hidden_state_information_term": 0.0,
+            "decomposition_residual": 0.0
+          },
+          {
+            "lag": 6,
+            "latent_oracle_KL": 0.06482930341878892,
+            "posterior_predictive_regret": 0.06482930341878892,
+            "hidden_state_information_term": 1.1386291589587929e-18,
+            "decomposition_residual": -1.1386291589587929e-18
+          }
+        ]
+      },
+      "soil_reset_baseline_rate": 0.20000000000000004
+    },
+    {
+      "world": "WK",
+      "parameters": {
+        "P": [
+          0.02,
+          0.368421052631579
+        ],
+        "u": 0.5,
+        "d": 0.014814814814814815
+      },
+      "stationary": [
+        0.4785498489425981,
+        0.004833836858006041,
+        0.32145015105740177,
+        0.19516616314199403
+      ],
+      "stationarity_residual": 5.551115123125783e-17,
+      "transition_difference_to_source": 1.214306433183765e-17,
+      "forced_transition_difference": 0.0,
+      "rate": 0.2,
+      "covariances": [
+        0.032,
+        0.031380584795321645,
+        0.030773159440511608,
+        0.030177491851341456,
+        0.029593354435973385,
+        0.029020524008002202
+      ],
+      "effects": {
+        "do": [
+          0.08421052631578951,
+          0.08258048630347803,
+          0.08098199852766208,
+          0.07941445224037225,
+          0.07787724851571942,
+          0.07636980002105842
+        ],
+        "observe": [
+          0.16000000000000003,
+          0.1569029239766082,
+          0.15386579720255805,
+          0.15088745925670738,
+          0.14796677217986692,
+          0.145102620040011
+        ]
+      },
+      "EWMA_decomposition": {
+        "control": [
+          {
+            "lag": 1,
+            "latent_oracle_KL": 0.11302155950607402,
+            "posterior_predictive_regret": 0.0,
+            "hidden_state_information_term": 0.11302155950607402,
+            "decomposition_residual": 0.0
+          },
+          {
+            "lag": 2,
+            "latent_oracle_KL": 0.0989619306266534,
+            "posterior_predictive_regret": 0.00392325217895243,
+            "hidden_state_information_term": 0.09503867844770095,
+            "decomposition_residual": 2.7755575615628914e-17
+          },
+          {
+            "lag": 3,
+            "latent_oracle_KL": 0.08947085947432053,
+            "posterior_predictive_regret": 0.01177805569001883,
+            "hidden_state_information_term": 0.0776928037843017,
+            "decomposition_residual": 0.0
+          },
+          {
+            "lag": 4,
+            "latent_oracle_KL": 0.0828332329527369,
+            "posterior_predictive_regret": 0.020509943240126827,
+            "hidden_state_information_term": 0.062323289712610114,
+            "decomposition_residual": -4.163336342344337e-17
+          },
+          {
+            "lag": 5,
+            "latent_oracle_KL": 0.07826958508641754,
+            "posterior_predictive_regret": 0.028529859407507525,
+            "hidden_state_information_term": 0.04973972567891003,
+            "decomposition_residual": -1.3877787807814457e-17
+          },
+          {
+            "lag": 6,
+            "latent_oracle_KL": 0.07534419347256895,
+            "posterior_predictive_regret": 0.035205922842055905,
+            "hidden_state_information_term": 0.04013827063051304,
+            "decomposition_residual": 0.0
+          }
+        ],
+        "probe": [
+          {
+            "lag": 1,
+            "latent_oracle_KL": 0.12561386456065404,
+            "posterior_predictive_regret": 0.051473128580276195,
+            "hidden_state_information_term": 0.07414073598037792,
+            "decomposition_residual": -6.938893903907228e-17
+          },
+          {
+            "lag": 2,
+            "latent_oracle_KL": 0.10864527839031352,
+            "posterior_predictive_regret": 0.039931575042342585,
+            "hidden_state_information_term": 0.06871370334797103,
+            "decomposition_residual": -9.71445146547012e-17
+          },
+          {
+            "lag": 3,
+            "latent_oracle_KL": 0.10083101064075158,
+            "posterior_predictive_regret": 0.03881826935269071,
+            "hidden_state_information_term": 0.06201274128806087,
+            "decomposition_residual": -6.938893903907228e-18
+          },
+          {
+            "lag": 4,
+            "latent_oracle_KL": 0.09670916202595134,
+            "posterior_predictive_regret": 0.04211914007551295,
+            "hidden_state_information_term": 0.05459002195043837,
+            "decomposition_residual": 2.0816681711721685e-17
+          },
+          {
+            "lag": 5,
+            "latent_oracle_KL": 0.0943990494871566,
+            "posterior_predictive_regret": 0.04721969432426153,
+            "hidden_state_information_term": 0.0471793551628951,
+            "decomposition_residual": -2.0816681711721685e-17
+          },
+          {
+            "lag": 6,
+            "latent_oracle_KL": 0.09314308982262731,
+            "posterior_predictive_regret": 0.05267082982140196,
+            "hidden_state_information_term": 0.040472260001225356,
+            "decomposition_residual": -6.938893903907228e-18
+          }
+        ]
+      },
+      "soil_reset_baseline_rate": 0.019999999999999997
+    }
+  ],
+  "length6_passive_TV": {
+    "SH-EC": 0.24077910016000004,
+    "SH-WK": 0.012199152583370749,
+    "EC-WK": 0.24253440596717304
+  },
+  "supplied_stdout_matches_exactly": true,
+  "supplied_stdout_matches_ignoring_edge_whitespace": true,
+  "checks": {
+    "rebuild_transitions_agree": true,
+    "stationary_rate_cov_match": true,
+    "all_passive_word_laws_differ": true,
+    "do_alone_distinct_in_supplied_family": true,
+    "KL_decomposition_identity": true
+  },
+  "audit_source_sha256": "cc56d659f9f3df729e4850f850101af9350ab2bace901fde46908548761efb3a"
+}

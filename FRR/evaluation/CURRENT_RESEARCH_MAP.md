@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Latest intake: [ST-C1](soil-intake-v1/REPORT.md) reproduces Claude's soil toy, checks transition/tuning logic and separates hidden-state oracle advantage from predictive regret. In WK the combined KL excess rises while predictive excess falls. Different-parameterization, leaky-reset and estimator-sweep contacts remain proposals; no general carrier identification or efficacy.
+
 Latest follow-ups: [PF-C1/PF-C2](probe-followups-v1/REPORT.md) distinguish gate access from retained information under stipulated witnesses, and test additional probe positions against a one-component rival. Held-out prediction can improve without reliable decomposition or carrier naming. These are constructed contacts; no core or queue-status promotion.
 
 Latest intake: [CE-C1](claude-errata-intake-v1/REPORT.md) preserves Claude's errata and four previously absent scripts, executes all four unchanged, and distinguishes reproduced results from unmatched carrier parameters and insufficient fit validation. Historical missing-source statements remain preserved; no queue status or core version changes.
