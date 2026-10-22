@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Current resting state: [post-run settling checkpoint](../sync/checkpoints/SETTLING_AFTER_TWO_GARDEN_RUNS.md). Both three-cycle runs are saved; noisy synthetic calibration is completed within its declared scope, while empirical witness/actual-agent transfer remains open. No new work starts during this sync.
+
 Latest garden contact: [second three-cycle run](garden-three-cycle-v2/REPORT.md) uses216 witness models and an older decision-theory source weave to test useful action under unresolved state, with explicit probe costs/side effects and review. A limited practice refinement is saved; no physical/agent-efficacy or general decision-rule claim.
 
 Latest bounded run: [three-cycle contact](three-cycle-run-v1/REPORT.md) adds noisy calibration and an adaptive correlated-reset challenge, followed by independent numerical review and a preserved guard repair. Three requested cycles complete; no actual-agent efficacy or generic carrier-identification claim.

@@ -42,9 +42,9 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Resume and next move
 
-The user authorized a second three-cycle garden run including peripheral/older ideas; it is complete and awaits their review. SR-C1 remains the preceding bounded population-model test. [Earlier resting checkpoint](sync/checkpoints/SETTLING_AFTER_HARNESS_CONTACT.md) remains historical and preserves the still-deferred readable-code/history idea. The noisy calibration/equal-budget extension and practical agent bridge are not yet executed.
+The user requested a low-budget sync and wind-down after both three-cycle runs. [Current resting checkpoint](sync/checkpoints/SETTLING_AFTER_TWO_GARDEN_RUNS.md) records saved work, remaining boundaries and deferred ideas. No further cycle or background work is active.
 
-Current stopping state: CE-C1, PF-C1/PF-C2, ST-C1, AS-C1/AS-C2/AS-C3 and HI-C1 are saved. HI-C1 source and guidance publication is anchored at `9ea31d59749bb8527b796f6ffd07b5ffae80e9d2`. The HI-C1 agent design remains unexecuted. SR-C1 executes only the population-model portion of the earlier soil/reset draft; broader calibration/noisy-trial work remains pending. The [navigation sweep](evaluation/navigation-sweep-v1/REPORT.md) preserves its own resting checkpoint and maintenance scope.
+The first run completed noisy calibration and equal-statistical-budget comparisons under stipulated synthetic witnesses, followed by joint-effect stress and guard review. Their empirical calibration validity remains open. The second run completed missingness/selection and authored decision/probe-cost contacts with peripheral readings. Practical actual-agent transfer remains unexecuted. Earlier resting checkpoints and reports retain their historical scopes.
 
 Inspect referenced artifacts before trusting a summary. Prefer a concrete uncertainty or build need over another ritual check. The strongest open boundaries include less-cued source/authority assessment, actual writer-produced compression and longer reuse, reliable reopening/receipt history, and task-dependent preservation. Many physical/swarm mappings remain unverified; see the queue rather than treating old proposed constants as laws.
 
