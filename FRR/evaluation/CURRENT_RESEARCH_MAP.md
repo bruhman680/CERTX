@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Latest source weave: [AS-C1](arxiv-scout-v1/REPORT.md) coordinates three scout lanes and ten selected primary papers. It sharpens intervention diversity/equivalence classes, history-matched prediction, and source-exposure/selective-repair evaluation. [Next-contact designs](arxiv-scout-v1/NEXT_CONTACTS_DRAFT.md) remain drafts; no new experiment or efficacy result.
+
 Latest intake: [ST-C1](soil-intake-v1/REPORT.md) reproduces Claude's soil toy, checks transition/tuning logic and separates hidden-state oracle advantage from predictive regret. In WK the combined KL excess rises while predictive excess falls. Different-parameterization, leaky-reset and estimator-sweep contacts remain proposals; no general carrier identification or efficacy.
 
 Latest follow-ups: [PF-C1/PF-C2](probe-followups-v1/REPORT.md) distinguish gate access from retained information under stipulated witnesses, and test additional probe positions against a one-component rival. Held-out prediction can improve without reliable decomposition or carrier naming. These are constructed contacts; no core or queue-status promotion.
