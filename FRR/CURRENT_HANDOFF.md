@@ -1,6 +1,6 @@
 # Current FRR handoff
 
-The user's current goal is useful reasoning and behavioral habits for learning, building and revision—not advantage over other labs or people. Use comparisons when they clarify a practical choice, without turning winning a comparison into the objective. The user has returned with a Claude errata bundle; this bounded intake is recorded below. Earlier budget/stopping instructions apply to their historical episode, not automatically to the current one. Usage limits are not programmatically visible.
+The user's current goal is useful reasoning and behavioral habits for learning, building and revision—not advantage over other labs or people. Use comparisons when they clarify a practical choice, without turning winning a comparison into the objective. The user returned with a Claude errata bundle and authorized its two next contacts; the bounded follow-ups are recorded below. Earlier budget/stopping instructions apply to their historical episode, not automatically to the current one. Usage limits are not programmatically visible.
 
 ## Current practice
 
@@ -12,6 +12,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Useful artifacts and recent contacts
 
+- [PF-C1/PF-C2](evaluation/probe-followups-v1/REPORT.md) distinguish stored information from read-gate access under explicit witness assumptions, then compare early/spread probe counts and one/two-component fits at equal sampling budget. Spread observations help the separated example; accurate prediction can coexist with poor decomposition. Sixty constructed replicates/240 selected fits; no actual carrier calibration or agent efficacy.
+
 - [CE-C1](evaluation/claude-errata-intake-v1/REPORT.md) archives five supplied originals and executes all four scripts unchanged. Previously missing sources are now available. It reproduces rank/Boltzmann contacts and identifies unmatched unequal-carrier P1 parameters and insufficient noisy-fit validation. This changes source availability, not broader family completion; old reports retain their original scope.
 
 - [Verification layer](modules/verification-layer.md), [evidence-gated feedback](modules/evidence-gated-feedback.md), [context checkpoints](modules/context-checkpoints.md), and [bounded experiment loop](modules/bounded-experiment-loop.md) are optional working aids. Core runtime/compact0.2 and inquiry schema0.1 remain unchanged, derived from conceptual FRRv0.5.
@@ -22,7 +24,7 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Resume and next move
 
-Current stopping state: the earlier navigation sweep and conversational wind-down are complete. The user returned with the Claude bundle; CE-C1 completes this bounded intake. No broader research run is active. The [navigation sweep](evaluation/navigation-sweep-v1/REPORT.md) preserves its own resting checkpoint and maintenance scope.
+Current stopping state: the earlier navigation sweep and conversational wind-down are complete. The user returned with the Claude bundle and authorized the next two contacts. CE-C1 and PF-C1/PF-C2 are saved; no broader research run is active. The [navigation sweep](evaluation/navigation-sweep-v1/REPORT.md) preserves its own resting checkpoint and maintenance scope.
 
 Inspect referenced artifacts before trusting a summary. Prefer a concrete uncertainty or build need over another ritual check. The strongest open boundaries include less-cued source/authority assessment, actual writer-produced compression and longer reuse, reliable reopening/receipt history, and task-dependent preservation. Many physical/swarm mappings remain unverified; see the queue rather than treating old proposed constants as laws.
 

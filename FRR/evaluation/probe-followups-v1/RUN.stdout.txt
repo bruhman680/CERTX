@@ -1,0 +1,142 @@
+Completed separated
+Completed close
+Completed collision
+Completed single
+Completed misspecified
+{
+  "checks": {
+    "calibration_witnesses": true,
+    "training_budget_equal": true,
+    "train_test_k_disjoint": true,
+    "two_nested_train_loss_not_worse": true,
+    "predictions_valid": true,
+    "source_protocol_unchanged": true
+  },
+  "summary": {
+    "separated": {
+      "sparse_one": {
+        "mean_heldout_expected_brier_regret": 0.0008642605819965806,
+        "mean_heldout_empirical_brier": 0.24668493664521493,
+        "unsuccessful_optimizer_starts": 0
+      },
+      "sparse_two": {
+        "mean_heldout_expected_brier_regret": 2.621072939585438e-05,
+        "mean_heldout_empirical_brier": 0.2458527459356139,
+        "unsuccessful_optimizer_starts": 0,
+        "median_slow_amplitude_error": 0.006104489253223891
+      },
+      "dense_one": {
+        "mean_heldout_expected_brier_regret": 0.00016283417106727346,
+        "mean_heldout_empirical_brier": 0.24598603817133102,
+        "unsuccessful_optimizer_starts": 0
+      },
+      "dense_two": {
+        "mean_heldout_expected_brier_regret": 1.2305358703066471e-06,
+        "mean_heldout_empirical_brier": 0.24582859632170828,
+        "unsuccessful_optimizer_starts": 0,
+        "median_slow_amplitude_error": 0.0028141559458057103
+      },
+      "dense_two_better_than_dense_one_replicates": 12,
+      "dense_two_better_than_sparse_two_replicates": 11
+    },
+    "close": {
+      "sparse_one": {
+        "mean_heldout_expected_brier_regret": 5.834939357182507e-09,
+        "mean_heldout_empirical_brier": 0.24998889096433488,
+        "unsuccessful_optimizer_starts": 0
+      },
+      "sparse_two": {
+        "mean_heldout_expected_brier_regret": 7.951527784225495e-07,
+        "mean_heldout_empirical_brier": 0.249989698074675,
+        "unsuccessful_optimizer_starts": 0,
+        "median_slow_amplitude_error": 0.06024140833905736
+      },
+      "dense_one": {
+        "mean_heldout_expected_brier_regret": 1.2628294554696127e-08,
+        "mean_heldout_empirical_brier": 0.2499888598365859,
+        "unsuccessful_optimizer_starts": 0
+      },
+      "dense_two": {
+        "mean_heldout_expected_brier_regret": 1.1219676475618458e-08,
+        "mean_heldout_empirical_brier": 0.24998883082245396,
+        "unsuccessful_optimizer_starts": 0,
+        "median_slow_amplitude_error": 0.06026350435385355
+      },
+      "dense_two_better_than_dense_one_replicates": 1,
+      "dense_two_better_than_sparse_two_replicates": 11
+    },
+    "collision": {
+      "sparse_one": {
+        "mean_heldout_expected_brier_regret": 1.1415250454791519e-07,
+        "mean_heldout_empirical_brier": 0.24933029821752117,
+        "unsuccessful_optimizer_starts": 0
+      },
+      "sparse_two": {
+        "mean_heldout_expected_brier_regret": 3.497202799027867e-06,
+        "mean_heldout_empirical_brier": 0.24933310515463938,
+        "unsuccessful_optimizer_starts": 0
+      },
+      "dense_one": {
+        "mean_heldout_expected_brier_regret": 2.2241260710177553e-07,
+        "mean_heldout_empirical_brier": 0.24933059869506438,
+        "unsuccessful_optimizer_starts": 0
+      },
+      "dense_two": {
+        "mean_heldout_expected_brier_regret": 3.3952015355593153e-07,
+        "mean_heldout_empirical_brier": 0.24933072950396432,
+        "unsuccessful_optimizer_starts": 0
+      },
+      "dense_two_better_than_dense_one_replicates": 0,
+      "dense_two_better_than_sparse_two_replicates": 6
+    },
+    "single": {
+      "sparse_one": {
+        "mean_heldout_expected_brier_regret": 1.9811027990591607e-06,
+        "mean_heldout_empirical_brier": 0.2409937829048867,
+        "unsuccessful_optimizer_starts": 0
+      },
+      "sparse_two": {
+        "mean_heldout_expected_brier_regret": 2.7217693858605077e-05,
+        "mean_heldout_empirical_brier": 0.24101871409214362,
+        "unsuccessful_optimizer_starts": 0
+      },
+      "dense_one": {
+        "mean_heldout_expected_brier_regret": 4.413566344819293e-07,
+        "mean_heldout_empirical_brier": 0.24099164108236648,
+        "unsuccessful_optimizer_starts": 0
+      },
+      "dense_two": {
+        "mean_heldout_expected_brier_regret": 1.1352463717205215e-06,
+        "mean_heldout_empirical_brier": 0.2409927338873897,
+        "unsuccessful_optimizer_starts": 0
+      },
+      "dense_two_better_than_dense_one_replicates": 1,
+      "dense_two_better_than_sparse_two_replicates": 10
+    },
+    "misspecified": {
+      "sparse_one": {
+        "mean_heldout_expected_brier_regret": 9.517804408993586e-05,
+        "mean_heldout_empirical_brier": 0.24767054318773862,
+        "unsuccessful_optimizer_starts": 0
+      },
+      "sparse_two": {
+        "mean_heldout_expected_brier_regret": 9.517786106173591e-05,
+        "mean_heldout_empirical_brier": 0.2476705430125112,
+        "unsuccessful_optimizer_starts": 0
+      },
+      "dense_one": {
+        "mean_heldout_expected_brier_regret": 8.608832806458921e-06,
+        "mean_heldout_empirical_brier": 0.24758627222821536,
+        "unsuccessful_optimizer_starts": 0
+      },
+      "dense_two": {
+        "mean_heldout_expected_brier_regret": 8.608832030074812e-06,
+        "mean_heldout_empirical_brier": 0.24758627222759702,
+        "unsuccessful_optimizer_starts": 0
+      },
+      "dense_two_better_than_dense_one_replicates": 1,
+      "dense_two_better_than_sparse_two_replicates": 12
+    }
+  },
+  "elapsed_seconds": 2.8327059169999984
+}

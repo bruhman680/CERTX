@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Latest follow-ups: [PF-C1/PF-C2](probe-followups-v1/REPORT.md) distinguish gate access from retained information under stipulated witnesses, and test additional probe positions against a one-component rival. Held-out prediction can improve without reliable decomposition or carrier naming. These are constructed contacts; no core or queue-status promotion.
+
 Latest intake: [CE-C1](claude-errata-intake-v1/REPORT.md) preserves Claude's errata and four previously absent scripts, executes all four unchanged, and distinguishes reproduced results from unmatched carrier parameters and insufficient fit validation. Historical missing-source statements remain preserved; no queue status or core version changes.
 
 Earlier error-lineage contact: [EL-C1](error-lineage-v1/REPORT.md) distinguishes error dependence, transmission and repair timing with exact constructed witnesses plus a saved-data replay. [Optional practice](../modules/error-lineage.md) adds source/route/descendant checks; no actual agent efficacy or universal criticality threshold is established. Queue counts/statuses remain unchanged.

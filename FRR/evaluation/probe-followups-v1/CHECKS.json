@@ -1,0 +1,55 @@
+{
+  "scope": "Post-execution implementation/shape audit; thresholds were not used to select models or rerun participants",
+  "original_source_protocol_hash_checks": {
+    "experiments/probe_followups.py": true,
+    "evaluation/probe-followups-v1/PROTOCOL.md": true
+  },
+  "raw_result_checks": {
+    "calibration_witnesses": true,
+    "training_budget_equal": true,
+    "train_test_k_disjoint": true,
+    "two_nested_train_loss_not_worse": true,
+    "predictions_valid": true,
+    "source_protocol_unchanged": true
+  },
+  "calibration_subchecks": {
+    "keep_erase_main_laws_match": true,
+    "restore_gate_discriminates": true,
+    "direct_private_witness_survives_gate": true,
+    "contaminated_witness_loses_access": true,
+    "sham_preserves": true,
+    "rates_recovered_by_assumed_direct_witness": true,
+    "component_permutation_invariant": true
+  },
+  "replicates": 60,
+  "fitted_models": 240,
+  "optimizer_starts": 720,
+  "unsuccessful_optimizer_starts": 0,
+  "shape_audit_added_after_inspection": {
+    "k3": 0.06256640000000002,
+    "k4": 0.0770048,
+    "k4_exceeds_k3": true,
+    "implication": "Nonnegative mixtures of decaying exponentials cannot increase with k; this generator is outside both fitted families."
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "raw_results_sha256": "dcdf569dbdaf9815218df7623062cfe90fcc67bfeaab9fdeba4ac8c7c12c7964",
+  "queue_check": {
+    "entries": 35,
+    "completed_prior_contacts": 2,
+    "completed_scoped_contacts": 1,
+    "checked_instruments": 2,
+    "partial_contacts": 6,
+    "pending": 30,
+    "dependencies_acyclic": true,
+    "local_references_resolve": true,
+    "core_hashes_unchanged": true,
+    "scope": "Saved-plan structure only; no queued scientific test is executed by this check."
+  },
+  "relative_links_all_resolve": true,
+  "relative_link_count": 47,
+  "run_stderr_empty": true
+}

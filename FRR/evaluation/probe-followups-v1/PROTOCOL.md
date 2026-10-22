@@ -1,0 +1,15 @@
+# PF-C1/PF-C2: calibrated readout and additional probe counts
+
+Two bounded constructed contacts authorized by the user after CE-C1. These do not implement physical carriers or reasoning-agent memory. No original source is edited. Code/settings/protocol hashes are recorded before first execution; this is authored development, not reserved confirmation.
+
+## PF-C1: storage versus access
+
+Enumerate matched pure-field and gated-private models with contrast0.128 and carrier fidelity0.9. Compare keep, field erasure plus private-gate closure, and the same erasure with gate restored. Add direct known-payload carrier witnesses that bypass the main reader's gate. For imperfect clearP, set off-target field clearing d=0.1 and private clearing s=0.9; infer both from direct witness success, not main-reader decay, under explicitly assumed perfect witness calibration. Include sham and a contaminated witness sharing the disabled read gate. Demonstrate label permutation leaves the main two-exponential response unchanged. This distinguishes instrumental access from merely fitting components; it cannot empirically validate the witness's own selectivity.
+
+## PF-C2: one versus two decay components
+
+Five generators: separated0.128*0.9^k+0.06*0.1^k; close0.128*0.45^k+0.06*0.4^k; collision0.188*0.7^k; single0.188*0.9^k; misspecified0.188*0.8^k*(1+0.35*sin(pi*k/2)). Observe independent binomial successes with probability0.5+c(k). Twelve seeded replicates per generator, seed20261022. Sparse training k=[0,1,2,3],300000 trials each; dense training k=[0,1,2,3,5,7],200000 each. Equal training total1200000. Counts are separately generated; no paired-resampling precision claim. Shared held-out k=[4,6,8,10],200000 trials each, independent of all training measurements.
+
+Fit both one-component A*r^k and two-component A*(q*a^k+(1-q)*b^k), bounded A∈[0,0.5],q,a,b,r∈[0,1], using prespecified multistart least squares. One-component starts r=0.2,0.6,0.95; two-component starts(q,a,b)=(0.68,0.9,0.1),(0.5,0.7,0.4),(0.5,0.6,0.55). Initial A is training c0 clipped to[0.001,0.499]. max_nfev=500; tolerances1e-10. Select only successful finite fits by training squared error. Embed the fitted one-component as an allowed two-component candidate so numerical optimizer failure cannot force worse training loss. Record every optimizer success/status and chosen parameters. This is finite multistart optimization, not a global-minimum certificate.
+
+Evaluate held-out mean squared probability error against the known generator (expected Brier-score regret) and empirical Brier scores from held-out counts. Never choose/revise fits using held-out results. Record noiseless curve checks, training fit, failure status and parameter error where components are nondegenerate. A smaller training residual alone does not establish better prediction or carrier attribution. More counts at equal cost need not uniformly help when contrast dies quickly. Collision/single generators do not identify two amplitudes; an admissible fit can still be misspecified. No success threshold or winner is required to complete this contact. Do not tune after seeing outcomes; preserve all runs.
