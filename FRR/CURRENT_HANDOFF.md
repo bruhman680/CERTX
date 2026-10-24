@@ -12,6 +12,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Useful artifacts and recent contacts
 
+- [Softmax intake](evaluation/softmax-source-intake-v1/REPORT.md): selected primary reading on finite-precision gradient failures; proposed numerical invariance/stationarity checks, no reproduction or change to existing toy results. Source-only intake after the resting checkpoint.
+
 - [Second garden run](evaluation/garden-three-cycle-v2/REPORT.md):216 witness/readability models, two primary peripheral decision-theory contacts, adaptive action/probe analysis and separate review. Missingness need not identify survival; actions can be stable across a compatible-state set; observation costs/side effects matter. Three further cycles complete for user review, no automatic continuation. Preserve failure/repair; no core/scientific status change.
 
 - [Three-cycle run](evaluation/three-cycle-run-v1/REPORT.md): Cycle1 noisy calibration4800datasets, Cycle2 adaptive joint-reset stress864exact cells, Cycle3 review/guard repair. Numeric rank can be spurious; joint effects require more than marginal calibration. Raw data, failures and limited guard are saved. Three requested cycles complete; return for user review, no automatic fourth. No actual-agent efficacy or queue/core promotion.
