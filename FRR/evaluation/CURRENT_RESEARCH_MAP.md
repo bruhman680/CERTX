@@ -1,6 +1,8 @@
 # Current research map: continuity, distinctions and their readers
 
-Current resting state: [post-run settling checkpoint](../sync/checkpoints/SETTLING_AFTER_TWO_GARDEN_RUNS.md). Both three-cycle runs are saved; noisy synthetic calibration is completed within its declared scope, while empirical witness/actual-agent transfer remains open. No new work starts during this sync.
+Latest upstream contact: [UN-C1](upstream-numerics-v1/REPORT.md) checks explicit finite-precision gradients against high-precision references and distinguishes stable computation from input preservation. Three-angle source guidance now makes upstream dependency tracing explicit. No framework/training reproduction or historical result revision.
+
+Earlier resting state: [post-run settling checkpoint](../sync/checkpoints/SETTLING_AFTER_TWO_GARDEN_RUNS.md). Both three-cycle runs are saved; noisy synthetic calibration is completed within its declared scope, while empirical witness/actual-agent transfer remains open. No new work starts during this sync.
 
 Latest garden contact: [second three-cycle run](garden-three-cycle-v2/REPORT.md) uses216 witness models and an older decision-theory source weave to test useful action under unresolved state, with explicit probe costs/side effects and review. A limited practice refinement is saved; no physical/agent-efficacy or general decision-rule claim.
 

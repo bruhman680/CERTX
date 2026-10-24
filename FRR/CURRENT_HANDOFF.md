@@ -12,6 +12,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Useful artifacts and recent contacts
 
+- [UN-C1](evaluation/upstream-numerics-v1/REPORT.md): bounded NumPy/highprecision gradient formula checks; input rounding is separate from stable computation. Source weave now has an explicit optional upstream dependency trace. No installed autodiff framework, training reproduction or historical result rewrite; queue/core unchanged.
+
 - [Softmax intake](evaluation/softmax-source-intake-v1/REPORT.md): selected primary reading on finite-precision gradient failures; proposed numerical invariance/stationarity checks, no reproduction or change to existing toy results. Source-only intake after the resting checkpoint.
 
 - [Second garden run](evaluation/garden-three-cycle-v2/REPORT.md):216 witness/readability models, two primary peripheral decision-theory contacts, adaptive action/probe analysis and separate review. Missingness need not identify survival; actions can be stable across a compatible-state set; observation costs/side effects matter. Three further cycles complete for user review, no automatic continuation. Preserve failure/repair; no core/scientific status change.
@@ -44,7 +46,7 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Resume and next move
 
-The user requested a low-budget sync and wind-down after both three-cycle runs. [Current resting checkpoint](sync/checkpoints/SETTLING_AFTER_TWO_GARDEN_RUNS.md) records saved work, remaining boundaries and deferred ideas. No further cycle or background work is active.
+The user resumed after the low-budget sync, authorized upstream investigation/refinement, and UN-C1 is now complete. [Current resting checkpoint](sync/checkpoints/SETTLING_AFTER_TWO_GARDEN_RUNS.md) records saved work, remaining boundaries and deferred ideas. No further cycle or background work is active.
 
 The first run completed noisy calibration and equal-statistical-budget comparisons under stipulated synthetic witnesses, followed by joint-effect stress and guard review. Their empirical calibration validity remains open. The second run completed missingness/selection and authored decision/probe-cost contacts with peripheral readings. Practical actual-agent transfer remains unexecuted. Earlier resting checkpoints and reports retain their historical scopes.
 

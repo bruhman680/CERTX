@@ -20,6 +20,14 @@ These are angles, not mandatory sequential stages. Skip or combine them when use
 - For “training-free” or capability claims, trace all information and work: pretrained weights, generated prompts, programs, external records/corpora, adapters/readouts, stronger builders, validation feedback and inference compute. No gradient update does not mean no information or no cost.
 - Report a remembered source as unidentified until enough identifying evidence is available. Preserve plausible candidates without silently choosing one.
 
+## Upstream dependency trace, when consequential
+
+The underlying/challenge angle includes implementation and data-generation dynamics. Before explaining an apparent downstream effect, ask where the distinction it depends on first enters, changes or disappears. A candidate trace is source generation/access → representation (units, tokenization, dtype, clipping) → numerical operations → observation/calibration → objective/evaluator → inference → action/feedback. This is a working dependency sketch; stages can be coupled, reordered or absent, and actions can change earlier conditions.
+
+For the next consequential decision, select the earliest plausible failure boundary and a discriminating check: preserved inputs, alternate precision, an invariant, known stationary case, original-source access or evaluator calibration. Compare intended mathematics with computation on the actual stored inputs. A stable downstream formula cannot recover distinctions already lost at input. Passing an invariant does not by itself establish numerical or scientific correctness.
+
+Use direct and peripheral sources to challenge that boundary, keeping each substrate's mechanism separate. Do not explain every error through a newly found paper, recursively audit everything, or make this a fourth mandatory scouting angle. Stop when the next action is warranted. [UN-C1](../evaluation/upstream-numerics-v1/REPORT.md) demonstrates the numerical/representation distinction with explicit formulas, not training reproduction.
+
 ## Stop and use
 
 Stop when the budget is reached, or when one justified change to the next decision/test is clear and remaining uncertainty is named. If more searching would not change that choice, return to testing. “No change warranted” is a valid outcome; do not manufacture a new queue family for every paper or start an automatic fourth sweep.

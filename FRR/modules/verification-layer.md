@@ -64,3 +64,6 @@ For a material revision, the separate [reopening helper](../tools/reopen_assessm
 
 
 The [second garden run](../evaluation/garden-three-cycle-v2/REPORT.md) sharpens this further: keep missingness distinct from zero, and ask whether readability selects the evidence in a consequential way. A restoration that changes content cannot by itself establish that the content survived earlier. If identification remains partial, retain the feasible set and ask whether the intended action stays warranted throughout it, under explicit task losses and constraints. A useful action does not verify the hidden-state explanation. Count the costs and state changes of further observation; a new measurement is not automatically a harmless improvement.
+
+
+[UN-C1](../evaluation/upstream-numerics-v1/REPORT.md) adds a numerical boundary: distinguish intended equations, their finite-precision realization, and the information preserved in stored inputs. When consequential, use a higher-precision reference, stationary/equality cases and appropriate invariants before attributing an effect to dynamics. Representation loss can precede even a stable computation; conservation checks alone are not a full accuracy certificate. No historical result or training implementation is automatically revised by this source contact.

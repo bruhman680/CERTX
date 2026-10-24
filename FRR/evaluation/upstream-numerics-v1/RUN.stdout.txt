@@ -1,0 +1,179 @@
+{
+  "checks": {
+    "standard_target_cancellation_witness": true,
+    "stable_hard_float32_relative": true,
+    "stable_hard_float64_relative": true,
+    "stable_equal_logits_exact_zero": true,
+    "stable_near_equal_error": true,
+    "input_quantization_cannot_be_recovered": true
+  },
+  "hard": [
+    {
+      "dtype": "float32",
+      "logit_gap": 10,
+      "standard_gradient": [
+        -9.083747863769531e-05,
+        4.539580186246894e-05,
+        4.539580186246894e-05
+      ],
+      "stable_gradient": [
+        -9.079160372493789e-05,
+        4.539580186246894e-05,
+        4.539580186246894e-05
+      ],
+      "stable_target_relative_error": 1.3144477981568255e-07
+    },
+    {
+      "dtype": "float32",
+      "logit_gap": 18,
+      "standard_gradient": [
+        0.0,
+        1.5229980832032197e-08,
+        1.5229980832032197e-08
+      ],
+      "stable_gradient": [
+        -3.0459961664064394e-08,
+        1.5229980832032197e-08,
+        1.5229980832032197e-08
+      ],
+      "stable_target_relative_error": 1.0185333101858754e-07
+    },
+    {
+      "dtype": "float32",
+      "logit_gap": 40,
+      "standard_gradient": [
+        0.0,
+        4.24835413113866e-18,
+        4.24835413113866e-18
+      ],
+      "stable_gradient": [
+        -8.49670826227732e-18,
+        4.24835413113866e-18,
+        4.24835413113866e-18
+      ],
+      "stable_target_relative_error": 2.922377035641435e-08
+    },
+    {
+      "dtype": "float64",
+      "logit_gap": 10,
+      "standard_gradient": [
+        -9.079161565905824e-05,
+        4.5395807829510914e-05,
+        4.5395807829510914e-05
+      ],
+      "stable_gradient": [
+        -9.079161565902183e-05,
+        4.5395807829510914e-05,
+        4.5395807829510914e-05
+      ],
+      "stable_target_relative_error": 1.4927069044532542e-16
+    },
+    {
+      "dtype": "float64",
+      "logit_gap": 18,
+      "standard_gradient": [
+        -3.0459958555439925e-08,
+        1.522997928080808e-08,
+        1.522997928080808e-08
+      ],
+      "stable_gradient": [
+        -3.045995856161616e-08,
+        1.522997928080808e-08,
+        1.522997928080808e-08
+      ],
+      "stable_target_relative_error": 2.1725062058236467e-16
+    },
+    {
+      "dtype": "float64",
+      "logit_gap": 40,
+      "standard_gradient": [
+        0.0,
+        4.248354255291589e-18,
+        4.248354255291589e-18
+      ],
+      "stable_gradient": [
+        -8.496708510583178e-18,
+        4.248354255291589e-18,
+        4.248354255291589e-18
+      ],
+      "stable_target_relative_error": 0.0
+    }
+  ],
+  "soft_max_errors": [
+    {
+      "dtype": "float32",
+      "delta": 0,
+      "standard": 1.4901161193847656e-08,
+      "stable": 0.0
+    },
+    {
+      "dtype": "float32",
+      "delta": 1e-07,
+      "standard": 4.595504334917698e-08,
+      "stable": 2.6874388116184503e-15
+    },
+    {
+      "dtype": "float32",
+      "delta": 1e-05,
+      "standard": 4.553946991382801e-08,
+      "stable": 2.276779762646979e-13
+    },
+    {
+      "dtype": "float64",
+      "delta": 0,
+      "standard": 2.7755575615628914e-17,
+      "stable": 0.0
+    },
+    {
+      "dtype": "float64",
+      "delta": 1e-07,
+      "standard": 3.053121655699755e-17,
+      "stable": 6.617444900424222e-24
+    },
+    {
+      "dtype": "float64",
+      "delta": 1e-05,
+      "standard": 7.912897089954948e-17,
+      "stable": 8.470329472543003e-22
+    }
+  ],
+  "representation": {
+    "common_shift": 100000.0,
+    "intended_student": [
+      1.9999999,
+      1.0000001,
+      0.0
+    ],
+    "intended_teacher": [
+      2.0,
+      1.0,
+      0.0
+    ],
+    "stored_student": [
+      100002.0,
+      100001.0,
+      100000.0
+    ],
+    "stored_teacher": [
+      100002.0,
+      100001.0,
+      100000.0
+    ],
+    "intended_reference_gradient": [
+      -3.8549884196561315e-08,
+      3.476398644231002e-08,
+      3.785897754251296e-09
+    ],
+    "stored_input_reference_gradient": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "stable_stored_gradient": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "stored_student_teacher_equal": true
+  }
+}

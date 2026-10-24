@@ -1,0 +1,1 @@
+The source paper's experiments are not reproduced. This contact uses NumPy formulas and100-decimal mpmath references; no JAX or PyTorch package was available or installed. The broader actual-agent bridge and deferred readable-code/history work remain separate.
