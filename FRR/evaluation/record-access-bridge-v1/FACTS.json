@@ -1,0 +1,65 @@
+{
+  "tasks": [
+    {
+      "id": "A",
+      "question": "Decide whether shipment P31 meets its release temperature rule.",
+      "rule": "Approve iff authoritative maximum temperature is at most8C.",
+      "index": {
+        "record": "A",
+        "location": "sensor/P31/export",
+        "current_revision": 2
+      },
+      "summary": {
+        "revision": 1,
+        "max_C": 7.8
+      }
+    },
+    {
+      "id": "B",
+      "question": "Decide whether release R62 meets its zero-failure rule.",
+      "rule": "Approve iff the authoritative test artifact for runR62/checksumK62 reports zero failures.",
+      "index": {
+        "record": "B",
+        "location": "bench/recent.json",
+        "required_run": "R62",
+        "required_checksum": "K62"
+      },
+      "summary": {
+        "text": "Previous operation: tests passed."
+      }
+    },
+    {
+      "id": "C",
+      "question": "Decide whether kit N14 meets its net-mass rule.",
+      "rule": "Approve iff the signed mass record for N14 reports at least90kg.",
+      "index": {
+        "record": "C",
+        "location": "vault/N14/signed_mass"
+      },
+      "summary": {
+        "listed_kg": 90
+      }
+    }
+  ],
+  "records": {
+    "A": {
+      "record_id": "A",
+      "entity": "P31",
+      "revision": 2,
+      "maximum_C": 8.4
+    },
+    "B": {
+      "record_id": "B",
+      "artifact_run": "R61",
+      "checksum": "K61",
+      "failed_tests": 0
+    },
+    "C": {
+      "record_id": "C",
+      "path": "vault/N14/signed_mass",
+      "read_status": "locked",
+      "reason": "decryption key unavailable",
+      "decoded_content": null
+    }
+  }
+}

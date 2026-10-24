@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Latest application and queued contact: [UA-C1](upstream-application-v1/REPORT.md) and [RA-C1](record-access-bridge-v1/REPORT.md) apply upstream tracing to active navigation/tools and actual fresh-reader source access. Current, wrong-run and locked evidence receive different warranted responses; both authored formats tie. Broader MEM-04 remains open.
+
 Latest upstream contact: [UN-C1](upstream-numerics-v1/REPORT.md) checks explicit finite-precision gradients against high-precision references and distinguishes stable computation from input preservation. Three-angle source guidance now makes upstream dependency tracing explicit. No framework/training reproduction or historical result revision.
 
 Earlier resting state: [post-run settling checkpoint](../sync/checkpoints/SETTLING_AFTER_TWO_GARDEN_RUNS.md). Both three-cycle runs are saved; noisy synthetic calibration is completed within its declared scope, while empirical witness/actual-agent transfer remains open. No new work starts during this sync.

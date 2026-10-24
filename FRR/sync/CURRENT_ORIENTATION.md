@@ -2,11 +2,13 @@
 
 Scope: `codex/frr-progress-2026-10-07`; the latest three-cycle run is linked below. Earlier source contacts, experiments and optional guidance retain their own commit anchors. This is current navigation, not a complete history or a substitute for the user's latest direction.
 
-The user subsequently resumed and authorized upstream numerical tests/refinements (UN-C1). The earlier low-budget settling sync remains historical. [Current resting checkpoint](checkpoints/SETTLING_AFTER_TWO_GARDEN_RUNS.md) replaces the earlier pause as the resume pointer, while keeping earlier checkpoints intact. Both garden runs and reviews are saved; UN-C1 is now saved as a bounded follow-up. No background task is active. Readable-code/history restructuring remains deferred. The goal is discovery, learning and useful growth; account usage limits are not programmatically visible.
+The user subsequently resumed and authorized upstream numerical tests/refinements (UN-C1). The earlier low-budget settling sync remains historical. [Historical resting checkpoint](checkpoints/SETTLING_AFTER_TWO_GARDEN_RUNS.md) preserves the earlier pause; the current handoff takes precedence for resumed work. Both garden runs and reviews are saved; UN-C1 is now saved as a bounded follow-up. No background task is active. Readable-code/history restructuring remains deferred. The goal is discovery, learning and useful growth; account usage limits are not programmatically visible.
 
 Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map](../evaluation/CURRENT_RESEARCH_MAP.md) and the [queue](../evaluation/research-queue/README.md). QUEUE.json remains the status source: 35 entries, 30 unfinished, six partial families. A saved queue is not an automatic scheduler.
 
 ## Recent contacts
+
+- [UA-C1](../evaluation/upstream-application-v1/REPORT.md) and [RA-C1](../evaluation/record-access-bridge-v1/REPORT.md): targeted active-path application, navigation corrections and actual fresh-reader source/access pilot. No broad queue completion or unneeded numerical rewrite.
 
 - [UN-C1](../evaluation/upstream-numerics-v1/REPORT.md): user resumed with upstream-numerics interest; explicit NumPy/high-precision formula checks reproduce cancellation and distinguish lost input precision. Source-weave upstream trace refined. No autodiff/training reproduction, package installation or old-result rewrite.
 
