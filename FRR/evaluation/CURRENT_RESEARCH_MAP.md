@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Latest three-cycle contact: [writer handoffs](writer-handoff-three-cycle-v1/REPORT.md) uses2actual writers and4fresh readers with fixed hidden future questions. All16final decisions are grounded; source lookup did not rescue omissions because both handoffs retained task bases. A word-cap violation and prelaunch evaluator repair are preserved.
+
 Latest application and queued contact: [UA-C1](upstream-application-v1/REPORT.md) and [RA-C1](record-access-bridge-v1/REPORT.md) apply upstream tracing to active navigation/tools and actual fresh-reader source access. Current, wrong-run and locked evidence receive different warranted responses; both authored formats tie. Broader MEM-04 remains open.
 
 Latest upstream contact: [UN-C1](upstream-numerics-v1/REPORT.md) checks explicit finite-precision gradients against high-precision references and distinguishes stable computation from input preservation. Three-angle source guidance now makes upstream dependency tracing explicit. No framework/training reproduction or historical result revision.

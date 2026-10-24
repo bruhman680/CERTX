@@ -12,6 +12,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Useful artifacts and recent contacts
 
+- [Writer-handoff three-cycle run](evaluation/writer-handoff-three-cycle-v1/REPORT.md):2actual writers and4fresh readers, future questions fixed/hidden from writers. Both handoffs retained4task bases; all16final decisions grounded. W180 exceeded its cap by6; evaluator wording repair and lexical ambiguity preserved. No retrieval-rescue/budget-effect claim. Three cycles complete for user review; broader MEM-04 remains partial.
+
 - [UA-C1](evaluation/upstream-application-v1/REPORT.md) applies upstream tracing to selected active tools/navigation without unwarranted numerical rewrites. [RA-C1](evaluation/record-access-bridge-v1/REPORT.md) executes a4fresh-reader/8turn contact: both formats match six of six packet warrants, separating current evidence, mismatched run and locked content. Authored/cued pilot, no general formatting/FRR benefit; MEM-04 remains partial.
 
 - [UN-C1](evaluation/upstream-numerics-v1/REPORT.md): bounded NumPy/highprecision gradient formula checks; input rounding is separate from stable computation. Source weave now has an explicit optional upstream dependency trace. No installed autodiff framework, training reproduction or historical result rewrite; queue/core unchanged.
@@ -48,7 +50,7 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Resume and next move
 
-The user authorized applying the upstream trace across relevant work and continuing the queue. UA-C1 and RA-C1 now record the targeted application and actual-reader bridge. [Current resting checkpoint](sync/checkpoints/SETTLING_AFTER_TWO_GARDEN_RUNS.md) records saved work, remaining boundaries and deferred ideas. No further cycle or background work is active.
+The user then authorized three further cycles with swarm coordination and optional upstream scouting. The writer-handoff run is complete for user review; UA-C1/RA-C1 remain preceding scoped contacts. [Current resting checkpoint](sync/checkpoints/SETTLING_AFTER_TWO_GARDEN_RUNS.md) records saved work, remaining boundaries and deferred ideas. No further cycle or background work is active.
 
 The first run completed noisy calibration and equal-statistical-budget comparisons under stipulated synthetic witnesses, followed by joint-effect stress and guard review. Their empirical calibration validity remains open. The second run completed missingness/selection and authored decision/probe-cost contacts with peripheral readings. Practical actual-agent transfer remains unexecuted. Earlier resting checkpoints and reports retain their historical scopes.
 

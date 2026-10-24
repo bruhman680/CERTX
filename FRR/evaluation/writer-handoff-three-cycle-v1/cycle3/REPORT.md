@@ -1,0 +1,11 @@
+# Cycle3: convening, review and scoped refinement
+
+The scout, reviewer and coordinator exchanged findings before the next decisions. [Communication record](../COMMUNICATION.md) records public design consequences, not private reasoning. The [bounded scout](../scout/REPORT.md) substantively read one primary task-oriented compression work; its specified task/value and communication assumptions do not guarantee natural-language preservation for unknown future questions. An older primary lead returned403 and was not used for theorem claims. No new compression algorithm was adopted merely from source similarity.
+
+Review separated four things: task wording/evaluator validity, factual handoff fidelity, fixed future-task sufficiency and reader warrant. This caught the Q4 negation/unknown ambiguity before participants, the longer writer's word-cap violation, and its ambiguous 'not zero' wording before reader outcomes. Initial/final files and actual handoffs are preserved. The review also verified fixed hidden questions and condition-matched delivery; no post-summary task selection or outcome retries.
+
+A small addition to [context checkpoints](../../../modules/context-checkpoints.md) now asks that handoff checks separate those outcomes and preserve consequential relationships: source revisions, units, uncertainty scope, missingness and unknown-versus-negative statements. A derived sufficient statistic can support a task without reproducing every arithmetic input; that is a task-scoped finding, not universal sufficiency. Check budget compliance using its declared unit rather than assuming every fluent output complied.
+
+All observed reader choices can be grounded in their actual information. Lookup did not resolve an omission here because both summaries were already sufficient for the fixed queries. That is a useful no-change result; we do not retune this contact to force a difference. Broader compression policies, independent question distributions, longer source histories and natural authority remain open.
+
+No core/schema change, broad queue completion, readable-code/history restructuring or automatic fourth cycle follows. Publish the exact outputs, repairs, failed source access and limits, then return for user review. Practical habits were exercised; the contact is not a framework superiority claim.

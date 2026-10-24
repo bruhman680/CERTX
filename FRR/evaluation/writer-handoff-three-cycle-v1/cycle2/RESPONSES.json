@@ -1,0 +1,271 @@
+[
+  {
+    "id": "WH01",
+    "task_name": "/root/wh01",
+    "fork_turns": "none",
+    "first_text": "{\"request_original\":false,\"answers\":[{\"id\":\"Q1\",\"answer\":\"no\",\"basis\":\"The current revision2 maximum is82%, above the80% limit; it supersedes revision1’s78%.\"},{\"id\":\"Q2\",\"answer\":\"no\",\"basis\":\"All recorded flows yield120+35−48−4=103litres, below105litres.\"},{\"id\":\"Q3\",\"answer\":\"unresolved\",\"basis\":\"The guaranteed interval[99.994,100.014] includes values inside[99.99,100.01] and values above100.01. Earlier acceptance used a wider interval.\"},{\"id\":\"Q4\",\"answer\":\"unresolved\",\"basis\":\"D9 remains encrypted and nothing has been decoded. Its entry count is unknown; neither zero nor the unsupported8-entry guess is established.\"}]}",
+    "first": {
+      "request_original": false,
+      "answers": [
+        {
+          "id": "Q1",
+          "answer": "no",
+          "basis": "The current revision2 maximum is82%, above the80% limit; it supersedes revision1’s78%."
+        },
+        {
+          "id": "Q2",
+          "answer": "no",
+          "basis": "All recorded flows yield120+35−48−4=103litres, below105litres."
+        },
+        {
+          "id": "Q3",
+          "answer": "unresolved",
+          "basis": "The guaranteed interval[99.994,100.014] includes values inside[99.99,100.01] and values above100.01. Earlier acceptance used a wider interval."
+        },
+        {
+          "id": "Q4",
+          "answer": "unresolved",
+          "basis": "D9 remains encrypted and nothing has been decoded. Its entry count is unknown; neither zero nor the unsupported8-entry guess is established."
+        }
+      ]
+    },
+    "final_text": "{\"answers\":[{\"id\":\"Q1\",\"answer\":\"no\",\"source\":\"Handoff: G6 Monday\",\"basis\":\"Current revision2 reports a maximum of82%, exceeding the80% limit, and supersedes revision1’s78%.\"},{\"id\":\"Q2\",\"answer\":\"no\",\"source\":\"Handoff: W2 Tuesday\",\"basis\":\"All recorded flows yield120+35−48−4=103litres, below105litres.\"},{\"id\":\"Q3\",\"answer\":\"unresolved\",\"source\":\"Handoff: N8 guaranteed absolute error\",\"basis\":\"The guaranteed interval[99.994,100.014] contains both values inside[99.99,100.01] and values outside it. Earlier acceptance under the wider interval does not resolve this question.\"},{\"id\":\"Q4\",\"answer\":\"unresolved\",\"source\":\"Handoff: D9\",\"basis\":\"The124-byte artifact is encrypted, its key is unavailable, and nothing has been decoded. The entry count is unknown; zero is not established.\"}]}",
+    "final": {
+      "answers": [
+        {
+          "id": "Q1",
+          "answer": "no",
+          "source": "Handoff: G6 Monday",
+          "basis": "Current revision2 reports a maximum of82%, exceeding the80% limit, and supersedes revision1’s78%."
+        },
+        {
+          "id": "Q2",
+          "answer": "no",
+          "source": "Handoff: W2 Tuesday",
+          "basis": "All recorded flows yield120+35−48−4=103litres, below105litres."
+        },
+        {
+          "id": "Q3",
+          "answer": "unresolved",
+          "source": "Handoff: N8 guaranteed absolute error",
+          "basis": "The guaranteed interval[99.994,100.014] contains both values inside[99.99,100.01] and values outside it. Earlier acceptance under the wider interval does not resolve this question."
+        },
+        {
+          "id": "Q4",
+          "answer": "unresolved",
+          "source": "Handoff: D9",
+          "basis": "The124-byte artifact is encrypted, its key is unavailable, and nothing has been decoded. The entry count is unknown; zero is not established."
+        }
+      ]
+    }
+  },
+  {
+    "id": "WH02",
+    "task_name": "/root/wh02",
+    "fork_turns": "none",
+    "first_text": "{\"request_original\":true,\"answers\":[{\"id\":\"Q1\",\"answer\":\"no\",\"basis\":\"Current export revision 2 reports 82%, above the 80% limit; it supersedes revision 1 for the same Monday period.\"},{\"id\":\"Q2\",\"answer\":\"no\",\"basis\":\"Tuesday balance is 120 + 35 − 48 − 4 = 103 litres, below 105 litres. The leak is a separate outflow.\"},{\"id\":\"Q3\",\"answer\":\"unresolved\",\"basis\":\"The guaranteed interval [99.994, 100.014] includes values both inside and outside [99.99, 100.01]. Earlier acceptance used a broader interval.\"},{\"id\":\"Q4\",\"answer\":\"unresolved\",\"basis\":\"D9 has not been decoded. Its entry count is unknown; neither its byte length nor the unsupported guess establishes a count.\"}]}",
+    "first": {
+      "request_original": true,
+      "answers": [
+        {
+          "id": "Q1",
+          "answer": "no",
+          "basis": "Current export revision 2 reports 82%, above the 80% limit; it supersedes revision 1 for the same Monday period."
+        },
+        {
+          "id": "Q2",
+          "answer": "no",
+          "basis": "Tuesday balance is 120 + 35 − 48 − 4 = 103 litres, below 105 litres. The leak is a separate outflow."
+        },
+        {
+          "id": "Q3",
+          "answer": "unresolved",
+          "basis": "The guaranteed interval [99.994, 100.014] includes values both inside and outside [99.99, 100.01]. Earlier acceptance used a broader interval."
+        },
+        {
+          "id": "Q4",
+          "answer": "unresolved",
+          "basis": "D9 has not been decoded. Its entry count is unknown; neither its byte length nor the unsupported guess establishes a count."
+        }
+      ]
+    },
+    "final_text": "{\"answers\":[{\"id\":\"Q1\",\"answer\":\"no\",\"source\":[\"S01\",\"S02\",\"S03\"],\"basis\":\"Current revision 2 explicitly corrects revision 1 for Monday: the maximum was 82%, exceeding the 80% release limit by 2 percentage points.\"},{\"id\":\"Q2\",\"answer\":\"no\",\"source\":[\"S04\",\"S05\",\"S06\",\"S07\"],\"basis\":\"After all Tuesday flows, W2 contains 120 + 35 − 48 − 4 = 103 litres, less than 105 litres. The leak was separate from irrigation.\"},{\"id\":\"Q3\",\"answer\":\"unresolved\",\"source\":[\"S08\",\"S09\"],\"basis\":\"The guaranteed absolute-error bound gives a true-value interval of [99.994, 100.014]. Both values inside and values outside [99.99, 100.01] remain compatible. Acceptance under the earlier, broader band does not resolve this question.\"},{\"id\":\"Q4\",\"answer\":\"unresolved\",\"source\":[\"S10\",\"S11\"],\"basis\":\"No content was decoded because the key is unavailable. The entry count is unknown; the 124-byte object and unsupported guess of 8 entries establish neither zero nor a nonzero count.\"}]}",
+    "final": {
+      "answers": [
+        {
+          "id": "Q1",
+          "answer": "no",
+          "source": [
+            "S01",
+            "S02",
+            "S03"
+          ],
+          "basis": "Current revision 2 explicitly corrects revision 1 for Monday: the maximum was 82%, exceeding the 80% release limit by 2 percentage points."
+        },
+        {
+          "id": "Q2",
+          "answer": "no",
+          "source": [
+            "S04",
+            "S05",
+            "S06",
+            "S07"
+          ],
+          "basis": "After all Tuesday flows, W2 contains 120 + 35 − 48 − 4 = 103 litres, less than 105 litres. The leak was separate from irrigation."
+        },
+        {
+          "id": "Q3",
+          "answer": "unresolved",
+          "source": [
+            "S08",
+            "S09"
+          ],
+          "basis": "The guaranteed absolute-error bound gives a true-value interval of [99.994, 100.014]. Both values inside and values outside [99.99, 100.01] remain compatible. Acceptance under the earlier, broader band does not resolve this question."
+        },
+        {
+          "id": "Q4",
+          "answer": "unresolved",
+          "source": [
+            "S10",
+            "S11"
+          ],
+          "basis": "No content was decoded because the key is unavailable. The entry count is unknown; the 124-byte object and unsupported guess of 8 entries establish neither zero nor a nonzero count."
+        }
+      ]
+    }
+  },
+  {
+    "id": "WH03",
+    "task_name": "/root/wh03",
+    "fork_turns": "none",
+    "first_text": "{\"request_original\":true,\"answers\":[{\"id\":\"Q1\",\"answer\":\"no\",\"basis\":\"Current revision 2 records a maximum of 82%, exceeding the 80% limit; it supersedes revision 1.\"},{\"id\":\"Q2\",\"answer\":\"no\",\"basis\":\"All recorded Tuesday flows leave 120+35−48−4=103 litres, below 105 litres.\"},{\"id\":\"Q3\",\"answer\":\"unresolved\",\"basis\":\"The guaranteed interval [99.994,100.014] includes values inside and outside [99.99,100.01]. Earlier acceptance against a broader interval does not resolve this question.\"},{\"id\":\"Q4\",\"answer\":\"unresolved\",\"basis\":\"D9 remains encrypted with no available key or decoded data. Its entry count is unknown; neither 124 bytes nor the unsupported eight-entry guess establishes a count.\"}]}",
+    "first": {
+      "request_original": true,
+      "answers": [
+        {
+          "id": "Q1",
+          "answer": "no",
+          "basis": "Current revision 2 records a maximum of 82%, exceeding the 80% limit; it supersedes revision 1."
+        },
+        {
+          "id": "Q2",
+          "answer": "no",
+          "basis": "All recorded Tuesday flows leave 120+35−48−4=103 litres, below 105 litres."
+        },
+        {
+          "id": "Q3",
+          "answer": "unresolved",
+          "basis": "The guaranteed interval [99.994,100.014] includes values inside and outside [99.99,100.01]. Earlier acceptance against a broader interval does not resolve this question."
+        },
+        {
+          "id": "Q4",
+          "answer": "unresolved",
+          "basis": "D9 remains encrypted with no available key or decoded data. Its entry count is unknown; neither 124 bytes nor the unsupported eight-entry guess establishes a count."
+        }
+      ]
+    },
+    "final_text": "{\"answers\":[{\"id\":\"Q1\",\"answer\":\"no\",\"source\":[\"S01\",\"S03\"],\"basis\":\"Current revision 2 gives Monday's maximum as 82%, exceeding the 80% release limit.\"},{\"id\":\"Q2\",\"answer\":\"no\",\"source\":[\"S04\",\"S05\",\"S06\",\"S07\"],\"basis\":\"After all recorded Tuesday flows, W2 contains 120+35−48−4=103 litres, below 105 litres.\"},{\"id\":\"Q3\",\"answer\":\"unresolved\",\"source\":[\"S08\",\"S09\"],\"basis\":\"The guaranteed interval is [99.994,100.014], which includes values both inside and outside [99.99,100.01]. Acceptance under the earlier, broader band does not establish membership in this narrower band.\"},{\"id\":\"Q4\",\"answer\":\"unresolved\",\"source\":[\"S10\",\"S11\"],\"basis\":\"No content was decoded because the key is unavailable. Unavailable decoded content does not establish a zero count, and the informal eight-entry guess is unsupported.\"}]}",
+    "final": {
+      "answers": [
+        {
+          "id": "Q1",
+          "answer": "no",
+          "source": [
+            "S01",
+            "S03"
+          ],
+          "basis": "Current revision 2 gives Monday's maximum as 82%, exceeding the 80% release limit."
+        },
+        {
+          "id": "Q2",
+          "answer": "no",
+          "source": [
+            "S04",
+            "S05",
+            "S06",
+            "S07"
+          ],
+          "basis": "After all recorded Tuesday flows, W2 contains 120+35−48−4=103 litres, below 105 litres."
+        },
+        {
+          "id": "Q3",
+          "answer": "unresolved",
+          "source": [
+            "S08",
+            "S09"
+          ],
+          "basis": "The guaranteed interval is [99.994,100.014], which includes values both inside and outside [99.99,100.01]. Acceptance under the earlier, broader band does not establish membership in this narrower band."
+        },
+        {
+          "id": "Q4",
+          "answer": "unresolved",
+          "source": [
+            "S10",
+            "S11"
+          ],
+          "basis": "No content was decoded because the key is unavailable. Unavailable decoded content does not establish a zero count, and the informal eight-entry guess is unsupported."
+        }
+      ]
+    }
+  },
+  {
+    "id": "WH04",
+    "task_name": "/root/wh04",
+    "fork_turns": "none",
+    "first_text": "{\"request_original\":false,\"answers\":[{\"id\":\"Q1\",\"answer\":\"no\",\"basis\":\"Revision 2 supersedes revision 1 for Monday: 82% exceeds the 80% release limit by 2 percentage points.\"},{\"id\":\"Q2\",\"answer\":\"no\",\"basis\":\"All recorded Tuesday flows give 120 + 35 − 48 − 4 = 103 litres, below 105 litres.\"},{\"id\":\"Q3\",\"answer\":\"unresolved\",\"basis\":\"The guaranteed interval [99.994, 100.014] includes values inside and outside [99.99, 100.01]. Acceptance under the earlier wider interval does not resolve this.\"},{\"id\":\"Q4\",\"answer\":\"unresolved\",\"basis\":\"D9 has not been decoded because the key is unavailable and the decoder is locked. Its entry count is unknown; neither zero nor the unsupported guess of eight is established.\"}]}",
+    "first": {
+      "request_original": false,
+      "answers": [
+        {
+          "id": "Q1",
+          "answer": "no",
+          "basis": "Revision 2 supersedes revision 1 for Monday: 82% exceeds the 80% release limit by 2 percentage points."
+        },
+        {
+          "id": "Q2",
+          "answer": "no",
+          "basis": "All recorded Tuesday flows give 120 + 35 − 48 − 4 = 103 litres, below 105 litres."
+        },
+        {
+          "id": "Q3",
+          "answer": "unresolved",
+          "basis": "The guaranteed interval [99.994, 100.014] includes values inside and outside [99.99, 100.01]. Acceptance under the earlier wider interval does not resolve this."
+        },
+        {
+          "id": "Q4",
+          "answer": "unresolved",
+          "basis": "D9 has not been decoded because the key is unavailable and the decoder is locked. Its entry count is unknown; neither zero nor the unsupported guess of eight is established."
+        }
+      ]
+    },
+    "final_text": "{\"answers\":[{\"id\":\"Q1\",\"answer\":\"no\",\"source\":\"Handoff: G6 export revision 2\",\"basis\":\"Monday’s maximum is 82%, exceeding the 80% limit by 2 percentage points. Revision 2 corrects revision 1’s 78% for that period.\"},{\"id\":\"Q2\",\"answer\":\"no\",\"source\":\"Handoff: W2 Tuesday balance\",\"basis\":\"120 + 35 − 48 − 4 = 103 litres, below 105 litres. The leak was separate from irrigation and no other flows occurred.\"},{\"id\":\"Q3\",\"answer\":\"unresolved\",\"source\":\"Handoff: N8 guaranteed absolute error bound\",\"basis\":\"The true-value interval [99.994, 100.014] contains values both inside and outside [99.99, 100.01]. Earlier acceptance under [99.9, 100.1] does not establish the narrower condition.\"},{\"id\":\"Q4\",\"answer\":\"unresolved\",\"source\":\"Handoff: D9 encrypted-object status\",\"basis\":\"Nothing has been decoded: the key is unavailable and the decoder is locked. The entry count is unknown, so zero cannot be established.\"}]}",
+    "final": {
+      "answers": [
+        {
+          "id": "Q1",
+          "answer": "no",
+          "source": "Handoff: G6 export revision 2",
+          "basis": "Monday’s maximum is 82%, exceeding the 80% limit by 2 percentage points. Revision 2 corrects revision 1’s 78% for that period."
+        },
+        {
+          "id": "Q2",
+          "answer": "no",
+          "source": "Handoff: W2 Tuesday balance",
+          "basis": "120 + 35 − 48 − 4 = 103 litres, below 105 litres. The leak was separate from irrigation and no other flows occurred."
+        },
+        {
+          "id": "Q3",
+          "answer": "unresolved",
+          "source": "Handoff: N8 guaranteed absolute error bound",
+          "basis": "The true-value interval [99.994, 100.014] contains values both inside and outside [99.99, 100.01]. Earlier acceptance under [99.9, 100.1] does not establish the narrower condition."
+        },
+        {
+          "id": "Q4",
+          "answer": "unresolved",
+          "source": "Handoff: D9 encrypted-object status",
+          "basis": "Nothing has been decoded: the key is unavailable and the decoder is locked. The entry count is unknown, so zero cannot be established."
+        }
+      ]
+    }
+  }
+]

@@ -8,6 +8,8 @@ Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map]
 
 ## Recent contacts
 
+- [Writer-handoff three-cycle run](../evaluation/writer-handoff-three-cycle-v1/REPORT.md): actual question-blind handoffs and fresh readers; cap violation, prelaunch evaluator repair, grounded outcomes and no-change retrieval result preserved. Three authorized cycles complete, no automatic fourth.
+
 - [UA-C1](../evaluation/upstream-application-v1/REPORT.md) and [RA-C1](../evaluation/record-access-bridge-v1/REPORT.md): targeted active-path application, navigation corrections and actual fresh-reader source/access pilot. No broad queue completion or unneeded numerical rewrite.
 
 - [UN-C1](../evaluation/upstream-numerics-v1/REPORT.md): user resumed with upstream-numerics interest; explicit NumPy/high-precision formula checks reproduce cancellation and distinguish lost input precision. Source-weave upstream trace refined. No autodiff/training reproduction, package installation or old-result rewrite.
