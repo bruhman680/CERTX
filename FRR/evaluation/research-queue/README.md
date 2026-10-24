@@ -8,7 +8,7 @@ This is a saved dependency-aware plan, not a running scheduler. It queues every 
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
-Current activity: the user resumed and authorized upstream application plus queued work. [UA-C1](../upstream-application-v1/REPORT.md) links a scoped active-path audit and [RA-C1](../record-access-bridge-v1/REPORT.md), an actual-reader source/access contact. Broader family statuses remain unchanged; earlier navigation/wind-down is historical. [EL-C1](../error-lineage-v1/REPORT.md) supplies a constructed precursor for FIELD-01/LEGACY-06; both remain queued.
+Current pause: the user requested a light sync after the writer-handoff run. [Next directions/confidences](../../sync/checkpoints/REST_AFTER_WRITER_HANDOFF_2026-10-24.md) prioritize independently prepared future questions over longer histories, with source/query preparation separated from observed writer outputs. This is provisional, not a running scheduler or scientific status promotion. Earlier experiments and navigation sweeps retain their own scopes.
 
 ## Nearest work
 

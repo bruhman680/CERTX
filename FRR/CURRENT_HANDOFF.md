@@ -50,11 +50,11 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Resume and next move
 
-The user then authorized three further cycles with swarm coordination and optional upstream scouting. The writer-handoff run is complete for user review; UA-C1/RA-C1 remain preceding scoped contacts. [Current resting checkpoint](sync/checkpoints/SETTLING_AFTER_TWO_GARDEN_RUNS.md) records saved work, remaining boundaries and deferred ideas. No further cycle or background work is active.
+The user requested a light sync and pause after the writer-handoff run. [Current resting checkpoint](sync/checkpoints/REST_AFTER_WRITER_HANDOFF_2026-10-24.md) records saved work, next directions and confidence limits. No background work, automatic fourth cycle or scheduled resume is active.
 
-The first run completed noisy calibration and equal-statistical-budget comparisons under stipulated synthetic witnesses, followed by joint-effect stress and guard review. Their empirical calibration validity remains open. The second run completed missingness/selection and authored decision/probe-cost contacts with peripheral readings. Practical actual-agent transfer remains unexecuted. Earlier resting checkpoints and reports retain their historical scopes.
+Actual-reader source-access and writer-produced handoff contacts have now run in narrow authored scopes. Broader transfer, longer reuse, unknown authority and compression-loss recovery remain open. No causal budget/access benefit follows from the current tied/sufficient-handoff outcomes. The next preferred direction is independently prepared future questions over a longer history, fixed before seeing writer outputs; its detailed protocol is not yet frozen.
 
-Inspect referenced artifacts before trusting a summary. Prefer a concrete uncertainty or build need over another ritual check. The strongest open boundaries include less-cued source/authority assessment, actual writer-produced compression and longer reuse, reliable reopening/receipt history, and task-dependent preservation. Many physical/swarm mappings remain unverified; see the queue rather than treating old proposed constants as laws.
+Inspect referenced artifacts before trusting a summary. Prefer a concrete uncertainty or build need over another ritual check. The strongest open boundaries include less-cued source/authority assessment, broader writer-produced compression and longer reuse, reliable reopening/receipt history, and task-dependent preservation. Many physical/swarm mappings remain unverified; see the queue rather than treating old proposed constants as laws.
 
 Preserve sources, failures, revised interpretations and current scope. Hash integrity is not source truth. A changed question can change a verdict without making the original verdict wrong. A consequential inherited premise deserves a discriminating check; a merely interesting uncertainty need not block a settled task.
 

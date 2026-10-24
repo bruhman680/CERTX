@@ -2,7 +2,7 @@
 
 Scope: `codex/frr-progress-2026-10-07`; the latest three-cycle run is linked below. Earlier source contacts, experiments and optional guidance retain their own commit anchors. This is current navigation, not a complete history or a substitute for the user's latest direction.
 
-The user subsequently resumed and authorized upstream numerical tests/refinements (UN-C1). The earlier low-budget settling sync remains historical. [Historical resting checkpoint](checkpoints/SETTLING_AFTER_TWO_GARDEN_RUNS.md) preserves the earlier pause; the current handoff takes precedence for resumed work. Both garden runs and reviews are saved; UN-C1 is now saved as a bounded follow-up. No background task is active. Readable-code/history restructuring remains deferred. The goal is discovery, learning and useful growth; account usage limits are not programmatically visible.
+The user requested a light syncing sweep and pause after the writer-handoff three-cycle run. [Current resting checkpoint](checkpoints/REST_AFTER_WRITER_HANDOFF_2026-10-24.md) records the latest anchor, proposed next contacts and confidence limits. Older resting checkpoints remain historical. No further experiment or background task is active; resume only with current user direction. Readable-code/history work remains deferred. Usage/reset timing is not programmatically visible.
 
 Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map](../evaluation/CURRENT_RESEARCH_MAP.md) and the [queue](../evaluation/research-queue/README.md). QUEUE.json remains the status source: 35 entries, 30 unfinished, six partial families. A saved queue is not an automatic scheduler.
 

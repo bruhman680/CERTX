@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Current pause: [writer-handoff resting checkpoint](../sync/checkpoints/REST_AFTER_WRITER_HANDOFF_2026-10-24.md) calibrates confidence and records provisional next directions. Actual reader/writer contacts are completed only in their authored scopes; broader families remain open. No new experiment starts during this sync.
+
 Latest three-cycle contact: [writer handoffs](writer-handoff-three-cycle-v1/REPORT.md) uses2actual writers and4fresh readers with fixed hidden future questions. All16final decisions are grounded; source lookup did not rescue omissions because both handoffs retained task bases. A word-cap violation and prelaunch evaluator repair are preserved.
 
 Latest application and queued contact: [UA-C1](upstream-application-v1/REPORT.md) and [RA-C1](record-access-bridge-v1/REPORT.md) apply upstream tracing to active navigation/tools and actual fresh-reader source access. Current, wrong-run and locked evidence receive different warranted responses; both authored formats tie. Broader MEM-04 remains open.
