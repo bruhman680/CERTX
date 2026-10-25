@@ -1,0 +1,36 @@
+A [topic energies VARY (the first-run design: relevant record has exactly the query energy)]: K=200, d=32; records +topic (phase 0) and -topic (phase pi); phase noise sigma on both; top-1 for agreement query, expected over exact ties
+   sigma   ampCos   realCos   S(cplx)   S(real ctrl)   max|S-(1+c)/2| over all candidates
+    0.0   0.500    1.000     1.000     1.000          2.58e-01
+    0.5   0.500    0.975     0.980     0.980          2.48e-01
+    1.0   0.500    0.420     0.470     0.470          2.28e-01
+    1.5   0.500    0.125     0.145     0.145          1.73e-01
+A [ENERGY-EQUALIZED topics]: K=200, d=32; records +topic (phase 0) and -topic (phase pi); phase noise sigma on both; top-1 for agreement query, expected over exact ties
+   sigma   ampCos   realCos   S(cplx)   S(real ctrl)   max|S-(1+c)/2| over all candidates
+    0.0   0.500    1.000     1.000     1.000          5.55e-16
+    0.5   0.500    0.980     0.980     0.980          6.66e-16
+    1.0   0.500    0.470     0.470     0.470          6.66e-16
+    1.5   0.500    0.160     0.160     0.160          4.44e-16
+   A4  evidence retrieval (energy-equalized): relevant = BOTH records of the query topic (support + contradict)
+      ampCos     recall@2=1.000   rank of the contradicting record (query 0) among 400: 1
+      realCos    recall@2=0.500   rank of the contradicting record (query 0) among 400: 400
+      S          recall@2=0.500   rank of the contradicting record (query 0) among 400: 400
+      |realCos|  recall@2=1.000   rank of the contradicting record (query 0) among 400: 1
+
+B (rebuilt): 60 topics, noisy queries (cos to topic ~.82), strengths {.25,.5,1,2,4}; 200 test queries; lambda chosen on separate calibration queries.
+   regime                               | cosine    S      dot   cos+normfeat(lam)  cos+conf(lam)
+   M1 norm = strength to MATCH query    | 0.200  1.000  0.210   1.000(0.01)        0.210(0.01)
+   M2 norm = arbitrary artifact         | 1.000  0.485  0.455   1.000(0)        1.000(0)
+   M3 norm = confidence (higher better) | 0.200  0.000  1.000   0.200(0)        1.000(0.01)
+
+C: posture. Equal-norm candidates: softmax(S/T_S) vs softmax(cos/T_c), T_S = T_c/2; thresholds t vs 2t-1.
+   equal norms   : max |softmax difference| = 3.89e-16; threshold sets identical for t in (.2,.5,.7,.9): True
+   unequal norms : max |softmax difference| = 6.13e-01; threshold sets identical for t in (.2,.5,.7,.9): False
+
+D: n agents each emit +z, -z or nothing about the same topic; the DB stores only the sum.
+   n=2: histories with aggregate 0: 3 of 9; all-silent: 1; with a +/- dispute: 2; fraction of zero-aggregate histories containing a dispute: 0.667
+   n=4: histories with aggregate 0: 19 of 81; all-silent: 1; with a +/- dispute: 18; fraction of zero-aggregate histories containing a dispute: 0.947
+   n=6: histories with aggregate 0: 141 of 729; all-silent: 1; with a +/- dispute: 140; fraction of zero-aggregate histories containing a dispute: 0.993
+
+E: time as phase, z_t = A * exp(i*(phi0 + omega*t)) per coordinate (omega_k random).
+   E1 single event pair: S(z_t0, z_t0+dt) = 0.489567760259;  S(z_t0+dt, z_t0) = 0.489567760259;  S(z_t0, z_t0-dt) = 0.489567760259
+   E2 two-topic sequences: S(seq1,seq1)=1.000000; S(seq1, swapped order)=0.489568; S(seq1, same order shifted by +5)=0.451968
