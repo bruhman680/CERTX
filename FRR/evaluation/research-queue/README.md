@@ -8,7 +8,7 @@ This is a saved dependency-aware plan, not a running scheduler. It queues every 
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
-Current pause: the user requested a light sync after the writer-handoff run. [Next directions/confidences](../../sync/checkpoints/REST_AFTER_WRITER_HANDOFF_2026-10-24.md) prioritize independently prepared future questions over longer histories, with source/query preparation separated from observed writer outputs. This is provisional, not a running scheduler or scientific status promotion. Earlier experiments and navigation sweeps retain their own scopes.
+Current resumption: [RM-C1](../resonance-memory-contact-v1/REPORT.md) adds primary reading and bounded formula checks after the user returned25October. [Next MEM-04 design](../resonance-memory-contact-v1/NEXT_CONTACT.md) retains independently prepared future questions over longer histories, adding equal-information controls and relevant-disagreement retrieval. It is not a registered experiment or scheduler. The [previous checkpoint](../../sync/checkpoints/REST_AFTER_WRITER_HANDOFF_2026-10-24.md) preserves the earlier confidence calibration.
 
 ## Nearest work
 

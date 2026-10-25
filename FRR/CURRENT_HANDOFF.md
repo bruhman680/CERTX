@@ -12,6 +12,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Useful artifacts and recent contacts
 
+- [RM-C1](evaluation/resonance-memory-contact-v1/REPORT.md): user resumed25October with ResonanceDB. Primary reading and1,200 synthetic formula checks establish an information-matched real-coordinate control; missingness/cancellation witnesses refine [next MEM-04 design](evaluation/resonance-memory-contact-v1/NEXT_CONTACT.md). No product or actual-agent reproduction; broader MEM-04 remains partial.
+
 - [Writer-handoff three-cycle run](evaluation/writer-handoff-three-cycle-v1/REPORT.md):2actual writers and4fresh readers, future questions fixed/hidden from writers. Both handoffs retained4task bases; all16final decisions grounded. W180 exceeded its cap by6; evaluator wording repair and lexical ambiguity preserved. No retrieval-rescue/budget-effect claim. Three cycles complete for user review; broader MEM-04 remains partial.
 
 - [UA-C1](evaluation/upstream-application-v1/REPORT.md) applies upstream tracing to selected active tools/navigation without unwarranted numerical rewrites. [RA-C1](evaluation/record-access-bridge-v1/REPORT.md) executes a4fresh-reader/8turn contact: both formats match six of six packet warrants, separating current evidence, mismatched run and locked content. Authored/cued pilot, no general formatting/FRR benefit; MEM-04 remains partial.
@@ -50,7 +52,7 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Resume and next move
 
-The user requested a light sync and pause after the writer-handoff run. [Current resting checkpoint](sync/checkpoints/REST_AFTER_WRITER_HANDOFF_2026-10-24.md) records saved work, next directions and confidence limits. No background work, automatic fourth cycle or scheduled resume is active.
+The user has resumed exploration with the ResonanceDB paper. [RM-C1](evaluation/resonance-memory-contact-v1/REPORT.md) completes one bounded source/formula contact and refines the next memory design. The [previous resting checkpoint](sync/checkpoints/REST_AFTER_WRITER_HANDOFF_2026-10-24.md) remains a historical confidence anchor. No background work is scheduled.
 
 Actual-reader source-access and writer-produced handoff contacts have now run in narrow authored scopes. Broader transfer, longer reuse, unknown authority and compression-loss recovery remain open. No causal budget/access benefit follows from the current tied/sufficient-handoff outcomes. The next preferred direction is independently prepared future questions over a longer history, fixed before seeing writer outputs; its detailed protocol is not yet frozen.
 
