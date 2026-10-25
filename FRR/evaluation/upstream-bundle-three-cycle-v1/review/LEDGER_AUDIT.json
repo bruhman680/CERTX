@@ -1,0 +1,76 @@
+{
+  "scope": "every ledger metric and full-condition aggregate reconstructed from stored returned IDs/predictions, not matrix replay or independent empirical replication",
+  "run": "/workspace/frr/evaluation/upstream-bundle-three-cycle-v1/run",
+  "checks": {
+    "ledger_rows_10368": true,
+    "method_records_41472": true,
+    "full_condition_aggregates_1296": true,
+    "unique_record_keys": true,
+    "all_stored_metrics_and_aggregates_recomputed": true,
+    "all_norm_and_algebra_discrepancies_within_declared_tolerance": true,
+    "cal_eval_entity_overlap_zero": true,
+    "runtime_under180": true
+  },
+  "ledger_rows": 10368,
+  "method_records": {
+    "full_cos_angle": 10368,
+    "full_mod_angle": 10368,
+    "real_AB_angle": 10368,
+    "binding_mod_angle": 10368
+  },
+  "aggregate_rows": 1296,
+  "reason_totals_across_methods": {
+    "decoded": 112390,
+    "calibration_unavailable": 7776,
+    "ambiguous_centre": 4250
+  },
+  "query_id_count": 1728,
+  "query_id_use_histogram": {
+    "6": 1728
+  },
+  "raw_query_hash_count": 720,
+  "discrepancies": [],
+  "numerical_controls": {
+    "S_cos_discrepancies_gt_tol": 0,
+    "angle_discrepancies_gt_tol": 0,
+    "calibration_entities": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "calibration_evaluation_entity_overlap": 0,
+    "complex_real_AB_discrepancies_gt_tol": 0,
+    "complex_vs_real_modulus_comparisons": 1728,
+    "complex_vs_real_modulus_near_boundary_count": 0,
+    "complex_vs_real_modulus_top3_set_mismatches": 0,
+    "cosine_vs_S_comparisons": 1728,
+    "cosine_vs_S_near_boundary_count": 0,
+    "cosine_vs_S_top3_set_mismatches": 0,
+    "elapsed_seconds": 3.5493900759997814,
+    "evaluation_entities": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "ledger_rows": 10368,
+    "max_S_cos_error": 7.771561172376096e-16,
+    "max_angle_error": 5.319065064182527e-17,
+    "max_complex_real_AB_error": 0.0,
+    "max_modulus_error": 0.0,
+    "max_raw_complex_real_AB_error": 0,
+    "max_unit_norm_error": 2.220446049250313e-16,
+    "method_records": 41472,
+    "modulus_discrepancies_gt_tol": 0,
+    "raw_complex_real_AB_discrepancies_gt_tol": 0,
+    "runtime_cap_passed": true,
+    "runtime_cap_seconds": 180,
+    "top3_mismatch_details": []
+  },
+  "audit_code_sha256": "d842dd7e579a534fb7307a1b860702314180c4fcbb8a8a308d6ca063dac54479"
+}

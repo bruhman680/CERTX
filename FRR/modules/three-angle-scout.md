@@ -35,3 +35,5 @@ Stop when the budget is reached, or when one justified change to the next decisi
 Record the smallest useful return: source/condition, proposed transfer, rival or falsifier, next action, and what remains untested. After practical use, note whether the scout changed a control, measurement or action. Saved instructions and successful source retrieval do not prove a durable behavior improvement.
 
 Contact and limits: [AS-C3](../evaluation/third-angle-scout-v1/REPORT.md). Core runtime/compact0.2 and inquiry schema0.1 remain unchanged. This can guide manual work or a delegated scout; it is not an autonomous search service.
+
+[Upstream-bundle contact](../evaluation/upstream-bundle-three-cycle-v1/REPORT.md) supplies a measurement example: distinguish supplied semantic/structural access from learned recovery, and conditional readout accuracy from actual joint retrieval/status success. Encoded source uncertainty and decoder abstention are different variables. Use these checks when consequential; geometric concentration alone is not calibrated confidence.

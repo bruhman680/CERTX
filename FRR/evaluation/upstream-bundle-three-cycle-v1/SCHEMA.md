@@ -1,0 +1,15 @@
+# Replay schema
+
+`latent_noise_records.npz` contains `s{seed}_{entity,time,predicate,context,binding,cal_noise,eval_noise}`. Shapes: entity (12,24), time (2,24), predicate (24,), context/binding (12,2,24), cal_noise (16,48), eval_noise (32,48). Entity rows 0–7 evaluate; rows 8–11 calibrate. Noise row = 2*(2*local_entity+time)+repetition.
+
+Record keys: `{cal|eval}_s{seed}_{GLOBAL|SCOPED}_r{0.5|1.0|2.0}_records`; cal shape (24,48), eval shape (48,48). Canonical record index = 3*(2*local_entity+time)+status_index; status index A=0,N=1,U=2. First 24 coordinates context, last 24 binding. `candidate_metadata.json` expands evaluation indices.
+
+`queries.npz` keys: `{cal|eval}_s{seed}_{mode}_r{ratio}_eta{eta}`, with rows matching noise order, shape (16,48) or (32,48). Query ID appends `_q{row}`. `frozen_query_hashes.json` maps every generated query ID to SHA256 of its contiguous little-endian complex128 vector before scoring. `frozen_input_hashes.json` hashes saved NPZ and query-hash file bytes.
+
+`ledger.jsonl.gz`: 10368 rows, each has evaluation_record_key, query_id, query_sha256, entity, time, repetition, full condition and four method records. Condition fields: seed, mode, cal_ratio, eval_ratio, cal_noise, eval_noise, ratio_match, noise_match. Method records include retrieved_indices (length3), predictions A/N/U/ABSTAIN, reasons (empty for decoded values), relevant booleans, metrics, and separate oracle_relevant_diagnostic with true-scope indices/predictions/reasons. There are 41472 query/method records.
+
+`centres.json`: one object per seed/mode/cal_ratio/cal_noise/family (full,real_AB,binding), with calibration_entities and diagnostics per A/N/U. Each diagnostic has centre angle or null, resultant_length, valid_angle_count, flag. Missing any centre makes that family's decoder unavailable for the condition. These are geometric circular means, not probabilities. Each status is fitted from 16 own-scope query-record products.
+
+`aggregates_full_condition.json` preserves every seed and condition per method. `aggregates_summaries.json` groups across seeds at full settings, then by mode/ratio_match/noise_match, then by mode. All objects retain n, metric sums, denominators, means; conditional metrics have reduced denominators. `query_reuse.json` records generated IDs, actual array hash use counts/histograms and calibration/evaluation overlap. `numerical_controls.json` records norm/algebra errors, discrepancy counts at 1e-10, mismatches, gaps, cardinality, isolation IDs and elapsed time. `artifact_hashes.json` hashes all other saved files. Frozen manifest binds source/protocol and environment before generation.
+
+Method metric fields also include abstain_calibration_unavailable_count, abstain_zero_product_count, abstain_ambiguous_centre_count over the actual three returned records, and decoder_calibration_available (same flag for every query under a fitted condition). Aggregate means of the latter report the available fraction; full-condition values remain 0 or 1. Per-reason counts never give correct-label credit.

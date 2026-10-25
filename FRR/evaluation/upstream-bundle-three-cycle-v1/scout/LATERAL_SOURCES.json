@@ -1,0 +1,37 @@
+{
+  "lane": "lateral",
+  "search_queries_used": 2,
+  "primary_works_used": 2,
+  "experiment_outcomes_read": false,
+  "experiments_launched": false,
+  "sources": [
+    {
+      "authors": "Francesco Locatello et al.",
+      "title": "Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations",
+      "publication": "ICML2019, PMLR97:4114–4124",
+      "primary_url": "https://proceedings.mlr.press/v97/locatello19a/locatello19a.pdf",
+      "landing_url": "https://proceedings.mlr.press/v97/locatello19a.html",
+      "arxiv_id": "1811.12359",
+      "read_scope": "PDF sections1/3, selected section4experimental-design and5model-selection passages; no full appendix-proof audit or reproduction",
+      "assumptions": "Unobserved generative factors; theorem1factorized-density latent prior and observationally equivalent alternative latent parameterizations.",
+      "not_transferred": "No theorem that the known-factor oracle fixture must fail, or that structured/supervised factor recovery is impossible."
+    },
+    {
+      "authors": "Yaniv Ovadia et al.",
+      "title": "Can You Trust Your Model's Uncertainty? Evaluating Predictive Uncertainty Under Dataset Shift",
+      "publication": "NeurIPS32(2019), proceedings paper version",
+      "primary_url": "https://proceedings.neurips.cc/paper/2019/file/8558cb408c1d76621371888657d2eb1d-Paper.pdf",
+      "landing_url": "https://papers.neurips.cc/paper_files/paper/2019/hash/8558cb408c1d76621371888657d2eb1d-Abstract.html",
+      "arxiv_id": "1906.02530",
+      "read_scope": "PDF sections1–3, selected section4methods and shifted-MNIST examples; no benchmark reproduction",
+      "assumptions": "Supervised probabilistic classifiers, held-out validation/testing, defined shift datasets and probability-quality metrics.",
+      "not_transferred": "No numerical prediction or theorem for angular-centre readouts; their probability calibration is distinct from estimating our codebook angles."
+    }
+  ],
+  "access_failures": [],
+  "communication": [
+    "Sent source assumptions and U-versus-abstention distinction to bundle_review before outcome interpretation.",
+    "Exchanged known relation-label/partition assumptions with bundle_direct_scout.",
+    "Sent bounded implications to coordinator before reading any experiment outcomes."
+  ]
+}

@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Current completed three-cycle contact: [UB-C1/2/3](upstream-bundle-three-cycle-v1/REPORT.md) separates supplied task/encoding/layout, retrieval and fitted-decoder failures. Joint retrieval/status is measured on actual top3, with oracle conditional diagnostics kept separate. Four primary readings and independent coding audits support scoped interpretation, not learned language or agent-memory benefit. [Next structural-control proposal](upstream-bundle-three-cycle-v1/NEXT_CONTACT.md) unexecuted.
+
 Latest source intake: [CP-N1](claude-phase-negation-intake-v1/REPORT.md) reads the Claude phase/negation branch, reproduces all4provided scripts exactly and derives a real-channel/scoped-mixture boundary control. Oracle-conditioned stance and end-to-end evidence/status performance are different measurements. [Next contact](claude-phase-negation-intake-v1/NEXT_CONTACT.md) is proposed; trained encoders and agent-group benefit remain untested.
 
 Current final contact: [SF-C1](status-fidelity-microcontact-v1/REPORT.md) supplies a targeted status-fidelity development pass,24grounded answers across2reader contexts; no policy-repair claim. [Group-reasoning idea](status-fidelity-microcontact-v1/GROUP_REASONING_IDEA.md) proposes measuring separate judgments, pooling/discussion and correlated errors. User requested sync/pause; no group study is launched.
