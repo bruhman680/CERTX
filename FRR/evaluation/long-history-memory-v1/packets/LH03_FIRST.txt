@@ -1,0 +1,57 @@
+You are a fresh continuation reader. Use only the materials supplied to you in this conversation. After the one permitted read of this supplied task-packet file, do not use other tools, files, web or other agents. The handoff may omit details or contain errors. Assess each proposition using available evidence: answer yes, no, or unresolved. Distinguish relevant disagreement, current revisions, uncertainty and missing values. Give concise public evidence explanations, not private reasoning. Cite source IDs if available; otherwise cite meaningful handoff text. Do not guess absent facts. Maximum700 whitespace-separated words per turn.
+
+The complete original ledger is available on request. At this first turn, set request_original=true if you want it before your final response. You will receive it exactly once if requested. Your first answers should reflect the evidence currently available.
+
+HANDOFF:
+Fictional Alder Lane ledger: 60 entries, S001–S060, March 2–April 6, 2026; close adds no measurements. Signed coordinator entries govern administration; signed measurements govern quantities. Dates alone confer no priority; corrections require explicit supersession. Unobserved ≠ zero; permission ≠ allocation.
+
+Closing stock:
+Iris Tank available: 540 L, 530–550, derived from March 15 survey 505±10, −65+100.
+Reed Barrel: March 31 physical baseline 96 L, 92–100; no later movements.
+Seed A available: 124 packets; March 17 count 159, −24+4−12−3 discarded.
+Seed B available: 119 ledger packets; opening physical count 180; recount missed; −45−16.
+Mulch M1 available: 480 kg net, 474–486; March 23 survey 550±6, −70.
+Compost C1 available since March 30 15:00: ledger 340 kg net; opening 640±4, −160+20−75−85.
+
+Both beds planting-approved; Willow effective March 14 09:00. Gate serviceable; chest appointment-accessible, two allocated keys accounted, tools uncounted. South Hose low-pressure only; higher-pressure trials require Nell. North Hose contradictory signed same-test reports S051–52 remain unresolved; S053 prohibits use pending retest.
+
+Corrections: A-01 34, M-02 102, B-02 16. Unexplained baseline discrepancies: tank −15 L, barrel −4 L, Seed A −3, mulch −8 kg. April 6 allocations unapproved.
+
+
+QUESTIONS:
+[
+  {
+    "id": "Q1",
+    "question": "At the April 6 ledger close, was Seed A’s ledger balance 124 packets?"
+  },
+  {
+    "id": "Q2",
+    "question": "At the April 6 ledger close, was Seed B’s ledger balance 117 packets?"
+  },
+  {
+    "id": "Q3",
+    "question": "At the April 6 ledger close, was Mulch M1’s remaining central ledger mass 480 kilograms net?"
+  },
+  {
+    "id": "Q4",
+    "question": "At the April 6 ledger close, was Compost C1 administratively available?"
+  },
+  {
+    "id": "Q5",
+    "question": "At 08:30 on March 14, was planting in Willow Bed administratively permitted?"
+  },
+  {
+    "id": "Q6",
+    "question": "At the April 6 ledger close, was North Hose mechanically serviceable?"
+  },
+  {
+    "id": "Q7",
+    "question": "At the April 6 ledger close, was Iris Tank’s transaction-derived central volume estimate 540 litres?"
+  },
+  {
+    "id": "Q8",
+    "question": "Was leakage from North Hose the cause of the 15-litre difference between Iris Tank’s March 15 physical central reading and its preceding central ledger estimate?"
+  }
+]
+
+First response must be JSON: {"request_original":boolean,"answers":[{"id":"Q1","answer":"yes|no|unresolved","basis":"...","evidence":["..."]}]}, with all8question IDs once.

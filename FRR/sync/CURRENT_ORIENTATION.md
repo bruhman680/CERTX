@@ -2,7 +2,7 @@
 
 Scope: `codex/frr-progress-2026-10-07`; the latest three-cycle run is linked below. Earlier source contacts, experiments and optional guidance retain their own commit anchors. This is current navigation, not a complete history or a substitute for the user's latest direction.
 
-The user resumed25October with ResonanceDB. [RM-C1](../evaluation/resonance-memory-contact-v1/REPORT.md) records primary reading,1,200 formula checks and a refined unexecuted MEM-04 design. The [resting checkpoint](checkpoints/REST_AFTER_WRITER_HANDOFF_2026-10-24.md) remains historical. No background task is active. Readable-code/history work remains deferred; usage/reset timing is not programmatically visible.
+The user authorized another three-cycle run after the derived-control publication. [LH-C1/2/3](../evaluation/long-history-memory-v1/REPORT.md) is complete: longer source, separate question preparation, actual writers/readers, tied grounded task outcomes and an unqueried fidelity issue. [Current checkpoint](checkpoints/AFTER_LONG_HISTORY_MEMORY_V1.md) records next directions/confidence. No fourth cycle or background task is active; readable-code/history work remains deferred.
 
 Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map](../evaluation/CURRENT_RESEARCH_MAP.md) and the [queue](../evaluation/research-queue/README.md). QUEUE.json remains the status source: 35 entries, 30 unfinished, six partial families. A saved queue is not an automatic scheduler.
 

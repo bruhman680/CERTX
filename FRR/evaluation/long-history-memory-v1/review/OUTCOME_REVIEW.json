@@ -1,0 +1,720 @@
+{
+  "verdict": "all32finalresponses_fullsource_matching_and_packet_grounded_with_recorded_scope",
+  "scope": "manual semantic review of all64first/final answers, plus exact exposure/frozenbyte checks; not blind or independent empirical replication",
+  "bindings_and_schema_checks": {
+    "frozen:SOURCE.txt": true,
+    "frozen:SOURCE_PREPARATION.md": true,
+    "frozen:QUERIES.json": true,
+    "frozen:GOLD.json": true,
+    "frozen:QUESTION_PREPARATION.md": true,
+    "frozen:PROTOCOL.md": true,
+    "frozen:INSTRUCTION_TEMPLATES.json": true,
+    "frozen:CYCLE1.md": true,
+    "frozen:WRITER_PACKETS.json": true,
+    "frozen:packets/W180.txt": true,
+    "frozen:packets/W360.txt": true,
+    "frozen:review/PREFLIGHT_REVIEW.md": true,
+    "frozen:review/PREFLIGHT_CHECKS.json": true,
+    "conditional_delivery:LH01": true,
+    "second_hash:LH01": true,
+    "second_exact_template:LH01": true,
+    "full_source_present:LH01": true,
+    "first_ids:LH01": true,
+    "final_ids:LH01": true,
+    "gold_match:LH01:Q1": true,
+    "gold_match:LH01:Q2": true,
+    "gold_match:LH01:Q3": true,
+    "gold_match:LH01:Q4": true,
+    "gold_match:LH01:Q5": true,
+    "gold_match:LH01:Q6": true,
+    "gold_match:LH01:Q7": true,
+    "gold_match:LH01:Q8": true,
+    "conditional_delivery:LH02": true,
+    "second_hash:LH02": true,
+    "second_exact_template:LH02": true,
+    "full_source_present:LH02": true,
+    "first_ids:LH02": true,
+    "final_ids:LH02": true,
+    "gold_match:LH02:Q1": true,
+    "gold_match:LH02:Q2": true,
+    "gold_match:LH02:Q3": true,
+    "gold_match:LH02:Q4": true,
+    "gold_match:LH02:Q5": true,
+    "gold_match:LH02:Q6": true,
+    "gold_match:LH02:Q7": true,
+    "gold_match:LH02:Q8": true,
+    "conditional_delivery:LH03": true,
+    "second_hash:LH03": true,
+    "second_exact_template:LH03": true,
+    "full_source_present:LH03": true,
+    "first_ids:LH03": true,
+    "final_ids:LH03": true,
+    "gold_match:LH03:Q1": true,
+    "gold_match:LH03:Q2": true,
+    "gold_match:LH03:Q3": true,
+    "gold_match:LH03:Q4": true,
+    "gold_match:LH03:Q5": true,
+    "gold_match:LH03:Q6": true,
+    "gold_match:LH03:Q7": true,
+    "gold_match:LH03:Q8": true,
+    "conditional_delivery:LH04": true,
+    "second_hash:LH04": true,
+    "second_exact_template:LH04": true,
+    "full_source_present:LH04": true,
+    "first_ids:LH04": true,
+    "final_ids:LH04": true,
+    "gold_match:LH04:Q1": true,
+    "gold_match:LH04:Q2": true,
+    "gold_match:LH04:Q3": true,
+    "gold_match:LH04:Q4": true,
+    "gold_match:LH04:Q5": true,
+    "gold_match:LH04:Q6": true,
+    "gold_match:LH04:Q7": true,
+    "gold_match:LH04:Q8": true
+  },
+  "all_mechanical_checks_pass": true,
+  "final_categories": {
+    "supported_conclusive": 24,
+    "warranted_unresolved": 8
+  },
+  "answer_label_changes": [],
+  "access_result": "LH02/LH03requested and received original; LH01/LH04didnot and receivednone. All first answers already warranted. Original access corroborates rather than rescues in fixed queriedscope.",
+  "responses": [
+    {
+      "reader": "LH01",
+      "writer": "W180",
+      "query": "Q1",
+      "final_answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses retained closing124packet balance/valid outflows, not obsolete162baseline.",
+      "actual_basis": "Seed A’s closing ledger balance is 124 packets: 159−24+4−12−3.",
+      "actual_evidence": [
+        "Seed A available: 124 packets"
+      ],
+      "original_delivered": false,
+      "first_answer": "yes",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH01",
+      "writer": "W180",
+      "query": "Q2",
+      "final_answer": "no",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Rejects117using explicit corrected119; missedcount not treated as quantitychange.",
+      "actual_basis": "Seed B’s closing ledger balance is 119 packets, not 117: 180−45−16.",
+      "actual_evidence": [
+        "Seed B available: 119 ledger packets",
+        "Corrections: B-02 16"
+      ],
+      "original_delivered": false,
+      "first_answer": "no",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH01",
+      "writer": "W180",
+      "query": "Q3",
+      "final_answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses480centralnetmass/550minus70; does not mistake uncertaintyinterval for an unresolved centralestimate.",
+      "actual_basis": "Mulch M1’s remaining central ledger mass is 480 kilograms net: 550−70.",
+      "actual_evidence": [
+        "Mulch M1 available: 480 kg net, 474–486"
+      ],
+      "original_delivered": false,
+      "first_answer": "yes",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH01",
+      "writer": "W180",
+      "query": "Q4",
+      "final_answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses March30signedrelease/available status, not historicalhold as current.",
+      "actual_basis": "Compost C1 was administratively available from March 30 at 15:00, before the April 6 close.",
+      "actual_evidence": [
+        "Compost C1 available since March 30 15:00"
+      ],
+      "original_delivered": false,
+      "first_answer": "yes",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH01",
+      "writer": "W180",
+      "query": "Q5",
+      "final_answer": "no",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses09:00effectivepermission;08:30precedes it. W180starttime phrasing reasonably supplies boundary; W360also states priorpreparationonly.",
+      "actual_basis": "Willow Bed’s planting approval took effect at 09:00 on March 14, after 08:30.",
+      "actual_evidence": [
+        "Both beds planting-approved; Willow effective March 14 09:00"
+      ],
+      "original_delivered": false,
+      "first_answer": "no",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH01",
+      "writer": "W180",
+      "query": "Q6",
+      "final_answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Retains same-event contradictoryreports and separates useprohibition from mechanicalcondition; no false resolution.",
+      "actual_basis": "Contradictory signed same-test reports remain unresolved. A prohibition on use pending retest does not establish mechanical serviceability.",
+      "actual_evidence": [
+        "S051–52: contradictory signed same-test reports remain unresolved",
+        "S053: prohibits use pending retest"
+      ],
+      "original_delivered": false,
+      "first_answer": "unresolved",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH01",
+      "writer": "W180",
+      "query": "Q7",
+      "final_answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses540transactionderivedcentralestimate/505minus65plus100, not exactclosingphysicalmeasurement.",
+      "actual_basis": "Iris Tank’s transaction-derived central estimate is 505−65+100=540 litres.",
+      "actual_evidence": [
+        "Iris Tank available: 540 L, 530–550, derived from March 15 survey 505±10, −65+100"
+      ],
+      "original_delivered": false,
+      "first_answer": "yes",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH01",
+      "writer": "W180",
+      "query": "Q8",
+      "final_answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Unexplained15litrediscrepancy remains withoutsupportedcausalattribution; unknown is not proved no.",
+      "actual_basis": "The 15-litre tank discrepancy is explicitly unexplained; no supplied evidence attributes it to North Hose leakage.",
+      "actual_evidence": [
+        "Unexplained baseline discrepancies: tank −15 L"
+      ],
+      "original_delivered": false,
+      "first_answer": "unresolved",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH02",
+      "writer": "W360",
+      "query": "Q1",
+      "final_answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses retained closing124packet balance/valid outflows, not obsolete162baseline.",
+      "actual_basis": "Seed A’s final recorded transaction subtracts 12 distributed packets and 3 damaged discards from 139, leaving 124. No later stock movements occurred.",
+      "actual_evidence": [
+        "S058",
+        "S060"
+      ],
+      "original_delivered": true,
+      "first_answer": "yes",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH02",
+      "writer": "W360",
+      "query": "Q2",
+      "final_answer": "no",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Rejects117using explicit corrected119; missedcount not treated as quantitychange.",
+      "actual_basis": "The 117-packet balance was explicitly superseded by a corrected balance of 119. The missed recount did not change that balance.",
+      "actual_evidence": [
+        "S047",
+        "S055",
+        "S060"
+      ],
+      "original_delivered": true,
+      "first_answer": "no",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH02",
+      "writer": "W360",
+      "query": "Q3",
+      "final_answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses480centralnetmass/550minus70; does not mistake uncertaintyinterval for an unresolved centralestimate.",
+      "actual_basis": "The physical baseline of 550 kilograms net followed by the completed 70-kilogram issue yields a remaining central ledger mass of 480 kilograms net.",
+      "actual_evidence": [
+        "S043",
+        "S054",
+        "S060"
+      ],
+      "original_delivered": true,
+      "first_answer": "yes",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH02",
+      "writer": "W360",
+      "query": "Q4",
+      "final_answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses March30signedrelease/available status, not historicalhold as current.",
+      "actual_basis": "Mara’s signed release restored administrative availability on March 30 at 15:00. No subsequent hold is recorded.",
+      "actual_evidence": [
+        "S050",
+        "S056",
+        "S060"
+      ],
+      "original_delivered": true,
+      "first_answer": "yes",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH02",
+      "writer": "W360",
+      "query": "Q5",
+      "final_answer": "no",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses09:00effectivepermission;08:30precedes it. W180starttime phrasing reasonably supplies boundary; W360also states priorpreparationonly.",
+      "actual_basis": "Planting permission became effective at 09:00 on March 14. The prior planting prohibition explicitly remained applicable before that time, including 08:30.",
+      "actual_evidence": [
+        "S008",
+        "S025"
+      ],
+      "original_delivered": true,
+      "first_answer": "no",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH02",
+      "writer": "W360",
+      "query": "Q6",
+      "final_answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Retains same-event contradictoryreports and separates useprohibition from mechanicalcondition; no false resolution.",
+      "actual_basis": "Two signed reports describe the same test with contradictory mechanical findings, and neither supersedes the other. The operating prohibition does not resolve mechanical condition; no retest is recorded.",
+      "actual_evidence": [
+        "S051",
+        "S052",
+        "S053",
+        "S059",
+        "S060"
+      ],
+      "original_delivered": true,
+      "first_answer": "unresolved",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH02",
+      "writer": "W360",
+      "query": "Q7",
+      "final_answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses540transactionderivedcentralestimate/505minus65plus100, not exactclosingphysicalmeasurement.",
+      "actual_basis": "The March 15 physical central baseline of 505 litres, followed by a 65-litre withdrawal and a 100-litre delivery, yields 540 litres. The later lid inspection recorded no movement or measurement.",
+      "actual_evidence": [
+        "S027",
+        "S033",
+        "S048",
+        "S049",
+        "S060"
+      ],
+      "original_delivered": true,
+      "first_answer": "yes",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH02",
+      "writer": "W360",
+      "query": "Q8",
+      "final_answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Unexplained15litrediscrepancy remains withoutsupportedcausalattribution; unknown is not proved no.",
+      "actual_basis": "The ledger explicitly assigns no cause to the 15-litre discrepancy. North Hose’s earlier split inspection measured no water loss and did not establish retrospective leakage.",
+      "actual_evidence": [
+        "S024",
+        "S027",
+        "S060"
+      ],
+      "original_delivered": true,
+      "first_answer": "unresolved",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH03",
+      "writer": "W180",
+      "query": "Q1",
+      "final_answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses retained closing124packet balance/valid outflows, not obsolete162baseline.",
+      "actual_basis": "Seed A’s final transaction leaves 124 packets, and the close records no subsequent movements.",
+      "actual_evidence": [
+        "S058: 12 packets distributed and 3 discarded from 139, leaving 124.",
+        "S060: No further stock movements after S059."
+      ],
+      "original_delivered": true,
+      "first_answer": "yes",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH03",
+      "writer": "W180",
+      "query": "Q2",
+      "final_answer": "no",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Rejects117using explicit corrected119; missedcount not treated as quantitychange.",
+      "actual_basis": "The 117-packet balance was explicitly superseded by the corrected balance of 119 packets.",
+      "actual_evidence": [
+        "S047: B-02 distribution corrected to 16; supersedes S044’s movement and 117-packet balance. Revised balance 119.",
+        "S055: Recount not completed; latest ledger balance remains 119.",
+        "S060: No subsequent movements."
+      ],
+      "original_delivered": true,
+      "first_answer": "no",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH03",
+      "writer": "W180",
+      "query": "Q3",
+      "final_answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses480centralnetmass/550minus70; does not mistake uncertaintyinterval for an unresolved centralestimate.",
+      "actual_basis": "The latest physical baseline of 550 kilograms net, less the completed 70-kilogram issue, gives 480 kilograms net at close.",
+      "actual_evidence": [
+        "S043: Physical survey establishes 550 kilograms net as the baseline.",
+        "S054: Remaining central mass 480 kilograms, interval 474–486.",
+        "S060: No subsequent stock movements."
+      ],
+      "original_delivered": true,
+      "first_answer": "yes",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH03",
+      "writer": "W180",
+      "query": "Q4",
+      "final_answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses March30signedrelease/available status, not historicalhold as current.",
+      "actual_basis": "The signed coordinator release restored availability on March 30 at 15:00, with no later hold.",
+      "actual_evidence": [
+        "S050: Compost C1 held pending a signed coordinator release.",
+        "S056: Mara signed release; available at 15:00 on March 30.",
+        "S060: Ledger close adds no change."
+      ],
+      "original_delivered": true,
+      "first_answer": "yes",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH03",
+      "writer": "W180",
+      "query": "Q5",
+      "final_answer": "no",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses09:00effectivepermission;08:30precedes it. W180starttime phrasing reasonably supplies boundary; W360also states priorpreparationonly.",
+      "actual_basis": "Willow’s planting prohibition remained applicable until the approval took effect at 09:00 on March 14.",
+      "actual_evidence": [
+        "S008: Willow approved only for soil preparation.",
+        "S025: Planting approved effective 09:00; former prohibition remains applicable before that time."
+      ],
+      "original_delivered": true,
+      "first_answer": "no",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH03",
+      "writer": "W180",
+      "query": "Q6",
+      "final_answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Retains same-event contradictoryreports and separates useprohibition from mechanicalcondition; no false resolution.",
+      "actual_basis": "Equally authoritative reports of the same test disagree about mechanical condition, neither supersedes the other, and no retest resolves them. The operating prohibition establishes permitted action only.",
+      "actual_evidence": [
+        "S051: Seam leak; out of service.",
+        "S052: Same test reported no seam leak and serviceable; contradiction unresolved.",
+        "S053: Use prohibited pending retest without resolving condition.",
+        "S060: Reports remain contradictory."
+      ],
+      "original_delivered": true,
+      "first_answer": "unresolved",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH03",
+      "writer": "W180",
+      "query": "Q7",
+      "final_answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses540transactionderivedcentralestimate/505minus65plus100, not exactclosingphysicalmeasurement.",
+      "actual_basis": "The latest physical central reading of 505 litres, minus 65 and plus 100, gives a transaction-derived estimate of 540 litres, unchanged at close.",
+      "actual_evidence": [
+        "S027: 505-litre physical baseline.",
+        "S033: 65-litre withdrawal.",
+        "S048: 100-litre delivery; central estimate 540 litres.",
+        "S049: Estimate remains 540 litres.",
+        "S060: No further movements or observations."
+      ],
+      "original_delivered": true,
+      "first_answer": "yes",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH03",
+      "writer": "W180",
+      "query": "Q8",
+      "final_answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Unexplained15litrediscrepancy remains withoutsupportedcausalattribution; unknown is not proved no.",
+      "actual_basis": "The ledger assigns no cause to the 15-litre discrepancy. The hose inspection establishes neither a loss quantity nor retrospective leakage during earlier transactions.",
+      "actual_evidence": [
+        "S024: No water-loss amount measured or estimated; finding does not retrospectively prove leakage.",
+        "S027: The 15-litre difference has no assigned cause.",
+        "S060: Unexplained discrepancies retain their uncertainty."
+      ],
+      "original_delivered": true,
+      "first_answer": "unresolved",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH04",
+      "writer": "W360",
+      "query": "Q1",
+      "final_answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses retained closing124packet balance/valid outflows, not obsolete162baseline.",
+      "actual_basis": "Seed A’s closing ledger balance is 124 packets.",
+      "actual_evidence": [
+        "Handoff: Seed A available, 124 packets; March 17 physical baseline 159, followed by −24/+4/−12/−3 damaged discards."
+      ],
+      "original_delivered": false,
+      "first_answer": "yes",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH04",
+      "writer": "W360",
+      "query": "Q2",
+      "final_answer": "no",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Rejects117using explicit corrected119; missedcount not treated as quantitychange.",
+      "actual_basis": "Seed B’s corrected closing balance is 119 packets.",
+      "actual_evidence": [
+        "S047 corrects B-02 withdrawal from 18 to 16 and balance from 117 to 119; March 29 recount missed."
+      ],
+      "original_delivered": false,
+      "first_answer": "no",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH04",
+      "writer": "W360",
+      "query": "Q3",
+      "final_answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses480centralnetmass/550minus70; does not mistake uncertaintyinterval for an unresolved centralestimate.",
+      "actual_basis": "Mulch M1’s central closing net mass is 480 kilograms.",
+      "actual_evidence": [
+        "Handoff: March 23 physical baseline 550 kg [544–556], followed by −70 kg; closing 480 kg net [474–486]."
+      ],
+      "original_delivered": false,
+      "first_answer": "yes",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH04",
+      "writer": "W360",
+      "query": "Q4",
+      "final_answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses March30signedrelease/available status, not historicalhold as current.",
+      "actual_basis": "Compost C1 became administratively available before close.",
+      "actual_evidence": [
+        "Handoff: Compost C1 available since March 30, 15:00."
+      ],
+      "original_delivered": false,
+      "first_answer": "yes",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH04",
+      "writer": "W360",
+      "query": "Q5",
+      "final_answer": "no",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses09:00effectivepermission;08:30precedes it. W180starttime phrasing reasonably supplies boundary; W360also states priorpreparationonly.",
+      "actual_basis": "Willow Bed remained preparation-only at 08:30; planting authorization began at 09:00.",
+      "actual_evidence": [
+        "Handoff: Willow previously preparation-only; planting authorized March 14, 09:00."
+      ],
+      "original_delivered": false,
+      "first_answer": "no",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH04",
+      "writer": "W360",
+      "query": "Q6",
+      "final_answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Retains same-event contradictoryreports and separates useprohibition from mechanicalcondition; no false resolution.",
+      "actual_basis": "Mechanical serviceability has conflicting signed reports without supersession or a recorded retest. The administrative prohibition does not settle the mechanical dispute.",
+      "actual_evidence": [
+        "Handoff: contradictory signed March 27 09:00 reports—leaking/out-of-service versus no leak/serviceable; neither superseded.",
+        "Handoff: March 28 authoritative prohibition until retest; none recorded."
+      ],
+      "original_delivered": false,
+      "first_answer": "unresolved",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH04",
+      "writer": "W360",
+      "query": "Q7",
+      "final_answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Uses540transactionderivedcentralestimate/505minus65plus100, not exactclosingphysicalmeasurement.",
+      "actual_basis": "The March 15 physical baseline and subsequent transactions yield a central estimate of 540 litres.",
+      "actual_evidence": [
+        "Handoff: March 15 survey 505 L [495–515], replacing prior 520 L estimate; subsequent −65/+100 yields 540 L [530–550]."
+      ],
+      "original_delivered": false,
+      "first_answer": "yes",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    },
+    {
+      "reader": "LH04",
+      "writer": "W360",
+      "query": "Q8",
+      "final_answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Unexplained15litrediscrepancy remains withoutsupportedcausalattribution; unknown is not proved no.",
+      "actual_basis": "The 15-litre discrepancy’s cause is unknown; no evidence establishes North Hose leakage as its cause.",
+      "actual_evidence": [
+        "Handoff: Iris Tank survey showed unexplained −15 L.",
+        "Handoff: discrepancy causes remain unknown; North Hose’s signed mechanical reports conflict."
+      ],
+      "original_delivered": false,
+      "first_answer": "unresolved",
+      "first_packet_warrant": true,
+      "answer_label_changed": false
+    }
+  ],
+  "unqueried_fidelity_issue": {
+    "writer": "W360",
+    "kind": "unsupported_strengthening_fidelity",
+    "text": "March26 cover-damage hold implied no contamination.",
+    "source_contrast": "S050 says hold does not assert contamination; S056 later says no visible contamination. Neither establishes the material was uncontaminated during hold.",
+    "scope": "unqueried fact; task accuracy does not erase this fidelity concern",
+    "intent_note": "Do not infer private writer intent; assess literal unsupported strengthening/ambiguity."
+  },
+  "limits": [
+    "One writer percap, fourreadercontexts, no causalbudget/access claim.",
+    "Eightquestions are purposive proposition probes, sixconclusive andtwounresolved percontext, not exhaustiveledger audit.",
+    "Summaryfidelity can fail despite perfectquerieddecisionmatch.",
+    "Hashbinding/packetdelivery does not establish source truth, attention or secureisolation.",
+    "W180capviolation preserved; neitherwriterexcluded."
+  ],
+  "coordinator_comparison": {
+    "review_order": "reviewer semantic judgments and69checks saved before reading coordinator score.py/RESULTS.json/annotations",
+    "final_rows_compared": 32,
+    "disagreements": [],
+    "score_script_assessment": "correctly tabulates supplied semantic labels and keeps full-source match separate from packet warrant; not independent semantic evaluator"
+  }
+}

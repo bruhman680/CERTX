@@ -1,0 +1,216 @@
+[
+  {
+    "id": "Q1",
+    "answer": "yes",
+    "rationale": "S058 records separate outflows of 12 distributed and 3 discarded from 139, leaving 124. S059–S060 introduce no later stock movement. The March 17 physical count, rather than the earlier transaction-derived balance, is the baseline for subsequent Seed A accounting.",
+    "source_ids": [
+      "S032",
+      "S037",
+      "S041",
+      "S058",
+      "S059",
+      "S060"
+    ],
+    "sufficiency_criteria": "Retain either the explicit final Seed A balance of 124 and the closing boundary, or a valid calculation using the 159-packet physical baseline, the subsequent issue and return, and both final outflows. Do not continue from the superseded 162-packet estimate.",
+    "minimal_evidence_sets": [
+      [
+        "S058",
+        "S059",
+        "S060"
+      ],
+      [
+        "S032",
+        "S037",
+        "S041",
+        "S058",
+        "S059",
+        "S060"
+      ]
+    ],
+    "accepted_equivalent_basis": "An explicit accurate final balance with no subsequent movement suffices; reconstructing every earlier Seed A transaction is unnecessary."
+  },
+  {
+    "id": "Q2",
+    "answer": "no",
+    "rationale": "The 117-packet balance in B-02 version 1 is explicitly superseded by S047: the corrected distribution was 16, leaving 119. The missed recount is unobserved, not zero, and does not alter the ledger balance.",
+    "source_ids": [
+      "S044",
+      "S047",
+      "S055",
+      "S058",
+      "S059",
+      "S060"
+    ],
+    "sufficiency_criteria": "Retain the correction to 119 and its authority over the original 117, together with the absence of later movements. A missed physical count must not be treated as a new count or change in stock.",
+    "minimal_evidence_sets": [
+      [
+        "S047",
+        "S055",
+        "S058",
+        "S059",
+        "S060"
+      ]
+    ],
+    "accepted_equivalent_basis": "The explicit corrected balance of 119 plus retention that it is the latest ledger balance is sufficient; an equivalent calculation of 180 minus 45 minus 16 also warrants no."
+  },
+  {
+    "id": "Q3",
+    "answer": "yes",
+    "rationale": "S043 replaces the earlier 558-kilogram ledger estimate with a 550-kilogram physical baseline. S054 subtracts the completed 70-kilogram issue, leaving 480 kilograms, interval 474–486. The earlier unfilled 60-kilogram request is not another withdrawal.",
+    "source_ids": [
+      "S031",
+      "S040",
+      "S043",
+      "S054",
+      "S059",
+      "S060"
+    ],
+    "sufficiency_criteria": "Retain the 480-kilogram central balance or the 550-kilogram physical baseline and 70-kilogram subsequent issue, and no later movements. Preserve the distinction between a central estimate and an exact physical mass; requests do not reduce stock.",
+    "minimal_evidence_sets": [
+      [
+        "S054",
+        "S059",
+        "S060"
+      ],
+      [
+        "S043",
+        "S054",
+        "S059",
+        "S060"
+      ]
+    ],
+    "accepted_equivalent_basis": "A faithful explicit final central balance suffices. The interval may accompany it; uncertainty in actual mass does not make the stated central estimate unresolved."
+  },
+  {
+    "id": "Q4",
+    "answer": "yes",
+    "rationale": "S050 imposes a hold after an 85-kilogram issue, but S056 explicitly releases the batch at 15:00 on March 30. The release changes status without changing the 340-kilogram quantity and ends the earlier hold prospectively.",
+    "source_ids": [
+      "S050",
+      "S056",
+      "S059",
+      "S060"
+    ],
+    "sufficiency_criteria": "Retain the signed coordinator release and its effective time, with no subsequent contrary status entry. A retained historical hold must not be mistaken for the closing status.",
+    "minimal_evidence_sets": [
+      [
+        "S056",
+        "S059",
+        "S060"
+      ]
+    ],
+    "accepted_equivalent_basis": "An accurate closing available status tied to the authorized release is enough; reproducing the mass arithmetic is not required."
+  },
+  {
+    "id": "Q5",
+    "answer": "no",
+    "rationale": "S008 allows only soil preparation. S025 grants planting permission effective 09:00 on March 14 and explicitly preserves the former prohibition before that time. Soil amendment and later Saturday approval do not authorize planting at 08:30.",
+    "source_ids": [
+      "S008",
+      "S019",
+      "S025",
+      "S034"
+    ],
+    "sufficiency_criteria": "Retain the 09:00 effective time and the applicability of the earlier planting prohibition before it. Preparation permission is not planting permission.",
+    "minimal_evidence_sets": [
+      [
+        "S025"
+      ],
+      [
+        "S008",
+        "S025"
+      ]
+    ],
+    "accepted_equivalent_basis": "A direct statement that planting remained prohibited before 09:00 on March 14 warrants no, even without the earlier entry verbatim."
+  },
+  {
+    "id": "Q6",
+    "answer": "unresolved",
+    "rationale": "S051 and S052 are signed reports of the same March 27 test: one records a seam leak and out-of-service status, the other no seam leak and serviceable status. Neither supersedes the other and no priority rule resolves them. S053 prohibits use but explicitly leaves observed condition unresolved; no retest follows.",
+    "source_ids": [
+      "S001",
+      "S002",
+      "S051",
+      "S052",
+      "S053",
+      "S059",
+      "S060"
+    ],
+    "sufficiency_criteria": "Retain both opposed same-event signed reports, their equal unresolved authority, and the absence of a resolving retest or supersession. Distinguish the conclusive prohibition on use from the unresolved mechanical condition.",
+    "minimal_evidence_sets": [
+      [
+        "S051",
+        "S052",
+        "S053",
+        "S059",
+        "S060"
+      ],
+      [
+        "S052",
+        "S053",
+        "S059",
+        "S060"
+      ]
+    ],
+    "accepted_equivalent_basis": "An explicit faithful account of the unresolved same-test contradiction and no subsequent resolution suffices. Merely retaining a prohibition on use does not warrant either a mechanical yes or no."
+  },
+  {
+    "id": "Q7",
+    "answer": "yes",
+    "rationale": "S027 establishes a new 505-litre physical baseline, S033 withdraws 65, and S048 adds 100, producing 540 litres with interval 530–550. S049 restores availability without measuring or moving water. The closing entries add no later tank movement.",
+    "source_ids": [
+      "S027",
+      "S033",
+      "S048",
+      "S049",
+      "S057",
+      "S059",
+      "S060"
+    ],
+    "sufficiency_criteria": "Retain the explicit final central estimate of 540 or the new physical baseline and subsequent metered movements, plus no later change. Distinguish this estimate from an exact closing physical observation and from administrative restrictions.",
+    "minimal_evidence_sets": [
+      [
+        "S048",
+        "S049",
+        "S057",
+        "S059",
+        "S060"
+      ],
+      [
+        "S027",
+        "S033",
+        "S048",
+        "S049",
+        "S057",
+        "S059",
+        "S060"
+      ]
+    ],
+    "accepted_equivalent_basis": "An accurate latest transaction-derived central estimate of 540, with no later change, suffices; actual closing physical volume need not be known exactly."
+  },
+  {
+    "id": "Q8",
+    "answer": "unresolved",
+    "rationale": "S027 explicitly assigns no cause to the 15-litre difference. S024 reports a hose split but no loss amount and explicitly says it does not retrospectively prove leakage during earlier transactions. The later contradictory hose test also supplies no causal link to this discrepancy. S060 preserves unexplained discrepancies.",
+    "source_ids": [
+      "S024",
+      "S027",
+      "S051",
+      "S052",
+      "S060"
+    ],
+    "sufficiency_criteria": "Retain the discrepancy’s explicitly unassigned cause and the absence of a supported causal link between the hose split and the tank difference. Neither an observed split nor later hose reports establishes that it caused this earlier difference; absence of attribution also does not establish that it did not.",
+    "minimal_evidence_sets": [
+      [
+        "S024",
+        "S027",
+        "S060"
+      ],
+      [
+        "S027",
+        "S060"
+      ]
+    ],
+    "accepted_equivalent_basis": "An explicit faithful statement that the 15-litre discrepancy remains unexplained at close warrants unresolved. It is not necessary to preserve every speculative alternative cause, and no external leakage model is admissible."
+  }
+]

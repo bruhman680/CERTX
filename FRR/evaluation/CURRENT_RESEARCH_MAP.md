@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Current completed run: [LH-C1/2/3](long-history-memory-v1/REPORT.md) uses a3064-word/60-record source, separately prepared questions and actual writer/reader contexts. All32finalanswers grounded; originals corroborate. Unqueried fidelity strengthening and cap violation retained. [Next design](long-history-memory-v1/NEXT_CONTACT.md) is proposed, not launched; MEM-04 remains partial.
+
 Latest contact25October: [RM-C1](resonance-memory-contact-v1/REPORT.md) supplies phase-memory primary reading,1,200 information-matched formula checks and a [next MEM-04 design](resonance-memory-contact-v1/NEXT_CONTACT.md). Equivalent real-coordinate controls separate encoded information from scoring; broader natural-language/agent memory remains open. Earlier pause statements below describe their historical episodes.
 
 Current pause: [writer-handoff resting checkpoint](../sync/checkpoints/REST_AFTER_WRITER_HANDOFF_2026-10-24.md) calibrates confidence and records provisional next directions. Actual reader/writer contacts are completed only in their authored scopes; broader families remain open. No new experiment starts during this sync.

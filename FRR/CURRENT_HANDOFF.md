@@ -12,6 +12,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Useful artifacts and recent contacts
 
+- [LH-C1/2/3](evaluation/long-history-memory-v1/REPORT.md): authorized three-cycle run completed.3064-word/60-record source, separately prepared8questions,2writers/4fresh readers;32grounded finals, no rescue.182/180cap violation and an unqueried contamination strengthening preserved. [Checkpoint](sync/checkpoints/AFTER_LONG_HISTORY_MEMORY_V1.md) records confidence/next prospective strata and fidelity audit. MEM-04 remains partial; no automatic fourth cycle.
+
 - [Public derived-control report](publications/REDDIT_PHASE_MEMORY_DERIVED_CONTROL.md): user-requested Reddit draft,39,782 ASCII characters, two additional AI reviewer passes and executed reproduction snippet. [Editorial record](publications/reviews/phase-memory-derived-control/EDITORIAL_RECORD.md) separates this publication review from original RM-C1. Saved for user posting; not posted to Reddit. No new behavioral experiment or queue/core status change.
 
 - [RM-C1](evaluation/resonance-memory-contact-v1/REPORT.md): user resumed25October with ResonanceDB. Primary reading and1,200 synthetic formula checks establish an information-matched real-coordinate control; missingness/cancellation witnesses refine [next MEM-04 design](evaluation/resonance-memory-contact-v1/NEXT_CONTACT.md). No product or actual-agent reproduction; broader MEM-04 remains partial.
@@ -54,9 +56,9 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Resume and next move
 
-The user has resumed exploration with the ResonanceDB paper. [RM-C1](evaluation/resonance-memory-contact-v1/REPORT.md) completes one bounded source/formula contact and refines the next memory design. The [previous resting checkpoint](sync/checkpoints/REST_AFTER_WRITER_HANDOFF_2026-10-24.md) remains a historical confidence anchor. No background work is scheduled.
+The user resumed after the public derived-control report and authorized three cycles with communicating reviewers. [LH-C1/2/3](evaluation/long-history-memory-v1/REPORT.md) is complete; [current checkpoint](sync/checkpoints/AFTER_LONG_HISTORY_MEMORY_V1.md) records scope, confidence and next proposals. No background work or automatic fourth cycle is active.
 
-Actual-reader source-access and writer-produced handoff contacts have now run in narrow authored scopes. Broader transfer, longer reuse, unknown authority and compression-loss recovery remain open. No causal budget/access benefit follows from the current tied/sufficient-handoff outcomes. The next preferred direction is independently prepared future questions over a longer history, fixed before seeing writer outputs; its detailed protocol is not yet frozen.
+Actual-reader source-access and writer-produced handoff contacts have now run in narrow authored scopes. Broader transfer, longer reuse, unknown authority and compression-loss recovery remain open. No causal budget/access benefit follows from the current tied/sufficient-handoff outcomes. The longer-history contact has now run with separately prepared fixed questions. Its predominantly closing-state sample was still sufficient in both handoffs. Next preferred design is prospectively stratified historical/status/criterion questions plus a separate retained-clause fidelity audit; that next protocol is not frozen.
 
 Inspect referenced artifacts before trusting a summary. Prefer a concrete uncertainty or build need over another ritual check. The strongest open boundaries include less-cued source/authority assessment, broader writer-produced compression and longer reuse, reliable reopening/receipt history, and task-dependent preservation. Many physical/swarm mappings remain unverified; see the queue rather than treating old proposed constants as laws.
 

@@ -1,0 +1,72 @@
+{
+  "stage": "after writers, before reader outcomes",
+  "packet_checks": {
+    "frozen:SOURCE.txt": true,
+    "frozen:SOURCE_PREPARATION.md": true,
+    "frozen:QUERIES.json": true,
+    "frozen:GOLD.json": true,
+    "frozen:QUESTION_PREPARATION.md": true,
+    "frozen:PROTOCOL.md": true,
+    "frozen:INSTRUCTION_TEMPLATES.json": true,
+    "frozen:CYCLE1.md": true,
+    "frozen:WRITER_PACKETS.json": true,
+    "frozen:packets/W180.txt": true,
+    "frozen:packets/W360.txt": true,
+    "frozen:review/PREFLIGHT_REVIEW.md": true,
+    "frozen:review/PREFLIGHT_CHECKS.json": true,
+    "writer_hash:W180": true,
+    "writer_count:W180": true,
+    "writer_hash:W360": true,
+    "writer_count:W360": true,
+    "packet_exact:LH01": false,
+    "packet_hash:LH01": true,
+    "packet_exact:LH02": false,
+    "packet_hash:LH02": true,
+    "packet_exact:LH03": false,
+    "packet_hash:LH03": true,
+    "packet_exact:LH04": false,
+    "packet_hash:LH04": true
+  },
+  "all_binding_checks_pass": false,
+  "writer_issues": [
+    {
+      "writer": "W180",
+      "kind": "cap_violation",
+      "observed_words": 182,
+      "cap": 180,
+      "handling": "preserve unchanged; no causal budget conclusion"
+    },
+    {
+      "writer": "W360",
+      "kind": "unsupported_strengthening_fidelity",
+      "text": "March26 cover-damage hold implied no contamination.",
+      "source_contrast": "S050 says hold does not assert contamination; S056 later says no visible contamination. Neither establishes the material was uncontaminated during hold.",
+      "scope": "unqueried fact; task accuracy does not erase this fidelity concern",
+      "intent_note": "Do not infer private writer intent; assess literal unsupported strengthening/ambiguity."
+    }
+  ],
+  "task_sufficiency": {
+    "W180": {
+      "Q1": true,
+      "Q2": true,
+      "Q3": true,
+      "Q4": true,
+      "Q5": true,
+      "Q6": true,
+      "Q7": true,
+      "Q8": true
+    },
+    "W360": {
+      "Q1": true,
+      "Q2": true,
+      "Q3": true,
+      "Q4": true,
+      "Q5": true,
+      "Q6": true,
+      "Q7": true,
+      "Q8": true
+    }
+  },
+  "sufficiency_note": "Pre-reader semantic judgment: both summaries retain all8task bases. W180 Willow permission effective March14 09:00 reasonably supplies the start-time boundary, while W360 also explicitly retains prior preparation-only status. Preserve any later reviewer disagreement rather than force outcomes.",
+  "prediction": "Original access should corroborate rather than rescue queried omissions in this fixed instance; do not change questions to manufacture difficulty."
+}

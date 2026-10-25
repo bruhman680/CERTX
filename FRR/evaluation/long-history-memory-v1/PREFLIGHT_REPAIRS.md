@@ -1,0 +1,5 @@
+# Preflight evaluator clarification
+
+Before source/query completion or any participant launch, the design reviewer identified overlap between category labels. PROTOCOL_INITIAL.md preserves the prior wording. Current PROTOCOL.md freezes precedence while retaining separate full-source match and packet-warrant fields. A handoff-induced wrong answer must remain visibly wrong against the source even if packet-relative support exists. The prompt templates were not changed. This is prospective evaluator clarification, not outcome tuning.
+
+Before participant launch, an exact packet-file intake replaced hand-copying large sources into spawn arguments. PROTOCOL_PRETRANSPORT.md and INSTRUCTION_TEMPLATES_PRETRANSPORT.json preserve the previous transport wording. Each turn permits one declared cat read of its sole packet with12000output tokens, then no other tools. Ten participant turns imply ten expected intake reads. Reviewer accepted the symmetric exception with explicit hashes, paths and visibility limitations. This transport refinement does not change evidence contents, queries or source access policy.

@@ -1,0 +1,147 @@
+{
+  "scope": "authored single-handoff/longer-input contact; schema/count aggregation of separately reviewed semantic labels",
+  "source_words": 3064,
+  "source_records": 60,
+  "writers": 2,
+  "fresh_reader_contexts": 4,
+  "participant_turns": 10,
+  "expected_packet_intake_reads": 10,
+  "intake_policy": "one exact file read per turn; instructional restriction, no complete telemetry or attention guarantee",
+  "final_answers_clustered": 32,
+  "known_task_matches": {
+    "FIRST": 32,
+    "FINAL": 32
+  },
+  "semantic_categories": {
+    "FIRST": {
+      "supported_conclusive": 24,
+      "warranted_unresolved": 8
+    },
+    "FINAL": {
+      "supported_conclusive": 24,
+      "warranted_unresolved": 8
+    }
+  },
+  "original_requests": 2,
+  "original_deliveries": 2,
+  "label_changes": 0,
+  "writer_outputs": [
+    {
+      "id": "W180",
+      "cap": 180,
+      "words": 182,
+      "cap_met": false,
+      "sha256": "1fb9cc5cca966fa99371e79813ce9fd6f4908db8b8fd8ccad8e172e59645ba3f",
+      "file": "raw/W180.txt"
+    },
+    {
+      "id": "W360",
+      "cap": 360,
+      "words": 331,
+      "cap_met": true,
+      "sha256": "5f9639b512709439b8495518f298f1fdac9bbf56feff5d5682985d630edfd094",
+      "file": "raw/W360.txt"
+    }
+  ],
+  "contexts": [
+    {
+      "reader": "LH01",
+      "writer": "W180",
+      "access": "summary",
+      "requested_original": false,
+      "delivered_original": false,
+      "answer_label_changes": [],
+      "turns": {
+        "FIRST": {
+          "known_task_matches": 8,
+          "answers": 8,
+          "raw_json_whitespace_words": 158,
+          "under_700_words": true
+        },
+        "FINAL": {
+          "known_task_matches": 8,
+          "answers": 8,
+          "raw_json_whitespace_words": 150,
+          "under_700_words": true
+        }
+      }
+    },
+    {
+      "reader": "LH02",
+      "writer": "W360",
+      "access": "original",
+      "requested_original": true,
+      "delivered_original": true,
+      "answer_label_changes": [],
+      "turns": {
+        "FIRST": {
+          "known_task_matches": 8,
+          "answers": 8,
+          "raw_json_whitespace_words": 212,
+          "under_700_words": true
+        },
+        "FINAL": {
+          "known_task_matches": 8,
+          "answers": 8,
+          "raw_json_whitespace_words": 178,
+          "under_700_words": true
+        }
+      }
+    },
+    {
+      "reader": "LH03",
+      "writer": "W180",
+      "access": "original",
+      "requested_original": true,
+      "delivered_original": true,
+      "answer_label_changes": [],
+      "turns": {
+        "FIRST": {
+          "known_task_matches": 8,
+          "answers": 8,
+          "raw_json_whitespace_words": 183,
+          "under_700_words": true
+        },
+        "FINAL": {
+          "known_task_matches": 8,
+          "answers": 8,
+          "raw_json_whitespace_words": 311,
+          "under_700_words": true
+        }
+      }
+    },
+    {
+      "reader": "LH04",
+      "writer": "W360",
+      "access": "summary",
+      "requested_original": false,
+      "delivered_original": false,
+      "answer_label_changes": [],
+      "turns": {
+        "FIRST": {
+          "known_task_matches": 8,
+          "answers": 8,
+          "raw_json_whitespace_words": 203,
+          "under_700_words": true
+        },
+        "FINAL": {
+          "known_task_matches": 8,
+          "answers": 8,
+          "raw_json_whitespace_words": 203,
+          "under_700_words": true
+        }
+      }
+    }
+  ],
+  "frozen_mismatches": [],
+  "transcript_mismatches": [],
+  "not_identified": [
+    "causal word-budget effect",
+    "causal access effect",
+    "compression-loss recovery",
+    "natural source authentication",
+    "index-search efficacy",
+    "FRR advantage",
+    "longitudinal durability"
+  ]
+}
