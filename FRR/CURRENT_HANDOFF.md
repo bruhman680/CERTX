@@ -12,6 +12,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Useful artifacts and recent contacts
 
+- [Public derived-control report](publications/REDDIT_PHASE_MEMORY_DERIVED_CONTROL.md): user-requested Reddit draft,39,782 ASCII characters, two additional AI reviewer passes and executed reproduction snippet. [Editorial record](publications/reviews/phase-memory-derived-control/EDITORIAL_RECORD.md) separates this publication review from original RM-C1. Saved for user posting; not posted to Reddit. No new behavioral experiment or queue/core status change.
+
 - [RM-C1](evaluation/resonance-memory-contact-v1/REPORT.md): user resumed25October with ResonanceDB. Primary reading and1,200 synthetic formula checks establish an information-matched real-coordinate control; missingness/cancellation witnesses refine [next MEM-04 design](evaluation/resonance-memory-contact-v1/NEXT_CONTACT.md). No product or actual-agent reproduction; broader MEM-04 remains partial.
 
 - [Writer-handoff three-cycle run](evaluation/writer-handoff-three-cycle-v1/REPORT.md):2actual writers and4fresh readers, future questions fixed/hidden from writers. Both handoffs retained4task bases; all16final decisions grounded. W180 exceeded its cap by6; evaluator wording repair and lexical ambiguity preserved. No retrieval-rescue/budget-effect claim. Three cycles complete for user review; broader MEM-04 remains partial.
