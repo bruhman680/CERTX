@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Latest source intake: [CP-N1](claude-phase-negation-intake-v1/REPORT.md) reads the Claude phase/negation branch, reproduces all4provided scripts exactly and derives a real-channel/scoped-mixture boundary control. Oracle-conditioned stance and end-to-end evidence/status performance are different measurements. [Next contact](claude-phase-negation-intake-v1/NEXT_CONTACT.md) is proposed; trained encoders and agent-group benefit remain untested.
+
 Current final contact: [SF-C1](status-fidelity-microcontact-v1/REPORT.md) supplies a targeted status-fidelity development pass,24grounded answers across2reader contexts; no policy-repair claim. [Group-reasoning idea](status-fidelity-microcontact-v1/GROUP_REASONING_IDEA.md) proposes measuring separate judgments, pooling/discussion and correlated errors. User requested sync/pause; no group study is launched.
 
 Current completed run: [LH-C1/2/3](long-history-memory-v1/REPORT.md) uses a3064-word/60-record source, separately prepared questions and actual writer/reader contexts. All32finalanswers grounded; originals corroborate. Unqueried fidelity strengthening and cap violation retained. [Next design](long-history-memory-v1/NEXT_CONTACT.md) is proposed, not launched; MEM-04 remains partial.

@@ -12,6 +12,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Useful artifacts and recent contacts
 
+- [CP-N1 Claude phase/negation intake](evaluation/claude-phase-negation-intake-v1/REPORT.md): branch pinned,13original files archived,4scripts reproduce exact saved outputs. Real-coordinate modulus/angle control and scoped-mixture boundary checked separately. Oracle-conditioned stance is not end-to-end retrieval; relay overclaims/source-summary error reconciled. [Next drift/joint-readout contact](evaluation/claude-phase-negation-intake-v1/NEXT_CONTACT.md) proposed only.
+
 - [SF-C1](evaluation/status-fidelity-microcontact-v1/REPORT.md): final bounded status-fidelity contact,435-word source/156-word handoff;24grounded answers in2fresh reader contexts. Cued development pass, not general repair/transfer. [Rest checkpoint](sync/checkpoints/REST_AFTER_STATUS_FIDELITY.md) and [group-reasoning proposal](evaluation/status-fidelity-microcontact-v1/GROUP_REASONING_IDEA.md) saved. No group experiment or background work launched.
 
 - [LH-C1/2/3](evaluation/long-history-memory-v1/REPORT.md): authorized three-cycle run completed.3064-word/60-record source, separately prepared8questions,2writers/4fresh readers;32grounded finals, no rescue.182/180cap violation and an unqueried contamination strengthening preserved. [Checkpoint](sync/checkpoints/AFTER_LONG_HISTORY_MEMORY_V1.md) records confidence/next prospective strata and fidelity audit. MEM-04 remains partial; no automatic fourth cycle.
@@ -58,7 +60,7 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Resume and next move
 
-The user requested one final bounded contact, sync and pause. [SF-C1](evaluation/status-fidelity-microcontact-v1/REPORT.md) is complete; [current resting checkpoint](sync/checkpoints/REST_AFTER_STATUS_FIDELITY.md) records confidence and pending directions. Their group-reasoning curiosity is saved as an unexecuted proposal. No automatic continuation or background task is active.
+The user returned with a recent Claude phase-memory branch. [CP-N1](evaluation/claude-phase-negation-intake-v1/REPORT.md) completes pinned intake, unchanged-source reproduction and a small algebraic boundary check. The [previous resting checkpoint](sync/checkpoints/REST_AFTER_STATUS_FIDELITY.md) remains historical. Current next contact would score actual retrieved records under context/binding and calibration drift; no trained encoder, group experiment or background process has launched.
 
 Actual-reader source-access and writer-produced handoff contacts have now run in narrow authored scopes. Broader transfer, longer reuse, unknown authority and compression-loss recovery remain open. No causal budget/access benefit follows from the current tied/sufficient-handoff outcomes. The longer-history contact has now run with separately prepared fixed questions. Its predominantly closing-state sample was still sufficient in both handoffs. Next preferred design is prospectively stratified historical/status/criterion questions plus a separate retained-clause fidelity audit; that next protocol is not frozen.
 

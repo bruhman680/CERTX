@@ -1,0 +1,115 @@
+{
+  "scope": "exact algebra plus moderate random formula checks and oracle orthogonal context/binding examples, not end-to-end language retrieval",
+  "seed": 91387,
+  "random_pairs": 128,
+  "max_absolute_errors": {
+    "inner_product": 4.463041323674983e-15,
+    "modulus": 1.1102230246251565e-16,
+    "angle_wrapped": 4.440892098500626e-16
+  },
+  "unknown_codebook_phase": "pi/3, supplied not learned",
+  "global_rows": [
+    {
+      "status_codebook_supplied": "A",
+      "real_cosine": 1.0,
+      "modulus": 1.0,
+      "angle": 0.0
+    },
+    {
+      "status_codebook_supplied": "N",
+      "real_cosine": -1.0,
+      "modulus": 1.0,
+      "angle": 3.141592653589793
+    },
+    {
+      "status_codebook_supplied": "U",
+      "real_cosine": 0.5000000000000001,
+      "modulus": 1.0,
+      "angle": 1.0471975511965976
+    }
+  ],
+  "scoped_rows": [
+    {
+      "context_amplitude": 0.5,
+      "binding_amplitude": 1.0,
+      "statuses": {
+        "A": {
+          "real_cosine": 0.9999999999999999,
+          "imaginary_channel": 0.0,
+          "modulus": 1.0,
+          "angle": 0.0
+        },
+        "N": {
+          "real_cosine": -0.6,
+          "imaginary_channel": 0.0,
+          "modulus": 0.6000000000000001,
+          "angle": 3.141592653589793
+        },
+        "U": {
+          "real_cosine": 0.6000000000000001,
+          "imaginary_channel": 0.6928203230275508,
+          "modulus": 0.9165151389911681,
+          "angle": 0.8570719478501309
+        }
+      }
+    },
+    {
+      "context_amplitude": 1.0,
+      "binding_amplitude": 1.0,
+      "statuses": {
+        "A": {
+          "real_cosine": 0.9999999999999998,
+          "imaginary_channel": 0.0,
+          "modulus": 1.0,
+          "angle": 0.0
+        },
+        "N": {
+          "real_cosine": 0.0,
+          "imaginary_channel": 0.0,
+          "modulus": 0.0,
+          "angle": null
+        },
+        "U": {
+          "real_cosine": 0.75,
+          "imaginary_channel": 0.43301270189221924,
+          "modulus": 0.8660254037844387,
+          "angle": 0.5235987755982988
+        }
+      }
+    },
+    {
+      "context_amplitude": 2.0,
+      "binding_amplitude": 1.0,
+      "statuses": {
+        "A": {
+          "real_cosine": 0.9999999999999999,
+          "imaginary_channel": 0.0,
+          "modulus": 1.0,
+          "angle": 0.0
+        },
+        "N": {
+          "real_cosine": 0.6,
+          "imaginary_channel": 0.0,
+          "modulus": 0.6000000000000001,
+          "angle": 0.0
+        },
+        "U": {
+          "real_cosine": 0.8999999999999999,
+          "imaginary_channel": 0.1732050807568877,
+          "modulus": 0.916515138991168,
+          "angle": 0.19012560334646675
+        }
+      }
+    }
+  ],
+  "checks": {
+    "two_real_bilinear_channels_recover_complex_product": true,
+    "real_channels_recover_normalized_modulus": true,
+    "real_channels_recover_nonzero_angle": true,
+    "global_phase_retains_relevance_modulus": true,
+    "equal_scoped_context_binding_opposition_modulus_zero": true,
+    "zero_product_angle_not_assigned": true,
+    "context_dominant_A_N_angle_collision": true,
+    "binding_dominant_N_opposes_reference": true
+  }
+}

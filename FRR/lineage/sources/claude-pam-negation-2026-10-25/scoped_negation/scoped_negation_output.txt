@@ -1,0 +1,31 @@
+
+eta = 0.5  (query noise norm; unit-norm claim vectors)   P1 S vs cosR identical top-3 sets everywhere: False
+  encoder  scorer     T1 agree top-1   T4 status top-1   T2 evidence recall@3 (=precision@3)
+  E0       cosR        1.000            0.998             1.000
+  E0       S           1.000            0.998             1.000
+  E0       |cosR|      1.000            0.998             1.000
+  E1       cosR        1.000            1.000             0.333
+  E1       S           1.000            1.000             0.333
+  E1       |cosR|      0.500            0.500             0.667
+  E2       cosR        1.000            1.000             0.424
+  E2       S           1.000            1.000             0.411
+  E2       |cosR|      1.000            1.000             0.430
+  META (content cosine + explicit status label)    1.000            1.000             1.000
+
+eta = 1.0  (query noise norm; unit-norm claim vectors)   P1 S vs cosR identical top-3 sets everywhere: False
+  encoder  scorer     T1 agree top-1   T4 status top-1   T2 evidence recall@3 (=precision@3)
+  E0       cosR        0.890            0.930             1.000
+  E0       S           0.890            0.930             1.000
+  E0       |cosR|      0.890            0.930             1.000
+  E1       cosR        1.000            1.000             0.333
+  E1       S           1.000            1.000             0.333
+  E1       |cosR|      0.500            0.500             0.667
+  E2       cosR        1.000            1.000             0.393
+  E2       S           1.000            1.000             0.369
+  E2       |cosR|      1.000            1.000             0.407
+  META (content cosine + explicit status label)    1.000            1.000             1.000
+
+noise-free similarity of the query A(v=0,now) to records about the same valve (cosR):
+  E0: A-now=+1.00  N-now=+0.98  U-now=+0.98  A-yest=+0.20  N-yest=+0.20  U-yest=+0.17   | A-now of other valves (mean) = +0.23
+  E1: A-now=+1.00  N-now=-1.00  U-now=+0.00  A-yest=+0.20  N-yest=-0.20  U-yest=+0.00   | A-now of other valves (mean) = +0.23
+  E2: A-now=+1.00  N-now=-0.27  U-now=+0.37  A-yest=+0.20  N-yest=+0.34  U-yest=+0.27   | A-now of other valves (mean) = +0.23

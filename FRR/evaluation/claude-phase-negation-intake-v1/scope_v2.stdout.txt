@@ -1,0 +1,65 @@
+
+===== eps (stance-token weight in E0) = 0.2 =====
+
+eta=0.5   P1: S vs cosR top-3 set mismatches 0/1800
+  enc   T1 agree@1  T4 status@1  T2 evid cosR  T2 evid mod  T3 stance
+  E0    1.000       1.000        1.000         1.000       0.333
+  E1    1.000       1.000        0.333         1.000       1.000
+  E2    1.000       1.000        0.396         0.772       1.000
+  META   1.000       1.000        1.000        (label filter)
+
+eta=1.0   P1: S vs cosR top-3 set mismatches 0/1800
+  enc   T1 agree@1  T4 status@1  T2 evid cosR  T2 evid mod  T3 stance
+  E0    0.985       0.975        1.000         1.000       0.334
+  E1    1.000       1.000        0.333         1.000       1.000
+  E2    1.000       1.000        0.387         0.749       1.000
+  META   1.000       1.000        1.000        (label filter)
+
+eta=2.0   P1: S vs cosR top-3 set mismatches 0/1800
+  enc   T1 agree@1  T4 status@1  T2 evid cosR  T2 evid mod  T3 stance
+  E0    0.813       0.780        1.000         1.000       0.336
+  E1    1.000       1.000        0.334         1.000       1.000
+  E2    1.000       1.000        0.366         0.706       0.996
+  META   1.000       1.000        1.000        (label filter)
+
+eta=4.0   P1: S vs cosR top-3 set mismatches 0/1800
+  enc   T1 agree@1  T4 status@1  T2 evid cosR  T2 evid mod  T3 stance
+  E0    0.493       0.515        0.843         0.769       0.338
+  E1    0.855       0.838        0.318         0.800       0.998
+  E2    0.807       0.795        0.330         0.454       0.935
+  META   0.883       0.883        0.883        (label filter)
+
+===== eps (stance-token weight in E0) = 0.5 =====
+
+eta=0.5   P1: S vs cosR top-3 set mismatches 0/1800
+  enc   T1 agree@1  T4 status@1  T2 evid cosR  T2 evid mod  T3 stance
+  E0    1.000       1.000        1.000         1.000       0.347
+  E1    1.000       1.000        0.333         1.000       1.000
+  E2    1.000       1.000        0.391         0.776       1.000
+  META   1.000       1.000        1.000        (label filter)
+
+eta=1.0   P1: S vs cosR top-3 set mismatches 0/1800
+  enc   T1 agree@1  T4 status@1  T2 evid cosR  T2 evid mod  T3 stance
+  E0    1.000       1.000        1.000         0.999       0.344
+  E1    1.000       1.000        0.333         1.000       1.000
+  E2    1.000       1.000        0.377         0.758       1.000
+  META   1.000       1.000        1.000        (label filter)
+
+eta=2.0   P1: S vs cosR top-3 set mismatches 0/1800
+  enc   T1 agree@1  T4 status@1  T2 evid cosR  T2 evid mod  T3 stance
+  E0    0.995       0.993        0.929         0.926       0.331
+  E1    1.000       1.000        0.333         1.000       1.000
+  E2    1.000       1.000        0.364         0.707       0.996
+  META   1.000       1.000        1.000        (label filter)
+
+eta=4.0   P1: S vs cosR top-3 set mismatches 0/1800
+  enc   T1 agree@1  T4 status@1  T2 evid cosR  T2 evid mod  T3 stance
+  E0    0.705       0.682        0.592         0.531       0.333
+  E1    0.842       0.848        0.322         0.820       1.000
+  E2    0.778       0.813        0.314         0.451       0.922
+  META   0.877       0.877        0.877        (label filter)
+
+noise-free cosR / mod of query A(v=0,now) vs same-valve records (E0 eps=.2, E1, E2):
+  E0: Anow=+1.00/1.00  Nnow=+0.95/0.95  Unow=+0.95/0.95  Ayst=+0.10/0.10  Nyst=+0.09/0.09  Uyst=+0.06/0.06
+  E1: Anow=+1.00/1.00  Nnow=-1.00/1.00  Unow=+0.00/1.00  Ayst=+0.06/0.06  Nyst=-0.06/0.06  Uyst=+0.00/0.06
+  E2: Anow=+1.00/1.00  Nnow=-0.39/0.39  Unow=+0.29/0.74  Ayst=+0.06/0.06  Nyst=+0.30/0.30  Uyst=+0.18/0.21
