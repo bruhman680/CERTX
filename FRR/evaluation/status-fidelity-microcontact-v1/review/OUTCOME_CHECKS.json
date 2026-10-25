@@ -1,0 +1,389 @@
+{
+  "verdict": "pass_scoped_development_contact",
+  "review_scope": "manualsemanticreviewofall24answers plus source/handofffidelity and exactfrozen/template/delivery checks; notblind externalreplication",
+  "checks": {
+    "frozen:SOURCE.txt": true,
+    "frozen:QUERIES.json": true,
+    "frozen:GOLD.json": true,
+    "frozen:PROTOCOL.md": true,
+    "frozen:INSTRUCTIONS.json": true,
+    "frozen:packets/WRITER.txt": true,
+    "frozen:review/PREFLIGHT.md": true,
+    "frozen:review/PREFLIGHT_CHECKS.json": true,
+    "writer_sha": true,
+    "writer_words": true,
+    "writer_cap_met": true,
+    "writer_packet_template": true,
+    "reader_template:SF01": true,
+    "reader_sha:SF01": true,
+    "exact_handoff:SF01": true,
+    "exact_source_condition:SF01": true,
+    "response_ids:SF01": true,
+    "goldmatch:SF01:Q1": true,
+    "goldmatch:SF01:Q2": true,
+    "goldmatch:SF01:Q3": true,
+    "goldmatch:SF01:Q4": true,
+    "goldmatch:SF01:Q5": true,
+    "goldmatch:SF01:Q6": true,
+    "goldmatch:SF01:Q7": true,
+    "goldmatch:SF01:Q8": true,
+    "goldmatch:SF01:Q9": true,
+    "goldmatch:SF01:Q10": true,
+    "goldmatch:SF01:Q11": true,
+    "goldmatch:SF01:Q12": true,
+    "reader_template:SF02": true,
+    "reader_sha:SF02": true,
+    "exact_handoff:SF02": true,
+    "exact_source_condition:SF02": true,
+    "response_ids:SF02": true,
+    "goldmatch:SF02:Q1": true,
+    "goldmatch:SF02:Q2": true,
+    "goldmatch:SF02:Q3": true,
+    "goldmatch:SF02:Q4": true,
+    "goldmatch:SF02:Q5": true,
+    "goldmatch:SF02:Q6": true,
+    "goldmatch:SF02:Q7": true,
+    "goldmatch:SF02:Q8": true,
+    "goldmatch:SF02:Q9": true,
+    "goldmatch:SF02:Q10": true,
+    "goldmatch:SF02:Q11": true,
+    "goldmatch:SF02:Q12": true
+  },
+  "all_mechanical_checks_pass": true,
+  "rows": [
+    {
+      "reader": "SF01",
+      "question": "Q1",
+      "answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Explicit audit non-assertion/unread archive leaves actual reboot unknown.",
+      "actual_basis": "The audit makes no claim either way, and no usable evidence establishes whether a reboot occurred.",
+      "actual_evidence": [
+        "Audit explicitly makes no claim either way about rebooting overnight June 2.",
+        "Watchdog archive unreadable; no other evidence."
+      ]
+    },
+    {
+      "reader": "SF01",
+      "question": "Q2",
+      "answer": "no",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Audit makes no claim eitherway, therefore no positive assertionofno reboot.",
+      "actual_basis": "The audit explicitly declines to assert either reboot outcome.",
+      "actual_evidence": [
+        "Audit explicitly makes no claim either way about rebooting overnight June 2."
+      ]
+    },
+    {
+      "reader": "SF01",
+      "question": "Q3",
+      "answer": "no",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Signed report explicitly negative for visiblefrontdiscoloration; reportcontentquestion.",
+      "actual_basis": "The signed inspection reports no visible discoloration on the front surface.",
+      "actual_evidence": [
+        "Signed image inspection reports no visible front-surface discoloration."
+      ]
+    },
+    {
+      "reader": "SF01",
+      "question": "Q4",
+      "answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Rear/interioruninspected, no claimofinternalcorrosionabsence.",
+      "actual_basis": "The interior was not inspected, and internal corrosion was neither established nor excluded.",
+      "actual_evidence": [
+        "Rear/interior uninspected; internal corrosion neither established nor ruled out."
+      ]
+    },
+    {
+      "reader": "SF01",
+      "question": "Q5",
+      "answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Possibleactualvoltageinterval straddles acceptanceboundaries.",
+      "actual_basis": "Possible actual voltages include values both inside and outside the acceptance interval.",
+      "actual_evidence": [
+        "Actual voltage unknown within inclusive 11.98–12.02 V, all values possible.",
+        "Acceptance requires actual 11.99–12.01 V inclusive; acceptance unresolved."
+      ]
+    },
+    {
+      "reader": "SF01",
+      "question": "Q6",
+      "answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Knowncentral12.00volts independently of actualvoltageuncertainty.",
+      "actual_basis": "The handoff gives the central instrument reading as exactly 12.00 V.",
+      "actual_evidence": [
+        "Central reading exactly 12.00 V."
+      ]
+    },
+    {
+      "reader": "SF01",
+      "question": "Q7",
+      "answer": "no",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "09:30precedes10:00permission, priorprohibitionapplies.",
+      "actual_basis": "Entry before 10:00 was prohibited; the superseding revision permits entry only from 10:00.",
+      "actual_evidence": [
+        "Revision 1 prohibits entry before 10:00; superseding revision 2 permits entry from 10:00 that day."
+      ]
+    },
+    {
+      "reader": "SF01",
+      "question": "Q8",
+      "answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "10:15fallsafter10:00effectivepermission.",
+      "actual_basis": "The superseding revision permits entry from 10:00, covering 10:15.",
+      "actual_evidence": [
+        "Superseding revision 2 permits entry from 10:00 that day.",
+        "No later revision."
+      ]
+    },
+    {
+      "reader": "SF01",
+      "question": "Q9",
+      "answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Completecountzero and no subsequentmovement resolveclosecount.",
+      "actual_basis": "The exact zero count remained unchanged through 12:00.",
+      "actual_evidence": [
+        "Exact count zero spare fuses June 3 11:00, unchanged through 12:00."
+      ]
+    },
+    {
+      "reader": "SF01",
+      "question": "Q10",
+      "answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Separateencryptedfile count/coverage unknown; drawerzero isnotdecodedcount.",
+      "actual_basis": "Snapshot E's contents, coverage, and decoded count are unknown.",
+      "actual_evidence": [
+        "Separate encrypted snapshot E has unknown contents, coverage and decoded count, including whether zero."
+      ]
+    },
+    {
+      "reader": "SF01",
+      "question": "Q11",
+      "answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Equalauthorityconflict unresolved withoutsupersession/retest.",
+      "actual_basis": "Equally authorized reports conflict, and neither supersedes the other.",
+      "actual_evidence": [
+        "Equally authorized, non-superseding reports conflict; running state unresolved."
+      ]
+    },
+    {
+      "reader": "SF01",
+      "question": "Q12",
+      "answer": "no",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Operatingprohibitionfrom11:05appliesat11:10 independentofearliercondition.",
+      "actual_basis": "The prohibition expressly covers 11:10.",
+      "actual_evidence": [
+        "Operation prohibited from 11:05, including 11:10."
+      ]
+    },
+    {
+      "reader": "SF02",
+      "question": "Q1",
+      "answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Explicit audit non-assertion/unread archive leaves actual reboot unknown.",
+      "actual_basis": "The audit makes no claim either way, the watchdog archive is unreadable, and no other reboot evidence is available.",
+      "actual_evidence": [
+        "P1"
+      ]
+    },
+    {
+      "reader": "SF02",
+      "question": "Q2",
+      "answer": "no",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Audit makes no claim eitherway, therefore no positive assertionofno reboot.",
+      "actual_basis": "The audit explicitly makes no claim either way; it does not positively assert that no reboot occurred.",
+      "actual_evidence": [
+        "P1"
+      ]
+    },
+    {
+      "reader": "SF02",
+      "question": "Q3",
+      "answer": "no",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Signed report explicitly negative for visiblefrontdiscoloration; reportcontentquestion.",
+      "actual_basis": "The signed inspection reports no visible discoloration on the front surface in the image.",
+      "actual_evidence": [
+        "P2"
+      ]
+    },
+    {
+      "reader": "SF02",
+      "question": "Q4",
+      "answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Rear/interioruninspected, no claimofinternalcorrosionabsence.",
+      "actual_basis": "The interior was not inspected, and internal corrosion is neither established nor ruled out.",
+      "actual_evidence": [
+        "P2"
+      ]
+    },
+    {
+      "reader": "SF02",
+      "question": "Q5",
+      "answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Possibleactualvoltageinterval straddles acceptanceboundaries.",
+      "actual_basis": "Possible actual voltages span 11.98–12.02 volts, including values both inside and outside the acceptance interval.",
+      "actual_evidence": [
+        "P3"
+      ]
+    },
+    {
+      "reader": "SF02",
+      "question": "Q6",
+      "answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Knowncentral12.00volts independently of actualvoltageuncertainty.",
+      "actual_basis": "The calibrated instrument's central reading is stipulated to be exactly 12.00 volts.",
+      "actual_evidence": [
+        "P3"
+      ]
+    },
+    {
+      "reader": "SF02",
+      "question": "Q7",
+      "answer": "no",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "09:30precedes10:00permission, priorprohibitionapplies.",
+      "actual_basis": "Before 10:00, revision 1's prohibition remains applicable.",
+      "actual_evidence": [
+        "P4"
+      ]
+    },
+    {
+      "reader": "SF02",
+      "question": "Q8",
+      "answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "10:15fallsafter10:00effectivepermission.",
+      "actual_basis": "Superseding revision 2 permits entry from 10:00 onward that day.",
+      "actual_evidence": [
+        "P4"
+      ]
+    },
+    {
+      "reader": "SF02",
+      "question": "Q9",
+      "answer": "yes",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Completecountzero and no subsequentmovement resolveclosecount.",
+      "actual_basis": "The exact physical count found zero spare fuses at 11:00, with no later drawer movements through 12:00.",
+      "actual_evidence": [
+        "P5"
+      ]
+    },
+    {
+      "reader": "SF02",
+      "question": "Q10",
+      "answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Separateencryptedfile count/coverage unknown; drawerzero isnotdecodedcount.",
+      "actual_basis": "Snapshot E cannot be decoded; its contents, coverage, and decoded count are unknown.",
+      "actual_evidence": [
+        "P5"
+      ]
+    },
+    {
+      "reader": "SF02",
+      "question": "Q11",
+      "answer": "unresolved",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "warranted_unresolved",
+      "semantic_note": "Equalauthorityconflict unresolved withoutsupersession/retest.",
+      "actual_basis": "Equally authorized reports conflict, and neither supersession, priority, nor a retest resolves them.",
+      "actual_evidence": [
+        "P6"
+      ]
+    },
+    {
+      "reader": "SF02",
+      "question": "Q12",
+      "answer": "no",
+      "full_source_match": true,
+      "packet_warrant": true,
+      "category": "supported_conclusive",
+      "semantic_note": "Operatingprohibitionfrom11:05appliesat11:10 independentofearliercondition.",
+      "actual_basis": "The authorized prohibition on operating Pump M begins at 11:05 and is in force at 11:10.",
+      "actual_evidence": [
+        "P6"
+      ]
+    }
+  ],
+  "final_categories": {
+    "warranted_unresolved": 10,
+    "supported_conclusive": 14
+  },
+  "handoff_fidelity": {
+    "words": 156,
+    "cap": 160,
+    "cap_met": true,
+    "unsupported_strengthenings_found": [],
+    "task_bases_retained": 12,
+    "note": "P4summarizes operativepermissiontimeline; doesnotreproducefulloriginalrevision1morningwording, but no false applicability claim."
+  },
+  "interpretation": "Bothcuedconditionssucceed. Sourcealreadydistinguishesstatuses andknownmotifsguidefixture; no repairedpolicy/generalization/durablehabit claim.",
+  "limits": [
+    "Coordinatorauthoreddevelopmentmaterials, one writer/tworeaders.",
+    "24answersclustered2readercontexts, 3participantturns total.",
+    "Originaladditionis informationintervention; nocausalefficacyestimate.",
+    "Sharedworkspace isolationinstructional; no attention/securityguarantee."
+  ]
+}

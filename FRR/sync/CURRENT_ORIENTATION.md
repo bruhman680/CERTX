@@ -2,7 +2,7 @@
 
 Scope: `codex/frr-progress-2026-10-07`; the latest three-cycle run is linked below. Earlier source contacts, experiments and optional guidance retain their own commit anchors. This is current navigation, not a complete history or a substitute for the user's latest direction.
 
-The user authorized another three-cycle run after the derived-control publication. [LH-C1/2/3](../evaluation/long-history-memory-v1/REPORT.md) is complete: longer source, separate question preparation, actual writers/readers, tied grounded task outcomes and an unqueried fidelity issue. [Current checkpoint](checkpoints/AFTER_LONG_HISTORY_MEMORY_V1.md) records next directions/confidence. No fourth cycle or background task is active; readable-code/history work remains deferred.
+The user requested one last contact and sync before a usage pause. [SF-C1](../evaluation/status-fidelity-microcontact-v1/REPORT.md) is complete: explicit status distinctions survived a156word handoff and24answers are grounded. [Current resting checkpoint](checkpoints/REST_AFTER_STATUS_FIDELITY.md) records limits and the unexecuted group-reasoning proposal. Earlier LH-C1/2/3 and the public derived-control report retain their own history. No background task is running.
 
 Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map](../evaluation/CURRENT_RESEARCH_MAP.md) and the [queue](../evaluation/research-queue/README.md). QUEUE.json remains the status source: 35 entries, 30 unfinished, six partial families. A saved queue is not an automatic scheduler.
 
