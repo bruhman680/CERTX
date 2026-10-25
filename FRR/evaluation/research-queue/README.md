@@ -8,7 +8,7 @@ This is a saved dependency-aware plan, not a running scheduler. It queues every 
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
-Current completed run: [UB-C1/2/3](../upstream-bundle-three-cycle-v1/REPORT.md) supplies the authorized upstream/joint-readout three cycles with bounded primary-source scout and separate audits. Evidence omission, calibration policy/collision and drift are distinguished; supplied projection helps conditionally. [Next proposal](../upstream-bundle-three-cycle-v1/NEXT_CONTACT.md) tests coordinate/projector transport. No fourth cycle or learned/group experiment is active; queue status unchanged.
+Current rest: user requested a light sync and wind-down after [UB-C1/2/3](../upstream-bundle-three-cycle-v1/REPORT.md). [Checkpoint](../../sync/checkpoints/REST_AFTER_UPSTREAM_BUNDLE_2026-10-25.md) records the proposed coordinate/projector control, memory-fidelity strata and group-reasoning idea. No fourth cycle, scout, training, participant study or scheduler is active. Queue counts/statuses remain unchanged.
 
 ## Nearest work
 

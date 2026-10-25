@@ -2,11 +2,16 @@
 
 Scope: `codex/frr-progress-2026-10-07`; the latest three-cycle run is linked below. Earlier source contacts, experiments and optional guidance retain their own commit anchors. This is current navigation, not a complete history or a substitute for the user's latest direction.
 
-The user authorized3cycles plus small source scouts to probe upstream representation/readout assumptions. [UB-C1/2/3](../evaluation/upstream-bundle-three-cycle-v1/REPORT.md) is complete: joint retrieval/status under ratio/noise shift, source-method weave and separate numerical audits. [Current checkpoint](checkpoints/AFTER_UPSTREAM_BUNDLE_THREE_CYCLES.md) records next proposals and confidence. Known layout/oracle labels are supplied, not learned; no group/training/background run is active.
+The user requested a light sync and wind-down after [UB-C1/2/3](../evaluation/upstream-bundle-three-cycle-v1/REPORT.md). [Current resting checkpoint](checkpoints/REST_AFTER_UPSTREAM_BUNDLE_2026-10-25.md) records saved work, next directions and confidence. No new experiment/scout/training or background task is active. Conversational ideas are not experimental findings.
 
 Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map](../evaluation/CURRENT_RESEARCH_MAP.md) and the [queue](../evaluation/research-queue/README.md). QUEUE.json remains the status source: 35 entries, 30 unfinished, six partial families. A saved queue is not an automatic scheduler.
 
 ## Recent contacts
+
+- [UB-C1/2/3](../evaluation/upstream-bundle-three-cycle-v1/REPORT.md): actual joint retrieval/status under ratio/noise shift, bounded four-source weave and separate code audits. Known structure/oracle labels remain assumptions; no learned or agent-memory benefit claim.
+- [CP-N1](../evaluation/claude-phase-negation-intake-v1/REPORT.md): Claude branch pinned,13original files preserved,4scripts exactly reproduced and scoped real-channel boundary checked.
+- [SF-C1](../evaluation/status-fidelity-microcontact-v1/REPORT.md): explicit status-fidelity development pass,24grounded answers in2contexts; no general repair claim.
+- [LH-C1/2/3](../evaluation/long-history-memory-v1/REPORT.md): longer history, separate questions and actual handoffs;32grounded answers alongside an unqueried fidelity issue and cap violation.
 
 - [Writer-handoff three-cycle run](../evaluation/writer-handoff-three-cycle-v1/REPORT.md): actual question-blind handoffs and fresh readers; cap violation, prelaunch evaluator repair, grounded outcomes and no-change retrieval result preserved. Three authorized cycles complete, no automatic fourth.
 

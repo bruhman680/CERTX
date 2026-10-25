@@ -1,5 +1,7 @@
 # Current research map: continuity, distinctions and their readers
 
+Current resting state: [25October sync checkpoint](../sync/checkpoints/REST_AFTER_UPSTREAM_BUNDLE_2026-10-25.md) preserves completed UB-C1/2/3 and proposed structural, memory-fidelity and group-reasoning directions. No new experiments start in the sync; earlier run/source statements retain their historical scope.
+
 Current completed three-cycle contact: [UB-C1/2/3](upstream-bundle-three-cycle-v1/REPORT.md) separates supplied task/encoding/layout, retrieval and fitted-decoder failures. Joint retrieval/status is measured on actual top3, with oracle conditional diagnostics kept separate. Four primary readings and independent coding audits support scoped interpretation, not learned language or agent-memory benefit. [Next structural-control proposal](upstream-bundle-three-cycle-v1/NEXT_CONTACT.md) unexecuted.
 
 Latest source intake: [CP-N1](claude-phase-negation-intake-v1/REPORT.md) reads the Claude phase/negation branch, reproduces all4provided scripts exactly and derives a real-channel/scoped-mixture boundary control. Oracle-conditioned stance and end-to-end evidence/status performance are different measurements. [Next contact](claude-phase-negation-intake-v1/NEXT_CONTACT.md) is proposed; trained encoders and agent-group benefit remain untested.
