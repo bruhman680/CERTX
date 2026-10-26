@@ -28,3 +28,10 @@ Task-shift checkpoint: when the question or criterion changes, check whether the
 [Phase-memory contact](../evaluation/resonance-memory-contact-v1/REPORT.md) adds an optional representation check: compare methods with the same available information before attributing a result to the score. Keep source/version/status and missingness available beside aggregates; cancellation is not proof that no conflicting records exist. Retrieve relevant disagreement when the task needs it. The formula checks do not establish a natural-language encoding or behavioral benefit.
 
 [Longer-history contact](../evaluation/long-history-memory-v1/REPORT.md) supplies a concrete fidelity limit: all tested answers can be grounded while an unqueried handoff clause strengthens “does not assert P” into an apparent “not-P.” Preserve that difference when consequential; task sufficiency does not certify every retained assertion. The known example is development material, not an unseen confirmation case.
+
+
+## Transfer the warrant, not just the conclusion
+
+For a consequential resumed claim, retain or link the task criterion, current evidence version, key supplied assumptions, known missing evidence and reopening condition. Distinguish unchanged evidence, withdrawn support, proposed repair and verified replacement; a locator alone does not show the evidence was loaded or applied. Where the intended task changes, check whether the old guarantee still addresses it: normalized ranking can survive a raw-value error, and a structural check can pass without the required task accuracy. [PW](../evaluation/probe-witness-calibration-v1/REPORT.md) and [RB](../evaluation/reference-bias-contact-v1/REPORT.md) demonstrate these distinctions in authored numerical models.
+
+A fresh agent need not inherit every historical document or a mandatory FRR baseline. Give it the smallest task-sufficient record with recoverable originals and check any consequential omitted distinction on resumption. The [continuation contract](../examples/continuation-contract.md) is an optional compact shape; following it has not been shown to improve long-term retention or reasoning.

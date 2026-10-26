@@ -4,6 +4,8 @@ The user's current goal is useful reasoning and behavioral habits for learning, 
 
 ## Current practice
 
+[Harness contract refinement](evaluation/harness-contract-refinement-v1/REPORT.md) makes task-specific acceptance, transfer of warrants and information-aware specialization explicit, with an optional [continuation contract](examples/continuation-contract.md). Guidance only; role triggers, executable tools/core/schema/queue unchanged.
+
 [Post-RB refinement](evaluation/reference-bias-practice-refinement-v1/REPORT.md) adds scoped reference-authority/task-guarantee and repair-status distinctions to optional verification, error-lineage and scouting guidance. Originals preserved; no executable/core/schema/queue or historical verdict changes. Guidance is usable; actual behavioral benefit remains untested.
 
 Use a small orientation pulse when consequential: what changed; what distinction could change our next useful action; what contact can distinguish plausible alternatives; what should we do after it? Existing records can supply this—no new form is required. Keep exploratory noticings available, and stop checking when the relevant decision is already warranted.
