@@ -1,0 +1,7 @@
+# Cycle 3: independent checks and synthesis
+
+Exhaustive ledger reconstruction passes all23040records/720aggregates/7680pairlinks/4608predecessorcomparisons/15360repeatedcontrols. Initial exact-float aggregate audit failure preserved and repaired with declared1e-10numeric comparison; no experiment change. Fresh saved-array replay fixes1440records/69120candidateproducts, all60projectors/360centres;23621checks pass. Initial schema-field KeyError is recorded and prospective code retained; final checks expanded against identical saved outputs.73within-set order differences <=7.772e-16 preserved; no top3set discrepancy.
+
+Intended target, population recovery, contrast validation and actual end-to-end task performance remain distinct. Aligned target/validation exactness does not repair fixed binding discrepancy or downstream failures. Strong independent nuisance shifts population target toward context; larger prefixes are descriptive here, not a universal learning curve. Retrieved evidence and conditional status success cannot substitute for joint completion.
+
+Small optional verification guidance clarification links these concrete witnesses without changing executable checker, core/runtime/schema or queue status. Previous module bytes preserved. Current navigation/checkpoint records completed scope and proposed pair-construction/independent-criterion repair; broader memory fidelity and group-reasoning tasks remain open. End after three-cycle deposition; no automatic fourth/background work.

@@ -1,0 +1,33 @@
+{
+  "status": "APPROVED_FOR_ONE_MAIN_RUN",
+  "scope": "static source review only; no generator, fitting, scoring, or main execution by reviewer",
+  "sha256": {
+    "experiment.py": "daee55a86fa3cd9f8e237541c2ee3bb734123c93842dd4f8a161159513d4c2cc",
+    "PROTOCOL.md": "2bd12cb3c960ce6c786283338e4577285ef26fbdb98af319964ca4fbf0faac34",
+    "SCHEMA.md": "df2a0ed6aec8fdde704d58e282f6040ba4c9b8e1c8c3ee713e71eff9bbbeca55",
+    "IMPLEMENTATION.md": "584518ca1b2a8956daceb15de3ed08844933d63f6c2fcf1a7d9c9fe5e245278e"
+  },
+  "checks": {
+    "source_syntax_parse": true,
+    "no_predecessor_implementation_import": true,
+    "source_archive_and_used_arrays_verified_before_fit": true,
+    "raw_training_saved_before_svd": true,
+    "three_independent_streams_and_nested_fit_validation_split": true,
+    "unnormalized_pairs_and_half_difference_correct": true,
+    "left_svd_top12_uncentered": true,
+    "population_target_diagnostic_only": true,
+    "row_rotation_and_projection_correct": true,
+    "all_centres_required_and_zero_products_guarded": true,
+    "labels_and_gold_scope_enter_only_metrics": true,
+    "saved_all_candidate_readouts": true,
+    "nonempty_output_guard_and_durable_checkpoints": true,
+    "source_controls_and_repetition_comparisons_saved": true,
+    "fixed_counts_and_query_reuse": true
+  },
+  "blocking_findings": [],
+  "limitations": [
+    "Root must freeze source/protocol/reviewer artifacts before main execution.",
+    "Independent replay remains necessary to establish numeric implementation outcomes.",
+    "Expected aligned decoder degeneracies are outcomes to retain, not grounds for tuning."
+  ]
+}

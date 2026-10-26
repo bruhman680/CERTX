@@ -67,3 +67,8 @@ The [second garden run](../evaluation/garden-three-cycle-v2/REPORT.md) sharpens 
 
 
 [UN-C1](../evaluation/upstream-numerics-v1/REPORT.md) adds a numerical boundary: distinguish intended equations, their finite-precision realization, and the information preserved in stored inputs. When consequential, use a higher-precision reference, stationary/equality cases and appropriate invariants before attributing an effect to dynamics. Representation loss can precede even a stable computation; conservation checks alone are not a full accuracy certificate. No historical result or training implementation is automatically revised by this source contact.
+
+
+## Fit, intended structure and task outcome
+
+[SA-C1/2/3](../evaluation/structural-access-three-cycle-v1/REPORT.md) distinguishes intact information from a readout that did not move with its representation. [PC-C1/2/3](../evaluation/paired-context-mismatch-v1/REPORT.md) adds a shared-assumption witness: a fitted subspace can preserve separate validation contrasts nearly exactly while missing the intended factor and failing downstream tasks. Fresh inputs from the same mechanism do not by themselves test that mechanism’s consequential assumptions. Where it matters, keep fit to observed data, recovery of the intended quantity and actual task acceptance separate; use a contrasting construction or independent criterion when the distinction can change the decision. These are optional checks motivated by synthetic examples, not demonstrated improvement in agent reasoning or a universal demand for additional validation.

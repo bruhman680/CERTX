@@ -1,6 +1,8 @@
 # Current research map: continuity, distinctions and their readers
 
-Current completed contact: [SA-C1/2/3](structural-access-three-cycle-v1/REPORT.md), [checkpoint](../sync/checkpoints/AFTER_STRUCTURAL_ACCESS_THREE_CYCLES.md). Coordinate/projector transport distinguishes intact information from mismatched access; oracle-labeled paired estimation distinguishes structural recovery from actual task success. All-ledger and fixed raw-array audits pass within supplied synthetic scope. [Next paired-supervision assumption contact](structural-access-three-cycle-v1/NEXT_CONTACT.md) proposed only; broader memory-fidelity and group-reasoning work remain open. No automatic fourth cycle or background work. Earlier navigation below describes its own historical episodes.
+Current completed contact: [PC-C1/2/3](paired-context-mismatch-v1/REPORT.md), [checkpoint](../sync/checkpoints/AFTER_PAIRED_CONTEXT_MISMATCH.md). Exact pairing is now challenged: population recovery, held-out contrast fidelity, intended binding and actual task outcomes can differ. One reused-task numerical run, original algebra and communicating independent audits; no general semantic/agent benefit. [Next pair-intervention/independent-criterion repair](paired-context-mismatch-v1/NEXT_CONTACT.md) proposed only. Optional verification wording clarified with old bytes preserved. No automatic fourth cycle/background work.
+
+Predecessor [SA-C1/2/3](structural-access-three-cycle-v1/REPORT.md) completed coordinate/projector transport and supervised subspace estimation. Its proposed mismatch follow-up is now executed in PC; original proposal/history preserved.
 
 ## Earlier contacts
 

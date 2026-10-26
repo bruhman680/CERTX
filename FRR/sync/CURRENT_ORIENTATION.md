@@ -2,11 +2,13 @@
 
 Scope: `codex/frr-progress-2026-10-07`; the latest three-cycle run is linked below. Earlier source contacts, experiments and optional guidance retain their own commit anchors. This is current navigation, not a complete history or a substitute for the user's latest direction.
 
-The user resumed and authorized communicating collaborators. [SA-C1/2/3](../evaluation/structural-access-three-cycle-v1/REPORT.md) completes a bounded three-cycle structural-access contact. [Current checkpoint](checkpoints/AFTER_STRUCTURAL_ACCESS_THREE_CYCLES.md) records confidence and proposed supervision-mismatch/memory-fidelity directions. No background task or automatic fourth cycle remains; the prior rest checkpoint is historical.
+User authorized next cycles. [PC-C1/2/3](../evaluation/paired-context-mismatch-v1/REPORT.md) completes the imperfect-pairing follow-up. [Current checkpoint](checkpoints/AFTER_PAIRED_CONTEXT_MISMATCH.md) separates population/validation fit from intended structure and task success, with audit-only repairs preserved. Optional verification guidance clarified; no core/status promotion. No background task or automatic fourth cycle remains; previous checkpoints are historical.
 
 Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map](../evaluation/CURRENT_RESEARCH_MAP.md) and the [queue](../evaluation/research-queue/README.md). QUEUE.json remains the status source: 35 entries, 30 unfinished, six partial families. A saved queue is not an automatic scheduler.
 
 ## Recent contacts
+
+- [PC-C1/2/3](../evaluation/paired-context-mismatch-v1/REPORT.md): independently drawn contrast validation can preserve a shared flawed mechanism. Exact graph recovery and some downstream failures persist across training prefixes; source tasks reused, population target and intended binding separate. All-ledger/fixed-array audits pass after disclosed auditor repairs.
 
 - [SA-C1/2/3](../evaluation/structural-access-three-cycle-v1/REPORT.md): correctly transported readout retains products/task outcomes under invertible Q; naive masks can fail. Paired supervised estimation separates partial structure, full-projector recovery and task success; not learned semantics. All-ledger and fixed saved-array reconstruction pass, with source-inspection limits and last-bit order differences preserved.
 
