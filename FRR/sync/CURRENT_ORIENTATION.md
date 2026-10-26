@@ -1,5 +1,7 @@
 # Current FRR orientation
 
+Latest completed contact: [AR-C1/2/3](../evaluation/source-ancestry-reader-v1/REPORT.md),6fresh readers/12publicturns. All six decisions and source accounts fit frozen supplied evidence; independent scoring/audit agree. Strong cues, no FRR treatment or population benefit. [Checkpoint](checkpoints/AFTER_SOURCE_ANCESTRY_READERS_2026-10-26.md). Earlier current/rest statements below are historical; next proposal unlaunched.
+
 Current completed contact: [RB-C1/2/3](../evaluation/reference-bias-contact-v1/REPORT.md),144 exact main rows and8 supplemental diagnostics, independent replay passed. User resumed; prior rest below is historical. Conditional reference authority and raw-error guarantees separated. [Checkpoint](checkpoints/AFTER_REFERENCE_BIAS_2026-10-26.md). Next actual-reader source ancestry contact proposed only; no background work.
 
 Scope: `codex/frr-progress-2026-10-07`; the latest three-cycle run is linked below. Earlier source contacts, experiments and optional guidance retain their own commit anchors. This is current navigation, not a complete history or a substitute for the user's latest direction.

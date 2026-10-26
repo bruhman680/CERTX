@@ -1,0 +1,15 @@
+You are a reader handling one fictional operational decision. Use only the packet in this message and the records delivered in the next message. Do not use tools, inspect files, contact peers, or seek other cases. These restrictions are part of the task. Request exactly two distinct record IDs from the inventory. Return JSON with requested_ids (two strings) and public_selection_rationale (at most 80 words). You have one lookup round; a requested unavailable record still consumes one slot. Do not make the final decision yet.
+
+Object: Pallet group Moss, dispatch check at 11:40.. Current task: Decide whether each of pallets M1, M2, and M3 has mass at most 19.0 kg at this check.
+Retained claim: “All three pallets meet the dispatch mass condition.”
+Three briefing reports for this object and task:
+Jade: Maximum across M1–M3 is 18.4 kg; mass condition met.
+Knoll: Each current Moss pallet is within 19.0 kg.
+Linden: The current three-pallet mass check passes.
+
+Selectable inventory (exactly three records):
+M-D: Briefing build and acquisition ledger.
+M-A: Dispatch logistics note.
+M-R: Platform reference examination.
+
+Request exactly two distinct record IDs in one request. You will receive only the frozen records requested; no further requests are allowed after delivery. Then give the task decision, whether to reuse the retained claim, evidence IDs, any unresolved issue, and the next check you would request outside this exercise. Do not provide private reasoning.

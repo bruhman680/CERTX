@@ -1,6 +1,6 @@
 # Current research map: continuity, distinctions and their readers
 
-Current completed state: [RB-C1/2/3](reference-bias-contact-v1/REPORT.md), exact role-bias/reference and raw-error contact with independent all-row audit. [Checkpoint](../sync/checkpoints/AFTER_REFERENCE_BIAS_2026-10-26.md). User resumed after [prior rest](../sync/checkpoints/REST_AFTER_PROBE_WITNESS_2026-10-26.md); previous PW and CR historical outcomes unchanged. Next actual-reader ancestry/authority contact proposed, not launched. No semantic efficacy, queue/core promotion or background cycle.
+Current completed state: [AR-C1/2/3](source-ancestry-reader-v1/REPORT.md),6fresh task-only readers/12turns, all action/reuse/bound/source accounts fit frozen evidence. Independent outcome review agrees; no FRR comparison or behavioral gain claim. Strongly cued development ceiling; [next less-explanatory evidence-selection proposal](source-ancestry-reader-v1/NEXT_CONTACT.md) unexecuted. [Checkpoint](../sync/checkpoints/AFTER_SOURCE_ANCESTRY_READERS_2026-10-26.md). Historical RB/PW/CR results preserved; no background work or queue/core promotion.
 
 Predecessor [SA-C1/2/3](structural-access-three-cycle-v1/REPORT.md) completed coordinate/projector transport and supervised subspace estimation. Its proposed mismatch follow-up is now executed in PC; original proposal/history preserved.
 

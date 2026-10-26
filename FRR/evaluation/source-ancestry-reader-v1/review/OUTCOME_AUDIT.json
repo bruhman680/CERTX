@@ -1,0 +1,910 @@
+{
+  "status": "independent judgments deposited before scorer outcome inspection; scorer comparison complete",
+  "method": "Read all twelve public responses, all twelve saved prompts, frozen key/scoring and packet sources. Automated byte, JSON, word-count and freeze checks supplement semantic reading. No private reasoning, participant recontact or key changes.",
+  "freeze_hash_checks": {
+    "cases.json": true,
+    "DESIGN.md": true,
+    "PROTOCOL.md": true,
+    "INSTRUCTIONS.json": true,
+    "KEY.json": true,
+    "SCORING.md": true,
+    "review/PROSPECTIVE.md": true,
+    "RENDER_CHECKS.json": true,
+    "participants/AS01/TURN1_PROMPT.txt": true,
+    "participants/AS02/TURN1_PROMPT.txt": true,
+    "participants/AS03/TURN1_PROMPT.txt": true,
+    "participants/AS04/TURN1_PROMPT.txt": true,
+    "participants/AS05/TURN1_PROMPT.txt": true,
+    "participants/AS06/TURN1_PROMPT.txt": true
+  },
+  "cases": [
+    {
+      "case_id": "AS01",
+      "requested_ids": [
+        "K-D",
+        "K-R"
+      ],
+      "delivered_ids": [
+        "K-D",
+        "K-R"
+      ],
+      "gold_action": "RELEASE",
+      "action_matches": true,
+      "reuse_matches": true,
+      "prompt_checks": {
+        "turn1_exact": true,
+        "turn2_exact": true,
+        "hidden_truth_not_rendered": true,
+        "no_unrequested_record": true
+      },
+      "dimensions": {
+        "packet_action": {
+          "score": 2,
+          "public_excerpt": "RELEASE",
+          "basis": {
+            "record_ids": [
+              "K-D",
+              "K-R"
+            ],
+            "key_case": "AS01",
+            "key_requested_ids": [
+              "K-D",
+              "K-R"
+            ]
+          }
+        },
+        "retained_reuse_and_repair": {
+          "score": 2,
+          "public_excerpt": "True; K0 and R0 each report an unrounded or specified sample maximum of 8.0 °C with an accepted absolute error bound of 0.1 °C. Verified timing and coverage establish that the records address the exact task samples. The resulting maximum bound of 8.1 °C is below the 8.5 °C acceptance threshold, warranting release and reuse of the retained claim.",
+          "basis": {
+            "record_ids": [
+              "K-D",
+              "K-R"
+            ],
+            "key_case": "AS01",
+            "key_requested_ids": [
+              "K-D",
+              "K-R"
+            ]
+          }
+        },
+        "task_value_or_bound": {
+          "score": 2,
+          "public_excerpt": "At most 8.1 °C",
+          "basis": {
+            "record_ids": [
+              "K-D",
+              "K-R"
+            ],
+            "key_case": "AS01",
+            "key_requested_ids": [
+              "K-D",
+              "K-R"
+            ]
+          }
+        },
+        "support_origins": {
+          "score": 2,
+          "public_excerpt": "Aster, Birch, and Cedar derive from the single K0 acquisition. R0 independently acquired the specified samples using its own probe, recorder, and distinct certified calibration bath.",
+          "basis": {
+            "record_ids": [
+              "K-D",
+              "K-R"
+            ],
+            "key_case": "AS01",
+            "key_requested_ids": [
+              "K-D",
+              "K-R"
+            ]
+          }
+        },
+        "source_scope": {
+          "score": 2,
+          "public_excerpt": "K0 and R0 each report an unrounded or specified sample maximum of 8.0 °C with an accepted absolute error bound of 0.1 °C. Verified timing and coverage establish that the records address the exact task samples. The resulting maximum bound of 8.1 °C is below the 8.5 °C acceptance threshold, warranting release and reuse of the retained claim.",
+          "basis": {
+            "record_ids": [
+              "K-D",
+              "K-R"
+            ],
+            "key_case": "AS01",
+            "key_requested_ids": [
+              "K-D",
+              "K-R"
+            ]
+          }
+        },
+        "evidence_fidelity": {
+          "score": 2,
+          "public_excerpt": "['K-D', 'K-R']; K0 and R0 each report an unrounded or specified sample maximum of 8.0 °C with an accepted absolute error bound of 0.1 °C. Verified timing and coverage establish that the records address the exact task samples. The resulting maximum bound of 8.1 °C is below the 8.5 °C acceptance threshold, warranting release and reuse of the retained claim.",
+          "basis": {
+            "record_ids": [
+              "K-D",
+              "K-R"
+            ],
+            "key_case": "AS01",
+            "key_requested_ids": [
+              "K-D",
+              "K-R"
+            ]
+          }
+        },
+        "unsupported_certainty": {
+          "score": 2,
+          "public_excerpt": "At most 8.1 °C; Aster, Birch, and Cedar derive from the single K0 acquisition. R0 independently acquired the specified samples using its own probe, recorder, and distinct certified calibration bath.",
+          "basis": {
+            "record_ids": [
+              "K-D",
+              "K-R"
+            ],
+            "key_case": "AS01",
+            "key_requested_ids": [
+              "K-D",
+              "K-R"
+            ]
+          }
+        }
+      },
+      "selection_rationale_appropriate": true,
+      "lookup": "D+R; maximum joint ancestry/reference coverage; no missed decisive available evidence",
+      "external_task_truth": "agrees",
+      "truth_assertion_warranted": true,
+      "remaining_issue_next_check": "appropriate",
+      "format": {
+        "both_outputs_parse_json": true,
+        "required_fields_and_types": true,
+        "selection_words": 32,
+        "rationale_words": 58,
+        "caps_pass": true
+      },
+      "execution_byte_and_word_counts_match": true
+    },
+    {
+      "case_id": "AS02",
+      "requested_ids": [
+        "J-R",
+        "J-D"
+      ],
+      "delivered_ids": [
+        "J-R",
+        "J-D"
+      ],
+      "gold_action": "HOLD",
+      "action_matches": true,
+      "reuse_matches": true,
+      "prompt_checks": {
+        "turn1_exact": true,
+        "turn2_exact": true,
+        "hidden_truth_not_rendered": true,
+        "no_unrequested_record": true
+      },
+      "dimensions": {
+        "packet_action": {
+          "score": 2,
+          "public_excerpt": "HOLD",
+          "basis": {
+            "record_ids": [
+              "J-R",
+              "J-D"
+            ],
+            "key_case": "AS02",
+            "key_requested_ids": [
+              "J-D",
+              "J-R"
+            ]
+          }
+        },
+        "retained_reuse_and_repair": {
+          "score": 2,
+          "public_excerpt": "False; The acceptance criterion is violated. JR covered the full specified series with verified timing and measured a maximum of 9.1 mm/s with absolute error at most 0.1 mm/s, establishing a true maximum of at least 9.0 mm/s, above 8.5 mm/s. The three passing briefings share one acquisition whose calibration uncertainty is unestablished, so they do not warrant reusing the retained claim.",
+          "basis": {
+            "record_ids": [
+              "J-R",
+              "J-D"
+            ],
+            "key_case": "AS02",
+            "key_requested_ids": [
+              "J-D",
+              "J-R"
+            ]
+          }
+        },
+        "task_value_or_bound": {
+          "score": 2,
+          "public_excerpt": "True maximum at least 9.0 mm/s",
+          "basis": {
+            "record_ids": [
+              "J-R",
+              "J-D"
+            ],
+            "key_case": "AS02",
+            "key_requested_ids": [
+              "J-D",
+              "J-R"
+            ]
+          }
+        },
+        "support_origins": {
+          "score": 2,
+          "public_excerpt": "Dune rendered J0; Elm copied Dune; Fern imported J0 through Elm. All three derive from one acquisition with unbounded present-session CT9 calibration uncertainty. JR is independently calibrated with a separate probe and recorder.",
+          "basis": {
+            "record_ids": [
+              "J-R",
+              "J-D"
+            ],
+            "key_case": "AS02",
+            "key_requested_ids": [
+              "J-D",
+              "J-R"
+            ]
+          }
+        },
+        "source_scope": {
+          "score": 2,
+          "public_excerpt": "The acceptance criterion is violated. JR covered the full specified series with verified timing and measured a maximum of 9.1 mm/s with absolute error at most 0.1 mm/s, establishing a true maximum of at least 9.0 mm/s, above 8.5 mm/s. The three passing briefings share one acquisition whose calibration uncertainty is unestablished, so they do not warrant reusing the retained claim.",
+          "basis": {
+            "record_ids": [
+              "J-R",
+              "J-D"
+            ],
+            "key_case": "AS02",
+            "key_requested_ids": [
+              "J-D",
+              "J-R"
+            ]
+          }
+        },
+        "evidence_fidelity": {
+          "score": 2,
+          "public_excerpt": "['J-R', 'J-D']; The acceptance criterion is violated. JR covered the full specified series with verified timing and measured a maximum of 9.1 mm/s with absolute error at most 0.1 mm/s, establishing a true maximum of at least 9.0 mm/s, above 8.5 mm/s. The three passing briefings share one acquisition whose calibration uncertainty is unestablished, so they do not warrant reusing the retained claim.",
+          "basis": {
+            "record_ids": [
+              "J-R",
+              "J-D"
+            ],
+            "key_case": "AS02",
+            "key_requested_ids": [
+              "J-D",
+              "J-R"
+            ]
+          }
+        },
+        "unsupported_certainty": {
+          "score": 2,
+          "public_excerpt": "True maximum at least 9.0 mm/s; Dune rendered J0; Elm copied Dune; Fern imported J0 through Elm. All three derive from one acquisition with unbounded present-session CT9 calibration uncertainty. JR is independently calibrated with a separate probe and recorder.",
+          "basis": {
+            "record_ids": [
+              "J-R",
+              "J-D"
+            ],
+            "key_case": "AS02",
+            "key_requested_ids": [
+              "J-D",
+              "J-R"
+            ]
+          }
+        }
+      },
+      "selection_rationale_appropriate": true,
+      "lookup": "D+R; maximum joint ancestry/reference coverage; no missed decisive available evidence",
+      "external_task_truth": "agrees",
+      "truth_assertion_warranted": true,
+      "remaining_issue_next_check": "appropriate",
+      "format": {
+        "both_outputs_parse_json": true,
+        "required_fields_and_types": true,
+        "selection_words": 40,
+        "rationale_words": 61,
+        "caps_pass": true
+      },
+      "execution_byte_and_word_counts_match": true
+    },
+    {
+      "case_id": "AS03",
+      "requested_ids": [
+        "L-D",
+        "L-R"
+      ],
+      "delivered_ids": [
+        "L-D",
+        "L-R"
+      ],
+      "gold_action": "UNRESOLVED",
+      "action_matches": true,
+      "reuse_matches": true,
+      "prompt_checks": {
+        "turn1_exact": true,
+        "turn2_exact": true,
+        "hidden_truth_not_rendered": true,
+        "no_unrequested_record": true
+      },
+      "dimensions": {
+        "packet_action": {
+          "score": 2,
+          "public_excerpt": "UNRESOLVED",
+          "basis": {
+            "record_ids": [
+              "L-D",
+              "L-R"
+            ],
+            "key_case": "AS03",
+            "key_requested_ids": [
+              "L-D",
+              "L-R"
+            ]
+          }
+        },
+        "retained_reuse_and_repair": {
+          "score": 2,
+          "public_excerpt": "False; The complete, correctly timed series has a nominal maximum of 46.0 °C, but no valid correction or absolute error bound establishes compliance with 48.0 °C. The three reports share one observation, and the failed reference recorder supplies no independent evidence. Neither compliance nor a threshold violation is established.",
+          "basis": {
+            "record_ids": [
+              "L-D",
+              "L-R"
+            ],
+            "key_case": "AS03",
+            "key_requested_ids": [
+              "L-D",
+              "L-R"
+            ]
+          }
+        },
+        "task_value_or_bound": {
+          "score": 2,
+          "public_excerpt": "Nominal maximum 46.0 °C; calibrated maximum unknown.",
+          "basis": {
+            "record_ids": [
+              "L-D",
+              "L-R"
+            ],
+            "key_case": "AS03",
+            "key_requested_ids": [
+              "L-D",
+              "L-R"
+            ]
+          }
+        },
+        "support_origins": {
+          "score": 2,
+          "public_excerpt": "Grove rendered L0, the sole sample acquisition; Heath imported Grove's result and Iris copied Heath. The reference recorder acquired no measurements.",
+          "basis": {
+            "record_ids": [
+              "L-D",
+              "L-R"
+            ],
+            "key_case": "AS03",
+            "key_requested_ids": [
+              "L-D",
+              "L-R"
+            ]
+          }
+        },
+        "source_scope": {
+          "score": 2,
+          "public_excerpt": "The complete, correctly timed series has a nominal maximum of 46.0 °C, but no valid correction or absolute error bound establishes compliance with 48.0 °C. The three reports share one observation, and the failed reference recorder supplies no independent evidence. Neither compliance nor a threshold violation is established.",
+          "basis": {
+            "record_ids": [
+              "L-D",
+              "L-R"
+            ],
+            "key_case": "AS03",
+            "key_requested_ids": [
+              "L-D",
+              "L-R"
+            ]
+          }
+        },
+        "evidence_fidelity": {
+          "score": 2,
+          "public_excerpt": "['L-D', 'L-R']; The complete, correctly timed series has a nominal maximum of 46.0 °C, but no valid correction or absolute error bound establishes compliance with 48.0 °C. The three reports share one observation, and the failed reference recorder supplies no independent evidence. Neither compliance nor a threshold violation is established.",
+          "basis": {
+            "record_ids": [
+              "L-D",
+              "L-R"
+            ],
+            "key_case": "AS03",
+            "key_requested_ids": [
+              "L-D",
+              "L-R"
+            ]
+          }
+        },
+        "unsupported_certainty": {
+          "score": 2,
+          "public_excerpt": "Nominal maximum 46.0 °C; calibrated maximum unknown.; Grove rendered L0, the sole sample acquisition; Heath imported Grove's result and Iris copied Heath. The reference recorder acquired no measurements.",
+          "basis": {
+            "record_ids": [
+              "L-D",
+              "L-R"
+            ],
+            "key_case": "AS03",
+            "key_requested_ids": [
+              "L-D",
+              "L-R"
+            ]
+          }
+        }
+      },
+      "selection_rationale_appropriate": true,
+      "lookup": "D+R; maximum joint ancestry/reference coverage; no missed decisive available evidence",
+      "external_task_truth": "abstains",
+      "truth_assertion_warranted": false,
+      "remaining_issue_next_check": "appropriate",
+      "format": {
+        "both_outputs_parse_json": true,
+        "required_fields_and_types": true,
+        "selection_words": 29,
+        "rationale_words": 48,
+        "caps_pass": true
+      },
+      "execution_byte_and_word_counts_match": true
+    },
+    {
+      "case_id": "AS04",
+      "requested_ids": [
+        "M-D",
+        "M-R"
+      ],
+      "delivered_ids": [
+        "M-D",
+        "M-R"
+      ],
+      "gold_action": "RELEASE",
+      "action_matches": true,
+      "reuse_matches": true,
+      "prompt_checks": {
+        "turn1_exact": true,
+        "turn2_exact": true,
+        "hidden_truth_not_rendered": true,
+        "no_unrequested_record": true
+      },
+      "dimensions": {
+        "packet_action": {
+          "score": 2,
+          "public_excerpt": "RELEASE",
+          "basis": {
+            "record_ids": [
+              "M-D",
+              "M-R"
+            ],
+            "key_case": "AS04",
+            "key_requested_ids": [
+              "M-D",
+              "M-R"
+            ]
+          }
+        },
+        "retained_reuse_and_repair": {
+          "score": 2,
+          "public_excerpt": "True; Verified current pallet identities and coverage establish applicability to the 11:40 check. Adding the accepted 0.1 kg absolute error bound to each reading gives upper bounds below 19.0 kg for all three pallets. Both the briefing acquisition ledger and the independent reference examination warrant the retained claim.",
+          "basis": {
+            "record_ids": [
+              "M-D",
+              "M-R"
+            ],
+            "key_case": "AS04",
+            "key_requested_ids": [
+              "M-D",
+              "M-R"
+            ]
+          }
+        },
+        "task_value_or_bound": {
+          "score": 2,
+          "public_excerpt": "M1 ≤18.3 kg; M2 ≤18.4 kg; M3 ≤18.5 kg",
+          "basis": {
+            "record_ids": [
+              "M-D",
+              "M-R"
+            ],
+            "key_case": "AS04",
+            "key_requested_ids": [
+              "M-D",
+              "M-R"
+            ]
+          }
+        },
+        "support_origins": {
+          "score": 2,
+          "public_excerpt": "Jade, Knoll, and Linden derive from separate weighing sessions sharing calibration table CT2, whose accepted error bound includes shared offset. MR independently measured all pallets using separate acquisition and calibration routes.",
+          "basis": {
+            "record_ids": [
+              "M-D",
+              "M-R"
+            ],
+            "key_case": "AS04",
+            "key_requested_ids": [
+              "M-D",
+              "M-R"
+            ]
+          }
+        },
+        "source_scope": {
+          "score": 2,
+          "public_excerpt": "Verified current pallet identities and coverage establish applicability to the 11:40 check. Adding the accepted 0.1 kg absolute error bound to each reading gives upper bounds below 19.0 kg for all three pallets. Both the briefing acquisition ledger and the independent reference examination warrant the retained claim.",
+          "basis": {
+            "record_ids": [
+              "M-D",
+              "M-R"
+            ],
+            "key_case": "AS04",
+            "key_requested_ids": [
+              "M-D",
+              "M-R"
+            ]
+          }
+        },
+        "evidence_fidelity": {
+          "score": 2,
+          "public_excerpt": "['M-D', 'M-R']; Verified current pallet identities and coverage establish applicability to the 11:40 check. Adding the accepted 0.1 kg absolute error bound to each reading gives upper bounds below 19.0 kg for all three pallets. Both the briefing acquisition ledger and the independent reference examination warrant the retained claim.",
+          "basis": {
+            "record_ids": [
+              "M-D",
+              "M-R"
+            ],
+            "key_case": "AS04",
+            "key_requested_ids": [
+              "M-D",
+              "M-R"
+            ]
+          }
+        },
+        "unsupported_certainty": {
+          "score": 2,
+          "public_excerpt": "M1 ≤18.3 kg; M2 ≤18.4 kg; M3 ≤18.5 kg; Jade, Knoll, and Linden derive from separate weighing sessions sharing calibration table CT2, whose accepted error bound includes shared offset. MR independently measured all pallets using separate acquisition and calibration routes.",
+          "basis": {
+            "record_ids": [
+              "M-D",
+              "M-R"
+            ],
+            "key_case": "AS04",
+            "key_requested_ids": [
+              "M-D",
+              "M-R"
+            ]
+          }
+        }
+      },
+      "selection_rationale_appropriate": true,
+      "lookup": "D+R; maximum joint ancestry/reference coverage; no missed decisive available evidence",
+      "external_task_truth": "agrees",
+      "truth_assertion_warranted": true,
+      "remaining_issue_next_check": "appropriate",
+      "format": {
+        "both_outputs_parse_json": true,
+        "required_fields_and_types": true,
+        "selection_words": 31,
+        "rationale_words": 47,
+        "caps_pass": true
+      },
+      "execution_byte_and_word_counts_match": true
+    },
+    {
+      "case_id": "AS05",
+      "requested_ids": [
+        "N-R",
+        "N-D"
+      ],
+      "delivered_ids": [
+        "N-R",
+        "N-D"
+      ],
+      "gold_action": "HOLD",
+      "action_matches": true,
+      "reuse_matches": true,
+      "prompt_checks": {
+        "turn1_exact": true,
+        "turn2_exact": true,
+        "hidden_truth_not_rendered": true,
+        "no_unrequested_record": true
+      },
+      "dimensions": {
+        "packet_action": {
+          "score": 2,
+          "public_excerpt": "HOLD",
+          "basis": {
+            "record_ids": [
+              "N-R",
+              "N-D"
+            ],
+            "key_case": "AS05",
+            "key_requested_ids": [
+              "N-D",
+              "N-R"
+            ]
+          }
+        },
+        "retained_reuse_and_repair": {
+          "score": 2,
+          "public_excerpt": "False; NR covered the entire specified series and measured a maximum of 50.7 bar with absolute error at most 0.1 bar, establishing a true maximum of at least 50.6 bar. This exceeds the 50.0 bar acceptance limit. The three passing reports share an unbounded calibration route and do not warrant reusing the retained claim.",
+          "basis": {
+            "record_ids": [
+              "N-R",
+              "N-D"
+            ],
+            "key_case": "AS05",
+            "key_requested_ids": [
+              "N-D",
+              "N-R"
+            ]
+          }
+        },
+        "task_value_or_bound": {
+          "score": 2,
+          "public_excerpt": "True maximum ≥50.6 bar",
+          "basis": {
+            "record_ids": [
+              "N-R",
+              "N-D"
+            ],
+            "key_case": "AS05",
+            "key_requested_ids": [
+              "N-D",
+              "N-R"
+            ]
+          }
+        },
+        "support_origins": {
+          "score": 2,
+          "public_excerpt": "Maple, North, and Oak used separate acquisition streams, but all shared calibration table CT6 with an unestablished offset and error bound. NR used an independent transducer, recorder, and current deadweight calibration.",
+          "basis": {
+            "record_ids": [
+              "N-R",
+              "N-D"
+            ],
+            "key_case": "AS05",
+            "key_requested_ids": [
+              "N-D",
+              "N-R"
+            ]
+          }
+        },
+        "source_scope": {
+          "score": 2,
+          "public_excerpt": "NR covered the entire specified series and measured a maximum of 50.7 bar with absolute error at most 0.1 bar, establishing a true maximum of at least 50.6 bar. This exceeds the 50.0 bar acceptance limit. The three passing reports share an unbounded calibration route and do not warrant reusing the retained claim.",
+          "basis": {
+            "record_ids": [
+              "N-R",
+              "N-D"
+            ],
+            "key_case": "AS05",
+            "key_requested_ids": [
+              "N-D",
+              "N-R"
+            ]
+          }
+        },
+        "evidence_fidelity": {
+          "score": 2,
+          "public_excerpt": "['N-R', 'N-D']; NR covered the entire specified series and measured a maximum of 50.7 bar with absolute error at most 0.1 bar, establishing a true maximum of at least 50.6 bar. This exceeds the 50.0 bar acceptance limit. The three passing reports share an unbounded calibration route and do not warrant reusing the retained claim.",
+          "basis": {
+            "record_ids": [
+              "N-R",
+              "N-D"
+            ],
+            "key_case": "AS05",
+            "key_requested_ids": [
+              "N-D",
+              "N-R"
+            ]
+          }
+        },
+        "unsupported_certainty": {
+          "score": 2,
+          "public_excerpt": "True maximum ≥50.6 bar; Maple, North, and Oak used separate acquisition streams, but all shared calibration table CT6 with an unestablished offset and error bound. NR used an independent transducer, recorder, and current deadweight calibration.",
+          "basis": {
+            "record_ids": [
+              "N-R",
+              "N-D"
+            ],
+            "key_case": "AS05",
+            "key_requested_ids": [
+              "N-D",
+              "N-R"
+            ]
+          }
+        }
+      },
+      "selection_rationale_appropriate": true,
+      "lookup": "D+R; maximum joint ancestry/reference coverage; no missed decisive available evidence",
+      "external_task_truth": "agrees",
+      "truth_assertion_warranted": true,
+      "remaining_issue_next_check": "appropriate; CT6 investigation after decisive AS05 is residual calibration work rather than task uncertainty",
+      "format": {
+        "both_outputs_parse_json": true,
+        "required_fields_and_types": true,
+        "selection_words": 35,
+        "rationale_words": 53,
+        "caps_pass": true
+      },
+      "execution_byte_and_word_counts_match": true
+    },
+    {
+      "case_id": "AS06",
+      "requested_ids": [
+        "P-R",
+        "P-D"
+      ],
+      "delivered_ids": [
+        "P-R",
+        "P-D"
+      ],
+      "gold_action": "UNRESOLVED",
+      "action_matches": true,
+      "reuse_matches": true,
+      "prompt_checks": {
+        "turn1_exact": true,
+        "turn2_exact": true,
+        "hidden_truth_not_rendered": true,
+        "no_unrequested_record": true
+      },
+      "dimensions": {
+        "packet_action": {
+          "score": 2,
+          "public_excerpt": "UNRESOLVED",
+          "basis": {
+            "record_ids": [
+              "P-R",
+              "P-D"
+            ],
+            "key_case": "AS06",
+            "key_requested_ids": [
+              "P-D",
+              "P-R"
+            ]
+          }
+        },
+        "retained_reuse_and_repair": {
+          "score": 2,
+          "public_excerpt": "False; Independent measurements support the cohort mean, but a mean below 12.0 kg does not establish the individual mass condition. The briefing conclusions were generated from means without a valid conversion to individual bounds. The retained claim is therefore unsupported, while the evidence also does not demonstrate an overweight parcel.",
+          "basis": {
+            "record_ids": [
+              "P-R",
+              "P-D"
+            ],
+            "key_case": "AS06",
+            "key_requested_ids": [
+              "P-D",
+              "P-R"
+            ]
+          }
+        },
+        "task_value_or_bound": {
+          "score": 2,
+          "public_excerpt": "Cohort mean 10.9–11.1 kg; individual maximum unknown.",
+          "basis": {
+            "record_ids": [
+              "P-R",
+              "P-D"
+            ],
+            "key_case": "AS06",
+            "key_requested_ids": [
+              "P-D",
+              "P-R"
+            ]
+          }
+        },
+        "support_origins": {
+          "score": 2,
+          "public_excerpt": "Pine, Quill, and Reed used separate acquisitions and calibration paths, but retained only means. PR independently measured the whole cohort's total and mean.",
+          "basis": {
+            "record_ids": [
+              "P-R",
+              "P-D"
+            ],
+            "key_case": "AS06",
+            "key_requested_ids": [
+              "P-D",
+              "P-R"
+            ]
+          }
+        },
+        "source_scope": {
+          "score": 2,
+          "public_excerpt": "Independent measurements support the cohort mean, but a mean below 12.0 kg does not establish the individual mass condition. The briefing conclusions were generated from means without a valid conversion to individual bounds. The retained claim is therefore unsupported, while the evidence also does not demonstrate an overweight parcel.",
+          "basis": {
+            "record_ids": [
+              "P-R",
+              "P-D"
+            ],
+            "key_case": "AS06",
+            "key_requested_ids": [
+              "P-D",
+              "P-R"
+            ]
+          }
+        },
+        "evidence_fidelity": {
+          "score": 2,
+          "public_excerpt": "['P-R', 'P-D']; Independent measurements support the cohort mean, but a mean below 12.0 kg does not establish the individual mass condition. The briefing conclusions were generated from means without a valid conversion to individual bounds. The retained claim is therefore unsupported, while the evidence also does not demonstrate an overweight parcel.",
+          "basis": {
+            "record_ids": [
+              "P-R",
+              "P-D"
+            ],
+            "key_case": "AS06",
+            "key_requested_ids": [
+              "P-D",
+              "P-R"
+            ]
+          }
+        },
+        "unsupported_certainty": {
+          "score": 2,
+          "public_excerpt": "Cohort mean 10.9–11.1 kg; individual maximum unknown.; Pine, Quill, and Reed used separate acquisitions and calibration paths, but retained only means. PR independently measured the whole cohort's total and mean.",
+          "basis": {
+            "record_ids": [
+              "P-R",
+              "P-D"
+            ],
+            "key_case": "AS06",
+            "key_requested_ids": [
+              "P-D",
+              "P-R"
+            ]
+          }
+        }
+      },
+      "selection_rationale_appropriate": true,
+      "lookup": "D+R; maximum joint ancestry/reference coverage; no missed decisive available evidence",
+      "external_task_truth": "abstains",
+      "truth_assertion_warranted": false,
+      "remaining_issue_next_check": "appropriate",
+      "format": {
+        "both_outputs_parse_json": true,
+        "required_fields_and_types": true,
+        "selection_words": 35,
+        "rationale_words": 49,
+        "caps_pass": true
+      },
+      "execution_byte_and_word_counts_match": true
+    }
+  ],
+  "judgment": "All six actions and reuse booleans match delivered-packet warrants; all seven substantive dimensions independently receive 2, separately without summation. No observed output defect. All prompt strings reconstruct exactly from frozen templates and permitted source fields.",
+  "limits": "Saved artifacts establish prompt content, not technical isolation or independent authentication of manually transcribed tool returns. EXECUTION reports no tool/peer calls and twelve turns/six launches; those are coordinator observations. Ceiling on strongly cued authored tasks supports no causal/transfer/FRR benefit claim.",
+  "scorer_comparison": {
+    "files": [
+      "SCORES.json",
+      "SCORING_REPORT.md"
+    ],
+    "cases": [
+      {
+        "case_id": "AS01",
+        "dimension_agreement": true,
+        "action_agreement": true,
+        "external_truth_agreement": true
+      },
+      {
+        "case_id": "AS02",
+        "dimension_agreement": true,
+        "action_agreement": true,
+        "external_truth_agreement": true
+      },
+      {
+        "case_id": "AS03",
+        "dimension_agreement": true,
+        "action_agreement": true,
+        "external_truth_agreement": true
+      },
+      {
+        "case_id": "AS04",
+        "dimension_agreement": true,
+        "action_agreement": true,
+        "external_truth_agreement": true
+      },
+      {
+        "case_id": "AS05",
+        "dimension_agreement": true,
+        "action_agreement": true,
+        "external_truth_agreement": true
+      },
+      {
+        "case_id": "AS06",
+        "dimension_agreement": true,
+        "action_agreement": true,
+        "external_truth_agreement": true
+      }
+    ],
+    "disagreements": [],
+    "interpretation": "Agree that AS06 provisional lookup expectation is not an unseen-content assertion; concrete route wording scopes independence; AS03 next check addresses historical session; AS04 need not enumerate internal session IDs to convey three separate origins."
+  }
+}

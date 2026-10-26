@@ -1,0 +1,641 @@
+{
+  "version": "1.0-prospective",
+  "derivation": "Gold below was derived from visible record entailment and stated task semantics, independently of hidden_truth. hidden_truth only supplies a separately labelled external-world comparator. No participant outcomes consulted.",
+  "action_semantics": {
+    "RELEASE": "criterion warranted",
+    "HOLD": "criterion violation warranted",
+    "UNRESOLVED": "neither warranted; may still require an operational delay"
+  },
+  "exact_numeric_truth": "No case warrants an exact actual point value. Accepted error envelopes warrant intervals or one-sided bounds. Correct nominal values may be reported only as nominal.",
+  "lineage_scope": "Counts refer to acquisition roots of the three briefing reports, not document count or necessarily independent error sources. A separate reference adds a separate acquisition/calibration route but does not add a fourth briefing root. Without D, briefing root count/edges remain unestablished from the delivered packet. Unknown is the correct packet-relative answer.",
+  "cases": [
+    {
+      "case_id": "AS01",
+      "criterion": "sample maximum <= 8.5 C",
+      "external_truth": {
+        "condition": "condition_met",
+        "retained_claim_correct": true,
+        "usage": "Descriptive latent comparator only; never substitutes for packet warrant. UNRESOLVED is abstention, not a false task claim."
+      },
+      "pairs": [
+        {
+          "requested_ids": [
+            "K-A",
+            "K-D"
+          ],
+          "action": "RELEASE",
+          "retained_claim_reuse": true,
+          "task_truth_warrant": "condition_met",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [
+            "K-D"
+          ],
+          "value_or_bound": "Task maximum is in [7.9, 8.1] C; <=8.1 C suffices. Nominal 8.0 C is not an exact true value.",
+          "briefing_acquisition_count": 1,
+          "briefing_acquisition_roots": [
+            "K0"
+          ],
+          "origin_account": "K0 -> Aster -> Birch -> Cedar; Birch and Cedar are copies, not additional acquisitions.",
+          "calibration_account": "K0 current accepted absolute error <= 0.1 C with full correct sample coverage.",
+          "reference_account": "No reference requested.",
+          "remaining_issue": null,
+          "next_check": null,
+          "lookup": {
+            "ancestry_delivered": true,
+            "reference_requested": false,
+            "reference_available": false,
+            "administrative_record_requested": true,
+            "task_decisive_evidence_delivered": true,
+            "missed_decisive_record": null,
+            "joint_ancestry_reference_coverage": false
+          }
+        },
+        {
+          "requested_ids": [
+            "K-A",
+            "K-R"
+          ],
+          "action": "RELEASE",
+          "retained_claim_reuse": true,
+          "task_truth_warrant": "condition_met",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [
+            "K-R"
+          ],
+          "value_or_bound": "Task maximum is in [7.9, 8.1] C; <=8.1 C suffices. Nominal 8.0 C is not an exact true value.",
+          "briefing_acquisition_count": null,
+          "briefing_acquisition_roots": null,
+          "origin_account": "Briefing ancestry was not delivered. Do not infer a count or copying/separate-acquisition pattern from three agreeing briefing statements.",
+          "calibration_account": "Briefing calibration ancestry/validity not established by the delivered ancestry ledger, because that ledger was not requested.",
+          "reference_account": "Accepted full-task bounded reference with separate acquisition and calibration routes; no global/statistical independence claim warranted.",
+          "remaining_issue": null,
+          "next_check": null,
+          "lookup": {
+            "ancestry_delivered": false,
+            "reference_requested": true,
+            "reference_available": true,
+            "administrative_record_requested": true,
+            "task_decisive_evidence_delivered": true,
+            "missed_decisive_record": null,
+            "joint_ancestry_reference_coverage": false
+          }
+        },
+        {
+          "requested_ids": [
+            "K-D",
+            "K-R"
+          ],
+          "action": "RELEASE",
+          "retained_claim_reuse": true,
+          "task_truth_warrant": "condition_met",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [
+            "K-D",
+            "K-R"
+          ],
+          "value_or_bound": "Task maximum is in [7.9, 8.1] C; <=8.1 C suffices. Nominal 8.0 C is not an exact true value.",
+          "briefing_acquisition_count": 1,
+          "briefing_acquisition_roots": [
+            "K0"
+          ],
+          "origin_account": "K0 -> Aster -> Birch -> Cedar; Birch and Cedar are copies, not additional acquisitions.",
+          "calibration_account": "K0 current accepted absolute error <= 0.1 C with full correct sample coverage.",
+          "reference_account": "Accepted full-task bounded reference with separate acquisition and calibration routes; no global/statistical independence claim warranted.",
+          "remaining_issue": null,
+          "next_check": null,
+          "lookup": {
+            "ancestry_delivered": true,
+            "reference_requested": true,
+            "reference_available": true,
+            "administrative_record_requested": false,
+            "task_decisive_evidence_delivered": true,
+            "missed_decisive_record": null,
+            "joint_ancestry_reference_coverage": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "AS02",
+      "criterion": "sample maximum <= 8.5 mm/s",
+      "external_truth": {
+        "condition": "condition_not_met",
+        "retained_claim_correct": false,
+        "usage": "Descriptive latent comparator only; never substitutes for packet warrant. UNRESOLVED is abstention, not a false task claim."
+      },
+      "pairs": [
+        {
+          "requested_ids": [
+            "J-A",
+            "J-D"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "task_truth_warrant": "unknown",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [],
+          "value_or_bound": "No bounded task maximum or threshold verdict; the primary nominal value has an unbounded calibration route.",
+          "briefing_acquisition_count": 1,
+          "briefing_acquisition_roots": [
+            "J0"
+          ],
+          "origin_account": "J0 -> Dune -> Elm -> Fern; one acquisition.",
+          "calibration_account": "J0 shares unbounded present-session CT9 calibration; nominal 8.1 alone cannot settle the threshold.",
+          "reference_account": "No reference requested.",
+          "remaining_issue": "Without J-R, the true maximum relative to 8.5 is unknown.",
+          "next_check": "Obtain a full-series correctly timed reference with a current accepted error bound, or certify/correct CT9.",
+          "lookup": {
+            "ancestry_delivered": true,
+            "reference_requested": false,
+            "reference_available": false,
+            "administrative_record_requested": true,
+            "task_decisive_evidence_delivered": false,
+            "missed_decisive_record": "J-R",
+            "joint_ancestry_reference_coverage": false
+          }
+        },
+        {
+          "requested_ids": [
+            "J-A",
+            "J-R"
+          ],
+          "action": "HOLD",
+          "retained_claim_reuse": false,
+          "task_truth_warrant": "condition_not_met",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [
+            "J-R"
+          ],
+          "value_or_bound": "With J-R: task maximum is in [9.0, 9.2] mm/s; >=9.0 establishes violation. Nominal 9.1 is not exact truth.",
+          "briefing_acquisition_count": null,
+          "briefing_acquisition_roots": null,
+          "origin_account": "Briefing ancestry was not delivered. Do not infer a count or copying/separate-acquisition pattern from three agreeing briefing statements.",
+          "calibration_account": "Briefing calibration ancestry/validity not established by the delivered ancestry ledger, because that ledger was not requested.",
+          "reference_account": "Accepted full-task bounded reference with separate acquisition and calibration routes; no global/statistical independence claim warranted.",
+          "remaining_issue": null,
+          "next_check": null,
+          "lookup": {
+            "ancestry_delivered": false,
+            "reference_requested": true,
+            "reference_available": true,
+            "administrative_record_requested": true,
+            "task_decisive_evidence_delivered": true,
+            "missed_decisive_record": null,
+            "joint_ancestry_reference_coverage": false
+          }
+        },
+        {
+          "requested_ids": [
+            "J-D",
+            "J-R"
+          ],
+          "action": "HOLD",
+          "retained_claim_reuse": false,
+          "task_truth_warrant": "condition_not_met",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [
+            "J-R"
+          ],
+          "value_or_bound": "With J-R: task maximum is in [9.0, 9.2] mm/s; >=9.0 establishes violation. Nominal 9.1 is not exact truth.",
+          "briefing_acquisition_count": 1,
+          "briefing_acquisition_roots": [
+            "J0"
+          ],
+          "origin_account": "J0 -> Dune -> Elm -> Fern; one acquisition.",
+          "calibration_account": "J0 shares unbounded present-session CT9 calibration; nominal 8.1 alone cannot settle the threshold.",
+          "reference_account": "Accepted full-task bounded reference with separate acquisition and calibration routes; no global/statistical independence claim warranted.",
+          "remaining_issue": null,
+          "next_check": null,
+          "lookup": {
+            "ancestry_delivered": true,
+            "reference_requested": true,
+            "reference_available": true,
+            "administrative_record_requested": false,
+            "task_decisive_evidence_delivered": true,
+            "missed_decisive_record": null,
+            "joint_ancestry_reference_coverage": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "AS03",
+      "criterion": "sample maximum <= 48.0 C",
+      "external_truth": {
+        "condition": "condition_met",
+        "retained_claim_correct": true,
+        "usage": "Descriptive latent comparator only; never substitutes for packet warrant. UNRESOLVED is abstention, not a false task claim."
+      },
+      "pairs": [
+        {
+          "requested_ids": [
+            "L-A",
+            "L-D"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "task_truth_warrant": "unknown",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [],
+          "value_or_bound": "Nominal maximum 46.0 C only; no warranted task-relevant interval or threshold conclusion.",
+          "briefing_acquisition_count": 1,
+          "briefing_acquisition_roots": [
+            "L0"
+          ],
+          "origin_account": "L0 -> Grove -> Heath -> Iris; one acquisition.",
+          "calibration_account": "L0 timing/coverage valid but expired calibration leaves offset/error unbounded.",
+          "reference_account": "No reference requested.",
+          "remaining_issue": "L0 calibration has no present-session offset or error bound. The reference was not requested; its contents and availability are unknown to this reader.",
+          "next_check": "Obtain a valid full-series bounded reference or establish a certified correction/error envelope for L0.",
+          "lookup": {
+            "ancestry_delivered": true,
+            "reference_requested": false,
+            "reference_available": false,
+            "administrative_record_requested": true,
+            "task_decisive_evidence_delivered": false,
+            "missed_decisive_record": null,
+            "joint_ancestry_reference_coverage": false
+          }
+        },
+        {
+          "requested_ids": [
+            "L-A",
+            "L-R"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "task_truth_warrant": "unknown",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [],
+          "value_or_bound": "Nominal maximum 46.0 C only; no warranted task-relevant interval or threshold conclusion.",
+          "briefing_acquisition_count": null,
+          "briefing_acquisition_roots": null,
+          "origin_account": "Briefing ancestry was not delivered. Do not infer a count or copying/separate-acquisition pattern from three agreeing briefing statements.",
+          "calibration_account": "Briefing calibration ancestry/validity not established by the delivered ancestry ledger, because that ledger was not requested.",
+          "reference_account": "Unavailable: recorder failed before acquisition; no measurement evidence.",
+          "remaining_issue": "No delivered record establishes a valid error contract for the briefing values; briefing acquisition and calibration details remain unknown. L-R reports recorder failure before acquisition and supplies no comparison.",
+          "next_check": "Obtain a valid full-series bounded reference or establish a certified correction/error envelope for the underlying briefing measurement(s).",
+          "lookup": {
+            "ancestry_delivered": false,
+            "reference_requested": true,
+            "reference_available": false,
+            "administrative_record_requested": true,
+            "task_decisive_evidence_delivered": false,
+            "missed_decisive_record": null,
+            "joint_ancestry_reference_coverage": false
+          }
+        },
+        {
+          "requested_ids": [
+            "L-D",
+            "L-R"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "task_truth_warrant": "unknown",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [],
+          "value_or_bound": "Nominal maximum 46.0 C only; no warranted task-relevant interval or threshold conclusion.",
+          "briefing_acquisition_count": 1,
+          "briefing_acquisition_roots": [
+            "L0"
+          ],
+          "origin_account": "L0 -> Grove -> Heath -> Iris; one acquisition.",
+          "calibration_account": "L0 timing/coverage valid but expired calibration leaves offset/error unbounded.",
+          "reference_account": "Unavailable: recorder failed before acquisition; no measurement evidence.",
+          "remaining_issue": "L0 calibration has no present-session offset or error bound. L-R reports recorder failure before acquisition and supplies no comparison.",
+          "next_check": "Obtain a valid full-series bounded reference or establish a certified correction/error envelope for L0.",
+          "lookup": {
+            "ancestry_delivered": true,
+            "reference_requested": true,
+            "reference_available": false,
+            "administrative_record_requested": false,
+            "task_decisive_evidence_delivered": false,
+            "missed_decisive_record": null,
+            "joint_ancestry_reference_coverage": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "AS04",
+      "criterion": "each M1-M3 <= 19.0 kg",
+      "external_truth": {
+        "condition": "condition_met",
+        "retained_claim_correct": true,
+        "usage": "Descriptive latent comparator only; never substitutes for packet warrant. UNRESOLVED is abstention, not a false task claim."
+      },
+      "pairs": [
+        {
+          "requested_ids": [
+            "M-A",
+            "M-D"
+          ],
+          "action": "RELEASE",
+          "retained_claim_reuse": true,
+          "task_truth_warrant": "condition_met",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [
+            "M-D"
+          ],
+          "value_or_bound": "Each pallet <=18.5 kg. Individual intervals: M1 [18.1,18.3], M2 [18.2,18.4], M3 [18.3,18.5] kg; maximum [18.3,18.5]. Nominal readings are not exact true masses.",
+          "briefing_acquisition_count": 3,
+          "briefing_acquisition_roots": [
+            "Mj",
+            "Mk",
+            "Ml"
+          ],
+          "origin_account": "Mj -> Jade; Mk -> Knoll; Ml -> Linden. Three separate acquisitions, all share CT2.",
+          "calibration_account": "CT2 current accepted error <=0.1 kg including shared offset; acquisition separation is not calibration independence.",
+          "reference_account": "No reference requested.",
+          "remaining_issue": null,
+          "next_check": null,
+          "lookup": {
+            "ancestry_delivered": true,
+            "reference_requested": false,
+            "reference_available": false,
+            "administrative_record_requested": true,
+            "task_decisive_evidence_delivered": true,
+            "missed_decisive_record": null,
+            "joint_ancestry_reference_coverage": false
+          }
+        },
+        {
+          "requested_ids": [
+            "M-A",
+            "M-R"
+          ],
+          "action": "RELEASE",
+          "retained_claim_reuse": true,
+          "task_truth_warrant": "condition_met",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [
+            "M-R"
+          ],
+          "value_or_bound": "Each pallet <=18.5 kg. Individual intervals: M1 [18.1,18.3], M2 [18.2,18.4], M3 [18.3,18.5] kg; maximum [18.3,18.5]. Nominal readings are not exact true masses.",
+          "briefing_acquisition_count": null,
+          "briefing_acquisition_roots": null,
+          "origin_account": "Briefing ancestry was not delivered. Do not infer a count or copying/separate-acquisition pattern from three agreeing briefing statements.",
+          "calibration_account": "Briefing calibration ancestry/validity not established by the delivered ancestry ledger, because that ledger was not requested.",
+          "reference_account": "Accepted full-task bounded reference with separate acquisition and calibration routes; no global/statistical independence claim warranted.",
+          "remaining_issue": null,
+          "next_check": null,
+          "lookup": {
+            "ancestry_delivered": false,
+            "reference_requested": true,
+            "reference_available": true,
+            "administrative_record_requested": true,
+            "task_decisive_evidence_delivered": true,
+            "missed_decisive_record": null,
+            "joint_ancestry_reference_coverage": false
+          }
+        },
+        {
+          "requested_ids": [
+            "M-D",
+            "M-R"
+          ],
+          "action": "RELEASE",
+          "retained_claim_reuse": true,
+          "task_truth_warrant": "condition_met",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [
+            "M-D",
+            "M-R"
+          ],
+          "value_or_bound": "Each pallet <=18.5 kg. Individual intervals: M1 [18.1,18.3], M2 [18.2,18.4], M3 [18.3,18.5] kg; maximum [18.3,18.5]. Nominal readings are not exact true masses.",
+          "briefing_acquisition_count": 3,
+          "briefing_acquisition_roots": [
+            "Mj",
+            "Mk",
+            "Ml"
+          ],
+          "origin_account": "Mj -> Jade; Mk -> Knoll; Ml -> Linden. Three separate acquisitions, all share CT2.",
+          "calibration_account": "CT2 current accepted error <=0.1 kg including shared offset; acquisition separation is not calibration independence.",
+          "reference_account": "Accepted full-task bounded reference with separate acquisition and calibration routes; no global/statistical independence claim warranted.",
+          "remaining_issue": null,
+          "next_check": null,
+          "lookup": {
+            "ancestry_delivered": true,
+            "reference_requested": true,
+            "reference_available": true,
+            "administrative_record_requested": false,
+            "task_decisive_evidence_delivered": true,
+            "missed_decisive_record": null,
+            "joint_ancestry_reference_coverage": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "AS05",
+      "criterion": "sample maximum <= 50.0 bar",
+      "external_truth": {
+        "condition": "condition_not_met",
+        "retained_claim_correct": false,
+        "usage": "Descriptive latent comparator only; never substitutes for packet warrant. UNRESOLVED is abstention, not a false task claim."
+      },
+      "pairs": [
+        {
+          "requested_ids": [
+            "N-A",
+            "N-D"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "task_truth_warrant": "unknown",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [],
+          "value_or_bound": "No bounded task maximum or threshold verdict; the primary nominal value has an unbounded calibration route.",
+          "briefing_acquisition_count": 3,
+          "briefing_acquisition_roots": [
+            "Nm",
+            "Nn",
+            "No"
+          ],
+          "origin_account": "Nm -> Maple; Nn -> North; No -> Oak. Three separate streams, all share CT6.",
+          "calibration_account": "CT6 present offset/error unbounded; three acquisitions do not remove this calibration route.",
+          "reference_account": "No reference requested.",
+          "remaining_issue": "Without N-R, the true maximum relative to 50.0 is unknown.",
+          "next_check": "Obtain a complete bounded current reference, or establish a certified CT6 correction/error envelope.",
+          "lookup": {
+            "ancestry_delivered": true,
+            "reference_requested": false,
+            "reference_available": false,
+            "administrative_record_requested": true,
+            "task_decisive_evidence_delivered": false,
+            "missed_decisive_record": "N-R",
+            "joint_ancestry_reference_coverage": false
+          }
+        },
+        {
+          "requested_ids": [
+            "N-A",
+            "N-R"
+          ],
+          "action": "HOLD",
+          "retained_claim_reuse": false,
+          "task_truth_warrant": "condition_not_met",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [
+            "N-R"
+          ],
+          "value_or_bound": "With N-R: task maximum is in [50.6,50.8] bar; >=50.6 establishes violation. Nominal 50.7 is not exact truth.",
+          "briefing_acquisition_count": null,
+          "briefing_acquisition_roots": null,
+          "origin_account": "Briefing ancestry was not delivered. Do not infer a count or copying/separate-acquisition pattern from three agreeing briefing statements.",
+          "calibration_account": "Briefing calibration ancestry/validity not established by the delivered ancestry ledger, because that ledger was not requested.",
+          "reference_account": "Accepted full-task bounded reference with separate acquisition and calibration routes; no global/statistical independence claim warranted.",
+          "remaining_issue": null,
+          "next_check": null,
+          "lookup": {
+            "ancestry_delivered": false,
+            "reference_requested": true,
+            "reference_available": true,
+            "administrative_record_requested": true,
+            "task_decisive_evidence_delivered": true,
+            "missed_decisive_record": null,
+            "joint_ancestry_reference_coverage": false
+          }
+        },
+        {
+          "requested_ids": [
+            "N-D",
+            "N-R"
+          ],
+          "action": "HOLD",
+          "retained_claim_reuse": false,
+          "task_truth_warrant": "condition_not_met",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [
+            "N-R"
+          ],
+          "value_or_bound": "With N-R: task maximum is in [50.6,50.8] bar; >=50.6 establishes violation. Nominal 50.7 is not exact truth.",
+          "briefing_acquisition_count": 3,
+          "briefing_acquisition_roots": [
+            "Nm",
+            "Nn",
+            "No"
+          ],
+          "origin_account": "Nm -> Maple; Nn -> North; No -> Oak. Three separate streams, all share CT6.",
+          "calibration_account": "CT6 present offset/error unbounded; three acquisitions do not remove this calibration route.",
+          "reference_account": "Accepted full-task bounded reference with separate acquisition and calibration routes; no global/statistical independence claim warranted.",
+          "remaining_issue": null,
+          "next_check": null,
+          "lookup": {
+            "ancestry_delivered": true,
+            "reference_requested": true,
+            "reference_available": true,
+            "administrative_record_requested": false,
+            "task_decisive_evidence_delivered": true,
+            "missed_decisive_record": null,
+            "joint_ancestry_reference_coverage": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "AS06",
+      "criterion": "each P01-P20 <= 12.0 kg",
+      "external_truth": {
+        "condition": "condition_not_met",
+        "retained_claim_correct": false,
+        "usage": "Descriptive latent comparator only; never substitutes for packet warrant. UNRESOLVED is abstention, not a false task claim."
+      },
+      "pairs": [
+        {
+          "requested_ids": [
+            "P-A",
+            "P-D"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "task_truth_warrant": "unknown",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [],
+          "value_or_bound": "Mean is in [10.9,11.1] kg; this is not an upper bound of 11.1 on each parcel. No warranted criterion verdict.",
+          "briefing_acquisition_count": 3,
+          "briefing_acquisition_roots": [
+            "Pp",
+            "Pq",
+            "Pr"
+          ],
+          "origin_account": "Pp -> Pine; Pq -> Quill; Pr -> Reed. Three separate acquisitions and separate calibration paths, but only means retained.",
+          "calibration_account": "Mean error <=0.1 kg; no individual values/extrema/distributional bound survives.",
+          "reference_account": "No reference requested.",
+          "remaining_issue": "Means cannot establish all parcels comply or that any parcel violates; current individual masses/maxima are unavailable.",
+          "next_check": "Obtain current per-parcel values or a certified maximum/individual upper bound; a violating individual value would establish HOLD.",
+          "lookup": {
+            "ancestry_delivered": true,
+            "reference_requested": false,
+            "reference_available": false,
+            "administrative_record_requested": true,
+            "task_decisive_evidence_delivered": false,
+            "missed_decisive_record": null,
+            "joint_ancestry_reference_coverage": false
+          }
+        },
+        {
+          "requested_ids": [
+            "P-A",
+            "P-R"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "task_truth_warrant": "unknown",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [],
+          "value_or_bound": "Mean is in [10.9,11.1] kg; this is not an upper bound of 11.1 on each parcel. No warranted criterion verdict.",
+          "briefing_acquisition_count": null,
+          "briefing_acquisition_roots": null,
+          "origin_account": "Briefing ancestry was not delivered. Do not infer a count or copying/separate-acquisition pattern from three agreeing briefing statements.",
+          "calibration_account": "Briefing calibration ancestry/validity not established by the delivered ancestry ledger, because that ledger was not requested.",
+          "reference_account": "Valid independent mean/total reference only; cannot settle individual-condition task.",
+          "remaining_issue": "Means cannot establish all parcels comply or that any parcel violates; current individual masses/maxima are unavailable.",
+          "next_check": "Obtain current per-parcel values or a certified maximum/individual upper bound; a violating individual value would establish HOLD.",
+          "lookup": {
+            "ancestry_delivered": false,
+            "reference_requested": true,
+            "reference_available": true,
+            "administrative_record_requested": true,
+            "task_decisive_evidence_delivered": false,
+            "missed_decisive_record": null,
+            "joint_ancestry_reference_coverage": false
+          }
+        },
+        {
+          "requested_ids": [
+            "P-D",
+            "P-R"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "task_truth_warrant": "unknown",
+          "exact_numeric_truth_warranted": false,
+          "decisive_delivered_ids": [],
+          "value_or_bound": "Mean is in [10.9,11.1] kg; this is not an upper bound of 11.1 on each parcel. No warranted criterion verdict.",
+          "briefing_acquisition_count": 3,
+          "briefing_acquisition_roots": [
+            "Pp",
+            "Pq",
+            "Pr"
+          ],
+          "origin_account": "Pp -> Pine; Pq -> Quill; Pr -> Reed. Three separate acquisitions and separate calibration paths, but only means retained.",
+          "calibration_account": "Mean error <=0.1 kg; no individual values/extrema/distributional bound survives.",
+          "reference_account": "Valid independent mean/total reference only; cannot settle individual-condition task.",
+          "remaining_issue": "Means cannot establish all parcels comply or that any parcel violates; current individual masses/maxima are unavailable.",
+          "next_check": "Obtain current per-parcel values or a certified maximum/individual upper bound; a violating individual value would establish HOLD.",
+          "lookup": {
+            "ancestry_delivered": true,
+            "reference_requested": true,
+            "reference_available": true,
+            "administrative_record_requested": false,
+            "task_decisive_evidence_delivered": false,
+            "missed_decisive_record": null,
+            "joint_ancestry_reference_coverage": true
+          }
+        }
+      ]
+    }
+  ]
+}

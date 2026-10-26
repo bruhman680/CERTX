@@ -1,0 +1,241 @@
+[
+  {
+    "id": "AS01",
+    "initial": "Object: Cooling loop Kestrel, release check at 14:00.. Current task: Decide whether its maximum outlet temperature during 13:50–14:00 was at most 8.5 °C.\nRetained claim: “The release temperature condition is met.”\nThree briefing reports for this object and task:\nAster: Maximum 8.0 °C; release condition met.\nBirch: Kestrel meets the 8.5 °C release condition.\nCedar: The current release check passes.\n\nSelectable inventory (exactly three records):\nK-D: Briefing build and acquisition ledger.\nK-R: Bench reference examination.\nK-A: Release logistics note.\n\nRequest exactly two distinct record IDs in one request. You will receive only the frozen records requested; no further requests are allowed after delivery. Then give the task decision, whether to reuse the retained claim, evidence IDs, any unresolved issue, and the next check you would request outside this exercise. Do not provide private reasoning.",
+    "records": {
+      "K-D": "Kestrel, 14:00 release. Aster rendered observation K0. Birch imported Aster's result cell; Cedar imported the same K0 result via Birch. No second or third acquisition occurred. K0 is a complete fixed-rate 13:50–14:00 outlet log, with the specified task maximum defined over those samples. K0 maximum: 8.0 °C. The session's accepted calibration contract bounds every K0 reading's absolute error by 0.1 °C over 0–12 °C; timing and full sample coverage were verified. The displayed maximum is unrounded. The retained task uses these exact samples.",
+      "K-R": "Kestrel, 14:00 release. Reference R0 logged the same specified outlet samples and found maximum 8.0 °C. Its accepted absolute error bound is 0.1 °C over 0–12 °C. Sample coverage and clock alignment were verified. R0 uses its own probe, recorder, and calibration against a distinct certified bath; it takes no data or calibration coefficients from K0 or the briefing pipeline. This independence concerns acquisition and calibration routes only. The task maximum is at most 8.1 °C under this contract.",
+      "K-A": "Kestrel, 14:00 release. Valve V3 was reserved for transfer after the temperature decision. Aster, Birch, and Cedar briefings were delivered to the release desk. This logistics entry contains no outlet measurements, calibration checks, or acquisition history. Reservation does not authorize release."
+    },
+    "hidden_truth": {
+      "claim_correct": true,
+      "task_answer": "condition_met",
+      "support_generation": "copied",
+      "generation_truth": {
+        "actual_maximum_C": 8.0,
+        "report_roots": [
+          "K0"
+        ],
+        "edges": [
+          "K0 -> Aster",
+          "Aster -> Birch",
+          "Birch -> Cedar"
+        ]
+      },
+      "reference_status": "valid_agrees",
+      "primary_status": "bounded_complete_decisive",
+      "decisive_record_sets": [
+        [
+          "K-D"
+        ],
+        [
+          "K-R"
+        ]
+      ],
+      "full_packet_warrant": "condition_met",
+      "notes": "Copying does not make the correct source false. K-D alone warrants completion; ancestry and its calibrated acquisition matter together."
+    }
+  },
+  {
+    "id": "AS02",
+    "initial": "Object: Mixer Juniper, seal check at 09:30.. Current task: Decide whether maximum seal vibration during the specified 09:20–09:30 sample series was at most 8.5 mm/s.\nRetained claim: “The seal vibration condition is met.”\nThree briefing reports for this object and task:\nDune: Maximum 8.1 mm/s; seal condition met.\nElm: Juniper satisfies the 8.5 mm/s limit.\nFern: The current seal check passes.\n\nSelectable inventory (exactly three records):\nJ-R: Portable reference examination.\nJ-A: Inspection scheduling note.\nJ-D: Briefing build and acquisition ledger.\n\nRequest exactly two distinct record IDs in one request. You will receive only the frozen records requested; no further requests are allowed after delivery. Then give the task decision, whether to reuse the retained claim, evidence IDs, any unresolved issue, and the next check you would request outside this exercise. Do not provide private reasoning.",
+    "records": {
+      "J-D": "Juniper, 09:30 seal check. Dune rendered observation J0. Elm copied Dune's result cell; Fern imported J0 through Elm. There was one acquisition. J0 covers the correct 09:20–09:30 sample series; displayed maximum 8.1 mm/s. Its probe used calibration table CT9. CT9's present offset and error bound were not established for this session. Repeated exports preserve that uncertainty. This ledger contains no certified correction, alternative measurement, or present-session bound. The nominal reading alone cannot establish which side of 8.5 mm/s the true maximum occupies.",
+      "J-R": "Juniper, 09:30 seal check. Portable reference JR covered the full specified 09:20–09:30 series with verified clock alignment. Maximum 9.1 mm/s; accepted absolute error at every sample at most 0.1 mm/s. JR has a separate probe and recorder and a current certified shaker calibration, with no CT9 coefficients or J0 data in its path. Coverage and range 0–12 mm/s were verified. The true maximum is therefore at least 9.0 mm/s, above the 8.5 mm/s task limit.",
+      "J-A": "Juniper, 09:30 seal check. Maintenance reserved a repeat inspection slot at 11:00 if the decision requires it. The scheduling desk received Dune, Elm, and Fern briefings. This record contains no measurements, calibration checks, or acquisition history. The reservation does not establish that the vibration condition is met."
+    },
+    "hidden_truth": {
+      "claim_correct": false,
+      "task_answer": "condition_not_met",
+      "support_generation": "copied",
+      "generation_truth": {
+        "actual_maximum_mm_s": 9.1,
+        "shared_display_offset_mm_s": -1.0,
+        "report_roots": [
+          "J0"
+        ],
+        "edges": [
+          "J0 -> Dune",
+          "Dune -> Elm",
+          "Elm -> Fern"
+        ]
+      },
+      "reference_status": "valid_disagrees",
+      "primary_status": "complete_unbounded_calibration",
+      "decisive_record_sets": [
+        [
+          "J-R"
+        ]
+      ],
+      "full_packet_warrant": "condition_not_met",
+      "notes": "The shared-source fact does not refute the claim. JR supplies bounded contradictory task evidence."
+    }
+  },
+  {
+    "id": "AS03",
+    "initial": "Object: Bearing Larch, restart check at 16:20.. Current task: Decide whether maximum bearing temperature in the specified 16:10–16:20 sample series was at most 48.0 °C.\nRetained claim: “The bearing temperature condition is met.”\nThree briefing reports for this object and task:\nGrove: Maximum 46.0 °C; restart temperature condition met.\nHeath: Larch satisfies the 48.0 °C condition.\nIris: The current restart temperature check passes.\n\nSelectable inventory (exactly three records):\nL-A: Restart coordination note.\nL-D: Briefing build and acquisition ledger.\nL-R: Contact reference examination.\n\nRequest exactly two distinct record IDs in one request. You will receive only the frozen records requested; no further requests are allowed after delivery. Then give the task decision, whether to reuse the retained claim, evidence IDs, any unresolved issue, and the next check you would request outside this exercise. Do not provide private reasoning.",
+    "records": {
+      "L-D": "Larch, 16:20 restart check. Grove rendered observation L0. Heath imported Grove's result cell; Iris copied Heath's retained value. Only L0 acquired samples. The complete specified 16:10–16:20 series has nominal maximum 46.0 °C. The installed probe's calibration expired before this session; no present-session offset or absolute error bound is available. Correct timing and sample coverage were verified. This ledger has no certified correction or alternative measurements. The three reports preserve one observation and its unresolved calibration uncertainty.",
+      "L-R": "Larch, 16:20 restart check. The contact reference channel produced no record: its recorder failed before acquisition. No retained measurements or calibration-valid comparison for the specified sample series can be delivered. This is an unavailable reference, not a zero reading or evidence that the temperature condition holds.",
+      "L-A": "Larch, 16:20 restart check. The restart coordinator assigned staff and marked the temperature decision pending review. Grove, Heath, and Iris briefings were delivered. This coordination entry contains no temperature measurements, calibration checks, or acquisition history. Staffing availability does not settle the temperature condition."
+    },
+    "hidden_truth": {
+      "claim_correct": true,
+      "task_answer": "condition_met",
+      "support_generation": "copied",
+      "generation_truth": {
+        "actual_maximum_C": 46.0,
+        "report_roots": [
+          "L0"
+        ],
+        "edges": [
+          "L0 -> Grove",
+          "Grove -> Heath",
+          "Heath -> Iris"
+        ]
+      },
+      "reference_status": "unavailable",
+      "primary_status": "complete_unbounded_calibration",
+      "decisive_record_sets": [],
+      "full_packet_warrant": "unresolved",
+      "notes": "Latent truth is favorable, but no selectable record bounds the task value. Do not score completion as warranted."
+    }
+  },
+  {
+    "id": "AS04",
+    "initial": "Object: Pallet group Moss, dispatch check at 11:40.. Current task: Decide whether each of pallets M1, M2, and M3 has mass at most 19.0 kg at this check.\nRetained claim: “All three pallets meet the dispatch mass condition.”\nThree briefing reports for this object and task:\nJade: Maximum across M1–M3 is 18.4 kg; mass condition met.\nKnoll: Each current Moss pallet is within 19.0 kg.\nLinden: The current three-pallet mass check passes.\n\nSelectable inventory (exactly three records):\nM-D: Briefing build and acquisition ledger.\nM-A: Dispatch logistics note.\nM-R: Platform reference examination.\n\nRequest exactly two distinct record IDs in one request. You will receive only the frozen records requested; no further requests are allowed after delivery. Then give the task decision, whether to reuse the retained claim, evidence IDs, any unresolved issue, and the next check you would request outside this exercise. Do not provide private reasoning.",
+    "records": {
+      "M-D": "Moss, 11:40 dispatch check. Jade was computed from weighing session Mj; Knoll from Mk; Linden from Ml. Each session separately weighed all three current pallets, with no readings imported from another session. All sessions gave M1 18.2, M2 18.3, M3 18.4 kg. The three balances share calibration table CT2. Its accepted current contract bounds each reading's absolute error by 0.1 kg over 0–25 kg, including any shared offset. Coverage and pallet identities were verified. Separate acquisitions do not remove the shared calibration route; that route is bounded here.",
+      "M-R": "Moss, 11:40 dispatch check. Reference MR separately weighed M1, M2, and M3 at 18.2, 18.3, and 18.4 kg. The accepted absolute error bound is 0.1 kg for each weighing over 0–25 kg. Identities and current check coverage were verified. MR uses a separate platform, recorder, and certified mass set and imports neither CT2 nor the briefing readings. Independence is limited to these acquisition and calibration routes. Each pallet is therefore at most 18.5 kg, below 19.0 kg.",
+      "M-A": "Moss, 11:40 dispatch check. The truck has space allocated to M1, M2, and M3, subject to completion of the mass decision. Jade, Knoll, and Linden briefings were delivered. This logistics entry contains no weighing values, calibration checks, or acquisition history. Space allocation does not establish compliance."
+    },
+    "hidden_truth": {
+      "claim_correct": true,
+      "task_answer": "condition_met",
+      "support_generation": "separate_acquisitions",
+      "generation_truth": {
+        "actual_masses_kg": [
+          18.2,
+          18.3,
+          18.4
+        ],
+        "report_roots": [
+          "Mj",
+          "Mk",
+          "Ml"
+        ],
+        "edges": [
+          "Mj -> Jade",
+          "Mk -> Knoll",
+          "Ml -> Linden"
+        ],
+        "shared_calibration": "CT2, valid bounded error"
+      },
+      "reference_status": "valid_agrees",
+      "primary_status": "bounded_complete_decisive",
+      "decisive_record_sets": [
+        [
+          "M-D"
+        ],
+        [
+          "M-R"
+        ]
+      ],
+      "full_packet_warrant": "condition_met",
+      "notes": "Separate acquisitions can share calibration. The declared envelope supports completion, not a broad claim of independent errors."
+    }
+  },
+  {
+    "id": "AS05",
+    "initial": "Object: Pressure skid Nettle, transfer check at 07:50.. Current task: Decide whether maximum line pressure during the specified 07:40–07:50 sample series was at most 50.0 bar.\nRetained claim: “The line pressure condition is met.”\nThree briefing reports for this object and task:\nMaple: Maximum 49.7 bar; pressure condition met.\nNorth: Nettle satisfies the 50.0 bar condition.\nOak: The current transfer pressure check passes.\n\nSelectable inventory (exactly three records):\nN-R: Transfer-standard reference examination.\nN-D: Briefing build and acquisition ledger.\nN-A: Transfer staffing note.\n\nRequest exactly two distinct record IDs in one request. You will receive only the frozen records requested; no further requests are allowed after delivery. Then give the task decision, whether to reuse the retained claim, evidence IDs, any unresolved issue, and the next check you would request outside this exercise. Do not provide private reasoning.",
+    "records": {
+      "N-D": "Nettle, 07:50 transfer check. Maple used sensor stream Nm; North used Nn; Oak used No. Each sensor separately acquired every specified 07:40–07:50 sample; no readings passed between streams. All three displayed maxima are 49.7 bar. All sensors use shared calibration table CT6. CT6's present offset and error bound have not been established. Coverage, clock alignment, and line identity were verified. Three acquisitions therefore retain a common unbounded calibration route. No certified correction or alternative calibrated values appear in this ledger.",
+      "N-R": "Nettle, 07:50 transfer check. Reference NR independently recorded the entire specified sample series, with verified coverage and timing. Maximum 50.7 bar; accepted absolute error at each sample at most 0.1 bar over 0–60 bar. NR has a separate transducer and recorder and current deadweight calibration using no CT6 coefficients or briefing-stream values. Independence concerns those acquisition and calibration routes. The true maximum is at least 50.6 bar, exceeding the 50.0 bar condition.",
+      "N-A": "Nettle, 07:50 transfer check. Two operators were assigned for a possible transfer after the pressure decision. Maple, North, and Oak briefings were delivered. This staffing entry contains no pressure measurements, calibration checks, or acquisition history. Operator assignment does not authorize transfer."
+    },
+    "hidden_truth": {
+      "claim_correct": false,
+      "task_answer": "condition_not_met",
+      "support_generation": "separate_acquisitions",
+      "generation_truth": {
+        "actual_maximum_bar": 50.7,
+        "shared_display_offset_bar": -1.0,
+        "report_roots": [
+          "Nm",
+          "Nn",
+          "No"
+        ],
+        "edges": [
+          "Nm -> Maple",
+          "Nn -> North",
+          "No -> Oak"
+        ],
+        "shared_calibration": "CT6, common -1.0 bar offset"
+      },
+      "reference_status": "valid_disagrees",
+      "primary_status": "complete_unbounded_calibration",
+      "decisive_record_sets": [
+        [
+          "N-R"
+        ]
+      ],
+      "full_packet_warrant": "condition_not_met",
+      "notes": "Separate sensor acquisitions do not guarantee calibration independence. NR warrants rejection and completion."
+    }
+  },
+  {
+    "id": "AS06",
+    "initial": "Object: Parcel cohort Plover, acceptance check at 12:10.. Current task: Decide whether each of the 20 current parcels P01–P20 has mass at most 12.0 kg.\nRetained claim: “All 20 parcels meet the individual mass condition.”\nThree briefing reports for this object and task:\nPine: Cohort mean 11.0 kg; individual mass condition met.\nQuill: Current Plover mean is 11.0 kg; all parcels accepted.\nReed: Mean 11.0 kg; the individual parcel check passes.\n\nSelectable inventory (exactly three records):\nP-A: Acceptance routing note.\nP-R: Batch reference examination.\nP-D: Briefing build and acquisition ledger.\n\nRequest exactly two distinct record IDs in one request. You will receive only the frozen records requested; no further requests are allowed after delivery. Then give the task decision, whether to reuse the retained claim, evidence IDs, any unresolved issue, and the next check you would request outside this exercise. Do not provide private reasoning.",
+    "records": {
+      "P-D": "Plover, 12:10 acceptance check. Pine used acquisition Pp; Quill used Pq; Reed used Pr. Each separately weighed all current P01–P20; none imported readings. Each export retained only the cohort mean, 11.0 kg. Individual values and extrema were discarded and cannot be recovered from these records. Each balance's accepted calibration bounds the mean's absolute error by 0.1 kg; sample identities and complete cohort coverage were verified. Calibration paths are separate. No valid contract converts these means into a bound on every parcel. The briefings' individual-condition conclusion was generated from the means.",
+      "P-R": "Plover, 12:10 acceptance check. Reference PR weighed the whole current cohort together and divided total mass by 20: mean 11.0 kg, absolute error at most 0.1 kg. Its platform, recorder, and certified mass set are separate from Pp, Pq, and Pr; identities and count were verified. PR measures only total and mean. It produced no individual values, maximum, or distributional bound. A valid mean below 12.0 kg can coexist with a parcel above 12.0 kg; this record cannot settle the individual-condition task.",
+      "P-A": "Plover, 12:10 acceptance check. The routing desk reserved acceptance labels for P01–P20, subject to the individual mass decision. Pine, Quill, and Reed briefings were delivered. This routing entry contains no weighing values, calibration checks, or acquisition history. Reserved labels do not establish acceptance."
+    },
+    "hidden_truth": {
+      "claim_correct": false,
+      "task_answer": "condition_not_met",
+      "support_generation": "separate_acquisitions",
+      "generation_truth": {
+        "actual_masses_kg": [
+          13.4,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315,
+          10.873684210526315
+        ],
+        "actual_mean_kg": 11.0,
+        "report_roots": [
+          "Pp",
+          "Pq",
+          "Pr"
+        ],
+        "edges": [
+          "Pp -> Pine",
+          "Pq -> Quill",
+          "Pr -> Reed"
+        ],
+        "shared_calibration": null
+      },
+      "reference_status": "scope_insufficient",
+      "primary_status": "mean_only_for_pointwise_task",
+      "decisive_record_sets": [],
+      "full_packet_warrant": "unresolved",
+      "notes": "Reference is valid within mean scope but cannot establish or refute the individual task. Reject retained claim as unsupported while task truth remains unresolved. Do not infer a violating parcel from insufficiency."
+    }
+  }
+]

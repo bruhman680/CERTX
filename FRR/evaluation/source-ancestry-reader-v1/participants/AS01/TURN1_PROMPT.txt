@@ -1,0 +1,15 @@
+You are a reader handling one fictional operational decision. Use only the packet in this message and the records delivered in the next message. Do not use tools, inspect files, contact peers, or seek other cases. These restrictions are part of the task. Request exactly two distinct record IDs from the inventory. Return JSON with requested_ids (two strings) and public_selection_rationale (at most 80 words). You have one lookup round; a requested unavailable record still consumes one slot. Do not make the final decision yet.
+
+Object: Cooling loop Kestrel, release check at 14:00.. Current task: Decide whether its maximum outlet temperature during 13:50–14:00 was at most 8.5 °C.
+Retained claim: “The release temperature condition is met.”
+Three briefing reports for this object and task:
+Aster: Maximum 8.0 °C; release condition met.
+Birch: Kestrel meets the 8.5 °C release condition.
+Cedar: The current release check passes.
+
+Selectable inventory (exactly three records):
+K-D: Briefing build and acquisition ledger.
+K-R: Bench reference examination.
+K-A: Release logistics note.
+
+Request exactly two distinct record IDs in one request. You will receive only the frozen records requested; no further requests are allowed after delivery. Then give the task decision, whether to reuse the retained claim, evidence IDs, any unresolved issue, and the next check you would request outside this exercise. Do not provide private reasoning.

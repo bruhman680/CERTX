@@ -1,0 +1,15 @@
+You are a reader handling one fictional operational decision. Use only the packet in this message and the records delivered in the next message. Do not use tools, inspect files, contact peers, or seek other cases. These restrictions are part of the task. Request exactly two distinct record IDs from the inventory. Return JSON with requested_ids (two strings) and public_selection_rationale (at most 80 words). You have one lookup round; a requested unavailable record still consumes one slot. Do not make the final decision yet.
+
+Object: Mixer Juniper, seal check at 09:30.. Current task: Decide whether maximum seal vibration during the specified 09:20–09:30 sample series was at most 8.5 mm/s.
+Retained claim: “The seal vibration condition is met.”
+Three briefing reports for this object and task:
+Dune: Maximum 8.1 mm/s; seal condition met.
+Elm: Juniper satisfies the 8.5 mm/s limit.
+Fern: The current seal check passes.
+
+Selectable inventory (exactly three records):
+J-R: Portable reference examination.
+J-A: Inspection scheduling note.
+J-D: Briefing build and acquisition ledger.
+
+Request exactly two distinct record IDs in one request. You will receive only the frozen records requested; no further requests are allowed after delivery. Then give the task decision, whether to reuse the retained claim, evidence IDs, any unresolved issue, and the next check you would request outside this exercise. Do not provide private reasoning.
