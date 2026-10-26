@@ -8,7 +8,7 @@ This is a saved dependency-aware plan, not a running scheduler. It queues every 
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
-Current rest: [checkpoint](../../sync/checkpoints/REST_AFTER_PROBE_WITNESS_2026-10-26.md) after completed [PW](../probe-witness-calibration-v1/REPORT.md). User requested pause/light sync. Next reference/bias witness and task-envelope work proposed only; no tests/scouts/background work. Queue counts/statuses and core/schema unchanged; previous failure histories retained.
+Current completed contact: [RB-C1/2/3](../reference-bias-contact-v1/REPORT.md),144 exact main rows plus8 diagnostics and passed independent all-row replay. User resumed from [prior rest](../../sync/checkpoints/REST_AFTER_PROBE_WITNESS_2026-10-26.md). Reference authority and task/raw envelopes remain conditional; [next actual-reader ancestry proposal](../reference-bias-contact-v1/NEXT_CONTACT.md) is unexecuted. Queue35/30unfinished/sixpartial families, core/schema unchanged; no background continuation.
 
 ## Nearest work
 

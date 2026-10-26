@@ -1,0 +1,9 @@
+# After reference-bias three-phase contact
+
+26 October 2026 America/Chicago. User resumed with full research/swarm authorization. [RB report](../../evaluation/reference-bias-contact-v1/REPORT.md) completed prospective derivation/design, one frozen exact main and independent synthesis/replay. Six contexts including root, no model API or new web scout.
+
+144 main method/norm rows over12 coefficient/bias worlds plus8 supplemental scalar-ambiguity diagnostics. Main once exit0, approximately.0595seconds. Independent10432exactcomparisons pass with zero discrepancies. Coverage96, gapgate105passes/39withhold, raw66certificates/13false under deliberately invalid contracts; no empirical probability claim. Common offsets preserve gap but may corrupt raw values. Valid reference point exact on nonsingular worlds yet weakprobe raw.1budget unproved under supplied bounds.
+
+Confidence high for scoped exact algebra/table/audit, unestablished for natural-language source authority or agent-benefit. Bounds, roles, transport, orthogonality and norm ratio supplied. Scalarreading ambiguity is not fullvector equivalence. Initial math residual-width draft and protocol scope revisions preserved; no main/audit failure or rerun. Historical CR strict orderedFAIL unchanged.
+
+Strongest practical next: actual-reader source ancestry/authority, separately scoring unsafe reuse, corrected completion and warranted unresolved status. [Design review](../../evaluation/reference-bias-contact-v1/DEFERRED_DIRECTION_REVIEW.md), [next contact](../../evaluation/reference-bias-contact-v1/NEXT_CONTACT.md) proposed only. Geometry/transport stress is lateral numerical alternative. No automatic fourth phase, scheduler or background work. Queue35/30unfinished/sixpartial families, MEM-04partial, core/runtime/schema/machinequeue unchanged. Current navigation updated; previous navigation originals saved within RB study and Git history.

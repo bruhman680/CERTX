@@ -1,5 +1,7 @@
 # Current FRR orientation
 
+Current completed contact: [RB-C1/2/3](../evaluation/reference-bias-contact-v1/REPORT.md),144 exact main rows and8 supplemental diagnostics, independent replay passed. User resumed; prior rest below is historical. Conditional reference authority and raw-error guarantees separated. [Checkpoint](checkpoints/AFTER_REFERENCE_BIAS_2026-10-26.md). Next actual-reader source ancestry contact proposed only; no background work.
+
 Scope: `codex/frr-progress-2026-10-07`; the latest three-cycle run is linked below. Earlier source contacts, experiments and optional guidance retain their own commit anchors. This is current navigation, not a complete history or a substitute for the user's latest direction.
 
 Paused at user request after [PW-C1/2/3](../evaluation/probe-witness-calibration-v1/REPORT.md). [Current rest checkpoint](checkpoints/REST_AFTER_PROBE_WITNESS_2026-10-26.md) preserves completed8345636anchor, confidence and proposed independent-reference/task-envelope directions. No new research/background work; historical CRstrictFAILunchanged.

@@ -1,0 +1,26 @@
+# RB-C1/2/3: reference authority and task-specific error
+
+26 October 2026, America/Chicago. New authored exact linear toy, not a rerun of PW retrieval, a behavioral test, or source evidence. User authorized resumed cycles and collaborating swarm. Three bounded phases: prospective math/review; one fixed execution; independent replay and synthesis. No automatic fourth phase.
+
+Question: which bias assumptions can a reference repair, and which mistakes remain invisible to mutually agreeing measurements? Preserve the preceding PW failure: declared bounds are not self-authenticating.
+
+Write D=n+s and D'=alpha*n+beta*s with n perpendicular to s, ||s||=1 and ||n||=rho. Actual coefficient pairs CONTEXT=(-1,1), WEAK=(9/10,1), SIGNAL=(1,-1), COPY=(1,1). Rho=1/2,1,2. Scalar readings y_a=alpha+b_a and y_b=beta+b_b, deterministic and noiseless apart from specified bias. Bias cases ZERO=(0,0), COMMON=(3/25,3/25), OPPOSED=(3/25,-3/25). These are 12 distinct coefficient/bias worlds, reused across methods and rho; no independent repetitions or probability claims.
+
+Four contracts per world, applied without outcome selection:
+
+1. BLIND: assume each bias in [-1/50,1/50]. Point coefficients equal y. No reference observations. Deliberately invalid for nonzero bias.
+2. WIDE: honest bias allowance [-3/20,3/20] per role. Point coefficients equal y. No reference observations. Rectangular allowance is conservative; no independence is assumed.
+3. REFERENCE: two role-specific bias-reference observations r_a=b_a,r_b=b_b, each with declared error bound 1/100. Point coefficients y-r. Reference transport, role authority and error bounds are supplied assumptions, not learned facts. Two extra scalar measurements.
+4. BAD_REFERENCE: reference observations r_a=r_b=0 with declared error bound 1/100 in all worlds. Points y-r. Two extra scalar measurements whose contract fails for nonzero bias. This isolates misleading reference authority. Do not present it as a naturally measured noise process or empirical failure frequency.
+
+For bias interval [l,u], coefficient interval [y-u,y-l]. Compatible true gap interval [L_b-U_a,U_b-L_a]. All endpoints, point coefficients, true gaps, coverage and squared errors computed exactly with Python Fraction. Gate PASS iff intervals nonempty and gap interval strictly excludes zero. Exact zero, no numerical nonsingularity threshold. A true nonsingular world may be withheld because supplied evidence permits singularity. Empty sets, unavailable point inversion and gate withholding are separate states.
+
+Point reconstruction if h=b_hat-a_hat is nonzero: s_hat=(D'-a_hat*D)/h. Save nuisance coefficient -da/h, signal gain (g-da)/h, exact squared relative error ((da*rho)^2+db^2)/h^2, with da=a_hat-alpha, db=b_hat-beta and g=beta-alpha. No projector or retrieval run. Gate controls whether this same point reconstruction is offered; keep diagnostic point result even if gate withholds.
+
+Conditional raw error envelope: take E_a=max(abs(a_hat-L_a),abs(a_hat-U_a)), similarly E_b. Under coefficient coverage, orthogonality and known norm ratio, squared relative error <= ((E_a*rho)^2+E_b^2)/h^2. Exact Fraction comparison; floats only display square roots. This bound concerns fixed point reconstruction with denominator h, not all hypothetical reconstruction denominators. If h=0, envelope unavailable. Compare conditional gate and a raw task budget error<=1/10 separately: raw_certified iff gate PASS and envelope squared<=1/100. Budget fixed before execution, an authored requirement, not universal correctness. Evaluate false raw certificate only against actual model; no probabilistic calibration.
+
+Predeclared predictions: COMMON bias preserves true gap while potentially leaking nuisance; OPPOSED can counterfeit COPY separation under BLIND/BAD_REFERENCE; WIDE covers all true coefficients but may withhold weak separations; valid references cover truth, recover exact point coefficients and identify nonzero actual gaps; invalid reference can appear coherent and confident. Add observed-equivalent COPY world (alpha,beta)=(1,1),bias=(.12,-.12) and alternative world (1.12,.88),bias=(0,0): identical primary readings, different singularity. Valid reference distinguishes only because extra authority/information was supplied.
+
+Fixed main grid 4 probes x3 biases x4 contracts x3 norm ratios=144 rows. Save all rows as JSON with rational numbers strings and summary; all contracts receive the same primary readings within a world. Save predictions/protocol/code SHA256 before run, stdout/stderr/runtime/environment. One main execution; on failure preserve originals and diagnose before repair. No tuning or rerun for favorable outcomes. Numerical implementation may use sqrt for human display only.
+
+Independent auditor must rebuild all144 rows and summaries without importing main implementation; check exact intervals, formulas, coverage, gate, error-envelope validity under coverage, reported false certificates, shared observations, counts and indistinguishable worlds. Reviewer checks prose against full output. Code and evaluator revisions preserved. Historical PW/CR outcomes unchanged; this study does not certify semantic roles, actual reference truth, a general verification algorithm or FRR behavioral improvement.

@@ -12,6 +12,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 
 ## Useful artifacts and recent contacts
 
+- [RB-C1/2/3](evaluation/reference-bias-contact-v1/REPORT.md): exact bias/reference and raw-error contact,144 main rows plus8 diagnostics, independent10432-comparison replay passed. Valid references add supplied authority; invalid narrow references can falsely certify. Common offset preserves gap but can corrupt values. [Checkpoint](sync/checkpoints/AFTER_REFERENCE_BIAS_2026-10-26.md); [next source-ancestry/reader proposal](evaluation/reference-bias-contact-v1/NEXT_CONTACT.md). No behavioral/queue/core promotion.
+
 - [PW-C1/2/3](evaluation/probe-witness-calibration-v1/REPORT.md): role-witness bounds/point inversion/conditional nonsingularity gate, one frozen authored run and passed ledger/raw audits. Valid bounds can withhold point repairs; shared invalid bias defeats coverage; raw gain can be wrong while normalized task matches oracle. [Checkpoint](sync/checkpoints/AFTER_PROBE_WITNESS_THREE_CYCLES_2026-10-26.md), [next independent-reference/task-envelope proposals](evaluation/probe-witness-calibration-v1/NEXT_CONTACT.md). Source/audit corrections preserved; no general reasoning/queue/core promotion.
 
 - [CR-C1/2/3 review completed](evaluation/context-perturbation-repair-v1/FINAL_REPORT.md):1170paused flags classified as ordering cascades across341selectedrows; fixed-ID/membership validated, original strict ordered replayFAIL remains explicit. No main rerun. Conditional repair requires trusted selective coefficients; [current checkpoint](sync/checkpoints/AFTER_CONTEXT_REPAIR_REVIEW_2026-10-26.md), [next selectivity-witness proposal](evaluation/context-perturbation-repair-v1/NEXT_CONTACT.md). Historical pause unchanged.

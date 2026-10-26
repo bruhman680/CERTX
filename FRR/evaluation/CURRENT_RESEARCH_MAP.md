@@ -1,6 +1,6 @@
 # Current research map: continuity, distinctions and their readers
 
-Current resting state: [rest checkpoint](../sync/checkpoints/REST_AFTER_PROBE_WITNESS_2026-10-26.md) after completed [PW-C1/2/3](probe-witness-calibration-v1/REPORT.md). Scoped witness/raw/task distinctions and passed audits remain; no general semantic verification claim. Source/bias-witness and task-envelope proposals unexecuted, historical CRstrictFAILretained. User requested pause; no new experiments or background work.
+Current completed state: [RB-C1/2/3](reference-bias-contact-v1/REPORT.md), exact role-bias/reference and raw-error contact with independent all-row audit. [Checkpoint](../sync/checkpoints/AFTER_REFERENCE_BIAS_2026-10-26.md). User resumed after [prior rest](../sync/checkpoints/REST_AFTER_PROBE_WITNESS_2026-10-26.md); previous PW and CR historical outcomes unchanged. Next actual-reader ancestry/authority contact proposed, not launched. No semantic efficacy, queue/core promotion or background cycle.
 
 Predecessor [SA-C1/2/3](structural-access-three-cycle-v1/REPORT.md) completed coordinate/projector transport and supervised subspace estimation. Its proposed mismatch follow-up is now executed in PC; original proposal/history preserved.
 
