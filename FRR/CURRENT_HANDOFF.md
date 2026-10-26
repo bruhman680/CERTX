@@ -4,6 +4,8 @@ The user's current goal is useful reasoning and behavioral habits for learning, 
 
 ## Current practice
 
+[Post-RB refinement](evaluation/reference-bias-practice-refinement-v1/REPORT.md) adds scoped reference-authority/task-guarantee and repair-status distinctions to optional verification, error-lineage and scouting guidance. Originals preserved; no executable/core/schema/queue or historical verdict changes. Guidance is usable; actual behavioral benefit remains untested.
+
 Use a small orientation pulse when consequential: what changed; what distinction could change our next useful action; what contact can distinguish plausible alternatives; what should we do after it? Existing records can supply this—no new form is required. Keep exploratory noticings available, and stop checking when the relevant decision is already warranted.
 
 [PG-C1](evaluation/practice-growth-v1/REPORT.md) practices this on actual saved data and a usable build. The sensor audit separates mean error from pointwise error and identifies repeated shared streams. The new [assessment-reopening helper](tools/reopen_assessment.py) classifies recorded changes and checks bindings before suggesting reuse/reassessment; it preserves the historical verdict. Code-scoped behavior and recorded-data checks are supported; domain transfer and durable habit formation remain open.
