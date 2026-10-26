@@ -1,0 +1,9384 @@
+{
+  "status": "pass_with_tie_order_differences",
+  "sample_method_records": 1728,
+  "failures": [],
+  "max_residuals": {
+    "predicate_normalization": 0.0,
+    "entity_normalization": 0.0,
+    "time_normalization": 0.0,
+    "context_generation": 0.0,
+    "binding_generation": 0.0,
+    "record_generation": 1.1102230246251565e-16,
+    "noise_normalization": 2.2247786310271853e-16,
+    "training_clean_pairs": 0.0,
+    "training_noise_addition": 0.0,
+    "query_noise_addition": 2.220717083251841e-16,
+    "orthogonality": 5.551115123125783e-16,
+    "saved_projector": 1.0880185641326534e-14,
+    "saved_singular_values": 2.6645352591003757e-15,
+    "structural_hermitian_error": 0.0,
+    "structural_idempotent_error": 6.661338147750939e-16,
+    "structural_transport_error": 7.266798344533687e-15,
+    "structural_projector_distance": 2.973606606270551e-15,
+    "structural_principal_angle_cosines": 1.2212453270876722e-15,
+    "structural_singular_values": 2.6645352591003757e-15,
+    "transported_estimate": 1.5210055437364645e-14,
+    "clean_distance_formula": 1.250966061143169e-14,
+    "normalized_real_channel": 5.578801654593729e-16,
+    "saved_centres": 4.173316387848236e-15,
+    "full_normalized_product_invariance": 6.753223014464258e-16,
+    "boundary_gap": 3.4416913763379853e-15,
+    "returned_scores": 2.609024107869118e-15,
+    "returned_angles": 8.659739592076221e-15,
+    "oracle_normalized_product_invariance": 1.27675647831893e-15,
+    "canonical_dense_Q": 0.0,
+    "identity_Q": 0.0,
+    "plane_fixed_axes": 0.0,
+    "plane_angle_magnitude": 0.0,
+    "algebra_reconciled_orthogonality_error": 0.0,
+    "algebra_direct_orthogonality_error": 5.551115123125783e-16,
+    "algebra_reconciled_full_product_error": 2.2193621116464555e-16,
+    "algebra_direct_full_product_error": 8.906212913792458e-16,
+    "algebra_reconciled_full_norm_error": 4.440892098500626e-16,
+    "algebra_direct_full_norm_error": 4.440892098500626e-16,
+    "algebra_reconciled_oracle_product_error": 0.0,
+    "algebra_direct_oracle_product_error": 1.6653345369377348e-15,
+    "algebra_reconciled_oracle_norm_error": 1.1102230246251565e-16,
+    "algebra_direct_oracle_norm_error": 8.881784197001252e-16,
+    "algebra_reconciled_real_channel_error": 6.661342167847503e-16,
+    "algebra_direct_real_channel_error": 6.661342167847503e-16,
+    "algebra_reconciled_oracle_hermitian_error": 0.0,
+    "algebra_direct_oracle_hermitian_error": 0.0,
+    "algebra_reconciled_oracle_idempotent_error": 0.0,
+    "algebra_direct_oracle_idempotent_error": 5.551115123125783e-16
+  },
+  "check_counts": {
+    "input_file_hash": 1,
+    "input_array_hash": 120,
+    "predicate_normalization": 3,
+    "entity_normalization": 6,
+    "time_normalization": 6,
+    "context_generation": 6,
+    "binding_generation": 6,
+    "record_generation": 12,
+    "noise_normalization": 6,
+    "training_clean_pairs": 3,
+    "training_noise_addition": 6,
+    "query_noise_addition": 12,
+    "orthogonality": 9,
+    "saved_projector": 54,
+    "saved_singular_values": 54,
+    "structural_hermitian_error": 54,
+    "structural_idempotent_error": 54,
+    "structural_transport_error": 54,
+    "structural_projector_distance": 54,
+    "structural_principal_angle_cosines": 54,
+    "structural_singular_values": 54,
+    "structural_rank": 54,
+    "transported_estimate": 54,
+    "clean_distance_formula": 27,
+    "normalized_real_channel": 1728,
+    "saved_centres": 432,
+    "saved_available": 432,
+    "full_normalized_product_invariance": 216,
+    "boundary_gap": 1728,
+    "near_boundary_tie": 1728,
+    "returned_scores": 1728,
+    "returned_angles": 1728,
+    "predictions": 1728,
+    "reasons": 1728,
+    "oracle_relevant_predictions": 1728,
+    "oracle_relevant_reasons": 1728,
+    "oracle_normalized_product_invariance": 216,
+    "stream_spawn_keys": 3,
+    "canonical_dense_Q": 3,
+    "identity_Q": 3,
+    "plane_fixed_axes": 3,
+    "plane_angle_magnitude": 3,
+    "algebra_reconciled_orthogonality_error": 36,
+    "algebra_direct_orthogonality_error": 36,
+    "algebra_reconciled_full_product_error": 36,
+    "algebra_direct_full_product_error": 36,
+    "algebra_reconciled_full_norm_error": 36,
+    "algebra_direct_full_norm_error": 36,
+    "algebra_reconciled_oracle_product_error": 36,
+    "algebra_direct_oracle_product_error": 36,
+    "algebra_reconciled_oracle_norm_error": 36,
+    "algebra_direct_oracle_norm_error": 36,
+    "algebra_reconciled_real_channel_error": 36,
+    "algebra_direct_real_channel_error": 36,
+    "algebra_reconciled_oracle_hermitian_error": 36,
+    "algebra_direct_oracle_hermitian_error": 36,
+    "algebra_reconciled_oracle_idempotent_error": 36,
+    "algebra_direct_oracle_idempotent_error": 36
+  },
+  "near_boundary_samples": [],
+  "last_bit_order_differences": [
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.28487681510572027,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.28487681510572027,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.13272358073731694,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.013381458486625308,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        25,
+        26,
+        24
+      ],
+      "saved": [
+        26,
+        24,
+        25
+      ],
+      "boundary_gap": 0.15378923556606938,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.28487681510572027,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.28487681510572027,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        1,
+        2,
+        0
+      ],
+      "boundary_gap": 0.599964342842354,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        47,
+        45
+      ],
+      "saved": [
+        47,
+        46,
+        45
+      ],
+      "boundary_gap": 0.45162647701080494,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.28487681510572027,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.28487681510572027,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        2,
+        1,
+        0
+      ],
+      "boundary_gap": 0.599964342842352,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        2,
+        1,
+        0
+      ],
+      "boundary_gap": 0.2848768151057205,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.5999643428423516,
+      "saved_score_discrepancy": 4.440892098500626e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        47,
+        45
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.4516264770108045,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.09968564623577225,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.28487681510572027,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.28487681510572027,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.28487681510572027,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.28487681510572027,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.28487681510572027,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.28487681510572027,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423521,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.45162647701080494,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        0,
+        2
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.28487681510571955,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        2,
+        1
+      ],
+      "saved": [
+        1,
+        0,
+        2
+      ],
+      "boundary_gap": 0.15636479461883168,
+      "saved_score_discrepancy": 5.551115123125783e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        46,
+        47,
+        45
+      ],
+      "boundary_gap": 0.13272358073731716,
+      "saved_score_discrepancy": 3.3306690738754696e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        2,
+        1
+      ],
+      "saved": [
+        1,
+        0,
+        2
+      ],
+      "boundary_gap": 0.16373598597164618,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        0,
+        2,
+        1
+      ],
+      "saved": [
+        1,
+        2,
+        0
+      ],
+      "boundary_gap": 0.0042306006929673234,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        2,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5999643428423516,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        0,
+        2
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.15636479461883157,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        46,
+        47,
+        45
+      ],
+      "boundary_gap": 0.1327235807373166,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        26,
+        24,
+        25
+      ],
+      "saved": [
+        24,
+        26,
+        25
+      ],
+      "boundary_gap": 0.15378923556606872,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.45162647701080494,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        0,
+        2
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.28487681510571955,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        45,
+        47,
+        46
+      ],
+      "boundary_gap": 0.4516264770108035,
+      "saved_score_discrepancy": 4.440892098500626e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        2,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5999643428423516,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        0,
+        2
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.5999643428423492,
+      "saved_score_discrepancy": 6.661338147750939e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.45162647701080494,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        0,
+        2
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.28487681510571955,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        0,
+        2
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5999643428423508,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.28487681510572,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        46,
+        47,
+        45
+      ],
+      "boundary_gap": 0.1460976483617683,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        2,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5999643428423516,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        0,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423505,
+      "saved_score_discrepancy": 3.3306690738754696e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        45,
+        47,
+        46
+      ],
+      "boundary_gap": 0.45162647701080405,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.09968564623577203,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        14,
+        12,
+        13
+      ],
+      "saved": [
+        13,
+        12,
+        14
+      ],
+      "boundary_gap": 0.0016802905771275412,
+      "saved_score_discrepancy": 3.3306690738754696e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.45162647701080494,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        0,
+        2
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.28487681510571955,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        2,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5999643428423516,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.45162647701080494,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        0,
+        2
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.28487681510571955,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        2,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5999643428423516,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.45162647701080494,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        0,
+        2
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.28487681510571955,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        2,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5999643428423516,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        46,
+        45,
+        47
+      ],
+      "boundary_gap": 0.13272358073731705,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.1637359859716465,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.0042306006929673234,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        1,
+        2,
+        0
+      ],
+      "boundary_gap": 0.15636479461883201,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        47,
+        46,
+        45
+      ],
+      "boundary_gap": 0.13272358073731694,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        2,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.013381458486625308,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        24,
+        25,
+        26
+      ],
+      "saved": [
+        24,
+        26,
+        25
+      ],
+      "boundary_gap": 0.15378923556606927,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5999643428423509,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        2,
+        1
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.2848768151057182,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        47,
+        45
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.45162647701080416,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        1,
+        2,
+        0
+      ],
+      "boundary_gap": 0.09968564623576814,
+      "saved_score_discrepancy": 7.771561172376096e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.28487681510572055,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        45,
+        47,
+        46
+      ],
+      "boundary_gap": 0.14609764836176792,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5999643428423517,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.09968564623577242,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        13,
+        14,
+        12
+      ],
+      "saved": [
+        12,
+        13,
+        14
+      ],
+      "boundary_gap": 0.0016802905771274856,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.14609764836176764,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92501,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.09968564623577209,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.24055016939623597,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137534,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.24055016939623597,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137534,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        47,
+        45
+      ],
+      "saved": [
+        46,
+        45,
+        47
+      ],
+      "boundary_gap": 0.20105663276971064,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        46,
+        45
+      ],
+      "saved": [
+        46,
+        45,
+        47
+      ],
+      "boundary_gap": 0.0014893605249681752,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620829,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620829,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        47,
+        45
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.20105663276971075,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.24055016939623597,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137534,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.24055016939623597,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137534,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        1,
+        0
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5569586913278952,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        47,
+        45
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.24611635538274457,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        2,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.2405501693962359,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620829,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620829,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        0,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5569586913278952,
+      "saved_score_discrepancy": 5.551115123125783e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.24055016939623597,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137534,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.24055016939623597,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137534,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.556958691327895,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        46,
+        47,
+        45
+      ],
+      "boundary_gap": 0.12515552579137545,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620829,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620829,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        1,
+        0
+      ],
+      "boundary_gap": 0.5569586913278952,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        47,
+        45
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.2461163553827448,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        35,
+        34
+      ],
+      "saved": [
+        33,
+        34,
+        35
+      ],
+      "boundary_gap": 0.03862186333166012,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.0628222400662084,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.24055016939623597,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137534,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.24055016939623597,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137534,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620829,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620829,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.24055016939623597,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137534,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.24055016939623597,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137534,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620829,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620829,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.24055016939623597,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137534,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.24055016939623597,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137534,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620829,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620829,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5569586913278946,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        1,
+        0
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.2405501693962358,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137523,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.12130900826964419,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.20105663276971075,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.0017651412829111646,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        47,
+        45
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.00148936052496762,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5569586913278943,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.24611635538274446,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620785,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.12130900826964464,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.20105663276971075,
+      "saved_score_discrepancy": 6.661338147750939e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        43,
+        42,
+        44
+      ],
+      "saved": [
+        43,
+        44,
+        42
+      ],
+      "boundary_gap": 0.02197707539415139,
+      "saved_score_discrepancy": 3.3306690738754696e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5569586913278946,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        1,
+        0
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.2405501693962358,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137523,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        1,
+        2,
+        0
+      ],
+      "boundary_gap": 0.5569586913278957,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        47,
+        46
+      ],
+      "boundary_gap": 0.24611635538274435,
+      "saved_score_discrepancy": 5.551115123125783e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        0,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.24055016939623586,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        47,
+        45
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.1251555257913749,
+      "saved_score_discrepancy": 6.661338147750939e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5569586913278943,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.24611635538274446,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620785,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.5569586913278953,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        46,
+        45
+      ],
+      "saved": [
+        45,
+        47,
+        46
+      ],
+      "boundary_gap": 0.24611635538274435,
+      "saved_score_discrepancy": 5.551115123125783e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5569586913278946,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        1,
+        0
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.2405501693962358,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137523,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5569586913278955,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.24055016939623658,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.1251555257913749,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5569586913278943,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.24611635538274446,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620785,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.556958691327895,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        46,
+        47,
+        45
+      ],
+      "boundary_gap": 0.24611635538274423,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        46,
+        45
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620785,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5569586913278946,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        1,
+        0
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.2405501693962358,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137523,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5569586913278943,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.24611635538274446,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620785,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5569586913278946,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        1,
+        0
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.2405501693962358,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137523,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5569586913278943,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.24611635538274446,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620785,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5569586913278946,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        1,
+        0
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.2405501693962358,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.12515552579137523,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5569586913278943,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.24611635538274446,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.06282224006620785,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.2405501693962359,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.0014893605249681752,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5569586913278948,
+      "saved_score_discrepancy": 4.440892098500626e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.12130900826964419,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        47,
+        45
+      ],
+      "saved": [
+        46,
+        45,
+        47
+      ],
+      "boundary_gap": 0.2010566327697101,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.2405501693962359,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5569586913278952,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.24055016939623636,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        45,
+        47,
+        46
+      ],
+      "boundary_gap": 0.12515552579137534,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5569586913278948,
+      "saved_score_discrepancy": 4.440892098500626e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5569586913278946,
+      "saved_score_discrepancy": 3.3306690738754696e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        46,
+        45,
+        47
+      ],
+      "boundary_gap": 0.24611635538274468,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        35,
+        34
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333165979,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.2405501693962359,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        1,
+        2,
+        0
+      ],
+      "boundary_gap": 0.5569586913278952,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        45,
+        47,
+        46
+      ],
+      "boundary_gap": 0.24611635538274523,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        1,
+        2,
+        0
+      ],
+      "boundary_gap": 0.24055016939623597,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        46,
+        45,
+        47
+      ],
+      "boundary_gap": 0.12515552579137545,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5569586913278948,
+      "saved_score_discrepancy": 4.440892098500626e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5569586913278952,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        34,
+        33,
+        35
+      ],
+      "saved": [
+        35,
+        34,
+        33
+      ],
+      "boundary_gap": 0.038621863331659734,
+      "saved_score_discrepancy": 1.6653345369377348e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.0628222400662084,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.2405501693962359,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5569586913278948,
+      "saved_score_discrepancy": 4.440892098500626e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.2405501693962359,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5569586913278948,
+      "saved_score_discrepancy": 4.440892098500626e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.2405501693962359,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5569586913278948,
+      "saved_score_discrepancy": 4.440892098500626e-16
+    },
+    {
+      "context": {
+        "seed": 92507,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03862186333166018,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        47,
+        45
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.22940165998390616,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.054259361901983216,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        0,
+        2
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.07271998097060339,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.22940165998390616,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        31,
+        30,
+        32
+      ],
+      "saved": [
+        31,
+        32,
+        30
+      ],
+      "boundary_gap": 0.02665961191151689,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        35,
+        33,
+        34
+      ],
+      "boundary_gap": 0.03001244629744182,
+      "saved_score_discrepancy": 3.3306690738754696e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        0,
+        1
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.5058487611959075,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        46,
+        45
+      ],
+      "saved": [
+        45,
+        47,
+        46
+      ],
+      "boundary_gap": 0.4707547898195861,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        2,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.10708536569160376,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.3300311327585652,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        46,
+        47,
+        45
+      ],
+      "boundary_gap": 0.4707547898195862,
+      "saved_score_discrepancy": 4.440892098500626e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        34,
+        33,
+        35
+      ],
+      "saved": [
+        33,
+        34,
+        35
+      ],
+      "boundary_gap": 0.007981002980946339,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        47,
+        46,
+        45
+      ],
+      "boundary_gap": 0.26831161232414014,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.3300311327585652,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        1,
+        2,
+        0
+      ],
+      "boundary_gap": 0.5058487611959075,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        47,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        34,
+        35
+      ],
+      "saved": [
+        34,
+        35,
+        33
+      ],
+      "boundary_gap": 0.007981002980946783,
+      "saved_score_discrepancy": 1.6653345369377348e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        47,
+        46
+      ],
+      "boundary_gap": 0.2683116123241405,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "naive",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "naive",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "identity",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5058487611959074,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.33003113275856544,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        47,
+        45
+      ],
+      "saved": [
+        46,
+        45,
+        47
+      ],
+      "boundary_gap": 0.2294016599839065,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        27,
+        29,
+        28
+      ],
+      "saved": [
+        28,
+        29,
+        27
+      ],
+      "boundary_gap": 0.01053206037133081,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        0,
+        2
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.07271998097060339,
+      "saved_score_discrepancy": 3.3306690738754696e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        46,
+        47,
+        45
+      ],
+      "boundary_gap": 0.22940165998390705,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5058487611959074,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.33003113275856544,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        0,
+        2
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5058487611959073,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        1,
+        0,
+        2
+      ],
+      "boundary_gap": 0.10708536569160321,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        0,
+        2
+      ],
+      "saved": [
+        1,
+        2,
+        0
+      ],
+      "boundary_gap": 0.5058487611959067,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        46,
+        45,
+        47
+      ],
+      "boundary_gap": 0.47075478981958263,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        46,
+        47,
+        45
+      ],
+      "boundary_gap": 0.2683116123241385,
+      "saved_score_discrepancy": 4.440892098500626e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5058487611959074,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.33003113275856544,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959068,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        45,
+        47,
+        46
+      ],
+      "boundary_gap": 0.4707547898195855,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.3300311327585653,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        47,
+        46,
+        45
+      ],
+      "boundary_gap": 0.47075478981958574,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        35,
+        34
+      ],
+      "saved": [
+        34,
+        33,
+        35
+      ],
+      "boundary_gap": 0.007981002980947671,
+      "saved_score_discrepancy": 5.551115123125783e-17
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5058487611959074,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.33003113275856544,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5058487611959074,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.33003113275856544,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        1,
+        2,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5058487611959074,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "dense",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.33003113275856544,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.07271998097060339,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.22940165998390583,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.05425936190198277,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.26831161232414064,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        0,
+        2,
+        1
+      ],
+      "boundary_gap": 0.07271998097060339,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        46,
+        47
+      ],
+      "saved": [
+        45,
+        47,
+        46
+      ],
+      "boundary_gap": 0.22940165998390616,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 4,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        32,
+        31,
+        30
+      ],
+      "saved": [
+        32,
+        30,
+        31
+      ],
+      "boundary_gap": 0.026659611911517,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        2,
+        1
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.5058487611959075,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        46,
+        45
+      ],
+      "saved": [
+        45,
+        47,
+        46
+      ],
+      "boundary_gap": 0.4707547898195854,
+      "saved_score_discrepancy": 4.440892098500626e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        2,
+        1
+      ],
+      "saved": [
+        1,
+        2,
+        0
+      ],
+      "boundary_gap": 0.10708536569160332,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        47,
+        45,
+        46
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.3300311327585649,
+      "saved_score_discrepancy": 3.3306690738754696e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.26831161232414064,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        2,
+        1,
+        0
+      ],
+      "saved": [
+        0,
+        1,
+        2
+      ],
+      "boundary_gap": 0.505848761195907,
+      "saved_score_discrepancy": 4.440892098500626e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        45,
+        47,
+        46
+      ],
+      "saved": [
+        46,
+        45,
+        47
+      ],
+      "boundary_gap": 0.47075478981958463,
+      "saved_score_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 12,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        35,
+        33,
+        34
+      ],
+      "saved": [
+        34,
+        33,
+        35
+      ],
+      "boundary_gap": 0.00798100298094745,
+      "saved_score_discrepancy": 1.6653345369377348e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        47,
+        45
+      ],
+      "saved": [
+        45,
+        47,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.26831161232414064,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        47,
+        45
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958574,
+      "saved_score_discrepancy": 3.3306690738754696e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 0
+      },
+      "reconstructed": [
+        33,
+        35,
+        34
+      ],
+      "saved": [
+        34,
+        35,
+        33
+      ],
+      "boundary_gap": 0.00798100298094756,
+      "saved_score_discrepancy": 1.6653345369377348e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.0,
+        "m": 48,
+        "method": "estimated",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.2683116123241406,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 4,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.26831161232414064,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 12,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.26831161232414064,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 0.5,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 0
+      },
+      "reconstructed": [
+        0,
+        1,
+        2
+      ],
+      "saved": [
+        2,
+        0,
+        1
+      ],
+      "boundary_gap": 0.5058487611959082,
+      "saved_score_discrepancy": 0.0
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 0.0,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        47,
+        45,
+        46
+      ],
+      "boundary_gap": 0.47075478981958585,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "context": {
+        "seed": 92509,
+        "Q": "plane",
+        "r": 2.0,
+        "eval_eta": 1.5,
+        "train_eta": 0.25,
+        "m": 48,
+        "method": "oracle",
+        "query_index": 31
+      },
+      "reconstructed": [
+        46,
+        45,
+        47
+      ],
+      "saved": [
+        45,
+        46,
+        47
+      ],
+      "boundary_gap": 0.26831161232414064,
+      "saved_score_discrepancy": 1.1102230246251565e-16
+    }
+  ],
+  "independence_disclosure": "No experiment or predecessor import and no main execution. Source inspection exceeded array-location scope: source expressions and projection/centres/decode definitions were read to identify complex resultant centre representation. This is independently coded numerical replay, not implementation-blind review.",
+  "selection": "Prospectively fixed first/last query each condition; all calibration pairs."
+}

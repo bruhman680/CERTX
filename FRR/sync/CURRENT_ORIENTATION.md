@@ -2,11 +2,13 @@
 
 Scope: `codex/frr-progress-2026-10-07`; the latest three-cycle run is linked below. Earlier source contacts, experiments and optional guidance retain their own commit anchors. This is current navigation, not a complete history or a substitute for the user's latest direction.
 
-The user requested a light sync and wind-down after [UB-C1/2/3](../evaluation/upstream-bundle-three-cycle-v1/REPORT.md). [Current resting checkpoint](checkpoints/REST_AFTER_UPSTREAM_BUNDLE_2026-10-25.md) records saved work, next directions and confidence. No new experiment/scout/training or background task is active. Conversational ideas are not experimental findings.
+The user resumed and authorized communicating collaborators. [SA-C1/2/3](../evaluation/structural-access-three-cycle-v1/REPORT.md) completes a bounded three-cycle structural-access contact. [Current checkpoint](checkpoints/AFTER_STRUCTURAL_ACCESS_THREE_CYCLES.md) records confidence and proposed supervision-mismatch/memory-fidelity directions. No background task or automatic fourth cycle remains; the prior rest checkpoint is historical.
 
 Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map](../evaluation/CURRENT_RESEARCH_MAP.md) and the [queue](../evaluation/research-queue/README.md). QUEUE.json remains the status source: 35 entries, 30 unfinished, six partial families. A saved queue is not an automatic scheduler.
 
 ## Recent contacts
+
+- [SA-C1/2/3](../evaluation/structural-access-three-cycle-v1/REPORT.md): correctly transported readout retains products/task outcomes under invertible Q; naive masks can fail. Paired supervised estimation separates partial structure, full-projector recovery and task success; not learned semantics. All-ledger and fixed saved-array reconstruction pass, with source-inspection limits and last-bit order differences preserved.
 
 - [UB-C1/2/3](../evaluation/upstream-bundle-three-cycle-v1/REPORT.md): actual joint retrieval/status under ratio/noise shift, bounded four-source weave and separate code audits. Known structure/oracle labels remain assumptions; no learned or agent-memory benefit claim.
 - [CP-N1](../evaluation/claude-phase-negation-intake-v1/REPORT.md): Claude branch pinned,13original files preserved,4scripts exactly reproduced and scoped real-channel boundary checked.

@@ -1,0 +1,40 @@
+{
+  "contact": "structural-access-three-cycle-v1",
+  "scope": "paired supervised difference-subspace estimation and its rank/noise limits",
+  "search_budget": {"maximum_queries": 2, "successful_queries": 2, "malformed_nonexecuting_calls": 1},
+  "queries": [
+    "Bolukbasi debias word embeddings gender subspace definitional pairs PCA 2016 paper",
+    "Davis Kahan variant statisticians population eigenvalue gap subspace estimation Yu Wang Samworth 2015"
+  ],
+  "sources": [
+    {
+      "id": "bolukbasi2016",
+      "title": "Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings",
+      "authors": ["Tolga Bolukbasi", "Kai-Wei Chang", "James Zou", "Venkatesh Saligrama", "Adam Kalai"],
+      "publication": "Advances in Neural Information Processing Systems 29 (NIPS 2016)",
+      "url": "https://papers.nips.cc/paper_files/paper/2016/file/a486cd07e4ac3d270571622f4f316ec5-Paper.pdf",
+      "primary": true,
+      "read": "Sections 2–4; complete Identify gender subspace algorithm, section 4, PDF page 6; paired-comparison rationale and PCA in section 3, PDF pages 4–5",
+      "supports": "Defining-set supervision and within-set centered scatter/SVD as a subspace estimator",
+      "does_not_support": "Guaranteed binding-factor recovery, unsupervised semantic discovery, scope or uncertainty learning"
+    },
+    {
+      "id": "yu2015",
+      "title": "A useful variant of the Davis–Kahan theorem for statisticians",
+      "authors": ["Yi Yu", "Tengyao Wang", "Richard J. Samworth"],
+      "publication": "Biometrika 102(2), 315–323 (2015)",
+      "doi": "10.1093/biomet/asv008",
+      "url": "https://arxiv.org/pdf/1405.0680",
+      "version_read": "arXiv:1405.0680v1, 2014 preprint (PDF header May 6, 2014)",
+      "primary": true,
+      "read": "Sections 1–2, complete Theorem 2 conditions, bound and discussion, PDF pages 1–4",
+      "supports": "Symmetric-matrix subspace perturbation bounds under population eigengap conditions",
+      "does_not_support": "A sample-size guarantee without controlling matrix perturbation under the actual training/noise distribution",
+      "access_note": "Initial author-hosted DKvariant.pdf result returned 404; accessible arXiv full text read"
+    }
+  ],
+  "outcomes_read": false,
+  "experiments_run": false,
+  "source_selection_tuned_to_outcomes": false,
+  "access_date_utc": "2026-10-26"
+}

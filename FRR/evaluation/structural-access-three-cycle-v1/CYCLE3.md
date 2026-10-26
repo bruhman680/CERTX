@@ -1,0 +1,7 @@
+# Cycle 3: audit, synthesis and next uncertainty
+
+Separate all-ledger reconstruction covers27648methodrecords,864aggregates,6912pairlinks,288invariance rows and all output/freeze provenance: no discrepancies. Fixed saved-array replay covers1728methodrecords,54projectors/allcentres/36algebra rows:18202checks, no substantive discrepancy at1e-10. Replay has386within-set ordering differences, same top3sets; source-reading disclosure prevents an implementation-blind label. Initial replay retained before full-bank diagnostic additions. These are code audits on shared saved data, not independent data replications.
+
+Three distinctions survive review: fixed-mask failure can coexist with intact information under invertible Q; perfect clean task performance can coexist with rank4of12structural recovery; improved full-projector distance can coexist with worse task score. The last is a finite noisy-prefix counterexample, not a universal nonmonotonic learning law. Source methods support paired subspace estimation and conditional stability, not unassisted semantic understanding.
+
+Root records current navigation/checkpoint, hashes complete outputs and preserves all prior originals. No core/schema/queue-status promotion or fourth cycle. Sharper next upstream assumption is perfectly matched pairs; broader memory-family fidelity/stratified queries remain pending. See NEXT_CONTACT.md and REPORT.md.

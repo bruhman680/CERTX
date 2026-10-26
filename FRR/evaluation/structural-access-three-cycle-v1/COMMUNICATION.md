@@ -1,0 +1,14 @@
+# Public collaborator coordination record
+
+Root resumed from current handoff, checkpoint and remote branch head, then set a bounded three-cycle unit under the user's renewed swarm authorization. Five collaborators including root; no behavioral participant sample or claimed group-performance benefit. Agent contexts are task contexts, not separate human subjects.
+
+- Fresh /root/transport_review first read predecessor report/next contact. Warned root that a general realified-coordinate rotation need not preserve complex phase without transporting complex structure. Root's prospective protocol explicitly used real24x24Q acting complex-linearly. Reviewer found no blocking protocol ambiguity.
+- Fresh /root/structure_scout completed two-query/two-primary-work contact without outcomes. Sent paired-centering, supplied supervision/rank, spanning and eigengap limitations directly to reviewer and root. Reviewer relayed row-action/complex-projector and numerical-rank requirements to engineer.
+- Fresh /root/transport_engineer implemented protocol without importing predecessor functions. Communicated source readiness directly to reviewer/root. Syntax check only; engineer never ran main. Initial source preserved; no preflight repair requested.
+- Reviewer read complete code and ran an independent-seed synthetic projection/decoder fixture, without generator/main or experimental seeds. Approved exact source/protocol hashes. Root verified approval hashes, froze twelve existing files and launched sole main run. Exit0; no repair/rerun.
+- Fresh /root/transport_replay froze first/last-query sample before outcomes and directly coordinated audit division with reviewer. It explicitly disclosed source-reading beyond schema during implementation, so root retained an independent-code, not implementation-blind, label.
+- Root signaled completion to reviewers. Reviewer independently rebuilt every ledger metric/aggregate; replay rebuilt fixed saved-array sample and all projectors/centres/algebra. Root independently reduced all condition aggregates. They converged on rank4clean-task success despite incomplete recovery and the noisy m4/m12 nonmonotonic row.
+- Reviewer warned against treating four near-one principal cosines as twelve-direction recovery, adding diagnostic counts across duplicated controls, or saying all internal prediction arrays were independently replayed. Root incorporated those limits in REPORT.md.
+- Replay preserved initial source/results before adding promised full-bank diagnostic reconciliation. No failed replay or main repair occurred. All code audit checks pass at declared tolerances. Reviewer/replay communicated scope sufficiency; no new parameter sweep requested.
+
+This record summarizes exchanged task decisions/findings. It does not expose or request private chains of thought. Collaborator agreement is not independent scientific replication; shared generator/data and known structure remain explicit.
