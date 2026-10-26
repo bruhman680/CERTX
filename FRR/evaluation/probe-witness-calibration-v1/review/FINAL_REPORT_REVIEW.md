@@ -1,0 +1,13 @@
+# Final evidence and scope review
+
+Reviewer read REPORT.md, NEXT_CONTACT.md, CYCLE2.md and CYCLE3.md against the saved all-ledger receipt, independent raw replay report, prospective algebra/protocol/source review and source-access receipts. Approved the scientific report and proposed next contacts. No new tests, audit reruns, main execution or historical edits.
+
+Counts and limits match evidence: 61,440 method rows, 12,288 paired rows, 1,920 conditions, 96 structures, 960 calibrations, 48 witness configurations, 384 reused query IDs/288 unique base arrays, 384 nominal readings/3 distinct anchor sets/16 reading patterns, and 15,360 logical arrays/1,886 exact pooled arrays. Per-mode gate/coverage/false-identification/oracle-relative-withholding table agrees with independently recomputed witnesses. Unavailable arms, observed rank-zero POINT and decoder abstention remain distinct.
+
+The raw-value example is consistent with the fixed construction: WEAK BETA_GAIN_ERROR has gain 0.5 and relative raw error 0.5 while preserving its nonzero signal projector; the normalized task does not certify raw-value recovery. The BOUNDED WEAK delta1.5 error 0.9014 matches the derived coefficients and saved diagnostics. The 144 non-COPY beta-gain POINT/GATED aggregate comparisons are correctly counted across 3 seeds, 2 deltas, 3 probes, 2 ratios, 2 noise settings and 2 methods. No task success is inferred solely from gate or geometry.
+
+The report clearly limits the gate to nonsingularity conditional on valid bounds. It reports the invalid shared-bias COPY false identification as a broken witness contract despite coherent interval arithmetic, and valid-bound WEAK refusal as oracle-relative withholding rather than proof that withholding is unnecessary to the method. Trusted role anchors, coefficients, rank, calibration and synthetic channel information are disclosed. The reused authored fixture supports no calibrated probability, language selectivity, authority or group-benefit claim.
+
+Both failure histories remain visible: the missed prospective source validation defect and withdrawn/reissued review approval, and the first raw reader's omitted Q transform with 10,152 preserved flags. The corrected reader's strict-order/fixed-ID/membership PASS is scoped to this new run; historical CR strict ordered replay FAIL remains unchanged. Scout access limits and the Fieller analogy remain accurately bounded.
+
+No substantive correction requested. Root is still preparing archive/restore/checkpoint artifacts; ensure the linked RESTORE.md and referenced archive receipts exist before final handoff. NEXT_CONTACT.md remains proposed only, with no automatic fourth cycle or runtime/schema/queue promotion.

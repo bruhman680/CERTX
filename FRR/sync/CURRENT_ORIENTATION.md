@@ -2,11 +2,13 @@
 
 Scope: `codex/frr-progress-2026-10-07`; the latest three-cycle run is linked below. Earlier source contacts, experiments and optional guidance retain their own commit anchors. This is current navigation, not a complete history or a substitute for the user's latest direction.
 
-User resumed26October: [CR final review](../evaluation/context-perturbation-repair-v1/FINAL_REPORT.md), [checkpoint](checkpoints/AFTER_CONTEXT_REPAIR_REVIEW_2026-10-26.md). All1170paused flags explained as order cascades over341rows, fixed-ID/membership validated; strict ordered replay remainsFAIL. Main unchanged, original paused artifacts preserved. Next selectivity/role-witness contact proposed only; no background work.
+Latest completed [PW-C1/2/3](../evaluation/probe-witness-calibration-v1/REPORT.md), [checkpoint](checkpoints/AFTER_PROBE_WITNESS_THREE_CYCLES_2026-10-26.md): separate role-witness bounds, inverse gate and raw/projector/task fidelity. Ledger/raw replay pass after preserved reader correction; historical CRstrictFAILunchanged. Next independent reference/bias and task-aware envelope proposals remain unexecuted; no background work.
 
 Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map](../evaluation/CURRENT_RESEARCH_MAP.md) and the [queue](../evaluation/research-queue/README.md). QUEUE.json remains the status source: 35 entries, 30 unfinished, six partial families. A saved queue is not an automatic scheduler.
 
 ## Recent contacts
+
+- [PW witness calibration](../evaluation/probe-witness-calibration-v1/REPORT.md): interval inclusion/nonsingularity/raw reconstruction/task success separated; supplied bounds can fail through shared bias. Fixed reused-task run, no general semantic verification benefit.
 
 - [PC-C1/2/3](../evaluation/paired-context-mismatch-v1/REPORT.md): independently drawn contrast validation can preserve a shared flawed mechanism. Exact graph recovery and some downstream failures persist across training prefixes; source tasks reused, population target and intended binding separate. All-ledger/fixed-array audits pass after disclosed auditor repairs.
 

@@ -8,7 +8,7 @@ This is a saved dependency-aware plan, not a running scheduler. It queues every 
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
-Current reviewed run: [CR final report](../context-perturbation-repair-v1/FINAL_REPORT.md), [checkpoint](../../sync/checkpoints/AFTER_CONTEXT_REPAIR_REVIEW_2026-10-26.md). Paused comparisons diagnosed without main rerun: original orderedFAIL retained, fixed-ID/membership validated. Conditional repair/unknown selectivity remain distinct. No queue status change, automatic next study or scheduler.
+Current completed run: [PW-C1/2/3](../probe-witness-calibration-v1/REPORT.md), [checkpoint](../../sync/checkpoints/AFTER_PROBE_WITNESS_THREE_CYCLES_2026-10-26.md). Conditional witness-set gate/raw-versus-task contacts, all-ledger/raw replay pass; bound validity and semantic transfer open. Previous CRstrictFAILunchanged. No queue-status promotion, automatic next study or scheduler.
 
 ## Nearest work
 

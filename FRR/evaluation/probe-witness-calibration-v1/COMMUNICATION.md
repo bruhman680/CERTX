@@ -1,0 +1,13 @@
+# Public collaborator coordination
+
+User authorized next cycles with communicating/scouting swarms. Six collaborators including root; no behavioral participants, private reasoning request or empirical group-benefit claim. Shared specification/data and reused tasks are explicit.
+
+- Root selected the previously open witness/selectivity assumption, defined authored EXACT/BOUNDED/BETA_GAIN_ERROR/INVALID_SHARED_BIAS modes and raw-versus-normalized criteria. Independent critic derived interval/gain predictions before outcomes. One capacity failure was retried; no source data/outcome changed. BETA_GAIN_ERROR clarified exact alpha measurements rather than absent role.
+- Reviewer caught signed-gap wording, root preserved initial protocol and corrected to absolute values before source approval. Scout completed2queries/2works with honest abstract-only versus selected-full-method limits and directly communicated conditional inclusion/ratio caveats to reviewer.
+- Fresh engineer used predecessor schema/protocol/metadata, not implementation imports. Root caught initial source-bank assertions comparing PCselected vectors with unrelated SAtraining bank. Reviewer withdrew its missed approval; source/pre-review versions preserved and final source reviewed again. Correct pair/block relations and normalization computational order documented before main. No main failure occurred.
+- Fresh replay auditor fixed prospective sourcequery0/31across1920conditions before outcomes. Reviewer/replay directly divided all-ledger/gate checks versus raw reconstruction and pool checks. Root snapshotted unfinished auditor sources, froze20artifacts and ran main once. Exit0in10.16s.
+- Root independently reduced saved diagnostics/task aggregates. Reviewer independently verified all61440records/1920aggregates, witnessed bound coverage/gates and repeat/historical controls. No ritual broader test run.
+- Raw replay initially omitted Qrotation of task arrays, producing10152flags. Initial reader/report/log preserved. Correcting the declared source-reader transform yielded strictorder/membership/fixed-IDPASS without main/sample/tolerance change. Current pass does not relabel historical CRstrictFAIL.
+- Root/reviewer/replay converge on separate coefficient-set validity, nonsingularity, raw-signal fidelity, projector fidelity and actual task claims. Invalid shared bounds and beta-gain cases stay in report. Final narrative review precedes deposition; all historical sources/failures retained.
+
+No model/provider setup, publication to social media, new core/schema rule or general calibrated confidence detector. Proposed reference/bias-witness and task-aware follow-ups are not background work.

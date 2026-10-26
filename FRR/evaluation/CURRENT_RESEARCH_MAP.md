@@ -1,6 +1,6 @@
 # Current research map: continuity, distinctions and their readers
 
-Current reviewed contact: [CR](context-perturbation-repair-v1/FINAL_REPORT.md), [checkpoint](../sync/checkpoints/AFTER_CONTEXT_REPAIR_REVIEW_2026-10-26.md). Resume classified all1170strict flags;341same-set ordering changes and zero fixed-ID categorical differences. Strict orderedFAIL retained, fixed-ID/membership scope validated, no main rerun. Conditional repair supplies selective role coefficients; [next independent selectivity-witness contact](context-perturbation-repair-v1/NEXT_CONTACT.md) proposed. Original paused history preserved.
+Current completed contact: [PW-C1/2/3](probe-witness-calibration-v1/REPORT.md), [checkpoint](../sync/checkpoints/AFTER_PROBE_WITNESS_THREE_CYCLES_2026-10-26.md). Separate witness intervals constrain inversion only under valid bounds; shared-bias and gain-error controls distinguish set validity/raw fidelity/normalized task. One fixed run, strict/fixed-ID/ledger audits pass with original reader failure preserved. Original CRstrictFAILunchanged. [Next reference/bias/task-envelope directions](probe-witness-calibration-v1/NEXT_CONTACT.md) proposed only; core/queue unchanged.
 
 Predecessor [SA-C1/2/3](structural-access-three-cycle-v1/REPORT.md) completed coordinate/projector transport and supervised subspace estimation. Its proposed mismatch follow-up is now executed in PC; original proposal/history preserved.
 
