@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-26",
+  "search_query_count": 2,
+  "primary_work_count": 2,
+  "queries": [
+    "Chen Cheung Yiu 1998 Metamorphic testing new approach generating next test cases technical report pdf",
+    "Peters Bühlmann Meinshausen 2016 causal inference using invariant prediction assumptions interventions pdf"
+  ],
+  "evaluation_outcomes_read": false,
+  "experiments_run": false,
+  "grid_tuning": false,
+  "sources": [
+    {
+      "id": "chen1998metamorphic",
+      "title": "Metamorphic Testing: A New Approach for Generating Next Test Cases",
+      "authors": ["T. Y. Chen", "S. C. Cheung", "S. M. Yiu"],
+      "year": 1998,
+      "publication": "HKUST-CS98-01",
+      "primary": true,
+      "url": "https://www.cse.ust.hk/faculty/scc/publ/CS98-01-metamorphictesting.pdf",
+      "read_copy": "https://arxiv.org/pdf/2002.12543",
+      "read_scope": ["Sections 1-2", "Section 3 four method examples and illustrative buggy-program follow-ups"],
+      "access_limits": "Original browser PDF text garbled; author-deposited arXiv PDF locally extracted, with some equation artifacts. No general empirical evaluation inferred.",
+      "supported_claims": ["Follow-up tests use problem-domain relations", "Passing a checker does not guarantee correctness", "Transformation validity is domain dependent", "No general repair method established"]
+    },
+    {
+      "id": "peters2016icp",
+      "title": "Causal inference by using invariant prediction: identification and confidence intervals",
+      "authors": ["Jonas Peters", "Peter Bühlmann", "Nicolai Meinshausen"],
+      "year": 2016,
+      "publication": "JRSS B 78(5), 947-1012",
+      "doi": "10.1111/rssb.12167",
+      "primary": true,
+      "url": "https://doi.org/10.1111/rssb.12167",
+      "read_copy": "https://arxiv.org/pdf/1501.01332",
+      "read_scope": ["Section 2 including Assumption 1 and Proposition 1", "Section 3 generic method and Theorem 1", "Section 3.4", "Sections 4.1-4.3 through Theorem 3"],
+      "access_limits": "Author-hosted journal PDF exceeded browser size limit; publisher page gave metadata/summary only. Methods read from local arXiv PDF; byte identity with journal version not verified. Proof appendices, extensions and empirical sections not reviewed.",
+      "supported_claims": ["Fixed target mechanism and invariant independent noise required", "Causal interpretation excludes target interventions under stated SEM assumptions", "Intersection estimator controls false inclusion conditionally", "Full identification requires informative interventions and further assumptions"]
+    }
+  ],
+  "own_deductions": ["Perturbation sensitivity alone does not identify correctness or fault location", "Common-mode incorrect outputs can satisfy all equality relations", "Average/contrast repair requires a specified selective interface or sufficient known response rank", "Global signal-and-nuisance flip cannot identify separate signal"]
+}

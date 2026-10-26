@@ -8,7 +8,7 @@ This is a saved dependency-aware plan, not a running scheduler. It queues every 
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
-Current completed run: [PC-C1/2/3](../paired-context-mismatch-v1/REPORT.md), [checkpoint](../../sync/checkpoints/AFTER_PAIRED_CONTEXT_MISMATCH.md). Imperfect paired context tests supplied-mechanism versus intended-target/task fidelity; source evaluation data reused, no broader efficacy claim. [Next pair-construction/criterion contact](../paired-context-mismatch-v1/NEXT_CONTACT.md) proposed only. No automatic next cycle or scheduler; queue counts/statuses unchanged.
+Current paused run: [CR interim report](../context-perturbation-repair-v1/REPORT.md), [checkpoint](../../sync/checkpoints/PAUSED_DURING_CONTEXT_REPAIR_AUDIT.md). Experiment and ledger completed, fresh replay1,170comparisons unresolved at user stop. Resume saved-data audit before further interpretation; no new study/scheduler or queue status change.
 
 ## Nearest work
 

@@ -2,7 +2,7 @@
 
 Scope: `codex/frr-progress-2026-10-07`; the latest three-cycle run is linked below. Earlier source contacts, experiments and optional guidance retain their own commit anchors. This is current navigation, not a complete history or a substitute for the user's latest direction.
 
-User authorized next cycles. [PC-C1/2/3](../evaluation/paired-context-mismatch-v1/REPORT.md) completes the imperfect-pairing follow-up. [Current checkpoint](checkpoints/AFTER_PAIRED_CONTEXT_MISMATCH.md) separates population/validation fit from intended structure and task success, with audit-only repairs preserved. Optional verification guidance clarified; no core/status promotion. No background task or automatic fourth cycle remains; previous checkpoints are historical.
+**PAUSED at user request:** [CR interim report](../evaluation/context-perturbation-repair-v1/REPORT.md), [checkpoint](checkpoints/PAUSED_DURING_CONTEXT_REPAIR_AUDIT.md). One experiment completed; ledger passes, raw-array replay unresolved1,170comparisons. No further tests or background work. Resolve saved replay on resumption before completed interpretation.
 
 Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map](../evaluation/CURRENT_RESEARCH_MAP.md) and the [queue](../evaluation/research-queue/README.md). QUEUE.json remains the status source: 35 entries, 30 unfinished, six partial families. A saved queue is not an automatic scheduler.
 

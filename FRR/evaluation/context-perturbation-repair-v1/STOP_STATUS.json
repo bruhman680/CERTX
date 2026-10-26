@@ -1,0 +1,37 @@
+{
+  "state": "PAUSED_AT_USER_REQUEST_INCOMPLETE_AUDIT",
+  "user_request": "Stop research near usage limit; save exact state for resume",
+  "date_client": "2026-10-25 America/Chicago",
+  "parent_commit": "cc413eca895131bfe81c3fc6f38dc81f21a26143",
+  "execution_attempts": 2,
+  "completed_experiments": 1,
+  "attempt01": "source digest encoding failure before fit/outcomes, preserved",
+  "attempt02": "exit0 in4.9168s; fixed scientific design",
+  "run_summary": {
+    "calibration_conditions": 480,
+    "logical_output_arrays": 7680,
+    "method_conditions": 960,
+    "method_records": 30720,
+    "paired_rows": 7680,
+    "query_ids": 384,
+    "structural_rows": 60,
+    "underlying_claims": 48,
+    "unique_base_queries": 288,
+    "unique_output_arrays": 1207
+  },
+  "ledger_audit_passed": true,
+  "raw_replay_status": "FAIL",
+  "raw_replay_checks": 32304,
+  "raw_replay_errors": 1170,
+  "raw_replay_coverage": {
+    "structural": 60,
+    "calibration": 480,
+    "method_conditions": 960,
+    "selected_method_records": 1920,
+    "candidate_readouts": 92160,
+    "content_addressed_arrays": 1207
+  },
+  "next_action": "Inspect saved replay discrepancies, separate ordering-sensitive comparisons from actual per-record prediction/validity discrepancies; do not assume all harmless or rerun experiment.",
+  "background_work": "review/replay agents interrupted; no new research launched",
+  "queue_status_unchanged": true
+}
