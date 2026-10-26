@@ -2,7 +2,7 @@
 
 Scope: `codex/frr-progress-2026-10-07`; the latest three-cycle run is linked below. Earlier source contacts, experiments and optional guidance retain their own commit anchors. This is current navigation, not a complete history or a substitute for the user's latest direction.
 
-Latest completed [PW-C1/2/3](../evaluation/probe-witness-calibration-v1/REPORT.md), [checkpoint](checkpoints/AFTER_PROBE_WITNESS_THREE_CYCLES_2026-10-26.md): separate role-witness bounds, inverse gate and raw/projector/task fidelity. Ledger/raw replay pass after preserved reader correction; historical CRstrictFAILunchanged. Next independent reference/bias and task-aware envelope proposals remain unexecuted; no background work.
+Paused at user request after [PW-C1/2/3](../evaluation/probe-witness-calibration-v1/REPORT.md). [Current rest checkpoint](checkpoints/REST_AFTER_PROBE_WITNESS_2026-10-26.md) preserves completed8345636anchor, confidence and proposed independent-reference/task-envelope directions. No new research/background work; historical CRstrictFAILunchanged.
 
 Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map](../evaluation/CURRENT_RESEARCH_MAP.md) and the [queue](../evaluation/research-queue/README.md). QUEUE.json remains the status source: 35 entries, 30 unfinished, six partial families. A saved queue is not an automatic scheduler.
 

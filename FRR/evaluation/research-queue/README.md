@@ -8,7 +8,7 @@ This is a saved dependency-aware plan, not a running scheduler. It queues every 
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
-Current completed run: [PW-C1/2/3](../probe-witness-calibration-v1/REPORT.md), [checkpoint](../../sync/checkpoints/AFTER_PROBE_WITNESS_THREE_CYCLES_2026-10-26.md). Conditional witness-set gate/raw-versus-task contacts, all-ledger/raw replay pass; bound validity and semantic transfer open. Previous CRstrictFAILunchanged. No queue-status promotion, automatic next study or scheduler.
+Current rest: [checkpoint](../../sync/checkpoints/REST_AFTER_PROBE_WITNESS_2026-10-26.md) after completed [PW](../probe-witness-calibration-v1/REPORT.md). User requested pause/light sync. Next reference/bias witness and task-envelope work proposed only; no tests/scouts/background work. Queue counts/statuses and core/schema unchanged; previous failure histories retained.
 
 ## Nearest work
 
