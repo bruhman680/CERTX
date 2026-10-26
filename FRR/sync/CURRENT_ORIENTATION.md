@@ -2,7 +2,7 @@
 
 Scope: `codex/frr-progress-2026-10-07`; the latest three-cycle run is linked below. Earlier source contacts, experiments and optional guidance retain their own commit anchors. This is current navigation, not a complete history or a substitute for the user's latest direction.
 
-**PAUSED at user request:** [CR interim report](../evaluation/context-perturbation-repair-v1/REPORT.md), [checkpoint](checkpoints/PAUSED_DURING_CONTEXT_REPAIR_AUDIT.md). One experiment completed; ledger passes, raw-array replay unresolved1,170comparisons. No further tests or background work. Resolve saved replay on resumption before completed interpretation.
+User resumed26October: [CR final review](../evaluation/context-perturbation-repair-v1/FINAL_REPORT.md), [checkpoint](checkpoints/AFTER_CONTEXT_REPAIR_REVIEW_2026-10-26.md). All1170paused flags explained as order cascades over341rows, fixed-ID/membership validated; strict ordered replay remainsFAIL. Main unchanged, original paused artifacts preserved. Next selectivity/role-witness contact proposed only; no background work.
 
 Start with the [current handoff](../CURRENT_HANDOFF.md), then the [research map](../evaluation/CURRENT_RESEARCH_MAP.md) and the [queue](../evaluation/research-queue/README.md). QUEUE.json remains the status source: 35 entries, 30 unfinished, six partial families. A saved queue is not an automatic scheduler.
 

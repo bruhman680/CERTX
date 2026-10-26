@@ -1,0 +1,9 @@
+# Cycle 1: surrounding perturbations as tests, not a truth oracle
+
+User proposed that surrounding information/structures and perturbations might expose mismatch and make repair possible, using the earlier GPU-hammer idea as analogy; authorized next cycles. Root selected controlled contrast interventions, not a hardware attack, and pinned previous task/training inputs. No claim the physical mechanism transfers to software reasoning.
+
+Root wrote protocol with an average-based repair and negative controls. Bounded scout read two primary methods before outcomes: justified metamorphic relations versus correctness and causal invariance under explicit intervention assumptions. Its general two-observation inversion motivated adding a coefficient-aware comparator before approval/main. PROTOCOL_INITIAL.md retains the three-method draft; revised protocol has fourmethods/30720records/960aggregates. Engineer and replay auditor preserve their initial draft/plan. No results informed the change.
+
+The distinction is extra information: two controlled observations can identify a signal only if their response coefficients/roles are warranted and sufficiently independent. Large ambient change or changed subspace alone cannot tell which component was altered. A correct known selective interface is supplied in this fixture, not inferred from unrelated surrounding data. All rows retain actual evidence/status decoding and separate availability states.
+
+Root supplies original linear algebra below; source scout does not claim either primary work implements our estimator. Review separates mean-based repair, coefficient-aware repair, arbitrary changes and missing identification. Fresh replay plan is updated prospectively, all full outputs saved with exact array deduplication and explicit mapping. No behavioral participant, empirical probability detector, physical swarm law or general FRR superiority claim.

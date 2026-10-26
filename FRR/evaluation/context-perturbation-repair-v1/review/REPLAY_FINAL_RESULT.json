@@ -1,0 +1,53 @@
+{
+  "status": "fixed-ID and membership validated with ordered differences",
+  "strict_original_pass": false,
+  "original_status": "FAIL",
+  "original_error_count": 1170,
+  "original_errors_identically_reproduced": true,
+  "original_artifacts_unchanged": {
+    "REPLAY_ATTEMPT02.log": true,
+    "REPLAY_RESULT.json": true,
+    "REPLAY_SELECTION.json": true,
+    "replay_audit.py": true
+  },
+  "coverage": {
+    "structural": 60,
+    "calibration": 480,
+    "method_conditions": 960,
+    "selected_method_records": 1920,
+    "candidate_readouts": 92160,
+    "content_addressed_arrays": 1207
+  },
+  "classification": {
+    "original_errors": 1170,
+    "classified_errors": 1170,
+    "classes": {
+      "ordering_only": 1170
+    },
+    "selected_rows": 1920,
+    "rows_order_changed": 341,
+    "rows_membership_changed": 0,
+    "all_fixed_id_categorical_exact": true,
+    "candidate_readouts": 92160,
+    "max_changed_saved_score_gap": 2.0539125955565396e-15,
+    "max_changed_independent_score_gap": 1.554312234475219e-14,
+    "no_new_error_fields": true
+  },
+  "saved_score_stable_sort_exact": true,
+  "saved_score_stable_sort_bad_rows": [],
+  "saved_projector_readout_supplement": {
+    "status": "PASS",
+    "errors": 0,
+    "meaning": "Saved-projector/calibration reconstruction reproduces exact readout order; it does not erase the independent-refit ordered differences."
+  },
+  "boundary_flags_exact_in_original": true,
+  "saved_boundary_gap_min": 0.0,
+  "saved_boundary_gap_max": 0.5999643428423523,
+  "saved_boundaries_within_1e_10": 288,
+  "atol": 2e-12,
+  "rtol": 2e-12,
+  "decision_threshold": 1e-10,
+  "implementation_source_read": false,
+  "implementation_imports": false,
+  "limitation": "Independent refit projectors differ by at most1.24e-14 in any entry and induce floating ordering differences within otherwise identical returned sets. The original strict ordered criterion is not met. No main rerun, sample/threshold change, or implementation inspection."
+}

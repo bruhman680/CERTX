@@ -1,4 +1,6 @@
-# Context perturbation and repair — PAUSED, audit incomplete
+# Historical pause report — see completed scoped review
+
+Resumed26October2026: [FINAL_REPORT.md](FINAL_REPORT.md) completes discrepancy classification. Original strict ordered replay remains FAIL; fixed-ID readouts and retrieved membership are independently validated in the fixed sample. The historical pause text below is preserved; its exact original also remains in REPORT_AT_USER_PAUSE.md and the stopped-state archive.
 
 25 October2026, America/Chicago. User requested a stop near usage limits and an exact repository checkpoint. This is an interim status, not a completed three-cycle result or a passed independent replay. No new research, experiment, scout or repair starts during this sync.
 

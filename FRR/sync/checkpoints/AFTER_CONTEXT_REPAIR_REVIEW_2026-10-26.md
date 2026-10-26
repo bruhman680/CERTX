@@ -1,0 +1,9 @@
+# Context-repair review checkpoint
+
+26October2026 America/Chicago. User resumed after usage pause. [Final CR report](../../evaluation/context-perturbation-repair-v1/FINAL_REPORT.md) and [current status](../../evaluation/context-perturbation-repair-v1/RESUME_STATUS.json) supersede the [historical paused checkpoint](PAUSED_DURING_CONTEXT_REPAIR_AUDIT.md). Parentda35a07be1376d62d7bfdae7a29702cbd49169fa; containing Git commit is new exact anchor.
+
+Original1170strict flags exhaustively classified and independently corroborated:341of1920sampled rows reorder the same top3IDs. All92160fixed-ID labels/reasons/validity exact, numeric replay within original2e-12; original strict ordered replay remains FAIL. This is a scoped resolved diagnosis, not a blanket original PASS. Main was not rerun or altered, numeric/decision tolerances and sample unchanged. Ledger all30720records/960aggregates retains pass. Paused source/archive/error records preserved.
+
+High confidence in supplied linear identities and audited fixed-ID/membership scope. Conditional coefficient-aware reconstruction matches oracle in informative probe arms; selective intervention/known ROLE coefficients supply added information. Global response magnitude or identical probe spans do not identify the desired factor. Not a calibrated probability detector, real-language repair or group-benefit result.
+
+Next moderate-confidence direction: measure/bound intervention selectivity and off-target coefficient effects using independent witnesses/anchors, count information/cost and score actual tasks. Proposed only; no new experiment or automatic fourth/background cycle. Broader memory historical/status/criterion/fidelity work and group reasoning remain open. Core/runtime/schema/QUEUE.json unchanged:35entries/30unfinished/sixpartialfamilies,MEM-04partial. Usage/reset telemetry unavailable.

@@ -1,6 +1,6 @@
 # Current research map: continuity, distinctions and their readers
 
-Current paused contact: [CR context perturbation/repair](context-perturbation-repair-v1/REPORT.md), [checkpoint](../sync/checkpoints/PAUSED_DURING_CONTEXT_REPAIR_AUDIT.md). User stopped during independent raw-array audit: experiment/ledger completed,1,170replay comparisons unresolved. No passed three-cycle claim, new tests or automatic continuation. Prior PC/SA findings remain historical and unchanged.
+Current reviewed contact: [CR](context-perturbation-repair-v1/FINAL_REPORT.md), [checkpoint](../sync/checkpoints/AFTER_CONTEXT_REPAIR_REVIEW_2026-10-26.md). Resume classified all1170strict flags;341same-set ordering changes and zero fixed-ID categorical differences. Strict orderedFAIL retained, fixed-ID/membership scope validated, no main rerun. Conditional repair supplies selective role coefficients; [next independent selectivity-witness contact](context-perturbation-repair-v1/NEXT_CONTACT.md) proposed. Original paused history preserved.
 
 Predecessor [SA-C1/2/3](structural-access-three-cycle-v1/REPORT.md) completed coordinate/projector transport and supervised subspace estimation. Its proposed mismatch follow-up is now executed in PC; original proposal/history preserved.
 

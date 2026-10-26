@@ -1,0 +1,3 @@
+# Diagnosed pre-fit provenance repair01
+
+Attempt01 failed before probes/fits/scoring because local raw-byte array hashes were compared to original source dtype+shape+bytes digests. Root preserved attempt/source/freeze. Reviewer read exact repair diff and independently recomputed one original manifest array digest from each SA/PC source, confirming the original encoding `str(dtype)+str(shape tuple)+C bytes`. Repair changes only that check/provenance labels plus forcing six thread variables to1 before NumPy import. No numerical grid, estimator, threshold or scoring change. Repaired executable SHA256 `d44df90c3b0adb95b6cf3adb423dc42d578b391f287b04a2f452f4bf019c3b90` approved for root's diagnosed preserved rerun after updated freeze. No current outcomes inspected.

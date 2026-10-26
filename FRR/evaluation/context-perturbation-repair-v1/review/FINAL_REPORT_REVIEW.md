@@ -1,0 +1,7 @@
+# Final report evidence review
+
+Reviewed `FINAL_REPORT.md`, `NEXT_CONTACT.md` and the current report's historical pointer. Compared the table/noisy completion claims with already saved `RUN_SUMMARY.json` cells and counts with prior completed audits/classification. No new test, experiment or audit rerun.
+
+The reported clean-query r2 completion table, partial-context delta1.5 relevant-stance-versus-evidence distinction and identified SOLVED noisy completion .875/.28125 agree with saved cells. Counts30,720/7,680/960,60structural/480calibration,384IDs/288unique,1,207dedup arrays and3,072unidentified SOLVED rows agree with audited data. Strict replay FAIL,1,170errors,341changed sequences,0membership changes and92,160exact fixed-ID categorical comparisons are accurately scoped. Added role/coefficient information and unavailable placeholders remain explicit. The proposed next contact is prospective and does not claim a tested robust solver or external selectivity.
+
+Two minor editorial corrections requested to root: replace "Exchanged-score gaps" with "Score gaps between reordered records" because no membership exchange occurred; replace "CLEAN-query" with "noise-free query (eta0)" to avoid confusion with the predecessor CLEAN training arm. No blocking scientific/evidence correction. Approval is for the scoped final report with original strict replay failure retained, not a blanket original acceptance pass. Historical pause artifacts remain authoritative records of the pause.

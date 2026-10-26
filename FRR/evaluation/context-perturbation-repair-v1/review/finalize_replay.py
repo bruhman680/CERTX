@@ -1,0 +1,12 @@
+import json,hashlib
+from pathlib import Path
+import numpy as np
+P=Path(__file__).resolve().parent;R=P.parent/'run';load=lambda p:json.load(open(p))
+original=load(P/'REPLAY_ORIGINAL_FAILURE'/'REPLAY_RESULT.json');current=load(P/'REPLAY_RESULT.json');cl=load(P/'REPLAY_ERROR_CLASSIFICATION.json');rerun=load(P/'REPLAY_CLASSIFICATION_RERUN.json');sp=load(P/'REPLAY_SAVED_PROJECTOR_RESULT.json');mapping=load(R/'OUTCOME_MAP.json')['conditions'];pool=np.load(R/'outcomes.npz');bad=[];boundary=[]
+for rowkey,row in cl['rows'].items():
+ f=mapping[row['condition']];qi=row['query_index'];scores=pool[f['scores']][qi];idx=np.argsort(-scores,kind='stable');top=pool[f['top']][qi]
+ if not np.array_equal(idx[:3],top):bad.append(rowkey)
+ boundary.append(float(scores[idx[2]]-scores[idx[3]]))
+hashes=load(P/'REPLAY_ORIGINAL_FAILURE'/'PRESERVATION_HASHES.json');preserved={f:hashlib.sha256((P/f).read_bytes()).hexdigest()==h for f,h in hashes.items()}
+summary={'status':'fixed-ID and membership validated with ordered differences','strict_original_pass':False,'original_status':original['status'],'original_error_count':len(original['errors']),'original_errors_identically_reproduced':original['errors']==rerun['errors'],'original_artifacts_unchanged':preserved,'coverage':original['coverage'],'classification':cl['summary'],'saved_score_stable_sort_exact':not bad,'saved_score_stable_sort_bad_rows':bad,'saved_projector_readout_supplement':{'status':sp['status'],'errors':len(sp['errors']),'meaning':'Saved-projector/calibration reconstruction reproduces exact readout order; it does not erase the independent-refit ordered differences.'},'boundary_flags_exact_in_original':not any(e[0].endswith(':near_boundary_tie') for e in original['errors']),'saved_boundary_gap_min':min(boundary),'saved_boundary_gap_max':max(boundary),'saved_boundaries_within_1e_10':sum(g<=1e-10 for g in boundary),'atol':original['atol'],'rtol':original['rtol'],'decision_threshold':original['decision_threshold'],'implementation_source_read':False,'implementation_imports':False,'limitation':'Independent refit projectors differ by at most1.24e-14 in any entry and induce floating ordering differences within otherwise identical returned sets. The original strict ordered criterion is not met. No main rerun, sample/threshold change, or implementation inspection.'}
+(P/'REPLAY_FINAL_RESULT.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(summary,indent=2))
