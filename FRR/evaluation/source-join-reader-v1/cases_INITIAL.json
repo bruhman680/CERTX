@@ -1,0 +1,450 @@
+[
+  {
+    "id": "SJ01",
+    "initial": "Object: Drying chamber Vela; check 10:26. Task: Is maximum chamber temperature over sample set VS, the three specified samples in 10:16–10:26, at most 31.6 °C?\nRetained claim: “The condition is met.”\nThree briefing reports for this object and task:\nSaffron: maximum 30.9 °C; condition met.\nTopaz: maximum 30.9 °C; condition met.\nUmber: maximum 30.9 °C; condition met.\n\nSelectable records (one slot each; no token charge):\nV-D: Acquisition and export ledger.\nV-C: Channel calibration table.\nV-R: Reference capture table.\nV-M: Configuration and scope map.\n\nBudget: two distinct records. Turn 1: request exactly one ID. Receive that record. Turn 2: request exactly one other ID. Receive that record. Turn 3: give task decision (condition_met, condition_not_met, or unresolved), reuse retained claim (yes/no), evidence IDs, unresolved issue, and next check outside this exercise. Do not provide private reasoning. Record keys match by exact ID equality. All stated measurement contracts are accepted for this check.",
+    "records": {
+      "V-D": "Check 10:26; Drying chamber Vela. VS = the task's three samples in 10:16–10:26; clocks aligned.\nAcquisition | channel | samples | raw maximum (°C)\nVa | VX-4 | VS complete | 30.9\nExport edges (left supplies right):\nVa -> Saffron\nSaffron -> Topaz\nTopaz -> Umber\nAcquisition nodes: Va. Briefing nodes: Saffron, Topaz, Umber. Raw maximum values are exact, with no display rounding. Channel keys select calibration rows.",
+      "V-C": "Calibration contract for check 10:26; units °C. For every acquired sample, physical value = raw reading + correction + residual; absolute residual ≤ error. Each channel's rule applies over the raw range [28.4, 32.9].\nChannel | correction | error\nVX-4 | +0.18 | 0.07\nVX-9 | +1.1 | 0.07\nThis table has no object, acquisition, export, or sample-set assignments.",
+      "V-R": "Reference recorder table; units °C. Each capture contains three readings. At each reading, absolute physical-value error ≤ the listed error; maximum values have no display rounding.\nCapture | measured maximum | error\nVr17 | 31.08 | 0.04\nVr28 | 32.2 | 0.04\nRecorder route for both: probe VRP → recorder VRR → certificate VRC. The recorder stores capture keys; object and sample assignments are in the scope map.",
+      "V-M": "Scope map for check 10:26.\nCapture | object | sample set | coverage and timing\nVr17 | Drying chamber Vela | VS | all three task samples, aligned\nVr28 | Drying chamber Vela | VT | all three samples of the preceding check, aligned\nVS: 10:16–10:26, current check 10:26. VT: preceding check; no sample IDs overlap VS.\nReference route VRP/VRR/VRC has no value or coefficient input from acquisitions Va or channels VX-4/VX-9. This map contains no readings or calibration corrections."
+    },
+    "hidden_truth": {
+      "claim_correct": true,
+      "task_answer": "condition_met",
+      "support_generation": "copied",
+      "generation_truth": {
+        "actual_samples": [
+          30.58,
+          31.08,
+          30.78
+        ],
+        "actual_maximum": 31.08,
+        "unit": "°C",
+        "raw_samples_by_acquisition": {
+          "Va": [
+            30.4,
+            30.9,
+            30.6
+          ]
+        },
+        "physical_minus_raw": 0.18,
+        "calibration_correction": 0.18,
+        "actual_residual": -0.0,
+        "report_roots": [
+          "Va"
+        ],
+        "edges": [
+          "Va -> Saffron",
+          "Saffron -> Topaz",
+          "Topaz -> Umber"
+        ],
+        "source_graph": {
+          "acquisition_channel": {
+            "Va": "VX-4"
+          },
+          "channel_calibration": {
+            "VX-4": {
+              "correction": 0.18,
+              "error": 0.07
+            },
+            "VX-9": {
+              "correction": 1.1,
+              "error": 0.07
+            }
+          },
+          "reference_routes": {
+            "Vr17": [
+              "VRP",
+              "VRR",
+              "VRC"
+            ],
+            "Vr28": [
+              "VRP",
+              "VRR",
+              "VRC"
+            ]
+          },
+          "capture_scope": {
+            "Vr17": "VS",
+            "Vr28": "VT"
+          },
+          "reference_measured_maxima": {
+            "Vr17": 31.08,
+            "Vr28": 32.2
+          },
+          "previous_sample_physical_values": [
+            31.6,
+            32.2,
+            31.9
+          ],
+          "reference_actual_error": 0
+        }
+      },
+      "primary_status": "bounded_complete_decisive",
+      "reference_status": "valid_agrees",
+      "decisive_record_sets": [
+        [
+          "V-D",
+          "V-C"
+        ],
+        [
+          "V-R",
+          "V-M"
+        ]
+      ],
+      "full_packet_warrant": "condition_met",
+      "primary_maximum_interval": [
+        31.01,
+        31.15
+      ],
+      "reference_maximum_interval": [
+        31.04,
+        31.12
+      ],
+      "singleton_warrant": "unresolved",
+      "notes": "Public inference requires a calibration channel join or capture-to-task scope join; the acquisition ancestry is orthogonal to task correctness."
+    }
+  },
+  {
+    "id": "SJ02",
+    "initial": "Object: Pump Wrenfall; check 15:36. Task: Is maximum housing vibration over sample set WS, the three specified samples in 15:26–15:36, at most 6.4 mm/s?\nRetained claim: “The condition is met.”\nThree briefing reports for this object and task:\nAmber: maximum 6.0 mm/s; condition met.\nCobalt: maximum 6.0 mm/s; condition met.\nIvory: maximum 6.0 mm/s; condition met.\n\nSelectable records (one slot each; no token charge):\nW-D: Acquisition and export ledger.\nW-C: Channel calibration table.\nW-R: Reference capture table.\nW-M: Configuration and scope map.\n\nBudget: two distinct records. Turn 1: request exactly one ID. Receive that record. Turn 2: request exactly one other ID. Receive that record. Turn 3: give task decision (condition_met, condition_not_met, or unresolved), reuse retained claim (yes/no), evidence IDs, unresolved issue, and next check outside this exercise. Do not provide private reasoning. Record keys match by exact ID equality. All stated measurement contracts are accepted for this check.",
+    "records": {
+      "W-D": "Check 15:36; Pump Wrenfall. WS = the task's three samples in 15:26–15:36; clocks aligned.\nAcquisition | channel | samples | raw maximum (mm/s)\nWa | WK-8 | WS complete | 6.0\nExport edges (left supplies right):\nWa -> Amber\nAmber -> Cobalt\nCobalt -> Ivory\nAcquisition nodes: Wa. Briefing nodes: Amber, Cobalt, Ivory. Raw maximum values are exact, with no display rounding. Channel keys select calibration rows.",
+      "W-C": "Calibration contract for check 15:36; units mm/s. For every acquired sample, physical value = raw reading + correction + residual; absolute residual ≤ error. Each channel's rule applies over the raw range [2.5, 8.0].\nChannel | correction | error\nWK-8 | +0.25 | 0.45\nWK-2 | -0.4 | 0.05\nThis table has no object, acquisition, export, or sample-set assignments.",
+      "W-R": "Reference recorder table; units mm/s. Each capture contains three readings. At each reading, absolute physical-value error ≤ the listed error; maximum values have no display rounding.\nCapture | measured maximum | error\nWr17 | 6.62 | 0.03\nWr28 | 5.7 | 0.03\nRecorder route for both: probe WRP → recorder WRR → certificate WRC. The recorder stores capture keys; object and sample assignments are in the scope map.",
+      "W-M": "Scope map for check 15:36.\nCapture | object | sample set | coverage and timing\nWr17 | Pump Wrenfall | WS | all three task samples, aligned\nWr28 | Pump Wrenfall | WT | all three samples of the preceding check, aligned\nWS: 15:26–15:36, current check 15:36. WT: preceding check; no sample IDs overlap WS.\nReference route WRP/WRR/WRC has no value or coefficient input from acquisitions Wa or channels WK-8/WK-2. This map contains no readings or calibration corrections."
+    },
+    "hidden_truth": {
+      "claim_correct": false,
+      "task_answer": "condition_not_met",
+      "support_generation": "copied",
+      "generation_truth": {
+        "actual_samples": [
+          5.12,
+          6.62,
+          5.62
+        ],
+        "actual_maximum": 6.62,
+        "unit": "mm/s",
+        "raw_samples_by_acquisition": {
+          "Wa": [
+            4.5,
+            6.0,
+            5.0
+          ]
+        },
+        "physical_minus_raw": 0.62,
+        "calibration_correction": 0.25,
+        "actual_residual": 0.37,
+        "report_roots": [
+          "Wa"
+        ],
+        "edges": [
+          "Wa -> Amber",
+          "Amber -> Cobalt",
+          "Cobalt -> Ivory"
+        ],
+        "source_graph": {
+          "acquisition_channel": {
+            "Wa": "WK-8"
+          },
+          "channel_calibration": {
+            "WK-8": {
+              "correction": 0.25,
+              "error": 0.45
+            },
+            "WK-2": {
+              "correction": -0.4,
+              "error": 0.05
+            }
+          },
+          "reference_routes": {
+            "Wr17": [
+              "WRP",
+              "WRR",
+              "WRC"
+            ],
+            "Wr28": [
+              "WRP",
+              "WRR",
+              "WRC"
+            ]
+          },
+          "capture_scope": {
+            "Wr17": "WS",
+            "Wr28": "WT"
+          },
+          "reference_measured_maxima": {
+            "Wr17": 6.62,
+            "Wr28": 5.7
+          },
+          "previous_sample_physical_values": [
+            5.1,
+            5.7,
+            5.4
+          ],
+          "reference_actual_error": 0
+        }
+      },
+      "primary_status": "bounded_complete_straddling",
+      "reference_status": "valid_disagrees",
+      "decisive_record_sets": [
+        [
+          "W-R",
+          "W-M"
+        ]
+      ],
+      "full_packet_warrant": "condition_not_met",
+      "primary_maximum_interval": [
+        5.8,
+        6.7
+      ],
+      "reference_maximum_interval": [
+        6.59,
+        6.65
+      ],
+      "singleton_warrant": "unresolved",
+      "notes": "Public inference requires a calibration channel join or capture-to-task scope join; the acquisition ancestry is orthogonal to task correctness."
+    }
+  },
+  {
+    "id": "SJ03",
+    "initial": "Object: Thermal block Xeris; check 18:46. Task: Is maximum core temperature over sample set XS, the three specified samples in 18:36–18:46, at most 72.3 °C?\nRetained claim: “The condition is met.”\nThree briefing reports for this object and task:\nBeryl: maximum 71.4 °C; condition met.\nCoral: maximum 71.4 °C; condition met.\nOnyx: maximum 71.4 °C; condition met.\n\nSelectable records (one slot each; no token charge):\nX-D: Acquisition and export ledger.\nX-C: Channel calibration table.\nX-R: Reference capture table.\nX-M: Configuration and scope map.\n\nBudget: two distinct records. Turn 1: request exactly one ID. Receive that record. Turn 2: request exactly one other ID. Receive that record. Turn 3: give task decision (condition_met, condition_not_met, or unresolved), reuse retained claim (yes/no), evidence IDs, unresolved issue, and next check outside this exercise. Do not provide private reasoning. Record keys match by exact ID equality. All stated measurement contracts are accepted for this check.",
+    "records": {
+      "X-D": "Check 18:46; Thermal block Xeris. XS = the task's three samples in 18:36–18:46; clocks aligned.\nAcquisition | channel | samples | raw maximum (°C)\nXa | XB-5 | XS complete | 71.4\nXb | XB-5 | XS complete | 71.4\nXc | XB-5 | XS complete | 71.4\nExport edges (left supplies right):\nXa -> Beryl\nXb -> Coral\nXc -> Onyx\nAcquisition nodes: Xa, Xb, Xc. Briefing nodes: Beryl, Coral, Onyx. Raw maximum values are exact, with no display rounding. Channel keys select calibration rows.",
+      "X-C": "Calibration contract for check 18:46; units °C. For every acquired sample, physical value = raw reading + correction + residual; absolute residual ≤ error. Each channel's rule applies over the raw range [68.2, 73.4].\nChannel | correction | error\nXB-5 | +0.24 | 0.09\nXB-7 | +1.3 | 0.09\nThis table has no object, acquisition, export, or sample-set assignments.",
+      "X-R": "Reference recorder table; units °C. Each capture contains three readings. At each reading, absolute physical-value error ≤ the listed error; maximum values have no display rounding.\nCapture | measured maximum | error\nXr17 | 71.64 | 0.06\nXr28 | 73.1 | 0.06\nRecorder route for both: probe XRP → recorder XRR → certificate XRC. The recorder stores capture keys; object and sample assignments are in the scope map.",
+      "X-M": "Scope map for check 18:46.\nCapture | object | sample set | coverage and timing\nXr17 | Thermal block Xeris | XS | all three task samples, aligned\nXr28 | Thermal block Xeris | XT | all three samples of the preceding check, aligned\nXS: 18:36–18:46, current check 18:46. XT: preceding check; no sample IDs overlap XS.\nReference route XRP/XRR/XRC has no value or coefficient input from acquisitions Xa, Xb, Xc or channels XB-5/XB-7. This map contains no readings or calibration corrections."
+    },
+    "hidden_truth": {
+      "claim_correct": true,
+      "task_answer": "condition_met",
+      "support_generation": "separate_acquisitions",
+      "generation_truth": {
+        "actual_samples": [
+          70.44,
+          71.64,
+          71.04
+        ],
+        "actual_maximum": 71.64,
+        "unit": "°C",
+        "raw_samples_by_acquisition": {
+          "Xa": [
+            70.2,
+            71.4,
+            70.8
+          ],
+          "Xb": [
+            70.2,
+            71.4,
+            70.8
+          ],
+          "Xc": [
+            70.2,
+            71.4,
+            70.8
+          ]
+        },
+        "physical_minus_raw": 0.24,
+        "calibration_correction": 0.24,
+        "actual_residual": -0.0,
+        "report_roots": [
+          "Xa",
+          "Xb",
+          "Xc"
+        ],
+        "edges": [
+          "Xa -> Beryl",
+          "Xb -> Coral",
+          "Xc -> Onyx"
+        ],
+        "source_graph": {
+          "acquisition_channel": {
+            "Xa": "XB-5",
+            "Xb": "XB-5",
+            "Xc": "XB-5"
+          },
+          "channel_calibration": {
+            "XB-5": {
+              "correction": 0.24,
+              "error": 0.09
+            },
+            "XB-7": {
+              "correction": 1.3,
+              "error": 0.09
+            }
+          },
+          "reference_routes": {
+            "Xr17": [
+              "XRP",
+              "XRR",
+              "XRC"
+            ],
+            "Xr28": [
+              "XRP",
+              "XRR",
+              "XRC"
+            ]
+          },
+          "capture_scope": {
+            "Xr17": "XS",
+            "Xr28": "XT"
+          },
+          "reference_measured_maxima": {
+            "Xr17": 71.64,
+            "Xr28": 73.1
+          },
+          "previous_sample_physical_values": [
+            72.5,
+            73.1,
+            72.8
+          ],
+          "reference_actual_error": 0
+        }
+      },
+      "primary_status": "bounded_complete_decisive",
+      "reference_status": "valid_agrees",
+      "decisive_record_sets": [
+        [
+          "X-D",
+          "X-C"
+        ],
+        [
+          "X-R",
+          "X-M"
+        ]
+      ],
+      "full_packet_warrant": "condition_met",
+      "primary_maximum_interval": [
+        71.55,
+        71.73
+      ],
+      "reference_maximum_interval": [
+        71.58,
+        71.7
+      ],
+      "singleton_warrant": "unresolved",
+      "notes": "Public inference requires a calibration channel join or capture-to-task scope join; the acquisition ancestry is orthogonal to task correctness."
+    }
+  },
+  {
+    "id": "SJ04",
+    "initial": "Object: Hydraulic rack Yarrowgate; check 06:56. Task: Is maximum manifold pressure over sample set YS, the three specified samples in 06:46–06:56, at most 23.6 bar?\nRetained claim: “The condition is met.”\nThree briefing reports for this object and task:\nCopper: maximum 23.0 bar; condition met.\nIndigo: maximum 23.0 bar; condition met.\nPearl: maximum 23.0 bar; condition met.\n\nSelectable records (one slot each; no token charge):\nY-D: Acquisition and export ledger.\nY-C: Channel calibration table.\nY-R: Reference capture table.\nY-M: Configuration and scope map.\n\nBudget: two distinct records. Turn 1: request exactly one ID. Receive that record. Turn 2: request exactly one other ID. Receive that record. Turn 3: give task decision (condition_met, condition_not_met, or unresolved), reuse retained claim (yes/no), evidence IDs, unresolved issue, and next check outside this exercise. Do not provide private reasoning. Record keys match by exact ID equality. All stated measurement contracts are accepted for this check.",
+    "records": {
+      "Y-D": "Check 06:56; Hydraulic rack Yarrowgate. YS = the task's three samples in 06:46–06:56; clocks aligned.\nAcquisition | channel | samples | raw maximum (bar)\nYa | YH-6 | YS complete | 23.0\nYb | YH-6 | YS complete | 23.0\nYc | YH-6 | YS complete | 23.0\nExport edges (left supplies right):\nYa -> Copper\nYb -> Indigo\nYc -> Pearl\nAcquisition nodes: Ya, Yb, Yc. Briefing nodes: Copper, Indigo, Pearl. Raw maximum values are exact, with no display rounding. Channel keys select calibration rows.",
+      "Y-C": "Calibration contract for check 06:56; units bar. For every acquired sample, physical value = raw reading + correction + residual; absolute residual ≤ error. Each channel's rule applies over the raw range [20.1, 25.0].\nChannel | correction | error\nYH-6 | +0.94 | 0.08\nYH-3 | +0.1 | 0.08\nThis table has no object, acquisition, export, or sample-set assignments.",
+      "Y-R": "Reference recorder table; units bar. Each capture contains three readings. At each reading, absolute physical-value error ≤ the listed error; maximum values have no display rounding.\nCapture | measured maximum | error\nYr17 | 23.94 | 0.04\nYr28 | 22.9 | 0.04\nRecorder route for both: probe YRP → recorder YRR → certificate YRC. The recorder stores capture keys; object and sample assignments are in the scope map.",
+      "Y-M": "Scope map for check 06:56.\nCapture | object | sample set | coverage and timing\nYr17 | Hydraulic rack Yarrowgate | YS | all three task samples, aligned\nYr28 | Hydraulic rack Yarrowgate | YT | all three samples of the preceding check, aligned\nYS: 06:46–06:56, current check 06:56. YT: preceding check; no sample IDs overlap YS.\nReference route YRP/YRR/YRC has no value or coefficient input from acquisitions Ya, Yb, Yc or channels YH-6/YH-3. This map contains no readings or calibration corrections."
+    },
+    "hidden_truth": {
+      "claim_correct": false,
+      "task_answer": "condition_not_met",
+      "support_generation": "separate_acquisitions",
+      "generation_truth": {
+        "actual_samples": [
+          23.04,
+          23.94,
+          23.34
+        ],
+        "actual_maximum": 23.94,
+        "unit": "bar",
+        "raw_samples_by_acquisition": {
+          "Ya": [
+            22.1,
+            23.0,
+            22.4
+          ],
+          "Yb": [
+            22.1,
+            23.0,
+            22.4
+          ],
+          "Yc": [
+            22.1,
+            23.0,
+            22.4
+          ]
+        },
+        "physical_minus_raw": 0.94,
+        "calibration_correction": 0.94,
+        "actual_residual": 0.0,
+        "report_roots": [
+          "Ya",
+          "Yb",
+          "Yc"
+        ],
+        "edges": [
+          "Ya -> Copper",
+          "Yb -> Indigo",
+          "Yc -> Pearl"
+        ],
+        "source_graph": {
+          "acquisition_channel": {
+            "Ya": "YH-6",
+            "Yb": "YH-6",
+            "Yc": "YH-6"
+          },
+          "channel_calibration": {
+            "YH-6": {
+              "correction": 0.94,
+              "error": 0.08
+            },
+            "YH-3": {
+              "correction": 0.1,
+              "error": 0.08
+            }
+          },
+          "reference_routes": {
+            "Yr17": [
+              "YRP",
+              "YRR",
+              "YRC"
+            ],
+            "Yr28": [
+              "YRP",
+              "YRR",
+              "YRC"
+            ]
+          },
+          "capture_scope": {
+            "Yr17": "YS",
+            "Yr28": "YT"
+          },
+          "reference_measured_maxima": {
+            "Yr17": 23.94,
+            "Yr28": 22.9
+          },
+          "previous_sample_physical_values": [
+            22.3,
+            22.9,
+            22.6
+          ],
+          "reference_actual_error": 0
+        }
+      },
+      "primary_status": "bounded_complete_decisive",
+      "reference_status": "valid_disagrees",
+      "decisive_record_sets": [
+        [
+          "Y-D",
+          "Y-C"
+        ],
+        [
+          "Y-R",
+          "Y-M"
+        ]
+      ],
+      "full_packet_warrant": "condition_not_met",
+      "primary_maximum_interval": [
+        23.86,
+        24.02
+      ],
+      "reference_maximum_interval": [
+        23.9,
+        23.98
+      ],
+      "singleton_warrant": "unresolved",
+      "notes": "Public inference requires a calibration channel join or capture-to-task scope join; the acquisition ancestry is orthogonal to task correctness."
+    }
+  }
+]

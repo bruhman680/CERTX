@@ -1,5 +1,7 @@
 # Current FRR orientation
 
+Latest completed contact: [SJ-C1/2/3](../evaluation/source-join-reader-v1/REPORT.md),4fresh task-only readers/12turns. Two releases, one evidenced violation, one warranted unresolved due to chosen calibration interval/budget. Partial origin completeness and rating reconciliation preserved. [Checkpoint](checkpoints/AFTER_SOURCE_JOINS_2026-10-26.md). Earlier current/rest statements below are historical; next route-aware acquisition design proposed, no background run.
+
 Latest completed contact: [AR-C1/2/3](../evaluation/source-ancestry-reader-v1/REPORT.md),6fresh readers/12publicturns. All six decisions and source accounts fit frozen supplied evidence; independent scoring/audit agree. Strong cues, no FRR treatment or population benefit. [Checkpoint](checkpoints/AFTER_SOURCE_ANCESTRY_READERS_2026-10-26.md). Earlier current/rest statements below are historical; next proposal unlaunched.
 
 Current completed contact: [RB-C1/2/3](../evaluation/reference-bias-contact-v1/REPORT.md),144 exact main rows and8 supplemental diagnostics, independent replay passed. User resumed; prior rest below is historical. Conditional reference authority and raw-error guarantees separated. [Checkpoint](checkpoints/AFTER_REFERENCE_BIAS_2026-10-26.md). Next actual-reader source ancestry contact proposed only; no background work.

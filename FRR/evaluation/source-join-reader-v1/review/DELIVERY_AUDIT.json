@@ -1,0 +1,90 @@
+{
+  "freeze_hashes_match": true,
+  "cases": [
+    {
+      "case_id": "SJ01",
+      "requested_ids": [
+        "V-D",
+        "V-C"
+      ],
+      "all_three_prompts_literal_match": true,
+      "rationale_words": [
+        24,
+        32,
+        54
+      ],
+      "caps_pass": true,
+      "all_outputs_parseable_json": true,
+      "exact_field_sets": true,
+      "delivered_gold_action": "RELEASE",
+      "actual_action": "RELEASE",
+      "action_and_reuse_match_gold": true,
+      "evidence_ids_match_delivered": true,
+      "execution_bytes_and_counts_match": true
+    },
+    {
+      "case_id": "SJ02",
+      "requested_ids": [
+        "W-D",
+        "W-C"
+      ],
+      "all_three_prompts_literal_match": true,
+      "rationale_words": [
+        25,
+        32,
+        56
+      ],
+      "caps_pass": true,
+      "all_outputs_parseable_json": true,
+      "exact_field_sets": true,
+      "delivered_gold_action": "UNRESOLVED",
+      "actual_action": "UNRESOLVED",
+      "action_and_reuse_match_gold": true,
+      "evidence_ids_match_delivered": true,
+      "execution_bytes_and_counts_match": true
+    },
+    {
+      "case_id": "SJ03",
+      "requested_ids": [
+        "X-D",
+        "X-C"
+      ],
+      "all_three_prompts_literal_match": true,
+      "rationale_words": [
+        25,
+        27,
+        65
+      ],
+      "caps_pass": true,
+      "all_outputs_parseable_json": true,
+      "exact_field_sets": true,
+      "delivered_gold_action": "RELEASE",
+      "actual_action": "RELEASE",
+      "action_and_reuse_match_gold": true,
+      "evidence_ids_match_delivered": true,
+      "execution_bytes_and_counts_match": true
+    },
+    {
+      "case_id": "SJ04",
+      "requested_ids": [
+        "Y-M",
+        "Y-R"
+      ],
+      "all_three_prompts_literal_match": true,
+      "rationale_words": [
+        23,
+        31,
+        58
+      ],
+      "caps_pass": true,
+      "all_outputs_parseable_json": true,
+      "exact_field_sets": true,
+      "delivered_gold_action": "HOLD",
+      "actual_action": "HOLD",
+      "action_and_reuse_match_gold": true,
+      "evidence_ids_match_delivered": true,
+      "execution_bytes_and_counts_match": true
+    }
+  ],
+  "audit_note": "Initial checker expected no record-ID label. Actual later prompts contain only fixed prefix + requested ID label + literal selected record + terminal newline; corrected checker accepts this harmless label. Initial checker result preserved in DELIVERY_AUDIT_INITIAL.json."
+}

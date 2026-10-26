@@ -8,7 +8,7 @@ This is a saved dependency-aware plan, not a running scheduler. It queues every 
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
-Current completed contact: [AR-C1/2/3](../source-ancestry-reader-v1/REPORT.md),6fresh task-only readers/12turns with frozen subset key and independent outcome audit. Strongly cued success, no FRR treatment or general memory/authority benefit. [Next less-explanatory selection design](../source-ancestry-reader-v1/NEXT_CONTACT.md) proposed only. Queue35/30unfinished/sixpartial families unchanged; MEM-04partial, FIELD-01/LEGACY-06 remain queued; no background continuation.
+Current completed contact: [SJ-C1/2/3](../source-join-reader-v1/REPORT.md),4fresh readers/12turns, source joins under2lookups. Final actions/reuse/bounds warranted, one unresolved under selected evidence; partial source-account completeness retained. No FRR treatment or planning benefit established. [Next route-aware acquisition design](../source-join-reader-v1/NEXT_CONTACT.md) proposed only. Queue35/30unfinished/sixpartial families unchanged, MEM-04partial; no background continuation.
 
 ## Nearest work
 

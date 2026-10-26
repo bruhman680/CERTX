@@ -1,0 +1,159 @@
+{
+  "stage": "independent initial outcome audit, completed before consulting scorer outcomes",
+  "basis": "Frozen KEY.json and SCORING.md, literal saved public prompts and outputs, FREEZE.json and EXECUTION.json. Hidden truth used only for separately labeled external comparator.",
+  "delivery_checks": "DELIVERY_AUDIT.json",
+  "cases": [
+    {
+      "case_id": "SJ01",
+      "delivered_ids": [
+        "V-D",
+        "V-C"
+      ],
+      "final_action": "RELEASE",
+      "retained_claim_reuse": true,
+      "task_value_quote": "Maximum chamber temperature \u2264 31.15 \u00b0C",
+      "origin_quote": "Saffron, Topaz, and Umber derive from that same acquisition",
+      "judgment": "All raw readings are inside the calibrated domain; the upper bound establishes the inclusive criterion. Brief source summary omits explicit intermediate export nodes but accurately identifies one root and no extra measurements.",
+      "dimensions": {
+        "delivered_packet_action": 2,
+        "retained_reuse_and_repair": 2,
+        "task_value_or_bound": 2,
+        "source_join_fidelity": 2,
+        "briefing_origins": 2,
+        "calibration_and_role_scope": 2,
+        "evidence_fidelity": 2,
+        "unsupported_certainty": 2,
+        "residual_issue_and_next_check": 2
+      },
+      "delivered_packet_decisive": true,
+      "external_truth": "agrees",
+      "unsupported_exact_value": false,
+      "invented_join": false
+    },
+    {
+      "case_id": "SJ02",
+      "delivered_ids": [
+        "W-D",
+        "W-C"
+      ],
+      "final_action": "UNRESOLVED",
+      "retained_claim_reuse": false,
+      "task_value_quote": "Maximum physical vibration is bounded by 5.8\u20136.7 mm/s.",
+      "origin_quote": "All three reports derive from the single acquisition Wa on WK-8",
+      "judgment": "Physical interval straddles the limit. Withholds reuse without calling the favorable claim false. Tighter applicable calibrated measurement/residual bound is a legitimate discriminating next check.",
+      "dimensions": {
+        "delivered_packet_action": 2,
+        "retained_reuse_and_repair": 2,
+        "task_value_or_bound": 2,
+        "source_join_fidelity": 2,
+        "briefing_origins": 2,
+        "calibration_and_role_scope": 2,
+        "evidence_fidelity": 2,
+        "unsupported_certainty": 2,
+        "residual_issue_and_next_check": 2
+      },
+      "delivered_packet_decisive": false,
+      "external_truth": "abstains",
+      "unsupported_exact_value": false,
+      "invented_join": false
+    },
+    {
+      "case_id": "SJ03",
+      "delivered_ids": [
+        "X-D",
+        "X-C"
+      ],
+      "final_action": "RELEASE",
+      "retained_claim_reuse": true,
+      "task_value_quote": "Maximum core temperature \u2264 71.73 \u00b0C",
+      "origin_quote": "their calibrations share certificate XCC",
+      "judgment": "Separate physical acquisitions are correctly distinguished from the shared certificate. No interval reduction, statistical independence or exact latent maximum is asserted.",
+      "dimensions": {
+        "delivered_packet_action": 2,
+        "retained_reuse_and_repair": 2,
+        "task_value_or_bound": 2,
+        "source_join_fidelity": 2,
+        "briefing_origins": 2,
+        "calibration_and_role_scope": 2,
+        "evidence_fidelity": 2,
+        "unsupported_certainty": 2,
+        "residual_issue_and_next_check": 2
+      },
+      "delivered_packet_decisive": true,
+      "external_truth": "agrees",
+      "unsupported_exact_value": false,
+      "invented_join": false
+    },
+    {
+      "case_id": "SJ04",
+      "delivered_ids": [
+        "Y-M",
+        "Y-R"
+      ],
+      "final_action": "HOLD",
+      "retained_claim_reuse": false,
+      "task_value_quote": "YS maximum is between 23.90 and 23.98 bar.",
+      "origin_quote": "Yr17 uses the reference route YRP \u2192 YRR \u2192 YRC",
+      "judgment": "Maps Yr17 to current complete aligned YS; lower bound exceeds limit. Briefing origins are unobserved and not asserted. \"Independently of\" is interpreted as the explicitly declared absence of value/coefficient input, not universal error independence.",
+      "dimensions": {
+        "delivered_packet_action": 2,
+        "retained_reuse_and_repair": 2,
+        "task_value_or_bound": 2,
+        "source_join_fidelity": 2,
+        "briefing_origins": "NA: briefing origins unobserved, no assertion",
+        "calibration_and_role_scope": 2,
+        "evidence_fidelity": 2,
+        "unsupported_certainty": 2,
+        "residual_issue_and_next_check": 2
+      },
+      "delivered_packet_decisive": true,
+      "external_truth": "agrees",
+      "unsupported_exact_value": false,
+      "invented_join": false
+    }
+  ],
+  "shared_limits": [
+    "Same-platform role-separated review, not blinded replication.",
+    "Prompts are coordinator-reconstructed and outputs coordinator-transcribed; exact saved bytes verified, no independent transport transcript available.",
+    "Zero observed tools/peer calls reported by EXECUTION; instructional isolation is not technical enforcement.",
+    "All final actions/reuse/bounds are warranted; one task remains unresolved from chosen evidence; no aggregate success score."
+  ],
+  "intermediate_public_claim_audit": [
+    {
+      "case_id": "SJ01",
+      "turn": 2,
+      "quote": "The reports share one acquisition with a raw maximum of 30.9 \u00b0C.",
+      "judgment": "Supported by V-D; expressly requests unseen calibration before making task comparison."
+    },
+    {
+      "case_id": "SJ02",
+      "turn": 2,
+      "quote": "all reports derive from one acquisition on WK-8",
+      "judgment": "Supported by W-D. Requesting C is rational from delivered ledger even though evaluator knows this route will straddle. No clairvoyant reference-selection penalty."
+    },
+    {
+      "case_id": "SJ03",
+      "turn": 2,
+      "quote": "complete, independent raw readings for XS",
+      "judgment": "Ambiguous independence adjective: D establishes distinct physical channels acquiring their own readings and separate exports, not statistical independence of errors. Read as separate acquisition in context. Flag wording imprecision, no material unsupported error-independence claim; final explicitly notes shared certificate."
+    },
+    {
+      "case_id": "SJ04",
+      "turn": 1,
+      "quote": "which channels and three samples constitute YS and which measurement contract applies",
+      "judgment": "Prospective source-role overexpectation: inventory title alone does not establish that M contains channel assignments or a measurement contract. This is an intended-use rationale before any M is seen, not a claim to have observed those facts. Record separately as imprecise selection rationale; no final invented channel join."
+    },
+    {
+      "case_id": "SJ04",
+      "turn": 2,
+      "quote": "Yr17 as covering all three current YS samples",
+      "judgment": "Supported by Y-M. Correctly asks R for readings and error contract."
+    }
+  ],
+  "lookup_audit": {
+    "SJ01": "D\u2192C completes decisive route; reference route not needed.",
+    "SJ02": "D\u2192C completes bounded but straddling route. No one remaining record after D could decide; reference alternative requires two records. Avoidable initial route limitation is evaluator-achievability diagnostic, not reader knowledge or final warrant error.",
+    "SJ03": "D\u2192C completes decisive route; reference route not needed.",
+    "SJ04": "M\u2192R completes decisive route; briefing ancestry need not be invented."
+  }
+}

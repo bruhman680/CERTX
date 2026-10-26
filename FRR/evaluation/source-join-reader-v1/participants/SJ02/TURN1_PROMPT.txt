@@ -1,0 +1,16 @@
+You are handling one fictional operational decision. Use only this initial packet and records delivered in the next two messages. Do not use tools, inspect files, contact peers or seek other cases. You have two lookup slots, each selecting one record. Request exactly one record ID now. Return JSON with requested_id (string) and public_selection_rationale (at most 60 words). Do not make the final task decision yet.
+
+Object: Pump Wrenfall; check 15:36. Task: Is maximum housing vibration over sample set WS, the three specified samples in 15:26–15:36, at most 6.4 mm/s?
+Retained claim: “The condition is met.”
+Three briefing reports for this object and task:
+Amber: maximum 6.0 mm/s; condition met.
+Cobalt: maximum 6.0 mm/s; condition met.
+Ivory: maximum 6.0 mm/s; condition met.
+
+Selectable records (one lookup slot each):
+W-D: Acquisition and export ledger.
+W-C: Channel calibration table.
+W-R: Reference capture table.
+W-M: Configuration and scope map.
+
+Budget: two distinct records. Turn 1: request exactly one ID. Receive that record. Turn 2: request exactly one other ID. Receive that record. Turn 3: return action (RELEASE, HOLD, or UNRESOLVED), retained_claim_reuse (boolean), evidence IDs, unresolved issue, and next check outside this exercise. RELEASE requires a warranted criterion; HOLD requires a warranted violation; otherwise UNRESOLVED. Do not provide private reasoning. Record keys match by exact ID equality. All stated measurement contracts are accepted for this check.

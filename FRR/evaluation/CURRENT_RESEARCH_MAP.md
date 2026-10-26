@@ -1,6 +1,6 @@
 # Current research map: continuity, distinctions and their readers
 
-Current completed state: [AR-C1/2/3](source-ancestry-reader-v1/REPORT.md),6fresh task-only readers/12turns, all action/reuse/bound/source accounts fit frozen evidence. Independent outcome review agrees; no FRR comparison or behavioral gain claim. Strongly cued development ceiling; [next less-explanatory evidence-selection proposal](source-ancestry-reader-v1/NEXT_CONTACT.md) unexecuted. [Checkpoint](../sync/checkpoints/AFTER_SOURCE_ANCESTRY_READERS_2026-10-26.md). Historical RB/PW/CR results preserved; no background work or queue/core promotion.
+Current completed state: [SJ-C1/2/3](source-join-reader-v1/REPORT.md),4fresh readers/12turns with two sequential lookups. All delivered-evidence action/reuse/bounds warranted; one selected valid join remained unresolved though a different pair could decide. Partial origin completeness and initial reviewer/scorer difference preserved. [Checkpoint](../sync/checkpoints/AFTER_SOURCE_JOINS_2026-10-26.md). Prospective calibration-range repair preserved; no FRR efficacy, queue/core promotion or background work. [Next policy-design proposal](source-join-reader-v1/NEXT_CONTACT.md) unexecuted.
 
 Predecessor [SA-C1/2/3](structural-access-three-cycle-v1/REPORT.md) completed coordinate/projector transport and supervised subspace estimation. Its proposed mismatch follow-up is now executed in PC; original proposal/history preserved.
 

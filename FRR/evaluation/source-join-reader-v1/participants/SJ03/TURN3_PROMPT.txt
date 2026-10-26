@@ -1,0 +1,8 @@
+This is the result of your second and final lookup. Use only the initial packet and the two delivered records. Do not use tools, inspect files, contact peers or request more records. Return JSON with action (RELEASE, HOLD or UNRESOLVED), retained_claim_reuse (boolean, true only when evidence warrants reusing the retained claim), value_or_bound (number, brief text or null), evidence_ids (array), support_origins (brief public account), remaining_issue (text or null), next_check (text or null), and public_rationale (at most 180 words). RELEASE requires the stated acceptance criterion to be warranted; HOLD requires evidence that it is violated. Use UNRESOLVED if neither is established, including when a precautionary operational delay is appropriate. A concise public explanation suffices.
+
+X-C:
+Calibration contract for check 18:46; units °C. For every acquired sample, physical value = raw reading + correction + residual; absolute residual ≤ error. Each channel's rule applies over the raw range [68.2, 73.4].
+Channel | correction | error
+XB-5a; XB-5b; XB-5c | +0.24 | 0.09
+XB-7 | +1.3 | 0.09
+Channels XB-5a; XB-5b; XB-5c use certificate XCC; XB-7 uses XCD. Semicolon-separated keys each receive that row's contract. This table has no object, acquisition, export, or sample-set assignments.
