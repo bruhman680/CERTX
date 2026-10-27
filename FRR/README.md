@@ -1,6 +1,6 @@
 # Fluid Relational Reasoning — operational candidate 0.2
 
-Latest completed contact: [joined-warrant readers JW-C1/2/3](evaluation/joined-warrant-reader-v1/REPORT.md) and [checkpoint](sync/checkpoints/AFTER_JOINED_WARRANT_READERS_2026-10-27.md). Sixteen fresh contexts; eight paired cases tie on actions and seven rubric dimensions. A pre-reader follow-up feasibility error was preserved/repaired; optional guidance clarified, no efficacy or core/checker/queue promotion. Earlier rest statements are historical. No background work.
+Latest completed reader study: [joined-warrant readers JW-C1/2/3](evaluation/joined-warrant-reader-v1/REPORT.md) and [checkpoint](sync/checkpoints/AFTER_JOINED_WARRANT_READERS_2026-10-27.md). Sixteen fresh contexts; eight paired cases tie on actions and seven rubric dimensions. A pre-reader follow-up feasibility error was preserved/repaired; optional guidance clarified, no efficacy or core/checker/queue promotion. Earlier rest statements are historical. No background work. Source follow-up: [Claude group/soil-budget intake](evaluation/claude-group-soil-budget-intake-v1/REPORT.md), pinned sources/reproduction and scoped corrections; no new behavioral efficacy claim.
 
 Current working aim: useful habits for ongoing inquiry, construction and revision. Comparative evaluations can inform a choice, but outperforming other people/labs is not the goal. [PG-C1](evaluation/practice-growth-v1/REPORT.md) shows concrete practice through saved-data inspection, a working reopening tool and a preserved repair.
 

@@ -1,0 +1,11 @@
+--- original/soil_budget_length.py
++++ path-adapted/soil_budget_length.py
+@@ -11,7 +11,7 @@
+ """
+ import io, contextlib, itertools, numpy as np
+ from scipy.optimize import minimize_scalar
+-src = open('/tmp/claude-0/-home-claude/ed722431-0b93-5ef2-81ce-e6127e458ac9/scratchpad/soil_relay/soil_toy.py').read().split('# passive TV between worlds')[0]
++src = open('/workspace/frr/lineage/sources/claude-soil-intake-2026-10-21/soil_toy.py').read().split('# passive TV between worlds')[0]
+ ns = {}
+ with contextlib.redirect_stdout(io.StringIO()): exec(src, ns)
+ build, stationary, W, idx, NS = ns['build'], ns['stationary'], ns['W'], ns['idx'], ns['NS']

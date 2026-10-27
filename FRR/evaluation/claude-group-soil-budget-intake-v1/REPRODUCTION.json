@@ -1,0 +1,127 @@
+{
+  "scripts": [
+    {
+      "script": "lineage/sources/claude-group-vote-soil-2026-10-27/group_vote_soil.py",
+      "seconds": 0.0207627249910729,
+      "exit_code": 0,
+      "stdout_matches_supplied_bytes": true,
+      "stderr_bytes": 0,
+      "stdout_sha256": "8fd627c43a0aaabc6f81ece3f57c5a2ff49aff014beddb7b54d14cd0fbfa57a9"
+    },
+    {
+      "script": "evaluation/claude-group-soil-budget-intake-v1/adapted/soil_budget.py",
+      "seconds": 1.1055579469975783,
+      "exit_code": 0,
+      "stdout_matches_supplied_bytes": true,
+      "stderr_bytes": 0,
+      "stdout_sha256": "9b196c0c63b9110284e2f3075b4df0a118ac39b09cd144a3449d1c4537e41c92"
+    },
+    {
+      "script": "evaluation/claude-group-soil-budget-intake-v1/adapted/soil_budget_length.py",
+      "seconds": 0.9745596590073546,
+      "exit_code": 0,
+      "stdout_matches_supplied_bytes": true,
+      "stderr_bytes": 0,
+      "stdout_sha256": "c68f1fc6d8246739f3d37769d49180aee404c6432c9a4becba15dd7525871b3e"
+    }
+  ],
+  "receipts": [
+    {
+      "claim_id": "negctl_wrong_value",
+      "verdict": "contradicted",
+      "exit_code": 0,
+      "receipt_exactly_matches_ledger": true,
+      "seconds": 0.044858181005110964
+    },
+    {
+      "claim_id": "pam_double_aligned",
+      "verdict": "supported",
+      "exit_code": 0,
+      "receipt_exactly_matches_ledger": true,
+      "seconds": 0.03588310399209149
+    },
+    {
+      "claim_id": "pam_double_opposite",
+      "verdict": "supported",
+      "exit_code": 0,
+      "receipt_exactly_matches_ledger": true,
+      "seconds": 0.04285376600455493
+    },
+    {
+      "claim_id": "pam_orthogonal_unit",
+      "verdict": "supported",
+      "exit_code": 0,
+      "receipt_exactly_matches_ledger": true,
+      "seconds": 0.04020087400567718
+    },
+    {
+      "claim_id": "pam_ten_x_aligned",
+      "verdict": "supported",
+      "exit_code": 0,
+      "receipt_exactly_matches_ledger": true,
+      "seconds": 0.03498749699792825
+    },
+    {
+      "claim_id": "shasym_f_high",
+      "verdict": "supported",
+      "exit_code": 0,
+      "receipt_exactly_matches_ledger": true,
+      "seconds": 0.047712419007439166
+    },
+    {
+      "claim_id": "shasym_f_low",
+      "verdict": "supported",
+      "exit_code": 0,
+      "receipt_exactly_matches_ledger": true,
+      "seconds": 0.04534979299933184
+    },
+    {
+      "claim_id": "shasym_mean_is_one_fifth",
+      "verdict": "supported",
+      "exit_code": 0,
+      "receipt_exactly_matches_ledger": true,
+      "seconds": 0.04410134100180585
+    },
+    {
+      "claim_id": "shasym_n3_combined",
+      "verdict": "supported",
+      "exit_code": 0,
+      "receipt_exactly_matches_ledger": true,
+      "seconds": 0.041716078005265445
+    },
+    {
+      "claim_id": "shasym_observe_others_n5",
+      "verdict": "supported",
+      "exit_code": 0,
+      "receipt_exactly_matches_ledger": true,
+      "seconds": 0.04050291600287892
+    },
+    {
+      "claim_id": "vote_ind_n3",
+      "verdict": "supported",
+      "exit_code": 0,
+      "receipt_exactly_matches_ledger": true,
+      "seconds": 0.043125928001245484
+    },
+    {
+      "claim_id": "vote_shasym_n3",
+      "verdict": "unresolved",
+      "exit_code": 0,
+      "receipt_exactly_matches_ledger": true,
+      "seconds": 0.046415423988946714
+    }
+  ],
+  "ledger_events": 12,
+  "ledger_chain_end": "3e6759bbea67669cc26d88cc9b0353f805bc068446c5d0dfb0813d26d727b694",
+  "receipt_verdict_counts": {
+    "contradicted": 1,
+    "supported": 10,
+    "unresolved": 1
+  },
+  "unresolved_original_expression_diagnostic": {
+    "exception": "ValueError",
+    "message": "Expression complexity limit"
+  },
+  "all_frozen_sources_unchanged": true,
+  "scope": "Source execution reproduction, path-only adaptation for budget scripts, unchanged checker receipt/chain audit; not independent model replication"
+}

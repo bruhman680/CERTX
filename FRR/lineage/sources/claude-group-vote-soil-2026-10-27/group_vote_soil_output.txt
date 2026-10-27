@@ -1,0 +1,19 @@
+soil moments (mean, var=pairwise covariance for exchangeable mixture):  SH-sym [0.2, 0.032005]  SH-asym [0.2, 0.032]  h = 0.238095
+P1: EC chain (n=9) mean pairwise covariance 0.00861, adjacent 0.03200; SH-sym and SH-asym mean pairwise covariance .032 by exchangeability.
+
+Majority-wrong probability (exact):
+   n      IND      EC     SH-sym   SH-asym   perfect-sharing (=.2)
+   1   0.2000   0.2000   0.2000   0.2000   .2000
+   3   0.1040   0.1386   0.1616   0.1475   .2000
+   5   0.0579   0.0951   0.1409   0.1345   .2000
+   9   0.0196   0.0466   0.1120   0.1314   .2000
+  15   0.0042   0.0171   0.0832   0.1340   .2000
+  31   0.0001   0.0014   0.0419   0.1402   .2000
+ 101   0.0000   0.0000   0.0033   0.1563   .2000
+limit n->inf: SH-asym tends to P(high soil) = 0.238095 (level .52 > .5); SH-sym levels both < .5 -> 0
+
+n=5 intervention contrast: P(majority wrong) and the mean error rate of the OTHER four agents
+  SH-sym   base maj 0.1409 others 0.2000 | observe(1 wrong) maj 0.4624 others 0.3600 | do(1 wrong) maj 0.2453 others 0.2000
+  SH-asym  base maj 0.1345 others 0.2000 | observe(1 wrong) maj 0.4637 others 0.3600 | do(1 wrong) maj 0.2105 others 0.2000
+  IND      base maj 0.0579 others 0.2000 | observe(1 wrong) maj 0.1808 others 0.2000 | do(1 wrong) maj 0.1808 others 0.2000
+  EC       base maj 0.0951 others 0.2000 | observe(1 wrong)=do(1 wrong) maj 0.2757 others 0.2499  (no hidden confounder: observe == do for downstream agents)

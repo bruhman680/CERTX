@@ -1,0 +1,98 @@
+{
+  "scope": "Independent elementary constructions; exact Fraction moments/vote probabilities; logarithmic design exponents displayed as floats; no real-agent or finite-sample result",
+  "matched_moment_example": {
+    "symmetric_levels": [
+      [
+        "1/2",
+        "1/50"
+      ],
+      [
+        "1/2",
+        "19/50"
+      ]
+    ],
+    "asymmetric_levels": [
+      [
+        "81/106",
+        "1/10"
+      ],
+      [
+        "25/106",
+        "131/250"
+      ]
+    ],
+    "shared_mean": "1/5",
+    "shared_covariance": "81/2500",
+    "third_moments": [
+      "343/12500",
+      "10843/312500"
+    ],
+    "majority_rows": [
+      {
+        "n": 3,
+        "symmetric_exact": "2029/12500",
+        "asymmetric_exact": "46189/312500",
+        "symmetric_float": 0.16232,
+        "asymmetric_float": 0.1478048
+      },
+      {
+        "n": 9,
+        "symmetric_exact": "4418438149331/39062500000000",
+        "asymmetric_exact": "2021674449925643987/15258789062500000000",
+        "symmetric_float": 0.1131120166228736,
+        "asymmetric_float": 0.132492456750327
+      },
+      {
+        "n": 31,
+        "symmetric_exact": "4993469141728868398226802804893328331515718928767/116415321826934814453125000000000000000000000000000",
+        "asymmetric_exact": "15502436145317829779792541656141821396816707027491593088185940034730831/108420217248550443400745280086994171142578125000000000000000000000000000",
+        "symmetric_float": 0.042893573314621354,
+        "asymmetric_float": 0.1429847360458512
+      },
+      {
+        "n": 101,
+        "symmetric_exact": "348345992759105262156197527304730961858106462962368173111622303887791322813764745800542522401701753391968601628813235814076608390038265549014387008847826177382154777429/98607613152626475676466070660348278709150804388627875596284866333007812500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "asymmetric_exact": "125810666445267041076904117128979420350850319332925113866147948851343198444014935261977857657656684689661079494666202258148118357263305140835781510981117721586882532775397420449491671436593351690516719568203271617101452611890523354515415957/777876909732642713393008006722515530073781521090145891637639576848712354254422930147993102890714202119620823694390310265589505434036254882812500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "symmetric_float": 0.003532648054465426,
+        "asymmetric_float": 0.16173595702758206
+      }
+    ],
+    "conditional_iid_large_n_limits": [
+      "0",
+      "25/106"
+    ]
+  },
+  "original_rounded_code": {
+    "symmetric_covariance": "3200521/100000000",
+    "asymmetric_covariance": "4/125",
+    "difference": "521/100000000"
+  },
+  "mixture_counterexample": {
+    "per_design_pair_exponents": {
+      "A": {
+        "H1-H2": 0.5108256237659907,
+        "H1-H3": 0.0,
+        "H2-H3": 0.5108256237659907
+      },
+      "B": {
+        "H1-H2": 0.0,
+        "H1-H3": 0.5108256237659907,
+        "H2-H3": 0.5108256237659907
+      }
+    },
+    "fixed_half_pair_exponents": {
+      "H1-H2": 0.25541281188299536,
+      "H1-H3": 0.25541281188299536,
+      "H2-H3": 0.5108256237659907
+    },
+    "pure_worst_pair_exponents": [
+      0,
+      0
+    ],
+    "fixed_half_worst_pair_exponent": 0.25541281188299536,
+    "random_labeled_half_worst_pair_exponent": 0.2231435513142097,
+    "fixed_half_worst_pair_exact_formula": "(1/2)*ln(5/3)",
+    "random_labeled_half_exact_formula": "ln(5/4)",
+    "interpretation": "Per-pair C_mix<=weighted arm C does not forbid maximin benefit across different bottleneck pairs. Fixed-count and randomized labeled-arm protocols are distinct."
+  }
+}
