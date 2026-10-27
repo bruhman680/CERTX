@@ -1,0 +1,37 @@
+Chernoff exponent C per episode (nats), and N(5%) ~ ln(10)/C episodes [asymptotic approximation]
+design              SH-EC C        N(5%)   KL(A||B)/KL(B||A)  SH-WK C        N(5%)   KL(A||B)/KL(B||A)  EC-WK C        N(5%)   KL(A||B)/KL(B||A)
+PASS                  0.03819      60.3  0.1508/0.1537    0.00020   11489.6  0.0008/0.0008    0.03820      60.3  0.1540/0.1503
+DO_F                  0.04261      54.0  0.1563/0.1838    0.01969     117.0  0.0801/0.0764    0.03197      72.0  0.1255/0.1318
+DO_F/DO_S             0.03355      68.6  0.1287/0.1398    0.00989     232.7  0.0403/0.0384    0.02841      81.0  0.1116/0.1165
+RESET_A               0.03879      59.4  0.1564/0.1537    0.00020   11489.6  0.0008/0.0008    0.03890      59.2  0.1549/0.1559
+RESET_S               0.27262       8.4  0.7115/1.8193    0.01169     197.0  0.0317/0.0873    0.21380      10.8  0.9687/0.6779
+RESET_S80             0.13640      16.9  0.4741/0.5869    0.00248     927.4  0.0099/0.0100    0.13567      17.0  0.5684/0.4790
+RESET_A/RESET_S       0.15475      14.9  0.4339/0.9865    0.00594     387.7  0.0163/0.0441    0.12621      18.2  0.5618/0.4169
+PASS/DO_F             0.04039      57.0  0.1536/0.1687    0.00994     231.6  0.0405/0.0386    0.03508      65.6  0.1398/0.1410
+PASS/RESET_S          0.15453      14.9  0.4311/0.9865    0.00594     387.7  0.0163/0.0441    0.12588      18.3  0.5614/0.4141
+
+Checks against predictions:
+ P1 hardest pair under PASS: ('SH', 'WK'); N(SH-WK)/N(SH-EC) = 190.6
+ P2/P3 C(DO_F)/C(PASS) for SH-EC = 1.12
+ P2/P3 C(DO_F)/C(PASS) for SH-WK = 98.23
+ P2/P3 C(DO_F)/C(PASS) for EC-WK = 0.84
+ P4 best single-arm design for SH-EC: RESET_S  (PASS 0.0382, DO_F 0.0426, RESET_A 0.0388, RESET_S 0.2726)
+ P4 best single-arm design for SH-WK: DO_F  (PASS 0.0002, DO_F 0.0197, RESET_A 0.0002, RESET_S 0.0117)
+ P4 best single-arm design for EC-WK: RESET_S  (PASS 0.0382, DO_F 0.0320, RESET_A 0.0389, RESET_S 0.2138)
+ P5 C(RESET_S80)/C(RESET_S) for SH-EC = 0.50
+ P5 C(RESET_S80)/C(RESET_S) for SH-WK = 0.21
+ P5 C(RESET_S80)/C(RESET_S) for EC-WK = 0.63
+ P6 SH-EC: N(PASS) 60  best design RESET_S N 8.4
+ P6 SH-WK: N(PASS) 11490  best design DO_F N 117.0
+ P6 EC-WK: N(PASS) 60  best design RESET_S N 10.8
+
+max |sum(law)-1| over all design laws: 8.282263763703668e-13
+
+P7 mixture f*DO_F + (1-f)*RESET_S: min over pairs of C, and the bound check C_mix <= weighted average of arm C
+  f=0.00  min-pair C = 0.01169 (N5%  197.0)  SH-EC:0.2726  SH-WK:0.0117  EC-WK:0.2138
+  f=0.25  min-pair C = 0.01347 (N5%  170.9)  SH-EC:0.2147  SH-WK:0.0135  EC-WK:0.1683
+  f=0.50  min-pair C = 0.01544 (N5%  149.1)  SH-EC:0.1569  SH-WK:0.0154  EC-WK:0.1227
+  f=0.75  min-pair C = 0.01753 (N5%  131.3)  SH-EC:0.0993  SH-WK:0.0175  EC-WK:0.0772
+  f=0.90  min-pair C = 0.01882 (N5%  122.4)  SH-EC:0.0650  SH-WK:0.0188  EC-WK:0.0500
+  f=1.00  min-pair C = 0.01969 (N5%  117.0)  SH-EC:0.0426  SH-WK:0.0197  EC-WK:0.0320
+  bound violations: 0
