@@ -1,0 +1,69 @@
+{
+  "subject": "LEANN: A Low-Storage Overhead Vector Index",
+  "accessed_date_utc": "2026-10-27",
+  "search_queries": [],
+  "search_query_count": 0,
+  "selected_primary_resource_count": 3,
+  "selected_primary_resources": [
+    {
+      "id": "leann-paper-v2",
+      "url": "https://arxiv.org/html/2506.08276v2",
+      "canonical_identifier": "arXiv:2506.08276v2",
+      "version_date": "2025-11-25",
+      "type": "primary_paper",
+      "access": "public HTML successfully read",
+      "read_depth": "Introduction/Table 1; Sections 2-7 methods, update and evaluation prose/tables; Appendix B.2-B.3 and C.1-C.4; D.1-D.4 prose and captions. References and figure captions scanned. No PDF or chart-value extraction.",
+      "claim_scope": "Index representation, recomputation, storage/latency evaluation, soft deletion, evaluation protocol",
+      "limitations": [
+        "Not a reproduced experiment",
+        "No model-drift or semantic-memory correctness evaluation established",
+        "Storage overhead is distinct from retained corpus/model storage",
+        "Table 2 contains a 23.4% retrieval share despite prose claiming below 20%; Mac Table 4 reaches 50.1% for HotpotQA"
+      ]
+    },
+    {
+      "id": "leann-readme-pinned",
+      "url": "https://github.com/StarTrail-org/LEANN/blob/a63f484a0b00627fbc641b500ee377d35344eb72/README.md",
+      "type": "official_repository_readme",
+      "commit": "a63f484a0b00627fbc641b500ee377d35344eb72",
+      "commit_date_utc": "2026-10-26T22:36:18Z",
+      "blob_sha": "fd3c74bba0489c79c90ed9fc1259f988627f5114",
+      "access": "public GitHub connector fetch; complete text returned",
+      "read_depth": "Identity/paper link, architecture and storage claims, quick start, local/remote embedding and generation configuration, update/change descriptions; remaining application examples scanned",
+      "claim_scope": "Official project identity and configurable provider locality; marketing claims not treated as independently validated",
+      "limitations": [
+        "Later than paper v2",
+        "No installation or reproduction",
+        "Linked documentation and application examples not followed"
+      ]
+    },
+    {
+      "id": "leann-api-pinned",
+      "url": "https://github.com/StarTrail-org/LEANN/blob/a63f484a0b00627fbc641b500ee377d35344eb72/packages/leann-core/src/leann/api.py",
+      "type": "official_repository_code",
+      "commit": "a63f484a0b00627fbc641b500ee377d35344eb72",
+      "blob_sha": "ca2d62102170250b95a5b1d32970dbb3f6f86279",
+      "access": "public GitHub connector fetch; complete 1878-line text returned; selected sections inspected",
+      "read_depth": "PassageManager lookup; ID generation/add_text lines 543-568; passage persistence and metadata lines 598-692; compaction/update lines 868-1110; search enrichment and provider/template handling",
+      "claim_scope": "Retained passage representation, model metadata, update/removal scope, compact HNSW rebuild requirement",
+      "limitations": [
+        "Static inspection only",
+        "No backend/native or provider implementation inspection",
+        "No proof of comprehensive deletion or absence of revision enforcement elsewhere"
+      ]
+    }
+  ],
+  "auxiliary_identity_resolution": [
+    "https://github.com/StarTrail-org/LEANN",
+    "https://api.github.com/repos/StarTrail-org/LEANN/commits/main"
+  ],
+  "auxiliary_scope": "Repository identity/default-branch commit metadata only; not additional substantive primary resources",
+  "execution": {
+    "installed": false,
+    "index_built": false,
+    "benchmark_run": false,
+    "model_downloaded": false
+  },
+  "original_transfer_status": "Proposals only; do not infer semantic memory, source authority, or answer correctness from index efficiency",
+  "copyright": "Paraphrase only; no source text persisted or long quotations"
+}

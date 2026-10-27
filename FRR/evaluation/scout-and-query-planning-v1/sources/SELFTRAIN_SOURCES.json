@@ -1,0 +1,182 @@
+{
+  "record_id": "SELFTRAIN",
+  "checked_at": "2026-10-27",
+  "status": "primary_full_text_read; not reproduced",
+  "title": "On-Policy Self-Training: Data-Free Self-Improvement in Large Language Models",
+  "arxiv_id": "2610.32770",
+  "version": "v1",
+  "submitted": "2026-10-23",
+  "authors": [
+    "Leon Sick",
+    "Lukas Hoyer",
+    "Yannick Strümpler",
+    "Christian Reisswig",
+    "Timo Ropinski",
+    "Federico Tombari"
+  ],
+  "primary_resources": [
+    {
+      "url": "https://arxiv.org/abs/2610.32770v1",
+      "kind": "versioned arXiv metadata",
+      "read_scope": "title, authors, abstract, submission/version history, outbound code/project links",
+      "access": "public HTTP; read successfully",
+      "independence": "same paper as full text"
+    },
+    {
+      "url": "https://arxiv.org/html/2610.32770v1",
+      "kind": "versioned primary manuscript HTML",
+      "read_scope": "Sections 1–6, Tables 1–8, Appendix A.1–A.8 including algorithm, ablations, protocol and prompt roles",
+      "access": "public HTTP; read successfully",
+      "limits": "No visual figure/PDF inspection; malformed mixture expression in §3.5 not resolved; no mathematical implementation validation"
+    }
+  ],
+  "search": {
+    "attempted_query_strings": 3,
+    "successful_queries": [
+      "\"On-Policy Self-Training\" \"Sick\" github code",
+      "\"2610.32770\" code"
+    ],
+    "failed_query": "\"2610.32770\" \"On-Policy\" (incorrect search tool argument; no results)",
+    "selected_primary_resources": 2,
+    "secondary_hits_used_as_evidence": false,
+    "stop_reason": "Version/method/limitations established; bounded search found no official implementation"
+  },
+  "official_code": {
+    "status": "not_found_in_bounded_search",
+    "url": null,
+    "commit": null,
+    "limits": "No code/project link in inspected versioned abstract/manuscript. Search absence is not proof of nonexistence. No repository inspected."
+  },
+  "information_and_work_trace": {
+    "prior_information": {
+      "includes": [
+        "pretrained weights and existing knowledge",
+        "instruction tuning for main Gemma models; Qwen3-4B-Base appendix control",
+        "human-chosen broad topic descriptors and synthesis/student/teacher prompt templates",
+        "benchmark-domain labels for curriculum targeting"
+      ],
+      "excludes_from_OPST_text_training": [
+        "curated question set",
+        "ground-truth answers",
+        "external stronger teacher",
+        "retrieval/external grounding"
+      ],
+      "scope": "§§3.1–3.3; §4.1; Appendix A.4/A.7. Data-free describes post-training inputs, not pretraining history or absence of data."
+    },
+    "generated_inputs": {
+      "producer": "EMA teacher or frozen initial model, not student directly",
+      "products": [
+        "query",
+        "candidate answer",
+        "rationale"
+      ],
+      "locations": "§3.3"
+    },
+    "verifier": {
+      "identity": "same generator model",
+      "access": "query alone in fresh context, then meaning-preserving paraphrase solved without generated privileged rationale/answer",
+      "acceptance": "both answers equal generated candidate",
+      "authority_limit": "self-consistency only; shared systematic errors can survive",
+      "location": "§3.4; Limitations"
+    },
+    "consensus_gate": {
+      "identity": "current student",
+      "access": "query only; G sampled answer rollouts",
+      "rule": "discard if all G agree with generated candidate answer",
+      "limit": "G and complete rejected-sample compute accounting not specified in inspected text",
+      "location": "§3.4"
+    },
+    "teacher": {
+      "identity": "EMA weights initialized from same model; beta=0.05 default in MMLU ablation",
+      "training_access": "query plus generated rationale/candidate answer and student rollout prefix",
+      "signal": "dense next-token distributions; generalized divergence objective; gradient updates",
+      "evaluation": "EMA teacher returned/evaluated; at MMLU ablation 47.7 versus student 45.9",
+      "locations": "§§3.2/3.5; Appendix A.2/A.5/A.7"
+    },
+    "ordinary_student": {
+      "access": "query and own prefix; visual setting also image",
+      "withheld": "generated privileged rationale/answer during training rollout",
+      "limit": "No inference-time external fact oracle; training asymmetry is not reader-source authority"
+    },
+    "visual_inputs": {
+      "external_data": "unlabeled OpenImages V4 images",
+      "privileged": "self-generated scene caption and/or detected boxes used for derived spatial relations",
+      "verification": "answer consistency across image augmentations; horizontal flips excluded as left/right answer-changing",
+      "limit": "unlabeled external images mean visual variant is not literally no-input-data; crop answer preservation not independently established",
+      "locations": "§§3.7/4.3; Appendix A.8"
+    },
+    "costs": {
+      "work": [
+        "curriculum generation",
+        "fresh-context solves",
+        "paraphrase generation and solves",
+        "G student gate rollouts",
+        "on-policy training rollouts",
+        "teacher token-distribution forward passes",
+        "gradient updates",
+        "EMA weight updates",
+        "repeated rounds and duplicate removal",
+        "evaluation"
+      ],
+      "reported_scale": "MMLU default ablation: 285 samples/round, 7 rounds; additional 12/20 rounds score lower",
+      "unknown": "End-to-end GPU-hours, token budget, discarded generations, comparative wall-time/memory and monetary cost not reported in inspected manuscript; cannot infer efficiency from dataset size"
+    }
+  },
+  "evaluation": {
+    "main_models": [
+      "Gemma 4 E2B instruction tuned",
+      "Gemma 4 E4B instruction tuned"
+    ],
+    "appendix_model": "Qwen3-4B-Base",
+    "in_domain": [
+      "MMLU",
+      "GPQA Diamond",
+      "GSM8K",
+      "HellaSwag"
+    ],
+    "ood": [
+      "ARC-Challenge",
+      "MATH-500",
+      "Winogrande; GPQA also OOD in mixture experiment"
+    ],
+    "visual": [
+      "VQAv2",
+      "POPE"
+    ],
+    "baselines": "Same synthetic data SFT/GRPO; curated question/answer supervised controls; u-OPSD and R-Zero are author reimplementations",
+    "protocol": "Appendix A.6: non-thinking multiple choice uses closed-option log likelihood; MMLU 5-shot, other MC zero-shot; GSM8K 8-shot CoT. Thinking parses final answer; MATH symbolic equivalence. Authors report zero invalid/parse-failure rate.",
+    "variance": "Gemma E2B repeated over three seeds; reported standard deviations ≤1.2 points; not a full cross-model uncertainty study.",
+    "material_results": [
+      {
+        "location": "Table 1",
+        "result": "E2B MMLU without thinking 37.5→47.7; with thinking 69.9→71.1"
+      },
+      {
+        "location": "Table 3",
+        "result": "All-three-topic mixture OOD average +0.8 but MATH-500 −4.9; MMLU+HellaSwag MATH-500 −8.5"
+      },
+      {
+        "location": "Table 6",
+        "result": "MMLU rounds 7:47.7;12:46.2;20:46.2; no-EMA 38.1 versus base37.5"
+      }
+    ]
+  },
+  "leakage_and_limits": {
+    "established_by_paper": [
+      "Self-consistency is not correctness; consistent errors enter training",
+      "Can amplify existing knowledge only",
+      "Hand-chosen topics; small models",
+      "OOD retention mixed"
+    ],
+    "not_established": [
+      "Pretraining benchmark contamination audit",
+      "Held-out validation protocol for round/hyperparameter selection separate from reported benchmark",
+      "Complete synthesis-vs-evaluation decontamination audit; duplicate removal across training rounds does not establish no overlap with benchmarks",
+      "Independent verifier authority",
+      "General autonomous self-improvement or sustainable gains across indefinite rounds",
+      "Equal-compute baseline efficiency"
+    ],
+    "interpretation": "Benchmark-oriented topic labels and evaluation few-shot exemplars are part of information budget; they do not alone prove leakage. No leakage-free claim warranted."
+  },
+  "transfer_status": "Proposal only; ordinary-reader source-authority evaluation not run; no training or API calls performed."
+}
