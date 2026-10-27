@@ -8,7 +8,7 @@ This is a saved dependency-aware plan, not a running scheduler. It queues every 
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
-Current rest: [QR-C1/2/3](../quality-preview-reader-v1/REPORT.md),6fresh readers/18turns, source/budget-matchedguidancepilot withmaskedscoring. Arms tied on task outcomes and paths; explanation defects retained, optional verification reminder refined. [Rest checkpoint](../../sync/checkpoints/REST_AFTER_QUALITY_PREVIEW_2026-10-26.md), [next fidelity proposals](../quality-preview-reader-v1/NEXT_CONTACT.md) unexecuted. Queue35/30unfinished/sixpartialfamilies unchanged,MEM-04partial; no backgroundwork.
+Latest completed contact: [JW-C1/2/3](../joined-warrant-reader-v1/REPORT.md),16freshcontexts/eightpairedcases, all actions/seven rubric dimension pairs tied. No reminder promotion or broad efficacy claim. Pre-reader feasibility defect preserved and repaired; optional guidance/example clarified. [Checkpoint](../../sync/checkpoints/AFTER_JOINED_WARRANT_READERS_2026-10-27.md), [next handoff direction](../joined-warrant-reader-v1/NEXT_CONTACT.md). Earlier QR fidelity proposal now has this scoped contact; broader families remain open. Queue35/30unfinished/sixpartialfamilies unchanged,MEM-04partial; no backgroundwork.
 
 ## Nearest work
 

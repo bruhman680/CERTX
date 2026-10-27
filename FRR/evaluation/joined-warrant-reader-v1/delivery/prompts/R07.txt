@@ -1,0 +1,14 @@
+Use only this delivered fictional task packet. The one designated read of this file is the only permitted tool call. After reading, do not use tools, contact peers, inspect other files, or write files. Return your answer directly as one JSON object.
+
+Treat explicitly accepted premises as stipulated mathematical facts for this fictional exercise. Assignment-record authority follows the stated rule. RELEASE means acceptance holds in every state compatible with the accepted evidence. HOLD means acceptance fails in every compatible state. UNRESOLVED means both an accepting and a failing state remain compatible. No further evidence is available during this turn.
+
+Return exactly these fields: action (RELEASE, HOLD, or UNRESOLVED); bound_or_value (a JSON object naming the quantity, value or bound, and unit); satisfied_premises (an array of strings); missing_or_conflicting_premises (an array of strings); evidence_ids (an array of supplied evidence IDs); next_check (a string naming a useful check and its scope, or saying none is needed); rationale (a string of at most 180 whitespace-separated words).
+
+Read the task and evidence carefully. Optionally check joined warrants: identify required premises, combine applicable records using exact keys, and separate supplied premises from absent or conflicting ones. Check whether evidence covers the full acceptance target. Explain your decision, state consequential limitations, and give a useful next check when needed.
+
+Task: Decide whether to RELEASE the complete two-piece lot Mica on 2031-06-18. Acceptance requires every corrected load to be at most 14 glims.
+
+Evidence:
+E1: Accepted setup: the complete lot is pieces R and S. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Each bias is somewhere in [0,10] glims unless an applicable exact calibration fixes it. A calibration applies only when lot, date, and unit all match exactly. Different keys have no transfer relation. No other corrections apply.
+E2: Accepted acquisition for Mica / 2031-06-18 / glims: R recorded 14 and uses profile copper; S recorded 19 and uses profile jade.
+E3: Accepted exact calibration for Mica / 2031-06-19 / glims: copper bias is 1; jade bias is 4.

@@ -1,0 +1,11 @@
+# Arm comparison after independent masked deposits
+
+Both independent initial deposits agree across all sixteen readers' seven separate dimensions. Root recorded `MASKED_AGREEMENT.json` and `REVIEW_FREEZE.json` before preparing this comparison. No gold/rubric or judgment revision was needed.
+
+Eight case-matched pairs tie in action and every rubric dimension. Each arm has two RELEASE, two HOLD and four UNRESOLVED. Each arm receives eight full judgments separately for verdict, action, numeric consequence, supplied-premise fidelity, uncertainty/conflict fidelity, and next-check relevance; next-check sufficiency has four full/four not-applicable. No composite score, significance test, equivalence inference or whole-framework claim.
+
+Neither arm repeats the earlier QR false-missing-scope defect in these new packets. This does not establish a repair effect: cases, delivery, response requirements and evidence clarity differ. All evidence is supplied, conditional authority is explicit, and the common response contract asks about satisfied/missing premises. Those shared cues may already be sufficient. This run does not isolate whether the optional reminder causes any behavior change, nor establish it has no effect elsewhere.
+
+R10 (joined) asks to verify either piece's assignment, exploiting the one-of-each rule; R04 (ordinary) asks for both. Both checks are sufficient and earn the same prospective grades because the task supplies no acquisition costs or efficiency requirement. R07/R09, on the wrong-date pair, both correctly target only the jade calibration that can change acceptance. R01/R06 both request the complete-population maximum directly; these are correctly scoped but broad checks, not an executed measurement plan or proof of cost-optimal acquisition. Numerical object formats differ harmlessly: R12's [9,15] is clarified by its two exact feasible assignments, not claimed as a continuous support set.
+
+No prompt promotion or stronger automated verifier follows from this ceiling result. Strongest next direction: unqueried-scope preservation through a separately budgeted handoff, or a fresh criterion-shift task, with meaningful failures possible and an explicit information-matched comparator. Do not rerun these known cases as held-out evidence.

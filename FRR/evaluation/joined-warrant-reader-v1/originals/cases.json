@@ -1,0 +1,79 @@
+{
+  "version": "cycle-1-prospective-v1",
+  "status": "DRAFT_NOT_FROZEN",
+  "description": "Authored fictional packets. Case identifiers and pair metadata are administrative and must not be delivered to readers.",
+  "cases": [
+    {
+      "id": "case01", "pair": 1,
+      "task": "Decide whether to RELEASE the complete two-piece lot Lark on 2031-04-09. Acceptance requires every corrected load to be at most 12 glims.",
+      "evidence": [
+        {"id": "E1", "text": "Accepted setup: the complete lot is pieces P and Q, measured once on that date in glims. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Exactly one piece uses profile amber and the other uses profile blue. No other corrections apply."},
+        {"id": "E2", "text": "Acquisition record for Lark / 2031-04-09 / glims: P recorded 11; Q recorded 17. The accepted acquisition assignment is P to amber and Q to blue."},
+        {"id": "E3", "text": "Accepted exact calibration for Lark / 2031-04-09 / glims: amber bias is 2; blue bias is 8. This calibrates profiles and contains no piece assignment."}
+      ]
+    },
+    {
+      "id": "case02", "pair": 1,
+      "task": "Decide whether to RELEASE the complete two-piece lot Lark on 2031-04-09. Acceptance requires every corrected load to be at most 12 glims.",
+      "evidence": [
+        {"id": "E1", "text": "Accepted setup: the complete lot is pieces P and Q, measured once on that date in glims. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Exactly one piece uses profile amber and the other uses profile blue. No other corrections apply."},
+        {"id": "E2", "text": "Acquisition record for Lark / 2031-04-09 / glims: P recorded 11; Q recorded 17. No piece-to-profile assignment is supplied anywhere in this packet; either assignment remains allowed."},
+        {"id": "E3", "text": "Accepted exact calibration for Lark / 2031-04-09 / glims: amber bias is 2; blue bias is 8. This calibrates profiles and contains no piece assignment."}
+      ]
+    },
+    {
+      "id": "case03", "pair": 2,
+      "task": "Decide whether to RELEASE the complete two-piece lot Mica on 2031-06-18. Acceptance requires every corrected load to be at most 14 glims.",
+      "evidence": [
+        {"id": "E1", "text": "Accepted setup: the complete lot is pieces R and S. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Each bias is somewhere in [0,10] glims unless an applicable exact calibration fixes it. A calibration applies only when lot, date, and unit all match exactly. Different keys have no transfer relation. No other corrections apply."},
+        {"id": "E2", "text": "Accepted acquisition for Mica / 2031-06-18 / glims: R recorded 14 and uses profile copper; S recorded 19 and uses profile jade."},
+        {"id": "E3", "text": "Accepted exact calibration for Mica / 2031-06-18 / glims: copper bias is 1; jade bias is 4."}
+      ]
+    },
+    {
+      "id": "case04", "pair": 2,
+      "task": "Decide whether to RELEASE the complete two-piece lot Mica on 2031-06-18. Acceptance requires every corrected load to be at most 14 glims.",
+      "evidence": [
+        {"id": "E1", "text": "Accepted setup: the complete lot is pieces R and S. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Each bias is somewhere in [0,10] glims unless an applicable exact calibration fixes it. A calibration applies only when lot, date, and unit all match exactly. Different keys have no transfer relation. No other corrections apply."},
+        {"id": "E2", "text": "Accepted acquisition for Mica / 2031-06-18 / glims: R recorded 14 and uses profile copper; S recorded 19 and uses profile jade."},
+        {"id": "E3", "text": "Accepted exact calibration for Mica / 2031-06-19 / glims: copper bias is 1; jade bias is 4."}
+      ]
+    },
+    {
+      "id": "case05", "pair": 3,
+      "task": "Decide whether to RELEASE the complete two-piece lot Reed on 2031-08-23. Acceptance requires every corrected load to be at most 11 glims.",
+      "evidence": [
+        {"id": "E1", "text": "Accepted setup: the complete lot is pieces T and U. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Exactly one piece uses profile ivory and the other uses profile violet. Assignment records E3 and E4 have equal authority. At least one is correct; neither has priority or an independent truth guarantee. Agreement fixes the assignment; disagreement leaves either recorded assignment possible. No other corrections apply."},
+        {"id": "E2", "text": "Accepted acquisition and exact profile calibration for Reed / 2031-08-23 / glims: T recorded 12; U recorded 20; ivory bias is 3; violet bias is 10. This record supplies no assignment."},
+        {"id": "E3", "text": "Assignment record for Reed / 2031-08-23 / glims: T uses ivory and U uses violet."},
+        {"id": "E4", "text": "Assignment record for Reed / 2031-08-23 / glims: T uses ivory and U uses violet."}
+      ]
+    },
+    {
+      "id": "case06", "pair": 3,
+      "task": "Decide whether to RELEASE the complete two-piece lot Reed on 2031-08-23. Acceptance requires every corrected load to be at most 11 glims.",
+      "evidence": [
+        {"id": "E1", "text": "Accepted setup: the complete lot is pieces T and U. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Exactly one piece uses profile ivory and the other uses profile violet. Assignment records E3 and E4 have equal authority. At least one is correct; neither has priority or an independent truth guarantee. Agreement fixes the assignment; disagreement leaves either recorded assignment possible. No other corrections apply."},
+        {"id": "E2", "text": "Accepted acquisition and exact profile calibration for Reed / 2031-08-23 / glims: T recorded 12; U recorded 20; ivory bias is 3; violet bias is 10. This record supplies no assignment."},
+        {"id": "E3", "text": "Assignment record for Reed / 2031-08-23 / glims: T uses ivory and U uses violet."},
+        {"id": "E4", "text": "Assignment record for Reed / 2031-08-23 / glims: T uses violet and U uses ivory."}
+      ]
+    },
+    {
+      "id": "case07", "pair": 4,
+      "task": "Decide whether to RELEASE the complete four-piece lot Vale on 2031-10-06. Acceptance requires the arithmetic mean of the four corrected loads to be at most 8 glims.",
+      "evidence": [
+        {"id": "E1", "text": "Accepted setup: the complete task population is pieces V, W, X, and Y of Vale / 2031-10-06 / glims. Each corrected load is a nonnegative real number. There are no other individual bounds, relationships, measurements, or corrections."},
+        {"id": "E2", "text": "Accepted exact certificate for the complete population V, W, X, and Y of Vale / 2031-10-06 / glims: their arithmetic mean corrected load is 7. No individual corrected loads are supplied."}
+      ]
+    },
+    {
+      "id": "case08", "pair": 4,
+      "task": "Decide whether to RELEASE the complete four-piece lot Vale on 2031-10-06. Acceptance requires the maximum of the four corrected loads to be at most 8 glims.",
+      "evidence": [
+        {"id": "E1", "text": "Accepted setup: the complete task population is pieces V, W, X, and Y of Vale / 2031-10-06 / glims. Each corrected load is a nonnegative real number. There are no other individual bounds, relationships, measurements, or corrections."},
+        {"id": "E2", "text": "Accepted exact certificate for the complete population V, W, X, and Y of Vale / 2031-10-06 / glims: their arithmetic mean corrected load is 7. No individual corrected loads are supplied."}
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Current FRR orientation
 
-Current rest: [QR-C1/2/3](../evaluation/quality-preview-reader-v1/REPORT.md), [checkpoint](checkpoints/REST_AFTER_QUALITY_PREVIEW_2026-10-26.md). User requested wind-down after run/sync. Matched-information guidance tied on paths/actions/bounds; explanation defects and optional logical refinement preserved. Earlier current/latest/rest statements below are historical. No new work until user returns.
+Latest completed contact: [JW-C1/2/3](../evaluation/joined-warrant-reader-v1/REPORT.md), 27 October 2026. Sixteen fresh contexts/eight case-matched pairs, ordinary/reminder arms tied; independent masked judgments agree. Prospective rubric feasibility error and repair retained; optional guidance clarified without efficacy claim. [Checkpoint](checkpoints/AFTER_JOINED_WARRANT_READERS_2026-10-27.md). Intervening [CTJ](../evaluation/cache-transfer-join-contact-v1/REPORT.md) and [ETH scout](../evaluation/eth-source-scout-v1/REPORT.md) are saved. All earlier latest/current/rest labels below are historical. No background work.
 
 Latest completed contact: [three source scouts + QP-C1](../evaluation/scout-and-query-planning-v1/REPORT.md). Screenshot leads verified, methods/cost/privileged-information boundaries extracted; exact query-planning model audited across20roots. Perfect quality previews remain supplied assumptions; no participant/training/index adoption. [Checkpoint](checkpoints/AFTER_SCOUT_QUERY_PLANNING_2026-10-26.md). Earlier current/rest statements are historical; next preview challenge proposed only, no background run.
 

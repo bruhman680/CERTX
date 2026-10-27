@@ -1,6 +1,6 @@
 # Fluid Relational Reasoning — operational candidate 0.2
 
-Current resting state: [quality-preview reader pilot](evaluation/quality-preview-reader-v1/REPORT.md) and [rest checkpoint](sync/checkpoints/REST_AFTER_QUALITY_PREVIEW_2026-10-26.md). Six readers/eighteen turns; instruction groups tied on paths/actions/bounds, explanation defects preserved. Optional joined-evidence/maximum reminder refined; no core/checker/queue promotion. Research paused, no background work.
+Latest completed contact: [joined-warrant readers JW-C1/2/3](evaluation/joined-warrant-reader-v1/REPORT.md) and [checkpoint](sync/checkpoints/AFTER_JOINED_WARRANT_READERS_2026-10-27.md). Sixteen fresh contexts; eight paired cases tie on actions and seven rubric dimensions. A pre-reader follow-up feasibility error was preserved/repaired; optional guidance clarified, no efficacy or core/checker/queue promotion. Earlier rest statements are historical. No background work.
 
 Current working aim: useful habits for ongoing inquiry, construction and revision. Comparative evaluations can inform a choice, but outperforming other people/labs is not the goal. [PG-C1](evaluation/practice-growth-v1/REPORT.md) shows concrete practice through saved-data inspection, a working reopening tool and a preserved repair.
 

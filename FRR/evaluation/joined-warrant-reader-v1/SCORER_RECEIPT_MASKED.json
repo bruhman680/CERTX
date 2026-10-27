@@ -1,0 +1,37 @@
+{
+  "version": "JW-C1-scorer-receipt-v1",
+  "deposited_at_utc": "2026-10-27T16:26:37.132585+00:00",
+  "status": "INITIAL_INDEPENDENT_DEPOSIT_BEFORE_RECONCILIATION",
+  "input_key_rubric_hashes": {
+    "SCORER_INPUT.json": "4489365c1a88e5b9f2a0130636e00369cb48c15939c0932fb642791148a5cfb5",
+    "KEY.json": "878512c09af6778d626cdc00417b1fb0d7ff67326e987ad53873f97cec93c9d4",
+    "SCORING.md": "2062ba261c7bd86f3c8cb9571a151daa3c3f9ce5a22103eb36b53031e44ea364"
+  },
+  "output_hashes": {
+    "SCORES_MASKED.json": "5533e94851e42ad2ea38a4cb828bf86dad4b3b732a4b868d37f3a86ad04701de",
+    "SCORING_REPORT_MASKED.md": "2dc60fd663d8acae50a9f159dfe0de0db3823433c690b6214895d7dc45fceb4e"
+  },
+  "key_version": "JW-C1-key-v3",
+  "masking": "Shared filesystem; instructional only. No arm or assignment information read.",
+  "scoring_read_scope": [
+    "SCORER_INPUT.json",
+    "KEY.json",
+    "SCORING.md"
+  ],
+  "preparatory_read_scope": [
+    "cases.json",
+    "verification module",
+    "prior quality-preview NEXT_CONTACT motivation only"
+  ],
+  "not_read": [
+    "instruction arms",
+    "assignment mapping",
+    "delivery manifest",
+    "participant prompts",
+    "arm-specific counts",
+    "root comparisons",
+    "reviewer independent scores"
+  ],
+  "postoutcome_key_or_rubric_mutation": false,
+  "aggregate_score_computed": false
+}

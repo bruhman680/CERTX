@@ -1,0 +1,343 @@
+{
+  "version": "JW-C1-key-v1",
+  "status": "PROSPECTIVE_INITIAL",
+  "source_cases_sha256": "bd9a5472ea18c27134e5967ad7427511da8274ea0d4b071e4983cd3d882e29ac",
+  "scope": "Conditional acceptance of fictional packets; supported/contradicted classify acceptance proposition, unresolved is not observed violation.",
+  "scorer_masking": "Prepared from cases.json only, verification module and prior NEXT_CONTACT motivation; no instruction arms, assignment mapping, participant prompts or responses inspected.",
+  "cases": {
+    "case01": {
+      "verdict": "SUPPORTED",
+      "action": "RELEASE",
+      "calculation": "P=11-2=9; Q=17-8=9; maximum=9 <=12",
+      "consequential_supported_premises": [
+        "E2 supplies P->amber and Q->blue.",
+        "E3 supplies exact profile biases for the matching lot/date/unit; its local lack of assignment does not erase E2.",
+        "Complete population and x=y-b are supplied."
+      ],
+      "genuinely_unresolved_issues": [],
+      "next_check": {
+        "needed": false,
+        "appropriate": "No further check needed for the stated acceptance task."
+      },
+      "compatible_witnesses": {},
+      "bounds": {
+        "P": [
+          9,
+          9
+        ],
+        "Q": [
+          9,
+          9
+        ],
+        "maximum": [
+          9,
+          9
+        ]
+      }
+    },
+    "case02": {
+      "verdict": "UNRESOLVED",
+      "action": "WITHHOLD_RELEASE_PENDING_ASSIGNMENT",
+      "calculation": "Allowed assignments yield (P,Q)=(9,9) or (3,15); maximum is 9 or 15.",
+      "consequential_supported_premises": [
+        "Both exact biases and their applicability are supplied.",
+        "Exactly one piece uses each profile."
+      ],
+      "genuinely_unresolved_issues": [
+        "Piece-to-profile assignment is explicitly absent; acceptance changes across allowed assignments."
+      ],
+      "next_check": {
+        "needed": true,
+        "appropriate": "Resolve the accepted assignment of either piece; one-to-one constraint determines the other.",
+        "sufficiency": "An authoritative assignment settles acceptance in either outcome."
+      },
+      "compatible_witnesses": {
+        "compliant": {
+          "assignment": {
+            "P": "amber",
+            "Q": "blue"
+          },
+          "corrected": {
+            "P": 9,
+            "Q": 9
+          },
+          "maximum": 9
+        },
+        "violating": {
+          "assignment": {
+            "P": "blue",
+            "Q": "amber"
+          },
+          "corrected": {
+            "P": 3,
+            "Q": 15
+          },
+          "maximum": 15
+        }
+      },
+      "bounds": {
+        "P": [
+          3,
+          9
+        ],
+        "Q": [
+          9,
+          15
+        ],
+        "maximum_feasible_values": [
+          9,
+          15
+        ]
+      }
+    },
+    "case03": {
+      "verdict": "CONTRADICTED",
+      "action": "DO_NOT_RELEASE",
+      "calculation": "R=14-1=13; S=19-4=15; maximum=15 >14.",
+      "consequential_supported_premises": [
+        "E2 supplies both assignments.",
+        "E3 exact calibration matches lot, date and unit.",
+        "S alone violates the every-piece criterion."
+      ],
+      "genuinely_unresolved_issues": [],
+      "next_check": {
+        "needed": false,
+        "appropriate": "No further check needed to reject release under the supplied accepted records."
+      },
+      "compatible_witnesses": {},
+      "bounds": {
+        "R": [
+          13,
+          13
+        ],
+        "S": [
+          15,
+          15
+        ],
+        "maximum": [
+          15,
+          15
+        ]
+      }
+    },
+    "case04": {
+      "verdict": "UNRESOLVED",
+      "action": "WITHHOLD_RELEASE_PENDING_APPLICABLE_CALIBRATION",
+      "calculation": "Current copper and jade biases each lie in [0,10]; R in [4,14], S in [9,19]; maximum in [9,19].",
+      "consequential_supported_premises": [
+        "Assignments and complete population are supplied.",
+        "E3 is exact for June 19 but task/acquisition are June 18; exact-key requirement forbids transfer.",
+        "The current [0,10] bias bounds remain applicable."
+      ],
+      "genuinely_unresolved_issues": [
+        "Current jade bias must be at least 5 for acceptance; it is not fixed. Current copper uncertainty cannot change acceptance because R<=14 throughout."
+      ],
+      "next_check": {
+        "needed": true,
+        "appropriate": "Obtain an applicable June 18 jade calibration or bound resolving whether jade bias is at least 5.",
+        "sufficiency": "An exact current jade bias settles acceptance; no new copper calibration is needed."
+      },
+      "compatible_witnesses": {
+        "compliant": {
+          "current_bias": {
+            "copper": 1,
+            "jade": 5
+          },
+          "corrected": {
+            "R": 13,
+            "S": 14
+          },
+          "maximum": 14
+        },
+        "violating": {
+          "current_bias": {
+            "copper": 1,
+            "jade": 4
+          },
+          "corrected": {
+            "R": 13,
+            "S": 15
+          },
+          "maximum": 15
+        }
+      },
+      "bounds": {
+        "R": [
+          4,
+          14
+        ],
+        "S": [
+          9,
+          19
+        ],
+        "maximum": [
+          9,
+          19
+        ]
+      }
+    },
+    "case05": {
+      "verdict": "SUPPORTED",
+      "action": "RELEASE",
+      "calculation": "E3=E4 fixes T->ivory, U->violet; T=12-3=9; U=20-10=10; maximum=10 <=11.",
+      "consequential_supported_premises": [
+        "E1 explicitly makes agreement fix the assignment.",
+        "E2 provides exact acquisition/calibration for matching scope.",
+        "E2 locally lacking assignment does not invalidate the join with E3/E4."
+      ],
+      "genuinely_unresolved_issues": [],
+      "next_check": {
+        "needed": false,
+        "appropriate": "No further check needed for stated acceptance."
+      },
+      "compatible_witnesses": {},
+      "bounds": {
+        "T": [
+          9,
+          9
+        ],
+        "U": [
+          10,
+          10
+        ],
+        "maximum": [
+          10,
+          10
+        ]
+      }
+    },
+    "case06": {
+      "verdict": "UNRESOLVED",
+      "action": "WITHHOLD_RELEASE_PENDING_ASSIGNMENT_RESOLUTION",
+      "calculation": "E3 assignment gives (T,U)=(9,10), maximum10; E4 gives (2,17), maximum17.",
+      "consequential_supported_premises": [
+        "Acquisition and exact matching calibration are supplied.",
+        "E3 and E4 conflict under equal authority; neither record has priority.",
+        "At least one record is correct, so both recorded assignments remain possible."
+      ],
+      "genuinely_unresolved_issues": [
+        "Assignment conflict must be resolved; selecting either record without authority is unsupported."
+      ],
+      "next_check": {
+        "needed": true,
+        "appropriate": "Obtain an authoritative assignment determination for either piece or a check resolving which record is correct.",
+        "sufficiency": "Either resolved assignment settles acceptance."
+      },
+      "compatible_witnesses": {
+        "compliant": {
+          "correct_assignment_record": "E3",
+          "corrected": {
+            "T": 9,
+            "U": 10
+          },
+          "maximum": 10
+        },
+        "violating": {
+          "correct_assignment_record": "E4",
+          "corrected": {
+            "T": 2,
+            "U": 17
+          },
+          "maximum": 17
+        }
+      },
+      "bounds": {
+        "T": [
+          2,
+          9
+        ],
+        "U": [
+          10,
+          17
+        ],
+        "maximum_feasible_values": [
+          10,
+          17
+        ]
+      }
+    },
+    "case07": {
+      "verdict": "SUPPORTED",
+      "action": "RELEASE",
+      "calculation": "Certified arithmetic mean=7 <=8. Sum=28.",
+      "consequential_supported_premises": [
+        "The accepted exact certificate covers the complete task population and matching scope.",
+        "Task criterion is the mean, so absent individual loads do not block acceptance."
+      ],
+      "genuinely_unresolved_issues": [],
+      "next_check": {
+        "needed": false,
+        "appropriate": "No additional individual measurements needed for mean acceptance."
+      },
+      "compatible_witnesses": {},
+      "bounds": {
+        "mean": [
+          7,
+          7
+        ],
+        "sum": [
+          28,
+          28
+        ],
+        "maximum": [
+          7,
+          28
+        ]
+      }
+    },
+    "case08": {
+      "verdict": "UNRESOLVED",
+      "action": "WITHHOLD_RELEASE_PENDING_MAXIMUM_BOUND",
+      "calculation": "Mean7 implies sum28; nonnegativity gives sharp maximum range [7,28]. Acceptance maximum<=8 is possible but not established.",
+      "consequential_supported_premises": [
+        "Certificate is applicable and establishes the complete-population mean and sum.",
+        "Nonnegative individual loads and exhaustive population are supplied."
+      ],
+      "genuinely_unresolved_issues": [
+        "Individual distribution or a sufficient maximum bound is missing; mean alone does not establish all four <=8."
+      ],
+      "next_check": {
+        "needed": true,
+        "appropriate": "Obtain a valid complete-population maximum certificate/bound <=8, or enough exact individual loads and residual bounds to determine acceptance.",
+        "targeted_check": "Any exact individual load >8 immediately establishes violation. A single load <=8 generally leaves the others unresolved. No piece is prospectively distinguished as best by this symmetric packet.",
+        "sufficiency": "Three exact loads plus known sum determine the fourth; fewer can sometimes resolve acceptance using residual bounds. A targeted test need not guarantee resolution but must be labeled partial."
+      },
+      "compatible_witnesses": {
+        "compliant": {
+          "corrected": {
+            "V": 7,
+            "W": 7,
+            "X": 7,
+            "Y": 7
+          },
+          "mean": 7,
+          "maximum": 7
+        },
+        "violating": {
+          "corrected": {
+            "V": 28,
+            "W": 0,
+            "X": 0,
+            "Y": 0
+          },
+          "mean": 7,
+          "maximum": 28
+        }
+      },
+      "bounds": {
+        "mean": [
+          7,
+          7
+        ],
+        "sum": [
+          28,
+          28
+        ],
+        "maximum": [
+          7,
+          28
+        ]
+      }
+    }
+  }
+}

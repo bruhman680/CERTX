@@ -1,0 +1,716 @@
+{
+  "masking": "No instruction arms, prompt preamble, or assignment manifest; neutral IDs and necessary case content only. Shared-filesystem instructional masking.",
+  "readers": [
+    {
+      "reader": "R01",
+      "case_id": "case08",
+      "task": "Decide whether to RELEASE the complete four-piece lot Vale on 2031-10-06. Acceptance requires the maximum of the four corrected loads to be at most 8 glims.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Accepted setup: the complete task population is pieces V, W, X, and Y of Vale / 2031-10-06 / glims. Each corrected load is a nonnegative real number. There are no other individual bounds, relationships, measurements, or corrections."
+        },
+        {
+          "id": "E2",
+          "text": "Accepted exact certificate for the complete population V, W, X, and Y of Vale / 2031-10-06 / glims: their arithmetic mean corrected load is 7. No individual corrected loads are supplied."
+        }
+      ],
+      "response": {
+        "action": "UNRESOLVED",
+        "bound_or_value": {
+          "quantity": "maximum corrected load of the four pieces",
+          "bound": "7 <= maximum <= 28",
+          "unit": "glims"
+        },
+        "satisfied_premises": [
+          "The complete population is V, W, X, and Y of Vale on 2031-10-06.",
+          "All four corrected loads are nonnegative real numbers.",
+          "The exact arithmetic mean is 7 glims, so the total is 28 glims."
+        ],
+        "missing_or_conflicting_premises": [
+          "No individual loads or additional constraints establish whether every piece is at most 8 glims."
+        ],
+        "evidence_ids": [
+          "E1",
+          "E2"
+        ],
+        "next_check": "Establish whether the maximum corrected load across all four pieces V, W, X, and Y of Vale on 2031-10-06 is at most 8 glims.",
+        "rationale": "Nonnegativity and the exact total of 28 imply a maximum between 7 and 28 glims, inclusive. Loads (7,7,7,7) satisfy the evidence and acceptance. Loads (28,0,0,0) satisfy the same evidence but fail acceptance. Thus both accepting and failing states remain compatible, and the complete lot cannot yet be classified as RELEASE or HOLD."
+      }
+    },
+    {
+      "reader": "R02",
+      "case_id": "case07",
+      "task": "Decide whether to RELEASE the complete four-piece lot Vale on 2031-10-06. Acceptance requires the arithmetic mean of the four corrected loads to be at most 8 glims.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Accepted setup: the complete task population is pieces V, W, X, and Y of Vale / 2031-10-06 / glims. Each corrected load is a nonnegative real number. There are no other individual bounds, relationships, measurements, or corrections."
+        },
+        {
+          "id": "E2",
+          "text": "Accepted exact certificate for the complete population V, W, X, and Y of Vale / 2031-10-06 / glims: their arithmetic mean corrected load is 7. No individual corrected loads are supplied."
+        }
+      ],
+      "response": {
+        "action": "RELEASE",
+        "bound_or_value": {
+          "quantity": "arithmetic mean corrected load of the complete four-piece lot Vale on 2031-10-06",
+          "value": 7,
+          "unit": "glims"
+        },
+        "satisfied_premises": [
+          "The complete population consists of pieces V, W, X, and Y.",
+          "Each corrected load is a nonnegative real number.",
+          "The accepted exact certificate covers the complete population with matching lot, date, and unit.",
+          "The arithmetic mean corrected load is 7 glims, which is at most 8 glims."
+        ],
+        "missing_or_conflicting_premises": [],
+        "evidence_ids": [
+          "E1",
+          "E2"
+        ],
+        "next_check": "None is needed.",
+        "rationale": "E2 certifies the exact arithmetic mean for all four pieces identified in E1 as 7 glims. This is below the acceptance threshold of 8 glims, so acceptance holds in every state compatible with the accepted evidence. Individual corrected loads are unnecessary because acceptance depends only on the certified complete-population mean."
+      }
+    },
+    {
+      "reader": "R03",
+      "case_id": "case05",
+      "task": "Decide whether to RELEASE the complete two-piece lot Reed on 2031-08-23. Acceptance requires every corrected load to be at most 11 glims.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Accepted setup: the complete lot is pieces T and U. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Exactly one piece uses profile ivory and the other uses profile violet. Assignment records E3 and E4 have equal authority. At least one is correct; neither has priority or an independent truth guarantee. No other corrections apply."
+        },
+        {
+          "id": "E2",
+          "text": "Accepted acquisition and exact profile calibration for Reed / 2031-08-23 / glims: T recorded 12; U recorded 20; ivory bias is 3; violet bias is 10. This record supplies no assignment."
+        },
+        {
+          "id": "E3",
+          "text": "Assignment record for Reed / 2031-08-23 / glims: T uses violet and U uses ivory."
+        },
+        {
+          "id": "E4",
+          "text": "Assignment record for Reed / 2031-08-23 / glims: T uses violet and U uses ivory."
+        }
+      ],
+      "response": {
+        "action": "HOLD",
+        "bound_or_value": {
+          "quantity": "maximum corrected load in complete lot Reed",
+          "value": 17,
+          "unit": "glims"
+        },
+        "satisfied_premises": [
+          "The complete lot consists of T and U.",
+          "Corrected load equals recorded load minus assigned profile bias.",
+          "E3 and E4 agree: T uses violet and U uses ivory. Since at least one is correct, this assignment is established.",
+          "T has corrected load 12 \u2212 10 = 2 glims; U has corrected load 20 \u2212 3 = 17 glims."
+        ],
+        "missing_or_conflicting_premises": [],
+        "evidence_ids": [
+          "E1",
+          "E2",
+          "E3",
+          "E4"
+        ],
+        "next_check": "None is needed to decide acceptance under the supplied evidence.",
+        "rationale": "Acceptance requires both pieces to have corrected loads at most 11 glims. The equal-authority assignment records agree, and the accepted guarantee that at least one is correct establishes their shared assignment. U therefore has corrected load 17 glims, exceeding the limit by 6 glims. Acceptance fails in every compatible state, so the complete lot must be held."
+      }
+    },
+    {
+      "reader": "R04",
+      "case_id": "case06",
+      "task": "Decide whether to RELEASE the complete two-piece lot Reed on 2031-08-23. Acceptance requires every corrected load to be at most 11 glims.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Accepted setup: the complete lot is pieces T and U. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Exactly one piece uses profile ivory and the other uses profile violet. Assignment records E3 and E4 have equal authority. At least one is correct; neither has priority or an independent truth guarantee. No other corrections apply."
+        },
+        {
+          "id": "E2",
+          "text": "Accepted acquisition and exact profile calibration for Reed / 2031-08-23 / glims: T recorded 12; U recorded 20; ivory bias is 3; violet bias is 10. This record supplies no assignment."
+        },
+        {
+          "id": "E3",
+          "text": "Assignment record for Reed / 2031-08-23 / glims: T uses violet and U uses ivory."
+        },
+        {
+          "id": "E4",
+          "text": "Assignment record for Reed / 2031-08-23 / glims: T uses ivory and U uses violet."
+        }
+      ],
+      "response": {
+        "action": "UNRESOLVED",
+        "bound_or_value": {
+          "quantity": "maximum corrected load in the complete lot",
+          "possible_values": [
+            10,
+            17
+          ],
+          "unit": "glims"
+        },
+        "satisfied_premises": [
+          "The complete lot consists of T and U.",
+          "Corrected load equals recorded load minus assigned profile bias; no other corrections apply.",
+          "Recorded loads and profile biases are exact.",
+          "Exactly one piece uses each profile.",
+          "E3 and E4 have equal authority, and at least one is correct."
+        ],
+        "missing_or_conflicting_premises": [
+          "E3 and E4 specify incompatible assignments; the evidence does not establish which is correct."
+        ],
+        "evidence_ids": [
+          "E1",
+          "E2",
+          "E3",
+          "E4"
+        ],
+        "next_check": "Obtain authoritative assignment verification for both pieces in Reed on 2031-08-23.",
+        "rationale": "Under E3, T has corrected load 12\u221210=2 and U has 20\u22123=17 glims, so the lot fails. Under E4, T has 12\u22123=9 and U has 20\u221210=10 glims, so every load is at most 11 and the lot passes. Both assignments remain compatible with the accepted evidence because neither record has priority or an independent truth guarantee. An accepting state and a failing state therefore remain possible, requiring UNRESOLVED."
+      }
+    },
+    {
+      "reader": "R05",
+      "case_id": "case03",
+      "task": "Decide whether to RELEASE the complete two-piece lot Mica on 2031-06-18. Acceptance requires every corrected load to be at most 14 glims.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Accepted setup: the complete lot is pieces R and S. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Each bias is somewhere in [0,10] glims unless an applicable exact calibration fixes it. A calibration applies only when lot, date, and unit all match exactly. Different keys have no transfer relation. No other corrections apply."
+        },
+        {
+          "id": "E2",
+          "text": "Accepted acquisition for Mica / 2031-06-18 / glims: R recorded 14 and uses profile copper; S recorded 19 and uses profile jade."
+        },
+        {
+          "id": "E3",
+          "text": "Accepted exact calibration for Mica / 2031-06-18 / glims: copper bias is 1; jade bias is 4."
+        }
+      ],
+      "response": {
+        "action": "HOLD",
+        "bound_or_value": {
+          "quantity": "corrected loads",
+          "value": {
+            "R": 13,
+            "S": 15
+          },
+          "unit": "glims"
+        },
+        "satisfied_premises": [
+          "The complete lot consists of R and S.",
+          "Corrected load equals recorded load minus assigned profile bias.",
+          "Both exact calibrations match Mica / 2031-06-18 / glims.",
+          "R uses copper with bias 1; S uses jade with bias 4."
+        ],
+        "missing_or_conflicting_premises": [],
+        "evidence_ids": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "next_check": "None is needed.",
+        "rationale": "R's corrected load is 14 \u2212 1 = 13 glims. S's corrected load is 19 \u2212 4 = 15 glims. Acceptance requires every piece to have a corrected load at most 14 glims. S exceeds that limit, so acceptance fails in every state compatible with the accepted evidence."
+      }
+    },
+    {
+      "reader": "R06",
+      "case_id": "case08",
+      "task": "Decide whether to RELEASE the complete four-piece lot Vale on 2031-10-06. Acceptance requires the maximum of the four corrected loads to be at most 8 glims.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Accepted setup: the complete task population is pieces V, W, X, and Y of Vale / 2031-10-06 / glims. Each corrected load is a nonnegative real number. There are no other individual bounds, relationships, measurements, or corrections."
+        },
+        {
+          "id": "E2",
+          "text": "Accepted exact certificate for the complete population V, W, X, and Y of Vale / 2031-10-06 / glims: their arithmetic mean corrected load is 7. No individual corrected loads are supplied."
+        }
+      ],
+      "response": {
+        "action": "UNRESOLVED",
+        "bound_or_value": {
+          "quantity": "maximum corrected load of the four-piece lot Vale on 2031-10-06",
+          "bound": {
+            "minimum": 7,
+            "maximum": 28
+          },
+          "unit": "glims"
+        },
+        "satisfied_premises": [
+          "The complete population consists of V, W, X, and Y.",
+          "All corrected loads are nonnegative real numbers.",
+          "The exact arithmetic mean is 7 glims, so the total is 28 glims."
+        ],
+        "missing_or_conflicting_premises": [
+          "No individual corrected loads or additional bounds establish whether the maximum is at most 8 glims."
+        ],
+        "evidence_ids": [
+          "E1",
+          "E2"
+        ],
+        "next_check": "Determine the maximum corrected load across all four pieces V, W, X, and Y of Vale on 2031-10-06 and compare it with 8 glims.",
+        "rationale": "The maximum is at least the mean, 7 glims, and at most the nonnegative total, 28 glims. Both bounds are attainable. Loads (7, 7, 7, 7) satisfy the evidence and acceptance rule, while loads (28, 0, 0, 0) satisfy the evidence but fail acceptance. Thus both accepting and failing states remain compatible, so release is unresolved."
+      }
+    },
+    {
+      "reader": "R07",
+      "case_id": "case04",
+      "task": "Decide whether to RELEASE the complete two-piece lot Mica on 2031-06-18. Acceptance requires every corrected load to be at most 14 glims.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Accepted setup: the complete lot is pieces R and S. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Each bias is somewhere in [0,10] glims unless an applicable exact calibration fixes it. A calibration applies only when lot, date, and unit all match exactly. Different keys have no transfer relation. No other corrections apply."
+        },
+        {
+          "id": "E2",
+          "text": "Accepted acquisition for Mica / 2031-06-18 / glims: R recorded 14 and uses profile copper; S recorded 19 and uses profile jade."
+        },
+        {
+          "id": "E3",
+          "text": "Accepted exact calibration for Mica / 2031-06-19 / glims: copper bias is 1; jade bias is 4."
+        }
+      ],
+      "response": {
+        "action": "UNRESOLVED",
+        "bound_or_value": {
+          "quantity": "corrected load by piece",
+          "bound": {
+            "R": [
+              4,
+              14
+            ],
+            "S": [
+              9,
+              19
+            ]
+          },
+          "unit": "glims"
+        },
+        "satisfied_premises": [
+          "The complete lot consists of R and S.",
+          "Corrected load equals recorded load minus assigned profile bias.",
+          "R records 14 glims using copper; S records 19 glims using jade.",
+          "Each applicable bias lies in [0,10] glims.",
+          "R satisfies the 14-glim limit for every compatible bias."
+        ],
+        "missing_or_conflicting_premises": [
+          "No exact calibration matches Mica / 2031-06-18 / glims.",
+          "E3 has a different date and cannot constrain the acquisition-date biases.",
+          "S requires jade bias of at least 5 glims, which is not established."
+        ],
+        "evidence_ids": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "next_check": "Check an exact jade calibration matching Mica / 2031-06-18 / glims to determine whether its bias is at least 5 glims.",
+        "rationale": "R always passes because its corrected load is between 4 and 14 glims. S can pass or fail: jade bias 5 yields corrected load 14, while bias 0 yields 19. Both biases remain compatible with the accepted evidence. The June 19 calibration cannot transfer to June 18. Therefore both accepting and failing states remain compatible for the complete lot."
+      }
+    },
+    {
+      "reader": "R08",
+      "case_id": "case01",
+      "task": "Decide whether to RELEASE the complete two-piece lot Lark on 2031-04-09. Acceptance requires every corrected load to be at most 12 glims.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Accepted setup: the complete lot is pieces P and Q, measured once on that date in glims. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Exactly one piece uses profile amber and the other uses profile blue. No other corrections apply."
+        },
+        {
+          "id": "E2",
+          "text": "Acquisition record for Lark / 2031-04-09 / glims: P recorded 11; Q recorded 17. The accepted acquisition assignment is P to amber and Q to blue."
+        },
+        {
+          "id": "E3",
+          "text": "Accepted exact calibration for Lark / 2031-04-09 / glims: amber bias is 2; blue bias is 8. This calibrates profiles and contains no piece assignment."
+        }
+      ],
+      "response": {
+        "action": "RELEASE",
+        "bound_or_value": {
+          "quantity": "maximum corrected load in complete lot Lark",
+          "value": 9,
+          "unit": "glims"
+        },
+        "satisfied_premises": [
+          "The complete lot consists of P and Q, measured once on 2031-04-09 in glims.",
+          "Corrected load equals recorded load minus assigned profile bias, with no other corrections.",
+          "The accepted acquisition assignment maps P to amber and Q to blue.",
+          "Exact matching calibration supplies amber bias 2 and blue bias 8.",
+          "P has corrected load 11\u22122=9 glims; Q has corrected load 17\u22128=9 glims.",
+          "Every corrected load is at most 12 glims."
+        ],
+        "missing_or_conflicting_premises": [],
+        "evidence_ids": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "next_check": "None is needed.",
+        "rationale": "The acquisition and calibration records match Lark, 2031-04-09, and glims. The accepted acquisition assignment supplies the piece-to-profile mapping; calibration supplies the corresponding exact biases. Both pieces have corrected loads of 9 glims, so acceptance holds for the complete lot in every state compatible with the accepted evidence."
+      }
+    },
+    {
+      "reader": "R09",
+      "case_id": "case04",
+      "task": "Decide whether to RELEASE the complete two-piece lot Mica on 2031-06-18. Acceptance requires every corrected load to be at most 14 glims.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Accepted setup: the complete lot is pieces R and S. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Each bias is somewhere in [0,10] glims unless an applicable exact calibration fixes it. A calibration applies only when lot, date, and unit all match exactly. Different keys have no transfer relation. No other corrections apply."
+        },
+        {
+          "id": "E2",
+          "text": "Accepted acquisition for Mica / 2031-06-18 / glims: R recorded 14 and uses profile copper; S recorded 19 and uses profile jade."
+        },
+        {
+          "id": "E3",
+          "text": "Accepted exact calibration for Mica / 2031-06-19 / glims: copper bias is 1; jade bias is 4."
+        }
+      ],
+      "response": {
+        "action": "UNRESOLVED",
+        "bound_or_value": {
+          "quantity": "maximum corrected load in complete lot Mica on 2031-06-18",
+          "bound": [
+            9,
+            19
+          ],
+          "unit": "glims"
+        },
+        "satisfied_premises": [
+          "The complete lot contains exactly R and S.",
+          "Corrected load equals recorded load minus assigned profile bias.",
+          "R uses copper and has corrected load in [4,14] glims, so R always satisfies acceptance.",
+          "S uses jade and has corrected load in [9,19] glims."
+        ],
+        "missing_or_conflicting_premises": [
+          "No exact calibration matches Mica / 2031-06-18 / glims.",
+          "E3 is dated 2031-06-19 and cannot fix the target-date biases.",
+          "Whether the target-date jade bias is at least 5 glims is unestablished."
+        ],
+        "evidence_ids": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "next_check": "Check an applicable exact jade calibration for Mica / 2031-06-18 / glims to determine whether its bias is at least 5 glims.",
+        "rationale": "R always passes because its corrected load cannot exceed 14 glims. S passes exactly when the jade bias is at least 5 glims. A compatible jade bias of 5 gives S a corrected load of 14 and an accepting lot; a compatible bias of 0 gives S a corrected load of 19 and a failing lot. E3 has the wrong date, and different calibration keys have no transfer relation. Both accepting and failing states therefore remain compatible."
+      }
+    },
+    {
+      "reader": "R10",
+      "case_id": "case06",
+      "task": "Decide whether to RELEASE the complete two-piece lot Reed on 2031-08-23. Acceptance requires every corrected load to be at most 11 glims.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Accepted setup: the complete lot is pieces T and U. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Exactly one piece uses profile ivory and the other uses profile violet. Assignment records E3 and E4 have equal authority. At least one is correct; neither has priority or an independent truth guarantee. No other corrections apply."
+        },
+        {
+          "id": "E2",
+          "text": "Accepted acquisition and exact profile calibration for Reed / 2031-08-23 / glims: T recorded 12; U recorded 20; ivory bias is 3; violet bias is 10. This record supplies no assignment."
+        },
+        {
+          "id": "E3",
+          "text": "Assignment record for Reed / 2031-08-23 / glims: T uses violet and U uses ivory."
+        },
+        {
+          "id": "E4",
+          "text": "Assignment record for Reed / 2031-08-23 / glims: T uses ivory and U uses violet."
+        }
+      ],
+      "response": {
+        "action": "UNRESOLVED",
+        "bound_or_value": {
+          "quantity": "maximum corrected load in complete lot Reed",
+          "value_or_bound": "10 or 17",
+          "unit": "glims"
+        },
+        "satisfied_premises": [
+          "The complete lot consists of T and U.",
+          "Corrected load equals recorded load minus assigned profile bias, with no other corrections.",
+          "T recorded 12 glims and U recorded 20 glims; ivory bias is 3 glims and violet bias is 10 glims.",
+          "Exactly one piece uses each profile.",
+          "E3 and E4 have equal authority, and at least one is correct."
+        ],
+        "missing_or_conflicting_premises": [
+          "E3 and E4 give conflicting profile assignments; neither has priority or an independent truth guarantee."
+        ],
+        "evidence_ids": [
+          "E1",
+          "E2",
+          "E3",
+          "E4"
+        ],
+        "next_check": "Verify the profile assignment for either T or U in Reed / 2031-08-23 / glims; the one-piece-per-profile rule then determines both assignments.",
+        "rationale": "Under E3, corrected loads are T = 12 \u2212 10 = 2 and U = 20 \u2212 3 = 17 glims, so acceptance fails. Under E4, corrected loads are T = 12 \u2212 3 = 9 and U = 20 \u2212 10 = 10 glims, so acceptance holds. Both assignments remain compatible with the accepted evidence because the records have equal authority and only at least one must be correct. Thus an accepting state and a failing state remain possible."
+      }
+    },
+    {
+      "reader": "R11",
+      "case_id": "case05",
+      "task": "Decide whether to RELEASE the complete two-piece lot Reed on 2031-08-23. Acceptance requires every corrected load to be at most 11 glims.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Accepted setup: the complete lot is pieces T and U. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Exactly one piece uses profile ivory and the other uses profile violet. Assignment records E3 and E4 have equal authority. At least one is correct; neither has priority or an independent truth guarantee. No other corrections apply."
+        },
+        {
+          "id": "E2",
+          "text": "Accepted acquisition and exact profile calibration for Reed / 2031-08-23 / glims: T recorded 12; U recorded 20; ivory bias is 3; violet bias is 10. This record supplies no assignment."
+        },
+        {
+          "id": "E3",
+          "text": "Assignment record for Reed / 2031-08-23 / glims: T uses violet and U uses ivory."
+        },
+        {
+          "id": "E4",
+          "text": "Assignment record for Reed / 2031-08-23 / glims: T uses violet and U uses ivory."
+        }
+      ],
+      "response": {
+        "action": "HOLD",
+        "bound_or_value": {
+          "quantity": "maximum corrected load in complete lot Reed",
+          "value": 17,
+          "unit": "glims"
+        },
+        "satisfied_premises": [
+          "The complete lot consists of T and U.",
+          "Corrected load equals recorded load minus assigned profile bias.",
+          "E2 supplies exact loads and biases for Reed / 2031-08-23 / glims.",
+          "E3 and E4 agree that T uses violet and U uses ivory; at least one is correct, establishing that assignment.",
+          "T has corrected load 12 \u2212 10 = 2 glims; U has corrected load 20 \u2212 3 = 17 glims."
+        ],
+        "missing_or_conflicting_premises": [],
+        "evidence_ids": [
+          "E1",
+          "E2",
+          "E3",
+          "E4"
+        ],
+        "next_check": "None is needed.",
+        "rationale": "The equal-authority assignment records agree. Because at least one is correct, their shared assignment holds in every compatible state without requiring either record individually to have priority or an independent truth guarantee. U's corrected load is 17 glims, exceeding the 11-glim acceptance limit. Acceptance therefore fails in every compatible state, so the complete lot must be held."
+      }
+    },
+    {
+      "reader": "R12",
+      "case_id": "case02",
+      "task": "Decide whether to RELEASE the complete two-piece lot Lark on 2031-04-09. Acceptance requires every corrected load to be at most 12 glims.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Accepted setup: the complete lot is pieces P and Q, measured once on that date in glims. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Exactly one piece uses profile amber and the other uses profile blue. No other corrections apply."
+        },
+        {
+          "id": "E2",
+          "text": "Acquisition record for Lark / 2031-04-09 / glims: P recorded 11; Q recorded 17."
+        },
+        {
+          "id": "E3",
+          "text": "Accepted exact calibration for Lark / 2031-04-09 / glims: amber bias is 2; blue bias is 8. This calibrates profiles and contains no piece assignment."
+        }
+      ],
+      "response": {
+        "action": "UNRESOLVED",
+        "bound_or_value": {
+          "quantity": "maximum corrected load across the complete lot",
+          "value": [
+            9,
+            15
+          ],
+          "unit": "glims"
+        },
+        "satisfied_premises": [
+          "The complete lot consists of P and Q, measured once on 2031-04-09 in glims.",
+          "Recorded loads are P = 11 and Q = 17.",
+          "Corrected load equals recorded load minus assigned profile bias, with no other corrections.",
+          "Amber bias is exactly 2 and blue bias is exactly 8.",
+          "Exactly one piece uses amber and the other uses blue."
+        ],
+        "missing_or_conflicting_premises": [
+          "No evidence assigns amber and blue to individual pieces."
+        ],
+        "evidence_ids": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "next_check": "Check the authoritative piece-to-profile assignment for Lark / 2031-04-09 / glims, covering both P and Q.",
+        "rationale": "If P uses amber and Q uses blue, their corrected loads are 9 and 9 glims, so the complete lot passes. If P uses blue and Q uses amber, their corrected loads are 3 and 15 glims, so Q fails the 12-glim limit. Both assignments satisfy all supplied evidence. Calibration establishes profile biases but does not establish which piece uses each profile; therefore both acceptance and failure remain compatible."
+      }
+    },
+    {
+      "reader": "R13",
+      "case_id": "case02",
+      "task": "Decide whether to RELEASE the complete two-piece lot Lark on 2031-04-09. Acceptance requires every corrected load to be at most 12 glims.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Accepted setup: the complete lot is pieces P and Q, measured once on that date in glims. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Exactly one piece uses profile amber and the other uses profile blue. No other corrections apply."
+        },
+        {
+          "id": "E2",
+          "text": "Acquisition record for Lark / 2031-04-09 / glims: P recorded 11; Q recorded 17."
+        },
+        {
+          "id": "E3",
+          "text": "Accepted exact calibration for Lark / 2031-04-09 / glims: amber bias is 2; blue bias is 8. This calibrates profiles and contains no piece assignment."
+        }
+      ],
+      "response": {
+        "action": "UNRESOLVED",
+        "bound_or_value": {
+          "quantity": "maximum corrected load across the complete lot",
+          "possible_values": [
+            9,
+            15
+          ],
+          "unit": "glims"
+        },
+        "satisfied_premises": [
+          "The complete lot consists of P and Q, measured on 2031-04-09 in glims.",
+          "Corrected load equals recorded load minus assigned profile bias; no other corrections apply.",
+          "P recorded 11 and Q recorded 17.",
+          "Amber bias is exactly 2 and blue bias is exactly 8.",
+          "Exactly one piece uses each profile."
+        ],
+        "missing_or_conflicting_premises": [
+          "No evidence assigns amber and blue to individual pieces."
+        ],
+        "evidence_ids": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "next_check": "Check an authoritative piece-to-profile assignment record for both pieces of Lark on 2031-04-09.",
+        "rationale": "If P uses amber and Q uses blue, corrected loads are 9 and 9 glims, so the complete lot passes. If P uses blue and Q uses amber, corrected loads are 3 and 15 glims, so the lot fails because Q exceeds 12 glims. Both assignments satisfy all supplied evidence. Acceptance therefore holds in one compatible state and fails in another, requiring UNRESOLVED."
+      }
+    },
+    {
+      "reader": "R14",
+      "case_id": "case07",
+      "task": "Decide whether to RELEASE the complete four-piece lot Vale on 2031-10-06. Acceptance requires the arithmetic mean of the four corrected loads to be at most 8 glims.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Accepted setup: the complete task population is pieces V, W, X, and Y of Vale / 2031-10-06 / glims. Each corrected load is a nonnegative real number. There are no other individual bounds, relationships, measurements, or corrections."
+        },
+        {
+          "id": "E2",
+          "text": "Accepted exact certificate for the complete population V, W, X, and Y of Vale / 2031-10-06 / glims: their arithmetic mean corrected load is 7. No individual corrected loads are supplied."
+        }
+      ],
+      "response": {
+        "action": "RELEASE",
+        "bound_or_value": {
+          "quantity": "arithmetic mean corrected load of the complete four-piece lot Vale on 2031-10-06",
+          "value": 7,
+          "unit": "glims"
+        },
+        "satisfied_premises": [
+          "The complete population is V, W, X, and Y of Vale on 2031-10-06.",
+          "Each corrected load is a nonnegative real number.",
+          "The accepted exact certificate establishes that the complete population's arithmetic mean corrected load is 7 glims.",
+          "The certified mean satisfies the acceptance threshold: 7 \u2264 8 glims."
+        ],
+        "missing_or_conflicting_premises": [],
+        "evidence_ids": [
+          "E1",
+          "E2"
+        ],
+        "next_check": "None is needed.",
+        "rationale": "E2 certifies the exact arithmetic mean for the complete population identified in E1. Every state compatible with the accepted evidence therefore has a mean corrected load of 7 glims, which is at most 8 glims. Individual corrected loads are unnecessary because acceptance depends only on the complete lot's arithmetic mean. Acceptance holds in every compatible state."
+      }
+    },
+    {
+      "reader": "R15",
+      "case_id": "case01",
+      "task": "Decide whether to RELEASE the complete two-piece lot Lark on 2031-04-09. Acceptance requires every corrected load to be at most 12 glims.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Accepted setup: the complete lot is pieces P and Q, measured once on that date in glims. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Exactly one piece uses profile amber and the other uses profile blue. No other corrections apply."
+        },
+        {
+          "id": "E2",
+          "text": "Acquisition record for Lark / 2031-04-09 / glims: P recorded 11; Q recorded 17. The accepted acquisition assignment is P to amber and Q to blue."
+        },
+        {
+          "id": "E3",
+          "text": "Accepted exact calibration for Lark / 2031-04-09 / glims: amber bias is 2; blue bias is 8. This calibrates profiles and contains no piece assignment."
+        }
+      ],
+      "response": {
+        "action": "RELEASE",
+        "bound_or_value": {
+          "quantity": "maximum corrected load in complete lot Lark",
+          "value": 9,
+          "unit": "glims"
+        },
+        "satisfied_premises": [
+          "The complete lot consists of P and Q, each measured once on 2031-04-09.",
+          "The accepted acquisition assignment is P to amber and Q to blue.",
+          "The exact biases are amber = 2 glims and blue = 8 glims.",
+          "Corrected loads are P = 11 - 2 = 9 glims and Q = 17 - 8 = 9 glims.",
+          "Every corrected load is at most 12 glims."
+        ],
+        "missing_or_conflicting_premises": [],
+        "evidence_ids": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "next_check": "None is needed.",
+        "rationale": "The accepted acquisition record establishes the piece assignments, while the exact calibration establishes the profile biases. Applying those biases gives 9 glims for each piece. E1 establishes that P and Q constitute the complete lot and that no other corrections apply. Thus acceptance holds in every state compatible with the accepted evidence."
+      }
+    },
+    {
+      "reader": "R16",
+      "case_id": "case03",
+      "task": "Decide whether to RELEASE the complete two-piece lot Mica on 2031-06-18. Acceptance requires every corrected load to be at most 14 glims.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Accepted setup: the complete lot is pieces R and S. For each piece, corrected load x = recorded load y minus its assigned profile bias b. Each bias is somewhere in [0,10] glims unless an applicable exact calibration fixes it. A calibration applies only when lot, date, and unit all match exactly. Different keys have no transfer relation. No other corrections apply."
+        },
+        {
+          "id": "E2",
+          "text": "Accepted acquisition for Mica / 2031-06-18 / glims: R recorded 14 and uses profile copper; S recorded 19 and uses profile jade."
+        },
+        {
+          "id": "E3",
+          "text": "Accepted exact calibration for Mica / 2031-06-18 / glims: copper bias is 1; jade bias is 4."
+        }
+      ],
+      "response": {
+        "action": "HOLD",
+        "bound_or_value": {
+          "quantity": "maximum corrected load in complete lot Mica",
+          "value": 15,
+          "unit": "glims"
+        },
+        "satisfied_premises": [
+          "The complete lot consists of R and S.",
+          "Corrected load equals recorded load minus assigned profile bias.",
+          "Both exact calibrations match Mica, 2031-06-18, and glims.",
+          "R has corrected load 14 - 1 = 13 glims.",
+          "S has corrected load 19 - 4 = 15 glims."
+        ],
+        "missing_or_conflicting_premises": [],
+        "evidence_ids": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "next_check": "None is needed; the applicable exact calibrations determine both corrected loads.",
+        "rationale": "Acceptance requires every corrected load to be at most 14 glims. The matching exact calibrations fix copper bias at 1 and jade bias at 4, giving R a corrected load of 13 glims and S a corrected load of 15 glims. S exceeds the limit, so acceptance fails in every state compatible with the accepted evidence. HOLD applies to the complete two-piece lot."
+      }
+    }
+  ]
+}

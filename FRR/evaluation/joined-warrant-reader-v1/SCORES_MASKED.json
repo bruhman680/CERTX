@@ -1,0 +1,1258 @@
+{
+  "version": "JW-C1-masked-independent-scores-v1",
+  "status": "INITIAL_INDEPENDENT_DEPOSIT_BEFORE_RECONCILIATION",
+  "source_hashes": {
+    "SCORER_INPUT.json": "4489365c1a88e5b9f2a0130636e00369cb48c15939c0932fb642791148a5cfb5",
+    "KEY.json": "878512c09af6778d626cdc00417b1fb0d7ff67326e987ad53873f97cec93c9d4",
+    "SCORING.md": "2062ba261c7bd86f3c8cb9571a151daa3c3f9ce5a22103eb36b53031e44ea364"
+  },
+  "judgment_method": "Manual semantic inspection of every neutral response against frozen KEY v3 and prospective SCORING; script serializes these judgments.",
+  "dimensions": [
+    "acceptance_verdict",
+    "action",
+    "numerical_consequence",
+    "supplied_premise_fidelity",
+    "uncertainty_and_conflict_fidelity",
+    "next_check_relevance",
+    "next_check_sufficiency_claim"
+  ],
+  "scores": [
+    {
+      "reader": "R01",
+      "case_id": "case08",
+      "response_sha256": "4161b260253bc591062210f4839ac70369c733819cff90ffe8c11bde30b19831",
+      "dimensions": {
+        "acceptance_verdict": {
+          "score": "full",
+          "evidence": "Nonnegativity and the exact total of 28 imply a maximum between 7 and 28 glims, inclusive. Loads (7,7,7,7) satisfy the evidence and acceptance. Loads (28,0,0,0) satisfy the same evidence but fail acceptance. Thus both accepting and failing states remain compatible, and the complete lot cannot yet be classified as RELEASE or HOLD."
+        },
+        "action": {
+          "score": "full",
+          "evidence": "UNRESOLVED",
+          "reason": "Correct UNRESOLVED classification with no release authorization."
+        },
+        "numerical_consequence": {
+          "score": "full",
+          "evidence": "response.bound_or_value and rationale",
+          "reason": "Sharp maximum interval[7,28], justified by total28/nonnegativity and both endpoint examples."
+        },
+        "supplied_premise_fidelity": {
+          "score": "full",
+          "evidence": "response.satisfied_premises and rationale",
+          "reason": "Recognizes exact certificate applies and proves total28."
+        },
+        "uncertainty_and_conflict_fidelity": {
+          "score": "full",
+          "evidence": "response.missing_or_conflicting_premises and rationale",
+          "reason": "Correctly distinguishes certified mean from unresolved maximum; provides passing/failing states."
+        },
+        "next_check_relevance": {
+          "score": "full",
+          "evidence": "Establish whether the maximum corrected load across all four pieces V, W, X, and Y of Vale on 2031-10-06 is at most 8 glims."
+        },
+        "next_check_sufficiency_claim": {
+          "score": "full",
+          "evidence": "Establish whether the maximum corrected load across all four pieces V, W, X, and Y of Vale on 2031-10-06 is at most 8 glims.",
+          "reason": "Requests the complete-population maximum/threshold determination directly; this would settle the task. Broad acquisition specification is not an unsupported single-piece sufficiency claim. No mandatory measurement count or ranking is asserted."
+        }
+      },
+      "tags": {
+        "false_missingness": false,
+        "false_missingness_evidence": null,
+        "contradiction_handling": "not_applicable",
+        "compliant_witness": "valid",
+        "violating_witness": "valid"
+      },
+      "material_errors": []
+    },
+    {
+      "reader": "R02",
+      "case_id": "case07",
+      "response_sha256": "25d7262332c6519b328eb865e439ff0ca118b0e9ff58f2596c758d9442212c10",
+      "dimensions": {
+        "acceptance_verdict": {
+          "score": "full",
+          "evidence": "E2 certifies the exact arithmetic mean for all four pieces identified in E1 as 7 glims. This is below the acceptance threshold of 8 glims, so acceptance holds in every state compatible with the accepted evidence. Individual corrected loads are unnecessary because acceptance depends only on the certified complete-population mean."
+        },
+        "action": {
+          "score": "full",
+          "evidence": "RELEASE",
+          "reason": "Correct RELEASE/HOLD action for the established acceptance result."
+        },
+        "numerical_consequence": {
+          "score": "full",
+          "evidence": "response.bound_or_value and rationale",
+          "reason": "Exact complete-population mean7<=8."
+        },
+        "supplied_premise_fidelity": {
+          "score": "full",
+          "evidence": "response.satisfied_premises and rationale",
+          "reason": "Uses applicable complete-population certificate."
+        },
+        "uncertainty_and_conflict_fidelity": {
+          "score": "full",
+          "evidence": "response.missing_or_conflicting_premises and rationale",
+          "reason": "Correctly says absent individual loads are unnecessary for mean criterion."
+        },
+        "next_check_relevance": {
+          "score": "full",
+          "evidence": "None is needed."
+        },
+        "next_check_sufficiency_claim": {
+          "score": "not_applicable",
+          "evidence": "None is needed.",
+          "reason": "No further check needed or proposed."
+        }
+      },
+      "tags": {
+        "false_missingness": false,
+        "false_missingness_evidence": null,
+        "contradiction_handling": "not_applicable",
+        "compliant_witness": "not_applicable",
+        "violating_witness": "not_applicable"
+      },
+      "material_errors": []
+    },
+    {
+      "reader": "R03",
+      "case_id": "case05",
+      "response_sha256": "6b869e323564215f79706c2cc7c0dba1a68e86608beba6e8696d846d4ec95022",
+      "dimensions": {
+        "acceptance_verdict": {
+          "score": "full",
+          "evidence": "Acceptance requires both pieces to have corrected loads at most 11 glims. The equal-authority assignment records agree, and the accepted guarantee that at least one is correct establishes their shared assignment. U therefore has corrected load 17 glims, exceeding the limit by 6 glims. Acceptance fails in every compatible state, so the complete lot must be held."
+        },
+        "action": {
+          "score": "full",
+          "evidence": "HOLD",
+          "reason": "Correct RELEASE/HOLD action for the established acceptance result."
+        },
+        "numerical_consequence": {
+          "score": "full",
+          "evidence": "response.bound_or_value and rationale",
+          "reason": "T2 and U17; maximum17 exceeds11."
+        },
+        "supplied_premise_fidelity": {
+          "score": "full",
+          "evidence": "response.satisfied_premises and rationale",
+          "reason": "Recognizes agreed E3/E4 assignment is fixed by at-least-one-correct guarantee and joins it to E2 calibration."
+        },
+        "uncertainty_and_conflict_fidelity": {
+          "score": "full",
+          "evidence": "response.missing_or_conflicting_premises and rationale",
+          "reason": "Does not invent conflict or missing assignment; acceptance contradicted."
+        },
+        "next_check_relevance": {
+          "score": "full",
+          "evidence": "None is needed to decide acceptance under the supplied evidence."
+        },
+        "next_check_sufficiency_claim": {
+          "score": "not_applicable",
+          "evidence": "None is needed to decide acceptance under the supplied evidence.",
+          "reason": "No further check needed or proposed."
+        }
+      },
+      "tags": {
+        "false_missingness": false,
+        "false_missingness_evidence": null,
+        "contradiction_handling": "not_applicable",
+        "compliant_witness": "not_applicable",
+        "violating_witness": "not_applicable"
+      },
+      "material_errors": []
+    },
+    {
+      "reader": "R04",
+      "case_id": "case06",
+      "response_sha256": "d2dbdddaa5b4f94ade0a8a9b639315447304232c6d53ae2fcdc30cb6418f9d5a",
+      "dimensions": {
+        "acceptance_verdict": {
+          "score": "full",
+          "evidence": "Under E3, T has corrected load 12\u221210=2 and U has 20\u22123=17 glims, so the lot fails. Under E4, T has 12\u22123=9 and U has 20\u221210=10 glims, so every load is at most 11 and the lot passes. Both assignments remain compatible with the accepted evidence because neither record has priority or an independent truth guarantee. An accepting state and a failing state therefore remain possible, requiring UNRESOLVED."
+        },
+        "action": {
+          "score": "full",
+          "evidence": "UNRESOLVED",
+          "reason": "Correct UNRESOLVED classification with no release authorization."
+        },
+        "numerical_consequence": {
+          "score": "full",
+          "evidence": "response.bound_or_value and rationale",
+          "reason": "E3 gives (2,17), failing; E4 gives(9,10), passing; maxima17/10."
+        },
+        "supplied_premise_fidelity": {
+          "score": "full",
+          "evidence": "response.satisfied_premises and rationale",
+          "reason": "Preserves exact calibration and equal-authority assignment-record contract."
+        },
+        "uncertainty_and_conflict_fidelity": {
+          "score": "full",
+          "evidence": "response.missing_or_conflicting_premises and rationale",
+          "reason": "Explicitly preserves supplied E3/E4 contradiction and both feasible assignments."
+        },
+        "next_check_relevance": {
+          "score": "full",
+          "evidence": "Obtain authoritative assignment verification for both pieces in Reed on 2031-08-23."
+        },
+        "next_check_sufficiency_claim": {
+          "score": "full",
+          "evidence": "Obtain authoritative assignment verification for both pieces in Reed on 2031-08-23.",
+          "reason": "An authoritative assignment for both pieces (or either piece via one-to-one constraint), or an applicable current jade calibration, settles this case. Asking to cover both assignments is sufficient; no delivered efficiency requirement is assumed."
+        }
+      },
+      "tags": {
+        "false_missingness": false,
+        "false_missingness_evidence": null,
+        "contradiction_handling": "correctly_preserved",
+        "compliant_witness": "valid",
+        "violating_witness": "valid"
+      },
+      "material_errors": []
+    },
+    {
+      "reader": "R05",
+      "case_id": "case03",
+      "response_sha256": "cada594f31245b339203a89c99221db12af11947044596520b480e122bd381a9",
+      "dimensions": {
+        "acceptance_verdict": {
+          "score": "full",
+          "evidence": "R's corrected load is 14 \u2212 1 = 13 glims. S's corrected load is 19 \u2212 4 = 15 glims. Acceptance requires every piece to have a corrected load at most 14 glims. S exceeds that limit, so acceptance fails in every state compatible with the accepted evidence."
+        },
+        "action": {
+          "score": "full",
+          "evidence": "HOLD",
+          "reason": "Correct RELEASE/HOLD action for the established acceptance result."
+        },
+        "numerical_consequence": {
+          "score": "full",
+          "evidence": "response.bound_or_value and rationale",
+          "reason": "Corrected R13 and S15; S exceeds14."
+        },
+        "supplied_premise_fidelity": {
+          "score": "full",
+          "evidence": "response.satisfied_premises and rationale",
+          "reason": "Uses supplied assignment and matching exact calibration."
+        },
+        "uncertainty_and_conflict_fidelity": {
+          "score": "full",
+          "evidence": "response.missing_or_conflicting_premises and rationale",
+          "reason": "Acceptance contradicted, rather than unresolved."
+        },
+        "next_check_relevance": {
+          "score": "full",
+          "evidence": "None is needed."
+        },
+        "next_check_sufficiency_claim": {
+          "score": "not_applicable",
+          "evidence": "None is needed.",
+          "reason": "No further check needed or proposed."
+        }
+      },
+      "tags": {
+        "false_missingness": false,
+        "false_missingness_evidence": null,
+        "contradiction_handling": "not_applicable",
+        "compliant_witness": "not_applicable",
+        "violating_witness": "not_applicable"
+      },
+      "material_errors": []
+    },
+    {
+      "reader": "R06",
+      "case_id": "case08",
+      "response_sha256": "3feecd1edb9b5da9fa37516c40c1700a07d73b5ac0b091bf6d0a1bc820a2aefc",
+      "dimensions": {
+        "acceptance_verdict": {
+          "score": "full",
+          "evidence": "The maximum is at least the mean, 7 glims, and at most the nonnegative total, 28 glims. Both bounds are attainable. Loads (7, 7, 7, 7) satisfy the evidence and acceptance rule, while loads (28, 0, 0, 0) satisfy the evidence but fail acceptance. Thus both accepting and failing states remain compatible, so release is unresolved."
+        },
+        "action": {
+          "score": "full",
+          "evidence": "UNRESOLVED",
+          "reason": "Correct UNRESOLVED classification with no release authorization."
+        },
+        "numerical_consequence": {
+          "score": "full",
+          "evidence": "response.bound_or_value and rationale",
+          "reason": "Sharp maximum interval[7,28], justified by total28/nonnegativity and both endpoint examples."
+        },
+        "supplied_premise_fidelity": {
+          "score": "full",
+          "evidence": "response.satisfied_premises and rationale",
+          "reason": "Recognizes exact certificate applies and proves total28."
+        },
+        "uncertainty_and_conflict_fidelity": {
+          "score": "full",
+          "evidence": "response.missing_or_conflicting_premises and rationale",
+          "reason": "Correctly distinguishes certified mean from unresolved maximum; provides passing/failing states."
+        },
+        "next_check_relevance": {
+          "score": "full",
+          "evidence": "Determine the maximum corrected load across all four pieces V, W, X, and Y of Vale on 2031-10-06 and compare it with 8 glims."
+        },
+        "next_check_sufficiency_claim": {
+          "score": "full",
+          "evidence": "Determine the maximum corrected load across all four pieces V, W, X, and Y of Vale on 2031-10-06 and compare it with 8 glims.",
+          "reason": "Requests the complete-population maximum/threshold determination directly; this would settle the task. Broad acquisition specification is not an unsupported single-piece sufficiency claim. No mandatory measurement count or ranking is asserted."
+        }
+      },
+      "tags": {
+        "false_missingness": false,
+        "false_missingness_evidence": null,
+        "contradiction_handling": "not_applicable",
+        "compliant_witness": "valid",
+        "violating_witness": "valid"
+      },
+      "material_errors": []
+    },
+    {
+      "reader": "R07",
+      "case_id": "case04",
+      "response_sha256": "caf9efb30c4810bfda9e7579a2edbb7ce7733cba8d1c8b252193c9eb2fc70314",
+      "dimensions": {
+        "acceptance_verdict": {
+          "score": "full",
+          "evidence": "R always passes because its corrected load is between 4 and 14 glims. S can pass or fail: jade bias 5 yields corrected load 14, while bias 0 yields 19. Both biases remain compatible with the accepted evidence. The June 19 calibration cannot transfer to June 18. Therefore both accepting and failing states remain compatible for the complete lot."
+        },
+        "action": {
+          "score": "full",
+          "evidence": "UNRESOLVED",
+          "reason": "Correct UNRESOLVED classification with no release authorization."
+        },
+        "numerical_consequence": {
+          "score": "full",
+          "evidence": "response.bound_or_value and rationale",
+          "reason": "R in[4,14] always passes; S in[9,19], passing iff jade bias>=5."
+        },
+        "supplied_premise_fidelity": {
+          "score": "full",
+          "evidence": "response.satisfied_premises and rationale",
+          "reason": "Preserves supplied assignments and bounded current biases; refuses wrong-date transfer."
+        },
+        "uncertainty_and_conflict_fidelity": {
+          "score": "full",
+          "evidence": "response.missing_or_conflicting_premises and rationale",
+          "reason": "Correctly localizes consequential uncertainty to current jade bias; copper uncertainty cannot change acceptance."
+        },
+        "next_check_relevance": {
+          "score": "full",
+          "evidence": "Check an exact jade calibration matching Mica / 2031-06-18 / glims to determine whether its bias is at least 5 glims."
+        },
+        "next_check_sufficiency_claim": {
+          "score": "full",
+          "evidence": "Check an exact jade calibration matching Mica / 2031-06-18 / glims to determine whether its bias is at least 5 glims.",
+          "reason": "An authoritative assignment for both pieces (or either piece via one-to-one constraint), or an applicable current jade calibration, settles this case. Asking to cover both assignments is sufficient; no delivered efficiency requirement is assumed."
+        }
+      },
+      "tags": {
+        "false_missingness": false,
+        "false_missingness_evidence": null,
+        "contradiction_handling": "not_applicable",
+        "compliant_witness": "valid",
+        "violating_witness": "valid"
+      },
+      "material_errors": []
+    },
+    {
+      "reader": "R08",
+      "case_id": "case01",
+      "response_sha256": "6522cb71e1f5c55ebf6a318f3d112bf2fbade0aef6ba9fd0752520dc6d89568b",
+      "dimensions": {
+        "acceptance_verdict": {
+          "score": "full",
+          "evidence": "The acquisition and calibration records match Lark, 2031-04-09, and glims. The accepted acquisition assignment supplies the piece-to-profile mapping; calibration supplies the corresponding exact biases. Both pieces have corrected loads of 9 glims, so acceptance holds for the complete lot in every state compatible with the accepted evidence."
+        },
+        "action": {
+          "score": "full",
+          "evidence": "RELEASE",
+          "reason": "Correct RELEASE/HOLD action for the established acceptance result."
+        },
+        "numerical_consequence": {
+          "score": "full",
+          "evidence": "response.bound_or_value and rationale",
+          "reason": "Both corrected loads9, so complete-lot maximum9<=12."
+        },
+        "supplied_premise_fidelity": {
+          "score": "full",
+          "evidence": "response.satisfied_premises and rationale",
+          "reason": "Uses acquisition assignment joined to matching exact calibration; no false missingness."
+        },
+        "uncertainty_and_conflict_fidelity": {
+          "score": "full",
+          "evidence": "response.missing_or_conflicting_premises and rationale",
+          "reason": "No uncertainty relevant to acceptance remains."
+        },
+        "next_check_relevance": {
+          "score": "full",
+          "evidence": "None is needed."
+        },
+        "next_check_sufficiency_claim": {
+          "score": "not_applicable",
+          "evidence": "None is needed.",
+          "reason": "No further check needed or proposed."
+        }
+      },
+      "tags": {
+        "false_missingness": false,
+        "false_missingness_evidence": null,
+        "contradiction_handling": "not_applicable",
+        "compliant_witness": "not_applicable",
+        "violating_witness": "not_applicable"
+      },
+      "material_errors": []
+    },
+    {
+      "reader": "R09",
+      "case_id": "case04",
+      "response_sha256": "e257e5ebebf0025edbee41159c30e3e894c9e51db6403479330d07a73cffc1c2",
+      "dimensions": {
+        "acceptance_verdict": {
+          "score": "full",
+          "evidence": "R always passes because its corrected load cannot exceed 14 glims. S passes exactly when the jade bias is at least 5 glims. A compatible jade bias of 5 gives S a corrected load of 14 and an accepting lot; a compatible bias of 0 gives S a corrected load of 19 and a failing lot. E3 has the wrong date, and different calibration keys have no transfer relation. Both accepting and failing states therefore remain compatible."
+        },
+        "action": {
+          "score": "full",
+          "evidence": "UNRESOLVED",
+          "reason": "Correct UNRESOLVED classification with no release authorization."
+        },
+        "numerical_consequence": {
+          "score": "full",
+          "evidence": "response.bound_or_value and rationale",
+          "reason": "R in[4,14] always passes; S in[9,19], passing iff jade bias>=5."
+        },
+        "supplied_premise_fidelity": {
+          "score": "full",
+          "evidence": "response.satisfied_premises and rationale",
+          "reason": "Preserves supplied assignments and bounded current biases; refuses wrong-date transfer."
+        },
+        "uncertainty_and_conflict_fidelity": {
+          "score": "full",
+          "evidence": "response.missing_or_conflicting_premises and rationale",
+          "reason": "Correctly localizes consequential uncertainty to current jade bias; copper uncertainty cannot change acceptance."
+        },
+        "next_check_relevance": {
+          "score": "full",
+          "evidence": "Check an applicable exact jade calibration for Mica / 2031-06-18 / glims to determine whether its bias is at least 5 glims."
+        },
+        "next_check_sufficiency_claim": {
+          "score": "full",
+          "evidence": "Check an applicable exact jade calibration for Mica / 2031-06-18 / glims to determine whether its bias is at least 5 glims.",
+          "reason": "An authoritative assignment for both pieces (or either piece via one-to-one constraint), or an applicable current jade calibration, settles this case. Asking to cover both assignments is sufficient; no delivered efficiency requirement is assumed."
+        }
+      },
+      "tags": {
+        "false_missingness": false,
+        "false_missingness_evidence": null,
+        "contradiction_handling": "not_applicable",
+        "compliant_witness": "valid",
+        "violating_witness": "valid"
+      },
+      "material_errors": []
+    },
+    {
+      "reader": "R10",
+      "case_id": "case06",
+      "response_sha256": "a1885a0143440dacd3922444fc379b4c86b1db71f86efbc93dd63399cfb29cd1",
+      "dimensions": {
+        "acceptance_verdict": {
+          "score": "full",
+          "evidence": "Under E3, corrected loads are T = 12 \u2212 10 = 2 and U = 20 \u2212 3 = 17 glims, so acceptance fails. Under E4, corrected loads are T = 12 \u2212 3 = 9 and U = 20 \u2212 10 = 10 glims, so acceptance holds. Both assignments remain compatible with the accepted evidence because the records have equal authority and only at least one must be correct. Thus an accepting state and a failing state remain possible."
+        },
+        "action": {
+          "score": "full",
+          "evidence": "UNRESOLVED",
+          "reason": "Correct UNRESOLVED classification with no release authorization."
+        },
+        "numerical_consequence": {
+          "score": "full",
+          "evidence": "response.bound_or_value and rationale",
+          "reason": "E3 gives (2,17), failing; E4 gives(9,10), passing; maxima17/10."
+        },
+        "supplied_premise_fidelity": {
+          "score": "full",
+          "evidence": "response.satisfied_premises and rationale",
+          "reason": "Preserves exact calibration and equal-authority assignment-record contract."
+        },
+        "uncertainty_and_conflict_fidelity": {
+          "score": "full",
+          "evidence": "response.missing_or_conflicting_premises and rationale",
+          "reason": "Explicitly preserves supplied E3/E4 contradiction and both feasible assignments."
+        },
+        "next_check_relevance": {
+          "score": "full",
+          "evidence": "Verify the profile assignment for either T or U in Reed / 2031-08-23 / glims; the one-piece-per-profile rule then determines both assignments."
+        },
+        "next_check_sufficiency_claim": {
+          "score": "full",
+          "evidence": "Verify the profile assignment for either T or U in Reed / 2031-08-23 / glims; the one-piece-per-profile rule then determines both assignments.",
+          "reason": "An authoritative assignment for both pieces (or either piece via one-to-one constraint), or an applicable current jade calibration, settles this case. Asking to cover both assignments is sufficient; no delivered efficiency requirement is assumed."
+        }
+      },
+      "tags": {
+        "false_missingness": false,
+        "false_missingness_evidence": null,
+        "contradiction_handling": "correctly_preserved",
+        "compliant_witness": "valid",
+        "violating_witness": "valid"
+      },
+      "material_errors": []
+    },
+    {
+      "reader": "R11",
+      "case_id": "case05",
+      "response_sha256": "8c9972f026b112d8456071e48125e4708fe26584c533511dc5a530929a78e9ea",
+      "dimensions": {
+        "acceptance_verdict": {
+          "score": "full",
+          "evidence": "The equal-authority assignment records agree. Because at least one is correct, their shared assignment holds in every compatible state without requiring either record individually to have priority or an independent truth guarantee. U's corrected load is 17 glims, exceeding the 11-glim acceptance limit. Acceptance therefore fails in every compatible state, so the complete lot must be held."
+        },
+        "action": {
+          "score": "full",
+          "evidence": "HOLD",
+          "reason": "Correct RELEASE/HOLD action for the established acceptance result."
+        },
+        "numerical_consequence": {
+          "score": "full",
+          "evidence": "response.bound_or_value and rationale",
+          "reason": "T2 and U17; maximum17 exceeds11."
+        },
+        "supplied_premise_fidelity": {
+          "score": "full",
+          "evidence": "response.satisfied_premises and rationale",
+          "reason": "Recognizes agreed E3/E4 assignment is fixed by at-least-one-correct guarantee and joins it to E2 calibration."
+        },
+        "uncertainty_and_conflict_fidelity": {
+          "score": "full",
+          "evidence": "response.missing_or_conflicting_premises and rationale",
+          "reason": "Does not invent conflict or missing assignment; acceptance contradicted."
+        },
+        "next_check_relevance": {
+          "score": "full",
+          "evidence": "None is needed."
+        },
+        "next_check_sufficiency_claim": {
+          "score": "not_applicable",
+          "evidence": "None is needed.",
+          "reason": "No further check needed or proposed."
+        }
+      },
+      "tags": {
+        "false_missingness": false,
+        "false_missingness_evidence": null,
+        "contradiction_handling": "not_applicable",
+        "compliant_witness": "not_applicable",
+        "violating_witness": "not_applicable"
+      },
+      "material_errors": []
+    },
+    {
+      "reader": "R12",
+      "case_id": "case02",
+      "response_sha256": "e2a7ebf2ce2657dab6b0727f032edbda5af10c8bf916c00ad8a55f46aab74207",
+      "dimensions": {
+        "acceptance_verdict": {
+          "score": "full",
+          "evidence": "If P uses amber and Q uses blue, their corrected loads are 9 and 9 glims, so the complete lot passes. If P uses blue and Q uses amber, their corrected loads are 3 and 15 glims, so Q fails the 12-glim limit. Both assignments satisfy all supplied evidence. Calibration establishes profile biases but does not establish which piece uses each profile; therefore both acceptance and failure remain compatible."
+        },
+        "action": {
+          "score": "full",
+          "evidence": "UNRESOLVED",
+          "reason": "Correct UNRESOLVED classification with no release authorization."
+        },
+        "numerical_consequence": {
+          "score": "full",
+          "evidence": "response.bound_or_value and rationale",
+          "reason": "Both possible assignments computed: (9,9) passes and (3,15) fails; maxima9/15."
+        },
+        "supplied_premise_fidelity": {
+          "score": "full",
+          "evidence": "response.satisfied_premises and rationale",
+          "reason": "Uses complete-lot constraint and exact profile biases without inventing an assignment."
+        },
+        "uncertainty_and_conflict_fidelity": {
+          "score": "full",
+          "evidence": "response.missing_or_conflicting_premises and rationale",
+          "reason": "Identifies genuinely absent piece-to-profile assignment."
+        },
+        "next_check_relevance": {
+          "score": "full",
+          "evidence": "Check the authoritative piece-to-profile assignment for Lark / 2031-04-09 / glims, covering both P and Q."
+        },
+        "next_check_sufficiency_claim": {
+          "score": "full",
+          "evidence": "Check the authoritative piece-to-profile assignment for Lark / 2031-04-09 / glims, covering both P and Q.",
+          "reason": "An authoritative assignment for both pieces (or either piece via one-to-one constraint), or an applicable current jade calibration, settles this case. Asking to cover both assignments is sufficient; no delivered efficiency requirement is assumed."
+        }
+      },
+      "tags": {
+        "false_missingness": false,
+        "false_missingness_evidence": null,
+        "contradiction_handling": "not_applicable",
+        "compliant_witness": "valid",
+        "violating_witness": "valid"
+      },
+      "material_errors": []
+    },
+    {
+      "reader": "R13",
+      "case_id": "case02",
+      "response_sha256": "2bfe50049756221a44a1f8f0e57fe0b87899699ff84d146825ce722ac5211867",
+      "dimensions": {
+        "acceptance_verdict": {
+          "score": "full",
+          "evidence": "If P uses amber and Q uses blue, corrected loads are 9 and 9 glims, so the complete lot passes. If P uses blue and Q uses amber, corrected loads are 3 and 15 glims, so the lot fails because Q exceeds 12 glims. Both assignments satisfy all supplied evidence. Acceptance therefore holds in one compatible state and fails in another, requiring UNRESOLVED."
+        },
+        "action": {
+          "score": "full",
+          "evidence": "UNRESOLVED",
+          "reason": "Correct UNRESOLVED classification with no release authorization."
+        },
+        "numerical_consequence": {
+          "score": "full",
+          "evidence": "response.bound_or_value and rationale",
+          "reason": "Both possible assignments computed: (9,9) passes and (3,15) fails; maxima9/15."
+        },
+        "supplied_premise_fidelity": {
+          "score": "full",
+          "evidence": "response.satisfied_premises and rationale",
+          "reason": "Uses complete-lot constraint and exact profile biases without inventing an assignment."
+        },
+        "uncertainty_and_conflict_fidelity": {
+          "score": "full",
+          "evidence": "response.missing_or_conflicting_premises and rationale",
+          "reason": "Identifies genuinely absent piece-to-profile assignment."
+        },
+        "next_check_relevance": {
+          "score": "full",
+          "evidence": "Check an authoritative piece-to-profile assignment record for both pieces of Lark on 2031-04-09."
+        },
+        "next_check_sufficiency_claim": {
+          "score": "full",
+          "evidence": "Check an authoritative piece-to-profile assignment record for both pieces of Lark on 2031-04-09.",
+          "reason": "An authoritative assignment for both pieces (or either piece via one-to-one constraint), or an applicable current jade calibration, settles this case. Asking to cover both assignments is sufficient; no delivered efficiency requirement is assumed."
+        }
+      },
+      "tags": {
+        "false_missingness": false,
+        "false_missingness_evidence": null,
+        "contradiction_handling": "not_applicable",
+        "compliant_witness": "valid",
+        "violating_witness": "valid"
+      },
+      "material_errors": []
+    },
+    {
+      "reader": "R14",
+      "case_id": "case07",
+      "response_sha256": "55209726a116d39fa589b3299331bdc7721c119d9984b93e1cb6caf3659d1ef8",
+      "dimensions": {
+        "acceptance_verdict": {
+          "score": "full",
+          "evidence": "E2 certifies the exact arithmetic mean for the complete population identified in E1. Every state compatible with the accepted evidence therefore has a mean corrected load of 7 glims, which is at most 8 glims. Individual corrected loads are unnecessary because acceptance depends only on the complete lot's arithmetic mean. Acceptance holds in every compatible state."
+        },
+        "action": {
+          "score": "full",
+          "evidence": "RELEASE",
+          "reason": "Correct RELEASE/HOLD action for the established acceptance result."
+        },
+        "numerical_consequence": {
+          "score": "full",
+          "evidence": "response.bound_or_value and rationale",
+          "reason": "Exact complete-population mean7<=8."
+        },
+        "supplied_premise_fidelity": {
+          "score": "full",
+          "evidence": "response.satisfied_premises and rationale",
+          "reason": "Uses applicable complete-population certificate."
+        },
+        "uncertainty_and_conflict_fidelity": {
+          "score": "full",
+          "evidence": "response.missing_or_conflicting_premises and rationale",
+          "reason": "Correctly says absent individual loads are unnecessary for mean criterion."
+        },
+        "next_check_relevance": {
+          "score": "full",
+          "evidence": "None is needed."
+        },
+        "next_check_sufficiency_claim": {
+          "score": "not_applicable",
+          "evidence": "None is needed.",
+          "reason": "No further check needed or proposed."
+        }
+      },
+      "tags": {
+        "false_missingness": false,
+        "false_missingness_evidence": null,
+        "contradiction_handling": "not_applicable",
+        "compliant_witness": "not_applicable",
+        "violating_witness": "not_applicable"
+      },
+      "material_errors": []
+    },
+    {
+      "reader": "R15",
+      "case_id": "case01",
+      "response_sha256": "76843ad30c6a95ce364693e5329a4dfee0bd7042d04bf0df5893c6b79e73daab",
+      "dimensions": {
+        "acceptance_verdict": {
+          "score": "full",
+          "evidence": "The accepted acquisition record establishes the piece assignments, while the exact calibration establishes the profile biases. Applying those biases gives 9 glims for each piece. E1 establishes that P and Q constitute the complete lot and that no other corrections apply. Thus acceptance holds in every state compatible with the accepted evidence."
+        },
+        "action": {
+          "score": "full",
+          "evidence": "RELEASE",
+          "reason": "Correct RELEASE/HOLD action for the established acceptance result."
+        },
+        "numerical_consequence": {
+          "score": "full",
+          "evidence": "response.bound_or_value and rationale",
+          "reason": "Both corrected loads9, so complete-lot maximum9<=12."
+        },
+        "supplied_premise_fidelity": {
+          "score": "full",
+          "evidence": "response.satisfied_premises and rationale",
+          "reason": "Uses acquisition assignment joined to matching exact calibration; no false missingness."
+        },
+        "uncertainty_and_conflict_fidelity": {
+          "score": "full",
+          "evidence": "response.missing_or_conflicting_premises and rationale",
+          "reason": "No uncertainty relevant to acceptance remains."
+        },
+        "next_check_relevance": {
+          "score": "full",
+          "evidence": "None is needed."
+        },
+        "next_check_sufficiency_claim": {
+          "score": "not_applicable",
+          "evidence": "None is needed.",
+          "reason": "No further check needed or proposed."
+        }
+      },
+      "tags": {
+        "false_missingness": false,
+        "false_missingness_evidence": null,
+        "contradiction_handling": "not_applicable",
+        "compliant_witness": "not_applicable",
+        "violating_witness": "not_applicable"
+      },
+      "material_errors": []
+    },
+    {
+      "reader": "R16",
+      "case_id": "case03",
+      "response_sha256": "06a2629ceab5a2f1f973509488f9a4dc40eca0097dc0f04de84b10399228e9c5",
+      "dimensions": {
+        "acceptance_verdict": {
+          "score": "full",
+          "evidence": "Acceptance requires every corrected load to be at most 14 glims. The matching exact calibrations fix copper bias at 1 and jade bias at 4, giving R a corrected load of 13 glims and S a corrected load of 15 glims. S exceeds the limit, so acceptance fails in every state compatible with the accepted evidence. HOLD applies to the complete two-piece lot."
+        },
+        "action": {
+          "score": "full",
+          "evidence": "HOLD",
+          "reason": "Correct RELEASE/HOLD action for the established acceptance result."
+        },
+        "numerical_consequence": {
+          "score": "full",
+          "evidence": "response.bound_or_value and rationale",
+          "reason": "Corrected R13 and S15; S exceeds14."
+        },
+        "supplied_premise_fidelity": {
+          "score": "full",
+          "evidence": "response.satisfied_premises and rationale",
+          "reason": "Uses supplied assignment and matching exact calibration."
+        },
+        "uncertainty_and_conflict_fidelity": {
+          "score": "full",
+          "evidence": "response.missing_or_conflicting_premises and rationale",
+          "reason": "Acceptance contradicted, rather than unresolved."
+        },
+        "next_check_relevance": {
+          "score": "full",
+          "evidence": "None is needed; the applicable exact calibrations determine both corrected loads."
+        },
+        "next_check_sufficiency_claim": {
+          "score": "not_applicable",
+          "evidence": "None is needed; the applicable exact calibrations determine both corrected loads.",
+          "reason": "No further check needed or proposed."
+        }
+      },
+      "tags": {
+        "false_missingness": false,
+        "false_missingness_evidence": null,
+        "contradiction_handling": "not_applicable",
+        "compliant_witness": "not_applicable",
+        "violating_witness": "not_applicable"
+      },
+      "material_errors": []
+    }
+  ],
+  "counts_by_dimension": {
+    "acceptance_verdict": {
+      "full": 16,
+      "partial": 0,
+      "incorrect": 0,
+      "omitted": 0,
+      "not_applicable": 0
+    },
+    "action": {
+      "full": 16,
+      "partial": 0,
+      "incorrect": 0,
+      "omitted": 0,
+      "not_applicable": 0
+    },
+    "numerical_consequence": {
+      "full": 16,
+      "partial": 0,
+      "incorrect": 0,
+      "omitted": 0,
+      "not_applicable": 0
+    },
+    "supplied_premise_fidelity": {
+      "full": 16,
+      "partial": 0,
+      "incorrect": 0,
+      "omitted": 0,
+      "not_applicable": 0
+    },
+    "uncertainty_and_conflict_fidelity": {
+      "full": 16,
+      "partial": 0,
+      "incorrect": 0,
+      "omitted": 0,
+      "not_applicable": 0
+    },
+    "next_check_relevance": {
+      "full": 16,
+      "partial": 0,
+      "incorrect": 0,
+      "omitted": 0,
+      "not_applicable": 0
+    },
+    "next_check_sufficiency_claim": {
+      "full": 8,
+      "partial": 0,
+      "incorrect": 0,
+      "omitted": 0,
+      "not_applicable": 8
+    }
+  },
+  "counts_by_case_and_dimension": {
+    "case01": {
+      "acceptance_verdict": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "action": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "numerical_consequence": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "supplied_premise_fidelity": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "uncertainty_and_conflict_fidelity": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "next_check_relevance": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "next_check_sufficiency_claim": {
+        "full": 0,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 2
+      }
+    },
+    "case02": {
+      "acceptance_verdict": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "action": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "numerical_consequence": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "supplied_premise_fidelity": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "uncertainty_and_conflict_fidelity": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "next_check_relevance": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "next_check_sufficiency_claim": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      }
+    },
+    "case03": {
+      "acceptance_verdict": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "action": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "numerical_consequence": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "supplied_premise_fidelity": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "uncertainty_and_conflict_fidelity": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "next_check_relevance": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "next_check_sufficiency_claim": {
+        "full": 0,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 2
+      }
+    },
+    "case04": {
+      "acceptance_verdict": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "action": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "numerical_consequence": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "supplied_premise_fidelity": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "uncertainty_and_conflict_fidelity": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "next_check_relevance": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "next_check_sufficiency_claim": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      }
+    },
+    "case05": {
+      "acceptance_verdict": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "action": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "numerical_consequence": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "supplied_premise_fidelity": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "uncertainty_and_conflict_fidelity": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "next_check_relevance": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "next_check_sufficiency_claim": {
+        "full": 0,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 2
+      }
+    },
+    "case06": {
+      "acceptance_verdict": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "action": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "numerical_consequence": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "supplied_premise_fidelity": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "uncertainty_and_conflict_fidelity": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "next_check_relevance": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "next_check_sufficiency_claim": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      }
+    },
+    "case07": {
+      "acceptance_verdict": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "action": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "numerical_consequence": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "supplied_premise_fidelity": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "uncertainty_and_conflict_fidelity": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "next_check_relevance": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "next_check_sufficiency_claim": {
+        "full": 0,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 2
+      }
+    },
+    "case08": {
+      "acceptance_verdict": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "action": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "numerical_consequence": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "supplied_premise_fidelity": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "uncertainty_and_conflict_fidelity": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "next_check_relevance": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      },
+      "next_check_sufficiency_claim": {
+        "full": 2,
+        "partial": 0,
+        "incorrect": 0,
+        "omitted": 0,
+        "not_applicable": 0
+      }
+    }
+  },
+  "aggregate_score": null,
+  "substantive_findings": [
+    "No material error found in any assessed dimension.",
+    "No false missingness, unsupported wrong-key transfer, invented conflict, or unsupported resolution of supplied contradiction observed.",
+    "All unresolved responses supply compatible passing/failing witnesses.",
+    "Next-check proposals differ in specificity; requesting both assignments or the maximum itself is sufficient and not penalized for extra acquisition or broadness without an efficiency or operational-detail requirement.",
+    "No response claims that an ordinary <=8 single-piece measurement certifies case08."
+  ]
+}
