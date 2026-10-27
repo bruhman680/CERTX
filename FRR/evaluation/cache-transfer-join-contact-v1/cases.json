@@ -1,0 +1,766 @@
+[
+  {
+    "case": "6.8/applicable/split",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "6.8",
+          "6.2"
+        ],
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1"
+      }
+    ]
+  },
+  {
+    "case": "6.8/applicable/combined",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "6.8",
+          "6.2"
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1",
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "6.8/absent_assignment/split",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "6.8",
+          "6.2"
+        ],
+        "assignments": []
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1"
+      }
+    ]
+  },
+  {
+    "case": "6.8/absent_assignment/combined",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "6.8",
+          "6.2"
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1",
+        "assignments": []
+      }
+    ]
+  },
+  {
+    "case": "6.8/wrong_channel/split",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "6.8",
+          "6.2"
+        ],
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K8",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1"
+      }
+    ]
+  },
+  {
+    "case": "6.8/wrong_channel/combined",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "6.8",
+          "6.2"
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K8",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1",
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "6.8/wrong_date/split",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "6.8",
+          "6.2"
+        ],
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY6",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1"
+      }
+    ]
+  },
+  {
+    "case": "6.8/wrong_date/combined",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "6.8",
+          "6.2"
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY6",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1",
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "6.8/wrong_unit/split",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "6.8",
+          "6.2"
+        ],
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "cm/s",
+        "correction": "0.2",
+        "radius": "0.1"
+      }
+    ]
+  },
+  {
+    "case": "6.8/wrong_unit/combined",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "6.8",
+          "6.2"
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "cm/s",
+        "correction": "0.2",
+        "radius": "0.1",
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "6.8/conflicting_assignment/split",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "6.8",
+          "6.2"
+        ],
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          },
+          {
+            "task": "TASK",
+            "channel": "K8",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1"
+      }
+    ]
+  },
+  {
+    "case": "6.8/conflicting_assignment/combined",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "6.8",
+          "6.2"
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1",
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          },
+          {
+            "task": "TASK",
+            "channel": "K8",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "7.8/applicable/split",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "7.8",
+          "6.2"
+        ],
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1"
+      }
+    ]
+  },
+  {
+    "case": "7.8/applicable/combined",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "7.8",
+          "6.2"
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1",
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "7.8/absent_assignment/split",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "7.8",
+          "6.2"
+        ],
+        "assignments": []
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1"
+      }
+    ]
+  },
+  {
+    "case": "7.8/absent_assignment/combined",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "7.8",
+          "6.2"
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1",
+        "assignments": []
+      }
+    ]
+  },
+  {
+    "case": "7.8/wrong_channel/split",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "7.8",
+          "6.2"
+        ],
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K8",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1"
+      }
+    ]
+  },
+  {
+    "case": "7.8/wrong_channel/combined",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "7.8",
+          "6.2"
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K8",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1",
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "7.8/wrong_date/split",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "7.8",
+          "6.2"
+        ],
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY6",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1"
+      }
+    ]
+  },
+  {
+    "case": "7.8/wrong_date/combined",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "7.8",
+          "6.2"
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY6",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1",
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "7.8/wrong_unit/split",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "7.8",
+          "6.2"
+        ],
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "cm/s",
+        "correction": "0.2",
+        "radius": "0.1"
+      }
+    ]
+  },
+  {
+    "case": "7.8/wrong_unit/combined",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "7.8",
+          "6.2"
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "cm/s",
+        "correction": "0.2",
+        "radius": "0.1",
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "7.8/conflicting_assignment/split",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "7.8",
+          "6.2"
+        ],
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          },
+          {
+            "task": "TASK",
+            "channel": "K8",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1"
+      }
+    ]
+  },
+  {
+    "case": "7.8/conflicting_assignment/combined",
+    "records": [
+      {
+        "id": "D",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "samples": [
+          "6.0",
+          "7.8",
+          "6.2"
+        ]
+      },
+      {
+        "id": "C",
+        "channel": "K9",
+        "date": "DAY7",
+        "unit": "mm/s",
+        "correction": "0.2",
+        "radius": "0.1",
+        "assignments": [
+          {
+            "task": "TASK",
+            "channel": "K9",
+            "date": "DAY7",
+            "unit": "mm/s"
+          },
+          {
+            "task": "TASK",
+            "channel": "K8",
+            "date": "DAY7",
+            "unit": "mm/s"
+          }
+        ]
+      }
+    ]
+  }
+]

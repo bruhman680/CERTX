@@ -1,0 +1,187 @@
+{
+  "scope": "development arithmetic and typed joins only; no reader/C2C run",
+  "cases": 24,
+  "counts": {
+    "RELEASE": 2,
+    "HOLD": 2,
+    "UNRESOLVED": 20
+  },
+  "ordered_evaluations": 48,
+  "single_record_ablation_checks": 48,
+  "integer_endpoint_cross_checks": 4,
+  "outputs": [
+    {
+      "case": "6.8/applicable/split",
+      "action": "RELEASE",
+      "reason": "complete applicable join",
+      "bound": [
+        "69/10",
+        "71/10"
+      ]
+    },
+    {
+      "case": "6.8/applicable/combined",
+      "action": "RELEASE",
+      "reason": "complete applicable join",
+      "bound": [
+        "69/10",
+        "71/10"
+      ]
+    },
+    {
+      "case": "6.8/absent_assignment/split",
+      "action": "UNRESOLVED",
+      "reason": "missing assignment",
+      "bound": null
+    },
+    {
+      "case": "6.8/absent_assignment/combined",
+      "action": "UNRESOLVED",
+      "reason": "missing assignment",
+      "bound": null
+    },
+    {
+      "case": "6.8/wrong_channel/split",
+      "action": "UNRESOLVED",
+      "reason": "inapplicable calibration",
+      "bound": null
+    },
+    {
+      "case": "6.8/wrong_channel/combined",
+      "action": "UNRESOLVED",
+      "reason": "inapplicable calibration",
+      "bound": null
+    },
+    {
+      "case": "6.8/wrong_date/split",
+      "action": "UNRESOLVED",
+      "reason": "inapplicable calibration",
+      "bound": null
+    },
+    {
+      "case": "6.8/wrong_date/combined",
+      "action": "UNRESOLVED",
+      "reason": "inapplicable calibration",
+      "bound": null
+    },
+    {
+      "case": "6.8/wrong_unit/split",
+      "action": "UNRESOLVED",
+      "reason": "inapplicable calibration",
+      "bound": null
+    },
+    {
+      "case": "6.8/wrong_unit/combined",
+      "action": "UNRESOLVED",
+      "reason": "inapplicable calibration",
+      "bound": null
+    },
+    {
+      "case": "6.8/conflicting_assignment/split",
+      "action": "UNRESOLVED",
+      "reason": "mismatched or conflicting assignment",
+      "bound": null
+    },
+    {
+      "case": "6.8/conflicting_assignment/combined",
+      "action": "UNRESOLVED",
+      "reason": "mismatched or conflicting assignment",
+      "bound": null
+    },
+    {
+      "case": "7.8/applicable/split",
+      "action": "HOLD",
+      "reason": "complete applicable join",
+      "bound": [
+        "79/10",
+        "81/10"
+      ]
+    },
+    {
+      "case": "7.8/applicable/combined",
+      "action": "HOLD",
+      "reason": "complete applicable join",
+      "bound": [
+        "79/10",
+        "81/10"
+      ]
+    },
+    {
+      "case": "7.8/absent_assignment/split",
+      "action": "UNRESOLVED",
+      "reason": "missing assignment",
+      "bound": null
+    },
+    {
+      "case": "7.8/absent_assignment/combined",
+      "action": "UNRESOLVED",
+      "reason": "missing assignment",
+      "bound": null
+    },
+    {
+      "case": "7.8/wrong_channel/split",
+      "action": "UNRESOLVED",
+      "reason": "inapplicable calibration",
+      "bound": null
+    },
+    {
+      "case": "7.8/wrong_channel/combined",
+      "action": "UNRESOLVED",
+      "reason": "inapplicable calibration",
+      "bound": null
+    },
+    {
+      "case": "7.8/wrong_date/split",
+      "action": "UNRESOLVED",
+      "reason": "inapplicable calibration",
+      "bound": null
+    },
+    {
+      "case": "7.8/wrong_date/combined",
+      "action": "UNRESOLVED",
+      "reason": "inapplicable calibration",
+      "bound": null
+    },
+    {
+      "case": "7.8/wrong_unit/split",
+      "action": "UNRESOLVED",
+      "reason": "inapplicable calibration",
+      "bound": null
+    },
+    {
+      "case": "7.8/wrong_unit/combined",
+      "action": "UNRESOLVED",
+      "reason": "inapplicable calibration",
+      "bound": null
+    },
+    {
+      "case": "7.8/conflicting_assignment/split",
+      "action": "UNRESOLVED",
+      "reason": "mismatched or conflicting assignment",
+      "bound": null
+    },
+    {
+      "case": "7.8/conflicting_assignment/combined",
+      "action": "UNRESOLVED",
+      "reason": "mismatched or conflicting assignment",
+      "bound": null
+    }
+  ],
+  "schedule_comparison": [
+    {
+      "progress": 0,
+      "paper_linear": 1.0,
+      "code_exponential": 1.0
+    },
+    {
+      "progress": 0.5,
+      "paper_linear": 0.5005,
+      "code_exponential": 0.03162277660168379
+    },
+    {
+      "progress": 1,
+      "paper_linear": 0.0010000000000000009,
+      "code_exponential": 0.001
+    }
+  ]
+}

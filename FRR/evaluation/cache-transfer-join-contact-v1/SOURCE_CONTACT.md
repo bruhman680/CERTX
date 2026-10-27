@@ -1,0 +1,9 @@
+# C2C source contact
+
+Accessed 27 October 2026. Identified screenshot as [Cache-to-Cache](https://arxiv.org/abs/2510.03215), v2, 2 March 2026. Read HTML methods, evaluation, selected ablations and appendices A.3–A.5; not a proof/benchmark reproduction. Initial guessed v3 returned 404; version history resolved v2. Search snippets mixed version metrics, so no pooled headline estimate is used.
+
+Paper findings: trained cache fusers connect frozen models, using token/layer alignment, residual fusion and gates. Main training uses 500k OpenHermes examples. The cache-enrichment oracle retains question caches after exemplar-conditioned prefill; exemplar processing still occurred. The authors report wrong-answer transfer, nonmonotonic partial-cache results and preliminary multi-model extensions. Effective rank and t-SNE are representational diagnostics, not truth certificates. Appendix A.3.5 describes linear temperature annealing.
+
+Implementation inspected: [README](https://github.com/thu-nics/C2C/blob/bdb932aa63637959074a9a6fd59992a4d0d9ad22/README.md) and [projector.py](https://github.com/thu-nics/C2C/blob/bdb932aa63637959074a9a6fd59992a4d0d9ad22/rosetta/model/projector.py), pinned 9 October 2026 commit. C2CProjector.update_temperature uses exponential interpolation; forward adds gated, input-weighted projections to target keys/values. This snapshot is not authenticated as the published execution. Static inspection only; no install, weights, GPU, wrapper audit or inference. README headline differs from v2. No paper/code author contacted.
+
+Our transfer hypothesis: evaluate transport fidelity, applicability and truth separately. Cache access is unavailable through our present agent tools; text-based development cannot reproduce C2C. Do not relabel existing file handoffs as latent cache sharing.
