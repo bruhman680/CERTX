@@ -1,0 +1,27 @@
+Chernoff exponent per episode C_n and per recorded outcome C_n/n
+design   n   SH-EC C_n/n   SH-WK C_n/n   EC-WK C_n/n
+PASS    6      0.006365      0.000033      0.006367
+PASS    8      0.009016      0.000093      0.008912
+PASS   10      0.011085      0.000187      0.010657
+PASS   12      0.012800      0.000305      0.011855
+PASS   14      0.014249      0.000440      0.012724
+PASS   16      0.015459      0.000589      0.013378
+DO_F    6      0.009530      0.003593      0.007236
+DO_F    8      0.011390      0.003052      0.008803
+DO_F   10      0.012956      0.002736      0.010045
+DO_F   12      0.014324      0.002561      0.010954
+DO_F   14      0.015517      0.002451      0.011633
+DO_F   16      0.016530      0.002387      0.012168
+
+Checks:
+ P1 SH-WK PASS C_n/n at n=16 vs n=6: x17.6
+ P2 n= 6: DO_F/PASS exponent ratio (SH-WK) = 107.57
+ P2 n= 8: DO_F/PASS exponent ratio (SH-WK) = 32.97
+ P2 n=10: DO_F/PASS exponent ratio (SH-WK) = 14.67
+ P2 n=12: DO_F/PASS exponent ratio (SH-WK) = 8.39
+ P2 n=14: DO_F/PASS exponent ratio (SH-WK) = 5.57
+ P2 n=16: DO_F/PASS exponent ratio (SH-WK) = 4.05
+ P3 SH-EC PASS C_n/n n=6 -> n=16: 0.00636 -> 0.01546 (ratio 2.43)
+ P3 EC-WK PASS C_n/n n=6 -> n=16: 0.00637 -> 0.01338 (ratio 2.10)
+ P4 PASS n=16: SH-WK 0.000589 vs SH-EC/10 = 0.001546
+ N(5%) in episodes at n=16, PASS SH-WK: 244.3 -> recorded outcomes 3908
