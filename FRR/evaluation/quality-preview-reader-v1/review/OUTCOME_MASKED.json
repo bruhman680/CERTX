@@ -1,0 +1,170 @@
+{
+  "scope": "Independent initial outcome judgments deposited before assignment unmask or reading scorer outcome files. Prior exposure: authored cases, templates, design, prospective key/scoring; no reader-arm mapping or participant prompt text. Shared-workspace instructional masking only.",
+  "source_sha256": "48f1091403eb447d136cb5345d416ad231d9d328c5aa1d4aac21b462a028ac77",
+  "rows": [
+    {
+      "reader_id": "R01",
+      "case_id": "QP02",
+      "path": [
+        "O-D",
+        "O-C"
+      ],
+      "gold_action": "UNRESOLVED",
+      "reported_action": "UNRESOLVED",
+      "action_and_reuse_correct": true,
+      "bounds_correct": true,
+      "lookup_cost": 2,
+      "rationale_words": [
+        34,
+        44,
+        74
+      ]
+    },
+    {
+      "reader_id": "R02",
+      "case_id": "QP01",
+      "path": [
+        "N-D",
+        "N-C"
+      ],
+      "gold_action": "RELEASE",
+      "reported_action": "RELEASE",
+      "action_and_reuse_correct": true,
+      "bounds_correct": true,
+      "lookup_cost": 2,
+      "rationale_words": [
+        26,
+        43,
+        64
+      ]
+    },
+    {
+      "reader_id": "R03",
+      "case_id": "QP02",
+      "path": [
+        "O-D",
+        "O-C"
+      ],
+      "gold_action": "UNRESOLVED",
+      "reported_action": "UNRESOLVED",
+      "action_and_reuse_correct": true,
+      "bounds_correct": true,
+      "lookup_cost": 2,
+      "rationale_words": [
+        29,
+        40,
+        59
+      ]
+    },
+    {
+      "reader_id": "R04",
+      "case_id": "QP03",
+      "path": [
+        "P-D",
+        "P-C"
+      ],
+      "gold_action": "UNRESOLVED",
+      "reported_action": "UNRESOLVED",
+      "action_and_reuse_correct": true,
+      "bounds_correct": true,
+      "lookup_cost": 2,
+      "rationale_words": [
+        39,
+        39,
+        46
+      ]
+    },
+    {
+      "reader_id": "R05",
+      "case_id": "QP01",
+      "path": [
+        "N-D",
+        "N-C"
+      ],
+      "gold_action": "RELEASE",
+      "reported_action": "RELEASE",
+      "action_and_reuse_correct": true,
+      "bounds_correct": true,
+      "lookup_cost": 2,
+      "rationale_words": [
+        32,
+        35,
+        58
+      ]
+    },
+    {
+      "reader_id": "R06",
+      "case_id": "QP03",
+      "path": [
+        "P-D",
+        "P-C"
+      ],
+      "gold_action": "UNRESOLVED",
+      "reported_action": "UNRESOLVED",
+      "action_and_reuse_correct": true,
+      "bounds_correct": true,
+      "lookup_cost": 2,
+      "rationale_words": [
+        32,
+        37,
+        54
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "readers": [
+        "R01",
+        "R03"
+      ],
+      "kind": "material_explanation_scope_error",
+      "quote_R01": "the delivered records do not establish that OK-6 measures housing vibration",
+      "quote_R03": "do not establish that OK-6 covers the required housing measurement scope",
+      "basis": "O-D explicitly states bearing stand Orlena, complete OS all three task samples, current task timing, and Oa/OK-6 assignment. With initial task definition this is the supplied housing task scope. No separate housing-to-channel check is missing. Their straddling bound independently supports correct UNRESOLVED; false extra deficiency must not be excused by correct action.",
+      "affected_dimensions": [
+        "source_join_fidelity",
+        "calibration_and_role_scope",
+        "evidence_fidelity",
+        "residual_issue_and_next_check"
+      ]
+    },
+    {
+      "readers": [
+        "R06"
+      ],
+      "kind": "incomplete_next_check",
+      "quote": "Obtain a tighter calibrated bound for the 15.1-bar raw sample sufficient to resolve its physical pressure relative to 15.7 bar.",
+      "basis": "A tightened bound on raw-maximum sample can establish violation if its physical value is above 15.7, but cannot by itself generally establish compliance. The 14.8-bar raw sample still permits physical value up to 15.8 under sample-varying residuals. A task-decisive compliance check must also bound every competing sample below threshold; the 14.4-bar sample is already bounded to 15.4. Current action, sample intervals, maximum interval and reuse remain correct.",
+      "affected_dimensions": [
+        "residual_issue_and_next_check"
+      ]
+    },
+    {
+      "readers": [
+        "R06"
+      ],
+      "kind": "valid_delivered_subrecord_citation",
+      "quote": "PCC",
+      "basis": "PCC is explicitly the selected PK-6 row certificate inside delivered P-C. Listing it with P-D/P-C is not invented evidence or an extra lookup. It is an additional evidence identifier, not an extra requested record."
+    },
+    {
+      "readers": [
+        "R04"
+      ],
+      "kind": "next_check_qualified",
+      "quote": "Obtain tighter warranted error bounds or independent calibrated measurements for the task samples.",
+      "basis": "Tighter applicable physical bounds is a valid direction. Independent acquisition alone would not guarantee resolution or justify shrinking residuals; output does not actually assert that guarantee. Treat reference to independent measurements as underspecified, not proof of unsupported statistical independence."
+    }
+  ],
+  "diagnostics": [
+    "All six chose D then C. All final physical maximum intervals and action/reuse pairs match delivered evidence.",
+    "QP02 first choice D leaves no decisive second choice within remaining one slot. Choosing C is a plausible complete-route attempt, not a missed available decisive complement after D; R+M was an alternative two-slot path before committing.",
+    "QP03 has no decisive two-record path and no decisive full-four packet. Final uncertainty is warranted despite favorable latent truth.",
+    "No reader observed R or M. No output used preview as a measurement certificate or claimed exact physical truth.",
+    "Range validity is available and correct for all acquired raw values; none explicitly enumerates the calibration-domain containment. Do not invent a domain failure from this omission.",
+    "Briefing-origin explanations correctly identify one acquisition and downstream summaries; omitted individual edge order is incomplete detail, not a false ancestry claim.",
+    "Within supplied outputs, requests are distinct valid IDs, required final fields present, rationale caps met, and no early action present. Full execution/tool isolation/render verification remains coordinator responsibility."
+  ],
+  "gold_changes": false,
+  "arm_comparison": "Deferred until initial judgments deposited."
+}

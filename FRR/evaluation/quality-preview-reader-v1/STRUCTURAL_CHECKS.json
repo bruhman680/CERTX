@@ -1,0 +1,17 @@
+{
+  "checks": [
+    {
+      "tool": "check_package.py",
+      "exit_code": 0,
+      "stdout": "Package checks passed: 3 inquiry records; {'development': 16, 'heldout': 8}; required documents present.\nThese checks establish structural consistency, not FRR effectiveness.\n",
+      "stderr": ""
+    },
+    {
+      "tool": "check_research_queue.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"entries\": 35,\n  \"completed_prior_contacts\": 2,\n  \"completed_scoped_contacts\": 1,\n  \"checked_instruments\": 2,\n  \"partial_contacts\": 6,\n  \"pending\": 30,\n  \"dependencies_acyclic\": true,\n  \"local_references_resolve\": true,\n  \"core_hashes_unchanged\": true,\n  \"scope\": \"Saved-plan structure only; no queued scientific test is executed by this check.\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Existing package examples/required files, saved queue structure/dependencies and core baseline hashes only; no historical scientific claims reaudit or experiment rerun."
+}

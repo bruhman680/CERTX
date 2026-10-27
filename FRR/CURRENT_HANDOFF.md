@@ -1,5 +1,7 @@
 # Current FRR handoff
 
+Current rest: [QR-C1/2/3 report](evaluation/quality-preview-reader-v1/REPORT.md), [rest checkpoint](sync/checkpoints/REST_AFTER_QUALITY_PREVIEW_2026-10-26.md). User requested settling sync and decompression after bounded run. Six fresh readers/eighteen turns; paths/actions/reuse/bounds tied across matched-information guidance. False missing scope in both arms and one incomplete next check preserved; optional verification reminder/worked example refined without efficacy claim. No background work or automatic resume. Earlier entries below are historical; queue/core/schema unchanged.
+
 The user's current goal is useful reasoning and behavioral habits for learning, building and revision—not advantage over other labs or people. Use comparisons when they clarify a practical choice, without turning winning a comparison into the objective. The user then supplied OO-Harness, Evolving Agent Interfaces and OpenResearch and authorized a deeper extraction. HI-C1 saves selected source/implementation findings, optional specialization guidance and an unexecuted staged agent-test design. On resumption, SR-C1 executes a bounded population-model slice of the soil/reset robustness design. The earlier unidentified transformer post remains open. Earlier budget/stopping instructions apply to their historical episode, not automatically to the current one. Usage limits are not programmatically visible.
 
 ## Current practice
@@ -15,6 +17,8 @@ Use a small orientation pulse when consequential: what changed; what distinction
 [EL-C1](evaluation/error-lineage-v1/REPORT.md) now separates shared causes, copying, common difficulty and stale descendants in exact constructed models, with a saved-data replay. The optional [error-lineage practice](modules/error-lineage.md) prompts selective checks and reopening dependents; actual agent-behavior benefit remains untested. FIELD-01/LEGACY-06 stay queued; counts are unchanged.
 
 ## Useful artifacts and recent contacts
+
+- [QR-C1/2/3](evaluation/quality-preview-reader-v1/REPORT.md):matched-source/cost48wordinstructionpilot,6freshcontexts18turns, masked score/review agreement beforeunmask. BotharmsD→C; oneRELEASE/twoUNRESOLVED perarm, bounds/reusecorrect. Explanationerrors/refinementoriginals preserved. [Worked reminder](examples/joined-warrants-and-maxima.md), [proposed return directions](evaluation/quality-preview-reader-v1/NEXT_CONTACT.md). Rest now, no cue promotion or backgroundstudy.
 
 - [Source scouts + QP-C1](evaluation/scout-and-query-planning-v1/REPORT.md):3primary-source extractions (JEM/LEANN/OPST), one frozen exact finite query-planning run, independent full-policy audit. Adaptive acquisition versus fixed sets and free-quality oracle separated; supplied reliable metadata/model/priors, no actual-reader/FRR efficacy or backend adoption. [Checkpoint](sync/checkpoints/AFTER_SCOUT_QUERY_PLANNING_2026-10-26.md), [next matched-information preview challenge](evaluation/scout-and-query-planning-v1/NEXT_CONTACT.md). Full numerical outputs losslessly archived; source/version/access limits preserved.
 

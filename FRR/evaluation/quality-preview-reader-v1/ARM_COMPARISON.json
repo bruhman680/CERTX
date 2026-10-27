@@ -1,0 +1,169 @@
+{
+  "status": "unmasked only after independent masked deposits",
+  "masked_deposit_preserved": true,
+  "assignment_sha256": "79e2c34f0bb67b3bdac7db1c2dd6c8d56501809c1732851d0793d320527a1946",
+  "masked_scores_sha256": "d0389f841ac7df0c09365c79cc51dadd07d42642bb11f44594438226de3cd39b",
+  "no_aggregate": true,
+  "cases": [
+    {
+      "case_id": "QP01",
+      "arms": {
+        "ORDINARY": {
+          "reader_id": "R02",
+          "selected_order": [
+            "N-D",
+            "N-C"
+          ],
+          "observed_action": "RELEASE",
+          "gold_action": "RELEASE",
+          "scores": {
+            "delivered_packet_action": 2,
+            "retained_reuse_and_repair": 2,
+            "task_value_or_bound": 2,
+            "source_join_fidelity": 2,
+            "briefing_origins": 2,
+            "calibration_and_role_scope": 1,
+            "evidence_fidelity": 2,
+            "unsupported_certainty": 2,
+            "residual_issue_and_next_check": 2
+          },
+          "reachable_decisive_second_ids": [
+            "N-C"
+          ],
+          "external_truth": "agrees"
+        },
+        "ROUTE_CUE": {
+          "reader_id": "R05",
+          "selected_order": [
+            "N-D",
+            "N-C"
+          ],
+          "observed_action": "RELEASE",
+          "gold_action": "RELEASE",
+          "scores": {
+            "delivered_packet_action": 2,
+            "retained_reuse_and_repair": 2,
+            "task_value_or_bound": 2,
+            "source_join_fidelity": 2,
+            "briefing_origins": 2,
+            "calibration_and_role_scope": 1,
+            "evidence_fidelity": 2,
+            "unsupported_certainty": 2,
+            "residual_issue_and_next_check": 2
+          },
+          "reachable_decisive_second_ids": [
+            "N-C"
+          ],
+          "external_truth": "agrees"
+        }
+      },
+      "differences": {}
+    },
+    {
+      "case_id": "QP02",
+      "arms": {
+        "ROUTE_CUE": {
+          "reader_id": "R01",
+          "selected_order": [
+            "O-D",
+            "O-C"
+          ],
+          "observed_action": "UNRESOLVED",
+          "gold_action": "UNRESOLVED",
+          "scores": {
+            "delivered_packet_action": 2,
+            "retained_reuse_and_repair": 2,
+            "task_value_or_bound": 2,
+            "source_join_fidelity": 0,
+            "briefing_origins": 2,
+            "calibration_and_role_scope": 0,
+            "evidence_fidelity": 0,
+            "unsupported_certainty": 2,
+            "residual_issue_and_next_check": 1
+          },
+          "reachable_decisive_second_ids": [],
+          "external_truth": "abstains"
+        },
+        "ORDINARY": {
+          "reader_id": "R03",
+          "selected_order": [
+            "O-D",
+            "O-C"
+          ],
+          "observed_action": "UNRESOLVED",
+          "gold_action": "UNRESOLVED",
+          "scores": {
+            "delivered_packet_action": 2,
+            "retained_reuse_and_repair": 2,
+            "task_value_or_bound": 2,
+            "source_join_fidelity": 0,
+            "briefing_origins": 2,
+            "calibration_and_role_scope": 0,
+            "evidence_fidelity": 0,
+            "unsupported_certainty": 2,
+            "residual_issue_and_next_check": 1
+          },
+          "reachable_decisive_second_ids": [],
+          "external_truth": "abstains"
+        }
+      },
+      "differences": {}
+    },
+    {
+      "case_id": "QP03",
+      "arms": {
+        "ROUTE_CUE": {
+          "reader_id": "R04",
+          "selected_order": [
+            "P-D",
+            "P-C"
+          ],
+          "observed_action": "UNRESOLVED",
+          "gold_action": "UNRESOLVED",
+          "scores": {
+            "delivered_packet_action": 2,
+            "retained_reuse_and_repair": 2,
+            "task_value_or_bound": 2,
+            "source_join_fidelity": 2,
+            "briefing_origins": 2,
+            "calibration_and_role_scope": 1,
+            "evidence_fidelity": 2,
+            "unsupported_certainty": 2,
+            "residual_issue_and_next_check": 2
+          },
+          "reachable_decisive_second_ids": [],
+          "external_truth": "abstains"
+        },
+        "ORDINARY": {
+          "reader_id": "R06",
+          "selected_order": [
+            "P-D",
+            "P-C"
+          ],
+          "observed_action": "UNRESOLVED",
+          "gold_action": "UNRESOLVED",
+          "scores": {
+            "delivered_packet_action": 2,
+            "retained_reuse_and_repair": 2,
+            "task_value_or_bound": 2,
+            "source_join_fidelity": 2,
+            "briefing_origins": 2,
+            "calibration_and_role_scope": 1,
+            "evidence_fidelity": 2,
+            "unsupported_certainty": 2,
+            "residual_issue_and_next_check": 1
+          },
+          "reachable_decisive_second_ids": [],
+          "external_truth": "abstains"
+        }
+      },
+      "differences": {
+        "residual_issue_and_next_check": {
+          "ROUTE_CUE": 2,
+          "ORDINARY": 1
+        }
+      }
+    }
+  ],
+  "scope": "One observation per case/arm; no causal treatment effect, equivalence, population inference, broader FRR or transfer claim. The isolated next-check score difference does not justify promoting ROUTE_CUE."
+}

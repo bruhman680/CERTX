@@ -1,0 +1,558 @@
+{
+  "masking": "Scored only neutral SCORER_INPUT, frozen KEY/SCORING and literal cases. No ASSIGNMENT or participant prompts inspected before this deposit. Guidance blocks were seen during prospective preparation; no neutral-ID mapping was seen. Shared-workspace instructional masking, not technical blinding.",
+  "no_aggregate": true,
+  "gold_unchanged": true,
+  "input_sha256": "48f1091403eb447d136cb5345d416ad231d9d328c5aa1d4aac21b462a028ac77",
+  "key_sha256": "cf46b2d46f647c5bdb3fdf6e15fef3155d803cfe9c75c19d3418b0b848bdf761",
+  "dimensions": [
+    "delivered_packet_action",
+    "retained_reuse_and_repair",
+    "task_value_or_bound",
+    "source_join_fidelity",
+    "briefing_origins",
+    "calibration_and_role_scope",
+    "evidence_fidelity",
+    "unsupported_certainty",
+    "residual_issue_and_next_check"
+  ],
+  "readers": [
+    {
+      "reader_id": "R01",
+      "case_id": "QP02",
+      "selected_order": [
+        "O-D",
+        "O-C"
+      ],
+      "gold_action": "UNRESOLVED",
+      "observed_action": "UNRESOLVED",
+      "scores": {
+        "delivered_packet_action": {
+          "score": 2,
+          "quote": "UNRESOLVED",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "retained_reuse_and_repair": {
+          "score": 2,
+          "quote": "false; O-D covers all three OS samples and reports an exact raw maximum of 8.1 mm/s. Applying the matching OK-6 correction and residual bound gives a physical maximum between 8.1 + 0.25 − 0.5 = 7.85 and 8.1 + 0.25 + 0.5 = 8.85 mm/s. This permits both compliance and violation. Housing applicability also remains unestablished. The repeated raw summaries and routing forecast provide no additional measurement warrant, so neither RELEASE nor HOLD is justified.",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "task_value_or_bound": {
+          "score": 2,
+          "quote": "OK-6 maximum: [7.85, 8.85] mm/s",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "source_join_fidelity": {
+          "score": 0,
+          "quote": "The calibrated maximum interval straddles 8.6 mm/s, and the delivered records do not establish that OK-6 measures housing vibration.",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Incorrectly adds a missing housing/channel scope premise. Initial defines OS as the complete housing-vibration task; D identifies the same check/object and assigns complete OS acquisition Oa to physical channel OK-6. C joins that exact channel. The primary route is complete but straddling, not unassigned. The correct action/bound are scored separately."
+        },
+        "briefing_origins": {
+          "score": 2,
+          "quote": "One acquisition, Oa, supplies Aster, then Linen, then Slate. The three briefing summaries share that origin. O-D's OK-6 key matches O-C's calibration row.",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "calibration_and_role_scope": {
+          "score": 0,
+          "quote": "The calibrated maximum interval straddles 8.6 mm/s, and the delivered records do not establish that OK-6 measures housing vibration.",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Incorrectly adds a missing housing/channel scope premise. Initial defines OS as the complete housing-vibration task; D identifies the same check/object and assigns complete OS acquisition Oa to physical channel OK-6. C joins that exact channel. The primary route is complete but straddling, not unassigned. The correct action/bound are scored separately."
+        },
+        "evidence_fidelity": {
+          "score": 0,
+          "quote": "The calibrated maximum interval straddles 8.6 mm/s, and the delivered records do not establish that OK-6 measures housing vibration.",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Incorrectly adds a missing housing/channel scope premise. Initial defines OS as the complete housing-vibration task; D identifies the same check/object and assigns complete OS acquisition Oa to physical channel OK-6. C joins that exact channel. The primary route is complete but straddling, not unassigned. The correct action/bound are scored separately."
+        },
+        "unsupported_certainty": {
+          "score": 2,
+          "quote": "OK-6 maximum: [7.85, 8.85] mm/s",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "residual_issue_and_next_check": {
+          "score": 1,
+          "quote": "Establish the housing-to-channel assignment and obtain tighter measurement bounds sufficient to resolve the threshold.",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Correctly identifies the physical straddle and asks for tighter warranted measurement bounds, but also requests an already-established housing/channel assignment."
+        }
+      },
+      "diagnostics": {
+        "external_truth": "abstains",
+        "lookup_cost": 2,
+        "completed_routes": [
+          "primary"
+        ],
+        "reachable_decisive_second_ids": [],
+        "missed_available_decisive_second": false,
+        "initial_choice_left_decisive_second": false,
+        "selection_judgment": "D then matching C is prospective-plausible from inventory/current D; no unseen calibration numbers are required. QP02 D-first leaves no decisive second record, separately from its correct final UNRESOLVED.",
+        "forecast_use": "The acquisition/export record can reveal measurement keys, values, and available bounds, allowing the second lookup to target the missing link. The D+C routing forecast is provisional because current assignments, calibration, and scope were unavailable.",
+        "forecast_treated_as_authoritative": false,
+        "delivered_record_bytes_match_cases": true,
+        "designated_rationale_word_counts": {
+          "turn1": 34,
+          "turn2": 44,
+          "turn3": 74
+        },
+        "caps_pass": true,
+        "structured_output_fields_pass": true,
+        "distinct_valid_requests_pass": true,
+        "evidence_ids_note": "All listed evidence IDs are the two delivered records."
+      }
+    },
+    {
+      "reader_id": "R02",
+      "case_id": "QP01",
+      "selected_order": [
+        "N-D",
+        "N-C"
+      ],
+      "gold_action": "RELEASE",
+      "observed_action": "RELEASE",
+      "scores": {
+        "delivered_packet_action": {
+          "score": 2,
+          "quote": "RELEASE",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "retained_reuse_and_repair": {
+          "score": 2,
+          "quote": "true; N-D establishes complete coverage of NS, aligned clocks, and an exact raw maximum of 27.4 °C on NK-6. The matching N-C row adds 0.3 °C with absolute residual at most 0.08 °C for every sample. Thus every sample is at most 27.78 °C, satisfying the maximum-temperature limit of 28.2 °C. The retained favorable claim is warranted by these records, independently of the routing forecast.",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "task_value_or_bound": {
+          "score": 2,
+          "quote": "Maximum sleeve temperature over NS is bounded by 27.62–27.78 °C, below 28.2 °C.",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "source_join_fidelity": {
+          "score": 2,
+          "quote": "N-D supplies one acquisition covering all three NS samples and links its physical channel NK-6 to calibration certificate NCC in N-C. Moss, Flint, and Reed repeat that acquisition's raw summary.",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "briefing_origins": {
+          "score": 2,
+          "quote": "N-D supplies one acquisition covering all three NS samples and links its physical channel NK-6 to calibration certificate NCC in N-C. Moss, Flint, and Reed repeat that acquisition's raw summary.",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "calibration_and_role_scope": {
+          "score": 1,
+          "quote": "N-D establishes complete coverage of NS, aligned clocks, and an exact raw maximum of 27.4 °C on NK-6. The matching N-C row adds 0.3 °C with absolute residual at most 0.08 °C for every sample. Thus every sample is at most 27.78 °C, satisfying the maximum-temperature limit of 28.2 °C. The retained favorable claim is warranted by these records, independently of the routing forecast.",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Correct sampled scope, correction and residual bound are stated; raw-range applicability is not explicitly checked. This omission is incomplete handling, not a wrong bound."
+        },
+        "evidence_fidelity": {
+          "score": 2,
+          "quote": "N-D supplies one acquisition covering all three NS samples and links its physical channel NK-6 to calibration certificate NCC in N-C. Moss, Flint, and Reed repeat that acquisition's raw summary.",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "unsupported_certainty": {
+          "score": 2,
+          "quote": "Maximum sleeve temperature over NS is bounded by 27.62–27.78 °C, below 28.2 °C.",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "residual_issue_and_next_check": {
+          "score": 2,
+          "quote": "remaining_issue=null; next_check=null",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Decisive RELEASE needs no next check."
+        }
+      },
+      "diagnostics": {
+        "external_truth": "agrees",
+        "lookup_cost": 2,
+        "completed_routes": [
+          "primary"
+        ],
+        "reachable_decisive_second_ids": [
+          "N-C"
+        ],
+        "missed_available_decisive_second": false,
+        "initial_choice_left_decisive_second": true,
+        "selection_judgment": "D then matching C is prospective-plausible from inventory/current D; no unseen calibration numbers are required. QP02 D-first leaves no decisive second record, separately from its correct final UNRESOLVED.",
+        "forecast_use": "The acquisition/export record should identify the measured channels, sample coverage, values, and join keys needed to assess the stated maximum-temperature condition and select the second record.",
+        "forecast_treated_as_authoritative": false,
+        "delivered_record_bytes_match_cases": true,
+        "designated_rationale_word_counts": {
+          "turn1": 26,
+          "turn2": 43,
+          "turn3": 64
+        },
+        "caps_pass": true,
+        "structured_output_fields_pass": true,
+        "distinct_valid_requests_pass": true,
+        "evidence_ids_note": "All listed evidence IDs are the two delivered records."
+      }
+    },
+    {
+      "reader_id": "R03",
+      "case_id": "QP02",
+      "selected_order": [
+        "O-D",
+        "O-C"
+      ],
+      "gold_action": "UNRESOLVED",
+      "observed_action": "UNRESOLVED",
+      "scores": {
+        "delivered_packet_action": {
+          "score": 2,
+          "quote": "UNRESOLVED",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "retained_reuse_and_repair": {
+          "score": 2,
+          "quote": "false; O-D covers all three OS samples from 13:42–13:52, with exact raw maximum 8.1 mm/s. Applying OK-6's correction of +0.25 and residual bound ±0.5 gives a physical maximum between 7.85 and 8.85 mm/s. Thus neither compliance nor violation is warranted. The favorable briefing summaries share one raw-data origin and add no measurement contract. The routing forecast cannot resolve these limitations.",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "task_value_or_bound": {
+          "score": 2,
+          "quote": "For acquired channel OK-6, the maximum over OS is bounded by [7.85, 8.85] mm/s.",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "source_join_fidelity": {
+          "score": 0,
+          "quote": "The calibrated maximum interval straddles 8.6 mm/s. The supplied records also do not establish that OK-6 covers the required housing measurement scope.",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Incorrectly adds a missing housing/channel scope premise. Initial defines OS as the complete housing-vibration task; D identifies the same check/object and assigns complete OS acquisition Oa to physical channel OK-6. C joins that exact channel. The primary route is complete but straddling, not unassigned. The correct action/bound are scored separately."
+        },
+        "briefing_origins": {
+          "score": 2,
+          "quote": "Aster, Linen, and Slate all derive from the single acquisition Oa; they are not independent measurements. O-D joins physical channel OK-6 to calibration certificate OCC in O-C.",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "calibration_and_role_scope": {
+          "score": 0,
+          "quote": "The calibrated maximum interval straddles 8.6 mm/s. The supplied records also do not establish that OK-6 covers the required housing measurement scope.",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Incorrectly adds a missing housing/channel scope premise. Initial defines OS as the complete housing-vibration task; D identifies the same check/object and assigns complete OS acquisition Oa to physical channel OK-6. C joins that exact channel. The primary route is complete but straddling, not unassigned. The correct action/bound are scored separately."
+        },
+        "evidence_fidelity": {
+          "score": 0,
+          "quote": "The calibrated maximum interval straddles 8.6 mm/s. The supplied records also do not establish that OK-6 covers the required housing measurement scope.",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Incorrectly adds a missing housing/channel scope premise. Initial defines OS as the complete housing-vibration task; D identifies the same check/object and assigns complete OS acquisition Oa to physical channel OK-6. C joins that exact channel. The primary route is complete but straddling, not unassigned. The correct action/bound are scored separately."
+        },
+        "unsupported_certainty": {
+          "score": 2,
+          "quote": "For acquired channel OK-6, the maximum over OS is bounded by [7.85, 8.85] mm/s.",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "residual_issue_and_next_check": {
+          "score": 1,
+          "quote": "Establish housing channel coverage and obtain sufficiently precise calibrated evidence to resolve the maximum against 8.6 mm/s.",
+          "gold_reference": "QP02/O-D+O-C",
+          "reason": "Correctly identifies the physical straddle and asks for tighter warranted measurement bounds, but also requests an already-established housing/channel assignment."
+        }
+      },
+      "diagnostics": {
+        "external_truth": "abstains",
+        "lookup_cost": 2,
+        "completed_routes": [
+          "primary"
+        ],
+        "reachable_decisive_second_ids": [],
+        "missed_available_decisive_second": false,
+        "initial_choice_left_decisive_second": false,
+        "selection_judgment": "D then matching C is prospective-plausible from inventory/current D; no unseen calibration numbers are required. QP02 D-first leaves no decisive second record, separately from its correct final UNRESOLVED.",
+        "forecast_use": "The acquisition/export record can identify the measured channels, sample coverage, values, and join keys needed to assess the housing vibration limit. The routing forecast alone does not warrant compliance.",
+        "forecast_treated_as_authoritative": false,
+        "delivered_record_bytes_match_cases": true,
+        "designated_rationale_word_counts": {
+          "turn1": 29,
+          "turn2": 40,
+          "turn3": 59
+        },
+        "caps_pass": true,
+        "structured_output_fields_pass": true,
+        "distinct_valid_requests_pass": true,
+        "evidence_ids_note": "All listed evidence IDs are the two delivered records."
+      }
+    },
+    {
+      "reader_id": "R04",
+      "case_id": "QP03",
+      "selected_order": [
+        "P-D",
+        "P-C"
+      ],
+      "gold_action": "UNRESOLVED",
+      "observed_action": "UNRESOLVED",
+      "scores": {
+        "delivered_packet_action": {
+          "score": 2,
+          "quote": "UNRESOLVED",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "retained_reuse_and_repair": {
+          "score": 2,
+          "quote": "false; The exact raw maximum is 15.1 bar. Applying PK-6 correction +0.55 bar and residual bounds ±0.45 bar bounds the physical maximum between 15.20 and 16.10 bar. Complete sample coverage is established, but the bounds warrant neither compliance nor violation. The favorable retained claim cannot be reused.",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "task_value_or_bound": {
+          "score": 2,
+          "quote": "Physical maximum lies in [15.20, 16.10] bar.",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "source_join_fidelity": {
+          "score": 2,
+          "quote": "P-D supplies complete PS readings on PK-6. P-C supplies the matching calibration contract. Cedar, Lark and Opal repeat the same acquisition through an export chain.",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "briefing_origins": {
+          "score": 2,
+          "quote": "P-D supplies complete PS readings on PK-6. P-C supplies the matching calibration contract. Cedar, Lark and Opal repeat the same acquisition through an export chain.",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "calibration_and_role_scope": {
+          "score": 1,
+          "quote": "The exact raw maximum is 15.1 bar. Applying PK-6 correction +0.55 bar and residual bounds ±0.45 bar bounds the physical maximum between 15.20 and 16.10 bar. Complete sample coverage is established, but the bounds warrant neither compliance nor violation. The favorable retained claim cannot be reused.",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Correct sampled scope, correction and residual bound are stated; raw-range applicability is not explicitly checked. This omission is incomplete handling, not a wrong bound."
+        },
+        "evidence_fidelity": {
+          "score": 2,
+          "quote": "P-D supplies complete PS readings on PK-6. P-C supplies the matching calibration contract. Cedar, Lark and Opal repeat the same acquisition through an export chain.",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "unsupported_certainty": {
+          "score": 2,
+          "quote": "Physical maximum lies in [15.20, 16.10] bar.",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "residual_issue_and_next_check": {
+          "score": 2,
+          "quote": "Obtain tighter warranted error bounds or independent calibrated measurements for the task samples.",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Tighter warranted bounds or independent calibrated measurements explicitly for the task samples is an adequate prospective next check; no unseen reference numbers are required."
+        }
+      },
+      "diagnostics": {
+        "external_truth": "abstains",
+        "lookup_cost": 2,
+        "completed_routes": [
+          "primary"
+        ],
+        "reachable_decisive_second_ids": [],
+        "missed_available_decisive_second": false,
+        "initial_choice_left_decisive_second": false,
+        "selection_judgment": "D then matching C is prospective-plausible from inventory/current D; no unseen calibration numbers are required. QP02 D-first leaves no decisive second record, separately from its correct final UNRESOLVED.",
+        "forecast_use": "The acquisition/export record can identify measured values, channel keys, and capture details, making it possible to choose a second record that completes a relevant calibration or scope link. The unkeyed summaries and outdated routing forecast do not establish compliance.",
+        "forecast_treated_as_authoritative": false,
+        "delivered_record_bytes_match_cases": true,
+        "designated_rationale_word_counts": {
+          "turn1": 39,
+          "turn2": 39,
+          "turn3": 46
+        },
+        "caps_pass": true,
+        "structured_output_fields_pass": true,
+        "distinct_valid_requests_pass": true,
+        "evidence_ids_note": "All listed evidence IDs are the two delivered records."
+      }
+    },
+    {
+      "reader_id": "R05",
+      "case_id": "QP01",
+      "selected_order": [
+        "N-D",
+        "N-C"
+      ],
+      "gold_action": "RELEASE",
+      "observed_action": "RELEASE",
+      "scores": {
+        "delivered_packet_action": {
+          "score": 2,
+          "quote": "RELEASE",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "retained_reuse_and_repair": {
+          "score": 2,
+          "quote": "true; N-D establishes complete NS coverage and assigns acquisition Na to physical channel NK-6. Exact channel-key matching selects N-C’s correction of +0.3 °C and residual bound ±0.08 °C. The raw maximum is 27.4 °C, so every task sample is at most 27.78 °C. This upper bound is below 28.2 °C, warranting release and reuse of the favorable retained claim.",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "task_value_or_bound": {
+          "score": 2,
+          "quote": "Maximum physical sleeve temperature ∈ [27.62, 27.78] °C, hence ≤ 28.2 °C.",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "source_join_fidelity": {
+          "score": 2,
+          "quote": "One acquisition, Na, on channel NK-6 supplies all three complete task samples. Moss, Flint and Reed repeat its raw summary.",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "briefing_origins": {
+          "score": 2,
+          "quote": "One acquisition, Na, on channel NK-6 supplies all three complete task samples. Moss, Flint and Reed repeat its raw summary.",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "calibration_and_role_scope": {
+          "score": 1,
+          "quote": "N-D establishes complete NS coverage and assigns acquisition Na to physical channel NK-6. Exact channel-key matching selects N-C’s correction of +0.3 °C and residual bound ±0.08 °C. The raw maximum is 27.4 °C, so every task sample is at most 27.78 °C. This upper bound is below 28.2 °C, warranting release and reuse of the favorable retained claim.",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Correct sampled scope, correction and residual bound are stated; raw-range applicability is not explicitly checked. This omission is incomplete handling, not a wrong bound."
+        },
+        "evidence_fidelity": {
+          "score": 2,
+          "quote": "One acquisition, Na, on channel NK-6 supplies all three complete task samples. Moss, Flint and Reed repeat its raw summary.",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "unsupported_certainty": {
+          "score": 2,
+          "quote": "Maximum physical sleeve temperature ∈ [27.62, 27.78] °C, hence ≤ 28.2 °C.",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "residual_issue_and_next_check": {
+          "score": 2,
+          "quote": "remaining_issue=null; next_check=null",
+          "gold_reference": "QP01/N-D+N-C",
+          "reason": "Decisive RELEASE needs no next check."
+        }
+      },
+      "diagnostics": {
+        "external_truth": "agrees",
+        "lookup_cost": 2,
+        "completed_routes": [
+          "primary"
+        ],
+        "reachable_decisive_second_ids": [
+          "N-C"
+        ],
+        "missed_available_decisive_second": false,
+        "initial_choice_left_decisive_second": true,
+        "selection_judgment": "D then matching C is prospective-plausible from inventory/current D; no unseen calibration numbers are required. QP02 D-first leaves no decisive second record, separately from its correct final UNRESOLVED.",
+        "forecast_use": "The acquisition/export record should identify the measured values and exact keys needed for calibration or scope links. It will let the second lookup follow current evidence rather than the outdated routing forecast.",
+        "forecast_treated_as_authoritative": false,
+        "delivered_record_bytes_match_cases": true,
+        "designated_rationale_word_counts": {
+          "turn1": 32,
+          "turn2": 35,
+          "turn3": 58
+        },
+        "caps_pass": true,
+        "structured_output_fields_pass": true,
+        "distinct_valid_requests_pass": true,
+        "evidence_ids_note": "All listed evidence IDs are the two delivered records."
+      }
+    },
+    {
+      "reader_id": "R06",
+      "case_id": "QP03",
+      "selected_order": [
+        "P-D",
+        "P-C"
+      ],
+      "gold_action": "UNRESOLVED",
+      "observed_action": "UNRESOLVED",
+      "scores": {
+        "delivered_packet_action": {
+          "score": 2,
+          "quote": "UNRESOLVED",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "retained_reuse_and_repair": {
+          "score": 2,
+          "quote": "false; P-D covers all three PS samples with exact raw values. Applying PK-6's correction and residual bound gives sample intervals [14.5,15.4], [15.2,16.1], and [14.9,15.8] bar. Thus the maximum is at least 15.2 and at most 16.1 bar. Allowed residuals permit both a compliant maximum and a violating maximum. The favorable retained claim cannot be reused.",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "task_value_or_bound": {
+          "score": 2,
+          "quote": "Physical maximum over PS is bounded by [15.2, 16.1] bar; threshold 15.7 bar.",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "source_join_fidelity": {
+          "score": 2,
+          "quote": "One acquisition origin, Pa on PK-6. Cedar, Lark and Opal are downstream exports of its raw summary, not independent measurements. PK-6 joins the PCC calibration row.",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "briefing_origins": {
+          "score": 2,
+          "quote": "One acquisition origin, Pa on PK-6. Cedar, Lark and Opal are downstream exports of its raw summary, not independent measurements. PK-6 joins the PCC calibration row.",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "calibration_and_role_scope": {
+          "score": 1,
+          "quote": "P-D covers all three PS samples with exact raw values. Applying PK-6's correction and residual bound gives sample intervals [14.5,15.4], [15.2,16.1], and [14.9,15.8] bar. Thus the maximum is at least 15.2 and at most 16.1 bar. Allowed residuals permit both a compliant maximum and a violating maximum. The favorable retained claim cannot be reused.",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Correct sampled scope, correction and residual bound are stated; raw-range applicability is not explicitly checked. This omission is incomplete handling, not a wrong bound."
+        },
+        "evidence_fidelity": {
+          "score": 2,
+          "quote": "One acquisition origin, Pa on PK-6. Cedar, Lark and Opal are downstream exports of its raw summary, not independent measurements. PK-6 joins the PCC calibration row.",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "PCC is a certificate identifier explicitly embedded in delivered P-C, not an extra lookup or undelivered evidence. All numeric per-sample intervals match P-D/P-C."
+        },
+        "unsupported_certainty": {
+          "score": 2,
+          "quote": "Physical maximum over PS is bounded by [15.2, 16.1] bar; threshold 15.7 bar.",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Public claim agrees with the frozen delivered-packet gold and record content."
+        },
+        "residual_issue_and_next_check": {
+          "score": 1,
+          "quote": "Obtain a tighter calibrated bound for the 15.1-bar raw sample sufficient to resolve its physical pressure relative to 15.7 bar.",
+          "gold_reference": "QP03/P-D+P-C",
+          "reason": "Tightening the 15.1-bar raw sample can establish a violation, but a compliant result for that sample alone does not establish compliance of all PS: the third sample remains [14.9,15.8] bar, crossing 15.7, and residuals may vary by sample. The next check is potentially discriminating but incomplete for resolving the full maximum in both directions."
+        }
+      },
+      "diagnostics": {
+        "external_truth": "abstains",
+        "lookup_cost": 2,
+        "completed_routes": [
+          "primary"
+        ],
+        "reachable_decisive_second_ids": [],
+        "missed_available_decisive_second": false,
+        "initial_choice_left_decisive_second": false,
+        "selection_judgment": "D then matching C is prospective-plausible from inventory/current D; no unseen calibration numbers are required. QP02 D-first leaves no decisive second record, separately from its correct final UNRESOLVED.",
+        "forecast_use": "The acquisition/export record can identify the measured channels, sample coverage, values, and join keys needed to select the most relevant second record. The unkeyed summaries and routing forecast do not establish compliance.",
+        "forecast_treated_as_authoritative": false,
+        "delivered_record_bytes_match_cases": true,
+        "designated_rationale_word_counts": {
+          "turn1": 32,
+          "turn2": 37,
+          "turn3": 54
+        },
+        "caps_pass": true,
+        "structured_output_fields_pass": true,
+        "distinct_valid_requests_pass": true,
+        "evidence_ids_note": "PCC is observed within P-C and does not consume an extra slot."
+      }
+    }
+  ]
+}

@@ -8,7 +8,7 @@ This is a saved dependency-aware plan, not a running scheduler. It queues every 
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
-Current completed contact: [source scouts + QP-C1](../scout-and-query-planning-v1/REPORT.md), three paper/code source contacts and exact known-model query planning,20root values with independent full-state audit. No actual-agent planning benefit, trained model or backend adoption. [Next information-matched quality-preview challenge](../scout-and-query-planning-v1/NEXT_CONTACT.md) proposed only. Queue35/30unfinished/sixpartial families unchanged; MEM-04partial, no background continuation.
+Current rest: [QR-C1/2/3](../quality-preview-reader-v1/REPORT.md),6fresh readers/18turns, source/budget-matchedguidancepilot withmaskedscoring. Arms tied on task outcomes and paths; explanation defects retained, optional verification reminder refined. [Rest checkpoint](../../sync/checkpoints/REST_AFTER_QUALITY_PREVIEW_2026-10-26.md), [next fidelity proposals](../quality-preview-reader-v1/NEXT_CONTACT.md) unexecuted. Queue35/30unfinished/sixpartialfamilies unchanged,MEM-04partial; no backgroundwork.
 
 ## Nearest work
 

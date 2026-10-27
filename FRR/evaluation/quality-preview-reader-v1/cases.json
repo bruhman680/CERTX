@@ -1,0 +1,277 @@
+[
+  {
+    "id": "QP01",
+    "initial": "Fictional check: Annealing bay Nerine, 09:42. Is maximum sleeve temperature over NS (three samples, 09:32–09:42) ≤ 28.2 °C?\nRetained claim: “The condition is met.”\nBriefing reports: Moss, Flint, Reed each report maximum 27.4 °C, condition met. These unkeyed summaries supply no physical bounds or channel assignments.\nRouting preview, available before lookup:\nCache status: unreconciled metadata. Forecast dated 2026-10-26; check dated 2026-10-27. Inputs: previous export manifest and route descriptions; current channel assignments, calibration revision, capture scope, and values were unavailable. Forecast: try D+C first; predicted complete bounded decision.\nThis is a fallible routing forecast, not a measurement certificate; its status does not authenticate its prediction.\nRecords (one slot each): N-D acquisition/export; N-C calibration; N-R reference; N-M scope.\nTwo distinct sequential lookups: request exactly one ID, receive it, then request one other ID and receive it. Then return action (RELEASE/HOLD/UNRESOLVED), retained_claim_reuse (boolean), evidence IDs, unresolved issue, next check. RELEASE requires warranted compliance; HOLD requires warranted violation; otherwise UNRESOLVED. No private reasoning. Exact key equality joins records. Record authenticity and measurement contracts are stipulated; previews are forecasts only.",
+    "records": {
+      "N-D": "Check 2026-10-27 09:42; Annealing bay Nerine. NS: all three task samples, 09:32–09:42; clocks aligned.\nAcquisition | physical channel | samples | raw minimum | raw maximum (°C)\nNa | NK-6 | NS, complete | 26.8 | 27.4\nRaw extrema are exact, without display rounding. Samples acquired in listed order: 26.8, 27.4, 27.1 °C. No sample lies outside the extrema. Physical channels acquire their own readings; channel keys select calibration rows.\nAll value-transfer edges (left supplies right): Na -> Moss; Moss -> Flint; Flint -> Reed.\nAcquisition nodes: Na. Briefing nodes: Moss, Flint, Reed. Briefing values are exported raw summaries; their task claims add no measurement contract.",
+      "N-C": "Calibration contract for 2026-10-27 09:42; °C. For each acquired sample, physical value = raw reading + correction + residual, with absolute residual ≤ error. Residuals may vary by sample; no zero-mean or cancellation constraint. Each rule applies throughout raw range [24.8, 29.4].\nChannel | correction | error | certificate\nNK-6 | +0.3 | 0.08 | NCC\nNK-2 | +1.2 | 0.08 | NCD\nThis table assigns no object, acquisition, export, or sample set to any channel. Both certificates have equal stipulated authenticity.",
+      "N-R": "Reference recorder contract; °C. Each capture contains three readings. Every physical sample differs from its corresponding recorded reading by at most the listed error. Reported maxima are exact, without display rounding.\nCapture | measured maximum | per-sample absolute error bound\nNr42 | 27.71 | 0.04\nNr75 | 28.7 | 0.04\nFor each capture: probe NRP -> recorder NRR -> certificate NRC. Capture keys do not encode chronology or scope. Object, timing, and sample assignments appear only in the scope map.",
+      "N-M": "Scope map for 2026-10-27 09:42.\nCapture | object | sample set | coverage/timing\nNr42 | Annealing bay Nerine | NS | all three task samples, aligned\nNr75 | Annealing bay Nerine | NT | all three samples of preceding check, aligned\nNS: 09:32–09:42, current check 09:42. NT: preceding check; no sample IDs overlap NS. The reference route NRP/NRR/NRC has no value or coefficient input from acquisition Na or channels NK-6/NK-2. This map contains no readings or calibration corrections."
+    },
+    "hidden_truth": {
+      "condition": "good_preview",
+      "threshold": 28.2,
+      "comparator": "<=",
+      "unit": "°C",
+      "task_scope": "NS",
+      "claim_correct": true,
+      "task_answer": "condition_met",
+      "full_packet_warrant": "condition_met",
+      "full_packet_action": "RELEASE",
+      "primary_maximum_interval": [
+        27.62,
+        27.78
+      ],
+      "reference_maximum_interval": [
+        27.67,
+        27.75
+      ],
+      "joint_maximum_interval": [
+        27.67,
+        27.75
+      ],
+      "decisive_record_sets": [
+        [
+          "N-D",
+          "N-C"
+        ],
+        [
+          "N-R",
+          "N-M"
+        ]
+      ],
+      "singleton_warrant": "unresolved",
+      "mixed_pair_warrant": "unresolved",
+      "preview_predicted_route": [
+        "N-D",
+        "N-C"
+      ],
+      "preview_prediction_correct": true,
+      "primary_status": "bounded_complete_decisive",
+      "reference_status": "bounded_complete_decisive",
+      "generation_truth": {
+        "actual_samples": [
+          27.1,
+          27.7,
+          27.4
+        ],
+        "actual_maximum": 27.7,
+        "raw_samples_by_acquisition": {
+          "Na": [
+            26.8,
+            27.4,
+            27.1
+          ]
+        },
+        "physical_minus_raw": 0.3,
+        "calibration_correction": 0.3,
+        "actual_residual": 0.0,
+        "capture_scope": {
+          "Nr42": "NS",
+          "Nr75": "NT"
+        },
+        "reference_measured_maxima": {
+          "Nr42": 27.71,
+          "Nr75": 28.7
+        },
+        "report_roots": [
+          "Na"
+        ],
+        "edges": [
+          "Na -> Moss",
+          "Moss -> Flint",
+          "Flint -> Reed"
+        ]
+      }
+    }
+  },
+  {
+    "id": "QP02",
+    "initial": "Fictional check: Bearing stand Orlena, 13:52. Is maximum housing vibration over OS (three samples, 13:42–13:52) ≤ 8.6 mm/s?\nRetained claim: “The condition is met.”\nBriefing reports: Aster, Linen, Slate each report maximum 8.1 mm/s, condition met. These unkeyed summaries supply no physical bounds or channel assignments.\nRouting preview, available before lookup:\nCache status: unreconciled metadata. Forecast dated 2026-10-26; check dated 2026-10-27. Inputs: previous export manifest and route descriptions; current channel assignments, calibration revision, capture scope, and values were unavailable. Forecast: try D+C first; predicted complete bounded decision.\nThis is a fallible routing forecast, not a measurement certificate; its status does not authenticate its prediction.\nRecords (one slot each): O-D acquisition/export; O-C calibration; O-R reference; O-M scope.\nTwo distinct sequential lookups: request exactly one ID, receive it, then request one other ID and receive it. Then return action (RELEASE/HOLD/UNRESOLVED), retained_claim_reuse (boolean), evidence IDs, unresolved issue, next check. RELEASE requires warranted compliance; HOLD requires warranted violation; otherwise UNRESOLVED. No private reasoning. Exact key equality joins records. Record authenticity and measurement contracts are stipulated; previews are forecasts only.",
+    "records": {
+      "O-D": "Check 2026-10-27 13:52; Bearing stand Orlena. OS: all three task samples, 13:42–13:52; clocks aligned.\nAcquisition | physical channel | samples | raw minimum | raw maximum (mm/s)\nOa | OK-6 | OS, complete | 6.9 | 8.1\nRaw extrema are exact, without display rounding. Samples acquired in listed order: 6.9, 8.1, 7.5 mm/s. No sample lies outside the extrema. Physical channels acquire their own readings; channel keys select calibration rows.\nAll value-transfer edges (left supplies right): Oa -> Aster; Aster -> Linen; Linen -> Slate.\nAcquisition nodes: Oa. Briefing nodes: Aster, Linen, Slate. Briefing values are exported raw summaries; their task claims add no measurement contract.",
+      "O-C": "Calibration contract for 2026-10-27 13:52; mm/s. For each acquired sample, physical value = raw reading + correction + residual, with absolute residual ≤ error. Residuals may vary by sample; no zero-mean or cancellation constraint. Each rule applies throughout raw range [4.9, 10.1].\nChannel | correction | error | certificate\nOK-6 | +0.25 | 0.5 | OCC\nOK-2 | -0.4 | 0.06 | OCD\nThis table assigns no object, acquisition, export, or sample set to any channel. Both certificates have equal stipulated authenticity.",
+      "O-R": "Reference recorder contract; mm/s. Each capture contains three readings. Every physical sample differs from its corresponding recorded reading by at most the listed error. Reported maxima are exact, without display rounding.\nCapture | measured maximum | per-sample absolute error bound\nOr42 | 8.72 | 0.04\nOr75 | 7.9 | 0.04\nFor each capture: probe ORP -> recorder ORR -> certificate ORC. Capture keys do not encode chronology or scope. Object, timing, and sample assignments appear only in the scope map.",
+      "O-M": "Scope map for 2026-10-27 13:52.\nCapture | object | sample set | coverage/timing\nOr42 | Bearing stand Orlena | OS | all three task samples, aligned\nOr75 | Bearing stand Orlena | OT | all three samples of preceding check, aligned\nOS: 13:42–13:52, current check 13:52. OT: preceding check; no sample IDs overlap OS. The reference route ORP/ORR/ORC has no value or coefficient input from acquisition Oa or channels OK-6/OK-2. This map contains no readings or calibration corrections."
+    },
+    "hidden_truth": {
+      "condition": "bad_preview",
+      "threshold": 8.6,
+      "comparator": "<=",
+      "unit": "mm/s",
+      "task_scope": "OS",
+      "claim_correct": false,
+      "task_answer": "condition_not_met",
+      "full_packet_warrant": "condition_not_met",
+      "full_packet_action": "HOLD",
+      "primary_maximum_interval": [
+        7.85,
+        8.85
+      ],
+      "reference_maximum_interval": [
+        8.68,
+        8.76
+      ],
+      "joint_maximum_interval": [
+        8.68,
+        8.76
+      ],
+      "decisive_record_sets": [
+        [
+          "O-R",
+          "O-M"
+        ]
+      ],
+      "singleton_warrant": "unresolved",
+      "mixed_pair_warrant": "unresolved",
+      "preview_predicted_route": [
+        "O-D",
+        "O-C"
+      ],
+      "preview_prediction_correct": false,
+      "primary_status": "bounded_complete_straddling",
+      "reference_status": "bounded_complete_decisive",
+      "generation_truth": {
+        "actual_samples": [
+          7.52,
+          8.72,
+          8.12
+        ],
+        "actual_maximum": 8.72,
+        "raw_samples_by_acquisition": {
+          "Oa": [
+            6.9,
+            8.1,
+            7.5
+          ]
+        },
+        "physical_minus_raw": 0.62,
+        "calibration_correction": 0.25,
+        "actual_residual": 0.37,
+        "capture_scope": {
+          "Or42": "OS",
+          "Or75": "OT"
+        },
+        "reference_measured_maxima": {
+          "Or42": 8.72,
+          "Or75": 7.9
+        },
+        "report_roots": [
+          "Oa"
+        ],
+        "edges": [
+          "Oa -> Aster",
+          "Aster -> Linen",
+          "Linen -> Slate"
+        ]
+      }
+    }
+  },
+  {
+    "id": "QP03",
+    "initial": "Fictional check: Pressure loop Pelora, 17:22. Is maximum manifold pressure over PS (three samples, 17:12–17:22) ≤ 15.7 bar?\nRetained claim: “The condition is met.”\nBriefing reports: Cedar, Lark, Opal each report maximum 15.1 bar, condition met. These unkeyed summaries supply no physical bounds or channel assignments.\nRouting preview, available before lookup:\nCache status: unreconciled metadata. Forecast dated 2026-10-26; check dated 2026-10-27. Inputs: previous export manifest and route descriptions; current channel assignments, calibration revision, capture scope, and values were unavailable. Forecast: no route ranking produced.\nThis is a fallible routing forecast, not a measurement certificate; its status does not authenticate its prediction.\nRecords (one slot each): P-D acquisition/export; P-C calibration; P-R reference; P-M scope.\nTwo distinct sequential lookups: request exactly one ID, receive it, then request one other ID and receive it. Then return action (RELEASE/HOLD/UNRESOLVED), retained_claim_reuse (boolean), evidence IDs, unresolved issue, next check. RELEASE requires warranted compliance; HOLD requires warranted violation; otherwise UNRESOLVED. No private reasoning. Exact key equality joins records. Record authenticity and measurement contracts are stipulated; previews are forecasts only.",
+    "records": {
+      "P-D": "Check 2026-10-27 17:22; Pressure loop Pelora. PS: all three task samples, 17:12–17:22; clocks aligned.\nAcquisition | physical channel | samples | raw minimum | raw maximum (bar)\nPa | PK-6 | PS, complete | 14.4 | 15.1\nRaw extrema are exact, without display rounding. Samples acquired in listed order: 14.4, 15.1, 14.8 bar. No sample lies outside the extrema. Physical channels acquire their own readings; channel keys select calibration rows.\nAll value-transfer edges (left supplies right): Pa -> Cedar; Cedar -> Lark; Lark -> Opal.\nAcquisition nodes: Pa. Briefing nodes: Cedar, Lark, Opal. Briefing values are exported raw summaries; their task claims add no measurement contract.",
+      "P-C": "Calibration contract for 2026-10-27 17:22; bar. For each acquired sample, physical value = raw reading + correction + residual, with absolute residual ≤ error. Residuals may vary by sample; no zero-mean or cancellation constraint. Each rule applies throughout raw range [12.4, 17.1].\nChannel | correction | error | certificate\nPK-6 | +0.55 | 0.45 | PCC\nPK-2 | +1.2 | 0.08 | PCD\nThis table assigns no object, acquisition, export, or sample set to any channel. Both certificates have equal stipulated authenticity.",
+      "P-R": "Reference recorder contract; bar. Each capture contains three readings. Every physical sample differs from its corresponding recorded reading by at most the listed error. Reported maxima are exact, without display rounding.\nCapture | measured maximum | per-sample absolute error bound\nPr42 | 15.6 | 0.35\nPr75 | 16.0 | 0.35\nFor each capture: probe PRP -> recorder PRR -> certificate PRC. Capture keys do not encode chronology or scope. Object, timing, and sample assignments appear only in the scope map.",
+      "P-M": "Scope map for 2026-10-27 17:22.\nCapture | object | sample set | coverage/timing\nPr42 | Pressure loop Pelora | PS | all three task samples, aligned\nPr75 | Pressure loop Pelora | PT | all three samples of preceding check, aligned\nPS: 17:12–17:22, current check 17:22. PT: preceding check; no sample IDs overlap PS. The reference route PRP/PRR/PRC has no value or coefficient input from acquisition Pa or channels PK-6/PK-2. This map contains no readings or calibration corrections."
+    },
+    "hidden_truth": {
+      "condition": "absent_preview",
+      "threshold": 15.7,
+      "comparator": "<=",
+      "unit": "bar",
+      "task_scope": "PS",
+      "claim_correct": true,
+      "task_answer": "condition_met",
+      "full_packet_warrant": "unresolved",
+      "full_packet_action": "UNRESOLVED",
+      "primary_maximum_interval": [
+        15.2,
+        16.1
+      ],
+      "reference_maximum_interval": [
+        15.25,
+        15.95
+      ],
+      "joint_maximum_interval": [
+        15.25,
+        15.95
+      ],
+      "decisive_record_sets": [],
+      "singleton_warrant": "unresolved",
+      "mixed_pair_warrant": "unresolved",
+      "preview_predicted_route": null,
+      "preview_prediction_correct": null,
+      "primary_status": "bounded_complete_straddling",
+      "reference_status": "bounded_complete_straddling",
+      "generation_truth": {
+        "actual_samples": [
+          14.95,
+          15.65,
+          15.35
+        ],
+        "actual_maximum": 15.65,
+        "raw_samples_by_acquisition": {
+          "Pa": [
+            14.4,
+            15.1,
+            14.8
+          ]
+        },
+        "physical_minus_raw": 0.55,
+        "calibration_correction": 0.55,
+        "actual_residual": 0.0,
+        "capture_scope": {
+          "Pr42": "PS",
+          "Pr75": "PT"
+        },
+        "reference_measured_maxima": {
+          "Pr42": 15.6,
+          "Pr75": 16.0
+        },
+        "report_roots": [
+          "Pa"
+        ],
+        "edges": [
+          "Pa -> Cedar",
+          "Cedar -> Lark",
+          "Lark -> Opal"
+        ]
+      },
+      "compatible_worlds": [
+        {
+          "physical_samples": [
+            14.95,
+            15.65,
+            15.35
+          ],
+          "maximum": 15.65,
+          "claim_correct": true,
+          "primary_residual": 0,
+          "reference_sample_errors": [
+            0.05,
+            0.05,
+            0.05
+          ]
+        },
+        {
+          "physical_samples": [
+            15.05,
+            15.75,
+            15.45
+          ],
+          "maximum": 15.75,
+          "claim_correct": false,
+          "primary_residual": 0.1,
+          "reference_sample_errors": [
+            0.15,
+            0.15,
+            0.15
+          ]
+        }
+      ],
+      "notes": "Both witness worlds use current reference readings [14.90,15.60,15.30], with physical-minus-reference errors as listed; both satisfy all four records. Latent truth is favorable but favorable reuse is unwarranted even after all four."
+    }
+  }
+]

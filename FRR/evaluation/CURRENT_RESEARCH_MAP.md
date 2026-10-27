@@ -1,6 +1,6 @@
 # Current research map: continuity, distinctions and their readers
 
-Current completed state: [source scouts + QP-C1](scout-and-query-planning-v1/REPORT.md), three primary-source extractions and one exact finite acquisition-policy run with full-state audit. Adaptive planning and privileged free-quality information distinguished under supplied model assumptions. [Checkpoint](../sync/checkpoints/AFTER_SCOUT_QUERY_PLANNING_2026-10-26.md), [next matched-information preview proposal](scout-and-query-planning-v1/NEXT_CONTACT.md). No new participant/training/backend or FRR efficacy claim; no core/queue promotion/background work. Earlier SJ and historical outcomes retained.
+Current resting state: [QR-C1/2/3](quality-preview-reader-v1/REPORT.md),6fresh contexts/18turns, matched-information48wordguidance. Arms tie paths/actions/reuse/bounds; repeated false missing scope and one incomplete task-max next check retained. Optional verification reminder/worked example refined; no evidence of guidance efficacy. [Rest checkpoint](../sync/checkpoints/REST_AFTER_QUALITY_PREVIEW_2026-10-26.md), [return proposals](quality-preview-reader-v1/NEXT_CONTACT.md). No backgroundwork/automaticresume; historicalverdicts/core/schema/queuepreserved.
 
 Predecessor [SA-C1/2/3](structural-access-three-cycle-v1/REPORT.md) completed coordinate/projector transport and supervised subspace estimation. Its proposed mismatch follow-up is now executed in PC; original proposal/history preserved.
 

@@ -1,0 +1,1831 @@
+{
+  "version": "quality-preview-reader-v1-prospective-key-1",
+  "source_sha256": "801438923e573702ccbfcdaeff3f7b23896a77025806dfc4ab0439cfcae065b6",
+  "derivation": "Authoritative literal initial + delivered record entailment; preview forecast excluded from physical warrant. Hidden truth not used to establish warrant.",
+  "decision_rule": "For maximum interval [L,U], RELEASE iff U<=threshold; HOLD iff L>threshold; else UNRESOLVED. Unknown bound is UNRESOLVED.",
+  "cases": {
+    "QP01": {
+      "threshold": 28.2,
+      "unit": "°C",
+      "primary_derivation": {
+        "channel": "NK-6",
+        "raw_samples": [
+          26.8,
+          27.4,
+          27.1
+        ],
+        "raw_range": [
+          24.8,
+          29.4
+        ],
+        "correction": 0.3,
+        "residual_bound": 0.08,
+        "sample_intervals": [
+          [
+            27.02,
+            27.18
+          ],
+          [
+            27.62,
+            27.78
+          ],
+          [
+            27.32,
+            27.48
+          ]
+        ],
+        "maximum_interval": [
+          27.62,
+          27.78
+        ]
+      },
+      "reference_derivation": {
+        "current_capture": "Nr42",
+        "maximum": 27.71,
+        "per_sample_error_bound": 0.04,
+        "maximum_interval": [
+          27.67,
+          27.75
+        ]
+      },
+      "joint_maximum_interval": [
+        27.67,
+        27.75
+      ],
+      "singleton_completion_check": "All four remain UNRESOLVED: D lacks correction/residual, C lacks task/channel assignment, R lacks capture scope, M lacks readings. Preview and unkeyed initial summaries cure none.",
+      "states": {
+        "EMPTY": {
+          "delivered_ids": [],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "N-D",
+                "N-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "N-R",
+                "N-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "N-D": {
+          "delivered_ids": [
+            "N-D"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": "Na",
+          "briefing_edges": [
+            "Na -> Moss",
+            "Moss -> Flint",
+            "Flint -> Reed"
+          ],
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "N-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "N-R",
+                "N-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "N-C": {
+          "delivered_ids": [
+            "N-C"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "N-D"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "N-R",
+                "N-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "N-R": {
+          "delivered_ids": [
+            "N-R"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "N-D",
+                "N-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "N-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "N-M": {
+          "delivered_ids": [
+            "N-M"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "N-D",
+                "N-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "N-R"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "N-D+N-C": {
+          "delivered_ids": [
+            "N-D",
+            "N-C"
+          ],
+          "action": "RELEASE",
+          "retained_claim_reuse": true,
+          "claim_status": "warranted",
+          "task_maximum_interval": [
+            27.62,
+            27.78
+          ],
+          "complete_routes": [
+            "primary"
+          ],
+          "origin_root": "Na",
+          "briefing_edges": [
+            "Na -> Moss",
+            "Moss -> Flint",
+            "Flint -> Reed"
+          ],
+          "missing_joins": [
+            {
+              "route": "reference",
+              "missing_ids": [
+                "N-R",
+                "N-M"
+              ]
+            }
+          ],
+          "reason": "Complete exact channel/range/coverage primary join.",
+          "acceptable_next_check": null
+        },
+        "N-D+N-R": {
+          "delivered_ids": [
+            "N-D",
+            "N-R"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": "Na",
+          "briefing_edges": [
+            "Na -> Moss",
+            "Moss -> Flint",
+            "Flint -> Reed"
+          ],
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "N-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "N-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "N-D+N-M": {
+          "delivered_ids": [
+            "N-D",
+            "N-M"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": "Na",
+          "briefing_edges": [
+            "Na -> Moss",
+            "Moss -> Flint",
+            "Flint -> Reed"
+          ],
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "N-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "N-R"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "N-C+N-R": {
+          "delivered_ids": [
+            "N-C",
+            "N-R"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "N-D"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "N-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "N-C+N-M": {
+          "delivered_ids": [
+            "N-C",
+            "N-M"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "N-D"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "N-R"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "N-R+N-M": {
+          "delivered_ids": [
+            "N-R",
+            "N-M"
+          ],
+          "action": "RELEASE",
+          "retained_claim_reuse": true,
+          "claim_status": "warranted",
+          "task_maximum_interval": [
+            27.67,
+            27.75
+          ],
+          "complete_routes": [
+            "reference"
+          ],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "N-D",
+                "N-C"
+              ]
+            }
+          ],
+          "reason": "Complete exact capture/current-task reference join.",
+          "acceptable_next_check": null
+        },
+        "N-D+N-C+N-R+N-M": {
+          "delivered_ids": [
+            "N-D",
+            "N-C",
+            "N-R",
+            "N-M"
+          ],
+          "action": "RELEASE",
+          "retained_claim_reuse": true,
+          "claim_status": "warranted",
+          "task_maximum_interval": [
+            27.67,
+            27.75
+          ],
+          "complete_routes": [
+            "primary",
+            "reference"
+          ],
+          "origin_root": "Na",
+          "briefing_edges": [
+            "Na -> Moss",
+            "Moss -> Flint",
+            "Flint -> Reed"
+          ],
+          "missing_joins": [],
+          "reason": "Both complete routes intersect; maxima-only reference contract permits this tight joint maximum interval.",
+          "acceptable_next_check": null
+        }
+      },
+      "ordered_paths": {
+        "N-D -> N-C": {
+          "ordered_ids": [
+            "N-D",
+            "N-C"
+          ],
+          "final_state": "N-D+N-C",
+          "final_action": "RELEASE",
+          "retained_claim_reuse": true,
+          "reachable_decisive_second_ids": [
+            "N-C"
+          ],
+          "selected_decisive_second": true,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "N-D -> N-R": {
+          "ordered_ids": [
+            "N-D",
+            "N-R"
+          ],
+          "final_state": "N-D+N-R",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [
+            "N-C"
+          ],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": true,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "N-D -> N-M": {
+          "ordered_ids": [
+            "N-D",
+            "N-M"
+          ],
+          "final_state": "N-D+N-M",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [
+            "N-C"
+          ],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": true,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "N-C -> N-D": {
+          "ordered_ids": [
+            "N-C",
+            "N-D"
+          ],
+          "final_state": "N-D+N-C",
+          "final_action": "RELEASE",
+          "retained_claim_reuse": true,
+          "reachable_decisive_second_ids": [
+            "N-D"
+          ],
+          "selected_decisive_second": true,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "N-C -> N-R": {
+          "ordered_ids": [
+            "N-C",
+            "N-R"
+          ],
+          "final_state": "N-C+N-R",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [
+            "N-D"
+          ],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": true,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "N-C -> N-M": {
+          "ordered_ids": [
+            "N-C",
+            "N-M"
+          ],
+          "final_state": "N-C+N-M",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [
+            "N-D"
+          ],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": true,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "N-R -> N-D": {
+          "ordered_ids": [
+            "N-R",
+            "N-D"
+          ],
+          "final_state": "N-D+N-R",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [
+            "N-M"
+          ],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": true,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "N-R -> N-C": {
+          "ordered_ids": [
+            "N-R",
+            "N-C"
+          ],
+          "final_state": "N-C+N-R",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [
+            "N-M"
+          ],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": true,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "N-R -> N-M": {
+          "ordered_ids": [
+            "N-R",
+            "N-M"
+          ],
+          "final_state": "N-R+N-M",
+          "final_action": "RELEASE",
+          "retained_claim_reuse": true,
+          "reachable_decisive_second_ids": [
+            "N-M"
+          ],
+          "selected_decisive_second": true,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "N-M -> N-D": {
+          "ordered_ids": [
+            "N-M",
+            "N-D"
+          ],
+          "final_state": "N-D+N-M",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [
+            "N-R"
+          ],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": true,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "N-M -> N-C": {
+          "ordered_ids": [
+            "N-M",
+            "N-C"
+          ],
+          "final_state": "N-C+N-M",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [
+            "N-R"
+          ],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": true,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "N-M -> N-R": {
+          "ordered_ids": [
+            "N-M",
+            "N-R"
+          ],
+          "final_state": "N-R+N-M",
+          "final_action": "RELEASE",
+          "retained_claim_reuse": true,
+          "reachable_decisive_second_ids": [
+            "N-R"
+          ],
+          "selected_decisive_second": true,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        }
+      },
+      "external_truth_diagnostic_only": {
+        "actual_maximum": 27.7,
+        "claim_correct": true
+      },
+      "preview_diagnostic_only": {
+        "predicted_route": [
+          "N-D",
+          "N-C"
+        ],
+        "correct": true
+      }
+    },
+    "QP02": {
+      "threshold": 8.6,
+      "unit": "mm/s",
+      "primary_derivation": {
+        "channel": "OK-6",
+        "raw_samples": [
+          6.9,
+          8.1,
+          7.5
+        ],
+        "raw_range": [
+          4.9,
+          10.1
+        ],
+        "correction": 0.25,
+        "residual_bound": 0.5,
+        "sample_intervals": [
+          [
+            6.65,
+            7.65
+          ],
+          [
+            7.85,
+            8.85
+          ],
+          [
+            7.25,
+            8.25
+          ]
+        ],
+        "maximum_interval": [
+          7.85,
+          8.85
+        ]
+      },
+      "reference_derivation": {
+        "current_capture": "Or42",
+        "maximum": 8.72,
+        "per_sample_error_bound": 0.04,
+        "maximum_interval": [
+          8.68,
+          8.76
+        ]
+      },
+      "joint_maximum_interval": [
+        8.68,
+        8.76
+      ],
+      "singleton_completion_check": "All four remain UNRESOLVED: D lacks correction/residual, C lacks task/channel assignment, R lacks capture scope, M lacks readings. Preview and unkeyed initial summaries cure none.",
+      "states": {
+        "EMPTY": {
+          "delivered_ids": [],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "O-D",
+                "O-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "O-R",
+                "O-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "O-D": {
+          "delivered_ids": [
+            "O-D"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": "Oa",
+          "briefing_edges": [
+            "Oa -> Aster",
+            "Aster -> Linen",
+            "Linen -> Slate"
+          ],
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "O-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "O-R",
+                "O-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "O-C": {
+          "delivered_ids": [
+            "O-C"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "O-D"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "O-R",
+                "O-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "O-R": {
+          "delivered_ids": [
+            "O-R"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "O-D",
+                "O-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "O-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "O-M": {
+          "delivered_ids": [
+            "O-M"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "O-D",
+                "O-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "O-R"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "O-D+O-C": {
+          "delivered_ids": [
+            "O-D",
+            "O-C"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": [
+            7.85,
+            8.85
+          ],
+          "complete_routes": [
+            "primary"
+          ],
+          "origin_root": "Oa",
+          "briefing_edges": [
+            "Oa -> Aster",
+            "Aster -> Linen",
+            "Linen -> Slate"
+          ],
+          "missing_joins": [
+            {
+              "route": "reference",
+              "missing_ids": [
+                "O-R",
+                "O-M"
+              ]
+            }
+          ],
+          "reason": "Complete exact channel/range/coverage primary join. Applicable interval straddles the inclusive threshold.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "O-D+O-R": {
+          "delivered_ids": [
+            "O-D",
+            "O-R"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": "Oa",
+          "briefing_edges": [
+            "Oa -> Aster",
+            "Aster -> Linen",
+            "Linen -> Slate"
+          ],
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "O-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "O-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "O-D+O-M": {
+          "delivered_ids": [
+            "O-D",
+            "O-M"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": "Oa",
+          "briefing_edges": [
+            "Oa -> Aster",
+            "Aster -> Linen",
+            "Linen -> Slate"
+          ],
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "O-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "O-R"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "O-C+O-R": {
+          "delivered_ids": [
+            "O-C",
+            "O-R"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "O-D"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "O-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "O-C+O-M": {
+          "delivered_ids": [
+            "O-C",
+            "O-M"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "O-D"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "O-R"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "O-R+O-M": {
+          "delivered_ids": [
+            "O-R",
+            "O-M"
+          ],
+          "action": "HOLD",
+          "retained_claim_reuse": false,
+          "claim_status": "refuted",
+          "task_maximum_interval": [
+            8.68,
+            8.76
+          ],
+          "complete_routes": [
+            "reference"
+          ],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "O-D",
+                "O-C"
+              ]
+            }
+          ],
+          "reason": "Complete exact capture/current-task reference join.",
+          "acceptable_next_check": null
+        },
+        "O-D+O-C+O-R+O-M": {
+          "delivered_ids": [
+            "O-D",
+            "O-C",
+            "O-R",
+            "O-M"
+          ],
+          "action": "HOLD",
+          "retained_claim_reuse": false,
+          "claim_status": "refuted",
+          "task_maximum_interval": [
+            8.68,
+            8.76
+          ],
+          "complete_routes": [
+            "primary",
+            "reference"
+          ],
+          "origin_root": "Oa",
+          "briefing_edges": [
+            "Oa -> Aster",
+            "Aster -> Linen",
+            "Linen -> Slate"
+          ],
+          "missing_joins": [],
+          "reason": "Both complete routes intersect; maxima-only reference contract permits this tight joint maximum interval.",
+          "acceptable_next_check": null
+        }
+      },
+      "ordered_paths": {
+        "O-D -> O-C": {
+          "ordered_ids": [
+            "O-D",
+            "O-C"
+          ],
+          "final_state": "O-D+O-C",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "O-D -> O-R": {
+          "ordered_ids": [
+            "O-D",
+            "O-R"
+          ],
+          "final_state": "O-D+O-R",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "O-D -> O-M": {
+          "ordered_ids": [
+            "O-D",
+            "O-M"
+          ],
+          "final_state": "O-D+O-M",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "O-C -> O-D": {
+          "ordered_ids": [
+            "O-C",
+            "O-D"
+          ],
+          "final_state": "O-D+O-C",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "O-C -> O-R": {
+          "ordered_ids": [
+            "O-C",
+            "O-R"
+          ],
+          "final_state": "O-C+O-R",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "O-C -> O-M": {
+          "ordered_ids": [
+            "O-C",
+            "O-M"
+          ],
+          "final_state": "O-C+O-M",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "O-R -> O-D": {
+          "ordered_ids": [
+            "O-R",
+            "O-D"
+          ],
+          "final_state": "O-D+O-R",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [
+            "O-M"
+          ],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": true,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "O-R -> O-C": {
+          "ordered_ids": [
+            "O-R",
+            "O-C"
+          ],
+          "final_state": "O-C+O-R",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [
+            "O-M"
+          ],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": true,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "O-R -> O-M": {
+          "ordered_ids": [
+            "O-R",
+            "O-M"
+          ],
+          "final_state": "O-R+O-M",
+          "final_action": "HOLD",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [
+            "O-M"
+          ],
+          "selected_decisive_second": true,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "O-M -> O-D": {
+          "ordered_ids": [
+            "O-M",
+            "O-D"
+          ],
+          "final_state": "O-D+O-M",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [
+            "O-R"
+          ],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": true,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "O-M -> O-C": {
+          "ordered_ids": [
+            "O-M",
+            "O-C"
+          ],
+          "final_state": "O-C+O-M",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [
+            "O-R"
+          ],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": true,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "O-M -> O-R": {
+          "ordered_ids": [
+            "O-M",
+            "O-R"
+          ],
+          "final_state": "O-R+O-M",
+          "final_action": "HOLD",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [
+            "O-R"
+          ],
+          "selected_decisive_second": true,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        }
+      },
+      "external_truth_diagnostic_only": {
+        "actual_maximum": 8.72,
+        "claim_correct": false
+      },
+      "preview_diagnostic_only": {
+        "predicted_route": [
+          "O-D",
+          "O-C"
+        ],
+        "correct": false
+      }
+    },
+    "QP03": {
+      "threshold": 15.7,
+      "unit": "bar",
+      "primary_derivation": {
+        "channel": "PK-6",
+        "raw_samples": [
+          14.4,
+          15.1,
+          14.8
+        ],
+        "raw_range": [
+          12.4,
+          17.1
+        ],
+        "correction": 0.55,
+        "residual_bound": 0.45,
+        "sample_intervals": [
+          [
+            14.5,
+            15.4
+          ],
+          [
+            15.2,
+            16.1
+          ],
+          [
+            14.9,
+            15.8
+          ]
+        ],
+        "maximum_interval": [
+          15.2,
+          16.1
+        ]
+      },
+      "reference_derivation": {
+        "current_capture": "Pr42",
+        "maximum": 15.6,
+        "per_sample_error_bound": 0.35,
+        "maximum_interval": [
+          15.25,
+          15.95
+        ]
+      },
+      "joint_maximum_interval": [
+        15.25,
+        15.95
+      ],
+      "singleton_completion_check": "All four remain UNRESOLVED: D lacks correction/residual, C lacks task/channel assignment, R lacks capture scope, M lacks readings. Preview and unkeyed initial summaries cure none.",
+      "states": {
+        "EMPTY": {
+          "delivered_ids": [],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "P-D",
+                "P-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "P-R",
+                "P-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "P-D": {
+          "delivered_ids": [
+            "P-D"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": "Pa",
+          "briefing_edges": [
+            "Pa -> Cedar",
+            "Cedar -> Lark",
+            "Lark -> Opal"
+          ],
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "P-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "P-R",
+                "P-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "P-C": {
+          "delivered_ids": [
+            "P-C"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "P-D"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "P-R",
+                "P-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "P-R": {
+          "delivered_ids": [
+            "P-R"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "P-D",
+                "P-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "P-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "P-M": {
+          "delivered_ids": [
+            "P-M"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "P-D",
+                "P-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "P-R"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "P-D+P-C": {
+          "delivered_ids": [
+            "P-D",
+            "P-C"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": [
+            15.2,
+            16.1
+          ],
+          "complete_routes": [
+            "primary"
+          ],
+          "origin_root": "Pa",
+          "briefing_edges": [
+            "Pa -> Cedar",
+            "Cedar -> Lark",
+            "Lark -> Opal"
+          ],
+          "missing_joins": [
+            {
+              "route": "reference",
+              "missing_ids": [
+                "P-R",
+                "P-M"
+              ]
+            }
+          ],
+          "reason": "Complete exact channel/range/coverage primary join. Applicable interval straddles the inclusive threshold.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "P-D+P-R": {
+          "delivered_ids": [
+            "P-D",
+            "P-R"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": "Pa",
+          "briefing_edges": [
+            "Pa -> Cedar",
+            "Cedar -> Lark",
+            "Lark -> Opal"
+          ],
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "P-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "P-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "P-D+P-M": {
+          "delivered_ids": [
+            "P-D",
+            "P-M"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": "Pa",
+          "briefing_edges": [
+            "Pa -> Cedar",
+            "Cedar -> Lark",
+            "Lark -> Opal"
+          ],
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "P-C"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "P-R"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "P-C+P-R": {
+          "delivered_ids": [
+            "P-C",
+            "P-R"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "P-D"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "P-M"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "P-C+P-M": {
+          "delivered_ids": [
+            "P-C",
+            "P-M"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": null,
+          "complete_routes": [],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "P-D"
+              ]
+            },
+            {
+              "route": "reference",
+              "missing_ids": [
+                "P-R"
+              ]
+            }
+          ],
+          "reason": "No complete authoritative task-to-physical-bound join. Initial summaries and preview supply none.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "P-R+P-M": {
+          "delivered_ids": [
+            "P-R",
+            "P-M"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": [
+            15.25,
+            15.95
+          ],
+          "complete_routes": [
+            "reference"
+          ],
+          "origin_root": null,
+          "briefing_edges": null,
+          "missing_joins": [
+            {
+              "route": "primary",
+              "missing_ids": [
+                "P-D",
+                "P-C"
+              ]
+            }
+          ],
+          "reason": "Complete exact capture/current-task reference join. Applicable interval straddles the inclusive threshold.",
+          "acceptable_next_check": "Complete a missing applicable route; a straddling complete route requires tighter physical uncertainty or a decisive other route."
+        },
+        "P-D+P-C+P-R+P-M": {
+          "delivered_ids": [
+            "P-D",
+            "P-C",
+            "P-R",
+            "P-M"
+          ],
+          "action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "claim_status": "unsupported",
+          "task_maximum_interval": [
+            15.25,
+            15.95
+          ],
+          "complete_routes": [
+            "primary",
+            "reference"
+          ],
+          "origin_root": "Pa",
+          "briefing_edges": [
+            "Pa -> Cedar",
+            "Cedar -> Lark",
+            "Lark -> Opal"
+          ],
+          "missing_joins": [],
+          "reason": "Both complete routes intersect; maxima-only reference contract permits this tight joint maximum interval. Applicable interval straddles the inclusive threshold.",
+          "acceptable_next_check": "Tighten an applicable physical error bound enough to decide the task; unchanged copies cannot do so."
+        }
+      },
+      "ordered_paths": {
+        "P-D -> P-C": {
+          "ordered_ids": [
+            "P-D",
+            "P-C"
+          ],
+          "final_state": "P-D+P-C",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "P-D -> P-R": {
+          "ordered_ids": [
+            "P-D",
+            "P-R"
+          ],
+          "final_state": "P-D+P-R",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "P-D -> P-M": {
+          "ordered_ids": [
+            "P-D",
+            "P-M"
+          ],
+          "final_state": "P-D+P-M",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "P-C -> P-D": {
+          "ordered_ids": [
+            "P-C",
+            "P-D"
+          ],
+          "final_state": "P-D+P-C",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "P-C -> P-R": {
+          "ordered_ids": [
+            "P-C",
+            "P-R"
+          ],
+          "final_state": "P-C+P-R",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "P-C -> P-M": {
+          "ordered_ids": [
+            "P-C",
+            "P-M"
+          ],
+          "final_state": "P-C+P-M",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "P-R -> P-D": {
+          "ordered_ids": [
+            "P-R",
+            "P-D"
+          ],
+          "final_state": "P-D+P-R",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "P-R -> P-C": {
+          "ordered_ids": [
+            "P-R",
+            "P-C"
+          ],
+          "final_state": "P-C+P-R",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "P-R -> P-M": {
+          "ordered_ids": [
+            "P-R",
+            "P-M"
+          ],
+          "final_state": "P-R+P-M",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "P-M -> P-D": {
+          "ordered_ids": [
+            "P-M",
+            "P-D"
+          ],
+          "final_state": "P-D+P-M",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "P-M -> P-C": {
+          "ordered_ids": [
+            "P-M",
+            "P-C"
+          ],
+          "final_state": "P-C+P-M",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        },
+        "P-M -> P-R": {
+          "ordered_ids": [
+            "P-M",
+            "P-R"
+          ],
+          "final_state": "P-R+P-M",
+          "final_action": "UNRESOLVED",
+          "retained_claim_reuse": false,
+          "reachable_decisive_second_ids": [],
+          "selected_decisive_second": false,
+          "missed_available_decisive_second": false,
+          "lookup_cost": 2,
+          "selection_rationale_rule": "Judge prospective plausibility from inventory and already delivered evidence; never require knowledge of unseen numeric content."
+        }
+      },
+      "external_truth_diagnostic_only": {
+        "actual_maximum": 15.65,
+        "claim_correct": true
+      },
+      "preview_diagnostic_only": {
+        "predicted_route": null,
+        "correct": null
+      }
+    }
+  },
+  "counts": {
+    "cases": 3,
+    "states": 36,
+    "ordered_paths": 36
+  }
+}

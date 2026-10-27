@@ -1,5 +1,7 @@
 # Current FRR orientation
 
+Current rest: [QR-C1/2/3](../evaluation/quality-preview-reader-v1/REPORT.md), [checkpoint](checkpoints/REST_AFTER_QUALITY_PREVIEW_2026-10-26.md). User requested wind-down after run/sync. Matched-information guidance tied on paths/actions/bounds; explanation defects and optional logical refinement preserved. Earlier current/latest/rest statements below are historical. No new work until user returns.
+
 Latest completed contact: [three source scouts + QP-C1](../evaluation/scout-and-query-planning-v1/REPORT.md). Screenshot leads verified, methods/cost/privileged-information boundaries extracted; exact query-planning model audited across20roots. Perfect quality previews remain supplied assumptions; no participant/training/index adoption. [Checkpoint](checkpoints/AFTER_SCOUT_QUERY_PLANNING_2026-10-26.md). Earlier current/rest statements are historical; next preview challenge proposed only, no background run.
 
 Latest completed contact: [SJ-C1/2/3](../evaluation/source-join-reader-v1/REPORT.md),4fresh task-only readers/12turns. Two releases, one evidenced violation, one warranted unresolved due to chosen calibration interval/budget. Partial origin completeness and rating reconciliation preserved. [Checkpoint](checkpoints/AFTER_SOURCE_JOINS_2026-10-26.md). Earlier current/rest statements below are historical; next route-aware acquisition design proposed, no background run.

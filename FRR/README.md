@@ -1,10 +1,12 @@
 # Fluid Relational Reasoning — operational candidate 0.2
 
+Current resting state: [quality-preview reader pilot](evaluation/quality-preview-reader-v1/REPORT.md) and [rest checkpoint](sync/checkpoints/REST_AFTER_QUALITY_PREVIEW_2026-10-26.md). Six readers/eighteen turns; instruction groups tied on paths/actions/bounds, explanation defects preserved. Optional joined-evidence/maximum reminder refined; no core/checker/queue promotion. Research paused, no background work.
+
 Current working aim: useful habits for ongoing inquiry, construction and revision. Comparative evaluations can inform a choice, but outperforming other people/labs is not the goal. [PG-C1](evaluation/practice-growth-v1/REPORT.md) shows concrete practice through saved-data inspection, a working reopening tool and a preserved repair.
 
 This package translates the user's FRR v0.5 into instructions, a recoverable inquiry record, and behavioral evaluations. It is an unvalidated operational candidate, not evidence that FRR improves AI reasoning.
 
-Start with the [current handoff](CURRENT_HANDOFF.md) and [research map](evaluation/CURRENT_RESEARCH_MAP.md). Latest application: [UA-C1](evaluation/upstream-application-v1/REPORT.md) traces consequential upstream boundaries across active work and links the [actual-reader bridge](evaluation/record-access-bridge-v1/REPORT.md). [UN-C1](evaluation/upstream-numerics-v1/REPORT.md) separates stable arithmetic from preserved inputs. Earlier contacts remain historical records; the runtime version is unchanged.
+Start with the [current handoff](CURRENT_HANDOFF.md) and [research map](evaluation/CURRENT_RESEARCH_MAP.md). Earlier application: [UA-C1](evaluation/upstream-application-v1/REPORT.md) traces consequential upstream boundaries across active work and links the [actual-reader bridge](evaluation/record-access-bridge-v1/REPORT.md). [UN-C1](evaluation/upstream-numerics-v1/REPORT.md) separates stable arithmetic from preserved inputs. Earlier contacts remain historical records; the runtime version is unchanged.
 
 ## Use
 

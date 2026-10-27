@@ -1,0 +1,13 @@
+You are handling one fictional operational decision. Use only this initial packet and records delivered in the next two messages. Do not use tools, inspect files, contact peers or seek other cases. You have two lookup slots, selecting one record each. Return JSON now with requested_id (one string) and public_selection_rationale (at most 60 words). Do not make the final decision yet.
+
+Fictional check: Pressure loop Pelora, 17:22. Is maximum manifold pressure over PS (three samples, 17:12–17:22) ≤ 15.7 bar?
+Retained claim: “The condition is met.”
+Briefing reports: Cedar, Lark, Opal each report maximum 15.1 bar, condition met. These unkeyed summaries supply no physical bounds or channel assignments.
+Routing preview, available before lookup:
+Cache status: unreconciled metadata. Forecast dated 2026-10-26; check dated 2026-10-27. Inputs: previous export manifest and route descriptions; current channel assignments, calibration revision, capture scope, and values were unavailable. Forecast: no route ranking produced.
+This is a fallible routing forecast, not a measurement certificate; its status does not authenticate its prediction.
+Records (one slot each): P-D acquisition/export; P-C calibration; P-R reference; P-M scope.
+Two distinct sequential lookups: request exactly one ID, receive it, then request one other ID and receive it. Then return action (RELEASE/HOLD/UNRESOLVED), retained_claim_reuse (boolean), evidence IDs, unresolved issue, next check. RELEASE requires warranted compliance; HOLD requires warranted violation; otherwise UNRESOLVED. No private reasoning. Exact key equality joins records. Record authenticity and measurement contracts are stipulated; previews are forecasts only.
+
+Task guidance:
+Before spending a lookup, consider which record combination could settle the stated task within the remaining budget. Treat routing previews as forecasts rather than evidence of compliance. Complete applicable channel or scope links, preserve uncertainty bounds, and distinguish a justified unresolved answer from a verified violation or release.

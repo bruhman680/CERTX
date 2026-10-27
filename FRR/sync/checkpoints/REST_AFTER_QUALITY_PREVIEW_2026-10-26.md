@@ -1,0 +1,13 @@
+# Rest after quality-preview reader pilot
+
+Client26October2026 America/Chicago. User explicitly requested strongest next contact, whole-project sync, warranted refinements and decompression, then pause. [QR report](../../evaluation/quality-preview-reader-v1/REPORT.md) completes6fresh task-only contexts/18publicturns;10contexts includingroot+3preparation/review roles. Two48wordblocks, same3casepackets/4selectablerecords/2sequentiallookups. NeutralIDs seeded271027, scorer/reviewer recorded keeping mapping uninspected through independent masked deposits and comparison; sharedworkspace instructional masking only.
+
+Allsix D→C. Perarm oneRELEASE/twoUNRESOLVED; allactions/reuse/bounds warranted. Fourabstentions, twoexternaltrueassertions; nowrongtaskassertion. Botharms addedfalsemissinghousingscope inQP02despite suppliedjoinedassignment. R06ordinarynextcheckonlyraw-maxsamplecouldnotguaranteetaskwidecompliance; R04routecuetaskwidesuggestionbetterinonecomponentonly. Nooverallscore orroutecuepromotion. Matchedcasepairsoneeach: noeffectestimate/equivalence/generalFRRbenefit. Previewabsenceconfoundedwithirreduciblecase; noabsenceeffectclaim.
+
+Twentyfrozenfilesunchanged;18savedpromptreconstructions verified.12selectedtexts7176UTF8bytes, allcaps/typeschecked,no retries/rescue/toolcallsobserved. Tokens/compute/peragenttimesunavailable. Gold/initialcases/keypreserved; DESIGNwordingprecisionchangedprospectivelywithoriginal. Maskedjudgments/armcomparisonpreserved, no postoutcomegoldrepair.
+
+Warrantedlogicalrefinement: combine applicablejoinedrecords beforemarkingpremisemissing; distinguish onecomponentviolationcheck fromfullcompliancecertificate. [Worked example](../../examples/joined-warrants-and-maxima.md), [verification guidance](../../modules/verification-layer.md), originalmodulebytes/hashreceipt inQRstudy. No executablechecker/core/runtime/schema/routingpolicychange. Behavioralbenefituntested.
+
+Settlingchecks:existingpackageexamples/requireddocuments andsavedqueue dependencies/references/corehashes passed. Currenthandoff/orientation/map/queue/packageREADMEupdated, stale latest-applicationlabel repairedasnavigation with originalsaved. Scopeisactivepaths+historyintegrity, notscientificreauditofentirearchive. Queue35/30unfinished/sixpartialfamilies,MEM-04partial. HistoricalCRstrictFAIL/SJpartialratings/scoutaccesslimitsunchanged.
+
+Next onreturn, proposedonly: fresh missing-versus-joined premise fidelity orwhole-handoffclausefidelity. Revisitrouteguidanceonlywithfreshcontrolledcases/repetitions andwarrantedpreviewmetadata. [Next contacts](../../evaluation/quality-preview-reader-v1/NEXT_CONTACT.md). Researchpaused;noautomaticcontinuation,scheduledresetorbackgroundjob. Usage/resettelemetrynotavailable. Decompressionchatonly.
