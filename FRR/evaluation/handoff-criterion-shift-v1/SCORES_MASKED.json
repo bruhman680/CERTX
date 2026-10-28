@@ -1,0 +1,2233 @@
+{
+  "scoring_mode": "Independent masked semantic audit; writer instructions/arm mapping and other outcomes not accessed before deposit.",
+  "frozen_input_hashes": {
+    "SOURCE.md": "8d68e58006e9bfe593936a1b054539b3047f06bdfdfb96fa7f0e9042996bf4ab",
+    "QUERIES.json": "0bb48a4844c608298678a3b4b5fbb0d7d5280b9d89900c1515c219fdb80bfd62",
+    "KEY.json": "59d301a12f01dd6699ce3c793c34754dcbe46d76c1e47d23c6bbeabc3a557e29",
+    "SCORING.md": "ccf71230389f74c89e772ec9e8118b2ac474db914ab06a67edd6ecfcb1d51544",
+    "SCORER_INPUT.json": "878ba0009ae29226fc3240aff8940f12f5392a980a23595d4e8b424e2bfbb9ec"
+  },
+  "reader_answer_scores": [
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "phase": "initial",
+      "id": "Q1",
+      "reader_status": "SUPPORTED",
+      "full_source_status": "SUPPORTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "SUPPORTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q1",
+        "status": "SUPPORTED",
+        "answer_or_bound": "The prior noon-based clear-water acceptance remains valid. It does not authorize the next deployment under the revised gate.",
+        "evidence_basis": [
+          "Handoff: \"Prior clear-water noon acceptance remains valid\"; \"revised gate requires \u22641.0 mg/L every sampled hour.\""
+        ],
+        "missing_issue": null
+      },
+      "semantic_rationale": "Explicit historical noon acceptance remains valid; revised criterion and paused orders distinguish next deployment.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "phase": "initial",
+      "id": "Q2",
+      "reader_status": "CONTRADICTED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "CONTRADICTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q2",
+        "status": "CONTRADICTED",
+        "answer_or_bound": "The available results do not certify the revised gate. This does not establish measured sensor failure.",
+        "evidence_basis": [
+          "Handoff: \"three-day turbid noon results cannot establish compliance.\""
+        ],
+        "missing_issue": "Ten-day paired hourly testing in water above 40 NTU is needed."
+      },
+      "semantic_rationale": "The handoff pairs a ten-day hourly turbid criterion with only three-day valid noon comparisons (W01 also explicitly says cannot establish compliance). This defeats certification, not physical performance.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "phase": "initial",
+      "id": "Q3",
+      "reader_status": "SUPPORTED",
+      "full_source_status": "SUPPORTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "SUPPORTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q3",
+        "status": "SUPPORTED",
+        "answer_or_bound": "The observed pilot strip yielded 47/50, or 94%, exceeding the 90% visual-yield component.",
+        "evidence_basis": [
+          "Handoff: expansion requires \"\u226590% visual yield\"; \"Adjusted drying yielded 47/50 once.\""
+        ],
+        "missing_issue": null
+      },
+      "semantic_rationale": "47/50 = 94% exceeds the explicitly retained 90% visual-yield threshold; no general repeatability or full-gate inference.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "phase": "initial",
+      "id": "Q4",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q4",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The stated 200-cycle retention at 5\u00b0C is unknown.",
+        "evidence_basis": [
+          "Handoff: \"Cold results absent; M pouch results cover only 100 cycles at 25\u00b0C.\""
+        ],
+        "missing_issue": "Results for Recipe K with electrolyte M after 200 cycles at 5\u00b0C are absent."
+      },
+      "semantic_rationale": "Cold results are explicitly absent. Warm 100-cycle data cannot settle 200-cycle 5\u00b0C performance.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "phase": "initial",
+      "id": "Q5",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 0,
+      "full_source_substantive_match": 0,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q5",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Neither clinic's corrected historic call-versus-text completion comparison is supplied.",
+        "evidence_basis": [
+          "The handoff supplies no clinic results."
+        ],
+        "missing_issue": "Corrected historic seven-day completion rates for calls and texts at both clinics."
+      },
+      "semantic_rationale": "Neither summary contains Clinic outcome counts; C06/A06 provide none. UNRESOLVED follows from delivered omission, while full source C05 decisively contradicts the claim.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "phase": "initial",
+      "id": "Q6",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q6",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The supplied handoff does not establish an effect of reminder calls for patients requiring an interpreter.",
+        "evidence_basis": [
+          "The handoff supplies no study evidence about patients requiring an interpreter."
+        ],
+        "missing_issue": "Study coverage and effect estimates for patients requiring an interpreter."
+      },
+      "semantic_rationale": "No delivered interpreter-population outcome evidence establishes benefit or its negation. UNRESOLVED is both source-correct and delivered-warranted; an excluded-population effect is not zero effect.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "phase": "initial",
+      "id": "Q7",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 0,
+      "full_source_substantive_match": 0,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q7",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Authorization to release the complete corpus without further checking or correction cannot be determined.",
+        "evidence_basis": [
+          "The handoff supplies no archive permissions, evaluations, or release-gate details."
+        ],
+        "missing_issue": "Applicable corpus permissions and names-and-dates evaluation or correction requirements."
+      },
+      "semantic_rationale": "Neither summary contains Archive permissions; neither delivered C06 nor A06 addresses release authority. UNRESOLVED follows from delivered omission, while hidden A05 decisively denies complete-corpus permission.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "phase": "initial",
+      "id": "Q8",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q8",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The Slate-versus-Reed character-accuracy comparison is unknown.",
+        "evidence_basis": [
+          "The handoff supplies no archive pilot scores."
+        ],
+        "missing_issue": "Comparable Slate and Reed handwriting character-accuracy results on the fifteen-page English ledger pilot."
+      },
+      "semantic_rationale": "The summary contains no pilot comparison. UNRESOLVED is source-correct and delivered-warranted; omitted comparison is not proof of inferiority.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "phase": "final",
+      "id": "Q1",
+      "reader_status": "SUPPORTED",
+      "full_source_status": "SUPPORTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "SUPPORTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q1",
+        "status": "SUPPORTED",
+        "answer_or_bound": "The prior noon-based clear-water acceptance remains valid. It does not authorize the next deployment under the revised gate.",
+        "evidence_basis": [
+          "Handoff: \"Prior clear-water noon acceptance remains valid\"; \"revised gate requires \u22641.0 mg/L every sampled hour.\""
+        ],
+        "missing_issue": null
+      },
+      "semantic_rationale": "Explicit historical noon acceptance remains valid; revised criterion and paused orders distinguish next deployment.",
+      "delivered_original_id": "C06"
+    },
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "phase": "final",
+      "id": "Q2",
+      "reader_status": "CONTRADICTED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "CONTRADICTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q2",
+        "status": "CONTRADICTED",
+        "answer_or_bound": "The available results do not certify the revised gate. This does not establish measured sensor failure.",
+        "evidence_basis": [
+          "Handoff: \"three-day turbid noon results cannot establish compliance.\""
+        ],
+        "missing_issue": "Ten-day paired hourly testing in water above 40 NTU is needed."
+      },
+      "semantic_rationale": "The handoff pairs a ten-day hourly turbid criterion with only three-day valid noon comparisons (W01 also explicitly says cannot establish compliance). This defeats certification, not physical performance.",
+      "delivered_original_id": "C06"
+    },
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "phase": "final",
+      "id": "Q3",
+      "reader_status": "SUPPORTED",
+      "full_source_status": "SUPPORTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "SUPPORTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q3",
+        "status": "SUPPORTED",
+        "answer_or_bound": "The observed pilot strip yielded 47/50, or 94%, exceeding the 90% visual-yield component.",
+        "evidence_basis": [
+          "Handoff: expansion requires \"\u226590% visual yield\"; \"Adjusted drying yielded 47/50 once.\""
+        ],
+        "missing_issue": null
+      },
+      "semantic_rationale": "47/50 = 94% exceeds the explicitly retained 90% visual-yield threshold; no general repeatability or full-gate inference.",
+      "delivered_original_id": "C06"
+    },
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "phase": "final",
+      "id": "Q4",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q4",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The stated 200-cycle retention at 5\u00b0C is unknown.",
+        "evidence_basis": [
+          "Handoff: \"Cold results absent; M pouch results cover only 100 cycles at 25\u00b0C.\""
+        ],
+        "missing_issue": "Results for Recipe K with electrolyte M after 200 cycles at 5\u00b0C are absent."
+      },
+      "semantic_rationale": "Cold results are explicitly absent. Warm 100-cycle data cannot settle 200-cycle 5\u00b0C performance.",
+      "delivered_original_id": "C06"
+    },
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "phase": "final",
+      "id": "Q5",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 0,
+      "full_source_substantive_match": 0,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q5",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "First clinic: the corrected historic call-versus-text completion comparison is unknown. Second clinic: the comparison is also unknown.",
+        "evidence_basis": [
+          "The handoff supplies no clinic completion rates.",
+          "C06 reports call workload, not corrected historic completion comparisons."
+        ],
+        "missing_issue": "Corrected historic seven-day completion rates for calls and texts at both clinics."
+      },
+      "semantic_rationale": "Neither summary contains Clinic outcome counts; C06/A06 provide none. UNRESOLVED follows from delivered omission, while full source C05 decisively contradicts the claim.",
+      "delivered_original_id": "C06"
+    },
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "phase": "final",
+      "id": "Q6",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q6",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The supplied study does not establish whether reminder calls improve seven-day completion for patients requiring an interpreter.",
+        "evidence_basis": [
+          "C06: \"A service lead suggested testing interpreter-assisted calls separately.\"",
+          "C06: \"Neither the current findings nor that suggestion supplies an effect estimate for patients excluded from the original enrollment.\""
+        ],
+        "missing_issue": "An effect estimate for patients requiring an interpreter."
+      },
+      "semantic_rationale": "No delivered interpreter-population outcome evidence establishes benefit or its negation. UNRESOLVED is both source-correct and delivered-warranted; an excluded-population effect is not zero effect. C06 adds a suggestion to test interpreter-assisted calls and no effect estimate for excluded patients; it does not itself name the enrollment exclusion, and the reader does not falsely assert it.",
+      "delivered_original_id": "C06"
+    },
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "phase": "final",
+      "id": "Q7",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 0,
+      "full_source_substantive_match": 0,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q7",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Authorization to release the complete corpus without further checking or correction cannot be determined.",
+        "evidence_basis": [
+          "The handoff supplies no archive permissions, evaluations, or release-gate details; C06 concerns clinic workload."
+        ],
+        "missing_issue": "Applicable corpus permissions and names-and-dates evaluation or correction requirements."
+      },
+      "semantic_rationale": "Neither summary contains Archive permissions; neither delivered C06 nor A06 addresses release authority. UNRESOLVED follows from delivered omission, while hidden A05 decisively denies complete-corpus permission.",
+      "delivered_original_id": "C06"
+    },
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "phase": "final",
+      "id": "Q8",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q8",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The Slate-versus-Reed character-accuracy comparison is unknown.",
+        "evidence_basis": [
+          "The handoff supplies no archive pilot scores; C06 concerns clinic workload."
+        ],
+        "missing_issue": "Comparable Slate and Reed handwriting character-accuracy results on the fifteen-page English ledger pilot."
+      },
+      "semantic_rationale": "The summary contains no pilot comparison. UNRESOLVED is source-correct and delivered-warranted; omitted comparison is not proof of inferiority.",
+      "delivered_original_id": "C06"
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "phase": "initial",
+      "id": "Q1",
+      "reader_status": "SUPPORTED",
+      "full_source_status": "SUPPORTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "SUPPORTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q1",
+        "status": "SUPPORTED",
+        "answer_or_bound": "The prior orchard acceptance under the original noon-based rule stands after the revision; it does not authorize the next deployment.",
+        "evidence_basis": [
+          "Handoff: 'Prior noon-based orchard acceptance stands.'",
+          "Handoff: 'Orders remain paused.'"
+        ],
+        "missing_issue": null
+      },
+      "semantic_rationale": "Explicit historical noon acceptance remains valid; revised criterion and paused orders distinguish next deployment.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "phase": "initial",
+      "id": "Q2",
+      "reader_status": "CONTRADICTED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "CONTRADICTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q2",
+        "status": "CONTRADICTED",
+        "answer_or_bound": "The available results do not certify the revised gate: three days of valid noon comparisons do not establish ten days of paired hourly results with error \u22641.0 mg/L at every sampled hour. This does not establish measured sensor failure.",
+        "evidence_basis": [
+          "Handoff: 'obtain ten-day paired hourly references in turbid water >40 NTU; revised gate requires \u22641.0 mg/L error at every sampled hour.'",
+          "Handoff: 'three-day turbid testing supplied only valid noon comparisons.'"
+        ],
+        "missing_issue": "Ten-day paired hourly measurements under the revised conditions are unavailable."
+      },
+      "semantic_rationale": "The handoff pairs a ten-day hourly turbid criterion with only three-day valid noon comparisons (W01 also explicitly says cannot establish compliance). This defeats certification, not physical performance.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "phase": "initial",
+      "id": "Q3",
+      "reader_status": "SUPPORTED",
+      "full_source_status": "SUPPORTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "SUPPORTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q3",
+        "status": "SUPPORTED",
+        "answer_or_bound": "The observed pilot strip achieved 47/50 = 94% visual yield, exceeding the 90% component threshold. This does not establish repeatability or full expansion approval.",
+        "evidence_basis": [
+          "Handoff: expansion requires '\u226590% visual yield.'",
+          "Handoff: 'adjusted drying yielded 47/50 once.'"
+        ],
+        "missing_issue": null
+      },
+      "semantic_rationale": "47/50 = 94% exceeds the explicitly retained 90% visual-yield threshold; no general repeatability or full-gate inference.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "phase": "initial",
+      "id": "Q4",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q4",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The stated 200-cycle median retention at 5\u00b0C is unknown.",
+        "evidence_basis": [
+          "Handoff: 'Cold results are unavailable.'",
+          "Handoff: 'Warm pouch results cover only 100 cycles.'"
+        ],
+        "missing_issue": "Results for Recipe K pouch cells with electrolyte M after 200 cycles at 5\u00b0C."
+      },
+      "semantic_rationale": "Cold results are explicitly absent. Warm 100-cycle data cannot settle 200-cycle 5\u00b0C performance.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "phase": "initial",
+      "id": "Q5",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 0,
+      "full_source_substantive_match": 0,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q5",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Neither clinic's corrected historic call-versus-text completion comparison is supplied.",
+        "evidence_basis": [
+          "The handoff contains no Clinic findings."
+        ],
+        "missing_issue": "Corrected historic seven-day completion rates for calls and texts at both clinics."
+      },
+      "semantic_rationale": "Neither summary contains Clinic outcome counts; C06/A06 provide none. UNRESOLVED follows from delivered omission, while full source C05 decisively contradicts the claim.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "phase": "initial",
+      "id": "Q6",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q6",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The available handoff does not establish whether reminder calls improve completion for patients requiring an interpreter.",
+        "evidence_basis": [
+          "The handoff contains no Clinic study findings or interpreter-population evidence."
+        ],
+        "missing_issue": "Study coverage and effect evidence for patients requiring an interpreter."
+      },
+      "semantic_rationale": "No delivered interpreter-population outcome evidence establishes benefit or its negation. UNRESOLVED is both source-correct and delivered-warranted; an excluded-population effect is not zero effect.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "phase": "initial",
+      "id": "Q7",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 0,
+      "full_source_substantive_match": 0,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q7",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Authorization to release the complete automated transcription corpus without a further names-and-dates check or correction is unknown.",
+        "evidence_basis": [
+          "The handoff contains no Archive permissions, evaluations, or release conditions."
+        ],
+        "missing_issue": "Archive release permissions and requirements under the proposed genealogy gate."
+      },
+      "semantic_rationale": "Neither summary contains Archive permissions; neither delivered C06 nor A06 addresses release authority. UNRESOLVED follows from delivered omission, while hidden A05 decisively denies complete-corpus permission.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "phase": "initial",
+      "id": "Q8",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q8",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The relative handwriting character accuracy of Slate and Reed on the specified pilot is unknown.",
+        "evidence_basis": [
+          "The handoff contains no Archive pilot scores or comparative findings."
+        ],
+        "missing_issue": "Comparable Slate and Reed character-accuracy results on the fifteen-page English ledger pilot."
+      },
+      "semantic_rationale": "The summary contains no pilot comparison. UNRESOLVED is source-correct and delivered-warranted; omitted comparison is not proof of inferiority.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "phase": "final",
+      "id": "Q1",
+      "reader_status": "SUPPORTED",
+      "full_source_status": "SUPPORTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "SUPPORTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q1",
+        "status": "SUPPORTED",
+        "answer_or_bound": "The prior orchard acceptance under the original noon-based rule stands after the revision. It does not authorize the next deployment.",
+        "evidence_basis": [
+          "Handoff: 'Prior noon-based orchard acceptance stands.'",
+          "Handoff: 'Orders remain paused.'"
+        ],
+        "missing_issue": null
+      },
+      "semantic_rationale": "Explicit historical noon acceptance remains valid; revised criterion and paused orders distinguish next deployment.",
+      "delivered_original_id": "A06"
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "phase": "final",
+      "id": "Q2",
+      "reader_status": "CONTRADICTED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "CONTRADICTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q2",
+        "status": "CONTRADICTED",
+        "answer_or_bound": "The available results do not certify the revised gate. Three days of valid noon comparisons cannot establish the required ten-day paired hourly performance. This does not establish measured sensor failure.",
+        "evidence_basis": [
+          "Handoff: 'obtain ten-day paired hourly references in turbid water >40 NTU; revised gate requires \u22641.0 mg/L error at every sampled hour.'",
+          "Handoff: 'three-day turbid testing supplied only valid noon comparisons.'"
+        ],
+        "missing_issue": "Ten-day paired hourly results satisfying the revised conditions."
+      },
+      "semantic_rationale": "The handoff pairs a ten-day hourly turbid criterion with only three-day valid noon comparisons (W01 also explicitly says cannot establish compliance). This defeats certification, not physical performance.",
+      "delivered_original_id": "A06"
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "phase": "final",
+      "id": "Q3",
+      "reader_status": "SUPPORTED",
+      "full_source_status": "SUPPORTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "SUPPORTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q3",
+        "status": "SUPPORTED",
+        "answer_or_bound": "The observed adjusted-drying pilot strip achieved 47/50 = 94% visual yield, meeting the \u226590% component threshold. Repeatability and full expansion approval are not established.",
+        "evidence_basis": [
+          "Handoff: expansion requires '\u226590% visual yield.'",
+          "Handoff: 'adjusted drying yielded 47/50 once.'"
+        ],
+        "missing_issue": null
+      },
+      "semantic_rationale": "47/50 = 94% exceeds the explicitly retained 90% visual-yield threshold; no general repeatability or full-gate inference.",
+      "delivered_original_id": "A06"
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "phase": "final",
+      "id": "Q4",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q4",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The stated median retention after 200 cycles at 5\u00b0C is unknown.",
+        "evidence_basis": [
+          "Handoff: 'Cold results are unavailable.'",
+          "Handoff: 'Warm pouch results cover only 100 cycles.'"
+        ],
+        "missing_issue": "Recipe K pouch-cell results with electrolyte M after 200 cycles at 5\u00b0C."
+      },
+      "semantic_rationale": "Cold results are explicitly absent. Warm 100-cycle data cannot settle 200-cycle 5\u00b0C performance.",
+      "delivered_original_id": "A06"
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "phase": "final",
+      "id": "Q5",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 0,
+      "full_source_substantive_match": 0,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q5",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The corrected historic call-versus-text completion comparison is unknown at each of the two clinics.",
+        "evidence_basis": [
+          "The handoff supplies no Clinic findings; A06 concerns only an Archive handwriting pilot."
+        ],
+        "missing_issue": "Corrected historic seven-day completion rates for calls and texts at both clinics."
+      },
+      "semantic_rationale": "Neither summary contains Clinic outcome counts; C06/A06 provide none. UNRESOLVED follows from delivered omission, while full source C05 decisively contradicts the claim.",
+      "delivered_original_id": "A06"
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "phase": "final",
+      "id": "Q6",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q6",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The supplied evidence does not establish whether reminder calls improve seven-day completion for patients requiring an interpreter.",
+        "evidence_basis": [
+          "The handoff supplies no Clinic study findings; A06 concerns only an Archive handwriting pilot."
+        ],
+        "missing_issue": "Study coverage and effect evidence for patients requiring an interpreter."
+      },
+      "semantic_rationale": "No delivered interpreter-population outcome evidence establishes benefit or its negation. UNRESOLVED is both source-correct and delivered-warranted; an excluded-population effect is not zero effect.",
+      "delivered_original_id": "A06"
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "phase": "final",
+      "id": "Q7",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 0,
+      "full_source_substantive_match": 0,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q7",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Authorization to release the complete automated transcription corpus without a further names-and-dates check or correction is unknown. A06 supplies no release authorization or genealogy-gate assessment.",
+        "evidence_basis": [
+          "The handoff supplies no Archive permissions or release conditions.",
+          "A06 reports a fifteen-page handwriting pilot and explicitly states that the systems cannot be compared from it."
+        ],
+        "missing_issue": "Release permissions, poster-excerpt scope, and names-and-dates requirements under the proposed genealogy gate."
+      },
+      "semantic_rationale": "Neither summary contains Archive permissions; neither delivered C06 nor A06 addresses release authority. UNRESOLVED follows from delivered omission, while hidden A05 decisively denies complete-corpus permission.",
+      "delivered_original_id": "A06"
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "phase": "final",
+      "id": "Q8",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q8",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Slate recognized 82% of characters with staff-supplied page orientation, but its accuracy relative to Reed is unknown because Reed was not run.",
+        "evidence_basis": [
+          "A06: 'Slate recognized 82% of characters after staff supplied page orientation.'",
+          "A06: 'Reed was not run because its handwriting module license had expired.'",
+          "A06: 'The team cannot compare the two systems on handwriting from this pilot.'"
+        ],
+        "missing_issue": "A comparable Reed handwriting result on the fifteen-page English ledger pilot."
+      },
+      "semantic_rationale": "The summary contains no pilot comparison. UNRESOLVED is source-correct and delivered-warranted; omitted comparison is not proof of inferiority. A06 directly states Slate 82% with orientation and Reed not run, adding the exact missing-comparator explanation.",
+      "delivered_original_id": "A06"
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "phase": "initial",
+      "id": "Q1",
+      "reader_status": "SUPPORTED",
+      "full_source_status": "SUPPORTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "SUPPORTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q1",
+        "status": "SUPPORTED",
+        "answer_or_bound": "The prior noon-based acceptance remains valid; it does not establish permission for the next deployment under the revised gate.",
+        "evidence_basis": [
+          "Prior clear-water noon acceptance remains valid.",
+          "Revised gate requires \u22641.0 mg/L every sampled hour.",
+          "Orders paused."
+        ],
+        "missing_issue": null
+      },
+      "semantic_rationale": "Explicit historical noon acceptance remains valid; revised criterion and paused orders distinguish next deployment.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "phase": "initial",
+      "id": "Q2",
+      "reader_status": "CONTRADICTED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "CONTRADICTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q2",
+        "status": "CONTRADICTED",
+        "answer_or_bound": "The available results do not certify the revised gate; this does not establish measured sensor failure.",
+        "evidence_basis": [
+          "Three-day turbid noon results cannot establish compliance.",
+          "Prioritize ten-day paired hourly testing in turbid water above 40 NTU; revised gate requires \u22641.0 mg/L every sampled hour."
+        ],
+        "missing_issue": "Ten-day paired hourly results under the revised conditions are unavailable."
+      },
+      "semantic_rationale": "The handoff pairs a ten-day hourly turbid criterion with only three-day valid noon comparisons (W01 also explicitly says cannot establish compliance). This defeats certification, not physical performance.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "phase": "initial",
+      "id": "Q3",
+      "reader_status": "SUPPORTED",
+      "full_source_status": "SUPPORTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "SUPPORTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q3",
+        "status": "SUPPORTED",
+        "answer_or_bound": "The observed pilot strip yielded 47/50, or 94%, exceeding the 90% visual-yield threshold.",
+        "evidence_basis": [
+          "Expansion requires ... \u226590% visual yield.",
+          "Adjusted drying yielded 47/50 once; repeatability and cost remain unverified."
+        ],
+        "missing_issue": null
+      },
+      "semantic_rationale": "47/50 = 94% exceeds the explicitly retained 90% visual-yield threshold; no general repeatability or full-gate inference.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "phase": "initial",
+      "id": "Q4",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q4",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Retention after 200 cycles at 5\u00b0C is unknown.",
+        "evidence_basis": [
+          "Cold results absent; M pouch results cover only 100 cycles at 25\u00b0C."
+        ],
+        "missing_issue": "The stated 200-cycle, 5\u00b0C median-retention measurement is unavailable."
+      },
+      "semantic_rationale": "Cold results are explicitly absent. Warm 100-cycle data cannot settle 200-cycle 5\u00b0C performance.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "phase": "initial",
+      "id": "Q5",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 0,
+      "full_source_substantive_match": 0,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q5",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Neither clinic's historic call-versus-text completion comparison is supplied.",
+        "evidence_basis": [],
+        "missing_issue": "Corrected historic completion rates for calls and texts at both clinics are absent."
+      },
+      "semantic_rationale": "Neither summary contains Clinic outcome counts; C06/A06 provide none. UNRESOLVED follows from delivered omission, while full source C05 decisively contradicts the claim.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "phase": "initial",
+      "id": "Q6",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q6",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The supplied handoff does not establish an effect of reminder calls for patients requiring an interpreter.",
+        "evidence_basis": [],
+        "missing_issue": "Study results and interpreter-population coverage are absent."
+      },
+      "semantic_rationale": "No delivered interpreter-population outcome evidence establishes benefit or its negation. UNRESOLVED is both source-correct and delivered-warranted; an excluded-population effect is not zero effect.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "phase": "initial",
+      "id": "Q7",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 0,
+      "full_source_substantive_match": 0,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q7",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Release authorization for the complete automated transcription corpus cannot be determined.",
+        "evidence_basis": [],
+        "missing_issue": "Archive permissions, evaluations, and names-and-dates release requirements are absent."
+      },
+      "semantic_rationale": "Neither summary contains Archive permissions; neither delivered C06 nor A06 addresses release authority. UNRESOLVED follows from delivered omission, while hidden A05 decisively denies complete-corpus permission.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "phase": "initial",
+      "id": "Q8",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q8",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Slate's character accuracy relative to Reed on the fifteen-page English ledger pilot is unknown.",
+        "evidence_basis": [],
+        "missing_issue": "Comparative pilot accuracy results are absent."
+      },
+      "semantic_rationale": "The summary contains no pilot comparison. UNRESOLVED is source-correct and delivered-warranted; omitted comparison is not proof of inferiority.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "phase": "final",
+      "id": "Q1",
+      "reader_status": "SUPPORTED",
+      "full_source_status": "SUPPORTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "SUPPORTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q1",
+        "status": "SUPPORTED",
+        "answer_or_bound": "The historical noon-based acceptance remains valid under the handoff; it does not authorize the next deployment under the revised gate.",
+        "evidence_basis": [
+          "Prior clear-water noon acceptance remains valid.",
+          "Revised gate requires \u22641.0 mg/L every sampled hour.",
+          "Orders paused."
+        ],
+        "missing_issue": null
+      },
+      "semantic_rationale": "Explicit historical noon acceptance remains valid; revised criterion and paused orders distinguish next deployment.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "phase": "final",
+      "id": "Q2",
+      "reader_status": "CONTRADICTED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "CONTRADICTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q2",
+        "status": "CONTRADICTED",
+        "answer_or_bound": "The available results cannot certify compliance with the revised next-deployment gate. This does not establish measured sensor failure.",
+        "evidence_basis": [
+          "Three-day turbid noon results cannot establish compliance.",
+          "Prioritize ten-day paired hourly testing in turbid water above 40 NTU; revised gate requires \u22641.0 mg/L every sampled hour."
+        ],
+        "missing_issue": "Qualifying ten-day paired hourly results are absent."
+      },
+      "semantic_rationale": "The handoff pairs a ten-day hourly turbid criterion with only three-day valid noon comparisons (W01 also explicitly says cannot establish compliance). This defeats certification, not physical performance.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "phase": "final",
+      "id": "Q3",
+      "reader_status": "SUPPORTED",
+      "full_source_status": "SUPPORTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "SUPPORTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q3",
+        "status": "SUPPORTED",
+        "answer_or_bound": "The observed adjusted-drying pilot strip achieved 47/50, or 94% visual yield, meeting the \u226590% component.",
+        "evidence_basis": [
+          "Expansion requires ... \u226590% visual yield.",
+          "Adjusted drying yielded 47/50 once; repeatability and cost remain unverified."
+        ],
+        "missing_issue": null
+      },
+      "semantic_rationale": "47/50 = 94% exceeds the explicitly retained 90% visual-yield threshold; no general repeatability or full-gate inference.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "phase": "final",
+      "id": "Q4",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q4",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The stated median retention after 200 cycles at 5\u00b0C is unknown.",
+        "evidence_basis": [
+          "Cold results absent; M pouch results cover only 100 cycles at 25\u00b0C."
+        ],
+        "missing_issue": "Results for electrolyte M pouch cells after 200 cycles at 5\u00b0C are absent."
+      },
+      "semantic_rationale": "Cold results are explicitly absent. Warm 100-cycle data cannot settle 200-cycle 5\u00b0C performance.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "phase": "final",
+      "id": "Q5",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 0,
+      "full_source_substantive_match": 0,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q5",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The call-versus-text comparison is unknown at both clinics; neither site's corrected historic rates are supplied.",
+        "evidence_basis": [],
+        "missing_issue": "Corrected historic call and text completion rates for both clinics are absent."
+      },
+      "semantic_rationale": "Neither summary contains Clinic outcome counts; C06/A06 provide none. UNRESOLVED follows from delivered omission, while full source C05 decisively contradicts the claim.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "phase": "final",
+      "id": "Q6",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q6",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Whether reminder calls improve seven-day completion for patients requiring an interpreter is unknown.",
+        "evidence_basis": [],
+        "missing_issue": "The handoff supplies no study findings or population coverage for this claim."
+      },
+      "semantic_rationale": "No delivered interpreter-population outcome evidence establishes benefit or its negation. UNRESOLVED is both source-correct and delivered-warranted; an excluded-population effect is not zero effect.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "phase": "final",
+      "id": "Q7",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 0,
+      "full_source_substantive_match": 0,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q7",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Authorization to release the complete automated transcription corpus without further names-and-dates checking or correction is unknown.",
+        "evidence_basis": [],
+        "missing_issue": "Archive permissions, evaluations, and genealogy release requirements are absent."
+      },
+      "semantic_rationale": "Neither summary contains Archive permissions; neither delivered C06 nor A06 addresses release authority. UNRESOLVED follows from delivered omission, while hidden A05 decisively denies complete-corpus permission.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "phase": "final",
+      "id": "Q8",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q8",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Slate's handwriting character accuracy relative to Reed on the fifteen-page English ledger pilot is unknown.",
+        "evidence_basis": [],
+        "missing_issue": "Comparative pilot accuracy results are absent."
+      },
+      "semantic_rationale": "The summary contains no pilot comparison. UNRESOLVED is source-correct and delivered-warranted; omitted comparison is not proof of inferiority.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "phase": "initial",
+      "id": "Q1",
+      "reader_status": "SUPPORTED",
+      "full_source_status": "SUPPORTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "SUPPORTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q1",
+        "status": "SUPPORTED",
+        "answer_or_bound": "The historical orchard acceptance remains valid under the original noon-based rule. It does not authorize the next deployment; orders remain paused.",
+        "evidence_basis": [
+          "Prior noon-based orchard acceptance stands.",
+          "Orders remain paused."
+        ],
+        "missing_issue": null
+      },
+      "semantic_rationale": "Explicit historical noon acceptance remains valid; revised criterion and paused orders distinguish next deployment.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "phase": "initial",
+      "id": "Q2",
+      "reader_status": "CONTRADICTED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "CONTRADICTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q2",
+        "status": "CONTRADICTED",
+        "answer_or_bound": "The available results do not certify the revised gate: three days of valid noon comparisons do not satisfy ten days of paired hourly references. This does not establish measured sensor failure.",
+        "evidence_basis": [
+          "Obtain ten-day paired hourly references in turbid water >40 NTU; revised gate requires \u22641.0 mg/L error at every sampled hour.",
+          "Three-day turbid testing supplied only valid noon comparisons."
+        ],
+        "missing_issue": "Ten-day paired hourly results meeting the revised error threshold are unavailable."
+      },
+      "semantic_rationale": "The handoff pairs a ten-day hourly turbid criterion with only three-day valid noon comparisons (W01 also explicitly says cannot establish compliance). This defeats certification, not physical performance.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "phase": "initial",
+      "id": "Q3",
+      "reader_status": "SUPPORTED",
+      "full_source_status": "SUPPORTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "SUPPORTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q3",
+        "status": "SUPPORTED",
+        "answer_or_bound": "The observed pilot strip achieved 47/50 = 94% visual yield, exceeding the 90% component threshold. This establishes neither repeatability nor full expansion approval.",
+        "evidence_basis": [
+          "Expansion requires \u226590% visual yield.",
+          "Adjusted drying yielded 47/50 once."
+        ],
+        "missing_issue": null
+      },
+      "semantic_rationale": "47/50 = 94% exceeds the explicitly retained 90% visual-yield threshold; no general repeatability or full-gate inference.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "phase": "initial",
+      "id": "Q4",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q4",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The specified median retention at 200 cycles and 5\u00b0C is unknown.",
+        "evidence_basis": [
+          "Cold results are unavailable.",
+          "Warm pouch results cover only 100 cycles."
+        ],
+        "missing_issue": "Results for Recipe K pouch cells with electrolyte M after 200 cycles at 5\u00b0C."
+      },
+      "semantic_rationale": "Cold results are explicitly absent. Warm 100-cycle data cannot settle 200-cycle 5\u00b0C performance.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "phase": "initial",
+      "id": "Q5",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 0,
+      "full_source_substantive_match": 0,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q5",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Neither clinic's historic call-versus-text completion comparison can be stated from the handoff.",
+        "evidence_basis": [],
+        "missing_issue": "Corrected historic seven-day completion rates for calls and texts at both clinics."
+      },
+      "semantic_rationale": "Neither summary contains Clinic outcome counts; C06/A06 provide none. UNRESOLVED follows from delivered omission, while full source C05 decisively contradicts the claim.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "phase": "initial",
+      "id": "Q6",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q6",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The handoff does not establish whether reminder calls improve seven-day completion for patients requiring an interpreter.",
+        "evidence_basis": [],
+        "missing_issue": "Study population, interpreter inclusion, and relevant outcome evidence."
+      },
+      "semantic_rationale": "No delivered interpreter-population outcome evidence establishes benefit or its negation. UNRESOLVED is both source-correct and delivered-warranted; an excluded-population effect is not zero effect.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "phase": "initial",
+      "id": "Q7",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 0,
+      "full_source_substantive_match": 0,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q7",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Complete-corpus release authorization cannot be determined from the handoff.",
+        "evidence_basis": [],
+        "missing_issue": "Archive permissions, evaluations, and the proposed genealogy release gate, including names-and-dates requirements."
+      },
+      "semantic_rationale": "Neither summary contains Archive permissions; neither delivered C06 nor A06 addresses release authority. UNRESOLVED follows from delivered omission, while hidden A05 decisively denies complete-corpus permission.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "phase": "initial",
+      "id": "Q8",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q8",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The Slate-versus-Reed handwriting character-accuracy comparison is unknown.",
+        "evidence_basis": [],
+        "missing_issue": "Comparative character-accuracy results on the fifteen-page English ledger pilot."
+      },
+      "semantic_rationale": "The summary contains no pilot comparison. UNRESOLVED is source-correct and delivered-warranted; omitted comparison is not proof of inferiority.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "phase": "final",
+      "id": "Q1",
+      "reader_status": "SUPPORTED",
+      "full_source_status": "SUPPORTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "SUPPORTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q1",
+        "status": "SUPPORTED",
+        "answer_or_bound": "The historical orchard acceptance remains valid under the original noon-based rule. It does not authorize the next deployment; orders remain paused.",
+        "evidence_basis": [
+          "Prior noon-based orchard acceptance stands.",
+          "Orders remain paused."
+        ],
+        "missing_issue": null
+      },
+      "semantic_rationale": "Explicit historical noon acceptance remains valid; revised criterion and paused orders distinguish next deployment.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "phase": "final",
+      "id": "Q2",
+      "reader_status": "CONTRADICTED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "CONTRADICTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q2",
+        "status": "CONTRADICTED",
+        "answer_or_bound": "The available results do not certify the revised gate: three days of valid noon comparisons do not satisfy ten days of paired hourly references. This does not establish measured sensor failure.",
+        "evidence_basis": [
+          "Obtain ten-day paired hourly references in turbid water >40 NTU; revised gate requires \u22641.0 mg/L error at every sampled hour.",
+          "Three-day turbid testing supplied only valid noon comparisons."
+        ],
+        "missing_issue": "Ten-day paired hourly results meeting the revised error threshold are unavailable."
+      },
+      "semantic_rationale": "The handoff pairs a ten-day hourly turbid criterion with only three-day valid noon comparisons (W01 also explicitly says cannot establish compliance). This defeats certification, not physical performance.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "phase": "final",
+      "id": "Q3",
+      "reader_status": "SUPPORTED",
+      "full_source_status": "SUPPORTED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "SUPPORTED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q3",
+        "status": "SUPPORTED",
+        "answer_or_bound": "The observed pilot strip achieved 47/50 = 94% visual yield, exceeding the 90% component threshold. This establishes neither repeatability nor full expansion approval.",
+        "evidence_basis": [
+          "Expansion requires \u226590% visual yield.",
+          "Adjusted drying yielded 47/50 once."
+        ],
+        "missing_issue": null
+      },
+      "semantic_rationale": "47/50 = 94% exceeds the explicitly retained 90% visual-yield threshold; no general repeatability or full-gate inference.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "phase": "final",
+      "id": "Q4",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q4",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The specified median retention at 200 cycles and 5\u00b0C is unknown.",
+        "evidence_basis": [
+          "Cold results are unavailable.",
+          "Warm pouch results cover only 100 cycles."
+        ],
+        "missing_issue": "Results for Recipe K pouch cells with electrolyte M after 200 cycles at 5\u00b0C."
+      },
+      "semantic_rationale": "Cold results are explicitly absent. Warm 100-cycle data cannot settle 200-cycle 5\u00b0C performance.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "phase": "final",
+      "id": "Q5",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 0,
+      "full_source_substantive_match": 0,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q5",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Neither clinic's historic call-versus-text completion comparison can be stated from the handoff.",
+        "evidence_basis": [],
+        "missing_issue": "Corrected historic seven-day completion rates for calls and texts at both clinics."
+      },
+      "semantic_rationale": "Neither summary contains Clinic outcome counts; C06/A06 provide none. UNRESOLVED follows from delivered omission, while full source C05 decisively contradicts the claim.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "phase": "final",
+      "id": "Q6",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q6",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The handoff does not establish whether reminder calls improve seven-day completion for patients requiring an interpreter.",
+        "evidence_basis": [],
+        "missing_issue": "Study population, interpreter inclusion, and relevant outcome evidence."
+      },
+      "semantic_rationale": "No delivered interpreter-population outcome evidence establishes benefit or its negation. UNRESOLVED is both source-correct and delivered-warranted; an excluded-population effect is not zero effect.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "phase": "final",
+      "id": "Q7",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "CONTRADICTED",
+      "full_source_status_match": 0,
+      "full_source_substantive_match": 0,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q7",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "Complete-corpus release authorization cannot be determined from the handoff.",
+        "evidence_basis": [],
+        "missing_issue": "Archive permissions, evaluations, and the proposed genealogy release gate, including names-and-dates requirements."
+      },
+      "semantic_rationale": "Neither summary contains Archive permissions; neither delivered C06 nor A06 addresses release authority. UNRESOLVED follows from delivered omission, while hidden A05 decisively denies complete-corpus permission.",
+      "delivered_original_id": null
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "phase": "final",
+      "id": "Q8",
+      "reader_status": "UNRESOLVED",
+      "full_source_status": "UNRESOLVED",
+      "full_source_status_match": 1,
+      "full_source_substantive_match": 1,
+      "delivered_warrant_status": "UNRESOLVED",
+      "delivered_warrant_pass": 1,
+      "evidence_basis_pass": 1,
+      "scope_time_criterion_pass": 1,
+      "missingness_calibration_pass": 1,
+      "actual_answer": {
+        "id": "Q8",
+        "status": "UNRESOLVED",
+        "answer_or_bound": "The Slate-versus-Reed handwriting character-accuracy comparison is unknown.",
+        "evidence_basis": [],
+        "missing_issue": "Comparative character-accuracy results on the fifteen-page English ledger pilot."
+      },
+      "semantic_rationale": "The summary contains no pilot comparison. UNRESOLVED is source-correct and delivered-warranted; omitted comparison is not proof of inferiority.",
+      "delivered_original_id": null
+    }
+  ],
+  "writer_scores": [
+    {
+      "writer": "W01",
+      "words": 87,
+      "cap": 90,
+      "budget_pass": true,
+      "selected_clause_audit": [
+        {
+          "id": "F01",
+          "source_id": "W01",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F02",
+          "source_id": "W02",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F03",
+          "source_id": "W07",
+          "category": "FAITHFUL",
+          "retained_text": "film\u2019s accuracy effect is unknown",
+          "rationale": "Decisive unknown accuracy-effect clause retained; cleaning mechanics need not fit."
+        },
+        {
+          "id": "F04",
+          "source_id": "B02",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F05",
+          "source_id": "B03",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F06",
+          "source_id": "B05",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F07",
+          "source_id": "B07",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F08",
+          "source_id": "C03",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F09",
+          "source_id": "C06",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F10",
+          "source_id": "A03",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F11",
+          "source_id": "A04",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F12",
+          "source_id": "A02",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        }
+      ],
+      "selected_coverage": {
+        "retained": 1,
+        "total": 12
+      },
+      "selected_asserted_fidelity": {
+        "faithful": 1,
+        "ambiguous": 0,
+        "unsupported_strengthening": 0,
+        "contradiction": 0
+      },
+      "all_actual_assertions": [
+        {
+          "id": "W01-A01",
+          "claim": "prioritize ten-day paired hourly testing in turbid water above 40 NTU",
+          "source_ids": [
+            "W05",
+            "W07"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Acquisition priority and gate scope preserved."
+        },
+        {
+          "id": "W01-A02",
+          "claim": "revised gate requires \u22641.0 mg/L every sampled hour",
+          "source_ids": [
+            "W05"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Duration and water scope supplied in immediately preceding clause."
+        },
+        {
+          "id": "W01-A03",
+          "claim": "Prior clear-water noon acceptance remains valid",
+          "source_ids": [
+            "W04",
+            "W05"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Historical acceptance preserved."
+        },
+        {
+          "id": "W01-A04",
+          "claim": "three-day turbid noon results cannot establish compliance",
+          "source_ids": [
+            "W06"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Failure to certify, not a measured performance failure."
+        },
+        {
+          "id": "W01-A05",
+          "claim": "Clean between deployments",
+          "source_ids": [
+            "W07"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Recommendation retained."
+        },
+        {
+          "id": "W01-A06",
+          "claim": "film\u2019s accuracy effect is unknown",
+          "source_ids": [
+            "W07"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "No before/after comparison; no false negative effect."
+        },
+        {
+          "id": "W01-A07",
+          "claim": "Orders paused",
+          "source_ids": [
+            "W05",
+            "W07"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "No later commitment reverses pause."
+        },
+        {
+          "id": "W01-A08",
+          "claim": "use active grant for cold pouch testing",
+          "source_ids": [
+            "B06",
+            "B07"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Active small grant and engineering recommendation retained."
+        },
+        {
+          "id": "W01-A09",
+          "claim": "expansion requires \u226585% retention at 200 cycles, electrolyte M, 5\u00b0C",
+          "source_ids": [
+            "B06"
+          ],
+          "category": "AMBIGUOUS",
+          "rationale": "Median is omitted. Ordinary technical shorthand may refer to the intended aggregate, but a stronger every-cell/minimum reading is not excluded by the wording. No explicit per-cell guarantee is asserted, so no contradiction or definite strengthening is assigned."
+        },
+        {
+          "id": "W01-A10",
+          "claim": "plus \u226590% visual yield",
+          "source_ids": [
+            "B06"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Exact visual threshold retained."
+        },
+        {
+          "id": "W01-A11",
+          "claim": "Cold results absent",
+          "source_ids": [
+            "B06"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Scheduled testing not promoted to a result."
+        },
+        {
+          "id": "W01-A12",
+          "claim": "M pouch results cover only 100 cycles at 25\u00b0C",
+          "source_ids": [
+            "B05"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Measurement scope retained."
+        },
+        {
+          "id": "W01-A13",
+          "claim": "Adjusted drying yielded 47/50 once",
+          "source_ids": [
+            "B06"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Observed pilot count and single-run scope retained."
+        },
+        {
+          "id": "W01-A14",
+          "claim": "repeatability ... remain[s] unverified",
+          "source_ids": [
+            "B06"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "One unreplicated strip does not verify repeatability."
+        },
+        {
+          "id": "W01-A15",
+          "claim": "cost remain[s] unverified",
+          "source_ids": [
+            "B07"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "No verified unit cost; concise cost wording is read in project unit-cost context."
+        }
+      ],
+      "all_actual_assertion_counts": {
+        "FAITHFUL": 14,
+        "AMBIGUOUS": 1,
+        "UNSUPPORTED_STRENGTHENING": 0,
+        "CONTRADICTION": 0
+      }
+    },
+    {
+      "writer": "W02",
+      "words": 87,
+      "cap": 90,
+      "budget_pass": true,
+      "selected_clause_audit": [
+        {
+          "id": "F01",
+          "source_id": "W01",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F02",
+          "source_id": "W02",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F03",
+          "source_id": "W07",
+          "category": "FAITHFUL",
+          "retained_text": "film\u2019s accuracy effect is unknown",
+          "rationale": "Decisive unknown accuracy-effect clause retained; cleaning mechanics need not fit."
+        },
+        {
+          "id": "F04",
+          "source_id": "B02",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F05",
+          "source_id": "B03",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F06",
+          "source_id": "B05",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F07",
+          "source_id": "B07",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F08",
+          "source_id": "C03",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F09",
+          "source_id": "C06",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F10",
+          "source_id": "A03",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F11",
+          "source_id": "A04",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        },
+        {
+          "id": "F12",
+          "source_id": "A02",
+          "category": "OMITTED",
+          "retained_text": null,
+          "rationale": "No recognizable assertion of this selected content; coverage omission only, not a fidelity error."
+        }
+      ],
+      "selected_coverage": {
+        "retained": 1,
+        "total": 12
+      },
+      "selected_asserted_fidelity": {
+        "faithful": 1,
+        "ambiguous": 0,
+        "unsupported_strengthening": 0,
+        "contradiction": 0
+      },
+      "all_actual_assertions": [
+        {
+          "id": "W02-A01",
+          "claim": "obtain ten-day paired hourly references in turbid water >40 NTU",
+          "source_ids": [
+            "W05",
+            "W07"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Missing reference-series acquisition matches criterion."
+        },
+        {
+          "id": "W02-A02",
+          "claim": "revised gate requires \u22641.0 mg/L error at every sampled hour",
+          "source_ids": [
+            "W05"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Adjacent clause gives duration/water condition."
+        },
+        {
+          "id": "W02-A03",
+          "claim": "Prior noon-based orchard acceptance stands",
+          "source_ids": [
+            "W04",
+            "W05"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Historical approval preserved."
+        },
+        {
+          "id": "W02-A04",
+          "claim": "three-day turbid testing supplied only valid noon comparisons",
+          "source_ids": [
+            "W06"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Does not claim no sensor readings at other hours."
+        },
+        {
+          "id": "W02-A05",
+          "claim": "Orders remain paused",
+          "source_ids": [
+            "W05",
+            "W07"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Current procurement state retained."
+        },
+        {
+          "id": "W02-A06",
+          "claim": "film\u2019s accuracy effect is unknown",
+          "source_ids": [
+            "W07"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Uncertainty preserved."
+        },
+        {
+          "id": "W02-A07",
+          "claim": "use active small grant for cold pouch testing",
+          "source_ids": [
+            "B06",
+            "B07"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Existing grant/recommendation preserved."
+        },
+        {
+          "id": "W02-A08",
+          "claim": "Expansion requires \u226585% median retention at 200 cycles in electrolyte M at 5\u00b0C",
+          "source_ids": [
+            "B06"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Scope includes pouch cells from immediately preceding clause."
+        },
+        {
+          "id": "W02-A09",
+          "claim": "and \u226590% visual yield",
+          "source_ids": [
+            "B06"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Threshold retained."
+        },
+        {
+          "id": "W02-A10",
+          "claim": "Cold results are unavailable",
+          "source_ids": [
+            "B06"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Missing result preserved."
+        },
+        {
+          "id": "W02-A11",
+          "claim": "adjusted drying yielded 47/50 once",
+          "source_ids": [
+            "B06"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Single pilot count preserved."
+        },
+        {
+          "id": "W02-A12",
+          "claim": "Warm pouch results cover only 100 cycles",
+          "source_ids": [
+            "B05"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "No extrapolation to 200 cycles or cold operation."
+        },
+        {
+          "id": "W02-A13",
+          "claim": "Maintain ventilated charging",
+          "source_ids": [
+            "B05"
+          ],
+          "category": "FAITHFUL",
+          "rationale": "Continuing handling procedure retained; no safety certification."
+        }
+      ],
+      "all_actual_assertion_counts": {
+        "FAITHFUL": 13,
+        "AMBIGUOUS": 0,
+        "UNSUPPORTED_STRENGTHENING": 0,
+        "CONTRADICTION": 0
+      }
+    }
+  ],
+  "reader_transitions": [
+    {
+      "reader": "R01",
+      "writer": "W01",
+      "requested_record_id": "C06",
+      "delivered_record_id": "C06",
+      "initial_full_source_status_matches": 6,
+      "final_full_source_status_matches": 6,
+      "initial_final_label_changes": [],
+      "decisive_answer_rescues": 0,
+      "retrieval_characterization": "Added relevant no-effect-estimate explanation for already-unresolved Q6; no decisive rescue.",
+      "final_original_json_valid": true,
+      "format_interpretation": "Parsed without repair"
+    },
+    {
+      "reader": "R02",
+      "writer": "W02",
+      "requested_record_id": "A06",
+      "delivered_record_id": "A06",
+      "initial_full_source_status_matches": 6,
+      "final_full_source_status_matches": 6,
+      "initial_final_label_changes": [],
+      "decisive_answer_rescues": 0,
+      "retrieval_characterization": "Added exact absent-comparator explanation for already-unresolved Q8; no decisive rescue.",
+      "final_original_json_valid": false,
+      "format_interpretation": "No semantic edit; R02 one extra double-quote removed in derived interpretation only"
+    },
+    {
+      "reader": "R03",
+      "writer": "W01",
+      "requested_record_id": "NONE",
+      "delivered_record_id": null,
+      "initial_full_source_status_matches": 6,
+      "final_full_source_status_matches": 6,
+      "initial_final_label_changes": [],
+      "decisive_answer_rescues": 0,
+      "retrieval_characterization": "No original delivered; second answer maintains warranted initial statuses.",
+      "final_original_json_valid": true,
+      "format_interpretation": "Parsed without repair"
+    },
+    {
+      "reader": "R04",
+      "writer": "W02",
+      "requested_record_id": "NONE",
+      "delivered_record_id": null,
+      "initial_full_source_status_matches": 6,
+      "final_full_source_status_matches": 6,
+      "initial_final_label_changes": [],
+      "decisive_answer_rescues": 0,
+      "retrieval_characterization": "No original delivered; second answer maintains warranted initial statuses.",
+      "final_original_json_valid": true,
+      "format_interpretation": "Parsed without repair"
+    }
+  ],
+  "totals": {
+    "initial_full_source_status_match": 24,
+    "initial_full_source_substantive_match": 24,
+    "final_full_source_status_match": 24,
+    "final_full_source_substantive_match": 24,
+    "answers_per_phase": 32,
+    "delivered_warrant_pass": 64,
+    "delivered_warrant_total": 64,
+    "evidence_basis_pass": 64,
+    "scope_time_criterion_pass": 64,
+    "missingness_calibration_pass": 64,
+    "label_changes": 0,
+    "decisive_retrieval_rescues": 0,
+    "final_original_json_valid": 3,
+    "final_original_json_total": 4
+  },
+  "format_warning": "R02 original final is invalid JSON. Semantic scores use the explicitly labeled derived interpretation removing only its extra quote. No actor retry and no overall-pass claim.",
+  "limitations": [
+    "Two purposively authored summaries, four reader contexts; eight within-reader answers are clustered.",
+    "Summary omission of all Clinic/Archive material creates a delivered-information boundary but is not itself an asserted-fact error.",
+    "True-unresolved source labels can match without retention of the full-source reason; Q6/Q8 initial correctness does not demonstrate retained enrollment/pilot details.",
+    "Median omission in W01 is flagged conservatively as ambiguous, not a demonstrated distortion affecting these answers.",
+    "Selected-record access demonstrates no decisive missing-answer rescue in this observed run."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "domain": "Water",
+      "claim": "The accepted eleven-day orchard trial remains a valid acceptance under the original noon-based rule after the April revision.",
+      "instruction": "Assess the claim using the history through the final record. Distinguish the historical acceptance from permission for the next deployment."
+    },
+    {
+      "id": "Q2",
+      "domain": "Water",
+      "claim": "The available Fern results certify that the revised next-deployment gate has been met.",
+      "instruction": "Assess certification against the revised gate. Do not equate lack of certification with measured sensor failure."
+    },
+    {
+      "id": "Q3",
+      "domain": "Battery",
+      "claim": "The adjusted-drying pilot strip meets the visual electrode-yield component of the expansion gate.",
+      "instruction": "Assess only this component, using the observed pilot strip; do not claim process repeatability or full expansion approval."
+    },
+    {
+      "id": "Q4",
+      "domain": "Battery",
+      "claim": "Recipe K pouch cells with electrolyte M retain a median of at least 85% capacity after 200 cycles at 5\u00b0C.",
+      "instruction": "Assess the stated measurement claim from the available results."
+    },
+    {
+      "id": "Q5",
+      "domain": "Clinic",
+      "claim": "In the corrected historic cohort, the seven-day completion rate for calls exceeded the text rate at each clinic.",
+      "instruction": "Assess the claim for the historic cohort, not referrals entering after April 1. State the two site comparisons."
+    },
+    {
+      "id": "Q6",
+      "domain": "Clinic",
+      "claim": "Reminder calls improve seven-day completion for patients requiring an interpreter.",
+      "instruction": "Assess whether the supplied study establishes this effect in that population."
+    },
+    {
+      "id": "Q7",
+      "domain": "Archive",
+      "claim": "The permissions and evaluations in the history authorize release of the complete automated transcription corpus without a further names-and-dates check or correction.",
+      "instruction": "Assess release authorization under the proposed genealogy gate; distinguish poster excerpts and original character-accuracy ranking."
+    },
+    {
+      "id": "Q8",
+      "domain": "Archive",
+      "claim": "Slate has higher handwriting character accuracy than Reed on the fifteen-page English ledger pilot.",
+      "instruction": "Assess the comparison, not Slate's standalone score."
+    }
+  ],
+  "response_schema": {
+    "answers": [
+      {
+        "id": "Q1",
+        "status": "SUPPORTED|CONTRADICTED|UNRESOLVED",
+        "answer_or_bound": "string",
+        "evidence_basis": [
+          "summary quotation and/or delivered record ID with relevant content"
+        ],
+        "missing_issue": "string or null"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "base": "SCORES_MASKED.json",
+  "base_sha256": "e371458285f59adf3fac0de6e9277f2cbda5ef2bf8350228c993b7b3f7f54f26",
+  "overrides": [
+    {
+      "path": "writer_scores[writer=W01].selected_clause_audit[id=F07]",
+      "category": "FAITHFUL",
+      "retained_text": "repeatability and cost remain unverified",
+      "rationale": "The summary recognizably retains the selected assertion\u2019s decisive no-verified-cost content. Missing staff-time and scrap-disposal reasons are ancillary to that actual assertion. My all-actual-assertion audit already rated the same cost clause faithful, so the fixed-item OMITTED label was inconsistent. Correcting the rating applies the existing frozen rule, without changing the item, gold or summary."
+    },
+    {
+      "path": "writer_scores[writer=W01].selected_coverage",
+      "value": {
+        "retained": 2,
+        "total": 12
+      }
+    },
+    {
+      "path": "writer_scores[writer=W01].selected_asserted_fidelity",
+      "value": {
+        "faithful": 2,
+        "ambiguous": 0,
+        "unsupported_strengthening": 0,
+        "contradiction": 0
+      }
+    }
+  ],
+  "reader_totals_unchanged": true
+}

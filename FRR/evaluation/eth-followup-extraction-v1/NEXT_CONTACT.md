@@ -1,0 +1,9 @@
+# Next contact: frozen intermediate versus recomputed expression
+
+Create fresh paired reader cases in the existing joined-premise evaluation, without editing FRR core. One case must require the creation-time value of a frozen intermediate; its mirror must explicitly authorize recomputation under the newer context. Keep visible numbers and expression the same where possible, varying the required provenance/context premise. Include a same-context control and an insufficient-origin-information case whose correct response preserves uncertainty.
+
+The exact modular example in this directory is an independent arithmetic design aid: evaluating 3+3 modulo four and then canonically lifting to modulo sixteen yields 2; computing 3+3 directly modulo sixteen yields 6. The claim is not that human evidence obeys modular arithmetic. The transferable obligation is that a representation's origin and permitted reconstruction operation must be carried together.
+
+Precommit case meanings and expected answers before reader exposure. Freeze a small fixed batch; preserve every failure and do not replace cases after seeing outcomes. Score answer correctness separately from whether the reader identifies the premise permitting lift/recompute. Compare against the existing joined-premise baseline only if available unchanged. Do not infer benefit from this mathematical illustration alone.
+
+For independent formal verification of ETH itself, the next separate task is an isolated checkout at the pinned commit, exact Lean v4.34.1 toolchain, dependency/cache provenance, and a scoped build plus Comparator execution using the repository's SubexponentialSAT config. Record commands, resource use, full exit statuses, and axiom/comparison output. That task was not performed here and would certify only the checked formal statement and its foundations, with a separate statement-to-manuscript scope check still required.

@@ -8,7 +8,7 @@ This is a saved dependency-aware plan, not a running scheduler. It queues every 
 
 The machine-readable source of current queue status is [QUEUE.json](QUEUE.json). Prioritized entries have question, comparison, outcomes, prerequisites, dependencies and a result reference only when appropriate. Lower priority number means nearer contact; it does not mean scientific importance or evidential confidence.
 
-Latest completed contact: [JW-C1/2/3](../joined-warrant-reader-v1/REPORT.md),16freshcontexts/eightpairedcases, all actions/seven rubric dimension pairs tied. No reminder promotion or broad efficacy claim. Pre-reader feasibility defect preserved and repaired; optional guidance/example clarified. [Checkpoint](../../sync/checkpoints/AFTER_JOINED_WARRANT_READERS_2026-10-27.md), [next handoff direction](../joined-warrant-reader-v1/NEXT_CONTACT.md). Earlier QR fidelity proposal now has this scoped contact; broader families remain open. Queue35/30unfinished/sixpartialfamilies unchanged,MEM-04partial; no backgroundwork.
+Latest completed contact: [HS-C1/2/3](../handoff-criterion-shift-v1/REPORT.md), two 87-word writers / four two-turn readers. Handoff omissions and warranted unknowns separated; no decisive rescue from chosen records. JSON failure, metric ambiguity and evaluator rating repair preserved. [Checkpoint](../../sync/checkpoints/AFTER_HANDOFF_CRITERION_SHIFT_2026-10-27.md), [next acquisition proposal](../handoff-criterion-shift-v1/NEXT_CONTACT.md). Parallel [ETH deeper extraction](../eth-followup-extraction-v1/REPORT.md) remains static, no proof rebuild. MEM-04 stays partial; 35 entries / 30 unfinished / six partial families unchanged. Earlier contact proposals/history preserved; no background work.
 
 ## Nearest work
 

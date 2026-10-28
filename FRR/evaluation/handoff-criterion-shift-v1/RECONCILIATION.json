@@ -1,0 +1,51 @@
+{
+  "status": "POST_DEPOSIT_RECONCILIATION_SUPPLEMENT",
+  "timestamp_utc": "2026-10-28T01:17:34.385706+00:00",
+  "masking": "Reviewer masked deposit read after both deposits frozen; writer condition mapping/prompts remain unread.",
+  "reviewer_files_read": [
+    "review/OUTCOME_MASKED.md",
+    "review/OUTCOME_MASKED.json"
+  ],
+  "changes": [
+    {
+      "writer": "W01",
+      "item": "F07",
+      "old_category": "OMITTED",
+      "new_category": "FAITHFUL",
+      "actual_quote": "repeatability and cost remain unverified",
+      "source_id": "B07",
+      "source_core": "Finance has no verified unit cost because staff time and scrap disposal remain unpriced.",
+      "rubric_quote": "A shorter statement may omit ancillary detail without changing what it asserts.",
+      "rationale": "The summary recognizably retains the selected assertion\u2019s decisive no-verified-cost content. Missing staff-time and scrap-disposal reasons are ancillary to that actual assertion. My all-actual-assertion audit already rated the same cost clause faithful, so the fixed-item OMITTED label was inconsistent. Correcting the rating applies the existing frozen rule, without changing the item, gold or summary."
+    }
+  ],
+  "reconciled_selected_counts": {
+    "W01": {
+      "FAITHFUL": 2,
+      "OMITTED": 10,
+      "AMBIGUOUS": 0,
+      "UNSUPPORTED_STRENGTHENING": 0,
+      "CONTRADICTION": 0,
+      "retained": 2,
+      "total": 12
+    },
+    "W02": {
+      "FAITHFUL": 1,
+      "OMITTED": 11,
+      "AMBIGUOUS": 0,
+      "UNSUPPORTED_STRENGTHENING": 0,
+      "CONTRADICTION": 0,
+      "retained": 1,
+      "total": 12
+    }
+  },
+  "unchanged": "All reader scores, format status, budget scores, all-actual-assertion audit and W01 median ambiguity remain unchanged. No source, question, key, rubric, participant or original masked deposit modified.",
+  "originals_sha256": {
+    "SCORES_MASKED.json": "e371458285f59adf3fac0de6e9277f2cbda5ef2bf8350228c993b7b3f7f54f26",
+    "SCORING_REPORT_MASKED.md": "421dcafe62a1f00742a8110d12997a4ba162bfcf9f4d0c564069f8fade133765",
+    "SCORER_RECEIPT_MASKED.json": "6b87cde3db3c1079d986ce3bdbaf23a3be43c7ab9e0f807e9750efe161f6f2d0",
+    "KEY.json": "59d301a12f01dd6699ce3c793c34754dcbe46d76c1e47d23c6bbeabc3a557e29",
+    "SCORING.md": "ccf71230389f74c89e772ec9e8118b2ac474db914ab06a67edd6ecfcb1d51544"
+  },
+  "agreement": "No remaining substantive disagreement after F07 correction. Different all-assertion segmentation counts are presentation differences, not different semantic judgments."
+}

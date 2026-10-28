@@ -1,0 +1,14 @@
+# Independent prospective review criteria
+
+Status: awaiting source, design, key, prompts and named prior NEXT_CONTACT. This deposit states criteria before viewing artifacts; it is not launch approval.
+
+1. **Source and answers.** Each answer must be derivable from explicit records with preserved time, scope, modality, quantifiers, exceptions and provenance. Distinguish unknown in the source from contradicted by the source. Ambiguous gold labels require repair before launch.
+2. **Writer blindness.** Writer packets may contain the frozen source, common summary task and assigned instruction, but no future questions, answer keys, hidden evaluation clauses, arm mapping, or evaluator rationale. Any overlap between current summary needs and future queries must be disclosed.
+3. **Criterion changes.** Declare what information the original two questions require, what later questions newly require, and which clauses were material to the original criterion. Do not classify every omission as fidelity failure. Report omission, unsupported addition, strengthening, explicit contradiction and answer sufficiency separately.
+4. **Evidence-relative outcomes.** Evaluate reader support using the actual summary and any fetched record. A correct abstention when evidence is absent is not a wrong source answer. Score full-source truth separately from answerability and claim support. A confidently guessed correct source answer can still lack support.
+5. **Condition comparisons.** Keep reader questions and instructions fixed except the declared access manipulation. Initial summary-only stage must precede retrieval. One-record access must mean one record of a defined scope, with a fixed selection process and no further browsing. Document search/index metadata as evidence too.
+6. **Conditional scoring.** Predetermine how retrieval selection, abstention, partial answers, unsupported certainty, and multi-clause answers are scored. Report question-level paired transitions rather than conflating different information conditions.
+7. **Feasibility and reporting.** Freeze files before actors; save exact packets/responses and hashes; count actual tool calls, retrieved records and tokens/words when available. The four-reader/two-stage design supports descriptive observations only; avoid aggregate efficacy or causal claims.
+8. **Review independence.** Before independent outcome deposits, do not inspect neutral writer-arm mapping or writer instruction arms. Record reviewed files and visibility limits. Preserve original reviews before any correction.
+
+Blocking findings will name the designer/evaluator artifact and specific ambiguity, even if no actor has run. Outcome attribution must separate artifact defects, source fidelity, criterion changes, access restrictions, retrieval choices and reader reasoning.

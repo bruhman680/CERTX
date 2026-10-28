@@ -1,0 +1,53 @@
+{
+  "seed": 2026102711,
+  "writers": [
+    {
+      "label": "a",
+      "arm": "ordinary",
+      "writer": "W01",
+      "prompt": "delivery/writers/W01.txt",
+      "prompt_sha256": "5b10ae0098e3d0deba2ac45991565783ad371cad0bbff061f5dde419cc7e7e17"
+    },
+    {
+      "label": "b",
+      "arm": "scoped_preservation",
+      "writer": "W02",
+      "prompt": "delivery/writers/W02.txt",
+      "prompt_sha256": "5afd217ad58c8f9e88eaa321c5e33486045d790af3b5a88c10aaeb2f21ce0358"
+    }
+  ],
+  "readers": [
+    {
+      "writer": "W01",
+      "label": "a",
+      "access": "access",
+      "reader": "R01",
+      "prompt": "delivery/readers/R01.txt",
+      "prompt_sha256": "7aff92995c72ce5e905ff94b5b21b1d141501e54f2d52cba6b0af98280bd4fc2"
+    },
+    {
+      "writer": "W02",
+      "label": "b",
+      "access": "access",
+      "reader": "R02",
+      "prompt": "delivery/readers/R02.txt",
+      "prompt_sha256": "043d2332e835e729b07737c6bb15a31e8aec4b2e4b3411011417512ab6101a72"
+    },
+    {
+      "writer": "W01",
+      "label": "a",
+      "access": "summary",
+      "reader": "R03",
+      "prompt": "delivery/readers/R03.txt",
+      "prompt_sha256": "b444893479928564efe85dac5d83b4ca5d090d27c8014cc0b833231eb9b8ee16"
+    },
+    {
+      "writer": "W02",
+      "label": "b",
+      "access": "summary",
+      "reader": "R04",
+      "prompt": "delivery/readers/R04.txt",
+      "prompt_sha256": "abc4aeb5aff798df116b620b26c9c8b7305ba3bb53e90b7dfdd9a2c902f48547"
+    }
+  ]
+}

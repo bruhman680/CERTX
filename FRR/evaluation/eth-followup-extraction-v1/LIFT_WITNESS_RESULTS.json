@@ -1,0 +1,23 @@
+{
+  "scope": "canonical representatives do not preserve ring operations across precision changes",
+  "cases": [
+    {
+      "operation": "addition",
+      "original": 3,
+      "creation_precision_bits": 2,
+      "later_precision_bits": 4,
+      "creation_residue_lifted": 2,
+      "expression_recomputed_at_later_precision": 6,
+      "same_at_creation_precision": true
+    },
+    {
+      "operation": "multiplication",
+      "original": 3,
+      "creation_precision_bits": 2,
+      "later_precision_bits": 4,
+      "creation_residue_lifted": 1,
+      "expression_recomputed_at_later_precision": 9,
+      "same_at_creation_precision": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# Comparison and optional refinement review
+
+Pass, with the new example's HS report link awaiting root's planned REPORT.md creation. This review follows root-authorized unmask after original and supplemental independent deposits were frozen. The actual mapping was first read now: W01 ordinary, W02 scoped-preservation; R01/R02 have record access, R03/R04 are their summary-only controls. COMPARISON.md matches those assignments and the independently reviewed outcomes.
+
+The comparison correctly separates warranted unknowns from full-source disagreements, and does not infer that Q6/Q8 matching unknown labels demonstrate retained source history. It acknowledges actual added explanation from C06/A06 without calling it decisive rescue. It avoids retrospective condemnation of record choices from hidden-answer knowledge. It preserves the R02 raw-format failure alongside the labeled semantic interpretation, and discloses the F07 rating-application correction. Reviewer segmentation counts are explicitly excluded as comparable performance measures.
+
+The new example preserves the actual coverage, criterion-ambiguity and format observations, including no observed answer dependence on the missing median. It does not call W01's ambiguous criterion a proved every-cell guarantee or attribute a benefit to the reminder. Its ETH link exists and the analogy is expressly limited to representation/origin obligations, not a claimed mathematical encoding of semantic memory.
+
+The context-checkpoints module exactly preserves its prior bytes and appends one substantive paragraph. That paragraph narrowly recommends retaining metric/statistic or quantifier alongside values/units when consequential. It names the observed ambiguity and the independent output-format distinction, and labels the clarification optional with no demonstrated behavioral/storage benefit. No claim is made that this clarification was tested on readers or repairs malformed JSON.
+
+No change to source, gold, rubric, actor output, original independent review or reconciliation was made for this review. Exact reviewed raw-file hashes and checks are saved in REFINEMENT_COMPARISON_REVIEW.json. The final report is not yet present and therefore is outside this clearance.

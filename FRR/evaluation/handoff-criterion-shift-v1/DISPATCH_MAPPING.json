@@ -1,0 +1,45 @@
+{
+  "seed": 2026102711,
+  "writers": [
+    {
+      "label": "a",
+      "arm": "ordinary",
+      "writer": "W01",
+      "prompt": "delivery/writers/W01.txt",
+      "prompt_sha256": "5b10ae0098e3d0deba2ac45991565783ad371cad0bbff061f5dde419cc7e7e17"
+    },
+    {
+      "label": "b",
+      "arm": "scoped_preservation",
+      "writer": "W02",
+      "prompt": "delivery/writers/W02.txt",
+      "prompt_sha256": "5afd217ad58c8f9e88eaa321c5e33486045d790af3b5a88c10aaeb2f21ce0358"
+    }
+  ],
+  "readers": [
+    {
+      "writer": "W01",
+      "label": "a",
+      "access": "access",
+      "reader": "R01"
+    },
+    {
+      "writer": "W02",
+      "label": "b",
+      "access": "access",
+      "reader": "R02"
+    },
+    {
+      "writer": "W01",
+      "label": "a",
+      "access": "summary",
+      "reader": "R03"
+    },
+    {
+      "writer": "W02",
+      "label": "b",
+      "access": "summary",
+      "reader": "R04"
+    }
+  ]
+}

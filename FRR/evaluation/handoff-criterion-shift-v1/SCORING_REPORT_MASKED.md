@@ -1,0 +1,13 @@
+# Independent masked semantic scoring
+
+Each phase has 24/32 full-source status and substantive matches. All 64 initial/final answers follow their actually delivered premises; evidence, scope/criterion and missingness handling pass on semantic inspection. These are separate results. Q5 and Q7 are decisive under the full source but unresolved from every actual packet. Their eight lost matches per phase reflect omitted Clinic comparisons and Archive permissions, not reader guessing or an unsupported refusal to answer. Source-unresolved Q6 and Q8 match even before their reasons are retained; that coincidence does not establish whole-source preservation.
+
+Both 87-word summaries meet the 90-word cap and cover Water/Battery. Neither asserts Clinic or Archive findings. Of twelve fixed unqueried-clause targets, each summary retains F03 faithfully and omits eleven. Omission measures coverage without a fidelity penalty. All actual summary assertions were additionally audited: W01 has fourteen faithful clauses and one ambiguous metric clause; W02 has thirteen faithful clauses. No explicit contradiction or definite unsupported strengthening was identified.
+
+W01 says “expansion requires ≥85% retention” without “median.” A conventional shorthand reading preserves the intended aggregate; a stronger per-cell reading is not excluded. I conservatively record AMBIGUOUS, not a proven claim that every cell meets the threshold. W02 retains “median.” This ambiguity changes none of the observed reader statuses: cold results remain absent. It is not evidence of a causal treatment effect.
+
+R01 acquired C06 and R02 acquired A06. C06 added relevant missing-effect context to an already-unresolved interpreter question; A06 added Slate's 82%, orientation assistance and the missing Reed comparator to an already-unresolved comparison. Neither acquisition changed a label or rescued Q5/Q7. All four contexts remain 6/8 source matches at both stages, with no decisive retrieval rescue. R03/R04 received no original.
+
+R02's original final reply is invalid JSON because of an extra double quote. Its preserved derived semantic interpretation removes only that quote. Semantic results above apply to that interpretation; format validity is separately 3/4 finals, and there is no overall-pass claim or actor retry. Other finals parsed without repair.
+
+The score is a small authored contact, with one summary per hidden writer condition and four clustered reader contexts. It measures conditional reader warrant, source-answer availability and asserted-clause fidelity separately. It establishes neither a general treatment advantage nor whole-handoff completeness. KEY and SCORING remained unchanged; no outcome-conditioned question or gold revision was made.
