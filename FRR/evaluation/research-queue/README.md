@@ -1,5 +1,7 @@
 # Research queue: HPGM gates and retained-memory follow-ups
 
+Latest bounded contact: [index-acquisition pilot](../index-acquisition-pilot-v1/REPORT.md). Two fresh readers, same handoff and two lookups: basic index selected operational updates, descriptive index selected decisive originals and restored two answers; both preserved warranted unknowns. One reader per arm, 55 added metadata words, no general efficacy claim or harness promotion. [Next proposals](../index-acquisition-pilot-v1/NEXT_CONTACT.md) remain unlaunched. Earlier current/latest entries are historical. Saved for usage-aware wind-down; no background work. Queue/core/schema unchanged.
+
 Current user aim: useful reasoning and behavioral habits for our ongoing learning/growth, not advantage over other people or labs. [PG-C1](../practice-growth-v1/REPORT.md) practices consequential noticing, saved-data contact, a reopening build and a peer-found repair; it does not launch another guidance-ranking study. Current queue counts remain35 entries/30unfinished/six partial families.
 
 This is a saved dependency-aware plan, not a running scheduler. It queues every explicit HPGM test direction from [the post review](../HPGM_POST_CONTACT.md), the nearest unresolved relay/RR1 contacts, and references older test families rather than replacing their detailed records. It does not claim a new exhaustive audit of every historical CERTX statement.

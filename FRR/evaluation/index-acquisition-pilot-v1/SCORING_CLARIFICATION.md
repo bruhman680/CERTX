@@ -1,0 +1,3 @@
+# Prospective conditional-scoring clarification
+
+Full-source Q2 is CONTRADICTED by M04. M02 alone limits the excerpt grant; it does not establish that an independent full-release grant exists or is absent, nor whether every-page checking has completed. A cautiously justified UNRESOLVED from M02 alone is conditionally warranted though not a full-source match; a narrow statement that M02 does not authorize complete release is also warranted. Do not infer corpus-wide absence merely from grant scope. Judge actual claim breadth and reasons separately from status agreement. The key is not a rule to reward unsupported certainty. This clarification follows independent prospective review, before any reader dispatch. No source, questions or packet changed.

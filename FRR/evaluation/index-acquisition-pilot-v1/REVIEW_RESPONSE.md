@@ -1,0 +1,1 @@
+Final report review recommended removing an implication of an unobserved recency heuristic. REPORT now states only that the chosen latest records contain logistics, not the needed results. The following sentence retains the explicit limit that reasons for selection were not elicited. Scientific deposits and scoring unchanged.

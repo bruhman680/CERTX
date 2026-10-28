@@ -1,0 +1,38 @@
+This is a bounded fictional record-acquisition pilot. Read only your assigned packet below using one file read if needed; do not inspect other files, tools, peers or repository context. Treat the handoff as supplied assertions. Omitted facts are unknown. Original records, when delivered, control only within their scope. SUPPORTED means the visible evidence entails the claim, CONTRADICTED means it entails its negation (including absence of authorization when authorization is claimed), UNRESOLVED means neither. Do not infer a measured failure from missing certification, or a zero causal effect from missing data.
+First answer each question using only the handoff and index. The index is retrieval metadata, not measurement or authorization evidence. Then choose up to TWO distinct record IDs from the inventory; choosing fewer or NONE is permitted. No adaptive second lookup. Return JSON only: {"initial_answers":[{"id":"Q1","status":"...","reason":"..."},...],"request_ids":["..."]}. Do not answer again until the selected original records are delivered. No tools on the second turn. Then return JSON only: {"final_answers":[{"id":"Q1","status":"...","reason":"...","record_ids":["..."]},...]}. No peer communication. No hidden full-source knowledge.
+
+HANDOFF
+Dispatch: retain the current roster and plan a dawn-shift study. Museum: install the permitted exhibition excerpts and assess protective lighting. Further operational and release decisions require consulting the original records.
+
+QUESTIONS
+[
+  {
+    "id": "Q1",
+    "claim": "In the corrected historic May 1\u20133 cohort, bicycle seven-day completion exceeded van completion at each depot.",
+    "detail": "State the comparisons at both depots; distinguish the historic cohort from later enrollment policy."
+  },
+  {
+    "id": "Q2",
+    "claim": "The history authorizes release of the complete automated catalog without any additional permission or names-and-dates checking.",
+    "detail": "Distinguish excerpt display permission, transcription accuracy and complete-catalog authorization."
+  },
+  {
+    "id": "Q3",
+    "claim": "Bicycle delivery improves seven-day completion for dawn-shift deliveries.",
+    "detail": "State whether this subgroup effect is established by the supplied evidence."
+  }
+]
+
+INVENTORY
+D01 | Dispatch | 2032-05-01 | Initial route comparison plan
+D02 | Dispatch | 2032-05-04 | Preliminary completion counts
+D03 | Dispatch | 2032-05-07 | New enrollment policy
+D04 | Dispatch | 2032-05-09 | Corrected historic cohort and exclusions
+D05 | Dispatch | 2032-05-12 | Future dawn-shift study proposal
+D06 | Dispatch | 2032-05-15 | Staff time and staffing decision
+M01 | Museum | 2032-05-01 | Catalog automation pilot
+M02 | Museum | 2032-05-04 | Exhibition excerpt permission
+M03 | Museum | 2032-05-07 | Targeted names-and-dates audit
+M04 | Museum | 2032-05-09 | Complete-catalog release conditions
+M05 | Museum | 2032-05-12 | Handwriting extension and licensing
+M06 | Museum | 2032-05-15 | Exhibition installation logistics
