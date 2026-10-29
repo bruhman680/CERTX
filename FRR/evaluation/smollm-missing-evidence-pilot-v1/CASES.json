@@ -1,0 +1,98 @@
+[
+  {
+    "id": "PA",
+    "family": "sweetness",
+    "records": "No sweetness measurement for Pear Lot P was collected. The acceptance minimum is 10 units.",
+    "question": "Does Pear Lot P meet the acceptance minimum?",
+    "gold": "UNKNOWN",
+    "basis": "Relevant measured value >=10; no measurement unresolved."
+  },
+  {
+    "id": "PB",
+    "family": "sweetness",
+    "records": "The measured sweetness of Pear Lot P is 8 units. The acceptance minimum is 10 units.",
+    "question": "Does Pear Lot P meet the acceptance minimum?",
+    "gold": "NO",
+    "basis": "Relevant measured value >=10; no measurement unresolved."
+  },
+  {
+    "id": "PC",
+    "family": "sweetness",
+    "records": "The measured sweetness of Pear Lot P is 12 units. The acceptance minimum is 10 units.",
+    "question": "Does Pear Lot P meet the acceptance minimum?",
+    "gold": "YES",
+    "basis": "Relevant measured value >=10; no measurement unresolved."
+  },
+  {
+    "id": "BA",
+    "family": "retention",
+    "records": "No cold-retention measurement for battery D was collected. The acceptance minimum is 85 percent.",
+    "question": "Does battery D meet the cold-retention minimum?",
+    "gold": "UNKNOWN",
+    "basis": "Relevant measured retention >=85; no measurement unresolved."
+  },
+  {
+    "id": "BB",
+    "family": "retention",
+    "records": "The measured cold retention of battery D is 80 percent. The acceptance minimum is 85 percent.",
+    "question": "Does battery D meet the cold-retention minimum?",
+    "gold": "NO",
+    "basis": "Relevant measured retention >=85; no measurement unresolved."
+  },
+  {
+    "id": "BC",
+    "family": "retention",
+    "records": "The measured cold retention of battery D is 90 percent. The acceptance minimum is 85 percent.",
+    "question": "Does battery D meet the cold-retention minimum?",
+    "gold": "YES",
+    "basis": "Relevant measured retention >=85; no measurement unresolved."
+  },
+  {
+    "id": "EA",
+    "family": "zero_effect",
+    "records": "In this deterministic toy test, effect is defined as the measured count change. The effect was not measured. No count-change results were collected.",
+    "question": "Was the effect exactly zero units?",
+    "gold": "UNKNOWN",
+    "basis": "Exact defined quantity; unmeasured is not measured zero. No statistical effect inference."
+  },
+  {
+    "id": "EB",
+    "family": "zero_effect",
+    "records": "In this deterministic toy test, effect is defined as the measured count change. The measured count change was exactly 5 units.",
+    "question": "Was the effect exactly zero units?",
+    "gold": "NO",
+    "basis": "Exact defined quantity; unmeasured is not measured zero. No statistical effect inference."
+  },
+  {
+    "id": "EC",
+    "family": "zero_effect",
+    "records": "In this deterministic toy test, effect is defined as the measured count change. The measured count change was exactly 0 units.",
+    "question": "Was the effect exactly zero units?",
+    "gold": "YES",
+    "basis": "Exact defined quantity; unmeasured is not measured zero. No statistical effect inference."
+  },
+  {
+    "id": "RA",
+    "family": "completion_rate",
+    "records": "North completed 8 deliveries. Its number of attempted deliveries was not recorded. The acceptance rule requires at least half of attempted deliveries to be completed.",
+    "question": "Did North meet the acceptance rule?",
+    "gold": "UNKNOWN",
+    "basis": "Missing denominator unresolved;8/20<half,12/20>half."
+  },
+  {
+    "id": "RB",
+    "family": "completion_rate",
+    "records": "North completed 8 of 20 attempted deliveries. The acceptance rule requires at least half of attempted deliveries to be completed.",
+    "question": "Did North meet the acceptance rule?",
+    "gold": "NO",
+    "basis": "Missing denominator unresolved;8/20<half,12/20>half."
+  },
+  {
+    "id": "RC",
+    "family": "completion_rate",
+    "records": "North completed 12 of 20 attempted deliveries. The acceptance rule requires at least half of attempted deliveries to be completed.",
+    "question": "Did North meet the acceptance rule?",
+    "gold": "YES",
+    "basis": "Missing denominator unresolved;8/20<half,12/20>half."
+  }
+]
