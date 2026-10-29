@@ -1,0 +1,82 @@
+{
+  "scout_date_utc": "2026-10-29",
+  "status": "plausible_primary_match_original_x_post_unidentified",
+  "restrictions": {
+    "model_api_calls": 0,
+    "installs": 0,
+    "account_actions": 0,
+    "replication_run": false
+  },
+  "searches": [
+    "AI heart image recursion Claude Twitter",
+    "\"heart\" \"image\" \"recursion\" model AI",
+    "site:x.com \"heart\" \"recursive\" Claude",
+    "\"heart\" \"infinite loop\" \"Claude\" image",
+    "\"A Heart Means Recursion\" site:x.com",
+    "\"red heart\" \"recursion\" \"DAIR\"",
+    "\"A Heart Means Recursion\" Tartaglini",
+    "\"A Heart Means Recursion\" \"twitter\"",
+    "site:x.com/dair_ai \"heart\" recursion"
+  ],
+  "primary": [
+    {
+      "id": "heart-paper",
+      "title": "A Heart Means Recursion: Exploring Visual Meaning and Communication in VLMs",
+      "urls": [
+        "https://arxiv.org/abs/2610.36449",
+        "https://arxiv.org/html/2610.36449v1"
+      ],
+      "submitted": "2026-10-27",
+      "authors": [
+        "Alexa R. Tartaglini",
+        "Zhengxuan Wu",
+        "Thaddäus Wiedemer",
+        "Martin Wattenberg",
+        "Been Kim",
+        "Yuxuan Li"
+      ],
+      "access": "Web tool abstract and selected HTML text viewports; not full-paper read, PDF/source/code not downloaded; images not visually inspected.",
+      "read_depth": {
+        "abstract_lines": "8–27",
+        "html_initial": "104–176",
+        "html_appendix_a": "340–370",
+        "html_appendix_b": "371–386",
+        "html_additional": "246–279 (partial); find excerpts for captions/baselines/prompt robustness"
+      },
+      "limitations": [
+        "Exact prompt blocks absent from extracted text around B.1; do not represent this as exact replication material.",
+        "No original heart asset verified.",
+        "No code repository identified in inspected text; this does not establish that none exists.",
+        "No independent reproduction performed."
+      ],
+      "operational_definition": "Share of generated inorder binary-tree traversal implementations classified as recursive rather than iterative; image-conditioned share minus no-image share.",
+      "reported_result": "At n=20 samples per condition, red heart: Claude Opus 4.7 and GPT-5.4 recursive share 1.0, no-image share 0.0.",
+      "relation_to_claim": "Strong topic match; cannot identify the user's specific X post."
+    }
+  ],
+  "secondary_leads": [
+    {
+      "url": "https://fourweekmba.com/ai-a-red-heart-image-made-claude-and-gpt-5-4-write-recursion/",
+      "access": "Search-result snippets only; attempted open returned Internal Error / inaccessible.",
+      "use": "Discovery only; search snippet attributes a social summary to DAIR.AI. Original post not located or read."
+    },
+    {
+      "url": "https://thelatestinai.com/papers/2610.36449",
+      "access": "Search-result snippets only.",
+      "use": "Discovery of arXiv identifier; not independent corroboration."
+    }
+  ],
+  "original_x_post": {
+    "identified": false,
+    "url": null,
+    "limit": "Targeted x.com searches did not surface a relevant original post; no X thread read."
+  },
+  "not_supported": [
+    "Nonterminating text repetition",
+    "Recursive image editing",
+    "Autoregressive feedback loop across calls",
+    "Internal recursive computation",
+    "A heart alone triggers a model-independent state"
+  ],
+  "recommended_next_step": "Recover exact prompt blocks and original asset first. Only then consider the bounded output-strategy pilot described in HEART_SCOUT.md."
+}

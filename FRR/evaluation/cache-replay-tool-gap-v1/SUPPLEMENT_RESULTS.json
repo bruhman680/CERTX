@@ -1,0 +1,80 @@
+{
+  "scope": "Post-development boundary diagnostics; not independent model validation",
+  "checks": [
+    {
+      "case": "unknown_marker:'unknown'",
+      "reuse": 0,
+      "pass": true
+    },
+    {
+      "case": "unknown_marker:' Unavailable '",
+      "reuse": 0,
+      "pass": true
+    },
+    {
+      "case": "unknown_marker:'UNSPECIFIED'",
+      "reuse": 0,
+      "pass": true
+    },
+    {
+      "case": "unknown_marker:'  '",
+      "reuse": 0,
+      "pass": true
+    },
+    {
+      "case": "changed_identity:model_revision",
+      "reuse": 0,
+      "pass": true
+    },
+    {
+      "case": "changed_identity:tokenizer_revision",
+      "reuse": 0,
+      "pass": true
+    },
+    {
+      "case": "changed_identity:position_config",
+      "reuse": 0,
+      "pass": true
+    },
+    {
+      "case": "changed_identity:attention_policy",
+      "reuse": 0,
+      "pass": true
+    },
+    {
+      "case": "changed_identity:kv_layout",
+      "reuse": 0,
+      "pass": true
+    },
+    {
+      "case": "changed_identity:dtype",
+      "reuse": 0,
+      "pass": true
+    },
+    {
+      "case": "changed_identity:adapter_identity",
+      "reuse": 0,
+      "pass": true
+    },
+    {
+      "case": "changed_identity:multimodal_identity",
+      "reuse": 0,
+      "pass": true
+    },
+    {
+      "case": "changed_identity:namespace",
+      "reuse": 0,
+      "pass": true
+    },
+    {
+      "case": "cli_matches_library",
+      "pass": true
+    }
+  ],
+  "valid_metadata_wrong_tensor": {
+    "plan_reuses_tokens": 24,
+    "max_logit_error": 0.4787093880527193,
+    "interpretation": "Planner cannot inspect/authenticate tensor state; backend must bind actual cache artifact and verify execution contract."
+  },
+  "no_new_token_case": "Planner may return an empty replay when everything is already cached. A generation backend must retain last-token logits or replay that token to obtain logits; planner does not supply logits."
+}
