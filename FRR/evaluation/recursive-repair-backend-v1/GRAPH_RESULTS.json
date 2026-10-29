@@ -1,0 +1,573 @@
+{
+  "scope": "Stipulated graph/rules, typed values, authored development; no agent self-reflection or factual inference",
+  "cases": [
+    {
+      "id": "corrected_source",
+      "initial": {
+        "verdict": "SUPPORTED",
+        "result": {
+          "value": true,
+          "reason": "explicit_conjunction",
+          "fingerprint": "9e4f260f9bd21106eff3c200ff2a2fa63e3334b86facc1812b8ce28106643437"
+        },
+        "trace": [
+          {
+            "node": "retention",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "acceptance",
+            "action": "recompute",
+            "reason": "explicit_numeric_rule"
+          },
+          {
+            "node": "permission",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "naive_unchecked_historical_reuse": {
+        "verdict": "SUPPORTED",
+        "result": {
+          "value": true,
+          "reason": "explicit_conjunction",
+          "fingerprint": "9e4f260f9bd21106eff3c200ff2a2fa63e3334b86facc1812b8ce28106643437"
+        },
+        "trace": [
+          {
+            "node": "retention",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "acceptance",
+            "action": "recompute",
+            "reason": "explicit_numeric_rule"
+          },
+          {
+            "node": "permission",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "reassessed": {
+        "verdict": "CONTRADICTED",
+        "result": {
+          "value": false,
+          "reason": "explicit_conjunction",
+          "fingerprint": "7f6637e24ac37ff8879529df9993b333ecafa0ab69cb2ef62287e954a198490f"
+        },
+        "trace": [
+          {
+            "node": "retention",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "acceptance",
+            "action": "recompute",
+            "reason": "explicit_numeric_rule"
+          },
+          {
+            "node": "permission",
+            "action": "reuse"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "expected": "CONTRADICTED",
+      "matches_expected": true,
+      "historical_object_preserved": true
+    },
+    {
+      "id": "criterion_change",
+      "initial": {
+        "verdict": "SUPPORTED",
+        "result": {
+          "value": true,
+          "reason": "explicit_conjunction",
+          "fingerprint": "10e26be3060ef97a6d3f4d7c897aa61daab31cdf83ebd2821a053505305f0b54"
+        },
+        "trace": [
+          {
+            "node": "retention",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "acceptance",
+            "action": "recompute",
+            "reason": "explicit_numeric_rule"
+          },
+          {
+            "node": "permission",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "naive_unchecked_historical_reuse": {
+        "verdict": "SUPPORTED",
+        "result": {
+          "value": true,
+          "reason": "explicit_conjunction",
+          "fingerprint": "10e26be3060ef97a6d3f4d7c897aa61daab31cdf83ebd2821a053505305f0b54"
+        },
+        "trace": [
+          {
+            "node": "retention",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "acceptance",
+            "action": "recompute",
+            "reason": "explicit_numeric_rule"
+          },
+          {
+            "node": "permission",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "reassessed": {
+        "verdict": "CONTRADICTED",
+        "result": {
+          "value": false,
+          "reason": "explicit_conjunction",
+          "fingerprint": "149f195536bceaf2d4cb0947dc7fb56858859d1a79c43ed1509966b8239b5a67"
+        },
+        "trace": [
+          {
+            "node": "retention",
+            "action": "reuse"
+          },
+          {
+            "node": "acceptance",
+            "action": "recompute",
+            "reason": "explicit_numeric_rule"
+          },
+          {
+            "node": "permission",
+            "action": "reuse"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "expected": "CONTRADICTED",
+      "matches_expected": true,
+      "historical_object_preserved": true
+    },
+    {
+      "id": "permission_withdrawal",
+      "initial": {
+        "verdict": "SUPPORTED",
+        "result": {
+          "value": true,
+          "reason": "explicit_conjunction",
+          "fingerprint": "9e4f260f9bd21106eff3c200ff2a2fa63e3334b86facc1812b8ce28106643437"
+        },
+        "trace": [
+          {
+            "node": "retention",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "acceptance",
+            "action": "recompute",
+            "reason": "explicit_numeric_rule"
+          },
+          {
+            "node": "permission",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "naive_unchecked_historical_reuse": {
+        "verdict": "SUPPORTED",
+        "result": {
+          "value": true,
+          "reason": "explicit_conjunction",
+          "fingerprint": "9e4f260f9bd21106eff3c200ff2a2fa63e3334b86facc1812b8ce28106643437"
+        },
+        "trace": [
+          {
+            "node": "retention",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "acceptance",
+            "action": "recompute",
+            "reason": "explicit_numeric_rule"
+          },
+          {
+            "node": "permission",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "reassessed": {
+        "verdict": "CONTRADICTED",
+        "result": {
+          "value": false,
+          "reason": "explicit_conjunction",
+          "fingerprint": "02b7a1cb5c05541676ee6b0023a8eeb8035283522458722fbb828fb25a15e397"
+        },
+        "trace": [
+          {
+            "node": "retention",
+            "action": "reuse"
+          },
+          {
+            "node": "acceptance",
+            "action": "reuse"
+          },
+          {
+            "node": "permission",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "expected": "CONTRADICTED",
+      "matches_expected": true,
+      "historical_object_preserved": true
+    },
+    {
+      "id": "missing_evidence",
+      "initial": {
+        "verdict": "SUPPORTED",
+        "result": {
+          "value": true,
+          "reason": "explicit_conjunction",
+          "fingerprint": "9e4f260f9bd21106eff3c200ff2a2fa63e3334b86facc1812b8ce28106643437"
+        },
+        "trace": [
+          {
+            "node": "retention",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "acceptance",
+            "action": "recompute",
+            "reason": "explicit_numeric_rule"
+          },
+          {
+            "node": "permission",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "naive_unchecked_historical_reuse": {
+        "verdict": "SUPPORTED",
+        "result": {
+          "value": true,
+          "reason": "explicit_conjunction",
+          "fingerprint": "9e4f260f9bd21106eff3c200ff2a2fa63e3334b86facc1812b8ce28106643437"
+        },
+        "trace": [
+          {
+            "node": "retention",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "acceptance",
+            "action": "recompute",
+            "reason": "explicit_numeric_rule"
+          },
+          {
+            "node": "permission",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "reassessed": {
+        "verdict": "UNRESOLVED",
+        "result": {
+          "value": null,
+          "reason": "explicit_conjunction",
+          "fingerprint": "c5859200eb9fe1e32f6f2dfb0111f32081cddd27cda854a93cb8d50a801f5fdf"
+        },
+        "trace": [
+          {
+            "node": "retention",
+            "action": "recompute",
+            "reason": "absent_evidence"
+          },
+          {
+            "node": "acceptance",
+            "action": "recompute",
+            "reason": "missing_measurements"
+          },
+          {
+            "node": "permission",
+            "action": "reuse"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "expected": "UNRESOLVED",
+      "matches_expected": true,
+      "historical_object_preserved": true
+    },
+    {
+      "id": "self_cycle",
+      "initial": {
+        "verdict": "SUPPORTED",
+        "result": {
+          "value": true,
+          "reason": "explicit_conjunction",
+          "fingerprint": "9e4f260f9bd21106eff3c200ff2a2fa63e3334b86facc1812b8ce28106643437"
+        },
+        "trace": [
+          {
+            "node": "retention",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "acceptance",
+            "action": "recompute",
+            "reason": "explicit_numeric_rule"
+          },
+          {
+            "node": "permission",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "naive_unchecked_historical_reuse": {
+        "verdict": "SUPPORTED",
+        "result": {
+          "value": true,
+          "reason": "explicit_conjunction",
+          "fingerprint": "9e4f260f9bd21106eff3c200ff2a2fa63e3334b86facc1812b8ce28106643437"
+        },
+        "trace": [
+          {
+            "node": "retention",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "acceptance",
+            "action": "recompute",
+            "reason": "explicit_numeric_rule"
+          },
+          {
+            "node": "permission",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "reassessed": {
+        "verdict": "UNRESOLVED",
+        "result": {
+          "value": null,
+          "reason": "explicit_conjunction",
+          "fingerprint": "80720e2a64e04ced0a91612171b4bf0d2ef2cde411320a19403c926bf20087db"
+        },
+        "trace": [
+          {
+            "node": "release",
+            "action": "stop_cycle"
+          },
+          {
+            "node": "permission",
+            "action": "reuse"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "expected": "UNRESOLVED",
+      "matches_expected": true,
+      "historical_object_preserved": true
+    },
+    {
+      "id": "depth_stop",
+      "initial": {
+        "verdict": "SUPPORTED",
+        "result": {
+          "value": true,
+          "reason": "explicit_conjunction",
+          "fingerprint": "9e4f260f9bd21106eff3c200ff2a2fa63e3334b86facc1812b8ce28106643437"
+        },
+        "trace": [
+          {
+            "node": "retention",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "acceptance",
+            "action": "recompute",
+            "reason": "explicit_numeric_rule"
+          },
+          {
+            "node": "permission",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "naive_unchecked_historical_reuse": {
+        "verdict": "SUPPORTED",
+        "result": {
+          "value": true,
+          "reason": "explicit_conjunction",
+          "fingerprint": "9e4f260f9bd21106eff3c200ff2a2fa63e3334b86facc1812b8ce28106643437"
+        },
+        "trace": [
+          {
+            "node": "retention",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "acceptance",
+            "action": "recompute",
+            "reason": "explicit_numeric_rule"
+          },
+          {
+            "node": "permission",
+            "action": "recompute",
+            "reason": "supplied_source"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "reassessed": {
+        "verdict": "UNRESOLVED",
+        "result": {
+          "value": null,
+          "reason": "explicit_conjunction",
+          "fingerprint": "560b3afc91c8fe333acb02f212ba6074ef2fe022c2ca653e01e5ad7926871577"
+        },
+        "trace": [
+          {
+            "node": "n4",
+            "action": "stop_depth"
+          },
+          {
+            "node": "n3",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          },
+          {
+            "node": "n2",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          },
+          {
+            "node": "n1",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          },
+          {
+            "node": "release",
+            "action": "recompute",
+            "reason": "explicit_conjunction"
+          }
+        ]
+      },
+      "expected": "UNRESOLVED",
+      "matches_expected": true,
+      "historical_object_preserved": true
+    }
+  ],
+  "all_expected": true
+}

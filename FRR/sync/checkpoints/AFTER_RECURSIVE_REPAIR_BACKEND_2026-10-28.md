@@ -1,0 +1,11 @@
+# After recursive repair and actual CPU model-cache replay
+
+Client 28 October 2026 America/Chicago; host 29 October UTC. User asks to proceed and whether recursion is practicable. [Report](../../evaluation/recursive-repair-backend-v1/REPORT.md), [optional practice note](../../examples/bounded-recursive-review.md).
+
+Six explicit recursive graph cases: source/criterion/permission change → contradicted, missing evidence/cycle/depth boundary → unresolved. Historical supported results preserved. Typed supplied dependencies and authority, not autonomous natural-language reasoning or advantage over iteration.
+
+Actual pinned public SmolLM2-135M-Instruct now runs in isolated /workspace/cache_backend_venv on CPU. Six frozen cases, one inference script execution, eager float32/two threads/eight-token cap. Full revised prompt and valid-prefix replay logits have observed difference0; greedy tokens identical. All six strict label outputs fail; 0/6 first-label/gold matches is not a general factual-accuracy score. Some fragments agree with expected content, others conflict or are incomplete. No answer retry, budget expansion or constrained decoding. Semantic interpretation/output budget remains open.
+
+Actual safetensors cache files saved under /workspace/cache_backend_artifacts, model under /workspace/cache_backend_models. File digests/size and dependency/model revisions saved in study; binary weights/cache/venv not uploaded. Supplemental actual load gate rejects byte-altered cache before deserialization. This is consistency to locally stored expected hashes, not authenticated execution or truth. No paid API/secret provisioning/remote-code trust/GPU or SwaT mapper. Runtime installation is environment-local, not a guarantee for future machines.
+
+Strongest proposed next: freeze a format/content rubric and complete-response budget, then matched cache/full semantic correction cases. Consider recursion-guided review only with explicit dependencies and matched evidence/call budgets. Heart-image/visual steering and cross-family transfer stay separate unexecuted directions. Optional file guidance, no automatic runtime/controller change. Core/schema/queue and historical failures retained. Root self-review, no new subagent/independent audit here. No background experiments or scheduled recursion.

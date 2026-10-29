@@ -1,0 +1,44 @@
+[
+  {
+    "id": "B1",
+    "old": "Batch Elm retained 80 percent capacity.",
+    "new": "Batch Elm retained 80 percent capacity. CORRECTION: the 80 percent value was a transcription error. The final verified retention for Batch Elm is 90 percent.",
+    "question": "Does Batch Elm meet a retention threshold of at least 85 percent?",
+    "gold": "PASS"
+  },
+  {
+    "id": "B2",
+    "old": "Cells have retention percentages 70, 90, 90. The old acceptance rule uses their mean and requires at least 85 percent.",
+    "new": "Cells have retention percentages 70, 90, 90. CORRECTION: the current acceptance rule uses their median, not their mean, and requires at least 85 percent.",
+    "question": "Do the cells meet the current acceptance rule?",
+    "gold": "PASS"
+  },
+  {
+    "id": "B3",
+    "old": "Full catalog release is authorized.",
+    "new": "The old note said full catalog release is authorized. CORRECTION: that note was wrong. Only three poster excerpts are permitted. Full catalog release is explicitly NOT authorized.",
+    "question": "Is full catalog release authorized?",
+    "gold": "FAIL"
+  },
+  {
+    "id": "B4",
+    "old": "The daytime sample showed improved completion.",
+    "new": "The daytime sample showed improved completion. Dawn-shift cases were excluded, and no dawn-shift results were collected.",
+    "question": "Does the evidence establish improved completion for the dawn-shift group?",
+    "gold": "UNKNOWN"
+  },
+  {
+    "id": "B5",
+    "old": "Run A measured retention of 90 percent and meets the 85 percent threshold.",
+    "new": "Run A measured retention of 90 percent. The requested run is Run B. No measurements for Run B are available.",
+    "question": "Does Run B meet the 85 percent retention threshold?",
+    "gold": "UNKNOWN"
+  },
+  {
+    "id": "B6",
+    "old": "The errors were 0.2, 0.2 and 0.2 millimeters.",
+    "new": "CORRECTION: the errors were 0.2, 0.2 and 4.0 millimeters. The acceptance rule requires EVERY error to be at most 2.0 millimeters.",
+    "question": "Do these measurements meet the acceptance rule?",
+    "gold": "FAIL"
+  }
+]

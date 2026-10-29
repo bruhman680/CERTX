@@ -1,0 +1,445 @@
+[
+  {
+    "id": "corrected_source",
+    "old": {
+      "retention": {
+        "op": "source",
+        "value": [
+          85,
+          86,
+          87
+        ]
+      },
+      "permission": {
+        "op": "source",
+        "value": true
+      },
+      "acceptance": {
+        "op": "median_ge",
+        "deps": [
+          "retention"
+        ],
+        "threshold": 85
+      },
+      "release": {
+        "op": "all",
+        "deps": [
+          "acceptance",
+          "permission"
+        ]
+      },
+      "unrelated": {
+        "op": "source",
+        "value": "not visited"
+      }
+    },
+    "new": {
+      "retention": {
+        "op": "source",
+        "value": [
+          80,
+          81,
+          82
+        ]
+      },
+      "permission": {
+        "op": "source",
+        "value": true
+      },
+      "acceptance": {
+        "op": "median_ge",
+        "deps": [
+          "retention"
+        ],
+        "threshold": 85
+      },
+      "release": {
+        "op": "all",
+        "deps": [
+          "acceptance",
+          "permission"
+        ]
+      },
+      "unrelated": {
+        "op": "source",
+        "value": "not visited"
+      }
+    },
+    "expected": "CONTRADICTED",
+    "depth": 8
+  },
+  {
+    "id": "criterion_change",
+    "old": {
+      "retention": {
+        "op": "source",
+        "value": [
+          70,
+          90,
+          90
+        ]
+      },
+      "permission": {
+        "op": "source",
+        "value": true
+      },
+      "acceptance": {
+        "op": "median_ge",
+        "deps": [
+          "retention"
+        ],
+        "threshold": 85
+      },
+      "release": {
+        "op": "all",
+        "deps": [
+          "acceptance",
+          "permission"
+        ]
+      },
+      "unrelated": {
+        "op": "source",
+        "value": "not visited"
+      }
+    },
+    "new": {
+      "retention": {
+        "op": "source",
+        "value": [
+          70,
+          90,
+          90
+        ]
+      },
+      "permission": {
+        "op": "source",
+        "value": true
+      },
+      "acceptance": {
+        "op": "mean_ge",
+        "deps": [
+          "retention"
+        ],
+        "threshold": 85
+      },
+      "release": {
+        "op": "all",
+        "deps": [
+          "acceptance",
+          "permission"
+        ]
+      },
+      "unrelated": {
+        "op": "source",
+        "value": "not visited"
+      }
+    },
+    "expected": "CONTRADICTED",
+    "depth": 8
+  },
+  {
+    "id": "permission_withdrawal",
+    "old": {
+      "retention": {
+        "op": "source",
+        "value": [
+          85,
+          86,
+          87
+        ]
+      },
+      "permission": {
+        "op": "source",
+        "value": true
+      },
+      "acceptance": {
+        "op": "median_ge",
+        "deps": [
+          "retention"
+        ],
+        "threshold": 85
+      },
+      "release": {
+        "op": "all",
+        "deps": [
+          "acceptance",
+          "permission"
+        ]
+      },
+      "unrelated": {
+        "op": "source",
+        "value": "not visited"
+      }
+    },
+    "new": {
+      "retention": {
+        "op": "source",
+        "value": [
+          85,
+          86,
+          87
+        ]
+      },
+      "permission": {
+        "op": "source",
+        "value": false
+      },
+      "acceptance": {
+        "op": "median_ge",
+        "deps": [
+          "retention"
+        ],
+        "threshold": 85
+      },
+      "release": {
+        "op": "all",
+        "deps": [
+          "acceptance",
+          "permission"
+        ]
+      },
+      "unrelated": {
+        "op": "source",
+        "value": "not visited"
+      }
+    },
+    "expected": "CONTRADICTED",
+    "depth": 8
+  },
+  {
+    "id": "missing_evidence",
+    "old": {
+      "retention": {
+        "op": "source",
+        "value": [
+          85,
+          86,
+          87
+        ]
+      },
+      "permission": {
+        "op": "source",
+        "value": true
+      },
+      "acceptance": {
+        "op": "median_ge",
+        "deps": [
+          "retention"
+        ],
+        "threshold": 85
+      },
+      "release": {
+        "op": "all",
+        "deps": [
+          "acceptance",
+          "permission"
+        ]
+      },
+      "unrelated": {
+        "op": "source",
+        "value": "not visited"
+      }
+    },
+    "new": {
+      "retention": {
+        "op": "source",
+        "value": null
+      },
+      "permission": {
+        "op": "source",
+        "value": true
+      },
+      "acceptance": {
+        "op": "median_ge",
+        "deps": [
+          "retention"
+        ],
+        "threshold": 85
+      },
+      "release": {
+        "op": "all",
+        "deps": [
+          "acceptance",
+          "permission"
+        ]
+      },
+      "unrelated": {
+        "op": "source",
+        "value": "not visited"
+      }
+    },
+    "expected": "UNRESOLVED",
+    "depth": 8
+  },
+  {
+    "id": "self_cycle",
+    "old": {
+      "retention": {
+        "op": "source",
+        "value": [
+          85,
+          86,
+          87
+        ]
+      },
+      "permission": {
+        "op": "source",
+        "value": true
+      },
+      "acceptance": {
+        "op": "median_ge",
+        "deps": [
+          "retention"
+        ],
+        "threshold": 85
+      },
+      "release": {
+        "op": "all",
+        "deps": [
+          "acceptance",
+          "permission"
+        ]
+      },
+      "unrelated": {
+        "op": "source",
+        "value": "not visited"
+      }
+    },
+    "new": {
+      "retention": {
+        "op": "source",
+        "value": [
+          85,
+          86,
+          87
+        ]
+      },
+      "permission": {
+        "op": "source",
+        "value": true
+      },
+      "acceptance": {
+        "op": "median_ge",
+        "deps": [
+          "retention"
+        ],
+        "threshold": 85
+      },
+      "release": {
+        "op": "all",
+        "deps": [
+          "release",
+          "permission"
+        ]
+      },
+      "unrelated": {
+        "op": "source",
+        "value": "not visited"
+      }
+    },
+    "expected": "UNRESOLVED",
+    "depth": 8
+  },
+  {
+    "id": "depth_stop",
+    "old": {
+      "retention": {
+        "op": "source",
+        "value": [
+          85,
+          86,
+          87
+        ]
+      },
+      "permission": {
+        "op": "source",
+        "value": true
+      },
+      "acceptance": {
+        "op": "median_ge",
+        "deps": [
+          "retention"
+        ],
+        "threshold": 85
+      },
+      "release": {
+        "op": "all",
+        "deps": [
+          "acceptance",
+          "permission"
+        ]
+      },
+      "unrelated": {
+        "op": "source",
+        "value": "not visited"
+      }
+    },
+    "new": {
+      "retention": {
+        "op": "source",
+        "value": [
+          85,
+          86,
+          87
+        ]
+      },
+      "permission": {
+        "op": "source",
+        "value": true
+      },
+      "acceptance": {
+        "op": "median_ge",
+        "deps": [
+          "retention"
+        ],
+        "threshold": 85
+      },
+      "release": {
+        "op": "all",
+        "deps": [
+          "n1"
+        ]
+      },
+      "unrelated": {
+        "op": "source",
+        "value": "not visited"
+      },
+      "n1": {
+        "op": "all",
+        "deps": [
+          "n2"
+        ]
+      },
+      "n2": {
+        "op": "all",
+        "deps": [
+          "n3"
+        ]
+      },
+      "n3": {
+        "op": "all",
+        "deps": [
+          "n4"
+        ]
+      },
+      "n4": {
+        "op": "all",
+        "deps": [
+          "n5"
+        ]
+      },
+      "n5": {
+        "op": "all",
+        "deps": [
+          "n6"
+        ]
+      },
+      "n6": {
+        "op": "source",
+        "value": true
+      }
+    },
+    "expected": "UNRESOLVED",
+    "depth": 4
+  }
+]
