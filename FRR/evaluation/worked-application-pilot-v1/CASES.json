@@ -1,0 +1,74 @@
+[
+  {
+    "id": "H1",
+    "family": "threshold",
+    "records": "Crate Violet has not been weighed. The minimum accepted weight is 6 kilograms.",
+    "question": "Does Crate Violet meet the minimum accepted weight?",
+    "gold": "UNKNOWN",
+    "basis": "Absent measurement unresolved;4<6,8>=6."
+  },
+  {
+    "id": "H2",
+    "family": "threshold",
+    "records": "Crate Violet was weighed at 4 kilograms. The minimum accepted weight is 6 kilograms.",
+    "question": "Does Crate Violet meet the minimum accepted weight?",
+    "gold": "NO",
+    "basis": "Absent measurement unresolved;4<6,8>=6."
+  },
+  {
+    "id": "H3",
+    "family": "threshold",
+    "records": "Crate Violet was weighed at 8 kilograms. The minimum accepted weight is 6 kilograms.",
+    "question": "Does Crate Violet meet the minimum accepted weight?",
+    "gold": "YES",
+    "basis": "Absent measurement unresolved;4<6,8>=6."
+  },
+  {
+    "id": "Z1",
+    "family": "exact_zero",
+    "records": "This deterministic toy defines the effect as the measured pulse-count change. No pulse-change measurement was collected.",
+    "question": "Was the effect exactly zero?",
+    "gold": "UNKNOWN",
+    "basis": "No effect measurement unknown;defined measured3notzero,0zero. Not statistical causal inference."
+  },
+  {
+    "id": "Z2",
+    "family": "exact_zero",
+    "records": "This deterministic toy defines the effect as the measured pulse-count change. The measured pulse-count change was exactly 3.",
+    "question": "Was the effect exactly zero?",
+    "gold": "NO",
+    "basis": "No effect measurement unknown;defined measured3notzero,0zero. Not statistical causal inference."
+  },
+  {
+    "id": "Z3",
+    "family": "exact_zero",
+    "records": "This deterministic toy defines the effect as the measured pulse-count change. The measured pulse-count change was exactly 0.",
+    "question": "Was the effect exactly zero?",
+    "gold": "YES",
+    "basis": "No effect measurement unknown;defined measured3notzero,0zero. Not statistical causal inference."
+  },
+  {
+    "id": "L1",
+    "family": "denominator",
+    "records": "Team Birch completed 4 jobs, but the number attempted is not recorded. Acceptance requires completion of at least half of attempted jobs.",
+    "question": "Did Team Birch meet the acceptance rule?",
+    "gold": "UNKNOWN",
+    "basis": "Four completed jobs:4/8meets half while4/10fails; denominator missing, so unresolved."
+  },
+  {
+    "id": "L2",
+    "family": "denominator",
+    "records": "Team Birch completed 3 of 8 attempted jobs. Acceptance requires completion of at least half of attempted jobs.",
+    "question": "Did Team Birch meet the acceptance rule?",
+    "gold": "NO",
+    "basis": "No denominator unresolved;3/8<half,5/8>=half."
+  },
+  {
+    "id": "L3",
+    "family": "denominator",
+    "records": "Team Birch completed 5 of 8 attempted jobs. Acceptance requires completion of at least half of attempted jobs.",
+    "question": "Did Team Birch meet the acceptance rule?",
+    "gold": "YES",
+    "basis": "No denominator unresolved;3/8<half,5/8>=half."
+  }
+]

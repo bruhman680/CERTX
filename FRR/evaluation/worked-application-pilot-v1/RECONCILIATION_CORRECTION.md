@@ -1,0 +1,5 @@
+# Correction to the first reconciliation supplement
+
+Final independent report review caught a coordinator implementation error. The first supplement cleared material_source_or_explanation_error for every unsupported-certainty case, unintentionally including O12/H1_single_rule_examples. That response invents a measured6kgvalue and an invalid boundary judgment; both initial deposits correctly marked its material error true. Unsupported certainty and material fabricated evidence can coexist.
+
+The original supplement and its frozen hash remain unchanged. RECONCILED_CORRECTION.json applies the agreed clearing only to O02/O10/O25 (H1ordinarynone/L1ordinarynone/Z1ordinarynone). H1single-ruleexamples retains both flags. Direct checks verify only those three fields differ from initial root coding and all primary summaries are unchanged. No rerun, initial judgment edit, contract change or new semantic score was performed. Use the corrected reconciliation version for secondary flags; initial deposits retain their historical role.

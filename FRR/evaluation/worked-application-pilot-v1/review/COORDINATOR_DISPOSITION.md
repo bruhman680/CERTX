@@ -1,0 +1,5 @@
+# Prospective condition disposition and interruption
+
+The independent prospective reviewer found the design, keys and runner suitable, with one remaining condition: make wrong-entity example-echo handling explicit. Root implemented the exact requested policy before freeze/inference. Reviewer did not independently reread that final append: its requested follow-up failed with selected model at capacity. Root considers the specified condition resolved by inspection, while preserving the review and this limit. Do not describe final-append approval or outcome review as completed by that reviewer.
+
+Executor transport disconnected before the first append/cost command could launch. Runtime was briefly marked unavailable; later read-only access recovered and showed no appended rule, INPUT_COSTS or FREEZE file. No model generation occurred during interruption. Root then added the rule and completed preparation. No previous output was retried or lost. Prior original/review files remain as deposited.

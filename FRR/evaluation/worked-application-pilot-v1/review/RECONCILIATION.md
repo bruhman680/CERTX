@@ -1,0 +1,7 @@
+# Append-only reconciliation
+
+I agree with the proposed reconciliation. Preserve both initial deposits and retain reviewer `material_source_or_explanation_error=false` for O02, O10 and O25. Add the separate flag `unsupported_certainty_missing_evidence=true` to those three outputs. Each makes a definite task assertion despite an absent required measurement or denominator. The flag makes that error visible without treating an incorrect bare decision as an additional explanatory or source error.
+
+This is a coding distinction, not an improvement in any answer. Explicit task decisions, evidence-sensitive status, full warrant and echo judgments remain unchanged. No primary or warrant counts change, and no scoring-contract rewrite is needed. The new flag is adjudicated only for these three records here; unlisted records must not silently receive false by default.
+
+Root relayed that all 36 judgments agree on the five primary/warrant/echo fields and that these three records are the only material-error disagreements. I have not read the root deposit to recompute that comparison. This reconciliation uses the prior masked packet, contract, my initial review and the relayed comparison only. I remain arm-masked and have not read arm mapping, root files, raw generation records or condition files. No model calls or historical edits occurred. The JSON sidecar records the agreed additions; the initial score file is unchanged.

@@ -1,0 +1,49 @@
+{
+  "read_date": "2026-10-29",
+  "scope": "Bounded source scout; three primary/official sources; no inference, installations, or dataset ingestion",
+  "local_evidence": "Pilot counts and pinned model supplied by parent; raw prompts, outputs, runtime, scoring and revision not independently inspected",
+  "sources": [
+    {
+      "id": "smollm2_official_card",
+      "title": "HuggingFaceTB/SmolLM2-135M-Instruct",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
+      "kind": "official_model_card",
+      "read": ["model summary", "usage examples", "instruction model evaluation", "limitations"],
+      "decision_value": "Check chat serialization and generated-continuation isolation; published instruction score does not establish pilot competence",
+      "limits": "Live card, not pinned revision; no direct evaluation of worked-rule copying, instruction/data boundary, or missing evidence"
+    },
+    {
+      "id": "min_2022",
+      "title": "Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?",
+      "authors": "Min et al.",
+      "year": 2022,
+      "venue": "EMNLP",
+      "url": "https://aclanthology.org/2022.emnlp-main.759/",
+      "pdf_url": "https://aclanthology.org/2022.emnlp-main.759.pdf",
+      "read": ["abstract", "PDF introduction", "PDF model table"],
+      "decision_value": "Preserve label inventory and format while corrupting demonstration mappings to distinguish format effects from application",
+      "limits": "Classification/multiple-choice and different models; no direct evidence on this 135M instruct checkpoint or its echo mechanism"
+    },
+    {
+      "id": "yoo_2022_v2",
+      "title": "Ground-Truth Labels Matter: A Deeper Look into Input-Label Demonstrations",
+      "authors": "Yoo et al.",
+      "year": 2022,
+      "venue": "EMNLP",
+      "url": "https://arxiv.org/html/2205.12685v2",
+      "abstract_url": "https://arxiv.org/abs/2205.12685",
+      "read": ["abstract", "task difficulty section", "prompt templates section", "model sizes section", "prior-free labels section", "limitations"],
+      "decision_value": "Judge mapping sensitivity alongside absolute task competence; label semantics and prompt choices can confound interpretation",
+      "limits": "Model-size analysis 1.5B–175B; no direct test of this model, pilot, instruction/data boundary, or missing-evidence task"
+    }
+  ],
+  "smallest_proposed_test": {
+    "status": "not_executed",
+    "cases": 3,
+    "case_types": ["supported positive", "explicit negative", "missing evidence"],
+    "factors": ["correct versus permuted mapping with fixed answer inventory/format", "worked-example role versus quoted-data role"],
+    "continuations": 12,
+    "scores": ["task decision", "evidence grounding", "format validity", "literal echo"],
+    "limitations": "Diagnostic only; role wrapper is a prompt change, not a security guarantee; failed ordinary baseline leaves competence unresolved"
+  }
+}

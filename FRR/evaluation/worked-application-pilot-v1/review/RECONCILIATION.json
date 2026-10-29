@@ -1,0 +1,38 @@
+{
+  "agreement": true,
+  "status": "append_only_reconciliation",
+  "read_scope": "Prior masked packet, scoring contract, own initial review, and parent-relayed comparison only; no mapping, root files or raw generations read.",
+  "comparison_provenance": "Agreement and disagreement summary relayed by root; not independently recomputed against root deposit.",
+  "unchanged_fields": [
+    "explicit_task_decision",
+    "evidence_sensitive_status",
+    "full_warrant",
+    "wrong_entity_echo",
+    "generic_rule_echo"
+  ],
+  "initial_deposits_preserved": true,
+  "contract_unchanged": true,
+  "primary_warrant_counts_unchanged": true,
+  "item_reconciliations": [
+    {
+      "masked_id": "O02",
+      "material_source_or_explanation_error": false,
+      "unsupported_certainty_missing_evidence": true,
+      "reason": "Unweighed crate cannot support definite rejection. Preserve the initial reviewer distinction between a bare unsupported decision and an additional erroneous explanation/source claim."
+    },
+    {
+      "masked_id": "O10",
+      "material_source_or_explanation_error": false,
+      "unsupported_certainty_missing_evidence": true,
+      "reason": "Missing attempted-job denominator cannot support definite rejection. Preserve the initial reviewer distinction between a bare unsupported decision and an additional erroneous explanation/source claim."
+    },
+    {
+      "masked_id": "O25",
+      "material_source_or_explanation_error": false,
+      "unsupported_certainty_missing_evidence": true,
+      "reason": "Absent pulse-change measurement cannot support the definite zero-effect assertion. It is the task decision itself, with no separate explanatory/source assertion."
+    }
+  ],
+  "other_items_new_field": "Not adjudicated by this reconciliation; do not infer false for unlisted items.",
+  "arm_level_summary": null
+}
