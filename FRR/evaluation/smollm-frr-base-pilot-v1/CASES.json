@@ -1,0 +1,98 @@
+[
+  {
+    "id": "C01",
+    "family": "correction",
+    "records": "An earlier note reports Cedar retention as 78 percent. A verified correction says that value was copied incorrectly; final Cedar retention is 92 percent. The current minimum is 85 percent.",
+    "question": "Does Cedar meet the current minimum?",
+    "gold": "YES",
+    "basis": "Final 92 >= 85; use correction, not old note."
+  },
+  {
+    "id": "C02",
+    "family": "correction",
+    "records": "An earlier note reports Cedar retention as 92 percent. A verified correction says that value was copied incorrectly; final Cedar retention is 78 percent. The current minimum is 85 percent.",
+    "question": "Does Cedar meet the current minimum?",
+    "gold": "NO",
+    "basis": "Final 78 < 85; use correction, not old note."
+  },
+  {
+    "id": "C03",
+    "family": "scope",
+    "records": "The Shore group had 12 successful deliveries out of 20. Its acceptance rule requires at least half of its deliveries to succeed.",
+    "question": "Did the Shore group meet its acceptance rule?",
+    "gold": "YES",
+    "basis": "12/20=60% >= 50%."
+  },
+  {
+    "id": "C04",
+    "family": "scope",
+    "records": "The Shore group had 12 successful deliveries out of 20. The Hill group was excluded and has no recorded results. Both groups have an acceptance rule requiring at least half of deliveries to succeed.",
+    "question": "Did the Hill group meet its acceptance rule?",
+    "gold": "UNKNOWN",
+    "basis": "No Hill measurements; Shore data do not decide it."
+  },
+  {
+    "id": "C05",
+    "family": "authorization",
+    "records": "The owner explicitly grants permission to publish the complete catalog. No further permission or checks are required by this grant.",
+    "question": "Does this grant authorize publishing the complete catalog?",
+    "gold": "YES",
+    "basis": "Explicit complete grant; no invented extra gate."
+  },
+  {
+    "id": "C06",
+    "family": "authorization",
+    "records": "The owner grants permission to display three selected poster excerpts only. The grant explicitly says publication of the complete catalog is not authorized.",
+    "question": "Does this grant authorize publishing the complete catalog?",
+    "gold": "NO",
+    "basis": "Explicitly limited and full release denied."
+  },
+  {
+    "id": "C07",
+    "family": "criterion",
+    "records": "Retention percentages are 70, 90, and 90. The acceptance rule uses the median and requires at least 85 percent.",
+    "question": "Do these measurements meet the acceptance rule?",
+    "gold": "YES",
+    "basis": "Median90 >=85; do not substitute mean."
+  },
+  {
+    "id": "C08",
+    "family": "criterion",
+    "records": "Retention percentages are 70, 90, and 90. The acceptance rule uses the mean and requires at least 85 percent.",
+    "question": "Do these measurements meet the acceptance rule?",
+    "gold": "NO",
+    "basis": "Mean250/3 <85; do not substitute median."
+  },
+  {
+    "id": "C09",
+    "family": "missingness",
+    "records": "The test apparatus is ready. No measurements of cold-battery retention have been collected. The required retention is at least 85 percent.",
+    "question": "Does the cold battery meet the required retention?",
+    "gold": "UNKNOWN",
+    "basis": "No measurement, not observed failure."
+  },
+  {
+    "id": "C10",
+    "family": "missingness",
+    "records": "A morning-shift study was proposed but never run. There are no morning-shift effect measurements.",
+    "question": "Did the intervention have exactly zero effect on the morning shift?",
+    "gold": "UNKNOWN",
+    "basis": "Absence of a measurement is not measured zero effect."
+  },
+  {
+    "id": "C11",
+    "family": "denominators",
+    "records": "North reports 30 completed deliveries. South reports 20 completed deliveries. The total number attempted at each site is not recorded.",
+    "question": "Was the completion rate higher at North than at South?",
+    "gold": "UNKNOWN",
+    "basis": "Counts alone cannot compare rates without denominators."
+  },
+  {
+    "id": "C12",
+    "family": "quantifier",
+    "records": "The three measurement errors were 0.2, 0.2, and 4.0 millimeters. Every individual error must be at most 2.0 millimeters to pass.",
+    "question": "Do the measurements pass this rule?",
+    "gold": "NO",
+    "basis": "One4.0 exceeds2.0; average is not criterion."
+  }
+]
