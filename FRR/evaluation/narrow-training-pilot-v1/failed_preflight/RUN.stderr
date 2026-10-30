@@ -1,0 +1,9 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Traceback (most recent call last):
+  File "/workspace/frr/evaluation/narrow-training-pilot-v1/run.py", line 101, in <module>
+    if __name__=='__main__':run()
+                            ^^^^^
+  File "/workspace/frr/evaluation/narrow-training-pilot-v1/run.py", line 64, in run
+    assert max(len(a) for a,b in batches)<=160,'No silent truncation'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: No silent truncation

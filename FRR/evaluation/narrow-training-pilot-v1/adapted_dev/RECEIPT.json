@@ -1,0 +1,116 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "NT1-adapted_dev",
+  "identity": {
+    "family": "narrow_source_state",
+    "facet": "state_label",
+    "cycle": "NT1",
+    "arm": "adapted_dev"
+  },
+  "contract_sha256": "f44066d88d9772cb0b66c63b01402d93685e61c6fce0f6a01717546dfc06c602",
+  "sources": {
+    "raw": "0dee3a1b9c5cc063b43d5b97f664af89cde32bf654c5fdab367a6ee7817a57cc",
+    "keys": "4221483b5d41671b2c96361858db393f6d0707cb1f56465a5a3cbb98717e7001"
+  },
+  "summary": {
+    "calls": 12,
+    "label_matches": 4,
+    "match_fraction": {
+      "numerator": 1,
+      "denominator": 3
+    },
+    "constant_yes_matches": 4,
+    "labels": {
+      "NO": 12
+    },
+    "stops": {
+      "eos": 12
+    },
+    "input_tokens": 1863,
+    "output_tokens": 24
+  },
+  "rows": [
+    {
+      "run_id": "dev_train_fields_positive_0__adapted_dev",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_train_fields_zero_0__adapted_dev",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_train_fields_missing_0__adapted_dev",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_train_prose_positive_0__adapted_dev",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_train_prose_zero_0__adapted_dev",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_train_prose_missing_0__adapted_dev",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_train_json_positive_0__adapted_dev",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_train_json_zero_0__adapted_dev",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_train_json_missing_0__adapted_dev",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_train_table_positive_0__adapted_dev",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_train_table_zero_0__adapted_dev",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_train_table_missing_0__adapted_dev",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "arms": {
+    "original_dev": {
+      "calls": 12,
+      "label_matches": 1,
+      "match_fraction": {
+        "numerator": 1,
+        "denominator": 12
+      },
+      "constant_yes_matches": 4,
+      "labels": {
+        "UNRESOLVED": 9,
+        "YES": 3
+      },
+      "stops": {
+        "token_limit": 9,
+        "eos": 3
+      },
+      "input_tokens": 1863,
+      "output_tokens": 78,
+      "perclass": {
+        "YES": {
+          "n": 4,
+          "matches": 1
+        },
+        "NO": {
+          "n": 4,
+          "matches": 0
+        },
+        "WITHHOLD": {
+          "n": 4,
+          "matches": 0
+        }
+      },
+      "confusion": {
+        "YES": {
+          "UNRESOLVED": 3,
+          "YES": 1
+        },
+        "NO": {
+          "UNRESOLVED": 3,
+          "YES": 1
+        },
+        "WITHHOLD": {
+          "UNRESOLVED": 3,
+          "YES": 1
+        }
+      },
+      "by_family": {
+        "train_fields": {
+          "n": 3,
+          "matches": 0
+        },
+        "train_json": {
+          "n": 3,
+          "matches": 0
+        },
+        "train_prose": {
+          "n": 3,
+          "matches": 1
+        },
+        "train_table": {
+          "n": 3,
+          "matches": 0
+        }
+      },
+      "constant_label_baselines": {
+        "YES": 4,
+        "NO": 4,
+        "WITHHOLD": 4
+      },
+      "inference_seconds_excluding_serialization": 9.480856730995583,
+      "new_cache_bytes": 88947024
+    },
+    "adapted_dev": {
+      "calls": 12,
+      "label_matches": 4,
+      "match_fraction": {
+        "numerator": 1,
+        "denominator": 3
+      },
+      "constant_yes_matches": 4,
+      "labels": {
+        "NO": 12
+      },
+      "stops": {
+        "eos": 12
+      },
+      "input_tokens": 1863,
+      "output_tokens": 24,
+      "perclass": {
+        "YES": {
+          "n": 4,
+          "matches": 0
+        },
+        "NO": {
+          "n": 4,
+          "matches": 4
+        },
+        "WITHHOLD": {
+          "n": 4,
+          "matches": 0
+        }
+      },
+      "confusion": {
+        "YES": {
+          "NO": 4
+        },
+        "NO": {
+          "NO": 4
+        },
+        "WITHHOLD": {
+          "NO": 4
+        }
+      },
+      "by_family": {
+        "train_fields": {
+          "n": 3,
+          "matches": 1
+        },
+        "train_json": {
+          "n": 3,
+          "matches": 1
+        },
+        "train_prose": {
+          "n": 3,
+          "matches": 1
+        },
+        "train_table": {
+          "n": 3,
+          "matches": 1
+        }
+      },
+      "constant_label_baselines": {
+        "YES": 4,
+        "NO": 4,
+        "WITHHOLD": 4
+      },
+      "inference_seconds_excluding_serialization": 5.876522213991848,
+      "new_cache_bytes": 86458656
+    },
+    "adapted_test": {
+      "calls": 48,
+      "label_matches": 16,
+      "match_fraction": {
+        "numerator": 1,
+        "denominator": 3
+      },
+      "constant_yes_matches": 16,
+      "labels": {
+        "NO": 48
+      },
+      "stops": {
+        "eos": 48
+      },
+      "input_tokens": 7540,
+      "output_tokens": 96,
+      "perclass": {
+        "YES": {
+          "n": 16,
+          "matches": 0
+        },
+        "NO": {
+          "n": 16,
+          "matches": 16
+        },
+        "WITHHOLD": {
+          "n": 16,
+          "matches": 0
+        }
+      },
+      "confusion": {
+        "YES": {
+          "NO": 16
+        },
+        "NO": {
+          "NO": 16
+        },
+        "WITHHOLD": {
+          "NO": 16
+        }
+      },
+      "by_family": {
+        "test_contrast": {
+          "n": 12,
+          "matches": 4
+        },
+        "test_nested_json": {
+          "n": 12,
+          "matches": 4
+        },
+        "test_order": {
+          "n": 12,
+          "matches": 4
+        },
+        "test_past": {
+          "n": 12,
+          "matches": 4
+        }
+      },
+      "constant_label_baselines": {
+        "YES": 16,
+        "NO": 16,
+        "WITHHOLD": 16
+      },
+      "inference_seconds_excluding_serialization": 23.69090162005159,
+      "new_cache_bytes": 349889840
+    },
+    "original_test": {
+      "calls": 48,
+      "label_matches": 4,
+      "match_fraction": {
+        "numerator": 1,
+        "denominator": 12
+      },
+      "constant_yes_matches": 16,
+      "labels": {
+        "YES": 12,
+        "UNRESOLVED": 36
+      },
+      "stops": {
+        "eos": 12,
+        "token_limit": 36
+      },
+      "input_tokens": 7540,
+      "output_tokens": 312,
+      "perclass": {
+        "YES": {
+          "n": 16,
+          "matches": 4
+        },
+        "NO": {
+          "n": 16,
+          "matches": 0
+        },
+        "WITHHOLD": {
+          "n": 16,
+          "matches": 0
+        }
+      },
+      "confusion": {
+        "YES": {
+          "YES": 4,
+          "UNRESOLVED": 12
+        },
+        "NO": {
+          "YES": 3,
+          "UNRESOLVED": 13
+        },
+        "WITHHOLD": {
+          "YES": 5,
+          "UNRESOLVED": 11
+        }
+      },
+      "by_family": {
+        "test_contrast": {
+          "n": 12,
+          "matches": 0
+        },
+        "test_nested_json": {
+          "n": 12,
+          "matches": 0
+        },
+        "test_order": {
+          "n": 12,
+          "matches": 2
+        },
+        "test_past": {
+          "n": 12,
+          "matches": 2
+        }
+      },
+      "constant_label_baselines": {
+        "YES": 16,
+        "NO": 16,
+        "WITHHOLD": 16
+      },
+      "inference_seconds_excluding_serialization": 37.50610362099542,
+      "new_cache_bytes": 359843144
+    }
+  },
+  "paired_changes": {
+    "original_only": 4,
+    "neither_matches": 28,
+    "adapted_only": 16
+  }
+}

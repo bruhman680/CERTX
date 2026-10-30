@@ -1,0 +1,28 @@
+{
+  "counts": {
+    "train": 96,
+    "dev": 12,
+    "test": 48
+  },
+  "classes_per_split": {
+    "train": {
+      "YES": 32,
+      "NO": 32,
+      "WITHHOLD": 32
+    },
+    "dev": {
+      "YES": 4,
+      "NO": 4,
+      "WITHHOLD": 4
+    },
+    "test": {
+      "YES": 16,
+      "NO": 16,
+      "WITHHOLD": 16
+    }
+  },
+  "normalized_source_overlap": false,
+  "test_families_disjoint_from_train": true,
+  "keys_independently_reviewed": false,
+  "oracle": "positive integer ->YES;integer0->NO;explicitunavailable->WITHHOLD"
+}

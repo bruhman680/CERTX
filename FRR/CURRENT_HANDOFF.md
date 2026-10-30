@@ -1,21 +1,19 @@
 # Current FRR handoff
 
-30 October 2026, America/Chicago. Balanced prospective guidance three-stage contact complete; no background task remains. New user instructions supersede historical pause/next labels.
+30 October 2026 America/Chicago. First narrow training pilot settled; no process/backgroundtask remains. New user instructions supersede historical pause/next labels.
 
 ## Latest completed contact
 
-[Report](evaluation/balanced-guidance-prospective-v1/REPORT.md):12authored balanced YES/NO/WITHHOLD cases × ordinary/compact guidance,24actual SmolLM2-135M local calls. Both arms return allYES and score4/12, tying everyconstant-labelbaseline. No paired gains; zero NO/WITHHOLD matches. All24EOS,48generatedtokens,5650inputtokens. Frozen before inference, unchanged audit tool used prospectively, all24newcache/token artifacts checked and346oldmodel/cachefiles unchanged. No training, paidresources, independent/masked review or broadFRRefficacy claim. No prompt/default promotion.
+[Report](evaluation/narrow-training-pilot-v1/REPORT.md): planned48full-weightAdamWsteps on96balanced source-state records, but memory-headroomguard stopped after1actualstep/twoexamples. Separate partialcheckpoint+optimizer at /workspace/narrow_training_checkpoint_v1, originalmodel unchanged.120actualevalcalls: devoriginal1/12vsadapted4/12; structuraltestoriginal4/48vsadapted16/48. Adapted outputsallNO, tiesconstantbaseline; no demonstratedpositive/zero/missingdiscrimination. No missing-class example trained in the one completedbatch. All272storedweighttensors numericallychanged, not just fileserialization. No trainedmodel/defaultpromotion.
 
-## Usable components retained
+Input preparation failures and repairs preserved: developmentoverlapcaught beforeevaluation;160tokeninputguard stopped after12baseline-devcalls/beforeoptimizer, amendedto192withoutdata/prompt/hyperparameterchange. Baselineprefix reused once; no testforward beforetrainingcomplete. Exactmemorytriggerreading missing (instrumentationgap); stop is not OOMproof.120newcache/tokenartifacts checked,370oldmodel/cachefiles unchanged. One parallelprimarypaper scout, coordinator experiment/review, noindependent/maskedreplication. No paidAPI/rental/install.
 
-[Source-calculation guide](evaluation/complete-verification-path-v1/README.md): optional source_calculation_path.py binds a narrow source grammar/roles/states and computes exact variance under caller-declared assumptions.60frozen expectations match, but it does not authenticate source truth or empirically prove assumptions.
+## Strongest next training direction
 
-[Stored-run audit](evaluation/stored-run-audit-v1/REPORT.md): optional stored_run_audit.py checks declared cohort/source/identity/token metadata and exact label-match counts, preserving unresolved answers in the denominator.15challenge groups passed. Original retrospective CVP3 audit gives4/10allYES; latest prospective pilot gives4/12perarm. Do not merge scores across different cohorts as independent evidence.
+Parameter-efficient/restricted-parameter resourceprobe under a new protocol. Measure optimizer allocation plus activations and exactguardtriggerreadings. Balance classes within early effectiveupdates, potentiallyusingaccumulation; presentpartialpilot trained onlyzero+positive. Newprimarytest needed: current48heldoutcases now exposed/regressions. No automatic secondtrainingattempt. Checkpoint/cache binaries retainedlocally, hashesinreport; workspace is not independentarchive.
 
-## Strongest next larger direction
+## Usable infrastructure and parallel direction
 
-More variants of this full-task instruction have weak expected return. Keep model outputs as untrusted candidates. Proposed next: a read-only station registry that relays existing receipts with question, recipe, source ancestry, assumptions and withholding states; expose incompatible scopes and copied sources without majority-vote truth or invented confidence. User's distributed-stations idea is recorded in the latest study as an open design lens; no aggregator is installed yet.
+[Conditional source/variance tool](evaluation/complete-verification-path-v1/README.md) and [stored-run auditor](evaluation/stored-run-audit-v1/REPORT.md) remain unchanged/optional. Audit now used on prospective guidance and training pilots, with identity/cohort/hash checks and full unresolveddenominator. Supplied keys/assumptions/source truth remain external; mathematicaltool correctness is not model competence.
 
-## Preservation and boundaries
-
-Four prior navigation docs byte-archived in latest study. Historical raw failures, existingtools/core/schema and broadqueue statuses unchanged; earlier source-reading gate remains failed.24newcachebranches retained locally, modelweights and oldcachefiles unchanged. Included/free resources only; ask before separatelypaid services. Current client usage/bill is not visible. Coordinator-only run, no agent delegation this contact. Three-stage cadence optional where each stage resolves an uncertainty; nothing continues automatically in background.
+Read-only stationregistry stillproposed: retain question,recipe,sourceancestry,partialtraining/withholding anddisagreement without majority-votetruth/confidence. Earlierfailedsource-readinggate staysfailed; broadqueue/core/schema unchanged. Fourpreviousnavigationdocs archived. Included/freeonly; askbeforeseparatelypaidservices; accountusage/billnotvisible.

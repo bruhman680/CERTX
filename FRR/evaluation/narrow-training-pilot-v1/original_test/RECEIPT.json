@@ -1,0 +1,334 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "NT1-original_test",
+  "identity": {
+    "family": "narrow_source_state",
+    "facet": "state_label",
+    "cycle": "NT1",
+    "arm": "original_test"
+  },
+  "contract_sha256": "c04b890c58349b75b686e6ccc6ac901a1408a098d5479814ea9bbc772e5666a8",
+  "sources": {
+    "raw": "29ddb2e0fb607b9e9c5df1f0cef6154160e5722632b140393110540722ceff6c",
+    "keys": "2cc062b9bf0f8010e68ce718f43e4372fc917d931bc2e6b0749acf0d36600459"
+  },
+  "summary": {
+    "calls": 48,
+    "label_matches": 4,
+    "match_fraction": {
+      "numerator": 1,
+      "denominator": 12
+    },
+    "constant_yes_matches": 16,
+    "labels": {
+      "YES": 12,
+      "UNRESOLVED": 36
+    },
+    "stops": {
+      "eos": 12,
+      "token_limit": 36
+    },
+    "input_tokens": 7540,
+    "output_tokens": 312
+  },
+  "rows": [
+    {
+      "run_id": "test_test_past_positive_0__original_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_test_past_positive_1__original_test",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_past_positive_2__original_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_test_past_positive_3__original_test",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_past_zero_0__original_test",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_past_zero_1__original_test",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_past_zero_2__original_test",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_past_zero_3__original_test",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_past_missing_0__original_test",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_past_missing_1__original_test",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_past_missing_2__original_test",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_past_missing_3__original_test",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_order_positive_0__original_test",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_order_positive_1__original_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_test_order_positive_2__original_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_test_order_positive_3__original_test",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_order_zero_0__original_test",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_order_zero_1__original_test",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_order_zero_2__original_test",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_order_zero_3__original_test",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_order_missing_0__original_test",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_order_missing_1__original_test",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_order_missing_2__original_test",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_order_missing_3__original_test",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_nested_json_positive_0__original_test",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_nested_json_positive_1__original_test",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_nested_json_positive_2__original_test",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_nested_json_positive_3__original_test",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_nested_json_zero_0__original_test",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_nested_json_zero_1__original_test",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_nested_json_zero_2__original_test",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_nested_json_zero_3__original_test",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_nested_json_missing_0__original_test",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_nested_json_missing_1__original_test",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_nested_json_missing_2__original_test",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_nested_json_missing_3__original_test",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_contrast_positive_0__original_test",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_contrast_positive_1__original_test",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_contrast_positive_2__original_test",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_contrast_positive_3__original_test",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_contrast_zero_0__original_test",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_contrast_zero_1__original_test",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_contrast_zero_2__original_test",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_contrast_zero_3__original_test",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_contrast_missing_0__original_test",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_contrast_missing_1__original_test",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_contrast_missing_2__original_test",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_test_contrast_missing_3__original_test",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}
