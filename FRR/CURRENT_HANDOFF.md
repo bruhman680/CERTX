@@ -1,17 +1,17 @@
 # Current FRR handoff
 
-Current checkpoint: 30 October 2026 UTC. User requested cycles and warranted refinements. SD-C1/2/3 is complete; no background task remains. New instructions supersede historical pause/next labels.
+Current checkpoint: 30 October 2026 UTC. User authorized the strongest next reader test. SR-C1 is complete; no background task remains. New instructions supersede historical pause/next labels.
 
 ## Latest contact
 
-[Report](evaluation/soil-design-three-cycle-v1/REPORT.md). SD-C1/2/3 completed three frozen toy contacts: fixed-budget soil grouping, a moment-matched beta rival, and leaky-reset attribution. Exact finite distributions plus selected rational audits show target-dependent sampling needs and a sharp [.20,.55] carrier interval under unknown reset efficacies. No new model calls, paid service, core/schema changes, default policy or queue promotion.
+[SR-C1 report](evaluation/soil-design-reader-v1/REPORT.md). SR-C1 completed 24 local SmolLM2-135M generations on eight new soil/reset records. Separate reading/calculation/conclusion matches: 2/8,0/8,2/8; no record has all three correct. Five capped responses, three unfinished reading echoes. Observation count and reset values were confused with target quantities. This is a diagnostic failure on these fixtures, not failed toy mathematics or a broad FRR verdict. All24 new caches preserved; no training or paid service.
 
-Seven budget designs, eight one-soil rival lengths, one four-soil product comparison, five reset scenarios; 200 floating assertions (including repeated normalizations), selected post-result rational identities. Authored numerical laws, coordinator review only, not independent replication or real-agent evidence. Protocol and code frozen before execution; no Monte Carlo grid rerun.
+Eight new authored records, three fresh contexts each, one ordinary record/rule instruction and64new-tokencap. No FRR comparison arm, retry or prompt tuning. Gold/protocol/code frozen before inference; raw outputs frozen before systematic scoring with partial progress inspection disclosed. Coordinator whole-response review, not independent or masked. Strict-format0/24; case-insensitiveformat8/24. Semantic matches4/24,17wrong,3unresolved; correctness is not a certificate of the intended reasoning path.
 
 ## Strongest next
 
-A new reader/producer contact can preserve observation grouping and reset calibration alongside exact field roles. Freeze source-reading, arithmetic, and non-identification keys separately. Numerical tests do not show the model can use these distinctions. Unknown-world rejection, cross-target reset effects, and actual-agent causal attribution remain untested. Prior witnessed-field production and TP-C1's failed pipeline remain open; no silent relabeling.
+A smaller full-record versus selected-relevant-clause reading test can separate source-fact access from algebra. Freeze supplied clause selection, questions, keys and costs; supplying a clause is not autonomous extraction. If source reading works, consider explicit computation on role-validated fields. Missing calibration is not always non-identification: retain the singleton R4 negative case. Avoid adding control complexity or treating more tokens as a verified fix.
 
-## Integration and preserved scope
+## Integration and history
 
-[Design-label example](examples/soil-design-and-reset-calibration.md) and [verification guidance](modules/verification-layer.md) add target/grouping/calibration questions. Existing field-role guard and comparator unchanged; neither verifies statistical assumptions. [Archive](evaluation/soil-design-three-cycle-v1/ARCHIVE_RECEIPT.json) preserves six prior navigation/guidance files. [CO-C1](evaluation/claude-soil-observer-intake-v1/REPORT.md) and original Claude files unchanged. Core/runtime/schema and [queue](evaluation/research-queue/QUEUE.json) statuses unchanged. Included/free only; ask before separately paid resources. No weights, caches, historical code or findings altered.
+[Verification guidance](modules/verification-layer.md) and [design example](examples/soil-design-and-reset-calibration.md) add a reader-capability boundary. This is not a demonstrated behavioral repair; existing tools/core/runtime/schema and [queue](evaluation/research-queue/QUEUE.json) statuses unchanged. [SD-C1/2/3](evaluation/soil-design-three-cycle-v1/REPORT.md) mathematics and all earlier failures remain. Seven old navigation/guidance files byte-archived in [receipt](evaluation/soil-design-reader-v1/ARCHIVE_RECEIPT.json). Model/old caches unchanged,24new branches retained locally. Included/free only; ask before separately paid resources. No background work continues after this checkpoint.

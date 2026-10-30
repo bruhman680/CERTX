@@ -15,3 +15,6 @@ In the authored example, 64 observations from one soil yield population-mean var
 Reset readouts (.160,.128,.088) are compatible with internal-carrier run fractions .25, .40, or .50 under different efficacies. With efficacy otherwise unknown in [0,1], the full feasible interval is [.20,.55] under this particular no-cross-effect model. A reset name supplies no efficacy evidence. Conversely, the interval can collapse for decisive readouts; preserve what the actual constraints establish.
 
 This checklist is not an automatic validator, a reason to erase model memory, or empirical evidence of improved agent reasoning. Source hashes bind bytes, not these statistical assumptions.
+
+
+The later [SR-C1 reader contact](../evaluation/soil-design-reader-v1/REPORT.md) tests transfer rather than assuming it: source reading matched 2/8, calculation 0/8, conclusions 2/8, with no complete three-answer record. These are separate prompted contexts. The model sometimes copied the observation count into a missing soil count, or effectiveness/readout values into pi bounds. Check which quantity was actually read before using an exact calculator; a copied number and a correct-looking label do not establish that handoff. The toy laws remain valid; reader capability and any behavioral repair remain separate questions.

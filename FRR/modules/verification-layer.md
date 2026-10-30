@@ -121,3 +121,10 @@ The guard validates literal source binding, not source authenticity or empirical
 [SD-C1/2/3](../evaluation/soil-design-three-cycle-v1/REPORT.md) extends the observer-level check with fixed-budget and reset witnesses. Label the intended target as well as the number of observations: population-average precision and within-condition structure can need different groupings. Moment agreement does not establish agreement of full laws or causal carriers. A closed-candidate comparison remains closed-candidate evidence.
 
 For an intervention, state what changes, what stays fixed, and what establishes or bounds its effectiveness and cross-effects. An unchanged readout can reflect an ineffective intervention; the same attenuated readout can reflect different carrier allocations and efficacies. When the accepted model only identifies a feasible set, retain it. Do not withhold a point conclusion if the actual constraints do identify one. [Design-label example](../examples/soil-design-and-reset-calibration.md) provides the scoped arithmetic. These are optional design/reporting refinements, not a new validator, reset policy, confidence calibration, or demonstrated behavioral benefit.
+
+
+## Test whether the reader can use the diagnostic
+
+[SR-C1](../evaluation/soil-design-reader-v1/REPORT.md) exposes a gap between an exact toy diagnostic and a model using its supplied rules. Keep source reading, numerical computation/set reconstruction, and final conclusion as separate observed obligations. A label match from one query does not verify the extraction or computation elicited in other independent contexts. Preserve unfinished source echoes as unfinished readouts; do not infer their eventual answers from copied numerals.
+
+Before adding control complexity, test a smaller prerequisite such as choosing the relevant source fact, with selection and its cost explicit. Retain the role of each number and the distinction between missing calibration, ineffective supplied calibration, and what the actual constraints identify. This is optional evaluation guidance, not a demonstrated model repair or an automatic reset/abstention rule.
