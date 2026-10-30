@@ -1,0 +1,3 @@
+# Six-station integration
+
+Afterpilot/scoring, before registryexecution: retainoriginalfourstationentriesunchanged,appendoriginal/adaptedLoRAtestreceiptswithsharedinputs/keys/trainingstate/summaryancestry. No pooledscoreortruthvote. Freezeallboundinputsandtool,runread-onlyCLI,assertsixindexedstationsandscope-preservingmatchedcounts. Thisispostresultintegration,notnewmodelevidence.

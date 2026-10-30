@@ -1,0 +1,116 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "LS1-original_dev",
+  "identity": {
+    "family": "lora_source_state",
+    "facet": "state_label",
+    "cycle": "LS1",
+    "arm": "original_dev"
+  },
+  "contract_sha256": "d95b61fcc122d6c79fb48670d3bb2e6cae9191a94eaaad8ce33b461e65aebadf",
+  "sources": {
+    "raw": "add5510ba0a3304626c6ae7ef79862a84523ea5cd882025d50291f887c8dfc2d",
+    "keys": "d0a12550b22b975232f398880bf19982f22de17f4aa06a5967874328073af72a"
+  },
+  "summary": {
+    "calls": 12,
+    "label_matches": 0,
+    "match_fraction": {
+      "numerator": 0,
+      "denominator": 1
+    },
+    "constant_yes_matches": 4,
+    "labels": {
+      "UNRESOLVED": 12
+    },
+    "stops": {
+      "token_limit": 12
+    },
+    "input_tokens": 2139,
+    "output_tokens": 96
+  },
+  "rows": [
+    {
+      "run_id": "dev_fields_0_positive__original_dev",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_fields_0_zero__original_dev",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_fields_0_missing__original_dev",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_prose_0_positive__original_dev",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_prose_0_zero__original_dev",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_prose_0_missing__original_dev",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_json_0_positive__original_dev",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_json_0_zero__original_dev",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_json_0_missing__original_dev",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_table_0_positive__original_dev",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_table_0_zero__original_dev",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_table_0_missing__original_dev",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

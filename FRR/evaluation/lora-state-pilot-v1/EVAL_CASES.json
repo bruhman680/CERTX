@@ -1,0 +1,362 @@
+[
+  {
+    "id": "dev_fields_0_positive",
+    "split": "dev",
+    "structure_family": "fields",
+    "source": "Target batch: Maple.\nBatch Maple: sampled soils 11; observations per soil 13; damaged plots 0; inspections unavailable. Batch Other: sampled soils 13."
+  },
+  {
+    "id": "dev_fields_0_zero",
+    "split": "dev",
+    "structure_family": "fields",
+    "source": "Target batch: Maple.\nBatch Maple: sampled soils 0; observations per soil 13; damaged plots 0; inspections unavailable. Batch Other: sampled soils 13."
+  },
+  {
+    "id": "dev_fields_0_missing",
+    "split": "dev",
+    "structure_family": "fields",
+    "source": "Target batch: Maple.\nBatch Maple: sampled soils not recorded; observations per soil 13; damaged plots 0; inspections unavailable. Batch Other: sampled soils 13."
+  },
+  {
+    "id": "dev_prose_0_positive",
+    "split": "dev",
+    "structure_family": "prose",
+    "source": "Target batch: Maple.\nFor batch Maple, the sampled-soil count is 11 and observations per soil total 13. Its damaged plots total 0 and inspections are unavailable. Other batch has 13 sampled soils."
+  },
+  {
+    "id": "dev_prose_0_zero",
+    "split": "dev",
+    "structure_family": "prose",
+    "source": "Target batch: Maple.\nFor batch Maple, the sampled-soil count is 0 and observations per soil total 13. Its damaged plots total 0 and inspections are unavailable. Other batch has 13 sampled soils."
+  },
+  {
+    "id": "dev_prose_0_missing",
+    "split": "dev",
+    "structure_family": "prose",
+    "source": "Target batch: Maple.\nFor batch Maple, the sampled-soil count is not recorded and observations per soil total 13. Its damaged plots total 0 and inspections are unavailable. Other batch has 13 sampled soils."
+  },
+  {
+    "id": "dev_json_0_positive",
+    "split": "dev",
+    "structure_family": "json",
+    "source": "Target batch: Maple.\n{\"batch\": \"Maple\", \"sampled_soils\": 11, \"observations_per_soil\": 13, \"damaged_plots\": 0, \"inspections\": null, \"other_batch_sampled_soils\": 13}"
+  },
+  {
+    "id": "dev_json_0_zero",
+    "split": "dev",
+    "structure_family": "json",
+    "source": "Target batch: Maple.\n{\"batch\": \"Maple\", \"sampled_soils\": 0, \"observations_per_soil\": 13, \"damaged_plots\": 0, \"inspections\": null, \"other_batch_sampled_soils\": 13}"
+  },
+  {
+    "id": "dev_json_0_missing",
+    "split": "dev",
+    "structure_family": "json",
+    "source": "Target batch: Maple.\n{\"batch\": \"Maple\", \"sampled_soils\": null, \"observations_per_soil\": 13, \"damaged_plots\": 0, \"inspections\": null, \"other_batch_sampled_soils\": 13}"
+  },
+  {
+    "id": "dev_table_0_positive",
+    "split": "dev",
+    "structure_family": "table",
+    "source": "Target batch: Maple.\nBatch Maple\nField | Count\nobservations_per_soil | 13\nsampled_soils | 11\ndamaged_plots | 0\ninspections | unavailable\nOther batch sampled_soils | 13"
+  },
+  {
+    "id": "dev_table_0_zero",
+    "split": "dev",
+    "structure_family": "table",
+    "source": "Target batch: Maple.\nBatch Maple\nField | Count\nobservations_per_soil | 13\nsampled_soils | 0\ndamaged_plots | 0\ninspections | unavailable\nOther batch sampled_soils | 13"
+  },
+  {
+    "id": "dev_table_0_missing",
+    "split": "dev",
+    "structure_family": "table",
+    "source": "Target batch: Maple.\nBatch Maple\nField | Count\nobservations_per_soil | 13\nsampled_soils | not recorded\ndamaged_plots | 0\ninspections | unavailable\nOther batch sampled_soils | 13"
+  },
+  {
+    "id": "test_scoped_table_0_positive",
+    "split": "test",
+    "structure_family": "scoped_table",
+    "source": "Target batch: Pine.\nBatch | Field | Count\nOther | sampled_soils | 0\nPine | inspections | unavailable\nPine | observations_per_soil | 0\nPine | sampled_soils | 3\nPine | damaged_plots | 0"
+  },
+  {
+    "id": "test_scoped_table_0_zero",
+    "split": "test",
+    "structure_family": "scoped_table",
+    "source": "Target batch: Pine.\nBatch | Field | Count\nOther | sampled_soils | 0\nPine | inspections | unavailable\nPine | observations_per_soil | 0\nPine | sampled_soils | 0\nPine | damaged_plots | 0"
+  },
+  {
+    "id": "test_scoped_table_0_missing",
+    "split": "test",
+    "structure_family": "scoped_table",
+    "source": "Target batch: Pine.\nBatch | Field | Count\nOther | sampled_soils | 0\nPine | inspections | unavailable\nPine | observations_per_soil | 0\nPine | sampled_soils | not recorded\nPine | damaged_plots | 0"
+  },
+  {
+    "id": "test_scoped_table_1_positive",
+    "split": "test",
+    "structure_family": "scoped_table",
+    "source": "Target batch: Fir.\nBatch | Field | Count\nOther | sampled_soils | 8\nFir | inspections | unavailable\nFir | observations_per_soil | 8\nFir | sampled_soils | 6\nFir | damaged_plots | 0"
+  },
+  {
+    "id": "test_scoped_table_1_zero",
+    "split": "test",
+    "structure_family": "scoped_table",
+    "source": "Target batch: Fir.\nBatch | Field | Count\nOther | sampled_soils | 8\nFir | inspections | unavailable\nFir | observations_per_soil | 8\nFir | sampled_soils | 0\nFir | damaged_plots | 0"
+  },
+  {
+    "id": "test_scoped_table_1_missing",
+    "split": "test",
+    "structure_family": "scoped_table",
+    "source": "Target batch: Fir.\nBatch | Field | Count\nOther | sampled_soils | 8\nFir | inspections | unavailable\nFir | observations_per_soil | 8\nFir | sampled_soils | not recorded\nFir | damaged_plots | 0"
+  },
+  {
+    "id": "test_scoped_table_2_positive",
+    "split": "test",
+    "structure_family": "scoped_table",
+    "source": "Target batch: Poplar.\nBatch | Field | Count\nOther | sampled_soils | unavailable\nPoplar | inspections | unavailable\nPoplar | observations_per_soil | unavailable\nPoplar | sampled_soils | 12\nPoplar | damaged_plots | 0"
+  },
+  {
+    "id": "test_scoped_table_2_zero",
+    "split": "test",
+    "structure_family": "scoped_table",
+    "source": "Target batch: Poplar.\nBatch | Field | Count\nOther | sampled_soils | unavailable\nPoplar | inspections | unavailable\nPoplar | observations_per_soil | unavailable\nPoplar | sampled_soils | 0\nPoplar | damaged_plots | 0"
+  },
+  {
+    "id": "test_scoped_table_2_missing",
+    "split": "test",
+    "structure_family": "scoped_table",
+    "source": "Target batch: Poplar.\nBatch | Field | Count\nOther | sampled_soils | unavailable\nPoplar | inspections | unavailable\nPoplar | observations_per_soil | unavailable\nPoplar | sampled_soils | not recorded\nPoplar | damaged_plots | 0"
+  },
+  {
+    "id": "test_scoped_table_3_positive",
+    "split": "test",
+    "structure_family": "scoped_table",
+    "source": "Target batch: Juniper.\nBatch | Field | Count\nOther | sampled_soils | 21\nJuniper | inspections | unavailable\nJuniper | observations_per_soil | 21\nJuniper | sampled_soils | 15\nJuniper | damaged_plots | 0"
+  },
+  {
+    "id": "test_scoped_table_3_zero",
+    "split": "test",
+    "structure_family": "scoped_table",
+    "source": "Target batch: Juniper.\nBatch | Field | Count\nOther | sampled_soils | 21\nJuniper | inspections | unavailable\nJuniper | observations_per_soil | 21\nJuniper | sampled_soils | 0\nJuniper | damaged_plots | 0"
+  },
+  {
+    "id": "test_scoped_table_3_missing",
+    "split": "test",
+    "structure_family": "scoped_table",
+    "source": "Target batch: Juniper.\nBatch | Field | Count\nOther | sampled_soils | 21\nJuniper | inspections | unavailable\nJuniper | observations_per_soil | 21\nJuniper | sampled_soils | not recorded\nJuniper | damaged_plots | 0"
+  },
+  {
+    "id": "test_nested_list_0_positive",
+    "split": "test",
+    "structure_family": "nested_list",
+    "source": "Target batch: Pine.\n{\"records\": [{\"batch\": \"Other\", \"counts\": {\"sampled_soils\": 0}}, {\"batch\": \"Pine\", \"counts\": {\"inspections\": null, \"damaged_plots\": 0, \"observations_per_soil\": 0, \"sampled_soils\": 3}}]}"
+  },
+  {
+    "id": "test_nested_list_0_zero",
+    "split": "test",
+    "structure_family": "nested_list",
+    "source": "Target batch: Pine.\n{\"records\": [{\"batch\": \"Other\", \"counts\": {\"sampled_soils\": 0}}, {\"batch\": \"Pine\", \"counts\": {\"inspections\": null, \"damaged_plots\": 0, \"observations_per_soil\": 0, \"sampled_soils\": 0}}]}"
+  },
+  {
+    "id": "test_nested_list_0_missing",
+    "split": "test",
+    "structure_family": "nested_list",
+    "source": "Target batch: Pine.\n{\"records\": [{\"batch\": \"Other\", \"counts\": {\"sampled_soils\": 0}}, {\"batch\": \"Pine\", \"counts\": {\"inspections\": null, \"damaged_plots\": 0, \"observations_per_soil\": 0, \"sampled_soils\": null}}]}"
+  },
+  {
+    "id": "test_nested_list_1_positive",
+    "split": "test",
+    "structure_family": "nested_list",
+    "source": "Target batch: Fir.\n{\"records\": [{\"batch\": \"Other\", \"counts\": {\"sampled_soils\": 8}}, {\"batch\": \"Fir\", \"counts\": {\"inspections\": null, \"damaged_plots\": 0, \"observations_per_soil\": 8, \"sampled_soils\": 6}}]}"
+  },
+  {
+    "id": "test_nested_list_1_zero",
+    "split": "test",
+    "structure_family": "nested_list",
+    "source": "Target batch: Fir.\n{\"records\": [{\"batch\": \"Other\", \"counts\": {\"sampled_soils\": 8}}, {\"batch\": \"Fir\", \"counts\": {\"inspections\": null, \"damaged_plots\": 0, \"observations_per_soil\": 8, \"sampled_soils\": 0}}]}"
+  },
+  {
+    "id": "test_nested_list_1_missing",
+    "split": "test",
+    "structure_family": "nested_list",
+    "source": "Target batch: Fir.\n{\"records\": [{\"batch\": \"Other\", \"counts\": {\"sampled_soils\": 8}}, {\"batch\": \"Fir\", \"counts\": {\"inspections\": null, \"damaged_plots\": 0, \"observations_per_soil\": 8, \"sampled_soils\": null}}]}"
+  },
+  {
+    "id": "test_nested_list_2_positive",
+    "split": "test",
+    "structure_family": "nested_list",
+    "source": "Target batch: Poplar.\n{\"records\": [{\"batch\": \"Other\", \"counts\": {\"sampled_soils\": null}}, {\"batch\": \"Poplar\", \"counts\": {\"inspections\": null, \"damaged_plots\": 0, \"observations_per_soil\": null, \"sampled_soils\": 12}}]}"
+  },
+  {
+    "id": "test_nested_list_2_zero",
+    "split": "test",
+    "structure_family": "nested_list",
+    "source": "Target batch: Poplar.\n{\"records\": [{\"batch\": \"Other\", \"counts\": {\"sampled_soils\": null}}, {\"batch\": \"Poplar\", \"counts\": {\"inspections\": null, \"damaged_plots\": 0, \"observations_per_soil\": null, \"sampled_soils\": 0}}]}"
+  },
+  {
+    "id": "test_nested_list_2_missing",
+    "split": "test",
+    "structure_family": "nested_list",
+    "source": "Target batch: Poplar.\n{\"records\": [{\"batch\": \"Other\", \"counts\": {\"sampled_soils\": null}}, {\"batch\": \"Poplar\", \"counts\": {\"inspections\": null, \"damaged_plots\": 0, \"observations_per_soil\": null, \"sampled_soils\": null}}]}"
+  },
+  {
+    "id": "test_nested_list_3_positive",
+    "split": "test",
+    "structure_family": "nested_list",
+    "source": "Target batch: Juniper.\n{\"records\": [{\"batch\": \"Other\", \"counts\": {\"sampled_soils\": 21}}, {\"batch\": \"Juniper\", \"counts\": {\"inspections\": null, \"damaged_plots\": 0, \"observations_per_soil\": 21, \"sampled_soils\": 15}}]}"
+  },
+  {
+    "id": "test_nested_list_3_zero",
+    "split": "test",
+    "structure_family": "nested_list",
+    "source": "Target batch: Juniper.\n{\"records\": [{\"batch\": \"Other\", \"counts\": {\"sampled_soils\": 21}}, {\"batch\": \"Juniper\", \"counts\": {\"inspections\": null, \"damaged_plots\": 0, \"observations_per_soil\": 21, \"sampled_soils\": 0}}]}"
+  },
+  {
+    "id": "test_nested_list_3_missing",
+    "split": "test",
+    "structure_family": "nested_list",
+    "source": "Target batch: Juniper.\n{\"records\": [{\"batch\": \"Other\", \"counts\": {\"sampled_soils\": 21}}, {\"batch\": \"Juniper\", \"counts\": {\"inspections\": null, \"damaged_plots\": 0, \"observations_per_soil\": 21, \"sampled_soils\": null}}]}"
+  },
+  {
+    "id": "test_register_0_positive",
+    "split": "test",
+    "structure_family": "register",
+    "source": "Target batch: Pine.\nentry[batch=Other][sampled_soils]=0\nentry[batch=Pine][damaged_plots]=0\nentry[batch=Pine][inspections]=unavailable\nentry[batch=Pine][observations_per_soil]=0\nentry[batch=Pine][sampled_soils]=3"
+  },
+  {
+    "id": "test_register_0_zero",
+    "split": "test",
+    "structure_family": "register",
+    "source": "Target batch: Pine.\nentry[batch=Other][sampled_soils]=0\nentry[batch=Pine][damaged_plots]=0\nentry[batch=Pine][inspections]=unavailable\nentry[batch=Pine][observations_per_soil]=0\nentry[batch=Pine][sampled_soils]=0"
+  },
+  {
+    "id": "test_register_0_missing",
+    "split": "test",
+    "structure_family": "register",
+    "source": "Target batch: Pine.\nentry[batch=Other][sampled_soils]=0\nentry[batch=Pine][damaged_plots]=0\nentry[batch=Pine][inspections]=unavailable\nentry[batch=Pine][observations_per_soil]=0\nentry[batch=Pine][sampled_soils]=not recorded"
+  },
+  {
+    "id": "test_register_1_positive",
+    "split": "test",
+    "structure_family": "register",
+    "source": "Target batch: Fir.\nentry[batch=Other][sampled_soils]=8\nentry[batch=Fir][damaged_plots]=0\nentry[batch=Fir][inspections]=unavailable\nentry[batch=Fir][observations_per_soil]=8\nentry[batch=Fir][sampled_soils]=6"
+  },
+  {
+    "id": "test_register_1_zero",
+    "split": "test",
+    "structure_family": "register",
+    "source": "Target batch: Fir.\nentry[batch=Other][sampled_soils]=8\nentry[batch=Fir][damaged_plots]=0\nentry[batch=Fir][inspections]=unavailable\nentry[batch=Fir][observations_per_soil]=8\nentry[batch=Fir][sampled_soils]=0"
+  },
+  {
+    "id": "test_register_1_missing",
+    "split": "test",
+    "structure_family": "register",
+    "source": "Target batch: Fir.\nentry[batch=Other][sampled_soils]=8\nentry[batch=Fir][damaged_plots]=0\nentry[batch=Fir][inspections]=unavailable\nentry[batch=Fir][observations_per_soil]=8\nentry[batch=Fir][sampled_soils]=not recorded"
+  },
+  {
+    "id": "test_register_2_positive",
+    "split": "test",
+    "structure_family": "register",
+    "source": "Target batch: Poplar.\nentry[batch=Other][sampled_soils]=unavailable\nentry[batch=Poplar][damaged_plots]=0\nentry[batch=Poplar][inspections]=unavailable\nentry[batch=Poplar][observations_per_soil]=unavailable\nentry[batch=Poplar][sampled_soils]=12"
+  },
+  {
+    "id": "test_register_2_zero",
+    "split": "test",
+    "structure_family": "register",
+    "source": "Target batch: Poplar.\nentry[batch=Other][sampled_soils]=unavailable\nentry[batch=Poplar][damaged_plots]=0\nentry[batch=Poplar][inspections]=unavailable\nentry[batch=Poplar][observations_per_soil]=unavailable\nentry[batch=Poplar][sampled_soils]=0"
+  },
+  {
+    "id": "test_register_2_missing",
+    "split": "test",
+    "structure_family": "register",
+    "source": "Target batch: Poplar.\nentry[batch=Other][sampled_soils]=unavailable\nentry[batch=Poplar][damaged_plots]=0\nentry[batch=Poplar][inspections]=unavailable\nentry[batch=Poplar][observations_per_soil]=unavailable\nentry[batch=Poplar][sampled_soils]=not recorded"
+  },
+  {
+    "id": "test_register_3_positive",
+    "split": "test",
+    "structure_family": "register",
+    "source": "Target batch: Juniper.\nentry[batch=Other][sampled_soils]=21\nentry[batch=Juniper][damaged_plots]=0\nentry[batch=Juniper][inspections]=unavailable\nentry[batch=Juniper][observations_per_soil]=21\nentry[batch=Juniper][sampled_soils]=15"
+  },
+  {
+    "id": "test_register_3_zero",
+    "split": "test",
+    "structure_family": "register",
+    "source": "Target batch: Juniper.\nentry[batch=Other][sampled_soils]=21\nentry[batch=Juniper][damaged_plots]=0\nentry[batch=Juniper][inspections]=unavailable\nentry[batch=Juniper][observations_per_soil]=21\nentry[batch=Juniper][sampled_soils]=0"
+  },
+  {
+    "id": "test_register_3_missing",
+    "split": "test",
+    "structure_family": "register",
+    "source": "Target batch: Juniper.\nentry[batch=Other][sampled_soils]=21\nentry[batch=Juniper][damaged_plots]=0\nentry[batch=Juniper][inspections]=unavailable\nentry[batch=Juniper][observations_per_soil]=21\nentry[batch=Juniper][sampled_soils]=not recorded"
+  },
+  {
+    "id": "test_interleaved_0_positive",
+    "split": "test",
+    "structure_family": "interleaved",
+    "source": "Target batch: Pine.\nOther batch reports 0 sampled soils. Batch Pine has inspections unavailable. For Pine, sampled soils were recorded as 3. Observations per soil for Pine were 0. Damaged plots for Pine were 0."
+  },
+  {
+    "id": "test_interleaved_0_zero",
+    "split": "test",
+    "structure_family": "interleaved",
+    "source": "Target batch: Pine.\nOther batch reports 0 sampled soils. Batch Pine has inspections unavailable. For Pine, sampled soils were recorded as 0. Observations per soil for Pine were 0. Damaged plots for Pine were 0."
+  },
+  {
+    "id": "test_interleaved_0_missing",
+    "split": "test",
+    "structure_family": "interleaved",
+    "source": "Target batch: Pine.\nOther batch reports 0 sampled soils. Batch Pine has inspections unavailable. For Pine, sampled soils were recorded as not recorded. Observations per soil for Pine were 0. Damaged plots for Pine were 0."
+  },
+  {
+    "id": "test_interleaved_1_positive",
+    "split": "test",
+    "structure_family": "interleaved",
+    "source": "Target batch: Fir.\nOther batch reports 8 sampled soils. Batch Fir has inspections unavailable. For Fir, sampled soils were recorded as 6. Observations per soil for Fir were 8. Damaged plots for Fir were 0."
+  },
+  {
+    "id": "test_interleaved_1_zero",
+    "split": "test",
+    "structure_family": "interleaved",
+    "source": "Target batch: Fir.\nOther batch reports 8 sampled soils. Batch Fir has inspections unavailable. For Fir, sampled soils were recorded as 0. Observations per soil for Fir were 8. Damaged plots for Fir were 0."
+  },
+  {
+    "id": "test_interleaved_1_missing",
+    "split": "test",
+    "structure_family": "interleaved",
+    "source": "Target batch: Fir.\nOther batch reports 8 sampled soils. Batch Fir has inspections unavailable. For Fir, sampled soils were recorded as not recorded. Observations per soil for Fir were 8. Damaged plots for Fir were 0."
+  },
+  {
+    "id": "test_interleaved_2_positive",
+    "split": "test",
+    "structure_family": "interleaved",
+    "source": "Target batch: Poplar.\nOther batch reports unavailable sampled soils. Batch Poplar has inspections unavailable. For Poplar, sampled soils were recorded as 12. Observations per soil for Poplar were unavailable. Damaged plots for Poplar were 0."
+  },
+  {
+    "id": "test_interleaved_2_zero",
+    "split": "test",
+    "structure_family": "interleaved",
+    "source": "Target batch: Poplar.\nOther batch reports unavailable sampled soils. Batch Poplar has inspections unavailable. For Poplar, sampled soils were recorded as 0. Observations per soil for Poplar were unavailable. Damaged plots for Poplar were 0."
+  },
+  {
+    "id": "test_interleaved_2_missing",
+    "split": "test",
+    "structure_family": "interleaved",
+    "source": "Target batch: Poplar.\nOther batch reports unavailable sampled soils. Batch Poplar has inspections unavailable. For Poplar, sampled soils were recorded as not recorded. Observations per soil for Poplar were unavailable. Damaged plots for Poplar were 0."
+  },
+  {
+    "id": "test_interleaved_3_positive",
+    "split": "test",
+    "structure_family": "interleaved",
+    "source": "Target batch: Juniper.\nOther batch reports 21 sampled soils. Batch Juniper has inspections unavailable. For Juniper, sampled soils were recorded as 15. Observations per soil for Juniper were 21. Damaged plots for Juniper were 0."
+  },
+  {
+    "id": "test_interleaved_3_zero",
+    "split": "test",
+    "structure_family": "interleaved",
+    "source": "Target batch: Juniper.\nOther batch reports 21 sampled soils. Batch Juniper has inspections unavailable. For Juniper, sampled soils were recorded as 0. Observations per soil for Juniper were 21. Damaged plots for Juniper were 0."
+  },
+  {
+    "id": "test_interleaved_3_missing",
+    "split": "test",
+    "structure_family": "interleaved",
+    "source": "Target batch: Juniper.\nOther batch reports 21 sampled soils. Batch Juniper has inspections unavailable. For Juniper, sampled soils were recorded as not recorded. Observations per soil for Juniper were 21. Damaged plots for Juniper were 0."
+  }
+]

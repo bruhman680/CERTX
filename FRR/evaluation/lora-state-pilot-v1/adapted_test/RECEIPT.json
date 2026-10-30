@@ -1,0 +1,333 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "LS1-adapted_test",
+  "identity": {
+    "family": "lora_source_state",
+    "facet": "state_label",
+    "cycle": "LS1",
+    "arm": "adapted_test"
+  },
+  "contract_sha256": "363cd8cc061edd81c6f47d5929ecc9b8c0b284285a94d44ae40b3a24013bd8b3",
+  "sources": {
+    "raw": "76b8cecda7bb2b095a32da39d72f8a10ddb6afcf82986fcab73f31cb58fd9227",
+    "keys": "14965aaf1445bb965dd24dbbc950bfe3d51de9331f63c22f6916d84c4b0160dd"
+  },
+  "summary": {
+    "calls": 48,
+    "label_matches": 19,
+    "match_fraction": {
+      "numerator": 19,
+      "denominator": 48
+    },
+    "constant_yes_matches": 16,
+    "labels": {
+      "NO": 14,
+      "YES": 34
+    },
+    "stops": {
+      "eos": 48
+    },
+    "input_tokens": 9386,
+    "output_tokens": 130
+  },
+  "rows": [
+    {
+      "run_id": "test_scoped_table_0_positive__adapted_test",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_scoped_table_0_zero__adapted_test",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_scoped_table_0_missing__adapted_test",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_scoped_table_1_positive__adapted_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_scoped_table_1_zero__adapted_test",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_scoped_table_1_missing__adapted_test",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_scoped_table_2_positive__adapted_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_scoped_table_2_zero__adapted_test",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_scoped_table_2_missing__adapted_test",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_scoped_table_3_positive__adapted_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_scoped_table_3_zero__adapted_test",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_scoped_table_3_missing__adapted_test",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_nested_list_0_positive__adapted_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_nested_list_0_zero__adapted_test",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_nested_list_0_missing__adapted_test",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_nested_list_1_positive__adapted_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_nested_list_1_zero__adapted_test",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_nested_list_1_missing__adapted_test",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_nested_list_2_positive__adapted_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_nested_list_2_zero__adapted_test",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_nested_list_2_missing__adapted_test",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_nested_list_3_positive__adapted_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_nested_list_3_zero__adapted_test",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_nested_list_3_missing__adapted_test",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_register_0_positive__adapted_test",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_register_0_zero__adapted_test",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_register_0_missing__adapted_test",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_register_1_positive__adapted_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_register_1_zero__adapted_test",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_register_1_missing__adapted_test",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_register_2_positive__adapted_test",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_register_2_zero__adapted_test",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_register_2_missing__adapted_test",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_register_3_positive__adapted_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_register_3_zero__adapted_test",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_register_3_missing__adapted_test",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_interleaved_0_positive__adapted_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_interleaved_0_zero__adapted_test",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_interleaved_0_missing__adapted_test",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_interleaved_1_positive__adapted_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_interleaved_1_zero__adapted_test",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_interleaved_1_missing__adapted_test",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_interleaved_2_positive__adapted_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_interleaved_2_zero__adapted_test",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_interleaved_2_missing__adapted_test",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_interleaved_3_positive__adapted_test",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_interleaved_3_zero__adapted_test",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_interleaved_3_missing__adapted_test",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

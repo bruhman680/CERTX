@@ -1,0 +1,158 @@
+{
+  "registry_id": "existing-verification-stations-v1",
+  "stations": [
+    {
+      "station_id": "conditional-variance-demo",
+      "question": "Garden03 / Batch03: under the supplied equal-cluster mixture, is variance at most 0.01?",
+      "recipe": "Existing deterministic source grammar -> exact conditional calculation, source-calculation-path-0.1. No model generation in this station.",
+      "state": "Computed conditional answer; source authenticity/truth and independence assumptions external. Authored and exposed demo, not hidden benchmark.",
+      "receipt": {
+        "path": "evaluation/complete-verification-path-v1/checked_run/DEMO_RECEIPT.json",
+        "sha256": "bb301bedf4c88d3e6ae7e0ca6646e4994fb8a9565c09eef2aa8f03217f032d17"
+      },
+      "ancestry": [
+        {
+          "path": "evaluation/complete-verification-path-v1/demo/source.txt",
+          "sha256": "76d47b5a1fc4f19a272d6a7f87a62f9556e5845be64b6e5609bfcfaea77676f4",
+          "role": "declared_source"
+        },
+        {
+          "path": "evaluation/complete-verification-path-v1/demo/contract.json",
+          "sha256": "45a43029bbfd2baff1e38cf3c3b6679b718776dc4df582c210daf53fe52ae34f",
+          "role": "declared_contract"
+        }
+      ]
+    },
+    {
+      "station_id": "full-task-model-audit",
+      "question": "Ten CVP3 full conditional-task direct-model runs: how many exact labels match supplied keys?",
+      "recipe": "Existing stored-run-audit-0.1 over fixed ten-call cohort; raw output capped at 64 new tokens, stripped uppercase exact labels, no correctness filtering.",
+      "state": "Untrusted direct-model diagnostic, exposed cohort. 4/10; always YES. Synthetic supplied keys are not authenticated source truth. Different task and generation cap from narrow training.",
+      "receipt": {
+        "path": "evaluation/stored-run-audit-v1/RECEIPT.json",
+        "sha256": "103a08feb9ce89d92c8744665d1f318415562d2b2069c07a0b245f20a0d006f4"
+      },
+      "ancestry": [
+        {
+          "path": "evaluation/stored-run-audit-v1/contract.json",
+          "sha256": "04567ffb624535bb6171d4785ef231f2702d75c77f34591e8a5636c48155d9fe",
+          "role": "declared_contract"
+        },
+        {
+          "path": "evaluation/complete-verification-path-v1/model_diagnostic/RAW_OUTPUTS.jsonl",
+          "sha256": "7edd73090a3d60bb69c66dc3d15ddd82634fccbdfb8302be2c436041e6ed09f8",
+          "role": "declared_raw"
+        },
+        {
+          "path": "evaluation/complete-verification-path-v1/model_diagnostic/KEYS.json",
+          "sha256": "814596022f7fdf0b7ac48990161cd0f2b0b9e9c4241d411270767599bba97197",
+          "role": "declared_keys"
+        }
+      ]
+    },
+    {
+      "station_id": "narrow-original-test",
+      "question": "On 48 fixed structural-holdout cases, does the explicitly recorded sampled-soil count have positive / zero / missing state? Exact label matches for original_test.",
+      "recipe": "Existing stored-run-audit-0.1; fresh argmax context, eight new-token cap; split/arm exact raw subset, key IDs gain arm suffix; unsupported outputs stay in denominator.",
+      "state": "Original unchanged checkpoint; zero additional updates in this arm; 4/48, 36 unresolved outputs. Shared 48-case structural test and supplied keys with the other arm; now exposed regression data. Coordinator experiment/scoring, no independent replication. Missing source state is WITHHOLD; unsupported generation is UNRESOLVED.",
+      "receipt": {
+        "path": "evaluation/narrow-training-pilot-v1/original_test/RECEIPT.json",
+        "sha256": "fae311d4d04c5810d9bb207b145f3f4b85d4fde217c6c93451efd6627ac06c6d"
+      },
+      "ancestry": [
+        {
+          "path": "evaluation/narrow-training-pilot-v1/original_test/contract.json",
+          "sha256": "3b07cdeb75e27e45b6dcacfe63274adcacef5a160e0367cbdf5fce5e358842df",
+          "role": "declared_contract"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/original_test/RAW_SUBSET.jsonl",
+          "sha256": "29ddb2e0fb607b9e9c5df1f0cef6154160e5722632b140393110540722ceff6c",
+          "role": "declared_raw"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/original_test/KEY_SUBSET.json",
+          "sha256": "2cc062b9bf0f8010e68ce718f43e4372fc917d931bc2e6b0749acf0d36600459",
+          "role": "declared_arm_keys"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/original_test/DERIVATION.json",
+          "sha256": "b9ff5a1c8402ff8eb7818c35b3d3d46da621ec326a847916f37ba9edb4055da2",
+          "role": "declared_subset_recipe"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/EVAL_CASES.json",
+          "sha256": "ae6ea8e3c2e21f23506d0fa31e32ac344d90d8329e4b5e703d9347a99693f917",
+          "role": "declared_shared_evaluation_inputs"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/KEYS.json",
+          "sha256": "1a5b01ce8712c89c56f5453d7f4943316713ab994aa3d42f8df9658b58512cca",
+          "role": "declared_shared_parent_keys"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/TRAINING_MANIFEST.json",
+          "sha256": "ac318650d3b7cc666ea2d1052dd8b3a5567bbe8fce43ea76cea05cc1c4975afe",
+          "role": "declared_training_state"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/REPORT.md",
+          "sha256": "ac852fa25aaedb1950d855ed1cd37e66299e705a27fb51b2c95dcb73ddc67491",
+          "role": "declared_scope_and_limits"
+        }
+      ]
+    },
+    {
+      "station_id": "narrow-adapted-test",
+      "question": "On 48 fixed structural-holdout cases, does the explicitly recorded sampled-soil count have positive / zero / missing state? Exact label matches for adapted_test.",
+      "recipe": "Existing stored-run-audit-0.1; fresh argmax context, eight new-token cap; split/arm exact raw subset, key IDs gain arm suffix; unsupported outputs stay in denominator.",
+      "state": "Separate partial checkpoint: one completed full-weight AdamW update/two examples (zero and positive), no missing-class update; memory-headroom stop before step two. 16/48; all NO, equal constant-label baseline; no semantic discrimination demonstrated or model promotion. Shared 48-case structural test and supplied keys with the other arm; now exposed regression data. Coordinator experiment/scoring, no independent replication. Missing source state is WITHHOLD; unsupported generation is UNRESOLVED.",
+      "receipt": {
+        "path": "evaluation/narrow-training-pilot-v1/adapted_test/RECEIPT.json",
+        "sha256": "8214b6f12ee5348f5555e35a76bd795e4079588aa40a8a784ce7359ad18663c1"
+      },
+      "ancestry": [
+        {
+          "path": "evaluation/narrow-training-pilot-v1/adapted_test/contract.json",
+          "sha256": "22af29024544494685b5e870d4df8795dc2106cd991bd346a4343604227040d4",
+          "role": "declared_contract"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/adapted_test/RAW_SUBSET.jsonl",
+          "sha256": "65ec5edf61e953bfbb7cbf7cdb8739176b2b4cb303d2a4bef6132d6b01c74a55",
+          "role": "declared_raw"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/adapted_test/KEY_SUBSET.json",
+          "sha256": "aa9098105b17d5bf0d88e0d47f602510cff7edb26b36cc0c084bf1045e188f5f",
+          "role": "declared_arm_keys"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/adapted_test/DERIVATION.json",
+          "sha256": "ab9203ff6c0e0fbb4ea6d301e34b850f32fa0ea43d1914635fbe6c6e42dd8ab2",
+          "role": "declared_subset_recipe"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/EVAL_CASES.json",
+          "sha256": "ae6ea8e3c2e21f23506d0fa31e32ac344d90d8329e4b5e703d9347a99693f917",
+          "role": "declared_shared_evaluation_inputs"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/KEYS.json",
+          "sha256": "1a5b01ce8712c89c56f5453d7f4943316713ab994aa3d42f8df9658b58512cca",
+          "role": "declared_shared_parent_keys"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/TRAINING_MANIFEST.json",
+          "sha256": "ac318650d3b7cc666ea2d1052dd8b3a5567bbe8fce43ea76cea05cc1c4975afe",
+          "role": "declared_training_state"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/REPORT.md",
+          "sha256": "ac852fa25aaedb1950d855ed1cd37e66299e705a27fb51b2c95dcb73ddc67491",
+          "role": "declared_scope_and_limits"
+        }
+      ]
+    }
+  ]
+}

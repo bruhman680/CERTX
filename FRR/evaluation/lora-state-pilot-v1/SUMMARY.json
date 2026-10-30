@@ -1,0 +1,675 @@
+{
+  "scope": "single-seed balanced LoRA pilot; zeroadapter baseline vs separately saved adapter",
+  "arms": {
+    "original_dev": {
+      "calls": 12,
+      "label_matches": 0,
+      "match_fraction": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "constant_yes_matches": 4,
+      "labels": {
+        "UNRESOLVED": 12
+      },
+      "stops": {
+        "token_limit": 12
+      },
+      "input_tokens": 2139,
+      "output_tokens": 96,
+      "perclass": {
+        "YES": {
+          "n": 4,
+          "matches": 0
+        },
+        "NO": {
+          "n": 4,
+          "matches": 0
+        },
+        "WITHHOLD": {
+          "n": 4,
+          "matches": 0
+        }
+      },
+      "confusion": {
+        "YES": {
+          "UNRESOLVED": 4
+        },
+        "NO": {
+          "UNRESOLVED": 4
+        },
+        "WITHHOLD": {
+          "UNRESOLVED": 4
+        }
+      },
+      "by_family": {
+        "fields": {
+          "n": 3,
+          "matches": 0
+        },
+        "json": {
+          "n": 3,
+          "matches": 0
+        },
+        "prose": {
+          "n": 3,
+          "matches": 0
+        },
+        "table": {
+          "n": 3,
+          "matches": 0
+        }
+      },
+      "constant_label_baselines": {
+        "YES": 4,
+        "NO": 4,
+        "WITHHOLD": 4
+      },
+      "inference_seconds_excluding_serialization": 11.920470500961528,
+      "new_cache_bytes": 102494592
+    },
+    "adapted_dev": {
+      "calls": 12,
+      "label_matches": 5,
+      "match_fraction": {
+        "numerator": 5,
+        "denominator": 12
+      },
+      "constant_yes_matches": 4,
+      "labels": {
+        "NO": 5,
+        "YES": 7
+      },
+      "stops": {
+        "eos": 12
+      },
+      "input_tokens": 2139,
+      "output_tokens": 31,
+      "perclass": {
+        "YES": {
+          "n": 4,
+          "matches": 3
+        },
+        "NO": {
+          "n": 4,
+          "matches": 2
+        },
+        "WITHHOLD": {
+          "n": 4,
+          "matches": 0
+        }
+      },
+      "confusion": {
+        "YES": {
+          "NO": 1,
+          "YES": 3
+        },
+        "NO": {
+          "NO": 2,
+          "YES": 2
+        },
+        "WITHHOLD": {
+          "NO": 2,
+          "YES": 2
+        }
+      },
+      "by_family": {
+        "fields": {
+          "n": 3,
+          "matches": 1
+        },
+        "json": {
+          "n": 3,
+          "matches": 1
+        },
+        "prose": {
+          "n": 3,
+          "matches": 2
+        },
+        "table": {
+          "n": 3,
+          "matches": 1
+        }
+      },
+      "constant_label_baselines": {
+        "YES": 4,
+        "NO": 4,
+        "WITHHOLD": 4
+      },
+      "inference_seconds_excluding_serialization": 7.040480717012542,
+      "new_cache_bytes": 99499392
+    },
+    "adapted_test": {
+      "calls": 48,
+      "label_matches": 19,
+      "match_fraction": {
+        "numerator": 19,
+        "denominator": 48
+      },
+      "constant_yes_matches": 16,
+      "labels": {
+        "NO": 14,
+        "YES": 34
+      },
+      "stops": {
+        "eos": 48
+      },
+      "input_tokens": 9386,
+      "output_tokens": 130,
+      "perclass": {
+        "YES": {
+          "n": 16,
+          "matches": 13
+        },
+        "NO": {
+          "n": 16,
+          "matches": 6
+        },
+        "WITHHOLD": {
+          "n": 16,
+          "matches": 0
+        }
+      },
+      "confusion": {
+        "YES": {
+          "NO": 3,
+          "YES": 13
+        },
+        "NO": {
+          "NO": 6,
+          "YES": 10
+        },
+        "WITHHOLD": {
+          "NO": 5,
+          "YES": 11
+        }
+      },
+      "by_family": {
+        "interleaved": {
+          "n": 12,
+          "matches": 4
+        },
+        "nested_list": {
+          "n": 12,
+          "matches": 5
+        },
+        "register": {
+          "n": 12,
+          "matches": 5
+        },
+        "scoped_table": {
+          "n": 12,
+          "matches": 5
+        }
+      },
+      "constant_label_baselines": {
+        "YES": 16,
+        "NO": 16,
+        "WITHHOLD": 16
+      },
+      "inference_seconds_excluding_serialization": 28.88097934308462,
+      "new_cache_bytes": 436520448
+    },
+    "original_test": {
+      "calls": 48,
+      "label_matches": 1,
+      "match_fraction": {
+        "numerator": 1,
+        "denominator": 48
+      },
+      "constant_yes_matches": 16,
+      "labels": {
+        "UNRESOLVED": 47,
+        "YES": 1
+      },
+      "stops": {
+        "token_limit": 47,
+        "eos": 1
+      },
+      "input_tokens": 9386,
+      "output_tokens": 378,
+      "perclass": {
+        "YES": {
+          "n": 16,
+          "matches": 1
+        },
+        "NO": {
+          "n": 16,
+          "matches": 0
+        },
+        "WITHHOLD": {
+          "n": 16,
+          "matches": 0
+        }
+      },
+      "confusion": {
+        "YES": {
+          "UNRESOLVED": 15,
+          "YES": 1
+        },
+        "NO": {
+          "UNRESOLVED": 16
+        },
+        "WITHHOLD": {
+          "UNRESOLVED": 16
+        }
+      },
+      "by_family": {
+        "interleaved": {
+          "n": 12,
+          "matches": 0
+        },
+        "nested_list": {
+          "n": 12,
+          "matches": 0
+        },
+        "register": {
+          "n": 12,
+          "matches": 1
+        },
+        "scoped_table": {
+          "n": 12,
+          "matches": 0
+        }
+      },
+      "constant_label_baselines": {
+        "YES": 16,
+        "NO": 16,
+        "WITHHOLD": 16
+      },
+      "inference_seconds_excluding_serialization": 46.17445707297884,
+      "new_cache_bytes": 447948288
+    }
+  },
+  "test_pairs": [
+    {
+      "id": "test_scoped_table_0_positive",
+      "expected": "YES",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "NO",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_scoped_table_0_zero",
+      "expected": "NO",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "NO",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_scoped_table_0_missing",
+      "expected": "WITHHOLD",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "NO",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_scoped_table_1_positive",
+      "expected": "YES",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_scoped_table_1_zero",
+      "expected": "NO",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_scoped_table_1_missing",
+      "expected": "WITHHOLD",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_scoped_table_2_positive",
+      "expected": "YES",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_scoped_table_2_zero",
+      "expected": "NO",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "NO",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_scoped_table_2_missing",
+      "expected": "WITHHOLD",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_scoped_table_3_positive",
+      "expected": "YES",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_scoped_table_3_zero",
+      "expected": "NO",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_scoped_table_3_missing",
+      "expected": "WITHHOLD",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_nested_list_0_positive",
+      "expected": "YES",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_nested_list_0_zero",
+      "expected": "NO",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "NO",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_nested_list_0_missing",
+      "expected": "WITHHOLD",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "NO",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_nested_list_1_positive",
+      "expected": "YES",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_nested_list_1_zero",
+      "expected": "NO",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_nested_list_1_missing",
+      "expected": "WITHHOLD",
+      "original": "TO DETERMINE WHETHER THE TARGET BATCH'S RECORDED",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_nested_list_2_positive",
+      "expected": "YES",
+      "original": "TO DETERMINE WHETHER THE TARGET BATCH'S RECORDED",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_nested_list_2_zero",
+      "expected": "NO",
+      "original": "TO DETERMINE WHETHER THE TARGET BATCH'S RECORDED",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_nested_list_2_missing",
+      "expected": "WITHHOLD",
+      "original": "TO DETERMINE WHETHER THE TARGET BATCH'S RECORDED",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_nested_list_3_positive",
+      "expected": "YES",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_nested_list_3_zero",
+      "expected": "NO",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_nested_list_3_missing",
+      "expected": "WITHHOLD",
+      "original": "TO DETERMINE WHETHER THE TARGET BATCH'S RECORDED",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_register_0_positive",
+      "expected": "YES",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "NO",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_register_0_zero",
+      "expected": "NO",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "NO",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_register_0_missing",
+      "expected": "WITHHOLD",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "NO",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_register_1_positive",
+      "expected": "YES",
+      "original": "THE TARGET BATCH'S RECORDED SAMPLED-SOIL",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_register_1_zero",
+      "expected": "NO",
+      "original": "THE TARGET BATCH'S RECORDED SAMPLED-SOIL",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_register_1_missing",
+      "expected": "WITHHOLD",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_register_2_positive",
+      "expected": "YES",
+      "original": "TO DETERMINE WHETHER THE TARGET BATCH'S RECORDED",
+      "adapted": "NO",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_register_2_zero",
+      "expected": "NO",
+      "original": "TO DETERMINE WHETHER THE TARGET BATCH'S RECORDED",
+      "adapted": "NO",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_register_2_missing",
+      "expected": "WITHHOLD",
+      "original": "TO DETERMINE WHETHER THE TARGET BATCH'S RECORDED",
+      "adapted": "NO",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_register_3_positive",
+      "expected": "YES",
+      "original": "YES",
+      "adapted": "YES",
+      "original_match": true,
+      "adapted_match": true
+    },
+    {
+      "id": "test_register_3_zero",
+      "expected": "NO",
+      "original": "TO DETERMINE WHETHER THE TARGET BATCH'S RECORDED",
+      "adapted": "NO",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_register_3_missing",
+      "expected": "WITHHOLD",
+      "original": "BASED ON THE PROVIDED DATA, THE TARGET",
+      "adapted": "NO",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_interleaved_0_positive",
+      "expected": "YES",
+      "original": "BASED ON THE PROVIDED INFORMATION, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_interleaved_0_zero",
+      "expected": "NO",
+      "original": "BASED ON THE PROVIDED INFORMATION, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_interleaved_0_missing",
+      "expected": "WITHHOLD",
+      "original": "BASED ON THE PROVIDED INFORMATION, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_interleaved_1_positive",
+      "expected": "YES",
+      "original": "BASED ON THE PROVIDED INFORMATION, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_interleaved_1_zero",
+      "expected": "NO",
+      "original": "BASED ON THE PROVIDED INFORMATION, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_interleaved_1_missing",
+      "expected": "WITHHOLD",
+      "original": "BASED ON THE PROVIDED INFORMATION, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_interleaved_2_positive",
+      "expected": "YES",
+      "original": "BASED ON THE PROVIDED INFORMATION, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_interleaved_2_zero",
+      "expected": "NO",
+      "original": "BASED ON THE PROVIDED INFORMATION, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_interleaved_2_missing",
+      "expected": "WITHHOLD",
+      "original": "BASED ON THE PROVIDED INFORMATION, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_interleaved_3_positive",
+      "expected": "YES",
+      "original": "BASED ON THE PROVIDED INFORMATION, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": true
+    },
+    {
+      "id": "test_interleaved_3_zero",
+      "expected": "NO",
+      "original": "BASED ON THE PROVIDED INFORMATION, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    },
+    {
+      "id": "test_interleaved_3_missing",
+      "expected": "WITHHOLD",
+      "original": "BASED ON THE PROVIDED INFORMATION, THE TARGET",
+      "adapted": "YES",
+      "original_match": false,
+      "adapted_match": false
+    }
+  ],
+  "paired_changes": {
+    "neither_matches": 29,
+    "adapted_only": 18,
+    "both_match": 1
+  }
+}

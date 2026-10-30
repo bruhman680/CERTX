@@ -1,0 +1,3 @@
+# LoRA and station registry settled
+
+[Report](../../evaluation/lora-state-pilot-v1/REPORT.md). LoRA230400params,frozenbase,48balancedupdatescomplete164.091sec.120generations,newtest1/48originalvs19/48adapted,constbaseline16/48,missing0/16. Resourcefit/completionimprove;semanticgapremains.500oldexternalfilesunchanged,120newcachechecks. Read-onlyregistry14testgroups,sixstations,eightsharedhashwarnings;reviewedgescorrectedwithoriginalsarchived.No pooledtruth/confidence/defaultpromotion/paidservices/install. Fourpriornavigationdocsarchived. Next:counterbalancedone-tokenobjective/readoutcontrol,newprimarycases. No backgroundtask.

@@ -1,19 +1,17 @@
 # Current FRR handoff
 
-30 October 2026 America/Chicago. First narrow training pilot settled; no process/backgroundtask remains. New user instructions supersede historical pause/next labels.
+30 October2026 America/Chicago. LoRA/state pilot plus read-only station registry settled. No background process/task remains. Newuserinstructions supersedehistoricalpause/nextlabels.
 
-## Latest completed contact
+## Latest connected results
 
-[Report](evaluation/narrow-training-pilot-v1/REPORT.md): planned48full-weightAdamWsteps on96balanced source-state records, but memory-headroomguard stopped after1actualstep/twoexamples. Separate partialcheckpoint+optimizer at /workspace/narrow_training_checkpoint_v1, originalmodel unchanged.120actualevalcalls: devoriginal1/12vsadapted4/12; structuraltestoriginal4/48vsadapted16/48. Adapted outputsallNO, tiesconstantbaseline; no demonstratedpositive/zero/missingdiscrimination. No missing-class example trained in the one completedbatch. All272storedweighttensors numericallychanged, not just fileserialization. No trainedmodel/defaultpromotion.
+[LoRA report](evaluation/lora-state-pilot-v1/REPORT.md):rank4/alpha8/dropout0q/vadapters,230400trainableparams,frozenbase. Separateeligiblebalancedprobe,then48/48plannedpilotupdates completed in164.091sec. Eachupdatehaspositive/zero/missing;48exposuresperclass.120actualgenerations;newstructuraltestoriginal1/48versusadapted19/48,constantbaseline16/48. Adaptedrecallspositive13/16,zero6/16,missing0/16. Completionimproved,butthreewayskillweak;no model/defaultpromotion orbroaderFRRefficacyclaim. Originalbase/frozendigest unchanged,500prior externalfiles preserved,120newcache/tokenchecks,adapterroundtrip exact.
 
-Input preparation failures and repairs preserved: developmentoverlapcaught beforeevaluation;160tokeninputguard stopped after12baseline-devcalls/beforeoptimizer, amendedto192withoutdata/prompt/hyperparameterchange. Baselineprefix reused once; no testforward beforetrainingcomplete. Exactmemorytriggerreading missing (instrumentationgap); stop is not OOMproof.120newcache/tokenartifacts checked,370oldmodel/cachefiles unchanged. One parallelprimarypaper scout, coordinator experiment/review, noindependent/maskedreplication. No paidAPI/rental/install.
+[Stationregistry](evaluation/station-registry-v1/README.md):optionaltools/station_registry.py;read-only bytebound scopedreceipts,not pooledtruth/votes/confidence. Fourstationdemo plus[sixstationintegration](evaluation/lora-state-pilot-v1/REGISTRY_RECEIPT.json),eightsharedhashwarnings.14challengegroupspass. Coordinatorreviewcorrectedbool/floatlabelcountsandswappedsourcefieldstates;first13fileversion/results archivedbeforecorrection. Unknown/withheldschemasremainunresolved. Sharedancestrydeclared;hashesdonotauthenticatesources/independence.
 
-## Strongest next training direction
+## Emerging strongest next direction
 
-Parameter-efficient/restricted-parameter resourceprobe under a new protocol. Measure optimizer allocation plus activations and exactguardtriggerreadings. Balance classes within early effectiveupdates, potentiallyusingaccumulation; presentpartialpilot trained onlyzero+positive. Newprimarytest needed: current48heldoutcases now exposed/regressions. No automatic secondtrainingattempt. Checkpoint/cache binaries retainedlocally, hashesinreport; workspace is not independentarchive.
+[Objective note](evaluation/lora-state-pilot-v1/LOSS_OBJECTIVE_NOTE.md),postresultanduntestedcausality:targetlabel+EOStokenlengthsYES3,NO2,WITHHOLD5. Equal-sequencebalancedlossweightsfirstdecision-tokenCE1/9,1/6,1/15perupdate. Missingclassnevergenerated despitebalancedexposure. Nextcontrolledcontact:single-tokenclassinterfacewithcounterbalancedlabelmappings,newprimarycases,retainordinarygenerationandforcedchoicediagnosticsseparately. Current48testcasesnowregressions;no causalclaimtokenlength causedfailure. No additionaltrainingattemptafterthispilot.
 
-## Usable infrastructure and parallel direction
+## Preservation and boundaries
 
-[Conditional source/variance tool](evaluation/complete-verification-path-v1/README.md) and [stored-run auditor](evaluation/stored-run-audit-v1/REPORT.md) remain unchanged/optional. Audit now used on prospective guidance and training pilots, with identity/cohort/hash checks and full unresolveddenominator. Supplied keys/assumptions/source truth remain external; mathematicaltool correctness is not model competence.
-
-Read-only stationregistry stillproposed: retain question,recipe,sourceancestry,partialtraining/withholding anddisagreement without majority-votetruth/confidence. Earlierfailedsource-readinggate staysfailed; broadqueue/core/schema unchanged. Fourpreviousnavigationdocs archived. Included/freeonly; askbeforeseparatelypaidservices; accountusage/billnotvisible.
+Baseoriginaldefaultunchanged. Priorone-stepfullweightcheckpoint retained;newLoRAprobe,initial/finaladapters+optimizerstatesseparateunder/workspace,hashesinreport. LocalbinariesnotGit/independentarchivalguarantee. Sourcecalculation/storedrunaudittools/core/schema/broadqueueunchanged,oldreadinggate staysfailed. Fourpriornavigationdocs archivedinlateststudy. Included/freeonly,nopaidAPI/rental/install;accountusage/billnotvisible. Delegatedutility/registry/scoutwork pluscoordinatorreview;notindependentexperimentreplication/goldreview. Resourceguardlimitations documented;no guardstopoccurredinmainpilot.

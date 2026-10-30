@@ -1,0 +1,117 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "LS1-adapted_dev",
+  "identity": {
+    "family": "lora_source_state",
+    "facet": "state_label",
+    "cycle": "LS1",
+    "arm": "adapted_dev"
+  },
+  "contract_sha256": "d95a30254bf02ff76311c608f08d2576bd0b62b519f452a1c16a5be38511a537",
+  "sources": {
+    "raw": "9c05320a71c90ac0af029b67a130e7131c5fb1aab1faadd7cd0e3acb72f4f17e",
+    "keys": "13633560a9c98a8752b86758396b51f208a03e5047a48278c374224b94d5faf9"
+  },
+  "summary": {
+    "calls": 12,
+    "label_matches": 5,
+    "match_fraction": {
+      "numerator": 5,
+      "denominator": 12
+    },
+    "constant_yes_matches": 4,
+    "labels": {
+      "NO": 5,
+      "YES": 7
+    },
+    "stops": {
+      "eos": 12
+    },
+    "input_tokens": 2139,
+    "output_tokens": 31
+  },
+  "rows": [
+    {
+      "run_id": "dev_fields_0_positive__adapted_dev",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_fields_0_zero__adapted_dev",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_fields_0_missing__adapted_dev",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_prose_0_positive__adapted_dev",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_prose_0_zero__adapted_dev",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_prose_0_missing__adapted_dev",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_json_0_positive__adapted_dev",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_json_0_zero__adapted_dev",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_json_0_missing__adapted_dev",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_table_0_positive__adapted_dev",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_table_0_zero__adapted_dev",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_table_0_missing__adapted_dev",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

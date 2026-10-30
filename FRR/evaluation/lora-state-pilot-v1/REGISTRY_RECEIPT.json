@@ -1,0 +1,2181 @@
+{
+  "ruleset": "station-registry-0.1",
+  "tool_sha256": "da2ac1b84ac07ab7f1c4733e39067cf3be9b2c6d11c0fd457f3f8e562207a9cd",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "manifest_sha256": "01722bdbb970386bd03f92a01b059c85af8d63b38bcbe8f1f3a1e8ebbc559faa",
+  "status": "indexed",
+  "stations": [
+    {
+      "station_id": "conditional-variance-demo",
+      "question": "Garden03 / Batch03: under the supplied equal-cluster mixture, is variance at most 0.01?",
+      "recipe": "Existing deterministic source grammar -> exact conditional calculation, source-calculation-path-0.1. No model generation in this station.",
+      "state": "Computed conditional answer; source authenticity/truth and independence assumptions external. Authored and exposed demo, not hidden benchmark.",
+      "status": "indexed",
+      "receipt_reference": {
+        "path": "evaluation/complete-verification-path-v1/checked_run/DEMO_RECEIPT.json",
+        "sha256": "bb301bedf4c88d3e6ae7e0ca6646e4994fb8a9565c09eef2aa8f03217f032d17"
+      },
+      "ancestry": [
+        {
+          "path": "evaluation/complete-verification-path-v1/demo/source.txt",
+          "sha256": "76d47b5a1fc4f19a272d6a7f87a62f9556e5845be64b6e5609bfcfaea77676f4",
+          "role": "declared_source",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/complete-verification-path-v1/demo/contract.json",
+          "sha256": "45a43029bbfd2baff1e38cf3c3b6679b718776dc4df582c210daf53fe52ae34f",
+          "role": "declared_contract",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        }
+      ],
+      "receipt_bytes_bound": true,
+      "reported_receipt": {
+        "ruleset": "source-calculation-path-0.1",
+        "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+        "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "mode": "deterministic_source",
+        "status": "computed",
+        "stage": "conditional_answer",
+        "answer": "YES",
+        "reason_codes": [
+          "source_roles_bound",
+          "declared_model_and_positive_count_domain",
+          "exact_at_most_comparison"
+        ],
+        "limitations": [
+          "Full declared source grammar only; unsupported content withholds.",
+          "Hashes bind bytes, not source authenticity, truth, or real independence.",
+          "Model assumptions are caller-declared, not empirically verified.",
+          "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+          "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+        ],
+        "claim_id": "variance-at-most-001",
+        "entity": "Garden03",
+        "scope": "Batch03",
+        "contract_canonical_sha256": "797ed4797c12345d3fc9ac1c4043ae973275c0753c6b662a77be4b35f97d2a44",
+        "declared_model": {
+          "name": "equal_cluster_bernoulli_mixture",
+          "mean": "0.2",
+          "between": "0.032",
+          "within": "0.128",
+          "assumptions": [
+            "independent_soil_draws",
+            "equal_observations_per_soil",
+            "conditional_iid_emissions"
+          ]
+        },
+        "criterion": {
+          "operator": "at_most",
+          "threshold": "0.01"
+        },
+        "source_sha256": "76d47b5a1fc4f19a272d6a7f87a62f9556e5845be64b6e5609bfcfaea77676f4",
+        "bound_fields": {
+          "soil_count": {
+            "state": "known",
+            "value": "4",
+            "quote": "There are 4 independently sampled soils."
+          },
+          "per_soil_observations": {
+            "state": "observed",
+            "value": "16",
+            "quote": "Each soil supplies 16 observations."
+          }
+        },
+        "formula": "between/k + within/(k*m)",
+        "variance": {
+          "numerator": "1",
+          "denominator": "100",
+          "decimal_approximation": "0.01",
+          "display_precision_digits": 32
+        },
+        "count_product": "64",
+        "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification.",
+        "contract_input_sha256": "45a43029bbfd2baff1e38cf3c3b6679b718776dc4df582c210daf53fe52ae34f"
+      },
+      "scoped_summary": {
+        "kind": "reported_conditional_answer",
+        "claim_id": "variance-at-most-001",
+        "entity": "Garden03",
+        "scope": "Batch03",
+        "answer": "YES",
+        "criterion": {
+          "operator": "at_most",
+          "threshold": "0.01"
+        },
+        "declared_model": {
+          "name": "equal_cluster_bernoulli_mixture",
+          "mean": "0.2",
+          "between": "0.032",
+          "within": "0.128",
+          "assumptions": [
+            "independent_soil_draws",
+            "equal_observations_per_soil",
+            "conditional_iid_emissions"
+          ]
+        },
+        "variance": {
+          "numerator": "1",
+          "denominator": "100",
+          "decimal_approximation": "0.01",
+          "display_precision_digits": 32
+        },
+        "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+      },
+      "reported_source_hashes": {
+        "source": "76d47b5a1fc4f19a272d6a7f87a62f9556e5845be64b6e5609bfcfaea77676f4"
+      }
+    },
+    {
+      "station_id": "full-task-model-audit",
+      "question": "Ten CVP3 full conditional-task direct-model runs: how many exact labels match supplied keys?",
+      "recipe": "Existing stored-run-audit-0.1 over fixed ten-call cohort; raw output capped at 64 new tokens, stripped uppercase exact labels, no correctness filtering.",
+      "state": "Untrusted direct-model diagnostic, exposed cohort. 4/10; always YES. Synthetic supplied keys are not authenticated source truth. Different task and generation cap from narrow training.",
+      "status": "indexed",
+      "receipt_reference": {
+        "path": "evaluation/stored-run-audit-v1/RECEIPT.json",
+        "sha256": "103a08feb9ce89d92c8744665d1f318415562d2b2069c07a0b245f20a0d006f4"
+      },
+      "ancestry": [
+        {
+          "path": "evaluation/stored-run-audit-v1/contract.json",
+          "sha256": "04567ffb624535bb6171d4785ef231f2702d75c77f34591e8a5636c48155d9fe",
+          "role": "declared_contract",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/complete-verification-path-v1/model_diagnostic/RAW_OUTPUTS.jsonl",
+          "sha256": "7edd73090a3d60bb69c66dc3d15ddd82634fccbdfb8302be2c436041e6ed09f8",
+          "role": "declared_raw",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/complete-verification-path-v1/model_diagnostic/KEYS.json",
+          "sha256": "814596022f7fdf0b7ac48990161cd0f2b0b9e9c4241d411270767599bba97197",
+          "role": "declared_keys",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        }
+      ],
+      "receipt_bytes_bound": true,
+      "reported_receipt": {
+        "ruleset": "stored-run-audit-0.1",
+        "status": "computed",
+        "stage": "cohort_summary",
+        "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+        "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "limitations": [
+          "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+          "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+          "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+          "No cache-file verification, model inference, causal efficacy or generalization claim."
+        ],
+        "claim_id": "CVP3-stored-label-audit",
+        "identity": {
+          "family": "complete_conditional_task",
+          "facet": "candidate_answer",
+          "cycle": "CVP3",
+          "arm": "untrusted_direct_model"
+        },
+        "contract_sha256": "b5acf0b78c8bd618d245c4b84d7667f2fbaca267e6fa2563e1f9035c226c8117",
+        "sources": {
+          "raw": "7edd73090a3d60bb69c66dc3d15ddd82634fccbdfb8302be2c436041e6ed09f8",
+          "keys": "814596022f7fdf0b7ac48990161cd0f2b0b9e9c4241d411270767599bba97197"
+        },
+        "summary": {
+          "calls": 10,
+          "label_matches": 4,
+          "match_fraction": {
+            "numerator": 2,
+            "denominator": 5
+          },
+          "constant_yes_matches": 4,
+          "labels": {
+            "YES": 10
+          },
+          "stops": {
+            "eos": 10
+          },
+          "input_tokens": 2290,
+          "output_tokens": 20
+        },
+        "rows": [
+          {
+            "run_id": "CV_C01",
+            "label": "YES",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "CV_C02",
+            "label": "YES",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "CV_C03",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "CV_C04",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "CV_C05",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "CV_C06",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "CV_C07",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "CV_C08",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "CV_C09",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "CV_C10",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          }
+        ],
+        "contract_input_sha256": "04567ffb624535bb6171d4785ef231f2702d75c77f34591e8a5636c48155d9fe"
+      },
+      "scoped_summary": {
+        "kind": "reported_exact_label_cohort",
+        "claim_id": "CVP3-stored-label-audit",
+        "identity": {
+          "family": "complete_conditional_task",
+          "facet": "candidate_answer",
+          "cycle": "CVP3",
+          "arm": "untrusted_direct_model"
+        },
+        "summary": {
+          "calls": 10,
+          "label_matches": 4,
+          "match_fraction": {
+            "numerator": 2,
+            "denominator": 5
+          },
+          "constant_yes_matches": 4,
+          "labels": {
+            "YES": 10
+          },
+          "stops": {
+            "eos": 10
+          },
+          "input_tokens": 2290,
+          "output_tokens": 20
+        },
+        "unresolved_outputs": 0
+      },
+      "reported_source_hashes": {
+        "raw": "7edd73090a3d60bb69c66dc3d15ddd82634fccbdfb8302be2c436041e6ed09f8",
+        "keys": "814596022f7fdf0b7ac48990161cd0f2b0b9e9c4241d411270767599bba97197"
+      }
+    },
+    {
+      "station_id": "narrow-original-test",
+      "question": "On 48 fixed structural-holdout cases, does the explicitly recorded sampled-soil count have positive / zero / missing state? Exact label matches for original_test.",
+      "recipe": "Existing stored-run-audit-0.1; fresh argmax context, eight new-token cap; split/arm exact raw subset, key IDs gain arm suffix; unsupported outputs stay in denominator.",
+      "state": "Original unchanged checkpoint; zero additional updates in this arm; 4/48, 36 unresolved outputs. Shared 48-case structural test and supplied keys with the other arm; now exposed regression data. Coordinator experiment/scoring, no independent replication. Missing source state is WITHHOLD; unsupported generation is UNRESOLVED.",
+      "status": "indexed",
+      "receipt_reference": {
+        "path": "evaluation/narrow-training-pilot-v1/original_test/RECEIPT.json",
+        "sha256": "fae311d4d04c5810d9bb207b145f3f4b85d4fde217c6c93451efd6627ac06c6d"
+      },
+      "ancestry": [
+        {
+          "path": "evaluation/narrow-training-pilot-v1/original_test/contract.json",
+          "sha256": "3b07cdeb75e27e45b6dcacfe63274adcacef5a160e0367cbdf5fce5e358842df",
+          "role": "declared_contract",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/original_test/RAW_SUBSET.jsonl",
+          "sha256": "29ddb2e0fb607b9e9c5df1f0cef6154160e5722632b140393110540722ceff6c",
+          "role": "declared_raw",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/original_test/KEY_SUBSET.json",
+          "sha256": "2cc062b9bf0f8010e68ce718f43e4372fc917d931bc2e6b0749acf0d36600459",
+          "role": "declared_arm_keys",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/original_test/DERIVATION.json",
+          "sha256": "b9ff5a1c8402ff8eb7818c35b3d3d46da621ec326a847916f37ba9edb4055da2",
+          "role": "declared_subset_recipe",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/EVAL_CASES.json",
+          "sha256": "ae6ea8e3c2e21f23506d0fa31e32ac344d90d8329e4b5e703d9347a99693f917",
+          "role": "declared_shared_evaluation_inputs",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/KEYS.json",
+          "sha256": "1a5b01ce8712c89c56f5453d7f4943316713ab994aa3d42f8df9658b58512cca",
+          "role": "declared_shared_parent_keys",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/TRAINING_MANIFEST.json",
+          "sha256": "ac318650d3b7cc666ea2d1052dd8b3a5567bbe8fce43ea76cea05cc1c4975afe",
+          "role": "declared_training_state",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/REPORT.md",
+          "sha256": "ac852fa25aaedb1950d855ed1cd37e66299e705a27fb51b2c95dcb73ddc67491",
+          "role": "declared_scope_and_limits",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        }
+      ],
+      "receipt_bytes_bound": true,
+      "reported_receipt": {
+        "ruleset": "stored-run-audit-0.1",
+        "status": "computed",
+        "stage": "cohort_summary",
+        "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+        "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "limitations": [
+          "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+          "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+          "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+          "No cache-file verification, model inference, causal efficacy or generalization claim."
+        ],
+        "claim_id": "NT1-original_test",
+        "identity": {
+          "family": "narrow_source_state",
+          "facet": "state_label",
+          "cycle": "NT1",
+          "arm": "original_test"
+        },
+        "contract_sha256": "c04b890c58349b75b686e6ccc6ac901a1408a098d5479814ea9bbc772e5666a8",
+        "sources": {
+          "raw": "29ddb2e0fb607b9e9c5df1f0cef6154160e5722632b140393110540722ceff6c",
+          "keys": "2cc062b9bf0f8010e68ce718f43e4372fc917d931bc2e6b0749acf0d36600459"
+        },
+        "summary": {
+          "calls": 48,
+          "label_matches": 4,
+          "match_fraction": {
+            "numerator": 1,
+            "denominator": 12
+          },
+          "constant_yes_matches": 16,
+          "labels": {
+            "YES": 12,
+            "UNRESOLVED": 36
+          },
+          "stops": {
+            "eos": 12,
+            "token_limit": 36
+          },
+          "input_tokens": 7540,
+          "output_tokens": 312
+        },
+        "rows": [
+          {
+            "run_id": "test_test_past_positive_0__original_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_past_positive_1__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_past_positive_2__original_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_past_positive_3__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_past_zero_0__original_test",
+            "label": "YES",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_past_zero_1__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_past_zero_2__original_test",
+            "label": "YES",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_past_zero_3__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_past_missing_0__original_test",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_past_missing_1__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_past_missing_2__original_test",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_past_missing_3__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_positive_0__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_positive_1__original_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_order_positive_2__original_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_order_positive_3__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_zero_0__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_zero_1__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_zero_2__original_test",
+            "label": "YES",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_zero_3__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_missing_0__original_test",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_missing_1__original_test",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_missing_2__original_test",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_missing_3__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_positive_0__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_positive_1__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_positive_2__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_positive_3__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_zero_0__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_zero_1__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_zero_2__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_zero_3__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_missing_0__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_missing_1__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_missing_2__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_missing_3__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_positive_0__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_positive_1__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_positive_2__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_positive_3__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_zero_0__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_zero_1__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_zero_2__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_zero_3__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_missing_0__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_missing_1__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_missing_2__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_missing_3__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          }
+        ]
+      },
+      "scoped_summary": {
+        "kind": "reported_exact_label_cohort",
+        "claim_id": "NT1-original_test",
+        "identity": {
+          "family": "narrow_source_state",
+          "facet": "state_label",
+          "cycle": "NT1",
+          "arm": "original_test"
+        },
+        "summary": {
+          "calls": 48,
+          "label_matches": 4,
+          "match_fraction": {
+            "numerator": 1,
+            "denominator": 12
+          },
+          "constant_yes_matches": 16,
+          "labels": {
+            "YES": 12,
+            "UNRESOLVED": 36
+          },
+          "stops": {
+            "eos": 12,
+            "token_limit": 36
+          },
+          "input_tokens": 7540,
+          "output_tokens": 312
+        },
+        "unresolved_outputs": 36
+      },
+      "reported_source_hashes": {
+        "raw": "29ddb2e0fb607b9e9c5df1f0cef6154160e5722632b140393110540722ceff6c",
+        "keys": "2cc062b9bf0f8010e68ce718f43e4372fc917d931bc2e6b0749acf0d36600459"
+      }
+    },
+    {
+      "station_id": "narrow-adapted-test",
+      "question": "On 48 fixed structural-holdout cases, does the explicitly recorded sampled-soil count have positive / zero / missing state? Exact label matches for adapted_test.",
+      "recipe": "Existing stored-run-audit-0.1; fresh argmax context, eight new-token cap; split/arm exact raw subset, key IDs gain arm suffix; unsupported outputs stay in denominator.",
+      "state": "Separate partial checkpoint: one completed full-weight AdamW update/two examples (zero and positive), no missing-class update; memory-headroom stop before step two. 16/48; all NO, equal constant-label baseline; no semantic discrimination demonstrated or model promotion. Shared 48-case structural test and supplied keys with the other arm; now exposed regression data. Coordinator experiment/scoring, no independent replication. Missing source state is WITHHOLD; unsupported generation is UNRESOLVED.",
+      "status": "indexed",
+      "receipt_reference": {
+        "path": "evaluation/narrow-training-pilot-v1/adapted_test/RECEIPT.json",
+        "sha256": "8214b6f12ee5348f5555e35a76bd795e4079588aa40a8a784ce7359ad18663c1"
+      },
+      "ancestry": [
+        {
+          "path": "evaluation/narrow-training-pilot-v1/adapted_test/contract.json",
+          "sha256": "22af29024544494685b5e870d4df8795dc2106cd991bd346a4343604227040d4",
+          "role": "declared_contract",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/adapted_test/RAW_SUBSET.jsonl",
+          "sha256": "65ec5edf61e953bfbb7cbf7cdb8739176b2b4cb303d2a4bef6132d6b01c74a55",
+          "role": "declared_raw",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/adapted_test/KEY_SUBSET.json",
+          "sha256": "aa9098105b17d5bf0d88e0d47f602510cff7edb26b36cc0c084bf1045e188f5f",
+          "role": "declared_arm_keys",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/adapted_test/DERIVATION.json",
+          "sha256": "ab9203ff6c0e0fbb4ea6d301e34b850f32fa0ea43d1914635fbe6c6e42dd8ab2",
+          "role": "declared_subset_recipe",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/EVAL_CASES.json",
+          "sha256": "ae6ea8e3c2e21f23506d0fa31e32ac344d90d8329e4b5e703d9347a99693f917",
+          "role": "declared_shared_evaluation_inputs",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/KEYS.json",
+          "sha256": "1a5b01ce8712c89c56f5453d7f4943316713ab994aa3d42f8df9658b58512cca",
+          "role": "declared_shared_parent_keys",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/TRAINING_MANIFEST.json",
+          "sha256": "ac318650d3b7cc666ea2d1052dd8b3a5567bbe8fce43ea76cea05cc1c4975afe",
+          "role": "declared_training_state",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "path": "evaluation/narrow-training-pilot-v1/REPORT.md",
+          "sha256": "ac852fa25aaedb1950d855ed1cd37e66299e705a27fb51b2c95dcb73ddc67491",
+          "role": "declared_scope_and_limits",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        }
+      ],
+      "receipt_bytes_bound": true,
+      "reported_receipt": {
+        "ruleset": "stored-run-audit-0.1",
+        "status": "computed",
+        "stage": "cohort_summary",
+        "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+        "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "limitations": [
+          "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+          "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+          "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+          "No cache-file verification, model inference, causal efficacy or generalization claim."
+        ],
+        "claim_id": "NT1-adapted_test",
+        "identity": {
+          "family": "narrow_source_state",
+          "facet": "state_label",
+          "cycle": "NT1",
+          "arm": "adapted_test"
+        },
+        "contract_sha256": "371ecc11dd208ca1251f47609ef909d6826da8b96fc1648da27381f6b13f5c0a",
+        "sources": {
+          "raw": "65ec5edf61e953bfbb7cbf7cdb8739176b2b4cb303d2a4bef6132d6b01c74a55",
+          "keys": "aa9098105b17d5bf0d88e0d47f602510cff7edb26b36cc0c084bf1045e188f5f"
+        },
+        "summary": {
+          "calls": 48,
+          "label_matches": 16,
+          "match_fraction": {
+            "numerator": 1,
+            "denominator": 3
+          },
+          "constant_yes_matches": 16,
+          "labels": {
+            "NO": 48
+          },
+          "stops": {
+            "eos": 48
+          },
+          "input_tokens": 7540,
+          "output_tokens": 96
+        },
+        "rows": [
+          {
+            "run_id": "test_test_past_positive_0__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_past_positive_1__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_past_positive_2__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_past_positive_3__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_past_zero_0__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_past_zero_1__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_past_zero_2__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_past_zero_3__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_past_missing_0__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_past_missing_1__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_past_missing_2__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_past_missing_3__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_positive_0__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_positive_1__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_positive_2__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_positive_3__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_zero_0__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_order_zero_1__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_order_zero_2__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_order_zero_3__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_order_missing_0__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_missing_1__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_missing_2__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_order_missing_3__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_positive_0__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_positive_1__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_positive_2__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_positive_3__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_zero_0__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_nested_json_zero_1__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_nested_json_zero_2__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_nested_json_zero_3__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_nested_json_missing_0__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_missing_1__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_missing_2__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_nested_json_missing_3__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_positive_0__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_positive_1__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_positive_2__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_positive_3__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_zero_0__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_contrast_zero_1__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_contrast_zero_2__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_contrast_zero_3__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_test_contrast_missing_0__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_missing_1__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_missing_2__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_test_contrast_missing_3__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          }
+        ]
+      },
+      "scoped_summary": {
+        "kind": "reported_exact_label_cohort",
+        "claim_id": "NT1-adapted_test",
+        "identity": {
+          "family": "narrow_source_state",
+          "facet": "state_label",
+          "cycle": "NT1",
+          "arm": "adapted_test"
+        },
+        "summary": {
+          "calls": 48,
+          "label_matches": 16,
+          "match_fraction": {
+            "numerator": 1,
+            "denominator": 3
+          },
+          "constant_yes_matches": 16,
+          "labels": {
+            "NO": 48
+          },
+          "stops": {
+            "eos": 48
+          },
+          "input_tokens": 7540,
+          "output_tokens": 96
+        },
+        "unresolved_outputs": 0
+      },
+      "reported_source_hashes": {
+        "raw": "65ec5edf61e953bfbb7cbf7cdb8739176b2b4cb303d2a4bef6132d6b01c74a55",
+        "keys": "aa9098105b17d5bf0d88e0d47f602510cff7edb26b36cc0c084bf1045e188f5f"
+      }
+    },
+    {
+      "station_id": "lora-original_test",
+      "question": "On48newstructural scopedbatch cases, is the recorded target-soil count positive, zero or missing? Exact-label matches for original_test.",
+      "recipe": "stored-run-audit-0.1; frozenstrip_upper_exact_label_v1;greedy8tokenfreshcontexts;complete48casecohort. Differenttask/cohortfromearliernarrowpilot.",
+      "state": "1/48exactmatches;constantlabelbaseline16/48. Originalbase+zero-productadapters; no additionaltraininginthisarm. Oneauthoredsplit/seed,notindependentlyreplicated;testnowexposed;invalidoutputsremainindenominator.",
+      "status": "indexed",
+      "receipt_reference": {
+        "path": "evaluation/lora-state-pilot-v1/original_test/RECEIPT.json",
+        "sha256": "cdefbd901db8a9d043b9b6f6e331398ba625bbe5ad253dba2e7c3c12461ebd70"
+      },
+      "ancestry": [
+        {
+          "role": "declared_contract",
+          "path": "evaluation/lora-state-pilot-v1/original_test/contract.json",
+          "sha256": "831dc8f75096229fd8b1dfbc63c2be220a366de98cd2443f9a6855ba3a8acb1d",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "role": "declared_raw",
+          "path": "evaluation/lora-state-pilot-v1/original_test/RAW_SUBSET.jsonl",
+          "sha256": "9db2c3cf743e73fefe8934a0dc37d2212f877e5118e21fb686f829ffc5fb4cd6",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "role": "declared_arm_keys",
+          "path": "evaluation/lora-state-pilot-v1/original_test/KEY_SUBSET.json",
+          "sha256": "515d42cbe05b58ca850feddb46de28ae07c09e41461b304c5645cdd92661427d",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "role": "declared_subset_recipe",
+          "path": "evaluation/lora-state-pilot-v1/original_test/DERIVATION.json",
+          "sha256": "0fa076161a15f4f58bdf97dec776b46e77363ed78c5126a835f9dfdee702b9cd",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "role": "declared_shared_evaluation_inputs",
+          "path": "evaluation/lora-state-pilot-v1/EVAL_CASES.json",
+          "sha256": "4df0ef80a2574b76c742b1c5de462ab38a00bf984b4ca6cbd0369a05343b0bcd",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "role": "declared_shared_parent_keys",
+          "path": "evaluation/lora-state-pilot-v1/KEYS.json",
+          "sha256": "79e8bbd04b204db71df22cd31f3fc3d648af6470c0e4a488c809b4d24e530596",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "role": "declared_training_state",
+          "path": "evaluation/lora-state-pilot-v1/TRAINING_MANIFEST.json",
+          "sha256": "f3f25e5bc2f712092d8ce5160a6b44364736f56494fc81c00bb719baf226bc08",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "role": "declared_paired_summary",
+          "path": "evaluation/lora-state-pilot-v1/SUMMARY.json",
+          "sha256": "40051367e9f4719115d0f9f8909cd9ad605d0a57a029e6b016d191a73f07a9a1",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        }
+      ],
+      "receipt_bytes_bound": true,
+      "reported_receipt": {
+        "ruleset": "stored-run-audit-0.1",
+        "status": "computed",
+        "stage": "cohort_summary",
+        "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+        "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "limitations": [
+          "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+          "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+          "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+          "No cache-file verification, model inference, causal efficacy or generalization claim."
+        ],
+        "claim_id": "LS1-original_test",
+        "identity": {
+          "family": "lora_source_state",
+          "facet": "state_label",
+          "cycle": "LS1",
+          "arm": "original_test"
+        },
+        "contract_sha256": "2804ccefc67724cfc101769a5371bc0076da71477fbefc2bbe3def1a9024db84",
+        "sources": {
+          "raw": "9db2c3cf743e73fefe8934a0dc37d2212f877e5118e21fb686f829ffc5fb4cd6",
+          "keys": "515d42cbe05b58ca850feddb46de28ae07c09e41461b304c5645cdd92661427d"
+        },
+        "summary": {
+          "calls": 48,
+          "label_matches": 1,
+          "match_fraction": {
+            "numerator": 1,
+            "denominator": 48
+          },
+          "constant_yes_matches": 16,
+          "labels": {
+            "UNRESOLVED": 47,
+            "YES": 1
+          },
+          "stops": {
+            "token_limit": 47,
+            "eos": 1
+          },
+          "input_tokens": 9386,
+          "output_tokens": 378
+        },
+        "rows": [
+          {
+            "run_id": "test_scoped_table_0_positive__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_0_zero__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_0_missing__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_1_positive__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_1_zero__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_1_missing__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_2_positive__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_2_zero__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_2_missing__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_3_positive__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_3_zero__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_3_missing__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_0_positive__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_0_zero__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_0_missing__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_1_positive__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_1_zero__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_1_missing__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_2_positive__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_2_zero__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_2_missing__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_3_positive__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_3_zero__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_3_missing__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_0_positive__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_0_zero__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_0_missing__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_1_positive__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_1_zero__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_1_missing__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_2_positive__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_2_zero__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_2_missing__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_3_positive__original_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_register_3_zero__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_3_missing__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_0_positive__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_0_zero__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_0_missing__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_1_positive__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_1_zero__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_1_missing__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_2_positive__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_2_zero__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_2_missing__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_3_positive__original_test",
+            "label": "UNRESOLVED",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_3_zero__original_test",
+            "label": "UNRESOLVED",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_3_missing__original_test",
+            "label": "UNRESOLVED",
+            "expected": "WITHHOLD",
+            "label_match": false
+          }
+        ]
+      },
+      "scoped_summary": {
+        "kind": "reported_exact_label_cohort",
+        "claim_id": "LS1-original_test",
+        "identity": {
+          "family": "lora_source_state",
+          "facet": "state_label",
+          "cycle": "LS1",
+          "arm": "original_test"
+        },
+        "summary": {
+          "calls": 48,
+          "label_matches": 1,
+          "match_fraction": {
+            "numerator": 1,
+            "denominator": 48
+          },
+          "constant_yes_matches": 16,
+          "labels": {
+            "UNRESOLVED": 47,
+            "YES": 1
+          },
+          "stops": {
+            "token_limit": 47,
+            "eos": 1
+          },
+          "input_tokens": 9386,
+          "output_tokens": 378
+        },
+        "unresolved_outputs": 47
+      },
+      "reported_source_hashes": {
+        "raw": "9db2c3cf743e73fefe8934a0dc37d2212f877e5118e21fb686f829ffc5fb4cd6",
+        "keys": "515d42cbe05b58ca850feddb46de28ae07c09e41461b304c5645cdd92661427d"
+      }
+    },
+    {
+      "station_id": "lora-adapted_test",
+      "question": "On48newstructural scopedbatch cases, is the recorded target-soil count positive, zero or missing? Exact-label matches for adapted_test.",
+      "recipe": "stored-run-audit-0.1; frozenstrip_upper_exact_label_v1;greedy8tokenfreshcontexts;complete48casecohort. Differenttask/cohortfromearliernarrowpilot.",
+      "state": "19/48exactmatches;constantlabelbaseline16/48. LoRA48balancedupdates,230400trainableparams,frozenbase. Missingclass0/16;notpromoted. Oneauthoredsplit/seed,notindependentlyreplicated;testnowexposed;invalidoutputsremainindenominator.",
+      "status": "indexed",
+      "receipt_reference": {
+        "path": "evaluation/lora-state-pilot-v1/adapted_test/RECEIPT.json",
+        "sha256": "80ee14066ebadbf2735207a470adab1d87dd8c51789b71146c090f7781dd3c94"
+      },
+      "ancestry": [
+        {
+          "role": "declared_contract",
+          "path": "evaluation/lora-state-pilot-v1/adapted_test/contract.json",
+          "sha256": "170548d6d7e9a1ff573807e8f5ec5f4bc97da3588a8660b14d6c9754beb8ce2e",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "role": "declared_raw",
+          "path": "evaluation/lora-state-pilot-v1/adapted_test/RAW_SUBSET.jsonl",
+          "sha256": "76b8cecda7bb2b095a32da39d72f8a10ddb6afcf82986fcab73f31cb58fd9227",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "role": "declared_arm_keys",
+          "path": "evaluation/lora-state-pilot-v1/adapted_test/KEY_SUBSET.json",
+          "sha256": "14965aaf1445bb965dd24dbbc950bfe3d51de9331f63c22f6916d84c4b0160dd",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "role": "declared_subset_recipe",
+          "path": "evaluation/lora-state-pilot-v1/adapted_test/DERIVATION.json",
+          "sha256": "073559616bfe1b3ec75d82031919a6db6a198b0cd3ff14a6f9c3138527935274",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "role": "declared_shared_evaluation_inputs",
+          "path": "evaluation/lora-state-pilot-v1/EVAL_CASES.json",
+          "sha256": "4df0ef80a2574b76c742b1c5de462ab38a00bf984b4ca6cbd0369a05343b0bcd",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "role": "declared_shared_parent_keys",
+          "path": "evaluation/lora-state-pilot-v1/KEYS.json",
+          "sha256": "79e8bbd04b204db71df22cd31f3fc3d648af6470c0e4a488c809b4d24e530596",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "role": "declared_training_state",
+          "path": "evaluation/lora-state-pilot-v1/TRAINING_MANIFEST.json",
+          "sha256": "f3f25e5bc2f712092d8ce5160a6b44364736f56494fc81c00bb719baf226bc08",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        },
+        {
+          "role": "declared_paired_summary",
+          "path": "evaluation/lora-state-pilot-v1/SUMMARY.json",
+          "sha256": "40051367e9f4719115d0f9f8909cd9ad605d0a57a029e6b016d191a73f07a9a1",
+          "bytes_bound": true,
+          "link_status": "caller_declared"
+        }
+      ],
+      "receipt_bytes_bound": true,
+      "reported_receipt": {
+        "ruleset": "stored-run-audit-0.1",
+        "status": "computed",
+        "stage": "cohort_summary",
+        "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+        "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "limitations": [
+          "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+          "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+          "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+          "No cache-file verification, model inference, causal efficacy or generalization claim."
+        ],
+        "claim_id": "LS1-adapted_test",
+        "identity": {
+          "family": "lora_source_state",
+          "facet": "state_label",
+          "cycle": "LS1",
+          "arm": "adapted_test"
+        },
+        "contract_sha256": "363cd8cc061edd81c6f47d5929ecc9b8c0b284285a94d44ae40b3a24013bd8b3",
+        "sources": {
+          "raw": "76b8cecda7bb2b095a32da39d72f8a10ddb6afcf82986fcab73f31cb58fd9227",
+          "keys": "14965aaf1445bb965dd24dbbc950bfe3d51de9331f63c22f6916d84c4b0160dd"
+        },
+        "summary": {
+          "calls": 48,
+          "label_matches": 19,
+          "match_fraction": {
+            "numerator": 19,
+            "denominator": 48
+          },
+          "constant_yes_matches": 16,
+          "labels": {
+            "NO": 14,
+            "YES": 34
+          },
+          "stops": {
+            "eos": 48
+          },
+          "input_tokens": 9386,
+          "output_tokens": 130
+        },
+        "rows": [
+          {
+            "run_id": "test_scoped_table_0_positive__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_0_zero__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_scoped_table_0_missing__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_1_positive__adapted_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_scoped_table_1_zero__adapted_test",
+            "label": "YES",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_1_missing__adapted_test",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_2_positive__adapted_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_scoped_table_2_zero__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_scoped_table_2_missing__adapted_test",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_3_positive__adapted_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_scoped_table_3_zero__adapted_test",
+            "label": "YES",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_scoped_table_3_missing__adapted_test",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_0_positive__adapted_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_nested_list_0_zero__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_nested_list_0_missing__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_1_positive__adapted_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_nested_list_1_zero__adapted_test",
+            "label": "YES",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_1_missing__adapted_test",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_2_positive__adapted_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_nested_list_2_zero__adapted_test",
+            "label": "YES",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_2_missing__adapted_test",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_3_positive__adapted_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_nested_list_3_zero__adapted_test",
+            "label": "YES",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_nested_list_3_missing__adapted_test",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_0_positive__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_0_zero__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_register_0_missing__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_1_positive__adapted_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_register_1_zero__adapted_test",
+            "label": "YES",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_1_missing__adapted_test",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_2_positive__adapted_test",
+            "label": "NO",
+            "expected": "YES",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_2_zero__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_register_2_missing__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_register_3_positive__adapted_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_register_3_zero__adapted_test",
+            "label": "NO",
+            "expected": "NO",
+            "label_match": true
+          },
+          {
+            "run_id": "test_register_3_missing__adapted_test",
+            "label": "NO",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_0_positive__adapted_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_interleaved_0_zero__adapted_test",
+            "label": "YES",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_0_missing__adapted_test",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_1_positive__adapted_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_interleaved_1_zero__adapted_test",
+            "label": "YES",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_1_missing__adapted_test",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_2_positive__adapted_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_interleaved_2_zero__adapted_test",
+            "label": "YES",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_2_missing__adapted_test",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_3_positive__adapted_test",
+            "label": "YES",
+            "expected": "YES",
+            "label_match": true
+          },
+          {
+            "run_id": "test_interleaved_3_zero__adapted_test",
+            "label": "YES",
+            "expected": "NO",
+            "label_match": false
+          },
+          {
+            "run_id": "test_interleaved_3_missing__adapted_test",
+            "label": "YES",
+            "expected": "WITHHOLD",
+            "label_match": false
+          }
+        ]
+      },
+      "scoped_summary": {
+        "kind": "reported_exact_label_cohort",
+        "claim_id": "LS1-adapted_test",
+        "identity": {
+          "family": "lora_source_state",
+          "facet": "state_label",
+          "cycle": "LS1",
+          "arm": "adapted_test"
+        },
+        "summary": {
+          "calls": 48,
+          "label_matches": 19,
+          "match_fraction": {
+            "numerator": 19,
+            "denominator": 48
+          },
+          "constant_yes_matches": 16,
+          "labels": {
+            "NO": 14,
+            "YES": 34
+          },
+          "stops": {
+            "eos": 48
+          },
+          "input_tokens": 9386,
+          "output_tokens": 130
+        },
+        "unresolved_outputs": 0
+      },
+      "reported_source_hashes": {
+        "raw": "76b8cecda7bb2b095a32da39d72f8a10ddb6afcf82986fcab73f31cb58fd9227",
+        "keys": "14965aaf1445bb965dd24dbbc950bfe3d51de9331f63c22f6916d84c4b0160dd"
+      }
+    }
+  ],
+  "ancestry_warnings": [
+    {
+      "code": "shared_hash_observed",
+      "sha256": "1a5b01ce8712c89c56f5453d7f4943316713ab994aa3d42f8df9658b58512cca",
+      "uses": [
+        {
+          "station_id": "narrow-original-test",
+          "role": "declared_shared_parent_keys"
+        },
+        {
+          "station_id": "narrow-adapted-test",
+          "role": "declared_shared_parent_keys"
+        }
+      ],
+      "meaning": "Shared byte identity or reported hash; ancestry links are declared. Do not count as independent confirmation."
+    },
+    {
+      "code": "shared_hash_observed",
+      "sha256": "40051367e9f4719115d0f9f8909cd9ad605d0a57a029e6b016d191a73f07a9a1",
+      "uses": [
+        {
+          "station_id": "lora-original_test",
+          "role": "declared_paired_summary"
+        },
+        {
+          "station_id": "lora-adapted_test",
+          "role": "declared_paired_summary"
+        }
+      ],
+      "meaning": "Shared byte identity or reported hash; ancestry links are declared. Do not count as independent confirmation."
+    },
+    {
+      "code": "shared_hash_observed",
+      "sha256": "4df0ef80a2574b76c742b1c5de462ab38a00bf984b4ca6cbd0369a05343b0bcd",
+      "uses": [
+        {
+          "station_id": "lora-original_test",
+          "role": "declared_shared_evaluation_inputs"
+        },
+        {
+          "station_id": "lora-adapted_test",
+          "role": "declared_shared_evaluation_inputs"
+        }
+      ],
+      "meaning": "Shared byte identity or reported hash; ancestry links are declared. Do not count as independent confirmation."
+    },
+    {
+      "code": "shared_hash_observed",
+      "sha256": "79e8bbd04b204db71df22cd31f3fc3d648af6470c0e4a488c809b4d24e530596",
+      "uses": [
+        {
+          "station_id": "lora-original_test",
+          "role": "declared_shared_parent_keys"
+        },
+        {
+          "station_id": "lora-adapted_test",
+          "role": "declared_shared_parent_keys"
+        }
+      ],
+      "meaning": "Shared byte identity or reported hash; ancestry links are declared. Do not count as independent confirmation."
+    },
+    {
+      "code": "shared_hash_observed",
+      "sha256": "ac318650d3b7cc666ea2d1052dd8b3a5567bbe8fce43ea76cea05cc1c4975afe",
+      "uses": [
+        {
+          "station_id": "narrow-original-test",
+          "role": "declared_training_state"
+        },
+        {
+          "station_id": "narrow-adapted-test",
+          "role": "declared_training_state"
+        }
+      ],
+      "meaning": "Shared byte identity or reported hash; ancestry links are declared. Do not count as independent confirmation."
+    },
+    {
+      "code": "shared_hash_observed",
+      "sha256": "ac852fa25aaedb1950d855ed1cd37e66299e705a27fb51b2c95dcb73ddc67491",
+      "uses": [
+        {
+          "station_id": "narrow-original-test",
+          "role": "declared_scope_and_limits"
+        },
+        {
+          "station_id": "narrow-adapted-test",
+          "role": "declared_scope_and_limits"
+        }
+      ],
+      "meaning": "Shared byte identity or reported hash; ancestry links are declared. Do not count as independent confirmation."
+    },
+    {
+      "code": "shared_hash_observed",
+      "sha256": "ae6ea8e3c2e21f23506d0fa31e32ac344d90d8329e4b5e703d9347a99693f917",
+      "uses": [
+        {
+          "station_id": "narrow-original-test",
+          "role": "declared_shared_evaluation_inputs"
+        },
+        {
+          "station_id": "narrow-adapted-test",
+          "role": "declared_shared_evaluation_inputs"
+        }
+      ],
+      "meaning": "Shared byte identity or reported hash; ancestry links are declared. Do not count as independent confirmation."
+    },
+    {
+      "code": "shared_hash_observed",
+      "sha256": "f3f25e5bc2f712092d8ce5160a6b44364736f56494fc81c00bb719baf226bc08",
+      "uses": [
+        {
+          "station_id": "lora-original_test",
+          "role": "declared_training_state"
+        },
+        {
+          "station_id": "lora-adapted_test",
+          "role": "declared_training_state"
+        }
+      ],
+      "meaning": "Shared byte identity or reported hash; ancestry links are declared. Do not count as independent confirmation."
+    }
+  ],
+  "limitations": [
+    "Hashes bind bytes, not authenticity, source truth, independence or model competence.",
+    "Questions, recipes, state and ancestry links are caller declarations, not authenticated.",
+    "Receipt summaries are reported scoped results; underlying tools are not rerun.",
+    "No pooled score, vote, confidence, universal truth or cross-task contradiction is computed.",
+    "Missing shared hashes do not establish independence; different key hashes can encode shared keys.",
+    "Local trusted workspace only; code hashes do not authenticate runtime or bytecode."
+  ],
+  "registry_id": "six-scoped-stations-after-lora-v1"
+}
