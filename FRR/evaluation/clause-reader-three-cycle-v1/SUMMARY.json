@@ -1,0 +1,160 @@
+{
+  "generations": 32,
+  "groups": {
+    "C1_full": {
+      "n": 8,
+      "distinct_prompts": 8,
+      "unambiguous_matches": 2,
+      "target_only_sensitivity_matches": 2,
+      "by_family": {
+        "grouping": {
+          "n": 4,
+          "unambiguous_matches": 0,
+          "target_only_matches": 0
+        },
+        "reset": {
+          "n": 4,
+          "unambiguous_matches": 2,
+          "target_only_matches": 2
+        }
+      },
+      "input_tokens": 1928,
+      "output_tokens": 277,
+      "inference_seconds": 23.99911453198729,
+      "token_limit": 3
+    },
+    "C1_clause": {
+      "n": 8,
+      "distinct_prompts": 7,
+      "unambiguous_matches": 5,
+      "target_only_sensitivity_matches": 6,
+      "by_family": {
+        "grouping": {
+          "n": 4,
+          "unambiguous_matches": 1,
+          "target_only_matches": 2
+        },
+        "reset": {
+          "n": 4,
+          "unambiguous_matches": 4,
+          "target_only_matches": 4
+        }
+      },
+      "input_tokens": 836,
+      "output_tokens": 168,
+      "inference_seconds": 13.411430187996302,
+      "token_limit": 0
+    },
+    "C2_clause_reworded_question": {
+      "n": 8,
+      "distinct_prompts": 7,
+      "unambiguous_matches": 5,
+      "target_only_sensitivity_matches": 6,
+      "by_family": {
+        "grouping": {
+          "n": 4,
+          "unambiguous_matches": 3,
+          "target_only_matches": 4
+        },
+        "reset": {
+          "n": 4,
+          "unambiguous_matches": 2,
+          "target_only_matches": 2
+        }
+      },
+      "input_tokens": 892,
+      "output_tokens": 176,
+      "inference_seconds": 14.127520505986467,
+      "token_limit": 0
+    },
+    "C3_new_clause_original_question": {
+      "n": 8,
+      "distinct_prompts": 8,
+      "unambiguous_matches": 4,
+      "target_only_sensitivity_matches": 4,
+      "by_family": {
+        "grouping": {
+          "n": 4,
+          "unambiguous_matches": 1,
+          "target_only_matches": 1
+        },
+        "reset": {
+          "n": 4,
+          "unambiguous_matches": 3,
+          "target_only_matches": 3
+        }
+      },
+      "input_tokens": 829,
+      "output_tokens": 164,
+      "inference_seconds": 13.001485576998675,
+      "token_limit": 0
+    }
+  },
+  "status_totals": {
+    "correct": 16,
+    "wrong": 11,
+    "qualified_target_match": 2,
+    "unresolved": 3
+  },
+  "strict_format_matches": 0,
+  "old_full_arm_repeats": [
+    {
+      "record": "G1",
+      "same_input_ids": true,
+      "same_generated_ids": true,
+      "same_text": true
+    },
+    {
+      "record": "G2",
+      "same_input_ids": true,
+      "same_generated_ids": true,
+      "same_text": true
+    },
+    {
+      "record": "G3",
+      "same_input_ids": true,
+      "same_generated_ids": true,
+      "same_text": true
+    },
+    {
+      "record": "G4",
+      "same_input_ids": true,
+      "same_generated_ids": true,
+      "same_text": true
+    },
+    {
+      "record": "R1",
+      "same_input_ids": true,
+      "same_generated_ids": true,
+      "same_text": true
+    },
+    {
+      "record": "R2",
+      "same_input_ids": true,
+      "same_generated_ids": true,
+      "same_text": true
+    },
+    {
+      "record": "R3",
+      "same_input_ids": true,
+      "same_generated_ids": true,
+      "same_text": true
+    },
+    {
+      "record": "R4",
+      "same_input_ids": true,
+      "same_generated_ids": true,
+      "same_text": true
+    }
+  ],
+  "input_tokens": 4485,
+  "output_tokens": 785,
+  "inference_seconds_excluding_serialization": 64.53955080296873,
+  "serialization_seconds": 0.34596456999133807,
+  "new_cache_bytes": 241523688,
+  "stops": {
+    "eos": 29,
+    "token_limit": 3
+  },
+  "scope": "Coordinator whole-response judgments, not independent or masked; exposed records; duplicate selected R2/R4 prompts counted as slots with distinct-prompt totals shown."
+}

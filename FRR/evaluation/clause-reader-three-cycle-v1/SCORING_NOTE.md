@@ -1,0 +1,7 @@
+# Whole-response qualification and exposed input counts
+
+The protocol froze the expected answers and required whole-response review. During post-run scoring, two responses (C1_G4_clause and C2_G4_reworded) were found to explicitly preserve the unrecorded soil count but add wording about no observations/documentation of shared soil. That extra wording can be read as missing documentation (compatible with the source) or as an unsupported absence-of-sharing claim. The frozen key remains UNKNOWN; no key or prompt was changed.
+
+We record these as qualified target matches. The conservative unambiguous whole-response tally withholds both; the target-answer sensitivity counts both. Thus C1 clause is5/8 (6/8 sensitivity), C2 is5/8 (6/8 sensitivity), C1 full2/8 and C3 new4/8 under either. This treatment is an explicit coordinator interpretation judgment after reading the outputs, not a preregistered special-case rule or an independent review. Raw text remains available to readers who disagree. Aggregate equality across C1 clause and C2 does not erase the opposite family-specific changes under either interpretation.
+
+The selected R2/R4 passages and questions are identical in each clause condition. Each nominal eight-slot clause set therefore has seven distinct prompts. Show both slot counts and distinct prompt counts; duplicated absence responses are not new independent evidence. The full arm intentionally repeats SR-C1 and matches all eight prior input/generated token sequences; it checks same-procedure repeatability and cannot count as fresh confirmation.

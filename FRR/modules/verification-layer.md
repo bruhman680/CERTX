@@ -128,3 +128,10 @@ For an intervention, state what changes, what stays fixed, and what establishes 
 [SR-C1](../evaluation/soil-design-reader-v1/REPORT.md) exposes a gap between an exact toy diagnostic and a model using its supplied rules. Keep source reading, numerical computation/set reconstruction, and final conclusion as separate observed obligations. A label match from one query does not verify the extraction or computation elicited in other independent contexts. Preserve unfinished source echoes as unfinished readouts; do not infer their eventual answers from copied numerals.
 
 Before adding control complexity, test a smaller prerequisite such as choosing the relevant source fact, with selection and its cost explicit. Retain the role of each number and the distinction between missing calibration, ineffective supplied calibration, and what the actual constraints identify. This is optional evaluation guidance, not a demonstrated model repair or an automatic reset/abstention rule.
+
+
+## Keep excerpt scope and aggregate trade-offs visible
+
+[CR-C1/2/3](../evaluation/clause-reader-three-cycle-v1/REPORT.md) records a supplied-clause benefit on exposed source-reading tasks and a question-wording change whose opposite task-family effects cancel in the overall total. Preserve source binding, the exact question, selection method and the excerpt's supported task; byte-correct selection is not autonomous relevance discovery or universal task sufficiency. Count completion separately from source-supported answers, and inspect prespecified families/paired changes rather than only the aggregate.
+
+A changed question must be tested on the intended new sources before promoting it. An apparent transfer result under the original question does not establish transfer of a different question. Selected/clause evidence here does not validate arithmetic, causal identification, or a default prompt repair. These remain optional evaluation practices, not demonstrated broad behavioral gains.

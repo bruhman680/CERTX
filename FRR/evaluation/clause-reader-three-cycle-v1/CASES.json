@@ -1,0 +1,322 @@
+[
+  {
+    "id": "C1_G1_full",
+    "record_id": "G1",
+    "family": "grouping",
+    "facet": "reading",
+    "cycle": "C1",
+    "arm": "full",
+    "source": "Population mean target: r=0.2. Each independently sampled soil draws a fixed propensity with variance 0.032. Conditional emission noise has mean variance 0.128. There are 64 observations total. For k independent soils with equal observations per soil, the population-mean estimator variance is 0.032/k + 0.128/64. Treating the observations as iid is warranted only if every observation uses its own independently sampled soil. No other sampling information is available. Each observation uses a fresh independently sampled soil. There are 64 independent soils, with 1 observation each.",
+    "question": "How many independent soil draws k are recorded? Return only the integer or UNKNOWN."
+  },
+  {
+    "id": "C1_G1_clause",
+    "record_id": "G1",
+    "family": "grouping",
+    "facet": "reading",
+    "cycle": "C1",
+    "arm": "clause",
+    "source": "Each observation uses a fresh independently sampled soil. There are 64 independent soils, with 1 observation each.",
+    "question": "How many independent soil draws k are recorded? Return only the integer or UNKNOWN."
+  },
+  {
+    "id": "C1_G2_full",
+    "record_id": "G2",
+    "family": "grouping",
+    "facet": "reading",
+    "cycle": "C1",
+    "arm": "full",
+    "source": "Population mean target: r=0.2. Each independently sampled soil draws a fixed propensity with variance 0.032. Conditional emission noise has mean variance 0.128. There are 64 observations total. For k independent soils with equal observations per soil, the population-mean estimator variance is 0.032/k + 0.128/64. Treating the observations as iid is warranted only if every observation uses its own independently sampled soil. No other sampling information is available. There are 4 independent soils, with 16 observations from each soil.",
+    "question": "How many independent soil draws k are recorded? Return only the integer or UNKNOWN."
+  },
+  {
+    "id": "C1_G2_clause",
+    "record_id": "G2",
+    "family": "grouping",
+    "facet": "reading",
+    "cycle": "C1",
+    "arm": "clause",
+    "source": "There are 4 independent soils, with 16 observations from each soil.",
+    "question": "How many independent soil draws k are recorded? Return only the integer or UNKNOWN."
+  },
+  {
+    "id": "C1_G3_full",
+    "record_id": "G3",
+    "family": "grouping",
+    "facet": "reading",
+    "cycle": "C1",
+    "arm": "full",
+    "source": "Population mean target: r=0.2. Each independently sampled soil draws a fixed propensity with variance 0.032. Conditional emission noise has mean variance 0.128. There are 64 observations total. For k independent soils with equal observations per soil, the population-mean estimator variance is 0.032/k + 0.128/64. Treating the observations as iid is warranted only if every observation uses its own independently sampled soil. No other sampling information is available. There is 1 independently sampled soil, with 64 observations from that same soil.",
+    "question": "How many independent soil draws k are recorded? Return only the integer or UNKNOWN."
+  },
+  {
+    "id": "C1_G3_clause",
+    "record_id": "G3",
+    "family": "grouping",
+    "facet": "reading",
+    "cycle": "C1",
+    "arm": "clause",
+    "source": "There is 1 independently sampled soil, with 64 observations from that same soil.",
+    "question": "How many independent soil draws k are recorded? Return only the integer or UNKNOWN."
+  },
+  {
+    "id": "C1_G4_full",
+    "record_id": "G4",
+    "family": "grouping",
+    "facet": "reading",
+    "cycle": "C1",
+    "arm": "full",
+    "source": "Population mean target: r=0.2. Each independently sampled soil draws a fixed propensity with variance 0.032. Conditional emission noise has mean variance 0.128. There are 64 observations total. For k independent soils with equal observations per soil, the population-mean estimator variance is 0.032/k + 0.128/64. Treating the observations as iid is warranted only if every observation uses its own independently sampled soil. No other sampling information is available. Which observations share a soil, and the number of independent soils, were not recorded.",
+    "question": "How many independent soil draws k are recorded? Return only the integer or UNKNOWN."
+  },
+  {
+    "id": "C1_G4_clause",
+    "record_id": "G4",
+    "family": "grouping",
+    "facet": "reading",
+    "cycle": "C1",
+    "arm": "clause",
+    "source": "Which observations share a soil, and the number of independent soils, were not recorded.",
+    "question": "How many independent soil draws k are recorded? Return only the integer or UNKNOWN."
+  },
+  {
+    "id": "C1_R1_full",
+    "record_id": "R1",
+    "family": "reset",
+    "facet": "reading",
+    "cycle": "C1",
+    "arm": "full",
+    "source": "Carrier model: in a fraction pi of runs the persistent propensity is internal, and otherwise external; 0<=pi<=1. D0 is the excess next-error probability after observing an error, before a reset. An agent reset resamples only the internal propensity with effectiveness qA; a soil reset resamples only the external propensity with effectiveness qS. No cross-effects or direct emission changes occur. D0=0.160. Equations: DA=D0*(1-pi*qA); DS=D0*(1-(1-pi)*qS). Unspecified effectiveness values may be anywhere in [0,1]. This record is exact, with no measurement noise. DA=0.128; DS=0.088. The effectiveness values are provided: qA=0.50 and qS=0.75.",
+    "question": "Are both numerical effectiveness values qA and qS provided in the record? Return only PROVIDED or MISSING."
+  },
+  {
+    "id": "C1_R1_clause",
+    "record_id": "R1",
+    "family": "reset",
+    "facet": "reading",
+    "cycle": "C1",
+    "arm": "clause",
+    "source": "The effectiveness values are provided: qA=0.50 and qS=0.75.",
+    "question": "Are both numerical effectiveness values qA and qS provided in the record? Return only PROVIDED or MISSING."
+  },
+  {
+    "id": "C1_R2_full",
+    "record_id": "R2",
+    "family": "reset",
+    "facet": "reading",
+    "cycle": "C1",
+    "arm": "full",
+    "source": "Carrier model: in a fraction pi of runs the persistent propensity is internal, and otherwise external; 0<=pi<=1. D0 is the excess next-error probability after observing an error, before a reset. An agent reset resamples only the internal propensity with effectiveness qA; a soil reset resamples only the external propensity with effectiveness qS. No cross-effects or direct emission changes occur. D0=0.160. Equations: DA=D0*(1-pi*qA); DS=D0*(1-(1-pi)*qS). Unspecified effectiveness values may be anywhere in [0,1]. This record is exact, with no measurement noise. DA=0.128; DS=0.088. Neither effectiveness value qA or qS is provided.",
+    "question": "Are both numerical effectiveness values qA and qS provided in the record? Return only PROVIDED or MISSING."
+  },
+  {
+    "id": "C1_R2_clause",
+    "record_id": "R2",
+    "family": "reset",
+    "facet": "reading",
+    "cycle": "C1",
+    "arm": "clause",
+    "source": "Neither effectiveness value qA or qS is provided.",
+    "question": "Are both numerical effectiveness values qA and qS provided in the record? Return only PROVIDED or MISSING."
+  },
+  {
+    "id": "C1_R3_full",
+    "record_id": "R3",
+    "family": "reset",
+    "facet": "reading",
+    "cycle": "C1",
+    "arm": "full",
+    "source": "Carrier model: in a fraction pi of runs the persistent propensity is internal, and otherwise external; 0<=pi<=1. D0 is the excess next-error probability after observing an error, before a reset. An agent reset resamples only the internal propensity with effectiveness qA; a soil reset resamples only the external propensity with effectiveness qS. No cross-effects or direct emission changes occur. D0=0.160. Equations: DA=D0*(1-pi*qA); DS=D0*(1-(1-pi)*qS). Unspecified effectiveness values may be anywhere in [0,1]. This record is exact, with no measurement noise. DA=0.160; DS=0.160. The effectiveness values are provided: qA=0.00 and qS=0.00.",
+    "question": "Are both numerical effectiveness values qA and qS provided in the record? Return only PROVIDED or MISSING."
+  },
+  {
+    "id": "C1_R3_clause",
+    "record_id": "R3",
+    "family": "reset",
+    "facet": "reading",
+    "cycle": "C1",
+    "arm": "clause",
+    "source": "The effectiveness values are provided: qA=0.00 and qS=0.00.",
+    "question": "Are both numerical effectiveness values qA and qS provided in the record? Return only PROVIDED or MISSING."
+  },
+  {
+    "id": "C1_R4_full",
+    "record_id": "R4",
+    "family": "reset",
+    "facet": "reading",
+    "cycle": "C1",
+    "arm": "full",
+    "source": "Carrier model: in a fraction pi of runs the persistent propensity is internal, and otherwise external; 0<=pi<=1. D0 is the excess next-error probability after observing an error, before a reset. An agent reset resamples only the internal propensity with effectiveness qA; a soil reset resamples only the external propensity with effectiveness qS. No cross-effects or direct emission changes occur. D0=0.160. Equations: DA=D0*(1-pi*qA); DS=D0*(1-(1-pi)*qS). Unspecified effectiveness values may be anywhere in [0,1]. This record is exact, with no measurement noise. DA=0.096; DS=0.064. Neither effectiveness value qA or qS is provided.",
+    "question": "Are both numerical effectiveness values qA and qS provided in the record? Return only PROVIDED or MISSING."
+  },
+  {
+    "id": "C1_R4_clause",
+    "record_id": "R4",
+    "family": "reset",
+    "facet": "reading",
+    "cycle": "C1",
+    "arm": "clause",
+    "source": "Neither effectiveness value qA or qS is provided.",
+    "question": "Are both numerical effectiveness values qA and qS provided in the record? Return only PROVIDED or MISSING."
+  },
+  {
+    "id": "C2_G1_reworded",
+    "record_id": "G1",
+    "family": "grouping",
+    "facet": "reading",
+    "cycle": "C2",
+    "arm": "clause_reworded_question",
+    "source": "Each observation uses a fresh independently sampled soil. There are 64 independent soils, with 1 observation each.",
+    "question": "How many different independently sampled soils does this passage document? Give just that count, or UNKNOWN when the count is absent."
+  },
+  {
+    "id": "C2_G2_reworded",
+    "record_id": "G2",
+    "family": "grouping",
+    "facet": "reading",
+    "cycle": "C2",
+    "arm": "clause_reworded_question",
+    "source": "There are 4 independent soils, with 16 observations from each soil.",
+    "question": "How many different independently sampled soils does this passage document? Give just that count, or UNKNOWN when the count is absent."
+  },
+  {
+    "id": "C2_G3_reworded",
+    "record_id": "G3",
+    "family": "grouping",
+    "facet": "reading",
+    "cycle": "C2",
+    "arm": "clause_reworded_question",
+    "source": "There is 1 independently sampled soil, with 64 observations from that same soil.",
+    "question": "How many different independently sampled soils does this passage document? Give just that count, or UNKNOWN when the count is absent."
+  },
+  {
+    "id": "C2_G4_reworded",
+    "record_id": "G4",
+    "family": "grouping",
+    "facet": "reading",
+    "cycle": "C2",
+    "arm": "clause_reworded_question",
+    "source": "Which observations share a soil, and the number of independent soils, were not recorded.",
+    "question": "How many different independently sampled soils does this passage document? Give just that count, or UNKNOWN when the count is absent."
+  },
+  {
+    "id": "C2_R1_reworded",
+    "record_id": "R1",
+    "family": "reset",
+    "facet": "reading",
+    "cycle": "C2",
+    "arm": "clause_reworded_question",
+    "source": "The effectiveness values are provided: qA=0.50 and qS=0.75.",
+    "question": "Does this passage supply a number for each of qA and qS? Answer PROVIDED when it supplies both numbers; otherwise answer MISSING."
+  },
+  {
+    "id": "C2_R2_reworded",
+    "record_id": "R2",
+    "family": "reset",
+    "facet": "reading",
+    "cycle": "C2",
+    "arm": "clause_reworded_question",
+    "source": "Neither effectiveness value qA or qS is provided.",
+    "question": "Does this passage supply a number for each of qA and qS? Answer PROVIDED when it supplies both numbers; otherwise answer MISSING."
+  },
+  {
+    "id": "C2_R3_reworded",
+    "record_id": "R3",
+    "family": "reset",
+    "facet": "reading",
+    "cycle": "C2",
+    "arm": "clause_reworded_question",
+    "source": "The effectiveness values are provided: qA=0.00 and qS=0.00.",
+    "question": "Does this passage supply a number for each of qA and qS? Answer PROVIDED when it supplies both numbers; otherwise answer MISSING."
+  },
+  {
+    "id": "C2_R4_reworded",
+    "record_id": "R4",
+    "family": "reset",
+    "facet": "reading",
+    "cycle": "C2",
+    "arm": "clause_reworded_question",
+    "source": "Neither effectiveness value qA or qS is provided.",
+    "question": "Does this passage supply a number for each of qA and qS? Answer PROVIDED when it supplies both numbers; otherwise answer MISSING."
+  },
+  {
+    "id": "C3_N1_new_clause",
+    "record_id": "N1",
+    "family": "grouping",
+    "facet": "reading",
+    "cycle": "C3",
+    "arm": "new_clause_original_question",
+    "source": "Thirty-two soils were sampled independently. Each soil supplied 2 observations.",
+    "question": "How many independent soil draws k are recorded? Return only the integer or UNKNOWN."
+  },
+  {
+    "id": "C3_N2_new_clause",
+    "record_id": "N2",
+    "family": "grouping",
+    "facet": "reading",
+    "cycle": "C3",
+    "arm": "new_clause_original_question",
+    "source": "Eight independent soil draws supplied 8 observations apiece.",
+    "question": "How many independent soil draws k are recorded? Return only the integer or UNKNOWN."
+  },
+  {
+    "id": "C3_N3_new_clause",
+    "record_id": "N3",
+    "family": "grouping",
+    "facet": "reading",
+    "cycle": "C3",
+    "arm": "new_clause_original_question",
+    "source": "Two independently sampled soils supplied 32 observations each.",
+    "question": "How many independent soil draws k are recorded? Return only the integer or UNKNOWN."
+  },
+  {
+    "id": "C3_N4_new_clause",
+    "record_id": "N4",
+    "family": "grouping",
+    "facet": "reading",
+    "cycle": "C3",
+    "arm": "new_clause_original_question",
+    "source": "There were 64 observations. The record does not state how many independent soils supplied them.",
+    "question": "How many independent soil draws k are recorded? Return only the integer or UNKNOWN."
+  },
+  {
+    "id": "C3_N5_new_clause",
+    "record_id": "N5",
+    "family": "reset",
+    "facet": "reading",
+    "cycle": "C3",
+    "arm": "new_clause_original_question",
+    "source": "Both effectiveness values were measured: qA=0.40 and qS=0.60.",
+    "question": "Are both numerical effectiveness values qA and qS provided in the record? Return only PROVIDED or MISSING."
+  },
+  {
+    "id": "C3_N6_new_clause",
+    "record_id": "N6",
+    "family": "reset",
+    "facet": "reading",
+    "cycle": "C3",
+    "arm": "new_clause_original_question",
+    "source": "Only qA is supplied, at 0.50. No numerical qS was recorded.",
+    "question": "Are both numerical effectiveness values qA and qS provided in the record? Return only PROVIDED or MISSING."
+  },
+  {
+    "id": "C3_N7_new_clause",
+    "record_id": "N7",
+    "family": "reset",
+    "facet": "reading",
+    "cycle": "C3",
+    "arm": "new_clause_original_question",
+    "source": "The recorded effectiveness values are qA=0.00 and qS=0.00.",
+    "question": "Are both numerical effectiveness values qA and qS provided in the record? Return only PROVIDED or MISSING."
+  },
+  {
+    "id": "C3_N8_new_clause",
+    "record_id": "N8",
+    "family": "reset",
+    "facet": "reading",
+    "cycle": "C3",
+    "arm": "new_clause_original_question",
+    "source": "No numerical effectiveness was recorded for either qA or qS.",
+    "question": "Are both numerical effectiveness values qA and qS provided in the record? Return only PROVIDED or MISSING."
+  }
+]
