@@ -1,0 +1,2385 @@
+{
+  "guard_cases": [
+    {
+      "id": "W1_valid",
+      "kind": "valid",
+      "expected_status": "bound",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "bound",
+        "stage": "bound_fields",
+        "reasons": [
+          "All proposed roles, values, quotations and note coverage match this literal source grammar."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+        "entity": "Parcel Pearl",
+        "unit": "kg",
+        "fields": {
+          "minimum": "9",
+          "observations": [
+            {
+              "state": "missing"
+            }
+          ]
+        },
+        "source_note_count": 1
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W1_criterion_as_observation",
+      "kind": "criterion_as_observation",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "observation_binding_mismatch",
+        "reasons": [
+          "Observation quotation is absent, repeated, or belongs to the criterion role."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W1_observation_as_criterion",
+      "kind": "observation_as_criterion",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "criterion_binding_mismatch",
+        "reasons": [
+          "Minimum value must bind to the criterion quotation, not an observation."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W1_omitted_observation",
+      "kind": "omitted_observation",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "incomplete_observations",
+        "reasons": [
+          "Every source note must be covered, including missing/conflicting notes."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W1_wrong_criterion_value",
+      "kind": "wrong_criterion_value",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "criterion_binding_mismatch",
+        "reasons": [
+          "Minimum value must bind to the criterion quotation, not an observation."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W1_fabricated_quote",
+      "kind": "fabricated_quote",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "observation_binding_mismatch",
+        "reasons": [
+          "Observation quotation is absent, repeated, or belongs to the criterion role."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W1_wrong_hash",
+      "kind": "wrong_hash",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "source_hash_mismatch",
+        "reasons": [
+          "Source bytes differ from expected hash."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W1_wrong_entity",
+      "kind": "wrong_entity",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "proposal_identity_mismatch",
+        "reasons": [
+          "Proposal entity/unit/source binding differs from caller context."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W1_raw_context",
+      "kind": "raw_context",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W1_extra_schema",
+      "kind": "extra_schema",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W2_valid",
+      "kind": "valid",
+      "expected_status": "bound",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "bound",
+        "stage": "bound_fields",
+        "reasons": [
+          "All proposed roles, values, quotations and note coverage match this literal source grammar."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+        "entity": "Box Teal",
+        "unit": "kg",
+        "fields": {
+          "minimum": "13",
+          "observations": [
+            {
+              "state": "measured",
+              "value": "8"
+            }
+          ]
+        },
+        "source_note_count": 1
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W2_criterion_as_observation",
+      "kind": "criterion_as_observation",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "observation_binding_mismatch",
+        "reasons": [
+          "Observation quotation is absent, repeated, or belongs to the criterion role."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W2_observation_as_criterion",
+      "kind": "observation_as_criterion",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "criterion_binding_mismatch",
+        "reasons": [
+          "Minimum value must bind to the criterion quotation, not an observation."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W2_omitted_observation",
+      "kind": "omitted_observation",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "incomplete_observations",
+        "reasons": [
+          "Every source note must be covered, including missing/conflicting notes."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W2_wrong_criterion_value",
+      "kind": "wrong_criterion_value",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "criterion_binding_mismatch",
+        "reasons": [
+          "Minimum value must bind to the criterion quotation, not an observation."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W2_fabricated_quote",
+      "kind": "fabricated_quote",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "observation_binding_mismatch",
+        "reasons": [
+          "Observation quotation is absent, repeated, or belongs to the criterion role."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W2_wrong_hash",
+      "kind": "wrong_hash",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "source_hash_mismatch",
+        "reasons": [
+          "Source bytes differ from expected hash."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W2_wrong_entity",
+      "kind": "wrong_entity",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "proposal_identity_mismatch",
+        "reasons": [
+          "Proposal entity/unit/source binding differs from caller context."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W2_raw_context",
+      "kind": "raw_context",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W2_extra_schema",
+      "kind": "extra_schema",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W3_valid",
+      "kind": "valid",
+      "expected_status": "bound",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "bound",
+        "stage": "bound_fields",
+        "reasons": [
+          "All proposed roles, values, quotations and note coverage match this literal source grammar."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+        "entity": "Rod Saffron",
+        "unit": "cm",
+        "fields": {
+          "minimum": "14",
+          "observations": [
+            {
+              "state": "measured",
+              "value": "14"
+            }
+          ]
+        },
+        "source_note_count": 1
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W3_criterion_as_observation",
+      "kind": "criterion_as_observation",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "observation_binding_mismatch",
+        "reasons": [
+          "Observation quotation is absent, repeated, or belongs to the criterion role."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W3_observation_as_criterion",
+      "kind": "observation_as_criterion",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "criterion_binding_mismatch",
+        "reasons": [
+          "Minimum value must bind to the criterion quotation, not an observation."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W3_omitted_observation",
+      "kind": "omitted_observation",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "incomplete_observations",
+        "reasons": [
+          "Every source note must be covered, including missing/conflicting notes."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W3_wrong_criterion_value",
+      "kind": "wrong_criterion_value",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "criterion_binding_mismatch",
+        "reasons": [
+          "Minimum value must bind to the criterion quotation, not an observation."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W3_fabricated_quote",
+      "kind": "fabricated_quote",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "observation_binding_mismatch",
+        "reasons": [
+          "Observation quotation is absent, repeated, or belongs to the criterion role."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W3_wrong_hash",
+      "kind": "wrong_hash",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "source_hash_mismatch",
+        "reasons": [
+          "Source bytes differ from expected hash."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W3_wrong_entity",
+      "kind": "wrong_entity",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "proposal_identity_mismatch",
+        "reasons": [
+          "Proposal entity/unit/source binding differs from caller context."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W3_raw_context",
+      "kind": "raw_context",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W3_extra_schema",
+      "kind": "extra_schema",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W4_valid",
+      "kind": "valid",
+      "expected_status": "bound",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "bound",
+        "stage": "bound_fields",
+        "reasons": [
+          "All proposed roles, values, quotations and note coverage match this literal source grammar."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+        "entity": "Tube Mauve",
+        "unit": "cm",
+        "fields": {
+          "minimum": "8",
+          "observations": [
+            {
+              "state": "measured",
+              "value": "11"
+            }
+          ]
+        },
+        "source_note_count": 1
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W4_criterion_as_observation",
+      "kind": "criterion_as_observation",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "observation_binding_mismatch",
+        "reasons": [
+          "Observation quotation is absent, repeated, or belongs to the criterion role."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W4_observation_as_criterion",
+      "kind": "observation_as_criterion",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "criterion_binding_mismatch",
+        "reasons": [
+          "Minimum value must bind to the criterion quotation, not an observation."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W4_omitted_observation",
+      "kind": "omitted_observation",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "incomplete_observations",
+        "reasons": [
+          "Every source note must be covered, including missing/conflicting notes."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W4_wrong_criterion_value",
+      "kind": "wrong_criterion_value",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "criterion_binding_mismatch",
+        "reasons": [
+          "Minimum value must bind to the criterion quotation, not an observation."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W4_fabricated_quote",
+      "kind": "fabricated_quote",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "observation_binding_mismatch",
+        "reasons": [
+          "Observation quotation is absent, repeated, or belongs to the criterion role."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W4_wrong_hash",
+      "kind": "wrong_hash",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "source_hash_mismatch",
+        "reasons": [
+          "Source bytes differ from expected hash."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W4_wrong_entity",
+      "kind": "wrong_entity",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "proposal_identity_mismatch",
+        "reasons": [
+          "Proposal entity/unit/source binding differs from caller context."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W4_raw_context",
+      "kind": "raw_context",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W4_extra_schema",
+      "kind": "extra_schema",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W5_valid",
+      "kind": "valid",
+      "expected_status": "bound",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "bound",
+        "stage": "bound_fields",
+        "reasons": [
+          "All proposed roles, values, quotations and note coverage match this literal source grammar."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+        "entity": "Beam Azure",
+        "unit": "cm",
+        "fields": {
+          "minimum": "10",
+          "observations": [
+            {
+              "state": "measured",
+              "value": "7"
+            },
+            {
+              "state": "measured",
+              "value": "13"
+            }
+          ]
+        },
+        "source_note_count": 2
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W5_criterion_as_observation",
+      "kind": "criterion_as_observation",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "observation_binding_mismatch",
+        "reasons": [
+          "Observation quotation is absent, repeated, or belongs to the criterion role."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W5_observation_as_criterion",
+      "kind": "observation_as_criterion",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "criterion_binding_mismatch",
+        "reasons": [
+          "Minimum value must bind to the criterion quotation, not an observation."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W5_omitted_observation",
+      "kind": "omitted_observation",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "incomplete_observations",
+        "reasons": [
+          "Every source note must be covered, including missing/conflicting notes."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W5_wrong_criterion_value",
+      "kind": "wrong_criterion_value",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "criterion_binding_mismatch",
+        "reasons": [
+          "Minimum value must bind to the criterion quotation, not an observation."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W5_fabricated_quote",
+      "kind": "fabricated_quote",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "observation_binding_mismatch",
+        "reasons": [
+          "Observation quotation is absent, repeated, or belongs to the criterion role."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W5_wrong_hash",
+      "kind": "wrong_hash",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "source_hash_mismatch",
+        "reasons": [
+          "Source bytes differ from expected hash."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W5_wrong_entity",
+      "kind": "wrong_entity",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "proposal_identity_mismatch",
+        "reasons": [
+          "Proposal entity/unit/source binding differs from caller context."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W5_raw_context",
+      "kind": "raw_context",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W5_extra_schema",
+      "kind": "extra_schema",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W6_valid",
+      "kind": "valid",
+      "expected_status": "bound",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "bound",
+        "stage": "bound_fields",
+        "reasons": [
+          "All proposed roles, values, quotations and note coverage match this literal source grammar."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+        "entity": "Frame Amber",
+        "unit": "cm",
+        "fields": {
+          "minimum": "9",
+          "observations": [
+            {
+              "state": "measured",
+              "value": "12"
+            },
+            {
+              "state": "measured",
+              "value": "15"
+            }
+          ]
+        },
+        "source_note_count": 2
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W6_criterion_as_observation",
+      "kind": "criterion_as_observation",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "observation_binding_mismatch",
+        "reasons": [
+          "Observation quotation is absent, repeated, or belongs to the criterion role."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W6_observation_as_criterion",
+      "kind": "observation_as_criterion",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "criterion_binding_mismatch",
+        "reasons": [
+          "Minimum value must bind to the criterion quotation, not an observation."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W6_omitted_observation",
+      "kind": "omitted_observation",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "incomplete_observations",
+        "reasons": [
+          "Every source note must be covered, including missing/conflicting notes."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W6_wrong_criterion_value",
+      "kind": "wrong_criterion_value",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "criterion_binding_mismatch",
+        "reasons": [
+          "Minimum value must bind to the criterion quotation, not an observation."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W6_fabricated_quote",
+      "kind": "fabricated_quote",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "observation_binding_mismatch",
+        "reasons": [
+          "Observation quotation is absent, repeated, or belongs to the criterion role."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W6_wrong_hash",
+      "kind": "wrong_hash",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "source_hash_mismatch",
+        "reasons": [
+          "Source bytes differ from expected hash."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W6_wrong_entity",
+      "kind": "wrong_entity",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "proposal_identity_mismatch",
+        "reasons": [
+          "Proposal entity/unit/source binding differs from caller context."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W6_raw_context",
+      "kind": "raw_context",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W6_extra_schema",
+      "kind": "extra_schema",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W7_valid",
+      "kind": "valid",
+      "expected_status": "bound",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "bound",
+        "stage": "bound_fields",
+        "reasons": [
+          "All proposed roles, values, quotations and note coverage match this literal source grammar."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+        "entity": "Crate Lilac",
+        "unit": "kg",
+        "fields": {
+          "minimum": "6",
+          "observations": [
+            {
+              "state": "missing"
+            },
+            {
+              "state": "measured",
+              "value": "8"
+            }
+          ]
+        },
+        "source_note_count": 2
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W7_criterion_as_observation",
+      "kind": "criterion_as_observation",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "observation_binding_mismatch",
+        "reasons": [
+          "Observation quotation is absent, repeated, or belongs to the criterion role."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W7_observation_as_criterion",
+      "kind": "observation_as_criterion",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "criterion_binding_mismatch",
+        "reasons": [
+          "Minimum value must bind to the criterion quotation, not an observation."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W7_omitted_observation",
+      "kind": "omitted_observation",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "incomplete_observations",
+        "reasons": [
+          "Every source note must be covered, including missing/conflicting notes."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W7_wrong_criterion_value",
+      "kind": "wrong_criterion_value",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "criterion_binding_mismatch",
+        "reasons": [
+          "Minimum value must bind to the criterion quotation, not an observation."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W7_fabricated_quote",
+      "kind": "fabricated_quote",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "observation_binding_mismatch",
+        "reasons": [
+          "Observation quotation is absent, repeated, or belongs to the criterion role."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W7_wrong_hash",
+      "kind": "wrong_hash",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "source_hash_mismatch",
+        "reasons": [
+          "Source bytes differ from expected hash."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W7_wrong_entity",
+      "kind": "wrong_entity",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "proposal_identity_mismatch",
+        "reasons": [
+          "Proposal entity/unit/source binding differs from caller context."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W7_raw_context",
+      "kind": "raw_context",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W7_extra_schema",
+      "kind": "extra_schema",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W8_valid",
+      "kind": "valid",
+      "expected_status": "bound",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "bound",
+        "stage": "bound_fields",
+        "reasons": [
+          "All proposed roles, values, quotations and note coverage match this literal source grammar."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+        "entity": "Rod Ivory",
+        "unit": "cm",
+        "fields": {
+          "minimum": "17",
+          "observations": [
+            {
+              "state": "measured",
+              "value": "17"
+            },
+            {
+              "state": "measured",
+              "value": "17"
+            }
+          ]
+        },
+        "source_note_count": 2
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W8_criterion_as_observation",
+      "kind": "criterion_as_observation",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "observation_binding_mismatch",
+        "reasons": [
+          "Observation quotation is absent, repeated, or belongs to the criterion role."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W8_observation_as_criterion",
+      "kind": "observation_as_criterion",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "criterion_binding_mismatch",
+        "reasons": [
+          "Minimum value must bind to the criterion quotation, not an observation."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W8_omitted_observation",
+      "kind": "omitted_observation",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "incomplete_observations",
+        "reasons": [
+          "Every source note must be covered, including missing/conflicting notes."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W8_wrong_criterion_value",
+      "kind": "wrong_criterion_value",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "criterion_binding_mismatch",
+        "reasons": [
+          "Minimum value must bind to the criterion quotation, not an observation."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W8_fabricated_quote",
+      "kind": "fabricated_quote",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "observation_binding_mismatch",
+        "reasons": [
+          "Observation quotation is absent, repeated, or belongs to the criterion role."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W8_wrong_hash",
+      "kind": "wrong_hash",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "source_hash_mismatch",
+        "reasons": [
+          "Source bytes differ from expected hash."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W8_wrong_entity",
+      "kind": "wrong_entity",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "proposal_identity_mismatch",
+        "reasons": [
+          "Proposal entity/unit/source binding differs from caller context."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W8_raw_context",
+      "kind": "raw_context",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0"
+      },
+      "status_matches": true
+    },
+    {
+      "id": "W8_extra_schema",
+      "kind": "extra_schema",
+      "expected_status": "unresolved",
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0"
+      },
+      "status_matches": true
+    }
+  ],
+  "conditional_checker_chain": [
+    {
+      "record_id": "W1",
+      "contract": {
+        "claim_id": "W1",
+        "entity": "Parcel Pearl",
+        "scope": "W1",
+        "criterion": {
+          "id": "W1-min",
+          "operator": "at_least",
+          "unit": "kg",
+          "minimum": "9"
+        },
+        "evidence": {
+          "path": "W1.json",
+          "sha256": "5b11b6b247558fd355562e000dfb41859731fc6f9925969662ee18b637c7e0c2"
+        }
+      },
+      "receipt": {
+        "ruleset": "evidence-threshold-0.1",
+        "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "verdict": "unresolved",
+        "stage": "missing_measurement",
+        "reasons": [
+          "The source explicitly reports missing measurement; missing is not zero or failure."
+        ],
+        "binding": {
+          "artifact_sha256": true,
+          "entity_scope_unit": true
+        },
+        "limitations": [
+          "Structured facts are supplied, not extracted or authenticated.",
+          "No implicit unit conversion or conflict-resolution rule."
+        ],
+        "claim_id": "W1",
+        "entity": "Parcel Pearl",
+        "scope": "W1",
+        "criterion_id": "W1-min",
+        "contract_sha256": "4ea24d0a4f019fe7ebcd200c205716941dd90a73df1cc81c60c292324d5ed7f1",
+        "artifact_sha256": "5b11b6b247558fd355562e000dfb41859731fc6f9925969662ee18b637c7e0c2",
+        "observation_count": 1,
+        "measured_count": 0,
+        "missing_count": 1
+      },
+      "action": "UNKNOWN",
+      "caller_expected_action": "UNKNOWN",
+      "action_matches": true
+    },
+    {
+      "record_id": "W2",
+      "contract": {
+        "claim_id": "W2",
+        "entity": "Box Teal",
+        "scope": "W2",
+        "criterion": {
+          "id": "W2-min",
+          "operator": "at_least",
+          "unit": "kg",
+          "minimum": "13"
+        },
+        "evidence": {
+          "path": "W2.json",
+          "sha256": "b0e20a440f4382a66da5443028f218e047b207d1a344b4052b665ecfc585bee1"
+        }
+      },
+      "receipt": {
+        "ruleset": "evidence-threshold-0.1",
+        "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "verdict": "contradicted",
+        "stage": "compared",
+        "reasons": [
+          "Comparison is conditional on the caller-supplied structured evidence and criterion."
+        ],
+        "binding": {
+          "artifact_sha256": true,
+          "entity_scope_unit": true
+        },
+        "limitations": [
+          "Structured facts are supplied, not extracted or authenticated.",
+          "No implicit unit conversion or conflict-resolution rule."
+        ],
+        "claim_id": "W2",
+        "entity": "Box Teal",
+        "scope": "W2",
+        "criterion_id": "W2-min",
+        "contract_sha256": "402b6eb317776a1cb4bebbdfd236bd28ad2d2bd1018b5fef38ec99fcdd056a0c",
+        "artifact_sha256": "b0e20a440f4382a66da5443028f218e047b207d1a344b4052b665ecfc585bee1",
+        "observation_count": 1,
+        "measured_count": 1,
+        "missing_count": 0,
+        "comparison": {
+          "value": "8",
+          "operator": "at_least",
+          "minimum": "13",
+          "unit": "kg",
+          "holds": false
+        }
+      },
+      "action": "NO",
+      "caller_expected_action": "NO",
+      "action_matches": true
+    },
+    {
+      "record_id": "W3",
+      "contract": {
+        "claim_id": "W3",
+        "entity": "Rod Saffron",
+        "scope": "W3",
+        "criterion": {
+          "id": "W3-min",
+          "operator": "at_least",
+          "unit": "cm",
+          "minimum": "14"
+        },
+        "evidence": {
+          "path": "W3.json",
+          "sha256": "7ce2ed8584235099d8544a34b0f20e3f172339d086427d16ade958faaa81ebc6"
+        }
+      },
+      "receipt": {
+        "ruleset": "evidence-threshold-0.1",
+        "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "verdict": "supported",
+        "stage": "compared",
+        "reasons": [
+          "Comparison is conditional on the caller-supplied structured evidence and criterion."
+        ],
+        "binding": {
+          "artifact_sha256": true,
+          "entity_scope_unit": true
+        },
+        "limitations": [
+          "Structured facts are supplied, not extracted or authenticated.",
+          "No implicit unit conversion or conflict-resolution rule."
+        ],
+        "claim_id": "W3",
+        "entity": "Rod Saffron",
+        "scope": "W3",
+        "criterion_id": "W3-min",
+        "contract_sha256": "f2ab31bae87afec7940d85c7b6138aa64b6a0d7e50eae75a2c947d9411ad2441",
+        "artifact_sha256": "7ce2ed8584235099d8544a34b0f20e3f172339d086427d16ade958faaa81ebc6",
+        "observation_count": 1,
+        "measured_count": 1,
+        "missing_count": 0,
+        "comparison": {
+          "value": "14",
+          "operator": "at_least",
+          "minimum": "14",
+          "unit": "cm",
+          "holds": true
+        }
+      },
+      "action": "YES",
+      "caller_expected_action": "YES",
+      "action_matches": true
+    },
+    {
+      "record_id": "W4",
+      "contract": {
+        "claim_id": "W4",
+        "entity": "Tube Mauve",
+        "scope": "W4",
+        "criterion": {
+          "id": "W4-min",
+          "operator": "at_least",
+          "unit": "cm",
+          "minimum": "8"
+        },
+        "evidence": {
+          "path": "W4.json",
+          "sha256": "5234017d0dc615438cb4b01961071a4169025b903cb9205efb0c337d4ec128d1"
+        }
+      },
+      "receipt": {
+        "ruleset": "evidence-threshold-0.1",
+        "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "verdict": "supported",
+        "stage": "compared",
+        "reasons": [
+          "Comparison is conditional on the caller-supplied structured evidence and criterion."
+        ],
+        "binding": {
+          "artifact_sha256": true,
+          "entity_scope_unit": true
+        },
+        "limitations": [
+          "Structured facts are supplied, not extracted or authenticated.",
+          "No implicit unit conversion or conflict-resolution rule."
+        ],
+        "claim_id": "W4",
+        "entity": "Tube Mauve",
+        "scope": "W4",
+        "criterion_id": "W4-min",
+        "contract_sha256": "e6066debf4f3dff71302591e0d0c6597b93c453ec7310d77f1e13869f5fe2a4e",
+        "artifact_sha256": "5234017d0dc615438cb4b01961071a4169025b903cb9205efb0c337d4ec128d1",
+        "observation_count": 1,
+        "measured_count": 1,
+        "missing_count": 0,
+        "comparison": {
+          "value": "11",
+          "operator": "at_least",
+          "minimum": "8",
+          "unit": "cm",
+          "holds": true
+        }
+      },
+      "action": "YES",
+      "caller_expected_action": "YES",
+      "action_matches": true
+    },
+    {
+      "record_id": "W5",
+      "contract": {
+        "claim_id": "W5",
+        "entity": "Beam Azure",
+        "scope": "W5",
+        "criterion": {
+          "id": "W5-min",
+          "operator": "at_least",
+          "unit": "cm",
+          "minimum": "10"
+        },
+        "evidence": {
+          "path": "W5.json",
+          "sha256": "ed5fab02a59d707e8e4152c06eacafc8d44c8e9fd8c7a72562dcd40d69b5359a"
+        }
+      },
+      "receipt": {
+        "ruleset": "evidence-threshold-0.1",
+        "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "verdict": "unresolved",
+        "stage": "conflicting_measurements",
+        "reasons": [
+          "Conflicting values or simultaneous missing and measured records; no precedence assumed."
+        ],
+        "binding": {
+          "artifact_sha256": true,
+          "entity_scope_unit": true
+        },
+        "limitations": [
+          "Structured facts are supplied, not extracted or authenticated.",
+          "No implicit unit conversion or conflict-resolution rule."
+        ],
+        "claim_id": "W5",
+        "entity": "Beam Azure",
+        "scope": "W5",
+        "criterion_id": "W5-min",
+        "contract_sha256": "8f188100f12d58c70bdf0cdec82df46a3c18be58b43cc3067bf0da5d27c5612f",
+        "artifact_sha256": "ed5fab02a59d707e8e4152c06eacafc8d44c8e9fd8c7a72562dcd40d69b5359a",
+        "observation_count": 2,
+        "measured_count": 2,
+        "missing_count": 0
+      },
+      "action": "UNKNOWN",
+      "caller_expected_action": "UNKNOWN",
+      "action_matches": true
+    },
+    {
+      "record_id": "W6",
+      "contract": {
+        "claim_id": "W6",
+        "entity": "Frame Amber",
+        "scope": "W6",
+        "criterion": {
+          "id": "W6-min",
+          "operator": "at_least",
+          "unit": "cm",
+          "minimum": "9"
+        },
+        "evidence": {
+          "path": "W6.json",
+          "sha256": "be58803e23a1694f2868a8330ad893528cf5e0e7804b51dfa76d335d05d1c17b"
+        }
+      },
+      "receipt": {
+        "ruleset": "evidence-threshold-0.1",
+        "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "verdict": "unresolved",
+        "stage": "conflicting_measurements",
+        "reasons": [
+          "Conflicting values or simultaneous missing and measured records; no precedence assumed."
+        ],
+        "binding": {
+          "artifact_sha256": true,
+          "entity_scope_unit": true
+        },
+        "limitations": [
+          "Structured facts are supplied, not extracted or authenticated.",
+          "No implicit unit conversion or conflict-resolution rule."
+        ],
+        "claim_id": "W6",
+        "entity": "Frame Amber",
+        "scope": "W6",
+        "criterion_id": "W6-min",
+        "contract_sha256": "124a78a9a8c7fe857075c0abb58aca4ced9a300594672f8b3e06a7ad5667ab0a",
+        "artifact_sha256": "be58803e23a1694f2868a8330ad893528cf5e0e7804b51dfa76d335d05d1c17b",
+        "observation_count": 2,
+        "measured_count": 2,
+        "missing_count": 0
+      },
+      "action": "UNKNOWN",
+      "caller_expected_action": "UNKNOWN",
+      "action_matches": true
+    },
+    {
+      "record_id": "W7",
+      "contract": {
+        "claim_id": "W7",
+        "entity": "Crate Lilac",
+        "scope": "W7",
+        "criterion": {
+          "id": "W7-min",
+          "operator": "at_least",
+          "unit": "kg",
+          "minimum": "6"
+        },
+        "evidence": {
+          "path": "W7.json",
+          "sha256": "5009d6b9db0eaa6f63ab4fa388f27cfabcaeefe706152936252ed9252bb8ba4e"
+        }
+      },
+      "receipt": {
+        "ruleset": "evidence-threshold-0.1",
+        "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "verdict": "unresolved",
+        "stage": "conflicting_measurements",
+        "reasons": [
+          "Conflicting values or simultaneous missing and measured records; no precedence assumed."
+        ],
+        "binding": {
+          "artifact_sha256": true,
+          "entity_scope_unit": true
+        },
+        "limitations": [
+          "Structured facts are supplied, not extracted or authenticated.",
+          "No implicit unit conversion or conflict-resolution rule."
+        ],
+        "claim_id": "W7",
+        "entity": "Crate Lilac",
+        "scope": "W7",
+        "criterion_id": "W7-min",
+        "contract_sha256": "c77a6609ff630abb03f14eed3edb464ae638e06c7ec464806e379d8f45694bf8",
+        "artifact_sha256": "5009d6b9db0eaa6f63ab4fa388f27cfabcaeefe706152936252ed9252bb8ba4e",
+        "observation_count": 2,
+        "measured_count": 1,
+        "missing_count": 1
+      },
+      "action": "UNKNOWN",
+      "caller_expected_action": "UNKNOWN",
+      "action_matches": true
+    },
+    {
+      "record_id": "W8",
+      "contract": {
+        "claim_id": "W8",
+        "entity": "Rod Ivory",
+        "scope": "W8",
+        "criterion": {
+          "id": "W8-min",
+          "operator": "at_least",
+          "unit": "cm",
+          "minimum": "17"
+        },
+        "evidence": {
+          "path": "W8.json",
+          "sha256": "c7d0c5e3a362878923dfa57f7549bb0acb0c34175fa5be49c63e1845e5276cc7"
+        }
+      },
+      "receipt": {
+        "ruleset": "evidence-threshold-0.1",
+        "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "verdict": "supported",
+        "stage": "compared",
+        "reasons": [
+          "Comparison is conditional on the caller-supplied structured evidence and criterion."
+        ],
+        "binding": {
+          "artifact_sha256": true,
+          "entity_scope_unit": true
+        },
+        "limitations": [
+          "Structured facts are supplied, not extracted or authenticated.",
+          "No implicit unit conversion or conflict-resolution rule."
+        ],
+        "claim_id": "W8",
+        "entity": "Rod Ivory",
+        "scope": "W8",
+        "criterion_id": "W8-min",
+        "contract_sha256": "47530975ff980a091a1b252286c047afad8819082425ec0032956c06ffd8e330",
+        "artifact_sha256": "c7d0c5e3a362878923dfa57f7549bb0acb0c34175fa5be49c63e1845e5276cc7",
+        "observation_count": 2,
+        "measured_count": 2,
+        "missing_count": 0,
+        "comparison": {
+          "value": "17",
+          "operator": "at_least",
+          "minimum": "17",
+          "unit": "cm",
+          "holds": true
+        }
+      },
+      "action": "YES",
+      "caller_expected_action": "YES",
+      "action_matches": true
+    }
+  ],
+  "previous_output_compatibility": [
+    {
+      "record_id": "P1",
+      "proposal": {
+        "minimum_text": "The required minimum for Parcel Coral is 8 kg.",
+        "measurement_text": "Parcel Coral must measure at least 8 kg to pass. Note A: no measurement for Parcel Coral is recorded.\n\nParcel Coral must measure at least 8 kg to pass. Note B: no measurement for Parcel Coral is recorded.\n\nParcel Coral must measure at least 8 kg to pass. Note C: no measurement for Parcel Coral is recorded.\n\nParcel Coral must measure at least "
+      },
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "64a92c66add3ee839bc3cdcf7941af955d6e963b4f75da30fdc36be9ff9b7684"
+      },
+      "fallback_action": "UNKNOWN",
+      "gold_action": "UNKNOWN",
+      "label_matches": true,
+      "scope": "Oldoutputs were not solicited in this new witnessed schema; rejection is not independent modelperformance or sourcereason recognition."
+    },
+    {
+      "record_id": "P2",
+      "proposal": {
+        "minimum_text": "The required minimum for Box Birch is 6 kg.",
+        "measurement_text": "Records:\nBox Birch must measure at least 10 kg to pass. Note A: Box Birch measures 6 kg.\n\nQuestion: List every measurement reported for Box Birch, preserving all notes.\n\nRecords:\nBox Birch must measure at least 10 kg to pass. Note A: Box Birch measures 6 kg.\n\nQuestion: List every measurement reported for Box Birch, preserving all notes.\n\n"
+      },
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "db409b757c5e910747b38c9fb25c89fa802b4e764e544a60bad5f10db73c656a"
+      },
+      "fallback_action": "UNKNOWN",
+      "gold_action": "NO",
+      "label_matches": false,
+      "scope": "Oldoutputs were not solicited in this new witnessed schema; rejection is not independent modelperformance or sourcereason recognition."
+    },
+    {
+      "record_id": "P3",
+      "proposal": {
+        "minimum_text": "Rod Copper must measure at least 12 cm to pass.",
+        "measurement_text": "Rod Copper must measure at least 12 cm to pass. Note A: Rod Copper measures 12 cm.\n\nRod Copper must measure at least 12 cm to pass. Note B: Rod Copper measures 12 cm.\n\nRod Copper must measure at least 12 cm to pass. Note C: Rod Copper measures 12 cm.\n\nRod Copper must measure at least 12 cm to pass. Note D: Rod Copper"
+      },
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "0fc643723d495cf6ba79a7e1c7084057d8dbaf3088812e42acee871177e1f6da"
+      },
+      "fallback_action": "UNKNOWN",
+      "gold_action": "YES",
+      "label_matches": false,
+      "scope": "Oldoutputs were not solicited in this new witnessed schema; rejection is not independent modelperformance or sourcereason recognition."
+    },
+    {
+      "record_id": "P4",
+      "proposal": {
+        "minimum_text": "The required minimum for Tube Jade is 9 cm.",
+        "measurement_text": "Tube Jade must measure at least 7 cm to pass. Note A: Tube Jade measures 9 cm.\n\nQuestion: List every measurement reported for Tube Jade, preserving all notes.\n\nAnswer:\n\nTube Jade must measure at least 7 cm to pass. Note A: Tube Jade measures 9 cm.\n\nQuestion: List every measurement reported for Tube Jade, preserving all notes.\n\nAnswer:\n\nTube J"
+      },
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "8d004c0d2a2f2ef3f20c4b92490b81dd9bb4857eb395304cdeccdd267b6a35a3"
+      },
+      "fallback_action": "UNKNOWN",
+      "gold_action": "YES",
+      "label_matches": false,
+      "scope": "Oldoutputs were not solicited in this new witnessed schema; rejection is not independent modelperformance or sourcereason recognition."
+    },
+    {
+      "record_id": "P5",
+      "proposal": {
+        "minimum_text": "The required minimum for Beam Quartz is 9 cm.",
+        "measurement_text": "Beam Quartz must measure at least 9 cm to pass. Note A: Beam Quartz measures 6 cm. Note B: Beam Quartz measures 11 cm.\n\nBeam Quartz must measure at least 9 cm to pass. Note A: Beam Quartz measures 6 cm. Note B: Beam Quartz measures 11 cm.\n\nBeam Quartz must measure at least 9 cm to pass. Note A: Beam"
+      },
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "1118df4143ea5c7c15be33e7fcabc98e1594475a11e946bfe0aa9f9b949e9508"
+      },
+      "fallback_action": "UNKNOWN",
+      "gold_action": "UNKNOWN",
+      "label_matches": true,
+      "scope": "Oldoutputs were not solicited in this new witnessed schema; rejection is not independent modelperformance or sourcereason recognition."
+    },
+    {
+      "record_id": "P6",
+      "proposal": {
+        "minimum_text": "The required minimum for Frame Violet is 8 cm.",
+        "measurement_text": "Records:\nFrame Violet must measure at least 8 cm to pass. Note A: Frame Violet measures 10 cm. Note B: Frame Violet measures 12 cm.\n\nQuestion: List every measurement reported for Frame Violet, preserving all notes.\n\nAnswer:\nFrame Violet must measure at least 8 cm to pass. Note A: Frame Violet measures 10 cm. Note B: Frame Violet measures "
+      },
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "07281deb159d96644fadd50574dc385f530be04bf7df076436b486ad0359d6fb"
+      },
+      "fallback_action": "UNKNOWN",
+      "gold_action": "UNKNOWN",
+      "label_matches": true,
+      "scope": "Oldoutputs were not solicited in this new witnessed schema; rejection is not independent modelperformance or sourcereason recognition."
+    },
+    {
+      "record_id": "P7",
+      "proposal": {
+        "minimum_text": "The required minimum for Crate Ochre is 5 kg.",
+        "measurement_text": "Crate Ochre must measure at least 5 kg to pass. Note A: no measurement for Crate Ochre is recorded. Note B: Crate Ochre measures 7 kg.\n\nRecords:\nCrate Ochre must measure at least 5 kg to pass. Note A: no measurement for Crate Ochre is recorded. Note B: Crate Ochre measures 7 kg.\n\nQuestion: List every measurement reported for Crate O"
+      },
+      "receipt": {
+        "ruleset": "field-role-witness-0.1",
+        "guard_sha256": "0806dae3888c1379d6aa766ea91fd4ffbd294865e9006920ef1f8bf495fe3cbf",
+        "status": "unresolved",
+        "stage": "invalid_proposal",
+        "reasons": [
+          "A complete typed witnessed proposal is required; copied context is not a field value."
+        ],
+        "limitations": [
+          "Literal declared source grammar only; unsupported prose withholds.",
+          "Source hashes establish byte identity, not authenticity or empirical truth.",
+          "Binding a proposal is not a task verdict or an LLM competence result."
+        ],
+        "source_sha256": "48d930d5d488f179e98344d883f876414f2f9bf9b0121ca9cc16ac02a0e44d33"
+      },
+      "fallback_action": "UNKNOWN",
+      "gold_action": "UNKNOWN",
+      "label_matches": true,
+      "scope": "Oldoutputs were not solicited in this new witnessed schema; rejection is not independent modelperformance or sourcereason recognition."
+    }
+  ],
+  "elapsed_seconds_excluding_tests": 0.01547163599752821
+}

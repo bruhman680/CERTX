@@ -38,3 +38,18 @@ CD-C1 separately evaluates saved model extractions, comparisons and a retrospect
 [TP-C1](../evaluation/typed-pipeline-prospective-v1/REPORT.md) tested a fixed model-extraction-plus-comparison pipeline on fresh authored records. Its permissive surface parser treated requirement numbers in repeated source paragraphs as measurements, and lost natural-language absence without a literal MISSING marker. Correct arithmetic then produced misleading conflict/UNKNOWN receipts. Some copied text still retained the actual source fields with intelligible roles; number harvesting discarded those roles.
 
 Do not construct measurement observations from every number occurring in a generated paragraph. Preserve an explicit mapping from the requested field to its applicable source claim. Parser acceptance, a correct label and a source-grounded reason are separate. Reject or flag an unvalidated binding rather than relabeling infrastructure withholding as detected source uncertainty. This is guidance from a scoped failure, not a proven general repair. The experimental parser was not installed as the helper's default input adapter; the helper still requires explicitly structured evidence. The preceding example bytes are preserved in the study's [archive receipt](../evaluation/typed-pipeline-prospective-v1/ARCHIVE_RECEIPT.json).
+
+
+## Optional witnessed fields for the declared literal grammar
+
+[FW-C1](../evaluation/field-role-witness-v1/REPORT.md) provides [field_role_guard.py](../tools/field_role_guard.py). Its proposal names the source hash/entity/unit, one minimum value with its exact criterion quotation, and every observation state/value with its exact Note quotation. The complete source must match the supported unsigned-integer cm/kg record grammar; extra unsupported clauses or repeated note IDs withhold. All source notes must be represented, including absence and conflict. A hash identifies words, not their truth in the world.
+
+From a CERTX checkout:
+
+```bash
+python FRR/tools/field_role_guard.py FRR/evaluation/field-role-witness-v1/example/proposal.json --source FRR/evaluation/field-role-witness-v1/sources/W3.txt --sha256 b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b --entity 'Rod Saffron' --unit cm
+```
+
+The source hash and metadata are recorded in [example context](../evaluation/field-role-witness-v1/example/context.json). A bound receipt exposes fields; it does not decide the task. The study chains caller-authored valid fields into the unchanged exact comparator. No language model generated these witnessed proposals. Existing raw outputs are rejected rather than coerced; their compatibility coverage is zero, so this is not evidence of model improvement.
+
+Equal numeric values do not excuse role swaps: quoting the minimum as the measurement fails even at equality. Omitted conflicting notes, fabricated quotations, wrong source versions and extra proposal fields also fail. Other source formats require a separately specified and tested interpretation method; do not silently broaden this guard into an arbitrary-language truth checker.

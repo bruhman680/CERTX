@@ -1,0 +1,1851 @@
+[
+  {
+    "id": "W1_valid",
+    "record_id": "W1",
+    "kind": "valid",
+    "proposal": {
+      "entity": "Parcel Pearl",
+      "unit": "kg",
+      "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+      "minimum": {
+        "value": "9",
+        "quote": "Parcel Pearl must measure at least 9 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "missing",
+          "quote": "Note A: no measurement for Parcel Pearl is recorded."
+        }
+      ]
+    },
+    "expected_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+    "expected_status": "bound"
+  },
+  {
+    "id": "W1_criterion_as_observation",
+    "record_id": "W1",
+    "kind": "criterion_as_observation",
+    "proposal": {
+      "entity": "Parcel Pearl",
+      "unit": "kg",
+      "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+      "minimum": {
+        "value": "9",
+        "quote": "Parcel Pearl must measure at least 9 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "9",
+          "quote": "Parcel Pearl must measure at least 9 kg to pass."
+        }
+      ]
+    },
+    "expected_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W1_observation_as_criterion",
+    "record_id": "W1",
+    "kind": "observation_as_criterion",
+    "proposal": {
+      "entity": "Parcel Pearl",
+      "unit": "kg",
+      "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+      "minimum": {
+        "value": "0",
+        "quote": "Note A: no measurement for Parcel Pearl is recorded."
+      },
+      "observations": [
+        {
+          "state": "missing",
+          "quote": "Note A: no measurement for Parcel Pearl is recorded."
+        }
+      ]
+    },
+    "expected_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W1_omitted_observation",
+    "record_id": "W1",
+    "kind": "omitted_observation",
+    "proposal": {
+      "entity": "Parcel Pearl",
+      "unit": "kg",
+      "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+      "minimum": {
+        "value": "9",
+        "quote": "Parcel Pearl must measure at least 9 kg to pass."
+      },
+      "observations": []
+    },
+    "expected_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W1_wrong_criterion_value",
+    "record_id": "W1",
+    "kind": "wrong_criterion_value",
+    "proposal": {
+      "entity": "Parcel Pearl",
+      "unit": "kg",
+      "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+      "minimum": {
+        "value": "10",
+        "quote": "Parcel Pearl must measure at least 9 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "missing",
+          "quote": "Note A: no measurement for Parcel Pearl is recorded."
+        }
+      ]
+    },
+    "expected_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W1_fabricated_quote",
+    "record_id": "W1",
+    "kind": "fabricated_quote",
+    "proposal": {
+      "entity": "Parcel Pearl",
+      "unit": "kg",
+      "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+      "minimum": {
+        "value": "9",
+        "quote": "Parcel Pearl must measure at least 9 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "missing",
+          "quote": "Note Z: no measurement for Parcel Pearl is recorded."
+        }
+      ]
+    },
+    "expected_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W1_wrong_hash",
+    "record_id": "W1",
+    "kind": "wrong_hash",
+    "proposal": {
+      "entity": "Parcel Pearl",
+      "unit": "kg",
+      "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+      "minimum": {
+        "value": "9",
+        "quote": "Parcel Pearl must measure at least 9 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "missing",
+          "quote": "Note A: no measurement for Parcel Pearl is recorded."
+        }
+      ]
+    },
+    "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W1_wrong_entity",
+    "record_id": "W1",
+    "kind": "wrong_entity",
+    "proposal": {
+      "entity": "Another Target",
+      "unit": "kg",
+      "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+      "minimum": {
+        "value": "9",
+        "quote": "Parcel Pearl must measure at least 9 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "missing",
+          "quote": "Note A: no measurement for Parcel Pearl is recorded."
+        }
+      ]
+    },
+    "expected_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W1_raw_context",
+    "record_id": "W1",
+    "kind": "raw_context",
+    "proposal": "Parcel Pearl must measure at least 9 kg to pass. Note A: no measurement for Parcel Pearl is recorded.",
+    "expected_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W1_extra_schema",
+    "record_id": "W1",
+    "kind": "extra_schema",
+    "proposal": {
+      "entity": "Parcel Pearl",
+      "unit": "kg",
+      "source_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+      "minimum": {
+        "value": "9",
+        "quote": "Parcel Pearl must measure at least 9 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "missing",
+          "quote": "Note A: no measurement for Parcel Pearl is recorded."
+        }
+      ],
+      "guess": "accept me"
+    },
+    "expected_sha256": "64bed3edf884f81711edd4543dd0feadc299251de8f950d3735e20dc927938d8",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W2_valid",
+    "record_id": "W2",
+    "kind": "valid",
+    "proposal": {
+      "entity": "Box Teal",
+      "unit": "kg",
+      "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+      "minimum": {
+        "value": "13",
+        "quote": "Box Teal must measure at least 13 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "8",
+          "quote": "Note A: Box Teal measures 8 kg."
+        }
+      ]
+    },
+    "expected_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+    "expected_status": "bound"
+  },
+  {
+    "id": "W2_criterion_as_observation",
+    "record_id": "W2",
+    "kind": "criterion_as_observation",
+    "proposal": {
+      "entity": "Box Teal",
+      "unit": "kg",
+      "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+      "minimum": {
+        "value": "13",
+        "quote": "Box Teal must measure at least 13 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "13",
+          "quote": "Box Teal must measure at least 13 kg to pass."
+        }
+      ]
+    },
+    "expected_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W2_observation_as_criterion",
+    "record_id": "W2",
+    "kind": "observation_as_criterion",
+    "proposal": {
+      "entity": "Box Teal",
+      "unit": "kg",
+      "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+      "minimum": {
+        "value": "8",
+        "quote": "Note A: Box Teal measures 8 kg."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "8",
+          "quote": "Note A: Box Teal measures 8 kg."
+        }
+      ]
+    },
+    "expected_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W2_omitted_observation",
+    "record_id": "W2",
+    "kind": "omitted_observation",
+    "proposal": {
+      "entity": "Box Teal",
+      "unit": "kg",
+      "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+      "minimum": {
+        "value": "13",
+        "quote": "Box Teal must measure at least 13 kg to pass."
+      },
+      "observations": []
+    },
+    "expected_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W2_wrong_criterion_value",
+    "record_id": "W2",
+    "kind": "wrong_criterion_value",
+    "proposal": {
+      "entity": "Box Teal",
+      "unit": "kg",
+      "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+      "minimum": {
+        "value": "14",
+        "quote": "Box Teal must measure at least 13 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "8",
+          "quote": "Note A: Box Teal measures 8 kg."
+        }
+      ]
+    },
+    "expected_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W2_fabricated_quote",
+    "record_id": "W2",
+    "kind": "fabricated_quote",
+    "proposal": {
+      "entity": "Box Teal",
+      "unit": "kg",
+      "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+      "minimum": {
+        "value": "13",
+        "quote": "Box Teal must measure at least 13 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "8",
+          "quote": "Note Z: Box Teal measures 8 kg."
+        }
+      ]
+    },
+    "expected_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W2_wrong_hash",
+    "record_id": "W2",
+    "kind": "wrong_hash",
+    "proposal": {
+      "entity": "Box Teal",
+      "unit": "kg",
+      "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+      "minimum": {
+        "value": "13",
+        "quote": "Box Teal must measure at least 13 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "8",
+          "quote": "Note A: Box Teal measures 8 kg."
+        }
+      ]
+    },
+    "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W2_wrong_entity",
+    "record_id": "W2",
+    "kind": "wrong_entity",
+    "proposal": {
+      "entity": "Another Target",
+      "unit": "kg",
+      "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+      "minimum": {
+        "value": "13",
+        "quote": "Box Teal must measure at least 13 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "8",
+          "quote": "Note A: Box Teal measures 8 kg."
+        }
+      ]
+    },
+    "expected_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W2_raw_context",
+    "record_id": "W2",
+    "kind": "raw_context",
+    "proposal": "Box Teal must measure at least 13 kg to pass. Note A: Box Teal measures 8 kg.",
+    "expected_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W2_extra_schema",
+    "record_id": "W2",
+    "kind": "extra_schema",
+    "proposal": {
+      "entity": "Box Teal",
+      "unit": "kg",
+      "source_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+      "minimum": {
+        "value": "13",
+        "quote": "Box Teal must measure at least 13 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "8",
+          "quote": "Note A: Box Teal measures 8 kg."
+        }
+      ],
+      "guess": "accept me"
+    },
+    "expected_sha256": "eae5b719ceefc3932208888b2c530629b943618f7adfb0789ed54e1cde770daa",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W3_valid",
+    "record_id": "W3",
+    "kind": "valid",
+    "proposal": {
+      "entity": "Rod Saffron",
+      "unit": "cm",
+      "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+      "minimum": {
+        "value": "14",
+        "quote": "Rod Saffron must measure at least 14 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "14",
+          "quote": "Note A: Rod Saffron measures 14 cm."
+        }
+      ]
+    },
+    "expected_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+    "expected_status": "bound"
+  },
+  {
+    "id": "W3_criterion_as_observation",
+    "record_id": "W3",
+    "kind": "criterion_as_observation",
+    "proposal": {
+      "entity": "Rod Saffron",
+      "unit": "cm",
+      "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+      "minimum": {
+        "value": "14",
+        "quote": "Rod Saffron must measure at least 14 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "14",
+          "quote": "Rod Saffron must measure at least 14 cm to pass."
+        }
+      ]
+    },
+    "expected_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W3_observation_as_criterion",
+    "record_id": "W3",
+    "kind": "observation_as_criterion",
+    "proposal": {
+      "entity": "Rod Saffron",
+      "unit": "cm",
+      "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+      "minimum": {
+        "value": "14",
+        "quote": "Note A: Rod Saffron measures 14 cm."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "14",
+          "quote": "Note A: Rod Saffron measures 14 cm."
+        }
+      ]
+    },
+    "expected_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W3_omitted_observation",
+    "record_id": "W3",
+    "kind": "omitted_observation",
+    "proposal": {
+      "entity": "Rod Saffron",
+      "unit": "cm",
+      "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+      "minimum": {
+        "value": "14",
+        "quote": "Rod Saffron must measure at least 14 cm to pass."
+      },
+      "observations": []
+    },
+    "expected_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W3_wrong_criterion_value",
+    "record_id": "W3",
+    "kind": "wrong_criterion_value",
+    "proposal": {
+      "entity": "Rod Saffron",
+      "unit": "cm",
+      "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+      "minimum": {
+        "value": "15",
+        "quote": "Rod Saffron must measure at least 14 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "14",
+          "quote": "Note A: Rod Saffron measures 14 cm."
+        }
+      ]
+    },
+    "expected_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W3_fabricated_quote",
+    "record_id": "W3",
+    "kind": "fabricated_quote",
+    "proposal": {
+      "entity": "Rod Saffron",
+      "unit": "cm",
+      "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+      "minimum": {
+        "value": "14",
+        "quote": "Rod Saffron must measure at least 14 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "14",
+          "quote": "Note Z: Rod Saffron measures 14 cm."
+        }
+      ]
+    },
+    "expected_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W3_wrong_hash",
+    "record_id": "W3",
+    "kind": "wrong_hash",
+    "proposal": {
+      "entity": "Rod Saffron",
+      "unit": "cm",
+      "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+      "minimum": {
+        "value": "14",
+        "quote": "Rod Saffron must measure at least 14 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "14",
+          "quote": "Note A: Rod Saffron measures 14 cm."
+        }
+      ]
+    },
+    "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W3_wrong_entity",
+    "record_id": "W3",
+    "kind": "wrong_entity",
+    "proposal": {
+      "entity": "Another Target",
+      "unit": "cm",
+      "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+      "minimum": {
+        "value": "14",
+        "quote": "Rod Saffron must measure at least 14 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "14",
+          "quote": "Note A: Rod Saffron measures 14 cm."
+        }
+      ]
+    },
+    "expected_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W3_raw_context",
+    "record_id": "W3",
+    "kind": "raw_context",
+    "proposal": "Rod Saffron must measure at least 14 cm to pass. Note A: Rod Saffron measures 14 cm.",
+    "expected_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W3_extra_schema",
+    "record_id": "W3",
+    "kind": "extra_schema",
+    "proposal": {
+      "entity": "Rod Saffron",
+      "unit": "cm",
+      "source_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+      "minimum": {
+        "value": "14",
+        "quote": "Rod Saffron must measure at least 14 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "14",
+          "quote": "Note A: Rod Saffron measures 14 cm."
+        }
+      ],
+      "guess": "accept me"
+    },
+    "expected_sha256": "b0c214bc8dfbb9a787c5682f4b26b87e7b79b0ba0ba760f425d5dab97716012b",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W4_valid",
+    "record_id": "W4",
+    "kind": "valid",
+    "proposal": {
+      "entity": "Tube Mauve",
+      "unit": "cm",
+      "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+      "minimum": {
+        "value": "8",
+        "quote": "Tube Mauve must measure at least 8 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "11",
+          "quote": "Note A: Tube Mauve measures 11 cm."
+        }
+      ]
+    },
+    "expected_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+    "expected_status": "bound"
+  },
+  {
+    "id": "W4_criterion_as_observation",
+    "record_id": "W4",
+    "kind": "criterion_as_observation",
+    "proposal": {
+      "entity": "Tube Mauve",
+      "unit": "cm",
+      "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+      "minimum": {
+        "value": "8",
+        "quote": "Tube Mauve must measure at least 8 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "8",
+          "quote": "Tube Mauve must measure at least 8 cm to pass."
+        }
+      ]
+    },
+    "expected_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W4_observation_as_criterion",
+    "record_id": "W4",
+    "kind": "observation_as_criterion",
+    "proposal": {
+      "entity": "Tube Mauve",
+      "unit": "cm",
+      "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+      "minimum": {
+        "value": "11",
+        "quote": "Note A: Tube Mauve measures 11 cm."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "11",
+          "quote": "Note A: Tube Mauve measures 11 cm."
+        }
+      ]
+    },
+    "expected_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W4_omitted_observation",
+    "record_id": "W4",
+    "kind": "omitted_observation",
+    "proposal": {
+      "entity": "Tube Mauve",
+      "unit": "cm",
+      "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+      "minimum": {
+        "value": "8",
+        "quote": "Tube Mauve must measure at least 8 cm to pass."
+      },
+      "observations": []
+    },
+    "expected_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W4_wrong_criterion_value",
+    "record_id": "W4",
+    "kind": "wrong_criterion_value",
+    "proposal": {
+      "entity": "Tube Mauve",
+      "unit": "cm",
+      "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+      "minimum": {
+        "value": "9",
+        "quote": "Tube Mauve must measure at least 8 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "11",
+          "quote": "Note A: Tube Mauve measures 11 cm."
+        }
+      ]
+    },
+    "expected_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W4_fabricated_quote",
+    "record_id": "W4",
+    "kind": "fabricated_quote",
+    "proposal": {
+      "entity": "Tube Mauve",
+      "unit": "cm",
+      "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+      "minimum": {
+        "value": "8",
+        "quote": "Tube Mauve must measure at least 8 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "11",
+          "quote": "Note Z: Tube Mauve measures 11 cm."
+        }
+      ]
+    },
+    "expected_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W4_wrong_hash",
+    "record_id": "W4",
+    "kind": "wrong_hash",
+    "proposal": {
+      "entity": "Tube Mauve",
+      "unit": "cm",
+      "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+      "minimum": {
+        "value": "8",
+        "quote": "Tube Mauve must measure at least 8 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "11",
+          "quote": "Note A: Tube Mauve measures 11 cm."
+        }
+      ]
+    },
+    "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W4_wrong_entity",
+    "record_id": "W4",
+    "kind": "wrong_entity",
+    "proposal": {
+      "entity": "Another Target",
+      "unit": "cm",
+      "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+      "minimum": {
+        "value": "8",
+        "quote": "Tube Mauve must measure at least 8 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "11",
+          "quote": "Note A: Tube Mauve measures 11 cm."
+        }
+      ]
+    },
+    "expected_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W4_raw_context",
+    "record_id": "W4",
+    "kind": "raw_context",
+    "proposal": "Tube Mauve must measure at least 8 cm to pass. Note A: Tube Mauve measures 11 cm.",
+    "expected_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W4_extra_schema",
+    "record_id": "W4",
+    "kind": "extra_schema",
+    "proposal": {
+      "entity": "Tube Mauve",
+      "unit": "cm",
+      "source_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+      "minimum": {
+        "value": "8",
+        "quote": "Tube Mauve must measure at least 8 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "11",
+          "quote": "Note A: Tube Mauve measures 11 cm."
+        }
+      ],
+      "guess": "accept me"
+    },
+    "expected_sha256": "1fc802866cab6dcdbbc72de8c76fb306e46ff67ebd9fd928f940d3a1261aa58c",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W5_valid",
+    "record_id": "W5",
+    "kind": "valid",
+    "proposal": {
+      "entity": "Beam Azure",
+      "unit": "cm",
+      "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+      "minimum": {
+        "value": "10",
+        "quote": "Beam Azure must measure at least 10 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "7",
+          "quote": "Note A: Beam Azure measures 7 cm."
+        },
+        {
+          "state": "measured",
+          "value": "13",
+          "quote": "Note B: Beam Azure measures 13 cm."
+        }
+      ]
+    },
+    "expected_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+    "expected_status": "bound"
+  },
+  {
+    "id": "W5_criterion_as_observation",
+    "record_id": "W5",
+    "kind": "criterion_as_observation",
+    "proposal": {
+      "entity": "Beam Azure",
+      "unit": "cm",
+      "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+      "minimum": {
+        "value": "10",
+        "quote": "Beam Azure must measure at least 10 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "10",
+          "quote": "Beam Azure must measure at least 10 cm to pass."
+        },
+        {
+          "state": "measured",
+          "value": "13",
+          "quote": "Note B: Beam Azure measures 13 cm."
+        }
+      ]
+    },
+    "expected_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W5_observation_as_criterion",
+    "record_id": "W5",
+    "kind": "observation_as_criterion",
+    "proposal": {
+      "entity": "Beam Azure",
+      "unit": "cm",
+      "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+      "minimum": {
+        "value": "7",
+        "quote": "Note A: Beam Azure measures 7 cm."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "7",
+          "quote": "Note A: Beam Azure measures 7 cm."
+        },
+        {
+          "state": "measured",
+          "value": "13",
+          "quote": "Note B: Beam Azure measures 13 cm."
+        }
+      ]
+    },
+    "expected_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W5_omitted_observation",
+    "record_id": "W5",
+    "kind": "omitted_observation",
+    "proposal": {
+      "entity": "Beam Azure",
+      "unit": "cm",
+      "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+      "minimum": {
+        "value": "10",
+        "quote": "Beam Azure must measure at least 10 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "7",
+          "quote": "Note A: Beam Azure measures 7 cm."
+        }
+      ]
+    },
+    "expected_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W5_wrong_criterion_value",
+    "record_id": "W5",
+    "kind": "wrong_criterion_value",
+    "proposal": {
+      "entity": "Beam Azure",
+      "unit": "cm",
+      "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+      "minimum": {
+        "value": "11",
+        "quote": "Beam Azure must measure at least 10 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "7",
+          "quote": "Note A: Beam Azure measures 7 cm."
+        },
+        {
+          "state": "measured",
+          "value": "13",
+          "quote": "Note B: Beam Azure measures 13 cm."
+        }
+      ]
+    },
+    "expected_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W5_fabricated_quote",
+    "record_id": "W5",
+    "kind": "fabricated_quote",
+    "proposal": {
+      "entity": "Beam Azure",
+      "unit": "cm",
+      "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+      "minimum": {
+        "value": "10",
+        "quote": "Beam Azure must measure at least 10 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "7",
+          "quote": "Note Z: Beam Azure measures 7 cm."
+        },
+        {
+          "state": "measured",
+          "value": "13",
+          "quote": "Note B: Beam Azure measures 13 cm."
+        }
+      ]
+    },
+    "expected_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W5_wrong_hash",
+    "record_id": "W5",
+    "kind": "wrong_hash",
+    "proposal": {
+      "entity": "Beam Azure",
+      "unit": "cm",
+      "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+      "minimum": {
+        "value": "10",
+        "quote": "Beam Azure must measure at least 10 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "7",
+          "quote": "Note A: Beam Azure measures 7 cm."
+        },
+        {
+          "state": "measured",
+          "value": "13",
+          "quote": "Note B: Beam Azure measures 13 cm."
+        }
+      ]
+    },
+    "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W5_wrong_entity",
+    "record_id": "W5",
+    "kind": "wrong_entity",
+    "proposal": {
+      "entity": "Another Target",
+      "unit": "cm",
+      "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+      "minimum": {
+        "value": "10",
+        "quote": "Beam Azure must measure at least 10 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "7",
+          "quote": "Note A: Beam Azure measures 7 cm."
+        },
+        {
+          "state": "measured",
+          "value": "13",
+          "quote": "Note B: Beam Azure measures 13 cm."
+        }
+      ]
+    },
+    "expected_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W5_raw_context",
+    "record_id": "W5",
+    "kind": "raw_context",
+    "proposal": "Beam Azure must measure at least 10 cm to pass. Note A: Beam Azure measures 7 cm. Note B: Beam Azure measures 13 cm.",
+    "expected_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W5_extra_schema",
+    "record_id": "W5",
+    "kind": "extra_schema",
+    "proposal": {
+      "entity": "Beam Azure",
+      "unit": "cm",
+      "source_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+      "minimum": {
+        "value": "10",
+        "quote": "Beam Azure must measure at least 10 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "7",
+          "quote": "Note A: Beam Azure measures 7 cm."
+        },
+        {
+          "state": "measured",
+          "value": "13",
+          "quote": "Note B: Beam Azure measures 13 cm."
+        }
+      ],
+      "guess": "accept me"
+    },
+    "expected_sha256": "7f6574ef29b130c0c6bd1870ac28898be859785cd1ba7ac3cfc332c1893863c7",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W6_valid",
+    "record_id": "W6",
+    "kind": "valid",
+    "proposal": {
+      "entity": "Frame Amber",
+      "unit": "cm",
+      "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+      "minimum": {
+        "value": "9",
+        "quote": "Frame Amber must measure at least 9 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "12",
+          "quote": "Note A: Frame Amber measures 12 cm."
+        },
+        {
+          "state": "measured",
+          "value": "15",
+          "quote": "Note B: Frame Amber measures 15 cm."
+        }
+      ]
+    },
+    "expected_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+    "expected_status": "bound"
+  },
+  {
+    "id": "W6_criterion_as_observation",
+    "record_id": "W6",
+    "kind": "criterion_as_observation",
+    "proposal": {
+      "entity": "Frame Amber",
+      "unit": "cm",
+      "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+      "minimum": {
+        "value": "9",
+        "quote": "Frame Amber must measure at least 9 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "9",
+          "quote": "Frame Amber must measure at least 9 cm to pass."
+        },
+        {
+          "state": "measured",
+          "value": "15",
+          "quote": "Note B: Frame Amber measures 15 cm."
+        }
+      ]
+    },
+    "expected_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W6_observation_as_criterion",
+    "record_id": "W6",
+    "kind": "observation_as_criterion",
+    "proposal": {
+      "entity": "Frame Amber",
+      "unit": "cm",
+      "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+      "minimum": {
+        "value": "12",
+        "quote": "Note A: Frame Amber measures 12 cm."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "12",
+          "quote": "Note A: Frame Amber measures 12 cm."
+        },
+        {
+          "state": "measured",
+          "value": "15",
+          "quote": "Note B: Frame Amber measures 15 cm."
+        }
+      ]
+    },
+    "expected_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W6_omitted_observation",
+    "record_id": "W6",
+    "kind": "omitted_observation",
+    "proposal": {
+      "entity": "Frame Amber",
+      "unit": "cm",
+      "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+      "minimum": {
+        "value": "9",
+        "quote": "Frame Amber must measure at least 9 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "12",
+          "quote": "Note A: Frame Amber measures 12 cm."
+        }
+      ]
+    },
+    "expected_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W6_wrong_criterion_value",
+    "record_id": "W6",
+    "kind": "wrong_criterion_value",
+    "proposal": {
+      "entity": "Frame Amber",
+      "unit": "cm",
+      "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+      "minimum": {
+        "value": "10",
+        "quote": "Frame Amber must measure at least 9 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "12",
+          "quote": "Note A: Frame Amber measures 12 cm."
+        },
+        {
+          "state": "measured",
+          "value": "15",
+          "quote": "Note B: Frame Amber measures 15 cm."
+        }
+      ]
+    },
+    "expected_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W6_fabricated_quote",
+    "record_id": "W6",
+    "kind": "fabricated_quote",
+    "proposal": {
+      "entity": "Frame Amber",
+      "unit": "cm",
+      "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+      "minimum": {
+        "value": "9",
+        "quote": "Frame Amber must measure at least 9 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "12",
+          "quote": "Note Z: Frame Amber measures 12 cm."
+        },
+        {
+          "state": "measured",
+          "value": "15",
+          "quote": "Note B: Frame Amber measures 15 cm."
+        }
+      ]
+    },
+    "expected_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W6_wrong_hash",
+    "record_id": "W6",
+    "kind": "wrong_hash",
+    "proposal": {
+      "entity": "Frame Amber",
+      "unit": "cm",
+      "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+      "minimum": {
+        "value": "9",
+        "quote": "Frame Amber must measure at least 9 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "12",
+          "quote": "Note A: Frame Amber measures 12 cm."
+        },
+        {
+          "state": "measured",
+          "value": "15",
+          "quote": "Note B: Frame Amber measures 15 cm."
+        }
+      ]
+    },
+    "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W6_wrong_entity",
+    "record_id": "W6",
+    "kind": "wrong_entity",
+    "proposal": {
+      "entity": "Another Target",
+      "unit": "cm",
+      "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+      "minimum": {
+        "value": "9",
+        "quote": "Frame Amber must measure at least 9 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "12",
+          "quote": "Note A: Frame Amber measures 12 cm."
+        },
+        {
+          "state": "measured",
+          "value": "15",
+          "quote": "Note B: Frame Amber measures 15 cm."
+        }
+      ]
+    },
+    "expected_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W6_raw_context",
+    "record_id": "W6",
+    "kind": "raw_context",
+    "proposal": "Frame Amber must measure at least 9 cm to pass. Note A: Frame Amber measures 12 cm. Note B: Frame Amber measures 15 cm.",
+    "expected_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W6_extra_schema",
+    "record_id": "W6",
+    "kind": "extra_schema",
+    "proposal": {
+      "entity": "Frame Amber",
+      "unit": "cm",
+      "source_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+      "minimum": {
+        "value": "9",
+        "quote": "Frame Amber must measure at least 9 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "12",
+          "quote": "Note A: Frame Amber measures 12 cm."
+        },
+        {
+          "state": "measured",
+          "value": "15",
+          "quote": "Note B: Frame Amber measures 15 cm."
+        }
+      ],
+      "guess": "accept me"
+    },
+    "expected_sha256": "1088af70e733431f65b19e4b4cbee4a3d3a6d3d8faaf338e5b5805a1c78429f4",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W7_valid",
+    "record_id": "W7",
+    "kind": "valid",
+    "proposal": {
+      "entity": "Crate Lilac",
+      "unit": "kg",
+      "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+      "minimum": {
+        "value": "6",
+        "quote": "Crate Lilac must measure at least 6 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "missing",
+          "quote": "Note A: no measurement for Crate Lilac is recorded."
+        },
+        {
+          "state": "measured",
+          "value": "8",
+          "quote": "Note B: Crate Lilac measures 8 kg."
+        }
+      ]
+    },
+    "expected_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+    "expected_status": "bound"
+  },
+  {
+    "id": "W7_criterion_as_observation",
+    "record_id": "W7",
+    "kind": "criterion_as_observation",
+    "proposal": {
+      "entity": "Crate Lilac",
+      "unit": "kg",
+      "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+      "minimum": {
+        "value": "6",
+        "quote": "Crate Lilac must measure at least 6 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "6",
+          "quote": "Crate Lilac must measure at least 6 kg to pass."
+        },
+        {
+          "state": "measured",
+          "value": "8",
+          "quote": "Note B: Crate Lilac measures 8 kg."
+        }
+      ]
+    },
+    "expected_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W7_observation_as_criterion",
+    "record_id": "W7",
+    "kind": "observation_as_criterion",
+    "proposal": {
+      "entity": "Crate Lilac",
+      "unit": "kg",
+      "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+      "minimum": {
+        "value": "0",
+        "quote": "Note A: no measurement for Crate Lilac is recorded."
+      },
+      "observations": [
+        {
+          "state": "missing",
+          "quote": "Note A: no measurement for Crate Lilac is recorded."
+        },
+        {
+          "state": "measured",
+          "value": "8",
+          "quote": "Note B: Crate Lilac measures 8 kg."
+        }
+      ]
+    },
+    "expected_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W7_omitted_observation",
+    "record_id": "W7",
+    "kind": "omitted_observation",
+    "proposal": {
+      "entity": "Crate Lilac",
+      "unit": "kg",
+      "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+      "minimum": {
+        "value": "6",
+        "quote": "Crate Lilac must measure at least 6 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "missing",
+          "quote": "Note A: no measurement for Crate Lilac is recorded."
+        }
+      ]
+    },
+    "expected_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W7_wrong_criterion_value",
+    "record_id": "W7",
+    "kind": "wrong_criterion_value",
+    "proposal": {
+      "entity": "Crate Lilac",
+      "unit": "kg",
+      "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+      "minimum": {
+        "value": "7",
+        "quote": "Crate Lilac must measure at least 6 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "missing",
+          "quote": "Note A: no measurement for Crate Lilac is recorded."
+        },
+        {
+          "state": "measured",
+          "value": "8",
+          "quote": "Note B: Crate Lilac measures 8 kg."
+        }
+      ]
+    },
+    "expected_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W7_fabricated_quote",
+    "record_id": "W7",
+    "kind": "fabricated_quote",
+    "proposal": {
+      "entity": "Crate Lilac",
+      "unit": "kg",
+      "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+      "minimum": {
+        "value": "6",
+        "quote": "Crate Lilac must measure at least 6 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "missing",
+          "quote": "Note Z: no measurement for Crate Lilac is recorded."
+        },
+        {
+          "state": "measured",
+          "value": "8",
+          "quote": "Note B: Crate Lilac measures 8 kg."
+        }
+      ]
+    },
+    "expected_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W7_wrong_hash",
+    "record_id": "W7",
+    "kind": "wrong_hash",
+    "proposal": {
+      "entity": "Crate Lilac",
+      "unit": "kg",
+      "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+      "minimum": {
+        "value": "6",
+        "quote": "Crate Lilac must measure at least 6 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "missing",
+          "quote": "Note A: no measurement for Crate Lilac is recorded."
+        },
+        {
+          "state": "measured",
+          "value": "8",
+          "quote": "Note B: Crate Lilac measures 8 kg."
+        }
+      ]
+    },
+    "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W7_wrong_entity",
+    "record_id": "W7",
+    "kind": "wrong_entity",
+    "proposal": {
+      "entity": "Another Target",
+      "unit": "kg",
+      "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+      "minimum": {
+        "value": "6",
+        "quote": "Crate Lilac must measure at least 6 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "missing",
+          "quote": "Note A: no measurement for Crate Lilac is recorded."
+        },
+        {
+          "state": "measured",
+          "value": "8",
+          "quote": "Note B: Crate Lilac measures 8 kg."
+        }
+      ]
+    },
+    "expected_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W7_raw_context",
+    "record_id": "W7",
+    "kind": "raw_context",
+    "proposal": "Crate Lilac must measure at least 6 kg to pass. Note A: no measurement for Crate Lilac is recorded. Note B: Crate Lilac measures 8 kg.",
+    "expected_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W7_extra_schema",
+    "record_id": "W7",
+    "kind": "extra_schema",
+    "proposal": {
+      "entity": "Crate Lilac",
+      "unit": "kg",
+      "source_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+      "minimum": {
+        "value": "6",
+        "quote": "Crate Lilac must measure at least 6 kg to pass."
+      },
+      "observations": [
+        {
+          "state": "missing",
+          "quote": "Note A: no measurement for Crate Lilac is recorded."
+        },
+        {
+          "state": "measured",
+          "value": "8",
+          "quote": "Note B: Crate Lilac measures 8 kg."
+        }
+      ],
+      "guess": "accept me"
+    },
+    "expected_sha256": "d50c64ea64bcb4b6f753b580a0d0afbfad2cc3c6b0fa3c2a4259b1c7c22f26ac",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W8_valid",
+    "record_id": "W8",
+    "kind": "valid",
+    "proposal": {
+      "entity": "Rod Ivory",
+      "unit": "cm",
+      "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+      "minimum": {
+        "value": "17",
+        "quote": "Rod Ivory must measure at least 17 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Note A: Rod Ivory measures 17 cm."
+        },
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Note B: Rod Ivory measures 17 cm."
+        }
+      ]
+    },
+    "expected_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+    "expected_status": "bound"
+  },
+  {
+    "id": "W8_criterion_as_observation",
+    "record_id": "W8",
+    "kind": "criterion_as_observation",
+    "proposal": {
+      "entity": "Rod Ivory",
+      "unit": "cm",
+      "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+      "minimum": {
+        "value": "17",
+        "quote": "Rod Ivory must measure at least 17 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Rod Ivory must measure at least 17 cm to pass."
+        },
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Note B: Rod Ivory measures 17 cm."
+        }
+      ]
+    },
+    "expected_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W8_observation_as_criterion",
+    "record_id": "W8",
+    "kind": "observation_as_criterion",
+    "proposal": {
+      "entity": "Rod Ivory",
+      "unit": "cm",
+      "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+      "minimum": {
+        "value": "17",
+        "quote": "Note A: Rod Ivory measures 17 cm."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Note A: Rod Ivory measures 17 cm."
+        },
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Note B: Rod Ivory measures 17 cm."
+        }
+      ]
+    },
+    "expected_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W8_omitted_observation",
+    "record_id": "W8",
+    "kind": "omitted_observation",
+    "proposal": {
+      "entity": "Rod Ivory",
+      "unit": "cm",
+      "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+      "minimum": {
+        "value": "17",
+        "quote": "Rod Ivory must measure at least 17 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Note A: Rod Ivory measures 17 cm."
+        }
+      ]
+    },
+    "expected_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W8_wrong_criterion_value",
+    "record_id": "W8",
+    "kind": "wrong_criterion_value",
+    "proposal": {
+      "entity": "Rod Ivory",
+      "unit": "cm",
+      "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+      "minimum": {
+        "value": "18",
+        "quote": "Rod Ivory must measure at least 17 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Note A: Rod Ivory measures 17 cm."
+        },
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Note B: Rod Ivory measures 17 cm."
+        }
+      ]
+    },
+    "expected_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W8_fabricated_quote",
+    "record_id": "W8",
+    "kind": "fabricated_quote",
+    "proposal": {
+      "entity": "Rod Ivory",
+      "unit": "cm",
+      "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+      "minimum": {
+        "value": "17",
+        "quote": "Rod Ivory must measure at least 17 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Note Z: Rod Ivory measures 17 cm."
+        },
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Note B: Rod Ivory measures 17 cm."
+        }
+      ]
+    },
+    "expected_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W8_wrong_hash",
+    "record_id": "W8",
+    "kind": "wrong_hash",
+    "proposal": {
+      "entity": "Rod Ivory",
+      "unit": "cm",
+      "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+      "minimum": {
+        "value": "17",
+        "quote": "Rod Ivory must measure at least 17 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Note A: Rod Ivory measures 17 cm."
+        },
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Note B: Rod Ivory measures 17 cm."
+        }
+      ]
+    },
+    "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W8_wrong_entity",
+    "record_id": "W8",
+    "kind": "wrong_entity",
+    "proposal": {
+      "entity": "Another Target",
+      "unit": "cm",
+      "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+      "minimum": {
+        "value": "17",
+        "quote": "Rod Ivory must measure at least 17 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Note A: Rod Ivory measures 17 cm."
+        },
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Note B: Rod Ivory measures 17 cm."
+        }
+      ]
+    },
+    "expected_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W8_raw_context",
+    "record_id": "W8",
+    "kind": "raw_context",
+    "proposal": "Rod Ivory must measure at least 17 cm to pass. Note A: Rod Ivory measures 17 cm. Note B: Rod Ivory measures 17 cm.",
+    "expected_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+    "expected_status": "unresolved"
+  },
+  {
+    "id": "W8_extra_schema",
+    "record_id": "W8",
+    "kind": "extra_schema",
+    "proposal": {
+      "entity": "Rod Ivory",
+      "unit": "cm",
+      "source_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+      "minimum": {
+        "value": "17",
+        "quote": "Rod Ivory must measure at least 17 cm to pass."
+      },
+      "observations": [
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Note A: Rod Ivory measures 17 cm."
+        },
+        {
+          "state": "measured",
+          "value": "17",
+          "quote": "Note B: Rod Ivory measures 17 cm."
+        }
+      ],
+      "guess": "accept me"
+    },
+    "expected_sha256": "8db1f59c39fb7758b506da781e0df00e41fca08cf78f4b1ef968d88f4a8c3ab0",
+    "expected_status": "unresolved"
+  }
+]
