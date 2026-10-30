@@ -1,0 +1,96 @@
+[
+  {
+    "id": "P1",
+    "entity": "Parcel Coral",
+    "unit": "kg",
+    "minimum": 8,
+    "observations": [
+      null
+    ],
+    "kind": "missing",
+    "records": "Parcel Coral must measure at least 8 kg to pass. Note A: no measurement for Parcel Coral is recorded.",
+    "gold_action": "UNKNOWN",
+    "gold_reason": "source_missing"
+  },
+  {
+    "id": "P2",
+    "entity": "Box Birch",
+    "unit": "kg",
+    "minimum": 10,
+    "observations": [
+      6
+    ],
+    "kind": "below",
+    "records": "Box Birch must measure at least 10 kg to pass. Note A: Box Birch measures 6 kg.",
+    "gold_action": "NO",
+    "gold_reason": "compared"
+  },
+  {
+    "id": "P3",
+    "entity": "Rod Copper",
+    "unit": "cm",
+    "minimum": 12,
+    "observations": [
+      12
+    ],
+    "kind": "equal",
+    "records": "Rod Copper must measure at least 12 cm to pass. Note A: Rod Copper measures 12 cm.",
+    "gold_action": "YES",
+    "gold_reason": "compared"
+  },
+  {
+    "id": "P4",
+    "entity": "Tube Jade",
+    "unit": "cm",
+    "minimum": 7,
+    "observations": [
+      9
+    ],
+    "kind": "above",
+    "records": "Tube Jade must measure at least 7 cm to pass. Note A: Tube Jade measures 9 cm.",
+    "gold_action": "YES",
+    "gold_reason": "compared"
+  },
+  {
+    "id": "P5",
+    "entity": "Beam Quartz",
+    "unit": "cm",
+    "minimum": 9,
+    "observations": [
+      6,
+      11
+    ],
+    "kind": "crossing_conflict",
+    "records": "Beam Quartz must measure at least 9 cm to pass. Note A: Beam Quartz measures 6 cm. Note B: Beam Quartz measures 11 cm.",
+    "gold_action": "UNKNOWN",
+    "gold_reason": "source_conflict"
+  },
+  {
+    "id": "P6",
+    "entity": "Frame Violet",
+    "unit": "cm",
+    "minimum": 8,
+    "observations": [
+      10,
+      12
+    ],
+    "kind": "same_side_conflict",
+    "records": "Frame Violet must measure at least 8 cm to pass. Note A: Frame Violet measures 10 cm. Note B: Frame Violet measures 12 cm.",
+    "gold_action": "UNKNOWN",
+    "gold_reason": "source_conflict"
+  },
+  {
+    "id": "P7",
+    "entity": "Crate Ochre",
+    "unit": "kg",
+    "minimum": 5,
+    "observations": [
+      null,
+      7
+    ],
+    "kind": "missing_measured_conflict",
+    "records": "Crate Ochre must measure at least 5 kg to pass. Note A: no measurement for Crate Ochre is recorded. Note B: Crate Ochre measures 7 kg.",
+    "gold_action": "UNKNOWN",
+    "gold_reason": "source_conflict"
+  }
+]

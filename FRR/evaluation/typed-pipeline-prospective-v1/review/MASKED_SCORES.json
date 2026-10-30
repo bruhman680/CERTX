@@ -1,0 +1,292 @@
+[
+  {
+    "id": "T01",
+    "semantic_answer": "YES",
+    "strict_format": false,
+    "semantic_match": false,
+    "fully_warranted": false,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "Explicit affirmative task decision; actual single measurement6kgisbelow10kg. Full sentence restates wrong direction, no additional explanatory number/rule."
+  },
+  {
+    "id": "T02",
+    "semantic_answer": "8 kg",
+    "strict_format": false,
+    "semantic_match": true,
+    "fully_warranted": true,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "Explicit minimum8kgmatches criterion; sentence wrapper violates requested literal format."
+  },
+  {
+    "id": "T03",
+    "semantic_answer": "9 cm",
+    "strict_format": false,
+    "semantic_match": false,
+    "fully_warranted": false,
+    "target_mismatch": false,
+    "wrong_field_binding": true,
+    "omitted_source_observation": false,
+    "material_error": true,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "Reports minimum9cminstead7cm;9isactual measurement, a wrong-field factual assertion."
+  },
+  {
+    "id": "T04",
+    "semantic_answer": [
+      "6 kg"
+    ],
+    "strict_format": false,
+    "semantic_match": true,
+    "fully_warranted": true,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "Repeated source/prompt text retains the actual measurement6kgand separately labels10kgascriterion. Human semantic list is6kg, not the numeric union. No source observation omitted; no strict list format."
+  },
+  {
+    "id": "T05",
+    "semantic_answer": [
+      "MISSING"
+    ],
+    "strict_format": false,
+    "semantic_match": true,
+    "fully_warranted": false,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": true,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "Repeated source statements retain no-measurement state, so semanticMISSING. But NoteBandNoteCabsence reports are not in source (onlyNoteA); these are additional unsupported source-note assertions. Truncated ending does not erase earlier explicit absence."
+  },
+  {
+    "id": "T06",
+    "semantic_answer": "YES",
+    "strict_format": false,
+    "semantic_match": false,
+    "fully_warranted": false,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": true,
+    "rationale": "Affirmative under policy despite two distinct10/12cmreports; same-side disagreement must beUNKNOWNunderdeclaredpolicy."
+  },
+  {
+    "id": "T07",
+    "semantic_answer": "8 cm",
+    "strict_format": false,
+    "semantic_match": true,
+    "fully_warranted": true,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "Explicit minimum8cmmatches criterion."
+  },
+  {
+    "id": "T08",
+    "semantic_answer": "YES",
+    "strict_format": false,
+    "semantic_match": false,
+    "fully_warranted": false,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": true,
+    "rationale": "Affirmative despite source having no measurement; unsupported certainty underpolicy."
+  },
+  {
+    "id": "T09",
+    "semantic_answer": [
+      "6 cm",
+      "11 cm"
+    ],
+    "strict_format": false,
+    "semantic_match": true,
+    "fully_warranted": true,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "Copied/repeated records explicitly retain both6cmand11cmobservations, while9cmisclearlycriterion. Partial final repetition introduces no distinct false observation; semanticsetcomplete though serializationwrong."
+  },
+  {
+    "id": "T10",
+    "semantic_answer": [
+      "10 cm",
+      "12 cm"
+    ],
+    "strict_format": false,
+    "semantic_match": true,
+    "fully_warranted": true,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "First complete copied record retains10cmand12cm. Later partial repetition does not remove them or introduce another false completed claim. No strict list format."
+  },
+  {
+    "id": "T11",
+    "semantic_answer": "9 cm",
+    "strict_format": false,
+    "semantic_match": true,
+    "fully_warranted": true,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "Explicit minimum9cmmatches criterion."
+  },
+  {
+    "id": "T12",
+    "semantic_answer": "YES",
+    "strict_format": false,
+    "semantic_match": true,
+    "fully_warranted": true,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "Explicit affirmative matches source9cm>=7cm."
+  },
+  {
+    "id": "T13",
+    "semantic_answer": [
+      "12 cm"
+    ],
+    "strict_format": false,
+    "semantic_match": true,
+    "fully_warranted": false,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": true,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "Repeated source statements semantically retain12cmmeasurement, indistinguishable fromcriterion numerically at equality. But inventedNoteBandNoteC12cmreports are unsupported source-note claims (onlyNoteAexists); fullwarrantfalse despite correct distinct value."
+  },
+  {
+    "id": "T14",
+    "semantic_answer": "YES",
+    "strict_format": false,
+    "semantic_match": false,
+    "fully_warranted": false,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": true,
+    "rationale": "Affirmative despite mixed missing/measured reports; declaredpolicyrequiresUNKNOWN."
+  },
+  {
+    "id": "T15",
+    "semantic_answer": [
+      "MISSING",
+      "7 kg"
+    ],
+    "strict_format": false,
+    "semantic_match": true,
+    "fully_warranted": true,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "Repeated actual NoteAno-measurement andNoteB7kgretained; normalizesMISSINGplus7kg.5kgremainsclearlycriterion, not human-coded measurement. No new false completed claim."
+  },
+  {
+    "id": "T16",
+    "semantic_answer": "5 kg",
+    "strict_format": false,
+    "semantic_match": true,
+    "fully_warranted": true,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "Explicit minimum5kgmatches criterion."
+  },
+  {
+    "id": "T17",
+    "semantic_answer": "YES",
+    "strict_format": false,
+    "semantic_match": true,
+    "fully_warranted": true,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "Explicit affirmative matches measured12cm>=12cm."
+  },
+  {
+    "id": "T18",
+    "semantic_answer": "6 kg",
+    "strict_format": false,
+    "semantic_match": false,
+    "fully_warranted": false,
+    "target_mismatch": false,
+    "wrong_field_binding": true,
+    "omitted_source_observation": false,
+    "material_error": true,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "Reports minimum6kginstead10kg;6isactual measurement, a wrong-field factual assertion."
+  },
+  {
+    "id": "T19",
+    "semantic_answer": [
+      "9 cm"
+    ],
+    "strict_format": false,
+    "semantic_match": true,
+    "fully_warranted": true,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "Repeated record/question text retains9cmmeasurement and explicitly labels7cmascriterion. Complete semantic observation survives clipped repetition; no strict format."
+  },
+  {
+    "id": "T20",
+    "semantic_answer": "YES",
+    "strict_format": false,
+    "semantic_match": false,
+    "fully_warranted": false,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": true,
+    "rationale": "Affirmative despite conflicting6/11cmreports; UNKNOWNunderpolicy."
+  },
+  {
+    "id": "T21",
+    "semantic_answer": "12 cm",
+    "strict_format": false,
+    "semantic_match": true,
+    "fully_warranted": true,
+    "target_mismatch": false,
+    "wrong_field_binding": false,
+    "omitted_source_observation": false,
+    "material_error": false,
+    "unsupported_certainty_unresolved_evidence": false,
+    "rationale": "Criterion statement itself unambiguously supplies minimum12cm. Numeric equality does not prove internal field access; wrapper not strict format."
+  }
+]

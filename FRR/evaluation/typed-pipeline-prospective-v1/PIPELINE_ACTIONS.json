@@ -1,0 +1,684 @@
+[
+  {
+    "record_id": "P1",
+    "measurement_text": "Parcel Coral must measure at least 8 kg to pass. Note A: no measurement for Parcel Coral is recorded.\n\nParcel Coral must measure at least 8 kg to pass. Note B: no measurement for Parcel Coral is recorded.\n\nParcel Coral must measure at least 8 kg to pass. Note C: no measurement for Parcel Coral is recorded.\n\nParcel Coral must measure at least ",
+    "minimum_text": "The required minimum for Parcel Coral is 8 kg.",
+    "action": "YES",
+    "stage": "compared",
+    "receipt": {
+      "ruleset": "evidence-threshold-0.1",
+      "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "verdict": "supported",
+      "stage": "compared",
+      "reasons": [
+        "Comparison is conditional on the caller-supplied structured evidence and criterion."
+      ],
+      "binding": {
+        "artifact_sha256": true,
+        "entity_scope_unit": true
+      },
+      "limitations": [
+        "Structured facts are supplied, not extracted or authenticated.",
+        "No implicit unit conversion or conflict-resolution rule."
+      ],
+      "claim_id": "P1-generated-pair-at-least",
+      "entity": "Parcel Coral",
+      "scope": "prospective-generated-claims-P1",
+      "criterion_id": "P1-generated-minimum",
+      "contract_sha256": "ba508def84764641771c3448cdaed3382432d88810e9b15658fd27c45b56d8c0",
+      "artifact_sha256": "953f7fa5be3d009ed26a2cd78f2c6432465f114b6021497a05626e14d57a0daa",
+      "observation_count": 3,
+      "measured_count": 3,
+      "missing_count": 0,
+      "comparison": {
+        "value": "8",
+        "operator": "at_least",
+        "minimum": "8",
+        "unit": "kg",
+        "holds": true
+      }
+    },
+    "contract": {
+      "claim_id": "P1-generated-pair-at-least",
+      "entity": "Parcel Coral",
+      "scope": "prospective-generated-claims-P1",
+      "criterion": {
+        "id": "P1-generated-minimum",
+        "operator": "at_least",
+        "unit": "kg",
+        "minimum": "8"
+      },
+      "evidence": {
+        "path": "P1.json",
+        "sha256": "953f7fa5be3d009ed26a2cd78f2c6432465f114b6021497a05626e14d57a0daa"
+      }
+    },
+    "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+    "pipeline_sha256": "af140a6afab4292bde7a17dfc87c4eb9f82d9bfed6cb52132d327b440787cca9",
+    "limitations": [
+      "Surface parsing does not check negation, quotation, entity ownership or source truth.",
+      "Caller context supplies entity/unit and run association, not numeric gold repair.",
+      "Checker hashes bind supplied bytes; they do not authenticate their meaning.",
+      "Unusable extraction is infrastructure withholding, not proof of missing evidence."
+    ],
+    "artifact_path": "/workspace/frr/evaluation/typed-pipeline-prospective-v1/pipeline_evidence/P1.json",
+    "parsed_measurements": {
+      "usable": true,
+      "observations": [
+        {
+          "state": "measured",
+          "value": "8"
+        },
+        {
+          "state": "measured",
+          "value": "8"
+        },
+        {
+          "state": "measured",
+          "value": "8"
+        }
+      ],
+      "reason": null
+    },
+    "parsed_minimum": {
+      "usable": true,
+      "value": "8",
+      "reason": null
+    },
+    "reason": "Conditional result from generated structured claims; original source facts not checked.",
+    "source_run_ids": [
+      "P1_measurements",
+      "P1_minimum"
+    ],
+    "input_tokens": 379,
+    "output_tokens": 110,
+    "inference_seconds": 8.678206898000099
+  },
+  {
+    "record_id": "P2",
+    "measurement_text": "Records:\nBox Birch must measure at least 10 kg to pass. Note A: Box Birch measures 6 kg.\n\nQuestion: List every measurement reported for Box Birch, preserving all notes.\n\nRecords:\nBox Birch must measure at least 10 kg to pass. Note A: Box Birch measures 6 kg.\n\nQuestion: List every measurement reported for Box Birch, preserving all notes.\n\n",
+    "minimum_text": "The required minimum for Box Birch is 6 kg.",
+    "action": "UNKNOWN",
+    "stage": "conflicting_measurements",
+    "receipt": {
+      "ruleset": "evidence-threshold-0.1",
+      "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "verdict": "unresolved",
+      "stage": "conflicting_measurements",
+      "reasons": [
+        "Conflicting values or simultaneous missing and measured records; no precedence assumed."
+      ],
+      "binding": {
+        "artifact_sha256": true,
+        "entity_scope_unit": true
+      },
+      "limitations": [
+        "Structured facts are supplied, not extracted or authenticated.",
+        "No implicit unit conversion or conflict-resolution rule."
+      ],
+      "claim_id": "P2-generated-pair-at-least",
+      "entity": "Box Birch",
+      "scope": "prospective-generated-claims-P2",
+      "criterion_id": "P2-generated-minimum",
+      "contract_sha256": "affee253c71619391b1adb141ed43579a01ed35c415e6997818bdefe968c6529",
+      "artifact_sha256": "e03e32a9cc9ac6ba257578123c4356c7b92c919296186544780cd681365965b0",
+      "observation_count": 4,
+      "measured_count": 4,
+      "missing_count": 0
+    },
+    "contract": {
+      "claim_id": "P2-generated-pair-at-least",
+      "entity": "Box Birch",
+      "scope": "prospective-generated-claims-P2",
+      "criterion": {
+        "id": "P2-generated-minimum",
+        "operator": "at_least",
+        "unit": "kg",
+        "minimum": "6"
+      },
+      "evidence": {
+        "path": "P2.json",
+        "sha256": "e03e32a9cc9ac6ba257578123c4356c7b92c919296186544780cd681365965b0"
+      }
+    },
+    "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+    "pipeline_sha256": "af140a6afab4292bde7a17dfc87c4eb9f82d9bfed6cb52132d327b440787cca9",
+    "limitations": [
+      "Surface parsing does not check negation, quotation, entity ownership or source truth.",
+      "Caller context supplies entity/unit and run association, not numeric gold repair.",
+      "Checker hashes bind supplied bytes; they do not authenticate their meaning.",
+      "Unusable extraction is infrastructure withholding, not proof of missing evidence."
+    ],
+    "artifact_path": "/workspace/frr/evaluation/typed-pipeline-prospective-v1/pipeline_evidence/P2.json",
+    "parsed_measurements": {
+      "usable": true,
+      "observations": [
+        {
+          "state": "measured",
+          "value": "10"
+        },
+        {
+          "state": "measured",
+          "value": "6"
+        },
+        {
+          "state": "measured",
+          "value": "10"
+        },
+        {
+          "state": "measured",
+          "value": "6"
+        }
+      ],
+      "reason": null
+    },
+    "parsed_minimum": {
+      "usable": true,
+      "value": "6",
+      "reason": null
+    },
+    "reason": "Conditional result from generated structured claims; original source facts not checked.",
+    "source_run_ids": [
+      "P2_measurements",
+      "P2_minimum"
+    ],
+    "input_tokens": 373,
+    "output_tokens": 109,
+    "inference_seconds": 8.671325110000453
+  },
+  {
+    "record_id": "P3",
+    "measurement_text": "Rod Copper must measure at least 12 cm to pass. Note A: Rod Copper measures 12 cm.\n\nRod Copper must measure at least 12 cm to pass. Note B: Rod Copper measures 12 cm.\n\nRod Copper must measure at least 12 cm to pass. Note C: Rod Copper measures 12 cm.\n\nRod Copper must measure at least 12 cm to pass. Note D: Rod Copper",
+    "minimum_text": "Rod Copper must measure at least 12 cm to pass.",
+    "action": "YES",
+    "stage": "compared",
+    "receipt": {
+      "ruleset": "evidence-threshold-0.1",
+      "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "verdict": "supported",
+      "stage": "compared",
+      "reasons": [
+        "Comparison is conditional on the caller-supplied structured evidence and criterion."
+      ],
+      "binding": {
+        "artifact_sha256": true,
+        "entity_scope_unit": true
+      },
+      "limitations": [
+        "Structured facts are supplied, not extracted or authenticated.",
+        "No implicit unit conversion or conflict-resolution rule."
+      ],
+      "claim_id": "P3-generated-pair-at-least",
+      "entity": "Rod Copper",
+      "scope": "prospective-generated-claims-P3",
+      "criterion_id": "P3-generated-minimum",
+      "contract_sha256": "297d0829dc9cf23f7532c57ee7ddeab00967bf4dc4c53ce5a6176ad588e1ea37",
+      "artifact_sha256": "b229b0ab966186e2f073bcdde9283b5d3abfa7e1147e8e5671a768c4605b8d2f",
+      "observation_count": 7,
+      "measured_count": 7,
+      "missing_count": 0,
+      "comparison": {
+        "value": "12",
+        "operator": "at_least",
+        "minimum": "12",
+        "unit": "cm",
+        "holds": true
+      }
+    },
+    "contract": {
+      "claim_id": "P3-generated-pair-at-least",
+      "entity": "Rod Copper",
+      "scope": "prospective-generated-claims-P3",
+      "criterion": {
+        "id": "P3-generated-minimum",
+        "operator": "at_least",
+        "unit": "cm",
+        "minimum": "12"
+      },
+      "evidence": {
+        "path": "P3.json",
+        "sha256": "b229b0ab966186e2f073bcdde9283b5d3abfa7e1147e8e5671a768c4605b8d2f"
+      }
+    },
+    "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+    "pipeline_sha256": "af140a6afab4292bde7a17dfc87c4eb9f82d9bfed6cb52132d327b440787cca9",
+    "limitations": [
+      "Surface parsing does not check negation, quotation, entity ownership or source truth.",
+      "Caller context supplies entity/unit and run association, not numeric gold repair.",
+      "Checker hashes bind supplied bytes; they do not authenticate their meaning.",
+      "Unusable extraction is infrastructure withholding, not proof of missing evidence."
+    ],
+    "artifact_path": "/workspace/frr/evaluation/typed-pipeline-prospective-v1/pipeline_evidence/P3.json",
+    "parsed_measurements": {
+      "usable": true,
+      "observations": [
+        {
+          "state": "measured",
+          "value": "12"
+        },
+        {
+          "state": "measured",
+          "value": "12"
+        },
+        {
+          "state": "measured",
+          "value": "12"
+        },
+        {
+          "state": "measured",
+          "value": "12"
+        },
+        {
+          "state": "measured",
+          "value": "12"
+        },
+        {
+          "state": "measured",
+          "value": "12"
+        },
+        {
+          "state": "measured",
+          "value": "12"
+        }
+      ],
+      "reason": null
+    },
+    "parsed_minimum": {
+      "usable": true,
+      "value": "12",
+      "reason": null
+    },
+    "reason": "Conditional result from generated structured claims; original source facts not checked.",
+    "source_run_ids": [
+      "P3_measurements",
+      "P3_minimum"
+    ],
+    "input_tokens": 369,
+    "output_tokens": 110,
+    "inference_seconds": 8.693965955999374
+  },
+  {
+    "record_id": "P4",
+    "measurement_text": "Tube Jade must measure at least 7 cm to pass. Note A: Tube Jade measures 9 cm.\n\nQuestion: List every measurement reported for Tube Jade, preserving all notes.\n\nAnswer:\n\nTube Jade must measure at least 7 cm to pass. Note A: Tube Jade measures 9 cm.\n\nQuestion: List every measurement reported for Tube Jade, preserving all notes.\n\nAnswer:\n\nTube J",
+    "minimum_text": "The required minimum for Tube Jade is 9 cm.",
+    "action": "UNKNOWN",
+    "stage": "conflicting_measurements",
+    "receipt": {
+      "ruleset": "evidence-threshold-0.1",
+      "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "verdict": "unresolved",
+      "stage": "conflicting_measurements",
+      "reasons": [
+        "Conflicting values or simultaneous missing and measured records; no precedence assumed."
+      ],
+      "binding": {
+        "artifact_sha256": true,
+        "entity_scope_unit": true
+      },
+      "limitations": [
+        "Structured facts are supplied, not extracted or authenticated.",
+        "No implicit unit conversion or conflict-resolution rule."
+      ],
+      "claim_id": "P4-generated-pair-at-least",
+      "entity": "Tube Jade",
+      "scope": "prospective-generated-claims-P4",
+      "criterion_id": "P4-generated-minimum",
+      "contract_sha256": "47bea08f12b310e31025363f446e62a166a3e475f59fcc04506767b7bcd0078e",
+      "artifact_sha256": "3533444059b8e085b32bd26a9cdfcfc99963f2153e403c7485c0f322cb7783f9",
+      "observation_count": 4,
+      "measured_count": 4,
+      "missing_count": 0
+    },
+    "contract": {
+      "claim_id": "P4-generated-pair-at-least",
+      "entity": "Tube Jade",
+      "scope": "prospective-generated-claims-P4",
+      "criterion": {
+        "id": "P4-generated-minimum",
+        "operator": "at_least",
+        "unit": "cm",
+        "minimum": "9"
+      },
+      "evidence": {
+        "path": "P4.json",
+        "sha256": "3533444059b8e085b32bd26a9cdfcfc99963f2153e403c7485c0f322cb7783f9"
+      }
+    },
+    "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+    "pipeline_sha256": "af140a6afab4292bde7a17dfc87c4eb9f82d9bfed6cb52132d327b440787cca9",
+    "limitations": [
+      "Surface parsing does not check negation, quotation, entity ownership or source truth.",
+      "Caller context supplies entity/unit and run association, not numeric gold repair.",
+      "Checker hashes bind supplied bytes; they do not authenticate their meaning.",
+      "Unusable extraction is infrastructure withholding, not proof of missing evidence."
+    ],
+    "artifact_path": "/workspace/frr/evaluation/typed-pipeline-prospective-v1/pipeline_evidence/P4.json",
+    "parsed_measurements": {
+      "usable": true,
+      "observations": [
+        {
+          "state": "measured",
+          "value": "7"
+        },
+        {
+          "state": "measured",
+          "value": "9"
+        },
+        {
+          "state": "measured",
+          "value": "7"
+        },
+        {
+          "state": "measured",
+          "value": "9"
+        }
+      ],
+      "reason": null
+    },
+    "parsed_minimum": {
+      "usable": true,
+      "value": "9",
+      "reason": null
+    },
+    "reason": "Conditional result from generated structured claims; original source facts not checked.",
+    "source_run_ids": [
+      "P4_measurements",
+      "P4_minimum"
+    ],
+    "input_tokens": 371,
+    "output_tokens": 109,
+    "inference_seconds": 8.801386421999723
+  },
+  {
+    "record_id": "P5",
+    "measurement_text": "Beam Quartz must measure at least 9 cm to pass. Note A: Beam Quartz measures 6 cm. Note B: Beam Quartz measures 11 cm.\n\nBeam Quartz must measure at least 9 cm to pass. Note A: Beam Quartz measures 6 cm. Note B: Beam Quartz measures 11 cm.\n\nBeam Quartz must measure at least 9 cm to pass. Note A: Beam",
+    "minimum_text": "The required minimum for Beam Quartz is 9 cm.",
+    "action": "UNKNOWN",
+    "stage": "conflicting_measurements",
+    "receipt": {
+      "ruleset": "evidence-threshold-0.1",
+      "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "verdict": "unresolved",
+      "stage": "conflicting_measurements",
+      "reasons": [
+        "Conflicting values or simultaneous missing and measured records; no precedence assumed."
+      ],
+      "binding": {
+        "artifact_sha256": true,
+        "entity_scope_unit": true
+      },
+      "limitations": [
+        "Structured facts are supplied, not extracted or authenticated.",
+        "No implicit unit conversion or conflict-resolution rule."
+      ],
+      "claim_id": "P5-generated-pair-at-least",
+      "entity": "Beam Quartz",
+      "scope": "prospective-generated-claims-P5",
+      "criterion_id": "P5-generated-minimum",
+      "contract_sha256": "717865d1222d43a050d565d40b2fb8638d2f579036e4cb274a967376618a4713",
+      "artifact_sha256": "b1814742f077c38366f456ea07abe3a29e4f756604a3b30483b4c3e129e5939a",
+      "observation_count": 7,
+      "measured_count": 7,
+      "missing_count": 0
+    },
+    "contract": {
+      "claim_id": "P5-generated-pair-at-least",
+      "entity": "Beam Quartz",
+      "scope": "prospective-generated-claims-P5",
+      "criterion": {
+        "id": "P5-generated-minimum",
+        "operator": "at_least",
+        "unit": "cm",
+        "minimum": "9"
+      },
+      "evidence": {
+        "path": "P5.json",
+        "sha256": "b1814742f077c38366f456ea07abe3a29e4f756604a3b30483b4c3e129e5939a"
+      }
+    },
+    "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+    "pipeline_sha256": "af140a6afab4292bde7a17dfc87c4eb9f82d9bfed6cb52132d327b440787cca9",
+    "limitations": [
+      "Surface parsing does not check negation, quotation, entity ownership or source truth.",
+      "Caller context supplies entity/unit and run association, not numeric gold repair.",
+      "Checker hashes bind supplied bytes; they do not authenticate their meaning.",
+      "Unusable extraction is infrastructure withholding, not proof of missing evidence."
+    ],
+    "artifact_path": "/workspace/frr/evaluation/typed-pipeline-prospective-v1/pipeline_evidence/P5.json",
+    "parsed_measurements": {
+      "usable": true,
+      "observations": [
+        {
+          "state": "measured",
+          "value": "9"
+        },
+        {
+          "state": "measured",
+          "value": "6"
+        },
+        {
+          "state": "measured",
+          "value": "11"
+        },
+        {
+          "state": "measured",
+          "value": "9"
+        },
+        {
+          "state": "measured",
+          "value": "6"
+        },
+        {
+          "state": "measured",
+          "value": "11"
+        },
+        {
+          "state": "measured",
+          "value": "9"
+        }
+      ],
+      "reason": null
+    },
+    "parsed_minimum": {
+      "usable": true,
+      "value": "9",
+      "reason": null
+    },
+    "reason": "Conditional result from generated structured claims; original source facts not checked.",
+    "source_run_ids": [
+      "P5_measurements",
+      "P5_minimum"
+    ],
+    "input_tokens": 397,
+    "output_tokens": 109,
+    "inference_seconds": 9.18777270099963
+  },
+  {
+    "record_id": "P6",
+    "measurement_text": "Records:\nFrame Violet must measure at least 8 cm to pass. Note A: Frame Violet measures 10 cm. Note B: Frame Violet measures 12 cm.\n\nQuestion: List every measurement reported for Frame Violet, preserving all notes.\n\nAnswer:\nFrame Violet must measure at least 8 cm to pass. Note A: Frame Violet measures 10 cm. Note B: Frame Violet measures ",
+    "minimum_text": "The required minimum for Frame Violet is 8 cm.",
+    "action": "UNKNOWN",
+    "stage": "conflicting_measurements",
+    "receipt": {
+      "ruleset": "evidence-threshold-0.1",
+      "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "verdict": "unresolved",
+      "stage": "conflicting_measurements",
+      "reasons": [
+        "Conflicting values or simultaneous missing and measured records; no precedence assumed."
+      ],
+      "binding": {
+        "artifact_sha256": true,
+        "entity_scope_unit": true
+      },
+      "limitations": [
+        "Structured facts are supplied, not extracted or authenticated.",
+        "No implicit unit conversion or conflict-resolution rule."
+      ],
+      "claim_id": "P6-generated-pair-at-least",
+      "entity": "Frame Violet",
+      "scope": "prospective-generated-claims-P6",
+      "criterion_id": "P6-generated-minimum",
+      "contract_sha256": "d1e2376d3607698a1e4580fb2de732de61bf553b98eeaa9aca76e0e8277ab08a",
+      "artifact_sha256": "1f2bc15e50392b4f8e7d293db80d0322b42bfb73a5c77c83a7aa19d26a2ad6c5",
+      "observation_count": 5,
+      "measured_count": 5,
+      "missing_count": 0
+    },
+    "contract": {
+      "claim_id": "P6-generated-pair-at-least",
+      "entity": "Frame Violet",
+      "scope": "prospective-generated-claims-P6",
+      "criterion": {
+        "id": "P6-generated-minimum",
+        "operator": "at_least",
+        "unit": "cm",
+        "minimum": "8"
+      },
+      "evidence": {
+        "path": "P6.json",
+        "sha256": "1f2bc15e50392b4f8e7d293db80d0322b42bfb73a5c77c83a7aa19d26a2ad6c5"
+      }
+    },
+    "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+    "pipeline_sha256": "af140a6afab4292bde7a17dfc87c4eb9f82d9bfed6cb52132d327b440787cca9",
+    "limitations": [
+      "Surface parsing does not check negation, quotation, entity ownership or source truth.",
+      "Caller context supplies entity/unit and run association, not numeric gold repair.",
+      "Checker hashes bind supplied bytes; they do not authenticate their meaning.",
+      "Unusable extraction is infrastructure withholding, not proof of missing evidence."
+    ],
+    "artifact_path": "/workspace/frr/evaluation/typed-pipeline-prospective-v1/pipeline_evidence/P6.json",
+    "parsed_measurements": {
+      "usable": true,
+      "observations": [
+        {
+          "state": "measured",
+          "value": "8"
+        },
+        {
+          "state": "measured",
+          "value": "10"
+        },
+        {
+          "state": "measured",
+          "value": "12"
+        },
+        {
+          "state": "measured",
+          "value": "8"
+        },
+        {
+          "state": "measured",
+          "value": "10"
+        }
+      ],
+      "reason": null
+    },
+    "parsed_minimum": {
+      "usable": true,
+      "value": "8",
+      "reason": null
+    },
+    "reason": "Conditional result from generated structured claims; original source facts not checked.",
+    "source_run_ids": [
+      "P6_measurements",
+      "P6_minimum"
+    ],
+    "input_tokens": 397,
+    "output_tokens": 109,
+    "inference_seconds": 9.740321465999841
+  },
+  {
+    "record_id": "P7",
+    "measurement_text": "Crate Ochre must measure at least 5 kg to pass. Note A: no measurement for Crate Ochre is recorded. Note B: Crate Ochre measures 7 kg.\n\nRecords:\nCrate Ochre must measure at least 5 kg to pass. Note A: no measurement for Crate Ochre is recorded. Note B: Crate Ochre measures 7 kg.\n\nQuestion: List every measurement reported for Crate O",
+    "minimum_text": "The required minimum for Crate Ochre is 5 kg.",
+    "action": "UNKNOWN",
+    "stage": "conflicting_measurements",
+    "receipt": {
+      "ruleset": "evidence-threshold-0.1",
+      "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "verdict": "unresolved",
+      "stage": "conflicting_measurements",
+      "reasons": [
+        "Conflicting values or simultaneous missing and measured records; no precedence assumed."
+      ],
+      "binding": {
+        "artifact_sha256": true,
+        "entity_scope_unit": true
+      },
+      "limitations": [
+        "Structured facts are supplied, not extracted or authenticated.",
+        "No implicit unit conversion or conflict-resolution rule."
+      ],
+      "claim_id": "P7-generated-pair-at-least",
+      "entity": "Crate Ochre",
+      "scope": "prospective-generated-claims-P7",
+      "criterion_id": "P7-generated-minimum",
+      "contract_sha256": "b8550d118dd73379a76a275161210e7863aeb86de11900b4866ac5c5b3b9210b",
+      "artifact_sha256": "86a7c7d35d769792794d9b89740e27437ba7a89f33cb8b88e4c437b3ef5cb026",
+      "observation_count": 4,
+      "measured_count": 4,
+      "missing_count": 0
+    },
+    "contract": {
+      "claim_id": "P7-generated-pair-at-least",
+      "entity": "Crate Ochre",
+      "scope": "prospective-generated-claims-P7",
+      "criterion": {
+        "id": "P7-generated-minimum",
+        "operator": "at_least",
+        "unit": "kg",
+        "minimum": "5"
+      },
+      "evidence": {
+        "path": "P7.json",
+        "sha256": "86a7c7d35d769792794d9b89740e27437ba7a89f33cb8b88e4c437b3ef5cb026"
+      }
+    },
+    "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+    "pipeline_sha256": "af140a6afab4292bde7a17dfc87c4eb9f82d9bfed6cb52132d327b440787cca9",
+    "limitations": [
+      "Surface parsing does not check negation, quotation, entity ownership or source truth.",
+      "Caller context supplies entity/unit and run association, not numeric gold repair.",
+      "Checker hashes bind supplied bytes; they do not authenticate their meaning.",
+      "Unusable extraction is infrastructure withholding, not proof of missing evidence."
+    ],
+    "artifact_path": "/workspace/frr/evaluation/typed-pipeline-prospective-v1/pipeline_evidence/P7.json",
+    "parsed_measurements": {
+      "usable": true,
+      "observations": [
+        {
+          "state": "measured",
+          "value": "5"
+        },
+        {
+          "state": "measured",
+          "value": "7"
+        },
+        {
+          "state": "measured",
+          "value": "5"
+        },
+        {
+          "state": "measured",
+          "value": "7"
+        }
+      ],
+      "reason": null
+    },
+    "parsed_minimum": {
+      "usable": true,
+      "value": "5",
+      "reason": null
+    },
+    "reason": "Conditional result from generated structured claims; original source facts not checked.",
+    "source_run_ids": [
+      "P7_measurements",
+      "P7_minimum"
+    ],
+    "input_tokens": 403,
+    "output_tokens": 110,
+    "inference_seconds": 9.299115654999696
+  }
+]

@@ -1,29 +1,27 @@
 # Current FRR handoff
 
-Current checkpoint: 29 October 2026, America/Chicago. User authorized the competence probe and parallel inference scout/integration. CD-C1 is complete; proposals below remain unexecuted. No background jobs remain at delivery. New user direction takes precedence over older pause/resume language.
+Current checkpoint: 29 October 2026, America/Chicago. User reported about40% allowance and authorized one bounded next experiment. TP-C1 is complete; proposals below are not launched. No background model task remains. New user direction overrides historical pause/resume wording.
 
 ## Latest completed contact
 
-[CD-C1 report](evaluation/competence-decomposition-v1/REPORT.md). 40 independent authored queries separate extraction, comparison and format. Measurement6/8, minimum7/8, pass4/8, inverse2/8, neutral2/8 warranted; all binaryanswersYES. Retrospective generated-input computation matches6/8labels but5/8warrants, with extraquerycost and preservedwrongfacts. New optional typedthreshold helper,19testmethods, workedguidance; source/semantic authority remains external. Parserrepair appended without altering originalreplay. No training, prompt-default or core/schema/queue status change.
+[TP-C1 report](evaluation/typed-pipeline-prospective-v1/REPORT.md). 21 fresh calls on 7 records; prospective generated-input pipeline matches 4/7 labels, tying always-UNKNOWN, with 0/7 full source/reason warrants. Direct is 2/7; all measurement-list calls repeat context to cap. Role-aware reading retains source observations, but the surface parser harvests criteria as measurements and loses natural absence. Existing exact checker stays unchanged; experimental parser/pipeline not promoted. Prior outcomes preserved; no training, paid service or core/schema/queue change.
 
-Forty model calls are separate prompts, not an internal chained pipeline. The8record saved-response replay combines2extractioncalls; no extra modelcalls or goldnumericrepairs. Correct output labels, exact arithmetic, extracted factcorrectness and taskwarrant are separate measures. Direct and inverseYESresponses conflict; neutralMISSINGresponses do not establish calibrated abstention.
+The pipeline's4/7labels are not an improvement claim: alwaysUNKNOWN also scores4/7, direct uses1call versus2extractioncalls, and a matched label can conceal false inputs. OnlyP3has faithful distinct parsed numericfields; invented raw noteIDs prevent its full sourcewarrant. Same-side disagreementUNKNOWN follows the explicitly supplied one-consistent-measurement taskpolicy, not a universal mathematical necessity. Frozen programs/outputs remain unchanged;7capped outputs were not retried.
 
-## Usable optional additions
+## Usable infrastructure and boundary
 
-[Typed threshold checker](tools/evidence_threshold.py), [worked command and workflow](examples/typed-threshold-inference.md), linked from [verification](modules/verification-layer.md). It checks declared structured fields/bytes/literal identity/units and computes exact at_least decimal comparisons. Source/extraction/empiricaltruth are not certified. Distinguish no observations, explicitmissing, invalid/access/identity/conflict stages. Original checker version/receipts and verification module bytes are preserved. The saved-response surfaceparser is not the exact checker; its repairedv2 did not generate the original replay outcomes.
+[Exact typed checker](tools/evidence_threshold.py) and [worked workflow](examples/typed-threshold-inference.md) remain optional. The checker validates explicit structured input and conditional comparison; it does not authenticate source truth. New guidance records the observed field-role failure: do not harvest all numbers from copied context into measured observations. The study-local permissive parser is not a default input adapter.
 
-## Strongest next contacts — proposed
+## Strongest next — proposed
 
-1. Prospectively compare a typed extraction-plus-comparison workflow on new fixed records, checking fieldroles, missing/contradictory sources and both semanticmatches and warrantedresults. Keep rejected/unresolved cases and actual extractioncosts. Separate caller-vetted structured facts from generatedclaims.
-2. Counterbalance phrasing/outputvocabulary/order, or use independently sourced original/changed records to test transfer. Broader source-revision work remains legitimate now; another toy success is not required.
-3. Constrained output, confidence gating, self-consistency and recursive repair remain experiments, not defaults. First establish acceptance criteria and evidence/calibration adequate for their intended use.
+A separately frozen field-binding/format control should reject copied context as a field response, distinguish source absence/conflict from infrastructure withholding, and measure coverage/false support/costs. Keep caller-vetted structured facts separate from generatedclaims. Fresh externally sourced revision material remains legitimate. Do not spend another run merely broadening the same parser or raising the cap without a discriminating question. No confidence gate, self-consistency or autonomous repair default is validated.
 
-## Stable scope and financial boundary
+## Stable scope
 
-[Research map](evaluation/CURRENT_RESEARCH_MAP.md), [queue](evaluation/research-queue/QUEUE.json):35entries,30unfinished,6partial families. Core runtime/compact0.2 and inquiry schema0.1 unchanged; conceptualFRR0.5 is not universally validated. Historical strictorderedreplayFAIL remainsFAIL. Hashes establish byteidentity, not truth/source authority. Scoring judgment by separate agents is not an independent scientific/model replication.
+[Research map](evaluation/CURRENT_RESEARCH_MAP.md), [queue](evaluation/research-queue/QUEUE.json):35entries,30unfinished,6partial. Core runtime/compact0.2 and inquiry schema0.1 unchanged. Historical strict ordered replayFAIL remainsFAIL. Optional [verification](modules/verification-layer.md), [boundedloop](modules/bounded-experiment-loop.md), [scout](modules/three-angle-scout.md) and [checkpoints](modules/context-checkpoints.md) guide work without proving general efficacy.
 
-Use included tools/free resources only; ask before any separatepayment. The pinned local text-only135M is separate from the main assistant and has not been trained/weightupdated. Savedbinarycaches are local and not guaranteed durable; textpins/manifests allow reconstruction. Optional [boundedloop](modules/bounded-experiment-loop.md), [three-angle scout](modules/three-angle-scout.md) and [checkpoints](modules/context-checkpoints.md) guide work without forcing ritualchecks or unbounded research.
+Use included/free resources only; ask before separatepayment. The local text-only135M is separate from the main assistant, with no weightupdates. New caches are local; published text/pins/manifests do not guarantee binarydurability. Independent scoring judgment is not scientific/model replication. Hash identity is not source truth.
 
 ## Preserved history
 
-[Previous handoff bytes](evaluation/competence-decomposition-v1/navigation_before/CURRENT_HANDOFF.md), [navigation archive receipt](evaluation/competence-decomposition-v1/NAVIGATION_ARCHIVE.json), [module archive](evaluation/competence-decomposition-v1/MODULE_ARCHIVE.json). Archived relative links retain their original base; [parentcommit handoff](https://github.com/bruhman680/CERTX/blob/21a66c97fa23f5b7ff95defb63a0204a97c9e6b4/FRR/CURRENT_HANDOFF.md) is the functional historical reference. No earlier scientific report, output, failure or frozen deposit was overwritten.
+[Previous handoff](evaluation/typed-pipeline-prospective-v1/before/CURRENT_HANDOFF.md) and [archive receipt](evaluation/typed-pipeline-prospective-v1/ARCHIVE_RECEIPT.json) preserve six original files byte-for-byte. Archived relative links retain old bases; [parentcommit handoff](https://github.com/bruhman680/CERTX/blob/c788975b5efcfe5a8b56b04ff46329e88af6224f/FRR/CURRENT_HANDOFF.md) is the working historical reference. No prior experiment, raw output, failure or frozen deposit was overwritten.

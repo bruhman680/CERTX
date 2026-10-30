@@ -1,0 +1,364 @@
+[
+  {
+    "id": "P1_direct",
+    "record_id": "P1",
+    "task": "direct",
+    "order_within_record": 0,
+    "entity": "Parcel Coral",
+    "unit": "kg",
+    "records": "Parcel Coral must measure at least 8 kg to pass. Note A: no measurement for Parcel Coral is recorded.",
+    "question": "Does Parcel Coral pass under the stated task policy? Answer YES, NO, or UNKNOWN. Return only the label.",
+    "gold": "UNKNOWN",
+    "minimum": 8,
+    "observations": [
+      null
+    ],
+    "kind": "missing"
+  },
+  {
+    "id": "P1_minimum",
+    "record_id": "P1",
+    "task": "minimum",
+    "order_within_record": 1,
+    "entity": "Parcel Coral",
+    "unit": "kg",
+    "records": "Parcel Coral must measure at least 8 kg to pass. Note A: no measurement for Parcel Coral is recorded.",
+    "question": "What is the required minimum for Parcel Coral? Return only the required number and unit.",
+    "gold": "8 kg",
+    "minimum": 8,
+    "observations": [
+      null
+    ],
+    "kind": "missing"
+  },
+  {
+    "id": "P1_measurements",
+    "record_id": "P1",
+    "task": "measurements",
+    "order_within_record": 2,
+    "entity": "Parcel Coral",
+    "unit": "kg",
+    "records": "Parcel Coral must measure at least 8 kg to pass. Note A: no measurement for Parcel Coral is recorded.",
+    "question": "List every measurement reported for Parcel Coral, preserving all notes. Return each number with kg. Include MISSING for any note explicitly reporting no measurement. Separate entries with semicolons. Return only the entries.",
+    "gold": [
+      "MISSING"
+    ],
+    "minimum": 8,
+    "observations": [
+      null
+    ],
+    "kind": "missing"
+  },
+  {
+    "id": "P2_minimum",
+    "record_id": "P2",
+    "task": "minimum",
+    "order_within_record": 0,
+    "entity": "Box Birch",
+    "unit": "kg",
+    "records": "Box Birch must measure at least 10 kg to pass. Note A: Box Birch measures 6 kg.",
+    "question": "What is the required minimum for Box Birch? Return only the required number and unit.",
+    "gold": "10 kg",
+    "minimum": 10,
+    "observations": [
+      6
+    ],
+    "kind": "below"
+  },
+  {
+    "id": "P2_measurements",
+    "record_id": "P2",
+    "task": "measurements",
+    "order_within_record": 1,
+    "entity": "Box Birch",
+    "unit": "kg",
+    "records": "Box Birch must measure at least 10 kg to pass. Note A: Box Birch measures 6 kg.",
+    "question": "List every measurement reported for Box Birch, preserving all notes. Return each number with kg. Include MISSING for any note explicitly reporting no measurement. Separate entries with semicolons. Return only the entries.",
+    "gold": [
+      "6 kg"
+    ],
+    "minimum": 10,
+    "observations": [
+      6
+    ],
+    "kind": "below"
+  },
+  {
+    "id": "P2_direct",
+    "record_id": "P2",
+    "task": "direct",
+    "order_within_record": 2,
+    "entity": "Box Birch",
+    "unit": "kg",
+    "records": "Box Birch must measure at least 10 kg to pass. Note A: Box Birch measures 6 kg.",
+    "question": "Does Box Birch pass under the stated task policy? Answer YES, NO, or UNKNOWN. Return only the label.",
+    "gold": "NO",
+    "minimum": 10,
+    "observations": [
+      6
+    ],
+    "kind": "below"
+  },
+  {
+    "id": "P3_measurements",
+    "record_id": "P3",
+    "task": "measurements",
+    "order_within_record": 0,
+    "entity": "Rod Copper",
+    "unit": "cm",
+    "records": "Rod Copper must measure at least 12 cm to pass. Note A: Rod Copper measures 12 cm.",
+    "question": "List every measurement reported for Rod Copper, preserving all notes. Return each number with cm. Include MISSING for any note explicitly reporting no measurement. Separate entries with semicolons. Return only the entries.",
+    "gold": [
+      "12 cm"
+    ],
+    "minimum": 12,
+    "observations": [
+      12
+    ],
+    "kind": "equal"
+  },
+  {
+    "id": "P3_direct",
+    "record_id": "P3",
+    "task": "direct",
+    "order_within_record": 1,
+    "entity": "Rod Copper",
+    "unit": "cm",
+    "records": "Rod Copper must measure at least 12 cm to pass. Note A: Rod Copper measures 12 cm.",
+    "question": "Does Rod Copper pass under the stated task policy? Answer YES, NO, or UNKNOWN. Return only the label.",
+    "gold": "YES",
+    "minimum": 12,
+    "observations": [
+      12
+    ],
+    "kind": "equal"
+  },
+  {
+    "id": "P3_minimum",
+    "record_id": "P3",
+    "task": "minimum",
+    "order_within_record": 2,
+    "entity": "Rod Copper",
+    "unit": "cm",
+    "records": "Rod Copper must measure at least 12 cm to pass. Note A: Rod Copper measures 12 cm.",
+    "question": "What is the required minimum for Rod Copper? Return only the required number and unit.",
+    "gold": "12 cm",
+    "minimum": 12,
+    "observations": [
+      12
+    ],
+    "kind": "equal"
+  },
+  {
+    "id": "P4_direct",
+    "record_id": "P4",
+    "task": "direct",
+    "order_within_record": 0,
+    "entity": "Tube Jade",
+    "unit": "cm",
+    "records": "Tube Jade must measure at least 7 cm to pass. Note A: Tube Jade measures 9 cm.",
+    "question": "Does Tube Jade pass under the stated task policy? Answer YES, NO, or UNKNOWN. Return only the label.",
+    "gold": "YES",
+    "minimum": 7,
+    "observations": [
+      9
+    ],
+    "kind": "above"
+  },
+  {
+    "id": "P4_minimum",
+    "record_id": "P4",
+    "task": "minimum",
+    "order_within_record": 1,
+    "entity": "Tube Jade",
+    "unit": "cm",
+    "records": "Tube Jade must measure at least 7 cm to pass. Note A: Tube Jade measures 9 cm.",
+    "question": "What is the required minimum for Tube Jade? Return only the required number and unit.",
+    "gold": "7 cm",
+    "minimum": 7,
+    "observations": [
+      9
+    ],
+    "kind": "above"
+  },
+  {
+    "id": "P4_measurements",
+    "record_id": "P4",
+    "task": "measurements",
+    "order_within_record": 2,
+    "entity": "Tube Jade",
+    "unit": "cm",
+    "records": "Tube Jade must measure at least 7 cm to pass. Note A: Tube Jade measures 9 cm.",
+    "question": "List every measurement reported for Tube Jade, preserving all notes. Return each number with cm. Include MISSING for any note explicitly reporting no measurement. Separate entries with semicolons. Return only the entries.",
+    "gold": [
+      "9 cm"
+    ],
+    "minimum": 7,
+    "observations": [
+      9
+    ],
+    "kind": "above"
+  },
+  {
+    "id": "P5_minimum",
+    "record_id": "P5",
+    "task": "minimum",
+    "order_within_record": 0,
+    "entity": "Beam Quartz",
+    "unit": "cm",
+    "records": "Beam Quartz must measure at least 9 cm to pass. Note A: Beam Quartz measures 6 cm. Note B: Beam Quartz measures 11 cm.",
+    "question": "What is the required minimum for Beam Quartz? Return only the required number and unit.",
+    "gold": "9 cm",
+    "minimum": 9,
+    "observations": [
+      6,
+      11
+    ],
+    "kind": "crossing_conflict"
+  },
+  {
+    "id": "P5_measurements",
+    "record_id": "P5",
+    "task": "measurements",
+    "order_within_record": 1,
+    "entity": "Beam Quartz",
+    "unit": "cm",
+    "records": "Beam Quartz must measure at least 9 cm to pass. Note A: Beam Quartz measures 6 cm. Note B: Beam Quartz measures 11 cm.",
+    "question": "List every measurement reported for Beam Quartz, preserving all notes. Return each number with cm. Include MISSING for any note explicitly reporting no measurement. Separate entries with semicolons. Return only the entries.",
+    "gold": [
+      "6 cm",
+      "11 cm"
+    ],
+    "minimum": 9,
+    "observations": [
+      6,
+      11
+    ],
+    "kind": "crossing_conflict"
+  },
+  {
+    "id": "P5_direct",
+    "record_id": "P5",
+    "task": "direct",
+    "order_within_record": 2,
+    "entity": "Beam Quartz",
+    "unit": "cm",
+    "records": "Beam Quartz must measure at least 9 cm to pass. Note A: Beam Quartz measures 6 cm. Note B: Beam Quartz measures 11 cm.",
+    "question": "Does Beam Quartz pass under the stated task policy? Answer YES, NO, or UNKNOWN. Return only the label.",
+    "gold": "UNKNOWN",
+    "minimum": 9,
+    "observations": [
+      6,
+      11
+    ],
+    "kind": "crossing_conflict"
+  },
+  {
+    "id": "P6_measurements",
+    "record_id": "P6",
+    "task": "measurements",
+    "order_within_record": 0,
+    "entity": "Frame Violet",
+    "unit": "cm",
+    "records": "Frame Violet must measure at least 8 cm to pass. Note A: Frame Violet measures 10 cm. Note B: Frame Violet measures 12 cm.",
+    "question": "List every measurement reported for Frame Violet, preserving all notes. Return each number with cm. Include MISSING for any note explicitly reporting no measurement. Separate entries with semicolons. Return only the entries.",
+    "gold": [
+      "10 cm",
+      "12 cm"
+    ],
+    "minimum": 8,
+    "observations": [
+      10,
+      12
+    ],
+    "kind": "same_side_conflict"
+  },
+  {
+    "id": "P6_direct",
+    "record_id": "P6",
+    "task": "direct",
+    "order_within_record": 1,
+    "entity": "Frame Violet",
+    "unit": "cm",
+    "records": "Frame Violet must measure at least 8 cm to pass. Note A: Frame Violet measures 10 cm. Note B: Frame Violet measures 12 cm.",
+    "question": "Does Frame Violet pass under the stated task policy? Answer YES, NO, or UNKNOWN. Return only the label.",
+    "gold": "UNKNOWN",
+    "minimum": 8,
+    "observations": [
+      10,
+      12
+    ],
+    "kind": "same_side_conflict"
+  },
+  {
+    "id": "P6_minimum",
+    "record_id": "P6",
+    "task": "minimum",
+    "order_within_record": 2,
+    "entity": "Frame Violet",
+    "unit": "cm",
+    "records": "Frame Violet must measure at least 8 cm to pass. Note A: Frame Violet measures 10 cm. Note B: Frame Violet measures 12 cm.",
+    "question": "What is the required minimum for Frame Violet? Return only the required number and unit.",
+    "gold": "8 cm",
+    "minimum": 8,
+    "observations": [
+      10,
+      12
+    ],
+    "kind": "same_side_conflict"
+  },
+  {
+    "id": "P7_direct",
+    "record_id": "P7",
+    "task": "direct",
+    "order_within_record": 0,
+    "entity": "Crate Ochre",
+    "unit": "kg",
+    "records": "Crate Ochre must measure at least 5 kg to pass. Note A: no measurement for Crate Ochre is recorded. Note B: Crate Ochre measures 7 kg.",
+    "question": "Does Crate Ochre pass under the stated task policy? Answer YES, NO, or UNKNOWN. Return only the label.",
+    "gold": "UNKNOWN",
+    "minimum": 5,
+    "observations": [
+      null,
+      7
+    ],
+    "kind": "missing_measured_conflict"
+  },
+  {
+    "id": "P7_minimum",
+    "record_id": "P7",
+    "task": "minimum",
+    "order_within_record": 1,
+    "entity": "Crate Ochre",
+    "unit": "kg",
+    "records": "Crate Ochre must measure at least 5 kg to pass. Note A: no measurement for Crate Ochre is recorded. Note B: Crate Ochre measures 7 kg.",
+    "question": "What is the required minimum for Crate Ochre? Return only the required number and unit.",
+    "gold": "5 kg",
+    "minimum": 5,
+    "observations": [
+      null,
+      7
+    ],
+    "kind": "missing_measured_conflict"
+  },
+  {
+    "id": "P7_measurements",
+    "record_id": "P7",
+    "task": "measurements",
+    "order_within_record": 2,
+    "entity": "Crate Ochre",
+    "unit": "kg",
+    "records": "Crate Ochre must measure at least 5 kg to pass. Note A: no measurement for Crate Ochre is recorded. Note B: Crate Ochre measures 7 kg.",
+    "question": "List every measurement reported for Crate Ochre, preserving all notes. Return each number with kg. Include MISSING for any note explicitly reporting no measurement. Separate entries with semicolons. Return only the entries.",
+    "gold": [
+      "MISSING",
+      "7 kg"
+    ],
+    "minimum": 5,
+    "observations": [
+      null,
+      7
+    ],
+    "kind": "missing_measured_conflict"
+  }
+]

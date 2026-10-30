@@ -31,3 +31,10 @@ Different unresolved causes need different actions:
 Repeated equal observations do not become independent evidence. Different measured values remain conflicting even if both lie on the same side of the threshold; this helper does not silently invent an aggregation rule. A caller can still supply false structured facts with valid hashes. Neither the helper nor its tests certify empirical truth.
 
 CD-C1 separately evaluates saved model extractions, comparisons and a retrospective extraction-plus-computation replay. Those results motivate checking boundaries; they do not establish that this workflow improves arbitrary agents. The original module is preserved in the study's [archive receipt](../evaluation/competence-decomposition-v1/MODULE_ARCHIVE.json).
+
+
+## A prospectively observed field-binding failure
+
+[TP-C1](../evaluation/typed-pipeline-prospective-v1/REPORT.md) tested a fixed model-extraction-plus-comparison pipeline on fresh authored records. Its permissive surface parser treated requirement numbers in repeated source paragraphs as measurements, and lost natural-language absence without a literal MISSING marker. Correct arithmetic then produced misleading conflict/UNKNOWN receipts. Some copied text still retained the actual source fields with intelligible roles; number harvesting discarded those roles.
+
+Do not construct measurement observations from every number occurring in a generated paragraph. Preserve an explicit mapping from the requested field to its applicable source claim. Parser acceptance, a correct label and a source-grounded reason are separate. Reject or flag an unvalidated binding rather than relabeling infrastructure withholding as detected source uncertainty. This is guidance from a scoped failure, not a proven general repair. The experimental parser was not installed as the helper's default input adapter; the helper still requires explicitly structured evidence. The preceding example bytes are preserved in the study's [archive receipt](../evaluation/typed-pipeline-prospective-v1/ARCHIVE_RECEIPT.json).
