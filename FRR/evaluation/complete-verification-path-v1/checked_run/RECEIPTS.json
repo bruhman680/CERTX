@@ -1,0 +1,3590 @@
+[
+  {
+    "id": "C01",
+    "kind": "new_fixture",
+    "seconds": 0.0010125109984073788,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "NO",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden01",
+      "scope": "Batch01",
+      "contract_canonical_sha256": "18d4f5db77add81e460acd111ad20efe7ae0edb082003be9a05f051d5b3d3dcc",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "56c2ee1d47ca05953a4f3522020f4c447e49fea8b2ae8b926ea1ab4ecfafcfcf",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "1",
+          "quote": "There are 1 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "1",
+          "quote": "Each soil supplies 1 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "4",
+        "denominator": "25",
+        "decimal_approximation": "0.16",
+        "display_precision_digits": 32
+      },
+      "count_product": "1",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "C02",
+    "kind": "new_fixture",
+    "seconds": 0.0006649880087934434,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "NO",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden02",
+      "scope": "Batch02",
+      "contract_canonical_sha256": "386f1f9079988031f12b621ed74bbd5d178df936e7837769336535cb75c0679e",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "2366a2d617a6dd4b2603035533c69c71e209f931648e56a7dc7bd5eb538467c6",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "2",
+          "quote": "2 soils were sampled independently."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "3",
+          "quote": "Each soil supplied 3 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "14",
+        "denominator": "375",
+        "decimal_approximation": "0.037333333333333333333333333333333",
+        "display_precision_digits": 32
+      },
+      "count_product": "6",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "C03",
+    "kind": "new_fixture",
+    "seconds": 0.00020829300046898425,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden03",
+      "scope": "Batch03",
+      "contract_canonical_sha256": "797ed4797c12345d3fc9ac1c4043ae973275c0753c6b662a77be4b35f97d2a44",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "76d47b5a1fc4f19a272d6a7f87a62f9556e5845be64b6e5609bfcfaea77676f4",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "4",
+          "quote": "There are 4 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "16",
+          "quote": "Each soil supplies 16 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "1",
+        "denominator": "100",
+        "decimal_approximation": "0.01",
+        "display_precision_digits": 32
+      },
+      "count_product": "64",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "C04",
+    "kind": "new_fixture",
+    "seconds": 0.0002253580023534596,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden04",
+      "scope": "Batch04",
+      "contract_canonical_sha256": "4fbbe301d6f4af74c4b022b1f1fcebc62ce401744a71e0ae378be52a0797ff93",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "d29aa42d186ffe7110507892ccbd80e1905dbce3171b8c3b7a5430eb86df4d91",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "5",
+          "quote": "There are 5 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplies 9 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "52",
+        "denominator": "5625",
+        "decimal_approximation": "0.0092444444444444444444444444444444",
+        "display_precision_digits": 32
+      },
+      "count_product": "45",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "C05",
+    "kind": "new_fixture",
+    "seconds": 0.00018160299805458635,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden05",
+      "scope": "Batch05",
+      "contract_canonical_sha256": "48293384c35a1aa2ea9b7543ba947708258cd6840b6b857bf67bd6e81e33560e",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "b60dd24f63b26d253d50cc49e728cbf20291190d20e136efcad11165fc4a591a",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "8",
+          "quote": "There are 8 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "8",
+          "quote": "Each soil supplies 8 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "3",
+        "denominator": "500",
+        "decimal_approximation": "0.006",
+        "display_precision_digits": 32
+      },
+      "count_product": "64",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "C06",
+    "kind": "new_fixture",
+    "seconds": 0.00018428701150696725,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden06",
+      "scope": "Batch06",
+      "contract_canonical_sha256": "a3553ddb57360becce44242209c01b0f1f3ba5a348d926ca4b60c9144e9388b3",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "caf09e1318c69379488a4ff5399ced974834323deb2aebd305a988bc0df58132",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "9",
+          "quote": "9 soils were sampled independently."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "5",
+          "quote": "Each soil supplied 5 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "4",
+        "denominator": "625",
+        "decimal_approximation": "0.0064",
+        "display_precision_digits": 32
+      },
+      "count_product": "45",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "C07",
+    "kind": "new_fixture",
+    "seconds": 0.00020267500076442957,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden07",
+      "scope": "Batch07",
+      "contract_canonical_sha256": "3347748fa6d95853949deb6f0996e021dfddefa20b4dc370a7fbd235a9e5f6d2",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "ac6ef1be65de24dd04389d62fcb017282855ff0db386f862011081828c86314c",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "18",
+          "quote": "Each soil supplies 18 observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "C08",
+    "kind": "new_fixture",
+    "seconds": 0.0002234860003227368,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_per_soil_observations"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden08",
+      "scope": "Batch08",
+      "contract_canonical_sha256": "a489521b798e09b6b5362b1a37f22b0273ba3d859e82fcfc05b676334f02a5af",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "b743ca8909efd5d0d9509f612402719f8835ec5969cbe37d4bb8ab64129f05b1",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "12",
+          "quote": "There are 12 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "missing",
+          "value": null,
+          "quote": "Observations per soil were not recorded."
+        }
+      }
+    }
+  },
+  {
+    "id": "C09",
+    "kind": "new_fixture",
+    "seconds": 0.00036206400545779616,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "outside_domain",
+      "answer": null,
+      "reason_codes": [
+        "zero_soil_count",
+        "planned_not_observed"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden09",
+      "scope": "Batch09",
+      "contract_canonical_sha256": "a26f7f75c1aa1be641acf9eef971cc680d702aa62fb18932a24feb162882f69c",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "1394717cffa5ecba6d0034ce6fbb39e93c6f9dd5fccba8b98dbcca7593d0f6f3",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "0",
+          "quote": "There are 0 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "planned",
+          "value": "9",
+          "quote": "Nine observations per soil were planned, but none were collected."
+        }
+      }
+    }
+  },
+  {
+    "id": "C10",
+    "kind": "new_fixture",
+    "seconds": 0.00014822299999650568,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "outside_domain",
+      "answer": null,
+      "reason_codes": [
+        "zero_observations_per_soil"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden10",
+      "scope": "Batch10",
+      "contract_canonical_sha256": "53eb751c5c2e297dcb81449c8236abc3b3598a1dbf85e495cf385161d7f75bc9",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "ecd0b1cf753ab6c8df8491f93478afac52250a3d6f34dae7f6e2f7427537d49f",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "12",
+          "quote": "There are 12 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "0",
+          "quote": "Each soil supplies 0 observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "C11",
+    "kind": "new_fixture",
+    "seconds": 0.00018111200188286602,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "unsupported_source",
+      "answer": null,
+      "reason_codes": [
+        "complete_count_grammar_not_supported"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden11",
+      "scope": "Batch11",
+      "contract_canonical_sha256": "9781f13b009af9bb0f5894250ab1b3fd80e8622691df1dc669dae54c32f9803c",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "0b8b03b2675b9b71243867ab6955e9a5a9464c0da6dc6a99d6f2c880be238c09"
+    }
+  },
+  {
+    "id": "C12",
+    "kind": "new_fixture",
+    "seconds": 0.00018193299183622003,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "unsupported_source",
+      "answer": null,
+      "reason_codes": [
+        "complete_count_grammar_not_supported"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden12",
+      "scope": "Batch12",
+      "contract_canonical_sha256": "50d91801230ec3f64c3f72a8934f4d8a5e057a3655fd8751d1f94ae12f80611e",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "e5bcf6b5ab6452d2cbc7726a2a7d47d683260c8a085c418867a1e023fe012f1d"
+    }
+  },
+  {
+    "id": "C13",
+    "kind": "new_fixture",
+    "seconds": 0.00015524300397373736,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "identity_mismatch",
+      "answer": null,
+      "reason_codes": [
+        "source_entity_or_scope_differs"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "OtherGarden",
+      "scope": "Batch13",
+      "contract_canonical_sha256": "800ceb235c648f6a5b92886f874ae576fab252192b4a8488c5648e339f922b31",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "37d8ed1ab8588e08135f2330843f4104e6fd1d2525118c76364fa7da3381ec27"
+    }
+  },
+  {
+    "id": "C14",
+    "kind": "new_fixture",
+    "seconds": 0.00011309000547043979,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_hash_mismatch",
+      "answer": null,
+      "reason_codes": [
+        "expected_source_bytes_differ"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden14",
+      "scope": "Batch14",
+      "contract_canonical_sha256": "e01d83e65e9f23b0cbfd60e26c50dec33b709576467a741efb2ef9401aecb57c",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "7dc65fc1f024580fccc34c613d2c55192289038712e7c69347d2333671ae14ae"
+    }
+  },
+  {
+    "id": "C15",
+    "kind": "new_fixture",
+    "seconds": 5.750601121690124e-05,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "invalid_model",
+      "answer": null,
+      "reason_codes": [
+        "bernoulli_variance_decomposition"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ]
+    }
+  },
+  {
+    "id": "C16",
+    "kind": "new_fixture",
+    "seconds": 3.8156998925842345e-05,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "invalid_model",
+      "answer": null,
+      "reason_codes": [
+        "model_or_assumption_declaration"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ]
+    }
+  },
+  {
+    "id": "C17",
+    "kind": "new_fixture",
+    "seconds": 0.0001268499909201637,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_soil_count",
+        "missing_per_soil_observations"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden17",
+      "scope": "Batch17",
+      "contract_canonical_sha256": "77d731de6f9181c874d196ce58bd6149ab829becf810dd76616bcf3eac6a791d",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "001c0c729d0487dc484fcac029fef02e5274e79d0354cef2475155e801d9736b",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "absent",
+          "value": null,
+          "quote": null
+        }
+      }
+    }
+  },
+  {
+    "id": "C18",
+    "kind": "new_fixture",
+    "seconds": 0.00041793700074777007,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "outside_domain",
+      "answer": null,
+      "reason_codes": [
+        "planned_not_observed"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden18",
+      "scope": "Batch18",
+      "contract_canonical_sha256": "b9ec7f416ced1bee1ce36697973840ec51c08d85f49e186c7b7572d9c715089a",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "850b0f2d404474fa85ae2c71ec3678de2f2fafcb2514cfa4535c2c0b183c4f02",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "5",
+          "quote": "There are 5 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "planned",
+          "value": "9",
+          "quote": "Nine observations per soil were planned, but none were collected."
+        }
+      }
+    }
+  },
+  {
+    "id": "C19",
+    "kind": "new_fixture",
+    "seconds": 0.0002387690037721768,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden19",
+      "scope": "Batch19",
+      "contract_canonical_sha256": "8e1e5a84d18bb372cb2b97d19fe1c2be4a42b7810e368ada180d0818697b3ada",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "0001a8a282880afb37e16dcc61c0aac7ed0e5e58571f3b08181250ad1207fa54",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "32",
+          "quote": "Thirty-two soils were sampled independently."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "2",
+          "quote": "Each soil supplied two observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "3",
+        "denominator": "1000",
+        "decimal_approximation": "0.003",
+        "display_precision_digits": 32
+      },
+      "count_product": "64",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "C20",
+    "kind": "new_fixture",
+    "seconds": 0.00020901400421280414,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden20",
+      "scope": "Batch20",
+      "contract_canonical_sha256": "6f19d43f41768b6d3988081d1e112be98eb2ee5e21476b91338665f5272b135e",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "1",
+        "between": "0",
+        "within": "0",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0"
+      },
+      "source_sha256": "b681096bf845a323b2d339d3b157f365a6b6f730e36297e43f594874ff4ffa1e",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "5",
+          "quote": "There are 5 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplies 9 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "0",
+        "denominator": "1",
+        "decimal_approximation": "0",
+        "display_precision_digits": 32
+      },
+      "count_product": "45",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "R01",
+    "kind": "historical_body",
+    "seconds": 0.00021619501058012247,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R01",
+      "contract_canonical_sha256": "823c9a27eb50544d5e119c5675d288a24c588116a06e446344d06f7d993649ab",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "c46e9e0a79ec955f3b14b900614ec24f3c8ca40d0ee4eb98ca298204dc9f0563",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "5",
+          "quote": "5 soils were sampled independently."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplied 9 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "52",
+        "denominator": "5625",
+        "decimal_approximation": "0.0092444444444444444444444444444444",
+        "display_precision_digits": 32
+      },
+      "count_product": "45",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "R02",
+    "kind": "historical_body",
+    "seconds": 0.000184698001248762,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R02",
+      "contract_canonical_sha256": "1fb6d21054997377cb0b850c70fc2280a640091c57284bba71802e16a1247471",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "2713b536eaa7f19a94d170ae53aea58c6c9af7f68b7573e2daefc55b496a9c15",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "5",
+          "quote": "There are 5 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplies 9 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "52",
+        "denominator": "5625",
+        "decimal_approximation": "0.0092444444444444444444444444444444",
+        "display_precision_digits": 32
+      },
+      "count_product": "45",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "R03",
+    "kind": "historical_body",
+    "seconds": 0.00014483698760159314,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R03",
+      "contract_canonical_sha256": "267be0540d92c50db1e3a0bebf1157c2d1b73d8de3e26f3aeeb3c7c4b7fcc0d4",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "b9f782a173747daa45accad5cb56526ab538b3740986232f411cacdda7bb16ad",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "9",
+          "quote": "9 soils were sampled independently."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "5",
+          "quote": "Each soil supplied 5 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "4",
+        "denominator": "625",
+        "decimal_approximation": "0.0064",
+        "display_precision_digits": 32
+      },
+      "count_product": "45",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "R04",
+    "kind": "historical_body",
+    "seconds": 0.00014102199929766357,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R04",
+      "contract_canonical_sha256": "f73bf824a8982cf69f16cfb1ac69760892e79f2fbfe9c0366e2cd9e561d1d362",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "b52ba71a2baaf11c7e36208059abb8a7884b6dbc1482451534b6ab27c3ab7d6a",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "9",
+          "quote": "There are 9 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "5",
+          "quote": "Each soil supplies 5 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "4",
+        "denominator": "625",
+        "decimal_approximation": "0.0064",
+        "display_precision_digits": 32
+      },
+      "count_product": "45",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "R05",
+    "kind": "historical_body",
+    "seconds": 0.0002958149998448789,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R05",
+      "contract_canonical_sha256": "f00387c3125c5b5bcbd4bc8b078c66f32a5851d98d5376bab335e8a8b34d0fe8",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "463791d09687f91ff2649b56a27a990f8665a674435f502e8ac2f9cd42ab81c3",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "6",
+          "quote": "6 soils were sampled independently."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "18",
+          "quote": "Each soil supplied 18 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "22",
+        "denominator": "3375",
+        "decimal_approximation": "0.0065185185185185185185185185185185",
+        "display_precision_digits": 32
+      },
+      "count_product": "108",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "R06",
+    "kind": "historical_body",
+    "seconds": 0.00014972500503063202,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R06",
+      "contract_canonical_sha256": "8d9c103341fe3f7773ecd5e1a7547e89c17b6937d6b5a464645513102dc3e175",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "63b0588d0e205489b85356e33b4bb3d008b6036e872f5e585cc5d626010e3e51",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "6",
+          "quote": "There are 6 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "18",
+          "quote": "Each soil supplies 18 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "22",
+        "denominator": "3375",
+        "decimal_approximation": "0.0065185185185185185185185185185185",
+        "display_precision_digits": 32
+      },
+      "count_product": "108",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "R07",
+    "kind": "historical_body",
+    "seconds": 0.00013983000826556236,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R07",
+      "contract_canonical_sha256": "00c548329b0f2a79811f78756b5ab61e1d5d57b0526f8f89113532f67017ab99",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "699a722ced89a9e35503d1f60431658fa4984e7739da8ee5c4300c24d62836d7",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "18",
+          "quote": "18 soils were sampled independently."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "6",
+          "quote": "Each soil supplied 6 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "2",
+        "denominator": "675",
+        "decimal_approximation": "0.0029629629629629629629629629629630",
+        "display_precision_digits": 32
+      },
+      "count_product": "108",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "R08",
+    "kind": "historical_body",
+    "seconds": 0.00012700099614448845,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R08",
+      "contract_canonical_sha256": "79e77085b052fbb3dda2d299e87ae9a026a40cfaa36aacc32c271f2aeca8d514",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "595b20b32ceffc3f6e042d280f7d4a3997bf3d910f0e3e43640fc75356846814",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "18",
+          "quote": "There are 18 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "6",
+          "quote": "Each soil supplies 6 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "2",
+        "denominator": "675",
+        "decimal_approximation": "0.0029629629629629629629629629629630",
+        "display_precision_digits": 32
+      },
+      "count_product": "108",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "R09",
+    "kind": "historical_body",
+    "seconds": 0.00027703600062523037,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R09",
+      "contract_canonical_sha256": "4eb2b4aa0679c363556c26ca9e6bf92082d391d1ddb4210e2b8c6a52f7dddf68",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "53a4f34f956f37a0e50d0a2c245eaff8224d3af218587ee2ae4f3289d366ffb1",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "Some soils were sampled independently, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplied 9 observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "R10",
+    "kind": "historical_body",
+    "seconds": 0.0001874309964478016,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R10",
+      "contract_canonical_sha256": "8e153de11423c6765796b6c83ed6acd41f925a61f6906448fb95ba9bfad6178b",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "f6d99a2fa48b18384cdeea98134c8c5804aca27ded00fa5d7e1b4c4eabe31b95",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplies 9 observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "R11",
+    "kind": "historical_body",
+    "seconds": 0.00015762700058985502,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R11",
+      "contract_canonical_sha256": "c5e0dc57cb03d2f1d9410fe2de5ee4e471ca9c68653f4a81f3ac0a15baa8c4c9",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "a50acc25700d2eced1d1e755cb60fc02397cacc9248dc276b2dcd8a4c7b42237",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "Some soils were sampled independently, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "18",
+          "quote": "Each soil supplied 18 observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "R12",
+    "kind": "historical_body",
+    "seconds": 0.0001919690112117678,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R12",
+      "contract_canonical_sha256": "4e65ea53954bcdd33cc97f8567c63cb073872155d1527808b2e49eafe0d0b390",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "9a4b96c219a48a18795a011e6a29fd2f9640f2da38a9d913d60357606d69eb48",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "18",
+          "quote": "Each soil supplies 18 observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "R13",
+    "kind": "historical_body",
+    "seconds": 0.0001825139916036278,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "outside_domain",
+      "answer": null,
+      "reason_codes": [
+        "zero_soil_count",
+        "planned_not_observed"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R13",
+      "contract_canonical_sha256": "983a8ea4005d54fec45ef06aa246862839e32cae06329b71c6c44e0341495ae6",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "85a1a3dd77519d1418cb019cefbd7e1b132dc8b444753b094a61ce33657a3a2c",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "0",
+          "quote": "0 soils were sampled independently."
+        },
+        "per_soil_observations": {
+          "state": "planned",
+          "value": "9",
+          "quote": "Nine observations per soil were planned, but none were collected."
+        }
+      }
+    }
+  },
+  {
+    "id": "R14",
+    "kind": "historical_body",
+    "seconds": 0.00013460300397127867,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "outside_domain",
+      "answer": null,
+      "reason_codes": [
+        "zero_soil_count",
+        "planned_not_observed"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R14",
+      "contract_canonical_sha256": "a7f2f00a074f66b9453184f7b15f14775afd0e3c66c2125c2a16c310a7e00003",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "738741a9441c55ac4b769a693303b98ed454a317144abed358d020e1f717b0ab",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "0",
+          "quote": "There are 0 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "planned",
+          "value": "9",
+          "quote": "Nine observations per soil were planned, but none were collected."
+        }
+      }
+    }
+  },
+  {
+    "id": "R15",
+    "kind": "historical_body",
+    "seconds": 0.00021675600146409124,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R15",
+      "contract_canonical_sha256": "91bd9671ec9e3497f4fc2e441d5d28939f9b492d223c918fa6a6c2ef67dbb1ff",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "32d990d23a1d107b6ee0adf7e909cc397e2d329ace71778070a8236ce2e7e924",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplies 9 observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "R16",
+    "kind": "historical_body",
+    "seconds": 0.00015388100291602314,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R16",
+      "contract_canonical_sha256": "46c804a4ec2609ec752060b19335206bfdf89e31b6d33b11525fc0da7374af03",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "bbdd8e564e90415dbf6a3e9d37ea8faeecda741397b164be8c6752a8807ba6dd",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplies nine observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "R17",
+    "kind": "historical_body",
+    "seconds": 0.0002036160003626719,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R17",
+      "contract_canonical_sha256": "181c15baacd18f4ba382b3997798bf77e606540795a94d642ee2e240aeadd71b",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "c963a2a5378dc43b9abf1202f8ee24be909064375bd32badb56e935dd18cb657",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "18",
+          "quote": "Each soil supplies 18 observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "R18",
+    "kind": "historical_body",
+    "seconds": 0.0002449280000291765,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R18",
+      "contract_canonical_sha256": "45afc5a0a6fa075d9b6f7a9bf7411ac513fdbbedf28f163bb23594302999f549",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "dbd74cda7b9c67fabc14c32f1683f03ad3c89d8df4c617e286ea9a36ce602b90",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "18",
+          "quote": "Each soil supplies eighteen observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "R19",
+    "kind": "historical_body",
+    "seconds": 0.00015176799206528813,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R19",
+      "contract_canonical_sha256": "5ff3a146ad642967c602526689d0eb9b1f2dcb9f42090af61594a01ab3218678",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "46415ebe0b35a39b41260eaad44ac61c584053f0bd04a5fe7bff8bea412f3579",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "7",
+          "quote": "Each soil supplies 7 observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "R20",
+    "kind": "historical_body",
+    "seconds": 0.00012558899470604956,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R20",
+      "contract_canonical_sha256": "f510c68ed5929bb4b6cb160a7ce63e6ee9dadb2d1a1eb24b5556ebdd396080d9",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "0ec92a0136e6c26530f7af339d040de1c21814c9a9b71945e7954c1accd32a47",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "7",
+          "quote": "Each soil supplies seven observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "R21",
+    "kind": "historical_body",
+    "seconds": 0.00015192800492513925,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R21",
+      "contract_canonical_sha256": "73c3036a01dc77aa8bfb3750d09dcba60c838bae9bf1457f60639f75439afa8a",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "15c72077cc52106e866c3055241b5243ffa1a8b2f91545f1b2eee47c939e214c",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "11",
+          "quote": "Each soil supplies 11 observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "R22",
+    "kind": "historical_body",
+    "seconds": 0.000126369995996356,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R22",
+      "contract_canonical_sha256": "3ec6634c42d531d54aee7e50a90b8332b102bc0c84754d7f3561ea9c618e8e88",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "b20ccc0be6dcfe2b41ce3d959652eb90f5ebf22e0d933848afa625002e128a24",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "11",
+          "quote": "Each soil supplies eleven observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "R23",
+    "kind": "historical_body",
+    "seconds": 0.00011538300896063447,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_soil_count",
+        "missing_per_soil_observations"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R23",
+      "contract_canonical_sha256": "356e0ff2a21bde205b077073ed9cdabc94eb851d23b237c51aab2d4917fcc089",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "45b23b6cebc7d2758b45c4c153cb1421ff019f519a258131418eb1806f97ca8a",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "absent",
+          "value": null,
+          "quote": null
+        }
+      }
+    }
+  },
+  {
+    "id": "R24",
+    "kind": "historical_body",
+    "seconds": 0.00015785699361003935,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R24",
+      "contract_canonical_sha256": "18bad60f9f534684c98fa73c17fd0e93e119c745ec037fd3494f5a9c1bf8efda",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "f793920a73cd76a4064903762cf66de65c508aafb77643651579cdeede204872",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "32",
+          "quote": "32 soils were sampled independently."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "2",
+          "quote": "Each soil supplied 2 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "3",
+        "denominator": "1000",
+        "decimal_approximation": "0.003",
+        "display_precision_digits": 32
+      },
+      "count_product": "64",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "R25",
+    "kind": "historical_body",
+    "seconds": 0.0001871109998319298,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R25",
+      "contract_canonical_sha256": "e37dd285748b8fb460b667bce63d20ab7e0e40a127c2ff21c5654d62abd3c64d",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "f2d0d91d9a0ec1db7b33f6156bcd19bf7178e0718e8fa27fd09b5765d365c99f",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "32",
+          "quote": "Thirty-two soils were sampled independently."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "2",
+          "quote": "Each soil supplied 2 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "3",
+        "denominator": "1000",
+        "decimal_approximation": "0.003",
+        "display_precision_digits": 32
+      },
+      "count_product": "64",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "R26",
+    "kind": "historical_body",
+    "seconds": 0.0001362750044791028,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R26",
+      "contract_canonical_sha256": "12c164364eddee4da38db49b4cfff8a9d22c05dc8471029af84e3ac6ae53263b",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "eb4255f9b94fb0ae59e313f2cd527ad53896449dc09ea6b66923c6da08471824",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "32",
+          "quote": "There are 32 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "2",
+          "quote": "Each soil supplies 2 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "3",
+        "denominator": "1000",
+        "decimal_approximation": "0.003",
+        "display_precision_digits": 32
+      },
+      "count_product": "64",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "R27",
+    "kind": "historical_body",
+    "seconds": 0.0001362040056847036,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R27",
+      "contract_canonical_sha256": "127af1a61fe84f6914abba6100b46a49d31933e4d08c330c457f16dabd36d3f7",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "aae598f83710306d048549db5c653df83bf1d27c1af8ba841393446c3c42707b",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "32",
+          "quote": "There are thirty-two independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "2",
+          "quote": "Each soil supplies 2 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "3",
+        "denominator": "1000",
+        "decimal_approximation": "0.003",
+        "display_precision_digits": 32
+      },
+      "count_product": "64",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "R28",
+    "kind": "historical_body",
+    "seconds": 0.00012989599781576544,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "NO",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R28",
+      "contract_canonical_sha256": "1f3f636d775e228e8b8584609ce0792873d1a9acfedc21407f9ba9b584d62089",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "0f9767e2ddf0c3ad4d84b167d32301621e4647115b230a95ab84e95a842d6693",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "2",
+          "quote": "2 soils were sampled independently."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "32",
+          "quote": "Each soil supplied 32 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "9",
+        "denominator": "500",
+        "decimal_approximation": "0.018",
+        "display_precision_digits": 32
+      },
+      "count_product": "64",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "R29",
+    "kind": "historical_body",
+    "seconds": 0.00013587399735115469,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "NO",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R29",
+      "contract_canonical_sha256": "7c17289830659328548765ea1a376eab09229f02be115d95be61ab62003be777",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "7e47a559891c0bb690775fc8aa831577abf396cdca9d6fdd4c8da01a2ccd5b58",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "2",
+          "quote": "Two soils were sampled independently."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "32",
+          "quote": "Each soil supplied 32 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "9",
+        "denominator": "500",
+        "decimal_approximation": "0.018",
+        "display_precision_digits": 32
+      },
+      "count_product": "64",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "R30",
+    "kind": "historical_body",
+    "seconds": 0.00027687501278705895,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "NO",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R30",
+      "contract_canonical_sha256": "ff06559eb1f41828b5902307b1a80fed9b1bfe59cbe021a21262bd9ec2abbae1",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "94d1ba6beae5ae0c06b6556c0d99f41f7d0d62af34fb2490297087b9b385f8b5",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "2",
+          "quote": "There are 2 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "32",
+          "quote": "Each soil supplies 32 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "9",
+        "denominator": "500",
+        "decimal_approximation": "0.018",
+        "display_precision_digits": 32
+      },
+      "count_product": "64",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "R31",
+    "kind": "historical_body",
+    "seconds": 0.00014326500240713358,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "deterministic_source",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "NO",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R31",
+      "contract_canonical_sha256": "e3adfcf095fb85ecc74ae57480431abf6bef93e8454e29ea9f0af450228a02bf",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "bedd8ce6d46100dc44704e7cf1212a700fd4d31724a0175aa0f0e7cce5393125",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "2",
+          "quote": "There are two independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "32",
+          "quote": "Each soil supplies 32 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "9",
+        "denominator": "500",
+        "decimal_approximation": "0.018",
+        "display_precision_digits": 32
+      },
+      "count_product": "64",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "P01",
+    "kind": "curated_proposal",
+    "seconds": 0.00013855799625162035,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "witnessed_proposal",
+      "status": "computed",
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "reason_codes": [
+        "source_roles_bound",
+        "declared_model_and_positive_count_domain",
+        "exact_at_most_comparison"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden04",
+      "scope": "Batch04",
+      "contract_canonical_sha256": "4fbbe301d6f4af74c4b022b1f1fcebc62ce401744a71e0ae378be52a0797ff93",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "d29aa42d186ffe7110507892ccbd80e1905dbce3171b8c3b7a5430eb86df4d91",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "5",
+          "quote": "There are 5 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplies 9 observations."
+        }
+      },
+      "formula": "between/k + within/(k*m)",
+      "variance": {
+        "numerator": "52",
+        "denominator": "5625",
+        "decimal_approximation": "0.0092444444444444444444444444444444",
+        "display_precision_digits": 32
+      },
+      "count_product": "45",
+      "interpretation": "Answer conditional on the supplied model, source grammar and declared assumptions; not empirical truth verification."
+    }
+  },
+  {
+    "id": "P02",
+    "kind": "curated_proposal",
+    "seconds": 0.00012439700367394835,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "witnessed_proposal",
+      "status": "withheld",
+      "stage": "proposal_binding_mismatch",
+      "answer": null,
+      "reason_codes": [
+        "proposed_role_state_value_or_quote_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden04",
+      "scope": "Batch04",
+      "contract_canonical_sha256": "4fbbe301d6f4af74c4b022b1f1fcebc62ce401744a71e0ae378be52a0797ff93",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "d29aa42d186ffe7110507892ccbd80e1905dbce3171b8c3b7a5430eb86df4d91",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "5",
+          "quote": "There are 5 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplies 9 observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "P03",
+    "kind": "curated_proposal",
+    "seconds": 0.00013158799265511334,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "witnessed_proposal",
+      "status": "withheld",
+      "stage": "proposal_binding_mismatch",
+      "answer": null,
+      "reason_codes": [
+        "proposed_role_state_value_or_quote_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden07",
+      "scope": "Batch07",
+      "contract_canonical_sha256": "3347748fa6d95853949deb6f0996e021dfddefa20b4dc370a7fbd235a9e5f6d2",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "ac6ef1be65de24dd04389d62fcb017282855ff0db386f862011081828c86314c",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "18",
+          "quote": "Each soil supplies 18 observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "P04",
+    "kind": "curated_proposal",
+    "seconds": 0.00014544800797011703,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "witnessed_proposal",
+      "status": "withheld",
+      "stage": "proposal_binding_mismatch",
+      "answer": null,
+      "reason_codes": [
+        "proposed_role_state_value_or_quote_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden09",
+      "scope": "Batch09",
+      "contract_canonical_sha256": "a26f7f75c1aa1be641acf9eef971cc680d702aa62fb18932a24feb162882f69c",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "1394717cffa5ecba6d0034ce6fbb39e93c6f9dd5fccba8b98dbcca7593d0f6f3",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "0",
+          "quote": "There are 0 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "planned",
+          "value": "9",
+          "quote": "Nine observations per soil were planned, but none were collected."
+        }
+      }
+    }
+  },
+  {
+    "id": "P05",
+    "kind": "curated_proposal",
+    "seconds": 0.00011846798588521779,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "witnessed_proposal",
+      "status": "withheld",
+      "stage": "proposal_binding_mismatch",
+      "answer": null,
+      "reason_codes": [
+        "proposed_role_state_value_or_quote_per_soil_observations"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden18",
+      "scope": "Batch18",
+      "contract_canonical_sha256": "b9ec7f416ced1bee1ce36697973840ec51c08d85f49e186c7b7572d9c715089a",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "850b0f2d404474fa85ae2c71ec3678de2f2fafcb2514cfa4535c2c0b183c4f02",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "5",
+          "quote": "There are 5 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "planned",
+          "value": "9",
+          "quote": "Nine observations per soil were planned, but none were collected."
+        }
+      }
+    }
+  },
+  {
+    "id": "P06",
+    "kind": "curated_proposal",
+    "seconds": 0.00014943401038181037,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "witnessed_proposal",
+      "status": "withheld",
+      "stage": "invalid_proposal",
+      "answer": null,
+      "reason_codes": [
+        "proposal_schema"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden04",
+      "scope": "Batch04",
+      "contract_canonical_sha256": "4fbbe301d6f4af74c4b022b1f1fcebc62ce401744a71e0ae378be52a0797ff93",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "d29aa42d186ffe7110507892ccbd80e1905dbce3171b8c3b7a5430eb86df4d91",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "5",
+          "quote": "There are 5 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplies 9 observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "P07",
+    "kind": "curated_proposal",
+    "seconds": 0.00011148699559271336,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "witnessed_proposal",
+      "status": "withheld",
+      "stage": "proposal_binding_mismatch",
+      "answer": null,
+      "reason_codes": [
+        "proposal_identity_or_source"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden04",
+      "scope": "Batch04",
+      "contract_canonical_sha256": "4fbbe301d6f4af74c4b022b1f1fcebc62ce401744a71e0ae378be52a0797ff93",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "d29aa42d186ffe7110507892ccbd80e1905dbce3171b8c3b7a5430eb86df4d91",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "5",
+          "quote": "There are 5 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplies 9 observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "P08",
+    "kind": "curated_proposal",
+    "seconds": 0.00011316999734845012,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "witnessed_proposal",
+      "status": "withheld",
+      "stage": "source_missing",
+      "answer": null,
+      "reason_codes": [
+        "missing_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden07",
+      "scope": "Batch07",
+      "contract_canonical_sha256": "3347748fa6d95853949deb6f0996e021dfddefa20b4dc370a7fbd235a9e5f6d2",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "ac6ef1be65de24dd04389d62fcb017282855ff0db386f862011081828c86314c",
+      "bound_fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "18",
+          "quote": "Each soil supplies 18 observations."
+        }
+      }
+    }
+  },
+  {
+    "id": "P09",
+    "kind": "curated_proposal",
+    "seconds": 0.00011158800043631345,
+    "errors": [],
+    "receipt": {
+      "ruleset": "source-calculation-path-0.1",
+      "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+      "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+      "mode": "witnessed_proposal",
+      "status": "withheld",
+      "stage": "proposal_binding_mismatch",
+      "answer": null,
+      "reason_codes": [
+        "proposed_role_state_value_or_quote_soil_count"
+      ],
+      "limitations": [
+        "Full declared source grammar only; unsupported content withholds.",
+        "Hashes bind bytes, not source authenticity, truth, or real independence.",
+        "Model assumptions are caller-declared, not empirically verified.",
+        "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+        "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+      ],
+      "claim_id": "variance-at-most-001",
+      "entity": "Garden04",
+      "scope": "Batch04",
+      "contract_canonical_sha256": "4fbbe301d6f4af74c4b022b1f1fcebc62ce401744a71e0ae378be52a0797ff93",
+      "declared_model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      },
+      "source_sha256": "d29aa42d186ffe7110507892ccbd80e1905dbce3171b8c3b7a5430eb86df4d91",
+      "bound_fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "5",
+          "quote": "There are 5 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplies 9 observations."
+        }
+      }
+    }
+  }
+]

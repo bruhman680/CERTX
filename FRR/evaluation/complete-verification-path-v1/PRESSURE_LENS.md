@@ -1,0 +1,3 @@
+# An exploratory pressure/equalization lens
+
+User intuition,30October2026: expanding understanding across uncertain or distant areas may relieve constraints in another area, like water equalizing pressure. Keep this as an unvalidated organizing metaphor. A testable version would name the target task, the assumption/representation shared across areas, the intervention in one area and an independently measured change elsewhere. Word similarity or a pleasing analogy alone is not evidence of physical pressure, a conservation law, learning dynamics or transfer. This build's connection is modest: earlier source-reading failures become requirements for a bounded computational path; it does not test a physics theory of understanding.

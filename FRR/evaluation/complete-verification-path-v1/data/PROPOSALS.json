@@ -1,0 +1,193 @@
+[
+  {
+    "id": "P01",
+    "fixture_id": "C04",
+    "proposal": {
+      "entity": "Garden04",
+      "scope": "Batch04",
+      "source_sha256": "d29aa42d186ffe7110507892ccbd80e1905dbce3171b8c3b7a5430eb86df4d91",
+      "fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "5",
+          "quote": "There are 5 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplies 9 observations."
+        }
+      }
+    },
+    "expected_stage": "conditional_answer",
+    "expected_answer": "YES"
+  },
+  {
+    "id": "P02",
+    "fixture_id": "C04",
+    "proposal": {
+      "entity": "Garden04",
+      "scope": "Batch04",
+      "source_sha256": "d29aa42d186ffe7110507892ccbd80e1905dbce3171b8c3b7a5430eb86df4d91",
+      "fields": {
+        "soil_count": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplies 9 observations."
+        },
+        "per_soil_observations": {
+          "state": "known",
+          "value": "5",
+          "quote": "There are 5 independently sampled soils."
+        }
+      }
+    },
+    "expected_stage": "proposal_binding_mismatch",
+    "expected_answer": null
+  },
+  {
+    "id": "P03",
+    "fixture_id": "C07",
+    "proposal": {
+      "entity": "Garden07",
+      "scope": "Batch07",
+      "source_sha256": "ac6ef1be65de24dd04389d62fcb017282855ff0db386f862011081828c86314c",
+      "fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "18",
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "18",
+          "quote": "Each soil supplies 18 observations."
+        }
+      }
+    },
+    "expected_stage": "proposal_binding_mismatch",
+    "expected_answer": null
+  },
+  {
+    "id": "P04",
+    "fixture_id": "C09",
+    "proposal": {
+      "entity": "Garden09",
+      "scope": "Batch09",
+      "source_sha256": "1394717cffa5ecba6d0034ce6fbb39e93c6f9dd5fccba8b98dbcca7593d0f6f3",
+      "fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are 0 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "planned",
+          "value": "9",
+          "quote": "Nine observations per soil were planned, but none were collected."
+        }
+      }
+    },
+    "expected_stage": "proposal_binding_mismatch",
+    "expected_answer": null
+  },
+  {
+    "id": "P05",
+    "fixture_id": "C18",
+    "proposal": {
+      "entity": "Garden18",
+      "scope": "Batch18",
+      "source_sha256": "850b0f2d404474fa85ae2c71ec3678de2f2fafcb2514cfa4535c2c0b183c4f02",
+      "fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "5",
+          "quote": "There are 5 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Nine observations per soil were planned, but none were collected."
+        }
+      }
+    },
+    "expected_stage": "proposal_binding_mismatch",
+    "expected_answer": null
+  },
+  {
+    "id": "P06",
+    "fixture_id": "C04",
+    "proposal": null,
+    "expected_stage": "invalid_proposal",
+    "expected_answer": null
+  },
+  {
+    "id": "P07",
+    "fixture_id": "C04",
+    "proposal": {
+      "entity": "Garden04",
+      "scope": "Batch04",
+      "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "5",
+          "quote": "There are 5 independently sampled soils."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplies 9 observations."
+        }
+      }
+    },
+    "expected_stage": "proposal_binding_mismatch",
+    "expected_answer": null
+  },
+  {
+    "id": "P08",
+    "fixture_id": "C07",
+    "proposal": {
+      "entity": "Garden07",
+      "scope": "Batch07",
+      "source_sha256": "ac6ef1be65de24dd04389d62fcb017282855ff0db386f862011081828c86314c",
+      "fields": {
+        "soil_count": {
+          "state": "missing",
+          "value": null,
+          "quote": "There are independently sampled soils, but their number was not recorded."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "18",
+          "quote": "Each soil supplies 18 observations."
+        }
+      }
+    },
+    "expected_stage": "source_missing",
+    "expected_answer": null
+  },
+  {
+    "id": "P09",
+    "fixture_id": "C04",
+    "proposal": {
+      "entity": "Garden04",
+      "scope": "Batch04",
+      "source_sha256": "d29aa42d186ffe7110507892ccbd80e1905dbce3171b8c3b7a5430eb86df4d91",
+      "fields": {
+        "soil_count": {
+          "state": "known",
+          "value": "5",
+          "quote": "Each soil supplies 9 observations."
+        },
+        "per_soil_observations": {
+          "state": "observed",
+          "value": "9",
+          "quote": "Each soil supplies 9 observations."
+        }
+      }
+    },
+    "expected_stage": "proposal_binding_mismatch",
+    "expected_answer": null
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "ruleset": "source-calculation-path-0.1",
+  "tool_sha256": "7458cb627db20f318058e8ee73fe5be3b4365d2e017b03d9f0c85cad4d67ba8b",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "mode": "deterministic_source",
+  "status": "withheld",
+  "stage": "source_missing",
+  "answer": null,
+  "reason_codes": [
+    "missing_soil_count"
+  ],
+  "limitations": [
+    "Full declared source grammar only; unsupported content withholds.",
+    "Hashes bind bytes, not source authenticity, truth, or real independence.",
+    "Model assumptions are caller-declared, not empirically verified.",
+    "Exact arithmetic does not establish source extraction beyond the declared grammar.",
+    "Local trusted workspace only; source hashes are not runtime/bytecode authentication."
+  ],
+  "claim_id": "variance-at-most-001",
+  "entity": "Garden07",
+  "scope": "Batch07",
+  "contract_canonical_sha256": "3347748fa6d95853949deb6f0996e021dfddefa20b4dc370a7fbd235a9e5f6d2",
+  "declared_model": {
+    "name": "equal_cluster_bernoulli_mixture",
+    "mean": "0.2",
+    "between": "0.032",
+    "within": "0.128",
+    "assumptions": [
+      "independent_soil_draws",
+      "equal_observations_per_soil",
+      "conditional_iid_emissions"
+    ]
+  },
+  "criterion": {
+    "operator": "at_most",
+    "threshold": "0.01"
+  },
+  "source_sha256": "ac6ef1be65de24dd04389d62fcb017282855ff0db386f862011081828c86314c",
+  "bound_fields": {
+    "soil_count": {
+      "state": "missing",
+      "value": null,
+      "quote": "There are independently sampled soils, but their number was not recorded."
+    },
+    "per_soil_observations": {
+      "state": "observed",
+      "value": "18",
+      "quote": "Each soil supplies 18 observations."
+    }
+  },
+  "contract_input_sha256": "d5dec7fb0ff877693b2fbc73646a8adc0db75b0443faaf86852fd54f3d2d613d"
+}

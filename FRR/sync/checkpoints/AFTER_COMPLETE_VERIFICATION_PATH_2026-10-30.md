@@ -1,0 +1,5 @@
+# After a complete conditional verification path
+
+30 October2026 America/Chicago. [CVPguide](../../evaluation/complete-verification-path-v1/README.md), [report](../../evaluation/complete-verification-path-v1/REPORT.md). CVP-C1/2/3 delivers optional source_calculation_path.py: complete byte/identity/role/state->domain->exactvariance->conditionalanswer CLI, usable withoutLLM.12developmentgroups and60frozenfixture/regression/proposal expectations match;20newfixtures give8computed/12stagedwithholds.10small-model candidates allYES(4/10labels), untrusted and not inputauthority. No training/paidservice or broad truth/FRRefficacy claim; oldfailedgate preserved.
+
+Runnable positive/missing/zero/witness CLI demos are saved.10actualmodelcalls:2,290input/20outputtokens,7.2359secinference excludingload/serialization;10newcachebranches checked. Old2797prebuildfiles and2817premodel files (except7archivedcurrentdocs duringintegration),343model/oldcachefiles preserved. Newtool/version fingerprints frozen; existingtools/core/runtime/schema unchanged. Nextreal-recordtypedadapter withappropriate recipe; no backgroundjob.

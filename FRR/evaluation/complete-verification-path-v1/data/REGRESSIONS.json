@@ -1,0 +1,1445 @@
+[
+  {
+    "id": "R01",
+    "source_text": "Record Historical / R01.\n5 soils were sampled independently. Each soil supplied 9 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R01",
+      "source": {
+        "path": "source.txt",
+        "sha256": "c46e9e0a79ec955f3b14b900614ec24f3c8ca40d0ee4eb98ca298204dc9f0563"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "variance": {
+        "numerator": "52",
+        "denominator": "5625"
+      },
+      "soil_count": "5",
+      "observations_per_soil": "9",
+      "soil_state": "known",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "frame-generalization-missing-v1",
+      "case_id": "FG_F1_passive",
+      "source_cases_sha256": "553457596630da4a9926c80d9f5f5dca51428293df06928a9b41492e418da47e",
+      "original_body_sha256": "7226d55f732d15e3187c888d76ca4e539de63a0390353f3a1c321922becb4800",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R02",
+    "source_text": "Record Historical / R02.\nThere are 5 independently sampled soils. Each soil supplies 9 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R02",
+      "source": {
+        "path": "source.txt",
+        "sha256": "2713b536eaa7f19a94d170ae53aea58c6c9af7f68b7573e2daefc55b496a9c15"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "variance": {
+        "numerator": "52",
+        "denominator": "5625"
+      },
+      "soil_count": "5",
+      "observations_per_soil": "9",
+      "soil_state": "known",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "frame-generalization-missing-v1",
+      "case_id": "FG_F1_there_are",
+      "source_cases_sha256": "553457596630da4a9926c80d9f5f5dca51428293df06928a9b41492e418da47e",
+      "original_body_sha256": "dc65311ada9abe1f2c5bf6abfc2299fec2d41ed23364455925519d9fb38a0b12",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R03",
+    "source_text": "Record Historical / R03.\n9 soils were sampled independently. Each soil supplied 5 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R03",
+      "source": {
+        "path": "source.txt",
+        "sha256": "b9f782a173747daa45accad5cb56526ab538b3740986232f411cacdda7bb16ad"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "variance": {
+        "numerator": "4",
+        "denominator": "625"
+      },
+      "soil_count": "9",
+      "observations_per_soil": "5",
+      "soil_state": "known",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "frame-generalization-missing-v1",
+      "case_id": "FG_F2_passive",
+      "source_cases_sha256": "553457596630da4a9926c80d9f5f5dca51428293df06928a9b41492e418da47e",
+      "original_body_sha256": "432e6443feb8916ced3e9f724d1fafd9f3ca8a9917e390eeacd426157b7b99f7",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R04",
+    "source_text": "Record Historical / R04.\nThere are 9 independently sampled soils. Each soil supplies 5 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R04",
+      "source": {
+        "path": "source.txt",
+        "sha256": "b52ba71a2baaf11c7e36208059abb8a7884b6dbc1482451534b6ab27c3ab7d6a"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "variance": {
+        "numerator": "4",
+        "denominator": "625"
+      },
+      "soil_count": "9",
+      "observations_per_soil": "5",
+      "soil_state": "known",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "frame-generalization-missing-v1",
+      "case_id": "FG_F2_there_are",
+      "source_cases_sha256": "553457596630da4a9926c80d9f5f5dca51428293df06928a9b41492e418da47e",
+      "original_body_sha256": "1f108a5f1f13cbbf534e3921c395f04b7bafebbe6c19870c65ec72b6da06aa2a",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R05",
+    "source_text": "Record Historical / R05.\n6 soils were sampled independently. Each soil supplied 18 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R05",
+      "source": {
+        "path": "source.txt",
+        "sha256": "463791d09687f91ff2649b56a27a990f8665a674435f502e8ac2f9cd42ab81c3"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "variance": {
+        "numerator": "22",
+        "denominator": "3375"
+      },
+      "soil_count": "6",
+      "observations_per_soil": "18",
+      "soil_state": "known",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "frame-generalization-missing-v1",
+      "case_id": "FG_F3_passive",
+      "source_cases_sha256": "553457596630da4a9926c80d9f5f5dca51428293df06928a9b41492e418da47e",
+      "original_body_sha256": "b0f2452e8dcac1ad7d78382ecf3030d65f286005c0c928d9e87a1afb4233ad50",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R06",
+    "source_text": "Record Historical / R06.\nThere are 6 independently sampled soils. Each soil supplies 18 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R06",
+      "source": {
+        "path": "source.txt",
+        "sha256": "63b0588d0e205489b85356e33b4bb3d008b6036e872f5e585cc5d626010e3e51"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "variance": {
+        "numerator": "22",
+        "denominator": "3375"
+      },
+      "soil_count": "6",
+      "observations_per_soil": "18",
+      "soil_state": "known",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "frame-generalization-missing-v1",
+      "case_id": "FG_F3_there_are",
+      "source_cases_sha256": "553457596630da4a9926c80d9f5f5dca51428293df06928a9b41492e418da47e",
+      "original_body_sha256": "fd4b791561ec07a4b2e258e92efffbb60fb8b19effd937d258f25c29bca18668",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R07",
+    "source_text": "Record Historical / R07.\n18 soils were sampled independently. Each soil supplied 6 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R07",
+      "source": {
+        "path": "source.txt",
+        "sha256": "699a722ced89a9e35503d1f60431658fa4984e7739da8ee5c4300c24d62836d7"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "variance": {
+        "numerator": "2",
+        "denominator": "675"
+      },
+      "soil_count": "18",
+      "observations_per_soil": "6",
+      "soil_state": "known",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "frame-generalization-missing-v1",
+      "case_id": "FG_F4_passive",
+      "source_cases_sha256": "553457596630da4a9926c80d9f5f5dca51428293df06928a9b41492e418da47e",
+      "original_body_sha256": "e32ac6853214fcd94accfb5834584d8ece8e438506856db042939868b50d9b2a",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R08",
+    "source_text": "Record Historical / R08.\nThere are 18 independently sampled soils. Each soil supplies 6 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R08",
+      "source": {
+        "path": "source.txt",
+        "sha256": "595b20b32ceffc3f6e042d280f7d4a3997bf3d910f0e3e43640fc75356846814"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "variance": {
+        "numerator": "2",
+        "denominator": "675"
+      },
+      "soil_count": "18",
+      "observations_per_soil": "6",
+      "soil_state": "known",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "frame-generalization-missing-v1",
+      "case_id": "FG_F4_there_are",
+      "source_cases_sha256": "553457596630da4a9926c80d9f5f5dca51428293df06928a9b41492e418da47e",
+      "original_body_sha256": "c3057b05dfd9026781915c37fe622fd9d9ed25a1acdf12e555745a46b435af68",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R09",
+    "source_text": "Record Historical / R09.\nSome soils were sampled independently, but their number was not recorded. Each soil supplied 9 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R09",
+      "source": {
+        "path": "source.txt",
+        "sha256": "53a4f34f956f37a0e50d0a2c245eaff8224d3af218587ee2ae4f3289d366ffb1"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "source_missing",
+      "answer": null,
+      "variance": null,
+      "soil_count": null,
+      "observations_per_soil": "9",
+      "soil_state": "missing",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "frame-generalization-missing-v1",
+      "case_id": "FG_F5_passive",
+      "source_cases_sha256": "553457596630da4a9926c80d9f5f5dca51428293df06928a9b41492e418da47e",
+      "original_body_sha256": "3c4deb1404f1fffcfacde1b4f0db940c7182633accb8cc38dcf31a91be2d6007",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R10",
+    "source_text": "Record Historical / R10.\nThere are independently sampled soils, but their number was not recorded. Each soil supplies 9 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R10",
+      "source": {
+        "path": "source.txt",
+        "sha256": "f6d99a2fa48b18384cdeea98134c8c5804aca27ded00fa5d7e1b4c4eabe31b95"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "source_missing",
+      "answer": null,
+      "variance": null,
+      "soil_count": null,
+      "observations_per_soil": "9",
+      "soil_state": "missing",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "frame-generalization-missing-v1",
+      "case_id": "FG_F5_there_are",
+      "source_cases_sha256": "553457596630da4a9926c80d9f5f5dca51428293df06928a9b41492e418da47e",
+      "original_body_sha256": "00dde6cd3dd582cc36beb3a08499c7922ac379a9214e707fe547aa85f605da42",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R11",
+    "source_text": "Record Historical / R11.\nSome soils were sampled independently, but their number was not recorded. Each soil supplied 18 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R11",
+      "source": {
+        "path": "source.txt",
+        "sha256": "a50acc25700d2eced1d1e755cb60fc02397cacc9248dc276b2dcd8a4c7b42237"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "source_missing",
+      "answer": null,
+      "variance": null,
+      "soil_count": null,
+      "observations_per_soil": "18",
+      "soil_state": "missing",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "frame-generalization-missing-v1",
+      "case_id": "FG_F6_passive",
+      "source_cases_sha256": "553457596630da4a9926c80d9f5f5dca51428293df06928a9b41492e418da47e",
+      "original_body_sha256": "a68f527de68485f5b3c5e23785eeddc6df493bbcc938a1c1038565f06453e898",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R12",
+    "source_text": "Record Historical / R12.\nThere are independently sampled soils, but their number was not recorded. Each soil supplies 18 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R12",
+      "source": {
+        "path": "source.txt",
+        "sha256": "9a4b96c219a48a18795a011e6a29fd2f9640f2da38a9d913d60357606d69eb48"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "source_missing",
+      "answer": null,
+      "variance": null,
+      "soil_count": null,
+      "observations_per_soil": "18",
+      "soil_state": "missing",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "frame-generalization-missing-v1",
+      "case_id": "FG_F6_there_are",
+      "source_cases_sha256": "553457596630da4a9926c80d9f5f5dca51428293df06928a9b41492e418da47e",
+      "original_body_sha256": "f75382b0d97cd27b9703ac7ced09dc4d031ff4affb416e495f1cf0f1b2546780",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R13",
+    "source_text": "Record Historical / R13.\n0 soils were sampled independently. Nine observations per soil were planned, but none were collected.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R13",
+      "source": {
+        "path": "source.txt",
+        "sha256": "85a1a3dd77519d1418cb019cefbd7e1b132dc8b444753b094a61ce33657a3a2c"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "outside_domain",
+      "answer": null,
+      "variance": null,
+      "soil_count": "0",
+      "observations_per_soil": "9",
+      "soil_state": "known",
+      "observations_state": "planned"
+    },
+    "origin": {
+      "study": "frame-generalization-missing-v1",
+      "case_id": "FG_F7_passive",
+      "source_cases_sha256": "553457596630da4a9926c80d9f5f5dca51428293df06928a9b41492e418da47e",
+      "original_body_sha256": "85bf8fc5a23579c0f2de0a07635d22bcdd86a1a6d79a4bfd73ff9c82b269c9c8",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R14",
+    "source_text": "Record Historical / R14.\nThere are 0 independently sampled soils. Nine observations per soil were planned, but none were collected.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R14",
+      "source": {
+        "path": "source.txt",
+        "sha256": "738741a9441c55ac4b769a693303b98ed454a317144abed358d020e1f717b0ab"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "outside_domain",
+      "answer": null,
+      "variance": null,
+      "soil_count": "0",
+      "observations_per_soil": "9",
+      "soil_state": "known",
+      "observations_state": "planned"
+    },
+    "origin": {
+      "study": "frame-generalization-missing-v1",
+      "case_id": "FG_F7_there_are",
+      "source_cases_sha256": "553457596630da4a9926c80d9f5f5dca51428293df06928a9b41492e418da47e",
+      "original_body_sha256": "fbddd4b7cc05b29324206765bc7dbe93f18d637d64527330d8cf0c8a01f158c3",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R15",
+    "source_text": "Record Historical / R15.\nThere are independently sampled soils, but their number was not recorded. Each soil supplies 9 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R15",
+      "source": {
+        "path": "source.txt",
+        "sha256": "32d990d23a1d107b6ee0adf7e909cc397e2d329ace71778070a8236ce2e7e924"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "source_missing",
+      "answer": null,
+      "variance": null,
+      "soil_count": null,
+      "observations_per_soil": "9",
+      "soil_state": "missing",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "missing-count-foil-v1",
+      "case_id": "MF_9_digit",
+      "source_cases_sha256": "523a659a39581e89ae809f593aaf3147801066d7db0c6c5fadcbb1a426e21d2f",
+      "original_body_sha256": "00dde6cd3dd582cc36beb3a08499c7922ac379a9214e707fe547aa85f605da42",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R16",
+    "source_text": "Record Historical / R16.\nThere are independently sampled soils, but their number was not recorded. Each soil supplies nine observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R16",
+      "source": {
+        "path": "source.txt",
+        "sha256": "bbdd8e564e90415dbf6a3e9d37ea8faeecda741397b164be8c6752a8807ba6dd"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "source_missing",
+      "answer": null,
+      "variance": null,
+      "soil_count": null,
+      "observations_per_soil": "9",
+      "soil_state": "missing",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "missing-count-foil-v1",
+      "case_id": "MF_9_word",
+      "source_cases_sha256": "523a659a39581e89ae809f593aaf3147801066d7db0c6c5fadcbb1a426e21d2f",
+      "original_body_sha256": "9b44e2241e0cb060d51d183d66b9eb835437c00f8742a36c0501df8f7b6d493c",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R17",
+    "source_text": "Record Historical / R17.\nThere are independently sampled soils, but their number was not recorded. Each soil supplies 18 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R17",
+      "source": {
+        "path": "source.txt",
+        "sha256": "c963a2a5378dc43b9abf1202f8ee24be909064375bd32badb56e935dd18cb657"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "source_missing",
+      "answer": null,
+      "variance": null,
+      "soil_count": null,
+      "observations_per_soil": "18",
+      "soil_state": "missing",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "missing-count-foil-v1",
+      "case_id": "MF_18_digit",
+      "source_cases_sha256": "523a659a39581e89ae809f593aaf3147801066d7db0c6c5fadcbb1a426e21d2f",
+      "original_body_sha256": "f75382b0d97cd27b9703ac7ced09dc4d031ff4affb416e495f1cf0f1b2546780",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R18",
+    "source_text": "Record Historical / R18.\nThere are independently sampled soils, but their number was not recorded. Each soil supplies eighteen observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R18",
+      "source": {
+        "path": "source.txt",
+        "sha256": "dbd74cda7b9c67fabc14c32f1683f03ad3c89d8df4c617e286ea9a36ce602b90"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "source_missing",
+      "answer": null,
+      "variance": null,
+      "soil_count": null,
+      "observations_per_soil": "18",
+      "soil_state": "missing",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "missing-count-foil-v1",
+      "case_id": "MF_18_word",
+      "source_cases_sha256": "523a659a39581e89ae809f593aaf3147801066d7db0c6c5fadcbb1a426e21d2f",
+      "original_body_sha256": "d74eeaea28f7884c07d24f32a3fc17d5671e763536733751251ac8163ffa7306",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R19",
+    "source_text": "Record Historical / R19.\nThere are independently sampled soils, but their number was not recorded. Each soil supplies 7 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R19",
+      "source": {
+        "path": "source.txt",
+        "sha256": "46415ebe0b35a39b41260eaad44ac61c584053f0bd04a5fe7bff8bea412f3579"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "source_missing",
+      "answer": null,
+      "variance": null,
+      "soil_count": null,
+      "observations_per_soil": "7",
+      "soil_state": "missing",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "missing-count-foil-v1",
+      "case_id": "MF_7_digit",
+      "source_cases_sha256": "523a659a39581e89ae809f593aaf3147801066d7db0c6c5fadcbb1a426e21d2f",
+      "original_body_sha256": "4fa0504470b509767282a0b5b60d378b7737002bc21a016362e5831f02ef0bc1",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R20",
+    "source_text": "Record Historical / R20.\nThere are independently sampled soils, but their number was not recorded. Each soil supplies seven observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R20",
+      "source": {
+        "path": "source.txt",
+        "sha256": "0ec92a0136e6c26530f7af339d040de1c21814c9a9b71945e7954c1accd32a47"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "source_missing",
+      "answer": null,
+      "variance": null,
+      "soil_count": null,
+      "observations_per_soil": "7",
+      "soil_state": "missing",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "missing-count-foil-v1",
+      "case_id": "MF_7_word",
+      "source_cases_sha256": "523a659a39581e89ae809f593aaf3147801066d7db0c6c5fadcbb1a426e21d2f",
+      "original_body_sha256": "8a0336eaa3780ccde7e2db6a729de50da48f692d2690fd964450237cc3a5db11",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R21",
+    "source_text": "Record Historical / R21.\nThere are independently sampled soils, but their number was not recorded. Each soil supplies 11 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R21",
+      "source": {
+        "path": "source.txt",
+        "sha256": "15c72077cc52106e866c3055241b5243ffa1a8b2f91545f1b2eee47c939e214c"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "source_missing",
+      "answer": null,
+      "variance": null,
+      "soil_count": null,
+      "observations_per_soil": "11",
+      "soil_state": "missing",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "missing-count-foil-v1",
+      "case_id": "MF_11_digit",
+      "source_cases_sha256": "523a659a39581e89ae809f593aaf3147801066d7db0c6c5fadcbb1a426e21d2f",
+      "original_body_sha256": "08227817271d0224a5eff37d179c51a643bfb1e9ca81e7128bbcdfa56b86e06b",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R22",
+    "source_text": "Record Historical / R22.\nThere are independently sampled soils, but their number was not recorded. Each soil supplies eleven observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R22",
+      "source": {
+        "path": "source.txt",
+        "sha256": "b20ccc0be6dcfe2b41ce3d959652eb90f5ebf22e0d933848afa625002e128a24"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "source_missing",
+      "answer": null,
+      "variance": null,
+      "soil_count": null,
+      "observations_per_soil": "11",
+      "soil_state": "missing",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "missing-count-foil-v1",
+      "case_id": "MF_11_word",
+      "source_cases_sha256": "523a659a39581e89ae809f593aaf3147801066d7db0c6c5fadcbb1a426e21d2f",
+      "original_body_sha256": "cb355bf48a95f1c02f2590ebc56a709d98f9b1d0d32b904ab93d9d0f9be346a4",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R23",
+    "source_text": "Record Historical / R23.\nThere are independently sampled soils, but their number was not recorded.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R23",
+      "source": {
+        "path": "source.txt",
+        "sha256": "45b23b6cebc7d2758b45c4c153cb1421ff019f519a258131418eb1806f97ca8a"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "source_missing",
+      "answer": null,
+      "variance": null,
+      "soil_count": null,
+      "observations_per_soil": null,
+      "soil_state": "missing",
+      "observations_state": "absent"
+    },
+    "origin": {
+      "study": "missing-count-foil-v1",
+      "case_id": "MF_no_foil",
+      "source_cases_sha256": "523a659a39581e89ae809f593aaf3147801066d7db0c6c5fadcbb1a426e21d2f",
+      "original_body_sha256": "098223384a2773b341a75f424dca010f7dd92d9ebc524101691c7259611f45db",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R24",
+    "source_text": "Record Historical / R24.\n32 soils were sampled independently. Each soil supplied 2 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R24",
+      "source": {
+        "path": "source.txt",
+        "sha256": "f793920a73cd76a4064903762cf66de65c508aafb77643651579cdeede204872"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "variance": {
+        "numerator": "3",
+        "denominator": "1000"
+      },
+      "soil_count": "32",
+      "observations_per_soil": "2",
+      "soil_state": "known",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "source-frame-role-v1",
+      "case_id": "SF_B1_passive_digit",
+      "source_cases_sha256": "03d84ef69d8ecbeddba7b330942bd3f85256769d17565409b40cdbf01e24c52d",
+      "original_body_sha256": "23dfb3abfa5f29019ef1528beea51b36eedf7f8da095198691760728d3f7aca9",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R25",
+    "source_text": "Record Historical / R25.\nThirty-two soils were sampled independently. Each soil supplied 2 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R25",
+      "source": {
+        "path": "source.txt",
+        "sha256": "f2d0d91d9a0ec1db7b33f6156bcd19bf7178e0718e8fa27fd09b5765d365c99f"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "variance": {
+        "numerator": "3",
+        "denominator": "1000"
+      },
+      "soil_count": "32",
+      "observations_per_soil": "2",
+      "soil_state": "known",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "source-frame-role-v1",
+      "case_id": "SF_B1_passive_word",
+      "source_cases_sha256": "03d84ef69d8ecbeddba7b330942bd3f85256769d17565409b40cdbf01e24c52d",
+      "original_body_sha256": "f33ea9336fded872860c377d987305375ea00f3f1bab61f1555bd7b03f2ae9a6",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R26",
+    "source_text": "Record Historical / R26.\nThere are 32 independently sampled soils. Each soil supplies 2 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R26",
+      "source": {
+        "path": "source.txt",
+        "sha256": "eb4255f9b94fb0ae59e313f2cd527ad53896449dc09ea6b66923c6da08471824"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "variance": {
+        "numerator": "3",
+        "denominator": "1000"
+      },
+      "soil_count": "32",
+      "observations_per_soil": "2",
+      "soil_state": "known",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "source-frame-role-v1",
+      "case_id": "SF_B1_there_are_digit",
+      "source_cases_sha256": "03d84ef69d8ecbeddba7b330942bd3f85256769d17565409b40cdbf01e24c52d",
+      "original_body_sha256": "415b775716e34d30ff68e71d33922460d481cdc127348ce252ce4c6a53df5ad8",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R27",
+    "source_text": "Record Historical / R27.\nThere are thirty-two independently sampled soils. Each soil supplies 2 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R27",
+      "source": {
+        "path": "source.txt",
+        "sha256": "aae598f83710306d048549db5c653df83bf1d27c1af8ba841393446c3c42707b"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "conditional_answer",
+      "answer": "YES",
+      "variance": {
+        "numerator": "3",
+        "denominator": "1000"
+      },
+      "soil_count": "32",
+      "observations_per_soil": "2",
+      "soil_state": "known",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "source-frame-role-v1",
+      "case_id": "SF_B1_there_are_word",
+      "source_cases_sha256": "03d84ef69d8ecbeddba7b330942bd3f85256769d17565409b40cdbf01e24c52d",
+      "original_body_sha256": "9436a7842a85654a43451185445510957277c5d1f6310e16ce71a78e45b61bb9",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R28",
+    "source_text": "Record Historical / R28.\n2 soils were sampled independently. Each soil supplied 32 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R28",
+      "source": {
+        "path": "source.txt",
+        "sha256": "0f9767e2ddf0c3ad4d84b167d32301621e4647115b230a95ab84e95a842d6693"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "conditional_answer",
+      "answer": "NO",
+      "variance": {
+        "numerator": "9",
+        "denominator": "500"
+      },
+      "soil_count": "2",
+      "observations_per_soil": "32",
+      "soil_state": "known",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "source-frame-role-v1",
+      "case_id": "SF_B2_passive_digit",
+      "source_cases_sha256": "03d84ef69d8ecbeddba7b330942bd3f85256769d17565409b40cdbf01e24c52d",
+      "original_body_sha256": "9c5e37bef22a1ab75e09d4ae2d5ba02d503297800d0e28ecaa21f681885583b4",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R29",
+    "source_text": "Record Historical / R29.\nTwo soils were sampled independently. Each soil supplied 32 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R29",
+      "source": {
+        "path": "source.txt",
+        "sha256": "7e47a559891c0bb690775fc8aa831577abf396cdca9d6fdd4c8da01a2ccd5b58"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "conditional_answer",
+      "answer": "NO",
+      "variance": {
+        "numerator": "9",
+        "denominator": "500"
+      },
+      "soil_count": "2",
+      "observations_per_soil": "32",
+      "soil_state": "known",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "source-frame-role-v1",
+      "case_id": "SF_B2_passive_word",
+      "source_cases_sha256": "03d84ef69d8ecbeddba7b330942bd3f85256769d17565409b40cdbf01e24c52d",
+      "original_body_sha256": "7e7910f1b34f269ac637c835a23ecfa42317482567fb59ccea6a977683dcecb9",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R30",
+    "source_text": "Record Historical / R30.\nThere are 2 independently sampled soils. Each soil supplies 32 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R30",
+      "source": {
+        "path": "source.txt",
+        "sha256": "94d1ba6beae5ae0c06b6556c0d99f41f7d0d62af34fb2490297087b9b385f8b5"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "conditional_answer",
+      "answer": "NO",
+      "variance": {
+        "numerator": "9",
+        "denominator": "500"
+      },
+      "soil_count": "2",
+      "observations_per_soil": "32",
+      "soil_state": "known",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "source-frame-role-v1",
+      "case_id": "SF_B2_there_are_digit",
+      "source_cases_sha256": "03d84ef69d8ecbeddba7b330942bd3f85256769d17565409b40cdbf01e24c52d",
+      "original_body_sha256": "7c6fea0652cf5eb70d04a4e6da98125bab7433e4b5fd6ef35ba19f64279e9c3d",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  },
+  {
+    "id": "R31",
+    "source_text": "Record Historical / R31.\nThere are two independently sampled soils. Each soil supplies 32 observations.\n",
+    "contract": {
+      "claim_id": "variance-at-most-001",
+      "entity": "Historical",
+      "scope": "R31",
+      "source": {
+        "path": "source.txt",
+        "sha256": "bedd8ce6d46100dc44704e7cf1212a700fd4d31724a0175aa0f0e7cce5393125"
+      },
+      "model": {
+        "name": "equal_cluster_bernoulli_mixture",
+        "mean": "0.2",
+        "between": "0.032",
+        "within": "0.128",
+        "assumptions": [
+          "independent_soil_draws",
+          "equal_observations_per_soil",
+          "conditional_iid_emissions"
+        ]
+      },
+      "criterion": {
+        "operator": "at_most",
+        "threshold": "0.01"
+      }
+    },
+    "expected": {
+      "stage": "conditional_answer",
+      "answer": "NO",
+      "variance": {
+        "numerator": "9",
+        "denominator": "500"
+      },
+      "soil_count": "2",
+      "observations_per_soil": "32",
+      "soil_state": "known",
+      "observations_state": "observed"
+    },
+    "origin": {
+      "study": "source-frame-role-v1",
+      "case_id": "SF_B2_there_are_word",
+      "source_cases_sha256": "03d84ef69d8ecbeddba7b330942bd3f85256769d17565409b40cdbf01e24c52d",
+      "original_body_sha256": "56520a8b8c0ee5c8f238069d39c968a5afad4c492804115ff178c68d6b549552",
+      "body_preserved_exactly": true,
+      "identity_header": "caller-added test wrapper, not an original source identity claim"
+    }
+  }
+]

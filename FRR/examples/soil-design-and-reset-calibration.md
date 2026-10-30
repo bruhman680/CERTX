@@ -27,3 +27,6 @@ The later [WC/NF/SF follow-up](../evaluation/source-frame-role-v1/REPORT.md) fil
 
 
 The [FG/MF/CP negative-case follow-up](../evaluation/count-presence-polarity-v1/REPORT.md) keeps arithmetic blocked after a5/7candidate-frame result: positive counts and recorded0work, but missing counts become observation quantities. Removing the extra quantity still produces an invented12. Paired recorded/unrecorded questions get11/16labels but only3/8fullycorrectpairs, with5YES/YEScontradictions. [Missing/zero example](missing-zero-and-complement-questions.md) explains why source absence, known0and a calculation's domain must stay separate. No old gate/result is relabeled or model self-check promoted.
+
+
+[CVP-C1/2/3](../evaluation/complete-verification-path-v1/REPORT.md) now supplies a [usable complete path](complete-source-calculation-path.md): source-role/state binding through exact conditional calculation and answer/withholding reason. It matches20newfixture,31historicalbody and9curatedproposal expectations, within a tiny declared grammar/model. The10directmodel candidates remainallYES(4/10labels); no LLM witness-production or broad reasoning repair is claimed. The original failed gate remains failed; this new deterministic source path does not use the model to authorize its fields.

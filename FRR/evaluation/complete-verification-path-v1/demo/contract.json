@@ -1,0 +1,24 @@
+{
+  "claim_id": "variance-at-most-001",
+  "entity": "Garden03",
+  "scope": "Batch03",
+  "source": {
+    "path": "source.txt",
+    "sha256": "76d47b5a1fc4f19a272d6a7f87a62f9556e5845be64b6e5609bfcfaea77676f4"
+  },
+  "model": {
+    "name": "equal_cluster_bernoulli_mixture",
+    "mean": "0.2",
+    "between": "0.032",
+    "within": "0.128",
+    "assumptions": [
+      "independent_soil_draws",
+      "equal_observations_per_soil",
+      "conditional_iid_emissions"
+    ]
+  },
+  "criterion": {
+    "operator": "at_most",
+    "threshold": "0.01"
+  }
+}

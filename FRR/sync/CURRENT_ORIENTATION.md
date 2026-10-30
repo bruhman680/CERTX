@@ -1,7 +1,7 @@
 # Current FRR orientation
 
-30 October2026 America/Chicago. [Handoff](../CURRENT_HANDOFF.md), [combinedreport](../evaluation/count-presence-polarity-v1/REPORT.md), [checkpoint](checkpoints/AFTER_COUNT_MISSINGNESS_2026-10-30.md).
+30 October2026 America/Chicago. [Handoff](../CURRENT_HANDOFF.md), [CVPguide](../evaluation/complete-verification-path-v1/README.md), [report](../evaluation/complete-verification-path-v1/REPORT.md), [checkpoint](checkpoints/AFTER_COMPLETE_VERIFICATION_PATH_2026-10-30.md).
 
-FG/MF/CP completed39adaptive localcalls. Freshframes:passive2/7,there-are5/7 (positive4/4,knownzero1/1,missing0/2). Frozen7/7readinessgatefails; noarithmeticrun. Missing-countfoil probes0/9,including invented12withoutfoil. Presencequestions11/16labels but3/8fullycorrectpairs;5YES/YEScomplementcontradictions. All39newcaches preserved; no training/paidservices/defaultpromotion.
+CVP-C1/2/3 delivers optional source_calculation_path.py: complete byte/identity/role/state->domain->exactvariance->conditionalanswer CLI, usable withoutLLM.12developmentgroups and60frozenfixture/regression/proposal expectations match;20newfixtures give8computed/12stagedwithholds.10small-model candidates allYES(4/10labels), untrusted and not inputauthority. No training/paidservice or broad truth/FRRefficacy claim; oldfailedgate preserved.
 
-Next proposed source-bound role/state witness, not more ungrounded self-certification. The existing literalguard does not implement this count domain. Seven oldcurrentdocs archived, all older artifacts/weights/caches unchanged. Core/schema/queue unchanged. No background task remains.
+Next proposed real-record adapter/second appropriate recipe, not more isolated prompt scores. The new component is optional/conditional, not a generic language/truth reader; source/model authority remains external. Seven oldcurrentdocs archived; previous artifacts/weights/caches unchanged,10newcachebranches retained. Core/schema/broadqueue unchanged. No backgroundtask.
