@@ -1,0 +1,5 @@
+# NF-C1: number form alone did not reproduce the role error
+
+30 October2026 America/Chicago. After WC-C1 retained wrong-role answers, a new4-base-record2x2factorial independently rendered the soil count and observation count as digits or English words. All16answers match their soil-count key. Generated response text is identical within each base record across its4renderings; this is output equality, not an internal-state or probability invariance claim. No training, retries, paidservices or source-format normalizer was installed.
+
+[Combined three-contact report](../source-frame-role-v1/REPORT.md) records the unsupported simple explanation and the subsequent source-frame test. See [protocol](PROTOCOL.md), [design](DESIGN.json), [frozen inputs](FREEZE.json), [scores](SCORES.json), [summary](SUMMARY.json), [raw outputs](RAW_OUTPUTS.jsonl) and [preservation](PRESERVATION_AFTER_GENERATION.json). The result is limited to these new authored renderings and fixed question/scaffold; no general number-word competence theorem follows. Coordinator review, not independent/masked validation.

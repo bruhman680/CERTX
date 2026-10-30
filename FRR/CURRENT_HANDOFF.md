@@ -1,17 +1,17 @@
 # Current FRR handoff
 
-Current checkpoint: 30 October 2026 UTC. User requested further cycles. CR-C1/2/3 complete; no background task remains. New instructions supersede historical pause/next labels.
+Current checkpoint: 30 October 2026 America/Chicago. User authorized continuation; WC/NF/SF complete. No background work remains. New instructions supersede historical pause/next labels.
 
-## Latest contact
+## Latest contacts
 
-[Report](evaluation/clause-reader-three-cycle-v1/REPORT.md). CR-C1/2/3 completed32localreadingcalls. Full-source2/8 unambiguous matches; selectedclause5/8; rewordedquestion5/8; newclauses/originalquestion4/8. Qualified target-only sensitivity gives6/8 for both oldclauseconditions. Equal totals hide grouping1/4to3/4 and reset4/4to2/4 after rewording. Oldfullarms exactly repeat8prior outputs; duplicate selectedR2/R4inputs disclosed. All32newcachebranches retained; no training/paidservices/defaultpromotion.
+[Combined report](evaluation/source-frame-role-v1/REPORT.md). WC/NF/SF completed32adaptive localreadingcalls under separately frozen protocols. Crossedquestion remains4/8vs4/8 with oppositefamilychanges. Number-form factorial16/16correct rejects a sufficient number-word explanation in that scaffold. Returning to32/2pairs, passiveframe0/4vs there-areframe4/4 acrossdigits/words; one error invents12. Conditional surface-frame effect, not neural explanation, modellearning or general rewrite policy. All32newcachebranches preserved; no training/paidservices.
 
-Three prespecified phases in one frozen invocation, not adaptive/independent replications. No new arithmetic or identification queries. Supplied coordinator-selected spans, not autonomous extraction. Whole-response scoring is coordinator-only; two ambiguous missing-count additions are qualified and shown separately. Strictformat0/32;29EOS/3capped; oldfullarm3sourceechoes remainunfinished.
+These were three sequential adaptive contacts, each frozen before its own run; later protocols followed earlier results. WC uses exposed sources and saved controls; NF4newbasepairs and SF2difficultbasepairs are authored fixtures, not independent population validation. Model/prompt/cap unchanged. All32EOS; strict bareformat0/32 but semantic scoring accepts clear sentences. Coordinator review only, not independent/masked. WC raw-stage progress wording is clarified append-only; frozen raw/input hashes remain unchanged.
 
 ## Strongest next
 
-Fill the missing crossed cell: use the already specified C2 questions on the eight C3 new passages and compare to the existing original-question calls under frozen existing keys. This is an exposed-fixture question-sensitivity test, not independent validation or new wording optimization. Do not claim C2 transfer from C3, which used original questions. New known counts still swap number roles; one supplied q value is incorrectly treated as both supplied. Arithmetic reconnection remains downstream of validated facts.
+Confirm the source-frame contrast with fresh counts, additional controlled forms and missing-count cases. Isolate feature packages such as adverb/noun alignment versus tense/voice where feasible; do not automatically normalize sources or infer an attention mechanism. Preserve original-to-task representation mapping and unknown facts. Arithmetic reconnection remains downstream of source-role validation; current studies ask no calculation or causal-identification questions.
 
-## Integration and stable history
+## Integration/history
 
-[Guidance](modules/verification-layer.md) and [example](examples/soil-design-and-reset-calibration.md) add excerpt-task scope and family/aggregate checks. Seven prior current docs byte-archived; all prior code/results/weights/caches unchanged. [SR-C1](evaluation/soil-design-reader-v1/REPORT.md) remains failed; [SD math](evaluation/soil-design-three-cycle-v1/REPORT.md) scope unchanged. Tools/core/runtime/schema and [queue](evaluation/research-queue/QUEUE.json) statuses unchanged. Included/free only; ask before separately paid resources. No default wording/selection policy installed or background work active.
+[Guidance](modules/verification-layer.md) and [example](examples/soil-design-and-reset-calibration.md) add countertesting of upstream hypotheses and conditional framing scope. Seven prior current docs byte-archived underSF. Prior failures, toy mathematics, source originals, all oldweights/caches unchanged. Tools/core/runtime/schema and [queue](evaluation/research-queue/QUEUE.json) statuses unchanged. Included/free only; ask before separately paid resources. No default prompt/rewriter or model update installed; no job continues after this checkpoint.

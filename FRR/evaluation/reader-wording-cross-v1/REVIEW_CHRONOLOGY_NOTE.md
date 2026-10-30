@@ -1,0 +1,3 @@
+# Review chronology clarification
+
+RAW_FREEZE.json labels progress inspection as partial. The completion tool call had in fact printed all eight outputs before that freeze and before structured score aggregation. Treat all eight as viewed, not blinded. Protocol/keys/runner were still frozen before generation, raw output hashes remain unchanged, and whole-response scoring was explicitly coordinator-only. This clarification is appended rather than rewriting the earlier metadata, which is also bound by later preservation receipts. NF viewed only its last four outputs before freezing; SF explicitly records viewing all eight.

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "WC_N1_reworded",
+    "record_id": "N1",
+    "family": "grouping",
+    "expected": "32",
+    "text": "The given record documents 2 soils.",
+    "answer_match": false,
+    "baseline_match": false,
+    "transition": "wrong->wrong",
+    "strict_format": false,
+    "coordinator_note": "2observations per soil substituted for32soils."
+  },
+  {
+    "id": "WC_N2_reworded",
+    "record_id": "N2",
+    "family": "grouping",
+    "expected": "8",
+    "text": "The given record documents 8 independent soil draws supplied 8 observations apiece.",
+    "answer_match": true,
+    "baseline_match": false,
+    "transition": "wrong->correct",
+    "strict_format": false,
+    "coordinator_note": "8independent soil draws stated; target and observations share the value8 so this alone cannot establish role discrimination."
+  },
+  {
+    "id": "WC_N3_reworded",
+    "record_id": "N3",
+    "family": "grouping",
+    "expected": "2",
+    "text": "The passage document documents 32 distinct soils, including 2 independently sampled soils.",
+    "answer_match": false,
+    "baseline_match": false,
+    "transition": "wrong->wrong",
+    "strict_format": false,
+    "coordinator_note": "32distinctsoils contradicts the source2; later mentioning2 does not repair the false32claim."
+  },
+  {
+    "id": "WC_N4_reworded",
+    "record_id": "N4",
+    "family": "grouping",
+    "expected": "UNKNOWN",
+    "text": "The given record does not state how many independent soils it documents.",
+    "answer_match": true,
+    "baseline_match": true,
+    "transition": "correct->correct",
+    "strict_format": false,
+    "coordinator_note": "Explicit missing count, no invented number."
+  },
+  {
+    "id": "WC_N5_reworded",
+    "record_id": "N5",
+    "family": "reset",
+    "expected": "PROVIDED",
+    "text": "No, the provided record does not provide a number for each of qA and qS.",
+    "answer_match": false,
+    "baseline_match": true,
+    "transition": "correct->wrong",
+    "strict_format": false,
+    "coordinator_note": "Denies both supplied nonzero values."
+  },
+  {
+    "id": "WC_N6_reworded",
+    "record_id": "N6",
+    "family": "reset",
+    "expected": "MISSING",
+    "text": "No, the provided record does not supply a number for each of qA and qS.",
+    "answer_match": true,
+    "baseline_match": false,
+    "transition": "wrong->correct",
+    "strict_format": false,
+    "coordinator_note": "Denies a number for each variable when onlyqAprovided."
+  },
+  {
+    "id": "WC_N7_reworded",
+    "record_id": "N7",
+    "family": "reset",
+    "expected": "PROVIDED",
+    "text": "No, the provided record does not supply a number for each of qA and qS.",
+    "answer_match": false,
+    "baseline_match": true,
+    "transition": "correct->wrong",
+    "strict_format": false,
+    "coordinator_note": "Denies both supplied zero values."
+  },
+  {
+    "id": "WC_N8_reworded",
+    "record_id": "N8",
+    "family": "reset",
+    "expected": "MISSING",
+    "text": "No, the provided record does not supply a number for either qA or qS.",
+    "answer_match": true,
+    "baseline_match": true,
+    "transition": "correct->correct",
+    "strict_format": false,
+    "coordinator_note": "Correctly denies values for both variables."
+  }
+]

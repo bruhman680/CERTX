@@ -135,3 +135,10 @@ Before adding control complexity, test a smaller prerequisite such as choosing t
 [CR-C1/2/3](../evaluation/clause-reader-three-cycle-v1/REPORT.md) records a supplied-clause benefit on exposed source-reading tasks and a question-wording change whose opposite task-family effects cancel in the overall total. Preserve source binding, the exact question, selection method and the excerpt's supported task; byte-correct selection is not autonomous relevance discovery or universal task sufficiency. Count completion separately from source-supported answers, and inspect prespecified families/paired changes rather than only the aggregate.
 
 A changed question must be tested on the intended new sources before promoting it. An apparent transfer result under the original question does not establish transfer of a different question. Selected/clause evidence here does not validate arithmetic, causal identification, or a default prompt repair. These remain optional evaluation practices, not demonstrated broad behavioral gains.
+
+
+## Countertest an upstream explanation before promoting a repair
+
+[WC/NF/SF contacts](../evaluation/source-frame-role-v1/REPORT.md) distinguish a completed question-sensitivity comparison, an unsupported simple number-word explanation, and a source-frame contrast that changes generated number roles on two base pairs. Cross a suspected representation feature while preserving the task's intended value/role key, retain failed explanations, and keep later adaptive protocols distinct from an original confirmatory plan. A successful frame is a conditional readout aid, not evidence of model learning or a general source-normalization policy.
+
+If a rewrite changes syntax, tense or other features together, state that package and which task-specific proposition is intended to stay fixed; do not claim universal semantic equivalence or isolate an internal mechanism. Preserve the original, source mapping and unresolved facts. Validate source roles before calculation, then test calculation separately. No automatic rewrite, new parser, runtime rule or broad FRR benefit is established here.

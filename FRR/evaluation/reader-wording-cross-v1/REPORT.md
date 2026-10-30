@@ -1,0 +1,5 @@
+# WC-C1: completed question/source crossed cell
+
+30 October2026 America/Chicago. Eight exposed C3 sources receive the existing C2 questions. Original-question matches4/8; reworded4/8. Grouping1/4to2/4; reset3/4to2/4. GainedN2,N6;lostN5,N7. No training, retries or new wording search. This completes the missing paired comparison without establishing a globally better question.
+
+[Combined three-contact report](../source-frame-role-v1/REPORT.md) preserves the subsequent number-form countertest and source-frame follow-up. See [protocol](PROTOCOL.md), [frozen inputs](FREEZE.json), [scores](SCORES.json), [summary](SUMMARY.json), [raw outputs](RAW_OUTPUTS.jsonl), [preservation](PRESERVATION_AFTER_GENERATION.json) and [review chronology clarification](REVIEW_CHRONOLOGY_NOTE.md). Chronology clarification is append-only; no raw/input hashes or historical keys were changed. Coordinator review, not independent or masked. The raw stage label's partial-progress wording must not be read as a blinded review: all8completion outputs were viewed before structured scoring.

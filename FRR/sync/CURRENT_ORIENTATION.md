@@ -1,7 +1,7 @@
 # Current FRR orientation
 
-30 October 2026 UTC. [Handoff](../CURRENT_HANDOFF.md), [CR-C1/2/3 report](../evaluation/clause-reader-three-cycle-v1/REPORT.md), [checkpoint](checkpoints/AFTER_CLAUSE_READER_CYCLES_2026-10-30.md).
+30 October2026 America/Chicago. [Handoff](../CURRENT_HANDOFF.md), [combinedreport](../evaluation/source-frame-role-v1/REPORT.md), [checkpoint](checkpoints/AFTER_WORDING_FORM_FRAME_2026-10-30.md).
 
-CR-C1/2/3 completed32localreadingcalls. Full-source2/8 unambiguous matches; selectedclause5/8; rewordedquestion5/8; newclauses/originalquestion4/8. Qualified target-only sensitivity gives6/8 for both oldclauseconditions. Equal totals hide grouping1/4to3/4 and reset4/4to2/4 after rewording. Oldfullarms exactly repeat8prior outputs; duplicate selectedR2/R4inputs disclosed. All32newcachebranches retained; no training/paidservices/defaultpromotion.
+WC/NF/SF completed32adaptive localreadingcalls under separately frozen protocols. Crossedquestion remains4/8vs4/8 with oppositefamilychanges. Number-form factorial16/16correct rejects a sufficient number-word explanation in that scaffold. Returning to32/2pairs, passiveframe0/4vs there-areframe4/4 acrossdigits/words; one error invents12. Conditional surface-frame effect, not neural explanation, modellearning or general rewrite policy. All32newcachebranches preserved; no training/paidservices.
 
-Next proposed: C2 wording on C3 sources, the currently missing crossed cell. Do not infer that transfer from the original-question C3 results. No new arithmetic or source-discovery ability established. Seven old current docs archived, prior artifacts and model/caches preserved; core/schema/queue unchanged. No background task remains.
+Next proposed fresh-value source-frame/missingness challenge, not an automatic source rewrite. Preserve failed explanations and separate source reading from arithmetic. Seven oldcurrentdocs archived, all previous artifacts/model/caches unchanged. Core/schema/queue unchanged; no background work remains.
