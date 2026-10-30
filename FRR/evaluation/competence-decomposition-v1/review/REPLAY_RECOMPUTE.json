@@ -1,0 +1,97 @@
+{
+  "scope": "independent saved-data recomputation; no model run or replay rerun",
+  "comparisons": 118,
+  "all_comparisons_pass": true,
+  "records": [
+    {
+      "record": "C1",
+      "parsed_value": 11,
+      "parsed_minimum": 11,
+      "action": "YES",
+      "source_gold": "UNKNOWN",
+      "source_facts_match": false,
+      "fully_warranted": false
+    },
+    {
+      "record": "C2",
+      "parsed_value": 7,
+      "parsed_minimum": 11,
+      "action": "NO",
+      "source_gold": "NO",
+      "source_facts_match": true,
+      "fully_warranted": true
+    },
+    {
+      "record": "C3",
+      "parsed_value": 11,
+      "parsed_minimum": 11,
+      "action": "YES",
+      "source_gold": "YES",
+      "source_facts_match": true,
+      "fully_warranted": true
+    },
+    {
+      "record": "C4",
+      "parsed_value": 14,
+      "parsed_minimum": 11,
+      "action": "YES",
+      "source_gold": "YES",
+      "source_facts_match": true,
+      "fully_warranted": true
+    },
+    {
+      "record": "C5",
+      "parsed_value": 6,
+      "parsed_minimum": 6,
+      "action": "YES",
+      "source_gold": "UNKNOWN",
+      "source_facts_match": false,
+      "fully_warranted": false
+    },
+    {
+      "record": "C6",
+      "parsed_value": 4,
+      "parsed_minimum": 6,
+      "action": "NO",
+      "source_gold": "NO",
+      "source_facts_match": true,
+      "fully_warranted": true
+    },
+    {
+      "record": "C7",
+      "parsed_value": 6,
+      "parsed_minimum": 6,
+      "action": "YES",
+      "source_gold": "YES",
+      "source_facts_match": true,
+      "fully_warranted": true
+    },
+    {
+      "record": "C8",
+      "parsed_value": 9,
+      "parsed_minimum": 9,
+      "action": "YES",
+      "source_gold": "YES",
+      "source_facts_match": false,
+      "fully_warranted": false
+    }
+  ],
+  "aggregates": {
+    "semantic_matches": 6,
+    "fully_warranted": 5,
+    "direct_semantic_matches": 4,
+    "direct_warranted": 4,
+    "input_tokens": 2048,
+    "output_tokens": 191
+  },
+  "frozen_parser_boundary_counterexample": {
+    "input": "-1 cm",
+    "unit": "cm",
+    "actual_parse": {
+      "state": "measured",
+      "value": "1"
+    },
+    "desired": "reject signed input or preserve signed meaning; never silentlypositive"
+  },
+  "boundary_does_not_affect_eight_saved_positive_integer_pairs": true
+}

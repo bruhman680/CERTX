@@ -1,0 +1,33 @@
+{
+  "ruleset": "evidence-threshold-0.1",
+  "checker_sha256": "003c47eb2e5f6cc39334aba9f88933ebf674f204b2334b515bab609c9894315d",
+  "verdict": "supported",
+  "stage": "compared",
+  "reasons": [
+    "Comparison is conditional on the caller-supplied structured evidence and criterion."
+  ],
+  "binding": {
+    "artifact_sha256": true,
+    "entity_scope_unit": true
+  },
+  "limitations": [
+    "Structured facts are supplied, not extracted or authenticated.",
+    "No implicit unit conversion or conflict-resolution rule."
+  ],
+  "claim_id": "elm-meets-minimum",
+  "entity": "Parcel Elm",
+  "scope": "curated-instrument-example-v1",
+  "criterion_id": "minimum-6kg-v1",
+  "contract_sha256": "9393152b8a1b011ebede65130282863ed1975d74f43d3655a34143490aabdab7",
+  "artifact_sha256": "2ad246f6e1cdc378a41744584704d08e20222af2af90ef96b4f302e6e8a59695",
+  "observation_count": 1,
+  "measured_count": 1,
+  "missing_count": 0,
+  "comparison": {
+    "value": "6.00",
+    "operator": "at_least",
+    "minimum": "6",
+    "unit": "kg",
+    "holds": true
+  }
+}

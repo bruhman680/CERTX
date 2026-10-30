@@ -1,0 +1,621 @@
+{
+  "scope": "Post-primary saved-response composition, not an independent model arm. Model-generated criterion and measurement; caller context supplies entity/unit, not gold numeric values. Surface parser is not NL entailment/source authentication; primary extractionwarrants evaluated separately. Two extraction calls vsone direct call, not equalbudget. No prompttraining/newmodelcalls/goldrepair.",
+  "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "records": [
+    {
+      "record_id": "C1",
+      "measurement_text": "The requested measurement for Cobalt Prism is 11 cm.",
+      "minimum_text": "The required minimum for Cobalt Prism is 11 cm.",
+      "parsed_measurement": {
+        "state": "measured",
+        "value": "11"
+      },
+      "parsed_minimum": {
+        "state": "measured",
+        "value": "11"
+      },
+      "source_run_ids": [
+        "C1_measurement",
+        "C1_minimum"
+      ],
+      "input_tokens": 262,
+      "output_tokens": 30,
+      "inference_seconds": 3.1022868480004036,
+      "contract": {
+        "claim_id": "C1-generated-pair-at-least",
+        "entity": "Cobalt Prism",
+        "scope": "saved-generated-claims-C1",
+        "criterion": {
+          "id": "C1_minimum",
+          "operator": "at_least",
+          "unit": "cm",
+          "minimum": "11"
+        },
+        "evidence": {
+          "path": "C1.json",
+          "sha256": "502f95452d2284e730be2894559d6c4d818ae103cc7adb8aefce0bf1ab139260"
+        }
+      },
+      "receipt": {
+        "ruleset": "evidence-threshold-0.1",
+        "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "verdict": "supported",
+        "stage": "compared",
+        "reasons": [
+          "Comparison is conditional on the caller-supplied structured evidence and criterion."
+        ],
+        "binding": {
+          "artifact_sha256": true,
+          "entity_scope_unit": true
+        },
+        "limitations": [
+          "Structured facts are supplied, not extracted or authenticated.",
+          "No implicit unit conversion or conflict-resolution rule."
+        ],
+        "claim_id": "C1-generated-pair-at-least",
+        "entity": "Cobalt Prism",
+        "scope": "saved-generated-claims-C1",
+        "criterion_id": "C1_minimum",
+        "contract_sha256": "19858e089d0e9e736e363429e777da09d15aeadf47cf7dc67a903594db8b933d",
+        "artifact_sha256": "502f95452d2284e730be2894559d6c4d818ae103cc7adb8aefce0bf1ab139260",
+        "observation_count": 1,
+        "measured_count": 1,
+        "missing_count": 0,
+        "comparison": {
+          "value": "11",
+          "operator": "at_least",
+          "minimum": "11",
+          "unit": "cm",
+          "holds": true
+        }
+      },
+      "stage": "compared",
+      "action": "YES",
+      "gold": "UNKNOWN",
+      "semantic_match": false,
+      "extracted_fields_warranted": false,
+      "direct_action": "YES",
+      "direct_warrant": false,
+      "fully_warranted": false
+    },
+    {
+      "record_id": "C2",
+      "measurement_text": "The requested measurement is 7 cm.",
+      "minimum_text": "The required minimum for Cobalt Prism is 11 cm.",
+      "parsed_measurement": {
+        "state": "measured",
+        "value": "7"
+      },
+      "parsed_minimum": {
+        "state": "measured",
+        "value": "11"
+      },
+      "source_run_ids": [
+        "C2_measurement",
+        "C2_minimum"
+      ],
+      "input_tokens": 260,
+      "output_tokens": 24,
+      "inference_seconds": 2.5032014359999266,
+      "contract": {
+        "claim_id": "C2-generated-pair-at-least",
+        "entity": "Cobalt Prism",
+        "scope": "saved-generated-claims-C2",
+        "criterion": {
+          "id": "C2_minimum",
+          "operator": "at_least",
+          "unit": "cm",
+          "minimum": "11"
+        },
+        "evidence": {
+          "path": "C2.json",
+          "sha256": "08615ba22a8c38f62e37c06a01681fe7064ecbd5c90dc02bb285d5418985841f"
+        }
+      },
+      "receipt": {
+        "ruleset": "evidence-threshold-0.1",
+        "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "verdict": "contradicted",
+        "stage": "compared",
+        "reasons": [
+          "Comparison is conditional on the caller-supplied structured evidence and criterion."
+        ],
+        "binding": {
+          "artifact_sha256": true,
+          "entity_scope_unit": true
+        },
+        "limitations": [
+          "Structured facts are supplied, not extracted or authenticated.",
+          "No implicit unit conversion or conflict-resolution rule."
+        ],
+        "claim_id": "C2-generated-pair-at-least",
+        "entity": "Cobalt Prism",
+        "scope": "saved-generated-claims-C2",
+        "criterion_id": "C2_minimum",
+        "contract_sha256": "b0f65ebcef754eb1968f07689218f563e272f3d8464c79173f74908d5bb29310",
+        "artifact_sha256": "08615ba22a8c38f62e37c06a01681fe7064ecbd5c90dc02bb285d5418985841f",
+        "observation_count": 1,
+        "measured_count": 1,
+        "missing_count": 0,
+        "comparison": {
+          "value": "7",
+          "operator": "at_least",
+          "minimum": "11",
+          "unit": "cm",
+          "holds": false
+        }
+      },
+      "stage": "compared",
+      "action": "NO",
+      "gold": "NO",
+      "semantic_match": true,
+      "extracted_fields_warranted": true,
+      "direct_action": "YES",
+      "direct_warrant": false,
+      "fully_warranted": true
+    },
+    {
+      "record_id": "C3",
+      "measurement_text": "The requested measurement is 11 cm.",
+      "minimum_text": "The required minimum for Cobalt Prism is 11 cm.",
+      "parsed_measurement": {
+        "state": "measured",
+        "value": "11"
+      },
+      "parsed_minimum": {
+        "state": "measured",
+        "value": "11"
+      },
+      "source_run_ids": [
+        "C3_measurement",
+        "C3_minimum"
+      ],
+      "input_tokens": 262,
+      "output_tokens": 25,
+      "inference_seconds": 2.420902997000212,
+      "contract": {
+        "claim_id": "C3-generated-pair-at-least",
+        "entity": "Cobalt Prism",
+        "scope": "saved-generated-claims-C3",
+        "criterion": {
+          "id": "C3_minimum",
+          "operator": "at_least",
+          "unit": "cm",
+          "minimum": "11"
+        },
+        "evidence": {
+          "path": "C3.json",
+          "sha256": "f7e71e3be66c494002a4f6ad4b85161194a551f30a67ee9591dff9d0f045b703"
+        }
+      },
+      "receipt": {
+        "ruleset": "evidence-threshold-0.1",
+        "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "verdict": "supported",
+        "stage": "compared",
+        "reasons": [
+          "Comparison is conditional on the caller-supplied structured evidence and criterion."
+        ],
+        "binding": {
+          "artifact_sha256": true,
+          "entity_scope_unit": true
+        },
+        "limitations": [
+          "Structured facts are supplied, not extracted or authenticated.",
+          "No implicit unit conversion or conflict-resolution rule."
+        ],
+        "claim_id": "C3-generated-pair-at-least",
+        "entity": "Cobalt Prism",
+        "scope": "saved-generated-claims-C3",
+        "criterion_id": "C3_minimum",
+        "contract_sha256": "1f644b61da24d2d1ba4df45dbdbe6eb9f819314cf4ab7116b1c3eca92818286a",
+        "artifact_sha256": "f7e71e3be66c494002a4f6ad4b85161194a551f30a67ee9591dff9d0f045b703",
+        "observation_count": 1,
+        "measured_count": 1,
+        "missing_count": 0,
+        "comparison": {
+          "value": "11",
+          "operator": "at_least",
+          "minimum": "11",
+          "unit": "cm",
+          "holds": true
+        }
+      },
+      "stage": "compared",
+      "action": "YES",
+      "gold": "YES",
+      "semantic_match": true,
+      "extracted_fields_warranted": true,
+      "direct_action": "YES",
+      "direct_warrant": true,
+      "fully_warranted": true
+    },
+    {
+      "record_id": "C4",
+      "measurement_text": "The requested measurement is 14 cm.",
+      "minimum_text": "The required minimum for Cobalt Prism is 11 cm.",
+      "parsed_measurement": {
+        "state": "measured",
+        "value": "14"
+      },
+      "parsed_minimum": {
+        "state": "measured",
+        "value": "11"
+      },
+      "source_run_ids": [
+        "C4_measurement",
+        "C4_minimum"
+      ],
+      "input_tokens": 262,
+      "output_tokens": 25,
+      "inference_seconds": 2.424566333000257,
+      "contract": {
+        "claim_id": "C4-generated-pair-at-least",
+        "entity": "Cobalt Prism",
+        "scope": "saved-generated-claims-C4",
+        "criterion": {
+          "id": "C4_minimum",
+          "operator": "at_least",
+          "unit": "cm",
+          "minimum": "11"
+        },
+        "evidence": {
+          "path": "C4.json",
+          "sha256": "96e6e37f25ed3b83736cdc161fcd602cbeabc7afc682df5dd113f3de8f241fa2"
+        }
+      },
+      "receipt": {
+        "ruleset": "evidence-threshold-0.1",
+        "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "verdict": "supported",
+        "stage": "compared",
+        "reasons": [
+          "Comparison is conditional on the caller-supplied structured evidence and criterion."
+        ],
+        "binding": {
+          "artifact_sha256": true,
+          "entity_scope_unit": true
+        },
+        "limitations": [
+          "Structured facts are supplied, not extracted or authenticated.",
+          "No implicit unit conversion or conflict-resolution rule."
+        ],
+        "claim_id": "C4-generated-pair-at-least",
+        "entity": "Cobalt Prism",
+        "scope": "saved-generated-claims-C4",
+        "criterion_id": "C4_minimum",
+        "contract_sha256": "834dc9d996f45cba23c097d750b2f46ccc4b927506d054860aed6456b5f8464d",
+        "artifact_sha256": "96e6e37f25ed3b83736cdc161fcd602cbeabc7afc682df5dd113f3de8f241fa2",
+        "observation_count": 1,
+        "measured_count": 1,
+        "missing_count": 0,
+        "comparison": {
+          "value": "14",
+          "operator": "at_least",
+          "minimum": "11",
+          "unit": "cm",
+          "holds": true
+        }
+      },
+      "stage": "compared",
+      "action": "YES",
+      "gold": "YES",
+      "semantic_match": true,
+      "extracted_fields_warranted": true,
+      "direct_action": "YES",
+      "direct_warrant": true,
+      "fully_warranted": true
+    },
+    {
+      "record_id": "C5",
+      "measurement_text": "The requested measurement for Bronze Bag is 6 kg.",
+      "minimum_text": "The required minimum for Bronze Bag is 6 kg.",
+      "parsed_measurement": {
+        "state": "measured",
+        "value": "6"
+      },
+      "parsed_minimum": {
+        "state": "measured",
+        "value": "6"
+      },
+      "source_run_ids": [
+        "C5_measurement",
+        "C5_minimum"
+      ],
+      "input_tokens": 252,
+      "output_tokens": 24,
+      "inference_seconds": 2.405001733000063,
+      "contract": {
+        "claim_id": "C5-generated-pair-at-least",
+        "entity": "Bronze Bag",
+        "scope": "saved-generated-claims-C5",
+        "criterion": {
+          "id": "C5_minimum",
+          "operator": "at_least",
+          "unit": "kg",
+          "minimum": "6"
+        },
+        "evidence": {
+          "path": "C5.json",
+          "sha256": "0d80322614cd52be24766edc4f39fc4c9f8bcf89a8af5bc89de43b0bab583b3d"
+        }
+      },
+      "receipt": {
+        "ruleset": "evidence-threshold-0.1",
+        "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "verdict": "supported",
+        "stage": "compared",
+        "reasons": [
+          "Comparison is conditional on the caller-supplied structured evidence and criterion."
+        ],
+        "binding": {
+          "artifact_sha256": true,
+          "entity_scope_unit": true
+        },
+        "limitations": [
+          "Structured facts are supplied, not extracted or authenticated.",
+          "No implicit unit conversion or conflict-resolution rule."
+        ],
+        "claim_id": "C5-generated-pair-at-least",
+        "entity": "Bronze Bag",
+        "scope": "saved-generated-claims-C5",
+        "criterion_id": "C5_minimum",
+        "contract_sha256": "2ff2aa5c3ca851c71ae47db96cf48906364edfeec5601444700fedc425f73c09",
+        "artifact_sha256": "0d80322614cd52be24766edc4f39fc4c9f8bcf89a8af5bc89de43b0bab583b3d",
+        "observation_count": 1,
+        "measured_count": 1,
+        "missing_count": 0,
+        "comparison": {
+          "value": "6",
+          "operator": "at_least",
+          "minimum": "6",
+          "unit": "kg",
+          "holds": true
+        }
+      },
+      "stage": "compared",
+      "action": "YES",
+      "gold": "UNKNOWN",
+      "semantic_match": false,
+      "extracted_fields_warranted": false,
+      "direct_action": "YES",
+      "direct_warrant": false,
+      "fully_warranted": false
+    },
+    {
+      "record_id": "C6",
+      "measurement_text": "The requested measurement is 4 kg.",
+      "minimum_text": "The required minimum for Bronze Bag is 6 kg.",
+      "parsed_measurement": {
+        "state": "measured",
+        "value": "4"
+      },
+      "parsed_minimum": {
+        "state": "measured",
+        "value": "6"
+      },
+      "source_run_ids": [
+        "C6_measurement",
+        "C6_minimum"
+      ],
+      "input_tokens": 250,
+      "output_tokens": 21,
+      "inference_seconds": 2.2014029229999323,
+      "contract": {
+        "claim_id": "C6-generated-pair-at-least",
+        "entity": "Bronze Bag",
+        "scope": "saved-generated-claims-C6",
+        "criterion": {
+          "id": "C6_minimum",
+          "operator": "at_least",
+          "unit": "kg",
+          "minimum": "6"
+        },
+        "evidence": {
+          "path": "C6.json",
+          "sha256": "3cb5bfa9c037f05e1f6bd75ec5a8c7136034ffa04e8e4166ab65833e76e4985d"
+        }
+      },
+      "receipt": {
+        "ruleset": "evidence-threshold-0.1",
+        "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "verdict": "contradicted",
+        "stage": "compared",
+        "reasons": [
+          "Comparison is conditional on the caller-supplied structured evidence and criterion."
+        ],
+        "binding": {
+          "artifact_sha256": true,
+          "entity_scope_unit": true
+        },
+        "limitations": [
+          "Structured facts are supplied, not extracted or authenticated.",
+          "No implicit unit conversion or conflict-resolution rule."
+        ],
+        "claim_id": "C6-generated-pair-at-least",
+        "entity": "Bronze Bag",
+        "scope": "saved-generated-claims-C6",
+        "criterion_id": "C6_minimum",
+        "contract_sha256": "a03f19d3fcfaaebce6b0dcde32b55285ad42b63f9025ca2f4ed4a052b97e3be8",
+        "artifact_sha256": "3cb5bfa9c037f05e1f6bd75ec5a8c7136034ffa04e8e4166ab65833e76e4985d",
+        "observation_count": 1,
+        "measured_count": 1,
+        "missing_count": 0,
+        "comparison": {
+          "value": "4",
+          "operator": "at_least",
+          "minimum": "6",
+          "unit": "kg",
+          "holds": false
+        }
+      },
+      "stage": "compared",
+      "action": "NO",
+      "gold": "NO",
+      "semantic_match": true,
+      "extracted_fields_warranted": true,
+      "direct_action": "YES",
+      "direct_warrant": false,
+      "fully_warranted": true
+    },
+    {
+      "record_id": "C7",
+      "measurement_text": "The requested measurement is 6 kg.",
+      "minimum_text": "The required minimum for Bronze Bag is 6 kg.",
+      "parsed_measurement": {
+        "state": "measured",
+        "value": "6"
+      },
+      "parsed_minimum": {
+        "state": "measured",
+        "value": "6"
+      },
+      "source_run_ids": [
+        "C7_measurement",
+        "C7_minimum"
+      ],
+      "input_tokens": 250,
+      "output_tokens": 21,
+      "inference_seconds": 2.1704764470000555,
+      "contract": {
+        "claim_id": "C7-generated-pair-at-least",
+        "entity": "Bronze Bag",
+        "scope": "saved-generated-claims-C7",
+        "criterion": {
+          "id": "C7_minimum",
+          "operator": "at_least",
+          "unit": "kg",
+          "minimum": "6"
+        },
+        "evidence": {
+          "path": "C7.json",
+          "sha256": "132f778f2b6fe2515dc3d47d463b97a4b231475b09f3e3d9fe0ec4faaf8ae00c"
+        }
+      },
+      "receipt": {
+        "ruleset": "evidence-threshold-0.1",
+        "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "verdict": "supported",
+        "stage": "compared",
+        "reasons": [
+          "Comparison is conditional on the caller-supplied structured evidence and criterion."
+        ],
+        "binding": {
+          "artifact_sha256": true,
+          "entity_scope_unit": true
+        },
+        "limitations": [
+          "Structured facts are supplied, not extracted or authenticated.",
+          "No implicit unit conversion or conflict-resolution rule."
+        ],
+        "claim_id": "C7-generated-pair-at-least",
+        "entity": "Bronze Bag",
+        "scope": "saved-generated-claims-C7",
+        "criterion_id": "C7_minimum",
+        "contract_sha256": "bae01dd5cf0274f3e0db793dec09d95e2f49f664b8ff1261d187ac825ee1b22e",
+        "artifact_sha256": "132f778f2b6fe2515dc3d47d463b97a4b231475b09f3e3d9fe0ec4faaf8ae00c",
+        "observation_count": 1,
+        "measured_count": 1,
+        "missing_count": 0,
+        "comparison": {
+          "value": "6",
+          "operator": "at_least",
+          "minimum": "6",
+          "unit": "kg",
+          "holds": true
+        }
+      },
+      "stage": "compared",
+      "action": "YES",
+      "gold": "YES",
+      "semantic_match": true,
+      "extracted_fields_warranted": true,
+      "direct_action": "YES",
+      "direct_warrant": true,
+      "fully_warranted": true
+    },
+    {
+      "record_id": "C8",
+      "measurement_text": "The requested measurement is 9 kg.",
+      "minimum_text": "The required minimum for Bronze Bag is 9 kg.",
+      "parsed_measurement": {
+        "state": "measured",
+        "value": "9"
+      },
+      "parsed_minimum": {
+        "state": "measured",
+        "value": "9"
+      },
+      "source_run_ids": [
+        "C8_measurement",
+        "C8_minimum"
+      ],
+      "input_tokens": 250,
+      "output_tokens": 21,
+      "inference_seconds": 2.199634423000134,
+      "contract": {
+        "claim_id": "C8-generated-pair-at-least",
+        "entity": "Bronze Bag",
+        "scope": "saved-generated-claims-C8",
+        "criterion": {
+          "id": "C8_minimum",
+          "operator": "at_least",
+          "unit": "kg",
+          "minimum": "9"
+        },
+        "evidence": {
+          "path": "C8.json",
+          "sha256": "c9890821cc48f89f7a6d4d0432045f36e578564fb828032cb4e62ac729107aef"
+        }
+      },
+      "receipt": {
+        "ruleset": "evidence-threshold-0.1",
+        "checker_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+        "verdict": "supported",
+        "stage": "compared",
+        "reasons": [
+          "Comparison is conditional on the caller-supplied structured evidence and criterion."
+        ],
+        "binding": {
+          "artifact_sha256": true,
+          "entity_scope_unit": true
+        },
+        "limitations": [
+          "Structured facts are supplied, not extracted or authenticated.",
+          "No implicit unit conversion or conflict-resolution rule."
+        ],
+        "claim_id": "C8-generated-pair-at-least",
+        "entity": "Bronze Bag",
+        "scope": "saved-generated-claims-C8",
+        "criterion_id": "C8_minimum",
+        "contract_sha256": "bed3697dc0b6307a9e3ad77318a76b66f9a347e6cd762096f3dd3ea165b2dc0b",
+        "artifact_sha256": "c9890821cc48f89f7a6d4d0432045f36e578564fb828032cb4e62ac729107aef",
+        "observation_count": 1,
+        "measured_count": 1,
+        "missing_count": 0,
+        "comparison": {
+          "value": "9",
+          "operator": "at_least",
+          "minimum": "9",
+          "unit": "kg",
+          "holds": true
+        }
+      },
+      "stage": "compared",
+      "action": "YES",
+      "gold": "YES",
+      "semantic_match": true,
+      "extracted_fields_warranted": false,
+      "direct_action": "YES",
+      "direct_warrant": true,
+      "fully_warranted": false
+    }
+  ],
+  "semantic_matches": 6,
+  "fully_warranted": 5,
+  "direct_semantic_matches": 4,
+  "direct_warranted": 4,
+  "input_tokens": 2048,
+  "output_tokens": 191,
+  "inference_seconds_already_counted_in_primary": 19.427473140000984
+}

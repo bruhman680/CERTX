@@ -1,0 +1,256 @@
+{
+  "tasks": {
+    "measurement": {
+      "semantic_match": 6,
+      "fully_warranted": 6,
+      "strict_format": 0,
+      "wrong_field_binding": 2,
+      "material_error": 2,
+      "unsupported_certainty_missing_evidence": 2,
+      "input_tokens": 1064,
+      "output_tokens": 83,
+      "seconds": 8.972336125000766
+    },
+    "minimum": {
+      "semantic_match": 7,
+      "fully_warranted": 7,
+      "strict_format": 0,
+      "wrong_field_binding": 1,
+      "material_error": 1,
+      "unsupported_certainty_missing_evidence": 0,
+      "input_tokens": 984,
+      "output_tokens": 108,
+      "seconds": 10.455137015000219
+    },
+    "pass": {
+      "semantic_match": 4,
+      "fully_warranted": 4,
+      "strict_format": 8,
+      "wrong_field_binding": 0,
+      "material_error": 0,
+      "unsupported_certainty_missing_evidence": 2,
+      "input_tokens": 1080,
+      "output_tokens": 16,
+      "seconds": 4.3003396879998945
+    },
+    "fail": {
+      "semantic_match": 2,
+      "fully_warranted": 2,
+      "strict_format": 8,
+      "wrong_field_binding": 0,
+      "material_error": 0,
+      "unsupported_certainty_missing_evidence": 2,
+      "input_tokens": 1136,
+      "output_tokens": 16,
+      "seconds": 4.591821790000722
+    },
+    "neutral": {
+      "semantic_match": 2,
+      "fully_warranted": 2,
+      "strict_format": 8,
+      "wrong_field_binding": 0,
+      "material_error": 0,
+      "unsupported_certainty_missing_evidence": 0,
+      "input_tokens": 1192,
+      "output_tokens": 32,
+      "seconds": 5.919682015000035
+    }
+  },
+  "records": [
+    {
+      "record_id": "C1",
+      "records": "Cobalt Prism must measure at least 11 cm to pass. No measurement for Cobalt Prism is recorded.",
+      "outputs": {
+        "measurement": "The requested measurement for Cobalt Prism is 11 cm.",
+        "minimum": "The required minimum for Cobalt Prism is 11 cm.",
+        "pass": "Yes",
+        "fail": "Yes",
+        "neutral": "MISSING"
+      },
+      "field_pair_warranted": false,
+      "pass_match": false,
+      "inverse_match": false,
+      "direct_inverse_pair": [
+        "YES",
+        "YES"
+      ],
+      "gold_pair": [
+        "UNKNOWN",
+        "UNKNOWN"
+      ],
+      "pair_correct": false,
+      "pair_complementary": false
+    },
+    {
+      "record_id": "C2",
+      "records": "Cobalt Prism must measure at least 11 cm to pass. Cobalt Prism measures 7 cm.",
+      "outputs": {
+        "measurement": "The requested measurement is 7 cm.",
+        "minimum": "The required minimum for Cobalt Prism is 11 cm.",
+        "pass": "Yes",
+        "fail": "Yes",
+        "neutral": "MISSING"
+      },
+      "field_pair_warranted": true,
+      "pass_match": false,
+      "inverse_match": true,
+      "direct_inverse_pair": [
+        "YES",
+        "YES"
+      ],
+      "gold_pair": [
+        "NO",
+        "YES"
+      ],
+      "pair_correct": false,
+      "pair_complementary": false
+    },
+    {
+      "record_id": "C3",
+      "records": "Cobalt Prism must measure at least 11 cm to pass. Cobalt Prism measures 11 cm.",
+      "outputs": {
+        "measurement": "The requested measurement is 11 cm.",
+        "minimum": "The required minimum for Cobalt Prism is 11 cm.",
+        "pass": "Yes",
+        "fail": "Yes",
+        "neutral": "MISSING"
+      },
+      "field_pair_warranted": true,
+      "pass_match": true,
+      "inverse_match": false,
+      "direct_inverse_pair": [
+        "YES",
+        "YES"
+      ],
+      "gold_pair": [
+        "YES",
+        "NO"
+      ],
+      "pair_correct": false,
+      "pair_complementary": false
+    },
+    {
+      "record_id": "C4",
+      "records": "Cobalt Prism must measure at least 11 cm to pass. Cobalt Prism measures 14 cm.",
+      "outputs": {
+        "measurement": "The requested measurement is 14 cm.",
+        "minimum": "The required minimum for Cobalt Prism is 11 cm.",
+        "pass": "Yes",
+        "fail": "Yes",
+        "neutral": "MISSING"
+      },
+      "field_pair_warranted": true,
+      "pass_match": true,
+      "inverse_match": false,
+      "direct_inverse_pair": [
+        "YES",
+        "YES"
+      ],
+      "gold_pair": [
+        "YES",
+        "NO"
+      ],
+      "pair_correct": false,
+      "pair_complementary": false
+    },
+    {
+      "record_id": "C5",
+      "records": "Bronze Bag must measure at least 6 kg to pass. No measurement for Bronze Bag is recorded.",
+      "outputs": {
+        "measurement": "The requested measurement for Bronze Bag is 6 kg.",
+        "minimum": "The required minimum for Bronze Bag is 6 kg.",
+        "pass": "Yes",
+        "fail": "Yes",
+        "neutral": "MISSING"
+      },
+      "field_pair_warranted": false,
+      "pass_match": false,
+      "inverse_match": false,
+      "direct_inverse_pair": [
+        "YES",
+        "YES"
+      ],
+      "gold_pair": [
+        "UNKNOWN",
+        "UNKNOWN"
+      ],
+      "pair_correct": false,
+      "pair_complementary": false
+    },
+    {
+      "record_id": "C6",
+      "records": "Bronze Bag must measure at least 6 kg to pass. Bronze Bag measures 4 kg.",
+      "outputs": {
+        "measurement": "The requested measurement is 4 kg.",
+        "minimum": "The required minimum for Bronze Bag is 6 kg.",
+        "pass": "Yes",
+        "fail": "Yes",
+        "neutral": "MISSING"
+      },
+      "field_pair_warranted": true,
+      "pass_match": false,
+      "inverse_match": true,
+      "direct_inverse_pair": [
+        "YES",
+        "YES"
+      ],
+      "gold_pair": [
+        "NO",
+        "YES"
+      ],
+      "pair_correct": false,
+      "pair_complementary": false
+    },
+    {
+      "record_id": "C7",
+      "records": "Bronze Bag must measure at least 6 kg to pass. Bronze Bag measures 6 kg.",
+      "outputs": {
+        "measurement": "The requested measurement is 6 kg.",
+        "minimum": "The required minimum for Bronze Bag is 6 kg.",
+        "pass": "Yes",
+        "fail": "Yes",
+        "neutral": "MISSING"
+      },
+      "field_pair_warranted": true,
+      "pass_match": true,
+      "inverse_match": false,
+      "direct_inverse_pair": [
+        "YES",
+        "YES"
+      ],
+      "gold_pair": [
+        "YES",
+        "NO"
+      ],
+      "pair_correct": false,
+      "pair_complementary": false
+    },
+    {
+      "record_id": "C8",
+      "records": "Bronze Bag must measure at least 6 kg to pass. Bronze Bag measures 9 kg.",
+      "outputs": {
+        "measurement": "The requested measurement is 9 kg.",
+        "minimum": "The required minimum for Bronze Bag is 9 kg.",
+        "pass": "Yes",
+        "fail": "Yes",
+        "neutral": "MISSING"
+      },
+      "field_pair_warranted": false,
+      "pass_match": true,
+      "inverse_match": false,
+      "direct_inverse_pair": [
+        "YES",
+        "YES"
+      ],
+      "gold_pair": [
+        "YES",
+        "NO"
+      ],
+      "pair_correct": false,
+      "pair_complementary": false
+    }
+  ],
+  "both_fields_warranted": 5,
+  "correct_pairs": 0,
+  "complementary_pairs": 0
+}

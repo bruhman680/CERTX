@@ -1,0 +1,216 @@
+{
+  "scope": "Append-only parser repair; no original replay or model rerun",
+  "test_groups": 6,
+  "all_test_groups_pass": true,
+  "saved_text_compatibility_cases": 16,
+  "saved_parses_unchanged": [
+    {
+      "run_id": "C1_measurement",
+      "original_parse": {
+        "state": "measured",
+        "value": "11"
+      },
+      "v2_parse": {
+        "state": "measured",
+        "value": "11"
+      }
+    },
+    {
+      "run_id": "C1_minimum",
+      "original_parse": {
+        "state": "measured",
+        "value": "11"
+      },
+      "v2_parse": {
+        "state": "measured",
+        "value": "11"
+      }
+    },
+    {
+      "run_id": "C2_minimum",
+      "original_parse": {
+        "state": "measured",
+        "value": "11"
+      },
+      "v2_parse": {
+        "state": "measured",
+        "value": "11"
+      }
+    },
+    {
+      "run_id": "C2_measurement",
+      "original_parse": {
+        "state": "measured",
+        "value": "7"
+      },
+      "v2_parse": {
+        "state": "measured",
+        "value": "7"
+      }
+    },
+    {
+      "run_id": "C3_measurement",
+      "original_parse": {
+        "state": "measured",
+        "value": "11"
+      },
+      "v2_parse": {
+        "state": "measured",
+        "value": "11"
+      }
+    },
+    {
+      "run_id": "C3_minimum",
+      "original_parse": {
+        "state": "measured",
+        "value": "11"
+      },
+      "v2_parse": {
+        "state": "measured",
+        "value": "11"
+      }
+    },
+    {
+      "run_id": "C4_measurement",
+      "original_parse": {
+        "state": "measured",
+        "value": "14"
+      },
+      "v2_parse": {
+        "state": "measured",
+        "value": "14"
+      }
+    },
+    {
+      "run_id": "C4_minimum",
+      "original_parse": {
+        "state": "measured",
+        "value": "11"
+      },
+      "v2_parse": {
+        "state": "measured",
+        "value": "11"
+      }
+    },
+    {
+      "run_id": "C5_measurement",
+      "original_parse": {
+        "state": "measured",
+        "value": "6"
+      },
+      "v2_parse": {
+        "state": "measured",
+        "value": "6"
+      }
+    },
+    {
+      "run_id": "C5_minimum",
+      "original_parse": {
+        "state": "measured",
+        "value": "6"
+      },
+      "v2_parse": {
+        "state": "measured",
+        "value": "6"
+      }
+    },
+    {
+      "run_id": "C6_measurement",
+      "original_parse": {
+        "state": "measured",
+        "value": "4"
+      },
+      "v2_parse": {
+        "state": "measured",
+        "value": "4"
+      }
+    },
+    {
+      "run_id": "C6_minimum",
+      "original_parse": {
+        "state": "measured",
+        "value": "6"
+      },
+      "v2_parse": {
+        "state": "measured",
+        "value": "6"
+      }
+    },
+    {
+      "run_id": "C7_minimum",
+      "original_parse": {
+        "state": "measured",
+        "value": "6"
+      },
+      "v2_parse": {
+        "state": "measured",
+        "value": "6"
+      }
+    },
+    {
+      "run_id": "C7_measurement",
+      "original_parse": {
+        "state": "measured",
+        "value": "6"
+      },
+      "v2_parse": {
+        "state": "measured",
+        "value": "6"
+      }
+    },
+    {
+      "run_id": "C8_measurement",
+      "original_parse": {
+        "state": "measured",
+        "value": "9"
+      },
+      "v2_parse": {
+        "state": "measured",
+        "value": "9"
+      }
+    },
+    {
+      "run_id": "C8_minimum",
+      "original_parse": {
+        "state": "measured",
+        "value": "9"
+      },
+      "v2_parse": {
+        "state": "measured",
+        "value": "9"
+      }
+    }
+  ],
+  "frozen_original_files_checked": [
+    "replay_extractions.py",
+    "REPLAY_DESIGN.md",
+    "RAW_OUTPUTS.jsonl",
+    "RECORDS.json",
+    "ROOT_SCORES.json",
+    "../../tools/evidence_threshold.py",
+    "REPLAY_RESULTS.json"
+  ],
+  "frozen_original_files_hashes_match": true,
+  "original_replay_evidence_files_checked": 8,
+  "original_replay_evidence_hashes_match": true,
+  "counterexample": {
+    "input": "-1 cm",
+    "original_result": {
+      "state": "measured",
+      "value": "1"
+    },
+    "v2_result": null
+  },
+  "new_parser_used_for_original_replay": false,
+  "new_model_calls": 0,
+  "original_replay_rerun": false,
+  "artifacts_sha256": {
+    "replay_parser_v2.py": "a33f4bcabd02644a1654424cb4f043cabc980cabdde1039d5fdeddf0f5d50e46",
+    "test_replay_parser_v2.py": "57b59772cc81787cd59cec51c8ed7f86ace80dd42bd6a857f46eb2039eaec9b0",
+    "REPLAY_PARSER_TESTS.txt": "1a50f3cb8d4b5938d68de7c7bcc694e97ec928608bcec17509aa7a905cc66d73"
+  },
+  "limitations": [
+    "Surface parsing is not natural-language entailment, truth, negation handling or source/entity authentication.",
+    "No signed/decimal/exponent quantities or implicit unit conversion supported."
+  ]
+}

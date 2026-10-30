@@ -89,3 +89,12 @@ For a decision over several components, distinguish a check that can reveal one 
 
 
 Before proposing a follow-up as sufficient, check whether its intended decisive outcome is feasible under the constraints already accepted. A logically sufficient condition can be unattainable through the proposed observation channel. Keep sufficiency for the named target separate from unnecessary reconstruction of every underlying value. [Task-relative summary and feasible-check example](../examples/task-relative-summaries-and-feasible-checks.md) records a prospective evaluation repair; behavioral benefit remains untested.
+
+
+## Typed inference delegation — optional threshold instrument
+
+[CD-C1](../evaluation/competence-decomposition-v1/REPORT.md) adds a separate [typed threshold helper](../tools/evidence_threshold.py) and [worked use](../examples/typed-threshold-inference.md). It accepts explicitly structured, byte-bound observations and an identified at-least criterion, validates literal entity/scope/unit, then compares finite decimal values exactly. This ruleset is separate from the verification adapters above and from core/runtime/schema versions.
+
+Keep four obligations visible: extraction/source binding, input validity, formal computation, and the task's warranted conclusion. A correct computation over the wrong extracted field can produce a correct-looking answer without warrant. Output-format compliance alone satisfies none of the factual obligations. Domain-missing evidence, no supplied observations, failed access/parsing, identity mismatch and conflicting observations have different receipt stages; choose a repair from the actual reason rather than flattening them into failure or zero.
+
+This helper is usable for its declared structured domain. It does not parse natural language, authenticate evidence, resolve conflicts or estimate model confidence. Caller-curated instrument tests and retrospective composition of model outputs are distinct evidence. No automatic model-routing policy, confidence threshold or general reasoning improvement is adopted.
