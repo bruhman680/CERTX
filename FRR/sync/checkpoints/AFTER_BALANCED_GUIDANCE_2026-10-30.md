@@ -1,0 +1,3 @@
+# Balanced prospective guidance settled
+
+[Report](../../evaluation/balanced-guidance-prospective-v1/REPORT.md).24actualSmolLM2calls,12balancedcasespaired ordinary/compact, both4/12allYES,allEOS.Prospective frozen audit path works; guidance does not improve labels here.No training/paidresources/defaultpromotion/independentreview.24newcaches retained,346oldmodel/cachefiles unchanged. Four current navigation docs archived before updates.Oldfailedsourcegate andbroadqueue untouched.Strongnext:read-only scopedreceipt registry with ancestry,incompatibility andwithholding visible.No further experiment/backgroundtask.

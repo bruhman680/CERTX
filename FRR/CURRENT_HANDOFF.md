@@ -1,24 +1,21 @@
 # Current FRR handoff
 
-Current checkpoint: 30 October 2026 America/Chicago. Stored-run audit three-stage contact complete; latest details are in the checkpoint below. CVP-C1/2/3 remains the preceding connected build. No background task remains. New instructions supersede historical pause/next labels.
+30 October 2026, America/Chicago. Balanced prospective guidance three-stage contact complete; no background task remains. New user instructions supersede historical pause/next labels.
 
-## Usable new component
+## Latest completed contact
 
-[Guide](evaluation/complete-verification-path-v1/README.md), [report](evaluation/complete-verification-path-v1/REPORT.md), [tool](tools/source_calculation_path.py). CVP-C1/2/3 delivers optional source_calculation_path.py: complete byte/identity/role/state->domain->exactvariance->conditionalanswer CLI, usable withoutLLM.12developmentgroups and60frozenfixture/regression/proposal expectations match;20newfixtures give8computed/12stagedwithholds.10small-model candidates allYES(4/10labels), untrusted and not inputauthority. No training/paidservice or broad truth/FRRefficacy claim; oldfailedgate preserved.
+[Report](evaluation/balanced-guidance-prospective-v1/REPORT.md):12authored balanced YES/NO/WITHHOLD cases × ordinary/compact guidance,24actual SmolLM2-135M local calls. Both arms return allYES and score4/12, tying everyconstant-labelbaseline. No paired gains; zero NO/WITHHOLD matches. All24EOS,48generatedtokens,5650inputtokens. Frozen before inference, unchanged audit tool used prospectively, all24newcache/token artifacts checked and346oldmodel/cachefiles unchanged. No training, paidresources, independent/masked review or broadFRRefficacy claim. No prompt/default promotion.
 
-Use the exact source/header grammar and source SHA/entity/scope binding. Caller-declared model assumptions are not empirically verified. Existing tools/runtime/core/schema and broadqueue statuses remain unchanged. Optional typed proposal mode is tested with caller-authored proposals only; no real model witness-production coverage claim. Correct calculation/labels do not alone establish input truth.
+## Usable components retained
 
-## Strongest next larger contact
+[Source-calculation guide](evaluation/complete-verification-path-v1/README.md): optional source_calculation_path.py binds a narrow source grammar/roles/states and computes exact variance under caller-declared assumptions.60frozen expectations match, but it does not authenticate source truth or empirically prove assumptions.
 
-Apply the pattern to one real stored experiment/research record using an explicitly reviewed typed adapter and an appropriate second recipe, retaining identity/role/state/model/receipt checks and unsupported cases. Do not apply soil-variance mathematics to an unrelated metric. Separately measure useful faithful model-witness coverage if needed; do not turn the10allYESdiagnostic into a modelimprovement claim or reopen FG's failed source-reading gate.
+[Stored-run audit](evaluation/stored-run-audit-v1/REPORT.md): optional stored_run_audit.py checks declared cohort/source/identity/token metadata and exact label-match counts, preserving unresolved answers in the denominator.15challenge groups passed. Original retrospective CVP3 audit gives4/10allYES; latest prospective pilot gives4/12perarm. Do not merge scores across different cohorts as independent evidence.
 
-## Preservation and orientation
+## Strongest next larger direction
 
-Seven prior current docs byte-archived underCVP. Earlier source/code/raw failures/modelweights/oldcaches unchanged.10newactualmodelcachebranches retained locally; no paid resources/training. [Pressure/equalization lens](evaluation/complete-verification-path-v1/PRESSURE_LENS.md) records the user's intuition as unvalidated/testable, not physics evidence. [Queue](evaluation/research-queue/QUEUE.json) statuses unchanged; the optional usable component does not close its broad questions. Included/free only; ask before separately paid services. No automatic prompt/rewriter/source-authentication policy installed; no task continues in background.
+More variants of this full-task instruction have weak expected return. Keep model outputs as untrusted candidates. Proposed next: a read-only station registry that relays existing receipts with question, recipe, source ancestry, assumptions and withholding states; expose incompatible scopes and copied sources without majority-vote truth or invented confidence. User's distributed-stations idea is recorded in the latest study as an open design lens; no aggregator is installed yet.
 
+## Preservation and boundaries
 
-## Stored-run audit checkpoint — 30 October 2026
-
-[Stored-run audit report](evaluation/stored-run-audit-v1/REPORT.md) is now the latest completed contact. Three stages complete: optional real-log adapter, challenge suite, preservation/sync. The new `tools/stored_run_audit.py` is a second task-specific recipe: binds the CVP3 raw log and keys, checks declared cohort/identity/token metadata, computes exact label matches and baseline, retains unresolved outputs in the denominator. Real artifact gives 4/10, allYES/allEOS, matching earlier summary; 15 challenge groups pass. No new model calls/training/paid services; coordinator-only, not independent/masked. The historical model result and older failed reading gate remain unchanged.
-
-Strongest next: one prospective balanced task with frozen cohort and independently specified keys, using this receipt path from the start. Do not claim current audit establishes key truth, token decoding/cache integrity, general model improvement or universal verification. No background task remains; three-stage cadence is optional where each stage resolves an uncertainty.
+Four prior navigation docs byte-archived in latest study. Historical raw failures, existingtools/core/schema and broadqueue statuses unchanged; earlier source-reading gate remains failed.24newcachebranches retained locally, modelweights and oldcachefiles unchanged. Included/free resources only; ask before separatelypaid services. Current client usage/bill is not visible. Coordinator-only run, no agent delegation this contact. Three-stage cadence optional where each stage resolves an uncertainty; nothing continues automatically in background.

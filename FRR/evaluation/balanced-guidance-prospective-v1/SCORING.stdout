@@ -1,0 +1,185 @@
+{
+  "scope": "single paired deterministic authored pilot, not independent sampling/general efficacy",
+  "arms": {
+    "ordinary": {
+      "calls": 12,
+      "label_matches": 4,
+      "match_fraction": {
+        "numerator": 1,
+        "denominator": 3
+      },
+      "constant_yes_matches": 4,
+      "labels": {
+        "YES": 12
+      },
+      "stops": {
+        "eos": 12
+      },
+      "input_tokens": 2597,
+      "output_tokens": 24,
+      "by_expected_label": {
+        "YES": {
+          "n": 4,
+          "matches": 4
+        },
+        "NO": {
+          "n": 4,
+          "matches": 0
+        },
+        "WITHHOLD": {
+          "n": 4,
+          "matches": 0
+        }
+      },
+      "constant_label_baselines": {
+        "YES": 4,
+        "NO": 4,
+        "WITHHOLD": 4
+      },
+      "inference_seconds_excluding_serialization": 7.88160240999423,
+      "serialization_seconds": 0.08103362501424272,
+      "new_cache_bytes": 120281472
+    },
+    "compact": {
+      "calls": 12,
+      "label_matches": 4,
+      "match_fraction": {
+        "numerator": 1,
+        "denominator": 3
+      },
+      "constant_yes_matches": 4,
+      "labels": {
+        "YES": 12
+      },
+      "stops": {
+        "eos": 12
+      },
+      "input_tokens": 3053,
+      "output_tokens": 24,
+      "by_expected_label": {
+        "YES": {
+          "n": 4,
+          "matches": 4
+        },
+        "NO": {
+          "n": 4,
+          "matches": 0
+        },
+        "WITHHOLD": {
+          "n": 4,
+          "matches": 0
+        }
+      },
+      "constant_label_baselines": {
+        "YES": 4,
+        "NO": 4,
+        "WITHHOLD": 4
+      },
+      "inference_seconds_excluding_serialization": 9.444503264967352,
+      "serialization_seconds": 0.08004334798897617,
+      "new_cache_bytes": 141294144
+    }
+  },
+  "paired": [
+    {
+      "record_id": "B01",
+      "expected": "YES",
+      "ordinary": "Yes",
+      "compact": "Yes",
+      "ordinary_match": true,
+      "compact_match": true
+    },
+    {
+      "record_id": "B02",
+      "expected": "NO",
+      "ordinary": "Yes",
+      "compact": "Yes",
+      "ordinary_match": false,
+      "compact_match": false
+    },
+    {
+      "record_id": "B03",
+      "expected": "WITHHOLD",
+      "ordinary": "Yes",
+      "compact": "Yes",
+      "ordinary_match": false,
+      "compact_match": false
+    },
+    {
+      "record_id": "B04",
+      "expected": "YES",
+      "ordinary": "Yes",
+      "compact": "Yes",
+      "ordinary_match": true,
+      "compact_match": true
+    },
+    {
+      "record_id": "B05",
+      "expected": "NO",
+      "ordinary": "Yes",
+      "compact": "Yes",
+      "ordinary_match": false,
+      "compact_match": false
+    },
+    {
+      "record_id": "B06",
+      "expected": "WITHHOLD",
+      "ordinary": "Yes",
+      "compact": "Yes",
+      "ordinary_match": false,
+      "compact_match": false
+    },
+    {
+      "record_id": "B07",
+      "expected": "YES",
+      "ordinary": "Yes",
+      "compact": "Yes",
+      "ordinary_match": true,
+      "compact_match": true
+    },
+    {
+      "record_id": "B08",
+      "expected": "NO",
+      "ordinary": "Yes",
+      "compact": "Yes",
+      "ordinary_match": false,
+      "compact_match": false
+    },
+    {
+      "record_id": "B09",
+      "expected": "WITHHOLD",
+      "ordinary": "Yes",
+      "compact": "Yes",
+      "ordinary_match": false,
+      "compact_match": false
+    },
+    {
+      "record_id": "B10",
+      "expected": "YES",
+      "ordinary": "Yes",
+      "compact": "Yes",
+      "ordinary_match": true,
+      "compact_match": true
+    },
+    {
+      "record_id": "B11",
+      "expected": "NO",
+      "ordinary": "Yes",
+      "compact": "Yes",
+      "ordinary_match": false,
+      "compact_match": false
+    },
+    {
+      "record_id": "B12",
+      "expected": "WITHHOLD",
+      "ordinary": "Yes",
+      "compact": "Yes",
+      "ordinary_match": false,
+      "compact_match": false
+    }
+  ],
+  "paired_changes": {
+    "both_match": 4,
+    "neither_matches": 8
+  }
+}

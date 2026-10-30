@@ -1,0 +1,116 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "BGP1-ordinary",
+  "identity": {
+    "family": "balanced_conditional_variance",
+    "facet": "candidate_answer",
+    "cycle": "BGP1",
+    "arm": "ordinary"
+  },
+  "contract_sha256": "d3296ef774852c1d25c00568341f6974edb9a0586ec5fc6492b3fb524c93f61c",
+  "sources": {
+    "raw": "281b3bfea5aedddafc5a4df9bae390b5f4453a3ea5426a16dd97e49a00fcdc6a",
+    "keys": "98de7d0cd6adc1272d9e34cbfd2d49357e9f74ef460afebcca632b47562a6407"
+  },
+  "summary": {
+    "calls": 12,
+    "label_matches": 4,
+    "match_fraction": {
+      "numerator": 1,
+      "denominator": 3
+    },
+    "constant_yes_matches": 4,
+    "labels": {
+      "YES": 12
+    },
+    "stops": {
+      "eos": 12
+    },
+    "input_tokens": 2597,
+    "output_tokens": 24
+  },
+  "rows": [
+    {
+      "run_id": "B01_ordinary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "B02_ordinary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "B03_ordinary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "B04_ordinary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "B05_ordinary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "B06_ordinary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "B07_ordinary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "B08_ordinary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "B09_ordinary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "B10_ordinary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "B11_ordinary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "B12_ordinary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}
