@@ -1,0 +1,15 @@
+from pathlib import Path
+import json,re
+P=Path(__file__).resolve().parent
+MATCH={'F1':{'passive':False,'there_are':True},'F2':{'passive':True,'there_are':True},'F3':{'passive':True,'there_are':True},'F4':{'passive':False,'there_are':True},'F5':{'passive':False,'there_are':False},'F6':{'passive':False,'there_are':False},'F7':{'passive':False,'there_are':True}}
+def main():
+    raw=[json.loads(l) for l in (P/'RAW_OUTPUTS.jsonl').read_text().splitlines()];keys={r['id']:r for r in json.loads((P/'KEYS.json').read_text())};design={r['record_id']:r for r in json.loads((P/'DESIGN.json').read_text())};scores=[]
+    for r in raw:
+        good=MATCH[r['record_id']][r['arm']];d=design[r['record_id']]
+        note='Correct explicit source count, no false added claim.' if good else ('Invents the observed-per-soil count as an unrecorded soil count.' if d['soil_count'] is None else 'Uses observations/planned observations per soil as soil count.')
+        scores.append({'id':r['run_id'],'record_id':r['record_id'],'frame':r['arm'],'state':d['state'],'expected':keys[r['run_id']]['expected'],'text':r['text'],'answer_match':good,'strict_format':bool(re.fullmatch(r'\d+|UNKNOWN',r['text'].strip())),'coordinator_note':note})
+    summary={'calls':14,'by_frame':{f:{'n':7,'matches':sum(s['answer_match'] for s in scores if s['frame']==f),'by_state':{st:{'n':sum(s['state']==st and s['frame']==f for s in scores),'matches':sum(s['answer_match'] for s in scores if s['state']==st and s['frame']==f)} for st in ['measured_count','missing_count','zero_soils_no_data']}} for f in ['passive','there_are']},'strict_format':sum(s['strict_format'] for s in scores),'stops':{st:sum(r['stop']==st for r in raw) for st in ['eos','token_limit']},'input_tokens':sum(r['input_tokens'] for r in raw),'output_tokens':sum(r['output_tokens'] for r in raw),'inference_seconds_excluding_serialization':sum(r['inference_seconds_excluding_serialization'] for r in raw),'serialization_seconds':sum(r['serialization_seconds'] for r in raw),'cache_bytes':sum(r['cache_artifact']['bytes'] for r in raw),'review':'coordinator whole-response review, not independent/masked'}
+    candidate=[s for s in scores if s['frame']=='there_are'];gate=json.loads((P/'GATE.json').read_text());passed=all(s['answer_match'] for s in candidate) and len(candidate)==gate['required_unambiguous_matches']
+    gate_result={'passed':passed,'correct':sum(s['answer_match'] for s in candidate),'required':gate['required_unambiguous_matches'],'failed_records':[s['record_id'] for s in candidate if not s['answer_match']],'decision':'proceed only to a separately frozen arithmetic contact' if passed else 'withhold arithmetic study; next investigate source missingness','source':'pre-inference GATE.json, applied to coordinator source judgments; not an autonomous model verifier'}
+    (P/'SCORES.json').write_text(json.dumps(scores,indent=2)+'\n');(P/'SUMMARY.json').write_text(json.dumps(summary,indent=2)+'\n');(P/'GATE_RESULT.json').write_text(json.dumps(gate_result,indent=2)+'\n');print(json.dumps({'summary':summary,'gate':gate_result},indent=2))
+if __name__=='__main__':main()

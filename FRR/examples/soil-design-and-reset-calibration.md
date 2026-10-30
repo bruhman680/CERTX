@@ -24,3 +24,6 @@ The later [SR-C1 reader contact](../evaluation/soil-design-reader-v1/REPORT.md) 
 
 
 The later [WC/NF/SF follow-up](../evaluation/source-frame-role-v1/REPORT.md) fills the question/source comparison (4/8underboth questions), rejects a simple number-word explanation on16correct new form variants, then returns to32/2values. A passive-event source frame gives0/4correct while a there-are frame gives4/4acrossdigits/words. This is task-specific framing sensitivity on two base pairs, not autonomous equivalence checking, arithmetic improvement or a general rewrite rule. Preserve failed source frames and the unsupported initial explanation; changed source wording must not rewrite the history of what was actually supplied.
+
+
+The [FG/MF/CP negative-case follow-up](../evaluation/count-presence-polarity-v1/REPORT.md) keeps arithmetic blocked after a5/7candidate-frame result: positive counts and recorded0work, but missing counts become observation quantities. Removing the extra quantity still produces an invented12. Paired recorded/unrecorded questions get11/16labels but only3/8fullycorrectpairs, with5YES/YEScontradictions. [Missing/zero example](missing-zero-and-complement-questions.md) explains why source absence, known0and a calculation's domain must stay separate. No old gate/result is relabeled or model self-check promoted.

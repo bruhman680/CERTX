@@ -1,0 +1,62 @@
+{
+  "gate_remains_failed": {
+    "passed": false,
+    "correct": 5,
+    "required": 7,
+    "failed_records": [
+      "F5",
+      "F6"
+    ],
+    "decision": "withhold arithmetic study; next investigate source missingness",
+    "source": "pre-inference GATE.json, applied to coordinator source judgments; not an autonomous model verifier"
+  },
+  "missing_count_probe_summary": {
+    "calls": 9,
+    "semantic_matches": 0,
+    "by_condition": {
+      "digit": {
+        "n": 4,
+        "matches": 0,
+        "foil_answers": 4
+      },
+      "word": {
+        "n": 4,
+        "matches": 0,
+        "foil_answers": 4
+      },
+      "no_foil": {
+        "n": 1,
+        "matches": 0,
+        "invented_answer": 12
+      }
+    },
+    "exposed_repeats": [
+      {
+        "old_id": "FG_F5_there_are",
+        "new_id": "MF_9_digit",
+        "same_input_and_output_token_ids": true
+      },
+      {
+        "old_id": "FG_F6_there_are",
+        "new_id": "MF_18_digit",
+        "same_input_and_output_token_ids": true
+      }
+    ],
+    "strict_format": 0,
+    "stops": {
+      "eos": 9,
+      "token_limit": 0
+    },
+    "input_tokens": 999,
+    "output_tokens": 120,
+    "inference_seconds_excluding_serialization": 9.961944458984362,
+    "serialization_seconds": 0.036567326984368265,
+    "cache_bytes": 51192792,
+    "review": "coordinator whole-response review; all9explicit unsupported numerical answers, not independent/masked review"
+  },
+  "source_study_raw_sha256": {
+    "evaluation/frame-generalization-missing-v1/RAW_OUTPUTS.jsonl": "8043dd26239b3ca48b8aada0202a57683b6328e77cec2784e21d4b44fd31191d",
+    "evaluation/missing-count-foil-v1/RAW_OUTPUTS.jsonl": "7650af6955b717cde559bf5cc3e7371ac0d94f97740bd00a951486b155261e23"
+  },
+  "scope": "new question-type decomposition on exposed passages; no arithmetic or merged pipeline"
+}

@@ -1,0 +1,5 @@
+# FG-C1: positive-count framing transferred; missingness did not
+
+30 October2026 America/Chicago. Four newpositivepairs,two missing-countrecords,one explicitzero,eachpassive/there-are:14calls. Whole-response matches passive2/7,there-are5/7. There-are gets4/4positivecounts and1/1knownzero, but0/2missingcounts. Both missingcounts become observationcounts. The pre-inference gate required7/7there-are records; it fails at5/7, so the planned arithmetic follow-up is withheld.
+
+[Combined three-contact report](../count-presence-polarity-v1/REPORT.md) preserves the next foil control and paired-presence questions. See [protocol](PROTOCOL.md), [gate](GATE.json), [gate result](GATE_RESULT.json), [keys](KEYS.json), [freeze](FREEZE.json), [raw](RAW_OUTPUTS.jsonl), [scores](SCORES.json), [summary](SUMMARY.json), [preservation](PRESERVATION_AFTER_GENERATION.json). No gate/key was relaxed after outputs. Coordinator review only, not independent/masked validation; this is no broad framing/FRR efficacy claim.

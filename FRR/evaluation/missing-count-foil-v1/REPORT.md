@@ -1,0 +1,5 @@
+# MF-C1: no observation quantity did not restore UNKNOWN
+
+30 October2026 America/Chicago. The soil count is explicitly unrecorded in all9calls. Eight variants append observations-per-soil9/18/7/11 as digits/words; all8answers substitute that quantity for the soil count. One shared control omits the observation sentence; it invents12soils while saying the count is absent. Whole-response matches0/9. Extra quantity influences all8foil answers here, but is not necessary for a fabricated count. Two digit prompts reproduce exposed FGfailures exactly.
+
+[Combined report](../count-presence-polarity-v1/REPORT.md) retains this failed simpler explanation and the subsequent question-polarity contact. See [protocol](PROTOCOL.md), [basis](BASIS.json), [freeze](FREEZE.json), [raw](RAW_OUTPUTS.jsonl), [scores](SCORES.json), [summary](SUMMARY.json), [preservation](PRESERVATION_AFTER_GENERATION.json). Original unknown-count keys and raw outputs unchanged. Coordinator review only, not independent/masked; no arithmetic/default-policy promotion.
