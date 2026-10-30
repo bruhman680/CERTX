@@ -1,0 +1,1176 @@
+{
+  "scope": "authored finite-distribution toys; no actual agent evidence",
+  "cycle1": [
+    {
+      "observations_per_soil": 1,
+      "independent_soils": 64,
+      "variance": 0.0025000000000000096,
+      "analytic_variance": 0.0025000000000000005,
+      "naive_variance": 0.0025000000000000005,
+      "variance_inflation": 1.0000000000000036,
+      "effective_iid_sample_size": 63.999999999999766,
+      "fixed_iid_interval_coverage": 0.9596264807232052
+    },
+    {
+      "observations_per_soil": 2,
+      "independent_soils": 32,
+      "variance": 0.003000000000000006,
+      "analytic_variance": 0.0030000000000000005,
+      "naive_variance": 0.0025000000000000005,
+      "variance_inflation": 1.2000000000000022,
+      "effective_iid_sample_size": 53.333333333333236,
+      "fixed_iid_interval_coverage": 0.9385052779142882
+    },
+    {
+      "observations_per_soil": 4,
+      "independent_soils": 16,
+      "variance": 0.004000000000000002,
+      "analytic_variance": 0.004,
+      "naive_variance": 0.0025000000000000005,
+      "variance_inflation": 1.6000000000000003,
+      "effective_iid_sample_size": 39.99999999999999,
+      "fixed_iid_interval_coverage": 0.8933341940696173
+    },
+    {
+      "observations_per_soil": 8,
+      "independent_soils": 8,
+      "variance": 0.006000000000000007,
+      "analytic_variance": 0.006,
+      "naive_variance": 0.0025000000000000005,
+      "variance_inflation": 2.4000000000000026,
+      "effective_iid_sample_size": 26.66666666666664,
+      "fixed_iid_interval_coverage": 0.8071003092426362
+    },
+    {
+      "observations_per_soil": 16,
+      "independent_soils": 4,
+      "variance": 0.010000000000000009,
+      "analytic_variance": 0.01,
+      "naive_variance": 0.0025000000000000005,
+      "variance_inflation": 4.000000000000003,
+      "effective_iid_sample_size": 15.99999999999999,
+      "fixed_iid_interval_coverage": 0.6762237455152317
+    },
+    {
+      "observations_per_soil": 32,
+      "independent_soils": 2,
+      "variance": 0.01800000000000002,
+      "analytic_variance": 0.018000000000000002,
+      "naive_variance": 0.0025000000000000005,
+      "variance_inflation": 7.200000000000006,
+      "effective_iid_sample_size": 8.88888888888888,
+      "fixed_iid_interval_coverage": 0.5165936282547582
+    },
+    {
+      "observations_per_soil": 64,
+      "independent_soils": 1,
+      "variance": 0.03400000000000004,
+      "analytic_variance": 0.034,
+      "naive_variance": 0.0025000000000000005,
+      "variance_inflation": 13.600000000000012,
+      "effective_iid_sample_size": 4.705882352941172,
+      "fixed_iid_interval_coverage": 0.05487969967482709
+    }
+  ],
+  "cycle2": {
+    "one_soil": [
+      {
+        "length": 1,
+        "TV": 6.800116025829084e-16,
+        "equal_prior_Bayes_error": 0.49999999999999967
+      },
+      {
+        "length": 2,
+        "TV": 2.42861286636753e-16,
+        "equal_prior_Bayes_error": 0.4999999999999999
+      },
+      {
+        "length": 3,
+        "TV": 0.025600000000000355,
+        "equal_prior_Bayes_error": 0.4871999999999998
+      },
+      {
+        "length": 4,
+        "TV": 0.05299199999999974,
+        "equal_prior_Bayes_error": 0.47350400000000015
+      },
+      {
+        "length": 8,
+        "TV": 0.15350599084218236,
+        "equal_prior_Bayes_error": 0.42324700457890885
+      },
+      {
+        "length": 16,
+        "TV": 0.26634269311449804,
+        "equal_prior_Bayes_error": 0.36682865344275095
+      },
+      {
+        "length": 32,
+        "TV": 0.3837868465528779,
+        "equal_prior_Bayes_error": 0.308106576723561
+      },
+      {
+        "length": 64,
+        "TV": 0.48837296128638674,
+        "equal_prior_Bayes_error": 0.25581351935680663
+      }
+    ],
+    "four_independent_soils_16_each": {
+      "count_vectors": 83521,
+      "TV": 0.49379727897707976,
+      "equal_prior_Bayes_error": 0.25310136051146015
+    }
+  },
+  "cycle3": [
+    {
+      "pi": 0.4,
+      "q_agent": 0.5,
+      "q_soil": 0.75,
+      "excess": {
+        "none": 0.16000000000000003,
+        "agent": 0.128,
+        "soil": 0.08800000000000008
+      },
+      "unknown_calibration_pi_interval": [
+        0.20000000000000018,
+        0.5500000000000004
+      ],
+      "known_calibration_pi_reconstructions": [
+        0.40000000000000036,
+        0.40000000000000047
+      ],
+      "joint": {
+        "none": [
+          [
+            0.672,
+            0.12800000000000003
+          ],
+          [
+            0.12800000000000003,
+            0.07200000000000004
+          ]
+        ],
+        "agent": [
+          [
+            0.6656000000000001,
+            0.13440000000000002
+          ],
+          [
+            0.13440000000000002,
+            0.06560000000000002
+          ]
+        ],
+        "soil": [
+          [
+            0.6576,
+            0.1424
+          ],
+          [
+            0.1424,
+            0.05760000000000002
+          ]
+        ]
+      }
+    },
+    {
+      "pi": 0.25,
+      "q_agent": 0.8,
+      "q_soil": 0.6,
+      "excess": {
+        "none": 0.1600000000000001,
+        "agent": 0.12800000000000006,
+        "soil": 0.08800000000000008
+      },
+      "unknown_calibration_pi_interval": [
+        0.20000000000000007,
+        0.5500000000000002
+      ],
+      "known_calibration_pi_reconstructions": [
+        0.25000000000000006,
+        0.2500000000000002
+      ],
+      "joint": {
+        "none": [
+          [
+            0.6719999999999999,
+            0.128
+          ],
+          [
+            0.128,
+            0.07200000000000004
+          ]
+        ],
+        "agent": [
+          [
+            0.6655999999999999,
+            0.1344
+          ],
+          [
+            0.1344,
+            0.06560000000000002
+          ]
+        ],
+        "soil": [
+          [
+            0.6576,
+            0.14239999999999997
+          ],
+          [
+            0.14239999999999997,
+            0.057600000000000026
+          ]
+        ]
+      }
+    },
+    {
+      "pi": 0.5,
+      "q_agent": 0.4,
+      "q_soil": 0.9,
+      "excess": {
+        "none": 0.15999999999999998,
+        "agent": 0.128,
+        "soil": 0.08800000000000002
+      },
+      "unknown_calibration_pi_interval": [
+        0.19999999999999984,
+        0.5500000000000003
+      ],
+      "known_calibration_pi_reconstructions": [
+        0.4999999999999996,
+        0.5000000000000003
+      ],
+      "joint": {
+        "none": [
+          [
+            0.6719999999999999,
+            0.12800000000000003
+          ],
+          [
+            0.12800000000000003,
+            0.07200000000000001
+          ]
+        ],
+        "agent": [
+          [
+            0.6655999999999999,
+            0.13440000000000002
+          ],
+          [
+            0.13440000000000002,
+            0.06560000000000002
+          ]
+        ],
+        "soil": [
+          [
+            0.6575999999999999,
+            0.14240000000000003
+          ],
+          [
+            0.14240000000000003,
+            0.05760000000000002
+          ]
+        ]
+      }
+    },
+    {
+      "pi": 0.4,
+      "q_agent": 1,
+      "q_soil": 1,
+      "excess": {
+        "none": 0.16000000000000003,
+        "agent": 0.09600000000000009,
+        "soil": 0.06400000000000006
+      },
+      "unknown_calibration_pi_interval": [
+        0.3999999999999996,
+        0.40000000000000036
+      ],
+      "known_calibration_pi_reconstructions": [
+        0.3999999999999996,
+        0.40000000000000036
+      ],
+      "joint": {
+        "none": [
+          [
+            0.672,
+            0.12800000000000003
+          ],
+          [
+            0.12800000000000003,
+            0.07200000000000004
+          ]
+        ],
+        "agent": [
+          [
+            0.6592,
+            0.1408
+          ],
+          [
+            0.1408,
+            0.05920000000000003
+          ]
+        ],
+        "soil": [
+          [
+            0.6528,
+            0.14720000000000003
+          ],
+          [
+            0.14720000000000003,
+            0.05280000000000002
+          ]
+        ]
+      }
+    },
+    {
+      "pi": 0.4,
+      "q_agent": 0,
+      "q_soil": 0,
+      "excess": {
+        "none": 0.16000000000000003,
+        "agent": 0.16000000000000003,
+        "soil": 0.16000000000000003
+      },
+      "unknown_calibration_pi_interval": [
+        0.0,
+        1.0
+      ],
+      "known_calibration_pi_reconstructions": null,
+      "joint": {
+        "none": [
+          [
+            0.672,
+            0.12800000000000003
+          ],
+          [
+            0.12800000000000003,
+            0.07200000000000004
+          ]
+        ],
+        "agent": [
+          [
+            0.672,
+            0.12800000000000003
+          ],
+          [
+            0.12800000000000003,
+            0.07200000000000004
+          ]
+        ],
+        "soil": [
+          [
+            0.672,
+            0.12800000000000003
+          ],
+          [
+            0.12800000000000003,
+            0.07200000000000004
+          ]
+        ]
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "cluster_variance_n1",
+      "pass": true
+    },
+    {
+      "name": "cluster_normalization_n1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "cluster_variance_n2",
+      "pass": true
+    },
+    {
+      "name": "cluster_normalization_n2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "cluster_variance_n4",
+      "pass": true
+    },
+    {
+      "name": "cluster_normalization_n4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_8",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_8",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_8",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_8",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_8",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_8",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_8",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_8",
+      "pass": true
+    },
+    {
+      "name": "cluster_variance_n8",
+      "pass": true
+    },
+    {
+      "name": "cluster_normalization_n8",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_16",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_16",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_16",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_16",
+      "pass": true
+    },
+    {
+      "name": "cluster_variance_n16",
+      "pass": true
+    },
+    {
+      "name": "cluster_normalization_n16",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_32",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_32",
+      "pass": true
+    },
+    {
+      "name": "cluster_variance_n32",
+      "pass": true
+    },
+    {
+      "name": "cluster_normalization_n32",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_64",
+      "pass": true
+    },
+    {
+      "name": "cluster_variance_n64",
+      "pass": true
+    },
+    {
+      "name": "cluster_normalization_n64",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_1",
+      "pass": true
+    },
+    {
+      "name": "law_beta_1",
+      "pass": true
+    },
+    {
+      "name": "moment_prediction_n1",
+      "pass": true
+    },
+    {
+      "name": "word_vs_count_tv_n1",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_2",
+      "pass": true
+    },
+    {
+      "name": "law_beta_2",
+      "pass": true
+    },
+    {
+      "name": "moment_prediction_n2",
+      "pass": true
+    },
+    {
+      "name": "word_vs_count_tv_n2",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_3",
+      "pass": true
+    },
+    {
+      "name": "law_beta_3",
+      "pass": true
+    },
+    {
+      "name": "moment_prediction_n3",
+      "pass": true
+    },
+    {
+      "name": "word_vs_count_tv_n3",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_4",
+      "pass": true
+    },
+    {
+      "name": "law_beta_4",
+      "pass": true
+    },
+    {
+      "name": "moment_prediction_n4",
+      "pass": true
+    },
+    {
+      "name": "word_vs_count_tv_n4",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_8",
+      "pass": true
+    },
+    {
+      "name": "law_beta_8",
+      "pass": true
+    },
+    {
+      "name": "moment_prediction_n8",
+      "pass": true
+    },
+    {
+      "name": "word_vs_count_tv_n8",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_16",
+      "pass": true
+    },
+    {
+      "name": "law_beta_16",
+      "pass": true
+    },
+    {
+      "name": "moment_prediction_n16",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_32",
+      "pass": true
+    },
+    {
+      "name": "law_beta_32",
+      "pass": true
+    },
+    {
+      "name": "moment_prediction_n32",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_64",
+      "pass": true
+    },
+    {
+      "name": "law_beta_64",
+      "pass": true
+    },
+    {
+      "name": "moment_prediction_n64",
+      "pass": true
+    },
+    {
+      "name": "law_two_point_16",
+      "pass": true
+    },
+    {
+      "name": "law_beta_16",
+      "pass": true
+    },
+    {
+      "name": "four_soils_normalization",
+      "pass": true
+    },
+    {
+      "name": "reset_law_0.4_0.5_0.75_none",
+      "pass": true
+    },
+    {
+      "name": "reset_law_0.4_0.5_0.75_agent",
+      "pass": true
+    },
+    {
+      "name": "reset_law_0.4_0.5_0.75_soil",
+      "pass": true
+    },
+    {
+      "name": "feasible_pi_0.4_0.5_0.75",
+      "pass": true
+    },
+    {
+      "name": "known_calibration_0.4_0.5_0.75",
+      "pass": true
+    },
+    {
+      "name": "reset_law_0.25_0.8_0.6_none",
+      "pass": true
+    },
+    {
+      "name": "reset_law_0.25_0.8_0.6_agent",
+      "pass": true
+    },
+    {
+      "name": "reset_law_0.25_0.8_0.6_soil",
+      "pass": true
+    },
+    {
+      "name": "feasible_pi_0.25_0.8_0.6",
+      "pass": true
+    },
+    {
+      "name": "known_calibration_0.25_0.8_0.6",
+      "pass": true
+    },
+    {
+      "name": "reset_law_0.5_0.4_0.9_none",
+      "pass": true
+    },
+    {
+      "name": "reset_law_0.5_0.4_0.9_agent",
+      "pass": true
+    },
+    {
+      "name": "reset_law_0.5_0.4_0.9_soil",
+      "pass": true
+    },
+    {
+      "name": "feasible_pi_0.5_0.4_0.9",
+      "pass": true
+    },
+    {
+      "name": "known_calibration_0.5_0.4_0.9",
+      "pass": true
+    },
+    {
+      "name": "reset_law_0.4_1_1_none",
+      "pass": true
+    },
+    {
+      "name": "reset_law_0.4_1_1_agent",
+      "pass": true
+    },
+    {
+      "name": "reset_law_0.4_1_1_soil",
+      "pass": true
+    },
+    {
+      "name": "feasible_pi_0.4_1_1",
+      "pass": true
+    },
+    {
+      "name": "known_calibration_0.4_1_1",
+      "pass": true
+    },
+    {
+      "name": "reset_law_0.4_0_0_none",
+      "pass": true
+    },
+    {
+      "name": "reset_law_0.4_0_0_agent",
+      "pass": true
+    },
+    {
+      "name": "reset_law_0.4_0_0_soil",
+      "pass": true
+    },
+    {
+      "name": "feasible_pi_0.4_0_0",
+      "pass": true
+    },
+    {
+      "name": "rival_same_readouts_0.25",
+      "pass": true
+    },
+    {
+      "name": "rival_same_readouts_0.5",
+      "pass": true
+    },
+    {
+      "name": "passive_internal_external_equivalent",
+      "pass": true
+    }
+  ],
+  "numpy": "2.3.5"
+}

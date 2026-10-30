@@ -1,21 +1,17 @@
 # Current FRR handoff
 
-Current checkpoint: 29 October2026 America/Chicago. User invited analysis of new Claude explorations. CO-C1 is complete; no background task remains. New instructions supersede historical pause/next labels.
+Current checkpoint: 30 October 2026 UTC. User requested cycles and warranted refinements. SD-C1/2/3 is complete; no background task remains. New instructions supersede historical pause/next labels.
 
 ## Latest contact
 
-[CO-C1 report](evaluation/claude-soil-observer-intake-v1/REPORT.md). New Claude branch intake archives11originals at8547929. Dispersion and exactfloor scripts reproduce savedstdout byte-for-byte via inputpath remap; fullfinite-sample grid code/output audited, notrerun. New9cell variance witness and exactAC checks distinguish fresh soils from sharedfixedsoil. Exactword-order audit confirms symmetry masks a convention mismatch; nonreversiblecycle exposes1/6error. No real-agent/inference/training result; observer-unit guidance added, prior work unchanged.
+[Report](evaluation/soil-design-three-cycle-v1/REPORT.md). SD-C1/2/3 completed three frozen toy contacts: fixed-budget soil grouping, a moment-matched beta rival, and leaky-reset attribution. Exact finite distributions plus selected rational audits show target-dependent sampling needs and a sharp [.20,.55] carrier interval under unknown reset efficacies. No new model calls, paid service, core/schema changes, default policy or queue promotion.
 
-SHconditional on a frozen rate is iid; ensemble covariance0.032 includes variance between freshly drawn soils. A known-candidate likelihood classifier can still distinguish one long record. “More independent runs” must specify whether the hidden condition is resampled. More agents sharing one soil are not the same experiment. Source's mild shiftedEC test does not establish unknown-world robustness.
+Seven budget designs, eight one-soil rival lengths, one four-soil product comparison, five reset scenarios; 200 floating assertions (including repeated normalizations), selected post-result rational identities. Authored numerical laws, coordinator review only, not independent replication or real-agent evidence. Protocol and code frozen before execution; no Monte Carlo grid rerun.
 
-## Integration and strongest next
+## Strongest next
 
-[Observer example](examples/within-and-across-run.md) and [verification guidance](modules/verification-layer.md) preserve sampling unit, conditioning, held-fixed/resampled quantities and estimator/model assumptions. No new statistical validator or role trigger is installed. The literal [field-role guard](tools/field_role_guard.py) and [typed comparator](tools/evidence_threshold.py) are unchanged and do not validate population independence.
+A new reader/producer contact can preserve observation grouping and reset calibration alongside exact field roles. Freeze source-reading, arithmetic, and non-identification keys separately. Numerical tests do not show the model can use these distinctions. Unknown-world rejection, cross-target reset effects, and actual-agent causal attribution remain untested. Prior witnessed-field production and TP-C1's failed pipeline remain open; no silent relabeling.
 
-A future source/reader or field-producer contact should preserve both field roles and observation units. A genuinely different soil/world or a matched shared-versus-resampled group design could test the remaining numerical boundary; no new actual-agent experiment has run. Prior proposed witnessed-field production remains open. Avoid broad sourcehunting or another same-family rerun without a decision it can inform.
+## Integration and preserved scope
 
-## Stable scope/history
-
-[Queue](evaluation/research-queue/QUEUE.json):35entries,30unfinished,6partial; [map](evaluation/CURRENT_RESEARCH_MAP.md). Core/runtime0.2/schema0.1 unchanged. TP-C1 remains failed4/7labels tiedalwaysUNKNOWN with0fullwarrants. FW-C1 guard remains conditional instrument evidence, not modelimprovement. No new modelcalls, paidservices or weightchanges in CO-C1. Use included/free resources; ask before separatepayment.
-
-Source branch claude/pam-scoped-negation-2026-10-25 is pinned at8547929c9a2ac98b6e643618689365c67baaf583. Relays/prediction chronology remain author-reported; reproduction is samecode, not independent dynamics implementation. Coordinator review is not independent agent replication. [Archive receipt](evaluation/claude-soil-observer-intake-v1/ARCHIVE_RECEIPT.json) preserves six preceding navigation/guidance files with original paths/hashes; moved relative links retain their old bases. [Parent handoff](https://github.com/bruhman680/CERTX/blob/b251f788c4fce92a528e28931b20a31d3991d89d/FRR/CURRENT_HANDOFF.md) is the functional historical reference. Earlier source files/results/failures/caches remain unchanged.
+[Design-label example](examples/soil-design-and-reset-calibration.md) and [verification guidance](modules/verification-layer.md) add target/grouping/calibration questions. Existing field-role guard and comparator unchanged; neither verifies statistical assumptions. [Archive](evaluation/soil-design-three-cycle-v1/ARCHIVE_RECEIPT.json) preserves six prior navigation/guidance files. [CO-C1](evaluation/claude-soil-observer-intake-v1/REPORT.md) and original Claude files unchanged. Core/runtime/schema and [queue](evaluation/research-queue/QUEUE.json) statuses unchanged. Included/free only; ask before separately paid resources. No weights, caches, historical code or findings altered.
