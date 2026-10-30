@@ -1,0 +1,9 @@
+# Stored-run audit: three stages
+
+2026-10-30. Prospective build and challenge plan; the ten historical model outputs and published aggregate are already known. This is an engineering audit, not a new model-performance experiment. Coordinator-only review.
+
+1. Build an optional source-bound adapter for the existing CVP ten-call JSONL and gold-key JSON. Use explicit expected IDs and identity metadata; reject missing/duplicate/extra runs, malformed token counts, duplicate JSON keys, bad hashes, unsupported labels in keys, or paths escaping root. Model text is parsed by a declared exact-label normalization; unrecognized outputs stay unresolved in the full denominator. Compute exact match fraction, constant-YES baseline, stop/label counts and token totals. Do not reuse the soil variance recipe.
+2. Challenge artifact identity, cohort completeness, source validity, parser policy and denominator integrity with synthetic mutations. Mutations with recomputed hashes test semantic checks separately from integrity checks. Preserve originals. Compare a separately frozen expected receipt and historical published aggregate; agreement is a consistency check, not independent evidence or proof the keys are true.
+3. Record receipt, checks, limitations and next direction; archive current orientation before updating. Publish additive optional tool and records, preserving old gates and results. No model calls, training, cache deletion, paid resources or independent-review claim.
+
+Acceptance: real artifact yields ten rows, four label matches, all ten YES and EOS, 2290 input and 20 output tokens; mutations are rejected or remain unresolved as specified. Whole-response interpretation, key correctness, actual model inference, cache byte integrity and broad efficacy are outside this adapter. Hashes bind bytes, not authenticity.
