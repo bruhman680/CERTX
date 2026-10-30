@@ -1,0 +1,180 @@
+{
+  "status": "passed",
+  "tokenizer_pin": "SmolLM2-135M-Instruct revision12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "labels": {
+    "YES": {
+      "ids": [
+        73,
+        2097
+      ],
+      "target_length_with_eos": 3
+    },
+    "NO": {
+      "ids": [
+        13465
+      ],
+      "target_length_with_eos": 2
+    },
+    "WITHHOLD": {
+      "ids": [
+        71,
+        36211,
+        5775,
+        16284
+      ],
+      "target_length_with_eos": 5
+    },
+    "A": {
+      "ids": [
+        49
+      ],
+      "target_length_with_eos": 2
+    },
+    "B": {
+      "ids": [
+        50
+      ],
+      "target_length_with_eos": 2
+    },
+    "C": {
+      "ids": [
+        51
+      ],
+      "target_length_with_eos": 2
+    }
+  },
+  "cyclic_alias_mappings": [
+    {
+      "positive": "A",
+      "zero": "B",
+      "missing": "C"
+    },
+    {
+      "positive": "B",
+      "zero": "C",
+      "missing": "A"
+    },
+    {
+      "positive": "C",
+      "zero": "A",
+      "missing": "B"
+    }
+  ],
+  "weights": {
+    "YES": {
+      "old_perexample": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "decision_balanced_perexample": [
+        "1/2",
+        "1/4",
+        "1/4"
+      ],
+      "old_first_per_effective_update": "1/9",
+      "new_first_per_effective_update": "1/6",
+      "illustration_first_ce2_other_ce0": {
+        "old": "2/3",
+        "new": "1"
+      }
+    },
+    "NO": {
+      "old_perexample": [
+        "1/2",
+        "1/2"
+      ],
+      "decision_balanced_perexample": [
+        "1/2",
+        "1/2"
+      ],
+      "old_first_per_effective_update": "1/6",
+      "new_first_per_effective_update": "1/6",
+      "illustration_first_ce2_other_ce0": {
+        "old": "1",
+        "new": "1"
+      }
+    },
+    "WITHHOLD": {
+      "old_perexample": [
+        "1/5",
+        "1/5",
+        "1/5",
+        "1/5",
+        "1/5"
+      ],
+      "decision_balanced_perexample": [
+        "1/2",
+        "1/8",
+        "1/8",
+        "1/8",
+        "1/8"
+      ],
+      "old_first_per_effective_update": "1/15",
+      "new_first_per_effective_update": "1/6",
+      "illustration_first_ce2_other_ce0": {
+        "old": "2/5",
+        "new": "1"
+      }
+    },
+    "A": {
+      "old_perexample": [
+        "1/2",
+        "1/2"
+      ],
+      "decision_balanced_perexample": [
+        "1/2",
+        "1/2"
+      ],
+      "old_first_per_effective_update": "1/6",
+      "new_first_per_effective_update": "1/6",
+      "illustration_first_ce2_other_ce0": {
+        "old": "1",
+        "new": "1"
+      }
+    },
+    "B": {
+      "old_perexample": [
+        "1/2",
+        "1/2"
+      ],
+      "decision_balanced_perexample": [
+        "1/2",
+        "1/2"
+      ],
+      "old_first_per_effective_update": "1/6",
+      "new_first_per_effective_update": "1/6",
+      "illustration_first_ce2_other_ce0": {
+        "old": "1",
+        "new": "1"
+      }
+    },
+    "C": {
+      "old_perexample": [
+        "1/2",
+        "1/2"
+      ],
+      "decision_balanced_perexample": [
+        "1/2",
+        "1/2"
+      ],
+      "old_first_per_effective_update": "1/6",
+      "new_first_per_effective_update": "1/6",
+      "illustration_first_ce2_other_ce0": {
+        "old": "1",
+        "new": "1"
+      }
+    }
+  },
+  "checks": {
+    "aliases_exactly_one_token": true,
+    "mapping_counterbalance": true,
+    "weights_normalized": true,
+    "decision_first_weight_equal": true,
+    "alias_two_objectives_identical": true,
+    "two_formula_evaluations_match_21_exact_examples": true
+  },
+  "scope": "exactobjective/tokenizer/mappingchecks,notlearningorsemantic-efficacyevidence",
+  "model_forwards": 0,
+  "optimizer_steps": 0
+}

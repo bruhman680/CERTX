@@ -15,3 +15,8 @@
 ## Preservation and boundaries
 
 Baseoriginaldefaultunchanged. Priorone-stepfullweightcheckpoint retained;newLoRAprobe,initial/finaladapters+optimizerstatesseparateunder/workspace,hashesinreport. LocalbinariesnotGit/independentarchivalguarantee. Sourcecalculation/storedrunaudittools/core/schema/broadqueueunchanged,oldreadinggate staysfailed. Fourpriornavigationdocs archivedinlateststudy. Included/freeonly,nopaidAPI/rental/install;accountusage/billnotvisible. Delegatedutility/registry/scoutwork pluscoordinatorreview;notindependentexperimentreplication/goldreview. Resourceguardlimitations documented;no guardstopoccurredinmainpilot.
+
+
+## Wind-down checkpoint — 30 October2026
+
+Decision-tokenpreparation complete: tokenizer A/B/C single-tokencontrols,3cyclicbalancedmappings andexactdecision-balancedlosschecks pass.24newprimarycases(8perclass)frozen,nomodelforward/update. Newobjective trainingrunner notyetimplemented;nextsession phaseAkeepsemanticlabels/promptsfixedandcompareoldsequence-meanvs0.5firstdecision+0.5meanremainderCE. Aliaseslatercontrolvocabulary/interfacechanges,nocausalityclaimyet.628existingmodel/checkpoint/optimizer/cachefilesverifiedunchanged. Originaldefault,prior19/48LoRAresult/missing0/16,registry andoldfailures unchanged. No backgroundtask/paidservice/install. Priororientationbytesarchived. [Preparationreport](evaluation/decision-token-preparation-v1/REPORT.md).
