@@ -1,0 +1,165 @@
+{
+  "scope": "Known two-level shadow model, no realagents. Conditional shared-soil variance differs from resampled-soil variance. Self-authored bounded witness, not independent dynamics reimplementation.",
+  "levels": [
+    0.021114561800016834,
+    0.3788854381999832
+  ],
+  "variance_rows": [
+    {
+      "T": 320,
+      "mode": "fresh_soil",
+      "runs": 6000,
+      "observed_variance": 0.03245493215883203,
+      "analytic_variance": 0.0324,
+      "variance_se": 9.339546313456729e-05,
+      "absolute_z": 0.5881673155031457,
+      "within_5se": true,
+      "observed_sd": 0.18015252470845927,
+      "analytic_sd": 0.18
+    },
+    {
+      "T": 320,
+      "mode": "shared_low",
+      "runs": 6000,
+      "observed_variance": 6.377390914978886e-05,
+      "analytic_variance": 6.458980337503158e-05,
+      "variance_se": 1.2177584594964032e-06,
+      "absolute_z": 0.6699967623958274,
+      "within_5se": true,
+      "observed_sd": 0.00798585682001555,
+      "analytic_sd": 0.008036778171321615
+    },
+    {
+      "T": 320,
+      "mode": "shared_high",
+      "runs": 6000,
+      "observed_variance": 0.0007296874671711778,
+      "analytic_variance": 0.0007354101966249684,
+      "variance_se": 1.3409435937400209e-05,
+      "absolute_z": 0.42676884251553865,
+      "within_5se": true,
+      "observed_sd": 0.027012727873563194,
+      "analytic_sd": 0.027118447533458996
+    },
+    {
+      "T": 800,
+      "mode": "fresh_soil",
+      "runs": 6000,
+      "observed_variance": 0.032187980462716016,
+      "analytic_variance": 0.03216000000000001,
+      "variance_se": 5.909136382018653e-05,
+      "absolute_z": 0.47351187901419994,
+      "within_5se": true,
+      "observed_sd": 0.17941009019204024,
+      "analytic_sd": 0.17933209417167917
+    },
+    {
+      "T": 800,
+      "mode": "shared_low",
+      "runs": 6000,
+      "observed_variance": 2.583547948095516e-05,
+      "analytic_variance": 2.5835921350012633e-05,
+      "variance_se": 4.77942572429646e-07,
+      "absolute_z": 0.0009245233276199837,
+      "within_5se": true,
+      "observed_sd": 0.005082861347799599,
+      "analytic_sd": 0.005082904814179844
+    },
+    {
+      "T": 800,
+      "mode": "shared_high",
+      "runs": 6000,
+      "observed_variance": 0.0002991320167510557,
+      "analytic_variance": 0.00029416407864998737,
+      "variance_se": 5.368185554677275e-06,
+      "absolute_z": 0.925440831071829,
+      "within_5se": true,
+      "observed_sd": 0.01729543340743607,
+      "analytic_sd": 0.017151212162701136
+    },
+    {
+      "T": 1600,
+      "mode": "fresh_soil",
+      "runs": 6000,
+      "observed_variance": 0.03207002536228912,
+      "analytic_variance": 0.032080000000000004,
+      "variance_se": 4.206065004164162e-05,
+      "absolute_z": 0.23714891950104677,
+      "within_5se": true,
+      "observed_sd": 0.1790810580778691,
+      "analytic_sd": 0.1791089054179049
+    },
+    {
+      "T": 1600,
+      "mode": "shared_low",
+      "runs": 6000,
+      "observed_variance": 1.2818460097082154e-05,
+      "analytic_variance": 1.2917960675006317e-05,
+      "variance_se": 2.3742484840026415e-07,
+      "absolute_z": 0.4190824111064347,
+      "within_5se": true,
+      "observed_sd": 0.003580287711495007,
+      "analytic_sd": 0.003594156462232316
+    },
+    {
+      "T": 1600,
+      "mode": "shared_high",
+      "runs": 6000,
+      "observed_variance": 0.00014483402388896415,
+      "analytic_variance": 0.00014708203932499369,
+      "variance_se": 2.6848275713147865e-06,
+      "absolute_z": 0.8373034678456703,
+      "within_5se": true,
+      "observed_sd": 0.012034700822578188,
+      "analytic_sd": 0.012127738425815165
+    }
+  ],
+  "exact_ac_checks": [
+    {
+      "M": 8,
+      "p": 0.2,
+      "enumerated_mean": -0.10402816000000009,
+      "analytic_mean": -0.10402816,
+      "error": 9.71445146547012e-17,
+      "passes": true
+    },
+    {
+      "M": 8,
+      "p": 0.7,
+      "enumerated_mean": -0.11778579749999991,
+      "analytic_mean": -0.1177857975,
+      "error": 8.326672684688674e-17,
+      "passes": true
+    }
+  ],
+  "finite_estimator_means": [
+    {
+      "T": 320,
+      "M": 20,
+      "expected_ac_estimator": -0.0499729518366747,
+      "expected_di_estimator": 1.0025921371624453
+    },
+    {
+      "T": 800,
+      "M": 50,
+      "expected_ac_estimator": -0.019999999614970128,
+      "expected_di_estimator": 1.0012515451799813
+    },
+    {
+      "T": 1600,
+      "M": 100,
+      "expected_ac_estimator": -0.009999999999999993,
+      "expected_di_estimator": 1.0006253908692924
+    },
+    {
+      "T": 3200,
+      "M": 200,
+      "expected_ac_estimator": -0.005,
+      "expected_di_estimator": 1.000312597686777
+    }
+  ],
+  "pooled_population_window_di": 3.999999999999999,
+  "within_condition_population_di": 1.0,
+  "ensemble_adjacent_window_correlation": 0.8,
+  "all_checks_pass": true
+}

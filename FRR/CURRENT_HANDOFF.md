@@ -1,25 +1,21 @@
 # Current FRR handoff
 
-Current checkpoint: 29 October 2026, America/Chicago. User returned with RuHarness/PLM papers and a general harness diagram, authorized deeper extraction/integration and resumed work. FW-C1 is complete. User clarified no further diagram work is needed if already covered; source hunting stopped. No background task remains at delivery.
+Current checkpoint: 29 October2026 America/Chicago. User invited analysis of new Claude explorations. CO-C1 is complete; no background task remains. New instructions supersede historical pause/next labels.
 
-## Latest completed contact
+## Latest contact
 
-[FW-C1 report](evaluation/field-role-witness-v1/REPORT.md). Two selected primary-paper contacts inform a narrow source-role guard and optional diagnostic-refresh guidance. Eight caller-authored valid proposals bind;72adversarial variants reject, plus11regression methods. Old seven model-output pairs all reject the new witnessed interface:0usablecoverage;4fallbackUNKNOWNkeymatches remain non-understanding. No new model inference/training or PLM/RuHarness replication. Prior TP-C1 failure remains; core/schema/queue unchanged.
+[CO-C1 report](evaluation/claude-soil-observer-intake-v1/REPORT.md). New Claude branch intake archives11originals at8547929. Dispersion and exactfloor scripts reproduce savedstdout byte-for-byte via inputpath remap; fullfinite-sample grid code/output audited, notrerun. New9cell variance witness and exactAC checks distinguish fresh soils from sharedfixedsoil. Exactword-order audit confirms symmetry masks a convention mismatch; nonreversiblecycle exposes1/6error. No real-agent/inference/training result; observer-unit guidance added, prior work unchanged.
 
-This is an instrument/source contact, not a new small-model experiment. The guard binds values to literal criterion/observation quotations and requires full source-note coverage under a tiny declared grammar. Equality cannot make cross-role quotations valid. Bound source words are not authenticated empirical truth. All ideal proposals were caller-authored; strict rejection of incompatible old outputs gives zero helpful coverage, not better model reasoning.
+SHconditional on a frozen rate is iid; ensemble covariance0.032 includes variance between freshly drawn soils. A known-candidate likelihood classifier can still distinguish one long record. “More independent runs” must specify whether the hidden condition is resampled. More agents sharing one soil are not the same experiment. Source's mild shiftedEC test does not establish unknown-world robustness.
 
-## Usable optional additions
+## Integration and strongest next
 
-[Source-role guard](tools/field_role_guard.py), [worked workflow](examples/typed-threshold-inference.md), and [verification guidance](modules/verification-layer.md). Keep acceptance fixed while adding versioned diagnostics from new failures; distinguish development, selection and genuinely reserved final evaluation. No automatic rubric optimization, confidence gate or permissive model adapter is installed. The exact [typed comparator](tools/evidence_threshold.py) stays unchanged.
+[Observer example](examples/within-and-across-run.md) and [verification guidance](modules/verification-layer.md) preserve sampling unit, conditioning, held-fixed/resampled quantities and estimator/model assumptions. No new statistical validator or role trigger is installed. The literal [field-role guard](tools/field_role_guard.py) and [typed comparator](tools/evidence_threshold.py) are unchanged and do not validate population independence.
 
-## Strongest next — proposed
+A future source/reader or field-producer contact should preserve both field roles and observation units. A genuinely different soil/world or a matched shared-versus-resampled group design could test the remaining numerical boundary; no new actual-agent experiment has run. Prior proposed witnessed-field production remains open. Avoid broad sourcehunting or another same-family rerun without a decision it can inform.
 
-A prospective producer/format study must test whether a model can supply faithful witnessed fields, separating schema validity, literal role binding, task outcomes, withholding reasons and coverage/costs. New model calls were not made here. Independently sourced revision records remain legitimate, but each new source format needs explicit interpretation limits. Do not merely harvest numbers or relabel fallbackUNKNOWN as uncertainty recognition.
+## Stable scope/history
 
-PLM remains a research lead requiring different training/decoding machinery; no speed improvement transfers to our current135Mweights. RuHarness informs diagnostic/versioning practice only; its benchmark results have not been reproduced. The diagram adds no demonstrated missing module to our current proposal/execute/check/record loop.
+[Queue](evaluation/research-queue/QUEUE.json):35entries,30unfinished,6partial; [map](evaluation/CURRENT_RESEARCH_MAP.md). Core/runtime0.2/schema0.1 unchanged. TP-C1 remains failed4/7labels tiedalwaysUNKNOWN with0fullwarrants. FW-C1 guard remains conditional instrument evidence, not modelimprovement. No new modelcalls, paidservices or weightchanges in CO-C1. Use included/free resources; ask before separatepayment.
 
-## Stable scope and history
-
-[Research map](evaluation/CURRENT_RESEARCH_MAP.md), [queue](evaluation/research-queue/QUEUE.json):35entries,30unfinished,6partial. Core runtime/compact0.2 and inquiry schema0.1 remain. Historical TP-C1 has4/7labels tyingalwaysUNKNOWN and0/7fullwarrants; it remains failed. Historical strictorderedreplayFAIL remainsFAIL. Included/free resources only; ask before separatepayment. Local135M is separate from the main assistant and has not been trained. Published pins/manifests do not guarantee local binary-cache durability.
-
-[Archive receipt](evaluation/field-role-witness-v1/ARCHIVE_RECEIPT.json) preserves seven preceding navigation/guidance files byte-for-byte. Their moved relative links retain old bases; [parent handoff](https://github.com/bruhman680/CERTX/blob/0496f26c4b06ae9e145d7032d7df5f0c3e486753/FRR/CURRENT_HANDOFF.md) is the functional historical reference. No earlier scientific output, failure or frozen deposit was overwritten. Current self-review is explicitly coordinator-only, not independent replication.
+Source branch claude/pam-scoped-negation-2026-10-25 is pinned at8547929c9a2ac98b6e643618689365c67baaf583. Relays/prediction chronology remain author-reported; reproduction is samecode, not independent dynamics implementation. Coordinator review is not independent agent replication. [Archive receipt](evaluation/claude-soil-observer-intake-v1/ARCHIVE_RECEIPT.json) preserves six preceding navigation/guidance files with original paths/hashes; moved relative links retain their old bases. [Parent handoff](https://github.com/bruhman680/CERTX/blob/b251f788c4fce92a528e28931b20a31d3991d89d/FRR/CURRENT_HANDOFF.md) is the functional historical reference. Earlier source files/results/failures/caches remain unchanged.

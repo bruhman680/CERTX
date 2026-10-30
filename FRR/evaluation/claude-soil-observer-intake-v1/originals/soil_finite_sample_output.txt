@@ -1,0 +1,22 @@
+PART A: classification error vs episodes N (iid episodes). bound = .5*Z(s*)^N ; heuristic N_h = ln(10)/C
+  PASS n= 6 SH-EC: C=0.03819 s*=0.497 N_h=    60.3 | crossover N(<=5%)=40 | err at N~N_h(63) = 0.0154 | bound there 0.0451
+  PASS n= 6 SH-WK: C=0.00020 s*=0.500 N_h= 11489.6 | crossover N(<=5%)=7414 | err at N~N_h(10515) = 0.0242 | bound there 0.0608
+  PASS n= 6 EC-WK: C=0.03820 s*=0.503 N_h=    60.3 | crossover N(<=5%)=37 | err at N~N_h(63) = 0.0146 | bound there 0.0450
+  DO_F n= 5 SH-EC: C=0.04261 s*=0.480 N_h=    54.0 | crossover N(<=5%)=34 | err at N~N_h(53) = 0.0154 | bound there 0.0523
+  DO_F n= 5 SH-WK: C=0.01969 s*=0.506 N_h=   117.0 | crossover N(<=5%)=65 | err at N~N_h(117) = 0.0150 | bound there 0.0500
+  DO_F n= 5 EC-WK: C=0.03197 s*=0.494 N_h=    72.0 | crossover N(<=5%)=46 | err at N~N_h(72) = 0.0160 | bound there 0.0501
+  PASS n=16 SH-EC: C=0.24735 s*=0.500 N_h=     9.3 | crossover N(<=5%)=6 | err at N~N_h(9) = 0.0150 | bound there 0.0540
+  PASS n=16 SH-WK: C=0.00943 s*=0.476 N_h=   244.3 | crossover N(<=5%)=153 | err at N~N_h(239) = 0.0148 | bound there 0.0525
+  PASS n=16 EC-WK: C=0.21405 s*=0.485 N_h=    10.8 | crossover N(<=5%)=6 | err at N~N_h(11) = 0.0128 | bound there 0.0475
+
+P1 violations of error <= bound + 3SE: 0
+P2 error at N_h below 5% in all cells: True;  median(N_h / crossover) = 1.59  (min 1.51, max 1.80)
+P3 SH-WK PASS n=16: crossover 153 vs N_h 244
+
+PART B: contiguous trajectory, persistent soil. error of FULL (forward likelihood) vs IID-WIN (n=16 windows treated independent), equal priors, 800 trials per cell
+  SH-WK T=  800 outcomes (50 windows): FULL error 0.0013   IID-WIN error 0.2800   (trials 1600)
+  SH-WK T= 1600 outcomes (100 windows): FULL error 0.0000   IID-WIN error 0.2575   (trials 1600)
+  SH-WK T= 3904 outcomes (244 windows): FULL error 0.0000   IID-WIN error 0.2725   (trials 800)
+  EC-WK T=  160 outcomes (10 windows): FULL error 0.0163   IID-WIN error 0.0256   (trials 1600)
+  EC-WK T=  320 outcomes (20 windows): FULL error 0.0006   IID-WIN error 0.0025   (trials 1600)
+  EC-WK T=  640 outcomes (40 windows): FULL error 0.0000   IID-WIN error 0.0000   (trials 1600)
