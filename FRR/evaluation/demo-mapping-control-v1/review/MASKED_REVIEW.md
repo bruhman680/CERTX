@@ -1,0 +1,7 @@
+# Arm-masked outcome review
+
+Read only the frozen scoring contract and MASKED_PACKET.json for outcome coding. Previously read prospective source/design files before generation; did not inspect raw outputs, logs, root scores or condition mappings during outcome scoring. Shared-filesystem masking is instructional; response style may reveal conditions. This is separate scoring judgment, not independent scientific replication.
+
+All27responses give a task-directed affirmative decision, whether a literal YES/Yes, an affirmative sentence, or a declarative acceptance without leading label. Thus9/27match the target-record keys and are fully warranted under the frozen contract allowing clear bare decisions. Nine unsupported affirmatives on missing measurements have unsupported_certainty_missing_evidence=true. Nine below-threshold affirmatives are incorrect decisions. No answer invents a measurement, rule or source beyond its decision, so material_error=false throughout under the explicit distinction between wrong decision and additional explanatory error. No substantive demonstration entity/quantity/block appears; a bare answer label cannot establish copying. No generic conditional-rule recitation occurs.
+
+D15andD23have surface_label=NONE but explicit_decision/status=YES because “The records establish that Tank Amber passes” is an explicit declarative acceptance. Preserve this syntax/meaning distinction. No unresolved interpretation requiring sensitivity treatment was found in this packet. No arm-specific counts inferred before unmasking.
