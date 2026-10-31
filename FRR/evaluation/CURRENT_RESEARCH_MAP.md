@@ -1,5 +1,15 @@
 # Current research map
 
+Latest integration, 31 October 2026 UTC: [downstream error/repair room](downstream-repair-room-v1/REPORT.md) and [identity repair loop](downstream-repair-room-v1/identity-repair-loop/REPORT.md). Initial 23/36 proposals become 12/36 with source-free review, 22/36 with full-source review, and 36/36 with a selected record. Fresh selected-source readout survives correct and wrong proposals at 12/12 each. Wrong selection can preserve the answer class while violating target identity; all 48 mismatches later trigger one tool-mediated repair, with 48/48 final answers and original errors retained.
+
+408 generated answers, 171 unique prompts; loop inputs already appeared in the main contact. No training, autonomous reopening, independent replication or general FRR claim. Optional provisional-downstream guidance is linked; current handoff has unexecuted next contacts.
+
+## Earlier orientation snapshots
+
+The following text retains its historical then-current labels; it does not replace the current handoff. Original bytes are archived in this contact.
+
+# Current research map
+
 Latest integration,31 October 2026 UTC: [simple readout acquisition](simple-readout-acquisition-v1/REPORT.md), [two-record bridge](readout-selection-bridge-v1/REPORT.md), and [single-record frame control](readout-selection-bridge-v1/frame-control/REPORT.md). All four acquired readouts12/12 seen+12/12 held-out; full-source bridge13,11,10,23/36, versus correct crops36/36 and single-frame12/12. All full arms0/12 fully correct conflicting header pairs. A limited acquisition-to-multi-record boundary is established; no general FRR superiority, calibrated abstention or neural mechanism.528 generated answers,192 training updates, original base/old states unchanged. Current handoff states unexecuted next contacts.
 
 ## Earlier orientation snapshots

@@ -1,0 +1,9 @@
+# One real repair after a later identity receipt
+
+Outcome-informed follow-up after all360main calls and their audit. The main study shows source-selected readout survives correct and wrong proposals; a wrong selection can yield a valid answer. Freeze this controller, inputs and checkpoint/source bindings before any48loop forwards. Previous main results remain unchanged.
+
+Start with each of the48actual wrong-selection model outputs (36exposed replay+12fresh-study sources, now exposed by the main run). Every wrong-selection candidate already flowed through the model. The later source receipt identifies TARGET_MISMATCH on all48, including12fortuitously correct labels in the replay cohort. Trigger one repair based on identity, not answer accuracy: reopen the original source, select its target record, and present that record together with the actual mistaken earlier answer. Use the same frozen canonical adapter, prompt templates and one-shot greedy/choice instrument. No training, winner selection, accuracy-based retry or memory/history deletion.
+
+Record all original failures and append new branch outputs, source receipts and wrong→correct/correct→wrong transitions. A new source-consistent answer is not a retroactive replacement of the bad handoff. The tiny parser/controller already knows how to solve this literal-source toy without a language model; do not claim autonomous model error detection, novel universal verification, model-initiated retrieval, real-world truth, or independent replication.
+
+This is an operational one-step recovery demonstration within a known grammar, in the same environment. Only these deliberately wrong target selections trigger the loop; no claim about calibration of triggers in unrestricted documents. Resource guard remains active, max8tokens, no paid services/install/download or new model weights. Full KV caches are not retained. Clean-environment restore and optimizer resumption remain untested.

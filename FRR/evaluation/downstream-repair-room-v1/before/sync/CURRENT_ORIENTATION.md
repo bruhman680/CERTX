@@ -1,0 +1,7 @@
+# Current orientation
+
+31 October 2026 UTC. [Handoff](../CURRENT_HANDOFF.md), [acquisition](../evaluation/simple-readout-acquisition-v1/REPORT.md), [selection bridge](../evaluation/readout-selection-bridge-v1/REPORT.md), [frame control](../evaluation/readout-selection-bridge-v1/frame-control/REPORT.md).
+
+Four fixed-budget adapters learn the simple explicit three-state mapping: 12/12 seen and12/12 study-held-out per arm. Both normal words and all cyclic short-code mappings succeed. Full two-record inputs score 13,11,10,23/36; all 0/12 fully correct conflicting header pairs. Correct source crop restores 36/36 (six distinct crops); one-record full-frame control 12/12 per arm. Composite context/selection boundary narrowed; not real missing-field detection, calibrated uncertainty, a neural mechanism or general FRR benefit.
+
+Next: fixed-readout matched-length/agreeing/conflicting-neighbor contact, then balanced selection learning if justified. Longer compressed-handoff/source-revision remains distinct broader growth direction. Grok relay still parked. 528 generated answers,192 total adapter updates; no bridge/control training or background job. Raw source/prompt/token/choice/loss records preserved; original base and old states unchanged. Optional guidance refined, no core/schema/tool/default/queue promotion. Same-environment checkpoint reload is not an independent restore test. User’s older desktop capsule is separate; new snapshot excludes dense base/environment/older history.

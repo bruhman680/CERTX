@@ -1,29 +1,37 @@
 # Current FRR handoff
 
-31 October 2026 UTC. Three bounded contacts complete: simple acquisition, two-record bridge, and an outcome-informed single-record frame control. No running model job. New user instructions supersede historical pause/next labels.
+31 October 2026 UTC. [Downstream error/repair contact](evaluation/downstream-repair-room-v1/REPORT.md) and its [identity repair loop](evaluation/downstream-repair-room-v1/identity-repair-loop/REPORT.md) are complete. No model job is running. New user instructions supersede historical pause/next labels. The user is reviewing from mobile; no desktop action is needed to read the reports.
 
-## What changed in our understanding
+## Latest observations
 
-[Simple acquisition](evaluation/simple-readout-acquisition-v1/REPORT.md): four fresh q/v LoRA adapters, fixed 48 updates each. Canonical YES/NO/WITHHOLD and three cyclic A/B/C assignments all reach 12/12 seen and12/12 study-held-out explicit-status sources,4/4 per state. Earlier complex-task failure is not a universal inability to learn a three-state readout or emit WITHHOLD. No FRR prompt efficacy or real missing-field detection demonstrated.
+All earlier canonical proposals—23 correct and 13 wrong—continued through the frozen downstream experiment.
 
-[Two-record bridge](evaluation/readout-selection-bridge-v1/REPORT.md): same saved final adapters, zero new updates. Free full-source scores 13,11,10,23/36 for alias0,alias1,alias2,canonical. Allowed-choice sum 21,18,14,23/36; first/last reference 24/36. All full arms 0/12 fully correct conflicting header pairs. Source-parsed crop 36/36 for all arms (only six unique crops, repeated six times).
+- Source-free review: 12/36 correct, with 4 repairs and 15 previously correct answers damaged. Every output was NO; evidence receipts remain UNSUPPORTED.
+- Proposal plus reopened full source: 22/36 correct, with 1 repair and 2 regressions.
+- Proposal plus source-selected target: 36/36 correct, with all 13 errors repaired and all 23 correct answers retained.
+- All 72 no-proposal replay baseline input/output token sequences match the earlier study.
 
-[Single-record frame control](evaluation/readout-selection-bridge-v1/frame-control/REPORT.md): outcome-informed follow-up, frozen before its own forwards, all fixed arms 12/12 including4/4 per state. New instruction/header/record numbering alone is not sufficient to break readout on this slice. Multi-record package is a narrowed boundary, not a unique neural/attention/memory mechanism. Canonical agreeing-status full sources 12/12 versus conflicting 11/24; alias failures also occur on agreeing sources.
+Twelve fresh paired source cases: no-proposal full source scores 6/12, selected source 12/12. Under correct/wrong1/wrong2 proposals, full-source results are 4/5/4 of 12; selected-source results are 12/12 for each; source-free results are 4/12 for each. This is explicit-status reading, not real missing-field detection or calibrated abstention. WITHHOLD still means a supplied missing status.
 
-## Strongest next contacts
+Wrong-record handoffs yield 12/36 matching replay labels and 0/12 on fresh cases, but all 48 have TARGET_MISMATCH receipts. A one-step controller then reopens the original target and presents it with the actual mistaken answer retained: 48/48 final labels and source receipts, 36 repairs and 12 correct labels retained. All 48 loop input prompts were already represented in the main contact. This is an operational replay, not independent capability confirmation. The parser knows the narrow grammar and could solve the toy without an LLM. No autonomous error detection/retrieval or general FRR efficacy is demonstrated.
 
-1. Keep learned readout fixed; pair conflicting versus agreeing neighbor and matched-length neutral filler, cross target identity/order. Separate interference, input length and target binding before spending another training budget. Fresh primary sources; exposed studies become regressions.
-2. Then a small balanced two-record selection curriculum, with acquired simple-readout and single-frame regressions retained. Do not assume longer-context competence because training loss falls.
-3. Distinct broader branch: actual writer-produced compressed handoff, source revision, reader retrieval/reopening, stale/wrong-source controls and measured costs. Ancestry records lineage, not truth or independence.
+## Practice refinement
 
-## Preservation and limits
+The [optional provisional downstream pattern](examples/provisional-downstream-repair.md), linked from the verification module, allows imperfect answers to continue when the question is propagation or repair. Preserve the trace and uncertainty; separate experimental movement from acceptance. Measure repairs and damage to correct answers. Append revisions instead of overwriting failures. Historical failed gates remain failed for their original claims. Core/schema, general tools, default model and queue statuses are unchanged.
 
-528 generated answers across these contacts; 192 training updates (four×48), no bridge/control training. Raw prompts/IDs/outputs/complete-choice scores, losses, freezes and manifests retained. Fresh-process saved-adapter reload matched final numerical digests in this same environment; not a clean-environment or optimizer-resume test. Original base and prior adapters remain unchanged. Full KV tensors not stored for these diagnostic readouts; earlier cache histories remain intact.
+## Strongest next directions
 
-3391 earlier local files checked unchanged before sync. Four prior navigation/guidance originals are archived under evaluation/simple-readout-acquisition-v1/before. Optional seen-acquisition guidance gains these scoped distinctions; existing tools/core/schema/queue/default model unchanged. No paid service, install, rental or download. Usage/billing is not visible. No independent empirical replication or general FRR claim.
+1. Keep the learned readout fixed; compare matched-length neutral, agreeing and conflicting neighbors, crossing target identity/order. Narrow context/selection effects without assuming extra review helps.
+2. Separately test a reader's ability to request reopening or evidence, instead of receiving a harness-chosen path. No autonomous retrieval policy or explicit epistemic-uncertainty action has been learned here.
+3. Broader branch: actual writer-produced compressed handoff, source revision, reader retrieval/reopening, stale/wrong-source controls and measured costs. Registry/LCA record declared lineage, not truth or independence.
+4. A balanced two-record selection curriculum remains possible. Preserve known-acquired simple readout and frame regressions. A failure need not block a study of later repair, but limits what its success would establish.
 
-User reports the older counterbalanced-curriculum capsule was saved to desktop; it remains separate and unchanged. New current-contact snapshot and binary hashes are recorded in the acquisition report/receipts; local archives are not independent backups until copied off workspace. Base weights/runtime/older-history scope still matters.
+## Preservation and scope
 
-## Parked source intake
+360 main plus 48 loop generated answers; 408 choice batches/1,224 candidate sequences; 171 unique prompts across them. No optimizer updates. Fresh reader contexts use the same saved canonical adapter, not independent agents. Original base/adapter and 3,485 earlier local files were checked unchanged before sync. Four old navigation/module documents are archived under this contact's before directory. All freezes, raw prompts/IDs/outputs/scores, transitions, source receipts and loop parent IDs are retained. No full KV tensors were added for these readouts; earlier cache histories remain untouched.
 
-[Grok substrate-depth/neural-criticality/binding relay](evaluation/grok-substrate-depth-intake-v1/NOTE.md) remains preserved, unvetted and unadopted. Primary-source review and task-relative metrics precede neural-mechanism claims. Earlier failed results and historical next/pause labels remain history.
+No new model binaries. The existing local /workspace/frr_capsules/simple-readout-and-selection-v1.tar.gz (12.8 MB) contains this canonical adapter, excluding dense base/runtime/older seasons. The user's older 6.3 MB desktop capsule is different. No independently verified off-workspace copy of the current adapter or clean-environment/optimizer-resume rehearsal. No paid API, rental, install or download; usage/billing is not visible. No background tasks.
+
+## Parked sources and older seasons
+
+The [Grok substrate-depth/neural-criticality relay](evaluation/grok-substrate-depth-intake-v1/NOTE.md) remains preserved, unvetted and unadopted. Prior acquisition, two-record and frame contacts remain [here](evaluation/simple-readout-acquisition-v1/REPORT.md). They showed all four simple readouts at 12/12 seen and 12/12 held-out, full bridge results of 13/11/10/23 of 36, parser crops at 36/36 (six unique), and a single-record frame at 12/12 per arm. Original results and then-current pause/next labels remain history.

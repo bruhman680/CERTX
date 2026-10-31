@@ -161,3 +161,8 @@ The60authored/regression/proposal expectations match, with12development test gro
 ## Optional small-model acquisition diagnosis
 
 [Seen-source acquisition before transfer](../examples/seen-source-acquisition-before-transfer.md) distinguishes valid formatting, checked seen-source class decisions and held-out transfer. A separately declared balanced seen-source slice at a constant-answer baseline does not demonstrate acquisition there; it is not a universal capacity verdict or replacement for fresh tests. The latest [curriculum contact](../evaluation/counterbalanced-curriculum-v1/REPORT.md) preserves a posthoc12case example,0/24fullycorrectdiscordantheaderpairs andalloldfailures. No universal numerical pass threshold, new approval gate, model authority or core/default policy is introduced.
+
+
+## Let experimental failures continue without silently accepting them
+
+The optional [provisional downstream repair example](../examples/provisional-downstream-repair.md) records a completed contact in which all imperfect proposals continue to bounded downstream readers before a source receipt is applied. A failed upstream check can limit the inference while a separately scoped experiment studies propagation or repair. Keep the original proposal and source limitations, measure repairs and regressions, and append revised outputs rather than overwriting history. A later source check may guide reopening and acceptance; it is not proof of model error awareness or external-world truth. Existing failed task gates and verifier domains remain unchanged.

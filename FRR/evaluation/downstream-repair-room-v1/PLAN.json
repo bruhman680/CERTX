@@ -1,0 +1,20 @@
+{
+  "base_revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "base_template": "Map the status to its answer. {mapping}. Return only the answer.\n\n{source}",
+  "base_weights_sha256": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c",
+  "full_prefix": "Read only the record for the target plot.\n",
+  "generation_calls": 360,
+  "interpretation": "one bounded downstream pass in fresh contexts; no learning, no independent-agent benefit, no explicit model error-awareness test",
+  "mapping": {
+    "missing": "WITHHOLD",
+    "positive": "YES",
+    "zero": "NO"
+  },
+  "max_tokens": 8,
+  "no_evidence_source": "No source record is available in this step.",
+  "optimizer_updates": 0,
+  "proposal_prefix": "Earlier answer proposal: {proposal}\nThis proposal may be wrong. Check the available evidence before answering.\n",
+  "retry_or_selection": "none; fixed final canonical adapter and all scheduled calls",
+  "seed": 73103,
+  "working_limit_bytes": 5153960755
+}
