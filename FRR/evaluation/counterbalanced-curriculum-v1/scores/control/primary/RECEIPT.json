@@ -1,0 +1,476 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "CS1-control-primary",
+  "identity": {
+    "family": "curriculum_state",
+    "facet": "state_label",
+    "cycle": "CS1",
+    "arm": "control"
+  },
+  "contract_sha256": "c1a370c47220914599d33a9782dd44adfcad8128c3b68c4fb7056aa07824d30b",
+  "sources": {
+    "raw": "1e02d9d0d0c9a98a94051d780fa397825e1ac4ef08f7bff82ec12ce8b3da3389",
+    "keys": "e578e0d82584464f72dcb5120010b5d3a0086b24ce243b4dda4c2cf3765aa001"
+  },
+  "summary": {
+    "calls": 72,
+    "label_matches": 24,
+    "match_fraction": {
+      "numerator": 1,
+      "denominator": 3
+    },
+    "constant_yes_matches": 24,
+    "labels": {
+      "YES": 72
+    },
+    "stops": {
+      "eos": 72
+    },
+    "input_tokens": 16992,
+    "output_tokens": 216
+  },
+  "rows": [
+    {
+      "run_id": "primary_XML_opositive_r0_first_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_last_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_opositive_r0_last_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_first_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_first_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_last_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r0_last_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_first_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_first_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_last_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r0_last_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_first_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_opositive_r0_first_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_last_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_last_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_first_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_first_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_last_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_last_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_first_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_first_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_last_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_last_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_first_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r0_first_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_last_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_last_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_first_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_first_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_last_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_last_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_first_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_first_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_last_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_last_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_first_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_first_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_last_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_last_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_first_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_first_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_last_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_last_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_first_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_first_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_last_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_last_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_first_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_first_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_last_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_last_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_first_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_first_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_last_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_last_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_first_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_first_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_last_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_last_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_first_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_first_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_last_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_last_positive__control__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_first_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_first_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_last_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_last_zero__control__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_first_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_first_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_last_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_last_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_first_missing__control__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

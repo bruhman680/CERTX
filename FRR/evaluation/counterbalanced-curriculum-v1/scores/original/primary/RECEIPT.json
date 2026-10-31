@@ -1,0 +1,476 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "CS1-original-primary",
+  "identity": {
+    "family": "curriculum_state",
+    "facet": "state_label",
+    "cycle": "CS1",
+    "arm": "original"
+  },
+  "contract_sha256": "94c14a5e85482112be8fbae3283b6f91d52bf7b9c7f34a87b5f5510b8d58b21c",
+  "sources": {
+    "raw": "e8afb0f8590b8680c1e61c6d048bee0a9c15673340d72172de203dedb5926bb4",
+    "keys": "f5cfd8e5071ab27e3cf7a3d2b93049d83f95abb2397173859f834970aee2e7eb"
+  },
+  "summary": {
+    "calls": 72,
+    "label_matches": 0,
+    "match_fraction": {
+      "numerator": 0,
+      "denominator": 1
+    },
+    "constant_yes_matches": 24,
+    "labels": {
+      "UNRESOLVED": 72
+    },
+    "stops": {
+      "token_limit": 72
+    },
+    "input_tokens": 16992,
+    "output_tokens": 576
+  },
+  "rows": [
+    {
+      "run_id": "primary_XML_opositive_r0_first_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_last_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r0_last_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_first_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_first_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_last_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r0_last_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_first_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_first_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_last_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r0_last_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_first_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r0_first_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_last_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_last_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_first_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_first_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_last_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_last_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_first_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_first_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_last_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_last_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_first_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r0_first_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_last_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_last_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_first_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_first_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_last_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_last_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_first_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_first_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_last_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_last_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_first_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_first_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_last_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_last_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_first_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_first_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_last_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_last_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_first_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_first_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_last_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_last_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_first_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_first_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_last_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_last_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_first_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_first_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_last_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_last_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_first_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_first_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_last_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_last_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_first_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_first_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_last_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_last_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_first_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_first_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_last_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_last_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_first_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_first_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_last_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_last_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_first_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

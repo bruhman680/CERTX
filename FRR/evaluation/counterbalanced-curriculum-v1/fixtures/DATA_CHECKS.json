@@ -1,0 +1,43 @@
+{
+  "all_passed": true,
+  "train_cases": 144,
+  "train_groups": 48,
+  "train_group_labels": [
+    "YES",
+    "NO",
+    "WITHHOLD"
+  ],
+  "primary_cases": 72,
+  "primary_pairs": 36,
+  "discordant_pairs": 24,
+  "discordant_cases": 48,
+  "same_state_pairs": 12,
+  "same_state_cases": 24,
+  "dev_cases": 12,
+  "primary_body_byte_identity": true,
+  "primary_pair_only_header_changes": true,
+  "all_source_unique": true,
+  "factorial_coverage_complete": true,
+  "labels_balanced": true,
+  "body_role_words_absent": true,
+  "all_records_complete": true,
+  "positive_values": {
+    "train": 11,
+    "primary": 13,
+    "dev": 17
+  },
+  "irrelevant_fields": {
+    "observations_per_soil": 5,
+    "damaged_plots": 0,
+    "inspections": null
+  },
+  "comparison": "Compare this training package with the existing old 72-source-trained mean checkpoint using the same 48 updates. Changes include format and support; this is not an isolated causal test of record position.",
+  "sha256": {
+    "TRAIN.json": "b84730766e75af90492d28b097ac3d9647836cda5018abfbb8e9c6e94dd0d63b",
+    "PRIMARY_CASES.json": "9648df02001f91a25f6e5653fb9d09699a7ff1712ad8840fd5196872dc86068e",
+    "PRIMARY_KEYS.json": "eed51ce7c5ff9904083a7c195143227715cfa735ebd78916100704e1698c095e",
+    "DEV_CASES.json": "7a5425c3594c605e09ad08df9e076aec43ce4cb7c1730f5cd444c6fc6abb7319",
+    "DEV_KEYS.json": "7f3aa640431fd158f1f0681b7c22f3c29ec9a19ad360d06c4e9525ac7d1d8cdb",
+    "GUIDANCE.json": "a3ae0344da886994707e581d3fe56a0b61cc2bf3a11ccfaca8a4dbcdd382bdd5"
+  }
+}

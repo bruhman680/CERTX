@@ -1,0 +1,650 @@
+[
+  {
+    "pair_id": "pair_XML_positive_positive_r0",
+    "kind": "same_state",
+    "record_ids": [
+      "primary_XML_opositive_r0_first_positive",
+      "primary_XML_opositive_r1_last_positive"
+    ],
+    "expected": [
+      "YES",
+      "YES"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_positive_positive_r1",
+    "kind": "same_state",
+    "record_ids": [
+      "primary_XML_opositive_r0_last_positive",
+      "primary_XML_opositive_r1_first_positive"
+    ],
+    "expected": [
+      "YES",
+      "YES"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_positive_zero_r0",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_XML_ozero_r0_first_positive",
+      "primary_XML_opositive_r1_last_zero"
+    ],
+    "expected": [
+      "YES",
+      "NO"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_positive_zero_r1",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_XML_opositive_r0_last_zero",
+      "primary_XML_ozero_r1_first_positive"
+    ],
+    "expected": [
+      "NO",
+      "YES"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_positive_missing_r0",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_XML_omissing_r0_first_positive",
+      "primary_XML_opositive_r1_last_missing"
+    ],
+    "expected": [
+      "YES",
+      "WITHHOLD"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_positive_missing_r1",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_XML_opositive_r0_last_missing",
+      "primary_XML_omissing_r1_first_positive"
+    ],
+    "expected": [
+      "WITHHOLD",
+      "YES"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_zero_positive_r0",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_XML_opositive_r0_first_zero",
+      "primary_XML_ozero_r1_last_positive"
+    ],
+    "expected": [
+      "NO",
+      "YES"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_zero_positive_r1",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_XML_ozero_r0_last_positive",
+      "primary_XML_opositive_r1_first_zero"
+    ],
+    "expected": [
+      "YES",
+      "NO"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_zero_zero_r0",
+    "kind": "same_state",
+    "record_ids": [
+      "primary_XML_ozero_r0_first_zero",
+      "primary_XML_ozero_r1_last_zero"
+    ],
+    "expected": [
+      "NO",
+      "NO"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": true,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_zero_zero_r1",
+    "kind": "same_state",
+    "record_ids": [
+      "primary_XML_ozero_r0_last_zero",
+      "primary_XML_ozero_r1_first_zero"
+    ],
+    "expected": [
+      "NO",
+      "NO"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": true,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_zero_missing_r0",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_XML_omissing_r0_first_zero",
+      "primary_XML_ozero_r1_last_missing"
+    ],
+    "expected": [
+      "NO",
+      "WITHHOLD"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_zero_missing_r1",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_XML_ozero_r0_last_missing",
+      "primary_XML_omissing_r1_first_zero"
+    ],
+    "expected": [
+      "WITHHOLD",
+      "NO"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_missing_positive_r0",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_XML_opositive_r0_first_missing",
+      "primary_XML_omissing_r1_last_positive"
+    ],
+    "expected": [
+      "WITHHOLD",
+      "YES"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_missing_positive_r1",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_XML_omissing_r0_last_positive",
+      "primary_XML_opositive_r1_first_missing"
+    ],
+    "expected": [
+      "YES",
+      "WITHHOLD"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_missing_zero_r0",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_XML_ozero_r0_first_missing",
+      "primary_XML_omissing_r1_last_zero"
+    ],
+    "expected": [
+      "WITHHOLD",
+      "NO"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_missing_zero_r1",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_XML_omissing_r0_last_zero",
+      "primary_XML_ozero_r1_first_missing"
+    ],
+    "expected": [
+      "NO",
+      "WITHHOLD"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_missing_missing_r0",
+    "kind": "same_state",
+    "record_ids": [
+      "primary_XML_omissing_r0_first_missing",
+      "primary_XML_omissing_r1_last_missing"
+    ],
+    "expected": [
+      "WITHHOLD",
+      "WITHHOLD"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_XML_missing_missing_r1",
+    "kind": "same_state",
+    "record_ids": [
+      "primary_XML_omissing_r0_last_missing",
+      "primary_XML_omissing_r1_first_missing"
+    ],
+    "expected": [
+      "WITHHOLD",
+      "WITHHOLD"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_positive_positive_r0",
+    "kind": "same_state",
+    "record_ids": [
+      "primary_bulletsections_opositive_r0_first_positive",
+      "primary_bulletsections_opositive_r1_last_positive"
+    ],
+    "expected": [
+      "YES",
+      "YES"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_positive_positive_r1",
+    "kind": "same_state",
+    "record_ids": [
+      "primary_bulletsections_opositive_r0_last_positive",
+      "primary_bulletsections_opositive_r1_first_positive"
+    ],
+    "expected": [
+      "YES",
+      "YES"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_positive_zero_r0",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_bulletsections_ozero_r0_first_positive",
+      "primary_bulletsections_opositive_r1_last_zero"
+    ],
+    "expected": [
+      "YES",
+      "NO"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_positive_zero_r1",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_bulletsections_opositive_r0_last_zero",
+      "primary_bulletsections_ozero_r1_first_positive"
+    ],
+    "expected": [
+      "NO",
+      "YES"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_positive_missing_r0",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_bulletsections_omissing_r0_first_positive",
+      "primary_bulletsections_opositive_r1_last_missing"
+    ],
+    "expected": [
+      "YES",
+      "WITHHOLD"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_positive_missing_r1",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_bulletsections_opositive_r0_last_missing",
+      "primary_bulletsections_omissing_r1_first_positive"
+    ],
+    "expected": [
+      "WITHHOLD",
+      "YES"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_zero_positive_r0",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_bulletsections_opositive_r0_first_zero",
+      "primary_bulletsections_ozero_r1_last_positive"
+    ],
+    "expected": [
+      "NO",
+      "YES"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_zero_positive_r1",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_bulletsections_ozero_r0_last_positive",
+      "primary_bulletsections_opositive_r1_first_zero"
+    ],
+    "expected": [
+      "YES",
+      "NO"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_zero_zero_r0",
+    "kind": "same_state",
+    "record_ids": [
+      "primary_bulletsections_ozero_r0_first_zero",
+      "primary_bulletsections_ozero_r1_last_zero"
+    ],
+    "expected": [
+      "NO",
+      "NO"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": true,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_zero_zero_r1",
+    "kind": "same_state",
+    "record_ids": [
+      "primary_bulletsections_ozero_r0_last_zero",
+      "primary_bulletsections_ozero_r1_first_zero"
+    ],
+    "expected": [
+      "NO",
+      "NO"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": true,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_zero_missing_r0",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_bulletsections_omissing_r0_first_zero",
+      "primary_bulletsections_ozero_r1_last_missing"
+    ],
+    "expected": [
+      "NO",
+      "WITHHOLD"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_zero_missing_r1",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_bulletsections_ozero_r0_last_missing",
+      "primary_bulletsections_omissing_r1_first_zero"
+    ],
+    "expected": [
+      "WITHHOLD",
+      "NO"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_missing_positive_r0",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_bulletsections_opositive_r0_first_missing",
+      "primary_bulletsections_omissing_r1_last_positive"
+    ],
+    "expected": [
+      "WITHHOLD",
+      "YES"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_missing_positive_r1",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_bulletsections_omissing_r0_last_positive",
+      "primary_bulletsections_opositive_r1_first_missing"
+    ],
+    "expected": [
+      "YES",
+      "WITHHOLD"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_missing_zero_r0",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_bulletsections_ozero_r0_first_missing",
+      "primary_bulletsections_omissing_r1_last_zero"
+    ],
+    "expected": [
+      "WITHHOLD",
+      "NO"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_missing_zero_r1",
+    "kind": "discordant",
+    "record_ids": [
+      "primary_bulletsections_omissing_r0_last_zero",
+      "primary_bulletsections_ozero_r1_first_missing"
+    ],
+    "expected": [
+      "NO",
+      "WITHHOLD"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_missing_missing_r0",
+    "kind": "same_state",
+    "record_ids": [
+      "primary_bulletsections_omissing_r0_first_missing",
+      "primary_bulletsections_omissing_r1_last_missing"
+    ],
+    "expected": [
+      "WITHHOLD",
+      "WITHHOLD"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  },
+  {
+    "pair_id": "pair_bulletsections_missing_missing_r1",
+    "kind": "same_state",
+    "record_ids": [
+      "primary_bulletsections_omissing_r0_last_missing",
+      "primary_bulletsections_omissing_r1_first_missing"
+    ],
+    "expected": [
+      "WITHHOLD",
+      "WITHHOLD"
+    ],
+    "outputs": [
+      "NO",
+      "NO"
+    ],
+    "both_correct": false,
+    "valid_label_switch": false
+  }
+]

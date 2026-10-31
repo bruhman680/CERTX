@@ -1,0 +1,476 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "CS1-candidate-primary",
+  "identity": {
+    "family": "curriculum_state",
+    "facet": "state_label",
+    "cycle": "CS1",
+    "arm": "candidate"
+  },
+  "contract_sha256": "3c03ee09253659734018708d7f5848e4f14d6fdba51413500d321325601788a4",
+  "sources": {
+    "raw": "06585f3046ed0d85d9dd623900fd4342b3d8b959a7e2498b0b5e20274cf45ef8",
+    "keys": "74cad59acad743c59ee22924008f975808b188da4733ece9dd69e4b428f8b705"
+  },
+  "summary": {
+    "calls": 72,
+    "label_matches": 24,
+    "match_fraction": {
+      "numerator": 1,
+      "denominator": 3
+    },
+    "constant_yes_matches": 24,
+    "labels": {
+      "NO": 72
+    },
+    "stops": {
+      "eos": 72
+    },
+    "input_tokens": 16992,
+    "output_tokens": 144
+  },
+  "rows": [
+    {
+      "run_id": "primary_XML_opositive_r0_first_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_last_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r0_last_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_first_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_first_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_last_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_opositive_r0_last_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_first_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_first_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_last_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r0_last_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_first_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r0_first_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_last_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_last_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_first_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_first_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_last_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_last_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_first_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_first_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_last_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_last_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_first_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_opositive_r0_first_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_last_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_last_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_opositive_r1_first_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_ozero_r0_first_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_last_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_last_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_XML_ozero_r1_first_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_first_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_last_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r0_last_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_XML_omissing_r1_first_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_first_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_last_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_last_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_first_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_first_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_last_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_last_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_first_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_first_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_last_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_last_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_first_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_first_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_last_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_last_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_first_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_first_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_last_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_last_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_first_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_first_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_last_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_last_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_first_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r0_first_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_last_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_last_positive__candidate__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_opositive_r1_first_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r0_first_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_last_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_last_zero__candidate__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "primary_bulletsections_ozero_r1_first_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_first_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_last_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r0_last_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "primary_bulletsections_omissing_r1_first_missing__candidate__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

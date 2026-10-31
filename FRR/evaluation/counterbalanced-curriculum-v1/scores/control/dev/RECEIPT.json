@@ -1,0 +1,116 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "CS1-control-dev",
+  "identity": {
+    "family": "curriculum_state",
+    "facet": "state_label",
+    "cycle": "CS1",
+    "arm": "control"
+  },
+  "contract_sha256": "71734e6afdda37d3049b130e4b8030aa390700d4a56f670a4078800715aed4e3",
+  "sources": {
+    "raw": "050436df3f33b1549e032949fde04c24d03991e920402229a94adf2b5360934d",
+    "keys": "369f2ef7fd7c92284ff1d2b46029c822029248214504a17b7a010362dbf83b27"
+  },
+  "summary": {
+    "calls": 12,
+    "label_matches": 4,
+    "match_fraction": {
+      "numerator": 1,
+      "denominator": 3
+    },
+    "constant_yes_matches": 4,
+    "labels": {
+      "YES": 12
+    },
+    "stops": {
+      "eos": 12
+    },
+    "input_tokens": 2332,
+    "output_tokens": 36
+  },
+  "rows": [
+    {
+      "run_id": "dev_fields_opositive_r0_first_positive__control__dev",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_fields_opositive_r0_first_zero__control__dev",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_fields_opositive_r0_first_missing__control__dev",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_prose_opositive_r1_last_positive__control__dev",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_prose_opositive_r1_last_zero__control__dev",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_prose_opositive_r1_last_missing__control__dev",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_flatJSON_opositive_r0_first_positive__control__dev",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_flatJSON_opositive_r0_first_zero__control__dev",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_flatJSON_opositive_r0_first_missing__control__dev",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_table_opositive_r1_last_positive__control__dev",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_table_opositive_r1_last_zero__control__dev",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_table_opositive_r1_last_missing__control__dev",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

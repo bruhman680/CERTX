@@ -1,0 +1,3 @@
+# Counterbalanced curriculum settled
+
+[Report](../../evaluation/counterbalanced-curriculum-v1/REPORT.md).48candidateupdates,144unique sources;priorcontrolreused.252generations:both24/72,oppositeconstantlabels,missing0/24,correctdiscordantpairs0/24.12posthocseencasesallNO4/12,no updates. Acquisitionunprovenonslice;furthertrainingneedscalibrationbeforecomplextransfer.997oldruntimefilesunchanged,264newcachechecks.6.29MBlocaladaptercapsuleverified13members,exclusionsandnoindependentbackupclaim. Broaderpressureaudit: noresourceblock,longerhandoff/source-revision strongerseparatebranch. Fivepriornavigation/guidancedocsarchived;optionalacquisitionlinkadded,no core/schema/queue/toolcodechanges. No modelpromotion/paidresources/install/backgroundtask.

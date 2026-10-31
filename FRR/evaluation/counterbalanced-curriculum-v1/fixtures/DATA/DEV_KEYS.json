@@ -1,0 +1,446 @@
+[
+  {
+    "id": "dev_fields_opositive_r0_first_positive",
+    "expected": "YES",
+    "state": "positive",
+    "target_state": "positive",
+    "other_state": "positive",
+    "target_value": 17,
+    "other_value": 17,
+    "family": "fields",
+    "target_role": 0,
+    "target_identity": "Birch",
+    "other_identity": "Cedar",
+    "position": "first",
+    "target_record_position": "first",
+    "records": [
+      {
+        "batch": "Birch",
+        "sampled_soils": 17,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 0,
+        "state": "positive",
+        "is_target": true
+      },
+      {
+        "batch": "Cedar",
+        "sampled_soils": 17,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 1,
+        "state": "positive",
+        "is_target": false
+      }
+    ]
+  },
+  {
+    "id": "dev_fields_opositive_r0_first_zero",
+    "expected": "NO",
+    "state": "zero",
+    "target_state": "zero",
+    "other_state": "positive",
+    "target_value": 0,
+    "other_value": 17,
+    "family": "fields",
+    "target_role": 0,
+    "target_identity": "Birch",
+    "other_identity": "Cedar",
+    "position": "first",
+    "target_record_position": "first",
+    "records": [
+      {
+        "batch": "Birch",
+        "sampled_soils": 0,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 0,
+        "state": "zero",
+        "is_target": true
+      },
+      {
+        "batch": "Cedar",
+        "sampled_soils": 17,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 1,
+        "state": "positive",
+        "is_target": false
+      }
+    ]
+  },
+  {
+    "id": "dev_fields_opositive_r0_first_missing",
+    "expected": "WITHHOLD",
+    "state": "missing",
+    "target_state": "missing",
+    "other_state": "positive",
+    "target_value": null,
+    "other_value": 17,
+    "family": "fields",
+    "target_role": 0,
+    "target_identity": "Birch",
+    "other_identity": "Cedar",
+    "position": "first",
+    "target_record_position": "first",
+    "records": [
+      {
+        "batch": "Birch",
+        "sampled_soils": null,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 0,
+        "state": "missing",
+        "is_target": true
+      },
+      {
+        "batch": "Cedar",
+        "sampled_soils": 17,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 1,
+        "state": "positive",
+        "is_target": false
+      }
+    ]
+  },
+  {
+    "id": "dev_prose_opositive_r1_last_positive",
+    "expected": "YES",
+    "state": "positive",
+    "target_state": "positive",
+    "other_state": "positive",
+    "target_value": 17,
+    "other_value": 17,
+    "family": "prose",
+    "target_role": 1,
+    "target_identity": "Cedar",
+    "other_identity": "Birch",
+    "position": "last",
+    "target_record_position": "last",
+    "records": [
+      {
+        "batch": "Birch",
+        "sampled_soils": 17,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 0,
+        "state": "positive",
+        "is_target": false
+      },
+      {
+        "batch": "Cedar",
+        "sampled_soils": 17,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 1,
+        "state": "positive",
+        "is_target": true
+      }
+    ]
+  },
+  {
+    "id": "dev_prose_opositive_r1_last_zero",
+    "expected": "NO",
+    "state": "zero",
+    "target_state": "zero",
+    "other_state": "positive",
+    "target_value": 0,
+    "other_value": 17,
+    "family": "prose",
+    "target_role": 1,
+    "target_identity": "Cedar",
+    "other_identity": "Birch",
+    "position": "last",
+    "target_record_position": "last",
+    "records": [
+      {
+        "batch": "Birch",
+        "sampled_soils": 17,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 0,
+        "state": "positive",
+        "is_target": false
+      },
+      {
+        "batch": "Cedar",
+        "sampled_soils": 0,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 1,
+        "state": "zero",
+        "is_target": true
+      }
+    ]
+  },
+  {
+    "id": "dev_prose_opositive_r1_last_missing",
+    "expected": "WITHHOLD",
+    "state": "missing",
+    "target_state": "missing",
+    "other_state": "positive",
+    "target_value": null,
+    "other_value": 17,
+    "family": "prose",
+    "target_role": 1,
+    "target_identity": "Cedar",
+    "other_identity": "Birch",
+    "position": "last",
+    "target_record_position": "last",
+    "records": [
+      {
+        "batch": "Birch",
+        "sampled_soils": 17,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 0,
+        "state": "positive",
+        "is_target": false
+      },
+      {
+        "batch": "Cedar",
+        "sampled_soils": null,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 1,
+        "state": "missing",
+        "is_target": true
+      }
+    ]
+  },
+  {
+    "id": "dev_flatJSON_opositive_r0_first_positive",
+    "expected": "YES",
+    "state": "positive",
+    "target_state": "positive",
+    "other_state": "positive",
+    "target_value": 17,
+    "other_value": 17,
+    "family": "flatJSON",
+    "target_role": 0,
+    "target_identity": "Birch",
+    "other_identity": "Cedar",
+    "position": "first",
+    "target_record_position": "first",
+    "records": [
+      {
+        "batch": "Birch",
+        "sampled_soils": 17,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 0,
+        "state": "positive",
+        "is_target": true
+      },
+      {
+        "batch": "Cedar",
+        "sampled_soils": 17,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 1,
+        "state": "positive",
+        "is_target": false
+      }
+    ]
+  },
+  {
+    "id": "dev_flatJSON_opositive_r0_first_zero",
+    "expected": "NO",
+    "state": "zero",
+    "target_state": "zero",
+    "other_state": "positive",
+    "target_value": 0,
+    "other_value": 17,
+    "family": "flatJSON",
+    "target_role": 0,
+    "target_identity": "Birch",
+    "other_identity": "Cedar",
+    "position": "first",
+    "target_record_position": "first",
+    "records": [
+      {
+        "batch": "Birch",
+        "sampled_soils": 0,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 0,
+        "state": "zero",
+        "is_target": true
+      },
+      {
+        "batch": "Cedar",
+        "sampled_soils": 17,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 1,
+        "state": "positive",
+        "is_target": false
+      }
+    ]
+  },
+  {
+    "id": "dev_flatJSON_opositive_r0_first_missing",
+    "expected": "WITHHOLD",
+    "state": "missing",
+    "target_state": "missing",
+    "other_state": "positive",
+    "target_value": null,
+    "other_value": 17,
+    "family": "flatJSON",
+    "target_role": 0,
+    "target_identity": "Birch",
+    "other_identity": "Cedar",
+    "position": "first",
+    "target_record_position": "first",
+    "records": [
+      {
+        "batch": "Birch",
+        "sampled_soils": null,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 0,
+        "state": "missing",
+        "is_target": true
+      },
+      {
+        "batch": "Cedar",
+        "sampled_soils": 17,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 1,
+        "state": "positive",
+        "is_target": false
+      }
+    ]
+  },
+  {
+    "id": "dev_table_opositive_r1_last_positive",
+    "expected": "YES",
+    "state": "positive",
+    "target_state": "positive",
+    "other_state": "positive",
+    "target_value": 17,
+    "other_value": 17,
+    "family": "table",
+    "target_role": 1,
+    "target_identity": "Cedar",
+    "other_identity": "Birch",
+    "position": "last",
+    "target_record_position": "last",
+    "records": [
+      {
+        "batch": "Birch",
+        "sampled_soils": 17,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 0,
+        "state": "positive",
+        "is_target": false
+      },
+      {
+        "batch": "Cedar",
+        "sampled_soils": 17,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 1,
+        "state": "positive",
+        "is_target": true
+      }
+    ]
+  },
+  {
+    "id": "dev_table_opositive_r1_last_zero",
+    "expected": "NO",
+    "state": "zero",
+    "target_state": "zero",
+    "other_state": "positive",
+    "target_value": 0,
+    "other_value": 17,
+    "family": "table",
+    "target_role": 1,
+    "target_identity": "Cedar",
+    "other_identity": "Birch",
+    "position": "last",
+    "target_record_position": "last",
+    "records": [
+      {
+        "batch": "Birch",
+        "sampled_soils": 17,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 0,
+        "state": "positive",
+        "is_target": false
+      },
+      {
+        "batch": "Cedar",
+        "sampled_soils": 0,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 1,
+        "state": "zero",
+        "is_target": true
+      }
+    ]
+  },
+  {
+    "id": "dev_table_opositive_r1_last_missing",
+    "expected": "WITHHOLD",
+    "state": "missing",
+    "target_state": "missing",
+    "other_state": "positive",
+    "target_value": null,
+    "other_value": 17,
+    "family": "table",
+    "target_role": 1,
+    "target_identity": "Cedar",
+    "other_identity": "Birch",
+    "position": "last",
+    "target_record_position": "last",
+    "records": [
+      {
+        "batch": "Birch",
+        "sampled_soils": 17,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 0,
+        "state": "positive",
+        "is_target": false
+      },
+      {
+        "batch": "Cedar",
+        "sampled_soils": null,
+        "observations_per_soil": 5,
+        "damaged_plots": 0,
+        "inspections": null,
+        "record_position": 1,
+        "state": "missing",
+        "is_target": true
+      }
+    ]
+  }
+]

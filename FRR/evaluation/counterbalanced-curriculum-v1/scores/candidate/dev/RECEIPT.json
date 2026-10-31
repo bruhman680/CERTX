@@ -1,0 +1,116 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "CS1-candidate-dev",
+  "identity": {
+    "family": "curriculum_state",
+    "facet": "state_label",
+    "cycle": "CS1",
+    "arm": "candidate"
+  },
+  "contract_sha256": "12d5d56c126541d0b09fb99a0868c90c1cf7558652ab2036d8cd47b27e3ffae3",
+  "sources": {
+    "raw": "77d5d9d0f251571f62cef166eff7d0578f20e95232f9fa99f3bd5b77b88203a6",
+    "keys": "3ee4d07ce007cdf751c2b28f7e2fe744d1a5efac470d17de4fe806ab19684930"
+  },
+  "summary": {
+    "calls": 12,
+    "label_matches": 4,
+    "match_fraction": {
+      "numerator": 1,
+      "denominator": 3
+    },
+    "constant_yes_matches": 4,
+    "labels": {
+      "NO": 12
+    },
+    "stops": {
+      "eos": 12
+    },
+    "input_tokens": 2332,
+    "output_tokens": 24
+  },
+  "rows": [
+    {
+      "run_id": "dev_fields_opositive_r0_first_positive__candidate__dev",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_fields_opositive_r0_first_zero__candidate__dev",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_fields_opositive_r0_first_missing__candidate__dev",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_prose_opositive_r1_last_positive__candidate__dev",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_prose_opositive_r1_last_zero__candidate__dev",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_prose_opositive_r1_last_missing__candidate__dev",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_flatJSON_opositive_r0_first_positive__candidate__dev",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_flatJSON_opositive_r0_first_zero__candidate__dev",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_flatJSON_opositive_r0_first_missing__candidate__dev",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_table_opositive_r1_last_positive__candidate__dev",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_table_opositive_r1_last_zero__candidate__dev",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_table_opositive_r1_last_missing__candidate__dev",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

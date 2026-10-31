@@ -1,0 +1,309 @@
+{
+  "alpha": 8,
+  "candidate_epochs": 1,
+  "candidate_unique_records": 144,
+  "control_artifacts": {
+    "/workspace/frr/evaluation/decision-loss-comparison-v1/run/sequence_mean/TRAINING_MANIFEST.json": "dc74742b54e218a281af6c6b64eaa1ed0c0a9187ea48fc80d1c748fd9c4390b4",
+    "/workspace/frr/evaluation/decision-loss-comparison-v1/run/sequence_mean/checkpoint/adapter.safetensors": "45ad2cca8c588bf2b63fada9f970a8997e945241496d885ce85cdf4646b5600e",
+    "/workspace/frr/evaluation/decision-loss-comparison-v1/run/sequence_mean/checkpoint/manifest.json": "4fa9b81d436126b16d0d8bf37bc53069ceab00ade523394b68d26d9cb2fa0898",
+    "/workspace/frr/evaluation/decision-loss-comparison-v1/run/sequence_mean/initial_adapter/adapter.safetensors": "1f500187fe68181e44596ce00290f896f854b43fae149fdae8eab312397b3954",
+    "/workspace/frr/evaluation/decision-loss-comparison-v1/run/sequence_mean/initial_adapter/manifest.json": "3fadc05a52beda5f7793cf8f8ee7654333faade97c33349678e51feb02746c3a"
+  },
+  "control_epochs": 2,
+  "control_manifest_path": "/workspace/frr/evaluation/decision-loss-comparison-v1/run/sequence_mean/TRAINING_MANIFEST.json",
+  "control_manifest_sha256": "dc74742b54e218a281af6c6b64eaa1ed0c0a9187ea48fc80d1c748fd9c4390b4",
+  "control_retrained": false,
+  "control_unique_records": 72,
+  "data_order": [
+    [
+      "train_flatJSON_opositive_r1_first_positive",
+      "train_flatJSON_opositive_r1_first_zero",
+      "train_flatJSON_opositive_r1_first_missing"
+    ],
+    [
+      "train_prose_ozero_r1_first_zero",
+      "train_prose_ozero_r1_first_missing",
+      "train_prose_ozero_r1_first_positive"
+    ],
+    [
+      "train_table_omissing_r0_last_missing",
+      "train_table_omissing_r0_last_positive",
+      "train_table_omissing_r0_last_zero"
+    ],
+    [
+      "train_fields_ozero_r1_last_positive",
+      "train_fields_ozero_r1_last_zero",
+      "train_fields_ozero_r1_last_missing"
+    ],
+    [
+      "train_table_opositive_r0_first_zero",
+      "train_table_opositive_r0_first_missing",
+      "train_table_opositive_r0_first_positive"
+    ],
+    [
+      "train_fields_opositive_r0_first_missing",
+      "train_fields_opositive_r0_first_positive",
+      "train_fields_opositive_r0_first_zero"
+    ],
+    [
+      "train_flatJSON_ozero_r0_first_positive",
+      "train_flatJSON_ozero_r0_first_zero",
+      "train_flatJSON_ozero_r0_first_missing"
+    ],
+    [
+      "train_flatJSON_omissing_r0_first_zero",
+      "train_flatJSON_omissing_r0_first_missing",
+      "train_flatJSON_omissing_r0_first_positive"
+    ],
+    [
+      "train_flatJSON_opositive_r0_last_missing",
+      "train_flatJSON_opositive_r0_last_positive",
+      "train_flatJSON_opositive_r0_last_zero"
+    ],
+    [
+      "train_table_omissing_r1_last_positive",
+      "train_table_omissing_r1_last_zero",
+      "train_table_omissing_r1_last_missing"
+    ],
+    [
+      "train_flatJSON_ozero_r1_last_zero",
+      "train_flatJSON_ozero_r1_last_missing",
+      "train_flatJSON_ozero_r1_last_positive"
+    ],
+    [
+      "train_table_opositive_r1_first_missing",
+      "train_table_opositive_r1_first_positive",
+      "train_table_opositive_r1_first_zero"
+    ],
+    [
+      "train_fields_omissing_r1_last_positive",
+      "train_fields_omissing_r1_last_zero",
+      "train_fields_omissing_r1_last_missing"
+    ],
+    [
+      "train_prose_omissing_r1_first_zero",
+      "train_prose_omissing_r1_first_missing",
+      "train_prose_omissing_r1_first_positive"
+    ],
+    [
+      "train_table_opositive_r0_last_missing",
+      "train_table_opositive_r0_last_positive",
+      "train_table_opositive_r0_last_zero"
+    ],
+    [
+      "train_fields_ozero_r0_last_positive",
+      "train_fields_ozero_r0_last_zero",
+      "train_fields_ozero_r0_last_missing"
+    ],
+    [
+      "train_prose_ozero_r0_last_zero",
+      "train_prose_ozero_r0_last_missing",
+      "train_prose_ozero_r0_last_positive"
+    ],
+    [
+      "train_prose_opositive_r0_first_missing",
+      "train_prose_opositive_r0_first_positive",
+      "train_prose_opositive_r0_first_zero"
+    ],
+    [
+      "train_flatJSON_opositive_r1_last_positive",
+      "train_flatJSON_opositive_r1_last_zero",
+      "train_flatJSON_opositive_r1_last_missing"
+    ],
+    [
+      "train_prose_omissing_r1_last_zero",
+      "train_prose_omissing_r1_last_missing",
+      "train_prose_omissing_r1_last_positive"
+    ],
+    [
+      "train_table_ozero_r1_first_missing",
+      "train_table_ozero_r1_first_positive",
+      "train_table_ozero_r1_first_zero"
+    ],
+    [
+      "train_table_omissing_r1_first_positive",
+      "train_table_omissing_r1_first_zero",
+      "train_table_omissing_r1_first_missing"
+    ],
+    [
+      "train_table_ozero_r0_last_zero",
+      "train_table_ozero_r0_last_missing",
+      "train_table_ozero_r0_last_positive"
+    ],
+    [
+      "train_fields_omissing_r0_last_missing",
+      "train_fields_omissing_r0_last_positive",
+      "train_fields_omissing_r0_last_zero"
+    ],
+    [
+      "train_table_opositive_r1_last_positive",
+      "train_table_opositive_r1_last_zero",
+      "train_table_opositive_r1_last_missing"
+    ],
+    [
+      "train_flatJSON_opositive_r0_first_zero",
+      "train_flatJSON_opositive_r0_first_missing",
+      "train_flatJSON_opositive_r0_first_positive"
+    ],
+    [
+      "train_prose_ozero_r0_first_missing",
+      "train_prose_ozero_r0_first_positive",
+      "train_prose_ozero_r0_first_zero"
+    ],
+    [
+      "train_prose_ozero_r1_last_positive",
+      "train_prose_ozero_r1_last_zero",
+      "train_prose_ozero_r1_last_missing"
+    ],
+    [
+      "train_fields_omissing_r1_first_zero",
+      "train_fields_omissing_r1_first_missing",
+      "train_fields_omissing_r1_first_positive"
+    ],
+    [
+      "train_table_ozero_r0_first_missing",
+      "train_table_ozero_r0_first_positive",
+      "train_table_ozero_r0_first_zero"
+    ],
+    [
+      "train_flatJSON_ozero_r0_last_positive",
+      "train_flatJSON_ozero_r0_last_zero",
+      "train_flatJSON_ozero_r0_last_missing"
+    ],
+    [
+      "train_prose_omissing_r0_last_zero",
+      "train_prose_omissing_r0_last_missing",
+      "train_prose_omissing_r0_last_positive"
+    ],
+    [
+      "train_flatJSON_omissing_r0_last_missing",
+      "train_flatJSON_omissing_r0_last_positive",
+      "train_flatJSON_omissing_r0_last_zero"
+    ],
+    [
+      "train_fields_opositive_r1_last_positive",
+      "train_fields_opositive_r1_last_zero",
+      "train_fields_opositive_r1_last_missing"
+    ],
+    [
+      "train_prose_opositive_r1_last_zero",
+      "train_prose_opositive_r1_last_missing",
+      "train_prose_opositive_r1_last_positive"
+    ],
+    [
+      "train_fields_ozero_r0_first_missing",
+      "train_fields_ozero_r0_first_positive",
+      "train_fields_ozero_r0_first_zero"
+    ],
+    [
+      "train_prose_omissing_r0_first_positive",
+      "train_prose_omissing_r0_first_zero",
+      "train_prose_omissing_r0_first_missing"
+    ],
+    [
+      "train_fields_opositive_r0_last_zero",
+      "train_fields_opositive_r0_last_missing",
+      "train_fields_opositive_r0_last_positive"
+    ],
+    [
+      "train_flatJSON_omissing_r1_first_missing",
+      "train_flatJSON_omissing_r1_first_positive",
+      "train_flatJSON_omissing_r1_first_zero"
+    ],
+    [
+      "train_fields_omissing_r0_first_positive",
+      "train_fields_omissing_r0_first_zero",
+      "train_fields_omissing_r0_first_missing"
+    ],
+    [
+      "train_fields_ozero_r1_first_zero",
+      "train_fields_ozero_r1_first_missing",
+      "train_fields_ozero_r1_first_positive"
+    ],
+    [
+      "train_flatJSON_omissing_r1_last_missing",
+      "train_flatJSON_omissing_r1_last_positive",
+      "train_flatJSON_omissing_r1_last_zero"
+    ],
+    [
+      "train_prose_opositive_r1_first_positive",
+      "train_prose_opositive_r1_first_zero",
+      "train_prose_opositive_r1_first_missing"
+    ],
+    [
+      "train_table_ozero_r1_last_zero",
+      "train_table_ozero_r1_last_missing",
+      "train_table_ozero_r1_last_positive"
+    ],
+    [
+      "train_table_omissing_r0_first_missing",
+      "train_table_omissing_r0_first_positive",
+      "train_table_omissing_r0_first_zero"
+    ],
+    [
+      "train_fields_opositive_r1_first_positive",
+      "train_fields_opositive_r1_first_zero",
+      "train_fields_opositive_r1_first_missing"
+    ],
+    [
+      "train_prose_opositive_r0_last_zero",
+      "train_prose_opositive_r0_last_missing",
+      "train_prose_opositive_r0_last_positive"
+    ],
+    [
+      "train_flatJSON_ozero_r1_first_missing",
+      "train_flatJSON_ozero_r1_first_positive",
+      "train_flatJSON_ozero_r1_first_zero"
+    ]
+  ],
+  "dropout": 0,
+  "effective_batch": 3,
+  "gradient_clip": 1,
+  "interpretation": "curriculum package comparison; support/formats/unique records/exposures differ; not a pure position causal test",
+  "lr": 0.001,
+  "max_training_tokens": 256,
+  "microbatch": 1,
+  "objective": "sequence_mean",
+  "preflight_only": true,
+  "prior_preserved": {
+    "/workspace/frr/evaluation/decision-loss-comparison-v1/run/sequence_mean/TRAINING_MANIFEST.json": "dc74742b54e218a281af6c6b64eaa1ed0c0a9187ea48fc80d1c748fd9c4390b4",
+    "/workspace/frr/evaluation/decision-loss-comparison-v1/run/sequence_mean/checkpoint/adapter.safetensors": "45ad2cca8c588bf2b63fada9f970a8997e945241496d885ce85cdf4646b5600e",
+    "/workspace/frr/evaluation/decision-loss-comparison-v1/run/sequence_mean/checkpoint/manifest.json": "4fa9b81d436126b16d0d8bf37bc53069ceab00ade523394b68d26d9cb2fa0898",
+    "/workspace/frr/evaluation/decision-loss-comparison-v1/run/sequence_mean/initial_adapter/adapter.safetensors": "1f500187fe68181e44596ce00290f896f854b43fae149fdae8eab312397b3954",
+    "/workspace/frr/evaluation/decision-loss-comparison-v1/run/sequence_mean/initial_adapter/manifest.json": "3fadc05a52beda5f7793cf8f8ee7654333faade97c33349678e51feb02746c3a",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/RAW_OUTPUTS.jsonl": "800f30b3649d03ea4c99403468cf8c6857ef2134ded133c90727b7d19a67f857"
+  },
+  "rank": 4,
+  "seed": 73103,
+  "source_hashes": {
+    "/workspace/frr/evaluation/counterbalanced-curriculum-v1/fixtures/DATA/DEV_CASES.json": "7a5425c3594c605e09ad08df9e076aec43ce4cb7c1730f5cd444c6fc6abb7319",
+    "/workspace/frr/evaluation/counterbalanced-curriculum-v1/fixtures/DATA/DEV_KEYS.json": "7f3aa640431fd158f1f0681b7c22f3c29ec9a19ad360d06c4e9525ac7d1d8cdb",
+    "/workspace/frr/evaluation/counterbalanced-curriculum-v1/fixtures/DATA/GUIDANCE.json": "a3ae0344da886994707e581d3fe56a0b61cc2bf3a11ccfaca8a4dbcdd382bdd5",
+    "/workspace/frr/evaluation/counterbalanced-curriculum-v1/fixtures/DATA/PRIMARY_CASES.json": "9648df02001f91a25f6e5653fb9d09699a7ff1712ad8840fd5196872dc86068e",
+    "/workspace/frr/evaluation/counterbalanced-curriculum-v1/fixtures/DATA/PRIMARY_KEYS.json": "eed51ce7c5ff9904083a7c195143227715cfa735ebd78916100704e1698c095e",
+    "/workspace/frr/evaluation/counterbalanced-curriculum-v1/fixtures/DATA/TRAIN.json": "b84730766e75af90492d28b097ac3d9647836cda5018abfbb8e9c6e94dd0d63b",
+    "/workspace/frr/evaluation/counterbalanced-curriculum-v1/fixtures/DATA_CHECKS.json": "2e3183e3ba09449b1161b003581dc2c66462ee5b3f6baf954291df7212e72fac",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/DATA_CHECKS.json": "72db4519048da079bfbc8c4adb4e6e38c416acfd6abcc0947308d4e34b0bf1db",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/EVAL_CASES.json": "4df0ef80a2574b76c742b1c5de462ab38a00bf984b4ca6cbd0369a05343b0bcd",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/FREEZE.json": "38607b5871542bb2c8f5d855817bbd4ae5368e641259165f87998e6819191ad0",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/GUIDANCE.json": "a3ae0344da886994707e581d3fe56a0b61cc2bf3a11ccfaca8a4dbcdd382bdd5",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/KEYS.json": "79e8bbd04b204db71df22cd31f3fc3d648af6470c0e4a488c809b4d24e530596",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/PLAN.md": "1dbfd5c0945a9febb79b475f7e8542f0c65d7f6eb3916ded08a09728a68069c9",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/PRESERVATION_BEFORE.json": "79cc2e4e842f6fcc4766e5ac2e2f5164b88940153664a0c00e0ae13b8504d444",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/PROBE_RESULT.json": "03497c44971dde7376aa25fec5dc9b651ab4ac88b02e1889b74a4a967aea782a",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/RESEARCH_SCOUT.md": "10ad775aad7b9e19432323ec4306b52fc1e62bc57486018c3762a74d31049f2b",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/TRAIN.json": "73dc778dca1361d4079e8df91f7836e374cf2a83c92e0801c3e71cfed2e75cd7",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/experiment.py": "3ecfa89c6a99c1809bca9203557898837796e3efe1286805c2ca0ca9a3252d70",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/lora_cpu.py": "f71548da3ebaea3f97d9bd5680962485f3ea0c52ebbdea5b5f14a2fdeac49cef",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/probe.py": "30364ffa6b31496870926099cdf9a6bfbdb032e04f875bf594cc7f4687d3df3d",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/run.py": "f02eb8c5cee585d832ce11b1da96f1f31ea9de3c326985c2212bbb89f4e097c0",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/score.py": "894e2e31ca278e634e537594ef088bc12d1c98e058b40160abd4c65584eb406f",
+    "/workspace/frr/evaluation/lora-state-pilot-v1/test_lora_cpu.py": "85765388a31663eb3cb8b1a4e8d8e889b17b24c6678700b270edc26a04e3b833",
+    "/workspace/frr/tools/evidence_threshold.py": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+    "/workspace/frr/tools/stored_run_audit.py": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa"
+  },
+  "steps": 48,
+  "wall_seconds_per_arm": 300,
+  "weight_decay": 0.01,
+  "working_limit_bytes": 5153960755
+}

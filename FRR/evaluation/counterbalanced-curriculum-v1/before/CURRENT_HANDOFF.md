@@ -1,0 +1,17 @@
+# Current FRR handoff
+
+30 October2026 America/Chicago. Decision-losscomparison and declaredLCAcontact complete. No backgroundtask remains; newuserinstructions supersedehistoricalpause/nextlabels.
+
+## Latest results
+
+[Decisionlossreport](evaluation/decision-loss-comparison-v1/REPORT.md):2freshLoRAbranches,48balancedupdates each,identicalinitialadapterdigest/trainorder/base. Sequence-mean vs0.5first-token+0.5meanremainderCE.360actualgenerations acrossdev12/primary24/challenge36/regression48 permodel. Trainedprimarytie8/24; challenge10/36→15/36 butfirst/lastreference24/36; discordant6/24→10/24 versusfirst/last12/24. Regression19/48→18/48,positive/zero tradeoff. Missingrecallprimary0/8/challenge0/12/regression0/16inboth; balanceddev1/4. No defaultpromotionor reliablemissingnessclaim.628oldexternalfilesunchanged,360newcache/tokenchecks,initial/order/base/checkpointhashesverified.
+
+Separate-agentdatareview beforetrainingcaughtprepared24alltargetlast andcoupledOther/observations;originalsfrozenretained,prospective36casecrossedchallengeaddedbeforemodelwork. TargetnameRowanfixed,authorednotindependentpopulation. Classbias/answercompletion distinguishedfromgrounding. Currentprimary/challenge nowexposedregressions. Nextstrongest:counterbalancetargetrole/positionandOtherstatewithintrainingcurriculum,newnames/compositionsheldout;single-tokenaliasmappingcandidate remainsunperformed. Lossallocationinterventionnotprooftokenlengthcausedfailure.
+
+## Optional provenance utility
+
+[LCAguide](evaluation/lca-ancestry-contact-v1/README.md),[tool](tools/evidence_ancestry.py):read-only declaredchild→parentDAGquery,returnsALLmaximalcommonancestors,maymultiple. Real4node/4edgerecorded-parentqueryreturnssharedrawandkeyparents.12authoredtests+640boundedBooleanclosurequeriespass. Callergraphpartial;no truth/cause/independence/confidence inferred,emptysharedsetnotindependenceproof. Existingstationregistryunchanged. Datecontextcorrection/sourceupstreamlicenses recorded.
+
+## Preservation/boundaries
+
+Originalmodeldefaultunchanged;allpreviousbranchesretained;newinitial/finaladapters,optimizerstatesand97updatelogs(1resourcepreflight+96main)preservedwithhashes. Checkpoint/tensor/optimizerbinarieslocalnotGit;source/data/tokenlogs/hashespublished,localpersistence notindependentarchive. Fourpriornavigationdocsbytearchived. Existingverifiers/registry/core/schema/broadqueueunchanged;oldreadinggate staysfailed. Includedlocal/tools only,nopaidAPI/rental/install;accountusage/billnotvisible. Assistantscoded/reviewed/scouted,coordinatordesign/integration;notindependentexperimentreplication. No furthertraining/modelpromotion/backgroundtask.

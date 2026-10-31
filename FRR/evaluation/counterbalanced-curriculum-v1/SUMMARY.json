@@ -1,0 +1,1180 @@
+{
+  "scope": "singleauthoredcurriculum-packagecomparison,fixedpriorcontrolreused,nopurepositioncausalclaim",
+  "arms": {
+    "original": {
+      "dev": {
+        "calls": 12,
+        "label_matches": 0,
+        "match_fraction": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "constant_yes_matches": 4,
+        "labels": {
+          "UNRESOLVED": 12
+        },
+        "stops": {
+          "token_limit": 12
+        },
+        "input_tokens": 2332,
+        "output_tokens": 96,
+        "perclass": {
+          "YES": {
+            "n": 4,
+            "matches": 0
+          },
+          "NO": {
+            "n": 4,
+            "matches": 0
+          },
+          "WITHHOLD": {
+            "n": 4,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "UNRESOLVED": 4
+          },
+          "NO": {
+            "UNRESOLVED": 4
+          },
+          "WITHHOLD": {
+            "UNRESOLVED": 4
+          }
+        },
+        "by_family": {
+          "fields": {
+            "n": 3,
+            "matches": 0
+          },
+          "flatJSON": {
+            "n": 3,
+            "matches": 0
+          },
+          "prose": {
+            "n": 3,
+            "matches": 0
+          },
+          "table": {
+            "n": 3,
+            "matches": 0
+          }
+        },
+        "inference_seconds": 11.251461021980504,
+        "cache_bytes": 111388032
+      },
+      "primary": {
+        "calls": 72,
+        "label_matches": 0,
+        "match_fraction": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "constant_yes_matches": 24,
+        "labels": {
+          "UNRESOLVED": 72
+        },
+        "stops": {
+          "token_limit": 72
+        },
+        "input_tokens": 16992,
+        "output_tokens": 576,
+        "perclass": {
+          "YES": {
+            "n": 24,
+            "matches": 0
+          },
+          "NO": {
+            "n": 24,
+            "matches": 0
+          },
+          "WITHHOLD": {
+            "n": 24,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "UNRESOLVED": 24
+          },
+          "NO": {
+            "UNRESOLVED": 24
+          },
+          "WITHHOLD": {
+            "UNRESOLVED": 24
+          }
+        },
+        "by_family": {
+          "XML": {
+            "n": 36,
+            "matches": 0
+          },
+          "bulletsections": {
+            "n": 36,
+            "matches": 0
+          }
+        },
+        "inference_seconds": 75.78626322295167,
+        "cache_bytes": 806569184,
+        "header_pairs": {
+          "discordant": {
+            "n": 24,
+            "both_correct": 0,
+            "valid_label_switches": 0
+          },
+          "same_state": {
+            "n": 12,
+            "both_correct": 0,
+            "valid_label_switches": 0
+          }
+        },
+        "discordant_cases": {
+          "n": 48,
+          "matches": 0
+        },
+        "by_position": {
+          "first": {
+            "n": 36,
+            "matches": 0
+          },
+          "last": {
+            "n": 36,
+            "matches": 0
+          }
+        },
+        "by_role": {
+          "0": {
+            "n": 36,
+            "matches": 0
+          },
+          "1": {
+            "n": 36,
+            "matches": 0
+          }
+        },
+        "reference_policies": {
+          "constant_class": 24,
+          "first_or_last_field": 48,
+          "fixed_named_record": 48,
+          "header_blind_fully_correct_discordant_pairs": 0,
+          "discordant_first_or_last_field": 24
+        }
+      }
+    },
+    "control": {
+      "dev": {
+        "calls": 12,
+        "label_matches": 4,
+        "match_fraction": {
+          "numerator": 1,
+          "denominator": 3
+        },
+        "constant_yes_matches": 4,
+        "labels": {
+          "YES": 12
+        },
+        "stops": {
+          "eos": 12
+        },
+        "input_tokens": 2332,
+        "output_tokens": 36,
+        "perclass": {
+          "YES": {
+            "n": 4,
+            "matches": 4
+          },
+          "NO": {
+            "n": 4,
+            "matches": 0
+          },
+          "WITHHOLD": {
+            "n": 4,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "YES": 4
+          },
+          "NO": {
+            "YES": 4
+          },
+          "WITHHOLD": {
+            "YES": 4
+          }
+        },
+        "by_family": {
+          "fields": {
+            "n": 3,
+            "matches": 1
+          },
+          "flatJSON": {
+            "n": 3,
+            "matches": 1
+          },
+          "prose": {
+            "n": 3,
+            "matches": 1
+          },
+          "table": {
+            "n": 3,
+            "matches": 1
+          }
+        },
+        "inference_seconds": 7.6177389260265045,
+        "cache_bytes": 108623232
+      },
+      "primary": {
+        "calls": 72,
+        "label_matches": 24,
+        "match_fraction": {
+          "numerator": 1,
+          "denominator": 3
+        },
+        "constant_yes_matches": 24,
+        "labels": {
+          "YES": 72
+        },
+        "stops": {
+          "eos": 72
+        },
+        "input_tokens": 16992,
+        "output_tokens": 216,
+        "perclass": {
+          "YES": {
+            "n": 24,
+            "matches": 24
+          },
+          "NO": {
+            "n": 24,
+            "matches": 0
+          },
+          "WITHHOLD": {
+            "n": 24,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "YES": 24
+          },
+          "NO": {
+            "YES": 24
+          },
+          "WITHHOLD": {
+            "YES": 24
+          }
+        },
+        "by_family": {
+          "XML": {
+            "n": 36,
+            "matches": 12
+          },
+          "bulletsections": {
+            "n": 36,
+            "matches": 12
+          }
+        },
+        "inference_seconds": 53.694837962961174,
+        "cache_bytes": 789980256,
+        "header_pairs": {
+          "discordant": {
+            "n": 24,
+            "both_correct": 0,
+            "valid_label_switches": 0
+          },
+          "same_state": {
+            "n": 12,
+            "both_correct": 4,
+            "valid_label_switches": 0
+          }
+        },
+        "discordant_cases": {
+          "n": 48,
+          "matches": 16
+        },
+        "by_position": {
+          "first": {
+            "n": 36,
+            "matches": 12
+          },
+          "last": {
+            "n": 36,
+            "matches": 12
+          }
+        },
+        "by_role": {
+          "0": {
+            "n": 36,
+            "matches": 12
+          },
+          "1": {
+            "n": 36,
+            "matches": 12
+          }
+        },
+        "reference_policies": {
+          "constant_class": 24,
+          "first_or_last_field": 48,
+          "fixed_named_record": 48,
+          "header_blind_fully_correct_discordant_pairs": 0,
+          "discordant_first_or_last_field": 24
+        }
+      }
+    },
+    "candidate": {
+      "dev": {
+        "calls": 12,
+        "label_matches": 4,
+        "match_fraction": {
+          "numerator": 1,
+          "denominator": 3
+        },
+        "constant_yes_matches": 4,
+        "labels": {
+          "NO": 12
+        },
+        "stops": {
+          "eos": 12
+        },
+        "input_tokens": 2332,
+        "output_tokens": 24,
+        "perclass": {
+          "YES": {
+            "n": 4,
+            "matches": 0
+          },
+          "NO": {
+            "n": 4,
+            "matches": 4
+          },
+          "WITHHOLD": {
+            "n": 4,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "NO": 4
+          },
+          "NO": {
+            "NO": 4
+          },
+          "WITHHOLD": {
+            "NO": 4
+          }
+        },
+        "by_family": {
+          "fields": {
+            "n": 3,
+            "matches": 1
+          },
+          "flatJSON": {
+            "n": 3,
+            "matches": 1
+          },
+          "prose": {
+            "n": 3,
+            "matches": 1
+          },
+          "table": {
+            "n": 3,
+            "matches": 1
+          }
+        },
+        "inference_seconds": 7.371165260017733,
+        "cache_bytes": 108070272
+      },
+      "primary": {
+        "calls": 72,
+        "label_matches": 24,
+        "match_fraction": {
+          "numerator": 1,
+          "denominator": 3
+        },
+        "constant_yes_matches": 24,
+        "labels": {
+          "NO": 72
+        },
+        "stops": {
+          "eos": 72
+        },
+        "input_tokens": 16992,
+        "output_tokens": 144,
+        "perclass": {
+          "YES": {
+            "n": 24,
+            "matches": 0
+          },
+          "NO": {
+            "n": 24,
+            "matches": 24
+          },
+          "WITHHOLD": {
+            "n": 24,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "NO": 24
+          },
+          "NO": {
+            "NO": 24
+          },
+          "WITHHOLD": {
+            "NO": 24
+          }
+        },
+        "by_family": {
+          "XML": {
+            "n": 36,
+            "matches": 12
+          },
+          "bulletsections": {
+            "n": 36,
+            "matches": 12
+          }
+        },
+        "inference_seconds": 47.30281415596255,
+        "cache_bytes": 786662496,
+        "header_pairs": {
+          "discordant": {
+            "n": 24,
+            "both_correct": 0,
+            "valid_label_switches": 0
+          },
+          "same_state": {
+            "n": 12,
+            "both_correct": 4,
+            "valid_label_switches": 0
+          }
+        },
+        "discordant_cases": {
+          "n": 48,
+          "matches": 16
+        },
+        "by_position": {
+          "first": {
+            "n": 36,
+            "matches": 12
+          },
+          "last": {
+            "n": 36,
+            "matches": 12
+          }
+        },
+        "by_role": {
+          "0": {
+            "n": 36,
+            "matches": 12
+          },
+          "1": {
+            "n": 36,
+            "matches": 12
+          }
+        },
+        "reference_policies": {
+          "constant_class": 24,
+          "first_or_last_field": 48,
+          "fixed_named_record": 48,
+          "header_blind_fully_correct_discordant_pairs": 0,
+          "discordant_first_or_last_field": 24
+        }
+      }
+    }
+  },
+  "control_candidate_pairs": {
+    "dev": {
+      "rows": [
+        {
+          "id": "dev_fields_opositive_r0_first_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "dev_fields_opositive_r0_first_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "dev_fields_opositive_r0_first_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "dev_prose_opositive_r1_last_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "dev_prose_opositive_r1_last_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "dev_prose_opositive_r1_last_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "dev_flatJSON_opositive_r0_first_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "dev_flatJSON_opositive_r0_first_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "dev_flatJSON_opositive_r0_first_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "dev_table_opositive_r1_last_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "dev_table_opositive_r1_last_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "dev_table_opositive_r1_last_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        }
+      ],
+      "counts": {
+        "control_only": 4,
+        "candidate_only": 4,
+        "neither_matches": 4
+      }
+    },
+    "primary": {
+      "rows": [
+        {
+          "id": "primary_XML_opositive_r0_first_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_opositive_r1_last_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_opositive_r0_last_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_opositive_r1_first_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_ozero_r0_first_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_opositive_r1_last_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_XML_opositive_r0_last_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_XML_ozero_r1_first_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_omissing_r0_first_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_opositive_r1_last_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_opositive_r0_last_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_omissing_r1_first_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_opositive_r0_first_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_XML_ozero_r1_last_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_ozero_r0_last_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_opositive_r1_first_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_XML_ozero_r0_first_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_XML_ozero_r1_last_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_XML_ozero_r0_last_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_XML_ozero_r1_first_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_XML_omissing_r0_first_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_XML_ozero_r1_last_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_ozero_r0_last_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_omissing_r1_first_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_XML_opositive_r0_first_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_omissing_r1_last_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_omissing_r0_last_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_opositive_r1_first_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_ozero_r0_first_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_omissing_r1_last_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_XML_omissing_r0_last_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_XML_ozero_r1_first_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_omissing_r0_first_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_omissing_r1_last_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_omissing_r0_last_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_XML_omissing_r1_first_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_opositive_r0_first_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_opositive_r1_last_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_opositive_r0_last_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_opositive_r1_first_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_ozero_r0_first_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_opositive_r1_last_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_bulletsections_opositive_r0_last_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_bulletsections_ozero_r1_first_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_omissing_r0_first_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_opositive_r1_last_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_opositive_r0_last_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_omissing_r1_first_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_opositive_r0_first_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_bulletsections_ozero_r1_last_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_ozero_r0_last_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_opositive_r1_first_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_bulletsections_ozero_r0_first_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_bulletsections_ozero_r1_last_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_bulletsections_ozero_r0_last_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_bulletsections_ozero_r1_first_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_bulletsections_omissing_r0_first_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_bulletsections_ozero_r1_last_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_ozero_r0_last_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_omissing_r1_first_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_bulletsections_opositive_r0_first_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_omissing_r1_last_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_omissing_r0_last_positive",
+          "expected": "YES",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": true,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_opositive_r1_first_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_ozero_r0_first_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_omissing_r1_last_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_bulletsections_omissing_r0_last_zero",
+          "expected": "NO",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": true
+        },
+        {
+          "id": "primary_bulletsections_ozero_r1_first_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_omissing_r0_first_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_omissing_r1_last_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_omissing_r0_last_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        },
+        {
+          "id": "primary_bulletsections_omissing_r1_first_missing",
+          "expected": "WITHHOLD",
+          "control": "YES",
+          "candidate": "NO",
+          "control_match": false,
+          "candidate_match": false
+        }
+      ],
+      "counts": {
+        "control_only": 24,
+        "candidate_only": 24,
+        "neither_matches": 24
+      }
+    }
+  }
+}
