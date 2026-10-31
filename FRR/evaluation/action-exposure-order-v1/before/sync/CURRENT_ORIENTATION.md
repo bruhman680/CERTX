@@ -1,0 +1,9 @@
+# Current orientation
+
+31 October 2026 UTC. [Handoff](../CURRENT_HANDOFF.md), [action-choice report](../evaluation/reader-action-choice-v1/REPORT.md), [plain follow-up](../evaluation/reader-action-choice-v1/plain-actions/REPORT.md), [emission control](../evaluation/reader-action-choice-v1/action-emission/REPORT.md).
+
+The finite choice environment works, but reliable adaptive evidence seeking is not shown. Both routers have 0/32 strict free letter replies. Plain commands let the adapted reader return 16/16 valid YES/NO words, driven by menu order (all forward YES/all reverse NO); neither free model requests evidence. Forced code routing makes requests but is format sensitive and relies partly on unavailable-tool backstops. Explicitly asked, the adapted model can emit TARGET/UNKNOWN in both copying frames, so a total command-vocabulary inability is not the explanation.
+
+129 actual generation probes, 747 candidate sequences, 69 distinct prompt strings and 672 logical routes with reuse explicit. Nine fixed-worker probes, no training or new weights. The observed-input rule resolves 18 answers plus 6 justified unknowns out of 24 at 12 nominal query units. Nominal units are not dollars. All freezes/audits pass; 3,537 older files unchanged before sync, four current documents archived. Optional method note/module link added; core/schema/general tools/default/queue unchanged.
+
+Next: compare a brief planning allowance and in-context action-selection examples as separate factors. Immediate eight-token routing did not test extended planning or open wandering. Use fresh transfer tests, preserving free/forced/emission/selection/worker distinctions. Matched-length neighbor and broader handoff/source-revision branches stay open. Grok relay remains parked. No background work or paid service/install/download. Current local adapter snapshot and older desktop capsule are different; no new restore/backup claim.

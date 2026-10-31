@@ -1,5 +1,15 @@
 # Current research map
 
+Latest contact, 31 October 2026 UTC: [cyclic sign positions and evidence exposure](action-exposure-order-v1/REPORT.md).48 fixed-adapted-reader probes, no training; action meanings/labels/facts preserved. Evidence before versus after menu gives 9/18 versus 11/18 correct visible-record actions, 7 changed valid matched choices, and no appropriate unavailable UNKNOWN. First-position preference interacts with answer vocabulary: FULL/TARGET never chosen even when first. Four exact old-prompt replications match. Supports an order effect in this setup, not linear internal reasoning or a unique primacy/recency mechanism.
+
+Paused at user request, with current handoff and next options saved. No background work, default/module/tool/queue promotion or new model state. Earlier failures/results remain intact.
+
+## Earlier orientation snapshots
+
+The following preserves then-current wording. It is historical and does not override the current handoff; original bytes are archived in this contact.
+
+# Current research map
+
 Latest integration, 31 October 2026 UTC: [finite action choice](reader-action-choice-v1/REPORT.md), [plain-command control](reader-action-choice-v1/plain-actions/REPORT.md), [explicit emission](reader-action-choice-v1/action-emission/REPORT.md). Six choices are executable, but free action selection is not reliably evidence seeking: strict codes 0/32 for both models; adapted plain replies 16/16 valid YES/NO driven by display order, with no free requests. TARGET and UNKNOWN are expressible when explicitly supplied. Forced policy requests require separate interpretation. The observed-input rule provides a strong simple comparator.
 
 129 actual generation probes, 69 distinct prompt strings, 672 logical routes with reuse explicit; zero training or new weights. Optional action-expression/selection guidance added, no core/default/queue promotion. Current handoff records unexecuted next contacts; earlier failed results remain intact.
