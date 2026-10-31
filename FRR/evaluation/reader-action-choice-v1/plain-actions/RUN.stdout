@@ -1,0 +1,305 @@
+{"router": "original", "probes": 16}
+{"router": "adapted", "probes": 16}
+{
+  "routers": {
+    "original": {
+      "n": 16,
+      "recognized_prefixes": 6,
+      "exact_action_words": 0,
+      "free_texts": {
+        "YES: answer positive\nNO:": 6,
+        "To complete the task, Rowan needs": 6,
+        "(YES)\n\nThe target": 2,
+        "(no visible record)\n\n(": 2
+      },
+      "parsed_actions": {
+        "YES": 6,
+        "INVALID": 10
+      },
+      "forced_actions": {
+        "YES": 16
+      }
+    },
+    "adapted": {
+      "n": 16,
+      "recognized_prefixes": 16,
+      "exact_action_words": 16,
+      "free_texts": {
+        "YES": 8,
+        "NO": 8
+      },
+      "parsed_actions": {
+        "YES": 8,
+        "NO": 8
+      },
+      "forced_actions": {
+        "YES": 8,
+        "NO": 8
+      }
+    }
+  },
+  "policies": {
+    "original__free": {
+      "total": {
+        "n": 48,
+        "valid_actions": 12,
+        "action_counts": {
+          "YES": 12,
+          "INVALID": 36
+        },
+        "end_counts": {
+          "ANSWER_POLICY": 12,
+          "INVALID_ACTION": 36
+        },
+        "grounded_answers": 2,
+        "class_matches_regardless_support": 4,
+        "unsupported_class_matches": 2,
+        "justified_unknown": 0,
+        "unknown_with_accessible_evidence": 0,
+        "resolved_in_this_toy": 2,
+        "requests": 0,
+        "unavailable_requests": 0,
+        "nominal_tool_cost": 0,
+        "worker_cache_hits": 0
+      },
+      "by_order": {
+        "forward": {
+          "n": 24,
+          "valid_actions": 12,
+          "action_counts": {
+            "YES": 12,
+            "INVALID": 12
+          },
+          "end_counts": {
+            "ANSWER_POLICY": 12,
+            "INVALID_ACTION": 12
+          },
+          "grounded_answers": 2,
+          "class_matches_regardless_support": 4,
+          "unsupported_class_matches": 2,
+          "justified_unknown": 0,
+          "unknown_with_accessible_evidence": 0,
+          "resolved_in_this_toy": 2,
+          "requests": 0,
+          "unavailable_requests": 0,
+          "nominal_tool_cost": 0,
+          "worker_cache_hits": 0
+        },
+        "reverse": {
+          "n": 24,
+          "valid_actions": 0,
+          "action_counts": {
+            "INVALID": 24
+          },
+          "end_counts": {
+            "INVALID_ACTION": 24
+          },
+          "grounded_answers": 0,
+          "class_matches_regardless_support": 0,
+          "unsupported_class_matches": 0,
+          "justified_unknown": 0,
+          "unknown_with_accessible_evidence": 0,
+          "resolved_in_this_toy": 0,
+          "requests": 0,
+          "unavailable_requests": 0,
+          "nominal_tool_cost": 0,
+          "worker_cache_hits": 0
+        }
+      }
+    },
+    "original__forced": {
+      "total": {
+        "n": 48,
+        "valid_actions": 48,
+        "action_counts": {
+          "YES": 48
+        },
+        "end_counts": {
+          "ANSWER_POLICY": 48
+        },
+        "grounded_answers": 4,
+        "class_matches_regardless_support": 16,
+        "unsupported_class_matches": 12,
+        "justified_unknown": 0,
+        "unknown_with_accessible_evidence": 0,
+        "resolved_in_this_toy": 4,
+        "requests": 0,
+        "unavailable_requests": 0,
+        "nominal_tool_cost": 0,
+        "worker_cache_hits": 0
+      },
+      "by_order": {
+        "forward": {
+          "n": 24,
+          "valid_actions": 24,
+          "action_counts": {
+            "YES": 24
+          },
+          "end_counts": {
+            "ANSWER_POLICY": 24
+          },
+          "grounded_answers": 2,
+          "class_matches_regardless_support": 8,
+          "unsupported_class_matches": 6,
+          "justified_unknown": 0,
+          "unknown_with_accessible_evidence": 0,
+          "resolved_in_this_toy": 2,
+          "requests": 0,
+          "unavailable_requests": 0,
+          "nominal_tool_cost": 0,
+          "worker_cache_hits": 0
+        },
+        "reverse": {
+          "n": 24,
+          "valid_actions": 24,
+          "action_counts": {
+            "YES": 24
+          },
+          "end_counts": {
+            "ANSWER_POLICY": 24
+          },
+          "grounded_answers": 2,
+          "class_matches_regardless_support": 8,
+          "unsupported_class_matches": 6,
+          "justified_unknown": 0,
+          "unknown_with_accessible_evidence": 0,
+          "resolved_in_this_toy": 2,
+          "requests": 0,
+          "unavailable_requests": 0,
+          "nominal_tool_cost": 0,
+          "worker_cache_hits": 0
+        }
+      }
+    },
+    "adapted__free": {
+      "total": {
+        "n": 48,
+        "valid_actions": 48,
+        "action_counts": {
+          "YES": 24,
+          "NO": 24
+        },
+        "end_counts": {
+          "ANSWER_POLICY": 48
+        },
+        "grounded_answers": 4,
+        "class_matches_regardless_support": 16,
+        "unsupported_class_matches": 12,
+        "justified_unknown": 0,
+        "unknown_with_accessible_evidence": 0,
+        "resolved_in_this_toy": 4,
+        "requests": 0,
+        "unavailable_requests": 0,
+        "nominal_tool_cost": 0,
+        "worker_cache_hits": 0
+      },
+      "by_order": {
+        "forward": {
+          "n": 24,
+          "valid_actions": 24,
+          "action_counts": {
+            "YES": 24
+          },
+          "end_counts": {
+            "ANSWER_POLICY": 24
+          },
+          "grounded_answers": 2,
+          "class_matches_regardless_support": 8,
+          "unsupported_class_matches": 6,
+          "justified_unknown": 0,
+          "unknown_with_accessible_evidence": 0,
+          "resolved_in_this_toy": 2,
+          "requests": 0,
+          "unavailable_requests": 0,
+          "nominal_tool_cost": 0,
+          "worker_cache_hits": 0
+        },
+        "reverse": {
+          "n": 24,
+          "valid_actions": 24,
+          "action_counts": {
+            "NO": 24
+          },
+          "end_counts": {
+            "ANSWER_POLICY": 24
+          },
+          "grounded_answers": 2,
+          "class_matches_regardless_support": 8,
+          "unsupported_class_matches": 6,
+          "justified_unknown": 0,
+          "unknown_with_accessible_evidence": 0,
+          "resolved_in_this_toy": 2,
+          "requests": 0,
+          "unavailable_requests": 0,
+          "nominal_tool_cost": 0,
+          "worker_cache_hits": 0
+        }
+      }
+    },
+    "adapted__forced": {
+      "total": {
+        "n": 48,
+        "valid_actions": 48,
+        "action_counts": {
+          "YES": 24,
+          "NO": 24
+        },
+        "end_counts": {
+          "ANSWER_POLICY": 48
+        },
+        "grounded_answers": 4,
+        "class_matches_regardless_support": 16,
+        "unsupported_class_matches": 12,
+        "justified_unknown": 0,
+        "unknown_with_accessible_evidence": 0,
+        "resolved_in_this_toy": 4,
+        "requests": 0,
+        "unavailable_requests": 0,
+        "nominal_tool_cost": 0,
+        "worker_cache_hits": 0
+      },
+      "by_order": {
+        "forward": {
+          "n": 24,
+          "valid_actions": 24,
+          "action_counts": {
+            "YES": 24
+          },
+          "end_counts": {
+            "ANSWER_POLICY": 24
+          },
+          "grounded_answers": 2,
+          "class_matches_regardless_support": 8,
+          "unsupported_class_matches": 6,
+          "justified_unknown": 0,
+          "unknown_with_accessible_evidence": 0,
+          "resolved_in_this_toy": 2,
+          "requests": 0,
+          "unavailable_requests": 0,
+          "nominal_tool_cost": 0,
+          "worker_cache_hits": 0
+        },
+        "reverse": {
+          "n": 24,
+          "valid_actions": 24,
+          "action_counts": {
+            "NO": 24
+          },
+          "end_counts": {
+            "ANSWER_POLICY": 24
+          },
+          "grounded_answers": 2,
+          "class_matches_regardless_support": 8,
+          "unsupported_class_matches": 6,
+          "justified_unknown": 0,
+          "unknown_with_accessible_evidence": 0,
+          "resolved_in_this_toy": 2,
+          "requests": 0,
+          "unavailable_requests": 0,
+          "nominal_tool_cost": 0,
+          "worker_cache_hits": 0
+        }
+      }
+    }
+  }
+}

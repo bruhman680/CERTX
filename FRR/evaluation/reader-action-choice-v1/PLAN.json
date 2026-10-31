@@ -1,0 +1,39 @@
+{
+  "actions": [
+    "YES",
+    "NO",
+    "WITHHOLD",
+    "FULL",
+    "TARGET",
+    "UNKNOWN"
+  ],
+  "base_revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "base_weights_sha256": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c",
+  "deduplication": "exact visible router prompts per model; exact worker prompt cache within this run",
+  "fixed_policies": [
+    "always_target",
+    "always_full",
+    "always_unknown",
+    "observed_rule"
+  ],
+  "max_output_tokens": 8,
+  "max_prompt_tokens": 256,
+  "modes": [
+    "free",
+    "forced"
+  ],
+  "no_training_or_output_based_retry": true,
+  "routers": [
+    "original",
+    "adapted"
+  ],
+  "seed": 73103,
+  "worker_full_prefix": "Read only the record for the target plot.\n",
+  "worker_mapping": {
+    "missing": "WITHHOLD",
+    "positive": "YES",
+    "zero": "NO"
+  },
+  "worker_template": "Map the status to its answer. {mapping}. Return only the answer.\n\n{source}",
+  "working_limit_bytes": 5153960755
+}

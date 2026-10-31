@@ -1,5 +1,15 @@
 # Current research map
 
+Latest integration, 31 October 2026 UTC: [finite action choice](reader-action-choice-v1/REPORT.md), [plain-command control](reader-action-choice-v1/plain-actions/REPORT.md), [explicit emission](reader-action-choice-v1/action-emission/REPORT.md). Six choices are executable, but free action selection is not reliably evidence seeking: strict codes 0/32 for both models; adapted plain replies 16/16 valid YES/NO driven by display order, with no free requests. TARGET and UNKNOWN are expressible when explicitly supplied. Forced policy requests require separate interpretation. The observed-input rule provides a strong simple comparator.
+
+129 actual generation probes, 69 distinct prompt strings, 672 logical routes with reuse explicit; zero training or new weights. Optional action-expression/selection guidance added, no core/default/queue promotion. Current handoff records unexecuted next contacts; earlier failed results remain intact.
+
+## Earlier orientation snapshots
+
+The following text retains its historical then-current wording. It does not replace the current handoff; original bytes are archived in this contact.
+
+# Current research map
+
 Latest integration, 31 October 2026 UTC: [downstream error/repair room](downstream-repair-room-v1/REPORT.md) and [identity repair loop](downstream-repair-room-v1/identity-repair-loop/REPORT.md). Initial 23/36 proposals become 12/36 with source-free review, 22/36 with full-source review, and 36/36 with a selected record. Fresh selected-source readout survives correct and wrong proposals at 12/12 each. Wrong selection can preserve the answer class while violating target identity; all 48 mismatches later trigger one tool-mediated repair, with 48/48 final answers and original errors retained.
 
 408 generated answers, 171 unique prompts; loop inputs already appeared in the main contact. No training, autonomous reopening, independent replication or general FRR claim. Optional provisional-downstream guidance is linked; current handoff has unexecuted next contacts.

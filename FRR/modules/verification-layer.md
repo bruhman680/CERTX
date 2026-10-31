@@ -166,3 +166,8 @@ The60authored/regression/proposal expectations match, with12development test gro
 ## Let experimental failures continue without silently accepting them
 
 The optional [provisional downstream repair example](../examples/provisional-downstream-repair.md) records a completed contact in which all imperfect proposals continue to bounded downstream readers before a source receipt is applied. A failed upstream check can limit the inference while a separately scoped experiment studies propagation or repair. Keep the original proposal and source limitations, measure repairs and regressions, and append revised outputs rather than overwriting history. A later source check may guide reopening and acceptance; it is not proof of model error awareness or external-world truth. Existing failed task gates and verifier domains remain unchanged.
+
+
+## Separate next-action expression from useful selection
+
+The optional [action-expression and selection note](../examples/action-expression-and-selection.md) records a finite-menu contact with original/adapted routers. Keep free output, constrained decoding, semantic action choice, tool execution and source-supported outcome distinct. A model-chosen unknown action is different from an unavailable-tool backstop; copying a command is different from choosing it in context. Preserve format failures while allowing separately scoped interface and downstream diagnostics. This adds no default routing policy, confidence threshold or general tool-use claim.

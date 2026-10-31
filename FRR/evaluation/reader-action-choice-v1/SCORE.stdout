@@ -1,0 +1,221 @@
+{
+  "routers": {
+    "original": {
+      "unique_probes": 32,
+      "valid_free_codes": 0,
+      "free_texts": {
+        "A: YES": 4,
+        "Next action:": 16,
+        "A: Report insufficient evidence\nB:": 8,
+        "A: YES\n\nQuestion:": 1,
+        "A: YES\nB: Y": 2,
+        "C: Report insufficient evidence": 1
+      },
+      "forced_codes": {
+        "B": 30,
+        "F": 2
+      },
+      "free_codes": {
+        "INVALID": 32
+      },
+      "probe_seconds": 91.14265432200136
+    },
+    "adapted": {
+      "unique_probes": 32,
+      "valid_free_codes": 0,
+      "free_texts": {
+        "YES": 27,
+        "NO": 4,
+        "(no visible record)": 1
+      },
+      "forced_codes": {
+        "E": 8,
+        "B": 22,
+        "A": 2
+      },
+      "free_codes": {
+        "INVALID": 32
+      },
+      "probe_seconds": 85.99657310599832
+    }
+  },
+  "policy_totals": {
+    "adapted__forced": {
+      "n": 96,
+      "valid_actions": 96,
+      "action_counts": {
+        "TARGET": 56,
+        "NO": 28,
+        "UNKNOWN": 12
+      },
+      "end_counts": {
+        "ANSWER_WORKER": 44,
+        "ANSWER_POLICY": 28,
+        "UNKNOWN_POLICY": 12,
+        "UNKNOWN_TOOL": 12
+      },
+      "grounded_answers": 48,
+      "class_matches_regardless_support": 56,
+      "unsupported_class_matches": 8,
+      "justified_unknown": 18,
+      "unknown_with_accessible_evidence": 6,
+      "resolved_in_this_toy": 66,
+      "requests": 56,
+      "unavailable_requests": 12,
+      "nominal_tool_cost": 56,
+      "worker_cache_hits": 44
+    },
+    "adapted__free": {
+      "n": 96,
+      "valid_actions": 0,
+      "action_counts": {
+        "INVALID": 96
+      },
+      "end_counts": {
+        "INVALID_ACTION": 96
+      },
+      "grounded_answers": 0,
+      "class_matches_regardless_support": 0,
+      "unsupported_class_matches": 0,
+      "justified_unknown": 0,
+      "unknown_with_accessible_evidence": 0,
+      "resolved_in_this_toy": 0,
+      "requests": 0,
+      "unavailable_requests": 0,
+      "nominal_tool_cost": 0,
+      "worker_cache_hits": 0
+    },
+    "always_full": {
+      "n": 24,
+      "valid_actions": 24,
+      "action_counts": {
+        "FULL": 24
+      },
+      "end_counts": {
+        "ANSWER_WORKER": 18,
+        "UNKNOWN_TOOL": 6
+      },
+      "grounded_answers": 9,
+      "class_matches_regardless_support": 9,
+      "unsupported_class_matches": 0,
+      "justified_unknown": 6,
+      "unknown_with_accessible_evidence": 0,
+      "resolved_in_this_toy": 15,
+      "requests": 24,
+      "unavailable_requests": 6,
+      "nominal_tool_cost": 48,
+      "worker_cache_hits": 12
+    },
+    "always_target": {
+      "n": 24,
+      "valid_actions": 24,
+      "action_counts": {
+        "TARGET": 24
+      },
+      "end_counts": {
+        "ANSWER_WORKER": 18,
+        "UNKNOWN_TOOL": 6
+      },
+      "grounded_answers": 18,
+      "class_matches_regardless_support": 18,
+      "unsupported_class_matches": 0,
+      "justified_unknown": 6,
+      "unknown_with_accessible_evidence": 0,
+      "resolved_in_this_toy": 24,
+      "requests": 24,
+      "unavailable_requests": 6,
+      "nominal_tool_cost": 24,
+      "worker_cache_hits": 18
+    },
+    "always_unknown": {
+      "n": 24,
+      "valid_actions": 24,
+      "action_counts": {
+        "UNKNOWN": 24
+      },
+      "end_counts": {
+        "UNKNOWN_POLICY": 24
+      },
+      "grounded_answers": 0,
+      "class_matches_regardless_support": 0,
+      "unsupported_class_matches": 0,
+      "justified_unknown": 6,
+      "unknown_with_accessible_evidence": 18,
+      "resolved_in_this_toy": 6,
+      "requests": 0,
+      "unavailable_requests": 0,
+      "nominal_tool_cost": 0,
+      "worker_cache_hits": 0
+    },
+    "observed_rule": {
+      "n": 24,
+      "valid_actions": 24,
+      "action_counts": {
+        "YES": 2,
+        "TARGET": 12,
+        "UNKNOWN": 6,
+        "NO": 2,
+        "WITHHOLD": 2
+      },
+      "end_counts": {
+        "ANSWER_POLICY": 6,
+        "ANSWER_WORKER": 12,
+        "UNKNOWN_POLICY": 6
+      },
+      "grounded_answers": 18,
+      "class_matches_regardless_support": 18,
+      "unsupported_class_matches": 0,
+      "justified_unknown": 6,
+      "unknown_with_accessible_evidence": 0,
+      "resolved_in_this_toy": 24,
+      "requests": 12,
+      "unavailable_requests": 0,
+      "nominal_tool_cost": 12,
+      "worker_cache_hits": 12
+    },
+    "original__forced": {
+      "n": 96,
+      "valid_actions": 96,
+      "action_counts": {
+        "NO": 48,
+        "TARGET": 44,
+        "YES": 4
+      },
+      "end_counts": {
+        "ANSWER_POLICY": 52,
+        "ANSWER_WORKER": 32,
+        "UNKNOWN_TOOL": 12
+      },
+      "grounded_answers": 36,
+      "class_matches_regardless_support": 48,
+      "unsupported_class_matches": 12,
+      "justified_unknown": 12,
+      "unknown_with_accessible_evidence": 0,
+      "resolved_in_this_toy": 48,
+      "requests": 44,
+      "unavailable_requests": 12,
+      "nominal_tool_cost": 44,
+      "worker_cache_hits": 29
+    },
+    "original__free": {
+      "n": 96,
+      "valid_actions": 0,
+      "action_counts": {
+        "INVALID": 96
+      },
+      "end_counts": {
+        "INVALID_ACTION": 96
+      },
+      "grounded_answers": 0,
+      "class_matches_regardless_support": 0,
+      "unsupported_class_matches": 0,
+      "justified_unknown": 0,
+      "unknown_with_accessible_evidence": 0,
+      "resolved_in_this_toy": 0,
+      "requests": 0,
+      "unavailable_requests": 0,
+      "nominal_tool_cost": 0,
+      "worker_cache_hits": 0
+    }
+  }
+}

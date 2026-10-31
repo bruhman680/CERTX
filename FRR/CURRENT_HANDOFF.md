@@ -1,37 +1,35 @@
 # Current FRR handoff
 
-31 October 2026 UTC. [Downstream error/repair contact](evaluation/downstream-repair-room-v1/REPORT.md) and its [identity repair loop](evaluation/downstream-repair-room-v1/identity-repair-loop/REPORT.md) are complete. No model job is running. New user instructions supersede historical pause/next labels. The user is reviewing from mobile; no desktop action is needed to read the reports.
+31 October 2026 UTC. [Finite-action contact](evaluation/reader-action-choice-v1/REPORT.md), [plain-command follow-up](evaluation/reader-action-choice-v1/plain-actions/REPORT.md) and [action-emission control](evaluation/reader-action-choice-v1/action-emission/REPORT.md) complete. No running model job. New user instructions supersede historical pause/next labels; user is reviewing from mobile.
 
-## Latest observations
+## Latest understanding
 
-All earlier canonical proposals—23 correct and 13 wrong—continued through the frozen downstream experiment.
+A real finite choice point exists: answer YES/NO/WITHHOLD, request FULL/TARGET evidence, or report epistemic UNKNOWN. At most one request; fixed canonical worker reads its result. Tools execute requests against known toy sources. This is designed affordances, not unrestricted autonomy, composing queries or access to internal reasoning.
 
-- Source-free review: 12/36 correct, with 4 repairs and 15 previously correct answers damaged. Every output was NO; evidence receipts remain UNSUPPORTED.
-- Proposal plus reopened full source: 22/36 correct, with 1 repair and 2 regressions.
-- Proposal plus source-selected target: 36/36 correct, with all 13 errors repaired and all 23 correct answers retained.
-- All 72 no-proposal replay baseline input/output token sequences match the earlier study.
+Original and adapted routers each produce 0/32 strict valid free A–F codes. Forced code scoring executes requests but is code/layout sensitive. Across four layouts, original forced policy has 36 grounded answers plus 12 justified unknowns out of 96 logical routes; adapted has 48 plus 18 out of 96. These figures include unavailable-tool backstops and are not proof of model uncertainty recognition.
 
-Twelve fresh paired source cases: no-proposal full source scores 6/12, selected source 12/12. Under correct/wrong1/wrong2 proposals, full-source results are 4/5/4 of 12; selected-source results are 12/12 for each; source-free results are 4/12 for each. This is explicit-status reading, not real missing-field detection or calibrated abstention. WITHHOLD still means a supplied missing status.
+Outcome-informed plain-word follow-up: adapted reader produces 16/16 exact commands, all YES/NO. It says YES for every forward-menu observation and NO for every reversed-menu observation. Original has six recognized YES menu echoes out of sixteen, none exact. Neither free router requests evidence. Forced word scoring also chooses only answers. No tested menu/model/mode shows the specific request-when-available / UNKNOWN-when-unavailable pair in the exploratory diagnostic.
 
-Wrong-record handoffs yield 12/36 matching replay labels and 0/12 on fresh cases, but all 48 have TARGET_MISMATCH receipts. A one-step controller then reopens the original target and presents it with the actual mistaken answer retained: 48/48 final labels and source receipts, 36 repairs and 12 correct labels retained. All 48 loop input prompts were already represented in the main contact. This is an operational replay, not independent capability confirmation. The parser knows the narrow grammar and could solve the toy without an LLM. No autonomous error detection/retrieval or general FRR efficacy is demonstrated.
+Explicit copying control: adapted exact 10/12, leading-word 11/12; TARGET and UNKNOWN exact in both instruction frames. Original exact 6/12, leading 8/12. Action words can be expressed under supplied instructions; choosing appropriate moves remains unestablished. No action training was performed.
 
-## Practice refinement
+## Comparators and measurement
 
-The [optional provisional downstream pattern](examples/provisional-downstream-repair.md), linked from the verification module, allows imperfect answers to continue when the question is propagation or repair. Preserve the trace and uncertainty; separate experimental movement from acceptance. Measure repairs and damage to correct answers. Append revisions instead of overwriting failures. Historical failed gates remain failed for their original claims. Core/schema, general tools, default model and queue statuses are unchanged.
+24 logical scenarios: three target states, both record positions, four observation/access conditions; only eight distinct visible observations. Fixed observed-input rule resolves 18 grounded answers plus 6 justified unknowns at 12 nominal query units. Always TARGET also resolves all 24 but costs 24 units; always FULL gives 9 grounded plus 6 justified unknowns at 48 units; always UNKNOWN leaves 18 accessible cases deferred. No universal utility scalar or financial cost interpretation.
+
+129 actual generation probes / 747 candidate sequences across all contacts, 69 distinct prompt strings across model conditions. 672 logical routes explicitly reuse router decisions and worker responses. Nine actual fixed-worker probes in the main contact; plain follow-up reuses those measured exact worker prompts. Repeated worlds/contexts are not independent samples. Raw prompts/IDs/outputs/scores/action maps/tool traces/source receipts/costs preserved. All three freezes and audits pass; ten focused tests pass. No new weights or optimizer updates.
 
 ## Strongest next directions
 
-1. Keep the learned readout fixed; compare matched-length neutral, agreeing and conflicting neighbors, crossing target identity/order. Narrow context/selection effects without assuming extra review helps.
-2. Separately test a reader's ability to request reopening or evidence, instead of receiving a harness-chosen path. No autonomous retrieval policy or explicit epistemic-uncertainty action has been learned here.
-3. Broader branch: actual writer-produced compressed handoff, source revision, reader retrieval/reopening, stale/wrong-source controls and measured costs. Registry/LCA record declared lineage, not truth or independence.
-4. A balanced two-record selection curriculum remains possible. Preserve known-acquired simple readout and frame regressions. A failure need not block a study of later repair, but limits what its success would establish.
+1. Separately vary a brief planning allowance and a small in-context action-selection lesson, against immediate/no-lesson routing. The current eight-token one-step test did not measure extended planning or open wandering. Keep the observed-rule comparator and use fresh names, source formats and orderings. Teach when usable evidence exists, when to request it and when it is unavailable. Preserve emission, selection, worker correctness and costs as separate measurements. Any gain would be taught/context-induced. No such lesson has yet run.
+2. Continue fixed-readout matched-length neutral/agreeing/conflicting-neighbor tests. A failed policy interface does not prohibit separately scoped downstream/error studies.
+3. Broader branch remains actual writer-produced compressed handoff, source revision, reader retrieval/reopening, stale/wrong-source controls and measured costs. The earlier bounded downstream contact preserved mistakes and showed target-selected support could repair them; autonomous model reopening remains unshown.
 
-## Preservation and scope
+## Practice and preservation
 
-360 main plus 48 loop generated answers; 408 choice batches/1,224 candidate sequences; 171 unique prompts across them. No optimizer updates. Fresh reader contexts use the same saved canonical adapter, not independent agents. Original base/adapter and 3,485 earlier local files were checked unchanged before sync. Four old navigation/module documents are archived under this contact's before directory. All freezes, raw prompts/IDs/outputs/scores, transitions, source receipts and loop parent IDs are retained. No full KV tensors were added for these readouts; earlier cache histories remain untouched.
+[Optional action-expression/selection note](examples/action-expression-and-selection.md) linked from verification module. No core/schema/general tools/default model/queue change. Four previous navigation/module documents byte-archived under this contact's before directory; 3,537 older local files checked unchanged before sync. Original base, current canonical adapter, earlier failed gates and source histories unchanged. No paid API, rental, download, installation or background task; account usage/billing not visible. No independent empirical replication, broad FRR effect or self-awareness claim.
 
-No new model binaries. The existing local /workspace/frr_capsules/simple-readout-and-selection-v1.tar.gz (12.8 MB) contains this canonical adapter, excluding dense base/runtime/older seasons. The user's older 6.3 MB desktop capsule is different. No independently verified off-workspace copy of the current adapter or clean-environment/optimizer-resume rehearsal. No paid API, rental, install or download; usage/billing is not visible. No background tasks.
+No new model binaries. Existing local 12.8 MB simple-readout snapshot contains the current canonical adapter and excludes dense base/runtime/older history; the older desktop 6.3 MB capsule is different. No clean-environment or optimizer-resume rehearsal or independently verified off-workspace copy of the current adapter. Readout KV tensors are not retained in these diagnostic contacts; earlier cache histories remain intact.
 
-## Parked sources and older seasons
+## Parked sources
 
-The [Grok substrate-depth/neural-criticality relay](evaluation/grok-substrate-depth-intake-v1/NOTE.md) remains preserved, unvetted and unadopted. Prior acquisition, two-record and frame contacts remain [here](evaluation/simple-readout-acquisition-v1/REPORT.md). They showed all four simple readouts at 12/12 seen and 12/12 held-out, full bridge results of 13/11/10/23 of 36, parser crops at 36/36 (six unique), and a single-record frame at 12/12 per arm. Original results and then-current pause/next labels remain history.
+The [Grok substrate-depth/neural-criticality relay](evaluation/grok-substrate-depth-intake-v1/NOTE.md) remains preserved, unvetted and unadopted. The [downstream repair contact](evaluation/downstream-repair-room-v1/REPORT.md) and earlier acquisition/source-selection seasons remain history with their original claims and then-current next/pause labels.
