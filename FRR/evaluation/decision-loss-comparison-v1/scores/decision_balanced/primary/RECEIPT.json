@@ -1,0 +1,190 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "DLC1-decision_balanced-primary",
+  "identity": {
+    "family": "decision_loss_compare",
+    "facet": "state_label",
+    "cycle": "DLC1",
+    "arm": "decision_balanced"
+  },
+  "contract_sha256": "9bee75ffafb7fe047cc1d884d3b243edb16001724b317523ed16332dca46af6a",
+  "sources": {
+    "raw": "cbb75240a2f73fcbeb00c997e2f3f663d1e31d2b72f3d2d7346b74978ce7003d",
+    "keys": "a1d3649da353ff9fbdd3d77740e31d995d9975a8d07d81a0d6fb4ce736c47487"
+  },
+  "summary": {
+    "calls": 24,
+    "label_matches": 8,
+    "match_fraction": {
+      "numerator": 1,
+      "denominator": 3
+    },
+    "constant_yes_matches": 8,
+    "labels": {
+      "NO": 6,
+      "YES": 17,
+      "WITHHOLD": 1
+    },
+    "stops": {
+      "eos": 24
+    },
+    "input_tokens": 4766,
+    "output_tokens": 68
+  },
+  "rows": [
+    {
+      "run_id": "DT_xml_records_0_positive__decision_balanced__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_0_zero__decision_balanced__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "DT_xml_records_0_missing__decision_balanced__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_1_positive__decision_balanced__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "DT_xml_records_1_zero__decision_balanced__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_1_missing__decision_balanced__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_2_positive__decision_balanced__primary",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_2_zero__decision_balanced__primary",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "DT_xml_records_2_missing__decision_balanced__primary",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_3_positive__decision_balanced__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "DT_xml_records_3_zero__decision_balanced__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_3_missing__decision_balanced__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_0_positive__decision_balanced__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "DT_bullet_sections_0_zero__decision_balanced__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_0_missing__decision_balanced__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_1_positive__decision_balanced__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "DT_bullet_sections_1_zero__decision_balanced__primary",
+      "label": "WITHHOLD",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_1_missing__decision_balanced__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_2_positive__decision_balanced__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "DT_bullet_sections_2_zero__decision_balanced__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_2_missing__decision_balanced__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_3_positive__decision_balanced__primary",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "DT_bullet_sections_3_zero__decision_balanced__primary",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_3_missing__decision_balanced__primary",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

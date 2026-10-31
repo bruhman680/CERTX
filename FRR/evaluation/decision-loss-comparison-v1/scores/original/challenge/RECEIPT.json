@@ -1,0 +1,260 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "DLC1-original-challenge",
+  "identity": {
+    "family": "decision_loss_compare",
+    "facet": "state_label",
+    "cycle": "DLC1",
+    "arm": "original"
+  },
+  "contract_sha256": "f588ca0b2e994fa676e43f975680d3cf8647ff63635e8799c4ff3aa1e352a17a",
+  "sources": {
+    "raw": "028aea0d573cd5bd0a39aee53024236f71727e6481d0cd130d24f83fc3cec1cb",
+    "keys": "0f556d67aab855110005dcba6a5e587ada0f0c7ae060239649a6fb36780edba5"
+  },
+  "summary": {
+    "calls": 36,
+    "label_matches": 0,
+    "match_fraction": {
+      "numerator": 0,
+      "denominator": 1
+    },
+    "constant_yes_matches": 12,
+    "labels": {
+      "UNRESOLVED": 36
+    },
+    "stops": {
+      "token_limit": 36
+    },
+    "input_tokens": 8196,
+    "output_tokens": 288
+  },
+  "rows": [
+    {
+      "run_id": "CH_xml_order_positive_positive_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_positive_positive_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_positive_zero_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_positive_zero_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_positive_missing_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_positive_missing_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_zero_positive_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_zero_positive_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_zero_zero_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_zero_zero_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_zero_missing_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_zero_missing_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_positive_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_positive_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_zero_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_zero_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_missing_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_missing_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_positive_positive_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_positive_positive_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_positive_zero_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_positive_zero_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_positive_missing_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_positive_missing_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_zero_positive_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_zero_positive_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_zero_zero_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_zero_zero_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_zero_missing_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_zero_missing_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_positive_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_positive_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_zero_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_zero_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_missing_1__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_missing_0__original__challenge",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

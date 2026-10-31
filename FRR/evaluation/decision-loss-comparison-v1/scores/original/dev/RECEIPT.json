@@ -1,0 +1,116 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "DLC1-original-dev",
+  "identity": {
+    "family": "decision_loss_compare",
+    "facet": "state_label",
+    "cycle": "DLC1",
+    "arm": "original"
+  },
+  "contract_sha256": "09a2eeba0f3ae98fe9bf10a999c4acdab60ba8c97b884ff9060b779de3a7ee63",
+  "sources": {
+    "raw": "45a7856871424afb1409207b302d29f844604e133b72948dc5041e6a9c215540",
+    "keys": "a08350f11d821b52f7c3994e623f0aef12fd9bcee90c9335b6af31ae0f21bab3"
+  },
+  "summary": {
+    "calls": 12,
+    "label_matches": 0,
+    "match_fraction": {
+      "numerator": 0,
+      "denominator": 1
+    },
+    "constant_yes_matches": 4,
+    "labels": {
+      "UNRESOLVED": 12
+    },
+    "stops": {
+      "token_limit": 12
+    },
+    "input_tokens": 2139,
+    "output_tokens": 96
+  },
+  "rows": [
+    {
+      "run_id": "dev_fields_0_positive__original__dev",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_fields_0_zero__original__dev",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_fields_0_missing__original__dev",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_prose_0_positive__original__dev",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_prose_0_zero__original__dev",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_prose_0_missing__original__dev",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_json_0_positive__original__dev",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_json_0_zero__original__dev",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_json_0_missing__original__dev",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_table_0_positive__original__dev",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_table_0_zero__original__dev",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_table_0_missing__original__dev",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

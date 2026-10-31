@@ -1,0 +1,48 @@
+{
+  "graph_id": "lora-recorded-parent-contact-v1",
+  "edge_semantics": "A derivation-record node declares the raw/key parent hashes literally recorded in its DERIVATION.json. Parent nodes are terminal only within this intentionally partial graph; no complete station or model ancestry is asserted.",
+  "nodes": [
+    {
+      "id": "shared-raw-parent",
+      "parents": [],
+      "artifact": {
+        "path": "evaluation/lora-state-pilot-v1/RAW_OUTPUTS.jsonl",
+        "sha256": "800f30b3649d03ea4c99403468cf8c6857ef2134ded133c90727b7d19a67f857"
+      }
+    },
+    {
+      "id": "shared-key-parent",
+      "parents": [],
+      "artifact": {
+        "path": "evaluation/lora-state-pilot-v1/KEYS.json",
+        "sha256": "79e8bbd04b204db71df22cd31f3fc3d648af6470c0e4a488c809b4d24e530596"
+      }
+    },
+    {
+      "id": "original_test-derivation-record",
+      "parents": [
+        "shared-raw-parent",
+        "shared-key-parent"
+      ],
+      "artifact": {
+        "path": "evaluation/lora-state-pilot-v1/original_test/DERIVATION.json",
+        "sha256": "0fa076161a15f4f58bdf97dec776b46e77363ed78c5126a835f9dfdee702b9cd"
+      }
+    },
+    {
+      "id": "adapted_test-derivation-record",
+      "parents": [
+        "shared-raw-parent",
+        "shared-key-parent"
+      ],
+      "artifact": {
+        "path": "evaluation/lora-state-pilot-v1/adapted_test/DERIVATION.json",
+        "sha256": "073559616bfe1b3ec75d82031919a6db6a198b0cd3ff14a6f9c3138527935274"
+      }
+    }
+  ],
+  "query": [
+    "original_test-derivation-record",
+    "adapted_test-derivation-record"
+  ]
+}

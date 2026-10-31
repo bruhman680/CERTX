@@ -1,0 +1,333 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "DLC1-decision_balanced-regression",
+  "identity": {
+    "family": "decision_loss_compare",
+    "facet": "state_label",
+    "cycle": "DLC1",
+    "arm": "decision_balanced"
+  },
+  "contract_sha256": "6caa21cf569b0849881a095034f26622c300087e2f111796ee86c71b84aed912",
+  "sources": {
+    "raw": "f03101fc433aeb7215b5316338cb0137b218d9940697a07cd1026e3b24599224",
+    "keys": "91f4c73e30ac6a655d44ab34c18cfb0b2a742f5754656be5e4d3509d4d2c56ac"
+  },
+  "summary": {
+    "calls": 48,
+    "label_matches": 18,
+    "match_fraction": {
+      "numerator": 3,
+      "denominator": 8
+    },
+    "constant_yes_matches": 16,
+    "labels": {
+      "NO": 39,
+      "YES": 9
+    },
+    "stops": {
+      "eos": 48
+    },
+    "input_tokens": 9386,
+    "output_tokens": 105
+  },
+  "rows": [
+    {
+      "run_id": "test_scoped_table_0_positive__decision_balanced__regression",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_scoped_table_0_zero__decision_balanced__regression",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_scoped_table_0_missing__decision_balanced__regression",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_scoped_table_1_positive__decision_balanced__regression",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_scoped_table_1_zero__decision_balanced__regression",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_scoped_table_1_missing__decision_balanced__regression",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_scoped_table_2_positive__decision_balanced__regression",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_scoped_table_2_zero__decision_balanced__regression",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_scoped_table_2_missing__decision_balanced__regression",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_scoped_table_3_positive__decision_balanced__regression",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_scoped_table_3_zero__decision_balanced__regression",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_scoped_table_3_missing__decision_balanced__regression",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_nested_list_0_positive__decision_balanced__regression",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_nested_list_0_zero__decision_balanced__regression",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_nested_list_0_missing__decision_balanced__regression",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_nested_list_1_positive__decision_balanced__regression",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_nested_list_1_zero__decision_balanced__regression",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_nested_list_1_missing__decision_balanced__regression",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_nested_list_2_positive__decision_balanced__regression",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_nested_list_2_zero__decision_balanced__regression",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_nested_list_2_missing__decision_balanced__regression",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_nested_list_3_positive__decision_balanced__regression",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_nested_list_3_zero__decision_balanced__regression",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_nested_list_3_missing__decision_balanced__regression",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_register_0_positive__decision_balanced__regression",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_register_0_zero__decision_balanced__regression",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_register_0_missing__decision_balanced__regression",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_register_1_positive__decision_balanced__regression",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_register_1_zero__decision_balanced__regression",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_register_1_missing__decision_balanced__regression",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_register_2_positive__decision_balanced__regression",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_register_2_zero__decision_balanced__regression",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_register_2_missing__decision_balanced__regression",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_register_3_positive__decision_balanced__regression",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_register_3_zero__decision_balanced__regression",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_register_3_missing__decision_balanced__regression",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_interleaved_0_positive__decision_balanced__regression",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "test_interleaved_0_zero__decision_balanced__regression",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_interleaved_0_missing__decision_balanced__regression",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_interleaved_1_positive__decision_balanced__regression",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_interleaved_1_zero__decision_balanced__regression",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_interleaved_1_missing__decision_balanced__regression",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_interleaved_2_positive__decision_balanced__regression",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_interleaved_2_zero__decision_balanced__regression",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "test_interleaved_2_missing__decision_balanced__regression",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "test_interleaved_3_positive__decision_balanced__regression",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "test_interleaved_3_zero__decision_balanced__regression",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "test_interleaved_3_missing__decision_balanced__regression",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

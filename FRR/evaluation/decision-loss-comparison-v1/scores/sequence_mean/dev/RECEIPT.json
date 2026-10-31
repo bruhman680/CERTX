@@ -1,0 +1,117 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "DLC1-sequence_mean-dev",
+  "identity": {
+    "family": "decision_loss_compare",
+    "facet": "state_label",
+    "cycle": "DLC1",
+    "arm": "sequence_mean"
+  },
+  "contract_sha256": "9f397b1c7d2335e20c6bf26387fdb6b10685618c530140e3b0e10c4c61c06e3e",
+  "sources": {
+    "raw": "caa1d386466a30456e000b32ded0fbd7dd3cf9c719e28a7c094cbe7481138297",
+    "keys": "85cea7ec8471311ad014f93a136dbb40563384f935df24f28a9eeb04354b165c"
+  },
+  "summary": {
+    "calls": 12,
+    "label_matches": 5,
+    "match_fraction": {
+      "numerator": 5,
+      "denominator": 12
+    },
+    "constant_yes_matches": 4,
+    "labels": {
+      "NO": 5,
+      "YES": 7
+    },
+    "stops": {
+      "eos": 12
+    },
+    "input_tokens": 2139,
+    "output_tokens": 31
+  },
+  "rows": [
+    {
+      "run_id": "dev_fields_0_positive__sequence_mean__dev",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_fields_0_zero__sequence_mean__dev",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_fields_0_missing__sequence_mean__dev",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_prose_0_positive__sequence_mean__dev",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_prose_0_zero__sequence_mean__dev",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_prose_0_missing__sequence_mean__dev",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_json_0_positive__sequence_mean__dev",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_json_0_zero__sequence_mean__dev",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_json_0_missing__sequence_mean__dev",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_table_0_positive__sequence_mean__dev",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_table_0_zero__sequence_mean__dev",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_table_0_missing__sequence_mean__dev",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

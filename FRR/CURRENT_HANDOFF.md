@@ -1,22 +1,17 @@
 # Current FRR handoff
 
-30 October2026 America/Chicago. LoRA/state pilot plus read-only station registry settled. No background process/task remains. Newuserinstructions supersedehistoricalpause/nextlabels.
+30 October2026 America/Chicago. Decision-losscomparison and declaredLCAcontact complete. No backgroundtask remains; newuserinstructions supersedehistoricalpause/nextlabels.
 
-## Latest connected results
+## Latest results
 
-[LoRA report](evaluation/lora-state-pilot-v1/REPORT.md):rank4/alpha8/dropout0q/vadapters,230400trainableparams,frozenbase. Separateeligiblebalancedprobe,then48/48plannedpilotupdates completed in164.091sec. Eachupdatehaspositive/zero/missing;48exposuresperclass.120actualgenerations;newstructuraltestoriginal1/48versusadapted19/48,constantbaseline16/48. Adaptedrecallspositive13/16,zero6/16,missing0/16. Completionimproved,butthreewayskillweak;no model/defaultpromotion orbroaderFRRefficacyclaim. Originalbase/frozendigest unchanged,500prior externalfiles preserved,120newcache/tokenchecks,adapterroundtrip exact.
+[Decisionlossreport](evaluation/decision-loss-comparison-v1/REPORT.md):2freshLoRAbranches,48balancedupdates each,identicalinitialadapterdigest/trainorder/base. Sequence-mean vs0.5first-token+0.5meanremainderCE.360actualgenerations acrossdev12/primary24/challenge36/regression48 permodel. Trainedprimarytie8/24; challenge10/36→15/36 butfirst/lastreference24/36; discordant6/24→10/24 versusfirst/last12/24. Regression19/48→18/48,positive/zero tradeoff. Missingrecallprimary0/8/challenge0/12/regression0/16inboth; balanceddev1/4. No defaultpromotionor reliablemissingnessclaim.628oldexternalfilesunchanged,360newcache/tokenchecks,initial/order/base/checkpointhashesverified.
 
-[Stationregistry](evaluation/station-registry-v1/README.md):optionaltools/station_registry.py;read-only bytebound scopedreceipts,not pooledtruth/votes/confidence. Fourstationdemo plus[sixstationintegration](evaluation/lora-state-pilot-v1/REGISTRY_RECEIPT.json),eightsharedhashwarnings.14challengegroupspass. Coordinatorreviewcorrectedbool/floatlabelcountsandswappedsourcefieldstates;first13fileversion/results archivedbeforecorrection. Unknown/withheldschemasremainunresolved. Sharedancestrydeclared;hashesdonotauthenticatesources/independence.
+Separate-agentdatareview beforetrainingcaughtprepared24alltargetlast andcoupledOther/observations;originalsfrozenretained,prospective36casecrossedchallengeaddedbeforemodelwork. TargetnameRowanfixed,authorednotindependentpopulation. Classbias/answercompletion distinguishedfromgrounding. Currentprimary/challenge nowexposedregressions. Nextstrongest:counterbalancetargetrole/positionandOtherstatewithintrainingcurriculum,newnames/compositionsheldout;single-tokenaliasmappingcandidate remainsunperformed. Lossallocationinterventionnotprooftokenlengthcausedfailure.
 
-## Emerging strongest next direction
+## Optional provenance utility
 
-[Objective note](evaluation/lora-state-pilot-v1/LOSS_OBJECTIVE_NOTE.md),postresultanduntestedcausality:targetlabel+EOStokenlengthsYES3,NO2,WITHHOLD5. Equal-sequencebalancedlossweightsfirstdecision-tokenCE1/9,1/6,1/15perupdate. Missingclassnevergenerated despitebalancedexposure. Nextcontrolledcontact:single-tokenclassinterfacewithcounterbalancedlabelmappings,newprimarycases,retainordinarygenerationandforcedchoicediagnosticsseparately. Current48testcasesnowregressions;no causalclaimtokenlength causedfailure. No additionaltrainingattemptafterthispilot.
+[LCAguide](evaluation/lca-ancestry-contact-v1/README.md),[tool](tools/evidence_ancestry.py):read-only declaredchild→parentDAGquery,returnsALLmaximalcommonancestors,maymultiple. Real4node/4edgerecorded-parentqueryreturnssharedrawandkeyparents.12authoredtests+640boundedBooleanclosurequeriespass. Callergraphpartial;no truth/cause/independence/confidence inferred,emptysharedsetnotindependenceproof. Existingstationregistryunchanged. Datecontextcorrection/sourceupstreamlicenses recorded.
 
-## Preservation and boundaries
+## Preservation/boundaries
 
-Baseoriginaldefaultunchanged. Priorone-stepfullweightcheckpoint retained;newLoRAprobe,initial/finaladapters+optimizerstatesseparateunder/workspace,hashesinreport. LocalbinariesnotGit/independentarchivalguarantee. Sourcecalculation/storedrunaudittools/core/schema/broadqueueunchanged,oldreadinggate staysfailed. Fourpriornavigationdocs archivedinlateststudy. Included/freeonly,nopaidAPI/rental/install;accountusage/billnotvisible. Delegatedutility/registry/scoutwork pluscoordinatorreview;notindependentexperimentreplication/goldreview. Resourceguardlimitations documented;no guardstopoccurredinmainpilot.
-
-
-## Wind-down checkpoint — 30 October2026
-
-Decision-tokenpreparation complete: tokenizer A/B/C single-tokencontrols,3cyclicbalancedmappings andexactdecision-balancedlosschecks pass.24newprimarycases(8perclass)frozen,nomodelforward/update. Newobjective trainingrunner notyetimplemented;nextsession phaseAkeepsemanticlabels/promptsfixedandcompareoldsequence-meanvs0.5firstdecision+0.5meanremainderCE. Aliaseslatercontrolvocabulary/interfacechanges,nocausalityclaimyet.628existingmodel/checkpoint/optimizer/cachefilesverifiedunchanged. Originaldefault,prior19/48LoRAresult/missing0/16,registry andoldfailures unchanged. No backgroundtask/paidservice/install. Priororientationbytesarchived. [Preparationreport](evaluation/decision-token-preparation-v1/REPORT.md).
+Originalmodeldefaultunchanged;allpreviousbranchesretained;newinitial/finaladapters,optimizerstatesand97updatelogs(1resourcepreflight+96main)preservedwithhashes. Checkpoint/tensor/optimizerbinarieslocalnotGit;source/data/tokenlogs/hashespublished,localpersistence notindependentarchive. Fourpriornavigationdocsbytearchived. Existingverifiers/registry/core/schema/broadqueueunchanged;oldreadinggate staysfailed. Includedlocal/tools only,nopaidAPI/rental/install;accountusage/billnotvisible. Assistantscoded/reviewed/scouted,coordinatordesign/integration;notindependentexperimentreplication. No furthertraining/modelpromotion/backgroundtask.

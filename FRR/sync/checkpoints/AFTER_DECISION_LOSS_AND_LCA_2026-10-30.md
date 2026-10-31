@@ -1,0 +1,3 @@
+# Decision loss and declared LCA settled
+
+[Report](../../evaluation/decision-loss-comparison-v1/REPORT.md).2fresh48updateLoRAbranches;360generations;primary8/24tie;challenge10→15/36belowshortcut24/36;missingnotfixed,regression19→18/48. Datareview/36caseprospectivecounterbalancechallengepreserved.628oldexternalfilesunchanged,360newcachechecks. OptionalLCAtoolrealquerytwosharedparents,12tests/640boundedchecks;graphdeclarationsnotcause/truth/independence. Originaldefault,no paidresources/install/modelpromotion. Fourpriornavigationdocsarchived. Next:counterbalancedfield-selectiontraining,newprimaryscopes,aliascontrolstillunrun. No backgroundtask.

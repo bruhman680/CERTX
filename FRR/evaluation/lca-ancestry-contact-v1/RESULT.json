@@ -1,0 +1,30 @@
+{
+  "ruleset": "declared-evidence-ancestry-0.1",
+  "status": "computed",
+  "graph_id": "lora-recorded-parent-contact-v1",
+  "edge_semantics": "A derivation-record node declares the raw/key parent hashes literally recorded in its DERIVATION.json. Parent nodes are terminal only within this intentionally partial graph; no complete station or model ancestry is asserted.",
+  "query": [
+    "original_test-derivation-record",
+    "adapted_test-derivation-record"
+  ],
+  "ancestor_includes_self": true,
+  "common_ancestors": [
+    "shared-key-parent",
+    "shared-raw-parent"
+  ],
+  "maximal_common_ancestors": [
+    "shared-key-parent",
+    "shared-raw-parent"
+  ],
+  "node_count": 4,
+  "edge_count": 4,
+  "limitations": [
+    "All edges are caller declarations; results apply only to this supplied graph.",
+    "Omitted edges or nodes can change common ancestors; empty output does not establish independence.",
+    "Byte hashes bind local files, not authenticity, source truth, causal independence or confidence.",
+    "Flat registry shared hashes do not establish a complete actual derivation graph."
+  ],
+  "manifest_sha256": "71c35f841ca000cbbff3ec65075037a8d9560650de0c343be3e832e5a2648eed",
+  "tool_sha256": "c5201b7533b3830f546b643a2d9683db3ae0421ec51d209703f7950be5399b2a",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269"
+}

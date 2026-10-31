@@ -1,0 +1,261 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "DLC1-sequence_mean-challenge",
+  "identity": {
+    "family": "decision_loss_compare",
+    "facet": "state_label",
+    "cycle": "DLC1",
+    "arm": "sequence_mean"
+  },
+  "contract_sha256": "f03dc6c86fe93d6d42dfee8a0834878c9f33bdbe9bee170469d5074086ef1701",
+  "sources": {
+    "raw": "b9790c9e955f4a2fb966a5594d0990b7c42d4d80d927a5ecd5fecf2844fe1109",
+    "keys": "ceb0260daf5ef4cfd5df83a6441c79f7517f11a1c91d443745c752246f64f545"
+  },
+  "summary": {
+    "calls": 36,
+    "label_matches": 10,
+    "match_fraction": {
+      "numerator": 5,
+      "denominator": 18
+    },
+    "constant_yes_matches": 12,
+    "labels": {
+      "YES": 32,
+      "NO": 4
+    },
+    "stops": {
+      "eos": 36
+    },
+    "input_tokens": 8196,
+    "output_tokens": 104
+  },
+  "rows": [
+    {
+      "run_id": "CH_xml_order_positive_positive_1__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_xml_order_positive_positive_0__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_xml_order_positive_zero_1__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_xml_order_positive_zero_0__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_xml_order_positive_missing_1__sequence_mean__challenge",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_positive_missing_0__sequence_mean__challenge",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_zero_positive_1__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_zero_positive_0__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_zero_zero_1__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_zero_zero_0__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_zero_missing_1__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_zero_missing_0__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_positive_1__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_positive_0__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_zero_1__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_zero_0__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_missing_1__sequence_mean__challenge",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_missing_0__sequence_mean__challenge",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_positive_positive_1__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_bullet_order_positive_positive_0__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_bullet_order_positive_zero_1__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_bullet_order_positive_zero_0__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_bullet_order_positive_missing_1__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_bullet_order_positive_missing_0__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_bullet_order_zero_positive_1__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_zero_positive_0__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_zero_zero_1__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_zero_zero_0__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_zero_missing_1__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_zero_missing_0__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_positive_1__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_positive_0__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_zero_1__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_zero_0__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_missing_1__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_missing_0__sequence_mean__challenge",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "DLC1-original-primary",
+  "identity": {
+    "family": "decision_loss_compare",
+    "facet": "state_label",
+    "cycle": "DLC1",
+    "arm": "original"
+  },
+  "contract_sha256": "60b82ffe53bd54a3fcd0c696cb07aeea0a5ce9e711dabd490fad6b512fce3dda",
+  "sources": {
+    "raw": "1be9592389cf903d9db3d6bdded3474bc626895cdd6da902f3032958a6dd8720",
+    "keys": "6e5f794a90c72ec83da2fa4b3e895e2f194f5eeb5bbcf03e400638d375ccb8c0"
+  },
+  "summary": {
+    "calls": 24,
+    "label_matches": 0,
+    "match_fraction": {
+      "numerator": 0,
+      "denominator": 1
+    },
+    "constant_yes_matches": 8,
+    "labels": {
+      "UNRESOLVED": 24
+    },
+    "stops": {
+      "token_limit": 24
+    },
+    "input_tokens": 4766,
+    "output_tokens": 192
+  },
+  "rows": [
+    {
+      "run_id": "DT_xml_records_0_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_0_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_0_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_1_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_1_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_1_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_2_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_2_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_2_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_3_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_3_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_xml_records_3_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_0_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_0_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_0_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_1_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_1_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_1_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_2_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_2_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_2_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_3_positive__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_3_zero__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "DT_bullet_sections_3_missing__original__primary",
+      "label": "UNRESOLVED",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

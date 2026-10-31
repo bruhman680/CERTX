@@ -1,0 +1,1808 @@
+{
+  "scope": "one authored matched lossallocation comparison,notindependentsampling/puretokenlengthcausality",
+  "arms": {
+    "original": {
+      "dev": {
+        "calls": 12,
+        "label_matches": 0,
+        "match_fraction": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "constant_yes_matches": 4,
+        "labels": {
+          "UNRESOLVED": 12
+        },
+        "stops": {
+          "token_limit": 12
+        },
+        "input_tokens": 2139,
+        "output_tokens": 96,
+        "perclass": {
+          "YES": {
+            "n": 4,
+            "matches": 0
+          },
+          "NO": {
+            "n": 4,
+            "matches": 0
+          },
+          "WITHHOLD": {
+            "n": 4,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "UNRESOLVED": 4
+          },
+          "NO": {
+            "UNRESOLVED": 4
+          },
+          "WITHHOLD": {
+            "UNRESOLVED": 4
+          }
+        },
+        "by_family": {
+          "fields": {
+            "n": 3,
+            "matches": 0
+          },
+          "json": {
+            "n": 3,
+            "matches": 0
+          },
+          "prose": {
+            "n": 3,
+            "matches": 0
+          },
+          "table": {
+            "n": 3,
+            "matches": 0
+          }
+        },
+        "inference_seconds": 10.794274106010562,
+        "cache_bytes": 102494592
+      },
+      "primary": {
+        "calls": 24,
+        "label_matches": 0,
+        "match_fraction": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "constant_yes_matches": 8,
+        "labels": {
+          "UNRESOLVED": 24
+        },
+        "stops": {
+          "token_limit": 24
+        },
+        "input_tokens": 4766,
+        "output_tokens": 192,
+        "perclass": {
+          "YES": {
+            "n": 8,
+            "matches": 0
+          },
+          "NO": {
+            "n": 8,
+            "matches": 0
+          },
+          "WITHHOLD": {
+            "n": 8,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "UNRESOLVED": 8
+          },
+          "NO": {
+            "UNRESOLVED": 8
+          },
+          "WITHHOLD": {
+            "UNRESOLVED": 8
+          }
+        },
+        "by_family": {
+          "bullet_sections": {
+            "n": 12,
+            "matches": 0
+          },
+          "xml_records": {
+            "n": 12,
+            "matches": 0
+          }
+        },
+        "inference_seconds": 23.301788658980513,
+        "cache_bytes": 227476320
+      },
+      "challenge": {
+        "calls": 36,
+        "label_matches": 0,
+        "match_fraction": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "constant_yes_matches": 12,
+        "labels": {
+          "UNRESOLVED": 36
+        },
+        "stops": {
+          "token_limit": 36
+        },
+        "input_tokens": 8196,
+        "output_tokens": 288,
+        "perclass": {
+          "YES": {
+            "n": 12,
+            "matches": 0
+          },
+          "NO": {
+            "n": 12,
+            "matches": 0
+          },
+          "WITHHOLD": {
+            "n": 12,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "UNRESOLVED": 12
+          },
+          "NO": {
+            "UNRESOLVED": 12
+          },
+          "WITHHOLD": {
+            "UNRESOLVED": 12
+          }
+        },
+        "by_family": {
+          "bullet_order": {
+            "n": 18,
+            "matches": 0
+          },
+          "xml_order": {
+            "n": 18,
+            "matches": 0
+          }
+        },
+        "inference_seconds": 37.83708806603681,
+        "cache_bytes": 389460528,
+        "discordant_target_other": {
+          "n": 24,
+          "matches": 0,
+          "first_or_last_reference_matches": 12,
+          "wrong_other_reference_matches": 0
+        },
+        "by_target_position": {
+          "True": {
+            "n": 18,
+            "matches": 0
+          },
+          "False": {
+            "n": 18,
+            "matches": 0
+          }
+        },
+        "construction_reference_baselines": {
+          "first_sampled_field": 24,
+          "last_sampled_field": 24,
+          "any_constant_class": 12,
+          "always_other": 12
+        }
+      },
+      "regression": {
+        "calls": 48,
+        "label_matches": 1,
+        "match_fraction": {
+          "numerator": 1,
+          "denominator": 48
+        },
+        "constant_yes_matches": 16,
+        "labels": {
+          "UNRESOLVED": 47,
+          "YES": 1
+        },
+        "stops": {
+          "token_limit": 47,
+          "eos": 1
+        },
+        "input_tokens": 9386,
+        "output_tokens": 378,
+        "perclass": {
+          "YES": {
+            "n": 16,
+            "matches": 1
+          },
+          "NO": {
+            "n": 16,
+            "matches": 0
+          },
+          "WITHHOLD": {
+            "n": 16,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "UNRESOLVED": 15,
+            "YES": 1
+          },
+          "NO": {
+            "UNRESOLVED": 16
+          },
+          "WITHHOLD": {
+            "UNRESOLVED": 16
+          }
+        },
+        "by_family": {
+          "interleaved": {
+            "n": 12,
+            "matches": 0
+          },
+          "nested_list": {
+            "n": 12,
+            "matches": 0
+          },
+          "register": {
+            "n": 12,
+            "matches": 1
+          },
+          "scoped_table": {
+            "n": 12,
+            "matches": 0
+          }
+        },
+        "inference_seconds": 47.291365852041054,
+        "cache_bytes": 447948288
+      }
+    },
+    "sequence_mean": {
+      "dev": {
+        "calls": 12,
+        "label_matches": 5,
+        "match_fraction": {
+          "numerator": 5,
+          "denominator": 12
+        },
+        "constant_yes_matches": 4,
+        "labels": {
+          "NO": 5,
+          "YES": 7
+        },
+        "stops": {
+          "eos": 12
+        },
+        "input_tokens": 2139,
+        "output_tokens": 31,
+        "perclass": {
+          "YES": {
+            "n": 4,
+            "matches": 3
+          },
+          "NO": {
+            "n": 4,
+            "matches": 2
+          },
+          "WITHHOLD": {
+            "n": 4,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "NO": 1,
+            "YES": 3
+          },
+          "NO": {
+            "NO": 2,
+            "YES": 2
+          },
+          "WITHHOLD": {
+            "NO": 2,
+            "YES": 2
+          }
+        },
+        "by_family": {
+          "fields": {
+            "n": 3,
+            "matches": 1
+          },
+          "json": {
+            "n": 3,
+            "matches": 1
+          },
+          "prose": {
+            "n": 3,
+            "matches": 2
+          },
+          "table": {
+            "n": 3,
+            "matches": 1
+          }
+        },
+        "inference_seconds": 6.459223492012825,
+        "cache_bytes": 99499392
+      },
+      "primary": {
+        "calls": 24,
+        "label_matches": 8,
+        "match_fraction": {
+          "numerator": 1,
+          "denominator": 3
+        },
+        "constant_yes_matches": 8,
+        "labels": {
+          "YES": 24
+        },
+        "stops": {
+          "eos": 24
+        },
+        "input_tokens": 4766,
+        "output_tokens": 72,
+        "perclass": {
+          "YES": {
+            "n": 8,
+            "matches": 8
+          },
+          "NO": {
+            "n": 8,
+            "matches": 0
+          },
+          "WITHHOLD": {
+            "n": 8,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "YES": 8
+          },
+          "NO": {
+            "YES": 8
+          },
+          "WITHHOLD": {
+            "YES": 8
+          }
+        },
+        "by_family": {
+          "bullet_sections": {
+            "n": 12,
+            "matches": 4
+          },
+          "xml_records": {
+            "n": 12,
+            "matches": 4
+          }
+        },
+        "inference_seconds": 15.619871200004127,
+        "cache_bytes": 221946688
+      },
+      "challenge": {
+        "calls": 36,
+        "label_matches": 10,
+        "match_fraction": {
+          "numerator": 5,
+          "denominator": 18
+        },
+        "constant_yes_matches": 12,
+        "labels": {
+          "YES": 32,
+          "NO": 4
+        },
+        "stops": {
+          "eos": 36
+        },
+        "input_tokens": 8196,
+        "output_tokens": 104,
+        "perclass": {
+          "YES": {
+            "n": 12,
+            "matches": 10
+          },
+          "NO": {
+            "n": 12,
+            "matches": 0
+          },
+          "WITHHOLD": {
+            "n": 12,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "YES": 10,
+            "NO": 2
+          },
+          "NO": {
+            "YES": 12
+          },
+          "WITHHOLD": {
+            "YES": 10,
+            "NO": 2
+          }
+        },
+        "by_family": {
+          "bullet_order": {
+            "n": 18,
+            "matches": 6
+          },
+          "xml_order": {
+            "n": 18,
+            "matches": 4
+          }
+        },
+        "inference_seconds": 24.861288505984703,
+        "cache_bytes": 380981808,
+        "discordant_target_other": {
+          "n": 24,
+          "matches": 6,
+          "first_or_last_reference_matches": 12,
+          "wrong_other_reference_matches": 0
+        },
+        "by_target_position": {
+          "True": {
+            "n": 18,
+            "matches": 5
+          },
+          "False": {
+            "n": 18,
+            "matches": 5
+          }
+        },
+        "construction_reference_baselines": {
+          "first_sampled_field": 24,
+          "last_sampled_field": 24,
+          "any_constant_class": 12,
+          "always_other": 12
+        }
+      },
+      "regression": {
+        "calls": 48,
+        "label_matches": 19,
+        "match_fraction": {
+          "numerator": 19,
+          "denominator": 48
+        },
+        "constant_yes_matches": 16,
+        "labels": {
+          "NO": 14,
+          "YES": 34
+        },
+        "stops": {
+          "eos": 48
+        },
+        "input_tokens": 9386,
+        "output_tokens": 130,
+        "perclass": {
+          "YES": {
+            "n": 16,
+            "matches": 13
+          },
+          "NO": {
+            "n": 16,
+            "matches": 6
+          },
+          "WITHHOLD": {
+            "n": 16,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "NO": 3,
+            "YES": 13
+          },
+          "NO": {
+            "NO": 6,
+            "YES": 10
+          },
+          "WITHHOLD": {
+            "NO": 5,
+            "YES": 11
+          }
+        },
+        "by_family": {
+          "interleaved": {
+            "n": 12,
+            "matches": 4
+          },
+          "nested_list": {
+            "n": 12,
+            "matches": 5
+          },
+          "register": {
+            "n": 12,
+            "matches": 5
+          },
+          "scoped_table": {
+            "n": 12,
+            "matches": 5
+          }
+        },
+        "inference_seconds": 28.529702045969316,
+        "cache_bytes": 436520448
+      }
+    },
+    "decision_balanced": {
+      "dev": {
+        "calls": 12,
+        "label_matches": 6,
+        "match_fraction": {
+          "numerator": 1,
+          "denominator": 2
+        },
+        "constant_yes_matches": 4,
+        "labels": {
+          "WITHHOLD": 2,
+          "NO": 9,
+          "YES": 1
+        },
+        "stops": {
+          "eos": 12
+        },
+        "input_tokens": 2139,
+        "output_tokens": 31,
+        "perclass": {
+          "YES": {
+            "n": 4,
+            "matches": 1
+          },
+          "NO": {
+            "n": 4,
+            "matches": 4
+          },
+          "WITHHOLD": {
+            "n": 4,
+            "matches": 1
+          }
+        },
+        "confusion": {
+          "YES": {
+            "WITHHOLD": 1,
+            "NO": 2,
+            "YES": 1
+          },
+          "NO": {
+            "NO": 4
+          },
+          "WITHHOLD": {
+            "WITHHOLD": 1,
+            "NO": 3
+          }
+        },
+        "by_family": {
+          "fields": {
+            "n": 3,
+            "matches": 2
+          },
+          "json": {
+            "n": 3,
+            "matches": 1
+          },
+          "prose": {
+            "n": 3,
+            "matches": 1
+          },
+          "table": {
+            "n": 3,
+            "matches": 2
+          }
+        },
+        "inference_seconds": 6.332448876040871,
+        "cache_bytes": 99499392
+      },
+      "primary": {
+        "calls": 24,
+        "label_matches": 8,
+        "match_fraction": {
+          "numerator": 1,
+          "denominator": 3
+        },
+        "constant_yes_matches": 8,
+        "labels": {
+          "NO": 6,
+          "YES": 17,
+          "WITHHOLD": 1
+        },
+        "stops": {
+          "eos": 24
+        },
+        "input_tokens": 4766,
+        "output_tokens": 68,
+        "perclass": {
+          "YES": {
+            "n": 8,
+            "matches": 6
+          },
+          "NO": {
+            "n": 8,
+            "matches": 2
+          },
+          "WITHHOLD": {
+            "n": 8,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "NO": 2,
+            "YES": 6
+          },
+          "NO": {
+            "NO": 2,
+            "YES": 5,
+            "WITHHOLD": 1
+          },
+          "WITHHOLD": {
+            "NO": 2,
+            "YES": 6
+          }
+        },
+        "by_family": {
+          "bullet_sections": {
+            "n": 12,
+            "matches": 4
+          },
+          "xml_records": {
+            "n": 12,
+            "matches": 4
+          }
+        },
+        "inference_seconds": 14.855191759997979,
+        "cache_bytes": 221762360
+      },
+      "challenge": {
+        "calls": 36,
+        "label_matches": 15,
+        "match_fraction": {
+          "numerator": 5,
+          "denominator": 12
+        },
+        "constant_yes_matches": 12,
+        "labels": {
+          "NO": 24,
+          "YES": 12
+        },
+        "stops": {
+          "eos": 36
+        },
+        "input_tokens": 8196,
+        "output_tokens": 84,
+        "perclass": {
+          "YES": {
+            "n": 12,
+            "matches": 6
+          },
+          "NO": {
+            "n": 12,
+            "matches": 9
+          },
+          "WITHHOLD": {
+            "n": 12,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "NO": 6,
+            "YES": 6
+          },
+          "NO": {
+            "NO": 9,
+            "YES": 3
+          },
+          "WITHHOLD": {
+            "NO": 9,
+            "YES": 3
+          }
+        },
+        "by_family": {
+          "bullet_order": {
+            "n": 18,
+            "matches": 9
+          },
+          "xml_order": {
+            "n": 18,
+            "matches": 6
+          }
+        },
+        "inference_seconds": 23.654071371041937,
+        "cache_bytes": 380060208,
+        "discordant_target_other": {
+          "n": 24,
+          "matches": 10,
+          "first_or_last_reference_matches": 12,
+          "wrong_other_reference_matches": 0
+        },
+        "by_target_position": {
+          "True": {
+            "n": 18,
+            "matches": 9
+          },
+          "False": {
+            "n": 18,
+            "matches": 6
+          }
+        },
+        "construction_reference_baselines": {
+          "first_sampled_field": 24,
+          "last_sampled_field": 24,
+          "any_constant_class": 12,
+          "always_other": 12
+        }
+      },
+      "regression": {
+        "calls": 48,
+        "label_matches": 18,
+        "match_fraction": {
+          "numerator": 3,
+          "denominator": 8
+        },
+        "constant_yes_matches": 16,
+        "labels": {
+          "NO": 39,
+          "YES": 9
+        },
+        "stops": {
+          "eos": 48
+        },
+        "input_tokens": 9386,
+        "output_tokens": 105,
+        "perclass": {
+          "YES": {
+            "n": 16,
+            "matches": 4
+          },
+          "NO": {
+            "n": 16,
+            "matches": 14
+          },
+          "WITHHOLD": {
+            "n": 16,
+            "matches": 0
+          }
+        },
+        "confusion": {
+          "YES": {
+            "NO": 12,
+            "YES": 4
+          },
+          "NO": {
+            "NO": 14,
+            "YES": 2
+          },
+          "WITHHOLD": {
+            "NO": 13,
+            "YES": 3
+          }
+        },
+        "by_family": {
+          "interleaved": {
+            "n": 12,
+            "matches": 5
+          },
+          "nested_list": {
+            "n": 12,
+            "matches": 4
+          },
+          "register": {
+            "n": 12,
+            "matches": 5
+          },
+          "scoped_table": {
+            "n": 12,
+            "matches": 4
+          }
+        },
+        "inference_seconds": 27.130625926016364,
+        "cache_bytes": 435368448
+      }
+    }
+  },
+  "paired_by_subset": {
+    "dev": {
+      "rows": [
+        {
+          "id": "dev_fields_0_positive",
+          "expected": "YES",
+          "sequence_mean": "NO",
+          "decision_balanced": "WITHHOLD",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "dev_fields_0_zero",
+          "expected": "NO",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "dev_fields_0_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "NO",
+          "decision_balanced": "WITHHOLD",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "dev_prose_0_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "dev_prose_0_zero",
+          "expected": "NO",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "dev_prose_0_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "dev_json_0_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "dev_json_0_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "dev_json_0_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "dev_table_0_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "dev_table_0_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "dev_table_0_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        }
+      ],
+      "counts": {
+        "neither_matches": 4,
+        "both_match": 3,
+        "balanced_only": 3,
+        "mean_only": 2
+      }
+    },
+    "primary": {
+      "rows": [
+        {
+          "id": "DT_xml_records_0_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "DT_xml_records_0_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "DT_xml_records_0_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "DT_xml_records_1_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "DT_xml_records_1_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "DT_xml_records_1_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "DT_xml_records_2_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "DT_xml_records_2_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "DT_xml_records_2_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "DT_xml_records_3_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "DT_xml_records_3_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "DT_xml_records_3_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "DT_bullet_sections_0_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "DT_bullet_sections_0_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "DT_bullet_sections_0_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "DT_bullet_sections_1_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "DT_bullet_sections_1_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "WITHHOLD",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "DT_bullet_sections_1_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "DT_bullet_sections_2_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "DT_bullet_sections_2_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "DT_bullet_sections_2_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "DT_bullet_sections_3_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "DT_bullet_sections_3_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "DT_bullet_sections_3_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        }
+      ],
+      "counts": {
+        "mean_only": 2,
+        "balanced_only": 2,
+        "neither_matches": 14,
+        "both_match": 6
+      }
+    },
+    "challenge": {
+      "rows": [
+        {
+          "id": "CH_xml_order_positive_positive_1",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_xml_order_positive_positive_0",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_xml_order_positive_zero_1",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_xml_order_positive_zero_0",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_xml_order_positive_missing_1",
+          "expected": "YES",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_xml_order_positive_missing_0",
+          "expected": "YES",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_xml_order_zero_positive_1",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "CH_xml_order_zero_positive_0",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "CH_xml_order_zero_zero_1",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "CH_xml_order_zero_zero_0",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "CH_xml_order_zero_missing_1",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "CH_xml_order_zero_missing_0",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "CH_xml_order_missing_positive_1",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_xml_order_missing_positive_0",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_xml_order_missing_zero_1",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_xml_order_missing_zero_0",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_xml_order_missing_missing_1",
+          "expected": "WITHHOLD",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_xml_order_missing_missing_0",
+          "expected": "WITHHOLD",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_bullet_order_positive_positive_1",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "CH_bullet_order_positive_positive_0",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "CH_bullet_order_positive_zero_1",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "CH_bullet_order_positive_zero_0",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "CH_bullet_order_positive_missing_1",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "CH_bullet_order_positive_missing_0",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "CH_bullet_order_zero_positive_1",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "CH_bullet_order_zero_positive_0",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_bullet_order_zero_zero_1",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "CH_bullet_order_zero_zero_0",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_bullet_order_zero_missing_1",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "CH_bullet_order_zero_missing_0",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_bullet_order_missing_positive_1",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_bullet_order_missing_positive_0",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_bullet_order_missing_zero_1",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_bullet_order_missing_zero_0",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_bullet_order_missing_missing_1",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "CH_bullet_order_missing_missing_0",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        }
+      ],
+      "counts": {
+        "mean_only": 4,
+        "neither_matches": 17,
+        "balanced_only": 9,
+        "both_match": 6
+      }
+    },
+    "regression": {
+      "rows": [
+        {
+          "id": "test_scoped_table_0_positive",
+          "expected": "YES",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_scoped_table_0_zero",
+          "expected": "NO",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "test_scoped_table_0_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_scoped_table_1_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "test_scoped_table_1_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "test_scoped_table_1_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_scoped_table_2_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "test_scoped_table_2_zero",
+          "expected": "NO",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "test_scoped_table_2_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_scoped_table_3_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "test_scoped_table_3_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "test_scoped_table_3_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_nested_list_0_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "test_nested_list_0_zero",
+          "expected": "NO",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "test_nested_list_0_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_nested_list_1_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "test_nested_list_1_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "test_nested_list_1_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_nested_list_2_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "test_nested_list_2_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "test_nested_list_2_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_nested_list_3_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "test_nested_list_3_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "test_nested_list_3_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_register_0_positive",
+          "expected": "YES",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_register_0_zero",
+          "expected": "NO",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "test_register_0_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_register_1_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "test_register_1_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "test_register_1_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_register_2_positive",
+          "expected": "YES",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_register_2_zero",
+          "expected": "NO",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "test_register_2_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_register_3_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "test_register_3_zero",
+          "expected": "NO",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "test_register_3_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "NO",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_interleaved_0_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": true,
+          "balanced_match": false
+        },
+        {
+          "id": "test_interleaved_0_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "test_interleaved_0_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_interleaved_1_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "test_interleaved_1_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_interleaved_1_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_interleaved_2_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "test_interleaved_2_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_interleaved_2_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        },
+        {
+          "id": "test_interleaved_3_positive",
+          "expected": "YES",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": true,
+          "balanced_match": true
+        },
+        {
+          "id": "test_interleaved_3_zero",
+          "expected": "NO",
+          "sequence_mean": "YES",
+          "decision_balanced": "NO",
+          "mean_match": false,
+          "balanced_match": true
+        },
+        {
+          "id": "test_interleaved_3_missing",
+          "expected": "WITHHOLD",
+          "sequence_mean": "YES",
+          "decision_balanced": "YES",
+          "mean_match": false,
+          "balanced_match": false
+        }
+      ],
+      "counts": {
+        "neither_matches": 21,
+        "both_match": 10,
+        "mean_only": 9,
+        "balanced_only": 8
+      }
+    }
+  }
+}

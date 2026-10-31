@@ -1,0 +1,261 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "DLC1-decision_balanced-challenge",
+  "identity": {
+    "family": "decision_loss_compare",
+    "facet": "state_label",
+    "cycle": "DLC1",
+    "arm": "decision_balanced"
+  },
+  "contract_sha256": "af9d179ee8fc2d3cb54655d65c4074781247f918b641ac5185235882ebac504e",
+  "sources": {
+    "raw": "29ad6727c121f9004a935bdb10cc1c823b1b8b06d46f6048cc38a3d22afd59c9",
+    "keys": "996fb0c58dff3642b503d9cdb13892a89944bf7c14e611a77cdcd93cb108299f"
+  },
+  "summary": {
+    "calls": 36,
+    "label_matches": 15,
+    "match_fraction": {
+      "numerator": 5,
+      "denominator": 12
+    },
+    "constant_yes_matches": 12,
+    "labels": {
+      "NO": 24,
+      "YES": 12
+    },
+    "stops": {
+      "eos": 36
+    },
+    "input_tokens": 8196,
+    "output_tokens": 84
+  },
+  "rows": [
+    {
+      "run_id": "CH_xml_order_positive_positive_1__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_positive_positive_0__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_positive_zero_1__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_positive_zero_0__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_positive_missing_1__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_positive_missing_0__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_zero_positive_1__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_xml_order_zero_positive_0__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_xml_order_zero_zero_1__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_xml_order_zero_zero_0__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_xml_order_zero_missing_1__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_xml_order_zero_missing_0__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_xml_order_missing_positive_1__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_positive_0__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_zero_1__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_zero_0__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_missing_1__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_xml_order_missing_missing_0__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_positive_positive_1__decision_balanced__challenge",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_bullet_order_positive_positive_0__decision_balanced__challenge",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_bullet_order_positive_zero_1__decision_balanced__challenge",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_bullet_order_positive_zero_0__decision_balanced__challenge",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_bullet_order_positive_missing_1__decision_balanced__challenge",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_bullet_order_positive_missing_0__decision_balanced__challenge",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_bullet_order_zero_positive_1__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_bullet_order_zero_positive_0__decision_balanced__challenge",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_zero_zero_1__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_bullet_order_zero_zero_0__decision_balanced__challenge",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_zero_missing_1__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "CH_bullet_order_zero_missing_0__decision_balanced__challenge",
+      "label": "YES",
+      "expected": "NO",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_positive_1__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_positive_0__decision_balanced__challenge",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_zero_1__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_zero_0__decision_balanced__challenge",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_missing_1__decision_balanced__challenge",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "CH_bullet_order_missing_missing_0__decision_balanced__challenge",
+      "label": "YES",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}

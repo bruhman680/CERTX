@@ -1,0 +1,118 @@
+{
+  "ruleset": "stored-run-audit-0.1",
+  "status": "computed",
+  "stage": "cohort_summary",
+  "tool_sha256": "02be8cb803ed44f8a7044ae32c1980e605d8006857a5abac7ce82e9594161efa",
+  "json_loader_sha256": "e6929632d51a14937f409114506dbb7ff0d45fb45138b30629485b0d70625269",
+  "limitations": [
+    "Caller selects cohort, identity and keys; these are not authenticated or proven true.",
+    "Exact stripped uppercase labels only; unrecognized output stays in the denominator.",
+    "Token arrays/counts and stop metadata are structurally checked, not replayed or decoded.",
+    "No cache-file verification, model inference, causal efficacy or generalization claim."
+  ],
+  "claim_id": "DLC1-decision_balanced-dev",
+  "identity": {
+    "family": "decision_loss_compare",
+    "facet": "state_label",
+    "cycle": "DLC1",
+    "arm": "decision_balanced"
+  },
+  "contract_sha256": "bd802470d8d5d35042fadd91783c3f4c1ff41f76a95610e21090a88b7b69aacf",
+  "sources": {
+    "raw": "d0800fc43b38a77ff5e1c89ea202722b6b662c137ae3cb279d016c039a557717",
+    "keys": "d8c8d4dfbddc1c476fdb6b905899a683c2f855e9085f02c23b9d459abcfbb03f"
+  },
+  "summary": {
+    "calls": 12,
+    "label_matches": 6,
+    "match_fraction": {
+      "numerator": 1,
+      "denominator": 2
+    },
+    "constant_yes_matches": 4,
+    "labels": {
+      "WITHHOLD": 2,
+      "NO": 9,
+      "YES": 1
+    },
+    "stops": {
+      "eos": 12
+    },
+    "input_tokens": 2139,
+    "output_tokens": 31
+  },
+  "rows": [
+    {
+      "run_id": "dev_fields_0_positive__decision_balanced__dev",
+      "label": "WITHHOLD",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_fields_0_zero__decision_balanced__dev",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_fields_0_missing__decision_balanced__dev",
+      "label": "WITHHOLD",
+      "expected": "WITHHOLD",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_prose_0_positive__decision_balanced__dev",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_prose_0_zero__decision_balanced__dev",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_prose_0_missing__decision_balanced__dev",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_json_0_positive__decision_balanced__dev",
+      "label": "NO",
+      "expected": "YES",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_json_0_zero__decision_balanced__dev",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_json_0_missing__decision_balanced__dev",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    },
+    {
+      "run_id": "dev_table_0_positive__decision_balanced__dev",
+      "label": "YES",
+      "expected": "YES",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_table_0_zero__decision_balanced__dev",
+      "label": "NO",
+      "expected": "NO",
+      "label_match": true
+    },
+    {
+      "run_id": "dev_table_0_missing__decision_balanced__dev",
+      "label": "NO",
+      "expected": "WITHHOLD",
+      "label_match": false
+    }
+  ]
+}
