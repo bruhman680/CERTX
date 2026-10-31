@@ -15,3 +15,8 @@ Posthoc12EXACTseentrainingcases(samefinalcandidate,no updates)allNO4/12. Acquisi
 Verifiedlocalcapsule/workspace/frr_capsules/counterbalanced-curriculum-v1.tar.gz,6286976bytes,13members,containscontrol/candidateinitial/finaladapters+optimizer/manifests. Excludesdensebase/oldfullweightcheckpoint/KVcaches/otherhistory. Notindependentbackupuntilcopiedoffworkspace;noexternaluploadperformed. Capsulehash/receipts/stdlibutilityinreport;6tests pass.
 
 997oldruntimefilesunchanged,264newcache/prompt/tokenchecks(252main+12posthoc),candidatebase/initialcontrolreference/checkpointsverified;48mainupdates+1separatepreflight. Originalmodeldefaultandolderbranchesunchanged. Fivepriornavigation/guidancedocs archived;optionalverificationguidancelinkadded,existingtoolcode/core/schema/queue/failedreadinggateunchanged. Includedlocal/resourcesonly,nopaidAPI/rental/install;bill/usageunavailable. Assistantsauthor/reviewpluscoordinatorfreeze/run/integration,notindependentgroundtruth/replication.
+
+
+## Parked Grok relay — later exploration
+
+[Substrate depth / neural criticality / binding relay](evaluation/grok-substrate-depth-intake-v1/NOTE.md) preserved verbatim with provenance. Unvetted proposals, no source verification or neural-mechanism inference yet. Review primary citations, task-relative metric profiles and source-revision sensitivity before experiments; attachment adoption language is not a default change. User asked to pin for later. Calibration/readout and longer handoff/source-revision directions remain recorded; no modelwork/backgroundtask started.
