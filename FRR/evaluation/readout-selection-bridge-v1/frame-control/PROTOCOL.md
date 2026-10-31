@@ -1,0 +1,7 @@
+# Post-result single-record frame control
+
+Proposed after alias_0 full13/36free versus cropped36/36; other bridge arms were still running. Prepare/freeze after the complete bridge, before any control forwards. This is an outcome-informed follow-up, not a predeclared primary bridge metric or independent replication. Use all four fixed final adapters; zero training or checkpoint selection.
+
+Keep exactly the full-bridge instruction and answer mapping. From each bridge source remove only the non-target record block. Keep the target header, original record number (1or2), target name and status. Deduplicate actual strings:12sources=2names×3statuses×2recordnumbers, four perclass. Gold state is parsed from source, not used for extraction. A one-record source labeled Record2 is intentionally retained as a frame/numbering perturbation, not asserted to be a natural document.
+
+This asks whether the new header/record/instruction frame alone can break the simple trained readout. It is a partial control: context length and number of records still differ. Do not subtract accuracies as pure causal effects or call all full-source failure a selection/attention mechanism. Compare free generation and complete-choice sum scores, retain invalid responses, and report all classes/arms. Same CPU/local constraints and frozen generation/scoring instrument, with its output root explicitly redirected to this separate directory. No paid service, default promotion, or new training. Full terminal KV caches are not retained.

@@ -1,12 +1,7 @@
-# Current FRR orientation
+# Current orientation
 
-30 October2026 America/Chicago. [Handoff](../CURRENT_HANDOFF.md),[latestreport](../evaluation/counterbalanced-curriculum-v1/REPORT.md),[checkpoint](checkpoints/AFTER_COUNTERBALANCED_CURRICULUM_2026-10-30.md).
+31 October 2026 UTC. [Handoff](../CURRENT_HANDOFF.md), [acquisition](../evaluation/simple-readout-acquisition-v1/REPORT.md), [selection bridge](../evaluation/readout-selection-bridge-v1/REPORT.md), [frame control](../evaluation/readout-selection-bridge-v1/frame-control/REPORT.md).
 
-Candidate144unique/48balancedupdatesvsreusedold72twopasscontrol.252generations;controlYESalways/candidateNOalways,24/72each,missing0/24,correctdiscordantheaderpairs0/24. Posthoc12seenexamplescandidateNOalways4/12,no updates. Acquisitionnotshownonslice;notpuretransferfailure. No modelpromotion. Optionalseen-acquisitionexample/modulelinkadded;verifiercode/core/schema/queueunchanged.997oldruntimefilesunchanged,264newcachechecks.
+Four fixed-budget adapters learn the simple explicit three-state mapping: 12/12 seen and12/12 study-held-out per arm. Both normal words and all cyclic short-code mappings succeed. Full two-record inputs score 13,11,10,23/36; all 0/12 fully correct conflicting header pairs. Correct source crop restores 36/36 (six distinct crops); one-record full-frame control 12/12 per arm. Composite context/selection boundary narrowed; not real missing-field detection, calibrated uncertainty, a neural mechanism or general FRR benefit.
 
-Broaderscope: noresourceemergency;missingness/readout+fieldbindinghighpriority;localbinarypreservationmaterial. Verified6.29MBlocaladaptercapsuleavailable,notindependentarchiveuntiloffworkspacecopy. Longeractualcompressedhandoff+source-revision strongestdistinctgrowthbranch. LCA/registrydeclaredancestrynottruth. Furthertraining shouldisolatelearnablebalancedreadout/acquisitionbeforecomplextransfer;aliasesunrun. No paidresources/install/backgroundtask.
-
-
-## Parked Grok relay — later exploration
-
-[Substrate depth / neural criticality / binding relay](../evaluation/grok-substrate-depth-intake-v1/NOTE.md) preserved verbatim with provenance. Unvetted proposals, no source verification or neural-mechanism inference yet. Review primary citations, task-relative metric profiles and source-revision sensitivity before experiments; attachment adoption language is not a default change. User asked to pin for later. Calibration/readout and longer handoff/source-revision directions remain recorded; no modelwork/backgroundtask started.
+Next: fixed-readout matched-length/agreeing/conflicting-neighbor contact, then balanced selection learning if justified. Longer compressed-handoff/source-revision remains distinct broader growth direction. Grok relay still parked. 528 generated answers,192 total adapter updates; no bridge/control training or background job. Raw source/prompt/token/choice/loss records preserved; original base and old states unchanged. Optional guidance refined, no core/schema/tool/default/queue promotion. Same-environment checkpoint reload is not an independent restore test. User’s older desktop capsule is separate; new snapshot excludes dense base/environment/older history.

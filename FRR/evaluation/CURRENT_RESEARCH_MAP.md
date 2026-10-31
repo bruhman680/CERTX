@@ -1,3 +1,11 @@
+# Current research map
+
+Latest integration,31 October 2026 UTC: [simple readout acquisition](simple-readout-acquisition-v1/REPORT.md), [two-record bridge](readout-selection-bridge-v1/REPORT.md), and [single-record frame control](readout-selection-bridge-v1/frame-control/REPORT.md). All four acquired readouts12/12 seen+12/12 held-out; full-source bridge13,11,10,23/36, versus correct crops36/36 and single-frame12/12. All full arms0/12 fully correct conflicting header pairs. A limited acquisition-to-multi-record boundary is established; no general FRR superiority, calibrated abstention or neural mechanism.528 generated answers,192 training updates, original base/old states unchanged. Current handoff states unexecuted next contacts.
+
+## Earlier orientation snapshots
+
+The entries below retain their historical wording, including then-current next/pause labels. Those are not current work orders. Original map bytes are archived in the latest acquisition contact.
+
 # Current research map: continuity, distinctions and their readers
 
 Current completed integration (30 October2026 America/Chicago): [counterbalancedcurriculum/pressuresweep](counterbalanced-curriculum-v1/REPORT.md).48candidateupdates,reusedfixedcontrol,252generations;both24/72atconstantbaseline,candidateallNO/controlallYES,missing0/24,headerpairbinding0/24. Posthoc12seen-sourcecheck4/12allNO;no demonstratedacquisitiononslice.997oldruntimefilesunchanged,264newcachechecks. Verifiedlocal6.29MBadaptercapsule;offworkspacecopy stillneededforindependentbackup. Optionalacquisitionguidanceadded,notcore/defaultpolicy. No paidresources/install/modelpromotion. Currenthandoffrecordsnextunexecuteddirections;oldernext/pause labelsremainhistorical.

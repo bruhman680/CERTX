@@ -1,0 +1,285 @@
+{
+  "alpha": 8,
+  "base_revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "base_weights_sha256": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c",
+  "candidate_score_policy": "argmax sum logprob of complete label including EOS; length-normalized diagnostic separate",
+  "checkpoint_selection": "final fixed48 updates only",
+  "decision": "report exact free-generation and constrained per-state counts; no promotion or universal threshold",
+  "interpretation": "interface-package and acquisition contact, not pure token-length effect or harder-task transfer",
+  "lr": 0.001,
+  "mappings": {
+    "alias_0": {
+      "missing": "C",
+      "positive": "A",
+      "zero": "B"
+    },
+    "alias_1": {
+      "missing": "A",
+      "positive": "B",
+      "zero": "C"
+    },
+    "alias_2": {
+      "missing": "B",
+      "positive": "C",
+      "zero": "A"
+    },
+    "canonical": {
+      "missing": "WITHHOLD",
+      "positive": "YES",
+      "zero": "NO"
+    }
+  },
+  "max_tokens": 8,
+  "objective": "mean complete answer plus EOS",
+  "order": [
+    [
+      "seen_1_positive",
+      "seen_1_zero",
+      "seen_1_missing"
+    ],
+    [
+      "seen_2_zero",
+      "seen_2_missing",
+      "seen_2_positive"
+    ],
+    [
+      "seen_0_missing",
+      "seen_0_positive",
+      "seen_0_zero"
+    ],
+    [
+      "seen_3_positive",
+      "seen_3_zero",
+      "seen_3_missing"
+    ],
+    [
+      "seen_3_zero",
+      "seen_3_missing",
+      "seen_3_positive"
+    ],
+    [
+      "seen_0_missing",
+      "seen_0_positive",
+      "seen_0_zero"
+    ],
+    [
+      "seen_2_positive",
+      "seen_2_zero",
+      "seen_2_missing"
+    ],
+    [
+      "seen_1_zero",
+      "seen_1_missing",
+      "seen_1_positive"
+    ],
+    [
+      "seen_3_missing",
+      "seen_3_positive",
+      "seen_3_zero"
+    ],
+    [
+      "seen_0_positive",
+      "seen_0_zero",
+      "seen_0_missing"
+    ],
+    [
+      "seen_2_zero",
+      "seen_2_missing",
+      "seen_2_positive"
+    ],
+    [
+      "seen_1_missing",
+      "seen_1_positive",
+      "seen_1_zero"
+    ],
+    [
+      "seen_1_positive",
+      "seen_1_zero",
+      "seen_1_missing"
+    ],
+    [
+      "seen_0_zero",
+      "seen_0_missing",
+      "seen_0_positive"
+    ],
+    [
+      "seen_3_missing",
+      "seen_3_positive",
+      "seen_3_zero"
+    ],
+    [
+      "seen_2_positive",
+      "seen_2_zero",
+      "seen_2_missing"
+    ],
+    [
+      "seen_3_zero",
+      "seen_3_missing",
+      "seen_3_positive"
+    ],
+    [
+      "seen_2_missing",
+      "seen_2_positive",
+      "seen_2_zero"
+    ],
+    [
+      "seen_0_positive",
+      "seen_0_zero",
+      "seen_0_missing"
+    ],
+    [
+      "seen_1_zero",
+      "seen_1_missing",
+      "seen_1_positive"
+    ],
+    [
+      "seen_3_missing",
+      "seen_3_positive",
+      "seen_3_zero"
+    ],
+    [
+      "seen_1_positive",
+      "seen_1_zero",
+      "seen_1_missing"
+    ],
+    [
+      "seen_0_zero",
+      "seen_0_missing",
+      "seen_0_positive"
+    ],
+    [
+      "seen_2_missing",
+      "seen_2_positive",
+      "seen_2_zero"
+    ],
+    [
+      "seen_3_positive",
+      "seen_3_zero",
+      "seen_3_missing"
+    ],
+    [
+      "seen_0_zero",
+      "seen_0_missing",
+      "seen_0_positive"
+    ],
+    [
+      "seen_1_missing",
+      "seen_1_positive",
+      "seen_1_zero"
+    ],
+    [
+      "seen_2_positive",
+      "seen_2_zero",
+      "seen_2_missing"
+    ],
+    [
+      "seen_0_zero",
+      "seen_0_missing",
+      "seen_0_positive"
+    ],
+    [
+      "seen_2_missing",
+      "seen_2_positive",
+      "seen_2_zero"
+    ],
+    [
+      "seen_1_positive",
+      "seen_1_zero",
+      "seen_1_missing"
+    ],
+    [
+      "seen_3_zero",
+      "seen_3_missing",
+      "seen_3_positive"
+    ],
+    [
+      "seen_0_missing",
+      "seen_0_positive",
+      "seen_0_zero"
+    ],
+    [
+      "seen_3_positive",
+      "seen_3_zero",
+      "seen_3_missing"
+    ],
+    [
+      "seen_1_zero",
+      "seen_1_missing",
+      "seen_1_positive"
+    ],
+    [
+      "seen_2_missing",
+      "seen_2_positive",
+      "seen_2_zero"
+    ],
+    [
+      "seen_2_positive",
+      "seen_2_zero",
+      "seen_2_missing"
+    ],
+    [
+      "seen_3_zero",
+      "seen_3_missing",
+      "seen_3_positive"
+    ],
+    [
+      "seen_0_missing",
+      "seen_0_positive",
+      "seen_0_zero"
+    ],
+    [
+      "seen_1_positive",
+      "seen_1_zero",
+      "seen_1_missing"
+    ],
+    [
+      "seen_0_zero",
+      "seen_0_missing",
+      "seen_0_positive"
+    ],
+    [
+      "seen_3_missing",
+      "seen_3_positive",
+      "seen_3_zero"
+    ],
+    [
+      "seen_1_positive",
+      "seen_1_zero",
+      "seen_1_missing"
+    ],
+    [
+      "seen_2_zero",
+      "seen_2_missing",
+      "seen_2_positive"
+    ],
+    [
+      "seen_3_missing",
+      "seen_3_positive",
+      "seen_3_zero"
+    ],
+    [
+      "seen_0_positive",
+      "seen_0_zero",
+      "seen_0_missing"
+    ],
+    [
+      "seen_2_zero",
+      "seen_2_missing",
+      "seen_2_positive"
+    ],
+    [
+      "seen_1_missing",
+      "seen_1_positive",
+      "seen_1_zero"
+    ]
+  ],
+  "prompt_template": "Read only the record for the target plot.\nMap the status to its answer. {mapping}. Return only the answer.\n\n{source}",
+  "rank": 4,
+  "retries": 0,
+  "seed": 73103,
+  "train_token_guard": 128,
+  "training_wall_seconds_per_arm": 300,
+  "updates": 48,
+  "weight_decay": 0.01,
+  "working_limit_bytes": 5153960755
+}
