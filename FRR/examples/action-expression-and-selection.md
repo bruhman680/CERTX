@@ -30,3 +30,8 @@ Rules stated in a prompt, worked demonstrations and rules executed by a controll
 ## Optional observation-interface check — 1 November 2026 UTC
 
 [Fact-first contact](../evaluation/fact-first-control-v1/REPORT.md): an intermediate fact schema is a new interface that requires its own validity and meaning checks. Prompting for facts before actions did not make this reader reliable: literal-status replies failed the declared grammar, while familiar canonical supplied-record reading remained intact. Do not treat invalid formatting alone as absent comprehension; retain outputs and test the interface separately. A checked controller that reads/corrects all visible fields is delegated code control, not model self-correction, and its proposal overhead must be compared with the simpler mechanical policy. Changed access wording did not improve this contact and is not adopted. This note changes no default module or model policy.
+
+
+## Optional supplied-record context check — 1 November 2026 UTC
+
+[Worker context component study](../evaluation/worker-context-components-v1/REPORT.md) holds each supplied record fixed under instruction and surrounding-field packages. Retain the proven worker frame as a reference; extra clarification or an absent-record UNKNOWN instruction does not automatically preserve an existing skill. Score incorrect deferrals with available source evidence separately from proper absence recognition. Report nuisance-field token mismatches rather than calling all pairs length-matched. Two instruction packages cannot identify a unique causal phrase; prospective factor separation is the next check. No new default module, model policy or universal gate is introduced.

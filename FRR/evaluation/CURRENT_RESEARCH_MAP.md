@@ -1,5 +1,15 @@
 # Current research map
 
+1 November 2026 UTC. Completed [worker context components](worker-context-components-v1/REPORT.md): 531 actual unique prompts, nine supplied snippets, two headers and 29 surrounding-field conditions. Canonical header 269/270 correct including nine bare anchors; on the same 261 factorial cases it scores 260/261 versus explicit-visible 222/261. Wrong outputs by header/status: {('explicit_visible', 'zero'): 39, ('canonical', 'positive'): 1}. Same-record outcomes and raw deferrals are retained; this is a narrow prompt-package effect, not model self-correction or a neural explanation.
+
+Next unexecuted: instruction-factor ablation with fixed mapping/context, especially visible/other-record clarification versus absent-record UNKNOWN clause. Current paired context study does not isolate a unique phrase or internal mechanism. Wider multi-turn exploration remains parked. Raw incorrect deferrals, exact labels and controller responsibilities stay distinct. No default/core/schema/queue changes.
+
+## Earlier orientation snapshots
+
+Following preserves then-current wording; original bytes are archived in the latest contact.
+
+# Current research map
+
 Latest integration,1 November2026UTC: [fact-first proposals and control](fact-first-control-v1/REPORT.md), [familiar-status interface](fact-first-control-v1/familiar-status/REPORT.md). Separating fact prompts from actions did not establish reliable model observations. Checked visible-field code resolves the toy but is mechanically equivalent to its comparator; this is delegated control. Familiar supplied-record worker18/18, contextual variants18/24and12/24; absent-evidence handling stillfails. Do not adopt literal fact schema or alternate access wording as defaults.
 
 Next: matched-context target/access/combined/irrelevant-field worker diagnostic; retain hybrid routing/reference and broader memory/handoff branches. Wider model feedback/exploration loop parked by user.267actual generations,258unique prompts,576logical routes; preserved failures and unchanged weights. Fullhand-off records attribution/restorelimits. Currentcore/schema/generaltools/queue unchanged.
