@@ -1,0 +1,596 @@
+[
+  {
+    "expected": "YES",
+    "frame": "context",
+    "id": "q_000",
+    "primary_query": "q_002",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: positive\nArchive accessible: yes",
+    "target": "Aster",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "YES",
+    "frame": "context",
+    "id": "q_001",
+    "primary_query": "q_006",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: positive\nArchive access: available",
+    "target": "Aster",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "UNKNOWN",
+    "frame": "context",
+    "id": "q_002",
+    "primary_query": "q_010",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive accessible: yes",
+    "target": "Aster",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "UNKNOWN",
+    "frame": "context",
+    "id": "q_003",
+    "primary_query": "q_014",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive access: available",
+    "target": "Aster",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "NO",
+    "frame": "context",
+    "id": "q_004",
+    "primary_query": "q_018",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: zero\nArchive accessible: yes",
+    "target": "Aster",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "NO",
+    "frame": "context",
+    "id": "q_005",
+    "primary_query": "q_022",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: zero\nArchive access: available",
+    "target": "Aster",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "UNKNOWN",
+    "frame": "context",
+    "id": "q_006",
+    "primary_query": "q_026",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive accessible: no",
+    "target": "Aster",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "UNKNOWN",
+    "frame": "context",
+    "id": "q_007",
+    "primary_query": "q_030",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive access: unavailable",
+    "target": "Aster",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "NO",
+    "frame": "context",
+    "id": "q_008",
+    "primary_query": "q_034",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: zero\nArchive accessible: yes",
+    "target": "Aster",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "NO",
+    "frame": "context",
+    "id": "q_009",
+    "primary_query": "q_038",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: zero\nArchive access: available",
+    "target": "Aster",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "context",
+    "id": "q_010",
+    "primary_query": "q_042",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: missing\nArchive accessible: yes",
+    "target": "Aster",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "context",
+    "id": "q_011",
+    "primary_query": "q_046",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: missing\nArchive access: available",
+    "target": "Aster",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "context",
+    "id": "q_012",
+    "primary_query": "q_050",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: missing\nArchive accessible: yes",
+    "target": "Aster",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "context",
+    "id": "q_013",
+    "primary_query": "q_054",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: missing\nArchive access: available",
+    "target": "Aster",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "YES",
+    "frame": "context",
+    "id": "q_014",
+    "primary_query": "q_058",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: positive\nArchive accessible: yes",
+    "target": "Aster",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "YES",
+    "frame": "context",
+    "id": "q_015",
+    "primary_query": "q_062",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: positive\nArchive access: available",
+    "target": "Aster",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "YES",
+    "frame": "context",
+    "id": "q_016",
+    "primary_query": "q_066",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: positive\nArchive accessible: yes",
+    "target": "Linden",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "YES",
+    "frame": "context",
+    "id": "q_017",
+    "primary_query": "q_070",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: positive\nArchive access: available",
+    "target": "Linden",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "UNKNOWN",
+    "frame": "context",
+    "id": "q_018",
+    "primary_query": "q_074",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive accessible: yes",
+    "target": "Linden",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "UNKNOWN",
+    "frame": "context",
+    "id": "q_019",
+    "primary_query": "q_078",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive access: available",
+    "target": "Linden",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "NO",
+    "frame": "context",
+    "id": "q_020",
+    "primary_query": "q_082",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: zero\nArchive accessible: yes",
+    "target": "Linden",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "NO",
+    "frame": "context",
+    "id": "q_021",
+    "primary_query": "q_086",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: zero\nArchive access: available",
+    "target": "Linden",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "UNKNOWN",
+    "frame": "context",
+    "id": "q_022",
+    "primary_query": "q_090",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive accessible: no",
+    "target": "Linden",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "UNKNOWN",
+    "frame": "context",
+    "id": "q_023",
+    "primary_query": "q_094",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive access: unavailable",
+    "target": "Linden",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "NO",
+    "frame": "context",
+    "id": "q_024",
+    "primary_query": "q_098",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: zero\nArchive accessible: yes",
+    "target": "Linden",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "NO",
+    "frame": "context",
+    "id": "q_025",
+    "primary_query": "q_102",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: zero\nArchive access: available",
+    "target": "Linden",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "context",
+    "id": "q_026",
+    "primary_query": "q_106",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: missing\nArchive accessible: yes",
+    "target": "Linden",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "context",
+    "id": "q_027",
+    "primary_query": "q_110",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: missing\nArchive access: available",
+    "target": "Linden",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "context",
+    "id": "q_028",
+    "primary_query": "q_114",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: missing\nArchive accessible: yes",
+    "target": "Linden",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "context",
+    "id": "q_029",
+    "primary_query": "q_118",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: missing\nArchive access: available",
+    "target": "Linden",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "YES",
+    "frame": "context",
+    "id": "q_030",
+    "primary_query": "q_122",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: positive\nArchive accessible: yes",
+    "target": "Linden",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "YES",
+    "frame": "context",
+    "id": "q_031",
+    "primary_query": "q_126",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: positive\nArchive access: available",
+    "target": "Linden",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "YES",
+    "frame": "context",
+    "id": "q_032",
+    "primary_query": "q_130",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: positive\nArchive accessible: yes",
+    "target": "Rowan",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "YES",
+    "frame": "context",
+    "id": "q_033",
+    "primary_query": "q_134",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: positive\nArchive access: available",
+    "target": "Rowan",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "UNKNOWN",
+    "frame": "context",
+    "id": "q_034",
+    "primary_query": "q_138",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive accessible: yes",
+    "target": "Rowan",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "UNKNOWN",
+    "frame": "context",
+    "id": "q_035",
+    "primary_query": "q_142",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive access: available",
+    "target": "Rowan",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "NO",
+    "frame": "context",
+    "id": "q_036",
+    "primary_query": "q_146",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: zero\nArchive accessible: yes",
+    "target": "Rowan",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "NO",
+    "frame": "context",
+    "id": "q_037",
+    "primary_query": "q_150",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: zero\nArchive access: available",
+    "target": "Rowan",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "UNKNOWN",
+    "frame": "context",
+    "id": "q_038",
+    "primary_query": "q_154",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive accessible: no",
+    "target": "Rowan",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "UNKNOWN",
+    "frame": "context",
+    "id": "q_039",
+    "primary_query": "q_158",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive access: unavailable",
+    "target": "Rowan",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "NO",
+    "frame": "context",
+    "id": "q_040",
+    "primary_query": "q_162",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: zero\nArchive accessible: yes",
+    "target": "Rowan",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "NO",
+    "frame": "context",
+    "id": "q_041",
+    "primary_query": "q_166",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: zero\nArchive access: available",
+    "target": "Rowan",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "context",
+    "id": "q_042",
+    "primary_query": "q_170",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: missing\nArchive accessible: yes",
+    "target": "Rowan",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "context",
+    "id": "q_043",
+    "primary_query": "q_174",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: missing\nArchive access: available",
+    "target": "Rowan",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "context",
+    "id": "q_044",
+    "primary_query": "q_178",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: missing\nArchive accessible: yes",
+    "target": "Rowan",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "context",
+    "id": "q_045",
+    "primary_query": "q_182",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: missing\nArchive access: available",
+    "target": "Rowan",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "YES",
+    "frame": "context",
+    "id": "q_046",
+    "primary_query": "q_186",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: positive\nArchive accessible: yes",
+    "target": "Rowan",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "expected": "YES",
+    "frame": "context",
+    "id": "q_047",
+    "primary_query": "q_190",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: positive\nArchive access: available",
+    "target": "Rowan",
+    "vocab": "distinct_words"
+  },
+  {
+    "expected": "YES",
+    "frame": "canonical_worker",
+    "id": "q_048",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Aster\nStatus: positive",
+    "target": "Aster",
+    "vocab": null
+  },
+  {
+    "expected": "NO",
+    "frame": "canonical_worker",
+    "id": "q_049",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Birch\nStatus: zero",
+    "target": "Aster",
+    "vocab": null
+  },
+  {
+    "expected": "NO",
+    "frame": "canonical_worker",
+    "id": "q_050",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Aster\nStatus: zero",
+    "target": "Aster",
+    "vocab": null
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "canonical_worker",
+    "id": "q_051",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Birch\nStatus: missing",
+    "target": "Aster",
+    "vocab": null
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "canonical_worker",
+    "id": "q_052",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Aster\nStatus: missing",
+    "target": "Aster",
+    "vocab": null
+  },
+  {
+    "expected": "YES",
+    "frame": "canonical_worker",
+    "id": "q_053",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Birch\nStatus: positive",
+    "target": "Aster",
+    "vocab": null
+  },
+  {
+    "expected": "YES",
+    "frame": "canonical_worker",
+    "id": "q_054",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Linden\nStatus: positive",
+    "target": "Linden",
+    "vocab": null
+  },
+  {
+    "expected": "NO",
+    "frame": "canonical_worker",
+    "id": "q_055",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Juniper\nStatus: zero",
+    "target": "Linden",
+    "vocab": null
+  },
+  {
+    "expected": "NO",
+    "frame": "canonical_worker",
+    "id": "q_056",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Linden\nStatus: zero",
+    "target": "Linden",
+    "vocab": null
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "canonical_worker",
+    "id": "q_057",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Juniper\nStatus: missing",
+    "target": "Linden",
+    "vocab": null
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "canonical_worker",
+    "id": "q_058",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Linden\nStatus: missing",
+    "target": "Linden",
+    "vocab": null
+  },
+  {
+    "expected": "YES",
+    "frame": "canonical_worker",
+    "id": "q_059",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Juniper\nStatus: positive",
+    "target": "Linden",
+    "vocab": null
+  },
+  {
+    "expected": "YES",
+    "frame": "canonical_worker",
+    "id": "q_060",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Rowan\nStatus: positive",
+    "target": "Rowan",
+    "vocab": null
+  },
+  {
+    "expected": "NO",
+    "frame": "canonical_worker",
+    "id": "q_061",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Willow\nStatus: zero",
+    "target": "Rowan",
+    "vocab": null
+  },
+  {
+    "expected": "NO",
+    "frame": "canonical_worker",
+    "id": "q_062",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Rowan\nStatus: zero",
+    "target": "Rowan",
+    "vocab": null
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "canonical_worker",
+    "id": "q_063",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Willow\nStatus: missing",
+    "target": "Rowan",
+    "vocab": null
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "canonical_worker",
+    "id": "q_064",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Rowan\nStatus: missing",
+    "target": "Rowan",
+    "vocab": null
+  },
+  {
+    "expected": "YES",
+    "frame": "canonical_worker",
+    "id": "q_065",
+    "primary_query": null,
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Willow\nStatus: positive",
+    "target": "Rowan",
+    "vocab": null
+  }
+]

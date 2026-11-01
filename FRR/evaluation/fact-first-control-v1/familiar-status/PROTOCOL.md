@@ -1,0 +1,7 @@
+# Outcome-informed familiar-status diagnostic
+
+Selected after the primary192probes showed zero valid literal-status replies. This is explicitly an interface follow-up, not a fresh primary comparison or independent replication. Frozen before all66new forwards. Same model/weights and greedy fresh-cache runtime. No model learning/feedback loop.
+
+48contextual observations retain each primary visible input and archive wording, but request familiar YES/NO/WITHHOLD status labels, UNKNOWN for no visible record. Status refers to the visible record even if wrong target. Also18unique visible snippets (target and other names, all statuses) use the exact canonical worker prompt frame. Canonical frame omits target/access surrounding fields; it is a package comparison, not an isolated proof about vocabulary, context, tuning, or reasoning mechanisms. Canonical frame has no absent-record query because its previously learned instruction does not specify one. No posthoc remapping of primary invalid outputs or scores. Both status contexts still differ from direct action selection.
+
+12output tokens, <=768input tokens, no truncation, no tool execution. Publish all outputs, exact-label correctness, per-class counts, truncation and resource/time. Historical worker prompt duplicates are fresh model calls here, not independent models. This may identify a useful interface boundary but does not establish a general controller or justify adopting a best prompt after seeing outcomes.

@@ -1,0 +1,9 @@
+# Current orientation
+
+31 October 2026, America/Chicago (client date). [Handoff](../CURRENT_HANDOFF.md), [description/rule report](../evaluation/descriptions-and-rules-v1/REPORT.md), [name-transfer check](../evaluation/descriptions-and-rules-v1/availability-transfer/REPORT.md).
+
+The declared word/description parser passes 43 fixtures including polarity and last-negated-declaration cases. Old regression coverage rises 76→91 of 96, without changing old scores. Fresh outputs have identical old/new action interpretations, so no new policy gain from aliases. Three explicit rule orders produce no requests. One of six example orders produces two useful free TARGET outputs, driving eight logical retrievals and 12/24 task terminals versus 4/24 other orders. It never uses UNKNOWN correctly for inaccessible evidence.
+
+Selected request survives original Clover but disappears for Marigold/Sorrel; four old baseline inputs/outputs repeat exactly. No robust surface-independent controller demonstrated. The observed rule in code still resolves all 24 at 12 nominal units; nominal costs are not money. An observation echo is not automatically an action; source-checked fact proposals plus a separate controller are a next option.
+
+101 actual probes/97 distinct prompt strings/576 executed logical routes, zero training/new weights. All audits and five test groups pass; 3,698 older files unchanged before sync, four originals archived. Optional method note updated; core/schema/general tools/default/queue unchanged. No paid service/install/download/background job. Next: fact-first source proposals/repair, access-label collision controls and fresh order-balanced transfer; broader memory/source-revision paths remain open. Current adapter capsule differs from older desktop copy; no new restore/backup claim.

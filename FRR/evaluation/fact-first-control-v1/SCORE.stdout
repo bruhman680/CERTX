@@ -1,0 +1,296 @@
+{
+  "fact_groups": {
+    "shared_yes_no__all": {
+      "observations": 24,
+      "fields": {
+        "role": {
+          "recognized": 22,
+          "correct": 9
+        },
+        "status": {
+          "recognized": 0,
+          "correct": 0
+        },
+        "access": {
+          "recognized": 17,
+          "correct": 14
+        }
+      },
+      "joint_correct": 0,
+      "proposed_action_matches_observed_rule": 0,
+      "direct_matches_observed_rule": 6
+    },
+    "shared_yes_no__Aster": {
+      "observations": 8,
+      "fields": {
+        "role": {
+          "recognized": 8,
+          "correct": 3
+        },
+        "status": {
+          "recognized": 0,
+          "correct": 0
+        },
+        "access": {
+          "recognized": 5,
+          "correct": 4
+        }
+      },
+      "joint_correct": 0,
+      "proposed_action_matches_observed_rule": 0,
+      "direct_matches_observed_rule": 2
+    },
+    "shared_yes_no__Linden": {
+      "observations": 8,
+      "fields": {
+        "role": {
+          "recognized": 8,
+          "correct": 3
+        },
+        "status": {
+          "recognized": 0,
+          "correct": 0
+        },
+        "access": {
+          "recognized": 6,
+          "correct": 5
+        }
+      },
+      "joint_correct": 0,
+      "proposed_action_matches_observed_rule": 0,
+      "direct_matches_observed_rule": 2
+    },
+    "shared_yes_no__Rowan": {
+      "observations": 8,
+      "fields": {
+        "role": {
+          "recognized": 6,
+          "correct": 3
+        },
+        "status": {
+          "recognized": 0,
+          "correct": 0
+        },
+        "access": {
+          "recognized": 6,
+          "correct": 5
+        }
+      },
+      "joint_correct": 0,
+      "proposed_action_matches_observed_rule": 0,
+      "direct_matches_observed_rule": 2
+    },
+    "distinct_words__all": {
+      "observations": 24,
+      "fields": {
+        "role": {
+          "recognized": 23,
+          "correct": 9
+        },
+        "status": {
+          "recognized": 0,
+          "correct": 0
+        },
+        "access": {
+          "recognized": 13,
+          "correct": 9
+        }
+      },
+      "joint_correct": 0,
+      "proposed_action_matches_observed_rule": 0,
+      "direct_matches_observed_rule": 6
+    },
+    "distinct_words__Aster": {
+      "observations": 8,
+      "fields": {
+        "role": {
+          "recognized": 8,
+          "correct": 3
+        },
+        "status": {
+          "recognized": 0,
+          "correct": 0
+        },
+        "access": {
+          "recognized": 5,
+          "correct": 4
+        }
+      },
+      "joint_correct": 0,
+      "proposed_action_matches_observed_rule": 0,
+      "direct_matches_observed_rule": 2
+    },
+    "distinct_words__Linden": {
+      "observations": 8,
+      "fields": {
+        "role": {
+          "recognized": 8,
+          "correct": 3
+        },
+        "status": {
+          "recognized": 0,
+          "correct": 0
+        },
+        "access": {
+          "recognized": 5,
+          "correct": 4
+        }
+      },
+      "joint_correct": 0,
+      "proposed_action_matches_observed_rule": 0,
+      "direct_matches_observed_rule": 2
+    },
+    "distinct_words__Rowan": {
+      "observations": 8,
+      "fields": {
+        "role": {
+          "recognized": 7,
+          "correct": 3
+        },
+        "status": {
+          "recognized": 0,
+          "correct": 0
+        },
+        "access": {
+          "recognized": 3,
+          "correct": 1
+        }
+      },
+      "joint_correct": 0,
+      "proposed_action_matches_observed_rule": 0,
+      "direct_matches_observed_rule": 2
+    }
+  },
+  "policies": {
+    "shared_yes_no__direct": {
+      "n": 72,
+      "grounded": 12,
+      "justified_unknown": 0,
+      "resolved": 12,
+      "requests": 0,
+      "unavailable_requests": 0,
+      "nominal_units": 0,
+      "invalid": 30,
+      "actions": {
+        "YES": 24,
+        "INVALID": 30,
+        "NO": 18
+      }
+    },
+    "shared_yes_no__proposed_facts": {
+      "n": 72,
+      "grounded": 0,
+      "justified_unknown": 0,
+      "resolved": 0,
+      "requests": 0,
+      "unavailable_requests": 0,
+      "nominal_units": 0,
+      "invalid": 72,
+      "actions": {
+        "INVALID": 72
+      }
+    },
+    "shared_yes_no__checked_facts": {
+      "n": 72,
+      "grounded": 54,
+      "justified_unknown": 18,
+      "resolved": 72,
+      "requests": 36,
+      "unavailable_requests": 0,
+      "nominal_units": 36,
+      "invalid": 0,
+      "actions": {
+        "YES": 6,
+        "TARGET": 36,
+        "UNKNOWN": 18,
+        "NO": 6,
+        "WITHHOLD": 6
+      }
+    },
+    "shared_yes_no__observed_input": {
+      "n": 72,
+      "grounded": 54,
+      "justified_unknown": 18,
+      "resolved": 72,
+      "requests": 36,
+      "unavailable_requests": 0,
+      "nominal_units": 36,
+      "invalid": 0,
+      "actions": {
+        "YES": 6,
+        "TARGET": 36,
+        "UNKNOWN": 18,
+        "NO": 6,
+        "WITHHOLD": 6
+      }
+    },
+    "distinct_words__direct": {
+      "n": 72,
+      "grounded": 12,
+      "justified_unknown": 0,
+      "resolved": 12,
+      "requests": 0,
+      "unavailable_requests": 0,
+      "nominal_units": 0,
+      "invalid": 36,
+      "actions": {
+        "YES": 22,
+        "INVALID": 36,
+        "NO": 12,
+        "UNKNOWN": 2
+      }
+    },
+    "distinct_words__proposed_facts": {
+      "n": 72,
+      "grounded": 0,
+      "justified_unknown": 0,
+      "resolved": 0,
+      "requests": 0,
+      "unavailable_requests": 0,
+      "nominal_units": 0,
+      "invalid": 72,
+      "actions": {
+        "INVALID": 72
+      }
+    },
+    "distinct_words__checked_facts": {
+      "n": 72,
+      "grounded": 54,
+      "justified_unknown": 18,
+      "resolved": 72,
+      "requests": 36,
+      "unavailable_requests": 0,
+      "nominal_units": 36,
+      "invalid": 0,
+      "actions": {
+        "YES": 6,
+        "TARGET": 36,
+        "UNKNOWN": 18,
+        "NO": 6,
+        "WITHHOLD": 6
+      }
+    },
+    "distinct_words__observed_input": {
+      "n": 72,
+      "grounded": 54,
+      "justified_unknown": 18,
+      "resolved": 72,
+      "requests": 36,
+      "unavailable_requests": 0,
+      "nominal_units": 36,
+      "invalid": 0,
+      "actions": {
+        "YES": 6,
+        "TARGET": 36,
+        "UNKNOWN": 18,
+        "NO": 6,
+        "WITHHOLD": 6
+      }
+    }
+  },
+  "at_cap": 0,
+  "actual_probes": 192,
+  "generation_seconds": 90.90972085295653,
+  "input_tokens": 27776,
+  "output_tokens": 641
+}

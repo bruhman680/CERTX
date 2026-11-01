@@ -1,5 +1,15 @@
 # Current research map
 
+Latest integration,1 November2026UTC: [fact-first proposals and control](fact-first-control-v1/REPORT.md), [familiar-status interface](fact-first-control-v1/familiar-status/REPORT.md). Separating fact prompts from actions did not establish reliable model observations. Checked visible-field code resolves the toy but is mechanically equivalent to its comparator; this is delegated control. Familiar supplied-record worker18/18, contextual variants18/24and12/24; absent-evidence handling stillfails. Do not adopt literal fact schema or alternate access wording as defaults.
+
+Next: matched-context target/access/combined/irrelevant-field worker diagnostic; retain hybrid routing/reference and broader memory/handoff branches. Wider model feedback/exploration loop parked by user.267actual generations,258unique prompts,576logical routes; preserved failures and unchanged weights. Fullhand-off records attribution/restorelimits. Currentcore/schema/generaltools/queue unchanged.
+
+## Earlier orientation snapshots
+
+Following is then-current wording, not new work orders. Original bytes archived in the latest contact.
+
+# Current research map
+
 Latest integration,31 October2026 America/Chicago(client date): [declared descriptions and guidance order](descriptions-and-rules-v1/REPORT.md), [limited name transfer](descriptions-and-rules-v1/availability-transfer/REPORT.md).43decoder fixture expectations pass; known historical descriptions are recovered without changing old metrics. No decoder difference on80new outputs. One demonstration order creates two useful free request outputs, but those requests do not survive two new names; no rule order requests evidence. Code-based observed-input rule remains robust in the tiny declared domain. No default model/controller/parser or broad efficacy claim.
 
 101actual generation probes,97distinct prompt strings,576logical executed routes; reuse explicit. Current handoff records next options, including fact-first model observations/source-checking control and role-label collision countertests. Earlier failed results and UTC date labels remain history.

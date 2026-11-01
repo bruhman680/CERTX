@@ -1,0 +1,1018 @@
+{
+  "actual_probes": 192,
+  "at_cap": 0,
+  "fact_groups": {
+    "distinct_words__Aster": {
+      "direct_matches_observed_rule": 2,
+      "fields": {
+        "access": {
+          "correct": 4,
+          "recognized": 5
+        },
+        "role": {
+          "correct": 3,
+          "recognized": 8
+        },
+        "status": {
+          "correct": 0,
+          "recognized": 0
+        }
+      },
+      "joint_correct": 0,
+      "observations": 8,
+      "proposed_action_matches_observed_rule": 0
+    },
+    "distinct_words__Linden": {
+      "direct_matches_observed_rule": 2,
+      "fields": {
+        "access": {
+          "correct": 4,
+          "recognized": 5
+        },
+        "role": {
+          "correct": 3,
+          "recognized": 8
+        },
+        "status": {
+          "correct": 0,
+          "recognized": 0
+        }
+      },
+      "joint_correct": 0,
+      "observations": 8,
+      "proposed_action_matches_observed_rule": 0
+    },
+    "distinct_words__Rowan": {
+      "direct_matches_observed_rule": 2,
+      "fields": {
+        "access": {
+          "correct": 1,
+          "recognized": 3
+        },
+        "role": {
+          "correct": 3,
+          "recognized": 7
+        },
+        "status": {
+          "correct": 0,
+          "recognized": 0
+        }
+      },
+      "joint_correct": 0,
+      "observations": 8,
+      "proposed_action_matches_observed_rule": 0
+    },
+    "distinct_words__all": {
+      "direct_matches_observed_rule": 6,
+      "fields": {
+        "access": {
+          "correct": 9,
+          "recognized": 13
+        },
+        "role": {
+          "correct": 9,
+          "recognized": 23
+        },
+        "status": {
+          "correct": 0,
+          "recognized": 0
+        }
+      },
+      "joint_correct": 0,
+      "observations": 24,
+      "proposed_action_matches_observed_rule": 0
+    },
+    "shared_yes_no__Aster": {
+      "direct_matches_observed_rule": 2,
+      "fields": {
+        "access": {
+          "correct": 4,
+          "recognized": 5
+        },
+        "role": {
+          "correct": 3,
+          "recognized": 8
+        },
+        "status": {
+          "correct": 0,
+          "recognized": 0
+        }
+      },
+      "joint_correct": 0,
+      "observations": 8,
+      "proposed_action_matches_observed_rule": 0
+    },
+    "shared_yes_no__Linden": {
+      "direct_matches_observed_rule": 2,
+      "fields": {
+        "access": {
+          "correct": 5,
+          "recognized": 6
+        },
+        "role": {
+          "correct": 3,
+          "recognized": 8
+        },
+        "status": {
+          "correct": 0,
+          "recognized": 0
+        }
+      },
+      "joint_correct": 0,
+      "observations": 8,
+      "proposed_action_matches_observed_rule": 0
+    },
+    "shared_yes_no__Rowan": {
+      "direct_matches_observed_rule": 2,
+      "fields": {
+        "access": {
+          "correct": 5,
+          "recognized": 6
+        },
+        "role": {
+          "correct": 3,
+          "recognized": 6
+        },
+        "status": {
+          "correct": 0,
+          "recognized": 0
+        }
+      },
+      "joint_correct": 0,
+      "observations": 8,
+      "proposed_action_matches_observed_rule": 0
+    },
+    "shared_yes_no__all": {
+      "direct_matches_observed_rule": 6,
+      "fields": {
+        "access": {
+          "correct": 14,
+          "recognized": 17
+        },
+        "role": {
+          "correct": 9,
+          "recognized": 22
+        },
+        "status": {
+          "correct": 0,
+          "recognized": 0
+        }
+      },
+      "joint_correct": 0,
+      "observations": 24,
+      "proposed_action_matches_observed_rule": 0
+    }
+  },
+  "generation_seconds": 90.90972085295653,
+  "input_tokens": 27776,
+  "observations": [
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "positive"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Aster",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "positive"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Aster",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": null,
+      "expected": {
+        "access": "OPEN",
+        "role": "ABSENT",
+        "status": "none"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Aster",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": null,
+      "expected": {
+        "access": "OPEN",
+        "role": "ABSENT",
+        "status": "none"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Aster",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "NO",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "zero"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Aster",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "NO",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "zero"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Aster",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "NO",
+      "expected": {
+        "access": "CLOSED",
+        "role": "ABSENT",
+        "status": "none"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Aster",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": null,
+      "expected": {
+        "access": "CLOSED",
+        "role": "ABSENT",
+        "status": "none"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Aster",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "NO",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "zero"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Aster",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "NO",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "zero"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Aster",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "missing"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Aster",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "missing"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Aster",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "missing"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Aster",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "missing"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Aster",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "positive"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Aster",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "positive"
+      },
+      "proposed": {
+        "access": "CLOSED",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Aster",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "positive"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Linden",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "positive"
+      },
+      "proposed": {
+        "access": "CLOSED",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Linden",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": null,
+      "expected": {
+        "access": "OPEN",
+        "role": "ABSENT",
+        "status": "none"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Linden",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": null,
+      "expected": {
+        "access": "OPEN",
+        "role": "ABSENT",
+        "status": "none"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Linden",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "NO",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "zero"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Linden",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "NO",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "zero"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Linden",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": null,
+      "expected": {
+        "access": "CLOSED",
+        "role": "ABSENT",
+        "status": "none"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Linden",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": null,
+      "expected": {
+        "access": "CLOSED",
+        "role": "ABSENT",
+        "status": "none"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Linden",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "NO",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "zero"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Linden",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "NO",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "zero"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Linden",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "missing"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Linden",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "UNKNOWN",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "missing"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Linden",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "missing"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Linden",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "missing"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Linden",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "positive"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Linden",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "positive"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Linden",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "positive"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Rowan",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "positive"
+      },
+      "proposed": {
+        "access": "CLOSED",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Rowan",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": null,
+      "expected": {
+        "access": "OPEN",
+        "role": "ABSENT",
+        "status": "none"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": null,
+        "status": null
+      },
+      "target": "Rowan",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": null,
+      "expected": {
+        "access": "OPEN",
+        "role": "ABSENT",
+        "status": "none"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Rowan",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "NO",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "zero"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Rowan",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "NO",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "zero"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Rowan",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": null,
+      "expected": {
+        "access": "CLOSED",
+        "role": "ABSENT",
+        "status": "none"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": null,
+        "status": null
+      },
+      "target": "Rowan",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": null,
+      "expected": {
+        "access": "CLOSED",
+        "role": "ABSENT",
+        "status": "none"
+      },
+      "proposed": {
+        "access": null,
+        "role": null,
+        "status": null
+      },
+      "target": "Rowan",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "NO",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "zero"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Rowan",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "NO",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "zero"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Rowan",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "missing"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Rowan",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "missing"
+      },
+      "proposed": {
+        "access": null,
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Rowan",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "missing"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Rowan",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": "missing"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Rowan",
+      "vocab": "distinct_words"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "positive"
+      },
+      "proposed": {
+        "access": "OPEN",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Rowan",
+      "vocab": "shared_yes_no"
+    },
+    {
+      "direct": "YES",
+      "expected": {
+        "access": "OPEN",
+        "role": "OTHER",
+        "status": "positive"
+      },
+      "proposed": {
+        "access": "CLOSED",
+        "role": "TARGET",
+        "status": null
+      },
+      "target": "Rowan",
+      "vocab": "distinct_words"
+    }
+  ],
+  "output_tokens": 641,
+  "policies": {
+    "distinct_words__checked_facts": {
+      "actions": {
+        "NO": 6,
+        "TARGET": 36,
+        "UNKNOWN": 18,
+        "WITHHOLD": 6,
+        "YES": 6
+      },
+      "grounded": 54,
+      "invalid": 0,
+      "justified_unknown": 18,
+      "n": 72,
+      "nominal_units": 36,
+      "requests": 36,
+      "resolved": 72,
+      "unavailable_requests": 0
+    },
+    "distinct_words__direct": {
+      "actions": {
+        "INVALID": 36,
+        "NO": 12,
+        "UNKNOWN": 2,
+        "YES": 22
+      },
+      "grounded": 12,
+      "invalid": 36,
+      "justified_unknown": 0,
+      "n": 72,
+      "nominal_units": 0,
+      "requests": 0,
+      "resolved": 12,
+      "unavailable_requests": 0
+    },
+    "distinct_words__observed_input": {
+      "actions": {
+        "NO": 6,
+        "TARGET": 36,
+        "UNKNOWN": 18,
+        "WITHHOLD": 6,
+        "YES": 6
+      },
+      "grounded": 54,
+      "invalid": 0,
+      "justified_unknown": 18,
+      "n": 72,
+      "nominal_units": 36,
+      "requests": 36,
+      "resolved": 72,
+      "unavailable_requests": 0
+    },
+    "distinct_words__proposed_facts": {
+      "actions": {
+        "INVALID": 72
+      },
+      "grounded": 0,
+      "invalid": 72,
+      "justified_unknown": 0,
+      "n": 72,
+      "nominal_units": 0,
+      "requests": 0,
+      "resolved": 0,
+      "unavailable_requests": 0
+    },
+    "shared_yes_no__checked_facts": {
+      "actions": {
+        "NO": 6,
+        "TARGET": 36,
+        "UNKNOWN": 18,
+        "WITHHOLD": 6,
+        "YES": 6
+      },
+      "grounded": 54,
+      "invalid": 0,
+      "justified_unknown": 18,
+      "n": 72,
+      "nominal_units": 36,
+      "requests": 36,
+      "resolved": 72,
+      "unavailable_requests": 0
+    },
+    "shared_yes_no__direct": {
+      "actions": {
+        "INVALID": 30,
+        "NO": 18,
+        "YES": 24
+      },
+      "grounded": 12,
+      "invalid": 30,
+      "justified_unknown": 0,
+      "n": 72,
+      "nominal_units": 0,
+      "requests": 0,
+      "resolved": 12,
+      "unavailable_requests": 0
+    },
+    "shared_yes_no__observed_input": {
+      "actions": {
+        "NO": 6,
+        "TARGET": 36,
+        "UNKNOWN": 18,
+        "WITHHOLD": 6,
+        "YES": 6
+      },
+      "grounded": 54,
+      "invalid": 0,
+      "justified_unknown": 18,
+      "n": 72,
+      "nominal_units": 36,
+      "requests": 36,
+      "resolved": 72,
+      "unavailable_requests": 0
+    },
+    "shared_yes_no__proposed_facts": {
+      "actions": {
+        "INVALID": 72
+      },
+      "grounded": 0,
+      "invalid": 72,
+      "justified_unknown": 0,
+      "n": 72,
+      "nominal_units": 0,
+      "requests": 0,
+      "resolved": 0,
+      "unavailable_requests": 0
+    }
+  }
+}

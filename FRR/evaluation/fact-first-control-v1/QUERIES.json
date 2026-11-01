@@ -1,0 +1,1538 @@
+[
+  {
+    "cap": 24,
+    "id": "q_000",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: positive\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Aster",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_001",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_002",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_003",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_004",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: positive\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Aster",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_005",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_006",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_007",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_008",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Aster",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_009",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_010",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_011",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_012",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Aster",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_013",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_014",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_015",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_016",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: zero\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Aster",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_017",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_018",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_019",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_020",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: zero\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Aster",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_021",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_022",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_023",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_024",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive accessible: no\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Aster",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_025",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive accessible: no\n\nResponse:",
+    "target": "Aster",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_026",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive accessible: no\n\nResponse:",
+    "target": "Aster",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_027",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive accessible: no\n\nResponse:",
+    "target": "Aster",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_028",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive access: unavailable\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Aster",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_029",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive access: unavailable\n\nResponse:",
+    "target": "Aster",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_030",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive access: unavailable\n\nResponse:",
+    "target": "Aster",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_031",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\n(no visible record)\nArchive access: unavailable\n\nResponse:",
+    "target": "Aster",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_032",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: zero\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Aster",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_033",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_034",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_035",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_036",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: zero\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Aster",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_037",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_038",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_039",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_040",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: missing\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Aster",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_041",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_042",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_043",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_044",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: missing\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Aster",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_045",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_046",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_047",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_048",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: missing\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Aster",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_049",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_050",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_051",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_052",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: missing\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Aster",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_053",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_054",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_055",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Aster\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_056",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: positive\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Aster",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_057",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_058",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_059",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Aster",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_060",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: positive\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Aster",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_061",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_062",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_063",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Aster\nVisible record:\nPlot: Birch\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Aster",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_064",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: positive\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Linden",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_065",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_066",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_067",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_068",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: positive\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Linden",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_069",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_070",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_071",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_072",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Linden",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_073",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_074",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_075",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_076",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Linden",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_077",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_078",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_079",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_080",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: zero\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Linden",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_081",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_082",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_083",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_084",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: zero\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Linden",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_085",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_086",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_087",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_088",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive accessible: no\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Linden",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_089",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive accessible: no\n\nResponse:",
+    "target": "Linden",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_090",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive accessible: no\n\nResponse:",
+    "target": "Linden",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_091",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive accessible: no\n\nResponse:",
+    "target": "Linden",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_092",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive access: unavailable\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Linden",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_093",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive access: unavailable\n\nResponse:",
+    "target": "Linden",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_094",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive access: unavailable\n\nResponse:",
+    "target": "Linden",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_095",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\n(no visible record)\nArchive access: unavailable\n\nResponse:",
+    "target": "Linden",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_096",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: zero\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Linden",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_097",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_098",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_099",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_100",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: zero\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Linden",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_101",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_102",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_103",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_104",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: missing\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Linden",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_105",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_106",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_107",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_108",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: missing\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Linden",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_109",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_110",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_111",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_112",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: missing\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Linden",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_113",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_114",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_115",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_116",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: missing\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Linden",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_117",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_118",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_119",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Linden\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_120",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: positive\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Linden",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_121",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_122",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_123",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Linden",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_124",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: positive\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Linden",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_125",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_126",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_127",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Linden\nVisible record:\nPlot: Juniper\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Linden",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_128",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: positive\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Rowan",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_129",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_130",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_131",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_132",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: positive\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Rowan",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_133",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_134",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_135",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_136",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Rowan",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_137",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_138",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_139",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_140",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Rowan",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_141",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_142",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_143",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_144",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: zero\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Rowan",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_145",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_146",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_147",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_148",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: zero\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Rowan",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_149",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_150",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_151",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_152",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive accessible: no\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Rowan",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_153",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive accessible: no\n\nResponse:",
+    "target": "Rowan",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_154",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive accessible: no\n\nResponse:",
+    "target": "Rowan",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_155",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive accessible: no\n\nResponse:",
+    "target": "Rowan",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_156",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive access: unavailable\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Rowan",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_157",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive access: unavailable\n\nResponse:",
+    "target": "Rowan",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_158",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive access: unavailable\n\nResponse:",
+    "target": "Rowan",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_159",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\n(no visible record)\nArchive access: unavailable\n\nResponse:",
+    "target": "Rowan",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_160",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: zero\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Rowan",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_161",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_162",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_163",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: zero\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_164",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: zero\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Rowan",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_165",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_166",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_167",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: zero\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_168",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: missing\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Rowan",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_169",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_170",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_171",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_172",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: missing\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Rowan",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_173",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_174",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_175",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_176",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: missing\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Rowan",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_177",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_178",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_179",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: missing\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_180",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: missing\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Rowan",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_181",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_182",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_183",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Rowan\nStatus: missing\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "access",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 24,
+    "id": "q_184",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: positive\nArchive accessible: yes\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Rowan",
+    "task": "action",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_185",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "role",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_186",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "status",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 12,
+    "id": "q_187",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: positive\nArchive accessible: yes\n\nResponse:",
+    "target": "Rowan",
+    "task": "access",
+    "vocab": "shared_yes_no"
+  },
+  {
+    "cap": 24,
+    "id": "q_188",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nRules:\nA visible record belongs to the target only when its plot name matches the target name.\nWhen the visible record names the target, answer its recorded status.\nWhen the target record is not visible and the archive is accessible, request TARGET.\nWhen the target record is not visible and the archive is unavailable, report UNKNOWN.\n\nCurrent task:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: positive\nArchive access: available\n\nFinish with one ACTION: line. Use an action word or its exact description.\nResponse:",
+    "target": "Rowan",
+    "task": "action",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_189",
+    "prompt": "Classify only the visible record identity. TARGET means its plot name matches the target plot. OTHER means its plot name differs. ABSENT means no visible record. Return only ROLE: TARGET, ROLE: OTHER, or ROLE: ABSENT.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "role",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_190",
+    "prompt": "Copy only the status of the visible record, even if it belongs to another plot. If there is no visible record use none. Return only STATUS: positive, STATUS: zero, STATUS: missing, or STATUS: none.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "status",
+    "vocab": "distinct_words"
+  },
+  {
+    "cap": 12,
+    "id": "q_191",
+    "prompt": "Classify only archive access. OPEN means accessible (yes or available). CLOSED means inaccessible (no or unavailable). Return only ACCESS: OPEN or ACCESS: CLOSED.\n\nCurrent observation:\nTarget plot: Rowan\nVisible record:\nPlot: Willow\nStatus: positive\nArchive access: available\n\nResponse:",
+    "target": "Rowan",
+    "task": "access",
+    "vocab": "distinct_words"
+  }
+]
