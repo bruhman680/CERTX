@@ -1,5 +1,17 @@
 # Current research map
 
+1 November 2026 UTC. Completed [UNKNOWN clause and public-notepad contact](unknown-clause-notepad-v1/REPORT.md). Four instruction combinations cross clarification and the absent-record UNKNOWN clause, each with answer-only/note-request formats. Three existing names, supplied statuses and actual absence, seven contexts: 560 unique primary calls from 672 nominal links. 126 earlier prompt/output sequences repeat exactly despite the larger cap.
+
+The controlled clause addition causes 40 correct-to-wrong present-answer transitions in this grid without useful absent-record UNKNOWN recognition. Note request produces no notes and net eight fewer correct present answers. A separate 14-call note-only diagnostic fails to explain wrong UNKNOWN decisions; two absence echoes are retained as observations. [UNKNOWN ledger](unknown-clause-notepad-v1/UNKNOWN_NOTEPAD.jsonl) preserves all 41 primary deferrals, no invented explanations.
+
+Next: fresh-name/layout bridge with explicit source receipts and canonical reader, and challenging evidence boundaries. Larger feedback/exploration loop parked; broader memory/handoff/planning work open. 574 actual unique calls, not nominal-name copies; no training, default/core/schema/queue change, independent replication or general FRR efficacy claim.
+
+## Earlier orientation snapshots
+
+Following is then-current wording, not a new work order. Exact originals archived in the latest contact.
+
+# Current research map
+
 1 November 2026 UTC. Completed [worker context components](worker-context-components-v1/REPORT.md): 531 actual unique prompts, nine supplied snippets, two headers and 29 surrounding-field conditions. Canonical header 269/270 correct including nine bare anchors; on the same 261 factorial cases it scores 260/261 versus explicit-visible 222/261. Wrong outputs by header/status: {('explicit_visible', 'zero'): 39, ('canonical', 'positive'): 1}. Same-record outcomes and raw deferrals are retained; this is a narrow prompt-package effect, not model self-correction or a neural explanation.
 
 Next unexecuted: instruction-factor ablation with fixed mapping/context, especially visible/other-record clarification versus absent-record UNKNOWN clause. Current paired context study does not isolate a unique phrase or internal mechanism. Wider multi-turn exploration remains parked. Raw incorrect deferrals, exact labels and controller responsibilities stay distinct. No default/core/schema/queue changes.

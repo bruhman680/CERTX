@@ -1,0 +1,9 @@
+# Outcome-informed note-only elicitation diagnostic
+
+Run only if primary560probes complete with zero nonempty NOTE fields. Selected because combined answer-then-note format was not used. Freeze before allnew outputs. Do not change prior answers, parsers or scores. This is a new independent prompt containing a recorded choice and its visible evidence; it does not continue the original cache or expose its internal computation. It is not a feedback/correction loop, training or proof of a faithful self-explanation.
+
+Three nominal names Maple/Cedar/Hazel; supported zero/NO, unsupported zero/UNKNOWN, and absent/UNKNOWN. For each case, ask only for a short public evidence note, either without demonstration or with one positive-status Iris example. Absent display omits names and deduplicates.18nominal links,14unique prompts/actual fresh-cache calls. Keep expected evidence separate from input.48output-token cap; same model/runtime/checkpoint; no tools/paid API/training/default adoption.
+
+Prompt says do not give a replacement answer, state what evidence is present or missing. No private chain-of-thought request. Keep alltext even if label-only, contradictory, irrelevant or truncated. A nonempty reply alone is not a useful evidence note. Assess every output publicly against the literal supplied evidence with quotations; this assistant's manual assessment is not an independent judge. A demonstration may be copied regardless of evidence. The comparison changes example content/length as a package; it does not isolate a learning mechanism.
+
+All14outputs should be exposed in the report or linked table, including failures. No selecting the best note or adding a new alias to retroactively turn a primary failure into success. No actions execute and no note feeds back into the original decision. Hash/code/protocol/queries/primary results are frozen before model load.

@@ -35,3 +35,8 @@ Rules stated in a prompt, worked demonstrations and rules executed by a controll
 ## Optional supplied-record context check — 1 November 2026 UTC
 
 [Worker context component study](../evaluation/worker-context-components-v1/REPORT.md) holds each supplied record fixed under instruction and surrounding-field packages. Retain the proven worker frame as a reference; extra clarification or an absent-record UNKNOWN instruction does not automatically preserve an existing skill. Score incorrect deferrals with available source evidence separately from proper absence recognition. Report nuisance-field token mismatches rather than calling all pairs length-matched. Two instruction packages cannot identify a unique causal phrase; prospective factor separation is the next check. No new default module, model policy or universal gate is introduced.
+
+
+## Optional UNKNOWN notepad and regression check — 1 November 2026 UTC
+
+[UNKNOWN-clause/notepad contact](../evaluation/unknown-clause-notepad-v1/REPORT.md) tests an explicit absence instruction and a public after-answer note request separately. A new uncertainty clause can impair an existing present-record skill without producing calibrated absence handling; test both sides before adoption. A requested note can change an answer even when no note is emitted. Preserve first choices, later text, omitted notes and source audit separately. The study's optional UNKNOWN ledger contains actual outputs and evidence, not invented explanations. Minimal absence echoes, fluent rationales, supported answers and faithful accounts of internal computation are different claims. No new default module, policy or universal exploration gate is introduced.
