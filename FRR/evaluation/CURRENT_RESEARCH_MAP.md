@@ -1,5 +1,15 @@
 # Current research map
 
+Latest integration,31 October2026 America/Chicago(client date): [declared descriptions and guidance order](descriptions-and-rules-v1/REPORT.md), [limited name transfer](descriptions-and-rules-v1/availability-transfer/REPORT.md).43decoder fixture expectations pass; known historical descriptions are recovered without changing old metrics. No decoder difference on80new outputs. One demonstration order creates two useful free request outputs, but those requests do not survive two new names; no rule order requests evidence. Code-based observed-input rule remains robust in the tiny declared domain. No default model/controller/parser or broad efficacy claim.
+
+101actual generation probes,97distinct prompt strings,576logical executed routes; reuse explicit. Current handoff records next options, including fact-first model observations/source-checking control and role-label collision countertests. Earlier failed results and UTC date labels remain history.
+
+## Earlier orientation snapshots
+
+The following preserves then-current wording rather than current work orders. Original bytes are archived in the latest contact.
+
+# Current research map
+
 Latest integration, 1 November 2026 UTC: [planning allowance and worked examples](planning-and-examples-v1/REPORT.md) plus [example-order check](planning-and-examples-v1/example-order-check/REPORT.md). Direct8/direct64 decisions match; extra allowance unused. No public-plan preamble observed. Examples add UNKNOWN but over-defer; moving the UNKNOWN example away from last removes it in the small check. Strict-command failure versus recognizable insufficient-evidence descriptions are retained as separate views. No robust conditional policy, training or new default decoder demonstrated.
 
 138 actual generation probes,102 distinct prompt strings,504 executed logical routes; reuse explicit. All audits/six tests pass. Current handoff records unexecuted next directions and open broader branches. Older results and then-current pause/next labels remain history.
