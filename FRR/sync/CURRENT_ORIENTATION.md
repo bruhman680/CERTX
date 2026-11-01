@@ -1,7 +1,7 @@
-# Current orientation
+# Current orientation — paused
 
-1 November 2026 UTC. Completed [evidence boundary transfer](../evaluation/evidence-boundary-transfer-v1/REPORT.md): three new study targets, three declared layouts,324source cases.327actual generations (318raw+9selected);648logical case/policy receipts. Supported rule: 198 supported/126 held; raw consistent 149, selected-worker consistent 198. Strict rule: 144 supported/180 held. Canonical worker calls are shared, not independent replicated successes.
+1 November 2026 UTC — PAUSED at user's request until usage resets. Completed [revision/authority settling contact](../evaluation/revision-authority-settle-v1/REPORT.md):25authored situations, three targets and forward/reverse display,150logical cases. 144actual generations (135raw+9selected). KNOWN cases 54; raw correct 34, selected consistent 54. Shared canonical calls are not independent replications.
 
-[Handoff](../CURRENT_HANDOFF.md). Partial-plus-full differs from an explicit conflicting value under the tested literal contract:54extra cases can retain supported answers with warnings. Both policies preserve54conflicts and all raw proposals. Checker success is hand-coded functional coverage, selected worker sees canonical input, and nine worker calls are shared.
+[Handoff](../CURRENT_HANDOFF.md). Parent links, patch/replacement semantics and distinct tombstone/missing states preserve more information than last display/highest revision shortcuts under the declared contract. Owner labels are assumed authority, not authentication. Raw/model/code responsibilities remain separate.
 
-Next: declared source revision/authority, patch/replacement/deletion distinctions and provenance loss. No chronology is invented by current checker. Wider feedback loop parked; broader branches open. Audits/tests/history preserved; no weights/defaults/core/schema/queue/paid API/new capsule/restore claim or background task.
+Resume option: read-only history of one real repository artifact under declared authority. Not running. Wider model feedback loop parked, broader branches open. Tests/audit/history sync complete; no background job, new weights/defaults/core/schema/queue/paid compute/new capsule or restore claim.

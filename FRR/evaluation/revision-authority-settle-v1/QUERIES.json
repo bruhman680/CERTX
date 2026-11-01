@@ -1,0 +1,866 @@
+[
+  {
+    "cap": 16,
+    "id": "q_000",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_001",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"z\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_002",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"z\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_003",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_004",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_005",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"r\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_006",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"r\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_007",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{\"status\":\"missing\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_008",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_009",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{\"status\":null}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_010",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{\"status\":null}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_011",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_012",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_013",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}},{\"id\":\"r\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":3,\"parents\":[\"d\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_014",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"r\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":3,\"parents\":[\"d\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_015",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}},{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":3,\"parents\":[\"d\"],\"op\":\"patch\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_016",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":3,\"parents\":[\"d\"],\"op\":\"patch\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_017",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_018",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_019",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_020",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_021",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":99,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_022",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":99,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_023",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":3,\"parents\":[\"a\",\"c\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_024",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":3,\"parents\":[\"a\",\"c\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_025",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":3,\"parents\":[\"a\",\"c\"],\"op\":\"patch\",\"payload\":{\"status\":\"missing\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_026",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":3,\"parents\":[\"a\",\"c\"],\"op\":\"patch\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_027",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"g\",\"source\":\"guest\",\"plot\":\"Cress\",\"rev\":999,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_028",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"g\",\"source\":\"guest\",\"plot\":\"Cress\",\"rev\":999,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_029",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"g\",\"source\":\"guest\",\"plot\":\"Cress\",\"rev\":999,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_030",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"lost\"],\"op\":\"patch\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_031",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"z\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_032",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"z\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_033",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_034",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_035",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_036",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_037",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_038",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"c\"],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":3,\"parents\":[\"a\"],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_039",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":3,\"parents\":[\"a\"],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"c\"],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_040",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"z\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"guess\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_041",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"z\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"guess\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_042",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Other\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_043",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Cress\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Other\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_044",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Cress\nLedger:\n[]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_045",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_046",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"z\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_047",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"z\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_048",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_049",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_050",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"r\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_051",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"r\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_052",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{\"status\":\"missing\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_053",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_054",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{\"status\":null}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_055",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{\"status\":null}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_056",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_057",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_058",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}},{\"id\":\"r\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":3,\"parents\":[\"d\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_059",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"r\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":3,\"parents\":[\"d\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_060",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}},{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":3,\"parents\":[\"d\"],\"op\":\"patch\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_061",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":3,\"parents\":[\"d\"],\"op\":\"patch\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_062",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_063",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_064",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_065",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_066",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":99,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_067",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":99,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_068",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":3,\"parents\":[\"a\",\"c\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_069",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":3,\"parents\":[\"a\",\"c\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_070",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":3,\"parents\":[\"a\",\"c\"],\"op\":\"patch\",\"payload\":{\"status\":\"missing\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_071",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":3,\"parents\":[\"a\",\"c\"],\"op\":\"patch\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_072",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"g\",\"source\":\"guest\",\"plot\":\"Verbena\",\"rev\":999,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_073",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"g\",\"source\":\"guest\",\"plot\":\"Verbena\",\"rev\":999,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_074",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"g\",\"source\":\"guest\",\"plot\":\"Verbena\",\"rev\":999,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_075",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"lost\"],\"op\":\"patch\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_076",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"z\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_077",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"z\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_078",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_079",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_080",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_081",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_082",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_083",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"c\"],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":3,\"parents\":[\"a\"],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_084",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":3,\"parents\":[\"a\"],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"c\"],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_085",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"z\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"guess\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_086",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"z\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"guess\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_087",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Other\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_088",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Verbena\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Other\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_089",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Verbena\nLedger:\n[]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_090",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_091",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"z\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_092",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"z\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_093",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_094",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_095",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"r\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_096",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"r\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_097",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{\"status\":\"missing\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_098",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_099",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{\"status\":null}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_100",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{\"status\":null}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_101",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_102",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_103",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}},{\"id\":\"r\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":3,\"parents\":[\"d\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_104",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"r\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":3,\"parents\":[\"d\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_105",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}},{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":3,\"parents\":[\"d\"],\"op\":\"patch\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_106",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":3,\"parents\":[\"d\"],\"op\":\"patch\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"d\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"delete\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_107",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_108",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_109",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_110",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_111",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":99,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_112",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":99,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_113",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":3,\"parents\":[\"a\",\"c\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_114",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":3,\"parents\":[\"a\",\"c\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_115",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":3,\"parents\":[\"a\",\"c\"],\"op\":\"patch\",\"payload\":{\"status\":\"missing\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_116",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"m\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":3,\"parents\":[\"a\",\"c\"],\"op\":\"patch\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"missing\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_117",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"g\",\"source\":\"guest\",\"plot\":\"Sorrel\",\"rev\":999,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_118",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"g\",\"source\":\"guest\",\"plot\":\"Sorrel\",\"rev\":999,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_119",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"g\",\"source\":\"guest\",\"plot\":\"Sorrel\",\"rev\":999,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_120",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"lost\"],\"op\":\"patch\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_121",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"z\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_122",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"z\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_123",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_124",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_125",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_126",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_127",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_128",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"c\"],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":3,\"parents\":[\"a\"],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_129",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"c\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":3,\"parents\":[\"a\"],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"a\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"c\"],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_130",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"z\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"guess\",\"payload\":{\"status\":\"zero\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_131",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"z\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"guess\",\"payload\":{\"status\":\"zero\"}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_132",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Other\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}},{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_133",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[{\"id\":\"p\",\"source\":\"owner\",\"plot\":\"Sorrel\",\"rev\":2,\"parents\":[\"b\"],\"op\":\"patch\",\"payload\":{}},{\"id\":\"b\",\"source\":\"owner\",\"plot\":\"Other\",\"rev\":1,\"parents\":[],\"op\":\"replace\",\"payload\":{\"status\":\"positive\"}}]",
+    "role": "raw"
+  },
+  {
+    "cap": 16,
+    "id": "q_134",
+    "prompt": "Resolve the status for the target plot from this ledger. Use only owner sources. Parent links define succession; display order and a higher revision alone do not resolve branches. A patch preserves omitted fields; a replacement does not. A deleted status field, a deleted record, a conflict, or insufficient lineage is not the recorded value missing. Return YES for positive, NO for zero, WITHHOLD for recorded missing, otherwise UNKNOWN. Return only the answer.\n\nTarget plot: Sorrel\nLedger:\n[]",
+    "role": "raw"
+  },
+  {
+    "cap": 8,
+    "id": "q_135",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Cress\nStatus: positive",
+    "role": "selected"
+  },
+  {
+    "cap": 8,
+    "id": "q_136",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Cress\nStatus: zero",
+    "role": "selected"
+  },
+  {
+    "cap": 8,
+    "id": "q_137",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Cress\nStatus: missing",
+    "role": "selected"
+  },
+  {
+    "cap": 8,
+    "id": "q_138",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Verbena\nStatus: positive",
+    "role": "selected"
+  },
+  {
+    "cap": 8,
+    "id": "q_139",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Verbena\nStatus: zero",
+    "role": "selected"
+  },
+  {
+    "cap": 8,
+    "id": "q_140",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Verbena\nStatus: missing",
+    "role": "selected"
+  },
+  {
+    "cap": 8,
+    "id": "q_141",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Sorrel\nStatus: positive",
+    "role": "selected"
+  },
+  {
+    "cap": 8,
+    "id": "q_142",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Sorrel\nStatus: zero",
+    "role": "selected"
+  },
+  {
+    "cap": 8,
+    "id": "q_143",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Sorrel\nStatus: missing",
+    "role": "selected"
+  }
+]

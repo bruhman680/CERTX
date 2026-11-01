@@ -1,0 +1,602 @@
+{
+  "actual_calls": 144,
+  "by_arrival": {
+    "False": {
+      "known": 27,
+      "n": 75,
+      "raw_class_on_hold": 48,
+      "raw_known_correct": 17,
+      "selected_known_correct": 27,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 24,
+          "known_correct": 24
+        },
+        "max_revision": {
+          "class_on_hold": 24,
+          "known_correct": 24
+        }
+      },
+      "verdicts": {
+        "CONCURRENT_CONFLICT": 6,
+        "DELETED": 3,
+        "FORMAT_ERROR": 3,
+        "ID_CONFLICT": 3,
+        "KNOWN": 27,
+        "LINEAGE_ERROR": 18,
+        "NO_AUTHORIZED_EVIDENCE": 3,
+        "PARTIAL": 6,
+        "PROVENANCE_MISSING": 3,
+        "SOURCE_ABSENT": 3
+      }
+    },
+    "True": {
+      "known": 27,
+      "n": 75,
+      "raw_class_on_hold": 48,
+      "raw_known_correct": 17,
+      "selected_known_correct": 27,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 36,
+          "known_correct": 12
+        },
+        "max_revision": {
+          "class_on_hold": 27,
+          "known_correct": 24
+        }
+      },
+      "verdicts": {
+        "CONCURRENT_CONFLICT": 6,
+        "DELETED": 3,
+        "FORMAT_ERROR": 3,
+        "ID_CONFLICT": 3,
+        "KNOWN": 27,
+        "LINEAGE_ERROR": 18,
+        "NO_AUTHORIZED_EVIDENCE": 3,
+        "PARTIAL": 6,
+        "PROVENANCE_MISSING": 3,
+        "SOURCE_ABSENT": 3
+      }
+    }
+  },
+  "by_kind": {
+    "base": {
+      "known": 6,
+      "n": 6,
+      "raw_class_on_hold": 0,
+      "raw_known_correct": 6,
+      "selected_known_correct": 6,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 0,
+          "known_correct": 6
+        },
+        "max_revision": {
+          "class_on_hold": 0,
+          "known_correct": 6
+        }
+      },
+      "verdicts": {
+        "KNOWN": 6
+      }
+    },
+    "cycle": {
+      "known": 0,
+      "n": 6,
+      "raw_class_on_hold": 6,
+      "raw_known_correct": 0,
+      "selected_known_correct": 0,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 6,
+          "known_correct": 0
+        },
+        "max_revision": {
+          "class_on_hold": 6,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "LINEAGE_ERROR": 6
+      }
+    },
+    "delete_record": {
+      "known": 0,
+      "n": 6,
+      "raw_class_on_hold": 6,
+      "raw_known_correct": 0,
+      "selected_known_correct": 0,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 3,
+          "known_correct": 0
+        },
+        "max_revision": {
+          "class_on_hold": 0,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "DELETED": 6
+      }
+    },
+    "duplicate_conflict": {
+      "known": 0,
+      "n": 6,
+      "raw_class_on_hold": 6,
+      "raw_known_correct": 0,
+      "selected_known_correct": 0,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 6,
+          "known_correct": 0
+        },
+        "max_revision": {
+          "class_on_hold": 6,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "ID_CONFLICT": 6
+      }
+    },
+    "duplicate_identical": {
+      "known": 6,
+      "n": 6,
+      "raw_class_on_hold": 0,
+      "raw_known_correct": 4,
+      "selected_known_correct": 6,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 0,
+          "known_correct": 6
+        },
+        "max_revision": {
+          "class_on_hold": 0,
+          "known_correct": 6
+        }
+      },
+      "verdicts": {
+        "KNOWN": 6
+      }
+    },
+    "empty": {
+      "known": 0,
+      "n": 6,
+      "raw_class_on_hold": 6,
+      "raw_known_correct": 0,
+      "selected_known_correct": 0,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 0,
+          "known_correct": 0
+        },
+        "max_revision": {
+          "class_on_hold": 0,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "SOURCE_ABSENT": 6
+      }
+    },
+    "explicit_merge": {
+      "known": 6,
+      "n": 6,
+      "raw_class_on_hold": 0,
+      "raw_known_correct": 0,
+      "selected_known_correct": 6,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 0,
+          "known_correct": 3
+        },
+        "max_revision": {
+          "class_on_hold": 0,
+          "known_correct": 6
+        }
+      },
+      "verdicts": {
+        "KNOWN": 6
+      }
+    },
+    "foreign_parent": {
+      "known": 0,
+      "n": 6,
+      "raw_class_on_hold": 6,
+      "raw_known_correct": 0,
+      "selected_known_correct": 0,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 0,
+          "known_correct": 0
+        },
+        "max_revision": {
+          "class_on_hold": 0,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "LINEAGE_ERROR": 6
+      }
+    },
+    "fork_different": {
+      "known": 0,
+      "n": 6,
+      "raw_class_on_hold": 6,
+      "raw_known_correct": 0,
+      "selected_known_correct": 0,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 6,
+          "known_correct": 0
+        },
+        "max_revision": {
+          "class_on_hold": 6,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "CONCURRENT_CONFLICT": 6
+      }
+    },
+    "fork_high_revision": {
+      "known": 0,
+      "n": 6,
+      "raw_class_on_hold": 6,
+      "raw_known_correct": 0,
+      "selected_known_correct": 0,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 6,
+          "known_correct": 0
+        },
+        "max_revision": {
+          "class_on_hold": 6,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "CONCURRENT_CONFLICT": 6
+      }
+    },
+    "fork_same": {
+      "known": 6,
+      "n": 6,
+      "raw_class_on_hold": 0,
+      "raw_known_correct": 6,
+      "selected_known_correct": 6,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 0,
+          "known_correct": 3
+        },
+        "max_revision": {
+          "class_on_hold": 0,
+          "known_correct": 6
+        }
+      },
+      "verdicts": {
+        "KNOWN": 6
+      }
+    },
+    "invalid_revision": {
+      "known": 0,
+      "n": 6,
+      "raw_class_on_hold": 6,
+      "raw_known_correct": 0,
+      "selected_known_correct": 0,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 3,
+          "known_correct": 0
+        },
+        "max_revision": {
+          "class_on_hold": 3,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "LINEAGE_ERROR": 6
+      }
+    },
+    "merge_patch": {
+      "known": 0,
+      "n": 6,
+      "raw_class_on_hold": 6,
+      "raw_known_correct": 0,
+      "selected_known_correct": 0,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 6,
+          "known_correct": 0
+        },
+        "max_revision": {
+          "class_on_hold": 6,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "LINEAGE_ERROR": 6
+      }
+    },
+    "missing_parent": {
+      "known": 0,
+      "n": 6,
+      "raw_class_on_hold": 6,
+      "raw_known_correct": 0,
+      "selected_known_correct": 0,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 0,
+          "known_correct": 0
+        },
+        "max_revision": {
+          "class_on_hold": 0,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "LINEAGE_ERROR": 6
+      }
+    },
+    "missing_provenance": {
+      "known": 0,
+      "n": 6,
+      "raw_class_on_hold": 6,
+      "raw_known_correct": 0,
+      "selected_known_correct": 0,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 6,
+          "known_correct": 0
+        },
+        "max_revision": {
+          "class_on_hold": 6,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "PROVENANCE_MISSING": 6
+      }
+    },
+    "only_untrusted": {
+      "known": 0,
+      "n": 6,
+      "raw_class_on_hold": 6,
+      "raw_known_correct": 0,
+      "selected_known_correct": 0,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 0,
+          "known_correct": 0
+        },
+        "max_revision": {
+          "class_on_hold": 0,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "NO_AUTHORIZED_EVIDENCE": 6
+      }
+    },
+    "patch_after_delete": {
+      "known": 0,
+      "n": 6,
+      "raw_class_on_hold": 6,
+      "raw_known_correct": 0,
+      "selected_known_correct": 0,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 6,
+          "known_correct": 0
+        },
+        "max_revision": {
+          "class_on_hold": 6,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "LINEAGE_ERROR": 6
+      }
+    },
+    "patch_omitted": {
+      "known": 6,
+      "n": 6,
+      "raw_class_on_hold": 0,
+      "raw_known_correct": 6,
+      "selected_known_correct": 6,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 0,
+          "known_correct": 3
+        },
+        "max_revision": {
+          "class_on_hold": 0,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "KNOWN": 6
+      }
+    },
+    "recorded_missing": {
+      "known": 6,
+      "n": 6,
+      "raw_class_on_hold": 0,
+      "raw_known_correct": 0,
+      "selected_known_correct": 6,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 0,
+          "known_correct": 3
+        },
+        "max_revision": {
+          "class_on_hold": 0,
+          "known_correct": 6
+        }
+      },
+      "verdicts": {
+        "KNOWN": 6
+      }
+    },
+    "remove_field": {
+      "known": 0,
+      "n": 6,
+      "raw_class_on_hold": 6,
+      "raw_known_correct": 0,
+      "selected_known_correct": 0,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 3,
+          "known_correct": 0
+        },
+        "max_revision": {
+          "class_on_hold": 0,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "PARTIAL": 6
+      }
+    },
+    "replace": {
+      "known": 6,
+      "n": 6,
+      "raw_class_on_hold": 0,
+      "raw_known_correct": 6,
+      "selected_known_correct": 6,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 0,
+          "known_correct": 3
+        },
+        "max_revision": {
+          "class_on_hold": 0,
+          "known_correct": 6
+        }
+      },
+      "verdicts": {
+        "KNOWN": 6
+      }
+    },
+    "replace_after_delete": {
+      "known": 6,
+      "n": 6,
+      "raw_class_on_hold": 0,
+      "raw_known_correct": 6,
+      "selected_known_correct": 6,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 0,
+          "known_correct": 3
+        },
+        "max_revision": {
+          "class_on_hold": 0,
+          "known_correct": 6
+        }
+      },
+      "verdicts": {
+        "KNOWN": 6
+      }
+    },
+    "replace_omitted": {
+      "known": 0,
+      "n": 6,
+      "raw_class_on_hold": 6,
+      "raw_known_correct": 0,
+      "selected_known_correct": 0,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 3,
+          "known_correct": 0
+        },
+        "max_revision": {
+          "class_on_hold": 0,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "PARTIAL": 6
+      }
+    },
+    "unknown_operation": {
+      "known": 0,
+      "n": 6,
+      "raw_class_on_hold": 6,
+      "raw_known_correct": 0,
+      "selected_known_correct": 0,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 6,
+          "known_correct": 0
+        },
+        "max_revision": {
+          "class_on_hold": 6,
+          "known_correct": 0
+        }
+      },
+      "verdicts": {
+        "FORMAT_ERROR": 6
+      }
+    },
+    "untrusted_high_revision": {
+      "known": 6,
+      "n": 6,
+      "raw_class_on_hold": 0,
+      "raw_known_correct": 0,
+      "selected_known_correct": 6,
+      "shortcuts": {
+        "arrival_last": {
+          "class_on_hold": 0,
+          "known_correct": 6
+        },
+        "max_revision": {
+          "class_on_hold": 0,
+          "known_correct": 6
+        }
+      },
+      "verdicts": {
+        "KNOWN": 6
+      }
+    }
+  },
+  "cap_stops": 0,
+  "generation_seconds": 78.03615612502472,
+  "input_tokens": 30256,
+  "output_tokens": 346,
+  "raw_outputs": {
+    "NO": 89,
+    "YES": 46
+  },
+  "total": {
+    "known": 54,
+    "n": 150,
+    "raw_class_on_hold": 96,
+    "raw_known_correct": 34,
+    "selected_known_correct": 54,
+    "shortcuts": {
+      "arrival_last": {
+        "class_on_hold": 60,
+        "known_correct": 36
+      },
+      "max_revision": {
+        "class_on_hold": 51,
+        "known_correct": 48
+      }
+    },
+    "verdicts": {
+      "CONCURRENT_CONFLICT": 12,
+      "DELETED": 6,
+      "FORMAT_ERROR": 6,
+      "ID_CONFLICT": 6,
+      "KNOWN": 54,
+      "LINEAGE_ERROR": 36,
+      "NO_AUTHORIZED_EVIDENCE": 6,
+      "PARTIAL": 12,
+      "PROVENANCE_MISSING": 6,
+      "SOURCE_ABSENT": 6
+    }
+  }
+}

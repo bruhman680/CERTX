@@ -1,19 +1,21 @@
-# Current handoff
+# Current handoff — paused
 
-1 November 2026 UTC. Completed [evidence boundary transfer](evaluation/evidence-boundary-transfer-v1/REPORT.md): three new study targets, three declared layouts,324source cases.327actual generations (318raw+9selected);648logical case/policy receipts. Supported rule: 198 supported/126 held; raw consistent 149, selected-worker consistent 198. Strict rule: 144 supported/180 held. Canonical worker calls are shared, not independent replicated successes.
+1 November 2026 UTC — PAUSED at user's request until usage resets. Completed [revision/authority settling contact](evaluation/revision-authority-settle-v1/REPORT.md):25authored situations, three targets and forward/reverse display,150logical cases. 144actual generations (135raw+9selected). KNOWN cases 54; raw correct 34, selected consistent 54. Shared canonical calls are not independent replications.
 
-## Meaning and limits
+## Current conclusions
 
-Both authored checker policies match expected fixture categories. Supported rule permits54additional partial-target-plus-full cases with warnings; strict holds them. Partial statements assert no contradictory value under this explicit contract. Both hold54complete-target conflicts, reject duplicate JSON/line/bracket fields, retain attribution failures, invalid status and format/absence categories separately. Known non-target partials/conflicts do not override supported target values. Raw model runs on every case, including holds; no provisional output is erased.
+Patch omission, replacement omission, field removal, record deletion and literal missing have distinct declared meanings. Parent-linked materialization is invariant to display order in all tested fixtures; a high revision alone does not settle a fork. Equal-state concurrent heads preserve multiple witnesses, explicit replacement merges settle named parents, undeclared merge patches are held. Conflicting authorized contents under one ID do not last-write-win.
 
-The checker already reads status literals; pure mapping could answer these supported cases without a model. The selected worker gets code-selected/canonicalized input. Functional parser coverage and nine unique worker outputs are not a universal verifier, autonomous error recognition, model self-correction or independent model replication. Layout metadata is supplied out of band. No temporal/revision/authority semantics are established here.
+Authority is an assumed owner allowlist, not authenticated identity or source truth. Missing provenance/lineage and foreign/untrusted parents remain unresolved; all raw source events are retained. Code already reads status literals, so mechanical mapping could answer KNOWN cases without the model. Raw task and canonical worker packages differ. No model self-correction, general FRR efficacy or independent replication claim.
 
-## Next strongest — unexecuted
+## Resume here — not yet executed
 
-Explicit revision/authority contact: old versus current complete claims, partial patches versus replacements, deletion versus unspecified fields and genuine unresolved conflicts. Preserve old sources/links and predeclare precedence instead of silently latest/last-write-winning. Add provenance-loss controls before general source claims. This connects the growing palimpsest/history with source support while keeping new failures observable.
+Read-only provenance/materialization contact on one real repository artifact with actual revision links and preserved snapshots. Declare which source/version is authoritative for the question before resolving competing claims. Do not silently equate latest timestamp, largest number or branch label with truth. Keep future identity authentication and multi-field patch questions separate.
 
-Mixed/unknown layouts and broader writer/handoff/planning/memory work remain open. Wider model feedback/exploration loop stays parked; prior UNKNOWN-notepad results remain unchanged. Grok relay parked/unvetted/unadopted. Desktop thread works.
+Earlier evidence-boundary transfer, UNKNOWN notepad, context/format/role failures, source-selection gains and review harms remain historical. Wider model feedback/exploration loop stays parked; broader writer/handoff/planning/memory branches open. Grok relay remains parked/unvetted/unadopted. Desktop thread works.
 
-## Preservation
+## Settling and preservation
 
-All327actual prompts/tokens/outputs/stops and648receipts/witnesses/worker bindings audited; four test groups pass. Original navigation/method-note bytes archived; older history, scores and saved/in-memory weights unchanged. No training, new binaries/default model/core/schema/general-tool/queue change, downloads/installs/paid APIs/rental/action tools or background task. Account billing/usage not visible. Existing local12.8MBadapter capsule differs from older desktop6.3MBcopy; independent current-binary backup, clean restore and optimizer-resume rehearsal remain unverified. No new capsule/restore claim.
+Final bounded run, tests and audit complete; no further automatic cycle, background model job, scheduled task or newly spawned agents. Original navigation/method-note bytes archived in latest contact. All older local files unchanged before sync; all new raw prompts/tokens/outputs/stops, receipts/status origins and reversal invariance audited. No training/new weights/default policy/model/core/schema/general-tool/queue changes, downloads/installs/paid API/rental/tool actions.
+
+Existing local12.8MBadapter capsule differs from older desktop6.3MBcopy. Independent current-binary backup, clean restore and optimizer-resume rehearsal remain unverified; no new capsule/restore claim. Account usage/billing not visible. [Settled state](evaluation/revision-authority-settle-v1/SETTLED.md).

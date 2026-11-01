@@ -45,3 +45,8 @@ Rules stated in a prompt, worked demonstrations and rules executed by a controll
 ## Optional evidence-boundary receipt — 1 November 2026 UTC
 
 [Evidence boundary transfer](../evaluation/evidence-boundary-transfer-v1/REPORT.md) retains a raw proposal even when source support is unresolved. Distinguish a partial statement from an explicit contradictory value, consistent duplicates from independent confirmation, and unknown attribution from absent source. Selection/canonicalization must retain source-index witnesses and warnings; a checker must not silently last-write-win duplicate keys. Whether partial-plus-full evidence supports an answer depends on a declared contract; temporal replacement/patch/authority rules need their own evidence. A parser that already reads the status is a mechanical comparator, not independent proof of model reasoning. No new default or universal gate.
+
+
+## Optional revision/authority receipt — 1 November 2026 UTC
+
+[Revision settling contact](../evaluation/revision-authority-settle-v1/REPORT.md) distinguishes current-state materialization from preserved history. Declare patch versus replacement, omission versus deletion, and parent/merge semantics before resolving conflicting values. A scalar revision or display order is insufficient unless the governing contract gives it that role. Retain event IDs/status origins/ignored sources; identical replay is not an independent vote. An allowlisted source label is not cryptographic authentication or truth. These are optional bounded-contract practices, not a new default or universal reasoning gate.

@@ -1,3 +1,13 @@
+# Current research map — paused
+
+1 November 2026 UTC — PAUSED at user's request until usage resets. Completed [revision/authority settling contact](revision-authority-settle-v1/REPORT.md):25authored situations, three targets and forward/reverse display,150logical cases. 144actual generations (135raw+9selected). KNOWN cases 54; raw correct 34, selected consistent 54. Shared canonical calls are not independent replications.
+
+Current next direction is read-only real-artifact revision/provenance materialization with explicitly declared authority. Small ledger contract does not authenticate sources or settle arbitrary update semantics. No additional automatic cycle after user's wind-down. Wider feedback loop parked; broader memory/handoff/planning branches open. Current tests/audit/history preserved, defaults/core/schema/queue unchanged.
+
+## Earlier orientation snapshots
+
+Following preserves then-current wording. Exact original navigation bytes archived in latest contact.
+
 # Current research map
 
 1 November 2026 UTC. Completed [evidence boundary transfer](evidence-boundary-transfer-v1/REPORT.md): three new study targets, three declared layouts,324source cases.327actual generations (318raw+9selected);648logical case/policy receipts. Supported rule: 198 supported/126 held; raw consistent 149, selected-worker consistent 198. Strict rule: 144 supported/180 held. Canonical worker calls are shared, not independent replicated successes.

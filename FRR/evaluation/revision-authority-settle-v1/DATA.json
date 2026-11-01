@@ -1,0 +1,5318 @@
+[
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_000",
+    "kind": "base",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_001",
+    "kind": "base",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "z",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_002",
+    "kind": "replace",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "z",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_003",
+    "kind": "replace",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_004",
+    "kind": "patch_omitted",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_005",
+    "kind": "patch_omitted",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "r",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PARTIAL",
+    "id": "c_006",
+    "kind": "replace_omitted",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "r",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PARTIAL",
+    "id": "c_007",
+    "kind": "replace_omitted",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "m",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "missing",
+    "expected_verdict": "KNOWN",
+    "id": "c_008",
+    "kind": "recorded_missing",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "m",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "missing",
+    "expected_verdict": "KNOWN",
+    "id": "c_009",
+    "kind": "recorded_missing",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": null
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PARTIAL",
+    "id": "c_010",
+    "kind": "remove_field",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": null
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PARTIAL",
+    "id": "c_011",
+    "kind": "remove_field",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "DELETED",
+    "id": "c_012",
+    "kind": "delete_record",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "DELETED",
+    "id": "c_013",
+    "kind": "delete_record",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "r",
+        "op": "replace",
+        "parents": [
+          "d"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 3,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_014",
+    "kind": "replace_after_delete",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "r",
+        "op": "replace",
+        "parents": [
+          "d"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 3,
+        "source": "owner"
+      },
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_015",
+    "kind": "replace_after_delete",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "d"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 3,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_016",
+    "kind": "patch_after_delete",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "d"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 3,
+        "source": "owner"
+      },
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_017",
+    "kind": "patch_after_delete",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "CONCURRENT_CONFLICT",
+    "id": "c_018",
+    "kind": "fork_different",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "CONCURRENT_CONFLICT",
+    "id": "c_019",
+    "kind": "fork_different",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_020",
+    "kind": "fork_same",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_021",
+    "kind": "fork_same",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Cress",
+        "rev": 99,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "CONCURRENT_CONFLICT",
+    "id": "c_022",
+    "kind": "fork_high_revision",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Cress",
+        "rev": 99,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "CONCURRENT_CONFLICT",
+    "id": "c_023",
+    "kind": "fork_high_revision",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "m",
+        "op": "replace",
+        "parents": [
+          "a",
+          "c"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Cress",
+        "rev": 3,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "missing",
+    "expected_verdict": "KNOWN",
+    "id": "c_024",
+    "kind": "explicit_merge",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "m",
+        "op": "replace",
+        "parents": [
+          "a",
+          "c"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Cress",
+        "rev": 3,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "missing",
+    "expected_verdict": "KNOWN",
+    "id": "c_025",
+    "kind": "explicit_merge",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "m",
+        "op": "patch",
+        "parents": [
+          "a",
+          "c"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Cress",
+        "rev": 3,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_026",
+    "kind": "merge_patch",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "m",
+        "op": "patch",
+        "parents": [
+          "a",
+          "c"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Cress",
+        "rev": 3,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_027",
+    "kind": "merge_patch",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "g",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 999,
+        "source": "guest"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_028",
+    "kind": "untrusted_high_revision",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "g",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 999,
+        "source": "guest"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_029",
+    "kind": "untrusted_high_revision",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "g",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 999,
+        "source": "guest"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "NO_AUTHORIZED_EVIDENCE",
+    "id": "c_030",
+    "kind": "only_untrusted",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "g",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 999,
+        "source": "guest"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "NO_AUTHORIZED_EVIDENCE",
+    "id": "c_031",
+    "kind": "only_untrusted",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "lost"
+        ],
+        "payload": {},
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_032",
+    "kind": "missing_parent",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "lost"
+        ],
+        "payload": {},
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_033",
+    "kind": "missing_parent",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "z",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PROVENANCE_MISSING",
+    "id": "c_034",
+    "kind": "missing_provenance",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "z",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PROVENANCE_MISSING",
+    "id": "c_035",
+    "kind": "missing_provenance",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_036",
+    "kind": "duplicate_identical",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_037",
+    "kind": "duplicate_identical",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "ID_CONFLICT",
+    "id": "c_038",
+    "kind": "duplicate_conflict",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "ID_CONFLICT",
+    "id": "c_039",
+    "kind": "duplicate_conflict",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_040",
+    "kind": "invalid_revision",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_041",
+    "kind": "invalid_revision",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "c"
+        ],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "a"
+        ],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 3,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_042",
+    "kind": "cycle",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "a"
+        ],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 3,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "c"
+        ],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_043",
+    "kind": "cycle",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "z",
+        "op": "guess",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "FORMAT_ERROR",
+    "id": "c_044",
+    "kind": "unknown_operation",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "z",
+        "op": "guess",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Cress",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "FORMAT_ERROR",
+    "id": "c_045",
+    "kind": "unknown_operation",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Other",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_046",
+    "kind": "foreign_parent",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Cress",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Other",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_047",
+    "kind": "foreign_parent",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [],
+    "expected_state": null,
+    "expected_verdict": "SOURCE_ABSENT",
+    "id": "c_048",
+    "kind": "empty",
+    "reverse": false,
+    "target": "Cress"
+  },
+  {
+    "events": [],
+    "expected_state": null,
+    "expected_verdict": "SOURCE_ABSENT",
+    "id": "c_049",
+    "kind": "empty",
+    "reverse": true,
+    "target": "Cress"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_050",
+    "kind": "base",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_051",
+    "kind": "base",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "z",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_052",
+    "kind": "replace",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "z",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_053",
+    "kind": "replace",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_054",
+    "kind": "patch_omitted",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_055",
+    "kind": "patch_omitted",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "r",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PARTIAL",
+    "id": "c_056",
+    "kind": "replace_omitted",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "r",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PARTIAL",
+    "id": "c_057",
+    "kind": "replace_omitted",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "m",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "missing",
+    "expected_verdict": "KNOWN",
+    "id": "c_058",
+    "kind": "recorded_missing",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "m",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "missing",
+    "expected_verdict": "KNOWN",
+    "id": "c_059",
+    "kind": "recorded_missing",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": null
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PARTIAL",
+    "id": "c_060",
+    "kind": "remove_field",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": null
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PARTIAL",
+    "id": "c_061",
+    "kind": "remove_field",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "DELETED",
+    "id": "c_062",
+    "kind": "delete_record",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "DELETED",
+    "id": "c_063",
+    "kind": "delete_record",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "r",
+        "op": "replace",
+        "parents": [
+          "d"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 3,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_064",
+    "kind": "replace_after_delete",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "r",
+        "op": "replace",
+        "parents": [
+          "d"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 3,
+        "source": "owner"
+      },
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_065",
+    "kind": "replace_after_delete",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "d"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 3,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_066",
+    "kind": "patch_after_delete",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "d"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 3,
+        "source": "owner"
+      },
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_067",
+    "kind": "patch_after_delete",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "CONCURRENT_CONFLICT",
+    "id": "c_068",
+    "kind": "fork_different",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "CONCURRENT_CONFLICT",
+    "id": "c_069",
+    "kind": "fork_different",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_070",
+    "kind": "fork_same",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_071",
+    "kind": "fork_same",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Verbena",
+        "rev": 99,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "CONCURRENT_CONFLICT",
+    "id": "c_072",
+    "kind": "fork_high_revision",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Verbena",
+        "rev": 99,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "CONCURRENT_CONFLICT",
+    "id": "c_073",
+    "kind": "fork_high_revision",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "m",
+        "op": "replace",
+        "parents": [
+          "a",
+          "c"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Verbena",
+        "rev": 3,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "missing",
+    "expected_verdict": "KNOWN",
+    "id": "c_074",
+    "kind": "explicit_merge",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "m",
+        "op": "replace",
+        "parents": [
+          "a",
+          "c"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Verbena",
+        "rev": 3,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "missing",
+    "expected_verdict": "KNOWN",
+    "id": "c_075",
+    "kind": "explicit_merge",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "m",
+        "op": "patch",
+        "parents": [
+          "a",
+          "c"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Verbena",
+        "rev": 3,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_076",
+    "kind": "merge_patch",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "m",
+        "op": "patch",
+        "parents": [
+          "a",
+          "c"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Verbena",
+        "rev": 3,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_077",
+    "kind": "merge_patch",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "g",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 999,
+        "source": "guest"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_078",
+    "kind": "untrusted_high_revision",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "g",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 999,
+        "source": "guest"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_079",
+    "kind": "untrusted_high_revision",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "g",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 999,
+        "source": "guest"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "NO_AUTHORIZED_EVIDENCE",
+    "id": "c_080",
+    "kind": "only_untrusted",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "g",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 999,
+        "source": "guest"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "NO_AUTHORIZED_EVIDENCE",
+    "id": "c_081",
+    "kind": "only_untrusted",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "lost"
+        ],
+        "payload": {},
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_082",
+    "kind": "missing_parent",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "lost"
+        ],
+        "payload": {},
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_083",
+    "kind": "missing_parent",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "z",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PROVENANCE_MISSING",
+    "id": "c_084",
+    "kind": "missing_provenance",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "z",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PROVENANCE_MISSING",
+    "id": "c_085",
+    "kind": "missing_provenance",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_086",
+    "kind": "duplicate_identical",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_087",
+    "kind": "duplicate_identical",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "ID_CONFLICT",
+    "id": "c_088",
+    "kind": "duplicate_conflict",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "ID_CONFLICT",
+    "id": "c_089",
+    "kind": "duplicate_conflict",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_090",
+    "kind": "invalid_revision",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_091",
+    "kind": "invalid_revision",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "c"
+        ],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "a"
+        ],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 3,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_092",
+    "kind": "cycle",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "a"
+        ],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 3,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "c"
+        ],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_093",
+    "kind": "cycle",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "z",
+        "op": "guess",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "FORMAT_ERROR",
+    "id": "c_094",
+    "kind": "unknown_operation",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "z",
+        "op": "guess",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Verbena",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "FORMAT_ERROR",
+    "id": "c_095",
+    "kind": "unknown_operation",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Other",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_096",
+    "kind": "foreign_parent",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Verbena",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Other",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_097",
+    "kind": "foreign_parent",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [],
+    "expected_state": null,
+    "expected_verdict": "SOURCE_ABSENT",
+    "id": "c_098",
+    "kind": "empty",
+    "reverse": false,
+    "target": "Verbena"
+  },
+  {
+    "events": [],
+    "expected_state": null,
+    "expected_verdict": "SOURCE_ABSENT",
+    "id": "c_099",
+    "kind": "empty",
+    "reverse": true,
+    "target": "Verbena"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_100",
+    "kind": "base",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_101",
+    "kind": "base",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "z",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_102",
+    "kind": "replace",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "z",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_103",
+    "kind": "replace",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_104",
+    "kind": "patch_omitted",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_105",
+    "kind": "patch_omitted",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "r",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PARTIAL",
+    "id": "c_106",
+    "kind": "replace_omitted",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "r",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PARTIAL",
+    "id": "c_107",
+    "kind": "replace_omitted",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "m",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "missing",
+    "expected_verdict": "KNOWN",
+    "id": "c_108",
+    "kind": "recorded_missing",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "m",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "missing",
+    "expected_verdict": "KNOWN",
+    "id": "c_109",
+    "kind": "recorded_missing",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": null
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PARTIAL",
+    "id": "c_110",
+    "kind": "remove_field",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": null
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PARTIAL",
+    "id": "c_111",
+    "kind": "remove_field",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "DELETED",
+    "id": "c_112",
+    "kind": "delete_record",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "DELETED",
+    "id": "c_113",
+    "kind": "delete_record",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "r",
+        "op": "replace",
+        "parents": [
+          "d"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 3,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_114",
+    "kind": "replace_after_delete",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "r",
+        "op": "replace",
+        "parents": [
+          "d"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 3,
+        "source": "owner"
+      },
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_115",
+    "kind": "replace_after_delete",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "d"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 3,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_116",
+    "kind": "patch_after_delete",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "d"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 3,
+        "source": "owner"
+      },
+      {
+        "id": "d",
+        "op": "delete",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_117",
+    "kind": "patch_after_delete",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "CONCURRENT_CONFLICT",
+    "id": "c_118",
+    "kind": "fork_different",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "CONCURRENT_CONFLICT",
+    "id": "c_119",
+    "kind": "fork_different",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_120",
+    "kind": "fork_same",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "zero",
+    "expected_verdict": "KNOWN",
+    "id": "c_121",
+    "kind": "fork_same",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Sorrel",
+        "rev": 99,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "CONCURRENT_CONFLICT",
+    "id": "c_122",
+    "kind": "fork_high_revision",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Sorrel",
+        "rev": 99,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "CONCURRENT_CONFLICT",
+    "id": "c_123",
+    "kind": "fork_high_revision",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "m",
+        "op": "replace",
+        "parents": [
+          "a",
+          "c"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Sorrel",
+        "rev": 3,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "missing",
+    "expected_verdict": "KNOWN",
+    "id": "c_124",
+    "kind": "explicit_merge",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "m",
+        "op": "replace",
+        "parents": [
+          "a",
+          "c"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Sorrel",
+        "rev": 3,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "missing",
+    "expected_verdict": "KNOWN",
+    "id": "c_125",
+    "kind": "explicit_merge",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "m",
+        "op": "patch",
+        "parents": [
+          "a",
+          "c"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Sorrel",
+        "rev": 3,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_126",
+    "kind": "merge_patch",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "m",
+        "op": "patch",
+        "parents": [
+          "a",
+          "c"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Sorrel",
+        "rev": 3,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "missing"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_127",
+    "kind": "merge_patch",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "g",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 999,
+        "source": "guest"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_128",
+    "kind": "untrusted_high_revision",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "g",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 999,
+        "source": "guest"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_129",
+    "kind": "untrusted_high_revision",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "g",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 999,
+        "source": "guest"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "NO_AUTHORIZED_EVIDENCE",
+    "id": "c_130",
+    "kind": "only_untrusted",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "g",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 999,
+        "source": "guest"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "NO_AUTHORIZED_EVIDENCE",
+    "id": "c_131",
+    "kind": "only_untrusted",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "lost"
+        ],
+        "payload": {},
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_132",
+    "kind": "missing_parent",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "lost"
+        ],
+        "payload": {},
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_133",
+    "kind": "missing_parent",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "z",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PROVENANCE_MISSING",
+    "id": "c_134",
+    "kind": "missing_provenance",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "z",
+        "op": "replace",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "PROVENANCE_MISSING",
+    "id": "c_135",
+    "kind": "missing_provenance",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_136",
+    "kind": "duplicate_identical",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": "positive",
+    "expected_verdict": "KNOWN",
+    "id": "c_137",
+    "kind": "duplicate_identical",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "ID_CONFLICT",
+    "id": "c_138",
+    "kind": "duplicate_conflict",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "ID_CONFLICT",
+    "id": "c_139",
+    "kind": "duplicate_conflict",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_140",
+    "kind": "invalid_revision",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_141",
+    "kind": "invalid_revision",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "c"
+        ],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "a"
+        ],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 3,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_142",
+    "kind": "cycle",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "c",
+        "op": "replace",
+        "parents": [
+          "a"
+        ],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 3,
+        "source": "owner"
+      },
+      {
+        "id": "a",
+        "op": "replace",
+        "parents": [
+          "c"
+        ],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_143",
+    "kind": "cycle",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "z",
+        "op": "guess",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "FORMAT_ERROR",
+    "id": "c_144",
+    "kind": "unknown_operation",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "z",
+        "op": "guess",
+        "parents": [
+          "b"
+        ],
+        "payload": {
+          "status": "zero"
+        },
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Sorrel",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "FORMAT_ERROR",
+    "id": "c_145",
+    "kind": "unknown_operation",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Other",
+        "rev": 1,
+        "source": "owner"
+      },
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_146",
+    "kind": "foreign_parent",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [
+      {
+        "id": "p",
+        "op": "patch",
+        "parents": [
+          "b"
+        ],
+        "payload": {},
+        "plot": "Sorrel",
+        "rev": 2,
+        "source": "owner"
+      },
+      {
+        "id": "b",
+        "op": "replace",
+        "parents": [],
+        "payload": {
+          "status": "positive"
+        },
+        "plot": "Other",
+        "rev": 1,
+        "source": "owner"
+      }
+    ],
+    "expected_state": null,
+    "expected_verdict": "LINEAGE_ERROR",
+    "id": "c_147",
+    "kind": "foreign_parent",
+    "reverse": true,
+    "target": "Sorrel"
+  },
+  {
+    "events": [],
+    "expected_state": null,
+    "expected_verdict": "SOURCE_ABSENT",
+    "id": "c_148",
+    "kind": "empty",
+    "reverse": false,
+    "target": "Sorrel"
+  },
+  {
+    "events": [],
+    "expected_state": null,
+    "expected_verdict": "SOURCE_ABSENT",
+    "id": "c_149",
+    "kind": "empty",
+    "reverse": true,
+    "target": "Sorrel"
+  }
+]
