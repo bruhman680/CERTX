@@ -1,0 +1,7 @@
+# Current orientation — paused after exposure-order contact
+
+31 October 2026 UTC. [Handoff](../CURRENT_HANDOFF.md), [latest report](../evaluation/action-exposure-order-v1/REPORT.md). User requested wind-down at usage limits. No running job or scheduled next experiment.
+
+48 adapted-reader probes cross four exposed observations, six cyclic menu positions and evidence before/after menu. Meanings/labels/facts fixed; four old forward prompts reproduce exactly. Before-menu evidence: 9/18 visible answers correct; after-menu evidence: 11/18. Seven valid paired actions change under block swap. No appropriate UNKNOWN on six unavailable cases in either order. First menu item chosen 21/40 recognized replies, but FULL/TARGET never chosen even in first position. Order matters in this setup; a pure first-sign rule, linear internal reasoning and unique neural mechanism are not established.
+
+No training or new weights. All freezes/audits and three tests pass; 3,610 older files unchanged before sync, three navigation originals archived. Core/schema/modules/tools/default/queue unchanged. Next options: fresh transfer/non-cyclic layouts; planning allowance versus worked examples; matched-length neighbors and broader handoff/source-revision work. Parked Grok relay unchanged. No paid service, installation, download or background task. Current local adapter snapshot differs from the older desktop capsule; no new backup/restore claim.

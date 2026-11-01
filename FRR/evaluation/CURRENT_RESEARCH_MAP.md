@@ -1,5 +1,15 @@
 # Current research map
 
+Latest integration, 1 November 2026 UTC: [planning allowance and worked examples](planning-and-examples-v1/REPORT.md) plus [example-order check](planning-and-examples-v1/example-order-check/REPORT.md). Direct8/direct64 decisions match; extra allowance unused. No public-plan preamble observed. Examples add UNKNOWN but over-defer; moving the UNKNOWN example away from last removes it in the small check. Strict-command failure versus recognizable insufficient-evidence descriptions are retained as separate views. No robust conditional policy, training or new default decoder demonstrated.
+
+138 actual generation probes,102 distinct prompt strings,504 executed logical routes; reuse explicit. All audits/six tests pass. Current handoff records unexecuted next directions and open broader branches. Older results and then-current pause/next labels remain history.
+
+## Earlier orientation snapshots
+
+The following retains original then-current wording, not current work orders. Original bytes are archived in this contact.
+
+# Current research map
+
 Latest contact, 31 October 2026 UTC: [cyclic sign positions and evidence exposure](action-exposure-order-v1/REPORT.md).48 fixed-adapted-reader probes, no training; action meanings/labels/facts preserved. Evidence before versus after menu gives 9/18 versus 11/18 correct visible-record actions, 7 changed valid matched choices, and no appropriate unavailable UNKNOWN. First-position preference interacts with answer vocabulary: FULL/TARGET never chosen even when first. Four exact old-prompt replications match. Supports an order effect in this setup, not linear internal reasoning or a unique primacy/recency mechanism.
 
 Paused at user request, with current handoff and next options saved. No background work, default/module/tool/queue promotion or new model state. Earlier failures/results remain intact.

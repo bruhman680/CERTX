@@ -11,3 +11,10 @@ Repeated visible prompts across different hidden worlds do not create independen
 The current example has a finite designed menu, one retrieval budget and a known toy grammar. It does not expose internal reasoning or establish unrestricted autonomy. An interface failure can motivate a separately recorded new interface or lesson; it does not automatically block other exploratory paths or retroactively change an earlier result.
 
 Immediate-action tests also differ from allowing planning, additional turns or longer public output. A failed eight-token selection interface does not establish how the model would behave with more deliberation room. Vary planning allowance separately from examples or training so their effects remain interpretable.
+
+
+## Descriptions, examples and unused allowance
+
+The [planning/examples contact](../evaluation/planning-and-examples-v1/REPORT.md) preserves a strict command failure alongside a post-run semantic readback: “Report insufficient evidence” is recognizable as the offered UNKNOWN description, although the formal decoder rejects it. Do not equate parser rejection with absence of an uncertainty expression. Declare any accepted aliases prospectively, countertest opposite/negated phrases, and preserve original strict results. Recognition alone does not establish calibrated uncertainty or correct conditional use.
+
+A larger output cap provides no extra generated steps if the model ends early. A request for a public plan is not evidence that a plan was produced or used. Worked examples can change output format, length and order cues together; counterbalance them before calling a new response pattern robust policy learning. Preserve deferrals with accessible evidence separately from warranted unknowns and successful answers. These are optional diagnostic patterns, not a new default decoder or mandatory gate.

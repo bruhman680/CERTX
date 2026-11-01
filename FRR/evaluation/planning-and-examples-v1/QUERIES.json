@@ -1,0 +1,674 @@
+[
+  {
+    "cap": 8,
+    "examples": false,
+    "id": "q_000",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: positive\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_001",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: positive\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_002",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: positive\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": true,
+    "id": "q_003",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: positive\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_004",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: positive\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_005",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: positive\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": false,
+    "id": "q_006",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_007",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_008",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": true,
+    "id": "q_009",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_010",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_011",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": false,
+    "id": "q_012",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: zero\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_013",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: zero\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_014",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: zero\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": true,
+    "id": "q_015",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: zero\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_016",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: zero\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_017",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: zero\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": false,
+    "id": "q_018",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\n(no visible record)\nArchive accessible: no\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_019",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\n(no visible record)\nArchive accessible: no\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_020",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\n(no visible record)\nArchive accessible: no\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": true,
+    "id": "q_021",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\n(no visible record)\nArchive accessible: no\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_022",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\n(no visible record)\nArchive accessible: no\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_023",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\n(no visible record)\nArchive accessible: no\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": false,
+    "id": "q_024",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: zero\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_025",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: zero\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_026",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: zero\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": true,
+    "id": "q_027",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: zero\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_028",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: zero\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_029",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: zero\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": false,
+    "id": "q_030",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: missing\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_031",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: missing\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_032",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: missing\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": true,
+    "id": "q_033",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: missing\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_034",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: missing\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_035",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: missing\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": false,
+    "id": "q_036",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: missing\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_037",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: missing\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_038",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: missing\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": true,
+    "id": "q_039",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: missing\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_040",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: missing\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_041",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Juniper\nStatus: missing\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": false,
+    "id": "q_042",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: positive\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_043",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: positive\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_044",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: positive\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": true,
+    "id": "q_045",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: positive\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_046",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: positive\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_047",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Juniper\nVisible record:\nPlot: Hemlock\nStatus: positive\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": false,
+    "id": "q_048",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=positive]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_049",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=positive]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_050",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=positive]\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": true,
+    "id": "q_051",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=positive]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_052",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=positive]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_053",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=positive]\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": false,
+    "id": "q_054",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_055",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_056",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": true,
+    "id": "q_057",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_058",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_059",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n(no visible record)\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": false,
+    "id": "q_060",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=zero]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_061",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=zero]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_062",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=zero]\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": true,
+    "id": "q_063",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=zero]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_064",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=zero]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_065",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=zero]\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": false,
+    "id": "q_066",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n(no visible record)\nArchive accessible: no\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_067",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n(no visible record)\nArchive accessible: no\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_068",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n(no visible record)\nArchive accessible: no\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": true,
+    "id": "q_069",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n(no visible record)\nArchive accessible: no\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_070",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n(no visible record)\nArchive accessible: no\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_071",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n(no visible record)\nArchive accessible: no\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": false,
+    "id": "q_072",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=zero]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_073",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=zero]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_074",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=zero]\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": true,
+    "id": "q_075",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=zero]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_076",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=zero]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_077",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=zero]\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": false,
+    "id": "q_078",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=missing]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_079",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=missing]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_080",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=missing]\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": true,
+    "id": "q_081",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=missing]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_082",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=missing]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_083",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=missing]\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": false,
+    "id": "q_084",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=missing]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_085",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=missing]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_086",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=missing]\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": true,
+    "id": "q_087",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=missing]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_088",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=missing]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_089",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Hemlock; status=missing]\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": false,
+    "id": "q_090",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=positive]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_091",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=positive]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": false,
+    "id": "q_092",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=positive]\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  },
+  {
+    "cap": 8,
+    "examples": true,
+    "id": "q_093",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=positive]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct8"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_094",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=positive]\nArchive accessible: yes\n\nFinish with ACTION: and one action word. No explanation is needed.\nResponse:",
+    "response": "direct64"
+  },
+  {
+    "cap": 64,
+    "examples": true,
+    "id": "q_095",
+    "prompt": "Determine the target status. YES=positive; NO=zero; WITHHOLD=recorded missing. UNKNOWN means insufficient evidence. At most one archive request is allowed.\n\nActions:\nUNKNOWN: report insufficient evidence\nYES: answer positive\nTARGET: request target record, cost1\nWITHHOLD: answer explicitly missing\nNO: answer zero\nFULL: request full source, cost2\n\nWorked examples:\nExample 1:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: positive\nArchive accessible: yes\nACTION: YES\n\nExample 2:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: zero\nArchive accessible: yes\nACTION: NO\n\nExample 3:\nTarget plot: Iris\nVisible record:\nPlot: Iris\nStatus: missing\nArchive accessible: yes\nACTION: WITHHOLD\n\nExample 4:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: yes\nACTION: TARGET\n\nExample 5:\nTarget plot: Iris\nVisible record:\nPlot: Moss\nStatus: zero\nArchive accessible: yes\nACTION: TARGET\n\nExample 6:\nTarget plot: Iris\nVisible record:\n(no visible record)\nArchive accessible: no\nACTION: UNKNOWN\n\nCurrent task:\nTarget plot: Hemlock\nVisible record:\n[plot=Juniper; status=positive]\nArchive accessible: yes\n\nWrite a brief one-sentence action plan, then finish with ACTION: and one action word.\nResponse:",
+    "response": "plan64"
+  }
+]
