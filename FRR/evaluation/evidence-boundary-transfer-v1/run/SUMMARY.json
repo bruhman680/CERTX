@@ -1,0 +1,590 @@
+{
+  "cap_stops": 0,
+  "generation_seconds": 115.37065784893639,
+  "input_tokens": 30610,
+  "output_tokens": 975,
+  "policies": {
+    "strict": {
+      "by_kind": {
+        "absent": {
+          "held": 9,
+          "n": 9,
+          "raw_class_labels_on_hold": 6,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 6,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "SOURCE_ABSENT": 9
+          },
+          "warnings": {}
+        },
+        "conflict": {
+          "held": 54,
+          "n": 54,
+          "raw_class_labels_on_hold": 49,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 49,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "CONFLICT": 54
+          },
+          "warnings": {}
+        },
+        "conflicting_other": {
+          "held": 0,
+          "n": 18,
+          "raw_class_labels_on_hold": 0,
+          "raw_grounded_correct": 12,
+          "raw_proposals_on_hold": 0,
+          "ready": 18,
+          "selected_grounded_correct": 18,
+          "verdicts": {
+            "READY": 18
+          },
+          "warnings": {}
+        },
+        "duplicate_same": {
+          "held": 0,
+          "n": 27,
+          "raw_class_labels_on_hold": 0,
+          "raw_grounded_correct": 25,
+          "raw_proposals_on_hold": 0,
+          "ready": 27,
+          "selected_grounded_correct": 27,
+          "verdicts": {
+            "READY": 27
+          },
+          "warnings": {
+            "consistent_duplicate_target_statements": 27
+          }
+        },
+        "invalid_status": {
+          "held": 9,
+          "n": 9,
+          "raw_class_labels_on_hold": 6,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 6,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "INVALID_STATUS": 9
+          },
+          "warnings": {}
+        },
+        "malformed": {
+          "held": 9,
+          "n": 9,
+          "raw_class_labels_on_hold": 9,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 9,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "FORMAT_ERROR": 9
+          },
+          "warnings": {}
+        },
+        "name_only": {
+          "held": 9,
+          "n": 9,
+          "raw_class_labels_on_hold": 6,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 6,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "PARTIAL_TARGET": 9
+          },
+          "warnings": {}
+        },
+        "orphan_plus_full": {
+          "held": 18,
+          "n": 18,
+          "raw_class_labels_on_hold": 18,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 18,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "UNATTRIBUTED": 18
+          },
+          "warnings": {}
+        },
+        "other_only": {
+          "held": 9,
+          "n": 9,
+          "raw_class_labels_on_hold": 9,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 9,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "TARGET_ABSENT": 9
+          },
+          "warnings": {}
+        },
+        "pair": {
+          "held": 0,
+          "n": 54,
+          "raw_class_labels_on_hold": 0,
+          "raw_grounded_correct": 24,
+          "raw_proposals_on_hold": 0,
+          "ready": 54,
+          "selected_grounded_correct": 54,
+          "verdicts": {
+            "READY": 54
+          },
+          "warnings": {}
+        },
+        "partial_other": {
+          "held": 0,
+          "n": 18,
+          "raw_class_labels_on_hold": 0,
+          "raw_grounded_correct": 16,
+          "raw_proposals_on_hold": 0,
+          "ready": 18,
+          "selected_grounded_correct": 18,
+          "verdicts": {
+            "READY": 18
+          },
+          "warnings": {
+            "other_partial_record_retained": 18
+          }
+        },
+        "partial_plus_full": {
+          "held": 54,
+          "n": 54,
+          "raw_class_labels_on_hold": 48,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 48,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "PARTIAL_TARGET": 54
+          },
+          "warnings": {}
+        },
+        "single": {
+          "held": 0,
+          "n": 27,
+          "raw_class_labels_on_hold": 0,
+          "raw_grounded_correct": 25,
+          "raw_proposals_on_hold": 0,
+          "ready": 27,
+          "selected_grounded_correct": 27,
+          "verdicts": {
+            "READY": 27
+          },
+          "warnings": {}
+        },
+        "status_only": {
+          "held": 9,
+          "n": 9,
+          "raw_class_labels_on_hold": 9,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 9,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "UNATTRIBUTED": 9
+          },
+          "warnings": {}
+        }
+      },
+      "by_layout": {
+        "brackets": {
+          "held": 60,
+          "n": 108,
+          "raw_class_labels_on_hold": 52,
+          "raw_grounded_correct": 32,
+          "raw_proposals_on_hold": 52,
+          "ready": 48,
+          "selected_grounded_correct": 48,
+          "verdicts": {
+            "CONFLICT": 18,
+            "FORMAT_ERROR": 3,
+            "INVALID_STATUS": 3,
+            "PARTIAL_TARGET": 21,
+            "READY": 48,
+            "SOURCE_ABSENT": 3,
+            "TARGET_ABSENT": 3,
+            "UNATTRIBUTED": 9
+          },
+          "warnings": {
+            "consistent_duplicate_target_statements": 9,
+            "other_partial_record_retained": 6
+          }
+        },
+        "json": {
+          "held": 60,
+          "n": 108,
+          "raw_class_labels_on_hold": 52,
+          "raw_grounded_correct": 36,
+          "raw_proposals_on_hold": 52,
+          "ready": 48,
+          "selected_grounded_correct": 48,
+          "verdicts": {
+            "CONFLICT": 18,
+            "FORMAT_ERROR": 3,
+            "INVALID_STATUS": 3,
+            "PARTIAL_TARGET": 21,
+            "READY": 48,
+            "SOURCE_ABSENT": 3,
+            "TARGET_ABSENT": 3,
+            "UNATTRIBUTED": 9
+          },
+          "warnings": {
+            "consistent_duplicate_target_statements": 9,
+            "other_partial_record_retained": 6
+          }
+        },
+        "lines": {
+          "held": 60,
+          "n": 108,
+          "raw_class_labels_on_hold": 56,
+          "raw_grounded_correct": 34,
+          "raw_proposals_on_hold": 56,
+          "ready": 48,
+          "selected_grounded_correct": 48,
+          "verdicts": {
+            "CONFLICT": 18,
+            "FORMAT_ERROR": 3,
+            "INVALID_STATUS": 3,
+            "PARTIAL_TARGET": 21,
+            "READY": 48,
+            "SOURCE_ABSENT": 3,
+            "TARGET_ABSENT": 3,
+            "UNATTRIBUTED": 9
+          },
+          "warnings": {
+            "consistent_duplicate_target_statements": 9,
+            "other_partial_record_retained": 6
+          }
+        }
+      },
+      "total": {
+        "held": 180,
+        "n": 324,
+        "raw_class_labels_on_hold": 160,
+        "raw_grounded_correct": 102,
+        "raw_proposals_on_hold": 160,
+        "ready": 144,
+        "selected_grounded_correct": 144,
+        "verdicts": {
+          "CONFLICT": 54,
+          "FORMAT_ERROR": 9,
+          "INVALID_STATUS": 9,
+          "PARTIAL_TARGET": 63,
+          "READY": 144,
+          "SOURCE_ABSENT": 9,
+          "TARGET_ABSENT": 9,
+          "UNATTRIBUTED": 27
+        },
+        "warnings": {
+          "consistent_duplicate_target_statements": 27,
+          "other_partial_record_retained": 18
+        }
+      }
+    },
+    "supported": {
+      "by_kind": {
+        "absent": {
+          "held": 9,
+          "n": 9,
+          "raw_class_labels_on_hold": 6,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 6,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "SOURCE_ABSENT": 9
+          },
+          "warnings": {}
+        },
+        "conflict": {
+          "held": 54,
+          "n": 54,
+          "raw_class_labels_on_hold": 49,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 49,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "CONFLICT": 54
+          },
+          "warnings": {}
+        },
+        "conflicting_other": {
+          "held": 0,
+          "n": 18,
+          "raw_class_labels_on_hold": 0,
+          "raw_grounded_correct": 12,
+          "raw_proposals_on_hold": 0,
+          "ready": 18,
+          "selected_grounded_correct": 18,
+          "verdicts": {
+            "READY": 18
+          },
+          "warnings": {}
+        },
+        "duplicate_same": {
+          "held": 0,
+          "n": 27,
+          "raw_class_labels_on_hold": 0,
+          "raw_grounded_correct": 25,
+          "raw_proposals_on_hold": 0,
+          "ready": 27,
+          "selected_grounded_correct": 27,
+          "verdicts": {
+            "READY": 27
+          },
+          "warnings": {
+            "consistent_duplicate_target_statements": 27
+          }
+        },
+        "invalid_status": {
+          "held": 9,
+          "n": 9,
+          "raw_class_labels_on_hold": 6,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 6,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "INVALID_STATUS": 9
+          },
+          "warnings": {}
+        },
+        "malformed": {
+          "held": 9,
+          "n": 9,
+          "raw_class_labels_on_hold": 9,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 9,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "FORMAT_ERROR": 9
+          },
+          "warnings": {}
+        },
+        "name_only": {
+          "held": 9,
+          "n": 9,
+          "raw_class_labels_on_hold": 6,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 6,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "PARTIAL_TARGET": 9
+          },
+          "warnings": {}
+        },
+        "orphan_plus_full": {
+          "held": 18,
+          "n": 18,
+          "raw_class_labels_on_hold": 18,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 18,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "UNATTRIBUTED": 18
+          },
+          "warnings": {}
+        },
+        "other_only": {
+          "held": 9,
+          "n": 9,
+          "raw_class_labels_on_hold": 9,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 9,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "TARGET_ABSENT": 9
+          },
+          "warnings": {}
+        },
+        "pair": {
+          "held": 0,
+          "n": 54,
+          "raw_class_labels_on_hold": 0,
+          "raw_grounded_correct": 24,
+          "raw_proposals_on_hold": 0,
+          "ready": 54,
+          "selected_grounded_correct": 54,
+          "verdicts": {
+            "READY": 54
+          },
+          "warnings": {}
+        },
+        "partial_other": {
+          "held": 0,
+          "n": 18,
+          "raw_class_labels_on_hold": 0,
+          "raw_grounded_correct": 16,
+          "raw_proposals_on_hold": 0,
+          "ready": 18,
+          "selected_grounded_correct": 18,
+          "verdicts": {
+            "READY": 18
+          },
+          "warnings": {
+            "other_partial_record_retained": 18
+          }
+        },
+        "partial_plus_full": {
+          "held": 0,
+          "n": 54,
+          "raw_class_labels_on_hold": 0,
+          "raw_grounded_correct": 47,
+          "raw_proposals_on_hold": 0,
+          "ready": 54,
+          "selected_grounded_correct": 54,
+          "verdicts": {
+            "READY": 54
+          },
+          "warnings": {
+            "target_record_without_status_retained": 54
+          }
+        },
+        "single": {
+          "held": 0,
+          "n": 27,
+          "raw_class_labels_on_hold": 0,
+          "raw_grounded_correct": 25,
+          "raw_proposals_on_hold": 0,
+          "ready": 27,
+          "selected_grounded_correct": 27,
+          "verdicts": {
+            "READY": 27
+          },
+          "warnings": {}
+        },
+        "status_only": {
+          "held": 9,
+          "n": 9,
+          "raw_class_labels_on_hold": 9,
+          "raw_grounded_correct": 0,
+          "raw_proposals_on_hold": 9,
+          "ready": 0,
+          "selected_grounded_correct": 0,
+          "verdicts": {
+            "UNATTRIBUTED": 9
+          },
+          "warnings": {}
+        }
+      },
+      "by_layout": {
+        "brackets": {
+          "held": 42,
+          "n": 108,
+          "raw_class_labels_on_hold": 37,
+          "raw_grounded_correct": 46,
+          "raw_proposals_on_hold": 37,
+          "ready": 66,
+          "selected_grounded_correct": 66,
+          "verdicts": {
+            "CONFLICT": 18,
+            "FORMAT_ERROR": 3,
+            "INVALID_STATUS": 3,
+            "PARTIAL_TARGET": 3,
+            "READY": 66,
+            "SOURCE_ABSENT": 3,
+            "TARGET_ABSENT": 3,
+            "UNATTRIBUTED": 9
+          },
+          "warnings": {
+            "consistent_duplicate_target_statements": 9,
+            "other_partial_record_retained": 6,
+            "target_record_without_status_retained": 18
+          }
+        },
+        "json": {
+          "held": 42,
+          "n": 108,
+          "raw_class_labels_on_hold": 37,
+          "raw_grounded_correct": 51,
+          "raw_proposals_on_hold": 37,
+          "ready": 66,
+          "selected_grounded_correct": 66,
+          "verdicts": {
+            "CONFLICT": 18,
+            "FORMAT_ERROR": 3,
+            "INVALID_STATUS": 3,
+            "PARTIAL_TARGET": 3,
+            "READY": 66,
+            "SOURCE_ABSENT": 3,
+            "TARGET_ABSENT": 3,
+            "UNATTRIBUTED": 9
+          },
+          "warnings": {
+            "consistent_duplicate_target_statements": 9,
+            "other_partial_record_retained": 6,
+            "target_record_without_status_retained": 18
+          }
+        },
+        "lines": {
+          "held": 42,
+          "n": 108,
+          "raw_class_labels_on_hold": 38,
+          "raw_grounded_correct": 52,
+          "raw_proposals_on_hold": 38,
+          "ready": 66,
+          "selected_grounded_correct": 66,
+          "verdicts": {
+            "CONFLICT": 18,
+            "FORMAT_ERROR": 3,
+            "INVALID_STATUS": 3,
+            "PARTIAL_TARGET": 3,
+            "READY": 66,
+            "SOURCE_ABSENT": 3,
+            "TARGET_ABSENT": 3,
+            "UNATTRIBUTED": 9
+          },
+          "warnings": {
+            "consistent_duplicate_target_statements": 9,
+            "other_partial_record_retained": 6,
+            "target_record_without_status_retained": 18
+          }
+        }
+      },
+      "total": {
+        "held": 126,
+        "n": 324,
+        "raw_class_labels_on_hold": 112,
+        "raw_grounded_correct": 149,
+        "raw_proposals_on_hold": 112,
+        "ready": 198,
+        "selected_grounded_correct": 198,
+        "verdicts": {
+          "CONFLICT": 54,
+          "FORMAT_ERROR": 9,
+          "INVALID_STATUS": 9,
+          "PARTIAL_TARGET": 9,
+          "READY": 198,
+          "SOURCE_ABSENT": 9,
+          "TARGET_ABSENT": 9,
+          "UNATTRIBUTED": 27
+        },
+        "warnings": {
+          "consistent_duplicate_target_statements": 27,
+          "other_partial_record_retained": 18,
+          "target_record_without_status_retained": 54
+        }
+      }
+    }
+  },
+  "raw_outputs": {
+    "INVALID": 30,
+    "NO": 109,
+    "WITHHOLD": 50,
+    "YES": 129
+  },
+  "raw_probes": 318,
+  "selected_probes": 9
+}

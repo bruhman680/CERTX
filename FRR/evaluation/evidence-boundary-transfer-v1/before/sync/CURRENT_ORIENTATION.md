@@ -1,0 +1,7 @@
+# Current orientation
+
+1 November 2026 UTC. Completed [UNKNOWN clause and public-notepad contact](../evaluation/unknown-clause-notepad-v1/REPORT.md). Four instruction combinations cross clarification and the absent-record UNKNOWN clause, each with answer-only/note-request formats. Three existing names, supplied statuses and actual absence, seven contexts: 560 unique primary calls from 672 nominal links. 126 earlier prompt/output sequences repeat exactly despite the larger cap.
+
+[Handoff](../CURRENT_HANDOFF.md). Absence-clause addition: 40 present-answer harms, zero repairs; no correct UNKNOWN on absent controls. Note request: nine harms/one repair, no produced notes. Fourteen note-only follow-up calls provide labels/placeholders plus two accurate absence echoes, no substantive explanation for erroneous UNKNOWN. UNKNOWN ledger records all 41 primary deferrals and empty notes without inventing reasons.
+
+Next: fresh-name/layout explicit worker/receipt separation, then malformed/partial/conflicting evidence. A later evidence-note task needs a usable contract and verifiable statements, not a convincing explanation target. Wider model feedback/exploration loop parked; broader branches open. 574 unique calls, four tests and all audits pass; history/navigation originals preserved. No weights/defaults/core/schema/queue changes, paid API/new binary/capsule/restore claim or background job.

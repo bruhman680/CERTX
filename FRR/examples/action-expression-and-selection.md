@@ -40,3 +40,8 @@ Rules stated in a prompt, worked demonstrations and rules executed by a controll
 ## Optional UNKNOWN notepad and regression check — 1 November 2026 UTC
 
 [UNKNOWN-clause/notepad contact](../evaluation/unknown-clause-notepad-v1/REPORT.md) tests an explicit absence instruction and a public after-answer note request separately. A new uncertainty clause can impair an existing present-record skill without producing calibrated absence handling; test both sides before adoption. A requested note can change an answer even when no note is emitted. Preserve first choices, later text, omitted notes and source audit separately. The study's optional UNKNOWN ledger contains actual outputs and evidence, not invented explanations. Minimal absence echoes, fluent rationales, supported answers and faithful accounts of internal computation are different claims. No new default module, policy or universal exploration gate is introduced.
+
+
+## Optional evidence-boundary receipt — 1 November 2026 UTC
+
+[Evidence boundary transfer](../evaluation/evidence-boundary-transfer-v1/REPORT.md) retains a raw proposal even when source support is unresolved. Distinguish a partial statement from an explicit contradictory value, consistent duplicates from independent confirmation, and unknown attribution from absent source. Selection/canonicalization must retain source-index witnesses and warnings; a checker must not silently last-write-win duplicate keys. Whether partial-plus-full evidence supports an answer depends on a declared contract; temporal replacement/patch/authority rules need their own evidence. A parser that already reads the status is a mechanical comparator, not independent proof of model reasoning. No new default or universal gate.

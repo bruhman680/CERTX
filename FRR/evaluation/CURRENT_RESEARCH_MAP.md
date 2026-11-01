@@ -1,5 +1,15 @@
 # Current research map
 
+1 November 2026 UTC. Completed [evidence boundary transfer](evidence-boundary-transfer-v1/REPORT.md): three new study targets, three declared layouts,324source cases.327actual generations (318raw+9selected);648logical case/policy receipts. Supported rule: 198 supported/126 held; raw consistent 149, selected-worker consistent 198. Strict rule: 144 supported/180 held. Canonical worker calls are shared, not independent replicated successes.
+
+Supported and strict checker rules are explicit alternatives. Preserve supplementary partials/warnings and conflicting/unattributed/absent-source receipts rather than erasing differences. No general authority/revision semantics or independent verifier claim; supplied format metadata and status parsing are code advantages. Next: prospective revision/authority/patch/replacement/provenance-loss contact. Wider model feedback loop parked; broader memory/handoff/planning work open.
+
+## Earlier orientation snapshots
+
+Following preserves then-current wording. Exact originals archived in the latest contact.
+
+# Current research map
+
 1 November 2026 UTC. Completed [UNKNOWN clause and public-notepad contact](unknown-clause-notepad-v1/REPORT.md). Four instruction combinations cross clarification and the absent-record UNKNOWN clause, each with answer-only/note-request formats. Three existing names, supplied statuses and actual absence, seven contexts: 560 unique primary calls from 672 nominal links. 126 earlier prompt/output sequences repeat exactly despite the larger cap.
 
 The controlled clause addition causes 40 correct-to-wrong present-answer transitions in this grid without useful absent-record UNKNOWN recognition. Note request produces no notes and net eight fewer correct present answers. A separate 14-call note-only diagnostic fails to explain wrong UNKNOWN decisions; two absence echoes are retained as observations. [UNKNOWN ledger](unknown-clause-notepad-v1/UNKNOWN_NOTEPAD.jsonl) preserves all 41 primary deferrals, no invented explanations.
