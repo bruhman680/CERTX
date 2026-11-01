@@ -1,0 +1,26 @@
+   M procedure                     IND                 DIFF               COMMON                 COPY   overall overreach  probes/run
+  20 S               c1.00/h0.00/o0.00    c0.00/h0.00/o1.00    c0.00/h0.00/o1.00    c0.00/h0.00/o1.00   0.750             0.00
+  20 F_naive         c0.69/h0.00/o0.31    c0.61/h0.00/o0.39    c0.13/h0.00/o0.87    c0.00/h0.00/o1.00   0.642             0.00
+  20 F_care_b0       c0.22/h0.75/o0.03    c0.16/h0.77/o0.07    c0.00/h0.13/o0.87    c0.00/h0.14/o0.86   0.458             0.00
+  20 F_care_b3       c0.22/h0.75/o0.03    c0.16/h0.77/o0.07    c0.13/h0.00/o0.87    c0.14/h0.00/o0.86   0.459             0.20
+  20 F_probe         c0.00/h0.00/o1.00    c0.00/h0.00/o1.00    c0.99/h0.00/o0.01    c0.99/h0.00/o0.01   0.503             3.00
+
+  40 S               c1.00/h0.00/o0.00    c0.00/h0.00/o1.00    c0.00/h0.00/o1.00    c0.00/h0.00/o1.00   0.750             0.00
+  40 F_naive         c0.80/h0.00/o0.20    c0.63/h0.00/o0.37    c0.05/h0.00/o0.95    c0.00/h0.00/o1.00   0.631             0.00
+  40 F_care_b0       c0.36/h0.61/o0.03    c0.21/h0.72/o0.07    c0.00/h0.05/o0.95    c0.00/h0.04/o0.96   0.503             0.00
+  40 F_care_b3       c0.36/h0.61/o0.03    c0.21/h0.72/o0.07    c0.05/h0.00/o0.95    c0.04/h0.00/o0.96   0.503             0.07
+  40 F_probe         c0.00/h0.00/o1.00    c0.00/h0.00/o1.00    c0.99/h0.00/o0.01    c0.99/h0.00/o0.01   0.504             3.00
+
+ 100 S               c1.00/h0.00/o0.00    c0.00/h0.00/o1.00    c0.00/h0.00/o1.00    c0.00/h0.00/o1.00   0.750             0.00
+ 100 F_naive         c0.88/h0.00/o0.12    c0.71/h0.00/o0.29    c0.00/h0.00/o1.00    c0.00/h0.00/o1.00   0.602             0.00
+ 100 F_care_b0       c0.69/h0.27/o0.03    c0.44/h0.45/o0.11    c0.00/h0.00/o1.00    c0.00/h0.00/o1.00   0.534             0.00
+ 100 F_care_b3       c0.69/h0.27/o0.03    c0.44/h0.45/o0.11    c0.00/h0.00/o1.00    c0.00/h0.00/o1.00   0.534             0.00
+ 100 F_probe         c0.00/h0.00/o1.00    c0.00/h0.00/o1.00    c1.00/h0.00/o0.00    c0.99/h0.00/o0.01   0.503             3.00
+
+CHECKS
+ P1 S overall overreach: [np.float64(0.75), np.float64(0.75), np.float64(0.75)]
+ P2 F_naive M=100 correct IND/DIFF/COMMON: [0.88, 0.71, 0.0]  COPY over: 1.0
+ P3 F_care b0 M=100 honest COMMON/COPY: [0.0, 0.0]  over: [1.0, 1.0]  correct IND/DIFF: [0.69, 0.44]
+    F_care b3 M=100 correct COMMON/COPY: [0.0, 0.0]
+ P4 M=20 F_naive IND/DIFF misclassified: [0.31, 0.39]  overall over naive vs care_b0: 0.642 0.458
+ P5 F_probe M=100 overreach IND/DIFF: [1.0, 1.0]  overall: 0.503
