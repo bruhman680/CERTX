@@ -1,0 +1,23 @@
+(A) world: median min-distance (continuous) / UNKNOWN fraction (hard threshold)
+    M               ANTI              DRIFT            PARTIAL
+   50      1.28/0.01         1.09/0.03         1.03/0.01   
+  100      2.13/0.16         1.57/0.08         1.66/0.07   
+  200      3.25/0.41         2.46/0.22         2.54/0.39   
+  400      5.11/0.77         4.38/0.66         4.26/0.64   
+  800     10.08/1.00         7.82/1.00         7.98/0.98   
+ 1600     20.22/1.00        16.18/1.00        16.90/1.00   
+ 3200     40.44/1.00        31.65/1.00        32.90/1.00   
+A1 log-log slope of median distance vs M (M>=200): {'ANTI': np.float64(0.93), 'DRIFT': np.float64(0.93), 'PARTIAL': np.float64(0.94)}
+A2 largest M with UNKNOWN<=.20 and smallest M with >=.80: {'ANTI': (100, 800), 'DRIFT': (100, 800), 'PARTIAL': (100, 800)}
+A3 M=100 ranking by median distance: ['ANTI', 'PARTIAL', 'DRIFT']  by UNKNOWN: ['ANTI', 'DRIFT', 'PARTIAL']
+
+(B) both-wrong agreement among independent models, shared per-item distractor attractiveness d~Dirichlet(alpha)
+ alpha   exact      MC
+   0.2  0.7500  0.7495
+   0.5  0.6000  0.6001
+     1  0.5000  0.4999
+     2  0.4286  0.4287
+    10  0.3548  0.3549
+ 1e+06  0.3333  0.3333
+B1 MC within .005 of exact for all alpha: True
+B2 alpha=0.5 exact value: 0.6 (no copying, no shared lineage); alpha->inf: 0.3333

@@ -1,0 +1,1773 @@
+{
+  "candidate_scoring_forwards": 960,
+  "generation_seconds": 138.45077135899965,
+  "generations": 247,
+  "groups": {
+    "no_list__irrelevant": {
+      "by_layout": {
+        "inline": {
+          "answers": {
+            "INVALID": 1,
+            "YES": 11
+          },
+          "cap_stops": 0,
+          "correct": 3,
+          "invalid": 1,
+          "mean_candidate_mass": 0.9286385675089575,
+          "mean_gold_first_token_prob": 0.23946530187776005,
+          "mean_gold_logp": -6.413695086336747,
+          "mean_gold_relative_mass": 0.248513589020004,
+          "n": 12
+        },
+        "lines": {
+          "answers": {
+            "YES": 12
+          },
+          "cap_stops": 0,
+          "correct": 3,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9451727849866848,
+          "mean_gold_first_token_prob": 0.2452230966650292,
+          "mean_gold_logp": -6.313624573251771,
+          "mean_gold_relative_mass": 0.25147105011622056,
+          "n": 12
+        }
+      },
+      "by_state": {
+        "absent": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9851054686962736,
+          "mean_gold_first_token_prob": 4.4743060220455936e-05,
+          "mean_gold_logp": -14.520975173902244,
+          "mean_gold_relative_mass": 7.726017112075554e-06,
+          "n": 6
+        },
+        "missing": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 0,
+          "mean_candidate_mass": 0.987951479383975,
+          "mean_gold_first_token_prob": 0.006570406339359785,
+          "mean_gold_logp": -5.3257876641497015,
+          "mean_gold_relative_mass": 0.006616442925814245,
+          "n": 6
+        },
+        "positive": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 6,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9681821497156279,
+          "mean_gold_first_token_prob": 0.9580154810001368,
+          "mean_gold_logp": -0.0477297906661119,
+          "mean_gold_relative_mass": 0.9853313182602251,
+          "n": 6
+        },
+        "zero": {
+          "answers": {
+            "INVALID": 1,
+            "YES": 5
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 1,
+          "mean_candidate_mass": 0.8063836071954081,
+          "mean_gold_first_token_prob": 0.004746166685861486,
+          "mean_gold_logp": -5.560146690458978,
+          "mean_gold_relative_mass": 0.008013791069297718,
+          "n": 6
+        }
+      },
+      "metrics": {
+        "answers": {
+          "INVALID": 1,
+          "YES": 23
+        },
+        "cap_stops": 0,
+        "correct": 6,
+        "invalid": 1,
+        "mean_candidate_mass": 0.9369056762478212,
+        "mean_gold_first_token_prob": 0.2423441992713946,
+        "mean_gold_logp": -6.363659829794258,
+        "mean_gold_relative_mass": 0.24999231956811227,
+        "n": 24
+      },
+      "vs_interface_none": {
+        "after": 6,
+        "before": 6,
+        "gold_logp_decreases": 24,
+        "gold_logp_deltas": [
+          -0.06447241563215655,
+          -0.09326110393862663,
+          -1.7646028306601131,
+          -5.385898059643107,
+          -0.08798811452761157,
+          -0.6459937747808766,
+          -3.3274257108172485,
+          -6.209917162100336,
+          -0.013175196247310339,
+          -0.5523741464770104,
+          -2.56194140739872,
+          -4.512367919223902,
+          -0.009259613853085824,
+          -0.2635853018383756,
+          -5.019006755201772,
+          -5.283970161566877,
+          -0.006510622688406187,
+          -1.194096236631193,
+          -2.330236861396749,
+          -3.985850288207203,
+          -0.005247281402557036,
+          -1.090271577607286,
+          -4.567549895389469,
+          -4.685904225674207
+        ],
+        "gold_logp_increases": 0,
+        "gold_logp_mean_delta": -2.2358711109543417,
+        "gold_logp_ties": 0,
+        "harms": 0,
+        "n": 24,
+        "repairs": 0
+      },
+      "vs_original": {
+        "after": 6,
+        "before": 15,
+        "gold_logp_decreases": 24,
+        "gold_logp_deltas": [
+          -0.07612429367440754,
+          -4.684801377795321,
+          -2.871983129165315,
+          -7.008148442542517,
+          -0.13533122211877568,
+          -3.866171160031378,
+          -4.163133670771195,
+          -5.463576857036099,
+          -0.01768416745223078,
+          -5.754059802159755,
+          -5.268231630984356,
+          -7.107530426835165,
+          -0.02051432329572833,
+          -4.179678395689297,
+          -6.1995080862384135,
+          -5.240647915184486,
+          -0.010111163689554559,
+          -6.6038314452465094,
+          -5.306835989749871,
+          -6.882583828847441,
+          -0.016010341710746445,
+          -5.6456300373829436,
+          -6.278466734781269,
+          -4.9707663346689515
+        ],
+        "gold_logp_increases": 0,
+        "gold_logp_mean_delta": -4.073806699043822,
+        "gold_logp_ties": 0,
+        "harms": 9,
+        "n": 24,
+        "repairs": 0
+      }
+    },
+    "no_list__none": {
+      "by_layout": {
+        "inline": {
+          "answers": {
+            "INVALID": 1,
+            "WITHHOLD": 1,
+            "YES": 10
+          },
+          "cap_stops": 0,
+          "correct": 3,
+          "invalid": 1,
+          "mean_candidate_mass": 0.8957037507310713,
+          "mean_gold_first_token_prob": 0.32655531699717105,
+          "mean_gold_logp": -3.8140184551067713,
+          "mean_gold_relative_mass": 0.33399818917946544,
+          "n": 12
+        },
+        "lines": {
+          "answers": {
+            "YES": 12
+          },
+          "cap_stops": 0,
+          "correct": 3,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9107287183607001,
+          "mean_gold_first_token_prob": 0.27535505585734404,
+          "mean_gold_logp": -4.441558982573063,
+          "mean_gold_relative_mass": 0.273446036025361,
+          "n": 12
+        }
+      },
+      "by_state": {
+        "absent": {
+          "answers": {
+            "WITHHOLD": 1,
+            "YES": 5
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 0,
+          "mean_candidate_mass": 0.8576655929181891,
+          "mean_gold_first_token_prob": 0.05213227012075907,
+          "mean_gold_logp": -9.510323871166305,
+          "mean_gold_relative_mass": 0.0008670447267246222,
+          "n": 6
+        },
+        "missing": {
+          "answers": {
+            "INVALID": 1,
+            "YES": 5
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 1,
+          "mean_candidate_mass": 0.8417537109672453,
+          "mean_gold_first_token_prob": 0.15827254511191888,
+          "mean_gold_logp": -2.06399375400569,
+          "mean_gold_relative_mass": 0.21304591739594989,
+          "n": 6
+        },
+        "positive": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 6,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9916325212000253,
+          "mean_gold_first_token_prob": 0.9854984721600225,
+          "mean_gold_logp": -0.016620916607590647,
+          "mean_gold_relative_mass": 0.9918747115466834,
+          "n": 6
+        },
+        "zero": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9218131130980834,
+          "mean_gold_first_token_prob": 0.007917458316329666,
+          "mean_gold_logp": -4.920216333580083,
+          "mean_gold_relative_mass": 0.009100776740295033,
+          "n": 6
+        }
+      },
+      "metrics": {
+        "answers": {
+          "INVALID": 1,
+          "WITHHOLD": 1,
+          "YES": 22
+        },
+        "cap_stops": 0,
+        "correct": 6,
+        "invalid": 1,
+        "mean_candidate_mass": 0.9032162345458857,
+        "mean_gold_first_token_prob": 0.30095518642725755,
+        "mean_gold_logp": -4.127788718839917,
+        "mean_gold_relative_mass": 0.3037221126024132,
+        "n": 24
+      },
+      "vs_interface_none": {
+        "after": 6,
+        "before": 6,
+        "gold_logp_decreases": 0,
+        "gold_logp_deltas": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "gold_logp_increases": 0,
+        "gold_logp_mean_delta": 0.0,
+        "gold_logp_ties": 24,
+        "harms": 0,
+        "n": 24,
+        "repairs": 0
+      },
+      "vs_original": {
+        "after": 6,
+        "before": 15,
+        "gold_logp_decreases": 22,
+        "gold_logp_deltas": [
+          -0.011651878042250985,
+          -4.591540273856694,
+          -1.107380298505202,
+          -1.6222503828994093,
+          -0.04734310759116411,
+          -3.2201773852505013,
+          -0.8357079599539468,
+          0.746340305064237,
+          -0.004508971204920442,
+          -5.201685655682745,
+          -2.7062902235856363,
+          -2.5951625076112634,
+          -0.011254709442642508,
+          -3.9160930938509217,
+          -1.1805013310366412,
+          0.04332224638239168,
+          -0.003600541001148372,
+          -5.4097352086153165,
+          -2.976599128353122,
+          -2.8967335406402377,
+          -0.01076306030818941,
+          -4.555358459775658,
+          -1.7109168393917997,
+          -0.2848621089947443
+        ],
+        "gold_logp_increases": 2,
+        "gold_logp_mean_delta": -1.8379355880894803,
+        "gold_logp_ties": 0,
+        "harms": 9,
+        "n": 24,
+        "repairs": 0
+      }
+    },
+    "no_list__verified": {
+      "by_layout": {
+        "inline": {
+          "answers": {
+            "INVALID": 2,
+            "YES": 10
+          },
+          "cap_stops": 1,
+          "correct": 3,
+          "invalid": 2,
+          "mean_candidate_mass": 0.8600824430170614,
+          "mean_gold_first_token_prob": 0.2698764824923497,
+          "mean_gold_logp": -4.485707408222293,
+          "mean_gold_relative_mass": 0.28719970001247364,
+          "n": 12
+        },
+        "lines": {
+          "answers": {
+            "INVALID": 1,
+            "YES": 11
+          },
+          "cap_stops": 0,
+          "correct": 3,
+          "invalid": 1,
+          "mean_candidate_mass": 0.8901881583386002,
+          "mean_gold_first_token_prob": 0.2606972428092303,
+          "mean_gold_logp": -4.951349582611809,
+          "mean_gold_relative_mass": 0.2637524468691601,
+          "n": 12
+        }
+      },
+      "by_state": {
+        "absent": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 0,
+          "mean_candidate_mass": 0.8925885492064275,
+          "mean_gold_first_token_prob": 0.015299942026108128,
+          "mean_gold_logp": -10.322172571267082,
+          "mean_gold_relative_mass": 0.0004042883546258544,
+          "n": 6
+        },
+        "missing": {
+          "answers": {
+            "INVALID": 2,
+            "YES": 4
+          },
+          "cap_stops": 1,
+          "correct": 0,
+          "invalid": 2,
+          "mean_candidate_mass": 0.7611899198223869,
+          "mean_gold_first_token_prob": 0.04485731597544893,
+          "mean_gold_logp": -3.19723574338686,
+          "mean_gold_relative_mass": 0.09371088902297696,
+          "n": 6
+        },
+        "positive": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 6,
+          "invalid": 0,
+          "mean_candidate_mass": 0.99418349241418,
+          "mean_gold_first_token_prob": 0.99531776725231,
+          "mean_gold_logp": -0.00696177882617081,
+          "mean_gold_relative_mass": 0.9988801001335674,
+          "n": 6
+        },
+        "zero": {
+          "answers": {
+            "INVALID": 1,
+            "YES": 5
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 1,
+          "mean_candidate_mass": 0.8525792412683287,
+          "mean_gold_first_token_prob": 0.005672425349292943,
+          "mean_gold_logp": -5.347743888188091,
+          "mean_gold_relative_mass": 0.008909016252097267,
+          "n": 6
+        }
+      },
+      "metrics": {
+        "answers": {
+          "INVALID": 3,
+          "YES": 21
+        },
+        "cap_stops": 1,
+        "correct": 6,
+        "invalid": 3,
+        "mean_candidate_mass": 0.8751353006778309,
+        "mean_gold_first_token_prob": 0.26528686265079,
+        "mean_gold_logp": -4.718528495417051,
+        "mean_gold_relative_mass": 0.27547607344081687,
+        "n": 24
+      },
+      "vs_interface_none": {
+        "after": 6,
+        "before": 6,
+        "gold_logp_decreases": 18,
+        "gold_logp_deltas": [
+          0.003991074155720753,
+          -0.3224472551597941,
+          -0.9001358884919419,
+          -1.0432964566772824,
+          0.0324329795503111,
+          -0.14803683169393977,
+          -1.5413574896254083,
+          -0.9822070589366128,
+          0.00225147856271235,
+          -0.6707191048741237,
+          -0.5267146398351912,
+          -0.5086876652996608,
+          0.008780764014577613,
+          -0.1858348945178463,
+          -1.3308149755223475,
+          -0.7896066508146902,
+          0.0018381597681340622,
+          -0.7115423743168492,
+          -0.8433755900618038,
+          -0.5986489382348807,
+          0.008660370637063153,
+          -0.5265848670854965,
+          -1.657053352750328,
+          -0.9486454306415375
+        ],
+        "gold_logp_increases": 6,
+        "gold_logp_mean_delta": -0.590739776577134,
+        "gold_logp_ties": 0,
+        "harms": 0,
+        "n": 24,
+        "repairs": 0
+      },
+      "vs_original": {
+        "after": 6,
+        "before": 15,
+        "gold_logp_decreases": 24,
+        "gold_logp_deltas": [
+          -0.007660803886530232,
+          -4.913987529016488,
+          -2.007516186997144,
+          -2.6655468395766917,
+          -0.01491012804085301,
+          -3.368214216944441,
+          -2.377065449579355,
+          -0.23586675387237577,
+          -0.002257492642208092,
+          -5.8724047605568686,
+          -3.2330048634208275,
+          -3.1038501729109242,
+          -0.0024739454280648943,
+          -4.101927988368768,
+          -2.5113163065589887,
+          -0.7462844044322985,
+          -0.0017623812330143096,
+          -6.121277582932166,
+          -3.819974718414926,
+          -3.4953824788751184,
+          -0.0021026896711262566,
+          -5.081943326861154,
+          -3.3679701921421277,
+          -1.2335075396362818
+        ],
+        "gold_logp_increases": 0,
+        "gold_logp_mean_delta": -2.428675364666614,
+        "gold_logp_ties": 0,
+        "harms": 9,
+        "n": 24,
+        "repairs": 0
+      }
+    },
+    "old_menu__irrelevant": {
+      "by_layout": {
+        "inline": {
+          "answers": {
+            "YES": 12
+          },
+          "cap_stops": 0,
+          "correct": 3,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9791852956505448,
+          "mean_gold_first_token_prob": 0.22818418653875663,
+          "mean_gold_logp": -4.6496433945709965,
+          "mean_gold_relative_mass": 0.2333312413256807,
+          "n": 12
+        },
+        "lines": {
+          "answers": {
+            "YES": 12
+          },
+          "cap_stops": 0,
+          "correct": 3,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9743403179390722,
+          "mean_gold_first_token_prob": 0.24153377794233544,
+          "mean_gold_logp": -4.3057020883385055,
+          "mean_gold_relative_mass": 0.2465406715083099,
+          "n": 12
+        }
+      },
+      "by_state": {
+        "absent": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9745411291897818,
+          "mean_gold_first_token_prob": 0.001979972385415603,
+          "mean_gold_logp": -8.711265112673443,
+          "mean_gold_relative_mass": 0.0010932119261471442,
+          "n": 6
+        },
+        "missing": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9827768141480684,
+          "mean_gold_first_token_prob": 0.005562026202550177,
+          "mean_gold_logp": -5.295582817317865,
+          "mean_gold_relative_mass": 0.005496022142548227,
+          "n": 6
+        },
+        "positive": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 6,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9714771300683614,
+          "mean_gold_first_token_prob": 0.9078527349400892,
+          "mean_gold_logp": -0.10319527294182744,
+          "mean_gold_relative_mass": 0.9287330910017119,
+          "n": 6
+        },
+        "zero": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9782561537730224,
+          "mean_gold_first_token_prob": 0.02404119543412918,
+          "mean_gold_logp": -3.800647762885868,
+          "mean_gold_relative_mass": 0.024421500597573902,
+          "n": 6
+        }
+      },
+      "metrics": {
+        "answers": {
+          "YES": 24
+        },
+        "cap_stops": 0,
+        "correct": 6,
+        "invalid": 0,
+        "mean_candidate_mass": 0.9767628067948085,
+        "mean_gold_first_token_prob": 0.23485898224054602,
+        "mean_gold_logp": -4.477672741454751,
+        "mean_gold_relative_mass": 0.23993595641699528,
+        "n": 24
+      },
+      "vs_interface_none": {
+        "after": 6,
+        "before": 6,
+        "gold_logp_decreases": 19,
+        "gold_logp_deltas": [
+          -0.04784477998735426,
+          -0.7183579380805796,
+          0.4217299635460776,
+          1.7473098517127852,
+          -0.09462288411453557,
+          -0.16465861492148903,
+          -0.026569462719159276,
+          1.120374592132741,
+          -0.056203986142719486,
+          -0.6058215965489246,
+          0.28081763567384144,
+          -0.18093408980077186,
+          -0.09070121285407495,
+          -0.332646518384184,
+          -0.36984376518867634,
+          -0.4774970674868051,
+          -0.028036795309652973,
+          -0.8950494831222748,
+          0.2130995949373542,
+          -0.21434560250710177,
+          -0.08447717137356392,
+          -0.5904300395685098,
+          -0.4312823908388417,
+          -0.4162751113290888
+        ],
+        "gold_logp_increases": 5,
+        "gold_logp_mean_delta": -0.08509445301147951,
+        "gold_logp_ties": 0,
+        "harms": 0,
+        "n": 24,
+        "repairs": 0
+      },
+      "vs_original": {
+        "after": 6,
+        "before": 15,
+        "gold_logp_decreases": 22,
+        "gold_logp_deltas": [
+          -0.08580635354580934,
+          -3.7110742450775156,
+          -3.7356621385523248,
+          0.6828878024812326,
+          -0.12649688983150398,
+          -3.0090939370245344,
+          -4.874059600223799,
+          1.9216763525753535,
+          -0.09800207553896811,
+          -3.148150370530338,
+          -4.71843506944694,
+          -1.3740996545432367,
+          -0.12874512269665317,
+          -2.8196502358864386,
+          -5.256833466769397,
+          -0.05534305690445862,
+          -0.05751089251701913,
+          -3.667090013360216,
+          -5.3269959896928825,
+          -2.2569168788592435,
+          -0.11200707146578281,
+          -3.822119850987505,
+          -5.99494389601406,
+          -0.7331980024915055
+        ],
+        "gold_logp_increases": 2,
+        "gold_logp_mean_delta": -2.1878196107043144,
+        "gold_logp_ties": 0,
+        "harms": 9,
+        "n": 24,
+        "repairs": 0
+      }
+    },
+    "old_menu__none": {
+      "by_layout": {
+        "inline": {
+          "answers": {
+            "YES": 12
+          },
+          "cap_stops": 0,
+          "correct": 3,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9848553141365035,
+          "mean_gold_first_token_prob": 0.2508412589979579,
+          "mean_gold_logp": -4.486424257350481,
+          "mean_gold_relative_mass": 0.25286473541211524,
+          "n": 12
+        },
+        "lines": {
+          "answers": {
+            "YES": 12
+          },
+          "cap_stops": 0,
+          "correct": 3,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9707448329956777,
+          "mean_gold_first_token_prob": 0.25986014847729993,
+          "mean_gold_logp": -4.298732319536062,
+          "mean_gold_relative_mass": 0.2621712143479814,
+          "n": 12
+        }
+      },
+      "by_state": {
+        "absent": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9579110898116344,
+          "mean_gold_first_token_prob": 0.002781989892984675,
+          "mean_gold_logp": -8.974370541460404,
+          "mean_gold_relative_mass": 0.0015167718004220328,
+          "n": 6
+        },
+        "missing": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9860514169602502,
+          "mean_gold_first_token_prob": 0.005230950118872341,
+          "mean_gold_logp": -5.310241413219631,
+          "mean_gold_relative_mass": 0.005186022084624819,
+          "n": 6
+        },
+        "positive": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 6,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9854681857767374,
+          "mean_gold_first_token_prob": 0.9693367897371763,
+          "mean_gold_logp": -0.03621413464484391,
+          "mean_gold_relative_mass": 0.9786697989815911,
+          "n": 6
+        },
+        "zero": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9817696017157403,
+          "mean_gold_first_token_prob": 0.04405308520148241,
+          "mean_gold_logp": -3.2494870644482075,
+          "mean_gold_relative_mass": 0.04469930665355531,
+          "n": 6
+        }
+      },
+      "metrics": {
+        "answers": {
+          "YES": 24
+        },
+        "cap_stops": 0,
+        "correct": 6,
+        "invalid": 0,
+        "mean_candidate_mass": 0.9778000735660907,
+        "mean_gold_first_token_prob": 0.2553507037376289,
+        "mean_gold_logp": -4.392578288443271,
+        "mean_gold_relative_mass": 0.2575179748800483,
+        "n": 24
+      },
+      "vs_interface_none": {
+        "after": 6,
+        "before": 6,
+        "gold_logp_decreases": 0,
+        "gold_logp_deltas": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "gold_logp_increases": 0,
+        "gold_logp_mean_delta": 0.0,
+        "gold_logp_ties": 24,
+        "harms": 0,
+        "n": 24,
+        "repairs": 0
+      },
+      "vs_original": {
+        "after": 6,
+        "before": 15,
+        "gold_logp_decreases": 22,
+        "gold_logp_deltas": [
+          -0.037961573558455086,
+          -2.992716306996936,
+          -4.157392102098402,
+          -1.0644220492315526,
+          -0.03187400571696841,
+          -2.8444353221030454,
+          -4.847490137504639,
+          0.8013017604426125,
+          -0.04179808939624863,
+          -2.5423287739814135,
+          -4.999252705120782,
+          -1.1931655647424648,
+          -0.038043909842578216,
+          -2.4870037175022546,
+          -4.88698970158072,
+          0.4221540105823465,
+          -0.029474097207366157,
+          -2.772040530237941,
+          -5.540095584630237,
+          -2.0425712763521418,
+          -0.027529900092218895,
+          -3.2316898114189954,
+          -5.563661505175219,
+          -0.3169228911624167
+        ],
+        "gold_logp_increases": 2,
+        "gold_logp_mean_delta": -2.1027251576928347,
+        "gold_logp_ties": 0,
+        "harms": 9,
+        "n": 24,
+        "repairs": 0
+      }
+    },
+    "old_menu__verified": {
+      "by_layout": {
+        "inline": {
+          "answers": {
+            "YES": 12
+          },
+          "cap_stops": 0,
+          "correct": 3,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9780011531541918,
+          "mean_gold_first_token_prob": 0.24042332525470703,
+          "mean_gold_logp": -4.2686233353287255,
+          "mean_gold_relative_mass": 0.24557953076611225,
+          "n": 12
+        },
+        "lines": {
+          "answers": {
+            "YES": 12
+          },
+          "cap_stops": 0,
+          "correct": 3,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9751717481268535,
+          "mean_gold_first_token_prob": 0.25208653856293467,
+          "mean_gold_logp": -4.434104331408094,
+          "mean_gold_relative_mass": 0.2548819982933715,
+          "n": 12
+        }
+      },
+      "by_state": {
+        "absent": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9695623132015481,
+          "mean_gold_first_token_prob": 0.0033850613895806225,
+          "mean_gold_logp": -8.92196505026804,
+          "mean_gold_relative_mass": 0.001935686418769873,
+          "n": 6
+        },
+        "missing": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9811567943050149,
+          "mean_gold_first_token_prob": 0.005547911921948384,
+          "mean_gold_logp": -5.310713904851327,
+          "mean_gold_relative_mass": 0.005536249353865865,
+          "n": 6
+        },
+        "positive": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 6,
+          "invalid": 0,
+          "mean_candidate_mass": 0.977695737408396,
+          "mean_gold_first_token_prob": 0.9294579719934645,
+          "mean_gold_logp": -0.07869346613939261,
+          "mean_gold_relative_mass": 0.9460225705505652,
+          "n": 6
+        },
+        "zero": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9779309576471317,
+          "mean_gold_first_token_prob": 0.04662878233028997,
+          "mean_gold_logp": -3.09408291221488,
+          "mean_gold_relative_mass": 0.04742855179576652,
+          "n": 6
+        }
+      },
+      "metrics": {
+        "answers": {
+          "YES": 24
+        },
+        "cap_stops": 0,
+        "correct": 6,
+        "invalid": 0,
+        "mean_candidate_mass": 0.9765864506405225,
+        "mean_gold_first_token_prob": 0.24625493190882086,
+        "mean_gold_logp": -4.35136383336841,
+        "mean_gold_relative_mass": 0.25023076452974186,
+        "n": 24
+      },
+      "vs_interface_none": {
+        "after": 6,
+        "before": 6,
+        "gold_logp_decreases": 14,
+        "gold_logp_deltas": [
+          -0.006266768665980749,
+          -0.47580046968615974,
+          -0.16192186235332784,
+          -0.03292543233177625,
+          -0.055554312342014356,
+          0.8246350575004229,
+          0.10544812152428307,
+          -0.5657000380310677,
+          -0.009087248971027861,
+          -0.5039332739850728,
+          -0.2031844966867169,
+          0.3984179257355649,
+          -0.10393228847312486,
+          0.8195970170823514,
+          0.3844039221162916,
+          0.203375371217426,
+          -0.004080755292910965,
+          -0.47113204788795926,
+          -0.3636888349950773,
+          0.20913912265605816,
+          -0.07595461522223346,
+          0.739058630376384,
+          0.23610820060437732,
+          0.10212599790797938
+        ],
+        "gold_logp_increases": 10,
+        "gold_logp_mean_delta": 0.04121445507486202,
+        "gold_logp_ties": 0,
+        "harms": 0,
+        "n": 24,
+        "repairs": 0
+      },
+      "vs_original": {
+        "after": 6,
+        "before": 15,
+        "gold_logp_decreases": 22,
+        "gold_logp_deltas": [
+          -0.044228342224435835,
+          -3.4685167766830958,
+          -4.31931396445173,
+          -1.0973474815633288,
+          -0.08742831805898277,
+          -2.0198002646026225,
+          -4.742042015980356,
+          0.23560172241154476,
+          -0.05088533836727649,
+          -3.0462620479664864,
+          -5.2024372018074985,
+          -0.7947476390068999,
+          -0.14197619831570307,
+          -1.6674067004199031,
+          -4.502585779464429,
+          0.6255293817997725,
+          -0.03355485250027712,
+          -3.2431725781259004,
+          -5.903784419625314,
+          -1.8334321536960836,
+          -0.10348451531445235,
+          -2.4926311810426114,
+          -5.327553304570841,
+          -0.2147968932544373
+        ],
+        "gold_logp_increases": 2,
+        "gold_logp_mean_delta": -2.061510702617973,
+        "gold_logp_ties": 0,
+        "harms": 9,
+        "n": 24,
+        "repairs": 0
+      }
+    },
+    "original__none": {
+      "by_layout": {
+        "inline": {
+          "answers": {
+            "INVALID": 1,
+            "NO": 1,
+            "UNKNOWN": 1,
+            "WITHHOLD": 6,
+            "YES": 3
+          },
+          "cap_stops": 0,
+          "correct": 7,
+          "invalid": 1,
+          "mean_candidate_mass": 0.8559922172557032,
+          "mean_gold_first_token_prob": 0.5901869524970039,
+          "mean_gold_logp": -2.565408829760973,
+          "mean_gold_relative_mass": 0.6618339878949141,
+          "n": 12
+        },
+        "lines": {
+          "answers": {
+            "INVALID": 2,
+            "NO": 3,
+            "WITHHOLD": 4,
+            "YES": 3
+          },
+          "cap_stops": 0,
+          "correct": 8,
+          "invalid": 2,
+          "mean_candidate_mass": 0.8564349391643726,
+          "mean_gold_first_token_prob": 0.747837278813427,
+          "mean_gold_logp": -2.0142974317399003,
+          "mean_gold_relative_mass": 0.7509549072758596,
+          "n": 12
+        }
+      },
+      "by_state": {
+        "absent": {
+          "answers": {
+            "INVALID": 1,
+            "WITHHOLD": 5
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 1,
+          "mean_candidate_mass": 0.738829422934003,
+          "mean_gold_first_token_prob": 0.1522058448399475,
+          "mean_gold_logp": -8.408766206383135,
+          "mean_gold_relative_mass": 0.005071218342406109,
+          "n": 6
+        },
+        "missing": {
+          "answers": {
+            "INVALID": 1,
+            "WITHHOLD": 5
+          },
+          "cap_stops": 0,
+          "correct": 5,
+          "invalid": 1,
+          "mean_candidate_mass": 0.8007388233543669,
+          "mean_gold_first_token_prob": 0.8082391725101239,
+          "mean_gold_logp": -0.3110944572012985,
+          "mean_gold_relative_mass": 0.9981184969303372,
+          "n": 6
+        },
+        "positive": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 6,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9982780707528973,
+          "mean_gold_first_token_prob": 0.9995922020576944,
+          "mean_gold_logp": -0.0017672053425380103,
+          "mean_gold_relative_mass": 0.9999562211900997,
+          "n": 6
+        },
+        "zero": {
+          "answers": {
+            "INVALID": 1,
+            "NO": 4,
+            "UNKNOWN": 1
+          },
+          "cap_stops": 0,
+          "correct": 4,
+          "invalid": 1,
+          "mean_candidate_mass": 0.8870079957988845,
+          "mean_gold_first_token_prob": 0.7160112432130962,
+          "mean_gold_logp": -0.43778465407477657,
+          "mean_gold_relative_mass": 0.8224318538787042,
+          "n": 6
+        }
+      },
+      "metrics": {
+        "answers": {
+          "INVALID": 3,
+          "NO": 4,
+          "UNKNOWN": 1,
+          "WITHHOLD": 10,
+          "YES": 6
+        },
+        "cap_stops": 0,
+        "correct": 15,
+        "invalid": 3,
+        "mean_candidate_mass": 0.856213578210038,
+        "mean_gold_first_token_prob": 0.6690121156552155,
+        "mean_gold_logp": -2.2898531307504366,
+        "mean_gold_relative_mass": 0.7063944475853868,
+        "n": 24
+      },
+      "vs_interface_none": {
+        "after": 15,
+        "before": 15,
+        "gold_logp_decreases": 0,
+        "gold_logp_deltas": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "gold_logp_increases": 0,
+        "gold_logp_mean_delta": 0.0,
+        "gold_logp_ties": 24,
+        "harms": 0,
+        "n": 24,
+        "repairs": 0
+      },
+      "vs_original": {
+        "after": 15,
+        "before": 15,
+        "gold_logp_decreases": 0,
+        "gold_logp_deltas": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "gold_logp_increases": 0,
+        "gold_logp_mean_delta": 0.0,
+        "gold_logp_ties": 24,
+        "harms": 0,
+        "n": 24,
+        "repairs": 0
+      }
+    },
+    "simple__irrelevant": {
+      "by_layout": {
+        "inline": {
+          "answers": {
+            "INVALID": 1,
+            "WITHHOLD": 1,
+            "YES": 10
+          },
+          "cap_stops": 0,
+          "correct": 3,
+          "invalid": 1,
+          "mean_candidate_mass": 0.9016659429255381,
+          "mean_gold_first_token_prob": 0.22654200746533615,
+          "mean_gold_logp": -7.364230555053505,
+          "mean_gold_relative_mass": 0.23323753055622645,
+          "n": 12
+        },
+        "lines": {
+          "answers": {
+            "INVALID": 1,
+            "YES": 11
+          },
+          "cap_stops": 0,
+          "correct": 3,
+          "invalid": 1,
+          "mean_candidate_mass": 0.9324262620071849,
+          "mean_gold_first_token_prob": 0.24828320819578273,
+          "mean_gold_logp": -6.680638219671024,
+          "mean_gold_relative_mass": 0.2519008269360663,
+          "n": 12
+        }
+      },
+      "by_state": {
+        "absent": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9866724829868829,
+          "mean_gold_first_token_prob": 9.006938646829476e-06,
+          "mean_gold_logp": -16.20539119007865,
+          "mean_gold_relative_mass": 1.808061148940219e-06,
+          "n": 6
+        },
+        "missing": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9871373163357987,
+          "mean_gold_first_token_prob": 0.002274577236785014,
+          "mean_gold_logp": -7.1701874216808195,
+          "mean_gold_relative_mass": 0.002297084666315586,
+          "n": 6
+        },
+        "positive": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 6,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9787061732638804,
+          "mean_gold_first_token_prob": 0.934747911983265,
+          "mean_gold_logp": -0.07536194606235469,
+          "mean_gold_relative_mass": 0.9484342845893855,
+          "n": 6
+        },
+        "zero": {
+          "answers": {
+            "INVALID": 2,
+            "WITHHOLD": 1,
+            "YES": 3
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 2,
+          "mean_candidate_mass": 0.7156684372788843,
+          "mean_gold_first_token_prob": 0.012618935163540899,
+          "mean_gold_logp": -4.638796991627232,
+          "mean_gold_relative_mass": 0.019543537667735533,
+          "n": 6
+        }
+      },
+      "metrics": {
+        "answers": {
+          "INVALID": 2,
+          "WITHHOLD": 1,
+          "YES": 21
+        },
+        "cap_stops": 0,
+        "correct": 6,
+        "invalid": 2,
+        "mean_candidate_mass": 0.9170461024663616,
+        "mean_gold_first_token_prob": 0.23741260783055942,
+        "mean_gold_logp": -7.0224343873622646,
+        "mean_gold_relative_mass": 0.2425691787461464,
+        "n": 24
+      },
+      "vs_interface_none": {
+        "after": 6,
+        "before": 10,
+        "gold_logp_decreases": 24,
+        "gold_logp_deltas": [
+          -0.03176219183955098,
+          -3.742934071566978,
+          -1.333021646627376,
+          -9.97251905077825,
+          -0.0805661762030283,
+          -3.639825391454494,
+          -5.529616801392976,
+          -9.406197567999364,
+          -0.02863791331635923,
+          -2.4282182641104058,
+          -6.076207204151451,
+          -7.755551751418359,
+          -0.11115266307558258,
+          -2.374157416322415,
+          -8.396658689581702,
+          -7.028234578429263,
+          -0.014694802053881517,
+          -3.3248142375035172,
+          -6.569540750165611,
+          -7.394113264178571,
+          -0.08067698381839605,
+          -2.578806334663774,
+          -8.833051365846416,
+          -7.200649796606481
+        ],
+        "gold_logp_increases": 0,
+        "gold_logp_mean_delta": -4.330483704712675,
+        "gold_logp_ties": 0,
+        "harms": 4,
+        "n": 24,
+        "repairs": 0
+      },
+      "vs_original": {
+        "after": 6,
+        "before": 15,
+        "gold_logp_decreases": 24,
+        "gold_logp_deltas": [
+          -0.03791074078942103,
+          -4.889140758922064,
+          -3.401656846464281,
+          -9.543648759380531,
+          -0.1455539209396477,
+          -5.111943655234857,
+          -7.0339653297298526,
+          -7.368885151751261,
+          -0.03252299918717938,
+          -3.602619646889682,
+          -6.228125466822057,
+          -8.37134881757557,
+          -0.11900784851567892,
+          -2.8473099910724002,
+          -8.783006133298905,
+          -6.391658598723954,
+          -0.019290350348683205,
+          -4.645611467294902,
+          -6.736990499534013,
+          -8.487223101965089,
+          -0.08728258453828985,
+          -4.109448505900829,
+          -8.97081351102802,
+          -6.6169854727766975
+        ],
+        "gold_logp_increases": 0,
+        "gold_logp_mean_delta": -4.7325812566118275,
+        "gold_logp_ties": 0,
+        "harms": 9,
+        "n": 24,
+        "repairs": 0
+      }
+    },
+    "simple__none": {
+      "by_layout": {
+        "inline": {
+          "answers": {
+            "INVALID": 3,
+            "WITHHOLD": 4,
+            "YES": 5
+          },
+          "cap_stops": 2,
+          "correct": 5,
+          "invalid": 3,
+          "mean_candidate_mass": 0.7498992513217854,
+          "mean_gold_first_token_prob": 0.48017880439830946,
+          "mean_gold_logp": -2.759264407937348,
+          "mean_gold_relative_mass": 0.536258395359663,
+          "n": 12
+        },
+        "lines": {
+          "answers": {
+            "INVALID": 2,
+            "WITHHOLD": 4,
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 5,
+          "invalid": 2,
+          "mean_candidate_mass": 0.8104604926145188,
+          "mean_gold_first_token_prob": 0.5337020203131203,
+          "mean_gold_logp": -2.6246369573618304,
+          "mean_gold_relative_mass": 0.5530784829395928,
+          "n": 12
+        }
+      },
+      "by_state": {
+        "absent": {
+          "answers": {
+            "INVALID": 2,
+            "WITHHOLD": 4
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 2,
+          "mean_candidate_mass": 0.6343733020637883,
+          "mean_gold_first_token_prob": 0.2451327921047487,
+          "mean_gold_logp": -8.07918018851027,
+          "mean_gold_relative_mass": 0.003320688192289022,
+          "n": 6
+        },
+        "missing": {
+          "answers": {
+            "INVALID": 2,
+            "WITHHOLD": 4
+          },
+          "cap_stops": 1,
+          "correct": 4,
+          "invalid": 2,
+          "mean_candidate_mass": 0.6031877775485821,
+          "mean_gold_first_token_prob": 0.5758317134723361,
+          "mean_gold_logp": -1.0471713453865643,
+          "mean_gold_relative_mass": 0.9428217909523154,
+          "n": 6
+        },
+        "positive": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 6,
+          "invalid": 0,
+          "mean_candidate_mass": 0.9880010106445729,
+          "mean_gold_first_token_prob": 0.9880222128960382,
+          "mean_gold_logp": -0.017446824344554912,
+          "mean_gold_relative_mass": 0.9947646595750922,
+          "n": 6
+        },
+        "zero": {
+          "answers": {
+            "INVALID": 1,
+            "YES": 5
+          },
+          "cap_stops": 1,
+          "correct": 0,
+          "invalid": 1,
+          "mean_candidate_mass": 0.895157397615665,
+          "mean_gold_first_token_prob": 0.21877493094973668,
+          "mean_gold_logp": -1.6240043723569684,
+          "mean_gold_relative_mass": 0.23776661787881506,
+          "n": 6
+        }
+      },
+      "metrics": {
+        "answers": {
+          "INVALID": 5,
+          "WITHHOLD": 8,
+          "YES": 11
+        },
+        "cap_stops": 2,
+        "correct": 10,
+        "invalid": 5,
+        "mean_candidate_mass": 0.780179871968152,
+        "mean_gold_first_token_prob": 0.506940412355715,
+        "mean_gold_logp": -2.691950682649589,
+        "mean_gold_relative_mass": 0.5446684391496279,
+        "n": 24
+      },
+      "vs_interface_none": {
+        "after": 10,
+        "before": 10,
+        "gold_logp_decreases": 0,
+        "gold_logp_deltas": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "gold_logp_increases": 0,
+        "gold_logp_mean_delta": 0.0,
+        "gold_logp_ties": 24,
+        "harms": 0,
+        "n": 24,
+        "repairs": 0
+      },
+      "vs_original": {
+        "after": 10,
+        "before": 15,
+        "gold_logp_decreases": 20,
+        "gold_logp_deltas": [
+          -0.006148548949870047,
+          -1.146206687355086,
+          -2.068635199836905,
+          0.42887029139771826,
+          -0.06498774473661939,
+          -1.472118263780363,
+          -1.5043485283368767,
+          2.0373124162481027,
+          -0.0038850858708201486,
+          -1.1744013827792763,
+          -0.1519182626706055,
+          -0.6157970661572101,
+          -0.007855185440096335,
+          -0.4731525747499852,
+          -0.3863474437172023,
+          0.6365759797053094,
+          -0.004595548294801688,
+          -1.3207972297913848,
+          -0.1674497493684015,
+          -1.0931098377865176,
+          -0.0066056007198938005,
+          -1.530642171237055,
+          -0.137762145181604,
+          0.5836643238297832
+        ],
+        "gold_logp_increases": 4,
+        "gold_logp_mean_delta": -0.4020975518991525,
+        "gold_logp_ties": 0,
+        "harms": 5,
+        "n": 24,
+        "repairs": 0
+      }
+    },
+    "simple__verified": {
+      "by_layout": {
+        "inline": {
+          "answers": {
+            "INVALID": 3,
+            "WITHHOLD": 2,
+            "YES": 7
+          },
+          "cap_stops": 1,
+          "correct": 4,
+          "invalid": 3,
+          "mean_candidate_mass": 0.7440888272083847,
+          "mean_gold_first_token_prob": 0.40915692553037225,
+          "mean_gold_logp": -3.2691549594579334,
+          "mean_gold_relative_mass": 0.4713303637391464,
+          "n": 12
+        },
+        "lines": {
+          "answers": {
+            "INVALID": 2,
+            "YES": 10
+          },
+          "cap_stops": 0,
+          "correct": 3,
+          "invalid": 2,
+          "mean_candidate_mass": 0.8058053214628895,
+          "mean_gold_first_token_prob": 0.32845598340182747,
+          "mean_gold_logp": -3.733942727812101,
+          "mean_gold_relative_mass": 0.3684246062507122,
+          "n": 12
+        }
+      },
+      "by_state": {
+        "absent": {
+          "answers": {
+            "INVALID": 1,
+            "WITHHOLD": 1,
+            "YES": 4
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 1,
+          "mean_candidate_mass": 0.7409233337145946,
+          "mean_gold_first_token_prob": 0.13172912115420288,
+          "mean_gold_logp": -8.683260505223979,
+          "mean_gold_relative_mass": 0.0019096247286103948,
+          "n": 6
+        },
+        "missing": {
+          "answers": {
+            "INVALID": 2,
+            "WITHHOLD": 1,
+            "YES": 3
+          },
+          "cap_stops": 1,
+          "correct": 1,
+          "invalid": 2,
+          "mean_candidate_mass": 0.6148055664355635,
+          "mean_gold_first_token_prob": 0.27555884818473836,
+          "mean_gold_logp": -2.5250009905441284,
+          "mean_gold_relative_mass": 0.566187981330964,
+          "n": 6
+        },
+        "positive": {
+          "answers": {
+            "YES": 6
+          },
+          "cap_stops": 0,
+          "correct": 6,
+          "invalid": 0,
+          "mean_candidate_mass": 0.995911635280294,
+          "mean_gold_first_token_prob": 0.9989149432599381,
+          "mean_gold_logp": -0.0042558926527960965,
+          "mean_gold_relative_mass": 0.9998418274532058,
+          "n": 6
+        },
+        "zero": {
+          "answers": {
+            "INVALID": 2,
+            "YES": 4
+          },
+          "cap_stops": 0,
+          "correct": 0,
+          "invalid": 2,
+          "mean_candidate_mass": 0.7481477619120963,
+          "mean_gold_first_token_prob": 0.06902290526552018,
+          "mean_gold_logp": -2.7936779861191643,
+          "mean_gold_relative_mass": 0.11157050646693689,
+          "n": 6
+        }
+      },
+      "metrics": {
+        "answers": {
+          "INVALID": 5,
+          "WITHHOLD": 2,
+          "YES": 17
+        },
+        "cap_stops": 1,
+        "correct": 7,
+        "invalid": 5,
+        "mean_candidate_mass": 0.7749470743356371,
+        "mean_gold_first_token_prob": 0.3688064544660999,
+        "mean_gold_logp": -3.501548843635017,
+        "mean_gold_relative_mass": 0.41987748499492933,
+        "n": 24
+      },
+      "vs_interface_none": {
+        "after": 7,
+        "before": 10,
+        "gold_logp_decreases": 16,
+        "gold_logp_deltas": [
+          0.001323013925890848,
+          -1.389129153653471,
+          -2.9398611255982168,
+          -0.6095127920764369,
+          0.061252818260889796,
+          -1.4454661149370196,
+          -2.421680995994471,
+          -0.06751579134009589,
+          0.001861791540136437,
+          -1.1001304578177091,
+          -1.044184761243276,
+          -1.4924252971353127,
+          0.006687940577080553,
+          -0.8878385601098735,
+          0.1376473694167828,
+          0.3315163632398246,
+          0.0024423224647556196,
+          -1.2315348005091238,
+          -1.9225555169985746,
+          -1.5879624683019102,
+          0.005577703381799637,
+          -0.9639425955459799,
+          -0.6763428405276279,
+          -0.19858191466832764
+        ],
+        "gold_logp_increases": 8,
+        "gold_logp_mean_delta": -0.8095981609854278,
+        "gold_logp_ties": 0,
+        "harms": 3,
+        "n": 24,
+        "repairs": 0
+      },
+      "vs_original": {
+        "after": 7,
+        "before": 15,
+        "gold_logp_decreases": 21,
+        "gold_logp_deltas": [
+          -0.004825535023979199,
+          -2.535335841008557,
+          -5.008496325435122,
+          -0.18064250067871868,
+          -0.003734926475729594,
+          -2.9175843787173825,
+          -3.926029524331348,
+          1.9697966249080068,
+          -0.0020232943306837115,
+          -2.2745318405969854,
+          -1.1961030239138815,
+          -2.1082223632925228,
+          -0.0011672448630157817,
+          -1.3609911348598587,
+          -0.24870007430041952,
+          0.968092342945134,
+          -0.0021532258300460683,
+          -2.5523320303005086,
+          -2.090005266366976,
+          -2.681072306088428,
+          -0.0010278973380941636,
+          -2.494584766783035,
+          -0.814104985709232,
+          0.38508240916145553
+        ],
+        "gold_logp_increases": 3,
+        "gold_logp_mean_delta": -1.2116957128845802,
+        "gold_logp_ties": 0,
+        "harms": 8,
+        "n": 24,
+        "repairs": 0
+      }
+    }
+  },
+  "scoring_seconds": 369.77667898599475
+}

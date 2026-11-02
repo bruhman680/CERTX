@@ -1,3 +1,11 @@
+# Current research map — three contacts complete
+
+2 November2026. [Current overview](resume-three-contact-v1/REPORT.md). Claude source intake and exact corrections, fresh fixed-weight evidence-only model contact, paired compatibility guard and same-band selector analysis completed. Original familiar-case cutoff can fail before vocabulary expansion matters; calibrated geometry repairs one toy failure. More abstention has costs. Model original15/24 exceeds simple-none10/24 and faithful7/24; no teacher/training adoption.
+
+Next proposals: matched duplication/added-text/authority tests with untouched confirmation; calibration/noise sensitivity; actual intervention/sham mechanics. Broader memory/provenance/planning directions remain open; broad autonomous loop parked. All saved jobs finished. Prior map is retained below as historical wording, not current work orders. Exact prior navigation bytes archived.
+
+## Earlier orientation snapshots
+
 # Current research map — paused
 
 1 November 2026, America/Chicago — PAUSED at user's request until usage reset. Completed [review-menu settling contact](review-menu-settle-v1/REPORT.md):231unique free-generation probes,63exact prior-input/output replays, four test groups and all audits pass. Model weights unchanged; no new probability-scoring forwards.

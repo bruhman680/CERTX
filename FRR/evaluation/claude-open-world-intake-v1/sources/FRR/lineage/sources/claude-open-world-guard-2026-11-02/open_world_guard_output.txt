@@ -1,0 +1,72 @@
+PHASE 1 (open, unscored). Feature means over 600 runs at M=100 (flag noise .05)
+world            phi     P(b|a)     P(a|b)  xlag a->b  xlag b->a      trend  rate diff
+IND           -0.003      0.232      0.232     -0.007      0.003      0.002     -0.001
+DIFF           0.177      0.367      0.365     -0.007     -0.009      0.004     -0.002
+COMMON         0.729      0.792      0.791      0.003     -0.004      0.002     -0.000
+COPY           0.733      0.797      0.793     -0.008     -0.007     -0.000     -0.001
+ANTI          -0.179      0.090      0.092      0.002      0.012      0.003      0.003
+LAG           -0.007      0.223      0.224      0.729     -0.008      0.001      0.001
+DRIFT          0.040      0.258      0.260      0.034      0.031      0.254      0.002
+PARTIAL        0.361      0.505      0.512     -0.004     -0.004      0.001      0.003
+UPSTREAM       0.728      0.792      0.790     -0.010     -0.009      0.006     -0.001
+
+Closed F_care (v3) claims on outside worlds, M=100 (fractions)
+  ANTI      IND:1.00
+  LAG       DIFF:0.02  IND:0.70  UNRES_INDDIFF:0.28
+  DRIFT     DIFF:0.07  IND:0.56  UNRES_INDDIFF:0.37
+  PARTIAL   COMMON:0.08  DIFF:0.85  IND:0.00  UNRES_INDDIFF:0.07
+  UPSTREAM  COMMON:0.97  COPY:0.01  DIFF:0.02
+
+PHASE 2: calibration frozen, digest 4678ba64e5a26310; evaluation seeds drawn after this line.
+
+=== M=40 ===  (K=known; per cell: correct/unknown/overreach/unres for known worlds, unknown/overreach/unres for outside)
+ IND       care[correct:0.35 unknown:0.00 over:0.03 unres:0.62]  open[correct:0.75 unknown:0.00 over:0.25 unres:0.00]
+           open_est40[correct:0.71 unknown:0.00 over:0.29 unres:0.00]  open_est400[correct:0.74 unknown:0.00 over:0.26 unres:0.00]
+ DIFF      care[correct:0.20 unknown:0.00 over:0.10 unres:0.70]  open[correct:0.60 unknown:0.00 over:0.40 unres:0.00]
+           open_est40[correct:0.63 unknown:0.00 over:0.37 unres:0.00]  open_est400[correct:0.60 unknown:0.00 over:0.40 unres:0.00]
+ COMMON    care[correct:0.85 unknown:0.00 over:0.14 unres:0.01]  open[correct:0.95 unknown:0.00 over:0.05 unres:0.00]
+           open_est40[correct:0.80 unknown:0.04 over:0.15 unres:0.00]  open_est400[correct:0.94 unknown:0.00 over:0.06 unres:0.00]
+ COPY      care[correct:0.85 unknown:0.00 over:0.14 unres:0.01]  open[correct:0.95 unknown:0.00 over:0.05 unres:0.00]
+           open_est40[correct:0.82 unknown:0.03 over:0.15 unres:0.00]  open_est400[correct:0.93 unknown:0.00 over:0.07 unres:0.00]
+ ANTI      care[unknown:0.00 over:0.81 unres:0.19]  open[unknown:0.01 over:0.99 unres:0.00]
+           open_est40[unknown:0.01 over:0.99 unres:0.00]  open_est400[unknown:0.01 over:0.99 unres:0.00]
+ LAG       care[unknown:0.00 over:0.41 unres:0.59]  open[unknown:0.63 over:0.37 unres:0.00]
+           open_est40[unknown:0.62 over:0.38 unres:0.00]  open_est400[unknown:0.62 over:0.38 unres:0.00]
+ DRIFT     care[unknown:0.00 over:0.31 unres:0.69]  open[unknown:0.01 over:0.99 unres:0.00]
+           open_est40[unknown:0.01 over:0.99 unres:0.00]  open_est400[unknown:0.01 over:0.99 unres:0.00]
+ PARTIAL   care[unknown:0.00 over:0.63 unres:0.37]  open[unknown:0.00 over:1.00 unres:0.00]
+           open_est40[unknown:0.00 over:1.00 unres:0.00]  open_est400[unknown:0.00 over:1.00 unres:0.00]
+ UPSTREAM  care[unknown:0.00 over:1.00 unres:0.00]  open[unknown:0.00 over:1.00 unres:0.00]
+           open_est40[unknown:0.05 over:0.95 unres:0.00]  open_est400[unknown:0.00 over:1.00 unres:0.00]
+ SWAP      care[unknown:0.00 over:0.64 unres:0.36]  open[unknown:0.00 over:1.00 unres:0.00]
+           open_est40[unknown:0.00 over:1.00 unres:0.00]  open_est400[unknown:0.00 over:1.00 unres:0.00]
+
+=== M=100 ===  (K=known; per cell: correct/unknown/overreach/unres for known worlds, unknown/overreach/unres for outside)
+ IND       care[correct:0.71 unknown:0.00 over:0.02 unres:0.27]  open[correct:0.84 unknown:0.00 over:0.16 unres:0.00]
+           open_est40[correct:0.84 unknown:0.00 over:0.16 unres:0.00]  open_est400[correct:0.84 unknown:0.00 over:0.16 unres:0.00]
+ DIFF      care[correct:0.44 unknown:0.00 over:0.11 unres:0.45]  open[correct:0.78 unknown:0.01 over:0.22 unres:0.00]
+           open_est40[correct:0.76 unknown:0.01 over:0.23 unres:0.00]  open_est400[correct:0.77 unknown:0.01 over:0.22 unres:0.00]
+ COMMON    care[correct:0.96 unknown:0.00 over:0.04 unres:0.00]  open[correct:0.99 unknown:0.00 over:0.01 unres:0.00]
+           open_est40[correct:0.77 unknown:0.21 over:0.02 unres:0.00]  open_est400[correct:0.96 unknown:0.02 over:0.02 unres:0.00]
+ COPY      care[correct:0.97 unknown:0.00 over:0.03 unres:0.00]  open[correct:0.98 unknown:0.01 over:0.01 unres:0.00]
+           open_est40[correct:0.80 unknown:0.18 over:0.02 unres:0.00]  open_est400[correct:0.96 unknown:0.03 over:0.01 unres:0.00]
+ ANTI      care[unknown:0.00 over:1.00 unres:0.00]  open[unknown:0.07 over:0.93 unres:0.00]
+           open_est40[unknown:0.13 over:0.87 unres:0.00]  open_est400[unknown:0.09 over:0.91 unres:0.00]
+ LAG       care[unknown:0.00 over:0.71 unres:0.29]  open[unknown:0.99 over:0.01 unres:0.00]
+           open_est40[unknown:1.00 over:0.00 unres:0.00]  open_est400[unknown:0.99 over:0.01 unres:0.00]
+ DRIFT     care[unknown:0.00 over:0.61 unres:0.39]  open[unknown:0.03 over:0.97 unres:0.00]
+           open_est40[unknown:0.05 over:0.95 unres:0.00]  open_est400[unknown:0.04 over:0.96 unres:0.00]
+ PARTIAL   care[unknown:0.00 over:0.93 unres:0.07]  open[unknown:0.06 over:0.94 unres:0.00]
+           open_est40[unknown:0.04 over:0.96 unres:0.00]  open_est400[unknown:0.06 over:0.94 unres:0.00]
+ UPSTREAM  care[unknown:0.00 over:1.00 unres:0.00]  open[unknown:0.01 over:0.99 unres:0.00]
+           open_est40[unknown:0.20 over:0.80 unres:0.00]  open_est400[unknown:0.02 over:0.98 unres:0.00]
+ SWAP      care[unknown:0.00 over:0.95 unres:0.05]  open[unknown:0.10 over:0.90 unres:0.00]
+           open_est40[unknown:0.06 over:0.94 unres:0.00]  open_est400[unknown:0.09 over:0.91 unres:0.00]
+
+CHECKS (M=100 unless noted)
+ O1 care claims IND on ANTI/LAG: [1.0, 0.71] (this is overreach incl. any known claim); DRIFT overreach: 0.61
+ O2 open UNKNOWN ANTI/LAG/DRIFT: [0.07, 0.99, 0.03]  in-family false-UNKNOWN IND/DIFF/COMMON/COPY: [0.0, 0.01, 0.0, 0.01]  correct open vs care: [(0.84, 0.71), (0.78, 0.44), (0.99, 0.96), (0.98, 0.97)]
+ O3 SWAP open unknown+unres: 0.1  care overreach: 0.95
+ O4 PARTIAL open overreach (specific known claim): 0.94  unknown: 0.06
+ O5 est-eps guard (correct on COMMON/COPY incl. probe): G=40 [0.77, 0.8]  G=400 [0.96, 0.96]  known-eps open [0.99, 0.98]
+ O6 M=40 vs M=100 open: in-family false-UNKNOWN [np.float64(0.0), np.float64(0.0)]  outside UNKNOWN [np.float64(0.13), np.float64(0.25)]
