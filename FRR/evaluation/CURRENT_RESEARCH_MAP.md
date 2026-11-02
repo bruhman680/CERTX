@@ -1,3 +1,15 @@
+# Current research map — resumed
+
+1 November 2026, America/Chicago — resumed. Completed [real artifact provenance and source weaving](real-artifact-provenance-v1/REPORT.md). Pinned prior branch head fdb0f707101364121650789912b47ca572e50d93, eight first-parent handoff snapshots: 8 blob + 16 tree hashes match. A separate review reconstructs 8 matching unsigned commit bodies; original narrower audit remains unchanged. All nine tests/six controls pass; old local handoff matched pinned bytes. This verifies a bounded content/history question, not source authorship or scientific truth.
+
+Current contact includes temporal cutoff fixture, SDPO PDF extraction, C2C/AKV refresh and Claudehead b82724cintake. Exact DIFF conditional.37087 versus quoted .42; threshold .6 unchanged, noMonte Carloreplication. All sources distinguish documentation, code inspection, reported benchmarks and executed checks. No new model calls/training.
+
+Priority: frozen-weight feedback-quality/probability preflight, retaining authenticated/verified source scope before any weight-learning claim. Lateral: AND/ORdependent supports, ambiguity calibration outside known families. No new approval gate or default/core/schema/queue change; wider multi-turn model loop parked.
+
+## Earlier orientation snapshots
+
+Following preserves then-current wording; exact original navigation bytes archived in latest contact.
+
 # Current research map — paused
 
 1 November 2026 UTC — PAUSED at user's request until usage resets. Completed [revision/authority settling contact](revision-authority-settle-v1/REPORT.md):25authored situations, three targets and forward/reverse display,150logical cases. 144actual generations (135raw+9selected). KNOWN cases 54; raw correct 34, selected consistent 54. Shared canonical calls are not independent replications.

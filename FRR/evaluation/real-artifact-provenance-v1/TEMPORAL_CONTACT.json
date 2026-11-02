@@ -1,0 +1,78 @@
+{
+  "claims": [
+    {
+      "corrects": null,
+      "effective_from": 1,
+      "id": "e1",
+      "received": 1,
+      "state": "ready"
+    },
+    {
+      "corrects": "e1",
+      "effective_from": 2,
+      "id": "e2",
+      "received": 3,
+      "state": "blocked"
+    }
+  ],
+  "frozen_earlier_view_preserved": true,
+  "no_timestamps_inferred_from_git": true,
+  "queries": [
+    {
+      "cutoff": 1,
+      "effective": 1,
+      "eligible": [
+        "e1"
+      ],
+      "state": "ready",
+      "witness": "e1"
+    },
+    {
+      "cutoff": 1,
+      "effective": 2,
+      "eligible": [
+        "e1"
+      ],
+      "state": "ready",
+      "witness": "e1"
+    },
+    {
+      "cutoff": 2,
+      "effective": 1,
+      "eligible": [
+        "e1"
+      ],
+      "state": "ready",
+      "witness": "e1"
+    },
+    {
+      "cutoff": 2,
+      "effective": 2,
+      "eligible": [
+        "e1"
+      ],
+      "state": "ready",
+      "witness": "e1"
+    },
+    {
+      "cutoff": 3,
+      "effective": 1,
+      "eligible": [
+        "e1"
+      ],
+      "state": "ready",
+      "witness": "e1"
+    },
+    {
+      "cutoff": 3,
+      "effective": 2,
+      "eligible": [
+        "e1",
+        "e2"
+      ],
+      "state": "blocked",
+      "witness": "e2"
+    }
+  ],
+  "scope": "authored functional example; no model calls, no real effective dates inferred"
+}

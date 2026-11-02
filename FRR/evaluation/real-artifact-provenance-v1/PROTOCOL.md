@@ -1,0 +1,19 @@
+# Real artifact provenance and a bounded lateral temporal counterexample
+
+Client-facing session date:1November2026America/Chicago. Host retrieval date:2November2026UTC. Dates in Git responses are retained verbatim; no date establishes authority or effective validity.
+
+Main question: what exact bytes did the selected CERTX branch head assign FRR/CURRENT_HANDOFF.md at the acquisition cutoff, and are eight bounded first-parent snapshots addressable with their path/content bindings intact? Authority for this narrow repository-state question is the branch ref pinned at initial acquisition, not scientific truth in the document. Publishing this contact will create a later head; the captured cutoff stays pinned.
+
+Eight actual commit objects are followed using their explicit first-parent IDs, not file-log adjacency. All returned parent IDs are retained; only one bounded first-parent chain is traversed. This is not full-repository or all-branch history. Every captured commit happens to have a single parent; merges/renames/deletions are not empirically exercised. Commit metadata is retrieved from GitHub API; raw commit bytes are NOT independently rehashed or signatures cryptographically verified.
+
+For each commit, acquire root tree, FRRdirectory tree and CURRENT_HANDOFF blob. Independently recompute16Git tree hashes and8blob hashes from returned UTF8bytes/entries. Preserve all snapshots and APImetadata, including reported signature status. Hash/path consistency does not establish authenticated authorship, scientific truth, PROV semantic derivation, or a change's patch/replacement intention. The GitHub connector returns decoded content; byte hash equality must succeed before it is treated as an exact capture.
+
+Data selection/acquisition is observed before this plan/code freeze. This is a functional audit of real captured history, not blind prospective empirical evidence or independent replication. Freeze checker/policy/data/mutation expectations before comparisons. Main positive: all8snapshot selections match captured source bytes, and current local old handoff matches the pinned head before navigation sync. Reordering captured commit/tree/blob collections must not alter first-parent selection.
+
+Negative controls: corrupt blob text; omit a required within-window parent; corrupt a directory tree entry; change pinned authority; change artifact scope; request an older commit outside capture. Preserve original captures and run mutations only on copies. Missing history is not source absence or evidence a proposition is false. Boundary parent beyond eight nodes is explicitly outside scope, not silently treated as a genesis root. None of the synthetic mutations is represented as a real Git event.
+
+Two parallel scouts inspect primary Git/PROV and causal-history/temporal sources. The uploaded SDPO PDF and repeated C2C screenshot are reviewed in separate source notes; extraction authorizes no automatic training or cache transfer. Newest source documentation is not automatically a tested tool capability.
+
+One lateral no-model fixture uses two immutable claims and six questions crossing receipt cutoff with effective time. Late correction applies from effective2 and arrives at cutoff3. Earlier cutoff2/effective2 answer must remain fixed after the correction; cutoff3/effective2 changes. This is a declared functional example derived from source semantics, not a measured neural effect, full bitemporal database or inferred real-world validity interval. AND/OR retraction remains a separate unexecuted lead.
+
+No model training/generation, paid API/model download/install, default/core/schema/queue change or larger feedback loop. Preserve raw history and failed controls. Archive old navigation before current orientation changes, record new sources/limits/next directions, verify remote parent/tree/blob preservation before branch publication.

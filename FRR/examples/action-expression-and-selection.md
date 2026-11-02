@@ -50,3 +50,8 @@ Rules stated in a prompt, worked demonstrations and rules executed by a controll
 ## Optional revision/authority receipt — 1 November 2026 UTC
 
 [Revision settling contact](../evaluation/revision-authority-settle-v1/REPORT.md) distinguishes current-state materialization from preserved history. Declare patch versus replacement, omission versus deletion, and parent/merge semantics before resolving conflicting values. A scalar revision or display order is insufficient unless the governing contract gives it that role. Retain event IDs/status origins/ignored sources; identical replay is not an independent vote. An allowlisted source label is not cryptographic authentication or truth. These are optional bounded-contract practices, not a new default or universal reasoning gate.
+
+
+## Optional content/history/feedback receipt — 1 November 2026 America/Chicago
+
+[Practice note](content-history-and-feedback.md) separates exact bytes/ancestry, declared interpretation/time, source authentication/authority, factual warrant and demonstrated model change. [Real contact](../evaluation/real-artifact-provenance-v1/REPORT.md) verifies eight pinned snapshots without turning unsigned content into truth. Useful feedback-conditioned token credit need not produce a full explanation, while a requested note or cache edit does not establish learning/forgetting. These distinctions are optional practices, not a new universal gate or default module.

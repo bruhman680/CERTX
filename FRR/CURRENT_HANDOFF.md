@@ -1,21 +1,25 @@
-# Current handoff — paused
+# Current handoff — resumed
 
-1 November 2026 UTC — PAUSED at user's request until usage resets. Completed [revision/authority settling contact](evaluation/revision-authority-settle-v1/REPORT.md):25authored situations, three targets and forward/reverse display,150logical cases. 144actual generations (135raw+9selected). KNOWN cases 54; raw correct 34, selected consistent 54. Shared canonical calls are not independent replications.
+1 November 2026, America/Chicago — resumed. Completed [real artifact provenance and source weaving](evaluation/real-artifact-provenance-v1/REPORT.md). Pinned prior branch head fdb0f707101364121650789912b47ca572e50d93, eight first-parent handoff snapshots: 8 blob + 16 tree hashes match. A separate review reconstructs 8 matching unsigned commit bodies; original narrower audit remains unchanged. All nine tests/six controls pass; old local handoff matched pinned bytes. This verifies a bounded content/history question, not source authorship or scientific truth.
 
-## Current conclusions
+## Current source/experiment picture
 
-Patch omission, replacement omission, field removal, record deletion and literal missing have distinct declared meanings. Parent-linked materialization is invariant to display order in all tested fixtures; a high revision alone does not settle a fork. Equal-state concurrent heads preserve multiple witnesses, explicit replacement merges settle named parents, undeclared merge patches are held. Conflicting authorized contents under one ID do not last-write-win.
+Six temporal queries distinguish receipt cutoff from asserted effective time; late correction leaves earlier-cutoff receipt unchanged. Fixed two-claim fixture only, not a temporal database. Original rows and supplemental explicit correction-edge receipts retained. Allold snapshot dates and paused state remain historical rather than rewritten.
 
-Authority is an assumed owner allowlist, not authenticated identity or source truth. Missing provenance/lineage and foreign/untrusted parents remain unresolved; all raw source events are retained. Code already reads status literals, so mechanical mapping could answer KNOWN cases without the model. Raw task and canonical worker packages differ. No model self-correction, general FRR efficacy or independent replication claim.
+User's SDPO upload identifies Reinforcement Learning via Self-Distillation, 2601.20802v2. It performs weight optimization from feedback-conditioned token distributions, not just reflection. Useful partial token credit can exist without a fully correct teacher answer; our absent notes do not rule it out. Weaker-model/feedback/stability limits and scoped 6×/3× claims are recorded. No SDPO implementation/training or 135M transfer evidence.
 
-## Resume here — not yet executed
+C2C refresh: paper 2510.03215v2 unchanged; new head 5eac72 README-only commit links AKV. Its inspected cache backend needs CUDA/modified SGLang, excludes LoRA in documented scope and does not support current CPU worker unchanged. Working venv has CPU Torch/Transformers, CUDA False, SGLang False. Cache removal is not demonstrated exact corrected-history replay or epistemic forgetting. No chat-KV access/runtime adoption.
 
-Read-only provenance/materialization contact on one real repository artifact with actual revision links and preserved snapshots. Declare which source/version is authoritative for the question before resolving competing claims. Do not silently equate latest timestamp, largest number or branch label with truth. Keep future identity authentication and multi-field patch questions separate.
+Claude intake: scoped-negation head b82724c. Claim discipline depends on ambiguity calibration; quiet within-trajectory data can hide across-trajectory shared conditions. Exact DIFF conditional is .37087, COMMON .79348, midpoint .58217; threshold .6 unchanged. This corrects rationale, not Monte Carlo outputs. Oracle probe semantics, stale descriptions, heuristic widths, portability and possible hidden indexing mismatch are recorded with scope. No branch scripts/Monte Carlo/model learning reproduced or merged.
 
-Earlier evidence-boundary transfer, UNKNOWN notepad, context/format/role failures, source-selection gains and review harms remain historical. Wider model feedback/exploration loop stays parked; broader writer/handoff/planning/memory branches open. Grok relay remains parked/unvetted/unadopted. Desktop thread works.
+## Next strongest — not yet executed
 
-## Settling and preservation
+Frozen-weight feedback-quality contact on small reader: verified/no/irrelevant/misleading feedback, actual correction and correct-answer probabilities, evidence identities and counterexamples retained. This is a preflight for useful retrospective signal, not SDPOtraining or a faithful-rationale claim. Later distillation would need a separately frozen objective/checkpoint/holdout protocol within standing user authorization; no new approval gate.
 
-Final bounded run, tests and audit complete; no further automatic cycle, background model job, scheduled task or newly spawned agents. Original navigation/method-note bytes archived in latest contact. All older local files unchanged before sync; all new raw prompts/tokens/outputs/stops, receipts/status origins and reversal invariance audited. No training/new weights/default policy/model/core/schema/general-tool/queue changes, downloads/installs/paid API/rental/tool actions.
+Lateral formal lead: alternative versus jointly necessary support before source withdrawal (AND/OR provenance); not implemented. Claude guard needs outside-family/sham-calibration checks before broad causal attribution. Real-history capture remains bounded first-parent scope, not allbranches/merges/renames/deletions. Broader memory/handoff/planning work and parked Grok relay remain open. Wider autonomous multi-turn feedback/exploration loop stays parked; one-step proposed tests do not enable it.
 
-Existing local12.8MBadapter capsule differs from older desktop6.3MBcopy. Independent current-binary backup, clean restore and optimizer-resume rehearsal remain unverified; no new capsule/restore claim. Account usage/billing not visible. [Settled state](evaluation/revision-authority-settle-v1/SETTLED.md).
+## Preservation and access
+
+No new small-model inference/training/weights, installs/model downloads/paid APIs, main merge, default/core/schema/general-tool/queue change or scheduled job. Two source scouts finished; no model/agent experiment running.3,977older local files unchanged before sync; four current navigation/method-note originals archived. Old settling checkpoint unchanged. Source upload identified/hashed, PDF not republished; source versions and access scopes pinned in notes.
+
+Full 53.9 MB commit candidate ledger remains local with hash/counts/reproducer and compact matches published. Existing local 12.8 MB adapter capsule differs from older desktop 6.3 MB copy; independent current-binary backup, clean restore and optimizer-resume remain unverified. No new all-workspace backup/capsule/restore claim. Billing/usage not visible. [Optional receipt practice](examples/content-history-and-feedback.md).
