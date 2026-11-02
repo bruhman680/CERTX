@@ -1,3 +1,13 @@
+# Current research map — paused
+
+1 November 2026, America/Chicago — PAUSED at user's request until usage reset. Completed [review-menu settling contact](review-menu-settle-v1/REPORT.md):231unique free-generation probes,63exact prior-input/output replays, four test groups and all audits pass. Model weights unchanged; no new probability-scoring forwards.
+
+No-list reviews 12/21 versus original 15/21; canonical restored 9/9, contextual 3/12. Both note types give identical no-list answers. Menu order has an emitted-answer effect, but first-position alone does not explain it. No teacher, training or default adoption. Resume with a fresh evidence-only teacher interface test and retained counterexamples, not automatic distillation. Wider feedback loop parked, broad source/memory/planning branches open.
+
+## Earlier orientation snapshots
+
+Following preserves then-current wording. Original bytes archived in the latest contact.
+
 # Current research map
 
 1 November 2026, America/Chicago. Completed [frozen-weight feedback-quality probe](feedback-quality-probe-v1/REPORT.md): 21 initial cases plus 168 reviews, with 756 candidate-score forwards and eight head-check forwards. No weights changed. Initial accuracy 15/21 (canonical 9/9, contextual 6/12). No-feedback reviews score 9/21 without the previous proposal and 6/21 with it; every verified/irrelevant/misleading arm returns YES on all 21 cases, scoring 6/21.

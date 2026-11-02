@@ -1,23 +1,21 @@
-# Current handoff
+# Current handoff — paused
 
-1 November 2026, America/Chicago. Completed [frozen-weight feedback-quality probe](evaluation/feedback-quality-probe-v1/REPORT.md): 21 initial cases plus 168 reviews, with 756 candidate-score forwards and eight head-check forwards. No weights changed. Initial accuracy 15/21 (canonical 9/9, contextual 6/12). No-feedback reviews score 9/21 without the previous proposal and 6/21 with it; every verified/irrelevant/misleading arm returns YES on all 21 cases, scoring 6/21.
+1 November 2026, America/Chicago — PAUSED at user's request until usage reset. Completed [review-menu settling contact](evaluation/review-menu-settle-v1/REPORT.md):231unique free-generation probes,63exact prior-input/output replays, four test groups and all audits pass. Model weights unchanged; no new probability-scoring forwards.
 
-## Current findings
+## Current finding
 
-The review wrapper itself degrades the known reader. Verified feedback repairs no original errors and harms nine original successes in each attempt setting. Against matched review-none it harms three when prior proposal is omitted, no free changes when retained. Correct-answer sequence likelihood rises on some matched-note comparisons, but verified review lowers it in every case relative to the original prompt. Do not convert a positive shift against a degraded baseline into a better teacher claim.
+Trailing menu order changes emitted choices, but not by a universal first-option rule: no-feedback NO-first returns NO 21/21, UNKNOWN-first returns YES 21/21 under both feedback types; WITHHOLD-first yields only 3 first-option matches. Four cyclic rotations have equal token counts. No-list is shorter and a package change.
 
-All three absent cases show UNKNOWN sequence probability increasing with verified feedback relative to review-none, while both free answers remain YES; their original-context UNKNOWN probability is still higher. Per-token/full-vocabulary-prefix and four-candidate sequence mass are separate diagnostics, not calibrated beliefs or full SDPO credit. Full logit vectors are not saved; score arithmetic is audited from retained token log probabilities/logits/normalizers. Reduced/full head check passes at max3.1233e-5 under1e-4tolerance. Sensitivity record preserves primary1e-5 criterion.
+No-list scores 12/21 under both no/verified feedback versus original-task 15/21. It restores canonical 9/9 but contextual stays 3/12 / all YES; both no-list feedback conditions have identical casewise outputs. This is partial interface recovery, not feedback benefit, teacher readiness or a neural explanation. Earlier feedback preflight's all-case correct-likelihood degradation remains history and was not rescored.
 
-No training, optimizer update or later no-feedback learned-retention test occurred. This is a negative preflight for this particular interface, not evidence against all feedback or SDPO. Three study names and toy source authority are narrow; no unadapted-base arm or independent seed/model replication.
+## Resume here — unexecuted
 
-## Next strongest — unexecuted
+Prospectively test a simpler evidence-only teacher against original/no-list review on fresh names/layouts with wrong-source and genuine-absence counterexamples. Keep model work distinct from code selection/normalization/absence receipts; measure accuracy and likelihood against both original and matched baselines before any learning study. No current teacher/default adopted and no blind prompt search for a positive result.
 
-Counterbalance/remove the review's trailing answer menu while holding source/note/other wording fixed; preserve all original successes as regression controls. YES is listed first and dominates the current replies, but its causal role is a hypothesis. Keep canonical record reading as the reference, and explicitly test any simpler evidence-only teacher interface before adopting it. Do not distill the present review wrapper or blindly search for a positive result.
+Wider autonomous multi-turn feedback/exploration remains parked; source/AND-OR provenance withdrawal, Claude outside-family/sham calibration and broader memory/handoff/planning directions stay open. Grok relay parked/unvetted/unadopted.
 
-A later learning contact requires a separately frozen objective/teacher reliability/checkpoint/holdout protocol within standing user authorization; no new approval gate. Wider autonomous multi-turn feedback/exploration stays parked. AND/OR provenance withdrawal, Claude outside-family/sham guard calibration and broader source/memory/handoff/planning work remain open. Grok relay parked/unvetted/unadopted.
+## Settling and preservation
 
-## Preservation and runtime
+All 231 model calls finished; no background model job, new agent work, scheduled continuation or further automatic cycle. Four original navigation/method-note files archived, 4,074 older files unchanged before sync. Raw replies/tokens/stops/menus/pairs and all 63 prior sequences checked; base+adapter saved/in-memory digests unchanged. No training/new weights/default model/core/schema/general-tool/queue change, install/download/paid API/rental/action tool or new capsule.
 
-189 generation probes, 756 scoring forwards, eight instrumentation forwards, 582 greedy generation forward steps (1,346 model forwards in total). Four test groups and all run audits pass; frozen data/prompts/feedback instantiation/token decodes/score arithmetic/pairs and base+adapter digests preserved. 4,036 older local files unchanged before sync; four current navigation/method-note originals archived. Full source/probability records retained; no background model job remains.
-
-No saved-weight change, new checkpoint/capsule, installs/downloads, paid API/rental/action tool, default model/core/schema/general-tool/queue change. Account usage/billing not visible. Existing local 12.8 MB capsule differs from older desktop 6.3 MB copy; independent current-binary backup, clean restore and optimizer-resume rehearsal remain unverified. No new backup/restore claim. Prior real Git/temporal/source/Claude work remains history and is linked from the research map.
+Existing local 12.8 MB adapter capsule differs from older desktop 6.3 MB copy; independent current-binary backup, clean restore and optimizer-resume rehearsal remain unverified. No new backup/restore claim. Account billing/usage not visible. [Settled state](evaluation/review-menu-settle-v1/SETTLED.md). Older checkpoints and evidence reports remain immutable.

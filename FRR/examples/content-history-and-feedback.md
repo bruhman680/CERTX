@@ -18,3 +18,8 @@ Keep source claims, independent arithmetic checks, actual runs and report-depth 
 ## Tested review-frame boundary — 1 November 2026 America/Chicago
 
 [Feedback-quality preflight](../evaluation/feedback-quality-probe-v1/REPORT.md) records both the original prompt and matched review-none. A review wrapper can harm correct answers before feedback is considered. Here verified notes do not improve free answers, while some correct-label likelihoods rise only relative to the degraded review baseline. Measure source-specific effects and wrong-feedback controls; do not equate any probability movement with useful teaching credit. Four-candidate mass is not calibrated belief or a full distillation objective. Keep the original successful reader and all counterexamples visible. No new default or universal gate.
+
+
+## Counterbalanced menu boundary — 1 November 2026 America/Chicago
+
+[Review-menu contact](../evaluation/review-menu-settle-v1/REPORT.md) shows that a trailing list can change emitted answers under equal-token-count rotations; this does not establish a universal first-option rule or internal mechanism. Removing the list restores the canonical cases but not the contextual ones, and verified/no-feedback outputs then coincide. Keep partial recovery distinct from a complete teacher repair, and validate new interfaces on fresh data before adoption. No probability scoring, model learning or new default is implied.

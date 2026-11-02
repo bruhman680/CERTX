@@ -1,7 +1,7 @@
-# Current orientation
+# Current orientation — paused
 
-1 November 2026, America/Chicago. Completed [frozen-weight feedback-quality probe](../evaluation/feedback-quality-probe-v1/REPORT.md): 21 initial cases plus 168 reviews, with 756 candidate-score forwards and eight head-check forwards. No weights changed. Initial accuracy 15/21 (canonical 9/9, contextual 6/12). No-feedback reviews score 9/21 without the previous proposal and 6/21 with it; every verified/irrelevant/misleading arm returns YES on all 21 cases, scoring 6/21.
+1 November 2026, America/Chicago — PAUSED at user's request until usage reset. Completed [review-menu settling contact](../evaluation/review-menu-settle-v1/REPORT.md):231unique free-generation probes,63exact prior-input/output replays, four test groups and all audits pass. Model weights unchanged; no new probability-scoring forwards.
 
-[Handoff](../CURRENT_HANDOFF.md). Feedback-bearing reviews collapse to YES; verified likelihood is lower than original context in all 21 cases. Partial gains against review-none do not prove useful distillation. No weights changed. Next: controlled review-menu/presentation test, retaining canonical reader and no-harm controls; no teacher/default adoption. Wider multi-turn loop parked, broader source/provenance/memory branches open.
+[Handoff](../CURRENT_HANDOFF.md). No-list restores canonical 9/9 but combined12/21remains below original15/21; contextual 3/12 / all YES and no casewise benefit from verified note. Menu rotations change responses without a universal first-choice rule. No probability changes measured in this contact.
 
-189generation probes plus explicit scoring/instrumentation forwards, all tests/audits/old-history preservation pass. No new binary/paid API/core/schema/queue/capsule or restore claim; no background model job.
+Restart proposal: simpler evidence-only teacher under fresh-name/layout and wrong-source/absence controls, preserving original and matched-review baselines. Not running. Wider feedback loop parked; broader branches open. Tests/audits/history sync complete, no background job/new weights/default/core/schema/queue/paid API/capsule/restore claim.
