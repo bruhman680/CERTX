@@ -13,3 +13,8 @@ Do not count copied witnesses as independent confirmations. Before withdrawing s
 Treat cache editing as an operation with its own semantics. Removing a message's KV access does not establish a fresh forward pass in which it never existed; retained states may carry its influence. Preserve model/tokenizer/settings/source bindings and measure correction effects before epistemic forgetting claims.
 
 Keep source claims, independent arithmetic checks, actual runs and report-depth reviews distinguishable. Correct analytical mistakes alongside preserved originals. A proposed future test uses standing user authorization within scope; these notes introduce no new permission flow.
+
+
+## Tested review-frame boundary — 1 November 2026 America/Chicago
+
+[Feedback-quality preflight](../evaluation/feedback-quality-probe-v1/REPORT.md) records both the original prompt and matched review-none. A review wrapper can harm correct answers before feedback is considered. Here verified notes do not improve free answers, while some correct-label likelihoods rise only relative to the degraded review baseline. Measure source-specific effects and wrong-feedback controls; do not equate any probability movement with useful teaching credit. Four-candidate mass is not calibrated belief or a full distillation objective. Keep the original successful reader and all counterexamples visible. No new default or universal gate.

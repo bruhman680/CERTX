@@ -1,3 +1,13 @@
+# Current research map
+
+1 November 2026, America/Chicago. Completed [frozen-weight feedback-quality probe](feedback-quality-probe-v1/REPORT.md): 21 initial cases plus 168 reviews, with 756 candidate-score forwards and eight head-check forwards. No weights changed. Initial accuracy 15/21 (canonical 9/9, contextual 6/12). No-feedback reviews score 9/21 without the previous proposal and 6/21 with it; every verified/irrelevant/misleading arm returns YES on all 21 cases, scoring 6/21.
+
+This preflight separates original-task performance, review-wrapper cost and feedback quality. Verified feedback gives no repairs; some likelihood gains only occur relative to an already degraded review baseline. Current teacher context is not ready for distillation. Next: predeclared menu/presentation control, possibly a simpler source-only teacher reference. General SDPO feasibility/gradients remain untested; full logit vectors not retained and no learning step occurred. Broader source/provenance/Claude calibration and memory/planning branches stay open; wider feedback loop parked.
+
+## Earlier orientation snapshots
+
+Following preserves then-current wording. Exact original navigation bytes archived in latest contact.
+
 # Current research map — resumed
 
 1 November 2026, America/Chicago — resumed. Completed [real artifact provenance and source weaving](real-artifact-provenance-v1/REPORT.md). Pinned prior branch head fdb0f707101364121650789912b47ca572e50d93, eight first-parent handoff snapshots: 8 blob + 16 tree hashes match. A separate review reconstructs 8 matching unsigned commit bodies; original narrower audit remains unchanged. All nine tests/six controls pass; old local handoff matched pinned bytes. This verifies a bounded content/history question, not source authorship or scientific truth.

@@ -1,0 +1,7 @@
+# Current orientation — resumed
+
+1 November 2026, America/Chicago — resumed. Completed [real artifact provenance and source weaving](../evaluation/real-artifact-provenance-v1/REPORT.md). Pinned prior branch head fdb0f707101364121650789912b47ca572e50d93, eight first-parent handoff snapshots: 8 blob + 16 tree hashes match. A separate review reconstructs 8 matching unsigned commit bodies; original narrower audit remains unchanged. All nine tests/six controls pass; old local handoff matched pinned bytes. This verifies a bounded content/history question, not source authorship or scientific truth.
+
+[Handoff](../CURRENT_HANDOFF.md). Source additions: SDPOuploadedv2 token-distribution training, C2C documentation-only update/new AKV lead, Claude claim-scoring/dispersion/error-success relay with analytical correction. No local small-model training/inference or runtime adoption occurred. Six-query authored temporal fixture preserves earlier knowledge cutoff after late correction; not general temporal reasoning.
+
+Next: frozen-weight correct/irrelevant/misleading feedback probe before distillation; AND/ORsupport withdrawal and outside-family ambiguity calibration are lateral candidates. Wider autonomous feedback loop parked; broader branches open. Oldhistory/sourceversions preserved, current navigation unpaused, no background job/default/core/schema/queue/newbinary/backupclaim. Optionalpractice note separates bytes, interpretation, authority, warrants and learning.

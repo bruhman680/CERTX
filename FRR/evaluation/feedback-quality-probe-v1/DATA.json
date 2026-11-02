@@ -1,0 +1,212 @@
+[
+  {
+    "expected": "YES",
+    "frame": "canonical",
+    "id": "c_00",
+    "name": "Tansy",
+    "other": "Marsh",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Tansy\nStatus: positive",
+    "record": "Plot: Tansy\nStatus: positive",
+    "state": "positive"
+  },
+  {
+    "expected": "NO",
+    "frame": "canonical",
+    "id": "c_01",
+    "name": "Tansy",
+    "other": "Marsh",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Tansy\nStatus: zero",
+    "record": "Plot: Tansy\nStatus: zero",
+    "state": "zero"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "canonical",
+    "id": "c_02",
+    "name": "Tansy",
+    "other": "Marsh",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Tansy\nStatus: missing",
+    "record": "Plot: Tansy\nStatus: missing",
+    "state": "missing"
+  },
+  {
+    "expected": "YES",
+    "frame": "contextual",
+    "id": "c_03",
+    "name": "Tansy",
+    "other": "Marsh",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Tansy\nVisible record:\nPlot: Tansy\nStatus: positive\nArchive access: available",
+    "record": "Plot: Tansy\nStatus: positive",
+    "state": "positive"
+  },
+  {
+    "expected": "NO",
+    "frame": "contextual",
+    "id": "c_04",
+    "name": "Tansy",
+    "other": "Marsh",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Tansy\nVisible record:\nPlot: Tansy\nStatus: zero\nArchive access: available",
+    "record": "Plot: Tansy\nStatus: zero",
+    "state": "zero"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "contextual",
+    "id": "c_05",
+    "name": "Tansy",
+    "other": "Marsh",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Tansy\nVisible record:\nPlot: Tansy\nStatus: missing\nArchive access: available",
+    "record": "Plot: Tansy\nStatus: missing",
+    "state": "missing"
+  },
+  {
+    "expected": "UNKNOWN",
+    "frame": "contextual",
+    "id": "c_06",
+    "name": "Tansy",
+    "other": "Marsh",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Tansy\nVisible record:\n(no visible record)\nArchive access: unavailable",
+    "record": "(no visible record)",
+    "state": "absent"
+  },
+  {
+    "expected": "YES",
+    "frame": "canonical",
+    "id": "c_07",
+    "name": "Hyssop",
+    "other": "Grove",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Hyssop\nStatus: positive",
+    "record": "Plot: Hyssop\nStatus: positive",
+    "state": "positive"
+  },
+  {
+    "expected": "NO",
+    "frame": "canonical",
+    "id": "c_08",
+    "name": "Hyssop",
+    "other": "Grove",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Hyssop\nStatus: zero",
+    "record": "Plot: Hyssop\nStatus: zero",
+    "state": "zero"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "canonical",
+    "id": "c_09",
+    "name": "Hyssop",
+    "other": "Grove",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Hyssop\nStatus: missing",
+    "record": "Plot: Hyssop\nStatus: missing",
+    "state": "missing"
+  },
+  {
+    "expected": "YES",
+    "frame": "contextual",
+    "id": "c_10",
+    "name": "Hyssop",
+    "other": "Grove",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Hyssop\nVisible record:\nPlot: Hyssop\nStatus: positive\nArchive access: available",
+    "record": "Plot: Hyssop\nStatus: positive",
+    "state": "positive"
+  },
+  {
+    "expected": "NO",
+    "frame": "contextual",
+    "id": "c_11",
+    "name": "Hyssop",
+    "other": "Grove",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Hyssop\nVisible record:\nPlot: Hyssop\nStatus: zero\nArchive access: available",
+    "record": "Plot: Hyssop\nStatus: zero",
+    "state": "zero"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "contextual",
+    "id": "c_12",
+    "name": "Hyssop",
+    "other": "Grove",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Hyssop\nVisible record:\nPlot: Hyssop\nStatus: missing\nArchive access: available",
+    "record": "Plot: Hyssop\nStatus: missing",
+    "state": "missing"
+  },
+  {
+    "expected": "UNKNOWN",
+    "frame": "contextual",
+    "id": "c_13",
+    "name": "Hyssop",
+    "other": "Grove",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Hyssop\nVisible record:\n(no visible record)\nArchive access: unavailable",
+    "record": "(no visible record)",
+    "state": "absent"
+  },
+  {
+    "expected": "YES",
+    "frame": "canonical",
+    "id": "c_14",
+    "name": "Rue",
+    "other": "Fern",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Rue\nStatus: positive",
+    "record": "Plot: Rue\nStatus: positive",
+    "state": "positive"
+  },
+  {
+    "expected": "NO",
+    "frame": "canonical",
+    "id": "c_15",
+    "name": "Rue",
+    "other": "Fern",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Rue\nStatus: zero",
+    "record": "Plot: Rue\nStatus: zero",
+    "state": "zero"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "canonical",
+    "id": "c_16",
+    "name": "Rue",
+    "other": "Fern",
+    "prompt": "Map the status to its answer. missing=WITHHOLD; positive=YES; zero=NO. Return only the answer.\n\nPlot: Rue\nStatus: missing",
+    "record": "Plot: Rue\nStatus: missing",
+    "state": "missing"
+  },
+  {
+    "expected": "YES",
+    "frame": "contextual",
+    "id": "c_17",
+    "name": "Rue",
+    "other": "Fern",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rue\nVisible record:\nPlot: Rue\nStatus: positive\nArchive access: available",
+    "record": "Plot: Rue\nStatus: positive",
+    "state": "positive"
+  },
+  {
+    "expected": "NO",
+    "frame": "contextual",
+    "id": "c_18",
+    "name": "Rue",
+    "other": "Fern",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rue\nVisible record:\nPlot: Rue\nStatus: zero\nArchive access: available",
+    "record": "Plot: Rue\nStatus: zero",
+    "state": "zero"
+  },
+  {
+    "expected": "WITHHOLD",
+    "frame": "contextual",
+    "id": "c_19",
+    "name": "Rue",
+    "other": "Fern",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rue\nVisible record:\nPlot: Rue\nStatus: missing\nArchive access: available",
+    "record": "Plot: Rue\nStatus: missing",
+    "state": "missing"
+  },
+  {
+    "expected": "UNKNOWN",
+    "frame": "contextual",
+    "id": "c_20",
+    "name": "Rue",
+    "other": "Fern",
+    "prompt": "Map only the visible record status to its answer, even if it belongs to another plot. missing=WITHHOLD; positive=YES; zero=NO. If there is no visible record return UNKNOWN. Return only the answer.\n\nTarget plot: Rue\nVisible record:\n(no visible record)\nArchive access: unavailable",
+    "record": "(no visible record)",
+    "state": "absent"
+  }
+]
