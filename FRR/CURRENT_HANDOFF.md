@@ -1,19 +1,19 @@
-# Current handoff — big three-step cycle complete
+# Current handoff — carried exploration season1 complete
 
-2 November2026 client date. [Current report](evaluation/big-three-cycle-v1/REPORT.md). Three research contacts complete; original navigation/optional method note archived there under before/.
+2 November2026 client date. User authorized exploratory emergence/recursion trajectories, including persistent failures and uneventful runs. [Season report](evaluation/carried-garden-exploration-v1/REPORT.md). Prior handoff/navigation archived there under before/.
 
-Cycle1: position-preserved authority/control, two fillers,16fresh cases.151generations,576candidate forwards,8head checks. Authority net benefit on both names, but original11/16 exceeds all added contexts(best8/16). Duplication reverses direction between sets. All7historical anchors exactly match; no teacher/training/default, weights unchanged.
+Four10-round active notebooks and40matched short-history controls,80stochastic generation calls, fixed canonical135M CPU model. Text history is carried verbatim; full/short share current observation, latest active event and RNGseed. All4notebooks/checkpoints saved with next_step10. No weight learning or KVtransfer claim.
 
-Cycle2: joint descriptive-class/noise unions restore familiar grid-aligned shared cases. Gold calibration reduces ambiguity but adds false rejection. Cycle3, selected from that result: off-grid noise can leave precise calibration with an empty grid; selected added candidates repair most cases. Each toy uses10,800observations and54,000paired arm decisions, with full independent arithmetic/input-hash audits. No arbitrary-OOD/coverage/causal guarantee.
+Zero stress mostly succeeded, so intended failure pressure was not realized there. Absent-record recognized errors often persisted despite actual nonmatch feedback. Scheduled record/layout changes are exogenous, not emergent phases. No clear questioning/checking/strategy shift observed. Record-name echoes and occasional observation text provide next hypotheses. Unscored questions/notes are kept separate from recognized incorrect answers.
 
-Optional measurement_compatibility.py separates calibration-grid empty, no compatible pair, ambiguous classes and compatible class. Three test groups and108,000artifact decisions checked. No default production integration; frozen runners unchanged.
+Full history17correct/15incorrect/8unscored of40; shadow20/13/7. Nine paired token differences,7answer differences;8identical-prompt pairs replay exactly. No generalized history benefit/harm or plateau claimed. Model trained for narrow labels, so unused prose space is a limitation. Maxinput588/2048; output cap64 never hit. All3tests, reconstruction/score/history/resource/hash audits pass; weights unchanged.
 
 ## Next unexecuted
 
-Model: status-observation versus answer-mapping diagnostic with original/slot controls, untouched names, wrong-source and genuine absence. No distillation or favorable-wrapper search.
+Keep existing notebooks intact. Diagnose observation extraction vs answer mapping vs comprehension/use of verifier feedback; then prospectively continue saved trajectories. Adding executable evidence requests or another checkpoint must be an explicit new branch, not mislabeled spontaneous emergence. No successful run required, no stop-after-improvement selection.
 
-Toy: noise-range/profile method versus discrete grid, independently calibrated information, untouched intermediate noise levels; retain ambiguity/rejection costs. Actual interventions/shams, broader memory/provenance/planning and unvetted Grok relay remain open. Wider autonomous multi-turn model loop stays parked.
+Prior joint-noise/profile-method, actual intervention/sham, memory/provenance/planning and unvetted Grok directions remain open. Big-three-cycle results and optional measurement receipt stay intact. Broad unbounded autonomous execution/weight-training are not running.
 
 ## Preservation
 
-All owned jobs finished, no scheduled/background continuation. Older reports/raw failures preserved; current raw inputs/replies/tokens/candidate scores, fitted parameters, pair/noise masks and gold counts saved. Model hashes unchanged. No new weights/model/install/download/paid API/rental/capsule/restore claim; billing/usage invisible. Toy fullA/Barrays not backed up, but regenerated hashes checked in currentNumPy; older local-only binary/backup limitations remain. Code receipt is not a causal diagnosis.
+All owned jobs finished; no background/scheduled continuation. Raw dynamic prompts/tokens/replies, feedback, whole notebooks and checkpoints preserved on progress branch; previous failures untouched. No new model/install/download/paid API/rental/weights/default/capsule/restore claim. Account billing/usage invisible. Local model/binary and older full toy-input backup limitations remain; GitHub text alone is not a complete runtime backup.

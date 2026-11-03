@@ -1,3 +1,11 @@
+# Current research map — first carried exploratory season
+
+2 November2026. [Carried garden exploration](carried-garden-exploration-v1/REPORT.md) completes80calls/fouractive10-round notebooks plusmatchedcontrols. Full text histories persisted; no weight learning. Absent-error persistence, plot-name echoes and unused optional prose are observations. Scheduled changes are not emergent phases; no stable new checking strategy established. All tests/audits pass.
+
+Next: distinguish observation/readout skills from verifier-feedback use, then continue saved notebooks under predeclared bounded batches. Keep uneventful/failing runs, permit optional notes, avoid stop-after-success bias. Prior big-three-cycle/model/measurement/provenance/planning and actual-intervention directions remain open. All jobs complete. Older map below is history, not current instructions.
+
+## Earlier orientation snapshots
+
 # Current research map — big three-step cycle
 
 2 November2026. [Cycle report](big-three-cycle-v1/REPORT.md). Position-preserved authority/two fillers, joint class-noise candidates, and resulting off-grid calibration contact complete. Authority effect survives positions narrowly; original task still strongest. Gold information reduces ambiguity but can expose an incomplete grid or falsely exclude truth. Optional descriptive receipt utility tested on108,000saved decisions, with no default/controller promotion.
