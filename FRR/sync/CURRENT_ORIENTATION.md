@@ -1,5 +1,5 @@
-# Current orientation — PAUSED
+# Current orientation — resumed window complete
 
-2 November2026, user-requested usage-reset pause. [Handoff](../CURRENT_HANDOFF.md), [attention digest](../evaluation/open-garden-settling-v1/ATTENTION.md), [settled checkpoint receipt](../evaluation/open-garden-settling-v1/SETTLED.json).
+3 November2026. [Handoff](../CURRENT_HANDOFF.md), [attention digest](../evaluation/open-garden-return-v1/ATTENTION.md), [short index](../evaluation/CURRENT_RESEARCH_MAP.md).
 
-Final24calls complete; all audits pass; weights unchanged. Explicit3072input allowance admits previously blocked exact prompts, no history pruning. Notebooks next38/35/38/36. Compact selective review retained; all raw evidence archived. No jobs or automatic continuation. Resume on user return; current research map remains a short shelf index.
+40newcalls, same open interface/fixed weights; notebooks next43/40/43/41.3flagged examples+1quiet audit sample, every row machine-checked. Record-form recurrence persists; cross-stage question lookup distinguishes a repeated line from immediate-baseline novelty. No confirmed new strategy. All jobs finished and records saved; no automatic continuation. Original histories and prior navigation intact.

@@ -1,0 +1,9 @@
+# Resumed open-garden window
+
+3 November2026, America/Chicago client date. User returns after usage reset and requests resume. Continue the four exact notebooks from open-garden-settling-v1 at9490cb9a3dd3fce549ac308582c9008d9b2ad5ec for5rounds each, matched latest-event shadows:40maximumcalls. Start indices38/35/38/36 read from parent checkpoints. Same fixed canonical135M CPU model, open header/current patch, neutral unscored feedback, temperature.8/top-p.9,3072input and96output limits,5.15GBworking-memory guard. No training/newmodel/download/tool execution or prompt changes.
+
+All histories carried verbatim without pruning/reset; any3072input boundary stops that trajectory, with others continuing. Preserve raw notes, exact prompts/tokens, actual feedback and complete notebook/checkpoint versions. No stopping at an interesting/successful endpoint, no per-run improvement requirement. No model phase/plateau claim from a finite window. Generated scores, apparent traces or Feedback fields remain text, not authenticated runtime actions/measurements.
+
+Keep external selective observation unchanged: max6flagged example slots and1quiet sample, all boundary events mandatory, all-row integrity checks. Flags remain uncalibrated attention heuristics; parent baselines have only3records per trajectory/arm. Review compact summaries and exact indexed excerpts rather than loading all new transcripts. Complete archives allow later reindexing and blind-spot checks.
+
+Freeze source/protocol/parent/model dependencies before outputs. Contract tests verify exact input rendering, sampler identity and resume indices. Audit reconstruction, prefix bytes, sampling pairs, scores/stops, resources and unchanged weights. No automatic subsequent run or new default/teacher. Existing account-visibility and local-binary-backup limitations remain.
