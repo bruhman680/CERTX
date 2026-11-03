@@ -1,3 +1,11 @@
+# Current research map — open notebook continuation
+
+2 November2026. [Open continuation](open-notebook-continuation-v1/REPORT.md) preserves first-season histories and adds40unscored calls, four active notebooks now15events. Combined120calls, two declared interfaces, no weight updates. Full history mostly retains old labels; short history more often reproduces record/template text. Candidate representational boundary is exploratory, not causal proof or an intrinsic plateau. Actual feedback stays distinct from generated apparent Feedback text.
+
+Next optional branches: continue notebooks intact; independently compare history representations/roles after freezing the marker hypothesis; diagnose observation/mapping/feedback use. No favorable-endpoint selection or default adoption. Previous measurement/provenance/planning directions remain open. All jobs complete; old map below is history, not current instructions.
+
+## Earlier orientation snapshots
+
 # Current research map — first carried exploratory season
 
 2 November2026. [Carried garden exploration](carried-garden-exploration-v1/REPORT.md) completes80calls/fouractive10-round notebooks plusmatchedcontrols. Full text histories persisted; no weight learning. Absent-error persistence, plot-name echoes and unused optional prose are observations. Scheduled changes are not emergent phases; no stable new checking strategy established. All tests/audits pass.

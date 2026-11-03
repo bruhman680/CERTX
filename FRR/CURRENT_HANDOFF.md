@@ -1,19 +1,19 @@
-# Current handoff — carried exploration season1 complete
+# Current handoff — carried season plus open continuation complete
 
-2 November2026 client date. User authorized exploratory emergence/recursion trajectories, including persistent failures and uneventful runs. [Season report](evaluation/carried-garden-exploration-v1/REPORT.md). Prior handoff/navigation archived there under before/.
+2 November2026 client date. [Open continuation](evaluation/open-notebook-continuation-v1/REPORT.md), [parent carried season](evaluation/carried-garden-exploration-v1/REPORT.md). Exact previous navigation archived under current study/before/.
 
-Four10-round active notebooks and40matched short-history controls,80stochastic generation calls, fixed canonical135M CPU model. Text history is carried verbatim; full/short share current observation, latest active event and RNGseed. All4notebooks/checkpoints saved with next_step10. No weight learning or KVtransfer claim.
+Parent season:80calls,4active10-round notebooks plus matched short-history controls, fixed135M CPU. Absent-record recognized errors often persisted under actual feedback; zero stress mostly succeeded. No clear new checking strategy. All history/replay/token/resource/digest audits passed.
 
-Zero stress mostly succeeded, so intended failure pressure was not realized there. Absent-record recognized errors often persisted despite actual nonmatch feedback. Scheduled record/layout changes are exogenous, not emergent phases. No clear questioning/checking/strategy shift observed. Record-name echoes and occasional observation text provide next hypotheses. Unscored questions/notes are kept separate from recognized incorrect answers.
+User then requested further wandering. New explicit interface branch removes required label/mapping format and uses neutral unscored feedback, with96token allowance.40newcalls continue all four active notebooks to15events/next_step15; parent10events preserved byte-for-byte. Full20calls:18bareoldlabels,2notebook-marker replies. Short20calls:6barelabels,13marker replies. No question marks/cap stops. All new outputs unscored. Marker definition selected posthoc, not confirmed mechanism. Raw generated Feedback/headings are data, not actual verifier messages or actions. Weights unchanged, all checks pass.
 
-Full history17correct/15incorrect/8unscored of40; shadow20/13/7. Nine paired token differences,7answer differences;8identical-prompt pairs replay exactly. No generalized history benefit/harm or plateau claimed. Model trained for narrow labels, so unused prose space is a limitation. Maxinput588/2048; output cap64 never hit. All3tests, reconstruction/score/history/resource/hash audits pass; weights unchanged.
+## Next possibilities — not running
 
-## Next unexecuted
+Preserve current notebooks for further wandering. Candidate now worth a later independent branch: model continuing the record format instead of taking a new turn. Compare archived-history representations/conversational roles, with untouched cases and position/length controls; do not erase source trajectories or call a format fix autonomous growth.
 
-Keep existing notebooks intact. Diagnose observation extraction vs answer mapping vs comprehension/use of verifier feedback; then prospectively continue saved trajectories. Adding executable evidence requests or another checkpoint must be an explicit new branch, not mislabeled spontaneous emergence. No successful run required, no stop-after-improvement selection.
+Parent status-observation/mapping/feedback-use question remains open; a tool-request action or different checkpoint must be an explicit interface branch. No run must produce improvement; no silent reset/pruning, stop-after-success selection or intrinsic-plateau claim.
 
-Prior joint-noise/profile-method, actual intervention/sham, memory/provenance/planning and unvetted Grok directions remain open. Big-three-cycle results and optional measurement receipt stay intact. Broad unbounded autonomous execution/weight-training are not running.
+Earlier noise-range/profile, actual intervention/sham, memory/provenance/planning and unvetted Grok directions remain open; big-three-cycle and optional compatibility utility intact.
 
 ## Preservation
 
-All owned jobs finished; no background/scheduled continuation. Raw dynamic prompts/tokens/replies, feedback, whole notebooks and checkpoints preserved on progress branch; previous failures untouched. No new model/install/download/paid API/rental/weights/default/capsule/restore claim. Account billing/usage invisible. Local model/binary and older full toy-input backup limitations remain; GitHub text alone is not a complete runtime backup.
+120calls across two declared interfaces, no training/new weights/defaults. Four full active notebooks/checkpoints saved, matched controls/raw prompts/tokens/feedback/versions preserved. All owned jobs finished, no background/scheduled continuation. No new model/install/download/paid API/rental/capsule/restore claim; billing/usage invisible. Local binary/input backup limitations remain; GitHub text is not a complete runtime backup.
