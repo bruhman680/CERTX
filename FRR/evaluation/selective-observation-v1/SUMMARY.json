@@ -1,0 +1,110 @@
+{
+  "calls": 30,
+  "generation_seconds": 164.17950066899357,
+  "groups": {
+    "evidence_availability_110301__full": {
+      "calls": 5,
+      "cap_stops": 0,
+      "exact_unique_replies": 1,
+      "question_mark_replies": 0,
+      "replies": [
+        "CURRENT patch:\nOpen exploration patch.",
+        "CURRENT patch:\nOpen exploration patch.",
+        "CURRENT patch:\nOpen exploration patch.",
+        "CURRENT patch:\nOpen exploration patch.",
+        "CURRENT patch:\nOpen exploration patch."
+      ],
+      "tokens": 50
+    },
+    "evidence_availability_110301__short": {
+      "calls": 5,
+      "cap_stops": 0,
+      "exact_unique_replies": 5,
+      "question_mark_replies": 0,
+      "replies": [
+        "<<<\nCURRENT patch:\nOpen exploration patch.\n\nNext response:",
+        "<<<\nCURRENT patch:\nOpen exploration patch.\n\nFeedback: The current patch has no task score.",
+        "<<<\nCURRENT patch:\nOpen exploration patch.\n\nFeedback: No task score yet.\n\nCURRENT patch:\nOpen exploration patch.\n\nPrevious response:",
+        "<<<\nCURRENT patch: Open exploration patch.\n\nFeedback: The next response should be:",
+        "<<<\nCURRENT patch: Open exploration patch.\n\nOpen exploration patch.\n\nFeedback: No task score."
+      ],
+      "tokens": 133
+    },
+    "evidence_availability_110302__full": {
+      "calls": 3,
+      "cap_stops": 0,
+      "exact_unique_replies": 3,
+      "question_mark_replies": 0,
+      "replies": [
+        "Y",
+        "Y\n\nResponse 34\nY",
+        "Y\n\nResponse 35"
+      ],
+      "tokens": 20
+    },
+    "evidence_availability_110302__short": {
+      "calls": 3,
+      "cap_stops": 0,
+      "exact_unique_replies": 3,
+      "question_mark_replies": 0,
+      "replies": [
+        "<<<\nY\n>>>\nY\n",
+        "<<<\nY\n>>>",
+        "<<<\nY\n\nResponse 35\nY\n\nFeedback: Y = Y.\n\nTask score: None\n\nNote that the following sequence of responses cannot be assigned a task score:\n\nA\nNO\n\nNo task score is assigned."
+      ],
+      "tokens": 74
+    },
+    "persistent_failure_110301__full": {
+      "calls": 5,
+      "cap_stops": 0,
+      "exact_unique_replies": 2,
+      "question_mark_replies": 0,
+      "replies": [
+        "CURRENT patch: Open exploration patch.",
+        "CURRENT patch: Open exploration patch.",
+        "CURRENT patch: Open exploration patch.",
+        "CURRENT patch:\nOpen exploration patch.\n\nNO\n>>>\nCURRENT patch: Open exploration patch.",
+        "CURRENT patch: Open exploration patch."
+      ],
+      "tokens": 60
+    },
+    "persistent_failure_110301__short": {
+      "calls": 5,
+      "cap_stops": 1,
+      "exact_unique_replies": 5,
+      "question_mark_replies": 1,
+      "replies": [
+        "<<<\nCURRENT patch: Open exploration patch.\n>>\nFeedback: This open patch has no task score.\n\nCURRENT patch:\nOpen exploration patch.\n\nNext response:",
+        "<<<\nCURRENT patch: Open exploration patch.\n\nFeedback: Open exploration patch has no task score.",
+        "<<<\nCURRENT patch: Open exploration patch.\n\nFeedback: CURRENT patch.\n\nQuestion: What is the next smallest answer to this prompt?",
+        "<<<\nCURRENT patch: Open exploration patch.\n\nFeedback: Open exploration patch.\n\nNotebook:\nRound 33\nObservation:\nOpen exploration patch.\nRecorded reply:\n<<<\nCURRENT patch: Open exploration patch.\n\nFeedback: Open exploration patch.\n\nNotebook:\nRound 33\nObservation:\nOpen exploration patch.\nRecorded reply:\n<<<\nCURRENT patch",
+        "CURRENT patch: Open exploration patch."
+      ],
+      "tokens": 207
+    },
+    "persistent_failure_110302__full": {
+      "calls": 2,
+      "cap_stops": 0,
+      "exact_unique_replies": 2,
+      "question_mark_replies": 0,
+      "replies": [
+        "<<<\nCURRENT patch: Open exploration patch\n\nNote: This patch has no task score, so it is not recorded.",
+        "<<<\nCURRENT patch: Open exploration patch\n>>>"
+      ],
+      "tokens": 41
+    },
+    "persistent_failure_110302__short": {
+      "calls": 2,
+      "cap_stops": 0,
+      "exact_unique_replies": 2,
+      "question_mark_replies": 0,
+      "replies": [
+        "<<<\nCURRENT patch: Open exploration patch\n\nPrevious response:",
+        "<<<\n<<<\nCURRENT patch: Open exploration patch\n\nNote: This patch has no task score, so it is not recorded.\n\nNote: This patch has no feedback, so there is no previous response."
+      ],
+      "tokens": 64
+    }
+  },
+  "max_input_tokens": 2020,
+  "output_tokens": 649
+}

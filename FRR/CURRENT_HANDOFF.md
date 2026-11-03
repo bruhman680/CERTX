@@ -1,17 +1,11 @@
-# Current handoff — three unchanged freer windows complete
+# Current handoff — selective observation active
 
-2 November2026 client date. [Latest report](evaluation/open-garden-three-batches-v1/REPORT.md). Continued all4notebooks from15to30events, with snapshots at20/25/30; no interface/model/feedback/sampler change.120newgeneration calls, all unscored. Cumulative240calls:4active30-event histories and matching replay controls across two declared interfaces.
+2 November2026 client date. Read [attention digest](evaluation/selective-observation-v1/ATTENTION.md) first, then [event index](evaluation/selective-observation-v1/EVENT_INDEX.json) and exact raw records only as needed. [Report](evaluation/selective-observation-v1/REPORT.md). Current research map is now an index; full old map/navigation archived under this study/before/.
 
-Across full-history windows bare old labels9->2->0 and notebook-marker replies7->12->18 outof20each. Short history labels7->0->0 and markers11->17->19. Marker definition prospective from prior noticing. Histories grow; controls are coupled latest-active-event replays, not independent gardens. Text increasingly imitates record/Feedback/Response scaffolding. One question asks the supplied current patch; no verified checking/solution strategy, causal mechanism or intrinsic plateau established.
+30newunscored calls under unchanged model/interface/history. Observer indexed every row; close-review packet6flagged examples+1quiet sample, plus2mandatory input-boundary events. One overflow flag retained. Heuristics identify possible changes, not calibrated phases/sophistication. Every-row machine checks remain mandatory.
 
-11output-cap stops (96tokens), maxinput1890/2048, no input stop/truncation. Twelve batch snapshots/fourfinal notebooks preserve parent15events byte-for-byte. All contract/reconstruction/sampling/resource/hash audits pass; model weights unchanged. Generated scores/headings remain untrusted text; actual feedback always neutral and all new task_score=None. A pre-freeze script syntax error is preserved separately as an orchestration record.
+Notebooks: persistent_failure_110301 next35; persistent_failure_110302 next32; evidence_availability_110301 next35; evidence_availability_110302 next33. Two2060/2068token planned requests exceeded2048and were not sent. No truncation/pruning or silent reset. All4parent prefixes and model weights preserved; all audits/tests pass. No background job.
 
-## Next possible branches — not running
+## Next
 
-Keep original30-event notebooks intact for further wandering. Later compare archived history in quoted format versus alternative representation/explicit roles and a no-history open baseline, with frozen marker hypotheses and length/position accounting. Changing representation is an explicit new branch, not spontaneous emergence. No favorable-endpoint selection or task-score promotion.
-
-Earlier observation/mapping/feedback-use, noise-range/profile, actual intervention/sham, memory/provenance/planning and unvetted Grok directions remain open. Optional compatibility utility intact. No new default/controller/teacher adopted.
-
-## Preservation
-
-All owned jobs finished, no scheduled/background continuation. All raw dynamic prompts/tokens/replies, neutral feedback, whole histories and checkpoint versions saved; earlier failures/navigation archived. Same local135M model, no training/newweights/install/download/paid API/rental/capsule/restore claim; billing/usage invisible. GitHub text/history does not back up local binaries; existing backup/restore limitations remain.
+Review indexed events/quiet sample rather than all transcripts. Continue notebooks only with an explicit input-budget decision or separately labeled context-view experiment; external observer filtering does not shorten model inputs. Preserve original trajectories. Prior representation/roles/no-history, observation/mapping, measurement-noise/profile and provenance/planning directions remain available through the map. No trained teacher/default/phase detector adopted; account usage/billing and binary backup/restore limitations remain.
