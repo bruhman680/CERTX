@@ -1,3 +1,11 @@
+# Current research map — unchanged freer-stage continuation
+
+2 November2026. [Three freer windows](open-garden-three-batches-v1/REPORT.md) adds120unscored calls, all4active notebooks now30events;12window snapshots preserve original prefixes. Same interface/weights. Bare labels give way to notebook/Feedback/Response echoes; marker criteria prospective, causal/strategy meaning unestablished. Eleven replies hit96tokens, no input truncation. All audits pass and all runs finished.
+
+Next optional: preserve wandering notebooks and branch later into representation/roles/no-history controls; retain fresh falsifiable marker hypotheses and input-length/position accounting. Earlier model/source/measurement/planning directions remain open. Older map below is historical context, not current work orders.
+
+## Earlier orientation snapshots
+
 # Current research map — open notebook continuation
 
 2 November2026. [Open continuation](open-notebook-continuation-v1/REPORT.md) preserves first-season histories and adds40unscored calls, four active notebooks now15events. Combined120calls, two declared interfaces, no weight updates. Full history mostly retains old labels; short history more often reproduces record/template text. Candidate representational boundary is exploratory, not causal proof or an intrinsic plateau. Actual feedback stays distinct from generated apparent Feedback text.

@@ -1,0 +1,1 @@
+Initial copied runner adaptation had a Python syntax error (compound if after semicolon) before model preparation/loading. Original source and stderr retained in before_prepare. Repaired before any freeze/model call; this is an orchestration error, not a model behavior.
