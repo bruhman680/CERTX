@@ -1,7 +1,7 @@
 # Current orientation — contacts complete
 
-2 November2026. [Current handoff](../CURRENT_HANDOFF.md) and [three-contact report](../evaluation/resume-three-contact-v1/REPORT.md).
+2 November2026, client date. [Handoff](../CURRENT_HANDOFF.md), [matched-context report](../evaluation/evidence-context-factors-v1/REPORT.md), [noise-sensitivity report](../evaluation/guard-noise-sensitivity-v1/REPORT.md).
 
-Claude intake reproduced and corrected; known-family guard cutoff repaired in a bounded paired toy. Fresh-model feedback preflight still fails: original15/24, simple-none10/24, simple-faithful7/24 with3harms/0repairs. No distillation or new default.247generation calls,960candidate forwards,8head checks;7historical anchors match. Fixed weights and all checks pass.
+Equal-length controls revise the earlier explanation: duplicated observations modestly help against filler, while after-placement harms recur. Original11/16 remains above best added-context10/16. No reliable teacher/training adopted; genuine absence remains0/4.167generations,640candidate forwards,8head checks; all7historical anchors match and weights stay fixed.
 
-Next: explanatory duplication/text/authority control with untouched confirmation; toy calibration/noise sensitivity and actual shams. Confidence high in reporting/calibration discipline, narrow in numerical generalization. All work complete, no background continuation. Prior orientation bytes archived under resume-three-contact-v1/before; older exploration reports stay unchanged.
+Noise-calibrated guard can reject a familiar shared process when only observation noise changes, including cleaner sensing. Keep measurement-model mismatch distinct from latent novelty. All tests/audits and preservation completed, no background job. Next: position-preserving/alternative-filler confirmation and joint class/noise calibration with independent gold data. Prior navigation archived, older experiments preserved.

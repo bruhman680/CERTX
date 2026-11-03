@@ -1,21 +1,19 @@
-# Current handoff — three contacts complete
+# Current handoff — matched-context and noise contacts complete
 
-2 November 2026. User resumed full exploration. [Resumed garden report](evaluation/resume-three-contact-v1/REPORT.md) is the current overview; prior handoff bytes are archived there under before/.
+2 November 2026, client date. Resumed from71fd2e0934c093d7b73e37818860de03a49257c1. Exact prior navigation and optional method note archived under evaluation/evidence-context-factors-v1/before/.
 
-## Current findings
+## Latest findings
 
-Claude head318025c8bfc70a663e2e5a50abfa39fa583ce25d reviewed:12sourcepaths verified,4scripts replay byte-for-byte. Existing OR-trend feature detects SWAP with more data. Exact DIFF phi324/1771 reveals original guard's familiar-case cutoff defect.
+[Equal-length context contact](evaluation/evidence-context-factors-v1/REPORT.md):16fresh cases,167generations,640candidate-score forwards and8head checks. All144added-context prompts have144input tokens. Original11/16; padded5/16; duplicate/no-reminder/before10/16 and after4/16. Duplication modestly helps against filler on discovery and confirmation names; after-placement harms recur. Authority accuracy gain does not recur on confirmation. Token audit shows an8-token authority-induced original-record shift in before arms; semantic authority alone is not isolated. Genuine absence0/4 in every arm. All7historical token/output replays and all tests/audits pass; weights unchanged. No teacher/default/training adopted.
 
-Fresh fixed-weight135M CPU feedback test: original15/24, simple-none10/24, simple-faithful7/24; faithful causes3harms and0repairs against simple-none.247generations,960candidate-score forwards,8head checks;7historical anchors exactly match. All audits/tests pass, weights unchanged. Genuine absence0/6 in every condition. No teacher/training/default adopted.
+[Guard noise sensitivity](evaluation/guard-noise-sensitivity-v1/REPORT.md):two calibration seeds, M400/1600, .95/.99 bands fitted at flag-noise .05.36,000threshold evaluations over18,000paired noise records. AtM1600 shared-class matched-noise compatibility .982/.986 for .99bands; cleaner.025 and noisier.10 both yield UNKNOWN500/500 per seed. Measurement-channel mismatch can trigger an alarm without a new latent error process. Full decisions/distances/parameters retained;36input hashes and nested flip sets checked. No general novelty/causal/coverage guarantee.
 
-Paired27,000-run guard control repairs known-DIFF error atM1600 (.728->0 observedwrong-specific). A same-band posthoc selector audit attributes that large-M repair to decision geometry; low-M withholding sacrifices many correct selections and outside-world errors persist. No general coverage/causal/OOD guarantee.
+## Strongest next contacts — not running
 
-## Resume here — unexecuted
+Model: position-preserving authority contrast and a second filler family on untouched names; match original-record offsets and total tokens, retain original baselines and absence counterexamples. No adaptive prompt search for a favorable teacher.
 
-Model: bounded duplication versus added-text/authority/placement control, matched per-interface none and original baselines, untouched confirmation set. Do not distill existing failed review contexts. Keep genuine absence and actual source retrieval separate.
-
-Toy: calibration-seed/threshold/noise sensitivity with known-DIFF controls; implement actual intervention+sham mechanics before source-localization claims. Broad memory/AND-OR provenance/handoff/planning queue stays open; Grok relay remains unvetted. Wider autonomous multi-turn model loop remains parked.
+Toy: joint descriptive-class/noise candidate sets plus independent gold-label calibration; measure ambiguity costs instead of simply widening bands. Actual interventions/shams and source localization remain separate work. Prior wider model loop stays parked; broader memory/provenance/planning queue remains open and Grok relay unvetted.
 
 ## Preservation
 
-Raw replies/tokens/stops/candidate scores and all older reports preserved; prior navigation archived. Existing base/adapter saved-file and in-memory hashes unchanged. No background/scheduled model job. No install/download/paid API/rental/new model/capsule/restore claim. Local full guard input NPZ and verboseJSONL are hash-pinned but omitted from compact GitHub export; model binaries also remain local. Independent current-binary backup/clean restore/optimizer resume remain unverified. Account billing/usage not visible.
+All owned model/toy work finished; no scheduled/background continuation. Raw prompts/replies/tokens/stops/probability scores, factor pairs, calibration arrays and decisions saved; earlier records stay unchanged. Existing base/adapter digests unchanged. No paid API, rental, install/download, new model/weights/default/controller/capsule/restore claim. Account usage/billing not visible. New noise JSON publication losslessly retains recorded values, but full observed A/B arrays were not saved; regeneration is hash-checked only in the current NumPy version. Older local-only model binaries/full guard inputs and independent backup/restore limitations still apply.

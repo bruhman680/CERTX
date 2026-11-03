@@ -1,3 +1,11 @@
+# Current research map — measurement contracts and presentation controls
+
+2 November2026, client date. [Matched context factors](evidence-context-factors-v1/REPORT.md) and [guard-noise sensitivity](guard-noise-sensitivity-v1/REPORT.md) completed. At equal token length, duplication helps against filler on both name sets; after-placement harms recur, while authority accuracy benefit does not confirm. Original11/16 exceeds best added-context10/16. New noise contact shows fixed-noise bands can reject the same familiar latent pattern after an observation-channel change. No teacher, trained weights or general guard adopted.
+
+Next unexecuted: record-position-preserving authority and alternative-filler controls; joint class/noise candidates with independent calibration data, retaining ambiguity and absence failures. Wider memory/provenance/planning/actual-intervention directions remain open; broad autonomous model loop parked. All runs finished and saved. Earlier map text below is historical context, not a new work order.
+
+## Earlier orientation snapshots
+
 # Current research map — three contacts complete
 
 2 November2026. [Current overview](resume-three-contact-v1/REPORT.md). Claude source intake and exact corrections, fresh fixed-weight evidence-only model contact, paired compatibility guard and same-band selector analysis completed. Original familiar-case cutoff can fail before vocabulary expansion matters; calibrated geometry repairs one toy failure. More abstention has costs. Model original15/24 exceeds simple-none10/24 and faithful7/24; no teacher/training adoption.
