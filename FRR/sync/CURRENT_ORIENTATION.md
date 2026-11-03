@@ -1,5 +1,5 @@
-# Current orientation
+# Current orientation — PAUSED
 
-2 November2026. [Handoff](../CURRENT_HANDOFF.md), [attention digest](../evaluation/selective-observation-v1/ATTENTION.md), [short research index](../evaluation/CURRENT_RESEARCH_MAP.md).
+2 November2026, user-requested usage-reset pause. [Handoff](../CURRENT_HANDOFF.md), [attention digest](../evaluation/open-garden-settling-v1/ATTENTION.md), [settled checkpoint receipt](../evaluation/open-garden-settling-v1/SETTLED.json).
 
-External review is selective; raw evidence and all-row integrity checks remain complete.30newcalls,7example slots,2mandatory model-input boundaries. Notebooks next35/32/35/33, no pruning or weight change. Two trajectories need an explicit resource/context-view decision before more calls. No jobs running. Older navigation/history archived, not pasted inline here.
+Final24calls complete; all audits pass; weights unchanged. Explicit3072input allowance admits previously blocked exact prompts, no history pruning. Notebooks next38/35/38/36. Compact selective review retained; all raw evidence archived. No jobs or automatic continuation. Resume on user return; current research map remains a short shelf index.

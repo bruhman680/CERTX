@@ -1,15 +1,15 @@
-# Current research index
+# Current research index — PAUSED
 
-2 November2026. Start with [current handoff](../CURRENT_HANDOFF.md) and [attention digest](selective-observation-v1/ATTENTION.md). Bring exact raw records into working context only when their indexed event or a specific question calls for them.
+2 November2026. User requested usage-reset wind-down. All jobs finished; no automatic continuation. Start with [handoff](../CURRENT_HANDOFF.md) and [attention digest](open-garden-settling-v1/ATTENTION.md). Expand exact indexed records only for a relevant question.
 
-| Shelf | Entry | Current status |
+| Shelf | Entry | Status |
 |---|---|---|
-| Selective observation | [Report](selective-observation-v1/REPORT.md), [event index](selective-observation-v1/EVENT_INDEX.json) | External review filter tested; raw histories intact; two model-input boundaries |
-| Ongoing garden notebooks | [Three freer windows](open-garden-three-batches-v1/REPORT.md), [first open branch](open-notebook-continuation-v1/REPORT.md) | Record/template recurrence, no confirmed checking strategy |
-| Model presentation/readout | [Position-preserved controls](position-preserved-authority-v1/REPORT.md), [big three-step summary](big-three-cycle-v1/REPORT.md) | Narrow effects; no teacher or training adoption |
-| Measurement assumptions | [Joint noise](joint-noise-candidates-v1/REPORT.md), [off-grid calibration](offgrid-calibration-v1/REPORT.md) | Compatibility/ambiguity/rejection tradeoffs; no general causal guard |
-| Evidence/history | [Real artifact provenance](real-artifact-provenance-v1/REPORT.md), [Claude intake](claude-open-world-intake-v1/REPORT.md) | Pinned source checks and bounded corrections |
-| Research habits | [Modules](../modules), [selective-observation note](../modules/selective-observation.md) | Optional methods; interpretation limits remain explicit |
-| Earlier seasons and open queues | [Exact previous catalog](selective-observation-v1/before/evaluation/CURRENT_RESEARCH_MAP.md) | Historical wording, not current instructions; expand only for a relevant question |
+| Latest garden pause | [Report](open-garden-settling-v1/REPORT.md), [checkpoint receipt](open-garden-settling-v1/SETTLED.json) | Final24calls, explicit3072input allowance, full histories intact; next38/35/38/36 |
+| Selective review | [Policy/report](selective-observation-v1/REPORT.md) | Counts/flags/quiet sample; complete raw evidence and all-row checks |
+| Carried exploration | [Three freer windows](open-garden-three-batches-v1/REPORT.md), [first open branch](open-notebook-continuation-v1/REPORT.md) | Notebook-format recurrence; no confirmed strategy improvement |
+| Readout and feedback | [Position controls](position-preserved-authority-v1/REPORT.md), [three-step summary](big-three-cycle-v1/REPORT.md) | Narrow effects, no teacher adoption |
+| Measurement assumptions | [Joint noise](joint-noise-candidates-v1/REPORT.md), [off-grid](offgrid-calibration-v1/REPORT.md) | Compatibility/ambiguity/rejection tradeoffs |
+| History and methods | [Provenance](real-artifact-provenance-v1/REPORT.md), [modules](../modules) | Bounded checks and optional practices |
+| Full earlier catalog | [Archived map](selective-observation-v1/before/evaluation/CURRENT_RESEARCH_MAP.md) | Historical wording, not current work orders |
 
-Next: inspect compact events; explicitly address model context budget before continuing the two stopped trajectories. Preserve originals and test representation changes as separate branches. No automatic continuation. Older raw results and full navigation remain in archived files and Git history; this index is navigation, not a substitute for evidence.
+On return: continue intact notebooks or separately branch history representation/roles/no-history tests. Preserve false starts and quiet runs; flags are not calibrated phase detectors. Older raw results/navigation remain in files and Git history; local model binaries are not backed up by this text index.

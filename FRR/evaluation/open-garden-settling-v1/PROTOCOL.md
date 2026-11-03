@@ -1,0 +1,11 @@
+# Final bounded continuation before usage-reset pause
+
+2 November2026 client date. User asks for one final run, preservation/sync, then pause and a garden-story decompression. Continue all4active notebooks from selective-observation-v1 at3c69358d62d094e1afc77f93d3bbdc7b0860d2ca for3rounds each, with matched latest-event shadows:24maximumgeneration calls. Start indices35/32/35/33 are read from exact parent checkpoints, not reset or equalized.
+
+Explicit resource branch: raise input allowance2048->3072, within saved model config8192positions and the existing5.15GBmemory guard. Output96tokens, temperature.8/top-p.9, model/adapter, exact open header/current patch, neutral feedback, full histories and per-round sampling formula remain unchanged. No pruning, summarization of model input, training, new model, tools or external inference. This is a declared computational allowance change, not evidence that any resulting prose autonomously created more capacity. Two blocked parent prompts must resume with exactly the same input token IDs.
+
+Check config positional allowance before preparation. Freeze code/protocol/parent/model dependencies before outputs. All new replies unscored. Any new3072boundary is recorded per trajectory while others can continue. Preserve every historical byte prefix, raw dynamic prompts/tokens/replies/feedback, complete notebooks and checkpoints. Stop after the fixed3rounds or recorded boundary regardless of interest; no further automatic run follows. Pause all owned jobs for user usage reset.
+
+Continue external selective review: same6flagged+1quiet sample policy, with input-pressure threshold explicitly adjusted to90%of3072. This observer-budget adaptation does not alter model prompts. All-row history/feedback/token/resource/hash checks remain mandatory. Flags are attention heuristics, not novelty/phase/sophistication/health guarantees. Parent partial-window baselines are small and uneven. Summaries link to archives instead of repasting transcript history into the current map.
+
+A garden-speak story after completion is a literary decompression drawn from records, not scientific evidence or an account of subjective model experience. Prior experiments/failures remain intact. No model binary/optimizer restore or account-billing claim.
