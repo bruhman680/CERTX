@@ -1,3 +1,11 @@
+# Current research map — big three-step cycle
+
+2 November2026. [Cycle report](big-three-cycle-v1/REPORT.md). Position-preserved authority/two fillers, joint class-noise candidates, and resulting off-grid calibration contact complete. Authority effect survives positions narrowly; original task still strongest. Gold information reduces ambiguity but can expose an incomplete grid or falsely exclude truth. Optional descriptive receipt utility tested on108,000saved decisions, with no default/controller promotion.
+
+Next proposed: model observation-vs-mapping diagnosis; measurement-range/profile methods with independent calibration and untouched intermediate values. Wider source/memory/planning/actual-intervention queues remain open, broad model loop parked. All jobs complete. Earlier map below is historical wording; exact originals archived.
+
+## Earlier orientation snapshots
+
 # Current research map — measurement contracts and presentation controls
 
 2 November2026, client date. [Matched context factors](evidence-context-factors-v1/REPORT.md) and [guard-noise sensitivity](guard-noise-sensitivity-v1/REPORT.md) completed. At equal token length, duplication helps against filler on both name sets; after-placement harms recur, while authority accuracy benefit does not confirm. Original11/16 exceeds best added-context10/16. New noise contact shows fixed-noise bands can reject the same familiar latent pattern after an observation-channel change. No teacher, trained weights or general guard adopted.

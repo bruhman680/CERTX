@@ -1,0 +1,11 @@
+# Cycle1: position-preserved authority and two filler families
+
+2 November2026, client date. Fixed canonical135M CPU reader, no training/new model/install/download/paid inference. Follow-up chosen from prior context-factor results; no claim of independent hypothesis discovery.
+
+Sixteen fresh cases: discovery/confirmation names x two layouts x four statuses. All note blocks precede the original task, fixing the prior stronger placement slice. Duplicate/filler content x memo/paper filler family x authority/control slot gives8arms per case, plus original.151generations including7historical anchors;144fresh scored queries,576candidate forwards,8head checks. Both name sets and all metrics freeze before outputs; no tuning between sets.
+
+All128added-context prompts have one matched total token count. More strongly, authority versus its status-free control replaces a fixed-width ending slot, leaving the entire prefix and original-record token span unchanged. Slot-control words are matched filler, not the literal absence of all text. A gain cannot be attributed to authority semantics independent of arbitrary lexical choices. Two filler families test limited robustness, not neutrality. Record offsets are saved before model execution. No retrieved facts, previous proposal, evaluator answer or actual feedback outcome is given.
+
+Primary paired contrasts: duplicate minus filler, authority minus control, paper minus memo, holding other fields fixed. Each factor has64comparisons from16cases; report discovery/confirmation separately (32comparisons from8cases), status/layout, repairs/harms and absolute gold complete-sequence logp changes.1e-5directional tie threshold. Retain original-task comparison and absence failures; no winner/default/teacher adoption from this run. Earlier position-shifted results stay immutable.
+
+Save exact input and candidate target IDs, data/code/model dependency hashes before load. Greedy cap16, fresh cache per prompt, CPU float32/eager2threads. Audit all historical replays, positions, token lengths, candidate scores, model hashes and resources. Candidate normalization is not calibrated belief or full-vocabulary KL. Primary question: does the earlier authority effect survive preserved positions and a different filler family? Confirmation of some mean does not establish uniform or population benefit.

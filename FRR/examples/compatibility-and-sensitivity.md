@@ -20,3 +20,10 @@ Examples and limits: [intake](../evaluation/claude-open-world-intake-v1/REPORT.m
 The observation channel is part of a compatibility claim. Record assumed sensing noise, source extraction and calibration conditions alongside the latent-pattern candidate. Rejecting all calibrated bands can indicate an observation-model mismatch; it does not uniquely establish latent novelty. The [noise contact](../evaluation/guard-noise-sensitivity-v1/REPORT.md) changes only the sensor flips and obtains strong rejection even when observations become cleaner.
 
 For [prompt comparisons](../evaluation/evidence-context-factors-v1/REPORT.md), match lengths using input-only preparation and inspect actual token positions. Equal token count does not make filler neutral or preserve original-record offsets. Before attributing an effect to an authority sentence, isolate its position/padding effects where possible. Retain controls that can reverse an earlier interpretation: duplicated evidence was harmful in the old review package but modestly helpful against matched filler here. No default prompt or training teacher follows from this small contact.
+
+
+## Joint candidates and precise calibration
+
+[Big three-step cycle](../evaluation/big-three-cycle-v1/REPORT.md) demonstrates both recovery and costs. Keep latent class and measurement setting jointly compatible before projecting to a class. Independent calibration may narrow candidates, but sampling error or an incomplete measurement grid can remove all. Report that filtering outcome separately from failure of the task-pair fit; neither is a unique causal diagnosis. A denser grid containing chosen test values is a diagnostic repair, not autonomous discovery.
+
+Use the optional [receipt helper](../modules/measurement-compatibility.md) for bookkeeping; it does not perform calibration, widen thresholds or replace the current controller. Model prompts also need position checks: fixed-width authority/control slots preserve original-record offsets, yet filler/name dependence and original-task comparisons remain essential.

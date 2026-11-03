@@ -1,19 +1,19 @@
-# Current handoff — matched-context and noise contacts complete
+# Current handoff — big three-step cycle complete
 
-2 November 2026, client date. Resumed from71fd2e0934c093d7b73e37818860de03a49257c1. Exact prior navigation and optional method note archived under evaluation/evidence-context-factors-v1/before/.
+2 November2026 client date. [Current report](evaluation/big-three-cycle-v1/REPORT.md). Three research contacts complete; original navigation/optional method note archived there under before/.
 
-## Latest findings
+Cycle1: position-preserved authority/control, two fillers,16fresh cases.151generations,576candidate forwards,8head checks. Authority net benefit on both names, but original11/16 exceeds all added contexts(best8/16). Duplication reverses direction between sets. All7historical anchors exactly match; no teacher/training/default, weights unchanged.
 
-[Equal-length context contact](evaluation/evidence-context-factors-v1/REPORT.md):16fresh cases,167generations,640candidate-score forwards and8head checks. All144added-context prompts have144input tokens. Original11/16; padded5/16; duplicate/no-reminder/before10/16 and after4/16. Duplication modestly helps against filler on discovery and confirmation names; after-placement harms recur. Authority accuracy gain does not recur on confirmation. Token audit shows an8-token authority-induced original-record shift in before arms; semantic authority alone is not isolated. Genuine absence0/4 in every arm. All7historical token/output replays and all tests/audits pass; weights unchanged. No teacher/default/training adopted.
+Cycle2: joint descriptive-class/noise unions restore familiar grid-aligned shared cases. Gold calibration reduces ambiguity but adds false rejection. Cycle3, selected from that result: off-grid noise can leave precise calibration with an empty grid; selected added candidates repair most cases. Each toy uses10,800observations and54,000paired arm decisions, with full independent arithmetic/input-hash audits. No arbitrary-OOD/coverage/causal guarantee.
 
-[Guard noise sensitivity](evaluation/guard-noise-sensitivity-v1/REPORT.md):two calibration seeds, M400/1600, .95/.99 bands fitted at flag-noise .05.36,000threshold evaluations over18,000paired noise records. AtM1600 shared-class matched-noise compatibility .982/.986 for .99bands; cleaner.025 and noisier.10 both yield UNKNOWN500/500 per seed. Measurement-channel mismatch can trigger an alarm without a new latent error process. Full decisions/distances/parameters retained;36input hashes and nested flip sets checked. No general novelty/causal/coverage guarantee.
+Optional measurement_compatibility.py separates calibration-grid empty, no compatible pair, ambiguous classes and compatible class. Three test groups and108,000artifact decisions checked. No default production integration; frozen runners unchanged.
 
-## Strongest next contacts — not running
+## Next unexecuted
 
-Model: position-preserving authority contrast and a second filler family on untouched names; match original-record offsets and total tokens, retain original baselines and absence counterexamples. No adaptive prompt search for a favorable teacher.
+Model: status-observation versus answer-mapping diagnostic with original/slot controls, untouched names, wrong-source and genuine absence. No distillation or favorable-wrapper search.
 
-Toy: joint descriptive-class/noise candidate sets plus independent gold-label calibration; measure ambiguity costs instead of simply widening bands. Actual interventions/shams and source localization remain separate work. Prior wider model loop stays parked; broader memory/provenance/planning queue remains open and Grok relay unvetted.
+Toy: noise-range/profile method versus discrete grid, independently calibrated information, untouched intermediate noise levels; retain ambiguity/rejection costs. Actual interventions/shams, broader memory/provenance/planning and unvetted Grok relay remain open. Wider autonomous multi-turn model loop stays parked.
 
 ## Preservation
 
-All owned model/toy work finished; no scheduled/background continuation. Raw prompts/replies/tokens/stops/probability scores, factor pairs, calibration arrays and decisions saved; earlier records stay unchanged. Existing base/adapter digests unchanged. No paid API, rental, install/download, new model/weights/default/controller/capsule/restore claim. Account usage/billing not visible. New noise JSON publication losslessly retains recorded values, but full observed A/B arrays were not saved; regeneration is hash-checked only in the current NumPy version. Older local-only model binaries/full guard inputs and independent backup/restore limitations still apply.
+All owned jobs finished, no scheduled/background continuation. Older reports/raw failures preserved; current raw inputs/replies/tokens/candidate scores, fitted parameters, pair/noise masks and gold counts saved. Model hashes unchanged. No new weights/model/install/download/paid API/rental/capsule/restore claim; billing/usage invisible. Toy fullA/Barrays not backed up, but regenerated hashes checked in currentNumPy; older local-only binary/backup limitations remain. Code receipt is not a causal diagnosis.
