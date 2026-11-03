@@ -1,0 +1,1 @@
+Contract import initially failed because the new directory lacked the three local runtime helpers. No model call or freeze ran. Copied unchanged helpers from the parent, then reran contract and prepare. Original failure was ModuleNotFoundError: io_utils.

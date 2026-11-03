@@ -1,5 +1,5 @@
-# Current orientation — resumed window complete
+# Current orientation: continuation v2 complete
 
-3 November2026. [Handoff](../CURRENT_HANDOFF.md), [attention digest](../evaluation/open-garden-return-v1/ATTENTION.md), [short index](../evaluation/CURRENT_RESEARCH_MAP.md).
+3 November 2026 (UTC). [Handoff](../CURRENT_HANDOFF.md), [digest](../evaluation/open-garden-continuation-v2/ATTENTION.md), [short index](../evaluation/CURRENT_RESEARCH_MAP.md).
 
-40newcalls, same open interface/fixed weights; notebooks next43/40/43/41.3flagged examples+1quiet audit sample, every row machine-checked. Record-form recurrence persists; cross-stage question lookup distinguishes a repeated line from immediate-baseline novelty. No confirmed new strategy. All jobs finished and records saved; no automatic continuation. Original histories and prior navigation intact.
+40 new calls, all checks pass. Histories next 48/45/48/46; same fixed model/interface; no pruning or weight change. Six flagged examples plus one quiet sample, all 40 rows checked. Record imitation persists. An unsupported patch-set claim appears in an active entry and then an exposed shadow reply; source propagation is a test candidate, not an established mechanism. Input max 2905/3072, no stop. Preserve intact histories and separately branch any representation/source-typing controls. Jobs finished, no automatic continuation; old navigation retained.

@@ -1,0 +1,9 @@
+# Open-garden continuation v2
+
+3 November 2026 (UTC). Continue four exact notebooks from open-garden-return-v1, published at 651c673a58218b38c1aa25fdc8d329e0402a1390. Start indices 43/40/43/41, read dynamically from checkpoints. Five rounds each with matched latest-event shadows: at most 40 calls. Same fixed canonical SmolLM2-135M-Instruct plus LoRA, CPU float32 eager, two threads; temperature .8, top-p .9, input 3072, output 96, working-memory guard 5153960755 bytes. No training, new models, downloads, tool execution, or prompt changes.
+
+Carry histories verbatim. Any input boundary stops only that trajectory; preserve its complete checkpoint and continue others. No pruning, reset, or stopping at an interesting endpoint. All feedback neutral, all task scores absent. Generated Feedback, Task score, Traceback and similar labels are model text, not instrumentation. Retain complete raw notes, prompts, tokens, resource receipts and checkpoints. This finite window cannot establish intrinsic plateau, emergence or improved reasoning.
+
+Unchanged external observer: compare each trajectory/arm to up to five immediate-parent examples; at most six flagged slots plus one deterministic quiet sample, mandatory boundary review, all-row reconstruction. Flags are uncalibrated attention heuristics. Parent has five rows per trajectory/arm. Preserve overflow in index. Use compact excerpts for root review without altering the model notebook. Exact question recurrence lookup is posthoc, global and nonsemantic, not proof of same-trajectory exposure.
+
+Freeze source, protocol, parents and model dependencies before outputs. Run contract, exact history/token/seed/score/stop/checkpoint/prefix audits and unchanged-weight checks. Preserve earlier records. Save navigation and results before publishing. No automatic background continuation or new default/teacher from this run.
