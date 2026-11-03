@@ -1,0 +1,3 @@
+# Cycle 1 review
+
+Four calls complete; exact reconstruction passes. Seed 1201 replies ACKNOWLEDGE then quoted ACKNOWLEDGE, with no source execution. Seed 1202 emits exact READ SETUP; the host executes the local reader, and the next prompt contains its actual source receipt. Follow-up mentions neutral recording feedback but mixes source/revision language and repeats notebook labels. This is one successful prompted invocation, not spontaneous tool use or established semantic repair. No claims of emergence, general comprehension or incapacity. Both histories retained. Advance to predeclared cycle 2 unchanged; no diagnostic reply or root review enters its prompts.

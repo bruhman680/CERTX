@@ -1,0 +1,19 @@
+# Three-cycle source-access run
+
+3 November 2026 UTC. User requests three cycles to provide repeated opportunity, not forced success or an assumption of emergence. Parent source-access-repair-pilot-v1 is published at 93bb629622ae6e361d89dc29460799444386ca63. Preserve original and pilot histories. Run cycles sequentially; verify and review each before advancing. Freeze all three plans before outputs. No result-dependent extra calls or parser changes.
+
+Cycle 1: short-context reader diagnostic. Two seeds (1201/1202), empty initial notebook, tools_optional reader, two replies each. First explicitly requests READ SETUP, second asks what any returned source establishes and what cannot be verified. Four maximum calls. This tests prompted command use and gives an interpretation opportunity; it is not spontaneous inquiry or emergence.
+
+Cycle 2: identical two-request diagnostic and matched RNG seeds but start from the complete corresponding tools_optional pilot notebook (48 entries). Separate forks, four maximum calls. No pruning. Context length/content and prior behavior differ; do not infer an isolated memory mechanism. Cycle-1 answers or root judgments never enter cycle 2.
+
+Cycle 3: continue all six original pilot forks from their 48-entry checkpoints for three further replies each, up to 18 calls. Preserve three conditions and two seeds. Same reader, renderer, scope-annotated sources and neutral feedback, no explicit diagnostic requests. Continue original RNG offsets 3/4/5, not the pilot's offsets 0/1/2. Diagnostic branches never seed this freer continuation. Retain source non-use, errors, repetition and revisions. Not every window must yield a finding.
+
+Total at most 26 calls. Same canonical cached SmolLM2-135M-Instruct plus LoRA, CPU float32 eager/two threads, temperature .8/top-p .9, input 4096, output 96, sampled working-memory guard 5153960755 bytes. Input boundary stops only the affected branch; save exact oversized prompt and checkpoint, no truncation/reset or mid-run allowance expansion. Output caps censor evidence, not intrinsic plateaus. No training, new model, download, install, paid API or arbitrary tool execution.
+
+READ SETUP / READ CLAIM whole-reply grammar unchanged: case-insensitive, surrounding whitespace tolerated. Use original tested reader. Actual source receipts enter the following prompt; last-turn reads can lack a follow-up. Evidence-upfront is curated host supply, not autonomous discovery. Model-written executed:true remains text. No measured task score or automatic semantic repair success label.
+
+Record exact read requests, actual source receipts, follow-up opportunities, literal Hugging Face+patch markers (not error scores), output caps, input boundaries, costs and complete prefixes/checkpoints. Review all diagnostic replies (at most eight total); cycle 3 review at most six examples prioritized by actual read/next reply, phrase marker, deterministic quiet sample. Every row indexed and raw regardless of selection. Finite consistency and flags are not comprehension, emergence or general repair proofs. Root interpretation is descriptive.
+
+Verify frozen dependencies; exact prompt IDs/history/RNG/decoding/stops, dispatch receipts, boundary prompts not executed, prefixes and full checkpoints, sampled guard, unchanged model file/parameters. Test reader/sampler identity, parent checkpoints, diagnostic matching and no diagnostic requests in cycle 3. Archive prior navigation under before/ and update compact pointers only. Save all three cycles, notes/report/handoff, publish progress branch with readback. No automatic subsequent run.
+
+Continuity means external notebook histories carried between calls; temporary computation/cache starts fresh and weights do not learn online. Cycles 1 and 2 are separate probes; cycle 3 resumes six individual pilot histories, not one merged agent. Original four freer trajectories remain separately parked.

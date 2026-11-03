@@ -1,0 +1,1 @@
+Initial preparation command could not launch because its selected working directory did not yet exist. The shell did not run and no model outputs were produced. Created the directory from /workspace before preparing the experiment.

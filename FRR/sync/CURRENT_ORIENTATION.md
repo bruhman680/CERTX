@@ -1,5 +1,5 @@
-# Current orientation: source-access pilot complete
+# Current orientation: same primary garden, paused at 53
 
-3 November 2026 UTC. [Handoff](../CURRENT_HANDOFF.md), [digest](../evaluation/source-access-repair-pilot-v1/ATTENTION.md), [index](../evaluation/CURRENT_RESEARCH_MAP.md).
+3 November 2026 UTC. [Handoff](../CURRENT_HANDOFF.md), [digest](../evaluation/source-access-three-cycle-v1/ATTENTION.md), [current guide](../evaluation/source-access-three-cycle-v1/PLAY_GUIDE.md).
 
-18 separate fork calls, all checks pass; six intact-parent forks end at 48 entries. Zero exact source-read requests despite optional tools; upfront evidence does not establish comprehension or repair. Generated executed:true differs from actual executed:false. Fixed weights, no training; pilot allowance 4096, actual max 3660, eleven output caps. Original freer notebooks remain 48/45/48/46. Next strongest: separate tool-interface usability / actual receipt interpretation calibration, keeping failures and histories. No background jobs.
+Use play.py to resume source-access-three-cycle-v1/cycle3/environment at next step 53. No re-init, branch switching, merged diagnostics or prompt retuning. Stable optional play charter/source readers/notes/arithmetic, fixed weights and neutral feedback; input 6144/output 96. Latest verification snapshot 0002 covers all five primary outputs and both explicitly recorded environment versions. Current reply pattern echoes prompt labels; no demonstrated repair/emergence or new tool use. Thirteen new calls total (11 amended-cycle + 2 extension), all nine contract tests and all exact row checks pass. Other branches preserved; all jobs finished, pause marker present.

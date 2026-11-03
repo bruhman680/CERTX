@@ -1,0 +1,1 @@
+The initial derivative report assembly failed because cycle was supplied twice when wrapping an already-tagged diagnostic row. Corrected the report writer; no model call, raw evidence, frozen plan or committed event changed. An early local payload pack was not published and was rebuilt after all records completed.
