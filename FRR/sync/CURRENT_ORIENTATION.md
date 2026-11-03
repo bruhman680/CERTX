@@ -1,5 +1,5 @@
-# Current orientation: seed shelf, same garden at 57
+# Current orientation: unchanged primary at 61
 
-3 November 2026 UTC. [Handoff](../CURRENT_HANDOFF.md), [digest](../evaluation/seed-shelf-continuation-v1/ATTENTION.md), [resume](../evaluation/seed-shelf-continuation-v1/RESUME.md).
+3 November 2026, America/Chicago client date. [Handoff](../CURRENT_HANDOFF.md), [digest](../evaluation/seed-shelf-continuation-v2/ATTENTION.md), [resume](../evaluation/seed-shelf-continuation-v2/RESUME.md).
 
-Use seeds.py with the SAME source-access-three-cycle-v1/cycle3/environment, next step 57, paused. Fixed optional shelf/charter/tools, neutral feedback and model, input 6144/output 96. No resets or prompt retuning after each reply. New four-call window includes two actual TRY 2+3 results of 5, a prior charter example; no demonstrated seed development or general growth. Pre-window 53-entry bytes and all old event hashes retained; three new contract tests and nine-primary-row replay pass. Latest verification 0003. Complexity escalation remains conditional, not automatic; old seeds stay available. All jobs finished.
+SAME primary source-access-three-cycle-v1/cycle3/environment; seeds.py runner, next step 61, paused. Shelf/charter/tools/model/feedback unchanged. Latest four replies: footer, exact TRY2+3, footer+TRY text, exact TRY2+3; two real calculations return5. Familiar example/heading pattern, no established seed development/repair. All thirteen primary rows and full prior57-entry prefix verify; snapshot0004. Input max5252/6144, output96, no new boundary/cap. Keep conditions stable and root reviews outside; no reset/branch switch/automatic complexity increase. All jobs finished.

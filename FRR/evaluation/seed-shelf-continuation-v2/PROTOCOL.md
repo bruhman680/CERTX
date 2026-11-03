@@ -1,0 +1,9 @@
+# Unchanged seed-shelf continuation v2
+
+3 November 2026, America/Chicago client date. User returns after usage reset and requests unpause/resume. Continue the SAME primary environment from next step 57 for four new replies maximum, then pause. No new seed, tool, prompt, charter, representation, feedback, model, sampling or score. Keep frozen seed-shelf-v1, free play and prior history intact. No diagnostic prompts/root reviews enter the garden. Preserve non-use, errors, repetition and any departures; no output-dependent stopping or required improvement.
+
+Existing cached canonical SmolLM2-135M-Instruct + LoRA, CPU float32 eager/two threads, .8 temperature/.9 top-p, 6144 input/96 output, sampled working guard 5153960755 bytes. Absolute-step RNG and immutable events/plans continue; no re-init/branch switch/pruning/training/new model/install/download/paid API. Stop only affected environment at its declared input boundary, save plan/checkpoint without truncation or hidden allowance change. Finite budget pause is not an intrinsic plateau.
+
+Before calls, archive current navigation and three derived primary pointers, pin current source/freeze/manifests/shelf/charter and ALL existing event hashes. Afterwards run version-aware replay, compare whole pre-window 57-entry notebook byte prefix and old event hashes, frozen setup, guard readings and model digests. Index all new replies and actual host results; review at most four bounded excerpts. Command/substring counts are not semantic understanding, seed-development or emergence scores. Distinguish proposal, actual action and interpretation. Exact example repetition remains a rival explanation for tool use.
+
+Save complete evidence, current handoff/index and report; publish only append-only records plus intended derived pointers/current navigation, preserving all other prior blobs with lease/readback. No background continuation after final.
