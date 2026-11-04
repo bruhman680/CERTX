@@ -1,0 +1,1 @@
+Initial test hit KeyError on legacy records without environment_version. Test now uses get() as the existing verifier does. Runner/policy unchanged; original freeze and failure log retained. Refrozen before any model calls.

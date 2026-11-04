@@ -1,0 +1,14 @@
+.E..
+======================================================================
+ERROR: test_old_rows_replay_and_new_manifest_distinct (test_transition.Transition.test_old_rows_replay_and_new_manifest_distinct)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/frr/evaluation/fundamental-seeds-100-v1/test_transition.py", line 21, in test_old_rows_replay_and_new_manifest_distinct
+    if x['environment_version']=='archive-view-v1':self.assertEqual(x['prompt'],new.view_render(self.events[:x['step']]))
+       ~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'environment_version'
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.220s
+
+FAILED (errors=1)
