@@ -1,3 +1,11 @@
+# Latest contact: action binding under changed examples
+
+3 November2026, America/Chicago. [Latest report](action-binding-counterbalance-v1/REPORT.md), [digest](action-binding-counterbalance-v1/ATTENTION.md). 32 fixed calls completed and verified. Matching-demo target execution0/16, different-demo target execution0/16, wrong-demo execution0/16, both-example paired success0/16. 13caps; small authored set, no general reasoning claim. Complete raw failures retained.
+
+PRIMARY UNCHANGED, paused100; routine.py/current entry-100 guide below still applies. No diagnostic records fed back, no prompt migration, training or background model job. Next strongest separate contact: minimal task-direct interface with actual worked receipt versus current scaffold, holding model/budget/targets fixed. Free exploration need not pass this diagnostic. Earlier handoff/orientations/shelves remain below; exact previous versions are archived in the new study's before/ directory.
+
+---
+
 # Latest research contact
 
 3 November 2026, America/Chicago. [Action-room report](action-room-capability-checks-v1/REPORT.md), [attention](action-room-capability-checks-v1/ATTENTION.md), [checks](action-room-capability-checks-v1/CHECKS.json). 64 fixed diagnostic/free calls; primary unchanged at100. Shorter current prose does not establish more acting; narrow prompted repair demonstrated, reliable target/evidence binding remains open. No lean adoption or training. Strongest separate next: balanced, demonstration-counterbalanced action-binding diagnostic. All previous shelves remain below; their entry-100 primary guidance is unchanged.

@@ -1,3 +1,11 @@
+# Latest contact: action binding under changed examples
+
+3 November2026, America/Chicago. [Latest report](../evaluation/action-binding-counterbalance-v1/REPORT.md), [digest](../evaluation/action-binding-counterbalance-v1/ATTENTION.md). 32 fixed calls completed and verified. Matching-demo target execution0/16, different-demo target execution0/16, wrong-demo execution0/16, both-example paired success0/16. 13caps; small authored set, no general reasoning claim. Complete raw failures retained.
+
+PRIMARY UNCHANGED, paused100; routine.py/current entry-100 guide below still applies. No diagnostic records fed back, no prompt migration, training or background model job. Next strongest separate contact: minimal task-direct interface with actual worked receipt versus current scaffold, holding model/budget/targets fixed. Free exploration need not pass this diagnostic. Earlier handoff/orientations/shelves remain below; exact previous versions are archived in the new study's before/ directory.
+
+---
+
 # Latest orientation: capability diagnostics complete, primary unchanged
 
 3 November 2026, America/Chicago. [Latest report](../evaluation/action-room-capability-checks-v1/REPORT.md), [digest](../evaluation/action-room-capability-checks-v1/ATTENTION.md). 64/64 calls and verification complete. Lean reduced input size, without established action gain; 0/8 initial target executions, 3/8 explicitly coached repairs, 0/8 evidence pairs, no free tool use. Strict evidence readout distinguishes value mention from contract pass; no general incapacity claim. No primary migration or training. All primary files remain exact at paused100; routine.py/current entry-100 guide apply. Next narrow separate contact: counterbalance example/target binding. Prior orientation follows.
