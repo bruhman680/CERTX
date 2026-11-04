@@ -1,3 +1,9 @@
+# Latest orientation: capability diagnostics complete, primary unchanged
+
+3 November 2026, America/Chicago. [Latest report](../evaluation/action-room-capability-checks-v1/REPORT.md), [digest](../evaluation/action-room-capability-checks-v1/ATTENTION.md). 64/64 calls and verification complete. Lean reduced input size, without established action gain; 0/8 initial target executions, 3/8 explicitly coached repairs, 0/8 evidence pairs, no free tool use. Strict evidence readout distinguishes value mention from contract pass; no general incapacity claim. No primary migration or training. All primary files remain exact at paused100; routine.py/current entry-100 guide apply. Next narrow separate contact: counterbalance example/target binding. Prior orientation follows.
+
+---
+
 # Current orientation:100, checks every5, stable archive view
 
 3 November2026, America/Chicago. [Handoff](../CURRENT_HANDOFF.md), [digest](../evaluation/five-entry-routine-to-100-v1/ATTENTION.md), [resume](../evaluation/five-entry-routine-to-100-v1/RESUME.md).

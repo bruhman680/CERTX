@@ -1,0 +1,1 @@
+Prepared read-only snapshots before any model probes. User clarified that canvas meant room reclaimed from instruction language for the model's actions, not a literal canvas or more supplied material. Renamed the preparatory study before defining/freezing/running probes; primary snapshot bytes unchanged.

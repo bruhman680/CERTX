@@ -1,3 +1,11 @@
+# Latest contact: less prose versus usable action room
+
+3 November 2026, America/Chicago. [Diagnostic report](evaluation/action-room-capability-checks-v1/REPORT.md), [digest](evaluation/action-room-capability-checks-v1/ATTENTION.md). 64 fixed calls complete; all reconstruction/primary/weight checks pass. Shorter prompts reduced input but did not establish more useful action. Initial target executions 0/8; receipt/no-receipt retries 0/8 each; explicit supplied-format repair 3/8 (current format); paired evidence contract 0/8; free tool actions 0/16. Some correct receipt copies failed strict answer-only format. Two seeds, narrow items, 19 caps: no general competence or development claim.
+
+PRIMARY UNCHANGED at100, PAUSE present; routine.py remains current, entry-100 resume guide below still applies. No lean prompt adopted, no diagnostic records fed back, no training/background job. Strongest separate next diagnostic: balanced action-binding with counterbalanced syntax example before expanding seeds or consequence loops. Complete prior handoff archived with this study; retained below for primary continuity.
+
+---
+
 # Current handoff:100entries reached, five-entry routine with explicit archive view
 
 3 November2026, America/Chicago. [Digest](evaluation/five-entry-routine-to-100-v1/ATTENTION.md), [report](evaluation/five-entry-routine-to-100-v1/REPORT.md), [resume](evaluation/five-entry-routine-to-100-v1/RESUME.md).

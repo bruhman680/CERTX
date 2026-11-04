@@ -1,3 +1,9 @@
+# Latest research contact
+
+3 November 2026, America/Chicago. [Action-room report](action-room-capability-checks-v1/REPORT.md), [attention](action-room-capability-checks-v1/ATTENTION.md), [checks](action-room-capability-checks-v1/CHECKS.json). 64 fixed diagnostic/free calls; primary unchanged at100. Shorter current prose does not establish more acting; narrow prompted repair demonstrated, reliable target/evidence binding remains open. No lean adoption or training. Strongest separate next: balanced, demonstration-counterbalanced action-binding diagnostic. All previous shelves remain below; their entry-100 primary guidance is unchanged.
+
+---
+
 # Current research index
 
 3 November 2026 (UTC). Start with [handoff](../CURRENT_HANDOFF.md) and [latest attention digest](five-entry-routine-to-100-v1/ATTENTION.md). Retrieve exact records only for an indexed event or relevant question.
