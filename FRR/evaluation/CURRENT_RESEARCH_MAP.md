@@ -1,14 +1,16 @@
 # Current research index
 
-4 November2026,America/Chicago. [Handoff](../CURRENT_HANDOFF.md).
+4 November 2026, America/Chicago. [Handoff](../CURRENT_HANDOFF.md), [latest attention](fundamental-seeds-100-v1/ATTENTION.md).
 
-|Shelf|Entry|Status|
+| Shelf | Entry | Status |
 |---|---|---|
-|Activecombinedseed/invitationrun|[Checkpoint265](fundamental-seeds-100-v1/CHECKPOINT_265.md),[protocol](fundamental-seeds-100-v1/PROTOCOL.md)|60/100complete,target305,activefundamental_routine.py|
-|Provenance-likeprofile|[Case](fundamental-seeds-100-v1/265_PROFILE_CASE.json)|Generatedname/source/noteclaims,notactualretrieval/credentials|
-|Earliercheckpoint|[225](fundamental-seeds-100-v1/CHECKPOINT_225.md)|Immutableprogressrecord|
-|Transitionproof|[Checks](fundamental-seeds-100-v1/TRANSITION_CHECKS.json)|Allold205inputsreplay;preflightlegacyformatcorrectionretained|
-|Priorunchangedblock|[Report](continuity-155-to-205-v1/REPORT.md)|Preservedhistory|
-|Earliermethods/queues|[Priorindex](fundamental-seeds-100-v1/before/evaluation/CURRENT_RESEARCH_MAP.md)|Preservedhistory|
+| Current fundamental-shelf season | [Report](fundamental-seeds-100-v1/REPORT.md), [resume](fundamental-seeds-100-v1/RESUME.md) |205→305complete;100calls,20checks;paused305;active fundamental_routine.py |
+| Transition and integrity | [Boundary checks](fundamental-seeds-100-v1/TRANSITION_CHECKS.json), [final checks](fundamental-seeds-100-v1/CHECKS.json) | Legacy205inputs preserved/replayed; new policy version; preflight legacy-format correction retained |
+| Numeric context observations | [Range245](fundamental-seeds-100-v1/245_RANGE_ENUMERATION.json), [metadata304](fundamental-seeds-100-v1/304_METADATA_REFERENCE.json) | Accurate numerical matches amid censoring/story text; not an independent grounding test |
+| Generated profile/provenance | [Case](fundamental-seeds-100-v1/265_PROFILE_CASE.json) | Repeated name/source/note claims are generated text,not actual retrieval/identity/credentials |
+| Durable intermediate records | [225](fundamental-seeds-100-v1/CHECKPOINT_225.md), [265](fundamental-seeds-100-v1/CHECKPOINT_265.md) | Historical checkpoints,final target now complete |
+| Previous unchanged run | [Report](continuity-155-to-205-v1/REPORT.md) |155→205preserved; earlier tool-example bursts and framing recurrence |
+| Cap and stop-visibility zoom | [Report](fifty-entry-descriptive-zoom-v1/REPORT.md) | Historical155snapshot; possible fragment carryover; truthful stop marker still untested/unapplied |
+| Earlier methods and queues | [Prior index](fundamental-seeds-100-v1/before/evaluation/CURRENT_RESEARCH_MAP.md), [older catalog](selective-observation-v1/before/evaluation/CURRENT_RESEARCH_MAP.md) | Preserved history |
 
-Same model/tools/charter/output96/.8/.9/recent12/archiveview, no stoplabels or training. Combinedchange cannot isolate seed/userline effects. Fullreportafter305, no automaticgrowthclaim or successgate.
+Current combined condition includes new fundamental material+approved invitation; effects not separated. Tools,charter,model,.8/.9,output96,recent12/archive view unchanged. No stop labels,training or indefinite model job. A later condition change needs explicit versioning and old prompt replay; no automatic growth/awareness/success claim or new gate.

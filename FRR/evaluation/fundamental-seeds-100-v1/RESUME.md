@@ -1,0 +1,5 @@
+# Resume at305
+
+SAME /workspace/frr/evaluation/source-access-three-cycle-v1/cycle3/environment. ACTIVE runner fundamental_routine.py in parent study; /workspace/cache_backend_venv/bin/python. Cursor305,PAUSEpresent,no model job,CURRENT_VERIFY0054passing. Inspect STATE,ENVIRONMENT_FUNDAMENTAL_V1.json,current pointer and linked checks. Then fundamental_routine.py resume; fundamental_routine.py run --steps 5(max5); fundamental_routine.py verify after each window. Compose authorized longer blocks with twenty-entry summaries/targeted inspection. Do not use legacy routine.py,init/reset or fork substitution.
+
+Version fundamental-seed-view-v1 since205,shelf0002+exact approved sentence; old0001/manifests/renderers retained. Same model/adapter,.8/.9,output96/input8096/native8192,tools/charter/latest12direct/fullarchive+max2reader. No stop marker,root summary injection or training. Preserve operational-stop plans rather than crop/retry. Any later change explicit/versioned with all previous prompts retained. No indefinite background run beyond the authorized target.
