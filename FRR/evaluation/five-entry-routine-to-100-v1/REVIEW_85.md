@@ -1,0 +1,3 @@
+# Checkpoint85review
+
+Integrity checks pass; previous checkpoint bytes/hash chain preserved. Five new replies, all cap96, all ordinary host records. Permission/role/seed text and invented record-like fields continue; P1 appears within copied shelf wording. YOUR FRIEND is generated role text, not a spawned agent. No source/history/notes/calculator action executes, and root does not obey invented return-host directions or promote these fields to actual configuration. This is observed text reuse, not demonstrated seed development or autonomous collaboration. Proceed to90with unchanged view and no feedback injection.

@@ -1,0 +1,1 @@
+Read-only tokenizer size comparison produced the expected warning that the legacy full-history sequence has11232tokens, exceeding8192. No model forward pass, truncation or primary plan write occurred. Actual current view is2169tokens. Preview is representation-size evidence, not a matched reasoning-performance comparison.
