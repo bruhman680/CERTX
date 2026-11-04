@@ -1,0 +1,5 @@
+# Resume at105
+
+SAME /workspace/frr/evaluation/source-access-three-cycle-v1/cycle3/environment. Current runner routine.py in parent study; /workspace/cache_backend_venv/bin/python. PAUSE present, no active model job. CURRENT_VERIFY0013covers57primary replies after48-entry origin. Inspect STATE,ENVIRONMENT_VIEW_V1,CURRENT_VERIFY and passing linked checks. Then routine.py resume; routine.py run --steps 5 (at most5); routine.py verify before any next window. Runner auto-pauses after window and requires verified cursor. No init/reset/diagnostic merge or historical runner.
+
+Existing charter,seeds,tools,model/adapter,.8/.9 and latest12direct/fullretainedarchive remain unchanged. Optional historical reader endexclusive/max2. Input8096/output96/native8192; preserve and inspect operational stops rather than crop/retry. Root reviews external, ordinary text/failure/non-use allowed, no automatic curriculum/prompt retuning. Model checks limited to its arithmetic/records/history/notes; external integrity verification separate. User now prioritizes continuing-run observation; minimal-interface diagnostics deferred, not prerequisite.
