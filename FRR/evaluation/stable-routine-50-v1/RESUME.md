@@ -1,0 +1,5 @@
+# Resume at155
+
+SAME primary: /workspace/frr/evaluation/source-access-three-cycle-v1/cycle3/environment. Current runner routine.py in the parent study; /workspace/cache_backend_venv/bin/python. STATE155,PAUSEpresent,no model job,CURRENT_VERIFY0023passing. Inspect linked checks; routine.py resume, routine.py run --steps5(max5), then routine.py verify after each window. Compose authorized larger blocks from verified windows; summarize every10and inspect relevant changes. No init/reset/fork substitution or historical runner.
+
+Same shelf0001,charter,optional tools,model/adapter,.8/.9,recent12direct/fullarchive+bounded reader,input8096/output96/native8192. Preserve operational-stop plans rather than crop/retry. Root reviews remain external; no online learning or automatic complexity promotion. User's fundamental-seed idea was held until the50-entry block finished; no revision yet. Any later shelf/policy change must be explicit/versioned with earlier prompts and material retained. No indefinite background continuation.
