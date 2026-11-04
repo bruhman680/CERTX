@@ -1,7 +1,5 @@
-# Orientation: primary155, wider observation cadence complete
+# Orientation: descriptive zoom complete, primary155unchanged
 
-3 November 2026, America/Chicago. [Handoff](../CURRENT_HANDOFF.md), [report](../evaluation/stable-routine-50-v1/REPORT.md), [resume](../evaluation/stable-routine-50-v1/RESUME.md).
+3 November 2026, America/Chicago. [Zoom report](../evaluation/fifty-entry-descriptive-zoom-v1/REPORT.md), [handoff](../CURRENT_HANDOFF.md), [primary resume](../evaluation/stable-routine-50-v1/RESUME.md).
 
-Completed105→155in the same primary with unchanged conditions, five ten-entry summaries and ten passing five-entry integrity checks. All50outcomes ordinary records; no actual tool use. A literal repeated-line pattern rose then fell(0,2,5,7,0replies per block); other text still repeats. Descriptive posthoc analysis, not improvement or mechanism proof.
-
-Current runner routine.py, cursor155paused, verifier0023covers107commits+48origin. Old immutable files and notebook prefix intact; weights fixed, no background job. Complete raw records retained, with bounded root review and targeted shift inspection. User's fundamental-seed idea was explicitly held through the block; now at a design boundary, no change applied. Continue authorized blocks through verified≤5-entry windows with summaries every10. Separate diagnostics remain optional supporting instruments. No online training.
+No new model turns; all50existing outputs reviewed. Cap-ended YOUR F prefix122preceded repeated fragment123; possible carryover, not causal proof. Explicit stop reason absent from visible history. Final reply variety unchanged despite shorter/different repetitions. Phrase traces and all-row checks preserved; no new skill/self-correction/memory claim. Existing primary and50entryreport exact, paused155,CURRENT_VERIFY0023unchanged. No seed/policy revision. Candidate truthful stop metadata and fundamental seed design remain separate, untested directions; no automatic adoption. Continuing-run observations remain primary, verified≤5-entry windows/summaries each10within authorized blocks.

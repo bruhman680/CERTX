@@ -1,0 +1,7 @@
+# Descriptive zoom of an existing fifty-entry run
+
+3 November2026, America/Chicago. User authorizes closer observations/checks on existing105to155record. No model calls, new garden turns, seed/policy changes or model training. Primary stays paused155. All analyses are posthoc: root already inspected prior packets and now all50complete outputs. No preregistration, independent replication, causal inference or claim of internal reasoning access.
+
+Inspect exact motif recurrence and within-reply line repetition; compare different literal/general descriptive definitions; trace motifs against all earlier recorded replies, actual visible12-entry history and non-history prompt scaffold. Check every50prompt history membership/tokenIDs/decoding/stops/actual host outcome and unchanged source files. Tokenizer-only work is allowed; no forwardpass. Do not rerun routine.py verify because it writes a new pointer/snapshot. Target cap-ended first YOUR F fragment and later replacement forms; verify examples' locations rather than treating a packet's earliest excerpt as first occurrence. Presence/absence in recorded input does not establish causal copying, novelty relative to pretraining, memory retrieval or intentional error correction.
+
+Preserve raw source data and prior reports unchanged. Save script, all-row derived tables and a compact reader report. Update only three navigation files, archiving their exact old versions; publish new study with all other blobs unchanged, branch lease/readback. No external summary fed into primary.

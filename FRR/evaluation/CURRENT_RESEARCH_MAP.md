@@ -1,9 +1,10 @@
 # Current research index
 
-3 November 2026, America/Chicago. [Handoff](../CURRENT_HANDOFF.md), [latest attention](stable-routine-50-v1/ATTENTION.md).
+3 November 2026, America/Chicago. [Handoff](../CURRENT_HANDOFF.md), [latest attention](fifty-entry-descriptive-zoom-v1/ATTENTION.md).
 
 | Shelf | Entry | Status |
 |---|---|---|
+| Descriptive zoom / interruption visibility | [Report](fifty-entry-descriptive-zoom-v1/REPORT.md), [token evidence](fifty-entry-descriptive-zoom-v1/CAP_FRAGMENT.json) | No new turns; possible cap-fragment carryover; primary unchanged155 |
 | Current primary / wider cadence | [Report](stable-routine-50-v1/REPORT.md), [resume](stable-routine-50-v1/RESUME.md) |105→155complete; paused155; ten passing checks, five summaries |
 | Reply-pattern shift | [Counts](stable-routine-50-v1/REPETITION.json), [targeted review](stable-routine-50-v1/SHIFT_REVIEW.json) | Posthoc literal repetition0,2,5,7,0; no mechanism or improvement claim |
 | Fundamental seed direction | [Note](stable-routine-50-v1/SEED_DESIGN_NOTE.md) | User held changes until50finished; now design boundary, no change applied |
@@ -16,3 +17,5 @@
 | Earlier methods and queues | [Prior index](stable-routine-50-v1/before/evaluation/CURRENT_RESEARCH_MAP.md), [older catalog](selective-observation-v1/before/evaluation/CURRENT_RESEARCH_MAP.md) | Preserved history |
 
 Next: consider versioned fundamental-seed design at this clean boundary; no automatic change. Continuing garden observations remain primary. Keep verified≤5-entry windows and ten-entry summaries within authorized blocks. Integrity checks are not correctness gates. No training or background model job; existing binary backup/restore limits unchanged.
+
+Zoom adds a candidate visibility refinement: explicit truthful stop metadata, not applied. Keep it distinct from a seed revision; effects/cause untested. Main primary remains paused155with verifier0023unchanged.
