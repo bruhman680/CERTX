@@ -1,21 +1,25 @@
-# Current handoff: SAME primary paused at65, unchanged seeds, reading-space near bound
+# Current handoff: requested75entries reached, SAME primary paused at75
 
-3 November 2026, America/Chicago client date. [Digest](evaluation/seed-shelf-continuation-v3/ATTENTION.md), [report](evaluation/seed-shelf-continuation-v3/REPORT.md), [resume](evaluation/seed-shelf-continuation-v3/RESUME.md), [next contact](evaluation/seed-shelf-continuation-v3/NEXT_CONTACT.md).
+3 November 2026, America/Chicago client date. [Digest](evaluation/entry-75-continuation-v1/ATTENTION.md), [report](evaluation/entry-75-continuation-v1/REPORT.md), [resume](evaluation/entry-75-continuation-v1/RESUME.md).
 
-User priorities: one continuing consistent environment with optional safe play/small seeds; pause/slowing; errors/non-use retained; root reviews external. No automatic complexity promotion, hidden reset/branch switch, or instruction retuning after each reply. Current window generated61-64 unchanged, next65.
+User requested continuation through75after prior6144limit warning. Ten actual replies committed at65-74, notebook75entries, next75. Target fixed before generation, no outcome-dependent stopping. All records preserved; no training/reset/history cropping/seed/tool/prompt/feedback change. User prioritizes one consistent environment, free optional play/seeds, errors/non-use retained, root audits outside prompt, no hidden retuning.
 
-## Resume THIS primary
+## Resume THIS primary with CURRENT runner
 
-Path /workspace/frr/evaluation/source-access-three-cycle-v1/cycle3/environment. Next step65, PAUSE present, no owned model jobs. Current runner seeds.py in same study, existing venv. Inspect STATE/ENVIRONMENT_SEEDS_V1/latest CURRENT_VERIFY (0005, all17primary outputs); seeds.py resume, bounded seeds.py run --steps N [--delay D], seeds.py verify. No re-init/historical runner/merged diagnostics/root-review injection. Absolute-step RNG and external history persist; temporary cache can restart. Fixed weights, no online learning.
+Path /workspace/frr/evaluation/source-access-three-cycle-v1/cycle3/environment. Paused, no owned model job. CURRENT RUNNER capacity.py in same study, existing venv. Inspect STATE/ENVIRONMENT_CAPACITY_V1/latest CURRENT_VERIFY (0006: all27primary commits), then capacity.py resume, bounded capacity.py run --steps N [--delay D], capacity.py verify. Do NOT use historical seeds.py/play.py/continuous.py/study.py or re-init/branch-switch/merge diagnostics. Full external origin/journal/cursor/global RNG persists; temporary computation/cache may restart. Fixed model weights.
 
-IMPORTANT: read-only preview for step65 is5818/6144input,326tokens headroom. No inference or environment plan was written by preview. Further bounded run may hit actual input boundary: retain exact unexecuted plan/history, no silent prune/reset/allowance extension or blind retry. Operational boundary is not cognitive plateau. A later explicitly versioned history-view/budget investigation is documented as a possible next contact, NOT implemented now. Preserve full external environment/events and actual viewed-input provenance.
+One explicitly announced/tested/versioned operating change at65: input6144->8096within configured8192positions, output96reserved. No positional extrapolation; identical full-history renderer and sampler except guard. Old manifests/code/events retained; per-row verifier enforces original6144for older rows and8096for new capacity rows. Seed shelf0001/charter/source reader/notes/arithmetic/neutral feedback/.8/.9sampling unchanged. Root goal75not fed to model.
 
-## Latest observations
+## Latest outcome
 
-Four replies:61 exact TRY 2 + 3 returns5;62long instruction/seed-shaped text (mentions W1counter and gate underW1labels), output cap96, ordinary host record;63YOU;64 exact TRY 2 + 3 returns5. First literal generated seed-ID reference since shelf introduction, mostly supplied wording/recombination, not established understanding/development. Combining is allowed, so label blending not automatically failure. Prose ReadSETUP/READNOTES strings do not execute. Two known charter-example calculator calls, no demonstrated result interpretation/repair/emergence. No actual note/source reads.
+Ten calls:8ordinary records,2calculator_error at67/68. Errors from TRY 2 + 3 followed by long prose/seed-labelled instructions, invalid complete arithmetic argument, not numerical2+3mistake. Six literal seed-ID replies; W1 appears as a guidance/role prefix, FIRST TRY/instruction text recurs. Selected following69/70remain ordinary text. No successful executed repair, source read or note action this window. Six output caps; no established seed development/understanding/emergence. Combining is permitted; labels are not automatic failure scores.
 
-All four planned calls complete:116tokens, input max5717/6144, one output cap, no input boundary. All17primary rows replay with correct versions/prompt IDs/RNG/decoding/actual dispatch; complete prior61-entry bytes/old hashes/frozen setup unchanged. Current fingerprint/seed shelf0001/free-play charter/tools/feedback/.8/.9sampling/output96 unchanged. Latest verification0005. Keep conditions/small seeds stable; no need to increase complexity because history grows.
+All27primary commits replay; full prior65-entry bytes/old event hashes/frozen files/model digests intact. Three new preflight contracts pass.682tokens,1075.472s generation, max input7420/8096, no input/resource stop. Six selected review examples, three flagged overflow indexed; no extra raw-row review for limited report claims. Latest verifier0006.
+
+## Native reading boundary
+
+Read-only next75input preview7520/8096,576headroom, no inference/primary plan write. May resume within remaining room, but any actual native-boundary plan must stop/preserve rather than silent pruning/reset/extrapolation/blind retry. Native positions8192include96output reserve; further endless-history work needs an explicit versioned memory-view/retrieval design, not claiming unchanged full-history input. None implemented. Keep seeds/conditions stable; no automatic complexity promotion from one long run.
 
 ## Preservation
 
-All jobs finished, no background continuation. Full raw evidence and immutable origin/events/plans/manifests/snapshots retained. Three derived primary pointers/current nav updated intentionally; prior bytes archived in latest study/before/. Other diagnostics/queues remain separate/open. No training/new model/download/install/paid inference; account billing invisible and local binary backup/independent restore limits unchanged. Read digest then exact indexed records rather than all archives.
+All jobs complete, pause marker present. Raw tokens/prompts/replies/actual receipts and all immutable event/plan/manifests/snapshots retained. Prior navigation/derived pointers archived under latest study/before/; only current pointers intentionally updated. Other research queues/diagnostics remain separate/open. Cached localCPUonly, no new model/download/install/paid inference. Account billing invisible; local binary backup/independent restore limitations unchanged.

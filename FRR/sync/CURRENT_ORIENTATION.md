@@ -1,5 +1,5 @@
-# Current orientation: unchanged primary paused at65
+# Current orientation: SAME garden at75
 
-3 November 2026, America/Chicago. [Handoff](../CURRENT_HANDOFF.md), [digest](../evaluation/seed-shelf-continuation-v3/ATTENTION.md), [resume](../evaluation/seed-shelf-continuation-v3/RESUME.md).
+3 November 2026, America/Chicago. [Handoff](../CURRENT_HANDOFF.md), [digest](../evaluation/entry-75-continuation-v1/ATTENTION.md), [resume](../evaluation/entry-75-continuation-v1/RESUME.md).
 
-Same seeds.py environment/source-access-three-cycle-v1/cycle3/environment, next65, paused. Shelf/charter/tools/model/feedback unchanged. Latest4: two example calculations, one capped seed/role-shaped reply mentioning counter/gate, one YOU. Literal seed-wording contact is not established understanding/growth. All17primary outputs verify, full prior61-entry bytes/old hashes intact; snapshot0005. Next input preview5818/6144,326headroom, no model call/plan written; stop/preserve any actual boundary without silent pruning/extension/reset/retry. Future memory-view change must be explicit/versioned; none applied. All jobs finished.
+Target75recorded entries reached; current runner capacity.py, same source-access-three-cycle-v1/cycle3/environment, next75, paused. Explicit input guard6144->8096within native8192/output96; prompts/seeds/tools/model/feedback unchanged. Ten calls:8records/2calculator errors from mixed-prose arguments,6seed-ID references/instruction-role imitation, no executed repair/established development. All27primary commits and pre-window65-entry bytes verify; snapshot0006. Next input read-only7520/8096,576headroom; no silent trim/reset/extrapolation. Root reviews remain external; no background job/training.

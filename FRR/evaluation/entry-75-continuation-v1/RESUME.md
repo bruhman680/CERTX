@@ -1,0 +1,5 @@
+# Same primary at75
+
+Current runner capacity.py in /workspace/frr/evaluation/source-access-three-cycle-v1, existing /workspace/cache_backend_venv/bin/python. SAME cycle3/environment, next step75, PAUSE marker present. Inspect STATE/ENVIRONMENT_CAPACITY_V1/latest CURRENT_VERIFY (0006) first. Use capacity.py resume to arm, capacity.py run --steps N [--delay D] for a finite window, capacity.py verify for a new immutable snapshot.
+
+Do not run historical seeds.py/play.py/continuous.py/study.py versions, re-init, branch-switch, merge diagnostics or insert root reviews. Old origin/events and all environment manifests remain authoritative history. Input allowance8096/output96 stay within native8192; next input preview7520,576headroom, no model call/plan from preview. Stop/preserve any real boundary, no silent prune/reset/extrapolation/blind retry. Further long-lived memory-view work must be explicit/versioned, keeping the full external record and provenance. No background model job or online learning.
