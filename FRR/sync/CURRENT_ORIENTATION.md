@@ -1,5 +1,7 @@
-# Orientation: descriptive zoom complete, primary155unchanged
+# Orientation: primary205paused, unchanged block complete
 
-3 November 2026, America/Chicago. [Zoom report](../evaluation/fifty-entry-descriptive-zoom-v1/REPORT.md), [handoff](../CURRENT_HANDOFF.md), [primary resume](../evaluation/stable-routine-50-v1/RESUME.md).
+3 November 2026, America/Chicago. [Handoff](../CURRENT_HANDOFF.md), [report](../evaluation/continuity-155-to-205-v1/REPORT.md), [resume](../evaluation/continuity-155-to-205-v1/RESUME.md).
 
-No new model turns; all50existing outputs reviewed. Cap-ended YOUR F prefix122preceded repeated fragment123; possible carryover, not causal proof. Explicit stop reason absent from visible history. Final reply variety unchanged despite shorter/different repetitions. Phrase traces and all-row checks preserved; no new skill/self-correction/memory claim. Existing primary and50entryreport exact, paused155,CURRENT_VERIFY0023unchanged. No seed/policy revision. Candidate truthful stop metadata and fundamental seed design remain separate, untested directions; no automatic adoption. Continuing-run observations remain primary, verified≤5-entry windows/summaries each10within authorized blocks.
+Same155→205run,50calls,ten checks pass,summaries each10. Seven actual2+3calls early,43ordinary records; no later operation variation or actual history retrieval. Numeric metadata matches are not a grounding test. Step202error/score wording was generated text, not host feedback. No established monotonic stabilization or mental-state claim.
+
+Cursor205paused,CURRENT_VERIFY0033passes157commits+48origin. All old immutable files/prefix intact, fixed weights,no model job. Same routine.py≤5per window then verify. Fundamental seeds, instruction reduction and stop-status ideas held through the block and still unapplied; now a clean boundary for explicit versioning. Root reviews external; continuing observations primary, diagnostics optional supporting instruments.
