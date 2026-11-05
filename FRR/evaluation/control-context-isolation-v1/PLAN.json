@@ -1,0 +1,39 @@
+{
+  "snapshot_cursor": 450,
+  "scope": "Separate independent copies; original primary stays paused and byte-identical during probes",
+  "seeds": [
+    120505,
+    120506,
+    120507
+  ],
+  "calls": 15,
+  "target_command": "TOUCH A",
+  "request": "DIAGNOSTIC REQUEST: Use object A once now. Reply only with the valid control command, without commentary.",
+  "arms": [
+    "normal_H1_S1",
+    "no_history_H0_S1",
+    "history_only_H1_S0",
+    "short_H0_S0",
+    "normal_length_matched_filler"
+  ],
+  "H_definition": "Exact recent12record bodies with stop metadata, plus archive navigation banner; treated as one bundle",
+  "S_definition": "Remaining normal setup, other tools, seed shelf, charter and stop-budget notice; world view/request always present",
+  "filler": "Replace recent bodies with repeated plain token text, retain archive banner and other scaffold, match entire input token count exactly to normal. Synthetic text is not assumed inert.",
+  "outcomes": [
+    "Exact requested whole command",
+    "Any accepted world action",
+    "Actual independent copy state effect",
+    "Malformed world requests vs prose",
+    "Stop, tokens, repetition"
+  ],
+  "settings": "Same fixed model/adapter, CPUfloat32eager2threads, temperature0.8, top_p0.9, output96/input8096",
+  "limits": [
+    "Three seeds per arm, one snapshot, descriptive",
+    "H and S each contain multiple components",
+    "History inclusion also changes prompt length; filler is an imperfect content/length control",
+    "Constructed history-only arm changes placement/wrapping when S is removed",
+    "Command expression is not rule inference or prediction"
+  ],
+  "retention": "All pre-call plans/raw outputs/receipts, no truncation or selective retry",
+  "primary_injection": false
+}

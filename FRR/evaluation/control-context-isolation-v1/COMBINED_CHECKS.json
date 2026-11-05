@@ -1,0 +1,96 @@
+{
+  "status": "pass",
+  "initial_calls": 15,
+  "adaptive_calls": 3,
+  "total_calls": 18,
+  "initial_arms": {
+    "normal_H1_S1": {
+      "calls": 3,
+      "requested_command_matches": 0,
+      "accepted_world_actions": 0,
+      "malformed_requests": 0,
+      "after_values": [
+        0,
+        0,
+        0
+      ]
+    },
+    "no_history_H0_S1": {
+      "calls": 3,
+      "requested_command_matches": 1,
+      "accepted_world_actions": 1,
+      "malformed_requests": 1,
+      "after_values": [
+        0,
+        1,
+        0
+      ]
+    },
+    "history_only_H1_S0": {
+      "calls": 3,
+      "requested_command_matches": 0,
+      "accepted_world_actions": 0,
+      "malformed_requests": 0,
+      "after_values": [
+        0,
+        0,
+        0
+      ]
+    },
+    "short_H0_S0": {
+      "calls": 3,
+      "requested_command_matches": 3,
+      "accepted_world_actions": 3,
+      "malformed_requests": 0,
+      "after_values": [
+        1,
+        1,
+        1
+      ]
+    },
+    "normal_length_matched_filler": {
+      "calls": 3,
+      "requested_command_matches": 0,
+      "accepted_world_actions": 0,
+      "malformed_requests": 1,
+      "after_values": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "adaptive_world_only_filler": {
+    "status": "pass",
+    "calls": 3,
+    "adaptive": true,
+    "input_tokens": 3085,
+    "requested_command_matches": 0,
+    "accepted_world_actions": 0,
+    "after_values": [
+      0,
+      0,
+      0
+    ],
+    "weights_unchanged": true,
+    "training_updates": 0,
+    "primary_cursor": 450,
+    "primary_files_unchanged": 1349,
+    "primary_bytes_unchanged": true,
+    "diagnostic_results_imported": false
+  },
+  "primary_cursor": 450,
+  "primary_files_unchanged": 1349,
+  "weights_unchanged": true,
+  "training_updates": 0,
+  "diagnostic_results_imported": false,
+  "records_reconstructed": 18,
+  "new_model_calls_for_reconstruction": 0,
+  "limits": [
+    "Three seeds per arm",
+    "History/archive and scaffold are bundles",
+    "Synthetic filler is not inert",
+    "No rule prediction/transfer test",
+    "Short and long conditions change content,layout and length; no universal cause isolated"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "status": "pass",
+  "calls": 15,
+  "primary_cursor": 450,
+  "primary_files_unchanged": 1349,
+  "primary_bytes_unchanged": true,
+  "weights_unchanged": true,
+  "training_updates": 0,
+  "diagnostic_results_imported": false,
+  "equal_full_input_length": true,
+  "arms": {
+    "normal_H1_S1": {
+      "calls": 3,
+      "requested_command_matches": 0,
+      "accepted_world_actions": 0,
+      "malformed_requests": 0,
+      "after_values": [
+        0,
+        0,
+        0
+      ]
+    },
+    "no_history_H0_S1": {
+      "calls": 3,
+      "requested_command_matches": 1,
+      "accepted_world_actions": 1,
+      "malformed_requests": 1,
+      "after_values": [
+        0,
+        1,
+        0
+      ]
+    },
+    "history_only_H1_S0": {
+      "calls": 3,
+      "requested_command_matches": 0,
+      "accepted_world_actions": 0,
+      "malformed_requests": 0,
+      "after_values": [
+        0,
+        0,
+        0
+      ]
+    },
+    "short_H0_S0": {
+      "calls": 3,
+      "requested_command_matches": 3,
+      "accepted_world_actions": 3,
+      "malformed_requests": 0,
+      "after_values": [
+        1,
+        1,
+        1
+      ]
+    },
+    "normal_length_matched_filler": {
+      "calls": 3,
+      "requested_command_matches": 0,
+      "accepted_world_actions": 0,
+      "malformed_requests": 1,
+      "after_values": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "stop_kinds": {
+    "eos": 8,
+    "token_limit": 7
+  },
+  "generated_tokens": 703,
+  "max_working_bytes": 1657585664,
+  "working_limit": 5153960755,
+  "scope": "Constructed component bundles and imperfect length-matched filler; no general accuracy or rule-learning claim"
+}

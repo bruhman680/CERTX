@@ -1,0 +1,30 @@
+{
+  "scope": "Workspace runtime interruption, not a model behavior failure",
+  "last_verified_cursor": 490,
+  "committed_cursor": 492,
+  "committed_after_last_check": [
+    490,
+    491
+  ],
+  "interrupted_plan_step": 492,
+  "interrupted_attempt_observation": "before_generate resource record exists; no committed output/token result survives",
+  "original_plan_sha256": "1bd353d295886388145f0e4afc9203c3f034f6205de4bfff08af4244a60b6dc9",
+  "old_resource_sha256": "46bfd6b13cfdc55de8bf4d9f309357c21b2099b8778143e41926afb7f8a3828e",
+  "lock_holders": [
+    {
+      "path": "/workspace/frr/evaluation/source-access-three-cycle-v1/cycle3/environment/RUN.lock",
+      "pid": 4595,
+      "state": "Z",
+      "live": false
+    },
+    {
+      "path": "/workspace/frr/evaluation/discovery-450-to-500-v1/BLOCK.lock",
+      "pid": 4354,
+      "state": "Z",
+      "live": false
+    }
+  ],
+  "post_session_in_memory_weight_digest": "unavailable after external process termination",
+  "no_silent_retry": true,
+  "recovery": "Keep exact original plan+seed; record a recovery attempt separately, then finish unchanged conditions"
+}
