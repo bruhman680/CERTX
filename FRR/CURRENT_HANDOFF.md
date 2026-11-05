@@ -1,3 +1,11 @@
+# Latest read-only pre-resume review
+
+5 November2026,America/Chicago. [Report](evaluation/pre-resume-overlap-review-v1/REPORT.md), [attention](evaluation/pre-resume-overlap-review-v1/ATTENTION.md). Workspace restarted successfully; primary still paused305,verifier0054unchanged,no lock/model job.1097checked files match published checkpoint; base/adapterpins and policyfreeze pass. All100new-version prompt/token/dispatch reconstructions pass. No model turns or primary writes.
+
+Descriptive lexical overlap:44/100normalized full replies occur in input;76.5%word coverage for78eligible≥5word replies,22short separate. Not a reasoning/novelty score. Reuse may be useful; nonoverlap may be unverified. Candidate truthful interruption metadata remains untested/unapplied; no further large side test required and no new gate. Seed material/sentence unchanged. Existing runner/resume guide below remains current.
+
+---
+
 # Current handoff: primary305, fundamental-shelf block complete
 
 4 November 2026, America/Chicago. [Latest report](evaluation/fundamental-seeds-100-v1/REPORT.md), [attention](evaluation/fundamental-seeds-100-v1/ATTENTION.md), [resume](evaluation/fundamental-seeds-100-v1/RESUME.md).
