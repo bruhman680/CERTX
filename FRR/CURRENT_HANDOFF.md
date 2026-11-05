@@ -1,4 +1,14 @@
-# Current handoff: primary still paused at 500; diagnostic batch complete
+# Current handoff: persistent-world research complete; primary paused at 500
+
+5 November 2026. [World-design scout](evaluation/persistent-world-scout-v1/REPORT.md), [text worlds](evaluation/persistent-world-scout-v1/TEXT_WORLD_SCOUT.md), [resources](evaluation/persistent-world-scout-v1/RESOURCE_SCOUT.md), [cross-review](evaluation/persistent-world-scout-v1/PEER_REVIEW.md). Three authorized scouts plus root lateral reading; no new model runs, installs or primary mutations.
+
+Strongest proposed direction: a small persistent object workshop with inspectable mechanics, effective construction/tending actions, explicit frozen-on-pause clock, snapshots/action replay and optional seeds. First specify and host-test it beside the current world; then a short isolated affordance pilot before any versioned migration. No replacement was built or activated. Current fixed-model semantic/control limits remain unresolved. TextWorldExpress is a lightweight comparative baseline, ScienceWorld supplies richer process patterns, Crafter construction rules, Voyager tested skill memory. DiscoveryWorld text input still entails stock rendering overhead. HF cards supply optional evaluation data, not executable worlds.
+
+Primary remains original discovery-play-patch-v1, entry 500, verifier 0096, number 0, PAUSE present. All 1,504 non-bytecode files unchanged during recorded comparison. Original adapter remains active. [Preservation](evaluation/persistent-world-scout-v1/PRIMARY_PRESERVATION.json). The prior recovery unknown remains unknown. Research and prototype proposals are not permission to silently replace or reset this season.
+
+## Prior diagnostic boundary retained
+
+# Diagnostic batch at the same primary boundary
 
 5 November 2026. [Latest report](evaluation/padding-and-prediction-v1/REPORT.md), [combined checks](evaluation/padding-and-prediction-v1/COMBINED_CHECKS.json), [primary preservation](evaluation/padding-and-prediction-v1/PRIMARY_PRESERVATION.json).
 

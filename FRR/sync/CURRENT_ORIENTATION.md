@@ -1,3 +1,7 @@
+# Orientation: persistent-world scout complete, no activation
+
+5 November 2026. [Report](../evaluation/persistent-world-scout-v1/REPORT.md), [handoff](../CURRENT_HANDOFF.md). Three scouts inspected papers, GitHub and actual HF cards; no new inference or installation. Recommend a compact persistent workshop with real composable actions and auditable effects, host tests first, then isolated interface pilot. Primary stays at 500, original version/adapter, verifier 0096, PAUSE present; no new world built. Learning/motivation remain empirical questions. Earlier diagnostic evidence and queues follow unchanged.
+
 # Orientation: probes complete; original primary remains at 500
 
 5 November 2026. [Handoff](../CURRENT_HANDOFF.md), [report](../evaluation/padding-and-prediction-v1/REPORT.md), [checks](../evaluation/padding-and-prediction-v1/COMBINED_CHECKS.json).

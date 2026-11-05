@@ -4,6 +4,7 @@
 
 | Shelf | Entry | Interpretation |
 |---|---|---|
+| Latest research/design contact | [World scout](persistent-world-scout-v1/REPORT.md), [text mechanics](persistent-world-scout-v1/TEXT_WORLD_SCOUT.md), [open-ended methods](persistent-world-scout-v1/OPEN_ENDED_SCOUT.md), [resources](persistent-world-scout-v1/RESOURCE_SCOUT.md), [review](persistent-world-scout-v1/PEER_REVIEW.md) | Research only; compact persistent workshop proposed; no model runs or new activation; primary stays at 500 |
 | Latest isolated diagnostic batch | [Report](padding-and-prediction-v1/REPORT.md), [checks](padding-and-prediction-v1/COMBINED_CHECKS.json), [preservation](padding-and-prediction-v1/PRIMARY_PRESERVATION.json) | 76 calls on copies; primary unchanged at 500; padding effects, constant-8 predictions, format/content and adapter-reference distinctions |
 | Latest completed primary 450→500 | [Report](discovery-450-to-500-v1/REPORT.md), [checks](discovery-450-to-500-v1/CHECKS.json), [resume](discovery-450-to-500-v1/RESUME.md) | Same primary paused at 500; ten checks; active verifier in handoff |
 | Component/length isolation | [Report](control-context-isolation-v1/REPORT.md), [checks](control-context-isolation-v1/COMBINED_CHECKS.json), [noticings](control-context-isolation-v1/OPEN_NOTICINGS.md) | 18 isolated probes at 450, no primary intervention; no unique cause or rule-learning result |
