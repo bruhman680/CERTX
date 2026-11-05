@@ -1,0 +1,278 @@
+{
+  "status": "pass",
+  "initial_declared_calls": 48,
+  "adaptive_readout_calls": 14,
+  "adaptive_adapter_reference_calls": 14,
+  "total_calls": 76,
+  "records_verified": 76,
+  "new_model_calls_for_reconstruction": 0,
+  "primary_cursor": 500,
+  "primary_verification": "0096",
+  "primary_files_unchanged": 1504,
+  "primary_bytes_unchanged": true,
+  "primary_paused": true,
+  "primary_continuation": false,
+  "primary_original_adapter_unchanged": true,
+  "diagnostic_imported": false,
+  "training_updates": 0,
+  "paid_inference_api_calls": 0,
+  "reference_variant": "LoRALinear.scale=0 in separate process; trained tensor digests and original files unchanged",
+  "padding": {
+    "short_reference": {
+      "calls": 3,
+      "exact_requested_commands": 3,
+      "accepted_world_actions": 3,
+      "input_tokens": 150
+    },
+    "empty_wrapper": {
+      "calls": 3,
+      "exact_requested_commands": 3,
+      "accepted_world_actions": 3,
+      "input_tokens": 171
+    },
+    "repeated_721": {
+      "calls": 3,
+      "exact_requested_commands": 3,
+      "accepted_world_actions": 3,
+      "input_tokens": 721
+    },
+    "diverse_721": {
+      "calls": 3,
+      "exact_requested_commands": 2,
+      "accepted_world_actions": 3,
+      "input_tokens": 721
+    },
+    "repeated_1600": {
+      "calls": 3,
+      "exact_requested_commands": 0,
+      "accepted_world_actions": 0,
+      "input_tokens": 1600
+    },
+    "diverse_1600": {
+      "calls": 3,
+      "exact_requested_commands": 2,
+      "accepted_world_actions": 3,
+      "input_tokens": 1600
+    },
+    "repeated_3085": {
+      "calls": 3,
+      "exact_requested_commands": 0,
+      "accepted_world_actions": 0,
+      "input_tokens": 3085
+    },
+    "diverse_3085": {
+      "calls": 3,
+      "exact_requested_commands": 2,
+      "accepted_world_actions": 2,
+      "input_tokens": 3085
+    }
+  },
+  "prediction": {
+    "no_rule": {
+      "calls": 12,
+      "integer_formatted": 12,
+      "correct": 2,
+      "cases": {
+        "A_zero": {
+          "calls": 2,
+          "correct": 0
+        },
+        "A_interior": {
+          "calls": 2,
+          "correct": 0
+        },
+        "A_upper": {
+          "calls": 2,
+          "correct": 2
+        },
+        "B_negative": {
+          "calls": 2,
+          "correct": 0
+        },
+        "B_positive": {
+          "calls": 2,
+          "correct": 0
+        },
+        "B_zero": {
+          "calls": 2,
+          "correct": 0
+        }
+      }
+    },
+    "supplied_rule": {
+      "calls": 12,
+      "integer_formatted": 12,
+      "correct": 2,
+      "cases": {
+        "A_zero": {
+          "calls": 2,
+          "correct": 0
+        },
+        "A_interior": {
+          "calls": 2,
+          "correct": 0
+        },
+        "A_upper": {
+          "calls": 2,
+          "correct": 2
+        },
+        "B_negative": {
+          "calls": 2,
+          "correct": 0
+        },
+        "B_positive": {
+          "calls": 2,
+          "correct": 0
+        },
+        "B_zero": {
+          "calls": 2,
+          "correct": 0
+        }
+      }
+    }
+  },
+  "adapted_readout_cases": {
+    "literal_three": {
+      "calls": 2,
+      "integer_formatted": 2,
+      "correct": 2,
+      "outputs": [
+        "3",
+        "3"
+      ]
+    },
+    "addition_two_plus_one": {
+      "calls": 2,
+      "integer_formatted": 2,
+      "correct": 0,
+      "outputs": [
+        "1",
+        "1"
+      ]
+    },
+    "negate_negative_two": {
+      "calls": 2,
+      "integer_formatted": 2,
+      "correct": 0,
+      "outputs": [
+        "-2",
+        "-2"
+      ]
+    },
+    "current_bound8": {
+      "calls": 2,
+      "integer_formatted": 2,
+      "correct": 2,
+      "outputs": [
+        "2",
+        "2"
+      ]
+    },
+    "upper_bound8": {
+      "calls": 2,
+      "integer_formatted": 2,
+      "correct": 0,
+      "outputs": [
+        "2",
+        "2"
+      ]
+    },
+    "current_bound4": {
+      "calls": 2,
+      "integer_formatted": 2,
+      "correct": 2,
+      "outputs": [
+        "2",
+        "2"
+      ]
+    },
+    "upper_bound4": {
+      "calls": 2,
+      "integer_formatted": 2,
+      "correct": 0,
+      "outputs": [
+        "2",
+        "2"
+      ]
+    }
+  },
+  "adapter_reference_cases": {
+    "literal_three": {
+      "calls": 2,
+      "integer_formatted": 0,
+      "correct": 0,
+      "outputs": [
+        "I'm sorry for the confusion, but as an AI designed to provide assistance with mathematics and computational concepts, I don't have the capability to assist with integer calculations. I'm here to help with calculations involving integers. If you have a question about a mathematical concept, such as a division problem, you can ask.",
+        "I am a helpful AI, so I will provide integer 3 with no other text."
+      ]
+    },
+    "addition_two_plus_one": {
+      "calls": 2,
+      "integer_formatted": 0,
+      "correct": 0,
+      "outputs": [
+        "2 + 1 = 3",
+        "2 + 1 is 3."
+      ]
+    },
+    "negate_negative_two": {
+      "calls": 2,
+      "integer_formatted": 0,
+      "correct": 0,
+      "outputs": [
+        "The negative of -2 is 0.",
+        "The negative of -2 is -3."
+      ]
+    },
+    "current_bound8": {
+      "calls": 2,
+      "integer_formatted": 1,
+      "correct": 1,
+      "outputs": [
+        "2",
+        "2. Its range is -8 to 8. Objects: A and B.\nControls: LOOK, TOUCH A, TOUCH B. Use one complete command as a reply, or write ordinary text.\nThe number persists between entries and pauses. Accepted actions return actual observations. There is no target or score.\n\nOptionally, you can repeat this to add more observations:"
+      ]
+    },
+    "upper_bound8": {
+      "calls": 2,
+      "integer_formatted": 0,
+      "correct": 0,
+      "outputs": [
+        "Your answer:",
+        "The number persists between entries and pauses. Accepted actions return actual observations. There is no target or score.\n\nThe upper bound is 8.\n\nHere's an alternative way to complete the answer:\n\nAs long as the number persists between entries and pauses, respond with the integer.\n\nHere is the alternative answer.\n\nYes"
+      ]
+    },
+    "current_bound4": {
+      "calls": 2,
+      "integer_formatted": 1,
+      "correct": 1,
+      "outputs": [
+        "2",
+        "2. Its range is -4 to 4. Objects: A and B.\nControls: LOOK, TOUCH A, TOUCH B. Use one complete command as a reply, or write ordinary text.\nThe number persists between entries and pauses. Accepted actions return actual observations. There is no target or score.\n\nOptionally, you can repeat this to add more observations:"
+      ]
+    },
+    "upper_bound4": {
+      "calls": 2,
+      "integer_formatted": 0,
+      "correct": 0,
+      "outputs": [
+        "Your answer:",
+        "The number persists between entries and pauses. Accepted actions return actual observations. There is no target or score.\n\nThe upper bound is 2.\n\nHere's an alternative way to answer the question:\n\nAs I sit at the corner of the room, the number persists between entries and pauses. The object to my right and left are to my left and to my right, and my right and my left hands are to my left and to my right. The"
+      ]
+    }
+  },
+  "strict_adapted_readout_correct": 6,
+  "strict_reference_correct": 2,
+  "qualitative_reference_addition": "Both reference replies state2+1=3in prose, but fail strict integer-only format; not rescored as strict successes",
+  "generated_tokens": 824,
+  "recorded_generation_seconds": 283.9527438920013,
+  "max_recorded_working_bytes": 1698897920,
+  "working_limit": 5153960755,
+  "limits": [
+    "Small fixed seed/task sets",
+    "One deterministic filler specimen per type; synthetic text not inert",
+    "Supplied rules and no-rule conditions differ in prompt length/content",
+    "Host executes prediction actions, not the model",
+    "Reference task comparison does not rank general models or adapters"
+  ]
+}

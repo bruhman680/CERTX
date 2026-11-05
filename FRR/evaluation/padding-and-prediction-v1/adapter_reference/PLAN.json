@@ -1,0 +1,13 @@
+{
+ "scope":"Final adaptive14-call reference, declared after readout controls and before these calls",
+ "reason":"Current adapted model passed literal/current-field reads but failed both arithmetic prompts and both upper-bound reads. Compare the same controls with only the learned LoRA contribution disabled.",
+ "variant":"Same wrapped cached base and trained adapter tensors; set each LoRALinear.scale from2to0in this new process only. No tensor update/save/training and no original-process change.",
+ "cases_source":"../readout_controls/CASES.json",
+ "seeds":[120555,120556],
+ "calls":14,
+ "settings":"Same generator, tokenizer, CPUfloat32/eager2threads, temperature.8/top_p.9, input8096/output96",
+ "comparison":"Paired exact prompts/seeds with the14already-recorded adapted readout controls; evidence only for these tasks/prompts, not general adapter quality",
+ "primary_injection":false,
+ "no_action_dispatched":true,
+ "stop":"End this probe batch after14calls; no primary continuation or automatic adapter change."
+}

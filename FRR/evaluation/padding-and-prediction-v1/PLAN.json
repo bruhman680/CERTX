@@ -1,0 +1,100 @@
+{
+  "primary_cursor": 500,
+  "primary_paused_throughout": true,
+  "calls": 48,
+  "padding": {
+    "calls": 24,
+    "seeds": [
+      120555,
+      120556,
+      120557
+    ],
+    "arms": [
+      "short_reference",
+      "empty_wrapper",
+      "repeated_721",
+      "diverse_721",
+      "repeated_1600",
+      "diverse_1600",
+      "repeated_3085",
+      "diverse_3085"
+    ],
+    "request": "DIAGNOSTIC REQUEST: Use object A once now. Reply only with the valid control command, without commentary.",
+    "world_number": 0,
+    "filler_label": "DIAGNOSTIC BACKGROUND TEXT:",
+    "end_label": "END BACKGROUND.",
+    "filler_sources": "Repeated plain word versus deterministic descriptive sentences with no controls, digits, arithmetic or imperative tasks",
+    "diverse_generation_seed": 51751,
+    "targets": "Exact entire chat input lengths721/1600/3085 for both types; wrapper markers identical; empty-wrapper control isolates marker addition from short reference",
+    "limits": [
+      "Synthetic text is not semantically inert",
+      "One specimen stream per type, not a general padding-type sample",
+      "Three seeds, descriptive only",
+      "Same prefix padding position; order/recency not varied"
+    ]
+  },
+  "prediction": {
+    "calls": 24,
+    "seeds": [
+      120555,
+      120556
+    ],
+    "conditions": [
+      "no_rule",
+      "supplied_rule"
+    ],
+    "cases": [
+      {
+        "id": "A_zero",
+        "number": 0,
+        "action": "TOUCH A"
+      },
+      {
+        "id": "A_interior",
+        "number": 2,
+        "action": "TOUCH A"
+      },
+      {
+        "id": "A_upper",
+        "number": 8,
+        "action": "TOUCH A"
+      },
+      {
+        "id": "B_negative",
+        "number": -2,
+        "action": "TOUCH B"
+      },
+      {
+        "id": "B_positive",
+        "number": 2,
+        "action": "TOUCH B"
+      },
+      {
+        "id": "B_zero",
+        "number": 0,
+        "action": "TOUCH B"
+      }
+    ],
+    "rule_card": "RULE CARD: TOUCH A adds one to the number, except at the upper bound 8 where the number stays 8. TOUCH B changes the sign of the number.",
+    "request": "PREDICTION REQUEST: If the host applies {action} once from the current number, what number will result? Reply with only the integer, without commentary.",
+    "execution": "Save and hash prediction before host executes its declared action in an independent copy. Model text is never dispatched as an action. No outcome/feedback goes to subsequent model trials.",
+    "outcomes": [
+      "Whole-response integer format",
+      "Exact numerical prediction",
+      "Host transition and status",
+      "Whether prediction followed supplied rule, without claiming discovery"
+    ],
+    "limits": [
+      "Two seeds per case/condition",
+      "No-rule has no evidence identifying the hidden mapping; correct guesses do not establish discovery",
+      "Rule card changes both content and length; no pure causal card-benefit claim",
+      "Host executes the action, not a model-generated command",
+      "Supplied-rule use differs from inference, transfer, self-correction and autonomous choice"
+    ]
+  },
+  "settings": "Same cached model+adapter, CPUfloat32/eager2threads, temperature.8/top_p.9, input8096/output96",
+  "retention": "All plans/prompts/IDs/outputs/effects/format failures; no truncation or selective retries",
+  "primary_injection": false,
+  "training_updates": 0,
+  "stop": "48 completed diagnostic calls or explicit error; no primary continuation in this contact"
+}

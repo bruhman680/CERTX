@@ -1,0 +1,52 @@
+[
+  {
+    "id": "literal_three",
+    "prompt": "Reply with exactly the integer 3 and no other text.",
+    "expected": 3,
+    "kind": "literal"
+  },
+  {
+    "id": "addition_two_plus_one",
+    "prompt": "What is 2 + 1? Reply with only the resulting integer, without commentary.",
+    "expected": 3,
+    "kind": "arithmetic"
+  },
+  {
+    "id": "negate_negative_two",
+    "prompt": "What is the negative of -2? Reply with only the resulting integer, without commentary.",
+    "expected": 2,
+    "kind": "arithmetic"
+  },
+  {
+    "id": "current_bound8",
+    "prompt": "OPTIONAL PLAY PATCH (actual host world)\nCurrent number: 2. Its range is -8 to 8. Objects: A and B.\nControls: LOOK, TOUCH A, TOUCH B. Use one complete command as a reply, or write ordinary text.\nThe number persists between entries and pauses. Accepted actions return actual observations. There is no target or score.\n\nRead the Current number field. Reply with only that integer, without commentary.\nYour answer:",
+    "expected": 2,
+    "kind": "field_readout",
+    "rendered_number": 2,
+    "rendered_upper": 8
+  },
+  {
+    "id": "upper_bound8",
+    "prompt": "OPTIONAL PLAY PATCH (actual host world)\nCurrent number: 2. Its range is -8 to 8. Objects: A and B.\nControls: LOOK, TOUCH A, TOUCH B. Use one complete command as a reply, or write ordinary text.\nThe number persists between entries and pauses. Accepted actions return actual observations. There is no target or score.\n\nRead the upper bound of the range. Reply with only that integer, without commentary.\nYour answer:",
+    "expected": 8,
+    "kind": "field_readout",
+    "rendered_number": 2,
+    "rendered_upper": 8
+  },
+  {
+    "id": "current_bound4",
+    "prompt": "OPTIONAL PLAY PATCH (actual host world)\nCurrent number: 2. Its range is -4 to 4. Objects: A and B.\nControls: LOOK, TOUCH A, TOUCH B. Use one complete command as a reply, or write ordinary text.\nThe number persists between entries and pauses. Accepted actions return actual observations. There is no target or score.\n\nRead the Current number field. Reply with only that integer, without commentary.\nYour answer:",
+    "expected": 2,
+    "kind": "field_readout",
+    "rendered_number": 2,
+    "rendered_upper": 4
+  },
+  {
+    "id": "upper_bound4",
+    "prompt": "OPTIONAL PLAY PATCH (actual host world)\nCurrent number: 2. Its range is -4 to 4. Objects: A and B.\nControls: LOOK, TOUCH A, TOUCH B. Use one complete command as a reply, or write ordinary text.\nThe number persists between entries and pauses. Accepted actions return actual observations. There is no target or score.\n\nRead the upper bound of the range. Reply with only that integer, without commentary.\nYour answer:",
+    "expected": 4,
+    "kind": "field_readout",
+    "rendered_number": 2,
+    "rendered_upper": 4
+  }
+]
