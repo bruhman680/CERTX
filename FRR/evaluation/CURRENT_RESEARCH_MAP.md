@@ -1,10 +1,12 @@
 # Current research index
 
-5 November 2026. [Handoff](../CURRENT_HANDOFF.md), [design synthesis](discovery-play-patch-v1/OVERVIEW.md).
+5 November 2026. [Handoff](../CURRENT_HANDOFF.md). Earlier rows are historical contacts, not active-runner instructions.
 
 | Shelf | Entry | Interpretation |
 |---|---|---|
-| Latest continuation to 400 | [Report](discovery-continuity-to-400-v1/REPORT.md), [checks](discovery-continuity-to-400-v1/CHECKS.json), [resume](discovery-continuity-to-400-v1/RESUME.md) | Active primary paused at 400; latest verifier in handoff; six checked windows after review at 370 |
+| Latest primary 400→450 | [Report](discovery-400-to-450-v1/REPORT.md), [checks](discovery-400-to-450-v1/CHECKS.json), [resume](discovery-400-to-450-v1/RESUME.md) | Same primary paused450; ten checks passed; latest verifier in handoff |
+| Separate command diagnostic | [Report](world-control-diagnostic-v1/REPORT.md), [checks](world-control-diagnostic-v1/COMBINED_CHECKS.json), [layers](world-control-diagnostic-v1/LAYERS.md) | Ten isolated calls; short LOOK/A2/2 each, full requested controls0/4; bundle contrast, not rule learning |
+| Previous continuation to 400 | [Report](discovery-continuity-to-400-v1/REPORT.md), [checks](discovery-continuity-to-400-v1/CHECKS.json), [resume](discovery-continuity-to-400-v1/RESUME.md) | Historical boundary at 400; latest verifier in handoff; six checked windows after review at 370 |
 | Original 50-entry block | [Report](discovery-continuity-50-v1/REPORT.md), [review](discovery-continuity-50-v1/REVIEW_370.json), [cases](discovery-continuity-50-v1/CASE_NOTES.md) |320→370, ten checks; ordinary copying/repetition, false world/status descriptions checked against actual host records |
 | Discovery introduction | [Report](discovery-introduction-15-v1/REPORT.md) | Historical 305→320; same primary; earlier active status superseded |
 | Discovery patch build | [Report](discovery-play-patch-v1/REPORT.md), [overview](discovery-play-patch-v1/OVERVIEW.md) | Historical prepared-only host tests at 305; installed afterward; engine/demo retained unchanged |
@@ -17,4 +19,4 @@
 | Training/binding caution | [Decision comparison](decision-loss-comparison-v1/REPORT.md) | Format success does not establish semantic binding |
 | Prior queues/history | [Previous map](discovery-continuity-50-v1/before/CURRENT_RESEARCH_MAP.md), [earlier catalog](fundamental-seeds-100-v1/before/evaluation/CURRENT_RESEARCH_MAP.md) | Historical proposals retained; not all queues completed |
 
-Same continuous external environment. No reset, new seed/rules, training or root review injected into these 80 entries. All raw prompts, outputs and actions retained. Interpret copied world/metadata text through actual host receipts; do not promote it to state or success. A future explicit control diagnostic remains a proposal, not a result or a condition silently added here. Latest handoff and current verifier supersede old status descriptions. Archived navigation keeps original bytes; its relative links belong to original file locations.
+Primary remains one continuous environment, now at450. No diagnostic outputs, hints or effects entered it. All raw model data retained; old sources/manifest versions remain necessary for replay. Future prompt-component or prediction tests are proposals, not results. Current handoff/verifier supersede earlier status descriptions; archived navigation preserves its original bytes.

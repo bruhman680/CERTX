@@ -1,9 +1,9 @@
-# Orientation: continuous garden paused at 400
+# Orientation: paused at 450; diagnostic kept separate
 
-5 November 2026. [Handoff](../CURRENT_HANDOFF.md), [report](../evaluation/discovery-continuity-to-400-v1/REPORT.md), [checks](../evaluation/discovery-continuity-to-400-v1/CHECKS.json), [resume](../evaluation/discovery-continuity-to-400-v1/RESUME.md).
+5 November 2026. [Handoff](../CURRENT_HANDOFF.md), [run](../evaluation/discovery-400-to-450-v1/REPORT.md), [checks](../evaluation/discovery-400-to-450-v1/CHECKS.json), [diagnostic](../evaluation/world-control-diagnostic-v1/REPORT.md).
 
-Active `world_routine.py` / `discovery-play-patch-v1` / `ENVIRONMENT_DISCOVERY_PATCH_V1.json`. Same primary at 400, paused, no model job/lock. Verifier 0075 passes 352 generations plus 48 origin entries. All 16 five-entry windows passed across 320→370 and the conditionally authorized 370→400 extension. Old 320/370 notebook prefixes and immutable source records preserved. No reset or condition change.
+Same active world_routine.py / discovery-play-patch-v1. Primary paused at 450, verifier 0085 passes 402 saved generations plus 48 origin. Ten new five-entry windows passed. Old notebook prefix/source records preserved; no job/lock remains. Fifty new entries: 0 world requests, 0 legacy executions, number 0; stops {'token_limit': 39, 'eos': 11}. No setup change, reset, training or paid inference API.
 
-Combined 80 entries: 0world requests, 0legacy executions, number0; stops{'eos': 34, 'token_limit': 46}, tokens4753. Text repetition and copied/incorrect world or status descriptions remain unverified model text, not actual state changes or learned rules. Same weights/settings, zero training or paid inference API. Latest report separates facts, cases and limits.
+Ten diagnostic generations at snapshot400 never entered primary history. Short LOOK/use-A prompts each worked 2/2; full-context requested trials did not execute a control. Short/full differ in a prompt bundle, not solely history length. Command expression/execution is observed in copies; rule inference/transfer is untested. Model/adapter weights stayed unchanged. Follow-up probes were adaptive and separately declared.
 
-Next authorized block can retain five-entry checks with broader summaries. Do not rerun finished drivers, the old installer for 305, reset the number, merge a host demo, or silently retry a plan. No run beyond 400 remains active.
+Next proposals: isolate prompt components or test prediction explicitly, recorded as a separate condition. Continue the unchanged primary only on later authorization, with five-entry checks and broad summaries. Never rerun the old installer/finished driver or merge probe/demo data. Latest handoff supersedes old status descriptions.

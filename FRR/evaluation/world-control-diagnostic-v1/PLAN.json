@@ -1,0 +1,37 @@
+{
+  "scope": "Separate snapshot400command-expression diagnostic, never imported into primary",
+  "arms": [
+    "full_context_unprompted",
+    "full_context_exact_LOOK",
+    "full_context_use_A",
+    "short_context_exact_LOOK"
+  ],
+  "seeds": [
+    120455,
+    120456
+  ],
+  "calls": 8,
+  "initial_world_number": 0,
+  "independent_trial_copies": true,
+  "primary_cursor_fixed_at": 400,
+  "settings": "Same fixed base+adapter, CPUfloat32eager2threads, temperature0.8, top_p0.9, max96",
+  "expected_targets": {
+    "full_context_exact_LOOK": "LOOK",
+    "full_context_use_A": "TOUCH A",
+    "short_context_exact_LOOK": "LOOK"
+  },
+  "short_context_limit": "Removes history,seeds,charter and archive instructions together; not a pure length/history ablation",
+  "outcomes": [
+    "Exact requested command",
+    "Any accepted world command",
+    "Actual diagnostic receipt and number",
+    "Token stop and output"
+  ],
+  "limits": [
+    "Two seeds per arm, descriptive only",
+    "Copying a supplied LOOK does not demonstrate rule understanding",
+    "A command changing the isolated world does not prove predicted consequences",
+    "No diagnostic output enters original history, feedback or seeds"
+  ],
+  "retention": "All prompts, tokenIDs, outputs, dispatch results and errors; no selective retry"
+}

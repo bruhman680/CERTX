@@ -1,0 +1,38 @@
+{
+  "status": "pass",
+  "calls": 8,
+  "primary_cursor": 400,
+  "primary_files_unchanged": 1199,
+  "primary_bytes_unchanged": true,
+  "diagnostic_results_imported": false,
+  "training_updates": 0,
+  "weights_unchanged": true,
+  "arms": {
+    "full_context_unprompted": {
+      "calls": 2,
+      "accepted_world_actions": 0,
+      "requested_command_matches": 0
+    },
+    "full_context_exact_LOOK": {
+      "calls": 2,
+      "accepted_world_actions": 0,
+      "requested_command_matches": 0
+    },
+    "full_context_use_A": {
+      "calls": 2,
+      "accepted_world_actions": 0,
+      "requested_command_matches": 0
+    },
+    "short_context_exact_LOOK": {
+      "calls": 2,
+      "accepted_world_actions": 2,
+      "requested_command_matches": 2
+    }
+  },
+  "stop_kinds": {
+    "token_limit": 3,
+    "eos": 5
+  },
+  "generated_tokens": 338,
+  "scope": "Eight bounded diagnostic generations, two seeds per arm; not general capability or rule understanding"
+}
