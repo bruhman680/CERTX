@@ -1,7 +1,9 @@
-# Orientation: separate discovery patch built, primary paused at305
+# Orientation: introduction complete, primary paused at 320
 
-5 November 2026. [Handoff](../CURRENT_HANDOFF.md), [report](../evaluation/discovery-play-patch-v1/REPORT.md), [overview](../evaluation/discovery-play-patch-v1/OVERVIEW.md).
+5 November 2026. [Handoff](../CURRENT_HANDOFF.md), [report](../evaluation/discovery-introduction-15-v1/REPORT.md), [checks](../evaluation/discovery-introduction-15-v1/CHECKS.json), [resume](../evaluation/discovery-introduction-15-v1/RESUME.md).
 
-ACTIVE: `boundary_routine.py`, `generation-boundary-view-v1`, `ENVIRONMENT_BOUNDARY_V1.json`. Primary305paused, verifier0055, no new model turns or primary file changes. Stop labels are installed but not yet experienced by the model. Existing notebook/seeds/weights/caps remain.
+Active runner `world_routine.py`, version `discovery-play-patch-v1`, manifest `ENVIRONMENT_DISCOVERY_PATCH_V1.json`. Same primary, paused at 320. Verifier 0059 passes 272 generations plus 48 origin entries. Activation at 305 and all three five-entry windows passed. The old notebook remains an exact byte prefix; old source events were preserved. No model job remains.
 
-PREPARED, NOT ACTIVE: numeric state−8..8, objectsA/B, LOOK/TOUCH controls; goal-free persistent consequences with minimal grammar. Eight host test groups and full305replay in disposable clone pass. Host demo never joins primary. Candidate input3175/8096 tokens. Model behavior/benefit untested. Next: explicit versioned introduction into same primary, initialtenentries with checks everyfive, broad summary plus targeted zoom. Preserve old versions; if boundary advanced, rebuild preparation rather than reset. See report for paths, evidence and caveats.
+All 15 new replies were ordinary text. No world or legacy tool actions executed; world number remains 0. Eight cap stops, seven end-token stops, 914 tokens. Numeric and notebook-shaped prose is not evidence of world discovery. Generated reward/status headings remain model text. Same weights, seeds, charter, caps and sampling; zero training updates or paid provider API calls. Combined first exposure to stop labels and the world is not a single-factor comparison.
+
+The next authorized larger block can continue unchanged terrain with five-entry checks and broad 20-entry summaries. Do not rerun the old installer, reset the world, or merge the host demo. Earlier prepared-only status is historical; the current handoff supersedes it.

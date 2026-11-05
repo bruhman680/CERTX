@@ -1,23 +1,23 @@
-# Current handoff: discovery patch prepared; primary unchanged at 305
+# Current handoff: discovery world introduced, same primary paused at 320
 
-5 November 2026. [Build report](evaluation/discovery-play-patch-v1/REPORT.md), [design overview](evaluation/discovery-play-patch-v1/OVERVIEW.md), [checks](evaluation/discovery-play-patch-v1/INTEGRATION_CHECKS.json).
+5 November 2026. [Latest report](evaluation/discovery-introduction-15-v1/REPORT.md), [checks](evaluation/discovery-introduction-15-v1/CHECKS.json), [resume guide](evaluation/discovery-introduction-15-v1/RESUME.md).
 
-## Active continuous garden
+## Active primary
 
-`evaluation/source-access-three-cycle-v1/cycle3/environment`, ACTIVE runner `boundary_routine.py` in that study. Version `generation-boundary-view-v1`; active manifest `ENVIRONMENT_BOUNDARY_V1.json`. Cursor **305**, PAUSE present, no model job; CURRENT_VERIFY **0055** passes 257 committed generations plus 48 origin entries. No model has yet generated under the boundary-visible version. The new world is **not active**. All 908 primary-study files remain byte-identical to their pre-build inventory; no primary file was added or removed.
+`evaluation/source-access-three-cycle-v1/cycle3/environment`. Active runner: `world_routine.py` in that study. Version: `discovery-play-patch-v1`. Active manifest: `ENVIRONMENT_DISCOVERY_PATCH_V1.json`. Cursor **320**, PAUSE present, RUN.lock absent, no model job. CURRENT_VERIFY **0059** passes all 272 saved generations plus 48 origin entries. The previous 305-entry notebook is an exact byte prefix. All 905 pre-existing primary files outside STATE, NOTEBOOK and CURRENT_VERIFY remain unchanged. Old source versions, events, plans and manifests are retained.
 
-The existing child has notebook/history, bounded tools, fundamental shelf and the user's curiosity invitation. Recent/history views now expose actual saved generation-stop facts, without judging completeness or correctness. Current output limit remains 96, input 8096, native context 8192. Model, adapter, sampling and RNG unchanged. No paid API, training, download, new provisioning or model generation occurred in this contact.
+## Latest contact
 
-## Prepared beside it
+Introduced the prepared patch at 305; activation verification 0056. Ran 15 actual entries in three five-entry windows, with passing checks 0057 at 310, 0058 at 315 and 0059 at 320. All 15 produced ordinary-text record receipts. No world or legacy tool executed; the world number remains 0. Eight replies reached the 96-token cap, seven ended with an end token, and 914 tokens were generated.
 
-`evaluation/discovery-play-patch-v1/`: a 17-state goal-free numeric patch with A/B objects and LOOK/TOUCH controls. Minimal grammar is public; transformation formulas stay in observer code/docs. Pure transitions and a primary-receipt bridge are built. A separate host-demo journal is explicitly not model experience. Eight host test groups pass. A disposable clone replayed the entire old history under the candidate runner and passed its own verifier0056. Real verifier stayed0055. Tokenizer-only candidate input3175/8096.
+Outputs included numeric lists, notebook-shaped prose and invented reward language. Generated headings and reward claims are not actual host metadata or compensation. No action-based evidence of rule discovery appeared. Non-use is preserved, not replaced with a successful trial.
 
-Read the report before installation. `prepare_primary.py` defaults to read-only inspection; `--activate` creates a new versioned manifest/runner/freeze and verifies without generating. The inspected `prepared_world_routine.py` is NOT an active runner. Do not run it as though installation already happened. Old runners/manifests remain necessary for replay. Absolute paths need deliberate reconstruction after relocation.
+Same fixed 135M model and adapter, sampling .8/.9, input 8096/output 96/native 8192, shelf0002, user curiosity sentence, charter, legacy tools and neutral feedback. Weights unchanged, zero training updates. No paid provider API, new download or provisioning. This first experienced condition combines numeric terrain and previously installed stop visibility; it is not a single-factor study. Maximum input 3175; working-memory estimates stayed within the guard.
 
-## Next contact
+## Continue from here
 
-Inspect current STATE, PAUSE, active manifest, saved checks and frozen prepared bundle. If still exactly305, introduce the patch as a recorded new environment version, then run ten entries in two five-entry check windows. If the primary advanced, prepare a new boundary; never reset it to305. Stop at an integrity failure; preserve raw failures. No automatic100-turn continuation. The same notebook/primary continues, not a substitute branch. Initial exposure would combine previously unexperienced stop labels and the new world; no single-factor causal claim.
+Use the installed `world_routine.py`, not earlier runners or the old preparation installer for boundary 305. Inspect STATE, active manifest, PAUSE/RUN.lock, current pointer and linked checks. Larger authorized reporting blocks can use the existing five-entry checked windows with broad 20-entry summaries and targeted inspection when warranted. No further block is running. Keep the current terrain stable; no need to force control use or expand rules because this short introduction had none.
 
-Until introduction, continuation still uses `boundary_routine.py` and [its existing resume guide](evaluation/generation-boundary-visibility-v1/RESUME.md). After introduction, only the new active manifest/runner should continue the garden. No root analysis or host-demo experience should be injected into model history.
+World state derives only from committed primary action receipts after 305; there is no second live journal. The separate host demo remains excluded. Current number 0 does not establish learned rules. Preserve all raw outcomes and do not silently retry existing plans. Relocation requires deliberate path/model restoration; no new backup or independent-restore guarantee was established.
 
-Prior navigation bytes are archived [here](evaluation/discovery-play-patch-v1/before/). [Research index](evaluation/CURRENT_RESEARCH_MAP.md). Failure, repetition, non-use and uncertainty remain observations, not reasons to silently replace trials.
+[Design synthesis](evaluation/discovery-play-patch-v1/OVERVIEW.md), [research map](evaluation/CURRENT_RESEARCH_MAP.md). Previous navigation bytes are archived under discovery-introduction-15-v1/before. The prepared-only report remains an unchanged historical record of the earlier build contact.
