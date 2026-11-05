@@ -1,23 +1,23 @@
-# Current handoff: discovery world introduced, same primary paused at 320
+# Current handoff: same garden paused at 400
 
-5 November 2026. [Latest report](evaluation/discovery-introduction-15-v1/REPORT.md), [checks](evaluation/discovery-introduction-15-v1/CHECKS.json), [resume guide](evaluation/discovery-introduction-15-v1/RESUME.md).
+5 November 2026. [Combined report](evaluation/discovery-continuity-to-400-v1/REPORT.md), [checks](evaluation/discovery-continuity-to-400-v1/CHECKS.json), [resume](evaluation/discovery-continuity-to-400-v1/RESUME.md).
 
 ## Active primary
 
-`evaluation/source-access-three-cycle-v1/cycle3/environment`. Active runner: `world_routine.py` in that study. Version: `discovery-play-patch-v1`. Active manifest: `ENVIRONMENT_DISCOVERY_PATCH_V1.json`. Cursor **320**, PAUSE present, RUN.lock absent, no model job. CURRENT_VERIFY **0059** passes all 272 saved generations plus 48 origin entries. The previous 305-entry notebook is an exact byte prefix. All 905 pre-existing primary files outside STATE, NOTEBOOK and CURRENT_VERIFY remain unchanged. Old source versions, events, plans and manifests are retained.
+`evaluation/source-access-three-cycle-v1/cycle3/environment`. Active runner: `world_routine.py` in that study. Version: `discovery-play-patch-v1`. Active manifest: `ENVIRONMENT_DISCOVERY_PATCH_V1.json`. Cursor **400**, PAUSE present, RUN.lock and block lock absent, no model job. CURRENT_VERIFY **0075** passes 352 saved generations plus 48 origin entries. Exact notebook prefixes at 320 and 370 are preserved. All 1106 pre-existing primary files outside STATE,NOTEBOOK and CURRENT_VERIFY remained unchanged during the extension; the 50-entry block also verified its entire earlier inventory. Old source, manifests, events and plans were not overwritten.
 
-## Latest contact
+## Latest two blocks
 
-Introduced the prepared patch at 305; activation verification 0056. Ran 15 actual entries in three five-entry windows, with passing checks 0057 at 310, 0058 at 315 and 0059 at 320. All 15 produced ordinary-text record receipts. No world or legacy tool executed; the world number remains 0. Eight replies reached the 96-token cap, seven ended with an end token, and 914 tokens were generated.
+User first authorized 50 entries 320→370, then conditionally another 30 to 400 if the review found ordinary observations and passing checks. The first block completed all ten windows; review of every distinct full output confirmed familiar repetition/imitation and no new executed behavior or integrity/resource issue. The second block completed all six windows. Both reports/plans/checkpoints remain separate. [Review](evaluation/discovery-continuity-50-v1/REVIEW_370.json), [50-entry report](evaluation/discovery-continuity-50-v1/REPORT.md).
 
-Outputs included numeric lists, notebook-shaped prose and invented reward language. Generated headings and reward claims are not actual host metadata or compensation. No action-based evidence of rule discovery appeared. Non-use is preserved, not replaced with a successful trial.
+Combined 80 entries: host kinds `{'record_receipt': 80}`; world requests0, world state changes0, legacy executions0; final number0. Stops `{'eos': 34, 'token_limit': 46}`, generated tokens4753. All 95 entries since world introduction are preserved. Familiar numeric/currency fragments and record-shaped prose are not authoritative actions, rewards or metadata. [Targeted cases](evaluation/discovery-continuity-50-v1/WORLD_TEXT_CASES.json) include a false world description and copied stop label; structured receipts remained correct. No general reasoning, learning or emergent-phase claim.
 
-Same fixed 135M model and adapter, sampling .8/.9, input 8096/output 96/native 8192, shelf0002, user curiosity sentence, charter, legacy tools and neutral feedback. Weights unchanged, zero training updates. No paid provider API, new download or provisioning. This first experienced condition combines numeric terrain and previously installed stop visibility; it is not a single-factor study. Maximum input 3175; working-memory estimates stayed within the guard.
+Same fixed 135M model and adapter, sampling .8/.9, input8096/output96/native8192, seed shelf0002, curiosity sentence, charter, tools, history policy and neutral feedback. No condition changes, reset, training, model download, new provisioning or paid inference API. Every session checked unchanged weights. The live world state derives from actual primary receipts after 305; no second journal or host-demo history was merged.
 
-## Continue from here
+## Continue
 
-Use the installed `world_routine.py`, not earlier runners or the old preparation installer for boundary 305. Inspect STATE, active manifest, PAUSE/RUN.lock, current pointer and linked checks. Larger authorized reporting blocks can use the existing five-entry checked windows with broad 20-entry summaries and targeted inspection when warranted. No further block is running. Keep the current terrain stable; no need to force control use or expand rules because this short introduction had none.
+On later authorization, inspect STATE,active manifest,PAUSE/RUN.lock,current pointer and linked checks. Use the installed active runner; continue in checked five-entry windows with broader reporting as authorized. Do not rerun the finished block drivers, old installer for 305 or older policy runners. Do not silently retry an outstanding plan. Keep terrain stable unless a separately recorded condition change is deliberately chosen. No continuation beyond 400 is running or authorized by this completed contact.
 
-World state derives only from committed primary action receipts after 305; there is no second live journal. The separate host demo remains excluded. Current number 0 does not establish learned rules. Preserve all raw outcomes and do not silently retry existing plans. Relocation requires deliberate path/model restoration; no new backup or independent-restore guarantee was established.
+The present record establishes availability of controls and observed output/action behavior. It does not establish that the model can or cannot use those controls under every other prompt, or that copied state text reflects an internal rule model. External notebook continuity is distinct from online neural learning. Current model/cache/path restoration limits are unchanged.
 
-[Design synthesis](evaluation/discovery-play-patch-v1/OVERVIEW.md), [research map](evaluation/CURRENT_RESEARCH_MAP.md). Previous navigation bytes are archived under discovery-introduction-15-v1/before. The prepared-only report remains an unchanged historical record of the earlier build contact.
+[Research map](evaluation/CURRENT_RESEARCH_MAP.md), [design synthesis](evaluation/discovery-play-patch-v1/OVERVIEW.md). Earlier navigation snapshots and reports remain historical; this handoff and the passing current verifier describe the active boundary.

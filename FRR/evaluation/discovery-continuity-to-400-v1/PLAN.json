@@ -1,0 +1,75 @@
+{
+  "start": 370,
+  "target": 400,
+  "entries": 30,
+  "windows": [
+    375,
+    380,
+    385,
+    390,
+    395,
+    400
+  ],
+  "broad_reports": [
+    390,
+    400
+  ],
+  "condition_changes": [],
+  "same_primary": true,
+  "environment_version": "discovery-play-patch-v1",
+  "authorization": "Conditional user extension after ordinary observations and passing review at370",
+  "review_path": "../discovery-continuity-50-v1/REVIEW_370.json",
+  "original_driver_sha256": "ea9091e5a563cc129dcf2951e19ff7970d133fcde4265a0dcac296ac00569ea2",
+  "driver_transformations": [
+    [
+      "320\u2192370",
+      "370\u2192400"
+    ],
+    [
+      "x['step']>=320",
+      "x['step']>=370"
+    ],
+    [
+      "target-320",
+      "target-370"
+    ],
+    [
+      "[:320]",
+      "[:370]"
+    ],
+    [
+      "start=320",
+      "start=370"
+    ],
+    [
+      "old_320_notebook_exact_prefix",
+      "old_370_notebook_exact_prefix"
+    ],
+    [
+      "if target in (340,360,370):",
+      "if target in (390,400):"
+    ],
+    [
+      "new entries since320",
+      "new entries since370"
+    ],
+    [
+      "default=370",
+      "default=400"
+    ],
+    [
+      "range(325,371,5)",
+      "range(375,401,5)"
+    ],
+    [
+      "range(320,371,5)",
+      "range(370,401,5)"
+    ],
+    [
+      "current!=320",
+      "current!=370"
+    ]
+  ],
+  "source_world_activation_stays": 305,
+  "stop": "400or earlier integrity/resource failure; no retries"
+}

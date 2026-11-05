@@ -1,9 +1,9 @@
-# Orientation: introduction complete, primary paused at 320
+# Orientation: continuous garden paused at 400
 
-5 November 2026. [Handoff](../CURRENT_HANDOFF.md), [report](../evaluation/discovery-introduction-15-v1/REPORT.md), [checks](../evaluation/discovery-introduction-15-v1/CHECKS.json), [resume](../evaluation/discovery-introduction-15-v1/RESUME.md).
+5 November 2026. [Handoff](../CURRENT_HANDOFF.md), [report](../evaluation/discovery-continuity-to-400-v1/REPORT.md), [checks](../evaluation/discovery-continuity-to-400-v1/CHECKS.json), [resume](../evaluation/discovery-continuity-to-400-v1/RESUME.md).
 
-Active runner `world_routine.py`, version `discovery-play-patch-v1`, manifest `ENVIRONMENT_DISCOVERY_PATCH_V1.json`. Same primary, paused at 320. Verifier 0059 passes 272 generations plus 48 origin entries. Activation at 305 and all three five-entry windows passed. The old notebook remains an exact byte prefix; old source events were preserved. No model job remains.
+Active `world_routine.py` / `discovery-play-patch-v1` / `ENVIRONMENT_DISCOVERY_PATCH_V1.json`. Same primary at 400, paused, no model job/lock. Verifier 0075 passes 352 generations plus 48 origin entries. All 16 five-entry windows passed across 320→370 and the conditionally authorized 370→400 extension. Old 320/370 notebook prefixes and immutable source records preserved. No reset or condition change.
 
-All 15 new replies were ordinary text. No world or legacy tool actions executed; world number remains 0. Eight cap stops, seven end-token stops, 914 tokens. Numeric and notebook-shaped prose is not evidence of world discovery. Generated reward/status headings remain model text. Same weights, seeds, charter, caps and sampling; zero training updates or paid provider API calls. Combined first exposure to stop labels and the world is not a single-factor comparison.
+Combined 80 entries: 0world requests, 0legacy executions, number0; stops{'eos': 34, 'token_limit': 46}, tokens4753. Text repetition and copied/incorrect world or status descriptions remain unverified model text, not actual state changes or learned rules. Same weights/settings, zero training or paid inference API. Latest report separates facts, cases and limits.
 
-The next authorized larger block can continue unchanged terrain with five-entry checks and broad 20-entry summaries. Do not rerun the old installer, reset the world, or merge the host demo. Earlier prepared-only status is historical; the current handoff supersedes it.
+Next authorized block can retain five-entry checks with broader summaries. Do not rerun finished drivers, the old installer for 305, reset the number, merge a host demo, or silently retry a plan. No run beyond 400 remains active.
