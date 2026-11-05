@@ -1,22 +1,17 @@
 # Current research index
 
-5 November 2026, America/Chicago. [Handoff](../CURRENT_HANDOFF.md), [latest attention](generation-boundary-visibility-v1/ATTENTION.md).
+5 November 2026. [Handoff](../CURRENT_HANDOFF.md), [new design synthesis](discovery-play-patch-v1/OVERVIEW.md).
 
-| Shelf | Entry | Status |
+| Shelf | Entry | Current interpretation |
 |---|---|---|
-| Active generation-boundary visibility | [Report](generation-boundary-visibility-v1/REPORT.md), [checks](generation-boundary-visibility-v1/CHECKS.json), [worldscope](generation-boundary-visibility-v1/WORLD_SCOPE.md) | Installed at305,no new modelturns;active boundary_routine.py;discoverableworld deferred |
-| Latest read-only pre-resume review | [Report](pre-resume-overlap-review-v1/REPORT.md), [checks](pre-resume-overlap-review-v1/CHECKS.json) | Primary305intact; lexical overlap measured, not a reasoning score; no new turns |
-| Current fundamental-shelf season | [Report](fundamental-seeds-100-v1/REPORT.md), [resume](fundamental-seeds-100-v1/RESUME.md) |205→305complete;100calls,20checks;paused305;active fundamental_routine.py |
-| Transition and integrity | [Boundary checks](fundamental-seeds-100-v1/TRANSITION_CHECKS.json), [final checks](fundamental-seeds-100-v1/CHECKS.json) | Legacy205inputs preserved/replayed; new policy version; preflight legacy-format correction retained |
-| Numeric context observations | [Range245](fundamental-seeds-100-v1/245_RANGE_ENUMERATION.json), [metadata304](fundamental-seeds-100-v1/304_METADATA_REFERENCE.json) | Accurate numerical matches amid censoring/story text; not an independent grounding test |
-| Generated profile/provenance | [Case](fundamental-seeds-100-v1/265_PROFILE_CASE.json) | Repeated name/source/note claims are generated text,not actual retrieval/identity/credentials |
-| Durable intermediate records | [225](fundamental-seeds-100-v1/CHECKPOINT_225.md), [265](fundamental-seeds-100-v1/CHECKPOINT_265.md) | Historical checkpoints,final target now complete |
-| Previous unchanged run | [Report](continuity-155-to-205-v1/REPORT.md) |155→205preserved; earlier tool-example bursts and framing recurrence |
-| Cap and stop-visibility zoom | [Report](fifty-entry-descriptive-zoom-v1/REPORT.md) | Historical155snapshot; possible fragment carryover; truthful stop marker still untested/unapplied |
-| Earlier methods and queues | [Prior index](fundamental-seeds-100-v1/before/evaluation/CURRENT_RESEARCH_MAP.md), [older catalog](selective-observation-v1/before/evaluation/CURRENT_RESEARCH_MAP.md) | Preserved history |
+| Prepared discovery world | [Report](discovery-play-patch-v1/REPORT.md), [host checks](discovery-play-patch-v1/HOST_TEST_LOG.txt), [integration](discovery-play-patch-v1/INTEGRATION_CHECKS.json) | Built/tested alongside primary; NOT active; no model calls |
+| Active stop visibility | [Report](generation-boundary-visibility-v1/REPORT.md), [resume](generation-boundary-visibility-v1/RESUME.md) | Active boundary_routine.py at305, verifier0055; still no model exposure |
+| Read-only overlap review | [Report](pre-resume-overlap-review-v1/REPORT.md) | Reuse/context measurements, not a reasoning metric |
+| Fundamental-shelf season | [Report](fundamental-seeds-100-v1/REPORT.md) | Historical205→305,100calls; one executed calculator action; earlier runner retained for replay |
+| Prior continuous window | [Report](continuity-155-to-205-v1/REPORT.md) |155→205; repeated simple tool example, preserved history |
+| Earlier descriptive zoom | [Report](fifty-entry-descriptive-zoom-v1/REPORT.md) | Historical observations at155; stop-label proposal subsequently implemented, benefit remains untested |
+| Carrier/intervention lessons | [Soil robustness](soil-reset-robustness-v1/REPORT.md) | Constructed-system attribution limits; not proof of small-model memory mechanism |
+| Training/binding caution | [Decision comparison](decision-loss-comparison-v1/REPORT.md) | Narrow training results; format success does not establish semantic binding |
+| Prior queues and explorations | [Archived previous index](discovery-play-patch-v1/before/evaluation/CURRENT_RESEARCH_MAP.md), [earlier catalog](fundamental-seeds-100-v1/before/evaluation/CURRENT_RESEARCH_MAP.md) | Historical proposals and records retained; no implication all queues completed |
 
-Current combined condition includes new fundamental material+approved invitation; effects not separated. Tools,charter,model,.8/.9,output96,recent12/archive view unchanged. No stop labels,training or indefinite model job. A later condition change needs explicit versioning and old prompt replay; no automatic growth/awareness/success claim or new gate.
-
-Latest review proposes truthful stop-status visibility as an untested small change,not applied and not a new gate. Primary remains paused305; original fundamental season report is historical and unchanged.
-
-Latest:stopvisibilityinstalledat305withverifier0055;no newturns. Earlierunapplied-markerstatementsdescribepriorcontacts. Activehandoff/resumeguide supersedeolderrunners. Discoveryworldvisionisrecorded,not implemented.
+No primary reset or replacement. Eight host tests plus disposable-clone full305replay establish implementation integrity, not a model learning result. The patch must be introduced through its explicit new version before use; the active primary remains unchanged. The real garden has not experienced the new rules, and the host demo is not its experience. Current map corrects stale active-runner/unapplied-marker language while preserving previous navigation bytes in the new study's before archive.
