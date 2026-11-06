@@ -1,3 +1,15 @@
+# Current: same continuous garden paused at 550
+
+6 November 2026. [45-entry continuation report](scheme-continuation-to-550-v1/REPORT.md), [analysis](scheme-continuation-to-550-v1/ANALYSIS.json). Completed entries 506–550 in nine checked windows with unchanged environment, prompts, model, canonical adapter and sampling. Final verifier 0109; PAUSE present, no RUN.lock or scheduled further inference. Old records retained.
+
+Host kinds: {"record_receipt": 44, "scheme_receipt": 1}. Scheme statuses: {"REJECTED_VALIDATION": 1}. Successful Scheme statuses: {}. Final alias count 0. Most interpretation must remain at the level of recorded replies/actions; text-shaped snapshots and success claims are not host state. The executed flag records a terminal event, including rejected validation; see [label note](scheme-continuation-to-550-v1/RECEIPT_LABEL_NOTE.md). No learning or emergence claim; zero training updates, unchanged weights in all nine sessions.
+
+Use evaluation/scheme-primary-integration-v1/connected_routine_v2.py and its [resume guide](scheme-primary-integration-v1/RESUME.md). Verify before arming. Same garden/history, Scheme added at 500; never replace a missing SQLite store with a new empty world. Portable bundles and raw receipts are retained. The old interrupted attempt at step 492 remains unknown.
+
+Next contact after wind-down: inspect the recorded command-validation failures and their following replies, then choose another unchanged continuation or an explicitly versioned refinement. Do not silently repair replies, count rejected forms as successful execution, import host fixtures, or switch adapters. Earlier navigation below is preserved historical context.
+
+---
+
 # Current: original garden extended with Scheme, paused at entry 505
 
 6 November 2026. [Connection and continuation report](scheme-primary-integration-v1/REPORT.md). The original continuous garden resumes from 500; Scheme is an added persistent workspace inside that same environment. No diagnostic/test world was imported, no history restarted, and the original number patch remains available at 0.
