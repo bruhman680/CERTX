@@ -1,0 +1,28 @@
+# Cycle 3 — final execution review
+
+5 November 2026 (user-facing; host UTC 6 November). Read `DESIGN.md` and all three Cycle 2 review files. Research/design review only; no interpreter/model execution or primary-state changes.
+
+**Judgment:** publishable as a candidate design after the wording corrections below. No architectural blocker: pure evaluation, immutable inputs/dependencies, explicit successful checkpoints, bounded observations, and host-owned atomic publication fit together. It is not yet an executable specification or a demonstrated resource/isolation guarantee.
+
+## Exact corrections recommended before publication
+
+1. **Resolve run versus publish once.** Section 2 says results *can* be published and lists both running and publishing actions; Section 3 says normal completion atomically publishes the artifact and receipt. Recommended replacement: “Each invocation declares `run` or `run-and-publish`. `run` returns a bounded result and host receipt without creating a guest artifact. `run-and-publish` stages the result and atomically records artifact revision, any declared alias update, and receipt. A separately invoked `publish` resubmits bounded canonical result data or names a retained, quota-charged result ID.” This avoids an implied unlimited staging cache and distinguishes successful computation from successful persistence. No user confirmation dialog is implied.
+
+2. **Make receipt capacity an admission invariant.** Replace “Reserve room for receipts, or refuse…” with “Before admission reserve bounded host-ledger capacity for one receipt; guest artifact quota cannot consume this reserve. On guest failure discard staged results/public output, then persist a bounded failure receipt. If storage fails, report an infrastructure outcome with commit certainty explicitly known or unknown; reconcile unknown outcomes by request ID.” Receipts belong to the host audit ledger, although the model may inspect their bounded projection. Request-ID retries return the existing outcome and do not rerun/republish it. Section 6 currently mentions idempotency only as a test; this is its required behavior.
+
+3. **Distinguish limits by scope.** Add to Section 3: “Per-action limits are supplemented by finite episode totals for actions, model tokens, evaluator work, observations, artifacts, and host audit bytes. Exhausted receipt reserve stops action admission; retained history is not silently evicted. Resource claims cover the declared scopes and retained history.” A finite per-action budget cannot bound repeated chunks/retries. State whether procedures, reachable dependency graphs, and entire libraries each have separate size limits; avoid reviving the Cycle 1 global 256-instruction ceiling inadvertently.
+
+4. **Strengthen bulk-cost wording slightly.** Replace “need size-dependent costs or elementary transitions” with “must check/reserve a conservative size-dependent work and allocation bound before work, or execute bounded elementary transitions that can exhaust fuel safely. Parsing, hashing, validation, serialization, observation generation, and publication have separate enforced bounds.” Up-front cost without a bounded implementation is insufficient. Exact transition counts are semantic accounting; CPU time and peak host memory require separate watchdogs/caps and host measurements. Host aborts stay outside ordinary model-task error scoring, while their frequency is reported.
+
+5. **Make alias pinning explicit at both boundaries.** Add: “Publication rejects unresolved dependencies and captures their immutable revisions; invocation resolves any user-facing aliases from its recorded snapshot before execution. Calls cannot dynamically resolve a current alias. A successful alias update is conditional on its expected prior revision.” Program source, dependency bindings, evaluator semantics/cost version, and explicit inputs jointly identify a replay. This closes the remaining gap between immutable object IDs and mutable friendly names.
+
+## Already coherent; retain these boundaries
+
+- Pause is between completed actions; out-of-fuel destroys the invocation and creates no checkpoint. Successful chunks store ordinary data containing progress and pinned program/dependency references. A data checkpoint resumes an algorithm, not a host VM. Checkpoint bytes count toward artifact quota.
+- Integer/text details remain labeled provisional. Bounded integers plus no float nondeterminism and specified traversal/evaluation order are sensible; they do not alone prove replay equality or custom-interpreter security.
+- Host can audit deterministic transitions without knowing all future program behavior or model reasoning. Final hashes, summaries, and bounded traces expose different amounts of evidence. Trace truncation must be explicit; replay equality covers retained versions/inputs only.
+- The design correctly distinguishes language affordances from 135M+LoRA usability. No evidence here establishes that the fixed model can program the proposed surface or that persistence constitutes parameter learning.
+
+## Specification tasks, not research/publication blockers
+
+Freeze command/status grammar and pure-versus-publication mode; exact value/Unicode/indexing/serialization rules; cost table and limit scopes; dependency graph and self-recursion rules; retention/quota ownership; request-ID and storage-error recovery; pagination/trace projections; and watchdog behavior. Select numerical bounds only after host tests, then hold them fixed within each model condition. No model pilot should begin before those choices and the Section 6 host checks are complete.

@@ -1,0 +1,35 @@
+# Cycle 2: primitive and persistence review
+
+5 November 2026 (client date; host UTC is 6 November). Read `CYCLE1_EXECUTION.md` and `CYCLE1_OBSERVATION.md` in full and revisited the Cycle 1 primitives proposal. Research/design only. No code, model, installation, training or primary-run changes. The counterexamples and repairs below are design inferences; no new broad source search was needed.
+
+## Counterexample 1: a reusable procedure changes meaning after publication
+
+Suppose `score(x)` calls `weight(x)`. Save `score`, replace the name `weight` with a revised procedure, then reload and run the original `score`. Dynamic name lookup changes its result despite an unchanged `score` identifier. A first-class closure does not settle this: it may capture an old procedure value, a mutable cell containing the new value, or an environment containing other closures. Serializing that environment can retain an unexpectedly large graph, including cycles. A saved closure must not accidentally retain a host pointer or depend on an unrecorded interpreter environment.
+
+This is a real distinction in language semantics: R7RS lambdas retain their lexical environment, while assignment changes values in bound locations. Neither mechanism defines a versioned artifact repository. [R7RS §§4.1.4–4.1.6](https://small.r7rs.org/attachment/r7rs.pdf).
+
+**Repair/options:** Start with named procedures with explicit parameters and immutable module versions. A module records its source/AST, primitive-semantics version, and dependency module IDs. Resolve external references when publishing; use stable local symbols for recursive or mutually recursive definitions within the module. A mutable friendly name is an alias to a module ID, never the dependency identity. Calls take explicit data/artifact IDs; saved procedures cannot implicitly read “latest world.” Serialize and quota the dependency graph, and reject unresolved dependencies before publication. Merely hashing the top-level source is insufficient.
+
+First-class closures can remain ephemeral inside a run, or be deferred entirely. Named calls plus recursion retain substantial algorithmic composition, but lose direct anonymous/higher-order patterns unless represented through explicit procedure references. Adding persistent closures later requires a canonical environment representation, captured-value semantics, graph bounds and reload tests. There is no evidence yet that their convenience outweighs this burden for the fixed model.
+
+## Counterexample 2: “successful run” silently becomes an irreversible world edit
+
+A sorting procedure reads artifact A, stages a sorted replacement, prints “sorted,” and halts. Should HALT publish the replacement, return the result, or merely validate that the proposed computation completed? Cycle 1 execution defines atomic HALT commit, whereas a notebook-like user may expect reusable pure evaluation. Either is coherent; mixing them makes experimentation surprising. A later exhaustion after staged writes must not leave earlier output looking like a committed success. A repeated submission after a lost response must not append a duplicate durable record.
+
+**Repair/options:** Separate ephemeral machine mutation from durable publication. Default `run` reads an immutable snapshot and yields a bounded result plus an optional staged delta/artifact. `publish` stores selected immutable results and, if requested, advances a named alias against an expected prior version. An explicit `run-and-publish` action can provide the same atomic convenience as the execution scout's HALT semantics. These are machine actions, not user confirmation dialogs. Bound/expire staged results, identify requests, distinguish `COMPUTED`, `PUBLISHED`, and failure, and specify idempotent retry behavior.
+
+Alternative: retain atomic auto-commit but require the submitted action to declare its write set/effect mode before execution; pure mode rejects durable writes. In either option, diagnostic receipts may survive failed runs but do not belong to the guest's published world. Failed computations discard public output; diagnostic output is clearly labeled and queryable. The observation scout's separate execution, observation and claim ledgers remain necessary. No database transaction mechanism supplies this product-level semantic choice automatically.
+
+## Counterexample 3: one “small primitive” hides either execution or unbounded work
+
+With quoted lists, text, symbols and procedure values, `(first '(+ 1 2))` can return symbol `+`; it must not automatically become callable or execute. Conversely, allowing arbitrary `eval` over quoted data introduces runtime name resolution, malformed-code handling and new metering paths. For costs, one equality comparison of large nested artifacts or one concatenation can traverse/allocate far more than one arithmetic instruction. A tiny surface vocabulary does not imply a small execution budget. Even parsing a deeply nested quotation can exhaust host recursion before guest fuel exists.
+
+**Repair/options:** Specify distinct runtime types for symbols, text, lists and callable references; retain quotation only as data construction. Procedure invocation accepts callable references, never an arbitrary string/symbol/list. Omit guest `eval` initially; if later added, parse/validate/resolve generated code through a bounded, explicit compilation action. R7RS quotation itself returns data; it is not automatic execution. [R7RS §4.1.2](https://small.r7rs.org/attachment/r7rs.pdf).
+
+Use fixed-width arithmetic initially and the execution scout's bounded elementary transitions for copying/traversal. If adding convenient aggregate primitives, make their work interruptible or reserve/check an input-size-dependent upper bound before work and allocation. Cap input bytes/depth, output, graph traversal, validation, serialization and publication independently. Charge shared data deliberately: reference creation, deep copy, equality and rendering are different operations. Text/list support is important for cross-domain freedom, so an integer-only ISA should be described as a staged substrate rather than the complete proposed world.
+
+## Consensus and unresolved choices
+
+Consensus: deterministic bounded execution; immutable source/data identities; explicit resource and observation contracts; atomic durable effects; ordinary reusable procedures rather than fixed domain-task verbs; and no inference from engine expressiveness to model competence. All durable behavior must survive reload without depending on hidden conversational state.
+
+Unresolved: explicit-argument expressions versus assembly/stack syntax; whether convenience aggregate operations justify their accounting complexity; ephemeral closures versus only named calls; and whether publication is a separate action or a declared run mode. Recommended next design artifact: a short semantic contract resolving these four choices, followed by tiny hand-worked examples across save/reload, recursion, budget failure and dependency revision. These examples can expose contradictions before any implementation or model experiment.

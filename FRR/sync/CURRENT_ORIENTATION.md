@@ -1,13 +1,9 @@
-# Orientation: persistent-world scout complete, no activation
+# Orientation: computational world candidate, no activation
 
-5 November 2026. [Report](../evaluation/persistent-world-scout-v1/REPORT.md), [handoff](../CURRENT_HANDOFF.md). Three scouts inspected papers, GitHub and actual HF cards; no new inference or installation. Recommend a compact persistent workshop with real composable actions and auditable effects, host tests first, then isolated interface pilot. Primary stays at 500, original version/adapter, verifier 0096, PAUSE present; no new world built. Learning/motivation remain empirical questions. Earlier diagnostic evidence and queues follow unchanged.
+5 November 2026, America/Chicago. [Report](../evaluation/computational-world-three-cycle-v1/REPORT.md), [design](../evaluation/computational-world-three-cycle-v1/DESIGN.md), [handoff](../CURRENT_HANDOFF.md).
 
-# Orientation: probes complete; original primary remains at 500
+Garden is a metaphor for a computational medium: generic data/procedures, executable consequences, optional seeds and persistent projects. Three scouts completed source extraction, counterexample cross-review and design challenge. No new interpreter/model run/install. Candidate uses Lisp-like source plus explicit deterministic evaluator, pinned revisions, separate computation/publication, bounded costs and explicit successful chunking. Final design incorporates publication, quota, dependency, discovery and seed-isolation fixes.
 
-5 November 2026. [Handoff](../CURRENT_HANDOFF.md), [report](../evaluation/padding-and-prediction-v1/REPORT.md), [checks](../evaluation/padding-and-prediction-v1/COMBINED_CHECKS.json).
+Next: precise operational specification and worked transcripts; then isolated host prototype/tests, then short model interface trials if host checks pass. No long run or migration scheduled. Learning, curiosity and usable algorithmic freedom remain observations to test, not consequences of persistence alone.
 
-Primary unchanged: world_routine.py/discovery-play-patch-v1, paused at 500, verifier 0096, number 0, no model job. All 1,504 non-bytecode primary files stayed identical. No new entries, hints, effects, variant, pointer or source change. The earlier runtime-interruption/recovery and unavailable interrupted-session post-digest remain in the prior record.
-
-New 76 isolated calls:48planned padding/prediction,14 adaptive readout,14 adaptive adapter-reference. All records verified without new generation. Same-length repeated versus varied filler differed in command expression; no universal length/content cause isolated. All 24 predictions were 8 despite rule-card manipulation, yielding 2/12 per condition only at the upper-bound case. No demonstrated rule use. Host, not model text, executed the declared prediction action after the prediction was saved.
-
-Reference scale-zero tests distinguish format from content: adapted numeric-only replies sometimes wrong; reference addition correct in prose but not requested format. Original tensor/files and primary adapter unchanged; no training or paid inference API. Do not deploy a primary change on these limited tests. Next proposals concern extraction/transformation/format and broader padding/reference tests, not another automatic block. Resume primary only on later authorization with existing five-entry checks.
+Original primary remains paused at 500, discovery-play-patch-v1, number 0, verifier 0096, unchanged base/adapter; all 1,504 protected non-bytecode files unchanged in recorded comparison. Prior interrupted-session unknown retained. Full current boundary and resume caveats in handoff.
