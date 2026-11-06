@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/workspace/frr/evaluation/scheme-primary-integration-v1/connected_routine.py", line 223, in <module>
+    elif a.action=='run':run(a.steps)
+                         ^^^^^^^^^^^^
+  File "/workspace/frr/evaluation/scheme-primary-integration-v1/connected_routine.py", line 127, in run
+    assert 0<steps<=5;checked();j=Journal(E)
+                      ^^^^^^^^^
+  File "/workspace/frr/evaluation/scheme-primary-integration-v1/connected_routine.py", line 31, in checked
+    if name not in MUTABLE:assert h(G/name)==digest,name
+                                  ^^^^^^^^^
+  File "/workspace/frr/evaluation/scheme-primary-integration-v1/connected_routine.py", line 25, in h
+    def h(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/frr/evaluation/source-access-three-cycle-v1/cycle3/environment/PAUSE'
