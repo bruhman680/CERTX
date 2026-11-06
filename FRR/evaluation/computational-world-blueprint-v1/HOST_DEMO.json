@@ -1,0 +1,2192 @@
+{
+  "schema": "cw-host-demo-v1",
+  "model_participated": false,
+  "scope": "host-authored fixtures in a disposable world",
+  "commands": [
+    {
+      "command": "(put seed '(1 2 3))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:836e7f0d6376fa92660ac5728770a77a34d91869b39cb9d294ed526d1f504aeb",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-01",
+          "request_hash": "request:c0d87a238e942e3c114cfa4a3e93bc9fc48b62f09b85a562b089dae53ccf2737",
+          "status": "PUBLISHED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:df591cf3092cab60e2829ce204104a35b7fd47e02c4e32db2d78aa88d3cffd34",
+          "after_world": "snapshot:0178b174a63ed913775f5e437c59ab4e29338ab9fffa1f80934b416195b07eaf",
+          "audit_before": {
+            "sequence": "0",
+            "head": "GENESIS"
+          },
+          "audit_after_sequence": "1",
+          "capture_id": null,
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "0",
+            "logical_alloc_bytes": "0",
+            "peak_frames": "0",
+            "host_work": null,
+            "artifact_bytes_added": "97",
+            "observation_bytes": "0",
+            "quota_fuel_charged": "0",
+            "quota_allocation_charged": "0"
+          },
+          "result": {
+            "value": null,
+            "artifact_ids": [
+              "art:96e6168ea7f38176ad302b1cfed20c4fbeca546fe7574a79f4c2b76f470733ab"
+            ],
+            "alias_changes": [
+              {
+                "name": "seed",
+                "before": null,
+                "after": "art:96e6168ea7f38176ad302b1cfed20c4fbeca546fe7574a79f4c2b76f470733ab"
+              }
+            ],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "1",
+          "head": "event:836e7f0d6376fa92660ac5728770a77a34d91869b39cb9d294ed526d1f504aeb"
+        },
+        "status": "PUBLISHED",
+        "value": null,
+        "error": null,
+        "world_snapshot": "snapshot:0178b174a63ed913775f5e437c59ab4e29338ab9fffa1f80934b416195b07eaf"
+      }
+    },
+    {
+      "command": "(define (twice x) (+ x x))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:4fdefb980b0eff575a4e78566d9b1eb421035661fcc59db0dd452c8746a3ee37",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-02",
+          "request_hash": "request:b8c734832869f64516e8536b1c66153c044fd99ae466a1f763150d5600232fdd",
+          "status": "PUBLISHED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:0178b174a63ed913775f5e437c59ab4e29338ab9fffa1f80934b416195b07eaf",
+          "after_world": "snapshot:96d9ae0b556ebda564ff1ec7e31d4bf5c680aca42a626af1b7af290283e11ce4",
+          "audit_before": {
+            "sequence": "1",
+            "head": "event:836e7f0d6376fa92660ac5728770a77a34d91869b39cb9d294ed526d1f504aeb"
+          },
+          "audit_after_sequence": "2",
+          "capture_id": null,
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "0",
+            "logical_alloc_bytes": "0",
+            "peak_frames": "0",
+            "host_work": null,
+            "artifact_bytes_added": "250",
+            "observation_bytes": "0",
+            "quota_fuel_charged": "0",
+            "quota_allocation_charged": "0"
+          },
+          "result": {
+            "value": null,
+            "artifact_ids": [
+              "art:b7916b86a9177ad6d75c45bf8d9f66e6df85cd7ff09cb739dbaff4512493a581"
+            ],
+            "alias_changes": [
+              {
+                "name": "twice",
+                "before": null,
+                "after": "art:b7916b86a9177ad6d75c45bf8d9f66e6df85cd7ff09cb739dbaff4512493a581"
+              }
+            ],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "2",
+          "head": "event:4fdefb980b0eff575a4e78566d9b1eb421035661fcc59db0dd452c8746a3ee37"
+        },
+        "status": "PUBLISHED",
+        "value": null,
+        "error": null,
+        "world_snapshot": "snapshot:96d9ae0b556ebda564ff1ec7e31d4bf5c680aca42a626af1b7af290283e11ce4"
+      }
+    },
+    {
+      "command": "(define (map-twice xs) (if (null? xs) '() (cons (twice (car xs)) (map-twice (cdr xs)))))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:bbfea133b812bf98bddec6d12a191d526c25088f9d4a59b9497c780f686bade8",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-03",
+          "request_hash": "request:4a8df7954c358e6ef0e4c0c02ce36921c0e6f627dd81504046df5f077c022537",
+          "status": "PUBLISHED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:96d9ae0b556ebda564ff1ec7e31d4bf5c680aca42a626af1b7af290283e11ce4",
+          "after_world": "snapshot:c252d1a3815a729ee5dbc85f04f1c4bdfb88c838081ce5faeedd3302214ac585",
+          "audit_before": {
+            "sequence": "2",
+            "head": "event:4fdefb980b0eff575a4e78566d9b1eb421035661fcc59db0dd452c8746a3ee37"
+          },
+          "audit_after_sequence": "3",
+          "capture_id": null,
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "0",
+            "logical_alloc_bytes": "0",
+            "peak_frames": "0",
+            "host_work": null,
+            "artifact_bytes_added": "612",
+            "observation_bytes": "0",
+            "quota_fuel_charged": "0",
+            "quota_allocation_charged": "0"
+          },
+          "result": {
+            "value": null,
+            "artifact_ids": [
+              "art:11e6e7fe68c65d9d694460f7f39e3831fddfb27a3260c10b2e81502c445896d3"
+            ],
+            "alias_changes": [
+              {
+                "name": "map-twice",
+                "before": null,
+                "after": "art:11e6e7fe68c65d9d694460f7f39e3831fddfb27a3260c10b2e81502c445896d3"
+              }
+            ],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "3",
+          "head": "event:bbfea133b812bf98bddec6d12a191d526c25088f9d4a59b9497c780f686bade8"
+        },
+        "status": "PUBLISHED",
+        "value": null,
+        "error": null,
+        "world_snapshot": "snapshot:c252d1a3815a729ee5dbc85f04f1c4bdfb88c838081ce5faeedd3302214ac585"
+      }
+    },
+    {
+      "command": "(run-save doubled (map-twice seed))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:83a4131308ba15827842e1ef398430161c79890e6eb2723893ba2fa6f7b0798b",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-04",
+          "request_hash": "request:deac971177e9adc74a02fcfc37fc224807ce85070d98c12172090f7fa865aeb5",
+          "status": "PUBLISHED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:c252d1a3815a729ee5dbc85f04f1c4bdfb88c838081ce5faeedd3302214ac585",
+          "after_world": "snapshot:98331002e73f5f42d6776d672db3c8f23224b7c5ced105b3a4c6c0ad6714875c",
+          "audit_before": {
+            "sequence": "3",
+            "head": "event:bbfea133b812bf98bddec6d12a191d526c25088f9d4a59b9497c780f686bade8"
+          },
+          "audit_after_sequence": "4",
+          "capture_id": "capture:70e234d9c2b32972b08e651232335f947fb1feba59539d1d6651fdff8f0a270d",
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "281",
+            "logical_alloc_bytes": "347",
+            "peak_frames": "6",
+            "host_work": null,
+            "artifact_bytes_added": "97",
+            "observation_bytes": "0",
+            "steps": "52",
+            "work_units": "229",
+            "fuel_used": "281",
+            "allocation_bytes": "347",
+            "quota_fuel_charged": "281",
+            "quota_allocation_charged": "347"
+          },
+          "result": {
+            "value": null,
+            "artifact_ids": [
+              "art:f33e7348dfdb01cad584b241dffe3899d407fcf6b360aed7566a362083418382"
+            ],
+            "alias_changes": [
+              {
+                "name": "doubled",
+                "before": null,
+                "after": "art:f33e7348dfdb01cad584b241dffe3899d407fcf6b360aed7566a362083418382"
+              }
+            ],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "4",
+          "head": "event:83a4131308ba15827842e1ef398430161c79890e6eb2723893ba2fa6f7b0798b"
+        },
+        "status": "PUBLISHED",
+        "value": [
+          2,
+          4,
+          6
+        ],
+        "error": null,
+        "world_snapshot": "snapshot:98331002e73f5f42d6776d672db3c8f23224b7c5ced105b3a4c6c0ad6714875c"
+      }
+    },
+    {
+      "command": "(define (twice x) (+ x 100))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:fb507cef016c161cf0217b722868137577651b2b87ef7f7b222abbf290149b66",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-05",
+          "request_hash": "request:08429b702efdd67f0bef2c8f285eb369182bc524fe46a75baeb4659436c7c3e7",
+          "status": "PUBLISHED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:98331002e73f5f42d6776d672db3c8f23224b7c5ced105b3a4c6c0ad6714875c",
+          "after_world": "snapshot:4fd33826e512f474e6454dacff06d842d930cfd8caca57171a4c4a8f1ae9536c",
+          "audit_before": {
+            "sequence": "4",
+            "head": "event:83a4131308ba15827842e1ef398430161c79890e6eb2723893ba2fa6f7b0798b"
+          },
+          "audit_after_sequence": "5",
+          "capture_id": null,
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "0",
+            "logical_alloc_bytes": "0",
+            "peak_frames": "0",
+            "host_work": null,
+            "artifact_bytes_added": "262",
+            "observation_bytes": "0",
+            "quota_fuel_charged": "0",
+            "quota_allocation_charged": "0"
+          },
+          "result": {
+            "value": null,
+            "artifact_ids": [
+              "art:ee85187ad7853ac756f973a1a1c352ddf49d97227e88c9dceef093b815e64caa"
+            ],
+            "alias_changes": [
+              {
+                "name": "twice",
+                "before": "art:b7916b86a9177ad6d75c45bf8d9f66e6df85cd7ff09cb739dbaff4512493a581",
+                "after": "art:ee85187ad7853ac756f973a1a1c352ddf49d97227e88c9dceef093b815e64caa"
+              }
+            ],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "5",
+          "head": "event:fb507cef016c161cf0217b722868137577651b2b87ef7f7b222abbf290149b66"
+        },
+        "status": "PUBLISHED",
+        "value": null,
+        "error": null,
+        "world_snapshot": "snapshot:4fd33826e512f474e6454dacff06d842d930cfd8caca57171a4c4a8f1ae9536c"
+      }
+    },
+    {
+      "command": "(run (map-twice seed))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:3fa9db8316b28cfffb7be8fde47785d9125ca6c9c8c030ebc91159d9c45c4878",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-06",
+          "request_hash": "request:3af367ef014af1dea6e7176120d86b5d8ead8f6cc859f2d4bad2d43628a0905d",
+          "status": "COMPUTED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:4fd33826e512f474e6454dacff06d842d930cfd8caca57171a4c4a8f1ae9536c",
+          "after_world": "snapshot:4fd33826e512f474e6454dacff06d842d930cfd8caca57171a4c4a8f1ae9536c",
+          "audit_before": {
+            "sequence": "5",
+            "head": "event:fb507cef016c161cf0217b722868137577651b2b87ef7f7b222abbf290149b66"
+          },
+          "audit_after_sequence": "6",
+          "capture_id": "capture:5244be4daafdb7a5b705e904fe2112206e59f6273154c54a14fe195898940aa8",
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "281",
+            "logical_alloc_bytes": "347",
+            "peak_frames": "6",
+            "host_work": null,
+            "artifact_bytes_added": "0",
+            "observation_bytes": "0",
+            "steps": "52",
+            "work_units": "229",
+            "fuel_used": "281",
+            "allocation_bytes": "347",
+            "quota_fuel_charged": "281",
+            "quota_allocation_charged": "347"
+          },
+          "result": {
+            "value": [
+              "list",
+              [
+                [
+                  "int",
+                  "2"
+                ],
+                [
+                  "int",
+                  "4"
+                ],
+                [
+                  "int",
+                  "6"
+                ]
+              ]
+            ],
+            "artifact_ids": [],
+            "alias_changes": [],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "6",
+          "head": "event:3fa9db8316b28cfffb7be8fde47785d9125ca6c9c8c030ebc91159d9c45c4878"
+        },
+        "status": "COMPUTED",
+        "value": [
+          2,
+          4,
+          6
+        ],
+        "error": null,
+        "world_snapshot": "snapshot:4fd33826e512f474e6454dacff06d842d930cfd8caca57171a4c4a8f1ae9536c"
+      }
+    },
+    {
+      "command": "(define (first xs) (car xs))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:56d6087c2028a02384fcddba625da03a42485cd94986c22a0a6ff4470e4734ba",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-07",
+          "request_hash": "request:80dfd9d90ad484246d89eb3ed26f208aae06af3c0173305b1a63957cbe87403c",
+          "status": "PUBLISHED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:4fd33826e512f474e6454dacff06d842d930cfd8caca57171a4c4a8f1ae9536c",
+          "after_world": "snapshot:9e90466e782a4078c4c6f6507a80aebe5293ff9ab09888373d28232d36cb1825",
+          "audit_before": {
+            "sequence": "6",
+            "head": "event:3fa9db8316b28cfffb7be8fde47785d9125ca6c9c8c030ebc91159d9c45c4878"
+          },
+          "audit_after_sequence": "7",
+          "capture_id": null,
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "0",
+            "logical_alloc_bytes": "0",
+            "peak_frames": "0",
+            "host_work": null,
+            "artifact_bytes_added": "244",
+            "observation_bytes": "0",
+            "quota_fuel_charged": "0",
+            "quota_allocation_charged": "0"
+          },
+          "result": {
+            "value": null,
+            "artifact_ids": [
+              "art:5d1d0ac1f3a2e8c67c95ba307a00611e072f2b75247c7217e1827d2e32101885"
+            ],
+            "alias_changes": [
+              {
+                "name": "first",
+                "before": null,
+                "after": "art:5d1d0ac1f3a2e8c67c95ba307a00611e072f2b75247c7217e1827d2e32101885"
+              }
+            ],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "7",
+          "head": "event:56d6087c2028a02384fcddba625da03a42485cd94986c22a0a6ff4470e4734ba"
+        },
+        "status": "PUBLISHED",
+        "value": null,
+        "error": null,
+        "world_snapshot": "snapshot:9e90466e782a4078c4c6f6507a80aebe5293ff9ab09888373d28232d36cb1825"
+      }
+    },
+    {
+      "command": "(run (first '()))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:90450a54ed58ea1617577cffd2e714618b7fa55923b080280d3f7df3503476f3",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-08",
+          "request_hash": "request:45f0121745b775758b7e5f914861d41e26e19ceffbc7143606483989ee76a0d6",
+          "status": "FAILED_EVALUATION",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:9e90466e782a4078c4c6f6507a80aebe5293ff9ab09888373d28232d36cb1825",
+          "after_world": "snapshot:9e90466e782a4078c4c6f6507a80aebe5293ff9ab09888373d28232d36cb1825",
+          "audit_before": {
+            "sequence": "7",
+            "head": "event:56d6087c2028a02384fcddba625da03a42485cd94986c22a0a6ff4470e4734ba"
+          },
+          "audit_after_sequence": "8",
+          "capture_id": "capture:1ce4410035600124fbd69cca12ea7b64393969cfad26a1eae7c88190cfd599be",
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "5",
+            "logical_alloc_bytes": "11",
+            "peak_frames": "2",
+            "host_work": null,
+            "artifact_bytes_added": "0",
+            "observation_bytes": "0",
+            "steps": "5",
+            "work_units": "0",
+            "fuel_used": "5",
+            "allocation_bytes": "11",
+            "quota_fuel_charged": "5",
+            "quota_allocation_charged": "11"
+          },
+          "result": {
+            "value": null,
+            "artifact_ids": [],
+            "alias_changes": [],
+            "projection": null
+          },
+          "error": {
+            "code": "EMPTY_LIST",
+            "limit": null,
+            "source_span": null,
+            "details": {
+              "message": "empty list"
+            }
+          },
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "8",
+          "head": "event:90450a54ed58ea1617577cffd2e714618b7fa55923b080280d3f7df3503476f3"
+        },
+        "status": "FAILED_EVALUATION",
+        "value": null,
+        "error": {
+          "code": "EMPTY_LIST",
+          "limit": null,
+          "source_span": null,
+          "details": {
+            "message": "empty list"
+          }
+        },
+        "world_snapshot": "snapshot:9e90466e782a4078c4c6f6507a80aebe5293ff9ab09888373d28232d36cb1825"
+      }
+    },
+    {
+      "command": "(define (first xs) (if (null? xs) (list \"absent\") (list \"present\" (car xs))))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:fd37a10a89ede0687c8d5f66f8d91d391c2e58abb029fcf4d4a4db9972685e27",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-09",
+          "request_hash": "request:be64d5bc56e8420d09738f274264f002c9a2c604e8b684fad46d5ef9b8795d8f",
+          "status": "PUBLISHED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:9e90466e782a4078c4c6f6507a80aebe5293ff9ab09888373d28232d36cb1825",
+          "after_world": "snapshot:7e4671282db99fa5a0a98fa3144b2e8721517f2e358c29a5e249d6fd78ce4303",
+          "audit_before": {
+            "sequence": "8",
+            "head": "event:90450a54ed58ea1617577cffd2e714618b7fa55923b080280d3f7df3503476f3"
+          },
+          "audit_after_sequence": "9",
+          "capture_id": null,
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "0",
+            "logical_alloc_bytes": "0",
+            "peak_frames": "0",
+            "host_work": null,
+            "artifact_bytes_added": "425",
+            "observation_bytes": "0",
+            "quota_fuel_charged": "0",
+            "quota_allocation_charged": "0"
+          },
+          "result": {
+            "value": null,
+            "artifact_ids": [
+              "art:9ebda5b8e373b198291182483d1a87aba55c17459f416f90b2ca0465d87f532a"
+            ],
+            "alias_changes": [
+              {
+                "name": "first",
+                "before": "art:5d1d0ac1f3a2e8c67c95ba307a00611e072f2b75247c7217e1827d2e32101885",
+                "after": "art:9ebda5b8e373b198291182483d1a87aba55c17459f416f90b2ca0465d87f532a"
+              }
+            ],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "9",
+          "head": "event:fd37a10a89ede0687c8d5f66f8d91d391c2e58abb029fcf4d4a4db9972685e27"
+        },
+        "status": "PUBLISHED",
+        "value": null,
+        "error": null,
+        "world_snapshot": "snapshot:7e4671282db99fa5a0a98fa3144b2e8721517f2e358c29a5e249d6fd78ce4303"
+      }
+    },
+    {
+      "command": "(run (first '()))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:34fde2f55c3e1390138f88c541ad4af7e99a6bbef9af008f4d8ed9551a1958eb",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-10",
+          "request_hash": "request:4c8de64bcf75fd5a08a35a6f37b9f7cfe152eba834cff1771d8139ced80bdad7",
+          "status": "COMPUTED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:7e4671282db99fa5a0a98fa3144b2e8721517f2e358c29a5e249d6fd78ce4303",
+          "after_world": "snapshot:7e4671282db99fa5a0a98fa3144b2e8721517f2e358c29a5e249d6fd78ce4303",
+          "audit_before": {
+            "sequence": "9",
+            "head": "event:fd37a10a89ede0687c8d5f66f8d91d391c2e58abb029fcf4d4a4db9972685e27"
+          },
+          "audit_after_sequence": "10",
+          "capture_id": "capture:93fc9880caad646803b1e23839f2e939b8da439a6d62a784b39346959642227f",
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "28",
+            "logical_alloc_bytes": "69",
+            "peak_frames": "3",
+            "host_work": null,
+            "artifact_bytes_added": "0",
+            "observation_bytes": "0",
+            "steps": "8",
+            "work_units": "20",
+            "fuel_used": "28",
+            "allocation_bytes": "69",
+            "quota_fuel_charged": "28",
+            "quota_allocation_charged": "69"
+          },
+          "result": {
+            "value": [
+              "list",
+              [
+                [
+                  "text",
+                  "absent"
+                ]
+              ]
+            ],
+            "artifact_ids": [],
+            "alias_changes": [],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "10",
+          "head": "event:34fde2f55c3e1390138f88c541ad4af7e99a6bbef9af008f4d8ed9551a1958eb"
+        },
+        "status": "COMPUTED",
+        "value": [
+          "absent"
+        ],
+        "error": null,
+        "world_snapshot": "snapshot:7e4671282db99fa5a0a98fa3144b2e8721517f2e358c29a5e249d6fd78ce4303"
+      }
+    },
+    {
+      "command": "(put checkpoint '((2 3) ()))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:37d0413d57d6560440ea6227e4811ff135fbc0f461a9bc3289929bd1f1edecd4",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-11",
+          "request_hash": "request:e68073a69b10f804d5eeae614ff221e2d5408a44d87baf2159afc06e80d057a3",
+          "status": "PUBLISHED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:7e4671282db99fa5a0a98fa3144b2e8721517f2e358c29a5e249d6fd78ce4303",
+          "after_world": "snapshot:3d650ae41c69c3d62030eb91fb174f0b62b506bfeb2908140cc9d3c85bc0866a",
+          "audit_before": {
+            "sequence": "10",
+            "head": "event:34fde2f55c3e1390138f88c541ad4af7e99a6bbef9af008f4d8ed9551a1958eb"
+          },
+          "audit_after_sequence": "11",
+          "capture_id": null,
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "0",
+            "logical_alloc_bytes": "0",
+            "peak_frames": "0",
+            "host_work": null,
+            "artifact_bytes_added": "108",
+            "observation_bytes": "0",
+            "quota_fuel_charged": "0",
+            "quota_allocation_charged": "0"
+          },
+          "result": {
+            "value": null,
+            "artifact_ids": [
+              "art:7d2319aae8101c1772edf4efdfe28bada3d340cbf60206349af0253ff1ad05fa"
+            ],
+            "alias_changes": [
+              {
+                "name": "checkpoint",
+                "before": null,
+                "after": "art:7d2319aae8101c1772edf4efdfe28bada3d340cbf60206349af0253ff1ad05fa"
+              }
+            ],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "11",
+          "head": "event:37d0413d57d6560440ea6227e4811ff135fbc0f461a9bc3289929bd1f1edecd4"
+        },
+        "status": "PUBLISHED",
+        "value": null,
+        "error": null,
+        "world_snapshot": "snapshot:3d650ae41c69c3d62030eb91fb174f0b62b506bfeb2908140cc9d3c85bc0866a"
+      }
+    },
+    {
+      "command": "(define (step state) (let ((xs (car state))) (if (null? xs) state (list (cdr xs) (append (car (cdr state)) (list (+ (car xs) (car xs))))))))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:ba1a8e4919b0465e90f4962b9848ff8874593d14582d1c07024640f2c647be3d",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-12",
+          "request_hash": "request:ec03ea4b83e4122ef7b54c9dc4d1739df4755e615d7cce02d5dc72c0dafe5ff2",
+          "status": "PUBLISHED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:3d650ae41c69c3d62030eb91fb174f0b62b506bfeb2908140cc9d3c85bc0866a",
+          "after_world": "snapshot:4517a0534f8180d978a5145b564cedc6751a5bbc3b6fbd3b03a14784ee816099",
+          "audit_before": {
+            "sequence": "11",
+            "head": "event:37d0413d57d6560440ea6227e4811ff135fbc0f461a9bc3289929bd1f1edecd4"
+          },
+          "audit_after_sequence": "12",
+          "capture_id": null,
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "0",
+            "logical_alloc_bytes": "0",
+            "peak_frames": "0",
+            "host_work": null,
+            "artifact_bytes_added": "640",
+            "observation_bytes": "0",
+            "quota_fuel_charged": "0",
+            "quota_allocation_charged": "0"
+          },
+          "result": {
+            "value": null,
+            "artifact_ids": [
+              "art:9ade275fb692e634e22f62ad1f07f1c604f5f5016e1c278c7ba8848bbdf4231c"
+            ],
+            "alias_changes": [
+              {
+                "name": "step",
+                "before": null,
+                "after": "art:9ade275fb692e634e22f62ad1f07f1c604f5f5016e1c278c7ba8848bbdf4231c"
+              }
+            ],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "12",
+          "head": "event:ba1a8e4919b0465e90f4962b9848ff8874593d14582d1c07024640f2c647be3d"
+        },
+        "status": "PUBLISHED",
+        "value": null,
+        "error": null,
+        "world_snapshot": "snapshot:4517a0534f8180d978a5145b564cedc6751a5bbc3b6fbd3b03a14784ee816099"
+      }
+    },
+    {
+      "command": "(define (advance state) (step state))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:61f0a14ff7fab845317b785301067da028779e570bf14ef1824e16f59cbba04a",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-13",
+          "request_hash": "request:c1b57bab6300028f552c64c9f8bd6ada5b10d64c9f491c9d1e228e6b52decbec",
+          "status": "PUBLISHED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:4517a0534f8180d978a5145b564cedc6751a5bbc3b6fbd3b03a14784ee816099",
+          "after_world": "snapshot:400faaed14059fef26bd010f5707677748282ea84ce84613388bfd7864813d3b",
+          "audit_before": {
+            "sequence": "12",
+            "head": "event:ba1a8e4919b0465e90f4962b9848ff8874593d14582d1c07024640f2c647be3d"
+          },
+          "audit_after_sequence": "13",
+          "capture_id": null,
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "0",
+            "logical_alloc_bytes": "0",
+            "peak_frames": "0",
+            "host_work": null,
+            "artifact_bytes_added": "429",
+            "observation_bytes": "0",
+            "quota_fuel_charged": "0",
+            "quota_allocation_charged": "0"
+          },
+          "result": {
+            "value": null,
+            "artifact_ids": [
+              "art:5e6128da98b7f5854773dd088a6d693a2c4a306a3970b0bd945283978fd18575"
+            ],
+            "alias_changes": [
+              {
+                "name": "advance",
+                "before": null,
+                "after": "art:5e6128da98b7f5854773dd088a6d693a2c4a306a3970b0bd945283978fd18575"
+              }
+            ],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "13",
+          "head": "event:61f0a14ff7fab845317b785301067da028779e570bf14ef1824e16f59cbba04a"
+        },
+        "status": "PUBLISHED",
+        "value": null,
+        "error": null,
+        "world_snapshot": "snapshot:400faaed14059fef26bd010f5707677748282ea84ce84613388bfd7864813d3b"
+      }
+    },
+    {
+      "command": "(run-save checkpoint (advance checkpoint))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:2a2702754ca7a0d64b6c16f8272dbfb863312cfcd9b2542196a0cfe5289a6d58",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-14",
+          "request_hash": "request:dbeb95fff6c116c79fe1565788f06b32622619c043ee5ea226be06b8821982e7",
+          "status": "PUBLISHED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:400faaed14059fef26bd010f5707677748282ea84ce84613388bfd7864813d3b",
+          "after_world": "snapshot:3a237a5ffc30b02e6252ba6c53fbae6e8cd0b5b025d44de1d10fc9ff5437ffda",
+          "audit_before": {
+            "sequence": "13",
+            "head": "event:61f0a14ff7fab845317b785301067da028779e570bf14ef1824e16f59cbba04a"
+          },
+          "audit_after_sequence": "14",
+          "capture_id": "capture:fd79090cc5a326edfe7f7ae98fb965a395dbd0cc3a2af2eb3282584eb8cf03c8",
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "222",
+            "logical_alloc_bytes": "293",
+            "peak_frames": "6",
+            "host_work": null,
+            "artifact_bytes_added": "107",
+            "observation_bytes": "0",
+            "steps": "25",
+            "work_units": "197",
+            "fuel_used": "222",
+            "allocation_bytes": "293",
+            "quota_fuel_charged": "222",
+            "quota_allocation_charged": "293"
+          },
+          "result": {
+            "value": null,
+            "artifact_ids": [
+              "art:8633038535b158cb611c95ccf6abedee7bce92c0031d5c3bc9c4a5f39106c834"
+            ],
+            "alias_changes": [
+              {
+                "name": "checkpoint",
+                "before": "art:7d2319aae8101c1772edf4efdfe28bada3d340cbf60206349af0253ff1ad05fa",
+                "after": "art:8633038535b158cb611c95ccf6abedee7bce92c0031d5c3bc9c4a5f39106c834"
+              }
+            ],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "14",
+          "head": "event:2a2702754ca7a0d64b6c16f8272dbfb863312cfcd9b2542196a0cfe5289a6d58"
+        },
+        "status": "PUBLISHED",
+        "value": [
+          [
+            3
+          ],
+          [
+            4
+          ]
+        ],
+        "error": null,
+        "world_snapshot": "snapshot:3a237a5ffc30b02e6252ba6c53fbae6e8cd0b5b025d44de1d10fc9ff5437ffda"
+      }
+    },
+    {
+      "command": "(define (step state) state)",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:d402f515c1c43324c4862407ef15b08bf035399d8a60ed8f37eb5a9be88ffdc4",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-15",
+          "request_hash": "request:65bfbb85eed82d720314f1d85c0c6453caccb6e1f64ea3aece0e3a3b99989386",
+          "status": "PUBLISHED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:3a237a5ffc30b02e6252ba6c53fbae6e8cd0b5b025d44de1d10fc9ff5437ffda",
+          "after_world": "snapshot:ab17b6b47d2ca35584c565d8b24cacf9b01dde67913a87f2219690b04ed36d99",
+          "audit_before": {
+            "sequence": "14",
+            "head": "event:2a2702754ca7a0d64b6c16f8272dbfb863312cfcd9b2542196a0cfe5289a6d58"
+          },
+          "audit_after_sequence": "15",
+          "capture_id": null,
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "0",
+            "logical_alloc_bytes": "0",
+            "peak_frames": "0",
+            "host_work": null,
+            "artifact_bytes_added": "231",
+            "observation_bytes": "0",
+            "quota_fuel_charged": "0",
+            "quota_allocation_charged": "0"
+          },
+          "result": {
+            "value": null,
+            "artifact_ids": [
+              "art:05e4bb124dce29974af8e103333ee8f5aa174bb129aa7b9835ffd35743cb5aa3"
+            ],
+            "alias_changes": [
+              {
+                "name": "step",
+                "before": "art:9ade275fb692e634e22f62ad1f07f1c604f5f5016e1c278c7ba8848bbdf4231c",
+                "after": "art:05e4bb124dce29974af8e103333ee8f5aa174bb129aa7b9835ffd35743cb5aa3"
+              }
+            ],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "15",
+          "head": "event:d402f515c1c43324c4862407ef15b08bf035399d8a60ed8f37eb5a9be88ffdc4"
+        },
+        "status": "PUBLISHED",
+        "value": null,
+        "error": null,
+        "world_snapshot": "snapshot:ab17b6b47d2ca35584c565d8b24cacf9b01dde67913a87f2219690b04ed36d99"
+      }
+    },
+    {
+      "command": "(run-save checkpoint (advance checkpoint))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:88c20d461305cb430a279d1a726e9f6ea036459347bfd5f3564240ce30e03dba",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-16",
+          "request_hash": "request:4fa05db6f916d048798f8732a50eb0875227dc5cbd9b451e9c2c9fbf9951b802",
+          "status": "PUBLISHED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:ab17b6b47d2ca35584c565d8b24cacf9b01dde67913a87f2219690b04ed36d99",
+          "after_world": "snapshot:238d57dedab76793c0478f7e861d2b11b85d1acc325a5fb8a5812be44c64c07c",
+          "audit_before": {
+            "sequence": "15",
+            "head": "event:d402f515c1c43324c4862407ef15b08bf035399d8a60ed8f37eb5a9be88ffdc4"
+          },
+          "audit_after_sequence": "16",
+          "capture_id": "capture:c2baae40c4ed350a864364156b0529ff0d119f009a92048a128e67ee29c66bef",
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "221",
+            "logical_alloc_bytes": "304",
+            "peak_frames": "6",
+            "host_work": null,
+            "artifact_bytes_added": "108",
+            "observation_bytes": "0",
+            "steps": "25",
+            "work_units": "196",
+            "fuel_used": "221",
+            "allocation_bytes": "304",
+            "quota_fuel_charged": "221",
+            "quota_allocation_charged": "304"
+          },
+          "result": {
+            "value": null,
+            "artifact_ids": [
+              "art:a05c04e48852e8235d07a510f1bcfb84bca8bd8c30ae05751328ddd21f6bb468"
+            ],
+            "alias_changes": [
+              {
+                "name": "checkpoint",
+                "before": "art:8633038535b158cb611c95ccf6abedee7bce92c0031d5c3bc9c4a5f39106c834",
+                "after": "art:a05c04e48852e8235d07a510f1bcfb84bca8bd8c30ae05751328ddd21f6bb468"
+              }
+            ],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "16",
+          "head": "event:88c20d461305cb430a279d1a726e9f6ea036459347bfd5f3564240ce30e03dba"
+        },
+        "status": "PUBLISHED",
+        "value": [
+          [],
+          [
+            4,
+            6
+          ]
+        ],
+        "error": null,
+        "world_snapshot": "snapshot:238d57dedab76793c0478f7e861d2b11b85d1acc325a5fb8a5812be44c64c07c"
+      }
+    },
+    {
+      "command": "(drop twice)",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:5679dbf094d0b58f414073b3fba60110f156014f80849d1fc6f9f3f0aa362ae3",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-17",
+          "request_hash": "request:5ec1803608562dec7a70d59f27e889624ad5d395ce675b08ba846009d0bfb863",
+          "status": "ALIAS_DROPPED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:238d57dedab76793c0478f7e861d2b11b85d1acc325a5fb8a5812be44c64c07c",
+          "after_world": "snapshot:acb2da407b505a8920d663f11f62ccc76904597832f547d03ab7be9f39a5a5a3",
+          "audit_before": {
+            "sequence": "16",
+            "head": "event:88c20d461305cb430a279d1a726e9f6ea036459347bfd5f3564240ce30e03dba"
+          },
+          "audit_after_sequence": "17",
+          "capture_id": null,
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "0",
+            "logical_alloc_bytes": "0",
+            "peak_frames": "0",
+            "host_work": null,
+            "artifact_bytes_added": "0",
+            "observation_bytes": "0",
+            "quota_fuel_charged": "0",
+            "quota_allocation_charged": "0"
+          },
+          "result": {
+            "value": null,
+            "artifact_ids": [],
+            "alias_changes": [
+              {
+                "name": "twice",
+                "before": "art:ee85187ad7853ac756f973a1a1c352ddf49d97227e88c9dceef093b815e64caa",
+                "after": null
+              }
+            ],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "17",
+          "head": "event:5679dbf094d0b58f414073b3fba60110f156014f80849d1fc6f9f3f0aa362ae3"
+        },
+        "status": "ALIAS_DROPPED",
+        "value": null,
+        "error": null,
+        "world_snapshot": "snapshot:acb2da407b505a8920d663f11f62ccc76904597832f547d03ab7be9f39a5a5a3"
+      }
+    },
+    {
+      "command": "(run (map-twice seed))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:9a025c4fdc0f1046ca59891f37f28238656bb6ce19efa401b21873c30a58717e",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-18",
+          "request_hash": "request:55d13a0b1a6b70e6289a16ea1ce2f7888b2106b0c464fd52da554a2e3beb9317",
+          "status": "COMPUTED",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:acb2da407b505a8920d663f11f62ccc76904597832f547d03ab7be9f39a5a5a3",
+          "after_world": "snapshot:acb2da407b505a8920d663f11f62ccc76904597832f547d03ab7be9f39a5a5a3",
+          "audit_before": {
+            "sequence": "17",
+            "head": "event:5679dbf094d0b58f414073b3fba60110f156014f80849d1fc6f9f3f0aa362ae3"
+          },
+          "audit_after_sequence": "18",
+          "capture_id": "capture:4eca5d231ad090e6dc669447f4e4244a9ae6d9551459bd0ab5453b3b775d1492",
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "281",
+            "logical_alloc_bytes": "347",
+            "peak_frames": "6",
+            "host_work": null,
+            "artifact_bytes_added": "0",
+            "observation_bytes": "0",
+            "steps": "52",
+            "work_units": "229",
+            "fuel_used": "281",
+            "allocation_bytes": "347",
+            "quota_fuel_charged": "281",
+            "quota_allocation_charged": "347"
+          },
+          "result": {
+            "value": [
+              "list",
+              [
+                [
+                  "int",
+                  "2"
+                ],
+                [
+                  "int",
+                  "4"
+                ],
+                [
+                  "int",
+                  "6"
+                ]
+              ]
+            ],
+            "artifact_ids": [],
+            "alias_changes": [],
+            "projection": null
+          },
+          "error": null,
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "18",
+          "head": "event:9a025c4fdc0f1046ca59891f37f28238656bb6ce19efa401b21873c30a58717e"
+        },
+        "status": "COMPUTED",
+        "value": [
+          2,
+          4,
+          6
+        ],
+        "error": null,
+        "world_snapshot": "snapshot:acb2da407b505a8920d663f11f62ccc76904597832f547d03ab7be9f39a5a5a3"
+      }
+    },
+    {
+      "command": "(run-save failed-result (car '()))",
+      "receipt": {
+        "schema": "cw-receipt-1",
+        "receipt_id": "event:cdf48fc175f6fcccdafb510ff26a9173bfe50e55f11df5d53431dbb25d9bbb2f",
+        "event": {
+          "schema": "cw-event-1",
+          "world_id": "ad119735fa364195a0ae7ceeec39b19e",
+          "request_id": "demo-19",
+          "request_hash": "request:f717259ea94f2622b5dd8d9d1baac1cb9c17a5519b96af844108bb4e25e6ae55",
+          "status": "FAILED_EVALUATION",
+          "phase": "commit",
+          "commit_certainty": "committed",
+          "before_world": "snapshot:acb2da407b505a8920d663f11f62ccc76904597832f547d03ab7be9f39a5a5a3",
+          "after_world": "snapshot:acb2da407b505a8920d663f11f62ccc76904597832f547d03ab7be9f39a5a5a3",
+          "audit_before": {
+            "sequence": "18",
+            "head": "event:9a025c4fdc0f1046ca59891f37f28238656bb6ce19efa401b21873c30a58717e"
+          },
+          "audit_after_sequence": "19",
+          "capture_id": "capture:1a6a571e7557b81ac2cc1795c7161f1e321fd6f3aaea508414463b2fa95c4170",
+          "versions": {
+            "language": "cw-scheme-1",
+            "evaluator": "cw-eval-1",
+            "cost": "cw-cost-1",
+            "profile": "cw-host-fixture-1"
+          },
+          "limits": {
+            "profile_id": "cw-host-fixture-1",
+            "max_source_bytes": "8192",
+            "max_parse_depth": "64",
+            "max_ast_nodes": "2048",
+            "max_int_bits": "128",
+            "max_string_chars": "2048",
+            "max_value_nodes": "4096",
+            "max_value_depth": "64",
+            "max_frames": "256",
+            "max_steps": "10000",
+            "max_work": "100000",
+            "eval_fuel": "110000",
+            "max_result_bytes": "16384",
+            "max_artifact_bytes": "32768",
+            "max_world_bytes": "1048576",
+            "max_artifacts": "256",
+            "max_aliases": "64",
+            "max_actions": "1000",
+            "max_audit_bytes": "4194304",
+            "max_receipt_bytes": "32768",
+            "max_observation_bytes": "4096",
+            "max_page_items": "16",
+            "max_dependency_nodes": "256",
+            "max_allocation_bytes": "262144",
+            "max_environment_bindings": "256",
+            "max_argument_count": "256",
+            "host_timeout_seconds": "5",
+            "host_memory_bytes": "536870912",
+            "host_cpu_seconds": "3",
+            "host_file_bytes": "67108864",
+            "max_capture_bytes": "131072",
+            "max_metadata_bytes": "4194304",
+            "max_visit_fuel": "11000000",
+            "max_visit_allocation": "67108864",
+            "max_delivery_bytes": "4194304"
+          },
+          "usage": {
+            "eval_fuel": "2",
+            "logical_alloc_bytes": "11",
+            "peak_frames": "2",
+            "host_work": null,
+            "artifact_bytes_added": "0",
+            "observation_bytes": "0",
+            "steps": "2",
+            "work_units": "0",
+            "fuel_used": "2",
+            "allocation_bytes": "11",
+            "quota_fuel_charged": "2",
+            "quota_allocation_charged": "11"
+          },
+          "result": {
+            "value": null,
+            "artifact_ids": [],
+            "alias_changes": [],
+            "projection": null
+          },
+          "error": {
+            "code": "EMPTY_LIST",
+            "limit": null,
+            "source_span": null,
+            "details": {
+              "message": "empty list"
+            }
+          },
+          "trace": {
+            "retained_bytes": "0",
+            "truncated": false
+          },
+          "host_outcome": {
+            "watchdog": false,
+            "interruption": null
+          }
+        },
+        "audit_after": {
+          "sequence": "19",
+          "head": "event:cdf48fc175f6fcccdafb510ff26a9173bfe50e55f11df5d53431dbb25d9bbb2f"
+        },
+        "status": "FAILED_EVALUATION",
+        "value": null,
+        "error": {
+          "code": "EMPTY_LIST",
+          "limit": null,
+          "source_span": null,
+          "details": {
+            "message": "empty list"
+          }
+        },
+        "world_snapshot": "snapshot:acb2da407b505a8920d663f11f62ccc76904597832f547d03ab7be9f39a5a5a3"
+      }
+    }
+  ],
+  "assertions": [
+    {
+      "check": "pause_reload_same_snapshot",
+      "pass": true
+    },
+    {
+      "check": "constructed_map",
+      "pass": true
+    },
+    {
+      "check": "helper_revision_does_not_change_old_map",
+      "pass": true
+    },
+    {
+      "check": "empty_list_error",
+      "pass": true
+    },
+    {
+      "check": "guarded_revision",
+      "pass": true
+    },
+    {
+      "check": "first_checkpoint",
+      "pass": true
+    },
+    {
+      "check": "pinned_continuation_after_reload",
+      "pass": true
+    },
+    {
+      "check": "dropped_alias_does_not_break_pinned_dependency",
+      "pass": true
+    },
+    {
+      "check": "failed_result_not_published",
+      "pass": true
+    },
+    {
+      "check": "no_unexpected_errors",
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "integrity": {
+    "artifacts": 13,
+    "events": 19,
+    "snapshot": "snapshot:acb2da407b505a8920d663f11f62ccc76904597832f547d03ab7be9f39a5a5a3"
+  }
+}

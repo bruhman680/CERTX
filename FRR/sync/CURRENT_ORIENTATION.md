@@ -1,9 +1,9 @@
-# Orientation: computational world candidate, no activation
+# Orientation: isolated Scheme prototype host-tested; primary remains paused
 
-5 November 2026, America/Chicago. [Report](../evaluation/computational-world-three-cycle-v1/REPORT.md), [design](../evaluation/computational-world-three-cycle-v1/DESIGN.md), [handoff](../CURRENT_HANDOFF.md).
+5 November 2026, America/Chicago. [Report](../evaluation/computational-world-blueprint-v1/REPORT.md), [checks](../evaluation/computational-world-blueprint-v1/CHECKS.json), [handoff](../CURRENT_HANDOFF.md).
 
-Garden is a metaphor for a computational medium: generic data/procedures, executable consequences, optional seeds and persistent projects. Three scouts completed source extraction, counterexample cross-review and design challenge. No new interpreter/model run/install. Candidate uses Lisp-like source plus explicit deterministic evaluator, pinned revisions, separate computation/publication, bounded costs and explicit successful chunking. Final design incorporates publication, quota, dependency, discovery and seed-isolation fixes.
+User requested established language: documented R7RS-small Scheme subset. Blueprints + isolated bounded evaluator/SQLite persistence/process CLI built. 31 host tests, 124 Chibi comparisons, 10 host-authored walkthrough assertions pass. All sources/profile pinned in checks. No model participation, learning/emergence claim, primary activation or training. Chibi reference is not a guest backend.
 
-Next: precise operational specification and worked transcripts; then isolated host prototype/tests, then short model interface trials if host checks pass. No long run or migration scheduled. Learning, curiosity and usable algorithmic freedom remain observations to test, not consequences of persistence alone.
+Core composite constructions, errors, durable revision/dependency binding, checkpoints, exact request retry, owner/integrity/recovery tested. Full long-artifact retrieval and export/reconstruction remain next, plus explicit handling of outstanding metering/blueprint limits. Only afterward short isolated model affordance trial; no long block scheduled.
 
-Original primary remains paused at 500, discovery-play-patch-v1, number 0, verifier 0096, unchanged base/adapter; all 1,504 protected non-bytecode files unchanged in recorded comparison. Prior interrupted-session unknown retained. Full current boundary and resume caveats in handoff.
+Original primary discovery-play-patch-v1 stays paused at 500, number 0, verifier 0096, original adapter. All 1,504 protected files unchanged; old interrupted-session unknown remains unknown. Old reports and before/ snapshots retain history.
