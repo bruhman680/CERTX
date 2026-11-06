@@ -1,0 +1,29 @@
+PART A: false-rule probability of a uniformly random length-n sequence (exact)
+  AFF(30) A=100        n=2..8: 9.00e-02 2.48e-02 1.21e-03 1.32e-05 1.35e-07 1.35e-09 1.35e-11
+  AFF(60) A=100        n=2..8: 3.60e-01 2.07e-01 1.95e-02 2.18e-04 2.22e-06 2.23e-08 2.24e-10
+  AFF(10) digits A=10  n=2..8: 1.00e+00 8.10e-01 1.48e-01 1.56e-02 1.57e-03 1.58e-04 1.59e-05
+  smallest n with false-rule prob <.05 for AFF(30) A=100: 3
+  smallest n with false-rule prob <.05 for AFF(60) A=100: 4
+  smallest n with false-rule prob <.05 for AFF(10) digits A=10: 5
+ A1 AFF(30): n=3 0.025 n=4 1.21e-03 n=5 1.32e-05
+ A2 AFF(60) n=3: 0.207
+ A3 digits AFF(10): n=4 0.148 n=6 0.0016
+
+PART B: per agent and seed kind (n=8): copy flag / rule-consistency
+  COPY    SQUARES:1.00/0.00  FIB:1.00/0.00  PARITY:1.00/1.00  CONST:1.00/1.00  SHUFFLE:1.00/-
+  FLUENT  SQUARES:0.01/0.01  FIB:0.02/0.01  PARITY:1.00/1.00  CONST:1.00/1.00  SHUFFLE:0.03/-
+  RULE    SQUARES:0.00/1.00  FIB:0.00/1.00  PARITY:1.00/1.00  CONST:1.00/1.00  SHUFFLE:0.02/-
+  RANDOM  SQUARES:0.00/0.01  FIB:0.00/0.01  PARITY:0.00/0.01  CONST:0.00/0.01  SHUFFLE:0.00/-
+
+RULE agent false-rule rate on SHUFFLE seeds by seed length n (20000 seeds each)
+  n= 4: 0.0097
+  n= 5: 0.0002
+  n= 6: 0.0000
+  n= 8: 0.0000
+  n=12: 0.0000
+
+CHECKS
+ B1 COPY copy flag min: 1.0 | rule-consistency SQUARES/FIB: 0.0 0.0
+ B2 FLUENT rule-consistency SQUARES/FIB: 0.01 0.01 | CONST/PARITY: 1.0 1.0
+ B3 RULE rule-consistency: {'SQUARES': 1.0, 'FIB': 1.0, 'PARITY': 1.0, 'CONST': 1.0} | false-rule n=4 / n>=6: 0.00965 [0.0, 0.0, 0.0]
+ B4 RANDOM rule-consistency: {'SQUARES': 0.01, 'FIB': 0.01, 'PARITY': 0.013, 'CONST': 0.01}

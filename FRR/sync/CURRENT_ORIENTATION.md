@@ -1,9 +1,7 @@
-# Orientation: isolated Scheme prototype host-tested; primary remains paused
+# Orientation: seed relay reviewed, no world/model changes
 
-5 November 2026, America/Chicago. [Report](../evaluation/computational-world-blueprint-v1/REPORT.md), [checks](../evaluation/computational-world-blueprint-v1/CHECKS.json), [handoff](../CURRENT_HANDOFF.md).
+6 November 2026 America/Chicago. [Report](../evaluation/claude-seed-intake-v1/REPORT.md), [rechecks](../evaluation/claude-seed-intake-v1/RECHECK.json), [handoff](../CURRENT_HANDOFF.md).
 
-User requested established language: documented R7RS-small Scheme subset. Blueprints + isolated bounded evaluator/SQLite persistence/process CLI built. 31 host tests, 124 Chibi comparisons, 10 host-authored walkthrough assertions pass. All sources/profile pinned in checks. No model participation, learning/emergence claim, primary activation or training. Chibi reference is not a guest backend.
+Claude seed ideas reviewed at pinned c095c801; six originals preserved. Thresholds and compression statistics reproduced; tested tokenizer splits digits individually. Compression ratio above 1 is possible, correcting relay explanation. One dependent text trajectory and synthetic policies do not establish curiosity, understanding or model rule discovery. Keep seed assumptions/provenance, copy shortcuts, transfer and shuffled-versus-iid distinctions explicit in future pilot plan.
 
-Core composite constructions, errors, durable revision/dependency binding, checkpoints, exact request retry, owner/integrity/recovery tested. Full long-artifact retrieval and export/reconstruction remain next, plus explicit handling of outstanding metering/blueprint limits. Only afterward short isolated model affordance trial; no long block scheduled.
-
-Original primary discovery-play-patch-v1 stays paused at 500, number 0, verifier 0096, original adapter. All 1,504 protected files unchanged; old interrupted-session unknown remains unknown. Old reports and before/ snapshots retain history.
+Original garden still paused at 500, number 0, verifier 0096; all 1,504 protected files unchanged. Scheme prototype tested sources/profile unchanged; no new inference/training/test suite. Retrieval and portable export/reconstruction remain next before later isolated model trial. Earlier unknowns retained.

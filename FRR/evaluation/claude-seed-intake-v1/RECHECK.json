@@ -1,0 +1,433 @@
+{
+  "schema": "claude-seed-recheck-v1",
+  "post_hoc_not_blind": true,
+  "model_generations": 0,
+  "compression": {
+    "rows": [
+      {
+        "start": 50,
+        "end": 99,
+        "ratio": 1.0,
+        "distinct": 33,
+        "raw_bytes": 8879,
+        "unconditional_bytes": 1597
+      },
+      {
+        "start": 100,
+        "end": 149,
+        "ratio": 0.6898326898326899,
+        "distinct": 24,
+        "raw_bytes": 6697,
+        "unconditional_bytes": 777
+      },
+      {
+        "start": 150,
+        "end": 199,
+        "ratio": 0.6333333333333333,
+        "distinct": 37,
+        "raw_bytes": 4902,
+        "unconditional_bytes": 1020
+      },
+      {
+        "start": 200,
+        "end": 249,
+        "ratio": 0.7134464751958225,
+        "distinct": 32,
+        "raw_bytes": 11122,
+        "unconditional_bytes": 1532
+      },
+      {
+        "start": 250,
+        "end": 299,
+        "ratio": 0.6519721577726219,
+        "distinct": 37,
+        "raw_bytes": 7803,
+        "unconditional_bytes": 1724
+      },
+      {
+        "start": 300,
+        "end": 349,
+        "ratio": 0.6898355754857997,
+        "distinct": 32,
+        "raw_bytes": 4841,
+        "unconditional_bytes": 1338
+      },
+      {
+        "start": 350,
+        "end": 399,
+        "ratio": 0.4484472049689441,
+        "distinct": 28,
+        "raw_bytes": 4158,
+        "unconditional_bytes": 805
+      },
+      {
+        "start": 400,
+        "end": 449,
+        "ratio": 0.5302325581395348,
+        "distinct": 25,
+        "raw_bytes": 4299,
+        "unconditional_bytes": 430
+      },
+      {
+        "start": 450,
+        "end": 499,
+        "ratio": 0.37756497948016415,
+        "distinct": 38,
+        "raw_bytes": 4272,
+        "unconditional_bytes": 731
+      }
+    ],
+    "early_mean": 0.8449163449163449,
+    "late_mean": 0.4538987688098495,
+    "early_over_late": 1.8614642800899583,
+    "exclude_history_free_first_block_over_late": 1.519794141855625,
+    "nonhelpful_dictionary_counterexample": {
+      "unconditional_bytes": 139,
+      "conditional_bytes": 143,
+      "ratio": 1.0287769784172662,
+      "above_one": true
+    },
+    "interpretation": "Ratios reproduce a descriptive compressor statistic. Ratios above1 are possible; no curiosity or learnability test."
+  },
+  "affine_thresholds": [
+    {
+      "maximum_modulus": 30,
+      "alphabet": 100,
+      "first_length_below_point05": 3,
+      "cells": [
+        {
+          "length": 2,
+          "distinct": 900,
+          "probability": 0.09
+        },
+        {
+          "length": 3,
+          "distinct": 24840,
+          "probability": 0.02484
+        }
+      ]
+    },
+    {
+      "maximum_modulus": 60,
+      "alphabet": 100,
+      "first_length_below_point05": 4,
+      "cells": [
+        {
+          "length": 2,
+          "distinct": 3600,
+          "probability": 0.36
+        },
+        {
+          "length": 3,
+          "distinct": 206688,
+          "probability": 0.206688
+        },
+        {
+          "length": 4,
+          "distinct": 1948826,
+          "probability": 0.01948826
+        }
+      ]
+    },
+    {
+      "maximum_modulus": 10,
+      "alphabet": 10,
+      "first_length_below_point05": 5,
+      "cells": [
+        {
+          "length": 2,
+          "distinct": 100,
+          "probability": 1.0
+        },
+        {
+          "length": 3,
+          "distinct": 810,
+          "probability": 0.81
+        },
+        {
+          "length": 4,
+          "distinct": 1478,
+          "probability": 0.1478
+        },
+        {
+          "length": 5,
+          "distinct": 1560,
+          "probability": 0.0156
+        }
+      ]
+    }
+  ],
+  "tokenizer": {
+    "rows": [
+      {
+        "text": "7",
+        "ids": [
+          39
+        ],
+        "tokens": [
+          "7"
+        ],
+        "pieces": [
+          "7"
+        ],
+        "decoded": "7"
+      },
+      {
+        "text": "99",
+        "ids": [
+          41,
+          41
+        ],
+        "tokens": [
+          "9",
+          "9"
+        ],
+        "pieces": [
+          "9",
+          "9"
+        ],
+        "decoded": "99"
+      },
+      {
+        "text": "100",
+        "ids": [
+          33,
+          32,
+          32
+        ],
+        "tokens": [
+          "1",
+          "0",
+          "0"
+        ],
+        "pieces": [
+          "1",
+          "0",
+          "0"
+        ],
+        "decoded": "100"
+      },
+      {
+        "text": "123456789",
+        "ids": [
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "tokens": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "pieces": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "decoded": "123456789"
+      },
+      {
+        "text": "123,456,789",
+        "ids": [
+          33,
+          34,
+          35,
+          28,
+          36,
+          37,
+          38,
+          28,
+          39,
+          40,
+          41
+        ],
+        "tokens": [
+          "1",
+          "2",
+          "3",
+          ",",
+          "4",
+          "5",
+          "6",
+          ",",
+          "7",
+          "8",
+          "9"
+        ],
+        "pieces": [
+          "1",
+          "2",
+          "3",
+          ",",
+          "4",
+          "5",
+          "6",
+          ",",
+          "7",
+          "8",
+          "9"
+        ],
+        "decoded": "123,456,789"
+      },
+      {
+        "text": "1 2 4 8 16",
+        "ids": [
+          33,
+          216,
+          34,
+          216,
+          36,
+          216,
+          40,
+          216,
+          33,
+          38
+        ],
+        "tokens": [
+          "1",
+          "Ġ",
+          "2",
+          "Ġ",
+          "4",
+          "Ġ",
+          "8",
+          "Ġ",
+          "1",
+          "6"
+        ],
+        "pieces": [
+          "1",
+          " ",
+          "2",
+          " ",
+          "4",
+          " ",
+          "8",
+          " ",
+          "1",
+          "6"
+        ],
+        "decoded": "1 2 4 8 16"
+      },
+      {
+        "text": "-12",
+        "ids": [
+          29,
+          33,
+          34
+        ],
+        "tokens": [
+          "-",
+          "1",
+          "2"
+        ],
+        "pieces": [
+          "-",
+          "1",
+          "2"
+        ],
+        "decoded": "-12"
+      },
+      {
+        "text": "+003",
+        "ids": [
+          27,
+          32,
+          32,
+          35
+        ],
+        "tokens": [
+          "+",
+          "0",
+          "0",
+          "3"
+        ],
+        "pieces": [
+          "+",
+          "0",
+          "0",
+          "3"
+        ],
+        "decoded": "+003"
+      },
+      {
+        "text": "(+ 12 34)",
+        "ids": [
+          24,
+          27,
+          216,
+          33,
+          34,
+          216,
+          35,
+          36,
+          25
+        ],
+        "tokens": [
+          "(",
+          "+",
+          "Ġ",
+          "1",
+          "2",
+          "Ġ",
+          "3",
+          "4",
+          ")"
+        ],
+        "pieces": [
+          "(",
+          "+",
+          " ",
+          "1",
+          "2",
+          " ",
+          "3",
+          "4",
+          ")"
+        ],
+        "decoded": "(+ 12 34)"
+      }
+    ],
+    "files_sha256": {
+      "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+      "tokenizer_config.json": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df"
+    },
+    "files_unchanged": true,
+    "pre_tokenizer": {
+      "type": "Sequence",
+      "pretokenizers": [
+        {
+          "type": "Digits",
+          "individual_digits": true
+        },
+        {
+          "type": "ByteLevel",
+          "add_prefix_space": false,
+          "trim_offsets": true,
+          "use_regex": true
+        }
+      ]
+    },
+    "local_files_only": true,
+    "model_weights_loaded": false,
+    "interpretation": "Token splits are observed, not arithmetic or exploration competence."
+  }
+}

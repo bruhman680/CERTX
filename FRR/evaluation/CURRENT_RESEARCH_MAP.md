@@ -1,9 +1,10 @@
 # Current research index
 
-5 November 2026. [Handoff](../CURRENT_HANDOFF.md). Primary remains paused at 500; earlier rows are historical contacts.
+6 November 2026. [Handoff](../CURRENT_HANDOFF.md). Primary remains paused at 500; earlier rows are historical contacts.
 
 | Shelf | Entry | Interpretation |
 |---|---|---|
+| Latest Claude seed intake | [Report](claude-seed-intake-v1/REPORT.md), [rechecks](claude-seed-intake-v1/RECHECK.json), [preservation](claude-seed-intake-v1/PRESERVATION.json) | Selected counts/compression reproduced; local digit tokenization verified; observer/control caveats refined; no model/runtime change |
 | Latest isolated blueprint/build | [Report](computational-world-blueprint-v1/REPORT.md), [checks](computational-world-blueprint-v1/CHECKS.json), [runbook](computational-world-blueprint-v1/RUNBOOK.md) | Documented Scheme subset; 31 host tests/124 reference fixtures/10 host demo assertions; no model runs; original primary 500 unchanged; retrieval/export next |
 | Prior computational-world research | [Three-cycle report](computational-world-three-cycle-v1/REPORT.md), [candidate](computational-world-three-cycle-v1/DESIGN.md), [preservation](computational-world-three-cycle-v1/PRIMARY_PRESERVATION.json) | Three source/review/design cycles; no model runs; generic computational medium replaces literal workshop interpretation; specification next; primary 500 unchanged |
 | Prior world-design scout | [World scout](persistent-world-scout-v1/REPORT.md), [text mechanics](persistent-world-scout-v1/TEXT_WORLD_SCOUT.md), [open-ended methods](persistent-world-scout-v1/OPEN_ENDED_SCOUT.md), [resources](persistent-world-scout-v1/RESOURCE_SCOUT.md), [review](persistent-world-scout-v1/PEER_REVIEW.md) | Research only; compact persistent workshop proposed; no model runs or new activation; primary stays at 500 |
