@@ -1,0 +1,138 @@
+{
+  "id": "retrieval_110602",
+  "case": "retrieval",
+  "seed": 110602,
+  "receipt": {
+    "schema": "cw-receipt-1",
+    "receipt_id": "event:5bce0f069ee8fe433dc1dd7de5d8dbdc5e1bd6477a1bb9605c1735bb3e070119",
+    "event": {
+      "schema": "cw-event-1",
+      "world_id": "3c8e9e763d9b4371869d387d1f8b148c",
+      "request_id": "model-action",
+      "request_hash": "request:ad55776a2c9f66fba8e737b86b702ffb70a4ea677999587530a0674ec7ef472a",
+      "status": "REJECTED_VALIDATION",
+      "phase": "commit",
+      "commit_certainty": "committed",
+      "before_world": "snapshot:f23d301e32cb636b6fd063da57544d397ef9f408b45b20557d499274fe86ec42",
+      "after_world": "snapshot:f23d301e32cb636b6fd063da57544d397ef9f408b45b20557d499274fe86ec42",
+      "audit_before": {
+        "sequence": "1",
+        "head": "event:6a9b328ea309c8dffef0bf50e81d3b352f56440abc95d8c2a914176740233fd6"
+      },
+      "audit_after_sequence": "2",
+      "capture_id": null,
+      "versions": {
+        "language": "cw-scheme-1",
+        "evaluator": "cw-eval-1",
+        "cost": "cw-cost-1",
+        "profile": "cw-portability-fixture-1"
+      },
+      "limits": {
+        "profile_id": "cw-portability-fixture-1",
+        "max_source_bytes": "8192",
+        "max_parse_depth": "64",
+        "max_ast_nodes": "2048",
+        "max_int_bits": "128",
+        "max_string_chars": "2048",
+        "max_value_nodes": "4096",
+        "max_value_depth": "64",
+        "max_frames": "256",
+        "max_steps": "10000",
+        "max_work": "100000",
+        "eval_fuel": "110000",
+        "max_result_bytes": "16384",
+        "max_artifact_bytes": "32768",
+        "max_world_bytes": "1048576",
+        "max_artifacts": "256",
+        "max_aliases": "64",
+        "max_actions": "1000",
+        "max_audit_bytes": "4194304",
+        "max_receipt_bytes": "32768",
+        "max_observation_bytes": "4096",
+        "max_page_items": "16",
+        "max_dependency_nodes": "256",
+        "max_allocation_bytes": "262144",
+        "max_environment_bindings": "256",
+        "max_argument_count": "256",
+        "host_timeout_seconds": "5",
+        "host_memory_bytes": "536870912",
+        "host_cpu_seconds": "3",
+        "host_file_bytes": "67108864",
+        "max_capture_bytes": "131072",
+        "max_metadata_bytes": "4194304",
+        "max_visit_fuel": "11000000",
+        "max_visit_allocation": "67108864",
+        "max_delivery_bytes": "4194304",
+        "max_bundle_bytes": "16777216",
+        "max_page_chars": "512"
+      },
+      "usage": {
+        "eval_fuel": "0",
+        "logical_alloc_bytes": "0",
+        "peak_frames": "0",
+        "host_work": null,
+        "artifact_bytes_added": "0",
+        "observation_bytes": "0",
+        "quota_fuel_charged": "0",
+        "quota_allocation_charged": "0"
+      },
+      "result": {
+        "value": null,
+        "artifact_ids": [],
+        "alias_changes": [],
+        "projection": null
+      },
+      "error": {
+        "code": "SYNTAX",
+        "limit": null,
+        "source_span": null,
+        "details": {
+          "message": "unsupported token #sure."
+        }
+      },
+      "trace": {
+        "retained_bytes": "0",
+        "truncated": false
+      },
+      "host_outcome": {
+        "watchdog": false,
+        "interruption": null
+      }
+    },
+    "audit_after": {
+      "sequence": "2",
+      "head": "event:5bce0f069ee8fe433dc1dd7de5d8dbdc5e1bd6477a1bb9605c1735bb3e070119"
+    },
+    "status": "REJECTED_VALIDATION",
+    "value": null,
+    "error": {
+      "code": "SYNTAX",
+      "limit": null,
+      "source_span": null,
+      "details": {
+        "message": "unsupported token #sure."
+      }
+    },
+    "world_snapshot": "snapshot:f23d301e32cb636b6fd063da57544d397ef9f408b45b20557d499274fe86ec42"
+  },
+  "model_visible_receipt": {
+    "status": "REJECTED_VALIDATION",
+    "value": null,
+    "error": {
+      "code": "SYNTAX",
+      "limit": null,
+      "source_span": null,
+      "details": {
+        "message": "unsupported token #sure."
+      }
+    },
+    "world_snapshot": "snapshot:f23d301e32cb636b6fd063da57544d397ef9f408b45b20557d499274fe86ec42",
+    "request_id": "model-action",
+    "truncated": false
+  },
+  "host_probes": [],
+  "accepted_action": false,
+  "requested_outcome": false,
+  "not_primary_history": true,
+  "generation_saved_before_dispatch": true
+}
