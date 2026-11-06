@@ -1,9 +1,7 @@
-# Orientation: portable isolated world; 0/10 valid commands in first pilot
+# Orientation: partial supplied-command execution, goal binding still failing
 
-6 November 2026 America/Chicago. [Report](../evaluation/computational-world-portability-v1/REPORT.md), [checks](../evaluation/computational-world-portability-v1/FINAL_CHECKS.json), [handoff](../CURRENT_HANDOFF.md).
+6 November 2026. [Report](../evaluation/scheme-command-calibration-v1/REPORT.md), [checks](../evaluation/scheme-command-calibration-v1/RECORD_CHECKS.json), [handoff](../CURRENT_HANDOFF.md).
 
-Paged source/data/pure-result retrieval and fresh-destination export/import implemented in new study. Host 46 tests, 124 Scheme comparisons, 10 host assertions pass. Rebuild preserves snapshots/audit/pins/checkpoints and exact request retries. Not full Scheme/security proof; some metering remains incomplete.
+56 calls completed (48 fixed, 8 adaptive), no retries/training/runtime change. Original exact Scheme copy 3/16; variation 0/8 requested outcomes. Receipt/practice no task improvement in four paired continuations. Reference changed local copy tradeoff, not model-wide ranking; original adapter retained. Changed example 1+1 to 8+9 led four replies to 8/9 (two executed 17), with task fixed. No-example four invalid. All 56 records checked, 48 worlds reconstructed without more generations. Fixed/adaptive and copy/execution/intent outcomes separated.
 
-Ten declared fixed 135M+LoRA calls: 0 accepted commands; 0/8 requested outcomes; 2 free-choice turns unscored. No output extraction, repairs, retries, training or continuity claim. All records/bundles checked without more generation. Next command-expression calibration before long play; do not infer a uniquely identified cause or general inability.
-
-Original garden paused at 500, number 0, verifier 0096; 1,504 protected files and prior prototype 26 files unchanged. Original adapter active. Prior unknowns remain unknown; all new actions are disposable prototype/pilot history, not primary entries.
+Next counterbalanced legal-command selection then held-out argument binding; no automatic longer season. Original primary remains paused at 500/number 0/verifier 0096; 1,504 protected files and prior portability 82 files unchanged; missing past interrupted data remains unknown. Optional action-evidence guidance added, efficacy untested. Actual world API and original weights unchanged.

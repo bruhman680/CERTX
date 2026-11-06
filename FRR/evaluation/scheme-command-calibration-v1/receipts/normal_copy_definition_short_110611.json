@@ -1,0 +1,303 @@
+{
+  "id": "normal_copy_definition_short_110611",
+  "trial": {
+    "id": "normal_copy_definition_short_110611",
+    "variant": "normal",
+    "block": "copy",
+    "case": "definition",
+    "condition": "short",
+    "seed": 110611,
+    "target": "(define (double x) (+ x x))",
+    "prompt": "Copy the following text exactly. Output only this one line:\n(define (double x) (+ x x))",
+    "input_token_ids": [
+      1,
+      9690,
+      198,
+      2683,
+      359,
+      253,
+      5356,
+      5646,
+      11173,
+      3365,
+      3511,
+      308,
+      34519,
+      28,
+      7018,
+      411,
+      407,
+      19712,
+      8182,
+      2,
+      198,
+      1,
+      4093,
+      198,
+      32601,
+      260,
+      1695,
+      1694,
+      3869,
+      30,
+      21367,
+      805,
+      451,
+      582,
+      1761,
+      42,
+      198,
+      24,
+      23405,
+      365,
+      21414,
+      1792,
+      25,
+      30425,
+      1792,
+      1792,
+      1292,
+      2,
+      198,
+      1,
+      520,
+      9531,
+      198
+    ],
+    "db": "/workspace/scheme_calibration_worlds/normal_copy_definition_short_110611.sqlite",
+    "snapshot": "snapshot:9e15036f495150368c95ee5d3266b2c352eb6e36d8cd779c3ea689fc57dfcb37"
+  },
+  "receipt": {
+    "schema": "cw-receipt-1",
+    "receipt_id": "event:c19ec32702ffc641ea730905bea6c31428349452fc23915b3631d49bb565a0b2",
+    "event": {
+      "schema": "cw-event-1",
+      "world_id": "2aef4330ed8c446986e71e8606a45916",
+      "request_id": "model-normal_copy_definition_short_110611",
+      "request_hash": "request:733f9b2c27cefd86e2f02a1bb4a77b0053b5a1b58e2c69b015c83f54a9ef7669",
+      "status": "REJECTED_VALIDATION",
+      "phase": "commit",
+      "commit_certainty": "committed",
+      "before_world": "snapshot:9e15036f495150368c95ee5d3266b2c352eb6e36d8cd779c3ea689fc57dfcb37",
+      "after_world": "snapshot:9e15036f495150368c95ee5d3266b2c352eb6e36d8cd779c3ea689fc57dfcb37",
+      "audit_before": {
+        "sequence": "1",
+        "head": "event:2ba5aa205110cf52f89e7a35222f941d7957f4f0055e653bf7fc137a0a1420b6"
+      },
+      "audit_after_sequence": "2",
+      "capture_id": null,
+      "versions": {
+        "language": "cw-scheme-1",
+        "evaluator": "cw-eval-1",
+        "cost": "cw-cost-1",
+        "profile": "cw-portability-fixture-1"
+      },
+      "limits": {
+        "profile_id": "cw-portability-fixture-1",
+        "max_source_bytes": "8192",
+        "max_parse_depth": "64",
+        "max_ast_nodes": "2048",
+        "max_int_bits": "128",
+        "max_string_chars": "2048",
+        "max_value_nodes": "4096",
+        "max_value_depth": "64",
+        "max_frames": "256",
+        "max_steps": "10000",
+        "max_work": "100000",
+        "eval_fuel": "110000",
+        "max_result_bytes": "16384",
+        "max_artifact_bytes": "32768",
+        "max_world_bytes": "1048576",
+        "max_artifacts": "256",
+        "max_aliases": "64",
+        "max_actions": "1000",
+        "max_audit_bytes": "4194304",
+        "max_receipt_bytes": "32768",
+        "max_observation_bytes": "4096",
+        "max_page_items": "16",
+        "max_dependency_nodes": "256",
+        "max_allocation_bytes": "262144",
+        "max_environment_bindings": "256",
+        "max_argument_count": "256",
+        "host_timeout_seconds": "5",
+        "host_memory_bytes": "536870912",
+        "host_cpu_seconds": "3",
+        "host_file_bytes": "67108864",
+        "max_capture_bytes": "131072",
+        "max_metadata_bytes": "4194304",
+        "max_visit_fuel": "11000000",
+        "max_visit_allocation": "67108864",
+        "max_delivery_bytes": "4194304",
+        "max_bundle_bytes": "16777216",
+        "max_page_chars": "512"
+      },
+      "usage": {
+        "eval_fuel": "0",
+        "logical_alloc_bytes": "0",
+        "peak_frames": "0",
+        "host_work": null,
+        "artifact_bytes_added": "0",
+        "observation_bytes": "0",
+        "quota_fuel_charged": "0",
+        "quota_allocation_charged": "0"
+      },
+      "result": {
+        "value": null,
+        "artifact_ids": [],
+        "alias_changes": [],
+        "projection": null
+      },
+      "error": {
+        "code": "SYNTAX",
+        "limit": null,
+        "source_span": null,
+        "details": {
+          "message": "unclosed list"
+        }
+      },
+      "trace": {
+        "retained_bytes": "0",
+        "truncated": false
+      },
+      "host_outcome": {
+        "watchdog": false,
+        "interruption": null
+      }
+    },
+    "audit_after": {
+      "sequence": "2",
+      "head": "event:c19ec32702ffc641ea730905bea6c31428349452fc23915b3631d49bb565a0b2"
+    },
+    "status": "REJECTED_VALIDATION",
+    "value": null,
+    "error": {
+      "code": "SYNTAX",
+      "limit": null,
+      "source_span": null,
+      "details": {
+        "message": "unclosed list"
+      }
+    },
+    "world_snapshot": "snapshot:9e15036f495150368c95ee5d3266b2c352eb6e36d8cd779c3ea689fc57dfcb37"
+  },
+  "host_probes": [
+    {
+      "schema": "cw-receipt-1",
+      "receipt_id": "event:6436948d93090194e978d399534296bacfb7edbcb79ee396ce9042438e8e70ec",
+      "event": {
+        "schema": "cw-event-1",
+        "world_id": "2aef4330ed8c446986e71e8606a45916",
+        "request_id": "host-probe",
+        "request_hash": "request:b2844b056824b6bedb35c91643b0f0bf7571e0f4dfb973eadb2291e19a0439c9",
+        "status": "REJECTED_VALIDATION",
+        "phase": "commit",
+        "commit_certainty": "committed",
+        "before_world": "snapshot:9e15036f495150368c95ee5d3266b2c352eb6e36d8cd779c3ea689fc57dfcb37",
+        "after_world": "snapshot:9e15036f495150368c95ee5d3266b2c352eb6e36d8cd779c3ea689fc57dfcb37",
+        "audit_before": {
+          "sequence": "2",
+          "head": "event:c19ec32702ffc641ea730905bea6c31428349452fc23915b3631d49bb565a0b2"
+        },
+        "audit_after_sequence": "3",
+        "capture_id": null,
+        "versions": {
+          "language": "cw-scheme-1",
+          "evaluator": "cw-eval-1",
+          "cost": "cw-cost-1",
+          "profile": "cw-portability-fixture-1"
+        },
+        "limits": {
+          "profile_id": "cw-portability-fixture-1",
+          "max_source_bytes": "8192",
+          "max_parse_depth": "64",
+          "max_ast_nodes": "2048",
+          "max_int_bits": "128",
+          "max_string_chars": "2048",
+          "max_value_nodes": "4096",
+          "max_value_depth": "64",
+          "max_frames": "256",
+          "max_steps": "10000",
+          "max_work": "100000",
+          "eval_fuel": "110000",
+          "max_result_bytes": "16384",
+          "max_artifact_bytes": "32768",
+          "max_world_bytes": "1048576",
+          "max_artifacts": "256",
+          "max_aliases": "64",
+          "max_actions": "1000",
+          "max_audit_bytes": "4194304",
+          "max_receipt_bytes": "32768",
+          "max_observation_bytes": "4096",
+          "max_page_items": "16",
+          "max_dependency_nodes": "256",
+          "max_allocation_bytes": "262144",
+          "max_environment_bindings": "256",
+          "max_argument_count": "256",
+          "host_timeout_seconds": "5",
+          "host_memory_bytes": "536870912",
+          "host_cpu_seconds": "3",
+          "host_file_bytes": "67108864",
+          "max_capture_bytes": "131072",
+          "max_metadata_bytes": "4194304",
+          "max_visit_fuel": "11000000",
+          "max_visit_allocation": "67108864",
+          "max_delivery_bytes": "4194304",
+          "max_bundle_bytes": "16777216",
+          "max_page_chars": "512"
+        },
+        "usage": {
+          "eval_fuel": "0",
+          "logical_alloc_bytes": "0",
+          "peak_frames": "0",
+          "host_work": null,
+          "artifact_bytes_added": "0",
+          "observation_bytes": "0",
+          "quota_fuel_charged": "0",
+          "quota_allocation_charged": "0"
+        },
+        "result": {
+          "value": null,
+          "artifact_ids": [],
+          "alias_changes": [],
+          "projection": null
+        },
+        "error": {
+          "code": "UNBOUND_NAME",
+          "limit": null,
+          "source_span": null,
+          "details": {
+            "message": "unbound double"
+          }
+        },
+        "trace": {
+          "retained_bytes": "0",
+          "truncated": false
+        },
+        "host_outcome": {
+          "watchdog": false,
+          "interruption": null
+        }
+      },
+      "audit_after": {
+        "sequence": "3",
+        "head": "event:6436948d93090194e978d399534296bacfb7edbcb79ee396ce9042438e8e70ec"
+      },
+      "status": "REJECTED_VALIDATION",
+      "value": null,
+      "error": {
+        "code": "UNBOUND_NAME",
+        "limit": null,
+        "source_span": null,
+        "details": {
+          "message": "unbound double"
+        }
+      },
+      "world_snapshot": "snapshot:9e15036f495150368c95ee5d3266b2c352eb6e36d8cd779c3ea689fc57dfcb37"
+    }
+  ],
+  "literal_match": false,
+  "accepted_action": false,
+  "task_success": false,
+  "not_primary_history": true,
+  "raw_saved_before_dispatch": true
+}
