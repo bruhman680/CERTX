@@ -1,3 +1,9 @@
+# Prepared: persistent Linux workspace; original garden still paused at 750
+
+7 November 2026. [Build and connection pilot](persistent-cloud-workspace-v1/REPORT.md). Nine host tests passed. Three isolated base-model replies reached the shell unchanged and produced errors; no model-authored file changes. Research evaluations are outside the guest mount. No primary activation or entries beyond 750. Old adapter/history preserved; diagnostic calls used no added adapter. Aggregate resource limits need strengthening before long autonomous operation. Earlier continuation instructions below are historical pending a versioned activation.
+
+---
+
 # Current clarification: observer judgments external; manual review gate removed for future blocks
 
 7 November 2026 America/Chicago. [Feedback/control audit](observation-without-approval-v1/REPORT.md). The garden is still paused at 750; no new model calls, active prompt changes or seed changes. The prior seed remains intact.
