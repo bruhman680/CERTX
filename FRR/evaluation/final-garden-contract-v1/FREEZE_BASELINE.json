@@ -1,0 +1,76 @@
+{
+  "parent_entry": 850,
+  "initial_target_entry": 950,
+  "actual_model_calls": 0,
+  "state": "prepared and preflight-passed before first entry851",
+  "contract_sha256": "ffc183a3c1518abdf06f5d788846e1fa686dc6753052e5b6d7f7de6b93f0bb28",
+  "manifest_sha256": "f096eb29ec4dce5b19c7eb11241a9fd9a2a654005d2f6652564e8ae8ec862867",
+  "initial_world_id": "578ba2224fc406a016872b8cc06ba118df25978faf2ba8df5a2ba5ed12e47943",
+  "initial_world_entries": [
+    [
+      "LAWS.txt",
+      "file",
+      384,
+      "316d8e627e4ad4b5c1dfbd9f357660fac1b89277e9145dff646028ea92d7fe66",
+      276
+    ],
+    [
+      "notebook.txt",
+      "file",
+      384,
+      "ff8ab308c116027eecd9825c47a5408b0abde6b51e6525283d3cf5eb6c42032e",
+      34267
+    ],
+    [
+      "prior_replies.jsonl",
+      "file",
+      384,
+      "7e919a664a4950f49f2100e5d09f0528fb2bffc4b6c31a01f86926a485abf171",
+      150350
+    ],
+    [
+      "transitions.json",
+      "file",
+      384,
+      "56c45362a0ae586685ea214cedbf28e6f6562f89a89cce403ed2d6bad46673e5",
+      1091
+    ]
+  ],
+  "code_and_model_pins": {
+    "/workspace/cache_backend_models/smollm2-135m/config.json": "8eb740e8bbe4cff95ea7b4588d17a2432deb16e8075bc5828ff7ba9be94d982a",
+    "/workspace/cache_backend_models/smollm2-135m/tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+    "/workspace/cache_backend_models/smollm2-135m/tokenizer_config.json": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df",
+    "/workspace/frr/evaluation/final-garden-contract-v1/CONTRACT.json": "ffc183a3c1518abdf06f5d788846e1fa686dc6753052e5b6d7f7de6b93f0bb28",
+    "/workspace/frr/evaluation/final-garden-contract-v1/HOST_RUNTIME_IDENTITY.json": "a8438035ccdfd1d23d3b20e574c602f94df3f6f20d84c0d92895aaf97dfebb13",
+    "/workspace/frr/evaluation/final-garden-contract-v1/generation.py": "9d89450fce7f5e605072674a35edc348271eae916703833a5b72693950203dfd",
+    "/workspace/frr/evaluation/final-garden-contract-v1/runner.py": "bb49eb2b00720354091c63ec9d15c9c7a86905621173e3c190540b430a82a781",
+    "/workspace/frr/evaluation/final-garden-contract-v1/server.py": "6e6d2a7f85ae2a00ffdcca8efa216427ff3d5d5538723659dfe9d1399025e40f",
+    "/workspace/frr/evaluation/final-garden-contract-v1/world.py": "60d6c18cd045e5c16eab2e98e91bcbd9d887d1250ac92bdb03baa6dd4dfb7f35",
+    "/workspace/frr/evaluation/source-access-three-cycle-v1/runtime_reference.py": "ee4ab071c0e0a39a968c8c665d708093e56c548af5ff3d6232deaf7b1be03539"
+  },
+  "host_tests": {
+    "world": 18,
+    "spawn_failure": 1,
+    "runner": 11
+  },
+  "preflight": {
+    "status": "pass",
+    "entry": 850,
+    "new_entries": 0,
+    "parent850_unchanged": true,
+    "original750_unchanged": true,
+    "record_chain": true,
+    "messages_reconstructed": true,
+    "tokens_and_stops_verified": true,
+    "objects_verified": 104,
+    "world_matches_bundle": true,
+    "fresh_mount_restoration": true,
+    "model_weights_unchanged": true,
+    "training_updates": 0,
+    "empty_system_verified": true,
+    "parent_recent_replies_preserved": true,
+    "model_calls": 0
+  },
+  "freeze_scope": "Operator-controlled model,worldlaws,seed,actioninterface,input/memory rules,sampler and pinnedruntime; externalobservationcadence maychange withoutmodelinputchanges",
+  "known_interruption_boundaries": "See CONTRACT.json and FREEZE_INTENT.md; do not silently repair or redesign after activation"
+}
