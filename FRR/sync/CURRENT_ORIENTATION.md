@@ -1,3 +1,17 @@
+# Current: original garden with exact user seed, paused at 750
+
+6 November 2026 America/Chicago. [Seeded 100-entry report](../evaluation/scheme-seed-to-750-v1/REPORT.md), [analysis](../evaluation/scheme-seed-to-750-v1/ANALYSIS.json). Same garden and history; entries 651–750 are saved. Final verifier 0142 passed; PAUSE present, no run/block lock, no further inference scheduled.
+
+The user seed, including the final 😁, is preserved in [USER_SEED.json](../evaluation/scheme-seed-to-750-v1/USER_SEED.json), visible in every new prompt from step 650. The user also authorized at most ten entries per checked window. Non-note host events pause for observer review. Actual checked windows: 11; review records: 1. No host permissions, runtime capabilities, model/adapter, sampler or token caps were expanded. Zero training updates, unchanged weights in all new sessions.
+
+Host kinds: `{"record_receipt": 99, "scheme_receipt": 1}`. Scheme statuses: `{"REJECTED_VALIDATION": 1}`. Successful Scheme statuses: `{}`.
+
+Use **evaluation/scheme-seed-to-750-v1/seeded_routine.py** and its [resume guide](../evaluation/scheme-seed-to-750-v1/RESUME.md). The active manifest is ENVIRONMENT_SCHEME_USER_SEED_V1.json. Older prompts/manifests replay under their original versions. Exact old pointer/projection bytes are in before/. Never replace a missing SQLite store with a fresh world; verify or reconstruct its last settled portable bundle.
+
+The seed and operational cadence are recorded condition changes, not a randomized seed-effect test. Interpret model text, terminal receipts, successful statuses and artifact changes separately. The old missing attempt at step 492 remains unknown. Earlier navigation below is historical context, not the active resume instructions.
+
+---
+
 # Current: same continuous garden paused at 650
 
 6 November 2026. [100-entry continuation report](../evaluation/scheme-continuation-to-650-v1/REPORT.md), [analysis](../evaluation/scheme-continuation-to-650-v1/ANALYSIS.json). Completed entries 506–650 in twenty checked windows with unchanged environment, prompts, model, canonical adapter and sampling. Final verifier 0130; PAUSE present, no RUN.lock or scheduled further inference. Old records retained.
