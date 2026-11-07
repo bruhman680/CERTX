@@ -1,3 +1,9 @@
+# Latest design correction: notebook writing is not execution
+
+7 November 2026. [Interface correction](notebook-action-separation-v1/REPORT.md). Tested notebook-default interface: writing persists without execution or semantic rejection; only an explicit action envelope reaches the shell. Seven host tests passed, zero new model calls. Not yet activated; original primary still paused at 750. Earlier shell-every-reply pilot remains historical evidence. Use the corrected interface when building the next runner; do not combine its notice with the old contradictory action rule.
+
+---
+
 # Prepared: persistent Linux workspace; original garden still paused at 750
 
 7 November 2026. [Build and connection pilot](persistent-cloud-workspace-v1/REPORT.md). Nine host tests passed. Three isolated base-model replies reached the shell unchanged and produced errors; no model-authored file changes. Research evaluations are outside the guest mount. No primary activation or entries beyond 750. Old adapter/history preserved; diagnostic calls used no added adapter. Aggregate resource limits need strengthening before long autonomous operation. Earlier continuation instructions below are historical pending a versioned activation.

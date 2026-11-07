@@ -1,0 +1,15 @@
+# Notebook writing separated from action
+
+7 November 2026, America/Chicago. User correction: the notebook is for the model's own writing/reasoning, potentially unfinished, until it chooses to put form to it. The prior prototype's shell-every-reply rule did not implement this intention. Its three errors are interface-condition observations, not evidence that notebook thought should have been executable.
+
+interface.py implements notebook-default handling. No prose, code-looking text, Markdown or malformed action request is automatically executed as guest code or classified as failed reasoning. Notebook writing is appended exactly, without corrections or a requirement to become organized or actionable. It is not evidence of access to private internal reasoning: it is model-generated text.
+
+Execution requires a separate exact JSON envelope: {"action":"shell","source":"..."}. This is a mechanical action interface, not a prescribed reasoning framework. Whole-reply JSON with exactly those fields opts into execution; otherwise the reply stays writing. Code-looking notebook text can remain a sketch forever. No automatic promotion to a command or semantic judgment occurs. JSON here is a provisional implementation choice whose usability remains untested with this model.
+
+Raw outputs are stored externally before effects. The model may revise/delete its own notebook through an explicit action; external records preserve the observed history. Notebook appends occur inside the same sandbox, preventing a model-created symlink from directing a host write into research records. A notebook storage failure is returned as an actual environmental consequence. There is no approval/rejection feedback for the contents of a thought. Shell errors remain visible only after an explicit requested action.
+
+Seven tests passed: prose/command-looking text/fences/incomplete JSON remain writing; explicit actions change files; actual program errors return; duplicate entries cannot silently rerun; notebook symlinks cannot write host files; model notebook edits cannot erase external raw evidence; additional fields/other action types are not dispatched. These are host fixture tests, not model calls.
+
+This is a tested interface component, not primary activation. The old primary remains paused at 750; the earlier three-call diagnostic pilot stays separate and unchanged. The new notice replaces, rather than combines with, the old notice's contradictory shell-every-reply instruction. A future runner must use the new notice and call receive rather than execute directly. No model has yet seen this interface.
+
+Next: evaluate concise factual interface descriptions on disposable matched worlds, treating notebook writing as valid writing and measuring explicit action usability separately. Strengthen aggregate resource limits before long unattended operation. Preserve the original 750-entry lineage and document any activation as a new phase with an explicit parent. User confirmed these recommendations; no additional permission is needed for that preparation and testing.
