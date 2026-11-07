@@ -1,3 +1,15 @@
+# Current clarification: observer judgments external; manual review gate removed for future blocks
+
+7 November 2026 America/Chicago. [Feedback/control audit](evaluation/observation-without-approval-v1/REPORT.md). The garden is still paused at 750; no new model calls, active prompt changes or seed changes. The prior seed remains intact.
+
+For the next explicitly requested block, use **evaluation/observation-without-approval-v1/continue_block.py** with a target and fresh record directory. It automatically continues after verified routine action/error outcomes; no researcher approval file, success, novelty, tool use or artifact is required. It preserves mechanical integrity checks and explicit stop requests. Model-facing execution still uses the pinned seeded_routine.py. Old approval-based block drivers remain historical, not the preferred future controller.
+
+Audit: the actual parser error from entry 688 was visible next turn; observer review/classification was not. Raw data were retained and task_score was null. The leading-parenthesis router can misclassify ordinary range notes; it was not silently altered.
+
+**Remaining prompt issue:** operator-authored play invitations/charter and next-move framing are still present. The model-facing prompt has not yet been redesigned to separate factual world affordances/user seeds from researcher behavioral assumptions. Do not claim this gate correction makes the prompt fully neutral or establishes emergence. Keep interpretations, opinions and expectations in observer records; preserve actual environment consequences for the model.
+
+---
+
 # Current: original garden with exact user seed, paused at 750
 
 6 November 2026 America/Chicago. [Seeded 100-entry report](evaluation/scheme-seed-to-750-v1/REPORT.md), [analysis](evaluation/scheme-seed-to-750-v1/ANALYSIS.json). Same garden and history; entries 651–750 are saved. Final verifier 0142 passed; PAUSE present, no run/block lock, no further inference scheduled.
