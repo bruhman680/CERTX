@@ -1,3 +1,19 @@
+# Frozen final garden contract: continuous count950, paused
+
+7 November 2026. [Final setup and100-entry report](../evaluation/final-garden-contract-v1/REPORT.md). Final operator design contact was recorded at850 and committed before851. The same garden continued851–950, with no post-freeze changes to model, seed, sampler, universe laws, action interface, runtime or input/memory rules. ACTIVE_GARDEN_PHASE.json points to evaluation/final-garden-contract-v1/run/STATE.json. The earlier750/850 stage counters are immutable lineage endpoints, not the current total.
+
+**Do not implement further improvements or redesigns in this small model/universe.** The user's explicit goal is to observe it under this fixed final contract. Older next-step recommendations below are historical and do not authorize more framing repairs, new material, tools, training, adapters, resources or seed edits. A genuinely necessary intervention must be recorded as an interruption/new condition and explicitly reopened by the user, never quietly applied.
+
+Agreed seed: Follow your curiosity and explore your universe. You may play, observe, wonder, experiment, and learn. 😁
+
+The exact850 world and recent839–850 replies carried forward. Final changes suppressed the factory system instruction with an empty system message and used native conversation roles. Same cached base model/noaddedadapter,96/8096 limits, sampler and12-reply policy. The model's own permitted world changes remain allowed. Notebook writing is not automatically executed or semantically rejected.
+
+Observed100 replies: all notebook directory-list writing, two exact text forms,100 EOS endings, no action requests or storage faults. Ten routine integrity checks plus four external zoom checks passed; reports at900/950 and separate final reconstruction passed. Original history and learned parameters unchanged; no training. These are observations, not evidence of a developmental phase or an efficacy ranking.
+
+Future authorized continuation uses the existing frozen runner: runner.py resume --steps N --integrity-every 10 --report-every 50 (or the supported external reporting cadence). Max250 per bounded invocation. No run is currently scheduled. Preserve every raw quiet entry; external attention/reports may adapt without changing model inputs. Integrity/capacity/uncertain-effect faults pause honestly. Read CONTRACT.json, FREEZE_INTENT.md and RESUME.md before continuation.
+
+---
+
 # Active garden: continuous lineage through 850, notebook/action separated, paused
 
 7 November 2026. [100-entry phase report](../evaluation/cloud-garden-750-to-850-v1/REPORT.md). Entries 751–850 completed; ten integrity checks and five twenty-entry reports passed, plus independent final restoration and byte verification. The old 750-entry stage remains a frozen lineage parent; FRR/ACTIVE_GARDEN_PHASE.json identifies the current phase and its state. Do not treat the old stage's STATE.json=750 as the total current count.
