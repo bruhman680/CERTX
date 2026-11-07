@@ -1,0 +1,14 @@
+.F...........
+======================================================================
+FAIL: test_background_dies (test_world.Tests.test_background_dies)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/frr/evaluation/cloud-garden-750-to-850-v1/test_world.py", line 37, in test_background_dies
+    self.w.execute('(sleep 1; echo bad > late) &');time.sleep(1.1);self.assertFalse((self.w.home/'late').exists())
+                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 13 tests in 8.696s
+
+FAILED (failures=1)

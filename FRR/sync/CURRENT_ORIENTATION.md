@@ -1,3 +1,15 @@
+# Active garden: continuous lineage through 850, notebook/action separated, paused
+
+7 November 2026. [100-entry phase report](../evaluation/cloud-garden-750-to-850-v1/REPORT.md). Entries 751–850 completed; ten integrity checks and five twenty-entry reports passed, plus independent final restoration and byte verification. The old 750-entry stage remains a frozen lineage parent; FRR/ACTIVE_GARDEN_PHASE.json identifies the current phase and its state. Do not treat the old stage's STATE.json=750 as the total current count.
+
+All 100 replies were notebook writing; no explicit shell actions and no notebook storage faults. Writing was retained without semantic rejection. Zero training; cached base SmolLM2-135M-Instruct without the added canonical adapter. The old adapter and all earlier records remain preserved. The earlier unknown interruption remains unknown.
+
+A persistent Linux sandbox supports actual computation through an explicit action envelope. The model has not demonstrated use of that action interface in this block. The factory tokenizer still inserts a helpful-assistant system header; this is recorded and remains a framing confound. Recent history is serialized as JSON, another possible presentation influence. No instruction-free emergence or reasoning improvement is established.
+
+Next strongest: remove the factory header in a versioned condition, test concise/native history and action access on matched disposable contexts, and preserve notebook freedom. No researcher judgment is supplied as live reward. Use the phase RESUME.md; the completed runner is deliberately single-use. Do not rerun historical controllers or silently re-execute uncertain actions. Earlier navigation below is historical context.
+
+---
+
 # Latest design correction: notebook writing is not execution
 
 7 November 2026. [Interface correction](../evaluation/notebook-action-separation-v1/REPORT.md). Tested notebook-default interface: writing persists without execution or semantic rejection; only an explicit action envelope reaches the shell. Seven host tests passed, zero new model calls. Not yet activated; original primary still paused at 750. Earlier shell-every-reply pilot remains historical evidence. Use the corrected interface when building the next runner; do not combine its notice with the old contradictory action rule.

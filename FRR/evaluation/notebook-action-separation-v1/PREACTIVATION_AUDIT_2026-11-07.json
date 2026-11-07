@@ -1,0 +1,42 @@
+{
+  "status": "preactivation audit",
+  "primary_entry": 750,
+  "live_model_calls": 0,
+  "checks": {
+    "0": {
+      "kind": "notebook",
+      "execution_requested": false,
+      "visible_feedback": ""
+    },
+    "1": {
+      "kind": "notebook",
+      "execution_requested": false,
+      "visible_feedback": ""
+    },
+    "2": {
+      "kind": "notebook",
+      "execution_requested": false,
+      "visible_feedback": ""
+    },
+    "3": {
+      "kind": "shell",
+      "execution_requested": true,
+      "visible_feedback": "{\"stdout\": \"\", \"stderr\": \"\", \"exit_code\": 0, \"boundary\": null}"
+    }
+  },
+  "idle_did_not_require_action": true,
+  "unfinished_writing_did_not_require_action": true,
+  "malformed_envelope_stayed_writing": true,
+  "explicit_noop_allowed": true,
+  "notice_contains_no_task_or_success_target": true,
+  "aggregate_cgroup_writable": false,
+  "remaining": [
+    "No new end-to-end primary runner activated; interface component only",
+    "Aggregate disk quota is not hard-enforced; current size check is between actions",
+    "Per-process memory cap is not an aggregate memory cap",
+    "New action-envelope usability not yet tested with the small model",
+    "Notebook storage failure feedback should explicitly include timeout/exit status, including when stderr is empty",
+    "A future assembled prompt must not include the earlier contradictory shell-every-reply notice",
+    "Resuming after 750 requires an explicit lineage transition and no automatic re-execution of uncertain actions"
+  ]
+}

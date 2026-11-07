@@ -1,0 +1,91 @@
+F.E.FFFFF..FF
+======================================================================
+ERROR: test_file_size (test_world.Tests.test_file_size)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/frr/evaluation/cloud-garden-750-to-850-v1/test_world.py", line 35, in test_file_size
+    self.w.execute('head -c 1000000 /dev/zero > file');self.assertLessEqual((self.w.home/'file').stat().st_size,262144)
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 840, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/7884/root/world/file'
+
+======================================================================
+FAIL: test_action_and_error (test_world.Tests.test_action_and_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/frr/evaluation/cloud-garden-750-to-850-v1/test_world.py", line 12, in test_action_and_error
+    r=receive(self.w,json.dumps({'action':'shell','source':'python3 -c "print(6*7)"'}));self.assertEqual(r['feedback']['stdout'],'42\n')
+                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '' != '42\n'
++ 42
+
+
+======================================================================
+FAIL: test_memory_limit (test_world.Tests.test_memory_limit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/frr/evaluation/cloud-garden-750-to-850-v1/test_world.py", line 33, in test_memory_limit
+    r=self.w.execute('python3 -c "x=bytearray(100000000)"');self.assertNotEqual(r['exit_code'],0);self.assertIn('MemoryError',r['stderr'])
+                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MemoryError' not found in "bwrap: Can't find source path /proc/self/fd/3: No such file or directory\n"
+
+======================================================================
+FAIL: test_notebook_idle_and_unfinished (test_world.Tests.test_notebook_idle_and_unfinished)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/frr/evaluation/cloud-garden-750-to-850-v1/test_world.py", line 9, in test_notebook_idle_and_unfinished
+    r=receive(self.w,text);self.assertEqual(r['kind'],'notebook');self.assertIsNone(r['feedback'])
+                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'stdout': '', 'stderr': "bwrap: Can't find source path /proc/self/fd/3: No such file or directory\n", 'exit_code': 1, 'boundary': None, 'seconds': 0.0028019659948768094} is not None
+
+======================================================================
+FAIL: test_output_and_time (test_world.Tests.test_output_and_time)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/frr/evaluation/cloud-garden-750-to-850-v1/test_world.py", line 27, in test_output_and_time
+    self.assertEqual(self.w.execute('yes hello')['boundary'],'output_limit')
+AssertionError: None != 'output_limit'
+
+======================================================================
+FAIL: test_process_identity_and_limits (test_world.Tests.test_process_identity_and_limits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/frr/evaluation/cloud-garden-750-to-850-v1/test_world.py", line 31, in test_process_identity_and_limits
+    self.assertEqual(r['exit_code'],0);self.assertTrue(r['stdout'].startswith('1000\n'));self.assertIn('(128, 128)',r['stdout']);self.assertIn('(33554432, 33554432)',r['stdout'])
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_restart_portability_and_symlinks (test_world.Tests.test_restart_portability_and_symlinks)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/frr/evaluation/cloud-garden-750-to-850-v1/test_world.py", line 41, in test_restart_portability_and_symlinks
+    self.assertEqual(self.w.capture(objects),b);self.assertEqual(self.w.execute('cat link')['stdout'],'remember\n')
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '' != 'remember\n'
++ remember
+
+
+======================================================================
+FAIL: test_timeout_notebook_is_visible (test_world.Tests.test_timeout_notebook_is_visible)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/frr/evaluation/cloud-garden-750-to-850-v1/test_world.py", line 25, in test_timeout_notebook_is_visible
+    self.assertEqual(r['feedback']['boundary'],'wall_time')
+AssertionError: None != 'wall_time'
+
+======================================================================
+FAIL: test_world_quota (test_world.Tests.test_world_quota)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/frr/evaluation/cloud-garden-750-to-850-v1/test_world.py", line 16, in test_world_quota
+    size=sum(p.stat().st_size for p in self.w.home.iterdir());self.assertLessEqual(size,8388608);self.assertIn('No space left',r['stderr'])
+                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'No space left' not found in "bwrap: Can't find source path /proc/self/fd/3: No such file or directory\n"
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.346s
+
+FAILED (failures=8, errors=1)
