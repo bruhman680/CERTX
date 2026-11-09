@@ -1,3 +1,15 @@
+# Current frozen garden: continuous count1300, paused; wider250-entry cadence exercised
+
+8 November2026. [Continuation report](frozen-garden-950-followup-v1/REPORT.md). Completed951–1050 (100entries), verifiedoperationalstability, then theconditionallyauthorized1051–1300 (250entries). Integrity stayed every10. Reports were every50 in the100block, thenevery100plusend in the250block. The same existing controller restored the1050checkpoint; no reset, seed/model/world/inputrule change or training occurred.
+
+The finaldesignfreeze remains at850, commitc80de8284e31c5b93633c0e8b795cb7eb0e48dfe. **Do not perform further improvements/redesigns in this model/universe.** The user wants continuedobservation under thisfixedcontract. Its own permitted actions can change worldcontents. Externalattention,analysis,reportcadence and user-authorizedentrybudgets maychange; they mustnotbecome modelhints, rewards or alteredrules. Older repair proposals below are historical and do not override thisconstraint.
+
+ACTIVE_GARDEN_PHASE.json still points to evaluation/final-garden-contract-v1/run/STATE.json; thatstate nowrecords1300. The earlier750/850/950 counters in historical reports identify their ownendpoints. All raw generations, byteobjects, nativeinputmessages, results and checkpoints remainretained. Pause/lock/pending status and source/model hashes wereverified. Repetition or known ordinary errors are notsemanticgates.
+
+For a newlyauthorizedblock, use the existing frozen runner.py resume --steps N --integrity-every 10 --report-every 100 (or50 whencloser reports are warranted); max250 per invocation. The last widerblock stoppedat1300; noadditionalrun is scheduled. Inspectevents moreclosely externally whenwarranted. Operationalcapacity, unsupported-state, integrity oruncertain-effect faults pausehonestly ratherthan triggerunannouncedrepairs.
+
+---
+
 # Frozen final garden contract: continuous count950, paused
 
 7 November 2026. [Final setup and100-entry report](final-garden-contract-v1/REPORT.md). Final operator design contact was recorded at850 and committed before851. The same garden continued851–950, with no post-freeze changes to model, seed, sampler, universe laws, action interface, runtime or input/memory rules. ACTIVE_GARDEN_PHASE.json points to evaluation/final-garden-contract-v1/run/STATE.json. The earlier750/850 stage counters are immutable lineage endpoints, not the current total.
