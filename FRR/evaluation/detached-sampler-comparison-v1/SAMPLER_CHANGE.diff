@@ -1,0 +1,17 @@
+--- frozen/generation.py
++++ detached/full_distribution_generation.py
+@@ -13,7 +13,7 @@
+   cache,logits=o.past_key_values,o.logits[0,-1]
+   for i in range(96):
+    z=logits.float()/.8;v,ix=torch.sort(z,descending=True);p=torch.softmax(v,dim=-1)
+-   remove=torch.cumsum(p,0)-p>=.9;v=v.masked_fill(remove,float('-inf'))
++   # Experimental condition: omit nucleus filtering; retain full softmax.
+    pick=int(torch.multinomial(torch.softmax(v,0),1,generator=rng));token=int(ix[pick]);new.append(token)
+    if token==tok.eos_token_id:stop='eos';break
+    if i<95:
+@@ -24,4 +24,4 @@
+  guard.read('after_generate',run_id=run_id)
+  return dict(run_id=run_id,messages=messages,input_token_ids=ids,generated_token_ids=new,
+              text=tok.decode(new,skip_special_tokens=True),stop=stop,
+-             seconds=time.perf_counter()-started,rng_seed=seed,temperature=.8,top_p=.9)
++             seconds=time.perf_counter()-started,rng_seed=seed,temperature=.8,top_p=None)

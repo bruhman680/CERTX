@@ -1,3 +1,15 @@
+# Current diagnostic: sampler comparison complete; original paused at 1550
+
+9 November 2026 UTC. [Four matched seed pairs](evaluation/detached-sampler-comparison-v1/REPORT.md) compared the original top-p 0.9 generator with the same generator omitting only nucleus filtering. All eight independent one-step trials began with the same entry-1550 input and checkpoint. Both arms repeated the exact directory listing on all four seeds, with EOS, no shell calls and no non-notebook state changes.
+
+The earlier probability trace predicted about 96.51% exact-path probability even without the mask. Four repeated unfiltered results are therefore unsurprising; they do not refute restored alternative support or establish inability to use tools. This comparison showed no behavioral change in these samples, and did not test receipt-followup behavior or long-run trajectories.
+
+Eight external generation calls and zero canonical calls. Verification passed; all canonical phase files, frozen pins and model tensor digest were preserved. The original garden remains paused at 1550, with no redesign applied. Raw outcomes, independent checkpoint restorations, exact generator diff, plan and verification are saved. No extra seeds or subsequent ablation was run automatically.
+
+The next prospective contact is a separately declared directory-cue comparison. The state/laws/contact map and preceding audit remain relevant; earlier history follows unchanged.
+
+---
+
 # Current design review: state, laws and contact mapped; paused at 1550
 
 9 November 2026 UTC. [One-page world map](evaluation/garden-state-laws-contact-map-v1/WORLD_MAP.md) and its linked boundary review distinguish persistent state, world transitions, observations, continuity, model generation, and experimental bounds. This is documentation only: zero model calls, zero new experiments, and no proposed redesign implemented. All canonical phase files match the preceding audit inventory.

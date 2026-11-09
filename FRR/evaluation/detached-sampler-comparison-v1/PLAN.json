@@ -1,0 +1,54 @@
+{
+  "version": "detached-sampler-comparison-v1",
+  "canonical_paused_at": 1550,
+  "design": "Four matched seed pairs; eight independent one-step restorations of the same checkpoint and input; no rolling continuation",
+  "seeds": [
+    121605,
+    121606,
+    121607,
+    121608
+  ],
+  "seed_selection": "Frozen absolute-entry rule evaluated for 1551 through 1554 before outcomes; these are not canonical entries",
+  "arms": [
+    "original_top_p_0.9",
+    "nucleus_filter_removed"
+  ],
+  "order": "For each seed: original then unfiltered. Each trial gets a fresh model KV and independent world restoration.",
+  "temperature": 0.8,
+  "output_tokens": 96,
+  "input_limit": 8096,
+  "changed_factor": "Only the nucleus mask is removed in the alternative; metadata identifies top_p as null. Sorting, softmax, RNG, temperature, model and input remain unchanged.",
+  "model": {
+    "name": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+    "weights_sha256": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c",
+    "added_adapter": false,
+    "training_updates": 0,
+    "dtype": "float32",
+    "attention": "eager",
+    "torch_threads": 2
+  },
+  "source_generator_sha256": "9d89450fce7f5e605072674a35edc348271eae916703833a5b72693950203dfd",
+  "alternative_generator_sha256": "9ef663745908e060dc433b5f45cc11226a6f6780efa6e367b62f161ae8788870",
+  "checkpoint_id": "63e58405f967eb014a1ce6827ada129dae45be4c4c5f296819ddde41da60b47f",
+  "canonical_generation_calls": 0,
+  "planned_external_generation_calls": 8,
+  "training_updates": 0,
+  "new_prompts_or_demonstrations": false,
+  "world_effects": "Dispatch each generated reply through unchanged receive() on a separate disposable checkpoint; preserve actual receipts and snapshots. No outcome or fixture is fed to canonical model.",
+  "feedback_response_limit": "These are single-step trials. No subsequent response to any new receipt is measured.",
+  "outcomes": [
+    "exact bytes and tokens",
+    "EOS versus token cap",
+    "same text as baseline",
+    "whole-reply action dispatch",
+    "actual effects and feedback",
+    "non-notebook state changes"
+  ],
+  "limits": "Four seeds on one input are descriptive; no inference about long-run exploration, learning or general model ability. No adaptive extra trials.",
+  "prior_trace_prediction": {
+    "full_softmax_probability_of_exact_baseline_path": 0.9650974539953429,
+    "probability_all_four_repeat_if_independent_draws": 0.8675303548569057,
+    "scope": "Calculated from previously retained temperature-scaled probabilities before new trials. Ideal sampling interpretation; seeds are deterministic PRNG inputs, not guaranteed independent physical draws."
+  }
+}
