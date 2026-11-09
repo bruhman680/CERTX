@@ -1,3 +1,13 @@
+# Current audit: paused at 1550; no canonical changes
+
+9 November 2026 UTC. [Tool-path and sampler audit](evaluation/frozen-garden-tool-path-audit-v1/REPORT.md). The original garden remains paused at 1550 with identical canonical files, model, seed, input rules, and sampler. No continuation is scheduled.
+
+Ten operator-authored fixtures executed on a disposable restoration confirm working tool dispatch, file access, errors, and persistence. A separate probability trace found singleton top-p support at all 32 tokens of the repeated reply. One detached call to the original generator confirmed the exact output. It did not become entry 1551. The same input and sampler therefore provide no stochastic exit along the checked path before an input-changing event. This qualifies earlier uncertainty about possible later sampling changes; it does not establish a permanent lock under every future condition.
+
+No repair or new model-facing seed was applied. Preserve the frozen baseline. Any future prompt, sampler, or memory comparison is a separately declared diagnostic condition. Historical records and earlier interpretations below remain intact.
+
+---
+
 # Current: frozen garden through1550, paused
 
 8 November2026. [Latest250-entry report](evaluation/frozen-garden-1300-1550-v1/REPORT.md). Entries1301–1550 completed using the existing frozen controller. All25routineintegritychecks and finalobserververificationpassed; reports at1400/1500/1550. The old count continued, not reset. ACTIVE_GARDEN_PHASE.json points to the same final-garden-contract-v1/run/STATE.json, nowat1550.

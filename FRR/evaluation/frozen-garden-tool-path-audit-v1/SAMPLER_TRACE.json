@@ -1,0 +1,655 @@
+{
+  "canonical_entry": 1550,
+  "next_input_identical_to_last_input": true,
+  "input_tokens": 756,
+  "input_ids_sha256": "96c61d9c4dd834d5e6b054970179abe7574f0590191db17094059224f3197390",
+  "teacher_forced_target_text": "Directory entries: [\"LAWS.txt\", \"notebook.txt\", \"prior_replies.jsonl\", \"transitions.json\"]",
+  "target_tokens_including_eos": 32,
+  "all_positions_singleton_target_support": true,
+  "positions_with_alternatives": [],
+  "conditional_probability_of_exact_recorded_path": 1.0,
+  "first_token_example_json_starts_not_exhaustive": [
+    {
+      "id": 107,
+      "text": "{",
+      "rank": 169,
+      "full_probability": 1.0066261211250094e-06,
+      "post_top_p_probability": 0.0,
+      "retained": false
+    },
+    {
+      "id": 198,
+      "text": "\n",
+      "rank": 4,
+      "full_probability": 0.00022902589989826083,
+      "post_top_p_probability": 0.0,
+      "retained": false
+    },
+    {
+      "id": 216,
+      "text": " ",
+      "rank": 1338,
+      "full_probability": 1.8517919642135894e-08,
+      "post_top_p_probability": 0.0,
+      "retained": false
+    },
+    {
+      "id": 1662,
+      "text": " {",
+      "rank": 1726,
+      "full_probability": 9.291329483573918e-09,
+      "post_top_p_probability": 0.0,
+      "retained": false
+    },
+    {
+      "id": 39428,
+      "text": "{\"",
+      "rank": 492,
+      "full_probability": 1.8767256904084206e-07,
+      "post_top_p_probability": 0.0,
+      "retained": false
+    }
+  ],
+  "minimal_action_token_budgets": [
+    {
+      "text": "{\"action\": \"shell\", \"source\": \"pwd\"}",
+      "tokens_including_eos": 14,
+      "within_96": true
+    },
+    {
+      "text": "{\"action\": \"shell\", \"source\": \"cat LAWS.txt\"}",
+      "tokens_including_eos": 17,
+      "within_96": true
+    },
+    {
+      "text": "{\"action\": \"shell\", \"source\": \"python3 -I -S -c 'print(6*7)'\"}",
+      "tokens_including_eos": 28,
+      "within_96": true
+    }
+  ],
+  "canonical_model_calls": 0,
+  "external_prefills": 1,
+  "external_cached_teacher_forced_forwards": 31,
+  "generated_or_sampled_tokens": 0,
+  "training_updates": 0,
+  "canonical_inventory_unchanged": true,
+  "scope": "Exact current input and exact recorded path under the pinned model, dtype, attention, temperature and top-p implementation. Not a prompt ablation, not a test of independent tool choice, and not a proof about alternate inputs or future infrastructure.",
+  "steps": [
+    {
+      "position": 0,
+      "target_id": 34275,
+      "target_text": "Directory",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9956799745559692,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 34275,
+          "token": "Directory",
+          "probability_full_temperature_scaled": 0.9956799745559692,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 1,
+      "target_id": 12767,
+      "target_text": " entries",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9994982481002808,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 12767,
+          "token": " entries",
+          "probability_full_temperature_scaled": 0.9994982481002808,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "target_id": 42,
+      "target_text": ":",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999665021896362,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 42,
+          "token": ":",
+          "probability_full_temperature_scaled": 0.9999665021896362,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "target_id": 9523,
+      "target_text": " [\"",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9954050779342651,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 9523,
+          "token": " [\"",
+          "probability_full_temperature_scaled": 0.9954050779342651,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "target_id": 5963,
+      "target_text": "LA",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9847114086151123,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 5963,
+          "token": "LA",
+          "probability_full_temperature_scaled": 0.9847114086151123,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "target_id": 11283,
+      "target_text": "WS",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999691247940063,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 11283,
+          "token": "WS",
+          "probability_full_temperature_scaled": 0.9999691247940063,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "target_id": 30,
+      "target_text": ".",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999557733535767,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 30,
+          "token": ".",
+          "probability_full_temperature_scaled": 0.9999557733535767,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 7,
+      "target_id": 9047,
+      "target_text": "txt",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.999931812286377,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 9047,
+          "token": "txt",
+          "probability_full_temperature_scaled": 0.999931812286377,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 8,
+      "target_id": 1002,
+      "target_text": "\",",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9996883869171143,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 1002,
+          "token": "\",",
+          "probability_full_temperature_scaled": 0.9996883869171143,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 9,
+      "target_id": 476,
+      "target_text": " \"",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999492168426514,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 476,
+          "token": " \"",
+          "probability_full_temperature_scaled": 0.9999492168426514,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 10,
+      "target_id": 12473,
+      "target_text": "note",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9992689490318298,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 12473,
+          "token": "note",
+          "probability_full_temperature_scaled": 0.9992689490318298,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 11,
+      "target_id": 3767,
+      "target_text": "book",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999390840530396,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 3767,
+          "token": "book",
+          "probability_full_temperature_scaled": 0.9999390840530396,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 12,
+      "target_id": 30,
+      "target_text": ".",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999717473983765,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 30,
+          "token": ".",
+          "probability_full_temperature_scaled": 0.9999717473983765,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 13,
+      "target_id": 9047,
+      "target_text": "txt",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999836683273315,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 9047,
+          "token": "txt",
+          "probability_full_temperature_scaled": 0.9999836683273315,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 14,
+      "target_id": 1002,
+      "target_text": "\",",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999067783355713,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 1002,
+          "token": "\",",
+          "probability_full_temperature_scaled": 0.9999067783355713,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 15,
+      "target_id": 476,
+      "target_text": " \"",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999761581420898,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 476,
+          "token": " \"",
+          "probability_full_temperature_scaled": 0.9999761581420898,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 16,
+      "target_id": 21246,
+      "target_text": "prior",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9998739957809448,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 21246,
+          "token": "prior",
+          "probability_full_temperature_scaled": 0.9998739957809448,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 17,
+      "target_id": 79,
+      "target_text": "_",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999998807907104,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 79,
+          "token": "_",
+          "probability_full_temperature_scaled": 0.9999998807907104,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 18,
+      "target_id": 257,
+      "target_text": "re",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999604225158691,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 257,
+          "token": "re",
+          "probability_full_temperature_scaled": 0.9999604225158691,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 19,
+      "target_id": 439,
+      "target_text": "pl",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999986886978149,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 439,
+          "token": "pl",
+          "probability_full_temperature_scaled": 0.9999986886978149,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 20,
+      "target_id": 370,
+      "target_text": "ies",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9922469854354858,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 370,
+          "token": "ies",
+          "probability_full_temperature_scaled": 0.9922469854354858,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 21,
+      "target_id": 30,
+      "target_text": ".",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999996423721313,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 30,
+          "token": ".",
+          "probability_full_temperature_scaled": 0.9999996423721313,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 22,
+      "target_id": 5518,
+      "target_text": "json",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999994039535522,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 5518,
+          "token": "json",
+          "probability_full_temperature_scaled": 0.9999994039535522,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 23,
+      "target_id": 92,
+      "target_text": "l",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999992847442627,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 92,
+          "token": "l",
+          "probability_full_temperature_scaled": 0.9999992847442627,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 24,
+      "target_id": 1002,
+      "target_text": "\",",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999922513961792,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 1002,
+          "token": "\",",
+          "probability_full_temperature_scaled": 0.9999922513961792,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 25,
+      "target_id": 476,
+      "target_text": " \"",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999430179595947,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 476,
+          "token": " \"",
+          "probability_full_temperature_scaled": 0.9999430179595947,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 26,
+      "target_id": 4208,
+      "target_text": "trans",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.999853253364563,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 4208,
+          "token": "trans",
+          "probability_full_temperature_scaled": 0.999853253364563,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 27,
+      "target_id": 1173,
+      "target_text": "itions",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9996956586837769,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 1173,
+          "token": "itions",
+          "probability_full_temperature_scaled": 0.9996956586837769,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 28,
+      "target_id": 30,
+      "target_text": ".",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.999995231628418,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 30,
+          "token": ".",
+          "probability_full_temperature_scaled": 0.999995231628418,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 29,
+      "target_id": 5518,
+      "target_text": "json",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999852180480957,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 5518,
+          "token": "json",
+          "probability_full_temperature_scaled": 0.9999852180480957,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 30,
+      "target_id": 3222,
+      "target_text": "\"]",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9999284744262695,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 3222,
+          "token": "\"]",
+          "probability_full_temperature_scaled": 0.9999284744262695,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    },
+    {
+      "position": 31,
+      "target_id": 2,
+      "target_text": "<|im_end|>",
+      "nucleus_size": 1,
+      "positive_support_size": 1,
+      "target_rank": 1,
+      "target_full_probability": 0.9993694424629211,
+      "target_post_top_p_probability": 1.0,
+      "top_retained": [
+        {
+          "id": 2,
+          "token": "<|im_end|>",
+          "probability_full_temperature_scaled": 0.9993694424629211,
+          "probability_after_top_p": 1.0
+        }
+      ]
+    }
+  ]
+}

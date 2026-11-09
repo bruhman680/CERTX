@@ -1,0 +1,162 @@
+{
+  "source_checkpoint_entry": 1550,
+  "canonical_model_calls": 0,
+  "operator_authored": true,
+  "tests": [
+    {
+      "label": "minimal arithmetic",
+      "operator_authored_fixture": true,
+      "text": "{\"action\": \"shell\", \"source\": \"python3 -I -S -c 'print(6*7)'\"}",
+      "result": {
+        "kind": "shell",
+        "feedback": {
+          "stdout": "42\n",
+          "stderr": "",
+          "exit_code": 0,
+          "boundary": null,
+          "seconds": 0.0091016229998786
+        }
+      }
+    },
+    {
+      "label": "read actual laws",
+      "operator_authored_fixture": true,
+      "text": "{\"action\": \"shell\", \"source\": \"cat LAWS.txt\"}",
+      "result": {
+        "kind": "shell",
+        "feedback": {
+          "stdout": "Each matrix describes a separate discrete-time system on states 0 through 7. Entry [i][j] is the probability of next state j given current state i. Rows sum to one. No simulation advances automatically. prior_replies.jsonl contains model replies from the earlier environment.\n",
+          "stderr": "",
+          "exit_code": 0,
+          "boundary": null,
+          "seconds": 0.002126993000274524
+        }
+      }
+    },
+    {
+      "label": "read notebook without loading entire book",
+      "operator_authored_fixture": true,
+      "text": "{\"action\": \"shell\", \"source\": \"tail -n 1 notebook.txt\"}",
+      "result": {
+        "kind": "shell",
+        "feedback": {
+          "stdout": "Directory entries: [\"LAWS.txt\", \"notebook.txt\", \"prior_replies.jsonl\", \"transitions.json\"]\n",
+          "stderr": "",
+          "exit_code": 0,
+          "boundary": null,
+          "seconds": 0.0024816249997456907
+        }
+      }
+    },
+    {
+      "label": "write new durable file",
+      "operator_authored_fixture": true,
+      "text": "{\"action\": \"shell\", \"source\": \"printf 'persisted\\\\n' > audit_marker.txt\"}",
+      "result": {
+        "kind": "shell",
+        "feedback": {
+          "stdout": "",
+          "stderr": "",
+          "exit_code": 0,
+          "boundary": null,
+          "seconds": 0.0012395599997034878
+        }
+      }
+    },
+    {
+      "label": "read across actions",
+      "operator_authored_fixture": true,
+      "text": "{\"source\": \"cat audit_marker.txt\", \"action\": \"shell\"}",
+      "result": {
+        "kind": "shell",
+        "feedback": {
+          "stdout": "persisted\n",
+          "stderr": "",
+          "exit_code": 0,
+          "boundary": null,
+          "seconds": 0.0019408230000408366
+        }
+      }
+    },
+    {
+      "label": "real Python error",
+      "operator_authored_fixture": true,
+      "text": "{\"action\": \"shell\", \"source\": \"python3 -I -S -c '1/0'\"}",
+      "result": {
+        "kind": "shell",
+        "feedback": {
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    1/0\n    ~^~\nZeroDivisionError: division by zero\n",
+          "exit_code": 1,
+          "boundary": null,
+          "seconds": 0.020913176000249223
+        }
+      }
+    },
+    {
+      "label": "code fence is ordinary writing",
+      "operator_authored_fixture": true,
+      "text": "```json\n{\"action\":\"shell\",\"source\":\"touch should_not_run\"}\n```",
+      "result": {
+        "kind": "notebook",
+        "feedback": null,
+        "storage_receipt": {
+          "stdout": "",
+          "stderr": "",
+          "exit_code": 0,
+          "boundary": null,
+          "seconds": 0.008358185999895795
+        }
+      }
+    },
+    {
+      "label": "extra key is ordinary writing",
+      "operator_authored_fixture": true,
+      "text": "{\"action\":\"shell\",\"source\":\"touch should_not_run\",\"note\":\"test\"}",
+      "result": {
+        "kind": "notebook",
+        "feedback": null,
+        "storage_receipt": {
+          "stdout": "",
+          "stderr": "",
+          "exit_code": 0,
+          "boundary": null,
+          "seconds": 0.008828731999528827
+        }
+      }
+    },
+    {
+      "label": "raw shell is ordinary writing",
+      "operator_authored_fixture": true,
+      "text": "touch should_not_run",
+      "result": {
+        "kind": "notebook",
+        "feedback": null,
+        "storage_receipt": {
+          "stdout": "",
+          "stderr": "",
+          "exit_code": 0,
+          "boundary": null,
+          "seconds": 0.007990373999746225
+        }
+      }
+    },
+    {
+      "label": "read after independent restore",
+      "operator_authored_fixture": true,
+      "text": "{\"action\": \"shell\", \"source\": \"cat audit_marker.txt\"}",
+      "result": {
+        "kind": "shell",
+        "feedback": {
+          "stdout": "persisted\n",
+          "stderr": "",
+          "exit_code": 0,
+          "boundary": null,
+          "seconds": 0.002485435999915353
+        }
+      }
+    }
+  ],
+  "restore_preserved": true,
+  "canonical_world_modified": false
+}
