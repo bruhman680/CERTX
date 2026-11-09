@@ -1,3 +1,15 @@
+# Current diagnostic: directory/replay comparison; original paused at 1550
+
+9 November 2026 UTC. [Sixteen detached one-step trials](evaluation/detached-directory-replay-comparison-v1/REPORT.md) compared directory observation present/absent crossed with recent twelve-reply replay present/absent. The full-softmax sampler, invitation, model, world and limits stayed fixed across all four conditions. The same four seeds were used throughout; the prior unfiltered reference reproduced exactly.
+
+With replay retained, both directory conditions repeated the exact listing on 4/4 seeds. Without replay, each condition produced four distinct non-listing texts; all eight reached the 96-token cap. No model-generated shell calls, errors or non-notebook changes occurred. Removing replay changed the delivery policy and sampled text, but did not establish grounded exploration, learning or a replacement continuity mechanism. It also changes turn count, positions and context length; do not describe this as an isolated internal-memory test.
+
+Sixteen external generation calls, zero canonical calls. Evidence verification passed; all canonical phase files and frozen pins remained intact. The original garden remains paused at 1550 with its freeze unchanged. No variant was adopted and no additional seeds or followup run was started automatically.
+
+The distinct unresolved question is model use of the action doorway. Runtime fixtures previously executed valid requests, but these model trials did not emit them. A separately labeled direct-request control could test basic envelope formulation; it would be diagnostic coaching, not spontaneous emergence or an instruction for the canonical garden. No such control has been run in this study.
+
+---
+
 # Current diagnostic: sampler comparison complete; original paused at 1550
 
 9 November 2026 UTC. [Four matched seed pairs](evaluation/detached-sampler-comparison-v1/REPORT.md) compared the original top-p 0.9 generator with the same generator omitting only nucleus filtering. All eight independent one-step trials began with the same entry-1550 input and checkpoint. Both arms repeated the exact directory listing on all four seeds, with EOS, no shell calls and no non-notebook state changes.

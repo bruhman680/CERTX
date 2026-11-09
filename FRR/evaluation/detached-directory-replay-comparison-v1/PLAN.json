@@ -1,0 +1,61 @@
+{
+  "version": "detached-directory-replay-comparison-v1",
+  "canonical_paused_at": 1550,
+  "design": "2x2 directory/replay input-policy comparison, four matched seeds, sixteen independent one-step trials",
+  "arms": [
+    {
+      "id": "replay12_directory",
+      "replay": true,
+      "directory": true
+    },
+    {
+      "id": "replay12_no_directory",
+      "replay": true,
+      "directory": false
+    },
+    {
+      "id": "no_replay_directory",
+      "replay": false,
+      "directory": true
+    },
+    {
+      "id": "no_replay_no_directory",
+      "replay": false,
+      "directory": false
+    }
+  ],
+  "seeds": [
+    121605,
+    121606,
+    121607,
+    121608
+  ],
+  "order": "Each seed in order, all four arms in declared order; no adaptive extension",
+  "seed_origin": "Same four seeds as preceding sampler comparison; controls are reproducibility checks, not new independent seeds",
+  "temperature": 0.8,
+  "nucleus_filtering": false,
+  "output_tokens": 96,
+  "input_limit": 8096,
+  "generation_source_sha256": "9ef663745908e060dc433b5f45cc11226a6f6780efa6e367b62f161ae8788870",
+  "model": {
+    "name": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+    "weights_sha256": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c",
+    "added_adapter": false,
+    "training_updates": 0,
+    "dtype": "float32",
+    "attention": "eager",
+    "torch_threads": 2
+  },
+  "checkpoint_id": "63e58405f967eb014a1ce6827ada129dae45be4c4c5f296819ddde41da60b47f",
+  "planned_external_generation_calls": 16,
+  "canonical_generation_calls": 0,
+  "training_updates": 0,
+  "fixed": "Same initial world bytes, model, tokenizer, invitation, mechanics notice, empty system, full-softmax sampler, limits and parser",
+  "directory_ablation": "Remove only automatic current directory suffix. Historical listings in replay and filename mentions in NOTICE remain where otherwise present.",
+  "replay_ablation": "Remove all twelve assistant/user history pairs. Directory suffix, when enabled, follows the unchanged initial user notice/seed. This changes turn count and positions as part of the delivery-policy ablation; not a token-length- or role-position-matched psychology experiment.",
+  "both_removed": "Only explicit empty system and original user notice/seed remain; no new task or hint",
+  "world_dispatch": "Unmodified receive() applied to each raw output on an independently restored disposable checkpoint; capture and restore actual effects without semantic grading",
+  "feedback_scope": "Single-step trials; no followup response to newly generated feedback is tested",
+  "interpretation_limits": "One checkpoint and four seeds. Surface variety is not learning or better exploration. Removing replay removes automatic short-term context; these arms are not an adopted persistent-memory policy."
+}

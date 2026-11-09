@@ -1,0 +1,19 @@
+# What the four conditions distinguish
+
+9 November 2026 UTC. Retrospective external interpretation of the sixteen retained one-step outputs; no additional model calls.
+
+The reference with twelve-reply replay and current directory observation repeated the exact directory list on 4/4 seeds. Removing the current directory observation while keeping replay also repeated it on 4/4. Historical listings still remained in the input. This shows that the fresh suffix was not necessary for those four sampled repetitions under the replay-present condition. It does not show that the directory cue had no role in the history that originally formed.
+
+Removing replay changed the output on all four matched seeds, both with and without the current directory observation. Each replay-absent arm produced four distinct texts and zero exact directory-list repeats. The same underlying weights and world could therefore produce different surface behavior when their delivered context changed. This is evidence against treating the exact list as an input-independent trait of the model.
+
+All eight replay-present replies ended EOS. All eight replay-absent replies reached the 96-token cap. Their forms included repetitive JSON-storage advice, block characters, invented directory procedures, shell explanations, proposed algorithm changes, fabricated response sets, a copy of the mechanical notice, and shell-comment-like lists. Some statements conflict with the actual environment. None of these descriptions or fragments constituted a whole-reply valid action. Only notebook.txt changed in every trial.
+
+It would be misleading to call the broader writing either an improvement or evidence of a permanent inability. Surface variation appeared, but no new evidence of actual retrieval, calculation, tool execution, error response, or accumulated learning appeared. The cap leaves open what a longer completion could contain, while the material already present can still be examined as writing. None of these eight outputs begins as a JSON object: merely extending its recorded prefix would not turn it into a whole-reply valid action. A changed prompt or different sampled prefix would be a separate case. A command-looking fragment is not a failed execution request under the declared notebook/action distinction.
+
+Replay removal also changes turn count, token positions and available recent context. Consequently the result is about this input-delivery policy, not an isolated measurement of an internal memory faculty. The retained filename mentions, broad invitation, instruction tuning and action-language demands remain potential influences. The sampler was unfiltered in every condition; these data do not test all combinations with the original top-p policy.
+
+The practical conclusion is that replay is a consequential part of the current text loop and that merely removing one prompt cue did not break it in these samples. It does not justify deleting continuity from a long-running world. A replacement must make past experience accessible without repeatedly presenting one narrow fragment as the entire recent view.
+
+The strongest distinct unresolved contact is now model use of the action interface: the earlier fixtures showed that the runtime executes valid requests, but no model-generated request was observed here. A separately labeled direct-request control could check basic envelope formulation on a short action. Such a control would be diagnostic coaching in a disposable condition, not spontaneous exploration or a proposed instruction for the canonical garden. No such control was run in this study.
+
+Garden translation: removing the new sign did not stop the echo from repeating it. Removing the echo changed the writing immediately, but the new pages did not yet become actions. Memory, perception and action access remain different functions. We have a clearer map of them, while the original garden and its history remain intact at 1550.
