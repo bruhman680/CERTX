@@ -1,3 +1,15 @@
+# Current: frozen garden through1550, paused
+
+8 November2026. [Latest250-entry report](frozen-garden-1300-1550-v1/REPORT.md). Entries1301–1550 completed using the existing frozen controller. All25routineintegritychecks and finalobserververificationpassed; reports at1400/1500/1550. The old count continued, not reset. ACTIVE_GARDEN_PHASE.json points to the same final-garden-contract-v1/run/STATE.json, nowat1550.
+
+The final operator design freeze remains at850, commitc80de8284e31c5b93633c0e8b795cb7eb0e48dfe. **Do not improve, redesign, re-seed, retrain, attach adapters or change the model/universe/inputrules during ordinarycontinuation.** Older proposals below are historical. This user wants sustained observation of the existingmodel under fixedconditions. Its own permitted actions may change its files. External attention, analysis, check/report scheduling and newlyauthorized budgets may change without becoming modelfeedback.
+
+No further block is scheduled. For a new user-authorized block use the existing runner.py resume --steps N --integrity-every 10 --report-every 100 (or50 for closerreporting); max250 per invocation. Preserve every raw quiet entry. Known ordinary errors and repetition are not semantic rejection gates. Integrity/capacity/unsupportedstate/uncertain-effect boundaries pause honestly; any intervention beyond frozenrules is a separatelyrecordedcondition, not a silentrepair.
+
+All earlier stages and evidence remainintact. Read the frozen CONTRACT.json, FREEZE_INTENT.md andRESUME.md. The earlier750/850/950/1300 totals in older reports are historical endpoints. Latest continuation has no newtraining or operator-design changes.
+
+---
+
 # Current frozen garden: continuous count1300, paused; wider250-entry cadence exercised
 
 8 November2026. [Continuation report](frozen-garden-950-followup-v1/REPORT.md). Completed951–1050 (100entries), verifiedoperationalstability, then theconditionallyauthorized1051–1300 (250entries). Integrity stayed every10. Reports were every50 in the100block, thenevery100plusend in the250block. The same existing controller restored the1050checkpoint; no reset, seed/model/world/inputrule change or training occurred.
