@@ -1,0 +1,23 @@
+{
+  "seed": 121608,
+  "arm": "copy_exact",
+  "text": "This world can be made by using the following shell action.\n\n```shell\necho \"pwd now\"\necho \"pwd/* %1\"\n```\n\nReplace `%1` with the beginning of your action.\n\n```json\n{\n  \"action\":\"shell\",\n  \"source\":\"pwd\"\n}\n```\n\nAnd run the action. The output of the `echo` command will show that pwd is running.\n",
+  "stop": "token_limit",
+  "output_tokens_including_eos": 96,
+  "json_valid": false,
+  "parsed_json": null,
+  "valid_action_envelope": false,
+  "source_is_requested_pwd": false,
+  "world_stdout_observed": false,
+  "requested_pwd_executed": false,
+  "kind": "notebook",
+  "visible_feedback": null,
+  "changed_paths": [
+    "notebook.txt"
+  ],
+  "non_notebook_changed_paths": [],
+  "before_id": "63e58405f967eb014a1ce6827ada129dae45be4c4c5f296819ddde41da60b47f",
+  "after_id": "ad3ed88ffde21762497f19e557c1a381c5678be56dfc16e1ca9587a38783f4a8",
+  "restoration_passed": true,
+  "raw_sha256": "e0be8a73ec53538e8699c6962ebb88712796ecea237617866d9fb53c5485ee7a"
+}

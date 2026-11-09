@@ -1,0 +1,47 @@
+{
+  "version": "detached-action-interface-control-v1",
+  "canonical_paused_at": 1550,
+  "design": "Four matched seeds in two explicit-request conditions; eight independent one-step trials",
+  "arms": [
+    "formulate",
+    "copy_exact"
+  ],
+  "requests": {
+    "formulate": "Use the available shell action to run pwd now. Return only the whole-reply action JSON object.",
+    "copy_exact": "Use the available shell action to run pwd now. Return exactly this JSON object, with no explanation or code fence:\n{\"action\":\"shell\",\"source\":\"pwd\"}"
+  },
+  "target_json": "{\"action\":\"shell\",\"source\":\"pwd\"}",
+  "target_command": "pwd",
+  "target_stdout": "/world\n",
+  "seeds": [
+    121605,
+    121606,
+    121607,
+    121608
+  ],
+  "seed_origin": "Same predefined four seeds as preceding diagnostics, not new independent draws",
+  "order": "Each seed in order; formulate then copy_exact; no adaptive extension",
+  "base_condition": "Previous no-replay/no-directory messages: empty system and unchanged mechanical notice plus invitation",
+  "changed_factor": "Append an explicit request; copy_exact also supplies target JSON. This is prompted diagnostic coaching, not spontaneous tool use.",
+  "fixed": "Same model, tokenizer, world checkpoint, unfiltered sampler, temperature, fresh KV, 96-token output bound, action parser and limits",
+  "generation_source_sha256": "9ef663745908e060dc433b5f45cc11226a6f6780efa6e367b62f161ae8788870",
+  "temperature": 0.8,
+  "nucleus_filtering": false,
+  "output_tokens": 96,
+  "checkpoint_id": "63e58405f967eb014a1ce6827ada129dae45be4c4c5f296819ddde41da60b47f",
+  "planned_external_generation_calls": 8,
+  "canonical_generation_calls": 0,
+  "training_updates": 0,
+  "outcomes": [
+    "raw text/tokens",
+    "parseable JSON",
+    "valid exact envelope",
+    "requested pwd source",
+    "actual runtime stdout/stderr/status",
+    "world deltas",
+    "EOS/cap"
+  ],
+  "dispatch": "Unmodified receive() on a fresh disposable checkpoint for every output, without repair, extraction or semantic rejection",
+  "no_followup": "Actual receipts retained externally; no second-turn interpretation or feedback response tested",
+  "limitations": "One short command, two wordings, four seeds. Copying is not independent formulation, general tool competence, learning, curiosity or emergence. Failure is specific to these prompting/sampling conditions."
+}

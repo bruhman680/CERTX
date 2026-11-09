@@ -1,0 +1,34 @@
+{
+  "status": "observed",
+  "retrospective": true,
+  "model_calls": 0,
+  "fragments_executed": 0,
+  "trials_with_embedded_target": 2,
+  "findings": [
+    {
+      "seed": 121606,
+      "arm": "copy_exact",
+      "whole_reply_action": false,
+      "target_fragments": [
+        {
+          "start": 68,
+          "end": 104,
+          "literal": "{\n  \"action\":\"shell\",\"source\":\"pwd\"}"
+        }
+      ]
+    },
+    {
+      "seed": 121608,
+      "arm": "copy_exact",
+      "whole_reply_action": false,
+      "target_fragments": [
+        {
+          "start": 163,
+          "end": 203,
+          "literal": "{\n  \"action\":\"shell\",\n  \"source\":\"pwd\"\n}"
+        }
+      ]
+    }
+  ],
+  "scope": "Descriptive recognition of complete target JSON as an interior substring. Does not change the parser, main outcomes or model feedback, infer intention, or promote writing to an action."
+}

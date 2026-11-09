@@ -1,3 +1,15 @@
+# Current: wound down; original garden paused at 1550
+
+9 November 2026 UTC. [Settling sync, results and next-session orientation](evaluation/detached-action-interface-control-v1/REST_SYNC.md). The requested action-interface diagnostic is complete. No further model run, redesign or canonical continuation is scheduled by this work. The original world, model, sampler, invitation and memory policy remain unchanged.
+
+Eight external calls tested direct pwd requests and supplied exact JSON on four seeds. Neither condition produced a whole-reply valid action (0/4 each). Two copy replies contained the correct target as a fenced/prose example; those fragments were recorded, not executed. One other reply was valid JSON of the wrong shape. Do not collapse this into 'cannot produce the syntax' or count a quoted example as world contact.
+
+All canonical phase files, frozen source/runtime/model pins and tensor digest passed. Raw results, prompts, world effects, retrospective fragment analysis and verification are preserved. Only notebook writes occurred in the disposable trials; they did not enter the original garden. Previous sampler and directory/replay findings remain qualified as recorded below.
+
+The strongest pending diagnostic is a minimal-instruction copy control to examine presentation interference. It is not running, and does not authorize silent changes to the frozen baseline. No training, parser relaxation, new live seed, or replacement continuity policy has been adopted. Resume by reading the settling sync and choosing a declared next condition with the user after reset.
+
+---
+
 # Current diagnostic: directory/replay comparison; original paused at 1550
 
 9 November 2026 UTC. [Sixteen detached one-step trials](evaluation/detached-directory-replay-comparison-v1/REPORT.md) compared directory observation present/absent crossed with recent twelve-reply replay present/absent. The full-softmax sampler, invitation, model, world and limits stayed fixed across all four conditions. The same four seeds were used throughout; the prior unfiltered reference reproduced exactly.
