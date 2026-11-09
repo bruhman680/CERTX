@@ -1,3 +1,13 @@
+# Current design review: state, laws and contact mapped; paused at 1550
+
+9 November 2026 UTC. [One-page world map](garden-state-laws-contact-map-v1/WORLD_MAP.md) and its linked boundary review distinguish persistent state, world transitions, observations, continuity, model generation, and experimental bounds. This is documentation only: zero model calls, zero new experiments, and no proposed redesign implemented. All canonical phase files match the preceding audit inventory.
+
+The current world inherits a broad shell/Python runtime. Its presentation and memory rules are additional design choices. Preserve isolation, truthful consequences and external history; inspect optional repetition, action grammar and sampling separately. Removing replay also removes its automatic short-term memory, so simplification must account for that function. The map does not assert that a small law set guarantees emergence or exposes every pretrained capability.
+
+The original garden remains paused at 1550, with the freeze at 850 intact. No continuation or alteration is scheduled. Detached comparisons remain prospective; read the preceding tool-path audit for the measured singleton-nucleus finding. Earlier history and interpretations follow unchanged.
+
+---
+
 # Current audit: paused at 1550; no canonical changes
 
 9 November 2026 UTC. [Tool-path and sampler audit](frozen-garden-tool-path-audit-v1/REPORT.md). The original garden remains paused at 1550 with identical canonical files, model, seed, input rules, and sampler. No continuation is scheduled.
