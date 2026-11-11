@@ -1,0 +1,1528 @@
+{
+  "protocol": "Neural Garden v0.1 bounded paired seeds and checkpoint replay",
+  "size": 12,
+  "steps": 200,
+  "records": [
+    {
+      "seed": 7,
+      "learned": {
+        "seed": 7,
+        "learning": true,
+        "initial": {
+          "tick": 0.0,
+          "mean_energy": 0.5474453636778094,
+          "mean_resource": 0.5530239669689494,
+          "harvest_rate": 0.0,
+          "mean_reward": 0.0,
+          "weight_update_rms": 0.0
+        },
+        "final": {
+          "tick": 200.0,
+          "mean_energy": 0.01813053800571792,
+          "mean_resource": 0.3647987796152482,
+          "harvest_rate": 0.5763888888888888,
+          "prediction_mse": 0.004009948673368615,
+          "mean_reward": -0.0008138623185165602,
+          "weight_update_rms": 3.337071407184441e-05
+        },
+        "history": [
+          {
+            "step": 20,
+            "metrics": {
+              "tick": 20.0,
+              "mean_energy": 0.6010712508835212,
+              "mean_resource": 0.39100224158809194,
+              "harvest_rate": 0.5277777777777778,
+              "prediction_mse": 0.014852621857996462,
+              "mean_reward": -0.004827657707740004,
+              "weight_update_rms": 6.87352762544331e-05
+            }
+          },
+          {
+            "step": 40,
+            "metrics": {
+              "tick": 40.0,
+              "mean_energy": 0.5198587765580479,
+              "mean_resource": 0.3900047656852166,
+              "harvest_rate": 0.5,
+              "prediction_mse": 0.01094674717044513,
+              "mean_reward": -0.005416546579876364,
+              "weight_update_rms": 6.005434015008685e-05
+            }
+          },
+          {
+            "step": 60,
+            "metrics": {
+              "tick": 60.0,
+              "mean_energy": 0.4372101550882265,
+              "mean_resource": 0.36892804630617215,
+              "harvest_rate": 0.5972222222222222,
+              "prediction_mse": 0.01142379318787429,
+              "mean_reward": -0.004852891550828313,
+              "weight_update_rms": 5.6863798664393966e-05
+            }
+          },
+          {
+            "step": 80,
+            "metrics": {
+              "tick": 80.0,
+              "mean_energy": 0.3364982063839546,
+              "mean_resource": 0.3823298565261754,
+              "harvest_rate": 0.5555555555555556,
+              "prediction_mse": 0.0077602369096489215,
+              "mean_reward": -0.004301375524762462,
+              "weight_update_rms": 5.047775953868727e-05
+            }
+          },
+          {
+            "step": 100,
+            "metrics": {
+              "tick": 100.0,
+              "mean_energy": 0.2448742150971231,
+              "mean_resource": 0.3825898318731827,
+              "harvest_rate": 0.5416666666666666,
+              "prediction_mse": 0.005836710165468631,
+              "mean_reward": -0.0028079072436065573,
+              "weight_update_rms": 4.591354381011124e-05
+            }
+          },
+          {
+            "step": 120,
+            "metrics": {
+              "tick": 120.0,
+              "mean_energy": 0.16452054096342683,
+              "mean_resource": 0.37556822634128245,
+              "harvest_rate": 0.5625,
+              "prediction_mse": 0.005291270484975308,
+              "mean_reward": -0.0042685965557880375,
+              "weight_update_rms": 4.1829747595325634e-05
+            }
+          },
+          {
+            "step": 140,
+            "metrics": {
+              "tick": 140.0,
+              "mean_energy": 0.09248873545721598,
+              "mean_resource": 0.3711990866411865,
+              "harvest_rate": 0.6180555555555556,
+              "prediction_mse": 0.005799375097920853,
+              "mean_reward": -0.0008905681908907807,
+              "weight_update_rms": 4.1419266864595686e-05
+            }
+          },
+          {
+            "step": 160,
+            "metrics": {
+              "tick": 160.0,
+              "mean_energy": 0.04502572489827772,
+              "mean_resource": 0.36272134166141035,
+              "harvest_rate": 0.5416666666666666,
+              "prediction_mse": 0.0048989075518490995,
+              "mean_reward": -0.0032843159298150196,
+              "weight_update_rms": 3.690452364609126e-05
+            }
+          },
+          {
+            "step": 180,
+            "metrics": {
+              "tick": 180.0,
+              "mean_energy": 0.019492722451829553,
+              "mean_resource": 0.37115676756224786,
+              "harvest_rate": 0.5486111111111112,
+              "prediction_mse": 0.0042245179510075745,
+              "mean_reward": -0.0002508290078860921,
+              "weight_update_rms": 3.563424372621552e-05
+            }
+          },
+          {
+            "step": 200,
+            "metrics": {
+              "tick": 200.0,
+              "mean_energy": 0.01813053800571792,
+              "mean_resource": 0.3647987796152482,
+              "harvest_rate": 0.5763888888888888,
+              "prediction_mse": 0.004009948673368615,
+              "mean_reward": -0.0008138623185165602,
+              "weight_update_rms": 3.337071407184441e-05
+            }
+          }
+        ],
+        "initial_probe": 0.015363595660528084,
+        "final_probe": 0.02051833809798472,
+        "common_world_probe_mse": 0.005281889309535566,
+        "fingerprint": "fc5745962bcd70b45aa87ff2fc8e46ac5dfa5baa7495d574e4ddcbc898f84b6b"
+      },
+      "frozen": {
+        "seed": 7,
+        "learning": false,
+        "initial": {
+          "tick": 0.0,
+          "mean_energy": 0.5474453636778094,
+          "mean_resource": 0.5530239669689494,
+          "harvest_rate": 0.0,
+          "mean_reward": 0.0,
+          "weight_update_rms": 0.0
+        },
+        "final": {
+          "tick": 200.0,
+          "mean_energy": 0.05683646146201634,
+          "mean_resource": 0.3964536693770785,
+          "harvest_rate": 0.5069444444444444,
+          "prediction_mse": 0.016485725933065534,
+          "mean_reward": -0.0024129593176986375,
+          "weight_update_rms": 0.0
+        },
+        "history": [
+          {
+            "step": 20,
+            "metrics": {
+              "tick": 20.0,
+              "mean_energy": 0.6005696328978896,
+              "mean_resource": 0.39696705014127504,
+              "harvest_rate": 0.5138888888888888,
+              "prediction_mse": 0.01744116748888574,
+              "mean_reward": -0.004526215663366293,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 40,
+            "metrics": {
+              "tick": 40.0,
+              "mean_energy": 0.5261460734338177,
+              "mean_resource": 0.3992725539265735,
+              "harvest_rate": 0.4861111111111111,
+              "prediction_mse": 0.017190973892418398,
+              "mean_reward": -0.00497718466552791,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 60,
+            "metrics": {
+              "tick": 60.0,
+              "mean_energy": 0.4551459130112632,
+              "mean_resource": 0.3828692983985318,
+              "harvest_rate": 0.5555555555555556,
+              "prediction_mse": 0.020148728588649925,
+              "mean_reward": -0.003883463892986746,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 80,
+            "metrics": {
+              "tick": 80.0,
+              "mean_energy": 0.3725868530366793,
+              "mean_resource": 0.4034240531086338,
+              "harvest_rate": 0.4861111111111111,
+              "prediction_mse": 0.016070605465790755,
+              "mean_reward": -0.003735912878916652,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 100,
+            "metrics": {
+              "tick": 100.0,
+              "mean_energy": 0.3015548639161689,
+              "mean_resource": 0.4046061457731242,
+              "harvest_rate": 0.4861111111111111,
+              "prediction_mse": 0.014652405764449213,
+              "mean_reward": -0.0026025239041366144,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 120,
+            "metrics": {
+              "tick": 120.0,
+              "mean_energy": 0.23904884935582324,
+              "mean_resource": 0.39996023781224693,
+              "harvest_rate": 0.5138888888888888,
+              "prediction_mse": 0.015419159271087815,
+              "mean_reward": -0.0029567340184011187,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 140,
+            "metrics": {
+              "tick": 140.0,
+              "mean_energy": 0.1734156734731462,
+              "mean_resource": 0.3975617324436667,
+              "harvest_rate": 0.5555555555555556,
+              "prediction_mse": 0.017305182340836105,
+              "mean_reward": 7.766150998946356e-05,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 160,
+            "metrics": {
+              "tick": 160.0,
+              "mean_energy": 0.11843794137826362,
+              "mean_resource": 0.3945327090572317,
+              "harvest_rate": 0.5,
+              "prediction_mse": 0.016238226194084514,
+              "mean_reward": -0.002927648616007953,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 180,
+            "metrics": {
+              "tick": 180.0,
+              "mean_energy": 0.07128906888026663,
+              "mean_resource": 0.39648631964007186,
+              "harvest_rate": 0.4791666666666667,
+              "prediction_mse": 0.01705638218002094,
+              "mean_reward": -0.0029770375126829014,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 200,
+            "metrics": {
+              "tick": 200.0,
+              "mean_energy": 0.05683646146201634,
+              "mean_resource": 0.3964536693770785,
+              "harvest_rate": 0.5069444444444444,
+              "prediction_mse": 0.016485725933065534,
+              "mean_reward": -0.0024129593176986375,
+              "weight_update_rms": 0.0
+            }
+          }
+        ],
+        "initial_probe": 0.015363595660528084,
+        "final_probe": 0.015363595660528084,
+        "common_world_probe_mse": 0.016295747457034722,
+        "fingerprint": "d4cc823df258965a7d032a3222127094c355f16b1a80b590c252b1903c7a6b23"
+      }
+    },
+    {
+      "seed": 17,
+      "learned": {
+        "seed": 17,
+        "learning": true,
+        "initial": {
+          "tick": 0.0,
+          "mean_energy": 0.5454606476844245,
+          "mean_resource": 0.5423566611681536,
+          "harvest_rate": 0.0,
+          "mean_reward": 0.0,
+          "weight_update_rms": 0.0
+        },
+        "final": {
+          "tick": 200.0,
+          "mean_energy": 0.015833373232856236,
+          "mean_resource": 0.36423723179488454,
+          "harvest_rate": 0.5694444444444444,
+          "prediction_mse": 0.003740550783341289,
+          "mean_reward": 3.8959685654990024e-05,
+          "weight_update_rms": 3.4290121453079526e-05
+        },
+        "history": [
+          {
+            "step": 20,
+            "metrics": {
+              "tick": 20.0,
+              "mean_energy": 0.595528520084191,
+              "mean_resource": 0.3879875424386385,
+              "harvest_rate": 0.5972222222222222,
+              "prediction_mse": 0.014584632386637122,
+              "mean_reward": -0.001159989885703476,
+              "weight_update_rms": 7.212566273582568e-05
+            }
+          },
+          {
+            "step": 40,
+            "metrics": {
+              "tick": 40.0,
+              "mean_energy": 0.5125560508720821,
+              "mean_resource": 0.39164656565210704,
+              "harvest_rate": 0.5347222222222222,
+              "prediction_mse": 0.010308209134929481,
+              "mean_reward": -0.003401497322330185,
+              "weight_update_rms": 6.1948666595795e-05
+            }
+          },
+          {
+            "step": 60,
+            "metrics": {
+              "tick": 60.0,
+              "mean_energy": 0.42970871096863966,
+              "mean_resource": 0.3749586127240079,
+              "harvest_rate": 0.5416666666666666,
+              "prediction_mse": 0.009501620220267262,
+              "mean_reward": -0.005593354009923868,
+              "weight_update_rms": 5.440053169320403e-05
+            }
+          },
+          {
+            "step": 80,
+            "metrics": {
+              "tick": 80.0,
+              "mean_energy": 0.3308632341310616,
+              "mean_resource": 0.37510206406813446,
+              "harvest_rate": 0.5902777777777778,
+              "prediction_mse": 0.008500979776454932,
+              "mean_reward": -0.005042545118467137,
+              "weight_update_rms": 5.182203683432903e-05
+            }
+          },
+          {
+            "step": 100,
+            "metrics": {
+              "tick": 100.0,
+              "mean_energy": 0.238343651339987,
+              "mean_resource": 0.3677021281900542,
+              "harvest_rate": 0.6111111111111112,
+              "prediction_mse": 0.0073830968787902095,
+              "mean_reward": -0.003314914688861136,
+              "weight_update_rms": 4.7570770206361376e-05
+            }
+          },
+          {
+            "step": 120,
+            "metrics": {
+              "tick": 120.0,
+              "mean_energy": 0.13720200826546683,
+              "mean_resource": 0.3716383678302378,
+              "harvest_rate": 0.5625,
+              "prediction_mse": 0.0057511647194324585,
+              "mean_reward": -0.004462248776593967,
+              "weight_update_rms": 4.370214732057972e-05
+            }
+          },
+          {
+            "step": 140,
+            "metrics": {
+              "tick": 140.0,
+              "mean_energy": 0.06667735988332801,
+              "mean_resource": 0.3600920969152027,
+              "harvest_rate": 0.6319444444444444,
+              "prediction_mse": 0.0065837019994821055,
+              "mean_reward": -0.0024296778984482775,
+              "weight_update_rms": 4.148877427146691e-05
+            }
+          },
+          {
+            "step": 160,
+            "metrics": {
+              "tick": 160.0,
+              "mean_energy": 0.029591715356733057,
+              "mean_resource": 0.3695748046016488,
+              "harvest_rate": 0.5555555555555556,
+              "prediction_mse": 0.004549567822146558,
+              "mean_reward": -0.0010741291963154648,
+              "weight_update_rms": 3.8208779172152855e-05
+            }
+          },
+          {
+            "step": 180,
+            "metrics": {
+              "tick": 180.0,
+              "mean_energy": 0.021609059375536328,
+              "mean_resource": 0.36516827240370686,
+              "harvest_rate": 0.5694444444444444,
+              "prediction_mse": 0.0040681480971567615,
+              "mean_reward": -0.0012646029513975348,
+              "weight_update_rms": 3.6447457232343464e-05
+            }
+          },
+          {
+            "step": 200,
+            "metrics": {
+              "tick": 200.0,
+              "mean_energy": 0.015833373232856236,
+              "mean_resource": 0.36423723179488454,
+              "harvest_rate": 0.5694444444444444,
+              "prediction_mse": 0.003740550783341289,
+              "mean_reward": 3.8959685654990024e-05,
+              "weight_update_rms": 3.4290121453079526e-05
+            }
+          }
+        ],
+        "initial_probe": 0.015660469177604795,
+        "final_probe": 0.022265298062805083,
+        "common_world_probe_mse": 0.0053475216231922236,
+        "fingerprint": "4f3ff9f4ca76b078dcb84d31cd0afaa7bfc53f007b642d79f9a97a2c21d3ba2e"
+      },
+      "frozen": {
+        "seed": 17,
+        "learning": false,
+        "initial": {
+          "tick": 0.0,
+          "mean_energy": 0.5454606476844245,
+          "mean_resource": 0.5423566611681536,
+          "harvest_rate": 0.0,
+          "mean_reward": 0.0,
+          "weight_update_rms": 0.0
+        },
+        "final": {
+          "tick": 200.0,
+          "mean_energy": 0.042746756576832884,
+          "mean_resource": 0.39466405917871833,
+          "harvest_rate": 0.4861111111111111,
+          "prediction_mse": 0.01628710964114992,
+          "mean_reward": -0.0010649789452109705,
+          "weight_update_rms": 0.0
+        },
+        "history": [
+          {
+            "step": 20,
+            "metrics": {
+              "tick": 20.0,
+              "mean_energy": 0.5930198098739015,
+              "mean_resource": 0.39610417811187176,
+              "harvest_rate": 0.5625,
+              "prediction_mse": 0.01629921020933589,
+              "mean_reward": -0.0015978759743593032,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 40,
+            "metrics": {
+              "tick": 40.0,
+              "mean_energy": 0.519409509787538,
+              "mean_resource": 0.3986746821110845,
+              "harvest_rate": 0.5277777777777778,
+              "prediction_mse": 0.015402482391607793,
+              "mean_reward": -0.0024966069602486785,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 60,
+            "metrics": {
+              "tick": 60.0,
+              "mean_energy": 0.4437670637177222,
+              "mean_resource": 0.3919574676849148,
+              "harvest_rate": 0.4861111111111111,
+              "prediction_mse": 0.015955968434896235,
+              "mean_reward": -0.005178038146935133,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 80,
+            "metrics": {
+              "tick": 80.0,
+              "mean_energy": 0.36209090836662616,
+              "mean_resource": 0.39437193934706116,
+              "harvest_rate": 0.5347222222222222,
+              "prediction_mse": 0.016958862482887877,
+              "mean_reward": -0.004145674369946754,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 100,
+            "metrics": {
+              "tick": 100.0,
+              "mean_energy": 0.2930536095688115,
+              "mean_resource": 0.39161807202503124,
+              "harvest_rate": 0.5902777777777778,
+              "prediction_mse": 0.016712252027415213,
+              "mean_reward": 0.0006611029198443508,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 120,
+            "metrics": {
+              "tick": 120.0,
+              "mean_energy": 0.21534493042853214,
+              "mean_resource": 0.3958595531100843,
+              "harvest_rate": 0.5208333333333334,
+              "prediction_mse": 0.015647466926087525,
+              "mean_reward": -0.0020180264754978017,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 140,
+            "metrics": {
+              "tick": 140.0,
+              "mean_energy": 0.15126582178720296,
+              "mean_resource": 0.38968373903802406,
+              "harvest_rate": 0.5694444444444444,
+              "prediction_mse": 0.017978117030217258,
+              "mean_reward": -0.0019071143960687918,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 160,
+            "metrics": {
+              "tick": 160.0,
+              "mean_energy": 0.09569399851905454,
+              "mean_resource": 0.399179217672845,
+              "harvest_rate": 0.4722222222222222,
+              "prediction_mse": 0.014817797822957227,
+              "mean_reward": -0.0029645557844639103,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 180,
+            "metrics": {
+              "tick": 180.0,
+              "mean_energy": 0.06339637023202711,
+              "mean_resource": 0.3973550839172933,
+              "harvest_rate": 0.4930555555555556,
+              "prediction_mse": 0.01514505463750971,
+              "mean_reward": -0.002219907101644542,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 200,
+            "metrics": {
+              "tick": 200.0,
+              "mean_energy": 0.042746756576832884,
+              "mean_resource": 0.39466405917871833,
+              "harvest_rate": 0.4861111111111111,
+              "prediction_mse": 0.01628710964114992,
+              "mean_reward": -0.0010649789452109705,
+              "weight_update_rms": 0.0
+            }
+          }
+        ],
+        "initial_probe": 0.015660469177604795,
+        "final_probe": 0.015660469177604795,
+        "common_world_probe_mse": 0.014602940625555862,
+        "fingerprint": "039da625feb757b68bb6936e73c80bcae48fa280f0429ce2b4101bfd05743622"
+      }
+    },
+    {
+      "seed": 29,
+      "learned": {
+        "seed": 29,
+        "learning": true,
+        "initial": {
+          "tick": 0.0,
+          "mean_energy": 0.5488578900862033,
+          "mean_resource": 0.5451346695853042,
+          "harvest_rate": 0.0,
+          "mean_reward": 0.0,
+          "weight_update_rms": 0.0
+        },
+        "final": {
+          "tick": 200.0,
+          "mean_energy": 0.017304956599079366,
+          "mean_resource": 0.3614634615038269,
+          "harvest_rate": 0.5555555555555556,
+          "prediction_mse": 0.003949724124519199,
+          "mean_reward": -0.0016174563718360246,
+          "weight_update_rms": 3.375063358376316e-05
+        },
+        "history": [
+          {
+            "step": 20,
+            "metrics": {
+              "tick": 20.0,
+              "mean_energy": 0.5944111466197641,
+              "mean_resource": 0.3913927197345875,
+              "harvest_rate": 0.4861111111111111,
+              "prediction_mse": 0.014807199232768667,
+              "mean_reward": -0.004756766270781325,
+              "weight_update_rms": 6.967592832013425e-05
+            }
+          },
+          {
+            "step": 40,
+            "metrics": {
+              "tick": 40.0,
+              "mean_energy": 0.5132300582147109,
+              "mean_resource": 0.3894921062918282,
+              "harvest_rate": 0.5277777777777778,
+              "prediction_mse": 0.011276223028663213,
+              "mean_reward": -0.0033898116357371573,
+              "weight_update_rms": 5.9234109040059326e-05
+            }
+          },
+          {
+            "step": 60,
+            "metrics": {
+              "tick": 60.0,
+              "mean_energy": 0.43120981476463693,
+              "mean_resource": 0.37971040959285274,
+              "harvest_rate": 0.5208333333333334,
+              "prediction_mse": 0.01075267271735246,
+              "mean_reward": -0.006435398348760047,
+              "weight_update_rms": 5.5229890410172395e-05
+            }
+          },
+          {
+            "step": 80,
+            "metrics": {
+              "tick": 80.0,
+              "mean_energy": 0.3368853256279516,
+              "mean_resource": 0.3844468030096835,
+              "harvest_rate": 0.5486111111111112,
+              "prediction_mse": 0.007299824463274503,
+              "mean_reward": -0.004005715722376489,
+              "weight_update_rms": 4.532818311059894e-05
+            }
+          },
+          {
+            "step": 100,
+            "metrics": {
+              "tick": 100.0,
+              "mean_energy": 0.2517445528535268,
+              "mean_resource": 0.36834474681446355,
+              "harvest_rate": 0.5972222222222222,
+              "prediction_mse": 0.00826242866654712,
+              "mean_reward": -0.004671344406985193,
+              "weight_update_rms": 4.60067113563912e-05
+            }
+          },
+          {
+            "step": 120,
+            "metrics": {
+              "tick": 120.0,
+              "mean_energy": 0.16232474759838617,
+              "mean_resource": 0.37598574922207006,
+              "harvest_rate": 0.5277777777777778,
+              "prediction_mse": 0.0059381422022350494,
+              "mean_reward": -0.005073025305548355,
+              "weight_update_rms": 4.233812614839454e-05
+            }
+          },
+          {
+            "step": 140,
+            "metrics": {
+              "tick": 140.0,
+              "mean_energy": 0.08916870007308311,
+              "mean_resource": 0.368870234804919,
+              "harvest_rate": 0.5625,
+              "prediction_mse": 0.005537714069855376,
+              "mean_reward": -0.003762461507075401,
+              "weight_update_rms": 4.046028279262349e-05
+            }
+          },
+          {
+            "step": 160,
+            "metrics": {
+              "tick": 160.0,
+              "mean_energy": 0.04347053321351576,
+              "mean_resource": 0.36515482906783825,
+              "harvest_rate": 0.5763888888888888,
+              "prediction_mse": 0.005110293761373678,
+              "mean_reward": -0.0019532656521365865,
+              "weight_update_rms": 3.845648546412128e-05
+            }
+          },
+          {
+            "step": 180,
+            "metrics": {
+              "tick": 180.0,
+              "mean_energy": 0.026651501841792904,
+              "mean_resource": 0.3635720322640359,
+              "harvest_rate": 0.6666666666666666,
+              "prediction_mse": 0.004696667247304088,
+              "mean_reward": 0.0021008480744632075,
+              "weight_update_rms": 3.455955893628887e-05
+            }
+          },
+          {
+            "step": 200,
+            "metrics": {
+              "tick": 200.0,
+              "mean_energy": 0.017304956599079366,
+              "mean_resource": 0.3614634615038269,
+              "harvest_rate": 0.5555555555555556,
+              "prediction_mse": 0.003949724124519199,
+              "mean_reward": -0.0016174563718360246,
+              "weight_update_rms": 3.375063358376316e-05
+            }
+          }
+        ],
+        "initial_probe": 0.015152485736353298,
+        "final_probe": 0.021214739447845386,
+        "common_world_probe_mse": 0.005168154792833517,
+        "fingerprint": "d894a6101b0f560bb2d12ebd30bdd838053815e54501cd4e9e11f36df3f78f42"
+      },
+      "frozen": {
+        "seed": 29,
+        "learning": false,
+        "initial": {
+          "tick": 0.0,
+          "mean_energy": 0.5488578900862033,
+          "mean_resource": 0.5451346695853042,
+          "harvest_rate": 0.0,
+          "mean_reward": 0.0,
+          "weight_update_rms": 0.0
+        },
+        "final": {
+          "tick": 200.0,
+          "mean_energy": 0.04898723392259056,
+          "mean_resource": 0.39227892399820363,
+          "harvest_rate": 0.4722222222222222,
+          "prediction_mse": 0.017204467521596482,
+          "mean_reward": -0.003092372785486968,
+          "weight_update_rms": 0.0
+        },
+        "history": [
+          {
+            "step": 20,
+            "metrics": {
+              "tick": 20.0,
+              "mean_energy": 0.5933494906553843,
+              "mean_resource": 0.3960998279976977,
+              "harvest_rate": 0.4861111111111111,
+              "prediction_mse": 0.017538134861261045,
+              "mean_reward": -0.003949210255809047,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 40,
+            "metrics": {
+              "tick": 40.0,
+              "mean_energy": 0.5168607756333103,
+              "mean_resource": 0.3993015913174949,
+              "harvest_rate": 0.5069444444444444,
+              "prediction_mse": 0.01639907753578537,
+              "mean_reward": -0.0030557760262537744,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 60,
+            "metrics": {
+              "tick": 60.0,
+              "mean_energy": 0.447663939613452,
+              "mean_resource": 0.3927259479788152,
+              "harvest_rate": 0.4930555555555556,
+              "prediction_mse": 0.01838967589963574,
+              "mean_reward": -0.005791531594465534,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 80,
+            "metrics": {
+              "tick": 80.0,
+              "mean_energy": 0.3705189588660914,
+              "mean_resource": 0.399707203141759,
+              "harvest_rate": 0.5208333333333334,
+              "prediction_mse": 0.016614224314886596,
+              "mean_reward": -0.0034361626550269866,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 100,
+            "metrics": {
+              "tick": 100.0,
+              "mean_energy": 0.30220937108610546,
+              "mean_resource": 0.3922900573411144,
+              "harvest_rate": 0.5416666666666666,
+              "prediction_mse": 0.018629511377064315,
+              "mean_reward": -0.00297968073207004,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 120,
+            "metrics": {
+              "tick": 120.0,
+              "mean_energy": 0.22958994829962423,
+              "mean_resource": 0.40078827496326547,
+              "harvest_rate": 0.4722222222222222,
+              "prediction_mse": 0.015768570406962223,
+              "mean_reward": -0.004322519382352787,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 140,
+            "metrics": {
+              "tick": 140.0,
+              "mean_energy": 0.16804985352245122,
+              "mean_resource": 0.3927747817502737,
+              "harvest_rate": 0.5069444444444444,
+              "prediction_mse": 0.017100016744968815,
+              "mean_reward": -0.002583883701968869,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 160,
+            "metrics": {
+              "tick": 160.0,
+              "mean_energy": 0.10677735584432016,
+              "mean_resource": 0.3999104371776383,
+              "harvest_rate": 0.4583333333333333,
+              "prediction_mse": 0.015849483959023723,
+              "mean_reward": -0.0038863875397407055,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 180,
+            "metrics": {
+              "tick": 180.0,
+              "mean_energy": 0.07315833246682517,
+              "mean_resource": 0.39804753922685343,
+              "harvest_rate": 0.5833333333333334,
+              "prediction_mse": 0.01738966308498351,
+              "mean_reward": 0.0018383104978856243,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 200,
+            "metrics": {
+              "tick": 200.0,
+              "mean_energy": 0.04898723392259056,
+              "mean_resource": 0.39227892399820363,
+              "harvest_rate": 0.4722222222222222,
+              "prediction_mse": 0.017204467521596482,
+              "mean_reward": -0.003092372785486968,
+              "weight_update_rms": 0.0
+            }
+          }
+        ],
+        "initial_probe": 0.015152485736353298,
+        "final_probe": 0.015152485736353298,
+        "common_world_probe_mse": 0.016092594858894787,
+        "fingerprint": "e35495ba614193da010b6381c6257f63e942fed142ce7976be81e2815a6d853c"
+      }
+    },
+    {
+      "seed": 43,
+      "learned": {
+        "seed": 43,
+        "learning": true,
+        "initial": {
+          "tick": 0.0,
+          "mean_energy": 0.5464910554912905,
+          "mean_resource": 0.5563574971384792,
+          "harvest_rate": 0.0,
+          "mean_reward": 0.0,
+          "weight_update_rms": 0.0
+        },
+        "final": {
+          "tick": 200.0,
+          "mean_energy": 0.01902078797753538,
+          "mean_resource": 0.373486020433649,
+          "harvest_rate": 0.5486111111111112,
+          "prediction_mse": 0.0036052609817400477,
+          "mean_reward": 9.325207384072971e-05,
+          "weight_update_rms": 3.4419189602494536e-05
+        },
+        "history": [
+          {
+            "step": 20,
+            "metrics": {
+              "tick": 20.0,
+              "mean_energy": 0.5940090967831043,
+              "mean_resource": 0.40240766341124146,
+              "harvest_rate": 0.4305555555555556,
+              "prediction_mse": 0.013346527952749387,
+              "mean_reward": -0.007837495750410813,
+              "weight_update_rms": 6.616006601941494e-05
+            }
+          },
+          {
+            "step": 40,
+            "metrics": {
+              "tick": 40.0,
+              "mean_energy": 0.524259196543667,
+              "mean_resource": 0.3809240862226959,
+              "harvest_rate": 0.5069444444444444,
+              "prediction_mse": 0.012006353144407757,
+              "mean_reward": -0.00468937904757694,
+              "weight_update_rms": 6.16563834667793e-05
+            }
+          },
+          {
+            "step": 60,
+            "metrics": {
+              "tick": 60.0,
+              "mean_energy": 0.43249286974817736,
+              "mean_resource": 0.37999475505024843,
+              "harvest_rate": 0.5625,
+              "prediction_mse": 0.009973032740104812,
+              "mean_reward": -0.0047572309952190785,
+              "weight_update_rms": 5.47586664622975e-05
+            }
+          },
+          {
+            "step": 80,
+            "metrics": {
+              "tick": 80.0,
+              "mean_energy": 0.3341853496736527,
+              "mean_resource": 0.37506619152334486,
+              "harvest_rate": 0.5486111111111112,
+              "prediction_mse": 0.008511224678019517,
+              "mean_reward": -0.00576602261708227,
+              "weight_update_rms": 4.9372035664259524e-05
+            }
+          },
+          {
+            "step": 100,
+            "metrics": {
+              "tick": 100.0,
+              "mean_energy": 0.234975860149934,
+              "mean_resource": 0.37925958848216135,
+              "harvest_rate": 0.5347222222222222,
+              "prediction_mse": 0.006330593072149285,
+              "mean_reward": -0.004341538094382958,
+              "weight_update_rms": 4.404717257294545e-05
+            }
+          },
+          {
+            "step": 120,
+            "metrics": {
+              "tick": 120.0,
+              "mean_energy": 0.14685322363426256,
+              "mean_resource": 0.37713500160654906,
+              "harvest_rate": 0.5625,
+              "prediction_mse": 0.005163467524533227,
+              "mean_reward": -0.003879453831014887,
+              "weight_update_rms": 4.0618011990248736e-05
+            }
+          },
+          {
+            "step": 140,
+            "metrics": {
+              "tick": 140.0,
+              "mean_energy": 0.07694793359687105,
+              "mean_resource": 0.3664296525603311,
+              "harvest_rate": 0.5694444444444444,
+              "prediction_mse": 0.005594276596900881,
+              "mean_reward": -0.003507042761189109,
+              "weight_update_rms": 3.902313459615954e-05
+            }
+          },
+          {
+            "step": 160,
+            "metrics": {
+              "tick": 160.0,
+              "mean_energy": 0.04011994353218354,
+              "mean_resource": 0.369010460702187,
+              "harvest_rate": 0.5972222222222222,
+              "prediction_mse": 0.004564418626175491,
+              "mean_reward": -0.0012551284557965094,
+              "weight_update_rms": 3.6525476678828794e-05
+            }
+          },
+          {
+            "step": 180,
+            "metrics": {
+              "tick": 180.0,
+              "mean_energy": 0.021573672614469127,
+              "mean_resource": 0.3771536208360086,
+              "harvest_rate": 0.5347222222222222,
+              "prediction_mse": 0.004187856953347289,
+              "mean_reward": -0.00038140682852033766,
+              "weight_update_rms": 3.435305258639796e-05
+            }
+          },
+          {
+            "step": 200,
+            "metrics": {
+              "tick": 200.0,
+              "mean_energy": 0.01902078797753538,
+              "mean_resource": 0.373486020433649,
+              "harvest_rate": 0.5486111111111112,
+              "prediction_mse": 0.0036052609817400477,
+              "mean_reward": 9.325207384072971e-05,
+              "weight_update_rms": 3.4419189602494536e-05
+            }
+          }
+        ],
+        "initial_probe": 0.014821333537998086,
+        "final_probe": 0.020667200428538333,
+        "common_world_probe_mse": 0.004683185561169893,
+        "fingerprint": "05bbc773a6f5a3e5fc0e51bf6c220c117c35ed238f143d23492a76ed07f55d40"
+      },
+      "frozen": {
+        "seed": 43,
+        "learning": false,
+        "initial": {
+          "tick": 0.0,
+          "mean_energy": 0.5464910554912905,
+          "mean_resource": 0.5563574971384792,
+          "harvest_rate": 0.0,
+          "mean_reward": 0.0,
+          "weight_update_rms": 0.0
+        },
+        "final": {
+          "tick": 200.0,
+          "mean_energy": 0.051448856088642886,
+          "mean_resource": 0.4027434798736047,
+          "harvest_rate": 0.5,
+          "prediction_mse": 0.014695489014071146,
+          "mean_reward": -0.000303018829156441,
+          "weight_update_rms": 0.0
+        },
+        "history": [
+          {
+            "step": 20,
+            "metrics": {
+              "tick": 20.0,
+              "mean_energy": 0.5911355696860923,
+              "mean_resource": 0.4103791183512221,
+              "harvest_rate": 0.4097222222222222,
+              "prediction_mse": 0.015138298591826495,
+              "mean_reward": -0.007635313956665477,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 40,
+            "metrics": {
+              "tick": 40.0,
+              "mean_energy": 0.5269976907174433,
+              "mean_resource": 0.3963442502469387,
+              "harvest_rate": 0.4791666666666667,
+              "prediction_mse": 0.016299321892923144,
+              "mean_reward": -0.004043212368454321,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 60,
+            "metrics": {
+              "tick": 60.0,
+              "mean_energy": 0.4510065413498476,
+              "mean_resource": 0.39630410810033034,
+              "harvest_rate": 0.5208333333333334,
+              "prediction_mse": 0.01630252150888597,
+              "mean_reward": -0.00396381232732946,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 80,
+            "metrics": {
+              "tick": 80.0,
+              "mean_energy": 0.37174638639938146,
+              "mean_resource": 0.3952419020965185,
+              "harvest_rate": 0.4791666666666667,
+              "prediction_mse": 0.016536317251648877,
+              "mean_reward": -0.005936001133630297,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 100,
+            "metrics": {
+              "tick": 100.0,
+              "mean_energy": 0.2947268659222696,
+              "mean_resource": 0.39970417048337553,
+              "harvest_rate": 0.4861111111111111,
+              "prediction_mse": 0.015348645399648721,
+              "mean_reward": -0.004015223873340808,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 120,
+            "metrics": {
+              "tick": 120.0,
+              "mean_energy": 0.21999037154898196,
+              "mean_resource": 0.4046206124399668,
+              "harvest_rate": 0.5,
+              "prediction_mse": 0.013411507819100492,
+              "mean_reward": -0.0036429183747216346,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 140,
+            "metrics": {
+              "tick": 140.0,
+              "mean_energy": 0.16216501557317908,
+              "mean_resource": 0.3882840657519707,
+              "harvest_rate": 0.5208333333333334,
+              "prediction_mse": 0.01738376878031296,
+              "mean_reward": -0.0037005403435430343,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 160,
+            "metrics": {
+              "tick": 160.0,
+              "mean_energy": 0.11088816028699879,
+              "mean_resource": 0.3914196270900676,
+              "harvest_rate": 0.5625,
+              "prediction_mse": 0.017147148517967923,
+              "mean_reward": -0.0008139628274628504,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 180,
+            "metrics": {
+              "tick": 180.0,
+              "mean_energy": 0.06824667635680275,
+              "mean_resource": 0.40368382657822593,
+              "harvest_rate": 0.4861111111111111,
+              "prediction_mse": 0.014651336135854216,
+              "mean_reward": -0.001798394142143183,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 200,
+            "metrics": {
+              "tick": 200.0,
+              "mean_energy": 0.051448856088642886,
+              "mean_resource": 0.4027434798736047,
+              "harvest_rate": 0.5,
+              "prediction_mse": 0.014695489014071146,
+              "mean_reward": -0.000303018829156441,
+              "weight_update_rms": 0.0
+            }
+          }
+        ],
+        "initial_probe": 0.014821333537998086,
+        "final_probe": 0.014821333537998086,
+        "common_world_probe_mse": 0.014542888316217018,
+        "fingerprint": "02d16ae2da57218b3774e55f4342ea4bf0a78217af88746f1fb1b8c59f72d4be"
+      }
+    },
+    {
+      "seed": 61,
+      "learned": {
+        "seed": 61,
+        "learning": true,
+        "initial": {
+          "tick": 0.0,
+          "mean_energy": 0.5461889592170975,
+          "mean_resource": 0.5622068661604277,
+          "harvest_rate": 0.0,
+          "mean_reward": 0.0,
+          "weight_update_rms": 0.0
+        },
+        "final": {
+          "tick": 200.0,
+          "mean_energy": 0.018474570394789072,
+          "mean_resource": 0.36178588853497484,
+          "harvest_rate": 0.5902777777777778,
+          "prediction_mse": 0.004106829402698628,
+          "mean_reward": -0.0006642646878509503,
+          "weight_update_rms": 3.566167741260091e-05
+        },
+        "history": [
+          {
+            "step": 20,
+            "metrics": {
+              "tick": 20.0,
+              "mean_energy": 0.6053384833948624,
+              "mean_resource": 0.4060122685956233,
+              "harvest_rate": 0.4583333333333333,
+              "prediction_mse": 0.011001106320261054,
+              "mean_reward": -0.004518409899608848,
+              "weight_update_rms": 6.885204116390449e-05
+            }
+          },
+          {
+            "step": 40,
+            "metrics": {
+              "tick": 40.0,
+              "mean_energy": 0.5391435355813603,
+              "mean_resource": 0.39054033433280744,
+              "harvest_rate": 0.4791666666666667,
+              "prediction_mse": 0.011305321600660926,
+              "mean_reward": -0.005928267646530025,
+              "weight_update_rms": 6.34259086319809e-05
+            }
+          },
+          {
+            "step": 60,
+            "metrics": {
+              "tick": 60.0,
+              "mean_energy": 0.45470540610959653,
+              "mean_resource": 0.385818527673776,
+              "harvest_rate": 0.5555555555555556,
+              "prediction_mse": 0.00969912299197852,
+              "mean_reward": -0.004107590639734617,
+              "weight_update_rms": 5.6178771725405615e-05
+            }
+          },
+          {
+            "step": 80,
+            "metrics": {
+              "tick": 80.0,
+              "mean_energy": 0.36718476297432723,
+              "mean_resource": 0.3841124842125265,
+              "harvest_rate": 0.4930555555555556,
+              "prediction_mse": 0.008013958273475242,
+              "mean_reward": -0.007100373683381987,
+              "weight_update_rms": 5.017840451279899e-05
+            }
+          },
+          {
+            "step": 100,
+            "metrics": {
+              "tick": 100.0,
+              "mean_energy": 0.2829145343533712,
+              "mean_resource": 0.3732529806807159,
+              "harvest_rate": 0.5833333333333334,
+              "prediction_mse": 0.007480227367741252,
+              "mean_reward": -0.004923265789137392,
+              "weight_update_rms": 4.703041870230834e-05
+            }
+          },
+          {
+            "step": 120,
+            "metrics": {
+              "tick": 120.0,
+              "mean_energy": 0.19385198479614274,
+              "mean_resource": 0.3689684461278084,
+              "harvest_rate": 0.5763888888888888,
+              "prediction_mse": 0.006378926585721756,
+              "mean_reward": -0.0037133683367397865,
+              "weight_update_rms": 4.578839853015566e-05
+            }
+          },
+          {
+            "step": 140,
+            "metrics": {
+              "tick": 140.0,
+              "mean_energy": 0.10802622750837242,
+              "mean_resource": 0.36526928778000967,
+              "harvest_rate": 0.5833333333333334,
+              "prediction_mse": 0.00648237253475949,
+              "mean_reward": -0.004763982108801019,
+              "weight_update_rms": 4.2780523338365327e-05
+            }
+          },
+          {
+            "step": 160,
+            "metrics": {
+              "tick": 160.0,
+              "mean_energy": 0.05150998977746828,
+              "mean_resource": 0.37377954575693967,
+              "harvest_rate": 0.4791666666666667,
+              "prediction_mse": 0.0047667690396878465,
+              "mean_reward": -0.004504039839366857,
+              "weight_update_rms": 3.870162829655344e-05
+            }
+          },
+          {
+            "step": 180,
+            "metrics": {
+              "tick": 180.0,
+              "mean_energy": 0.029805229287957764,
+              "mean_resource": 0.35993946137181965,
+              "harvest_rate": 0.6875,
+              "prediction_mse": 0.004392299423549993,
+              "mean_reward": 0.0015658932640073172,
+              "weight_update_rms": 3.6920784178958624e-05
+            }
+          },
+          {
+            "step": 200,
+            "metrics": {
+              "tick": 200.0,
+              "mean_energy": 0.018474570394789072,
+              "mean_resource": 0.36178588853497484,
+              "harvest_rate": 0.5902777777777778,
+              "prediction_mse": 0.004106829402698628,
+              "mean_reward": -0.0006642646878509503,
+              "weight_update_rms": 3.566167741260091e-05
+            }
+          }
+        ],
+        "initial_probe": 0.015217762339366087,
+        "final_probe": 0.02028554617212583,
+        "common_world_probe_mse": 0.005072644892388692,
+        "fingerprint": "a07b0c0bd298bfb96e130b0b09a713c101039077f744183b8734bf5db6b830dd"
+      },
+      "frozen": {
+        "seed": 61,
+        "learning": false,
+        "initial": {
+          "tick": 0.0,
+          "mean_energy": 0.5461889592170975,
+          "mean_resource": 0.5622068661604277,
+          "harvest_rate": 0.0,
+          "mean_reward": 0.0,
+          "weight_update_rms": 0.0
+        },
+        "final": {
+          "tick": 200.0,
+          "mean_energy": 0.07422640494271543,
+          "mean_resource": 0.40198197126828666,
+          "harvest_rate": 0.5,
+          "prediction_mse": 0.015892039988006406,
+          "mean_reward": -0.000848864697831231,
+          "weight_update_rms": 0.0
+        },
+        "history": [
+          {
+            "step": 20,
+            "metrics": {
+              "tick": 20.0,
+              "mean_energy": 0.6051225331904991,
+              "mean_resource": 0.41091099887286636,
+              "harvest_rate": 0.4444444444444444,
+              "prediction_mse": 0.01266502907084436,
+              "mean_reward": -0.004100234943554467,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 40,
+            "metrics": {
+              "tick": 40.0,
+              "mean_energy": 0.5432371844937413,
+              "mean_resource": 0.40379403319142365,
+              "harvest_rate": 0.4652777777777778,
+              "prediction_mse": 0.015487665311880715,
+              "mean_reward": -0.004177471704981982,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 60,
+            "metrics": {
+              "tick": 60.0,
+              "mean_energy": 0.4708774910457646,
+              "mean_resource": 0.4056496744594724,
+              "harvest_rate": 0.5138888888888888,
+              "prediction_mse": 0.015490657803681921,
+              "mean_reward": -0.0025871506843142284,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 80,
+            "metrics": {
+              "tick": 80.0,
+              "mean_energy": 0.4026596885732345,
+              "mean_resource": 0.4046537354512298,
+              "harvest_rate": 0.4652777777777778,
+              "prediction_mse": 0.015584797205484125,
+              "mean_reward": -0.005644824440142084,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 100,
+            "metrics": {
+              "tick": 100.0,
+              "mean_energy": 0.33799478013193324,
+              "mean_resource": 0.39922072041398465,
+              "harvest_rate": 0.5138888888888888,
+              "prediction_mse": 0.01610414409599569,
+              "mean_reward": -0.004375413301436237,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 120,
+            "metrics": {
+              "tick": 120.0,
+              "mean_energy": 0.27477976352001066,
+              "mean_resource": 0.39722867310706333,
+              "harvest_rate": 0.5208333333333334,
+              "prediction_mse": 0.01614394732475867,
+              "mean_reward": -0.0019504098167459326,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 140,
+            "metrics": {
+              "tick": 140.0,
+              "mean_energy": 0.20949756163681948,
+              "mean_resource": 0.3930276340094928,
+              "harvest_rate": 0.5208333333333334,
+              "prediction_mse": 0.017569759741396625,
+              "mean_reward": -0.0038911093772402367,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 160,
+            "metrics": {
+              "tick": 160.0,
+              "mean_energy": 0.1439865298755706,
+              "mean_resource": 0.4067628412834215,
+              "harvest_rate": 0.4097222222222222,
+              "prediction_mse": 0.014366047751131218,
+              "mean_reward": -0.005909647347967654,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 180,
+            "metrics": {
+              "tick": 180.0,
+              "mean_energy": 0.10810162037721144,
+              "mean_resource": 0.39545109704978926,
+              "harvest_rate": 0.5833333333333334,
+              "prediction_mse": 0.015046868752985082,
+              "mean_reward": 0.0015535520646021573,
+              "weight_update_rms": 0.0
+            }
+          },
+          {
+            "step": 200,
+            "metrics": {
+              "tick": 200.0,
+              "mean_energy": 0.07422640494271543,
+              "mean_resource": 0.40198197126828666,
+              "harvest_rate": 0.5,
+              "prediction_mse": 0.015892039988006406,
+              "mean_reward": -0.000848864697831231,
+              "weight_update_rms": 0.0
+            }
+          }
+        ],
+        "initial_probe": 0.015217762339366087,
+        "final_probe": 0.015217762339366087,
+        "common_world_probe_mse": 0.01509699219262518,
+        "fingerprint": "d29a59c130c12edcfdb33da9f1f832b88d5eea758ef8697eeca092eaad257db7"
+      }
+    }
+  ],
+  "resume_tests": [
+    {
+      "seed": 7,
+      "warmup": 17,
+      "continuation": 13,
+      "initial_identical": true,
+      "reload_identical": true,
+      "continued_identical": true,
+      "comparison_depth": "full-state fingerprint"
+    },
+    {
+      "seed": 17,
+      "warmup": 17,
+      "continuation": 13,
+      "initial_identical": true,
+      "reload_identical": true,
+      "continued_identical": true,
+      "comparison_depth": "full-state fingerprint"
+    },
+    {
+      "seed": 29,
+      "warmup": 17,
+      "continuation": 13,
+      "initial_identical": true,
+      "reload_identical": true,
+      "continued_identical": true,
+      "comparison_depth": "full-state fingerprint"
+    }
+  ],
+  "limitations": [
+    "Paired initial seeds do not imply paired identical world trajectories after cell actions diverge.",
+    "Prediction probe is informative only if it measures held-out targets under fixed inputs.",
+    "The common-world probe uses a fresh reference trajectory and zero-initialized recurrent memory for both trained and frozen predictors; its distribution may differ from training.",
+    "Seeds, not within-world cell-time points, are replication units.",
+    "No general-cognition or long-term survival claim follows from this toy."
+  ]
+}
