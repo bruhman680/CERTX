@@ -1,5 +1,21 @@
 # Neural Garden — experimental record and continuation point
 
+## Latest continuation: strict research loops 070–099
+
+The user authorized another tranche of **200 research loops**. Six parallel societies completed **30 independently reviewed conceptual loops** so far; `NEXT_TRANCHE_LEDGER.md` documents all 30 orientation→probe→result→revision movements, with nested trials recorded separately. Cumulative documented loops are **99**, while **170 of this new 200-loop tranche remain unexecuted**. `NEXT_TRANCHE_CHARTER.md` and the time-stamped `NEXT_BENCHMARK_PLAN.md`, `NEXT_ONLINE_PLAN.md`, `NEXT_CREDIT_PLAN.md`, and `NEXT_GATE_PLAN.md` preserve pre-outcome designs and strong manual controls.
+
+**Most defensible new results:**
+
+- `NEXT_ECO_REPORT.md`: harvesting exactly the same *number* of times but using current resource observations yields ~.679 energy at 8,000 ticks, versus .045 with one-tick-stale targeting and .068 with two-tick-stale targeting. Timely placement of actions, not just activity count, matters under these synthetic laws.
+- `NEXT_BENCHMARK_REPORT.md`, `NEXT_AUDIT_REPORT.md`: a frozen-policy benchmark across worlds, sizes, and horizons shows major rank reversals under mild resource changes. Historical early-rescue hand rules can fail, while hand-designed reverse-rescue can outperform trained neural policies. No single universal winner and no proof of online adaptation.
+- `NEXT_WELFARE_REPORT.md` and independent `NEXT_WELFARE_AUDIT.md`: reward shaping changes trained policy competence, but online stochastic learning is weaker than frozen stochastic controls. Stable-world reserve-trained deterministic neural cells can attain higher average energy than neighbors-first hand rules while leaving more cells depleted, so welfare is not a single score.
+- `NEXT_ONLINE_REPORT.md` and independent `NEXT_ONLINE_AUDIT_REPORT.md`: **24/24 matched seeds across separate cohorts** favored frozen trained weights over continued online policy updates when action mode was held stochastic. Deterministic reassessment shows the updated weights themselves lost stable- and shift-world competence.
+- `NEXT_CREDIT_REPORT.md`, `NEXT_CREDIT_ECO_REPORT.md`, `NEXT_CREDIT_AUDIT_REPORT.md`: clipped reward mildly helped, short eligibility traces harmed, long traces polarized energy distribution, and faster baseline only partly helped. Online updates drive increased harvesting and reduced per-harvest resource yield. Exact law identity: raw mean energy drift `p*(.25*y-.063)-.022`, with `p` harvest frequency and `y` average resource where harvesting actually occurs.
+- `NEXT_GATE_REPORT.md` and independent `NEXT_GATE_AUDIT_REPORT.md`: the designer-supplied idea to pause learning only during scarcity **did not** beat an equal-duration sham pause or an entirely frozen trained policy on unseen seeds. No positive claim for automatic 'breathing' benefit.
+- `NEXT_LIVING_REPORT.md` and `NEXT_MEMORY_REPORT.md`: early interventions help more than late rescues in exact historical forks; macro-history recovers information but its predictions are fragile during changed laws; acquired threshold inheritance has tiny measured behavioral influence.
+
+These latest experiments do **not** overwrite the main Living Garden, which remains privately backed up at tick100. The next burden is to design a demonstrably safer *online* learning mechanism with explicit long-horizon/floor-aware objectives, not to force further policy-gradient updates or merely add simulation ticks.
+
 ## Latest society continuation (loops 032–069)
 
 Six specialized research societies completed **38 adjudicated conceptual research loops**, supported by many additional iterative optimizer changes, simulation trials, and independent audits. See [`SOCIETIES_LEDGER.md`](SOCIETIES_LEDGER.md) for each numbered question, evidence, and revision; [`SOCIETIES_CHARTER.md`](SOCIETIES_CHARTER.md) defines what counts. The user-authorized next 183 research loops are **not** all exhausted: 145 remain, and the total documented across the project is 69.
