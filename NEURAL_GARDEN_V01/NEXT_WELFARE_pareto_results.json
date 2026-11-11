@@ -1,0 +1,153 @@
+{
+  "scope": "aggregate mean energy and fraction energy<=.01 only, two competing burdens",
+  "results": {
+    "stable": {
+      "nondominated": [
+        "neural/reserve",
+        "manual/neighbor"
+      ],
+      "arms": {
+        "neural/raw": {
+          "energy": 0.5578436829330147,
+          "floor": 0.005833333333333334,
+          "dominated_by": [
+            "neural/resource",
+            "manual/fixed50",
+            "manual/rescue",
+            "manual/reverse",
+            "manual/neighbor"
+          ]
+        },
+        "neural/reserve": {
+          "energy": 0.7139028679760967,
+          "floor": 0.023333333333333334,
+          "dominated_by": []
+        },
+        "neural/resource": {
+          "energy": 0.565137613080906,
+          "floor": 0.005833333333333334,
+          "dominated_by": [
+            "manual/fixed50",
+            "manual/rescue",
+            "manual/reverse",
+            "manual/neighbor"
+          ]
+        },
+        "neural/reserve_resource": {
+          "energy": 0.7095047443362966,
+          "floor": 0.023333333333333334,
+          "dominated_by": [
+            "neural/reserve"
+          ]
+        },
+        "manual/fixed50": {
+          "energy": 0.651443639818538,
+          "floor": 0.0,
+          "dominated_by": [
+            "manual/rescue",
+            "manual/reverse",
+            "manual/neighbor"
+          ]
+        },
+        "manual/rescue": {
+          "energy": 0.6522559029086247,
+          "floor": 0.0,
+          "dominated_by": [
+            "manual/neighbor"
+          ]
+        },
+        "manual/reverse": {
+          "energy": 0.6522559029086247,
+          "floor": 0.0,
+          "dominated_by": [
+            "manual/neighbor"
+          ]
+        },
+        "manual/neighbor": {
+          "energy": 0.6593001427487447,
+          "floor": 0.0,
+          "dominated_by": []
+        }
+      }
+    },
+    "mild": {
+      "nondominated": [
+        "manual/reverse"
+      ],
+      "arms": {
+        "neural/raw": {
+          "energy": 0.10693772134024616,
+          "floor": 0.235,
+          "dominated_by": [
+            "neural/reserve",
+            "neural/reserve_resource",
+            "manual/reverse"
+          ]
+        },
+        "neural/reserve": {
+          "energy": 0.2372282055688063,
+          "floor": 0.1658333333333333,
+          "dominated_by": [
+            "manual/reverse"
+          ]
+        },
+        "neural/resource": {
+          "energy": 0.09438899294576653,
+          "floor": 0.23083333333333336,
+          "dominated_by": [
+            "neural/reserve",
+            "neural/reserve_resource",
+            "manual/reverse"
+          ]
+        },
+        "neural/reserve_resource": {
+          "energy": 0.2621784183800633,
+          "floor": 0.16749999999999998,
+          "dominated_by": [
+            "manual/reverse"
+          ]
+        },
+        "manual/fixed50": {
+          "energy": 0.0451100600084677,
+          "floor": 0.18916666666666668,
+          "dominated_by": [
+            "neural/reserve",
+            "neural/reserve_resource",
+            "manual/reverse",
+            "manual/neighbor"
+          ]
+        },
+        "manual/rescue": {
+          "energy": 0.025786210199311228,
+          "floor": 0.3658333333333333,
+          "dominated_by": [
+            "neural/raw",
+            "neural/reserve",
+            "neural/resource",
+            "neural/reserve_resource",
+            "manual/fixed50",
+            "manual/reverse",
+            "manual/neighbor"
+          ]
+        },
+        "manual/reverse": {
+          "energy": 0.2776409469039732,
+          "floor": 0.1075,
+          "dominated_by": []
+        },
+        "manual/neighbor": {
+          "energy": 0.05199580308444248,
+          "floor": 0.12333333333333334,
+          "dominated_by": [
+            "manual/reverse"
+          ]
+        }
+      }
+    }
+  },
+  "source_sha256": {
+    "NEXT_WELFARE_deterministic_results.json": "5b4124eb56d186e7d3752c1ce5535ede7e8524125626d1005894a4e438d123c6",
+    "NEXT_WELFARE_rule_controls_results.json": "544909f5372d7e1ea17dde01dcc62e33631f5beb91fef796e568c85864a57538",
+    "NEXT_WELFARE_pareto.py": "7cea7f4ae57a21d5dc36e8a676adae113f3912aa959abecf3f16681121881b29"
+  }
+}
