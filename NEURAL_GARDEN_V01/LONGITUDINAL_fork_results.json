@@ -1,0 +1,704 @@
+{
+  "anchor_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+  "anchor_tick": 100,
+  "anchor_unchanged": true,
+  "direct_vs_split_resume_fingerprint_equal": true,
+  "kind": "one_anchor_longitudinal_counterfactuals",
+  "limitations": [
+    "All variants share one initial world and are dependent counterfactuals, not independent experimental replications.",
+    "Resource injections and shocks are deliberate intervention, not emergence or adaptive evolution.",
+    "Mean energy is clipped to [0,1]; low energy and small measured change can hide persistent negative raw energy budget."
+  ],
+  "milestones": [
+    100,
+    200,
+    500,
+    600,
+    1000,
+    1500,
+    2000,
+    3000
+  ],
+  "numpy_version": "2.5.4",
+  "python_version": "3.12.14",
+  "results": {
+    "learning_off_at_100": {
+      "anchor_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+      "final_fingerprint": "00d31967bd008236a7572561d465c6cbc769d09911fa9adb58a31d036ee7ea2d",
+      "final_tick": 3000,
+      "interventions": [
+        {
+          "after_fingerprint": "33f3816d5daeb8054e2a9f438d12e8cbcb650cf66aceff53bc81612ceb376111",
+          "before_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+          "kind": "learning_toggled",
+          "tick": 100
+        }
+      ],
+      "mean_raw_energy_drift_last_500": -0.004982507585697814,
+      "milestones": {
+        "100": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.02734375,
+          "harvest_rate": 0.5625,
+          "mean_energy": 0.24244253406405158,
+          "mean_resource": 0.36853030313538016,
+          "raw_energy_drift": null,
+          "resource_action_covariance": -0.016969663706046405,
+          "tick": 100
+        },
+        "200": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.4375,
+          "harvest_rate": 0.59765625,
+          "mean_energy": 0.02463522122806204,
+          "mean_resource": 0.37349266125425695,
+          "raw_energy_drift": -0.0038418822117667127,
+          "resource_action_covariance": -0.01759702407707351,
+          "tick": 200
+        },
+        "500": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.44921875,
+          "harvest_rate": 0.51953125,
+          "mean_energy": 0.01956132502222343,
+          "mean_resource": 0.37583163517371815,
+          "raw_energy_drift": -0.00575128717653285,
+          "resource_action_covariance": -0.01533606126062884,
+          "tick": 500
+        },
+        "600": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.49609375,
+          "harvest_rate": 0.52734375,
+          "mean_energy": 0.018686032045256117,
+          "mean_resource": 0.3752012546693235,
+          "raw_energy_drift": -0.00560530038912474,
+          "resource_action_covariance": -0.015577180225888467,
+          "tick": 600
+        },
+        "1000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.44140625,
+          "harvest_rate": 0.5703125,
+          "mean_energy": 0.02208133296145775,
+          "mean_resource": 0.37126162761158504,
+          "raw_energy_drift": -0.005153649436330511,
+          "resource_action_covariance": -0.01703494031408721,
+          "tick": 1000
+        },
+        "1500": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.41796875,
+          "harvest_rate": 0.5546875,
+          "mean_energy": 0.02284833821732418,
+          "mean_resource": 0.3707685673380613,
+          "raw_energy_drift": -0.0046789085140445524,
+          "resource_action_covariance": -0.013746558587137789,
+          "tick": 1500
+        },
+        "2000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.5078125,
+          "harvest_rate": 0.53125,
+          "mean_energy": 0.01794398979892471,
+          "mean_resource": 0.37348217195327926,
+          "raw_energy_drift": -0.006483844267160785,
+          "resource_action_covariance": -0.017413540721772605,
+          "tick": 2000
+        },
+        "3000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.515625,
+          "harvest_rate": 0.51953125,
+          "mean_energy": 0.016545905285803113,
+          "mean_resource": 0.3772431121509546,
+          "raw_energy_drift": -0.006689147705531463,
+          "resource_action_covariance": -0.018530410755267686,
+          "tick": 3000
+        }
+      }
+    },
+    "learning_off_at_1000": {
+      "anchor_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+      "final_fingerprint": "c777dd63e947781ab75b689ffdcf52dc79520c0ad505b877b8e46d6257a2b792",
+      "final_tick": 3000,
+      "interventions": [
+        {
+          "after_fingerprint": "ee31dc206182064485bc1f42183d7565a600cd0e2790fa240058434d22a7e991",
+          "before_fingerprint": "7b288e56d520a2975ab7e472e99e84e342eadb9b4aee4a6ab9a9a6680c771ecd",
+          "kind": "learning_toggled",
+          "tick": 1000
+        }
+      ],
+      "mean_raw_energy_drift_last_500": -0.009361199809145241,
+      "milestones": {
+        "100": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.02734375,
+          "harvest_rate": 0.5625,
+          "mean_energy": 0.24244253406405158,
+          "mean_resource": 0.36853030313538016,
+          "raw_energy_drift": null,
+          "resource_action_covariance": -0.016969663706046405,
+          "tick": 100
+        },
+        "200": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.5078125,
+          "harvest_rate": 0.625,
+          "mean_energy": 0.019421370793263972,
+          "mean_resource": 0.36183063599502685,
+          "raw_energy_drift": -0.004819405944860856,
+          "resource_action_covariance": -0.016615958860996524,
+          "tick": 200
+        },
+        "500": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.73046875,
+          "harvest_rate": 0.59765625,
+          "mean_energy": 0.008395765028630497,
+          "mean_resource": 0.342797999538762,
+          "raw_energy_drift": -0.008716714491864088,
+          "resource_action_covariance": -0.014207529449362558,
+          "tick": 500
+        },
+        "600": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.75390625,
+          "harvest_rate": 0.625,
+          "mean_energy": 0.007708836014838139,
+          "mean_resource": 0.33970914988457446,
+          "raw_energy_drift": -0.008440461498644483,
+          "resource_action_covariance": -0.013932509548222047,
+          "tick": 600
+        },
+        "1000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.828125,
+          "harvest_rate": 0.73046875,
+          "mean_energy": 0.004797763193593894,
+          "mean_resource": 0.32126724157843434,
+          "raw_energy_drift": -0.00878509658833075,
+          "resource_action_covariance": -0.010893178096103769,
+          "tick": 1000
+        },
+        "1500": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.8046875,
+          "harvest_rate": 0.6796875,
+          "mean_energy": 0.005444447748885089,
+          "mean_resource": 0.32122404642415825,
+          "raw_energy_drift": -0.009984043670500639,
+          "resource_action_covariance": -0.011069854684358739,
+          "tick": 1500
+        },
+        "2000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.83203125,
+          "harvest_rate": 0.6953125,
+          "mean_energy": 0.004728629981626365,
+          "mean_resource": 0.3243333004908786,
+          "raw_energy_drift": -0.009514141859572306,
+          "resource_action_covariance": -0.0126238916537641,
+          "tick": 2000
+        },
+        "3000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.87890625,
+          "harvest_rate": 0.6640625,
+          "mean_energy": 0.0037661206478217537,
+          "mean_resource": 0.3279850695744525,
+          "raw_energy_drift": -0.009991540145982646,
+          "resource_action_covariance": -0.014117294560405,
+          "tick": 3000
+        }
+      }
+    },
+    "learning_off_at_500": {
+      "anchor_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+      "final_fingerprint": "9b0dfa8018450cfdf1f0d04c8773805f3db6043748f50758725d9973d5ed7b44",
+      "final_tick": 3000,
+      "interventions": [
+        {
+          "after_fingerprint": "da8e26ff49779690ec17ec00e63777473b2b49df1889c51e21ae502aa8684bd5",
+          "before_fingerprint": "fe2d91c0767031c8b7f253c8dd9395a80b31e4f0591a3939fe02ad3a6bb53518",
+          "kind": "learning_toggled",
+          "tick": 500
+        }
+      ],
+      "mean_raw_energy_drift_last_500": -0.007652690411222289,
+      "milestones": {
+        "100": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.02734375,
+          "harvest_rate": 0.5625,
+          "mean_energy": 0.24244253406405158,
+          "mean_resource": 0.36853030313538016,
+          "raw_energy_drift": null,
+          "resource_action_covariance": -0.016969663706046405,
+          "tick": 100
+        },
+        "200": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.5078125,
+          "harvest_rate": 0.625,
+          "mean_energy": 0.019421370793263972,
+          "mean_resource": 0.36183063599502685,
+          "raw_energy_drift": -0.004819405944860856,
+          "resource_action_covariance": -0.016615958860996524,
+          "tick": 200
+        },
+        "500": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.73046875,
+          "harvest_rate": 0.59765625,
+          "mean_energy": 0.008395765028630497,
+          "mean_resource": 0.342797999538762,
+          "raw_energy_drift": -0.008716714491864088,
+          "resource_action_covariance": -0.014207529449362558,
+          "tick": 500
+        },
+        "600": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.71875,
+          "harvest_rate": 0.609375,
+          "mean_energy": 0.008691267660244476,
+          "mean_resource": 0.34501628810133694,
+          "raw_energy_drift": -0.007921278509803745,
+          "resource_action_covariance": -0.01423158357681397,
+          "tick": 600
+        },
+        "1000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.6953125,
+          "harvest_rate": 0.6640625,
+          "mean_energy": 0.009294302852831877,
+          "mean_resource": 0.33745597957465534,
+          "raw_energy_drift": -0.007139321568811483,
+          "resource_action_covariance": -0.012092547517005763,
+          "tick": 1000
+        },
+        "1500": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.6796875,
+          "harvest_rate": 0.640625,
+          "mean_energy": 0.010544685373985854,
+          "mean_resource": 0.3372732940520744,
+          "raw_energy_drift": -0.00777588331135541,
+          "resource_action_covariance": -0.011911634307910215,
+          "tick": 1500
+        },
+        "2000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.7265625,
+          "harvest_rate": 0.62109375,
+          "mean_energy": 0.008305175948934535,
+          "mean_resource": 0.34045762030226884,
+          "raw_energy_drift": -0.008482980772796469,
+          "resource_action_covariance": -0.014141206558591704,
+          "tick": 2000
+        },
+        "3000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.72265625,
+          "harvest_rate": 0.60546875,
+          "mean_energy": 0.007360641254579737,
+          "mean_resource": 0.34445423612670945,
+          "raw_energy_drift": -0.0089284651476581,
+          "resource_action_covariance": -0.016321605307955393,
+          "tick": 3000
+        }
+      }
+    },
+    "resource_rescue_once": {
+      "anchor_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+      "final_fingerprint": "bc1da86d6318b7616255a540dc81c9f277afcb26b2a6949b7880ef6b735de1a4",
+      "final_tick": 3000,
+      "interventions": [
+        {
+          "after_fingerprint": "71288bf02dbf92b8be4ab78b4d95db18e2eac8342d35365b48c104f5055843b9",
+          "before_fingerprint": "fe2d91c0767031c8b7f253c8dd9395a80b31e4f0591a3939fe02ad3a6bb53518",
+          "factor": 1.5,
+          "kind": "resource_scaled",
+          "tick": 500
+        }
+      ],
+      "mean_raw_energy_drift_last_500": -0.011995572283233795,
+      "milestones": {
+        "100": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.02734375,
+          "harvest_rate": 0.5625,
+          "mean_energy": 0.24244253406405158,
+          "mean_resource": 0.36853030313538016,
+          "raw_energy_drift": null,
+          "resource_action_covariance": -0.016969663706046405,
+          "tick": 100
+        },
+        "200": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.5078125,
+          "harvest_rate": 0.625,
+          "mean_energy": 0.019421370793263972,
+          "mean_resource": 0.36183063599502685,
+          "raw_energy_drift": -0.004819405944860856,
+          "resource_action_covariance": -0.016615958860996524,
+          "tick": 200
+        },
+        "500": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.73046875,
+          "harvest_rate": 0.59765625,
+          "mean_energy": 0.008395765028630497,
+          "mean_resource": 0.342797999538762,
+          "post_intervention_resource": 0.514196999308143,
+          "raw_energy_drift": -0.008716714491864088,
+          "resource_action_covariance": -0.014207529449362558,
+          "tick": 500
+        },
+        "600": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.765625,
+          "harvest_rate": 0.62890625,
+          "mean_energy": 0.007546676830740731,
+          "mean_resource": 0.33799342718861924,
+          "raw_energy_drift": -0.00873188544356959,
+          "resource_action_covariance": -0.014055301531745924,
+          "tick": 600
+        },
+        "1000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.83203125,
+          "harvest_rate": 0.734375,
+          "mean_energy": 0.004658862429919211,
+          "mean_resource": 0.32024944041913145,
+          "raw_energy_drift": -0.00894960330623458,
+          "resource_action_covariance": -0.01090018777470608,
+          "tick": 1000
+        },
+        "1500": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.87890625,
+          "harvest_rate": 0.70703125,
+          "mean_energy": 0.0034372977799119984,
+          "mean_resource": 0.31308177606305154,
+          "raw_energy_drift": -0.011219216843125835,
+          "resource_action_covariance": -0.010867307177796933,
+          "tick": 1500
+        },
+        "2000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.8984375,
+          "harvest_rate": 0.7421875,
+          "mean_energy": 0.0026867009482779165,
+          "mean_resource": 0.3114605019593425,
+          "raw_energy_drift": -0.011076552923597174,
+          "resource_action_covariance": -0.011206557853756863,
+          "tick": 2000
+        },
+        "3000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.9453125,
+          "harvest_rate": 0.7265625,
+          "mean_energy": 0.0014179505612719238,
+          "mean_resource": 0.3051896434369467,
+          "raw_energy_drift": -0.012961515574318289,
+          "resource_action_covariance": -0.011399202852925061,
+          "tick": 3000
+        }
+      }
+    },
+    "resource_shock_twice": {
+      "anchor_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+      "final_fingerprint": "200bb6a33765eeb0ecfd1937bbddea8fd6be1b862ebb194b455a5de7cc526412",
+      "final_tick": 3000,
+      "interventions": [
+        {
+          "after_fingerprint": "ebaaabf9c09f7983217f58d691692ca76ee06f7bd4a3a996da6c2c8b42a56da2",
+          "before_fingerprint": "fe2d91c0767031c8b7f253c8dd9395a80b31e4f0591a3939fe02ad3a6bb53518",
+          "factor": 0.4,
+          "kind": "resource_scaled",
+          "tick": 500
+        },
+        {
+          "after_fingerprint": "a0bc44f00cc8b77106da76e060d5087c7f2f7bc36843eed5bdaaf580c2444ec7",
+          "before_fingerprint": "6a116efd2b827d50bd08eea4db785c67e5ff850894fb6c0cfcd98a915b0893d7",
+          "factor": 0.4,
+          "kind": "resource_scaled",
+          "tick": 1000
+        }
+      ],
+      "mean_raw_energy_drift_last_500": -0.011926115357741868,
+      "milestones": {
+        "100": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.02734375,
+          "harvest_rate": 0.5625,
+          "mean_energy": 0.24244253406405158,
+          "mean_resource": 0.36853030313538016,
+          "raw_energy_drift": null,
+          "resource_action_covariance": -0.016969663706046405,
+          "tick": 100
+        },
+        "200": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.5078125,
+          "harvest_rate": 0.625,
+          "mean_energy": 0.019421370793263972,
+          "mean_resource": 0.36183063599502685,
+          "raw_energy_drift": -0.004819405944860856,
+          "resource_action_covariance": -0.016615958860996524,
+          "tick": 200
+        },
+        "500": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.73046875,
+          "harvest_rate": 0.59765625,
+          "mean_energy": 0.008395765028630497,
+          "mean_resource": 0.342797999538762,
+          "post_intervention_resource": 0.1371191998155048,
+          "raw_energy_drift": -0.008716714491864088,
+          "resource_action_covariance": -0.014207529449362558,
+          "tick": 500
+        },
+        "600": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.74609375,
+          "harvest_rate": 0.625,
+          "mean_energy": 0.007935641089185071,
+          "mean_resource": 0.3401250426966279,
+          "raw_energy_drift": -0.008403921473154198,
+          "resource_action_covariance": -0.014074872385698396,
+          "tick": 600
+        },
+        "1000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.82421875,
+          "harvest_rate": 0.73046875,
+          "mean_energy": 0.004831085141289793,
+          "mean_resource": 0.3214808823279187,
+          "post_intervention_resource": 0.12859235293116747,
+          "raw_energy_drift": -0.008746038330397086,
+          "resource_action_covariance": -0.010929849334298952,
+          "tick": 1000
+        },
+        "1500": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.87109375,
+          "harvest_rate": 0.69921875,
+          "mean_energy": 0.0034855008179470646,
+          "mean_resource": 0.31423319166931096,
+          "raw_energy_drift": -0.011294579517719193,
+          "resource_action_covariance": -0.01139374299877589,
+          "tick": 1500
+        },
+        "2000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.89453125,
+          "harvest_rate": 0.7421875,
+          "mean_energy": 0.0027605404785167303,
+          "mean_resource": 0.3119122740264471,
+          "raw_energy_drift": -0.010956203764389359,
+          "resource_action_covariance": -0.011187878093670223,
+          "tick": 2000
+        },
+        "3000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.9453125,
+          "harvest_rate": 0.7265625,
+          "mean_energy": 0.001457715110565921,
+          "mean_resource": 0.3054098199663514,
+          "raw_energy_drift": -0.012890785069780626,
+          "resource_action_covariance": -0.011344682817572446,
+          "tick": 3000
+        }
+      }
+    },
+    "threshold_graft_at_100": {
+      "anchor_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+      "final_fingerprint": "5b302e7bf7b1e1572f97546850a3a39a3c3e01fdcd5fa05a2c7cdeddb9baf458",
+      "final_tick": 3000,
+      "interventions": [
+        {
+          "after_fingerprint": "cf9c8ef62d8ae502379f464dc2cec7d0f5c1d89bc9afc8c9420e3d05bbe31c36",
+          "before_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+          "kind": "controller_grafted",
+          "tick": 100
+        }
+      ],
+      "mean_raw_energy_drift_last_500": -0.00016284174800228004,
+      "milestones": {
+        "100": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.02734375,
+          "harvest_rate": 0.5625,
+          "mean_energy": 0.24244253406405158,
+          "mean_resource": 0.36853030313538016,
+          "raw_energy_drift": null,
+          "resource_action_covariance": -0.016969663706046405,
+          "tick": 100
+        },
+        "200": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.0234375,
+          "harvest_rate": 0.265625,
+          "mean_energy": 0.14680318033451883,
+          "mean_resource": 0.5158141242279881,
+          "raw_energy_drift": -0.001368987231881766,
+          "resource_action_covariance": -0.008306999033990823,
+          "tick": 200
+        },
+        "500": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.0703125,
+          "harvest_rate": 0.4140625,
+          "mean_energy": 0.11081109754682068,
+          "mean_resource": 0.5188306696494729,
+          "raw_energy_drift": 0.01006089585820726,
+          "resource_action_covariance": -0.014093225106122976,
+          "tick": 500
+        },
+        "600": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.01171875,
+          "harvest_rate": 0.28515625,
+          "mean_energy": 0.10133620964113946,
+          "mean_resource": 0.5189004442026284,
+          "raw_energy_drift": 0.00020405042147116125,
+          "resource_action_covariance": -0.009519162807288753,
+          "tick": 600
+        },
+        "1000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.04296875,
+          "harvest_rate": 0.23828125,
+          "mean_energy": 0.06853441756806311,
+          "mean_resource": 0.5220323692823778,
+          "raw_energy_drift": -0.0035053063522267605,
+          "resource_action_covariance": -0.00897198010208249,
+          "tick": 1000
+        },
+        "1500": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.1015625,
+          "harvest_rate": 0.3125,
+          "mean_energy": 0.04543023435958016,
+          "mean_resource": 0.5236740385519141,
+          "raw_energy_drift": 0.0022610536949186806,
+          "resource_action_covariance": -0.012125249984981858,
+          "tick": 1500
+        },
+        "2000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.11328125,
+          "harvest_rate": 0.29296875,
+          "mean_energy": 0.039203604218080015,
+          "mean_resource": 0.5219181367303108,
+          "raw_energy_drift": 0.0005725834015443232,
+          "resource_action_covariance": -0.011332214921068201,
+          "tick": 2000
+        },
+        "3000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.140625,
+          "harvest_rate": 0.28125,
+          "mean_energy": 0.03445526672752371,
+          "mean_resource": 0.5255740713584165,
+          "raw_energy_drift": -0.00030007868765731906,
+          "resource_action_covariance": -0.01185413381091191,
+          "tick": 3000
+        }
+      }
+    },
+    "unchanged_learning": {
+      "anchor_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+      "final_fingerprint": "75f0b30dc702cac31e5dfd202bd0e2cdf2df3beafd833b8086d7ab4ef4618007",
+      "final_tick": 3000,
+      "interventions": [],
+      "mean_raw_energy_drift_last_500": -0.011950118577919855,
+      "milestones": {
+        "100": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.02734375,
+          "harvest_rate": 0.5625,
+          "mean_energy": 0.24244253406405158,
+          "mean_resource": 0.36853030313538016,
+          "raw_energy_drift": null,
+          "resource_action_covariance": -0.016969663706046405,
+          "tick": 100
+        },
+        "200": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.5078125,
+          "harvest_rate": 0.625,
+          "mean_energy": 0.019421370793263972,
+          "mean_resource": 0.36183063599502685,
+          "raw_energy_drift": -0.004819405944860856,
+          "resource_action_covariance": -0.016615958860996524,
+          "tick": 200
+        },
+        "500": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.73046875,
+          "harvest_rate": 0.59765625,
+          "mean_energy": 0.008395765028630497,
+          "mean_resource": 0.342797999538762,
+          "raw_energy_drift": -0.008716714491864088,
+          "resource_action_covariance": -0.014207529449362558,
+          "tick": 500
+        },
+        "600": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.75390625,
+          "harvest_rate": 0.625,
+          "mean_energy": 0.007708836014838139,
+          "mean_resource": 0.33970914988457446,
+          "raw_energy_drift": -0.008440461498644483,
+          "resource_action_covariance": -0.013932509548222047,
+          "tick": 600
+        },
+        "1000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.828125,
+          "harvest_rate": 0.73046875,
+          "mean_energy": 0.004797763193593894,
+          "mean_resource": 0.32126724157843434,
+          "raw_energy_drift": -0.00878509658833075,
+          "resource_action_covariance": -0.010893178096103769,
+          "tick": 1000
+        },
+        "1500": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.87109375,
+          "harvest_rate": 0.69921875,
+          "mean_energy": 0.003461632458672033,
+          "mean_resource": 0.31401040636059785,
+          "raw_energy_drift": -0.011361149583010122,
+          "resource_action_covariance": -0.011428531503800831,
+          "tick": 1500
+        },
+        "2000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.89453125,
+          "harvest_rate": 0.7421875,
+          "mean_energy": 0.002752387247282312,
+          "mean_resource": 0.3118414614491007,
+          "raw_energy_drift": -0.010976571982303285,
+          "resource_action_covariance": -0.011196560377193885,
+          "tick": 2000
+        },
+        "3000": {
+          "energy_ceiling_fraction": 0.0,
+          "energy_floor_fraction": 0.9453125,
+          "harvest_rate": 0.7265625,
+          "mean_energy": 0.0014530789538432138,
+          "mean_resource": 0.30535673678764463,
+          "raw_energy_drift": -0.012907156143672547,
+          "resource_action_covariance": -0.011355589765995995,
+          "tick": 3000
+        }
+      }
+    }
+  },
+  "source_sha256": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1"
+}
