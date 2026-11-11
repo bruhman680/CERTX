@@ -1,0 +1,1438 @@
+{
+  "design": {
+    "seeds": 12,
+    "seed_start": 10400,
+    "train_ticks": 1500,
+    "eval_ticks": 3000,
+    "arms": [
+      "none",
+      "top_neighbor",
+      "bottom_neighbor",
+      "random_neighbor",
+      "global_shuffle",
+      "neighbor_mean"
+    ],
+    "regrowths": [
+      0.06,
+      0.055
+    ]
+  },
+  "summary": {
+    "0.06": {
+      "none": {
+        "mean_energy": 0.2047039124097568,
+        "floor": 0.12847222222222224,
+        "bottom_decile": 0.003086591718881038,
+        "mean_resource": 0.47733250886971956,
+        "mean_l2_change": 0.0,
+        "donor_energy_advantage": 0.0
+      },
+      "top_neighbor": {
+        "mean_energy": 0.19483159862117339,
+        "floor": 0.13483796296296297,
+        "bottom_decile": 0.0032816949386778246,
+        "mean_resource": 0.4788624436941107,
+        "mean_l2_change": 0.43291259828880624,
+        "donor_energy_advantage": 0.029703854562226375,
+        "paired_wins_vs_none": 3,
+        "paired_wins_vs_random_neighbor": 4
+      },
+      "bottom_neighbor": {
+        "mean_energy": 0.1896487484130925,
+        "floor": 0.13020833333333334,
+        "bottom_decile": 0.002512409386389709,
+        "mean_resource": 0.4776014922365051,
+        "mean_l2_change": 0.42273216113223805,
+        "donor_energy_advantage": -0.03023895530772321,
+        "paired_wins_vs_none": 2,
+        "paired_wins_vs_random_neighbor": 2
+      },
+      "random_neighbor": {
+        "mean_energy": 0.20336009223656093,
+        "floor": 0.13310185185185186,
+        "bottom_decile": 0.0011746372137935099,
+        "mean_resource": 0.4767142724973246,
+        "mean_l2_change": 0.4333350836272633,
+        "donor_energy_advantage": -0.0002878086979454562,
+        "paired_wins_vs_none": 5
+      },
+      "global_shuffle": {
+        "mean_energy": 0.21246151903109609,
+        "floor": 0.12152777777777779,
+        "bottom_decile": 0.005471693233535353,
+        "mean_resource": 0.477237929578134,
+        "mean_l2_change": 0.4091973040489598,
+        "donor_energy_advantage": -2.3290268890429357e-19,
+        "paired_wins_vs_none": 8,
+        "paired_wins_vs_random_neighbor": 9
+      },
+      "neighbor_mean": {
+        "mean_energy": 0.11213710127556968,
+        "floor": 0.11168981481481483,
+        "bottom_decile": 0.009058205609801731,
+        "mean_resource": 0.47492307357593905,
+        "mean_l2_change": 0.3311998184562826,
+        "donor_energy_advantage": 4.0958748738341273e-19,
+        "paired_wins_vs_none": 0,
+        "paired_wins_vs_random_neighbor": 0
+      }
+    },
+    "0.055": {
+      "none": {
+        "mean_energy": 0.01715371350457218,
+        "floor": 0.3819444444444445,
+        "bottom_decile": 0.0,
+        "mean_resource": 0.4641515064022645,
+        "mean_l2_change": 0.0,
+        "donor_energy_advantage": 0.0
+      },
+      "top_neighbor": {
+        "mean_energy": 0.016449061506768045,
+        "floor": 0.39641203703703703,
+        "bottom_decile": 0.0,
+        "mean_resource": 0.46535976845672405,
+        "mean_l2_change": 0.43291259828880624,
+        "donor_energy_advantage": 0.029703854562226375,
+        "paired_wins_vs_none": 4,
+        "paired_wins_vs_random_neighbor": 2
+      },
+      "bottom_neighbor": {
+        "mean_energy": 0.017354723387874936,
+        "floor": 0.37615740740740744,
+        "bottom_decile": 0.0,
+        "mean_resource": 0.46382087908342506,
+        "mean_l2_change": 0.42273216113223805,
+        "donor_energy_advantage": -0.03023895530772321,
+        "paired_wins_vs_none": 6,
+        "paired_wins_vs_random_neighbor": 7
+      },
+      "random_neighbor": {
+        "mean_energy": 0.01726470716928021,
+        "floor": 0.375,
+        "bottom_decile": 0.0,
+        "mean_resource": 0.4639136043657169,
+        "mean_l2_change": 0.4333350836272633,
+        "donor_energy_advantage": -0.0002878086979454562,
+        "paired_wins_vs_none": 6
+      },
+      "global_shuffle": {
+        "mean_energy": 0.016831266161066696,
+        "floor": 0.39351851851851855,
+        "bottom_decile": 0.0,
+        "mean_resource": 0.46468646640738465,
+        "mean_l2_change": 0.4091973040489598,
+        "donor_energy_advantage": -2.3290268890429357e-19,
+        "paired_wins_vs_none": 4,
+        "paired_wins_vs_random_neighbor": 5
+      },
+      "neighbor_mean": {
+        "mean_energy": 0.016994871892346265,
+        "floor": 0.38483796296296297,
+        "bottom_decile": 0.0,
+        "mean_resource": 0.46415097068059424,
+        "mean_l2_change": 0.3311998184562826,
+        "donor_energy_advantage": 4.0958748738341273e-19,
+        "paired_wins_vs_none": 5,
+        "paired_wins_vs_random_neighbor": 4
+      }
+    }
+  },
+  "rows": [
+    {
+      "seed": 10400,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.20004089928039698,
+          "floor": 0.09722222222222222,
+          "bottom_decile": 0.020748651502769423,
+          "mean_resource": 0.4750191693860803
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.445644750690655,
+          "donor_energy_advantage": 0.029032838308234294,
+          "mean_energy": 0.19325001513697118,
+          "floor": 0.10416666666666667,
+          "bottom_decile": 0.007357128919531421,
+          "mean_resource": 0.4802919840364356
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4495118878081701,
+          "donor_energy_advantage": -0.029598622929330503,
+          "mean_energy": 0.15265902752216134,
+          "floor": 0.125,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.47260880746993256
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.48667344198557394,
+          "donor_energy_advantage": -0.0039478259046787055,
+          "mean_energy": 0.2027831571049336,
+          "floor": 0.125,
+          "bottom_decile": 0.0007134878376966848,
+          "mean_resource": 0.4768175131682151
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4060667423783587,
+          "donor_energy_advantage": -1.1564823173178713e-18,
+          "mean_energy": 0.19234933288081646,
+          "floor": 0.09027777777777778,
+          "bottom_decile": 0.020529444425777955,
+          "mean_resource": 0.47355083643324153
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.334565941720244,
+          "donor_energy_advantage": 1.927470528863119e-19,
+          "mean_energy": 0.09907447083106348,
+          "floor": 0.09027777777777778,
+          "bottom_decile": 0.014476288885543784,
+          "mean_resource": 0.47205311905424807
+        }
+      }
+    },
+    {
+      "seed": 10400,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.019366737872356758,
+          "floor": 0.3194444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4601220862275192
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.445644750690655,
+          "donor_energy_advantage": 0.029032838308234294,
+          "mean_energy": 0.017066252302876207,
+          "floor": 0.4097222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46412402518091983
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4495118878081701,
+          "donor_energy_advantage": -0.029598622929330503,
+          "mean_energy": 0.017820004835347923,
+          "floor": 0.3680555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46271249840783724
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.48667344198557394,
+          "donor_energy_advantage": -0.0039478259046787055,
+          "mean_energy": 0.017681252568400682,
+          "floor": 0.3611111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4628069743432973
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4060667423783587,
+          "donor_energy_advantage": -1.1564823173178713e-18,
+          "mean_energy": 0.018084916448046558,
+          "floor": 0.375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46244274288297516
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.334565941720244,
+          "donor_energy_advantage": 1.927470528863119e-19,
+          "mean_energy": 0.017572995447342872,
+          "floor": 0.3888888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46334079879732987
+        }
+      }
+    },
+    {
+      "seed": 10401,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.18455557121208982,
+          "floor": 0.1388888888888889,
+          "bottom_decile": 0.0008487692128598469,
+          "mean_resource": 0.47532457073214573
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4178140611586175,
+          "donor_energy_advantage": 0.030547901622956,
+          "mean_energy": 0.1928157505359455,
+          "floor": 0.1736111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.47776940904259313
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.39489964976589614,
+          "donor_energy_advantage": -0.02999940576443199,
+          "mean_energy": 0.19464886930420183,
+          "floor": 0.1527777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4824178272667798
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.3928518716989883,
+          "donor_energy_advantage": 0.0012514659069182965,
+          "mean_energy": 0.19808431901673723,
+          "floor": 0.1875,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.47974201903568253
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.40543540119124377,
+          "donor_energy_advantage": -7.709882115452476e-19,
+          "mean_energy": 0.21474642040265646,
+          "floor": 0.1111111111111111,
+          "bottom_decile": 0.00015764664893302868,
+          "mean_resource": 0.47526975029768104
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3044909490419734,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.08033017587218325,
+          "floor": 0.125,
+          "bottom_decile": 0.007132125785422674,
+          "mean_resource": 0.4729413619784483
+        }
+      }
+    },
+    {
+      "seed": 10401,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.01671918476130852,
+          "floor": 0.4027777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4650312892578121
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4178140611586175,
+          "donor_energy_advantage": 0.030547901622956,
+          "mean_energy": 0.016217430429748755,
+          "floor": 0.4027777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4655771424450907
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.39489964976589614,
+          "donor_energy_advantage": -0.02999940576443199,
+          "mean_energy": 0.016217578491309274,
+          "floor": 0.3819444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46549308758525015
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.3928518716989883,
+          "donor_energy_advantage": 0.0012514659069182965,
+          "mean_energy": 0.0166522813789283,
+          "floor": 0.3541666666666667,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46533581413664277
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.40543540119124377,
+          "donor_energy_advantage": -7.709882115452476e-19,
+          "mean_energy": 0.015975844152757674,
+          "floor": 0.4097222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4664147576920791
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3044909490419734,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.01624552963337233,
+          "floor": 0.3958333333333333,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46530290550396675
+        }
+      }
+    },
+    {
+      "seed": 10402,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.19989272939230662,
+          "floor": 0.1388888888888889,
+          "bottom_decile": 0.00015019857733481156,
+          "mean_resource": 0.47857266085976213
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4479182464384516,
+          "donor_energy_advantage": 0.03222065136143146,
+          "mean_energy": 0.2095265782659883,
+          "floor": 0.1388888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4822365948091818
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4071186460334028,
+          "donor_energy_advantage": -0.03213493114510651,
+          "mean_energy": 0.18957428337972418,
+          "floor": 0.14583333333333334,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.47965063787985507
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4348388557640661,
+          "donor_energy_advantage": 0.00041276200277367767,
+          "mean_energy": 0.1986756243875209,
+          "floor": 0.1388888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.47770489949101225
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.43248556886803374,
+          "donor_energy_advantage": 5.782411586589357e-19,
+          "mean_energy": 0.19878636300938332,
+          "floor": 0.10416666666666667,
+          "bottom_decile": 0.009783114886458163,
+          "mean_resource": 0.4768108224421379
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3099378578818031,
+          "donor_energy_advantage": 1.927470528863119e-19,
+          "mean_energy": 0.11064040663666759,
+          "floor": 0.1388888888888889,
+          "bottom_decile": 0.00012393818240480597,
+          "mean_resource": 0.48051874365955893
+        }
+      }
+    },
+    {
+      "seed": 10402,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.017604428731735604,
+          "floor": 0.4236111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46410449084978694
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4479182464384516,
+          "donor_energy_advantage": 0.03222065136143146,
+          "mean_energy": 0.016026371496650232,
+          "floor": 0.4513888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46695981360607747
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4071186460334028,
+          "donor_energy_advantage": -0.03213493114510651,
+          "mean_energy": 0.018333146152973132,
+          "floor": 0.3819444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46246874683296757
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4348388557640661,
+          "donor_energy_advantage": 0.00041276200277367767,
+          "mean_energy": 0.018726888620065232,
+          "floor": 0.375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46254061768900695
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.43248556886803374,
+          "donor_energy_advantage": 5.782411586589357e-19,
+          "mean_energy": 0.018780817929459164,
+          "floor": 0.3680555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4620324695862712
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3099378578818031,
+          "donor_energy_advantage": 1.927470528863119e-19,
+          "mean_energy": 0.016288148174472092,
+          "floor": 0.4305555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4654339529388491
+        }
+      }
+    },
+    {
+      "seed": 10403,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.20783791744026456,
+          "floor": 0.125,
+          "bottom_decile": 0.00030714176509736847,
+          "mean_resource": 0.47575138252916394
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.36580572371997705,
+          "donor_energy_advantage": 0.0286834207360548,
+          "mean_energy": 0.18869180842267394,
+          "floor": 0.2013888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.48268162057439273
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.35718369001297157,
+          "donor_energy_advantage": -0.030732322562909087,
+          "mean_energy": 0.16773636059656574,
+          "floor": 0.09722222222222222,
+          "bottom_decile": 0.010606808542739175,
+          "mean_resource": 0.4720788024629264
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.37620203883817777,
+          "donor_energy_advantage": 8.47133504770241e-05,
+          "mean_energy": 0.19922120760534645,
+          "floor": 0.1111111111111111,
+          "bottom_decile": 0.00756662469795455,
+          "mean_resource": 0.4762011256014649
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.37970733298923104,
+          "donor_energy_advantage": -7.709882115452476e-19,
+          "mean_energy": 0.19535481746449138,
+          "floor": 0.1597222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4799225583639088
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.2915048744240391,
+          "donor_energy_advantage": 7.709882115452476e-19,
+          "mean_energy": 0.12471408694336082,
+          "floor": 0.10416666666666667,
+          "bottom_decile": 0.0104952035847849,
+          "mean_resource": 0.473582623014383
+        }
+      }
+    },
+    {
+      "seed": 10403,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.017559527363413596,
+          "floor": 0.3611111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4637800349898043
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.36580572371997705,
+          "donor_energy_advantage": 0.0286834207360548,
+          "mean_energy": 0.016408102203264812,
+          "floor": 0.3958333333333333,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46589551055901957
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.35718369001297157,
+          "donor_energy_advantage": -0.030732322562909087,
+          "mean_energy": 0.018290527518503467,
+          "floor": 0.3680555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4626640734454358
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.37620203883817777,
+          "donor_energy_advantage": 8.47133504770241e-05,
+          "mean_energy": 0.017400001401793912,
+          "floor": 0.3819444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46363897938534016
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.37970733298923104,
+          "donor_energy_advantage": -7.709882115452476e-19,
+          "mean_energy": 0.016311659975526863,
+          "floor": 0.4166666666666667,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4659274573800263
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.2915048744240391,
+          "donor_energy_advantage": 7.709882115452476e-19,
+          "mean_energy": 0.017350825206454548,
+          "floor": 0.375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46357170195950775
+        }
+      }
+    },
+    {
+      "seed": 10404,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.19087699990884766,
+          "floor": 0.11805555555555555,
+          "bottom_decile": 0.005955063507512564,
+          "mean_resource": 0.47058605308149853
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.47741585425716754,
+          "donor_energy_advantage": 0.02965279928129854,
+          "mean_energy": 0.16852143410737203,
+          "floor": 0.1388888888888889,
+          "bottom_decile": 0.00014191943319908604,
+          "mean_resource": 0.4763035370915202
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.43564500287494207,
+          "donor_energy_advantage": -0.02967231998057325,
+          "mean_energy": 0.18459812513870855,
+          "floor": 0.125,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4787084855159613
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4916064562231801,
+          "donor_energy_advantage": -0.0035751355081683677,
+          "mean_energy": 0.19524467378817695,
+          "floor": 0.125,
+          "bottom_decile": 0.0032552953052613575,
+          "mean_resource": 0.4755501711747842
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4355730515241314,
+          "donor_energy_advantage": 3.854941057726238e-19,
+          "mean_energy": 0.21282611394663867,
+          "floor": 0.1388888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.47571940788808526
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3593655150198368,
+          "donor_energy_advantage": 1.1564823173178713e-18,
+          "mean_energy": 0.09866527879805138,
+          "floor": 0.11805555555555555,
+          "bottom_decile": 0.0037976700321509806,
+          "mean_resource": 0.47466260715378833
+        }
+      }
+    },
+    {
+      "seed": 10404,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.015399021581541827,
+          "floor": 0.4166666666666667,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4661942130142763
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.47741585425716754,
+          "donor_energy_advantage": 0.02965279928129854,
+          "mean_energy": 0.016127232873300354,
+          "floor": 0.375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4654692059157697
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.43564500287494207,
+          "donor_energy_advantage": -0.02967231998057325,
+          "mean_energy": 0.01665313805627062,
+          "floor": 0.4097222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4644951214712499
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4916064562231801,
+          "donor_energy_advantage": -0.0035751355081683677,
+          "mean_energy": 0.016514057663819453,
+          "floor": 0.3958333333333333,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46432427791250563
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4355730515241314,
+          "donor_energy_advantage": 3.854941057726238e-19,
+          "mean_energy": 0.015339051139786905,
+          "floor": 0.4166666666666667,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46610974610977784
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3593655150198368,
+          "donor_energy_advantage": 1.1564823173178713e-18,
+          "mean_energy": 0.01601440182575972,
+          "floor": 0.4097222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4657342770327837
+        }
+      }
+    },
+    {
+      "seed": 10405,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.20587265351451292,
+          "floor": 0.125,
+          "bottom_decile": 7.656437584320513e-06,
+          "mean_resource": 0.4798324613205492
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.39298504126855577,
+          "donor_energy_advantage": 0.028675992232224674,
+          "mean_energy": 0.19163922174573725,
+          "floor": 0.0763888888888889,
+          "bottom_decile": 0.021122175787116997,
+          "mean_resource": 0.477829195869375
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.42143198685988614,
+          "donor_energy_advantage": -0.027897793023096768,
+          "mean_energy": 0.202863609935097,
+          "floor": 0.11805555555555555,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.47616105858464863
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4256052189581085,
+          "donor_energy_advantage": 0.0006409677023270578,
+          "mean_energy": 0.1910641645678436,
+          "floor": 0.125,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.47653913842963785
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.40955384026712566,
+          "donor_energy_advantage": -5.782411586589357e-19,
+          "mean_energy": 0.20086992025623035,
+          "floor": 0.11805555555555555,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4793794768721842
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.31326705695916907,
+          "donor_energy_advantage": 1.0601087908747155e-18,
+          "mean_energy": 0.11996271336787413,
+          "floor": 0.0763888888888889,
+          "bottom_decile": 0.01970472526911198,
+          "mean_resource": 0.4750471626492414
+        }
+      }
+    },
+    {
+      "seed": 10405,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.01783499080678185,
+          "floor": 0.3263888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46310696391146167
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.39298504126855577,
+          "donor_energy_advantage": 0.028675992232224674,
+          "mean_energy": 0.016960521478552475,
+          "floor": 0.3541666666666667,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4646200522834552
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.42143198685988614,
+          "donor_energy_advantage": -0.027897793023096768,
+          "mean_energy": 0.018480074194234117,
+          "floor": 0.3055555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4611223581281448
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4256052189581085,
+          "donor_energy_advantage": 0.0006409677023270578,
+          "mean_energy": 0.01892203503308613,
+          "floor": 0.3125,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4613217790014028
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.40955384026712566,
+          "donor_energy_advantage": -5.782411586589357e-19,
+          "mean_energy": 0.018291901792959333,
+          "floor": 0.3194444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4625474150190851
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.31326705695916907,
+          "donor_energy_advantage": 1.0601087908747155e-18,
+          "mean_energy": 0.018137596694010154,
+          "floor": 0.3263888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4621333052255059
+        }
+      }
+    },
+    {
+      "seed": 10406,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.20723958972754775,
+          "floor": 0.14583333333333334,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.48339230933039495
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4537321403306324,
+          "donor_energy_advantage": 0.0332503093946718,
+          "mean_energy": 0.1744710405748089,
+          "floor": 0.14583333333333334,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.48039282793255544
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.41947991304664817,
+          "donor_energy_advantage": -0.03398822677848529,
+          "mean_energy": 0.17716743514867128,
+          "floor": 0.14583333333333334,
+          "bottom_decile": 0.0007888520497634399,
+          "mean_resource": 0.48307696266308064
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.42687410744803433,
+          "donor_energy_advantage": 0.0013293053964125836,
+          "mean_energy": 0.20226652785218807,
+          "floor": 0.1527777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4810189498705376
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.3980800910609109,
+          "donor_energy_advantage": -2.8912057932946783e-19,
+          "mean_energy": 0.21212164320865384,
+          "floor": 0.1597222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.48106748715146325
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3361046842677703,
+          "donor_energy_advantage": 1.1564823173178713e-18,
+          "mean_energy": 0.13419026675647505,
+          "floor": 0.08333333333333333,
+          "bottom_decile": 0.02139271270692135,
+          "mean_resource": 0.4773244522547062
+        }
+      }
+    },
+    {
+      "seed": 10406,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.01952732400217365,
+          "floor": 0.3402777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46084493573789115
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4537321403306324,
+          "donor_energy_advantage": 0.0332503093946718,
+          "mean_energy": 0.016806181047872834,
+          "floor": 0.3194444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4645488629448915
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.41947991304664817,
+          "donor_energy_advantage": -0.03398822677848529,
+          "mean_energy": 0.018024899434293615,
+          "floor": 0.3333333333333333,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4623410607342642
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.42687410744803433,
+          "donor_energy_advantage": 0.0013293053964125836,
+          "mean_energy": 0.017639733365392044,
+          "floor": 0.3333333333333333,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4632414930834098
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.3980800910609109,
+          "donor_energy_advantage": -2.8912057932946783e-19,
+          "mean_energy": 0.01804740696825825,
+          "floor": 0.3472222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4628773156459835
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3361046842677703,
+          "donor_energy_advantage": 1.1564823173178713e-18,
+          "mean_energy": 0.01904352115012925,
+          "floor": 0.2986111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4606791747308252
+        }
+      }
+    },
+    {
+      "seed": 10407,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.2107408703771868,
+          "floor": 0.18055555555555555,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.47896213983129166
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.40166135140286685,
+          "donor_energy_advantage": 0.0296772711649924,
+          "mean_energy": 0.19408184553456692,
+          "floor": 0.1388888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.48177151661648054
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.39453458804087127,
+          "donor_energy_advantage": -0.029870175966113965,
+          "mean_energy": 0.2293588461043067,
+          "floor": 0.13194444444444445,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4761343364398163
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.40948985918212444,
+          "donor_energy_advantage": -0.0008909001016829292,
+          "mean_energy": 0.2190592629274466,
+          "floor": 0.13194444444444445,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4761490089672049
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.40035860818110725,
+          "donor_energy_advantage": 3.854941057726238e-19,
+          "mean_energy": 0.21388796144788835,
+          "floor": 0.125,
+          "bottom_decile": 0.0023978648045100233,
+          "mean_resource": 0.47566160561690396
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.32022690418595556,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.10885209257432765,
+          "floor": 0.13194444444444445,
+          "bottom_decile": 0.0058639997329014,
+          "mean_resource": 0.4729044039771122
+        }
+      }
+    },
+    {
+      "seed": 10407,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.01568665361446338,
+          "floor": 0.4236111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4664106424595226
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.40166135140286685,
+          "donor_energy_advantage": 0.0296772711649924,
+          "mean_energy": 0.017415431578770648,
+          "floor": 0.3888888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4637085596963786
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.39453458804087127,
+          "donor_energy_advantage": -0.029870175966113965,
+          "mean_energy": 0.01566696505890251,
+          "floor": 0.4305555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4662178950329026
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.40948985918212444,
+          "donor_energy_advantage": -0.0008909001016829292,
+          "mean_energy": 0.016364203612068914,
+          "floor": 0.3958333333333333,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46485534280322277
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.40035860818110725,
+          "donor_energy_advantage": 3.854941057726238e-19,
+          "mean_energy": 0.014740533234302232,
+          "floor": 0.4791666666666667,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46806086374589584
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.32022690418595556,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.01704543659747077,
+          "floor": 0.4027777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4641826942603448
+        }
+      }
+    },
+    {
+      "seed": 10408,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.20543319121591386,
+          "floor": 0.10416666666666667,
+          "bottom_decile": 0.006330848295903835,
+          "mean_resource": 0.4788653742071401
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.48459432623534,
+          "donor_energy_advantage": 0.028747473988115765,
+          "mean_energy": 0.2186818631431076,
+          "floor": 0.1388888888888889,
+          "bottom_decile": 0.0008249770008766341,
+          "mean_resource": 0.4773747949013161
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4290055393510193,
+          "donor_energy_advantage": -0.030417026430207637,
+          "mean_energy": 0.1933884172481219,
+          "floor": 0.09722222222222222,
+          "bottom_decile": 0.018753252044173895,
+          "mean_resource": 0.4772184539251576
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4607986841982306,
+          "donor_energy_advantage": 0.0006663579384071149,
+          "mean_energy": 0.19625468225466372,
+          "floor": 0.13194444444444445,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.47638082208439275
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4302404755161606,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.22319593418727038,
+          "floor": 0.1111111111111111,
+          "bottom_decile": 0.002708809136825205,
+          "mean_resource": 0.4743412787493797
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3777244884329564,
+          "donor_energy_advantage": -1.927470528863119e-19,
+          "mean_energy": 0.11347808386984301,
+          "floor": 0.13194444444444445,
+          "bottom_decile": 0.003085702550468832,
+          "mean_resource": 0.47414955702931866
+        }
+      }
+    },
+    {
+      "seed": 10408,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.01756724002724392,
+          "floor": 0.3680555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.463735395602821
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.48459432623534,
+          "donor_energy_advantage": 0.028747473988115765,
+          "mean_energy": 0.015069180069233181,
+          "floor": 0.4513888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4674870877270407
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4290055393510193,
+          "donor_energy_advantage": -0.030417026430207637,
+          "mean_energy": 0.016895274537753704,
+          "floor": 0.3888888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46541809617968727
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4607986841982306,
+          "donor_energy_advantage": 0.0006663579384071149,
+          "mean_energy": 0.016203130552483118,
+          "floor": 0.4097222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4656273832317905
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4302404755161606,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.016704332383104096,
+          "floor": 0.3888888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4650252971230046
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3777244884329564,
+          "donor_energy_advantage": -1.927470528863119e-19,
+          "mean_energy": 0.016851710821416583,
+          "floor": 0.3958333333333333,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4644179277685776
+        }
+      }
+    },
+    {
+      "seed": 10409,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.22454886108452665,
+          "floor": 0.11805555555555555,
+          "bottom_decile": 5.669866366828035e-05,
+          "mean_resource": 0.4770531240296509
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4558015911342215,
+          "donor_energy_advantage": 0.02921623880781186,
+          "mean_energy": 0.2067373298588405,
+          "floor": 0.125,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4781446031910209
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.46064918985596354,
+          "donor_energy_advantage": -0.030128591015435857,
+          "mean_energy": 0.20383060187227287,
+          "floor": 0.11805555555555555,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4759382813542323
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.43135167695216325,
+          "donor_energy_advantage": -0.0005301391117828988,
+          "mean_energy": 0.2038425331053646,
+          "floor": 0.11805555555555555,
+          "bottom_decile": 0.0025602387246095254,
+          "mean_resource": 0.47363103352316505
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.3833699001254285,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.2314323556449236,
+          "floor": 0.08333333333333333,
+          "bottom_decile": 0.021000153673827356,
+          "mean_resource": 0.47589717209891425
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3555003615820936,
+          "donor_energy_advantage": 9.637352644315595e-19,
+          "mean_energy": 0.12943427998190493,
+          "floor": 0.10416666666666667,
+          "bottom_decile": 0.009010976121050968,
+          "mean_resource": 0.4762227250229698
+        }
+      }
+    },
+    {
+      "seed": 10409,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.0171505918062808,
+          "floor": 0.3680555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46399421467898505
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4558015911342215,
+          "donor_energy_advantage": 0.02921623880781186,
+          "mean_energy": 0.016219258687085028,
+          "floor": 0.4027777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46575513401979546
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.46064918985596354,
+          "donor_energy_advantage": -0.030128591015435857,
+          "mean_energy": 0.016284318114919896,
+          "floor": 0.4236111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4665629178452748
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.43135167695216325,
+          "donor_energy_advantage": -0.0005301391117828988,
+          "mean_energy": 0.017588689943953066,
+          "floor": 0.3819444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.463695843508628
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.3833699001254285,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.016586931632242827,
+          "floor": 0.3819444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.464731085033087
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3555003615820936,
+          "donor_energy_advantage": 9.637352644315595e-19,
+          "mean_energy": 0.01682019186489947,
+          "floor": 0.3888888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46442445253558506
+        }
+      }
+    },
+    {
+      "seed": 10410,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.19750187947332473,
+          "floor": 0.13194444444444445,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4800805417090128
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4295231496228999,
+          "donor_energy_advantage": 0.028095525309276823,
+          "mean_energy": 0.1847292504080711,
+          "floor": 0.125,
+          "bottom_decile": 0.005376864394410136,
+          "mean_resource": 0.4766115573972481
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4074045807988994,
+          "donor_energy_advantage": -0.027575793348304387,
+          "mean_energy": 0.18349221726306486,
+          "floor": 0.1597222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4764410936710879
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.40932088607346095,
+          "donor_energy_advantage": 0.0006026895081789796,
+          "mean_energy": 0.2153841147676225,
+          "floor": 0.125,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.47646213416642524
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.3848157497127123,
+          "donor_energy_advantage": -1.1564823173178713e-18,
+          "mean_energy": 0.22142570864008176,
+          "floor": 0.10416666666666667,
+          "bottom_decile": 0.009083285226092497,
+          "mean_resource": 0.47697374340453913
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.32553867042000184,
+          "donor_energy_advantage": -1.927470528863119e-19,
+          "mean_energy": 0.10095214747546549,
+          "floor": 0.11805555555555555,
+          "bottom_decile": 0.006040018609644314,
+          "mean_resource": 0.47611325371752883
+        }
+      }
+    },
+    {
+      "seed": 10410,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.015156073978528885,
+          "floor": 0.4444444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4672673057478808
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4295231496228999,
+          "donor_energy_advantage": 0.028095525309276823,
+          "mean_energy": 0.01669856090495625,
+          "floor": 0.3958333333333333,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4646330609562698
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4074045807988994,
+          "donor_energy_advantage": -0.027575793348304387,
+          "mean_energy": 0.017738389915435762,
+          "floor": 0.3680555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4632893664448422
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.40932088607346095,
+          "donor_energy_advantage": 0.0006026895081789796,
+          "mean_energy": 0.017337023989458283,
+          "floor": 0.3680555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46376206453614277
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.3848157497127123,
+          "donor_energy_advantage": -1.1564823173178713e-18,
+          "mean_energy": 0.015459964036134076,
+          "floor": 0.4444444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.466831541263319
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.32553867042000184,
+          "donor_energy_advantage": -1.927470528863119e-19,
+          "mean_energy": 0.01549002780459944,
+          "floor": 0.4236111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4665518135357308
+        }
+      }
+    },
+    {
+      "seed": 10411,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.22190578629016292,
+          "floor": 0.11805555555555555,
+          "bottom_decile": 0.002634072663842013,
+          "mean_resource": 0.47455031941994424
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.42205494320628983,
+          "donor_energy_advantage": 0.028645832539648048,
+          "mean_energy": 0.21483304571999778,
+          "floor": 0.1111111111111111,
+          "bottom_decile": 0.004557273728999625,
+          "mean_resource": 0.47494168286720817
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.49592125913818536,
+          "donor_energy_advantage": -0.030852254748683226,
+          "mean_energy": 0.1964671874442141,
+          "floor": 0.14583333333333334,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4807831596045825
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4544079062050515,
+          "donor_energy_advantage": 0.0005020344454726918,
+          "mean_energy": 0.2184408394608871,
+          "floor": 0.125,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.47437445445537363
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4446808867730746,
+          "donor_energy_advantage": 5.782411586589357e-19,
+          "mean_energy": 0.23254165728411846,
+          "floor": 0.1527777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.48226101561916956
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3461705175395476,
+          "donor_energy_advantage": -1.927470528863119e-19,
+          "mean_energy": 0.12535121219961953,
+          "floor": 0.11805555555555555,
+          "bottom_decile": 0.007575105857214794,
+          "mean_resource": 0.4735568733999649
+        }
+      }
+    },
+    {
+      "seed": 10411,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.016272787509037365,
+          "floor": 0.3888888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4652265043494119
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.42205494320628983,
+          "donor_energy_advantage": 0.028645832539648048,
+          "mean_energy": 0.01637421500890572,
+          "floor": 0.4097222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46553876614598
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.49592125913818536,
+          "donor_energy_advantage": -0.030852254748683226,
+          "mean_energy": 0.017852364344555206,
+          "floor": 0.3541666666666667,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46306532689324403
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4544079062050515,
+          "donor_energy_advantage": 0.0005020344454726918,
+          "mean_energy": 0.01614718790191335,
+          "floor": 0.4305555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4658126827572128
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4446808867730746,
+          "donor_energy_advantage": 5.782411586589357e-19,
+          "mean_energy": 0.01765183424022235,
+          "floor": 0.375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4632369054071124
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3461705175395476,
+          "donor_energy_advantage": -1.927470528863119e-19,
+          "mean_energy": 0.017078077488227927,
+          "floor": 0.3819444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46403864387812455
+        }
+      }
+    }
+  ]
+}
