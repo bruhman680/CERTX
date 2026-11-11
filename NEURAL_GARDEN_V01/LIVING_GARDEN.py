@@ -187,9 +187,30 @@ def intervene(args):
         base._atomic_json(archive / f"tick_{garden.tick:08d}_pre_{index:04d}.json",
                           {"completed_steps": garden.tick, "garden": garden.snapshot(),
                            "fingerprint": previous, "phase": "pre_intervention"})
+        # A visual snapshot cannot restore neural weights, hidden states, or
+        # the RNG stream. Preserve the *full* pre-intervention checkpoint
+        # before touching the current world. Recovery makes a new fork rather
+        # than rewriting the historical lineage in place.
+        backups = directory / "backups" / "interventions"
+        backups.mkdir(parents=True, exist_ok=True)
+        backup_name = f"tick_{garden.tick:08d}_pre_{index:04d}.pkl"
+        backup = backups / backup_name
+        if backup.exists():
+            raise SystemExit(f"Refusing to overwrite existing intervention backup: {backup}")
+        garden.save(backup)
+        if Garden.load(backup).fingerprint() != previous:
+            raise RuntimeError("Pre-intervention full-state backup mismatch; refusing intervention")
+        base._atomic_json(backups / f"{backup_name}.json", {
+            "tick": garden.tick,
+            "fingerprint": previous,
+            "checkpoint_sha256": hashlib.sha256(backup.read_bytes()).hexdigest(),
+            "intervention_index": index,
+            "physics_source_sha256": manifest["physics_source_sha256"],
+        })
         _event(directory, {"kind": "intervention_prepare", "tick": garden.tick,
                            "previous_fingerprint": previous,
-                           "reason": args.reason, "change": change})
+                           "reason": args.reason, "change": change,
+                           "pre_intervention_checkpoint": backup_name})
         if args.learning is not None:
             garden.learning = args.learning == "on"
         if args.resource_multiplier is not None:
@@ -206,7 +227,58 @@ def intervene(args):
                            "previous_fingerprint": previous,
                            "new_fingerprint": garden.fingerprint()})
     print(json.dumps({"status": "intervention_applied", "tick": garden.tick,
-                      "change": change, "fingerprint": garden.fingerprint()}, indent=2))
+                      "change": change, "fingerprint": garden.fingerprint(),
+                      "pre_intervention_checkpoint": backup_name}, indent=2))
+
+
+def restore_fork(args):
+    """Recover an exact pre-intervention state as a NEW paused branch.
+
+    Never roll back an existing live world in place. Pickle input is restricted
+    to backup files produced by our own intervention command and is still
+    trusted local code-executable data, not safe for untrusted imports.
+    """
+    source = _directory(args)
+    destination = Path(args.destination).expanduser().resolve()
+    if Path(args.backup).name != args.backup:
+        raise SystemExit("--backup must be the basename shown by intervene")
+    backups = source / "backups" / "interventions"
+    checkpoint_path = backups / args.backup
+    meta_path = backups / (args.backup + ".json")
+    if not checkpoint_path.is_file() or not meta_path.is_file():
+        raise SystemExit("No matching local full-state intervention backup and metadata")
+    if destination.exists() and any(destination.iterdir()):
+        raise SystemExit("Restore destination must be empty; refusing overwrite")
+    with base._run_lock(source):
+        _, current_manifest = _open(source)
+        meta = base._json_dict(meta_path)
+        if meta["physics_source_sha256"] != current_manifest["physics_source_sha256"]:
+            raise SystemExit("Backup physics lineage mismatch")
+        if hashlib.sha256(checkpoint_path.read_bytes()).hexdigest() != meta["checkpoint_sha256"]:
+            raise SystemExit("Backup SHA-256 mismatch; refusing load")
+        garden = Garden.load(checkpoint_path)
+        if garden.fingerprint() != meta["fingerprint"] or garden.tick != meta["tick"]:
+            raise SystemExit("Backup state fingerprint or tick mismatch")
+        destination.mkdir(parents=True, exist_ok=True)
+        restored_manifest = dict(current_manifest)
+        restored_manifest.update({
+            "completed_steps": garden.tick,
+            "learning": garden.learning,
+            "created_unix": time.time(),
+            "intervention_count": max(0, int(meta["intervention_index"]) - 1),
+            "parent": {"directory": str(source), "backup": args.backup,
+                       "tick": garden.tick, "fingerprint": garden.fingerprint()},
+        })
+        base._checkpoint(destination, garden, restored_manifest, garden.tick)
+        base._snapshot(destination, garden, garden.tick)
+        (destination / base.PAUSE).write_text("Restored fork starts paused.\n", encoding="utf-8")
+        _event(destination, {"kind": "restore_fork_init", "tick": garden.tick,
+                             "parent": restored_manifest["parent"]})
+        _event(source, {"kind": "restored_fork_created", "tick": garden.tick,
+                        "backup": args.backup, "destination": str(destination)})
+    print(json.dumps({"status": "restored_fork", "tick": garden.tick,
+                      "directory": str(destination),
+                      "fingerprint": garden.fingerprint()}, indent=2))
 
 
 def fork(args):
@@ -273,6 +345,11 @@ def main(argv=None):
     p.add_argument("--directory", required=True)
     p.add_argument("--destination", required=True)
     p.set_defaults(func=fork)
+    p = cmds.add_parser("restore-fork", help="Restore a pre-intervention full backup into a NEW paused world")
+    p.add_argument("--directory", required=True)
+    p.add_argument("--backup", required=True, help="Backup basename reported by intervene")
+    p.add_argument("--destination", required=True)
+    p.set_defaults(func=restore_fork)
     args = parser.parse_args(argv)
     args.func(args)
 
