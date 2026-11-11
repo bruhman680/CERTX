@@ -15,15 +15,21 @@
 | 005 | How strong is the fixed heuristic? | 100-run threshold screen on fresh seeds | Threshold .55 best among five tested at 600 steps | Compare neural and rule-based under same seeds/horizon |
 | 006 | Are prior neural variants' findings reproducible? | 100-run five-arm sweep, independent audit | Better predictive score does not guarantee energy; altered metabolism benefits frozen cells too | Matched same-world experiments |
 | 007 | Why does v0.2 shift behavior? | One-step advantage analysis `ACTION_TIMING_MECHANISM.md` | Immediate raw reward boundary .252; shaped boundary ~.474; .55 policy more conservative | Test learned actions' actual conditioning |
-| 008 | Can we eliminate cross-sweep confounding? | 1,000-run four-arm matched follow-up launched, raw resource/action metrics | **In progress** at ledger creation; do not predeclare outcome | Examine results and run robustness tests |
+| 008 | Can we eliminate cross-sweep confounding? | 1,000-run four-arm matched follow-up; `THOUSAND_RUN_REPORT.md` | Under same laws/seeds/horizon, .55 fixed policy energy .48557 vs v0.1 learned .00818 and stewardship .05884 at t600; last-100 raw drift slightly negative | Test much longer horizon before calling any policy sustainable |
+| 009 | Is high energy at t600 stable over longer times? | 120 long-horizon exploratory simulations to t2000 | .55 no-shock energy declines .483 at t600 to .269 at t2000; with two shocks .116 to .042 | Treat finite-horizon retention separately from equilibrium |
+| 010 | Can resource rebound imply population recovery? | 200 matched exploratory shock/control runs; `PERTURBATION_SHOCK_REPORT.md` | Resource recovers rapidly after shocks, energy does not; .55 t600 energy .484 no shock vs .117 shocked | Track distinct recovery times and energy histories |
+| 011 | Can neural cells acquire useful resource timing if shown examples? | `IMITATION_CAPACITY_REPORT.md` supervised teacher-action pilots | Taught stochastic learner improves energy .0088→.2278 vs fixed rule .4805; explicitly supervised imitation, not independent discovery | Test autonomous action-aware objectives and held-out disturbances |
+| 012 | Is inheritance enough to yield useful evolution? | `EVOLUTION_REPORT.md` inherited-weight population and matched clonal control | Mutation mechanism runs and lineage checks pass, but mutating neural population 45.75 living cells vs clonal 46.4, no fitness advantage | Separate inheritance from selected adaptive mutations |
+| 013 | Can one historical Garden be watched and steered over time? | `LIVING_GARDEN.py`, paused persistent world at tick100, checkpoint/replay tests | State-restoring continuation and cooperative pause verified; initial world not yet viable | Preserve checkpoint privately; use logged interventions and forks |
 
 ## Active branches of inquiry
 
-- **Matched neural baseline:** same original world, 4 policies ×250 matched seeds ×600 ticks; this is one experimental loop with 1,000 simulation runs, not 1,000 research loops.
+- **Matched neural baseline:** same original world, 4 policies ×250 matched seeds ×600 ticks; one completed experimental loop with 1,000 simulation runs, not 1,000 research loops.
 - **Action-aware adaptive neural policy:** can cells learn timing of harvest rather than a purely one-step policy?
 - **Changing conditions:** test seasonality and scarcity shocks; keep these distinct from standard-world sweeps.
 - **Explicit evolution:** separate birth/death, mutation, inheritance, genealogy from ordinary weight updates.
 - **Verification:** seed-level comparisons, raw energy budgets, floor/ceiling fractions, exact source/config hashes, archive failures as well as successes.
+- **Longitudinal primary:** maintain one restartable Living Garden as the historical subject, with logged interventions, branchable counterfactuals and slow observation. Controlled batch runs remain secondary scientific comparators.
 
 ## Boundaries / continuation contract
 
