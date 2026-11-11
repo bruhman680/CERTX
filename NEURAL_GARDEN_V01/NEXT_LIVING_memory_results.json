@@ -1,0 +1,407 @@
+{
+  "horizon": 5000,
+  "hypothesis": "Does recurrent hidden-state history, rather than preserved learned weights, help after switching back from manual rescue?",
+  "limitations": "The original neural weights were not updated during manual rescue; dormant hidden states are stale. Reset comparison isolates that stored hidden vector, not all forms of memory. This is a toy world's negative policy restoration test.",
+  "memory_minus_reset_max_abs": 0.00013045690654110123,
+  "memory_minus_reset_mean": -1.2572919995436721e-05,
+  "rows": [
+    {
+      "arms": {
+        "rescue_all_the_way": {
+          "ceiling": 0.0,
+          "energy": 0.3051770499083072,
+          "floor": 0.0,
+          "high_energy": 0.1111111111111111,
+          "raw_drift_tail": 2.261499073199749e-05,
+          "resource": 0.4828618769653935
+        },
+        "restore_neural_memory": {
+          "ceiling": 0.0,
+          "energy": 0.0018238033134016249,
+          "floor": 0.9305555555555556,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011102332979496983,
+          "resource": 0.30260472391377813
+        },
+        "restore_neural_reset_hidden": {
+          "ceiling": 0.0,
+          "energy": 0.0018238033134016249,
+          "floor": 0.9305555555555556,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011101857859353468,
+          "resource": 0.30260472391377813
+        }
+      },
+      "initial_fingerprint": "b3b32bddfbc6f1fb38654e38a536164401b45f90d73efa4b9cbb6a56360b6139",
+      "seed": 9200
+    },
+    {
+      "arms": {
+        "rescue_all_the_way": {
+          "ceiling": 0.0,
+          "energy": 0.30367647554918853,
+          "floor": 0.0,
+          "high_energy": 0.10416666666666667,
+          "raw_drift_tail": 1.937817918943249e-05,
+          "resource": 0.4833530514570554
+        },
+        "restore_neural_memory": {
+          "ceiling": 0.0,
+          "energy": 0.0031271518455337666,
+          "floor": 0.8888888888888888,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011105902403162478,
+          "resource": 0.3070938614175984
+        },
+        "restore_neural_reset_hidden": {
+          "ceiling": 0.0,
+          "energy": 0.0031271518457927755,
+          "floor": 0.8888888888888888,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011104210415316793,
+          "resource": 0.3070938614181571
+        }
+      },
+      "initial_fingerprint": "065ba4dda803f529f2c4d64dbd6110be9eae4dbd7375f528adf939a0fe0821c2",
+      "seed": 9201
+    },
+    {
+      "arms": {
+        "rescue_all_the_way": {
+          "ceiling": 0.0,
+          "energy": 0.2842532770157964,
+          "floor": 0.0,
+          "high_energy": 0.0763888888888889,
+          "raw_drift_tail": 2.3765053508009804e-05,
+          "resource": 0.4857192254239655
+        },
+        "restore_neural_memory": {
+          "ceiling": 0.0,
+          "energy": 0.0023034359520082053,
+          "floor": 0.9027777777777778,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011121326017048872,
+          "resource": 0.31461417009012416
+        },
+        "restore_neural_reset_hidden": {
+          "ceiling": 0.0,
+          "energy": 0.002302456522742322,
+          "floor": 0.9027777777777778,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011121467741887514,
+          "resource": 0.31460934912239247
+        }
+      },
+      "initial_fingerprint": "ee8ceff6f177b9de316ca381144f22203ed2cb6109d2ffbc26d2dbde5874f6cb",
+      "seed": 9202
+    },
+    {
+      "arms": {
+        "rescue_all_the_way": {
+          "ceiling": 0.0,
+          "energy": 0.2830986922586398,
+          "floor": 0.0,
+          "high_energy": 0.0625,
+          "raw_drift_tail": 2.5747604414863434e-05,
+          "resource": 0.48303352459428006
+        },
+        "restore_neural_memory": {
+          "ceiling": 0.0,
+          "energy": 0.0017127652350288566,
+          "floor": 0.9375,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.01133016582500743,
+          "resource": 0.3053279384245194
+        },
+        "restore_neural_reset_hidden": {
+          "ceiling": 0.0,
+          "energy": 0.0017127652350288573,
+          "floor": 0.9375,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011329115467461669,
+          "resource": 0.30532793842451944
+        }
+      },
+      "initial_fingerprint": "3d5b2a92460e2ad847b1544190f1be2f6ff871f51c9d270cfe714ace29165f55",
+      "seed": 9203
+    },
+    {
+      "arms": {
+        "rescue_all_the_way": {
+          "ceiling": 0.0,
+          "energy": 0.31170710859007605,
+          "floor": 0.0,
+          "high_energy": 0.11805555555555555,
+          "raw_drift_tail": 1.7605501730695353e-05,
+          "resource": 0.48400662068590594
+        },
+        "restore_neural_memory": {
+          "ceiling": 0.0,
+          "energy": 0.0018258890878532874,
+          "floor": 0.9166666666666666,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011213120213137901,
+          "resource": 0.31026922021734954
+        },
+        "restore_neural_reset_hidden": {
+          "ceiling": 0.0,
+          "energy": 0.0018258890878534207,
+          "floor": 0.9166666666666666,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011212015013766443,
+          "resource": 0.31026922021735054
+        }
+      },
+      "initial_fingerprint": "98b423d54cfc46e0920933f0723397284794201a11dd68c2edbc45551c850526",
+      "seed": 9204
+    },
+    {
+      "arms": {
+        "rescue_all_the_way": {
+          "ceiling": 0.0,
+          "energy": 0.28809443590323724,
+          "floor": 0.0,
+          "high_energy": 0.08333333333333333,
+          "raw_drift_tail": 2.208508094456179e-05,
+          "resource": 0.4833005150965522
+        },
+        "restore_neural_memory": {
+          "ceiling": 0.0,
+          "energy": 0.002606213636559332,
+          "floor": 0.9166666666666666,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011096883203114371,
+          "resource": 0.30253471942951865
+        },
+        "restore_neural_reset_hidden": {
+          "ceiling": 0.0,
+          "energy": 0.0026061941177693373,
+          "floor": 0.9166666666666666,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.01109661754408042,
+          "resource": 0.30253463534307795
+        }
+      },
+      "initial_fingerprint": "b20cd017ccf89b2015e6b292a7c4a2696223ccc4e5995c6a61209edd588d197f",
+      "seed": 9205
+    },
+    {
+      "arms": {
+        "rescue_all_the_way": {
+          "ceiling": 0.0,
+          "energy": 0.285238717866759,
+          "floor": 0.0,
+          "high_energy": 0.06944444444444445,
+          "raw_drift_tail": 2.48347456597713e-05,
+          "resource": 0.48302244703536107
+        },
+        "restore_neural_memory": {
+          "ceiling": 0.0,
+          "energy": 0.0013205028654518502,
+          "floor": 0.9444444444444444,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011203726906156985,
+          "resource": 0.30187957032440893
+        },
+        "restore_neural_reset_hidden": {
+          "ceiling": 0.0,
+          "energy": 0.00132792389299142,
+          "floor": 0.9444444444444444,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011202744425984746,
+          "resource": 0.30194921121790025
+        }
+      },
+      "initial_fingerprint": "4c6c69dcfc9d45c29e1ac7ab80a1a923e595e12612ff51142f8d14f21de73bca",
+      "seed": 9206
+    },
+    {
+      "arms": {
+        "rescue_all_the_way": {
+          "ceiling": 0.0,
+          "energy": 0.307728955331071,
+          "floor": 0.0,
+          "high_energy": 0.1388888888888889,
+          "raw_drift_tail": 2.4359461361853796e-05,
+          "resource": 0.48239248017037173
+        },
+        "restore_neural_memory": {
+          "ceiling": 0.0,
+          "energy": 0.001342688898275401,
+          "floor": 0.9444444444444444,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011189172261730303,
+          "resource": 0.2992073228381808
+        },
+        "restore_neural_reset_hidden": {
+          "ceiling": 0.0,
+          "energy": 0.0014731458048165022,
+          "floor": 0.9375,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011187196618762885,
+          "resource": 0.29941192442718495
+        }
+      },
+      "initial_fingerprint": "2b0e8ca628748af6d49a7b883677fafc66ab25d74bb4be759ef39fd14b271dc5",
+      "seed": 9207
+    },
+    {
+      "arms": {
+        "rescue_all_the_way": {
+          "ceiling": 0.0,
+          "energy": 0.3015318524652575,
+          "floor": 0.0,
+          "high_energy": 0.0625,
+          "raw_drift_tail": 2.5266291947883293e-05,
+          "resource": 0.4821455852594209
+        },
+        "restore_neural_memory": {
+          "ceiling": 0.0,
+          "energy": 0.002225983297592333,
+          "floor": 0.9097222222222222,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011286532766099932,
+          "resource": 0.30778746252592776
+        },
+        "restore_neural_reset_hidden": {
+          "ceiling": 0.0,
+          "energy": 0.0022379946847668653,
+          "floor": 0.9097222222222222,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011289446634793565,
+          "resource": 0.30784961974324704
+        }
+      },
+      "initial_fingerprint": "914d44a6cf3d251754ed2a91e3b2344542b1c6538676f317742de0b1566e95ad",
+      "seed": 9208
+    },
+    {
+      "arms": {
+        "rescue_all_the_way": {
+          "ceiling": 0.0,
+          "energy": 0.3199332159548997,
+          "floor": 0.0,
+          "high_energy": 0.11805555555555555,
+          "raw_drift_tail": 2.195169435880928e-05,
+          "resource": 0.4835211101800821
+        },
+        "restore_neural_memory": {
+          "ceiling": 0.0,
+          "energy": 0.002514405477952885,
+          "floor": 0.8958333333333334,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011121577109710228,
+          "resource": 0.30966387819074603
+        },
+        "restore_neural_reset_hidden": {
+          "ceiling": 0.0,
+          "energy": 0.002516390147348919,
+          "floor": 0.8958333333333334,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.01111964129561121,
+          "resource": 0.30968097160956365
+        }
+      },
+      "initial_fingerprint": "7515463ba73c76f083a4da24c232509eea53ca8721b60ef781a32791ce985e85",
+      "seed": 9209
+    },
+    {
+      "arms": {
+        "rescue_all_the_way": {
+          "ceiling": 0.0,
+          "energy": 0.31841073281807564,
+          "floor": 0.0,
+          "high_energy": 0.10416666666666667,
+          "raw_drift_tail": 2.7506749672344012e-05,
+          "resource": 0.4830234554531763
+        },
+        "restore_neural_memory": {
+          "ceiling": 0.0,
+          "energy": 0.0018741421383050942,
+          "floor": 0.9305555555555556,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011154229185798545,
+          "resource": 0.310190023804832
+        },
+        "restore_neural_reset_hidden": {
+          "ceiling": 0.0,
+          "energy": 0.0018741421388753544,
+          "floor": 0.9305555555555556,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011153824993198063,
+          "resource": 0.31019002387123645
+        }
+      },
+      "initial_fingerprint": "a50988c9ae8be2a1ef34c538b8ad6ed3eb7b820f6f2d3d632db685daaaaba8fd",
+      "seed": 9210
+    },
+    {
+      "arms": {
+        "rescue_all_the_way": {
+          "ceiling": 0.0,
+          "energy": 0.3042901496423617,
+          "floor": 0.0,
+          "high_energy": 0.09722222222222222,
+          "raw_drift_tail": 1.9740736349300616e-05,
+          "resource": 0.4857454810115704
+        },
+        "restore_neural_memory": {
+          "ceiling": 0.0,
+          "energy": 0.001962473936130162,
+          "floor": 0.9236111111111112,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011090068418567574,
+          "resource": 0.31344261834628556
+        },
+        "restore_neural_reset_hidden": {
+          "ceiling": 0.0,
+          "energy": 0.0019624739326506405,
+          "floor": 0.9236111111111112,
+          "high_energy": 0.0,
+          "raw_drift_tail": -0.011090710595580979,
+          "resource": 0.3134426183318314
+        }
+      },
+      "initial_fingerprint": "fb587781788b29666ca5c717d3330e2044663569422fd58f166032cb814596db",
+      "seed": 9211
+    }
+  ],
+  "seeds": [
+    9200,
+    9201,
+    9202,
+    9203,
+    9204,
+    9205,
+    9206,
+    9207,
+    9208,
+    9209,
+    9210,
+    9211
+  ],
+  "size": 12,
+  "source_sha256": {
+    "NEXT_LIVING_memory_probe.py": "1864b78226814094b7871d8be60eef3251c0a6862229dc243c983b552e1084f6",
+    "NEXT_LIVING_switch_probe.py": "5071d80b65946591ee5408b58401c74e6d584c80ebfd3bf87dc75a081593fc63",
+    "SOC_LONGITUDINAL_explore.py": "d7685f749c4a98ac5265e5b51bf87330d3ff65470aa2f3d2ef96c6df8f0d0b93",
+    "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1"
+  },
+  "start_tick": 100,
+  "status": "executed",
+  "summary": {
+    "rescue_all_the_way": {
+      "floor_fraction": 0.0,
+      "mean_energy": 0.3010950552753057
+    },
+    "restore_neural_memory": {
+      "floor_fraction": 0.9201388888888888,
+      "mean_energy": 0.0020532879736744
+    },
+    "restore_neural_reset_hidden": {
+      "floor_fraction": 0.9195601851851851,
+      "mean_energy": 0.0020658608936698366
+    }
+  },
+  "switch_back_tick": 2501
+}
