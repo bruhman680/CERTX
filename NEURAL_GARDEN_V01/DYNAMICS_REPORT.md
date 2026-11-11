@@ -81,8 +81,16 @@ At a frozen `.50` threshold, compared diffusion coefficient **0.00** versus orig
 
 The isolated population's negative drift closely matches the analytical three-cycle prediction. Restoring neighbor exchange changes the collective mean drift sign. This supports the mechanistic hypothesis that **spatial coupling changes harvesting phase and action–resource alignment**, even without neural learning. Yet the effect is tiny and likely sensitive to coefficients, thresholds, horizon, heterogeneity, and boundary rules. A positive average drift can coexist with a minority of energy-depleted cells.
 
+### Phase diagnostic: the interharvest period did *not* change
+
+A further 16-run probe (`DYNAMICS_phase.py`, `DYNAMICS_phase_results.json`) used 8 fresh seeds per diffusion condition, observed 2,000 late ticks, and counted the interval between each cell's harvests. **Every recorded interval was exactly three ticks**, with and without diffusion. Thus the hypothesis that a change in the *frequency* of harvesting caused the improvement was not supported in this regime.
+
+However, mean **resource at the harvest moment** increased from `.5157825515` (no diffusion; exact homogeneous three-cycle high state) to `.5161932645` (diffusion .08). With ~1/3 harvests per tick, the predicted extra raw drift is approximately `.25*(.5161932645−.5157825515)/3 ≈ +.00003423/tick`, matching the observed tail-drift difference of about `+.00003462/tick` in the independent diffusion ablation.
+
+The refined explanation is therefore **not** that diffusion causes more frequent harvesting. It is that spatial exchange changes the *amount of resource present at the fixed three-tick harvest moment* by a very small but consequential quantity. Neighbor phases and heterogeneous resource levels likely matter; isolating that causal detail requires a separate phase-pattern counterfactual. This refinement is more informative than simply saying coupling improves outcomes.
+
 ## 7. Research-loop accounting and next discrimination
 
-Completed three substantive evidence-bearing movements: (A) exact resource-energy accounting plus 5k candidate sweep; (B) 20k fresh-seed follow-up and floor occupancy; (C) analytic three-cycle prediction followed by diffusion on/off ablation. Simulation counts: **48+24+24=96 exploratory runs** in these three loops, not 96 conceptual research loops.
+Completed four substantive evidence-bearing movements: (A) exact resource-energy accounting plus 5k candidate sweep; (B) 20k fresh-seed follow-up and floor occupancy; (C) analytic three-cycle prediction followed by diffusion on/off ablation; (D) phase diagnostic contradicting the harvest-frequency hypothesis and refining it to harvest-resource amplitude. Simulation counts: **48+24+24+16=112 exploratory runs** in these four loops, not 112 conceptual research loops.
 
 Promising next test: examine phase-locking and resource-action covariance **at the cell level** under controlled diffusion strengths and uneven topology, and perturb world-law coefficients in a separate labeled robustness study. More importantly, test whether a *learned* local neural controller can exploit this dynamic relationship on a held-out world rather than simply imitating a hand-coded threshold.
