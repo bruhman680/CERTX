@@ -1,0 +1,529 @@
+{
+  "design": "12 fresh worlds, four policy intervention schedules each, paired by seed",
+  "fresh_seeds": [
+    9000,
+    9001,
+    9002,
+    9003,
+    9004,
+    9005,
+    9006,
+    9007,
+    9008,
+    9009,
+    9010,
+    9011
+  ],
+  "horizon": 5000,
+  "paired_vs_fixed": {
+    "learn_then_rescue": {
+      "mean_difference": -0.262640699557611,
+      "n_seeds": 12,
+      "sd": 0.012583582677314471,
+      "wins": 0
+    },
+    "rescue_early": {
+      "mean_difference": 0.012517482518656775,
+      "n_seeds": 12,
+      "sd": 0.005664625947152131,
+      "wins": 12
+    },
+    "reverse_early": {
+      "mean_difference": 0.3592353975968112,
+      "n_seeds": 12,
+      "sd": 0.029268978197213063,
+      "wins": 12
+    }
+  },
+  "rows": [
+    {
+      "initial_checkpoint_fingerprint": "3ed79525cca739d785a85e809a09214fffc72670e080513dbdda4ed2f62d8ec9",
+      "policies": {
+        "fixed_early": {
+          "ceiling": 0.0,
+          "energy": 0.31030415585564763,
+          "floor": 0.06944444444444445,
+          "high_energy": 0.2361111111111111,
+          "raw_drift_tail": 1.256174442985332e-05,
+          "resource": 0.486306057091886
+        },
+        "learn_then_rescue": {
+          "ceiling": 0.0,
+          "energy": 0.03792086548524551,
+          "floor": 0.0,
+          "high_energy": 0.0,
+          "raw_drift_tail": 3.470625183706333e-07,
+          "resource": 0.46154996443851715
+        },
+        "rescue_early": {
+          "ceiling": 0.0,
+          "energy": 0.31137685168304663,
+          "floor": 0.0,
+          "high_energy": 0.09722222222222222,
+          "raw_drift_tail": 2.2743410074991134e-05,
+          "resource": 0.4828584903792643
+        },
+        "reverse_early": {
+          "ceiling": 0.1527777777777778,
+          "energy": 0.6858931461247413,
+          "floor": 0.041666666666666664,
+          "high_energy": 0.7152777777777778,
+          "raw_drift_tail": -7.915858507875156e-06,
+          "resource": 0.4920186036430098
+        }
+      },
+      "seed": 9000
+    },
+    {
+      "initial_checkpoint_fingerprint": "13a9c13f3650c7c0f0efbb1b46a09c4436e9e722fe648712b132ff7f154a7c79",
+      "policies": {
+        "fixed_early": {
+          "ceiling": 0.0,
+          "energy": 0.2870048463692299,
+          "floor": 0.04861111111111111,
+          "high_energy": 0.1736111111111111,
+          "raw_drift_tail": 9.498956240010292e-06,
+          "resource": 0.4843927445192499
+        },
+        "learn_then_rescue": {
+          "ceiling": 0.0,
+          "energy": 0.015920865485245517,
+          "floor": 0.5,
+          "high_energy": 0.0,
+          "raw_drift_tail": -3.2545030945135513e-05,
+          "resource": 0.49385696657220596
+        },
+        "rescue_early": {
+          "ceiling": 0.0,
+          "energy": 0.2970801996226867,
+          "floor": 0.0,
+          "high_energy": 0.09027777777777778,
+          "raw_drift_tail": 2.5588026455143492e-05,
+          "resource": 0.4817028998095307
+        },
+        "reverse_early": {
+          "ceiling": 0.11805555555555555,
+          "energy": 0.6520495573072278,
+          "floor": 0.0625,
+          "high_energy": 0.6666666666666666,
+          "raw_drift_tail": -1.5711065600188265e-05,
+          "resource": 0.4946023268692866
+        }
+      },
+      "seed": 9001
+    },
+    {
+      "initial_checkpoint_fingerprint": "98645717ae6f735d200318eceeadbb2b49607a490b95d05b18dbdcffa22f16c8",
+      "policies": {
+        "fixed_early": {
+          "ceiling": 0.013888888888888888,
+          "energy": 0.30048791438555095,
+          "floor": 0.0625,
+          "high_energy": 0.2013888888888889,
+          "raw_drift_tail": 1.1040352558111307e-05,
+          "resource": 0.4860997332770764
+        },
+        "learn_then_rescue": {
+          "ceiling": 0.0,
+          "energy": 0.030785959121489997,
+          "floor": 0.0,
+          "high_energy": 0.0,
+          "raw_drift_tail": 2.9348134668541194e-06,
+          "resource": 0.4719271630886074
+        },
+        "rescue_early": {
+          "ceiling": 0.006944444444444444,
+          "energy": 0.3104624577321633,
+          "floor": 0.0,
+          "high_energy": 0.09722222222222222,
+          "raw_drift_tail": 2.285949782441941e-05,
+          "resource": 0.48258524819780707
+        },
+        "reverse_early": {
+          "ceiling": 0.13194444444444445,
+          "energy": 0.6729821809383957,
+          "floor": 0.04861111111111111,
+          "high_energy": 0.6875,
+          "raw_drift_tail": -1.6217454641335637e-05,
+          "resource": 0.49137562269773105
+        }
+      },
+      "seed": 9002
+    },
+    {
+      "initial_checkpoint_fingerprint": "28a60b21bda96c128a0c66f089dbcea1383712414068c0635a3efd456438123d",
+      "policies": {
+        "fixed_early": {
+          "ceiling": 0.0,
+          "energy": 0.28139146957661665,
+          "floor": 0.04861111111111111,
+          "high_energy": 0.14583333333333334,
+          "raw_drift_tail": 1.505460347628577e-05,
+          "resource": 0.48385646056207166
+        },
+        "learn_then_rescue": {
+          "ceiling": 0.0,
+          "energy": 0.013990180846944499,
+          "floor": 0.5,
+          "high_energy": 0.0,
+          "raw_drift_tail": -2.718537582935332e-05,
+          "resource": 0.49705087712403323
+        },
+        "rescue_early": {
+          "ceiling": 0.0,
+          "energy": 0.2905784564248573,
+          "floor": 0.0,
+          "high_energy": 0.0625,
+          "raw_drift_tail": 2.5371447642449897e-05,
+          "resource": 0.48348240007021037
+        },
+        "reverse_early": {
+          "ceiling": 0.1527777777777778,
+          "energy": 0.6052041702697013,
+          "floor": 0.0763888888888889,
+          "high_energy": 0.6111111111111112,
+          "raw_drift_tail": -2.1704843014262378e-05,
+          "resource": 0.4974606393964726
+        }
+      },
+      "seed": 9003
+    },
+    {
+      "initial_checkpoint_fingerprint": "ca0d3afabf692b87ec3c8f14c6c500f9ed46d828fc36e47952889af331addde9",
+      "policies": {
+        "fixed_early": {
+          "ceiling": 0.006944444444444444,
+          "energy": 0.28718135638680725,
+          "floor": 0.0625,
+          "high_energy": 0.14583333333333334,
+          "raw_drift_tail": 6.976454934235567e-06,
+          "resource": 0.4887503360121641
+        },
+        "learn_then_rescue": {
+          "ceiling": 0.0,
+          "energy": 0.032452145674358765,
+          "floor": 0.20833333333333334,
+          "high_energy": 0.0,
+          "raw_drift_tail": -4.934160440279522e-06,
+          "resource": 0.474815880813255
+        },
+        "rescue_early": {
+          "ceiling": 0.0,
+          "energy": 0.30251419441904737,
+          "floor": 0.0,
+          "high_energy": 0.09722222222222222,
+          "raw_drift_tail": 1.844675175018589e-05,
+          "resource": 0.48374381188651266
+        },
+        "reverse_early": {
+          "ceiling": 0.14583333333333334,
+          "energy": 0.6907116779151515,
+          "floor": 0.04861111111111111,
+          "high_energy": 0.7152777777777778,
+          "raw_drift_tail": -1.2823658834827849e-05,
+          "resource": 0.49637795542529023
+        }
+      },
+      "seed": 9004
+    },
+    {
+      "initial_checkpoint_fingerprint": "af69c741ad929544cea54e58b4e2a79e2a65d5bacfbf4097f375df15e3baa13f",
+      "policies": {
+        "fixed_early": {
+          "ceiling": 0.0,
+          "energy": 0.29388935474125755,
+          "floor": 0.09722222222222222,
+          "high_energy": 0.1875,
+          "raw_drift_tail": 8.292227526443817e-06,
+          "resource": 0.48659378469625686
+        },
+        "learn_then_rescue": {
+          "ceiling": 0.0,
+          "energy": 0.020661569693464527,
+          "floor": 0.5,
+          "high_energy": 0.0,
+          "raw_drift_tail": -2.9189575961171265e-05,
+          "resource": 0.4869539611455167
+        },
+        "rescue_early": {
+          "ceiling": 0.0,
+          "energy": 0.301666080007825,
+          "floor": 0.0,
+          "high_energy": 0.08333333333333333,
+          "raw_drift_tail": 2.4085970039627834e-05,
+          "resource": 0.4811707760551484
+        },
+        "reverse_early": {
+          "ceiling": 0.1736111111111111,
+          "energy": 0.6876956455390452,
+          "floor": 0.013888888888888888,
+          "high_energy": 0.7083333333333334,
+          "raw_drift_tail": -5.495628553112408e-06,
+          "resource": 0.48845574299918454
+        }
+      },
+      "seed": 9005
+    },
+    {
+      "initial_checkpoint_fingerprint": "36427bf31de4605dbcad316c6f383c09f5435ba86998c5b33108116af1bbcd05",
+      "policies": {
+        "fixed_early": {
+          "ceiling": 0.0,
+          "energy": 0.2810347400782291,
+          "floor": 0.06944444444444445,
+          "high_energy": 0.1736111111111111,
+          "raw_drift_tail": 6.566208709335724e-06,
+          "resource": 0.48984772917874353
+        },
+        "learn_then_rescue": {
+          "ceiling": 0.0,
+          "energy": 0.030785959121489997,
+          "floor": 0.0,
+          "high_energy": 0.0,
+          "raw_drift_tail": 2.9348134668541194e-06,
+          "resource": 0.4719271630886074
+        },
+        "rescue_early": {
+          "ceiling": 0.0,
+          "energy": 0.3018654341128455,
+          "floor": 0.0,
+          "high_energy": 0.0625,
+          "raw_drift_tail": 2.348990591027933e-05,
+          "resource": 0.4823711596571845
+        },
+        "reverse_early": {
+          "ceiling": 0.14583333333333334,
+          "energy": 0.6604632571351067,
+          "floor": 0.027777777777777776,
+          "high_energy": 0.6944444444444444,
+          "raw_drift_tail": -1.0693964671580097e-05,
+          "resource": 0.49216708364241807
+        }
+      },
+      "seed": 9006
+    },
+    {
+      "initial_checkpoint_fingerprint": "6e764ccd64f73972ea11130e887274406a8dc15f160b7d5f4cf93afcacf406bb",
+      "policies": {
+        "fixed_early": {
+          "ceiling": 0.0,
+          "energy": 0.2572100953252963,
+          "floor": 0.04861111111111111,
+          "high_energy": 0.14583333333333334,
+          "raw_drift_tail": 9.023409862614178e-06,
+          "resource": 0.48935386124693164
+        },
+        "learn_then_rescue": {
+          "ceiling": 0.0,
+          "energy": 0.014626642996876457,
+          "floor": 0.5,
+          "high_energy": 0.0,
+          "raw_drift_tail": -2.9173906041773556e-05,
+          "resource": 0.4957634668580875
+        },
+        "rescue_early": {
+          "ceiling": 0.0,
+          "energy": 0.2743674449989877,
+          "floor": 0.0,
+          "high_energy": 0.06944444444444445,
+          "raw_drift_tail": 2.226349238328608e-05,
+          "resource": 0.4848250652991292
+        },
+        "reverse_early": {
+          "ceiling": 0.125,
+          "energy": 0.5676210725697977,
+          "floor": 0.041666666666666664,
+          "high_energy": 0.5694444444444444,
+          "raw_drift_tail": -2.2293710685465187e-05,
+          "resource": 0.4991155669673682
+        }
+      },
+      "seed": 9007
+    },
+    {
+      "initial_checkpoint_fingerprint": "137a693686fe51327e8c25bcab9da1fe90ab8c9b8330b92ccef9e29276c200d1",
+      "policies": {
+        "fixed_early": {
+          "ceiling": 0.0,
+          "energy": 0.2802337617374001,
+          "floor": 0.0763888888888889,
+          "high_energy": 0.1597222222222222,
+          "raw_drift_tail": 9.498786148756927e-06,
+          "resource": 0.4874173137236089
+        },
+        "learn_then_rescue": {
+          "ceiling": 0.0,
+          "energy": 0.01785403701391624,
+          "floor": 0.5,
+          "high_energy": 0.0,
+          "raw_drift_tail": -3.1150733750188245e-05,
+          "resource": 0.4910487661874995
+        },
+        "rescue_early": {
+          "ceiling": 0.0,
+          "energy": 0.28972301569600173,
+          "floor": 0.0,
+          "high_energy": 0.0763888888888889,
+          "raw_drift_tail": 2.4286038434646617e-05,
+          "resource": 0.48114014559848367
+        },
+        "reverse_early": {
+          "ceiling": 0.13194444444444445,
+          "energy": 0.6083438716503177,
+          "floor": 0.027777777777777776,
+          "high_energy": 0.6180555555555556,
+          "raw_drift_tail": -1.8642629532059266e-05,
+          "resource": 0.4938609524675954
+        }
+      },
+      "seed": 9008
+    },
+    {
+      "initial_checkpoint_fingerprint": "1520054fc7a420d298fe8cb06f6e84a61def6619f48b0b01b36e76f054c627d2",
+      "policies": {
+        "fixed_early": {
+          "ceiling": 0.0,
+          "energy": 0.2933366618256095,
+          "floor": 0.04861111111111111,
+          "high_energy": 0.2013888888888889,
+          "raw_drift_tail": 1.0706231208616118e-05,
+          "resource": 0.48478738269436966
+        },
+        "learn_then_rescue": {
+          "ceiling": 0.0,
+          "energy": 0.03578026810634511,
+          "floor": 0.0,
+          "high_energy": 0.0,
+          "raw_drift_tail": 4.911641175268905e-06,
+          "resource": 0.46494774162131197
+        },
+        "rescue_early": {
+          "ceiling": 0.0,
+          "energy": 0.31361516310277576,
+          "floor": 0.0,
+          "high_energy": 0.14583333333333334,
+          "raw_drift_tail": 2.2789918491472927e-05,
+          "resource": 0.4839406859122655
+        },
+        "reverse_early": {
+          "ceiling": 0.20833333333333334,
+          "energy": 0.665782989263641,
+          "floor": 0.041666666666666664,
+          "high_energy": 0.6805555555555556,
+          "raw_drift_tail": -5.882210429377887e-06,
+          "resource": 0.4912486032669751
+        }
+      },
+      "seed": 9009
+    },
+    {
+      "initial_checkpoint_fingerprint": "55acda4ec8e3865a1c9ae21d714860268e154626490b09053f8ca90a1ba2b552",
+      "policies": {
+        "fixed_early": {
+          "ceiling": 0.0,
+          "energy": 0.2887062103467074,
+          "floor": 0.041666666666666664,
+          "high_energy": 0.1527777777777778,
+          "raw_drift_tail": 9.703461731976628e-06,
+          "resource": 0.48546384386459873
+        },
+        "learn_then_rescue": {
+          "ceiling": 0.0,
+          "energy": 0.042661569693464525,
+          "floor": 0.0,
+          "high_energy": 0.0,
+          "raw_drift_tail": 3.2592483749749464e-06,
+          "resource": 0.4542063416441668
+        },
+        "rescue_early": {
+          "ceiling": 0.0,
+          "energy": 0.30312362081073574,
+          "floor": 0.0,
+          "high_energy": 0.13194444444444445,
+          "raw_drift_tail": 2.2240503155741983e-05,
+          "resource": 0.48262190831567126
+        },
+        "reverse_early": {
+          "ceiling": 0.1597222222222222,
+          "energy": 0.6379988616158223,
+          "floor": 0.034722222222222224,
+          "high_energy": 0.6458333333333334,
+          "raw_drift_tail": -1.266856622290782e-05,
+          "resource": 0.4880544876307472
+        }
+      },
+      "seed": 9010
+    },
+    {
+      "initial_checkpoint_fingerprint": "8b43584f56364318aeb1dd892844555078a3aa536bd03ed06dd39d55981942a4",
+      "policies": {
+        "fixed_early": {
+          "ceiling": 0.0,
+          "energy": 0.298338072148765,
+          "floor": 0.1111111111111111,
+          "high_energy": 0.20833333333333334,
+          "raw_drift_tail": 6.909023853504887e-06,
+          "resource": 0.4883683866386615
+        },
+        "learn_then_rescue": {
+          "ceiling": 0.0,
+          "energy": 0.013990180846944499,
+          "floor": 0.5,
+          "high_energy": 0.0,
+          "raw_drift_tail": -2.718537582935332e-05,
+          "resource": 0.49705087712403323
+        },
+        "rescue_early": {
+          "ceiling": 0.0,
+          "energy": 0.31295551039002595,
+          "floor": 0.0,
+          "high_energy": 0.125,
+          "raw_drift_tail": 2.5869398145657572e-05,
+          "resource": 0.4832466063457191
+        },
+        "reverse_early": {
+          "ceiling": 0.1597222222222222,
+          "energy": 0.6351969796099044,
+          "floor": 0.04861111111111111,
+          "high_energy": 0.6527777777777778,
+          "raw_drift_tail": -1.1141067434520167e-05,
+          "resource": 0.4912424131712969
+        }
+      },
+      "seed": 9011
+    }
+  ],
+  "seed_unit": "independent initial world",
+  "size": 12,
+  "source_sha256": {
+    "NEXT_LIVING_switch_probe.py": "5071d80b65946591ee5408b58401c74e6d584c80ebfd3bf87dc75a081593fc63",
+    "NEXT_LIVING_validation.py": "b615b051d87d861f8d13220d7be5cd45cc6f70a76adfd0dec19ae613ade86e19",
+    "SOC_LONGITUDINAL_explore.py": "d7685f749c4a98ac5265e5b51bf87330d3ff65470aa2f3d2ef96c6df8f0d0b93",
+    "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1"
+  },
+  "start_tick": 100,
+  "status": "executed",
+  "summaries": {
+    "fixed_early": {
+      "energy": 0.2882598865647598,
+      "energy_sd_across_seeds": 0.01322989907268998,
+      "floor_fraction": 0.0653935185185185
+    },
+    "learn_then_rescue": {
+      "energy": 0.0256191870071488,
+      "energy_sd_across_seeds": 0.010511200169235417,
+      "floor_fraction": 0.2673611111111111
+    },
+    "rescue_early": {
+      "energy": 0.30077736908341657,
+      "energy_sd_across_seeds": 0.011548832711217144,
+      "floor_fraction": 0.0
+    },
+    "reverse_early": {
+      "energy": 0.6474952841615712,
+      "energy_sd_across_seeds": 0.03822629362658978,
+      "floor_fraction": 0.04282407407407408
+    }
+  },
+  "warning": "These policies were chosen after one-world exploration, not preregistered. Low energy is not death; initial learned neural damage varies across seeds."
+}
