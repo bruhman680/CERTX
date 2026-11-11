@@ -1,0 +1,2711 @@
+{
+  "checkpoint_and_learning": {
+    "exact_continuation": true,
+    "exact_restore": true,
+    "frozen_energy_after_120": 0.3000668261039459,
+    "learned_energy_after_135": 0.15461256891511413,
+    "learning_changes_state": true,
+    "nonmutating_probe": true,
+    "offpolicy_probe_mse": 0.014954396257541622,
+    "weights_learned_differ_from_frozen": true
+  },
+  "clipping": {
+    "ceiling_example_raw": 0.1525,
+    "ceiling_example_realized": 0.0,
+    "floor_example_raw": -0.022,
+    "floor_example_realized": 0.0,
+    "max_abs_clipping_gap": 0.1525,
+    "raw": [
+      -0.022,
+      0.1525,
+      -0.0825,
+      -0.022
+    ],
+    "realized": [
+      0.0,
+      0.0,
+      -1e-05,
+      -0.02200000000000002
+    ]
+  },
+  "design": "independent source-level falsification ladder, not a broad optimization search",
+  "exact_identities": {
+    "cases": 12,
+    "max_raw_energy_balance_error": 1.3877787807814457e-17,
+    "max_resource_balance_error": 2.7755575615628914e-17
+  },
+  "paired_configs": {
+    "higher_consumption": {
+      "config": {
+        "beta": 0.19,
+        "size": 12,
+        "threshold": 0.5,
+        "ticks": 3000
+      },
+      "mean_final_energy": 0.016426914952191285,
+      "mean_final_floor": 0.4357638888888889,
+      "mean_tail_covariance": 0.010755097752177544,
+      "mean_tail_raw_drift": -0.0011265060257532934,
+      "runs": [
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5567085729578523,
+              "mean_resource": 0.5541695058745378
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5144714906855415,
+              "mean_resource": 0.46336926557785457
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.2708333333333333,
+              "mean_energy": 0.023533380267596285,
+              "mean_resource": 0.4633692462134942
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.2777777777777778,
+              "mean_energy": 0.0194638593475703,
+              "mean_resource": 0.4696829537246043
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.4513888888888889,
+              "mean_energy": 0.016366228360002982,
+              "mean_resource": 0.47497916955249486
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.020833333333333332,
+              "mean_energy": 0.18475566747888772,
+              "mean_resource": 0.4633692462134942
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.2777777777777778,
+              "mean_energy": 0.033019112245609765,
+              "mean_resource": 0.47497916955249486
+            }
+          },
+          "tail_clipping_gap": 0.0011076800713893024,
+          "tail_raw_drift": -0.0011200705953395712,
+          "tail_realized_drift": -1.239052395026864e-05,
+          "tail_resource_action_covariance": 0.010781117778545572
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5568599811019772,
+              "mean_resource": 0.5554549122711462
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5158206754675307,
+              "mean_resource": 0.4616309142327392
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.22916666666666666,
+              "mean_energy": 0.02461639827076848,
+              "mean_resource": 0.4616308959308981
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.3055555555555556,
+              "mean_energy": 0.0180204250358916,
+              "mean_resource": 0.472039183983598
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.4652777777777778,
+              "mean_energy": 0.016697500639267542,
+              "mean_resource": 0.4745458684279627
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.18348898739629046,
+              "mean_resource": 0.4616308959308981
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.3055555555555556,
+              "mean_energy": 0.029946526901199658,
+              "mean_resource": 0.4745458684279627
+            }
+          },
+          "tail_clipping_gap": 0.0011126791351967853,
+          "tail_raw_drift": -0.0011179708327832807,
+          "tail_realized_drift": -5.291697586495651e-06,
+          "tail_resource_action_covariance": 0.010610854938699947
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.543095039556634,
+              "mean_resource": 0.5516140096427448
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.49668387349425164,
+              "mean_resource": 0.46565993454570964
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.3333333333333333,
+              "mean_energy": 0.022201671838238488,
+              "mean_resource": 0.46565991420351655
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.2222222222222222,
+              "mean_energy": 0.021844914244684446,
+              "mean_resource": 0.46586877090269013
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.4444444444444444,
+              "mean_energy": 0.015287733043126769,
+              "mean_resource": 0.4766872937621456
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.034722222222222224,
+              "mean_energy": 0.16665887903936982,
+              "mean_resource": 0.46565991420351655
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.3611111111111111,
+              "mean_energy": 0.0241628690365443,
+              "mean_resource": 0.4766872937621456
+            }
+          },
+          "tail_clipping_gap": 0.0011125408745517112,
+          "tail_raw_drift": -0.0011387695993579415,
+          "tail_realized_drift": -2.6228724806230117e-05,
+          "tail_resource_action_covariance": 0.010677164412630507
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5552589100275196,
+              "mean_resource": 0.5419160969724623
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.49996286408848334,
+              "mean_resource": 0.4684412224101339
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.3541666666666667,
+              "mean_energy": 0.02044684632234504,
+              "mean_resource": 0.46844120052367827
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.2638888888888889,
+              "mean_energy": 0.021526002478370398,
+              "mean_resource": 0.4665023495573038
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.3819444444444444,
+              "mean_energy": 0.017356197766367834,
+              "mean_resource": 0.47330582166082436
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.034722222222222224,
+              "mean_energy": 0.1672612534867644,
+              "mean_resource": 0.46844120052367827
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.2916666666666667,
+              "mean_energy": 0.029510987739333725,
+              "mean_resource": 0.47330582166082436
+            }
+          },
+          "tail_clipping_gap": 0.00111253385668437,
+          "tail_raw_drift": -0.0011292130755323798,
+          "tail_realized_drift": -1.667921884801004e-05,
+          "tail_resource_action_covariance": 0.010951253878834156
+        }
+      ],
+      "seeds": [
+        8101,
+        8102,
+        8103,
+        8104
+      ]
+    },
+    "horizon_055_2000": {
+      "config": {
+        "size": 12,
+        "threshold": 0.55,
+        "ticks": 2000
+      },
+      "mean_final_energy": 0.2726248757712387,
+      "mean_final_floor": 0.0,
+      "mean_tail_covariance": 0.010378794836344114,
+      "mean_tail_raw_drift": -0.00015162188816719645,
+      "runs": [
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5567085729578523,
+              "mean_resource": 0.5541695058745378
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5662876971394879,
+              "mean_resource": 0.5286969463037853
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.4333604009135794,
+              "mean_resource": 0.5246604819977899
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.2803765975638034,
+              "mean_resource": 0.5270842155031117
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5272465191272343,
+              "mean_resource": 0.5204822549715572
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.4952004098068584,
+              "mean_resource": 0.5228999830610201
+            }
+          },
+          "tail_clipping_gap": 1.7357273438361998e-07,
+          "tail_raw_drift": -0.0001544420720666987,
+          "tail_realized_drift": -0.00015426849933231507,
+          "tail_resource_action_covariance": 0.010391185691082655
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5568599811019772,
+              "mean_resource": 0.5554549122711462
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5589062069754084,
+              "mean_resource": 0.53905842191477
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.43104340683359993,
+              "mean_resource": 0.5262838003862771
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.27864174430710004,
+              "mean_resource": 0.5255021618314154
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5226369341807392,
+              "mean_resource": 0.5264571010216035
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.494378963849613,
+              "mean_resource": 0.5236876360010894
+            }
+          },
+          "tail_clipping_gap": -9.400822270156164e-18,
+          "tail_raw_drift": -0.0001560785378819174,
+          "tail_realized_drift": -0.0001560785378819268,
+          "tail_resource_action_covariance": 0.010414092495789987
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.543095039556634,
+              "mean_resource": 0.5516140096427448
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5496929205340967,
+              "mean_resource": 0.529204238879463
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.4164465341201432,
+              "mean_resource": 0.522336688019572
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.2638173220710456,
+              "mean_resource": 0.5232714018558716
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5056758100008738,
+              "mean_resource": 0.5256351370568226
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.4786632682901311,
+              "mean_resource": 0.5201761527095781
+            }
+          },
+          "tail_clipping_gap": -8.6565683007217e-18,
+          "tail_raw_drift": -0.00013976705941616625,
+          "tail_realized_drift": -0.0001397670594161749,
+          "tail_resource_action_covariance": 0.010376122800355386
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5552589100275196,
+              "mean_resource": 0.5419160969724623
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5550163876186901,
+              "mean_resource": 0.5284373846441524
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.4219295926007421,
+              "mean_resource": 0.5206789764356297
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.26766383914300573,
+              "mean_resource": 0.520047707571453
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5089824599640107,
+              "mean_resource": 0.527758730607681
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.4858967563487643,
+              "mean_resource": 0.5173015188274186
+            }
+          },
+          "tail_clipping_gap": -8.848577117337095e-18,
+          "tail_raw_drift": -0.00015619988330400352,
+          "tail_realized_drift": -0.00015619988330401233,
+          "tail_resource_action_covariance": 0.010333778358148428
+        }
+      ],
+      "seeds": [
+        8101,
+        8102,
+        8103,
+        8104
+      ]
+    },
+    "horizon_055_500": {
+      "config": {
+        "size": 12,
+        "threshold": 0.55,
+        "ticks": 500
+      },
+      "mean_final_energy": 0.5011300968373054,
+      "mean_final_floor": 0.0,
+      "mean_tail_covariance": 0.010214163193705949,
+      "mean_tail_raw_drift": -0.0001741382209325061,
+      "runs": [
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5567085729578523,
+              "mean_resource": 0.5541695058745378
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5662876971394879,
+              "mean_resource": 0.5286969463037853
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5272465191272343,
+              "mean_resource": 0.5204822549715572
+            },
+            "500": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5130004390023944,
+              "mean_resource": 0.5192666137653098
+            }
+          },
+          "tail_clipping_gap": -1.775652107988135e-17,
+          "tail_raw_drift": -0.00014517548251230904,
+          "tail_realized_drift": -0.00014517548251232682,
+          "tail_resource_action_covariance": 0.01037469847760399
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5568599811019772,
+              "mean_resource": 0.5554549122711462
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5589062069754084,
+              "mean_resource": 0.53905842191477
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5226369341807392,
+              "mean_resource": 0.5264571010216035
+            },
+            "500": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5085995079899486,
+              "mean_resource": 0.5249180859288507
+            }
+          },
+          "tail_clipping_gap": -1.8025915673590842e-17,
+          "tail_raw_drift": -0.00017094238747100503,
+          "tail_realized_drift": -0.0001709423874710231,
+          "tail_resource_action_covariance": 0.010296642599530297
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.543095039556634,
+              "mean_resource": 0.5516140096427448
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5496929205340967,
+              "mean_resource": 0.529204238879463
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5056758100008738,
+              "mean_resource": 0.5256351370568226
+            },
+            "500": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.48862063547064927,
+              "mean_resource": 0.5273289377074701
+            }
+          },
+          "tail_clipping_gap": -1.7939358223743874e-17,
+          "tail_raw_drift": -0.00019223458766905922,
+          "tail_realized_drift": -0.00019223458766907714,
+          "tail_resource_action_covariance": 0.009978502532015451
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5552589100275196,
+              "mean_resource": 0.5419160969724623
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5550163876186901,
+              "mean_resource": 0.5284373846441524
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5089824599640107,
+              "mean_resource": 0.527758730607681
+            },
+            "500": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.4942998048862294,
+              "mean_resource": 0.5266612809027519
+            }
+          },
+          "tail_clipping_gap": -1.7808725414486525e-17,
+          "tail_raw_drift": -0.00018820042607765105,
+          "tail_realized_drift": -0.00018820042607766888,
+          "tail_resource_action_covariance": 0.010206809165674052
+        }
+      ],
+      "seeds": [
+        8101,
+        8102,
+        8103,
+        8104
+      ]
+    },
+    "horizon_055_5000": {
+      "config": {
+        "size": 12,
+        "threshold": 0.55,
+        "ticks": 5000
+      },
+      "mean_final_energy": 0.03694110775349996,
+      "mean_final_floor": 0.11284722222222222,
+      "mean_tail_covariance": 0.010403098784206827,
+      "mean_tail_raw_drift": -0.00015097003883907638,
+      "runs": [
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5567085729578523,
+              "mean_resource": 0.5541695058745378
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5662876971394879,
+              "mean_resource": 0.5286969463037853
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.4333604009135794,
+              "mean_resource": 0.5246604819977899
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.2803765975638034,
+              "mean_resource": 0.5270842155031117
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5272465191272343,
+              "mean_resource": 0.5204822549715572
+            },
+            "5000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.11805555555555555,
+              "mean_energy": 0.038880960003962316,
+              "mean_resource": 0.5231300453549594
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.4952004098068584,
+              "mean_resource": 0.5228999830610201
+            }
+          },
+          "tail_clipping_gap": 0.00013885321664520997,
+          "tail_raw_drift": -0.00013667832354336947,
+          "tail_realized_drift": 2.1748931018404655e-06,
+          "tail_resource_action_covariance": 0.01043990868269902
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5568599811019772,
+              "mean_resource": 0.5554549122711462
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5589062069754084,
+              "mean_resource": 0.53905842191477
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.43104340683359993,
+              "mean_resource": 0.5262838003862771
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.27864174430710004,
+              "mean_resource": 0.5255021618314154
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5226369341807392,
+              "mean_resource": 0.5264571010216035
+            },
+            "5000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.1111111111111111,
+              "mean_energy": 0.03550332771260099,
+              "mean_resource": 0.5237673087115031
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.494378963849613,
+              "mean_resource": 0.5236876360010894
+            }
+          },
+          "tail_clipping_gap": 0.00014402231207461476,
+          "tail_raw_drift": -0.0001417200500734172,
+          "tail_realized_drift": 2.3022620011975718e-06,
+          "tail_resource_action_covariance": 0.010375439720573764
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.543095039556634,
+              "mean_resource": 0.5516140096427448
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5496929205340967,
+              "mean_resource": 0.529204238879463
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.4164465341201432,
+              "mean_resource": 0.522336688019572
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.2638173220710456,
+              "mean_resource": 0.5232714018558716
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5056758100008738,
+              "mean_resource": 0.5256351370568226
+            },
+            "5000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.08333333333333333,
+              "mean_energy": 0.03831236064379215,
+              "mean_resource": 0.5206697700098251
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.4786632682901311,
+              "mean_resource": 0.5201761527095781
+            }
+          },
+          "tail_clipping_gap": 0.00014768634369009343,
+          "tail_raw_drift": -0.00015615675856677695,
+          "tail_realized_drift": -8.470414876683548e-06,
+          "tail_resource_action_covariance": 0.010409648688951662
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5552589100275196,
+              "mean_resource": 0.5419160969724623
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5550163876186901,
+              "mean_resource": 0.5284373846441524
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.4219295926007421,
+              "mean_resource": 0.5206789764356297
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.26766383914300573,
+              "mean_resource": 0.520047707571453
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5089824599640107,
+              "mean_resource": 0.527758730607681
+            },
+            "5000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.1388888888888889,
+              "mean_energy": 0.035067782653644373,
+              "mean_resource": 0.5240507168620703
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.4858967563487643,
+              "mean_resource": 0.5173015188274186
+            }
+          },
+          "tail_clipping_gap": 0.00015088283047040238,
+          "tail_raw_drift": -0.00016932502317274192,
+          "tail_realized_drift": -1.844219270233953e-05,
+          "tail_resource_action_covariance": 0.010387398044602864
+        }
+      ],
+      "seeds": [
+        8101,
+        8102,
+        8103,
+        8104
+      ]
+    },
+    "horizon_base_2000": {
+      "config": {
+        "size": 12,
+        "threshold": 0.5,
+        "ticks": 2000
+      },
+      "mean_final_energy": 0.6386432316412058,
+      "mean_final_floor": 0.0,
+      "mean_tail_covariance": 0.01058674678115697,
+      "mean_tail_raw_drift": -6.11013887611896e-07,
+      "runs": [
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5567085729578523,
+              "mean_resource": 0.5541695058745378
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6191493873051895,
+              "mean_resource": 0.4788824051856985
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6365273592645687,
+              "mean_resource": 0.47888240243869845
+            },
+            "2000": {
+              "ceiling_fraction": 0.006944444444444444,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6512664326311086,
+              "mean_resource": 0.48561579909025643
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6249420459330799,
+              "mean_resource": 0.47888240243869845
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6233010752710899,
+              "mean_resource": 0.4868066796711557
+            }
+          },
+          "tail_clipping_gap": -1.8254061456834947e-17,
+          "tail_raw_drift": 1.0297268087344594e-06,
+          "tail_realized_drift": 1.0297268087159621e-06,
+          "tail_resource_action_covariance": 0.010629368510754933
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5568599811019772,
+              "mean_resource": 0.5554549122711462
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6202384743859023,
+              "mean_resource": 0.4780870945825337
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6350145415259922,
+              "mean_resource": 0.47808709230959046
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6436189976397887,
+              "mean_resource": 0.4893998721244258
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6251638311806672,
+              "mean_resource": 0.47808709230959046
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6242907898977984,
+              "mean_resource": 0.48392199294526417
+            }
+          },
+          "tail_clipping_gap": -6.009892574626759e-08,
+          "tail_raw_drift": -1.4775628345692485e-05,
+          "tail_realized_drift": -1.4835727271438857e-05,
+          "tail_resource_action_covariance": 0.0104578879690464
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.543095039556634,
+              "mean_resource": 0.5516140096427448
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6028885625502384,
+              "mean_resource": 0.4784704509322331
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6149015505317118,
+              "mean_resource": 0.4784704490414463
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6245900053918287,
+              "mean_resource": 0.4839473135066107
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6068928927848523,
+              "mean_resource": 0.4784704490414463
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6022352849821933,
+              "mean_resource": 0.48910171798713126
+            }
+          },
+          "tail_clipping_gap": -1.6481607745255643e-17,
+          "tail_raw_drift": -1.2894692938138913e-06,
+          "tail_realized_drift": -1.2894692938303765e-06,
+          "tail_resource_action_covariance": 0.01048122780146784
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5552589100275196,
+              "mean_resource": 0.5419160969724623
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6051182051898208,
+              "mean_resource": 0.48246259553844734
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6197535450668027,
+              "mean_resource": 0.4824625962987699
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6350974909020974,
+              "mean_resource": 0.48383376358170616
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6099966514546281,
+              "mean_resource": 0.4824625962987699
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6114200210732416,
+              "mean_resource": 0.48511822650279235
+            }
+          },
+          "tail_clipping_gap": -1.7023708831498395e-17,
+          "tail_raw_drift": 1.2591315280324333e-05,
+          "tail_realized_drift": 1.2591315280307341e-05,
+          "tail_resource_action_covariance": 0.010778502843358713
+        }
+      ],
+      "seeds": [
+        8101,
+        8102,
+        8103,
+        8104
+      ]
+    },
+    "horizon_base_500": {
+      "config": {
+        "size": 12,
+        "threshold": 0.5,
+        "ticks": 500
+      },
+      "mean_final_energy": 0.6141460034266593,
+      "mean_final_floor": 0.0,
+      "mean_tail_covariance": 0.01058674678115697,
+      "mean_tail_raw_drift": -6.11013887611896e-07,
+      "runs": [
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5567085729578523,
+              "mean_resource": 0.5541695058745378
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6191493873051895,
+              "mean_resource": 0.4788824051856985
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6249420459330799,
+              "mean_resource": 0.47888240243869845
+            },
+            "500": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6223031493023868,
+              "mean_resource": 0.48561579909025643
+            }
+          },
+          "tail_clipping_gap": -1.8507764765196556e-17,
+          "tail_raw_drift": 1.0297268087344594e-06,
+          "tail_realized_drift": 1.0297268087158963e-06,
+          "tail_resource_action_covariance": 0.010629368510754933
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5568599811019772,
+              "mean_resource": 0.5554549122711462
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6202384743859023,
+              "mean_resource": 0.4780870945825337
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6251638311806672,
+              "mean_resource": 0.47808709230959046
+            },
+            "500": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6190072465079086,
+              "mean_resource": 0.4893998721244258
+            }
+          },
+          "tail_clipping_gap": -1.6339360420225547e-17,
+          "tail_raw_drift": -1.4775628345692485e-05,
+          "tail_realized_drift": -1.4775628345709055e-05,
+          "tail_resource_action_covariance": 0.0104578879690464
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.543095039556634,
+              "mean_resource": 0.5516140096427448
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6028885625502384,
+              "mean_resource": 0.4784704509322331
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6068928927848523,
+              "mean_resource": 0.4784704490414463
+            },
+            "500": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6045683610246798,
+              "mean_resource": 0.4839473135066107
+            }
+          },
+          "tail_clipping_gap": -1.680426631178733e-17,
+          "tail_raw_drift": -1.2894692938138913e-06,
+          "tail_realized_drift": -1.289469293830699e-06,
+          "tail_resource_action_covariance": 0.01048122780146784
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5552589100275196,
+              "mean_resource": 0.5419160969724623
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6051182051898208,
+              "mean_resource": 0.48246259553844734
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6099966514546281,
+              "mean_resource": 0.4824625962987699
+            },
+            "500": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6107052568716614,
+              "mean_resource": 0.48383376358170616
+            }
+          },
+          "tail_clipping_gap": -1.6586558515552242e-17,
+          "tail_raw_drift": 1.2591315280324333e-05,
+          "tail_realized_drift": 1.2591315280307753e-05,
+          "tail_resource_action_covariance": 0.010778502843358713
+        }
+      ],
+      "seeds": [
+        8101,
+        8102,
+        8103,
+        8104
+      ]
+    },
+    "horizon_base_5000": {
+      "config": {
+        "size": 12,
+        "threshold": 0.5,
+        "ticks": 5000
+      },
+      "mean_final_energy": 0.6713881490752369,
+      "mean_final_floor": 0.0,
+      "mean_tail_covariance": 0.01058674678115697,
+      "mean_tail_raw_drift": -6.11013887611896e-07,
+      "runs": [
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5567085729578523,
+              "mean_resource": 0.5541695058745378
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6191493873051895,
+              "mean_resource": 0.4788824051856985
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6365273592645687,
+              "mean_resource": 0.47888240243869845
+            },
+            "2000": {
+              "ceiling_fraction": 0.006944444444444444,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6512664326311086,
+              "mean_resource": 0.48561579909025643
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6249420459330799,
+              "mean_resource": 0.47888240243869845
+            },
+            "5000": {
+              "ceiling_fraction": 0.05555555555555555,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.689115941537894,
+              "mean_resource": 0.48561579909025643
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6233010752710899,
+              "mean_resource": 0.4868066796711557
+            }
+          },
+          "tail_clipping_gap": -1.1851283875275443e-05,
+          "tail_raw_drift": 1.0297268087344594e-06,
+          "tail_realized_drift": -1.0821557066541139e-05,
+          "tail_resource_action_covariance": 0.010629368510754933
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5568599811019772,
+              "mean_resource": 0.5554549122711462
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6202384743859023,
+              "mean_resource": 0.4780870945825337
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6350145415259922,
+              "mean_resource": 0.47808709230959046
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6436189976397887,
+              "mean_resource": 0.4893998721244258
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6251638311806672,
+              "mean_resource": 0.47808709230959046
+            },
+            "5000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6742223401216484,
+              "mean_resource": 0.4893998721244258
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6242907898977984,
+              "mean_resource": 0.48392199294526417
+            }
+          },
+          "tail_clipping_gap": -9.647770569346215e-06,
+          "tail_raw_drift": -1.4775628345692485e-05,
+          "tail_realized_drift": -2.4423398915038802e-05,
+          "tail_resource_action_covariance": 0.0104578879690464
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.543095039556634,
+              "mean_resource": 0.5516140096427448
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6028885625502384,
+              "mean_resource": 0.4784704509322331
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6149015505317118,
+              "mean_resource": 0.4784704490414463
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6245900053918287,
+              "mean_resource": 0.4839473135066107
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6068928927848523,
+              "mean_resource": 0.4784704490414463
+            },
+            "5000": {
+              "ceiling_fraction": 0.020833333333333332,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6499563620403991,
+              "mean_resource": 0.4839473135066107
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6022352849821933,
+              "mean_resource": 0.48910171798713126
+            }
+          },
+          "tail_clipping_gap": -8.249759906358076e-06,
+          "tail_raw_drift": -1.2894692938138913e-06,
+          "tail_realized_drift": -9.539229200171893e-06,
+          "tail_resource_action_covariance": 0.01048122780146784
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5552589100275196,
+              "mean_resource": 0.5419160969724623
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6051182051898208,
+              "mean_resource": 0.48246259553844734
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6197535450668027,
+              "mean_resource": 0.4824625962987699
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6350974909020974,
+              "mean_resource": 0.48383376358170616
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6099966514546281,
+              "mean_resource": 0.4824625962987699
+            },
+            "5000": {
+              "ceiling_fraction": 0.027777777777777776,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6722579526010061,
+              "mean_resource": 0.48383376358170616
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6114200210732416,
+              "mean_resource": 0.48511822650279235
+            }
+          },
+          "tail_clipping_gap": -9.664367484735751e-06,
+          "tail_raw_drift": 1.2591315280324333e-05,
+          "tail_realized_drift": 2.926947795588584e-06,
+          "tail_resource_action_covariance": 0.010778502843358713
+        }
+      ],
+      "seeds": [
+        8101,
+        8102,
+        8103,
+        8104
+      ]
+    },
+    "large_grid_16": {
+      "config": {
+        "size": 16,
+        "threshold": 0.5,
+        "ticks": 3000
+      },
+      "mean_final_energy": 0.6550840773031279,
+      "mean_final_floor": 0.0,
+      "mean_tail_covariance": 0.01069197196505073,
+      "mean_tail_raw_drift": 1.7405569751101953e-05,
+      "runs": [
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5522715435021291,
+              "mean_resource": 0.5564401865393884
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.614869589280355,
+              "mean_resource": 0.4803233667295563
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6292252681564738,
+              "mean_resource": 0.48032336696691613
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6414909404994225,
+              "mean_resource": 0.4857254270498814
+            },
+            "3000": {
+              "ceiling_fraction": 0.0078125,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6564124648917626,
+              "mean_resource": 0.48537697882164504
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6196548154638617,
+              "mean_resource": 0.48032336696691613
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6193200412472337,
+              "mean_resource": 0.48537697882164504
+            }
+          },
+          "tail_clipping_gap": -2.552572628833741e-06,
+          "tail_raw_drift": 1.6591382609995306e-05,
+          "tail_realized_drift": 1.4038809981161637e-05,
+          "tail_resource_action_covariance": 0.010697604256661247
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5553253351828746,
+              "mean_resource": 0.5581362026409162
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6198105674012371,
+              "mean_resource": 0.4790736949525656
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6347897850377322,
+              "mean_resource": 0.4790736938657522
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6459500757900113,
+              "mean_resource": 0.48672857430842
+            },
+            "3000": {
+              "ceiling_fraction": 0.00390625,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6619413581786593,
+              "mean_resource": 0.48559856315137473
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6248036404635174,
+              "mean_resource": 0.4790736938657522
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6235675502895739,
+              "mean_resource": 0.48559856315137473
+            }
+          },
+          "tail_clipping_gap": -2.0099873603667933e-06,
+          "tail_raw_drift": 1.932031498510333e-05,
+          "tail_realized_drift": 1.7310327624736492e-05,
+          "tail_resource_action_covariance": 0.010620870071273578
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5519741854746204,
+              "mean_resource": 0.5460519161177851
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6061751253300194,
+              "mean_resource": 0.4810864051481568
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6202637038702236,
+              "mean_resource": 0.48108640582246265
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6324834290389495,
+              "mean_resource": 0.48608511171020297
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6483184297938646,
+              "mean_resource": 0.4842649393062441
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6108713178520631,
+              "mean_resource": 0.48108640582246265
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6117580281050818,
+              "mean_resource": 0.4842649393062441
+            }
+          },
+          "tail_clipping_gap": -1.953513653296931e-06,
+          "tail_raw_drift": 2.0414642464312878e-05,
+          "tail_realized_drift": 1.8461128811015878e-05,
+          "tail_resource_action_covariance": 0.010724863848115228
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5549262644339344,
+              "mean_resource": 0.5492476390160815
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6114549525432837,
+              "mean_resource": 0.4807935776332357
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6265211360337716,
+              "mean_resource": 0.48079357831725544
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6404410212704623,
+              "mean_resource": 0.48472434767224054
+            },
+            "3000": {
+              "ceiling_fraction": 0.0234375,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6536640563482254,
+              "mean_resource": 0.4858794266511899
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6164770133785502,
+              "mean_resource": 0.48079357831725544
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.616298016364073,
+              "mean_resource": 0.4858794266511899
+            }
+          },
+          "tail_clipping_gap": -3.850675835816139e-06,
+          "tail_raw_drift": 1.32959389449963e-05,
+          "tail_realized_drift": 9.445263109180185e-06,
+          "tail_resource_action_covariance": 0.010724549684152868
+        }
+      ],
+      "seeds": [
+        8101,
+        8102,
+        8103,
+        8104
+      ]
+    },
+    "lower_regrowth": {
+      "config": {
+        "alpha": 0.055,
+        "size": 12,
+        "threshold": 0.5,
+        "ticks": 3000
+      },
+      "mean_final_energy": 0.021054971470406213,
+      "mean_final_floor": 0.3420138888888889,
+      "mean_tail_covariance": 0.009986111824818664,
+      "mean_tail_raw_drift": -0.001815271843444238,
+      "runs": [
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5567085729578523,
+              "mean_resource": 0.5541695058745378
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.4376138234159988,
+              "mean_resource": 0.47565528889543746
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.3541666666666667,
+              "mean_energy": 0.021187858436584578,
+              "mean_resource": 0.47607052061467453
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.5347222222222222,
+              "mean_energy": 0.014555370970648816,
+              "mean_resource": 0.48423194037354683
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.3819444444444444,
+              "mean_energy": 0.02007722828457749,
+              "mean_resource": 0.47695154650326466
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.3125,
+              "mean_energy": 0.026117609957367355,
+              "mean_resource": 0.4734148663087993
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.4861111111111111,
+              "mean_energy": 0.01542047569940654,
+              "mean_resource": 0.4833263359016083
+            }
+          },
+          "tail_clipping_gap": 0.0018251202284843475,
+          "tail_raw_drift": -0.0018243701580017613,
+          "tail_realized_drift": 7.500704825859133e-07,
+          "tail_resource_action_covariance": 0.010024055017942523
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5568599811019772,
+              "mean_resource": 0.5554549122711462
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.4406575036749858,
+              "mean_resource": 0.4723714892493174
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.4236111111111111,
+              "mean_energy": 0.018729876567274362,
+              "mean_resource": 0.4782003066256735
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.4236111111111111,
+              "mean_energy": 0.018189573748104485,
+              "mean_resource": 0.47871174741225
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.3611111111111111,
+              "mean_energy": 0.02086408689199788,
+              "mean_resource": 0.47515255969889936
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.3541666666666667,
+              "mean_energy": 0.022022047246350582,
+              "mean_resource": 0.477745799716195
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.3333333333333333,
+              "mean_energy": 0.020917291755355536,
+              "mean_resource": 0.47522784063995194
+            }
+          },
+          "tail_clipping_gap": 0.0018223177337532072,
+          "tail_raw_drift": -0.0018118355662920217,
+          "tail_realized_drift": 1.0482167461185868e-05,
+          "tail_resource_action_covariance": 0.01000977253874043
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.543095039556634,
+              "mean_resource": 0.5516140096427448
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.42330655073841555,
+              "mean_resource": 0.473088010218462
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.4027777777777778,
+              "mean_energy": 0.018801476139898687,
+              "mean_resource": 0.47788910378321287
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.3611111111111111,
+              "mean_energy": 0.019934739372447014,
+              "mean_resource": 0.4765813249015245
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.3888888888888889,
+              "mean_energy": 0.019070722701282943,
+              "mean_resource": 0.47833827866562867
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.375,
+              "mean_energy": 0.021869830678220008,
+              "mean_resource": 0.4775035670186429
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.4513888888888889,
+              "mean_energy": 0.017295589631116,
+              "mean_resource": 0.48082218604143784
+            }
+          },
+          "tail_clipping_gap": 0.0018252037431553396,
+          "tail_raw_drift": -0.0018367801274710423,
+          "tail_realized_drift": -1.1576384315702518e-05,
+          "tail_resource_action_covariance": 0.009999192927648804
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5552589100275196,
+              "mean_resource": 0.5419160969724623
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.4309378064482632,
+              "mean_resource": 0.4687142679167301
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.3125,
+              "mean_energy": 0.02197562727878499,
+              "mean_resource": 0.4744379987549228
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.4027777777777778,
+              "mean_energy": 0.018074136249557997,
+              "mean_resource": 0.47909586023982903
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.2361111111111111,
+              "mean_energy": 0.024207848003766536,
+              "mean_resource": 0.471020823380898
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.2638888888888889,
+              "mean_energy": 0.02657685560216151,
+              "mean_resource": 0.4712287289024114
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.3958333333333333,
+              "mean_energy": 0.020295455283727466,
+              "mean_resource": 0.4767631836221058
+            }
+          },
+          "tail_clipping_gap": 0.0018249930760732137,
+          "tail_raw_drift": -0.0017881015220121274,
+          "tail_realized_drift": 3.6891554061086354e-05,
+          "tail_resource_action_covariance": 0.009911426814942899
+        }
+      ],
+      "seeds": [
+        8101,
+        8102,
+        8103,
+        8104
+      ]
+    },
+    "more_diffusion": {
+      "config": {
+        "diffusion": 0.12,
+        "size": 12,
+        "threshold": 0.5,
+        "ticks": 3000
+      },
+      "mean_final_energy": 0.6843539376543011,
+      "mean_final_floor": 0.0,
+      "mean_tail_covariance": 0.010596012834769464,
+      "mean_tail_raw_drift": 2.515478854176054e-05,
+      "runs": [
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5567085729578523,
+              "mean_resource": 0.5541695058745378
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6228252196807101,
+              "mean_resource": 0.4751431548521566
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6528451212357455,
+              "mean_resource": 0.47514315364831755
+            },
+            "2000": {
+              "ceiling_fraction": 0.027777777777777776,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6745158367039727,
+              "mean_resource": 0.48594834134019294
+            },
+            "3000": {
+              "ceiling_fraction": 0.006944444444444444,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6886558068500642,
+              "mean_resource": 0.48970770898340543
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6328318541010122,
+              "mean_resource": 0.47514315364831755
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6294083919299207,
+              "mean_resource": 0.48970770898340543
+            }
+          },
+          "tail_clipping_gap": -2.0297871190698624e-05,
+          "tail_raw_drift": 2.2187200534652194e-05,
+          "tail_realized_drift": 1.8893293439533992e-06,
+          "tail_resource_action_covariance": 0.01033542231514644
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5568599811019772,
+              "mean_resource": 0.5554549122711462
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6224755499031633,
+              "mean_resource": 0.47693700281555235
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6529906891233986,
+              "mean_resource": 0.4769370001948684
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6759360015115321,
+              "mean_resource": 0.4870127129656254
+            },
+            "3000": {
+              "ceiling_fraction": 0.020833333333333332,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6972566878640518,
+              "mean_resource": 0.4868296813449974
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.63264726421492,
+              "mean_resource": 0.4769370001948684
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6325207834072755,
+              "mean_resource": 0.4868296813449974
+            }
+          },
+          "tail_clipping_gap": -1.5883185771689597e-05,
+          "tail_raw_drift": 3.3782690029703227e-05,
+          "tail_realized_drift": 1.7899504258013566e-05,
+          "tail_resource_action_covariance": 0.010590738927781661
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.543095039556634,
+              "mean_resource": 0.5516140096427448
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.604634451461277,
+              "mean_resource": 0.478261276950703
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6334673282439418,
+              "mean_resource": 0.4782612752703932
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6580417553990051,
+              "mean_resource": 0.48437469242376735
+            },
+            "3000": {
+              "ceiling_fraction": 0.034722222222222224,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6750795686394636,
+              "mean_resource": 0.48821071728253496
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6142454111888669,
+              "mean_resource": 0.4782612752703932
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6137794770478868,
+              "mean_resource": 0.48821071728253496
+            }
+          },
+          "tail_clipping_gap": -1.7493505457824118e-05,
+          "tail_raw_drift": 2.0972235621477667e-05,
+          "tail_realized_drift": 3.4787301636535796e-06,
+          "tail_resource_action_covariance": 0.010656902731605656
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5552589100275196,
+              "mean_resource": 0.5419160969724623
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6076950925561173,
+              "mean_resource": 0.4803073921048973
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6339689845387688,
+              "mean_resource": 0.4803073893335204
+            },
+            "2000": {
+              "ceiling_fraction": 0.013888888888888888,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6591850586855289,
+              "mean_resource": 0.4843735882556108
+            },
+            "3000": {
+              "ceiling_fraction": 0.027777777777777776,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6764236872636247,
+              "mean_resource": 0.486268066811001
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6164530578743072,
+              "mean_resource": 0.4803073893335204
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6181686801557622,
+              "mean_resource": 0.486268066811001
+            }
+          },
+          "tail_clipping_gap": -1.6807252229508727e-05,
+          "tail_raw_drift": 2.3677027981209076e-05,
+          "tail_realized_drift": 6.869775751700283e-06,
+          "tail_resource_action_covariance": 0.010800987364544101
+        }
+      ],
+      "seeds": [
+        8101,
+        8102,
+        8103,
+        8104
+      ]
+    },
+    "no_diffusion": {
+      "config": {
+        "diffusion": 0,
+        "size": 12,
+        "threshold": 0.5,
+        "ticks": 3000
+      },
+      "mean_final_energy": 0.5545464541862596,
+      "mean_final_floor": 0.0,
+      "mean_tail_covariance": 0.010310400486557632,
+      "mean_tail_raw_drift": -3.008165278384419e-06,
+      "runs": [
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5567085729578523,
+              "mean_resource": 0.5541695058745378
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6112130220102182,
+              "mean_resource": 0.48608523232529127
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5949043848997346,
+              "mean_resource": 0.48608523308490426
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5754098101517982,
+              "mean_resource": 0.4879073505772322
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5637004843200293,
+              "mean_resource": 0.4786597618003799
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6057768092750202,
+              "mean_resource": 0.48608523308490426
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6071901818211706,
+              "mean_resource": 0.4786597618003799
+            }
+          },
+          "tail_clipping_gap": -2.0097638830929298e-17,
+          "tail_raw_drift": 7.524818549371006e-06,
+          "tail_realized_drift": 7.524818549350977e-06,
+          "tail_resource_action_covariance": 0.010280489388994429
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5568599811019772,
+              "mean_resource": 0.5554549122711462
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6180220678703248,
+              "mean_resource": 0.4772121141547727
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6017134310206436,
+              "mean_resource": 0.47721211456963314
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5735176957193455,
+              "mean_resource": 0.4918164547712991
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5608924582503827,
+              "mean_resource": 0.4836237761215841
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6125858553959279,
+              "mean_resource": 0.47721211456963314
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6043821557515189,
+              "mean_resource": 0.4836237761215841
+            }
+          },
+          "tail_clipping_gap": -1.936992233275703e-17,
+          "tail_raw_drift": 3.861172000587803e-06,
+          "tail_realized_drift": 3.861172000568597e-06,
+          "tail_resource_action_covariance": 0.009967679867504518
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.543095039556634,
+              "mean_resource": 0.5516140096427448
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5969103890588562,
+              "mean_resource": 0.4835598403625898
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.580601751176691,
+              "mean_resource": 0.48355984217448483
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5615651322473515,
+              "mean_resource": 0.4848887549320473
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5439023807738066,
+              "mean_resource": 0.48420374835598423
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.591474175551977,
+              "mean_resource": 0.48355984217448483
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5873920782749502,
+              "mean_resource": 0.48420374835598423
+            }
+          },
+          "tail_clipping_gap": -2.0788709295671558e-17,
+          "tail_raw_drift": -1.6288884017729628e-05,
+          "tail_realized_drift": -1.6288884017750404e-05,
+          "tail_resource_action_covariance": 0.010517115650421356
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5552589100275196,
+              "mean_resource": 0.5419160969724623
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.601782587417451,
+              "mean_resource": 0.4833726088723962
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5854739521665014,
+              "mean_resource": 0.48337260704369434
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5650634657813708,
+              "mean_resource": 0.4866469384772761
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5496904934008197,
+              "mean_resource": 0.4826327999415461
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.596346376541786,
+              "mean_resource": 0.48337260704369434
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.593180190901956,
+              "mean_resource": 0.4826327999415461
+            }
+          },
+          "tail_clipping_gap": -1.866974456976589e-17,
+          "tail_raw_drift": -7.129767645766857e-06,
+          "tail_realized_drift": -7.129767645785526e-06,
+          "tail_resource_action_covariance": 0.010476317039310228
+        }
+      ],
+      "seeds": [
+        8101,
+        8102,
+        8103,
+        8104
+      ]
+    },
+    "resource_shock": {
+      "config": {
+        "shock_at": [
+          1000
+        ],
+        "shock_factor": 0.65,
+        "size": 12,
+        "threshold": 0.5,
+        "ticks": 3000
+      },
+      "mean_final_energy": 0.5202568806809404,
+      "mean_final_floor": 0.0,
+      "mean_tail_covariance": 0.00645814696617417,
+      "mean_tail_raw_drift": -8.659571293004129e-05,
+      "runs": [
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5567085729578523,
+              "mean_resource": 0.5541695058745378
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6191493873051895,
+              "mean_resource": 0.4788824051856985
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6365273592645687,
+              "mean_resource": 0.311273561585154
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5531522709370278,
+              "mean_resource": 0.46061716407045356
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5348124961738518,
+              "mean_resource": 0.4929801342262263
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6249420459330799,
+              "mean_resource": 0.47888240243869845
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6233010752710899,
+              "mean_resource": 0.4868066796711557
+            }
+          },
+          "tail_clipping_gap": -1.871072741188584e-17,
+          "tail_raw_drift": -8.435076643053445e-05,
+          "tail_realized_drift": -8.435076643055344e-05,
+          "tail_resource_action_covariance": 0.006376409954823621
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5568599811019772,
+              "mean_resource": 0.5554549122711462
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6202384743859023,
+              "mean_resource": 0.4780870945825337
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6350145415259922,
+              "mean_resource": 0.3107566100012338
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5464485722608778,
+              "mean_resource": 0.45887064780348674
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.521952647299631,
+              "mean_resource": 0.4913384089352776
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6251638311806672,
+              "mean_resource": 0.47808709230959046
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6242907898977984,
+              "mean_resource": 0.48392199294526417
+            }
+          },
+          "tail_clipping_gap": -1.50712775592865e-17,
+          "tail_raw_drift": -9.04884296910774e-05,
+          "tail_realized_drift": -9.048842969109325e-05,
+          "tail_resource_action_covariance": 0.005431086261711284
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.543095039556634,
+              "mean_resource": 0.5516140096427448
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6028885625502384,
+              "mean_resource": 0.4784704509322331
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6149015505317118,
+              "mean_resource": 0.31100579187694016
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5278776503010835,
+              "mean_resource": 0.4615678864250734
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5066615750544758,
+              "mean_resource": 0.493873813239569
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6068928927848523,
+              "mean_resource": 0.4784704490414463
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6022352849821933,
+              "mean_resource": 0.48910171798713126
+            }
+          },
+          "tail_clipping_gap": -1.85268467234323e-17,
+          "tail_raw_drift": -8.721842937497765e-05,
+          "tail_realized_drift": -8.721842937499597e-05,
+          "tail_resource_action_covariance": 0.006730485858501564
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5552589100275196,
+              "mean_resource": 0.5419160969724623
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6051182051898208,
+              "mean_resource": 0.48246259553844734
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6197535450668027,
+              "mean_resource": 0.3136006875942005
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5359149618236859,
+              "mean_resource": 0.46312843170545803
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5176008041958031,
+              "mean_resource": 0.49534072580313054
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6099966514546281,
+              "mean_resource": 0.4824625962987699
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6114200210732416,
+              "mean_resource": 0.48511822650279235
+            }
+          },
+          "tail_clipping_gap": -1.935474350234223e-17,
+          "tail_raw_drift": -8.432522622357564e-05,
+          "tail_realized_drift": -8.432522622359531e-05,
+          "tail_resource_action_covariance": 0.007294605789660211
+        }
+      ],
+      "seeds": [
+        8101,
+        8102,
+        8103,
+        8104
+      ]
+    },
+    "small_grid_8": {
+      "config": {
+        "size": 8,
+        "threshold": 0.5,
+        "ticks": 3000
+      },
+      "mean_final_energy": 0.6551028620558061,
+      "mean_final_floor": 0.0,
+      "mean_tail_covariance": 0.01050453068781227,
+      "mean_tail_raw_drift": 1.2109719137881262e-05,
+      "runs": [
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5552917919897862,
+              "mean_resource": 0.5468001710206322
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6107752714913599,
+              "mean_resource": 0.48080365510548567
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6268728243370831,
+              "mean_resource": 0.48080365627671096
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6413243188824669,
+              "mean_resource": 0.48581802572558447
+            },
+            "3000": {
+              "ceiling_fraction": 0.03125,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6585915737853988,
+              "mean_resource": 0.4847344158506488
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6161411218861719,
+              "mean_resource": 0.48080365627671096
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6169630552309786,
+              "mean_resource": 0.4847344158506488
+            }
+          },
+          "tail_clipping_gap": -4.297151015574735e-06,
+          "tail_raw_drift": 2.0603672354088958e-05,
+          "tail_realized_drift": 1.630652133851423e-05,
+          "tail_resource_action_covariance": 0.010736456539867665
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5564673831163534,
+              "mean_resource": 0.5518879828933692
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6198374973169423,
+              "mean_resource": 0.4738232711961076
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.635559223764911,
+              "mean_resource": 0.473823270615076
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6423734116912383,
+              "mean_resource": 0.4894162125253628
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6605010442053716,
+              "mean_resource": 0.48813164781781204
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6250780730690928,
+              "mean_resource": 0.473823270615076
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6185764414220983,
+              "mean_resource": 0.48813164781781204
+            }
+          },
+          "tail_clipping_gap": -1.547373340571312e-17,
+          "tail_raw_drift": 2.0104776577457033e-05,
+          "tail_realized_drift": 2.0104776577441417e-05,
+          "tail_resource_action_covariance": 0.010028135565455731
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5608357524618506,
+              "mean_resource": 0.5324745820943544
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6061270895426116,
+              "mean_resource": 0.4792588425778947
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6225854175444436,
+              "mean_resource": 0.47925884078211456
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6374384641180915,
+              "mean_resource": 0.48436511151792755
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6533154914392019,
+              "mean_resource": 0.4877177146311007
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6116131997301574,
+              "mean_resource": 0.47925884078211456
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6094283913491654,
+              "mean_resource": 0.4877177146311007
+            }
+          },
+          "tail_clipping_gap": -7.084668449352377e-09,
+          "tail_raw_drift": 8.654104881460695e-06,
+          "tail_realized_drift": 8.647020213011343e-06,
+          "tail_resource_action_covariance": 0.010620689882064048
+        },
+        {
+          "snapshots": {
+            "0": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5505679459649251,
+              "mean_resource": 0.528056989868566
+            },
+            "100": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5921520846230944,
+              "mean_resource": 0.48168080623278997
+            },
+            "1000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6111450139984678,
+              "mean_resource": 0.481680805144746
+            },
+            "2000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.63296044211327,
+              "mean_resource": 0.48081949712777655
+            },
+            "3000": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.6480033387932524,
+              "mean_resource": 0.488739980583615
+            },
+            "400": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.5984830616007593,
+              "mean_resource": 0.481680805144746
+            },
+            "600": {
+              "ceiling_fraction": 0.0,
+              "floor_fraction": 0.0,
+              "mean_energy": 0.597909153704197,
+              "mean_resource": 0.488739980583615
+            }
+          },
+          "tail_clipping_gap": -2.104243198626534e-06,
+          "tail_raw_drift": -9.236772614816396e-07,
+          "tail_realized_drift": -3.0279204601081737e-06,
+          "tail_resource_action_covariance": 0.010632840763861636
+        }
+      ],
+      "seeds": [
+        8101,
+        8102,
+        8103,
+        8104
+      ]
+    }
+  },
+  "platform": {
+    "numpy": "2.5.4",
+    "python": "3.12.14",
+    "system": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "source_sha256": {
+    "SOC_REVIEW_probe.py": "17ffb0c4dd8cc92a5565c2c60654d22d5b8a01709362081742ba05cc2543f8f5",
+    "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1"
+  }
+}
