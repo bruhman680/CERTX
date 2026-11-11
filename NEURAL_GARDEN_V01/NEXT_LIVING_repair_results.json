@@ -1,0 +1,3206 @@
+{
+  "canonical_fingerprint_unchanged": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+  "caution": "One-time resource or energy injection is external, not learned. Energy injection alters world state, not law. No population death occurs at floor. All controls start exact physical and neural state at switch.",
+  "fresh_seed_summaries": {
+    "both": {
+      "energy": 0.5386992936749561,
+      "floor": 0.0
+    },
+    "energy_only": {
+      "energy": 0.2845267417430636,
+      "floor": 0.001736111111111111
+    },
+    "none": {
+      "energy": 0.02469406701153473,
+      "floor": 0.2916666666666667
+    },
+    "resource_only": {
+      "energy": 0.2691394853018512,
+      "floor": 0.001736111111111111
+    }
+  },
+  "fresh_seeds": [
+    9100,
+    9101,
+    9102,
+    9103,
+    9104,
+    9105,
+    9106,
+    9107,
+    9108,
+    9109,
+    9110,
+    9111
+  ],
+  "horizon": 5000,
+  "hypothesis": "Are late-policy-switch failures caused by depleted resources or depleted energy?",
+  "intervention_time": 500,
+  "rows": [
+    {
+      "arms": {
+        "both": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.4641007812858263,
+              "floor": 0.0,
+              "high_energy": 0.2421875,
+              "raw_drift_tail": 0.0016410078128582812,
+              "resource": 0.47999236021871894
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.46480673096724007,
+              "floor": 0.0,
+              "high_energy": 0.171875,
+              "raw_drift_tail": 0.0003296134619344983,
+              "resource": 0.48832258504003057
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.4844703158928617,
+              "floor": 0.0,
+              "high_energy": 0.39453125,
+              "raw_drift_tail": 1.1660876792981345e-05,
+              "resource": 0.4831035173246981
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.5028716739459904,
+              "floor": 0.0,
+              "high_energy": 0.4375,
+              "raw_drift_tail": 2.766629305829873e-05,
+              "resource": 0.4799923345204807
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.5303020431102881,
+              "floor": 0.0,
+              "high_energy": 0.53515625,
+              "raw_drift_tail": 1.1480911717836937e-05,
+              "resource": 0.48323074544220085
+            }
+          },
+          "final_fingerprint": "56b2fe5aa1e70f570c91b84e5f9373b0119f816c760eb118692395b0121ecf2b",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.29999999999999993,
+              "resource": 0.6854104981258426
+            },
+            "before": {
+              "energy": 0.008395765028630497,
+              "resource": 0.342797999538762
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 2
+          },
+          "mode": "both",
+          "source_state_fingerprint_at_500": "fe2d91c0767031c8b7f253c8dd9395a80b31e4f0591a3939fe02ad3a6bb53518"
+        },
+        "energy_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.22332409416957644,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0007667590583042391,
+              "resource": 0.47238349635602217
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.21175879664554564,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00017648240670891218,
+              "resource": 0.49533043807978017
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.23001012251222874,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -5.77240893365365e-06,
+              "resource": 0.4839032065774661
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.2478258162005836,
+              "floor": 0.0,
+              "high_energy": 0.01171875,
+              "raw_drift_tail": 3.8457260583565916e-05,
+              "resource": 0.47493968349192317
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.27370168917401155,
+              "floor": 0.0,
+              "high_energy": 0.02734375,
+              "raw_drift_tail": 2.988315214156486e-06,
+              "resource": 0.4879063631148102
+            }
+          },
+          "final_fingerprint": "8c4bec11281a0dd5a574a2c11d033c3f2a231e3c1220c801e4d490ac9ec0a705",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.29999999999999993,
+              "resource": 0.342797999538762
+            },
+            "before": {
+              "energy": 0.008395765028630497,
+              "resource": 0.342797999538762
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 1
+          },
+          "mode": "energy_only",
+          "source_state_fingerprint_at_500": "fe2d91c0767031c8b7f253c8dd9395a80b31e4f0591a3939fe02ad3a6bb53518"
+        },
+        "none": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.025353136382564364,
+              "floor": 0.3046875,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0008644697902464672,
+              "resource": 0.4829823200250638
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.03270837559990848,
+              "floor": 0.16796875,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00016857611660516615,
+              "resource": 0.47346573770835754
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.017958508090301396,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": -1.2711772415506375e-05,
+              "resource": 0.4910487661874996
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.03578026810634511,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 6.1903089740692615e-06,
+              "resource": 0.46494774162131197
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.03578026810634511,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 6.1903089740692615e-06,
+              "resource": 0.46494774162131197
+            }
+          },
+          "final_fingerprint": "702ac65600f872f368ab4039246bbb2f28e9626f89bb79e0fbc44e4698f8b316",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.008395765028630497,
+              "resource": 0.342797999538762
+            },
+            "before": {
+              "energy": 0.008395765028630497,
+              "resource": 0.342797999538762
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 1
+          },
+          "mode": "none",
+          "source_state_fingerprint_at_500": "fe2d91c0767031c8b7f253c8dd9395a80b31e4f0591a3939fe02ad3a6bb53518"
+        },
+        "resource_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.17648318889893733,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0016808742387030653,
+              "resource": 0.4723434583167697
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.170124741351297,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.00032345795264533054,
+              "resource": 0.48866120959932274
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.18746032882724728,
+              "floor": 0.0,
+              "high_energy": 0.0078125,
+              "raw_drift_tail": -6.393169584729096e-08,
+              "resource": 0.4868974908993594
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.21237427704389636,
+              "floor": 0.0,
+              "high_energy": 0.015625,
+              "raw_drift_tail": 2.8547391259115323e-05,
+              "resource": 0.47976863803729186
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.2565598810148519,
+              "floor": 0.00390625,
+              "high_energy": 0.0390625,
+              "raw_drift_tail": 2.049946936259064e-05,
+              "resource": 0.48567911669263764
+            }
+          },
+          "final_fingerprint": "c70f45633198fcf0b89595c24938e3b8d37c9b8c10d026e8218a984903fa0a1e",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.008395765028630497,
+              "resource": 0.6854104981258426
+            },
+            "before": {
+              "energy": 0.008395765028630497,
+              "resource": 0.342797999538762
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 2
+          },
+          "mode": "resource_only",
+          "source_state_fingerprint_at_500": "fe2d91c0767031c8b7f253c8dd9395a80b31e4f0591a3939fe02ad3a6bb53518"
+        }
+      },
+      "seed": "canonical",
+      "start_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+      "start_tick": 100
+    },
+    {
+      "arms": {
+        "both": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.4617223334167343,
+              "floor": 0.0,
+              "high_energy": 0.2847222222222222,
+              "raw_drift_tail": 0.0016172233341673595,
+              "resource": 0.48427779128044673
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.4677624114272422,
+              "floor": 0.0,
+              "high_energy": 0.2222222222222222,
+              "raw_drift_tail": 0.0003355248228545009,
+              "resource": 0.48489159859246456
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.4858323563791633,
+              "floor": 0.0,
+              "high_energy": 0.4513888888888889,
+              "raw_drift_tail": 1.89948123332566e-05,
+              "resource": 0.4822461312361976
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.5006892814701845,
+              "floor": 0.0,
+              "high_energy": 0.5069444444444444,
+              "raw_drift_tail": 1.714507757061902e-05,
+              "resource": 0.4842777662211546
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.5336682033541729,
+              "floor": 0.0,
+              "high_energy": 0.5763888888888888,
+              "raw_drift_tail": 1.89948123332566e-05,
+              "resource": 0.4822461312361976
+            }
+          },
+          "final_fingerprint": "93a771788c9f80f32a20a6fa599b48ad6eb43643c125cc6fbcb1eb270aaf096f",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.6857516199696883
+            },
+            "before": {
+              "energy": 0.009576139793242481,
+              "resource": 0.3428758099848441
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 2
+          },
+          "mode": "both",
+          "source_state_fingerprint_at_500": "9cdf3aa328d1c438e4f54b969ff1612863da0d60403889a936a30d93e1e89dc3"
+        },
+        "energy_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.2236380029740158,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0007636199702598453,
+              "resource": 0.471934729708748
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.21444892909267974,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00017110214181464324,
+              "resource": 0.49135528361601327
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.22651549756332942,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -1.2700666418513288e-05,
+              "resource": 0.48834090185733914
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.24704617681030897,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 3.3607667002468494e-05,
+              "resource": 0.4753283893800627
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.27087496899525326,
+              "floor": 0.0,
+              "high_energy": 0.027777777777777776,
+              "raw_drift_tail": -1.7392135490163983e-06,
+              "resource": 0.4894488911530009
+            }
+          },
+          "final_fingerprint": "e17aba54d7b3d1702b396d63c00603086299ffe85c5bae0c99f405396b0a2767",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.3428758099848441
+            },
+            "before": {
+              "energy": 0.009576139793242481,
+              "resource": 0.3428758099848441
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 1
+          },
+          "mode": "energy_only",
+          "source_state_fingerprint_at_500": "9cdf3aa328d1c438e4f54b969ff1612863da0d60403889a936a30d93e1e89dc3"
+        },
+        "none": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.02690038479010913,
+              "floor": 0.2847222222222222,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0008451348615310483,
+              "resource": 0.48042664625659487
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.02123513731709949,
+              "floor": 0.4652777777777778,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00018847148727207363,
+              "resource": 0.4877795316898066
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.027951054018538465,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": 1.5643787329873322e-06,
+              "resource": 0.4757959879729215
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.013990180846944499,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": -5.8707339698222905e-05,
+              "resource": 0.49705087712403323
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.013990180846944499,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": -5.8707339698222905e-05,
+              "resource": 0.49705087712403323
+            }
+          },
+          "final_fingerprint": "a3dbc59774b45d1997873089e7c9774597658cc1e01217df39f247b3932f6948",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.009576139793242481,
+              "resource": 0.3428758099848441
+            },
+            "before": {
+              "energy": 0.009576139793242481,
+              "resource": 0.3428758099848441
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 1
+          },
+          "mode": "none",
+          "source_state_fingerprint_at_500": "9cdf3aa328d1c438e4f54b969ff1612863da0d60403889a936a30d93e1e89dc3"
+        },
+        "resource_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.17416553246526556,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0016458939267202286,
+              "resource": 0.47807069197353347
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.17330059247198884,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.00032744890535749035,
+              "resource": 0.4868868120321566
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.19540157119746165,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 1.7596883682061623e-05,
+              "resource": 0.48259992280463404
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.21615639552966076,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 2.6019153563748383e-05,
+              "resource": 0.483497884223812
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.26272906485052716,
+              "floor": 0.0,
+              "high_energy": 0.034722222222222224,
+              "raw_drift_tail": 1.792070149585126e-05,
+              "resource": 0.4861125866810608
+            }
+          },
+          "final_fingerprint": "421bf0a86ac9d6e4ca03264afcb19205b8147c2aac019bf6b7b578e9da7cbbc3",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.009576139793242481,
+              "resource": 0.6857516199696883
+            },
+            "before": {
+              "energy": 0.009576139793242481,
+              "resource": 0.3428758099848441
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 2
+          },
+          "mode": "resource_only",
+          "source_state_fingerprint_at_500": "9cdf3aa328d1c438e4f54b969ff1612863da0d60403889a936a30d93e1e89dc3"
+        }
+      },
+      "seed": 9100,
+      "start_fingerprint": "62dcee6d6ce5582e075186ff1658b04695f8d7683d1660772856fe1804790c1f",
+      "start_tick": 100
+    },
+    {
+      "arms": {
+        "both": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.4673096318976846,
+              "floor": 0.0,
+              "high_energy": 0.2708333333333333,
+              "raw_drift_tail": 0.0016730963189768636,
+              "resource": 0.4808779509980838
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.4724151858929524,
+              "floor": 0.0,
+              "high_energy": 0.22916666666666666,
+              "raw_drift_tail": 0.00034483037178592303,
+              "resource": 0.4836320092531508
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.4874693834926572,
+              "floor": 0.0,
+              "high_energy": 0.3819444444444444,
+              "raw_drift_tail": 9.099259873474618e-06,
+              "resource": 0.486865661087655
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.5089365926063981,
+              "floor": 0.0,
+              "high_energy": 0.4513888888888889,
+              "raw_drift_tail": 2.1009135325972885e-05,
+              "resource": 0.48087792552198305
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.5382532388856222,
+              "floor": 0.0,
+              "high_energy": 0.4861111111111111,
+              "raw_drift_tail": 9.099259873474618e-06,
+              "resource": 0.486865661087655
+            }
+          },
+          "final_fingerprint": "04f346d48a15741d16671568066375a1d11b0364fcd9888fdf5ae3d6ceb1d845",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.6895661728854672
+            },
+            "before": {
+              "energy": 0.010300807272659127,
+              "resource": 0.3448426131176448
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 2
+          },
+          "mode": "both",
+          "source_state_fingerprint_at_500": "98c4f3a76d6ce2e425612d45cde18916efd5c8b72b6454a71d2476a917b63377"
+        },
+        "energy_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.22438874309758758,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0007561125690241267,
+              "resource": 0.4730368621265253
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.21633075208409058,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00016733849583182138,
+              "resource": 0.49303697243840894
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.23557796613547893,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -3.2517868032957488e-06,
+              "resource": 0.48541358680295044
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.25712881161244594,
+              "floor": 0.0,
+              "high_energy": 0.020833333333333332,
+              "raw_drift_tail": 3.707001647552064e-05,
+              "resource": 0.4779754044404668
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.2934525204720666,
+              "floor": 0.006944444444444444,
+              "high_energy": 0.0625,
+              "raw_drift_tail": 8.485029318066283e-06,
+              "resource": 0.4887630815292449
+            }
+          },
+          "final_fingerprint": "5045b65e4c105ab4d06202b5bc5bc9303d4079f410f51cd488aa29e9d7600066",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.3448426131176448
+            },
+            "before": {
+              "energy": 0.010300807272659127,
+              "resource": 0.3448426131176448
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 1
+          },
+          "mode": "energy_only",
+          "source_state_fingerprint_at_500": "98c4f3a76d6ce2e425612d45cde18916efd5c8b72b6454a71d2476a917b63377"
+        },
+        "none": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.022391955720907908,
+              "floor": 0.4027777777777778,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.000881894103031274,
+              "resource": 0.48740485957651025
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.03948979750598426,
+              "floor": 0.027777777777777776,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00015088394710236709,
+              "resource": 0.46137562013659444
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.020706681010105827,
+              "floor": 0.4930555555555556,
+              "high_energy": 0.0,
+              "raw_drift_tail": 3.2818777587989566e-07,
+              "resource": 0.4869539611455167
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.03662664299687646,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 4.33658803951574e-06,
+              "resource": 0.46357815623200793
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.03662664299687646,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 4.33658803951574e-06,
+              "resource": 0.46357815623200793
+            }
+          },
+          "final_fingerprint": "1bb97ab76c83df43822453b73676816130489819979dbe184c21fff5ac5b8461",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.010300807272659127,
+              "resource": 0.3448426131176448
+            },
+            "before": {
+              "energy": 0.010300807272659127,
+              "resource": 0.3448426131176448
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 1
+          },
+          "mode": "none",
+          "source_state_fingerprint_at_500": "98c4f3a76d6ce2e425612d45cde18916efd5c8b72b6454a71d2476a917b63377"
+        },
+        "resource_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.18248473130797144,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0017218392403531221,
+              "resource": 0.47190719626401123
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.17817615233604553,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0003357506901267711,
+              "resource": 0.48636050614905574
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.19636784439911315,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 3.19187910249057e-06,
+              "resource": 0.48784763966012257
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.22517596005804075,
+              "floor": 0.0,
+              "high_energy": 0.013888888888888888,
+              "raw_drift_tail": 3.108627225816326e-05,
+              "resource": 0.47878203098170385
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.2687218217511418,
+              "floor": 0.006944444444444444,
+              "high_energy": 0.04861111111111111,
+              "raw_drift_tail": 1.5713268699266952e-05,
+              "resource": 0.48700340016799465
+            }
+          },
+          "final_fingerprint": "b8f38ca4761b1b7fff05d060160fa3dfd79d14e36731b36a15df4ad3d14eb6af",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.010300807272659127,
+              "resource": 0.6895661728854672
+            },
+            "before": {
+              "energy": 0.010300807272659127,
+              "resource": 0.3448426131176448
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 2
+          },
+          "mode": "resource_only",
+          "source_state_fingerprint_at_500": "98c4f3a76d6ce2e425612d45cde18916efd5c8b72b6454a71d2476a917b63377"
+        }
+      },
+      "seed": 9101,
+      "start_fingerprint": "19a4848ae84beeb81c55c4b8ef4b039b5ff7e7e13928bfef335e7720f92538d7",
+      "start_tick": 100
+    },
+    {
+      "arms": {
+        "both": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.4758200052597588,
+              "floor": 0.0,
+              "high_energy": 0.3125,
+              "raw_drift_tail": 0.001758200052597606,
+              "resource": 0.4811343698612585
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.47996216577858875,
+              "floor": 0.0,
+              "high_energy": 0.22916666666666666,
+              "raw_drift_tail": 0.00035992433155719464,
+              "resource": 0.48451910906642326
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.4951262948779388,
+              "floor": 0.0,
+              "high_energy": 0.4375,
+              "raw_drift_tail": 9.664121429932032e-06,
+              "resource": 0.4857675785207792
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.5144179181592139,
+              "floor": 0.0,
+              "high_energy": 0.5,
+              "raw_drift_tail": 2.066413676880251e-05,
+              "resource": 0.4811343439968878
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.542639619989648,
+              "floor": 0.0,
+              "high_energy": 0.5694444444444444,
+              "raw_drift_tail": 9.664121429932032e-06,
+              "resource": 0.4857675785207792
+            }
+          },
+          "final_fingerprint": "c982d72e0300caf2d8287309123c093fbfb4cd4821e97752d39e82255c1d85b7",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.699856077604147
+            },
+            "before": {
+              "energy": 0.008667208186595783,
+              "resource": 0.35000566799081384
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 2
+          },
+          "mode": "both",
+          "source_state_fingerprint_at_500": "6ef5a5ed09c6abb691d8ac14df1bd820b536ea488a1f857c761534b0cfd7d530"
+        },
+        "energy_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.22607809348628446,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0007392190651371575,
+              "resource": 0.4746266456308423
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.21835185365104115,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0001632962926979201,
+              "resource": 0.49324399468703894
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.23752421374495075,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -1.1574954719225684e-07,
+              "resource": 0.4836692313268277
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.25681875132385046,
+              "floor": 0.0,
+              "high_energy": 0.013888888888888888,
+              "raw_drift_tail": 3.589081065919503e-05,
+              "resource": 0.4775929754625581
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.28989558385587433,
+              "floor": 0.006944444444444444,
+              "high_energy": 0.041666666666666664,
+              "raw_drift_tail": 5.2403133933203684e-06,
+              "resource": 0.4880974611088734
+            }
+          },
+          "final_fingerprint": "f06d08b1ca33793287ef5f22336b915753df4cb78715282568ab68a574cd3600",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.35000566799081384
+            },
+            "before": {
+              "energy": 0.008667208186595783,
+              "resource": 0.35000566799081384
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 1
+          },
+          "mode": "energy_only",
+          "source_state_fingerprint_at_500": "6ef5a5ed09c6abb691d8ac14df1bd820b536ea488a1f857c761534b0cfd7d530"
+        },
+        "none": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.027288184222838237,
+              "floor": 0.2708333333333333,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0008048755156856237,
+              "resource": 0.4804133921080374
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.03080403965737857,
+              "floor": 0.2222222222222222,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00016340359107059447,
+              "resource": 0.4765784804568296
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.03584429433485142,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 6.189950328167638e-06,
+              "resource": 0.46494774162131197
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.01785403701391624,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": -6.26296552762568e-05,
+              "resource": 0.4910487661874995
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.01785403701391624,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": -6.26296552762568e-05,
+              "resource": 0.4910487661874995
+            }
+          },
+          "final_fingerprint": "69598079efaca89fdaeaec80fee2b5ce4805bbff3dcc4cfb5cf12c471077d4e6",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.008667208186595783,
+              "resource": 0.35000566799081384
+            },
+            "before": {
+              "energy": 0.008667208186595783,
+              "resource": 0.35000566799081384
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 1
+          },
+          "mode": "none",
+          "source_state_fingerprint_at_500": "6ef5a5ed09c6abb691d8ac14df1bd820b536ea488a1f857c761534b0cfd7d530"
+        },
+        "resource_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.1875893398046685,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0017892213161807258,
+              "resource": 0.47496535466496087
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.18571382860919197,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.00035409324084519084,
+              "resource": 0.4858350992306245
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.2043282739782468,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 9.491088221392207e-06,
+              "resource": 0.4859273300649266
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.22747795057410414,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 1.975792135763348e-05,
+              "resource": 0.4843400911345667
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.2800089375583589,
+              "floor": 0.0,
+              "high_energy": 0.027777777777777776,
+              "raw_drift_tail": 2.5653997233096864e-05,
+              "resource": 0.48432383889128616
+            }
+          },
+          "final_fingerprint": "f28c5508c48372e9f59ad5eaf9fc73280918581e6856365ad6f4bdbf470fa0e0",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.008667208186595783,
+              "resource": 0.699856077604147
+            },
+            "before": {
+              "energy": 0.008667208186595783,
+              "resource": 0.35000566799081384
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 2
+          },
+          "mode": "resource_only",
+          "source_state_fingerprint_at_500": "6ef5a5ed09c6abb691d8ac14df1bd820b536ea488a1f857c761534b0cfd7d530"
+        }
+      },
+      "seed": 9102,
+      "start_fingerprint": "bf47aaf159ec503586f9eaf983fce4a6b53be11b0e8ae82a50e135fc1d7bdabf",
+      "start_tick": 100
+    },
+    {
+      "arms": {
+        "both": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.47255765031300456,
+              "floor": 0.0,
+              "high_energy": 0.3194444444444444,
+              "raw_drift_tail": 0.0017255765031300619,
+              "resource": 0.48228754578830624
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.47632146169918954,
+              "floor": 0.0,
+              "high_energy": 0.2569444444444444,
+              "raw_drift_tail": 0.00035264292339839645,
+              "resource": 0.48624666660833404
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.494884602417635,
+              "floor": 0.0,
+              "high_energy": 0.4305555555555556,
+              "raw_drift_tail": 1.535355923899836e-05,
+              "resource": 0.4828798079604881
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.5116247452746516,
+              "floor": 0.0,
+              "high_energy": 0.5277777777777778,
+              "raw_drift_tail": 2.1772722197927133e-05,
+              "resource": 0.4822875192917415
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.54367229644394,
+              "floor": 0.0,
+              "high_energy": 0.5694444444444444,
+              "raw_drift_tail": 1.535355923899836e-05,
+              "resource": 0.4828798079604881
+            }
+          },
+          "final_fingerprint": "0668b1b807c083921ef178dd39e2c704b94a05f42ba5ab55b704184969048eff",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.6970343628670373
+            },
+            "before": {
+              "energy": 0.009947419559673855,
+              "resource": 0.3490338608842867
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 2
+          },
+          "mode": "both",
+          "source_state_fingerprint_at_500": "1df96ff136cefdfef1fa7f559559c9422e53d05cda2d4f2ff7dfc06a57b7f92a"
+        },
+        "energy_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.22402490162180932,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0007597509837819101,
+              "resource": 0.47661290614616836
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.2187767154561273,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00016244656908774818,
+              "resource": 0.491237540992991
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.23588610425283038,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 1.9634236305085316e-06,
+              "resource": 0.483714401890323
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.2519571820174325,
+              "floor": 0.0,
+              "high_energy": 0.013888888888888888,
+              "raw_drift_tail": 2.923840745960551e-05,
+              "resource": 0.48114360736907646
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.2893992402057749,
+              "floor": 0.0,
+              "high_energy": 0.0625,
+              "raw_drift_tail": 1.5352336856495193e-05,
+              "resource": 0.48525599911859285
+            }
+          },
+          "final_fingerprint": "a5ca414d39ba2a98e20b767c8d9cc50855663b5808cd3e9bf41f3a40cb3be282",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.3490338608842867
+            },
+            "before": {
+              "energy": 0.009947419559673855,
+              "resource": 0.3490338608842867
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 1
+          },
+          "mode": "energy_only",
+          "source_state_fingerprint_at_500": "1df96ff136cefdfef1fa7f559559c9422e53d05cda2d4f2ff7dfc06a57b7f92a"
+        },
+        "none": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.025645753804529808,
+              "floor": 0.3194444444444444,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0008264898655578414,
+              "resource": 0.48270410464089664
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.032955285323875184,
+              "floor": 0.1388888888888889,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00016030211894469068,
+              "resource": 0.4727664638972132
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.017898039020324004,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": -6.262965527820283e-05,
+              "resource": 0.4910487661874995
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.03578026810634511,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 6.19030897406956e-06,
+              "resource": 0.46494774162131197
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.03578026810634511,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 6.19030897406956e-06,
+              "resource": 0.46494774162131197
+            }
+          },
+          "final_fingerprint": "91914ca31be52605626a436896554e42d012bc70459b2876f8660c9228b9dc9a",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.009947419559673855,
+              "resource": 0.3490338608842867
+            },
+            "before": {
+              "energy": 0.009947419559673855,
+              "resource": 0.3490338608842867
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 1
+          },
+          "mode": "none",
+          "source_state_fingerprint_at_500": "1df96ff136cefdfef1fa7f559559c9422e53d05cda2d4f2ff7dfc06a57b7f92a"
+        },
+        "resource_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.18485894485564963,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0017491152529597559,
+              "resource": 0.47729099877389786
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.18425204702045922,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0003486092549215688,
+              "resource": 0.4871952844941436
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.20423721892392577,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 9.867193346529475e-06,
+              "resource": 0.48450719039387546
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.22655358890960256,
+              "floor": 0.0,
+              "high_energy": 0.013888888888888888,
+              "raw_drift_tail": 2.505424888517905e-05,
+              "resource": 0.48256943472726493
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.274781944896541,
+              "floor": 0.0,
+              "high_energy": 0.041666666666666664,
+              "raw_drift_tail": 2.38117226395453e-05,
+              "resource": 0.48412910619336635
+            }
+          },
+          "final_fingerprint": "8a99dedc844c8761d53b7fcaf80a077687ae489fa22376245738ee76ed232707",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.009947419559673855,
+              "resource": 0.6970343628670373
+            },
+            "before": {
+              "energy": 0.009947419559673855,
+              "resource": 0.3490338608842867
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 2
+          },
+          "mode": "resource_only",
+          "source_state_fingerprint_at_500": "1df96ff136cefdfef1fa7f559559c9422e53d05cda2d4f2ff7dfc06a57b7f92a"
+        }
+      },
+      "seed": 9103,
+      "start_fingerprint": "2b3d304be43588cba977e921dd481f9bf0a30cb992c91c4cbb94ad18f68129d6",
+      "start_tick": 100
+    },
+    {
+      "arms": {
+        "both": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.4693541173211682,
+              "floor": 0.0,
+              "high_energy": 0.2986111111111111,
+              "raw_drift_tail": 0.0016935411732117004,
+              "resource": 0.48198506828914145
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.4756714724355777,
+              "floor": 0.0,
+              "high_energy": 0.2222222222222222,
+              "raw_drift_tail": 0.00035134294487117255,
+              "resource": 0.4833766051797343
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.49189133729380885,
+              "floor": 0.0,
+              "high_energy": 0.4305555555555556,
+              "raw_drift_tail": 1.2560948146915725e-05,
+              "resource": 0.4859880828956214
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.5127054092759926,
+              "floor": 0.0,
+              "high_energy": 0.4583333333333333,
+              "raw_drift_tail": 1.98787815695797e-05,
+              "resource": 0.4819850428193091
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.5447078276525832,
+              "floor": 0.0,
+              "high_energy": 0.5555555555555556,
+              "raw_drift_tail": 1.2560948146915725e-05,
+              "resource": 0.4859880828956214
+            }
+          },
+          "final_fingerprint": "e38674bb002c7fccc3539c9d39698d61b923d6210df6ada99f17af9a6d3182b3",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.6929875061038901
+            },
+            "before": {
+              "energy": 0.009625814110639714,
+              "resource": 0.3464937530519451
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 2
+          },
+          "mode": "both",
+          "source_state_fingerprint_at_500": "de9a948e9b755f088bf8f107021e18452a9be921b9dd0db5a8e5b18edde80f84"
+        },
+        "energy_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.22312448335313018,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0007687551664687009,
+              "resource": 0.47572349997615215
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.21710315138708758,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00016579369722582782,
+              "resource": 0.49169120210083883
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.23457586032716835,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 4.981758688128186e-07,
+              "resource": 0.48413723384409274
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.2526868116557299,
+              "floor": 0.0,
+              "high_energy": 0.020833333333333332,
+              "raw_drift_tail": 3.375992882339241e-05,
+              "resource": 0.47861617747284296
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.2865256761119087,
+              "floor": 0.0,
+              "high_energy": 0.06944444444444445,
+              "raw_drift_tail": 1.002989073300664e-05,
+              "resource": 0.4863325234992468
+            }
+          },
+          "final_fingerprint": "d88af03b0ada5c9cf77296057105cc9e31bc023bf0791b9ba334124cd7d4a850",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.3464937530519451
+            },
+            "before": {
+              "energy": 0.009625814110639714,
+              "resource": 0.3464937530519451
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 1
+          },
+          "mode": "energy_only",
+          "source_state_fingerprint_at_500": "de9a948e9b755f088bf8f107021e18452a9be921b9dd0db5a8e5b18edde80f84"
+        },
+        "none": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.027258972365816345,
+              "floor": 0.2569444444444444,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0008263743857389999,
+              "resource": 0.48033152402024193
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.028315952377275206,
+              "floor": 0.2708333333333333,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00017189283164320869,
+              "resource": 0.47811590050868286
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.024562640537431,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": 6.430724707271861e-06,
+              "resource": 0.4810981213105965
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.03792086548524551,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 1.2552228103507451e-06,
+              "resource": 0.46154996443851715
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.03792086548524551,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 1.2552228103507451e-06,
+              "resource": 0.46154996443851715
+            }
+          },
+          "final_fingerprint": "31e703d00af6c27fe6bc68bced77f2d8a1439cc95d325aea268bca37667c7d95",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.009625814110639714,
+              "resource": 0.3464937530519451
+            },
+            "before": {
+              "energy": 0.009625814110639714,
+              "resource": 0.3464937530519451
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 1
+          },
+          "mode": "none",
+          "source_state_fingerprint_at_500": "de9a948e9b755f088bf8f107021e18452a9be921b9dd0db5a8e5b18edde80f84"
+        },
+        "resource_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.1818717726283022,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0017224595851766233,
+              "resource": 0.4761550124765644
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.18037907741224857,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.00034150652660321545,
+              "resource": 0.4874837571563384
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.20318814100116192,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 1.3961938180693502e-05,
+              "resource": 0.48422316751225064
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.22816572961788387,
+              "floor": 0.0,
+              "high_energy": 0.013888888888888888,
+              "raw_drift_tail": 2.7115049391076177e-05,
+              "resource": 0.4816768077948108
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.27888369562617865,
+              "floor": 0.0,
+              "high_energy": 0.041666666666666664,
+              "raw_drift_tail": 2.6507234795262662e-05,
+              "resource": 0.48344834152257715
+            }
+          },
+          "final_fingerprint": "efac100339bb3a00e099d0a0392c4937a7e5cdb54d1133dc58d305410c4b0d9c",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.009625814110639714,
+              "resource": 0.6929875061038901
+            },
+            "before": {
+              "energy": 0.009625814110639714,
+              "resource": 0.3464937530519451
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 2
+          },
+          "mode": "resource_only",
+          "source_state_fingerprint_at_500": "de9a948e9b755f088bf8f107021e18452a9be921b9dd0db5a8e5b18edde80f84"
+        }
+      },
+      "seed": 9104,
+      "start_fingerprint": "08d65908f77832420825f8ce1b3ac2fabe1a8a9f01e779d7546ccf49b39b340e",
+      "start_tick": 100
+    },
+    {
+      "arms": {
+        "both": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.4542992825751925,
+              "floor": 0.0,
+              "high_energy": 0.2152777777777778,
+              "raw_drift_tail": 0.0015429928257519412,
+              "resource": 0.48308808761660355
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.46199006185437064,
+              "floor": 0.0,
+              "high_energy": 0.1597222222222222,
+              "raw_drift_tail": 0.00032398012370875784,
+              "resource": 0.4824777963748004
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.4777511021006979,
+              "floor": 0.0,
+              "high_energy": 0.3819444444444444,
+              "raw_drift_tail": 1.4401310980050584e-05,
+              "resource": 0.4857840954193977
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.49763568977976785,
+              "floor": 0.0,
+              "high_energy": 0.4236111111111111,
+              "raw_drift_tail": 1.7120769512637386e-05,
+              "resource": 0.4830880623697438
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.531815490953361,
+              "floor": 0.0,
+              "high_energy": 0.5625,
+              "raw_drift_tail": 1.4401310980050584e-05,
+              "resource": 0.4857840954193977
+            }
+          },
+          "final_fingerprint": "857a8d8ec95113bd4edaf85d374f216e5f4cb3194ad166f5af11448362bb4fa2",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.6764552990598822
+            },
+            "before": {
+              "energy": 0.009892541007940193,
+              "resource": 0.3382276495299411
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 2
+          },
+          "mode": "both",
+          "source_state_fingerprint_at_500": "76ffcb380d3dacad092a4a363d8be30d2e7e5ef276816f628a9b09fe8cc1afdd"
+        },
+        "energy_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.21927905080385168,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0008072094919614871,
+              "resource": 0.47403902859586466
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.20838608502019582,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0001832278299596124,
+              "resource": 0.49462456740221633
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.22443156003026546,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -4.60703355070877e-06,
+              "resource": 0.48303819163459255
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.23800168309449932,
+              "floor": 0.0,
+              "high_energy": 0.006944444444444444,
+              "raw_drift_tail": 3.496046743741384e-05,
+              "resource": 0.47855700530485223
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.26907398475855576,
+              "floor": 0.0,
+              "high_energy": 0.027777777777777776,
+              "raw_drift_tail": 7.048381888278191e-06,
+              "resource": 0.4879219304311441
+            }
+          },
+          "final_fingerprint": "ed131072f0328f27c423cebebd29fdf7fd237c1012df65f037c41c786f8e1c73",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.3382276495299411
+            },
+            "before": {
+              "energy": 0.009892541007940193,
+              "resource": 0.3382276495299411
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 1
+          },
+          "mode": "energy_only",
+          "source_state_fingerprint_at_500": "76ffcb380d3dacad092a4a363d8be30d2e7e5ef276816f628a9b09fe8cc1afdd"
+        },
+        "none": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.02577541562413414,
+              "floor": 0.3333333333333333,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0008852699988673711,
+              "resource": 0.4821103570266287
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.023083513464128663,
+              "floor": 0.4513888888888889,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00018991520566595342,
+              "resource": 0.484326526420562
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.030785959121489997,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -5.610977736099955e-07,
+              "resource": 0.4719271630886074
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.014626642996876457,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": -5.9603034893898465e-05,
+              "resource": 0.4957634668580875
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.014626642996876457,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": -5.9603034893898465e-05,
+              "resource": 0.4957634668580875
+            }
+          },
+          "final_fingerprint": "3082c2519bfd6467ed89d83d71cdbf9043316ee31cae3ed34175272a57037791",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.009892541007940193,
+              "resource": 0.3382276495299411
+            },
+            "before": {
+              "energy": 0.009892541007940193,
+              "resource": 0.3382276495299411
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 1
+          },
+          "mode": "none",
+          "source_state_fingerprint_at_500": "76ffcb380d3dacad092a4a363d8be30d2e7e5ef276816f628a9b09fe8cc1afdd"
+        },
+        "resource_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.17106056143112155,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0016116802042318104,
+              "resource": 0.4708217346712415
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.16277298737283322,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.000305760892729783,
+              "resource": 0.48871008021322215
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.18179146764574902,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 4.028364076153244e-06,
+              "resource": 0.4858531321728876
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.20856965130804436,
+              "floor": 0.0,
+              "high_energy": 0.006944444444444444,
+              "raw_drift_tail": 3.0726354418485523e-05,
+              "resource": 0.48059103178384416
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.25577545142235575,
+              "floor": 0.0,
+              "high_energy": 0.020833333333333332,
+              "raw_drift_tail": 2.0647260422457132e-05,
+              "resource": 0.48608032023571446
+            }
+          },
+          "final_fingerprint": "8e50b13e2dc7bd51e0a4c1b7e795a8fba8a5527e0926403b0484265c10b60a42",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.009892541007940193,
+              "resource": 0.6764552990598822
+            },
+            "before": {
+              "energy": 0.009892541007940193,
+              "resource": 0.3382276495299411
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 2
+          },
+          "mode": "resource_only",
+          "source_state_fingerprint_at_500": "76ffcb380d3dacad092a4a363d8be30d2e7e5ef276816f628a9b09fe8cc1afdd"
+        }
+      },
+      "seed": 9105,
+      "start_fingerprint": "b01bf81157458b76db4adddd93d529d1d7e448b44cdcc794c34aa94fcf4b72f3",
+      "start_tick": 100
+    },
+    {
+      "arms": {
+        "both": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.4583564956417774,
+              "floor": 0.0,
+              "high_energy": 0.2361111111111111,
+              "raw_drift_tail": 0.0015835649564177915,
+              "resource": 0.4842392340825365
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.4655611618658916,
+              "floor": 0.0,
+              "high_energy": 0.2013888888888889,
+              "raw_drift_tail": 0.00033112232373180064,
+              "resource": 0.484856601362191
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.48654959593191016,
+              "floor": 0.0,
+              "high_energy": 0.4097222222222222,
+              "raw_drift_tail": 2.1899372528629772e-05,
+              "resource": 0.4822144544479787
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.5043389021914877,
+              "floor": 0.0,
+              "high_energy": 0.4930555555555556,
+              "raw_drift_tail": 2.007749560344095e-05,
+              "resource": 0.4842392083692572
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.5440275809796788,
+              "floor": 0.0,
+              "high_energy": 0.5694444444444444,
+              "raw_drift_tail": 2.1899372528629772e-05,
+              "resource": 0.4822144544479787
+            }
+          },
+          "final_fingerprint": "59bee5ab0855ee69c75e18e4e8a0add0b648ce7a26be4b8faa13373e5a206593",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.681660783395643
+            },
+            "before": {
+              "energy": 0.01084479258459191,
+              "resource": 0.3408303916978215
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 2
+          },
+          "mode": "both",
+          "source_state_fingerprint_at_500": "f3b57e17f15118b45dae5894a16e653fb515df30ad9d5d37611759fe04b9b32f"
+        },
+        "energy_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.2225403006592424,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0007745969934075797,
+              "resource": 0.4719470445546454
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.21287668576324362,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00017424662847351563,
+              "resource": 0.49265520332750257
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.2278692520291836,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -9.78192167799406e-06,
+              "resource": 0.4869889825611032
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.2484899451344821,
+              "floor": 0.0,
+              "high_energy": 0.006944444444444444,
+              "raw_drift_tail": 3.487366781056561e-05,
+              "resource": 0.4755604451263253
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.2752560806277745,
+              "floor": 0.0,
+              "high_energy": 0.05555555555555555,
+              "raw_drift_tail": 2.1883093634397923e-06,
+              "resource": 0.489248175489655
+            }
+          },
+          "final_fingerprint": "7bb3517ba81cddb3edd45a16a34778c8132b8c19f2ee80c569a40a127ebe5b24",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.3408303916978215
+            },
+            "before": {
+              "energy": 0.01084479258459191,
+              "resource": 0.3408303916978215
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 1
+          },
+          "mode": "energy_only",
+          "source_state_fingerprint_at_500": "f3b57e17f15118b45dae5894a16e653fb515df30ad9d5d37611759fe04b9b32f"
+        },
+        "none": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.02655357282649577,
+              "floor": 0.2777777777777778,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0008620381970382261,
+              "resource": 0.48103137120054235
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.02087280325031903,
+              "floor": 0.4027777777777778,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00019143206692903735,
+              "resource": 0.48791974917447184
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.025060359997567595,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": 5.2558717877366e-06,
+              "resource": 0.4799884524412135
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.03985403701391624,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -4.209128915769939e-06,
+              "resource": 0.45856251722074404
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.03985403701391624,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -4.209128915769939e-06,
+              "resource": 0.45856251722074404
+            }
+          },
+          "final_fingerprint": "260f4e03eee30c670c4895ff9e70e84acf2998752479a7bde22b89f63408ddfa",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.01084479258459191,
+              "resource": 0.3408303916978215
+            },
+            "before": {
+              "energy": 0.01084479258459191,
+              "resource": 0.3408303916978215
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 1
+          },
+          "mode": "none",
+          "source_state_fingerprint_at_500": "f3b57e17f15118b45dae5894a16e653fb515df30ad9d5d37611759fe04b9b32f"
+        },
+        "resource_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.17206599925065585,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0016122120666606373,
+              "resource": 0.47813423637991054
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.17020354722863346,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0003187175092880805,
+              "resource": 0.48919019735000074
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.19260268748676398,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 1.2604537876199123e-05,
+              "resource": 0.4845978014786893
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.2157588396206494,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 2.4572977540339733e-05,
+              "resource": 0.4834547776749915
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.26746212076735565,
+              "floor": 0.0,
+              "high_energy": 0.04861111111111111,
+              "raw_drift_tail": 2.385409984013341e-05,
+              "resource": 0.48455086243853707
+            }
+          },
+          "final_fingerprint": "85fd1cec65aec915dfa500bec80d4bbd0b8d8249a118b6c7436f39322a630f2b",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.01084479258459191,
+              "resource": 0.681660783395643
+            },
+            "before": {
+              "energy": 0.01084479258459191,
+              "resource": 0.3408303916978215
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 2
+          },
+          "mode": "resource_only",
+          "source_state_fingerprint_at_500": "f3b57e17f15118b45dae5894a16e653fb515df30ad9d5d37611759fe04b9b32f"
+        }
+      },
+      "seed": 9106,
+      "start_fingerprint": "3db038792812c1e428cbf7eee988a854a3f3edd3b8ffd666a3125fc6fe465725",
+      "start_tick": 100
+    },
+    {
+      "arms": {
+        "both": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.466967450190332,
+              "floor": 0.0,
+              "high_energy": 0.2916666666666667,
+              "raw_drift_tail": 0.001669674501903337,
+              "resource": 0.48355014434129157
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.47454387365815,
+              "floor": 0.0,
+              "high_energy": 0.2569444444444444,
+              "raw_drift_tail": 0.00034908774731631656,
+              "resource": 0.4822673057611209
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.4888745057502335,
+              "floor": 0.0,
+              "high_energy": 0.3958333333333333,
+              "raw_drift_tail": 1.3894234824830306e-05,
+              "resource": 0.48558417964360306
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.5068605868164082,
+              "floor": 0.0,
+              "high_energy": 0.4444444444444444,
+              "raw_drift_tail": 1.4767029359370535e-05,
+              "resource": 0.4835501178317904
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.5371361470878698,
+              "floor": 0.0,
+              "high_energy": 0.4930555555555556,
+              "raw_drift_tail": 1.3894234824830306e-05,
+              "resource": 0.48558417964360306
+            }
+          },
+          "final_fingerprint": "f583b5caeb36c6980fb7ec7e7d94d9b699cf8548578c89307ddf894bc69bcfcb",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.6916902768702834
+            },
+            "before": {
+              "energy": 0.009218975542828639,
+              "resource": 0.3458451384351417
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 2
+          },
+          "mode": "both",
+          "source_state_fingerprint_at_500": "5370e6bbf3ed2f85fc75cd5d2dd8be7186ef62d44ebadd5e91e2da00d599ba28"
+        },
+        "energy_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.22393146674614053,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0007606853325385973,
+              "resource": 0.47432937848842127
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.21852336997946023,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0001629532600410826,
+              "resource": 0.49102782804552514
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.23684727522938065,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -1.4202725130760878e-06,
+              "resource": 0.48609778534844444
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.25959061152854285,
+              "floor": 0.0,
+              "high_energy": 0.020833333333333332,
+              "raw_drift_tail": 3.364529031718641e-05,
+              "resource": 0.4786345133431995
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.29443529020214854,
+              "floor": 0.0,
+              "high_energy": 0.05555555555555555,
+              "raw_drift_tail": 6.340633531185695e-06,
+              "resource": 0.48829745080543396
+            }
+          },
+          "final_fingerprint": "b428a279bad2173ebbb32cb2b2ed1af58d9035dc8310e804c63bfe00a76ab2af",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.3458451384351417
+            },
+            "before": {
+              "energy": 0.009218975542828639,
+              "resource": 0.3458451384351417
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 1
+          },
+          "mode": "energy_only",
+          "source_state_fingerprint_at_500": "5370e6bbf3ed2f85fc75cd5d2dd8be7186ef62d44ebadd5e91e2da00d599ba28"
+        },
+        "none": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.029133414394714324,
+              "floor": 0.25,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0008110395453325257,
+              "resource": 0.47751072647577913
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.02923470026516448,
+              "floor": 0.25,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0001697655980955101,
+              "resource": 0.4766004403582309
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.035782906883111684,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 6.190308974015714e-06,
+              "resource": 0.46494774162131197
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.01785403701391624,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": -6.26296552762568e-05,
+              "resource": 0.4910487661874995
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.01785403701391624,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": -6.26296552762568e-05,
+              "resource": 0.4910487661874995
+            }
+          },
+          "final_fingerprint": "68437dbbc6be96b5e96ea6fb1428de36c020bea92232bf545613946f0a758632",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.009218975542828639,
+              "resource": 0.3458451384351417
+            },
+            "before": {
+              "energy": 0.009218975542828639,
+              "resource": 0.3458451384351417
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 1
+          },
+          "mode": "none",
+          "source_state_fingerprint_at_500": "5370e6bbf3ed2f85fc75cd5d2dd8be7186ef62d44ebadd5e91e2da00d599ba28"
+        },
+        "resource_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.1804624339421784,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.001712434583993496,
+              "resource": 0.47550856151815896
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.17816004151469478,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.00033788213194373037,
+              "resource": 0.4860940858846431
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.19639154098345965,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 9.850015327993171e-06,
+              "resource": 0.4861461346529911
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.22146512536905438,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 2.6108365915495642e-05,
+              "resource": 0.48238920917026146
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.26704770709707215,
+              "floor": 0.0,
+              "high_energy": 0.034722222222222224,
+              "raw_drift_tail": 2.0157920257385703e-05,
+              "resource": 0.4852396986403213
+            }
+          },
+          "final_fingerprint": "c4a365cf616236a19a8adf399cd1b6e41d09d603b3683e7e8e49aaf8752567d2",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.009218975542828639,
+              "resource": 0.6916902768702834
+            },
+            "before": {
+              "energy": 0.009218975542828639,
+              "resource": 0.3458451384351417
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 2
+          },
+          "mode": "resource_only",
+          "source_state_fingerprint_at_500": "5370e6bbf3ed2f85fc75cd5d2dd8be7186ef62d44ebadd5e91e2da00d599ba28"
+        }
+      },
+      "seed": 9107,
+      "start_fingerprint": "a46ec62cabf171e59e30465fc96e0b6a9f1a9797acdf40203c4a1856222eb9da",
+      "start_tick": 100
+    },
+    {
+      "arms": {
+        "both": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.47191701994484503,
+              "floor": 0.0,
+              "high_energy": 0.3194444444444444,
+              "raw_drift_tail": 0.0017191701994484663,
+              "resource": 0.48343114964543255
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.475480959887724,
+              "floor": 0.0,
+              "high_energy": 0.22916666666666666,
+              "raw_drift_tail": 0.0003509619197754649,
+              "resource": 0.4879745157264304
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.4979337536208498,
+              "floor": 0.0,
+              "high_energy": 0.4791666666666667,
+              "raw_drift_tail": 2.151787934929915e-05,
+              "resource": 0.47998404815143836
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.512604441191046,
+              "floor": 0.0,
+              "high_energy": 0.4791666666666667,
+              "raw_drift_tail": 2.3387708116986226e-05,
+              "resource": 0.4834311250682552
+            },
+            "5000": {
+              "ceiling": 0.006944444444444444,
+              "energy": 0.5446331385703805,
+              "floor": 0.0,
+              "high_energy": 0.5277777777777778,
+              "raw_drift_tail": 2.151787934929915e-05,
+              "resource": 0.47998404815143836
+            }
+          },
+          "final_fingerprint": "beb3bd596ea3075b041aaca8b81cc24614cfbbedbd2b332022696d996704708a",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.6970876800389173
+            },
+            "before": {
+              "energy": 0.010235531878025454,
+              "resource": 0.34854384001945865
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 2
+          },
+          "mode": "both",
+          "source_state_fingerprint_at_500": "f3bf3f847748fd56fd6980c3d1b9d32056420a01abb81849725ad715c36ee4bf"
+        },
+        "energy_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.22579470062866472,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0007420529937133556,
+              "resource": 0.47412270052811806
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.21950008646509658,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00016099982706980912,
+              "resource": 0.49277062937881627
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.24133716696050447,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 1.6163339003673216e-06,
+              "resource": 0.4845173288813156
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.26382748919860255,
+              "floor": 0.0,
+              "high_energy": 0.041666666666666664,
+              "raw_drift_tail": 3.464577840579299e-05,
+              "resource": 0.47861305992051645
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.30406836216226807,
+              "floor": 0.0,
+              "high_energy": 0.10416666666666667,
+              "raw_drift_tail": 1.116734383615622e-05,
+              "resource": 0.4880741438259262
+            }
+          },
+          "final_fingerprint": "3825bbfd8bd6776f0c85c3970e7175be39d2453384577d26a5f9c77631442a67",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.34854384001945865
+            },
+            "before": {
+              "energy": 0.010235531878025454,
+              "resource": 0.34854384001945865
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 1
+          },
+          "mode": "energy_only",
+          "source_state_fingerprint_at_500": "f3bf3f847748fd56fd6980c3d1b9d32056420a01abb81849725ad715c36ee4bf"
+        },
+        "none": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.02519704687792323,
+              "floor": 0.3472222222222222,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.000832884364641232,
+              "resource": 0.4831300867300625
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.020332167842925228,
+              "floor": 0.4583333333333333,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00018445900957453988,
+              "resource": 0.4892218003158614
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.027951054018538465,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": 1.564378732987693e-06,
+              "resource": 0.4757959879729215
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.013990180846944499,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": -5.8707339698222905e-05,
+              "resource": 0.49705087712403323
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.013990180846944499,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": -5.8707339698222905e-05,
+              "resource": 0.49705087712403323
+            }
+          },
+          "final_fingerprint": "ef9c1191fd1268e753d4327f9fb27d8bebed1b4676ad213321b4f5b0781c8666",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.010235531878025454,
+              "resource": 0.34854384001945865
+            },
+            "before": {
+              "energy": 0.010235531878025454,
+              "resource": 0.34854384001945865
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 1
+          },
+          "mode": "none",
+          "source_state_fingerprint_at_500": "f3bf3f847748fd56fd6980c3d1b9d32056420a01abb81849725ad715c36ee4bf"
+        },
+        "resource_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.1880974812573635,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0017786194937933785,
+              "resource": 0.4735380591771259
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.18322470867315474,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0003459783535902564,
+              "resource": 0.4890584729667874
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.2021043068671766,
+              "floor": 0.0,
+              "high_energy": 0.006944444444444444,
+              "raw_drift_tail": 3.547614640923921e-06,
+              "resource": 0.4869972929899776
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.22749124709889154,
+              "floor": 0.0,
+              "high_energy": 0.013888888888888888,
+              "raw_drift_tail": 2.75430623141886e-05,
+              "resource": 0.48078629670908224
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.2743374028249507,
+              "floor": 0.006944444444444444,
+              "high_energy": 0.0625,
+              "raw_drift_tail": 2.0541947556500012e-05,
+              "resource": 0.4861189215219857
+            }
+          },
+          "final_fingerprint": "016986be94d58aab483c89c22be8a6f56884758d097fa1700b326a818c9d774e",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.010235531878025454,
+              "resource": 0.6970876800389173
+            },
+            "before": {
+              "energy": 0.010235531878025454,
+              "resource": 0.34854384001945865
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 2
+          },
+          "mode": "resource_only",
+          "source_state_fingerprint_at_500": "f3bf3f847748fd56fd6980c3d1b9d32056420a01abb81849725ad715c36ee4bf"
+        }
+      },
+      "seed": 9108,
+      "start_fingerprint": "2ebb070a521e89136edd864791e2f9007dd97728bbf8632cf345f6e510159cda",
+      "start_tick": 100
+    },
+    {
+      "arms": {
+        "both": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.4602918686065556,
+              "floor": 0.0,
+              "high_energy": 0.2708333333333333,
+              "raw_drift_tail": 0.001602918686065573,
+              "resource": 0.48056165948075186
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.4605488951460866,
+              "floor": 0.0,
+              "high_energy": 0.1875,
+              "raw_drift_tail": 0.00032109779029219026,
+              "resource": 0.48913912507735446
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.48109812850325906,
+              "floor": 0.0,
+              "high_energy": 0.3472222222222222,
+              "raw_drift_tail": 1.3659882861100645e-05,
+              "resource": 0.481740188792658
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.49756202098393904,
+              "floor": 0.0,
+              "high_energy": 0.4375,
+              "raw_drift_tail": 2.7438583853277673e-05,
+              "resource": 0.48056163411611813
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.525119689878299,
+              "floor": 0.0,
+              "high_energy": 0.5069444444444444,
+              "raw_drift_tail": 1.3659882861100645e-05,
+              "resource": 0.481740188792658
+            }
+          },
+          "final_fingerprint": "bad0f3d017e0f44a3e181e035942a511da1b3cf19872e7557d24c366043c914c",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.6814668567230731
+            },
+            "before": {
+              "energy": 0.008883196411692369,
+              "resource": 0.34073342836153653
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 2
+          },
+          "mode": "both",
+          "source_state_fingerprint_at_500": "da059156727de544319d541977b2f267aa695b8890db147a06949958013d4f10"
+        },
+        "energy_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.22146637418233622,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0007853362581766415,
+              "resource": 0.4730944904707532
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.21161092878153204,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00017677814243693957,
+              "resource": 0.49309101316195325
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.22635767988795674,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -7.73800283883621e-06,
+              "resource": 0.4854641131437657
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.24435718638890483,
+              "floor": 0.0,
+              "high_energy": 0.006944444444444444,
+              "raw_drift_tail": 3.602412888894354e-05,
+              "resource": 0.4764926349215019
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.2739183391377429,
+              "floor": 0.006944444444444444,
+              "high_energy": 0.013888888888888888,
+              "raw_drift_tail": 4.334317244064926e-06,
+              "resource": 0.4887928871132152
+            }
+          },
+          "final_fingerprint": "97375fab5fbaa214c05ccee1bf7fda634287dc88856fb50e088bef600d0515a5",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.34073342836153653
+            },
+            "before": {
+              "energy": 0.008883196411692369,
+              "resource": 0.34073342836153653
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 1
+          },
+          "mode": "energy_only",
+          "source_state_fingerprint_at_500": "da059156727de544319d541977b2f267aa695b8890db147a06949958013d4f10"
+        },
+        "none": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.02800535189094911,
+              "floor": 0.2638888888888889,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.000852684303336252,
+              "resource": 0.47935695386475835
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.02611927466664175,
+              "floor": 0.3125,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00018437267374450209,
+              "resource": 0.48339014853144413
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.024566567977512686,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": 6.4307247071145985e-06,
+              "resource": 0.4810981213105965
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.03792086548524551,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 1.2552228103507451e-06,
+              "resource": 0.46154996443851715
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.03792086548524551,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 1.2552228103507451e-06,
+              "resource": 0.46154996443851715
+            }
+          },
+          "final_fingerprint": "cd9c6054181375de89b9c39da9ca2ba31dcc301879bbac2c286dfbb27e5c5a93",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.008883196411692369,
+              "resource": 0.34073342836153653
+            },
+            "before": {
+              "energy": 0.008883196411692369,
+              "resource": 0.34073342836153653
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 1
+          },
+          "mode": "none",
+          "source_state_fingerprint_at_500": "da059156727de544319d541977b2f267aa695b8890db147a06949958013d4f10"
+        },
+        "resource_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.17425066741647433,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0016536747100478163,
+              "resource": 0.47108688194043385
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.16427220231890485,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.00031077801181442167,
+              "resource": 0.4913841086290767
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.1815821268188825,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -3.455508235690673e-06,
+              "resource": 0.48788395563368664
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.20602137760021463,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 2.8503604825292177e-05,
+              "resource": 0.479651108493846
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.24962278890606607,
+              "floor": 0.0,
+              "high_energy": 0.006944444444444444,
+              "raw_drift_tail": 2.0590923940231904e-05,
+              "resource": 0.4852581543459956
+            }
+          },
+          "final_fingerprint": "d42e0b0f8067ce4cca83c56710f6852675d05b688d33989cabcfef350e006ec0",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.008883196411692369,
+              "resource": 0.6814668567230731
+            },
+            "before": {
+              "energy": 0.008883196411692369,
+              "resource": 0.34073342836153653
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 2
+          },
+          "mode": "resource_only",
+          "source_state_fingerprint_at_500": "da059156727de544319d541977b2f267aa695b8890db147a06949958013d4f10"
+        }
+      },
+      "seed": 9109,
+      "start_fingerprint": "96495a3ee8bf2ba8866ac952788c76cd691cab713dbb7b033e9e7cbf73bf6715",
+      "start_tick": 100
+    },
+    {
+      "arms": {
+        "both": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.4615778799511878,
+              "floor": 0.0,
+              "high_energy": 0.2847222222222222,
+              "raw_drift_tail": 0.0016157787995118953,
+              "resource": 0.48403115623005555
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.46807549302472534,
+              "floor": 0.0,
+              "high_energy": 0.2222222222222222,
+              "raw_drift_tail": 0.00033615098604946784,
+              "resource": 0.4840178751407726
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.4847704603393631,
+              "floor": 0.0,
+              "high_energy": 0.4305555555555556,
+              "raw_drift_tail": 1.7144017291211693e-05,
+              "resource": 0.4833661722828891
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.5005660403597277,
+              "floor": 0.0,
+              "high_energy": 0.5208333333333334,
+              "raw_drift_tail": 1.6245917338099065e-05,
+              "resource": 0.4840311304483551
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.5332888756905696,
+              "floor": 0.0,
+              "high_energy": 0.5486111111111112,
+              "raw_drift_tail": 1.7144017291211693e-05,
+              "resource": 0.4833661722828891
+            }
+          },
+          "final_fingerprint": "54a9f7fab2c4dc129e5285e636bde6ee4676df25224afa9f76828b85738ccba5",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.6855471499552761
+            },
+            "before": {
+              "energy": 0.01073714213550861,
+              "resource": 0.3433591487802606
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 2
+          },
+          "mode": "both",
+          "source_state_fingerprint_at_500": "48962034ade0ac5b88d22a422d419b9b6782e9f38f0cf456511203a84bd5ab8f"
+        },
+        "energy_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.22193235504614264,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0007806764495385769,
+              "resource": 0.47485382102790097
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.21435695650297829,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00017128608699404615,
+              "resource": 0.49152292332604336
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.228482637055177,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -4.387291063504153e-06,
+              "resource": 0.48482600199834724
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.24507069643461044,
+              "floor": 0.0,
+              "high_energy": 0.020833333333333332,
+              "raw_drift_tail": 3.18760829945974e-05,
+              "resource": 0.47636421403253654
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.2708417008298039,
+              "floor": 0.0,
+              "high_energy": 0.05555555555555555,
+              "raw_drift_tail": 1.331070441052868e-06,
+              "resource": 0.4892219653695276
+            }
+          },
+          "final_fingerprint": "f5f0ae418617c429ffcb25955f50d8dc148a319bf52caefa3fc8e3b7038a33c8",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.3433591487802606
+            },
+            "before": {
+              "energy": 0.01073714213550861,
+              "resource": 0.3433591487802606
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 1
+          },
+          "mode": "energy_only",
+          "source_state_fingerprint_at_500": "48962034ade0ac5b88d22a422d419b9b6782e9f38f0cf456511203a84bd5ab8f"
+        },
+        "none": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.024777277573594086,
+              "floor": 0.3472222222222222,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0008636101240202292,
+              "resource": 0.483505782942525
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.026654608652071518,
+              "floor": 0.2777777777777778,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00018006229790394458,
+              "resource": 0.4827678066469809
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.028019382276702556,
+              "floor": 0.4861111111111111,
+              "high_energy": 0.0,
+              "raw_drift_tail": 1.557468680699132e-06,
+              "resource": 0.4757959879729215
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.013990180846944499,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": -5.8707339698222905e-05,
+              "resource": 0.49705087712403323
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.013990180846944499,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": -5.8707339698222905e-05,
+              "resource": 0.49705087712403323
+            }
+          },
+          "final_fingerprint": "554ed5a2db327806912f67b1db0c4e42d2993469fbff52efb480bc8630b5c524",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.01073714213550861,
+              "resource": 0.3433591487802606
+            },
+            "before": {
+              "energy": 0.01073714213550861,
+              "resource": 0.3433591487802606
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 1
+          },
+          "mode": "none",
+          "source_state_fingerprint_at_500": "48962034ade0ac5b88d22a422d419b9b6782e9f38f0cf456511203a84bd5ab8f"
+        },
+        "resource_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.175544334080555,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0016480719194504618,
+              "resource": 0.47741225602058596
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.17580218708143663,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.00033013008989185333,
+              "resource": 0.4841374449980831
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.19613260226653084,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 1.589417202321406e-05,
+              "resource": 0.4852030600118245
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.22106692135565534,
+              "floor": 0.0,
+              "high_energy": 0.013888888888888888,
+              "raw_drift_tail": 2.143949409197497e-05,
+              "resource": 0.4838755944640296
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.27570818692116156,
+              "floor": 0.0,
+              "high_energy": 0.041666666666666664,
+              "raw_drift_tail": 3.2503781718645304e-05,
+              "resource": 0.4822689455804547
+            }
+          },
+          "final_fingerprint": "4960260f5226c57cd739a64bcc6cef358e89cdc12ed37fef11b4a812c2278855",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.01073714213550861,
+              "resource": 0.6855471499552761
+            },
+            "before": {
+              "energy": 0.01073714213550861,
+              "resource": 0.3433591487802606
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 2
+          },
+          "mode": "resource_only",
+          "source_state_fingerprint_at_500": "48962034ade0ac5b88d22a422d419b9b6782e9f38f0cf456511203a84bd5ab8f"
+        }
+      },
+      "seed": 9110,
+      "start_fingerprint": "dde0b7e27ddbe97377405f0e960b190f64fcc2bd61004c4f40c52c0b35fbe336",
+      "start_tick": 100
+    },
+    {
+      "arms": {
+        "both": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.4695118914052301,
+              "floor": 0.0,
+              "high_energy": 0.3055555555555556,
+              "raw_drift_tail": 0.0016951189140523187,
+              "resource": 0.48494992452730173
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.4757645611689074,
+              "floor": 0.0,
+              "high_energy": 0.25,
+              "raw_drift_tail": 0.0003515291223378322,
+              "resource": 0.48553133132838944
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.4957671154228711,
+              "floor": 0.0,
+              "high_energy": 0.4722222222222222,
+              "raw_drift_tail": 2.2276473441788318e-05,
+              "resource": 0.4809140928465093
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.5098238246076351,
+              "floor": 0.0,
+              "high_energy": 0.5069444444444444,
+              "raw_drift_tail": 1.7728635066174023e-05,
+              "resource": 0.4849498971233656
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.5454294146133476,
+              "floor": 0.0,
+              "high_energy": 0.5902777777777778,
+              "raw_drift_tail": 2.2276473441788318e-05,
+              "resource": 0.4809140928465093
+            }
+          },
+          "final_fingerprint": "abe92079fa2428a20594ab40540cdd6e6502fb601f756f11a96d44996afed894",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.6956964288859822
+            },
+            "before": {
+              "energy": 0.008047643587807001,
+              "resource": 0.3478482144429911
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 2
+          },
+          "mode": "both",
+          "source_state_fingerprint_at_500": "554b15a8e2f1841be1ee8324201172bc2ca0ea865b8ccedc83b685aa9ae7df1f"
+        },
+        "energy_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.22493503442668533,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0007506496557331498,
+              "resource": 0.4743802542603798
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.21777600710544587,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00016444798578911106,
+              "resource": 0.4930111114620559
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.23790275192506904,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 3.765872476171883e-07,
+              "resource": 0.48409748752321924
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.2581039718310487,
+              "floor": 0.0,
+              "high_energy": 0.05555555555555555,
+              "raw_drift_tail": 3.6434980831278505e-05,
+              "resource": 0.47868557315908294
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.2965791535575916,
+              "floor": 0.0,
+              "high_energy": 0.1388888888888889,
+              "raw_drift_tail": 9.342741620987047e-06,
+              "resource": 0.4871713757885193
+            }
+          },
+          "final_fingerprint": "ec4f6fbcaeb31c3e6d26d042fd4c7907caeb3f12b1d5ba2ceffbefad9ebf32f2",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.3,
+              "resource": 0.3478482144429911
+            },
+            "before": {
+              "energy": 0.008047643587807001,
+              "resource": 0.3478482144429911
+            },
+            "energy_floor_injection": 0.3,
+            "resource_multiplier": 1
+          },
+          "mode": "energy_only",
+          "source_state_fingerprint_at_500": "554b15a8e2f1841be1ee8324201172bc2ca0ea865b8ccedc83b685aa9ae7df1f"
+        },
+        "none": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.025452671764232587,
+              "floor": 0.3541666666666667,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.0008347308186508378,
+              "resource": 0.4825677840500027
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.025472344119291914,
+              "floor": 0.3472222222222222,
+              "high_energy": 0.0,
+              "raw_drift_tail": -0.00017454042646420232,
+              "resource": 0.48187100544848427
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.03547747680189431,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 7.35600466426474e-06,
+              "resource": 0.4658699267382364
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.015920865485245517,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": -6.088093297450168e-05,
+              "resource": 0.49385696657220596
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.015920865485245517,
+              "floor": 0.5,
+              "high_energy": 0.0,
+              "raw_drift_tail": -6.088093297450168e-05,
+              "resource": 0.49385696657220596
+            }
+          },
+          "final_fingerprint": "ad8c261eda4b9c6e9964a6cc45a90d92dbfd1ff7cbada39ae8745939e56c0be2",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.008047643587807001,
+              "resource": 0.3478482144429911
+            },
+            "before": {
+              "energy": 0.008047643587807001,
+              "resource": 0.3478482144429911
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 1
+          },
+          "mode": "none",
+          "source_state_fingerprint_at_500": "554b15a8e2f1841be1ee8324201172bc2ca0ea865b8ccedc83b685aa9ae7df1f"
+        },
+        "resource_only": {
+          "checkpoints": {
+            "600": {
+              "ceiling": 0.0,
+              "energy": 0.18357383788970635,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0017552619430189923,
+              "resource": 0.4749360101203166
+            },
+            "1000": {
+              "ceiling": 0.0,
+              "energy": 0.18085181519644028,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 0.0003456083432172647,
+              "resource": 0.48784955447635486
+            },
+            "2000": {
+              "ceiling": 0.0,
+              "energy": 0.20109110941082584,
+              "floor": 0.0,
+              "high_energy": 0.0,
+              "raw_drift_tail": 6.036354183744112e-06,
+              "resource": 0.4874584398672337
+            },
+            "3000": {
+              "ceiling": 0.0,
+              "energy": 0.2273506596967844,
+              "floor": 0.0,
+              "high_energy": 0.006944444444444444,
+              "raw_drift_tail": 2.4667414309821645e-05,
+              "resource": 0.481867340414854
+            },
+            "5000": {
+              "ceiling": 0.0,
+              "energy": 0.27459470100050487,
+              "floor": 0.006944444444444444,
+              "high_energy": 0.0625,
+              "raw_drift_tail": 2.010080160945407e-05,
+              "resource": 0.485893688037424
+            }
+          },
+          "final_fingerprint": "501d1055747a25a67674053ff6515b2a3dad72fda73bced472484a1fa40ff677",
+          "intervention_at_tick_500": {
+            "after": {
+              "energy": 0.008047643587807001,
+              "resource": 0.6956964288859822
+            },
+            "before": {
+              "energy": 0.008047643587807001,
+              "resource": 0.3478482144429911
+            },
+            "energy_floor_injection": null,
+            "resource_multiplier": 2
+          },
+          "mode": "resource_only",
+          "source_state_fingerprint_at_500": "554b15a8e2f1841be1ee8324201172bc2ca0ea865b8ccedc83b685aa9ae7df1f"
+        }
+      },
+      "seed": 9111,
+      "start_fingerprint": "b54485516ce0ada7fb34fb0d890a0dfd103057ae2ff4a65f4228482abb6eb5a2",
+      "start_tick": 100
+    }
+  ],
+  "source_sha256": {
+    "NEXT_LIVING_repair_probe.py": "896dbd05a97c95d33a225791cc6a0a2bd5303f0eeb2d068f0e9ff82fbcfe07a0",
+    "SOC_LONGITUDINAL_explore.py": "d7685f749c4a98ac5265e5b51bf87330d3ff65470aa2f3d2ef96c6df8f0d0b93",
+    "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1"
+  },
+  "status": "executed"
+}
