@@ -1,0 +1,4068 @@
+{
+  "design": {
+    "plan": "NEXT_GATE_PLAN.md",
+    "seeds": [
+      10200,
+      10201,
+      10202,
+      10203,
+      10204,
+      10205,
+      10206,
+      10207,
+      10208,
+      10209,
+      10210,
+      10211
+    ],
+    "size": 10,
+    "pretrain_ticks": 1000,
+    "test_ticks": 3000,
+    "diagnostic_frozen_eval_ticks": 1500,
+    "arms": [
+      "online_all",
+      "gate_scarcity",
+      "gate_sham",
+      "gate_recovery",
+      "frozen_all"
+    ],
+    "manual": "reverse",
+    "regrowth": ".06/.055/.06 equal thirds",
+    "theta_only_gate": true,
+    "trace_baseline_always_update": true
+  },
+  "platform": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "source_sha256": {
+    "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1",
+    "NEXT_WELFARE_garden.py": "74b2293fce28df08fd6c065f337161412ebcec2bf623dfd19316b01e5ebd62a6",
+    "NEXT_CREDIT_garden.py": "8ba9ce0d6b6a16626850d13c0babdde9072ea61652b1820e3281ec1559413d15",
+    "NEXT_GATE_garden.py": "e9d51d0627d46f324a28603bd477e16e94c8647ed2f81f83c6b1c489100a386f",
+    "NEXT_GATE_probe.py": "69f190409821774ea1497afb410ea7cd8dd8713dbb03f8bcfc8ed96a6eed906b"
+  },
+  "rows": [
+    {
+      "seed": 10200,
+      "matched_initial": true,
+      "checkpoints": {
+        "online_all": [
+          {
+            "tick": 1000,
+            "energy": 0.04952202243333001,
+            "floor": 0.25,
+            "resource": 0.43222760981485125,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2524481020773363
+          },
+          {
+            "tick": 2000,
+            "energy": 0.030609713582464507,
+            "floor": 0.25,
+            "resource": 0.4147336067910222,
+            "harvest": 0.51,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2520611567728049
+          },
+          {
+            "tick": 3000,
+            "energy": 0.04099799469725492,
+            "floor": 0.15,
+            "resource": 0.415740167161474,
+            "harvest": 0.53,
+            "raw_tail": -0.0018689186543705473,
+            "mean_energy_weight": -0.2869954025258543
+          }
+        ],
+        "gate_scarcity": [
+          {
+            "tick": 1000,
+            "energy": 0.04952202243333001,
+            "floor": 0.25,
+            "resource": 0.43222760981485125,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2524481020773363
+          },
+          {
+            "tick": 2000,
+            "energy": 0.030101554926904944,
+            "floor": 0.26,
+            "resource": 0.4126144048959133,
+            "harvest": 0.53,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2524481020773363
+          },
+          {
+            "tick": 3000,
+            "energy": 0.040688620932745785,
+            "floor": 0.16,
+            "resource": 0.4161445897085031,
+            "harvest": 0.53,
+            "raw_tail": -0.0020254107877721744,
+            "mean_energy_weight": -0.2959253383839353
+          }
+        ],
+        "gate_sham": [
+          {
+            "tick": 1000,
+            "energy": 0.049507493645986396,
+            "floor": 0.2,
+            "resource": 0.4409509080305227,
+            "harvest": 0.36,
+            "raw_tail": null,
+            "mean_energy_weight": -0.16064527675320625
+          },
+          {
+            "tick": 2000,
+            "energy": 0.03364673593358099,
+            "floor": 0.2,
+            "resource": 0.42180477677919553,
+            "harvest": 0.53,
+            "raw_tail": null,
+            "mean_energy_weight": -0.1850272176895028
+          },
+          {
+            "tick": 3000,
+            "energy": 0.045176668737701015,
+            "floor": 0.14,
+            "resource": 0.4144639684756678,
+            "harvest": 0.55,
+            "raw_tail": -0.0015977720358021608,
+            "mean_energy_weight": -0.25648179138883254
+          }
+        ],
+        "gate_recovery": [
+          {
+            "tick": 1000,
+            "energy": 0.04952202243333001,
+            "floor": 0.25,
+            "resource": 0.43222760981485125,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2524481020773363
+          },
+          {
+            "tick": 2000,
+            "energy": 0.030609713582464507,
+            "floor": 0.25,
+            "resource": 0.4147336067910222,
+            "harvest": 0.51,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2520611567728049
+          },
+          {
+            "tick": 3000,
+            "energy": 0.04737633719731694,
+            "floor": 0.14,
+            "resource": 0.4204438898284999,
+            "harvest": 0.53,
+            "raw_tail": -0.0018631002265393486,
+            "mean_energy_weight": -0.2520611567728049
+          }
+        ],
+        "frozen_all": [
+          {
+            "tick": 1000,
+            "energy": 0.049507493645986396,
+            "floor": 0.2,
+            "resource": 0.4409509080305227,
+            "harvest": 0.36,
+            "raw_tail": null,
+            "mean_energy_weight": -0.16064527675320625
+          },
+          {
+            "tick": 2000,
+            "energy": 0.035160521302288666,
+            "floor": 0.22,
+            "resource": 0.42487180057587604,
+            "harvest": 0.52,
+            "raw_tail": null,
+            "mean_energy_weight": -0.16064527675320625
+          },
+          {
+            "tick": 3000,
+            "energy": 0.05237093674907307,
+            "floor": 0.14,
+            "resource": 0.42685782363088565,
+            "harvest": 0.52,
+            "raw_tail": -0.0014584718517070706,
+            "mean_energy_weight": -0.16064527675320625
+          }
+        ],
+        "manual_reverse": [
+          {
+            "tick": 1000,
+            "energy": 0.6186144160028381,
+            "floor": 0.0,
+            "resource": 0.4833893694033702,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 2000,
+            "energy": 0.08305650306138856,
+            "floor": 0.26,
+            "resource": 0.5056156742683666,
+            "harvest": 0.3,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 3000,
+            "energy": 0.2948003603016263,
+            "floor": 0.12,
+            "resource": 0.5110356044545202,
+            "harvest": 0.24,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          }
+        ]
+      },
+      "final": {
+        "online_all": {
+          "energy": 0.04099799469725492,
+          "floor": 0.15,
+          "resource": 0.415740167161474,
+          "harvest": 0.53,
+          "raw_tail": -0.0018689186543705473,
+          "mean_energy_weight": -0.2869954025258543
+        },
+        "gate_scarcity": {
+          "energy": 0.040688620932745785,
+          "floor": 0.16,
+          "resource": 0.4161445897085031,
+          "harvest": 0.53,
+          "raw_tail": -0.0020254107877721744,
+          "mean_energy_weight": -0.2959253383839353
+        },
+        "gate_sham": {
+          "energy": 0.045176668737701015,
+          "floor": 0.14,
+          "resource": 0.4144639684756678,
+          "harvest": 0.55,
+          "raw_tail": -0.0015977720358021608,
+          "mean_energy_weight": -0.25648179138883254
+        },
+        "gate_recovery": {
+          "energy": 0.04737633719731694,
+          "floor": 0.14,
+          "resource": 0.4204438898284999,
+          "harvest": 0.53,
+          "raw_tail": -0.0018631002265393486,
+          "mean_energy_weight": -0.2520611567728049
+        },
+        "frozen_all": {
+          "energy": 0.05237093674907307,
+          "floor": 0.14,
+          "resource": 0.42685782363088565,
+          "harvest": 0.52,
+          "raw_tail": -0.0014584718517070706,
+          "mean_energy_weight": -0.16064527675320625
+        },
+        "manual_reverse": {
+          "energy": 0.2948003603016263,
+          "floor": 0.12,
+          "resource": 0.5110356044545202,
+          "harvest": 0.24,
+          "raw_tail": null,
+          "mean_energy_weight": null
+        }
+      },
+      "deterministic_theta_eval": {
+        "online_all": {
+          "stable": {
+            "energy": 0.5525874922754991,
+            "floor": 0.03,
+            "resource": 0.47377528865785373,
+            "harvest": 0.34,
+            "raw_tail": -6.913284580080848e-05,
+            "mean_energy_weight": -0.2869954025258543
+          },
+          "mild": {
+            "energy": 0.06260504237655914,
+            "floor": 0.28,
+            "resource": 0.4345954577282338,
+            "harvest": 0.45,
+            "raw_tail": -0.001112995613820988,
+            "mean_energy_weight": -0.2869954025258543
+          }
+        },
+        "gate_scarcity": {
+          "stable": {
+            "energy": 0.5992458968070653,
+            "floor": 0.01,
+            "resource": 0.4817300682931121,
+            "harvest": 0.33,
+            "raw_tail": -6.470431357647843e-05,
+            "mean_energy_weight": -0.2959253383839353
+          },
+          "mild": {
+            "energy": 0.10371606268736441,
+            "floor": 0.31,
+            "resource": 0.442109173690662,
+            "harvest": 0.33,
+            "raw_tail": -0.0013564020034052622,
+            "mean_energy_weight": -0.2959253383839353
+          }
+        },
+        "gate_sham": {
+          "stable": {
+            "energy": 0.5710477462674755,
+            "floor": 0.0,
+            "resource": 0.47660900044738347,
+            "harvest": 0.39,
+            "raw_tail": -1.2951013146784202e-07,
+            "mean_energy_weight": -0.25648179138883254
+          },
+          "mild": {
+            "energy": 0.04040844312802942,
+            "floor": 0.3,
+            "resource": 0.4433479811376861,
+            "harvest": 0.41,
+            "raw_tail": -0.0007335719671522252,
+            "mean_energy_weight": -0.25648179138883254
+          }
+        },
+        "gate_recovery": {
+          "stable": {
+            "energy": 0.6178992214654346,
+            "floor": 0.03,
+            "resource": 0.48838012713661905,
+            "harvest": 0.27,
+            "raw_tail": -7.616361279640866e-05,
+            "mean_energy_weight": -0.2520611567728049
+          },
+          "mild": {
+            "energy": 0.12444701550236471,
+            "floor": 0.26,
+            "resource": 0.44737212383526176,
+            "harvest": 0.36,
+            "raw_tail": -0.0013083017701064448,
+            "mean_energy_weight": -0.2520611567728049
+          }
+        },
+        "frozen_all": {
+          "stable": {
+            "energy": 0.6077552584056768,
+            "floor": 0.0,
+            "resource": 0.4841801108732077,
+            "harvest": 0.34,
+            "raw_tail": 1.315257648644426e-05,
+            "mean_energy_weight": -0.16064527675320625
+          },
+          "mild": {
+            "energy": 0.16495232136991117,
+            "floor": 0.13,
+            "resource": 0.4631019648893519,
+            "harvest": 0.37,
+            "raw_tail": -0.0005095492359263573,
+            "mean_energy_weight": -0.16064527675320625
+          }
+        }
+      }
+    },
+    {
+      "seed": 10201,
+      "matched_initial": true,
+      "checkpoints": {
+        "online_all": [
+          {
+            "tick": 1000,
+            "energy": 0.05970611281930295,
+            "floor": 0.19,
+            "resource": 0.43424531230574454,
+            "harvest": 0.4,
+            "raw_tail": null,
+            "mean_energy_weight": -0.20681549290747292
+          },
+          {
+            "tick": 2000,
+            "energy": 0.02548414238234116,
+            "floor": 0.32,
+            "resource": 0.41986901131304266,
+            "harvest": 0.47,
+            "raw_tail": null,
+            "mean_energy_weight": -0.22583437797990047
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03757777322489384,
+            "floor": 0.21,
+            "resource": 0.42606551548122984,
+            "harvest": 0.47,
+            "raw_tail": -0.0017954968092861498,
+            "mean_energy_weight": -0.2712711324102115
+          }
+        ],
+        "gate_scarcity": [
+          {
+            "tick": 1000,
+            "energy": 0.05970611281930295,
+            "floor": 0.19,
+            "resource": 0.43424531230574454,
+            "harvest": 0.4,
+            "raw_tail": null,
+            "mean_energy_weight": -0.20681549290747292
+          },
+          {
+            "tick": 2000,
+            "energy": 0.02755502259900021,
+            "floor": 0.34,
+            "resource": 0.42242346040531786,
+            "harvest": 0.47,
+            "raw_tail": null,
+            "mean_energy_weight": -0.20681549290747292
+          },
+          {
+            "tick": 3000,
+            "energy": 0.036786343335062165,
+            "floor": 0.24,
+            "resource": 0.42964516610315634,
+            "harvest": 0.48,
+            "raw_tail": -0.0017957519969446249,
+            "mean_energy_weight": -0.2596479104479903
+          }
+        ],
+        "gate_sham": [
+          {
+            "tick": 1000,
+            "energy": 0.0817574617654233,
+            "floor": 0.13,
+            "resource": 0.43690849605486837,
+            "harvest": 0.44,
+            "raw_tail": null,
+            "mean_energy_weight": -0.15047745850997396
+          },
+          {
+            "tick": 2000,
+            "energy": 0.027463828150445898,
+            "floor": 0.3,
+            "resource": 0.42463200608710444,
+            "harvest": 0.5,
+            "raw_tail": null,
+            "mean_energy_weight": -0.19497129015020714
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03720413346891825,
+            "floor": 0.18,
+            "resource": 0.4279981173079757,
+            "harvest": 0.47,
+            "raw_tail": -0.0016753090639781316,
+            "mean_energy_weight": -0.25882402128254073
+          }
+        ],
+        "gate_recovery": [
+          {
+            "tick": 1000,
+            "energy": 0.05970611281930295,
+            "floor": 0.19,
+            "resource": 0.43424531230574454,
+            "harvest": 0.4,
+            "raw_tail": null,
+            "mean_energy_weight": -0.20681549290747292
+          },
+          {
+            "tick": 2000,
+            "energy": 0.02548414238234116,
+            "floor": 0.32,
+            "resource": 0.41986901131304266,
+            "harvest": 0.47,
+            "raw_tail": null,
+            "mean_energy_weight": -0.22583437797990047
+          },
+          {
+            "tick": 3000,
+            "energy": 0.039726630139108626,
+            "floor": 0.16,
+            "resource": 0.4319374852898486,
+            "harvest": 0.48,
+            "raw_tail": -0.0017528181425366892,
+            "mean_energy_weight": -0.22583437797990047
+          }
+        ],
+        "frozen_all": [
+          {
+            "tick": 1000,
+            "energy": 0.0817574617654233,
+            "floor": 0.13,
+            "resource": 0.43690849605486837,
+            "harvest": 0.44,
+            "raw_tail": null,
+            "mean_energy_weight": -0.15047745850997396
+          },
+          {
+            "tick": 2000,
+            "energy": 0.028448169066117267,
+            "floor": 0.28,
+            "resource": 0.43271468625050796,
+            "harvest": 0.44,
+            "raw_tail": null,
+            "mean_energy_weight": -0.15047745850997396
+          },
+          {
+            "tick": 3000,
+            "energy": 0.04639047589605068,
+            "floor": 0.18,
+            "resource": 0.4433840723284298,
+            "harvest": 0.43,
+            "raw_tail": -0.0014856273571860572,
+            "mean_energy_weight": -0.15047745850997396
+          }
+        ],
+        "manual_reverse": [
+          {
+            "tick": 1000,
+            "energy": 0.6271307290321674,
+            "floor": 0.0,
+            "resource": 0.4806594244745094,
+            "harvest": 0.36,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 2000,
+            "energy": 0.07403845129943397,
+            "floor": 0.26,
+            "resource": 0.5014191180887271,
+            "harvest": 0.39,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 3000,
+            "energy": 0.2726487868302512,
+            "floor": 0.12,
+            "resource": 0.5102247952529442,
+            "harvest": 0.26,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          }
+        ]
+      },
+      "final": {
+        "online_all": {
+          "energy": 0.03757777322489384,
+          "floor": 0.21,
+          "resource": 0.42606551548122984,
+          "harvest": 0.47,
+          "raw_tail": -0.0017954968092861498,
+          "mean_energy_weight": -0.2712711324102115
+        },
+        "gate_scarcity": {
+          "energy": 0.036786343335062165,
+          "floor": 0.24,
+          "resource": 0.42964516610315634,
+          "harvest": 0.48,
+          "raw_tail": -0.0017957519969446249,
+          "mean_energy_weight": -0.2596479104479903
+        },
+        "gate_sham": {
+          "energy": 0.03720413346891825,
+          "floor": 0.18,
+          "resource": 0.4279981173079757,
+          "harvest": 0.47,
+          "raw_tail": -0.0016753090639781316,
+          "mean_energy_weight": -0.25882402128254073
+        },
+        "gate_recovery": {
+          "energy": 0.039726630139108626,
+          "floor": 0.16,
+          "resource": 0.4319374852898486,
+          "harvest": 0.48,
+          "raw_tail": -0.0017528181425366892,
+          "mean_energy_weight": -0.22583437797990047
+        },
+        "frozen_all": {
+          "energy": 0.04639047589605068,
+          "floor": 0.18,
+          "resource": 0.4433840723284298,
+          "harvest": 0.43,
+          "raw_tail": -0.0014856273571860572,
+          "mean_energy_weight": -0.15047745850997396
+        },
+        "manual_reverse": {
+          "energy": 0.2726487868302512,
+          "floor": 0.12,
+          "resource": 0.5102247952529442,
+          "harvest": 0.26,
+          "raw_tail": null,
+          "mean_energy_weight": null
+        }
+      },
+      "deterministic_theta_eval": {
+        "online_all": {
+          "stable": {
+            "energy": 0.5405792384510386,
+            "floor": 0.03,
+            "resource": 0.47630891455577073,
+            "harvest": 0.34,
+            "raw_tail": -3.8559908388930125e-05,
+            "mean_energy_weight": -0.2712711324102115
+          },
+          "mild": {
+            "energy": 0.04868330961204045,
+            "floor": 0.33,
+            "resource": 0.4398291537687216,
+            "harvest": 0.38,
+            "raw_tail": -0.0009984916346151055,
+            "mean_energy_weight": -0.2712711324102115
+          }
+        },
+        "gate_scarcity": {
+          "stable": {
+            "energy": 0.6324976319283054,
+            "floor": 0.02,
+            "resource": 0.4850267856285295,
+            "harvest": 0.31,
+            "raw_tail": -1.0851799178659407e-05,
+            "mean_energy_weight": -0.2596479104479903
+          },
+          "mild": {
+            "energy": 0.07846787252672663,
+            "floor": 0.26,
+            "resource": 0.4407358180170728,
+            "harvest": 0.46,
+            "raw_tail": -0.0009518973881422773,
+            "mean_energy_weight": -0.2596479104479903
+          }
+        },
+        "gate_sham": {
+          "stable": {
+            "energy": 0.5688407631660538,
+            "floor": 0.01,
+            "resource": 0.4812985884363614,
+            "harvest": 0.36,
+            "raw_tail": -8.075906118646652e-06,
+            "mean_energy_weight": -0.25882402128254073
+          },
+          "mild": {
+            "energy": 0.04866499523332363,
+            "floor": 0.3,
+            "resource": 0.443554257514214,
+            "harvest": 0.37,
+            "raw_tail": -0.0008197377191769242,
+            "mean_energy_weight": -0.25882402128254073
+          }
+        },
+        "gate_recovery": {
+          "stable": {
+            "energy": 0.6510135093612321,
+            "floor": 0.02,
+            "resource": 0.48635951523829235,
+            "harvest": 0.32,
+            "raw_tail": -2.863223497733724e-05,
+            "mean_energy_weight": -0.22583437797990047
+          },
+          "mild": {
+            "energy": 0.10931659743903495,
+            "floor": 0.18,
+            "resource": 0.4499848283921198,
+            "harvest": 0.43,
+            "raw_tail": -0.0008716134918189366,
+            "mean_energy_weight": -0.22583437797990047
+          }
+        },
+        "frozen_all": {
+          "stable": {
+            "energy": 0.6976086108515941,
+            "floor": 0.04,
+            "resource": 0.48974268875209703,
+            "harvest": 0.33,
+            "raw_tail": -2.7145962356035334e-05,
+            "mean_energy_weight": -0.15047745850997396
+          },
+          "mild": {
+            "energy": 0.21307136071140825,
+            "floor": 0.15,
+            "resource": 0.47282630968215167,
+            "harvest": 0.29,
+            "raw_tail": -0.0006363618076936985,
+            "mean_energy_weight": -0.15047745850997396
+          }
+        }
+      }
+    },
+    {
+      "seed": 10202,
+      "matched_initial": true,
+      "checkpoints": {
+        "online_all": [
+          {
+            "tick": 1000,
+            "energy": 0.045410814811339295,
+            "floor": 0.17,
+            "resource": 0.4293482394006856,
+            "harvest": 0.43,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2026191546628628
+          },
+          {
+            "tick": 2000,
+            "energy": 0.023442729975271775,
+            "floor": 0.33,
+            "resource": 0.4238332125630165,
+            "harvest": 0.37,
+            "raw_tail": null,
+            "mean_energy_weight": -0.20638669973756432
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03494384583339369,
+            "floor": 0.22,
+            "resource": 0.42358541985557624,
+            "harvest": 0.48,
+            "raw_tail": -0.0017066809506445788,
+            "mean_energy_weight": -0.25715432567051216
+          }
+        ],
+        "gate_scarcity": [
+          {
+            "tick": 1000,
+            "energy": 0.045410814811339295,
+            "floor": 0.17,
+            "resource": 0.4293482394006856,
+            "harvest": 0.43,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2026191546628628
+          },
+          {
+            "tick": 2000,
+            "energy": 0.02207091428754842,
+            "floor": 0.38,
+            "resource": 0.42701357732348666,
+            "harvest": 0.36,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2026191546628628
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03380651641585073,
+            "floor": 0.22,
+            "resource": 0.42688515394792764,
+            "harvest": 0.47,
+            "raw_tail": -0.0017702196249920242,
+            "mean_energy_weight": -0.2518019585834772
+          }
+        ],
+        "gate_sham": [
+          {
+            "tick": 1000,
+            "energy": 0.05273468481488421,
+            "floor": 0.13,
+            "resource": 0.4366975621056731,
+            "harvest": 0.44,
+            "raw_tail": null,
+            "mean_energy_weight": -0.1460559970019226
+          },
+          {
+            "tick": 2000,
+            "energy": 0.025679355054694118,
+            "floor": 0.33,
+            "resource": 0.42724002195881255,
+            "harvest": 0.36,
+            "raw_tail": null,
+            "mean_energy_weight": -0.1837227800510404
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03575458709190251,
+            "floor": 0.18,
+            "resource": 0.42403716424100407,
+            "harvest": 0.5,
+            "raw_tail": -0.001666140248885513,
+            "mean_energy_weight": -0.2572262682066502
+          }
+        ],
+        "gate_recovery": [
+          {
+            "tick": 1000,
+            "energy": 0.045410814811339295,
+            "floor": 0.17,
+            "resource": 0.4293482394006856,
+            "harvest": 0.43,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2026191546628628
+          },
+          {
+            "tick": 2000,
+            "energy": 0.023442729975271775,
+            "floor": 0.33,
+            "resource": 0.4238332125630165,
+            "harvest": 0.37,
+            "raw_tail": null,
+            "mean_energy_weight": -0.20638669973756432
+          },
+          {
+            "tick": 3000,
+            "energy": 0.040096695652295074,
+            "floor": 0.2,
+            "resource": 0.43007443944167145,
+            "harvest": 0.47,
+            "raw_tail": -0.0016699498367713584,
+            "mean_energy_weight": -0.20638669973756432
+          }
+        ],
+        "frozen_all": [
+          {
+            "tick": 1000,
+            "energy": 0.05273468481488421,
+            "floor": 0.13,
+            "resource": 0.4366975621056731,
+            "harvest": 0.44,
+            "raw_tail": null,
+            "mean_energy_weight": -0.1460559970019226
+          },
+          {
+            "tick": 2000,
+            "energy": 0.025403867985835563,
+            "floor": 0.34,
+            "resource": 0.4344389109364992,
+            "harvest": 0.36,
+            "raw_tail": null,
+            "mean_energy_weight": -0.1460559970019226
+          },
+          {
+            "tick": 3000,
+            "energy": 0.044198862295416745,
+            "floor": 0.12,
+            "resource": 0.4347975245802195,
+            "harvest": 0.49,
+            "raw_tail": -0.0014619311326208306,
+            "mean_energy_weight": -0.1460559970019226
+          }
+        ],
+        "manual_reverse": [
+          {
+            "tick": 1000,
+            "energy": 0.6122757702267323,
+            "floor": 0.0,
+            "resource": 0.4817837727415584,
+            "harvest": 0.43,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 2000,
+            "energy": 0.069966475767147,
+            "floor": 0.32,
+            "resource": 0.5107680733032133,
+            "harvest": 0.24,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 3000,
+            "energy": 0.26302893429268115,
+            "floor": 0.09,
+            "resource": 0.5098241122303869,
+            "harvest": 0.29,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          }
+        ]
+      },
+      "final": {
+        "online_all": {
+          "energy": 0.03494384583339369,
+          "floor": 0.22,
+          "resource": 0.42358541985557624,
+          "harvest": 0.48,
+          "raw_tail": -0.0017066809506445788,
+          "mean_energy_weight": -0.25715432567051216
+        },
+        "gate_scarcity": {
+          "energy": 0.03380651641585073,
+          "floor": 0.22,
+          "resource": 0.42688515394792764,
+          "harvest": 0.47,
+          "raw_tail": -0.0017702196249920242,
+          "mean_energy_weight": -0.2518019585834772
+        },
+        "gate_sham": {
+          "energy": 0.03575458709190251,
+          "floor": 0.18,
+          "resource": 0.42403716424100407,
+          "harvest": 0.5,
+          "raw_tail": -0.001666140248885513,
+          "mean_energy_weight": -0.2572262682066502
+        },
+        "gate_recovery": {
+          "energy": 0.040096695652295074,
+          "floor": 0.2,
+          "resource": 0.43007443944167145,
+          "harvest": 0.47,
+          "raw_tail": -0.0016699498367713584,
+          "mean_energy_weight": -0.20638669973756432
+        },
+        "frozen_all": {
+          "energy": 0.044198862295416745,
+          "floor": 0.12,
+          "resource": 0.4347975245802195,
+          "harvest": 0.49,
+          "raw_tail": -0.0014619311326208306,
+          "mean_energy_weight": -0.1460559970019226
+        },
+        "manual_reverse": {
+          "energy": 0.26302893429268115,
+          "floor": 0.09,
+          "resource": 0.5098241122303869,
+          "harvest": 0.29,
+          "raw_tail": null,
+          "mean_energy_weight": null
+        }
+      },
+      "deterministic_theta_eval": {
+        "online_all": {
+          "stable": {
+            "energy": 0.5702023194719242,
+            "floor": 0.01,
+            "resource": 0.4765208182767847,
+            "harvest": 0.32,
+            "raw_tail": -5.766826009125855e-05,
+            "mean_energy_weight": -0.25715432567051216
+          },
+          "mild": {
+            "energy": 0.047446694444127635,
+            "floor": 0.2,
+            "resource": 0.4338861218955141,
+            "harvest": 0.43,
+            "raw_tail": -0.0009208541971740682,
+            "mean_energy_weight": -0.25715432567051216
+          }
+        },
+        "gate_scarcity": {
+          "stable": {
+            "energy": 0.5944345781674755,
+            "floor": 0.03,
+            "resource": 0.48217367531468996,
+            "harvest": 0.31,
+            "raw_tail": -4.699494361089015e-05,
+            "mean_energy_weight": -0.2518019585834772
+          },
+          "mild": {
+            "energy": 0.08773827020971386,
+            "floor": 0.22,
+            "resource": 0.4418898883040949,
+            "harvest": 0.44,
+            "raw_tail": -0.0009504723421117275,
+            "mean_energy_weight": -0.2518019585834772
+          }
+        },
+        "gate_sham": {
+          "stable": {
+            "energy": 0.5429472938001545,
+            "floor": 0.01,
+            "resource": 0.47452754197428876,
+            "harvest": 0.38,
+            "raw_tail": -3.607246647704906e-05,
+            "mean_energy_weight": -0.2572262682066502
+          },
+          "mild": {
+            "energy": 0.02536795629204453,
+            "floor": 0.29,
+            "resource": 0.439818078005792,
+            "harvest": 0.32,
+            "raw_tail": -0.0009964593574711433,
+            "mean_energy_weight": -0.2572262682066502
+          }
+        },
+        "gate_recovery": {
+          "stable": {
+            "energy": 0.5936919208669038,
+            "floor": 0.03,
+            "resource": 0.48557465231080527,
+            "harvest": 0.26,
+            "raw_tail": -5.055486678830983e-05,
+            "mean_energy_weight": -0.20638669973756432
+          },
+          "mild": {
+            "energy": 0.10690474560358582,
+            "floor": 0.24,
+            "resource": 0.45057557109063867,
+            "harvest": 0.37,
+            "raw_tail": -0.0009064827519665431,
+            "mean_energy_weight": -0.20638669973756432
+          }
+        },
+        "frozen_all": {
+          "stable": {
+            "energy": 0.6524198807765983,
+            "floor": 0.01,
+            "resource": 0.484035545811184,
+            "harvest": 0.37,
+            "raw_tail": -1.824727091421681e-05,
+            "mean_energy_weight": -0.1460559970019226
+          },
+          "mild": {
+            "energy": 0.20531900434993047,
+            "floor": 0.15,
+            "resource": 0.467390912043699,
+            "harvest": 0.39,
+            "raw_tail": -0.0005504918622028439,
+            "mean_energy_weight": -0.1460559970019226
+          }
+        }
+      }
+    },
+    {
+      "seed": 10203,
+      "matched_initial": true,
+      "checkpoints": {
+        "online_all": [
+          {
+            "tick": 1000,
+            "energy": 0.04707878137816217,
+            "floor": 0.3,
+            "resource": 0.435629187238354,
+            "harvest": 0.28,
+            "raw_tail": null,
+            "mean_energy_weight": -0.26345017849992336
+          },
+          {
+            "tick": 2000,
+            "energy": 0.028646778655068452,
+            "floor": 0.31,
+            "resource": 0.4148713216909032,
+            "harvest": 0.42,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2499547307328787
+          },
+          {
+            "tick": 3000,
+            "energy": 0.038810193116801714,
+            "floor": 0.17,
+            "resource": 0.4183526659194035,
+            "harvest": 0.36,
+            "raw_tail": -0.0018176016795086803,
+            "mean_energy_weight": -0.28727986111408876
+          }
+        ],
+        "gate_scarcity": [
+          {
+            "tick": 1000,
+            "energy": 0.04707878137816217,
+            "floor": 0.3,
+            "resource": 0.435629187238354,
+            "harvest": 0.28,
+            "raw_tail": null,
+            "mean_energy_weight": -0.26345017849992336
+          },
+          {
+            "tick": 2000,
+            "energy": 0.027959359406941397,
+            "floor": 0.32,
+            "resource": 0.4144291977158251,
+            "harvest": 0.4,
+            "raw_tail": null,
+            "mean_energy_weight": -0.26345017849992336
+          },
+          {
+            "tick": 3000,
+            "energy": 0.04208022763320509,
+            "floor": 0.18,
+            "resource": 0.4178001413035562,
+            "harvest": 0.37,
+            "raw_tail": -0.0019465825129955636,
+            "mean_energy_weight": -0.3045421552186569
+          }
+        ],
+        "gate_sham": [
+          {
+            "tick": 1000,
+            "energy": 0.04918429075292809,
+            "floor": 0.19,
+            "resource": 0.44467514034496425,
+            "harvest": 0.22,
+            "raw_tail": null,
+            "mean_energy_weight": -0.19899850095413496
+          },
+          {
+            "tick": 2000,
+            "energy": 0.029636932110804395,
+            "floor": 0.3,
+            "resource": 0.4220967595638034,
+            "harvest": 0.43,
+            "raw_tail": null,
+            "mean_energy_weight": -0.21740436190124232
+          },
+          {
+            "tick": 3000,
+            "energy": 0.04207013310862212,
+            "floor": 0.14,
+            "resource": 0.4183538104382809,
+            "harvest": 0.41,
+            "raw_tail": -0.0016762802665188424,
+            "mean_energy_weight": -0.2790545901153403
+          }
+        ],
+        "gate_recovery": [
+          {
+            "tick": 1000,
+            "energy": 0.04707878137816217,
+            "floor": 0.3,
+            "resource": 0.435629187238354,
+            "harvest": 0.28,
+            "raw_tail": null,
+            "mean_energy_weight": -0.26345017849992336
+          },
+          {
+            "tick": 2000,
+            "energy": 0.028646778655068452,
+            "floor": 0.31,
+            "resource": 0.4148713216909032,
+            "harvest": 0.42,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2499547307328787
+          },
+          {
+            "tick": 3000,
+            "energy": 0.042095781080795966,
+            "floor": 0.19,
+            "resource": 0.42761524296862663,
+            "harvest": 0.33,
+            "raw_tail": -0.0017799977669378415,
+            "mean_energy_weight": -0.2499547307328787
+          }
+        ],
+        "frozen_all": [
+          {
+            "tick": 1000,
+            "energy": 0.04918429075292809,
+            "floor": 0.19,
+            "resource": 0.44467514034496425,
+            "harvest": 0.22,
+            "raw_tail": null,
+            "mean_energy_weight": -0.19899850095413496
+          },
+          {
+            "tick": 2000,
+            "energy": 0.02919804115893321,
+            "floor": 0.29,
+            "resource": 0.4242240349731378,
+            "harvest": 0.42,
+            "raw_tail": null,
+            "mean_energy_weight": -0.19899850095413496
+          },
+          {
+            "tick": 3000,
+            "energy": 0.05198559318381442,
+            "floor": 0.17,
+            "resource": 0.43254660431514064,
+            "harvest": 0.37,
+            "raw_tail": -0.0015893194516933065,
+            "mean_energy_weight": -0.19899850095413496
+          }
+        ],
+        "manual_reverse": [
+          {
+            "tick": 1000,
+            "energy": 0.6133619241948393,
+            "floor": 0.0,
+            "resource": 0.48082187892776157,
+            "harvest": 0.43,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 2000,
+            "energy": 0.07520108866575653,
+            "floor": 0.24,
+            "resource": 0.5016618306531495,
+            "harvest": 0.35,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 3000,
+            "energy": 0.2751515756583448,
+            "floor": 0.1,
+            "resource": 0.5091451358127262,
+            "harvest": 0.27,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          }
+        ]
+      },
+      "final": {
+        "online_all": {
+          "energy": 0.038810193116801714,
+          "floor": 0.17,
+          "resource": 0.4183526659194035,
+          "harvest": 0.36,
+          "raw_tail": -0.0018176016795086803,
+          "mean_energy_weight": -0.28727986111408876
+        },
+        "gate_scarcity": {
+          "energy": 0.04208022763320509,
+          "floor": 0.18,
+          "resource": 0.4178001413035562,
+          "harvest": 0.37,
+          "raw_tail": -0.0019465825129955636,
+          "mean_energy_weight": -0.3045421552186569
+        },
+        "gate_sham": {
+          "energy": 0.04207013310862212,
+          "floor": 0.14,
+          "resource": 0.4183538104382809,
+          "harvest": 0.41,
+          "raw_tail": -0.0016762802665188424,
+          "mean_energy_weight": -0.2790545901153403
+        },
+        "gate_recovery": {
+          "energy": 0.042095781080795966,
+          "floor": 0.19,
+          "resource": 0.42761524296862663,
+          "harvest": 0.33,
+          "raw_tail": -0.0017799977669378415,
+          "mean_energy_weight": -0.2499547307328787
+        },
+        "frozen_all": {
+          "energy": 0.05198559318381442,
+          "floor": 0.17,
+          "resource": 0.43254660431514064,
+          "harvest": 0.37,
+          "raw_tail": -0.0015893194516933065,
+          "mean_energy_weight": -0.19899850095413496
+        },
+        "manual_reverse": {
+          "energy": 0.2751515756583448,
+          "floor": 0.1,
+          "resource": 0.5091451358127262,
+          "harvest": 0.27,
+          "raw_tail": null,
+          "mean_energy_weight": null
+        }
+      },
+      "deterministic_theta_eval": {
+        "online_all": {
+          "stable": {
+            "energy": 0.5179379730293432,
+            "floor": 0.02,
+            "resource": 0.4751528370864922,
+            "harvest": 0.23,
+            "raw_tail": -9.292728071739277e-05,
+            "mean_energy_weight": -0.28727986111408876
+          },
+          "mild": {
+            "energy": 0.045347584842038685,
+            "floor": 0.28,
+            "resource": 0.43649136488739826,
+            "harvest": 0.37,
+            "raw_tail": -0.0009662764307157919,
+            "mean_energy_weight": -0.28727986111408876
+          }
+        },
+        "gate_scarcity": {
+          "stable": {
+            "energy": 0.5887266592561877,
+            "floor": 0.02,
+            "resource": 0.4785113664502801,
+            "harvest": 0.37,
+            "raw_tail": -4.559144346111082e-05,
+            "mean_energy_weight": -0.3045421552186569
+          },
+          "mild": {
+            "energy": 0.055456118565587985,
+            "floor": 0.31,
+            "resource": 0.4360499179605269,
+            "harvest": 0.3,
+            "raw_tail": -0.0012044602600751143,
+            "mean_energy_weight": -0.3045421552186569
+          }
+        },
+        "gate_sham": {
+          "stable": {
+            "energy": 0.5570792884226048,
+            "floor": 0.0,
+            "resource": 0.4802645973582124,
+            "harvest": 0.28,
+            "raw_tail": -4.965269646766242e-05,
+            "mean_energy_weight": -0.2790545901153403
+          },
+          "mild": {
+            "energy": 0.04939626659205082,
+            "floor": 0.21,
+            "resource": 0.4321092529045741,
+            "harvest": 0.48,
+            "raw_tail": -0.000887706685270106,
+            "mean_energy_weight": -0.2790545901153403
+          }
+        },
+        "gate_recovery": {
+          "stable": {
+            "energy": 0.6212023708776964,
+            "floor": 0.01,
+            "resource": 0.48488093620194755,
+            "harvest": 0.29,
+            "raw_tail": -1.0004152947367746e-05,
+            "mean_energy_weight": -0.2499547307328787
+          },
+          "mild": {
+            "energy": 0.0792705280536871,
+            "floor": 0.31,
+            "resource": 0.44810448907755185,
+            "harvest": 0.37,
+            "raw_tail": -0.0009893130194724383,
+            "mean_energy_weight": -0.2499547307328787
+          }
+        },
+        "frozen_all": {
+          "stable": {
+            "energy": 0.665794106415251,
+            "floor": 0.02,
+            "resource": 0.4830214762484843,
+            "harvest": 0.4,
+            "raw_tail": 1.223617481602122e-05,
+            "mean_energy_weight": -0.19899850095413496
+          },
+          "mild": {
+            "energy": 0.16532097661004932,
+            "floor": 0.15,
+            "resource": 0.46062110709636994,
+            "harvest": 0.39,
+            "raw_tail": -0.0006763313986610035,
+            "mean_energy_weight": -0.19899850095413496
+          }
+        }
+      }
+    },
+    {
+      "seed": 10204,
+      "matched_initial": true,
+      "checkpoints": {
+        "online_all": [
+          {
+            "tick": 1000,
+            "energy": 0.04180760660321816,
+            "floor": 0.24,
+            "resource": 0.43011365649715494,
+            "harvest": 0.44,
+            "raw_tail": null,
+            "mean_energy_weight": -0.22370263933396062
+          },
+          {
+            "tick": 2000,
+            "energy": 0.024195844428423166,
+            "floor": 0.37,
+            "resource": 0.43051998353212334,
+            "harvest": 0.36,
+            "raw_tail": null,
+            "mean_energy_weight": -0.20517237821163742
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03988477462491681,
+            "floor": 0.16,
+            "resource": 0.4222927257601946,
+            "harvest": 0.49,
+            "raw_tail": -0.0017744753422319905,
+            "mean_energy_weight": -0.2688533801257512
+          }
+        ],
+        "gate_scarcity": [
+          {
+            "tick": 1000,
+            "energy": 0.04180760660321816,
+            "floor": 0.24,
+            "resource": 0.43011365649715494,
+            "harvest": 0.44,
+            "raw_tail": null,
+            "mean_energy_weight": -0.22370263933396062
+          },
+          {
+            "tick": 2000,
+            "energy": 0.02451790952301158,
+            "floor": 0.35,
+            "resource": 0.42801266849528896,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.22370263933396062
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03879006405919703,
+            "floor": 0.17,
+            "resource": 0.4246527222079596,
+            "harvest": 0.49,
+            "raw_tail": -0.0018948351535527954,
+            "mean_energy_weight": -0.2796521328078219
+          }
+        ],
+        "gate_sham": [
+          {
+            "tick": 1000,
+            "energy": 0.07028097401877863,
+            "floor": 0.16,
+            "resource": 0.44159734712722903,
+            "harvest": 0.39,
+            "raw_tail": null,
+            "mean_energy_weight": -0.14364302901110723
+          },
+          {
+            "tick": 2000,
+            "energy": 0.025962891483203365,
+            "floor": 0.36,
+            "resource": 0.43840961232666964,
+            "harvest": 0.37,
+            "raw_tail": null,
+            "mean_energy_weight": -0.16066458758901636
+          },
+          {
+            "tick": 3000,
+            "energy": 0.0406645733171759,
+            "floor": 0.2,
+            "resource": 0.43082328726498603,
+            "harvest": 0.45,
+            "raw_tail": -0.0016422302098070283,
+            "mean_energy_weight": -0.2542282484152299
+          }
+        ],
+        "gate_recovery": [
+          {
+            "tick": 1000,
+            "energy": 0.04180760660321816,
+            "floor": 0.24,
+            "resource": 0.43011365649715494,
+            "harvest": 0.44,
+            "raw_tail": null,
+            "mean_energy_weight": -0.22370263933396062
+          },
+          {
+            "tick": 2000,
+            "energy": 0.024195844428423166,
+            "floor": 0.37,
+            "resource": 0.43051998353212334,
+            "harvest": 0.36,
+            "raw_tail": null,
+            "mean_energy_weight": -0.20517237821163742
+          },
+          {
+            "tick": 3000,
+            "energy": 0.04305222240879138,
+            "floor": 0.16,
+            "resource": 0.43026045780969246,
+            "harvest": 0.44,
+            "raw_tail": -0.0016711905003138528,
+            "mean_energy_weight": -0.20517237821163742
+          }
+        ],
+        "frozen_all": [
+          {
+            "tick": 1000,
+            "energy": 0.07028097401877863,
+            "floor": 0.16,
+            "resource": 0.44159734712722903,
+            "harvest": 0.39,
+            "raw_tail": null,
+            "mean_energy_weight": -0.14364302901110723
+          },
+          {
+            "tick": 2000,
+            "energy": 0.02620661452673367,
+            "floor": 0.34,
+            "resource": 0.4416964665632354,
+            "harvest": 0.36,
+            "raw_tail": null,
+            "mean_energy_weight": -0.14364302901110723
+          },
+          {
+            "tick": 3000,
+            "energy": 0.0497359010831564,
+            "floor": 0.15,
+            "resource": 0.43659293919712555,
+            "harvest": 0.49,
+            "raw_tail": -0.001458289503512391,
+            "mean_energy_weight": -0.14364302901110723
+          }
+        ],
+        "manual_reverse": [
+          {
+            "tick": 1000,
+            "energy": 0.6142887676331086,
+            "floor": 0.0,
+            "resource": 0.48314161887997464,
+            "harvest": 0.36,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 2000,
+            "energy": 0.07722286095519168,
+            "floor": 0.28,
+            "resource": 0.5063173351416885,
+            "harvest": 0.26,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 3000,
+            "energy": 0.284768571686973,
+            "floor": 0.07,
+            "resource": 0.5079801956306517,
+            "harvest": 0.28,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          }
+        ]
+      },
+      "final": {
+        "online_all": {
+          "energy": 0.03988477462491681,
+          "floor": 0.16,
+          "resource": 0.4222927257601946,
+          "harvest": 0.49,
+          "raw_tail": -0.0017744753422319905,
+          "mean_energy_weight": -0.2688533801257512
+        },
+        "gate_scarcity": {
+          "energy": 0.03879006405919703,
+          "floor": 0.17,
+          "resource": 0.4246527222079596,
+          "harvest": 0.49,
+          "raw_tail": -0.0018948351535527954,
+          "mean_energy_weight": -0.2796521328078219
+        },
+        "gate_sham": {
+          "energy": 0.0406645733171759,
+          "floor": 0.2,
+          "resource": 0.43082328726498603,
+          "harvest": 0.45,
+          "raw_tail": -0.0016422302098070283,
+          "mean_energy_weight": -0.2542282484152299
+        },
+        "gate_recovery": {
+          "energy": 0.04305222240879138,
+          "floor": 0.16,
+          "resource": 0.43026045780969246,
+          "harvest": 0.44,
+          "raw_tail": -0.0016711905003138528,
+          "mean_energy_weight": -0.20517237821163742
+        },
+        "frozen_all": {
+          "energy": 0.0497359010831564,
+          "floor": 0.15,
+          "resource": 0.43659293919712555,
+          "harvest": 0.49,
+          "raw_tail": -0.001458289503512391,
+          "mean_energy_weight": -0.14364302901110723
+        },
+        "manual_reverse": {
+          "energy": 0.284768571686973,
+          "floor": 0.07,
+          "resource": 0.5079801956306517,
+          "harvest": 0.28,
+          "raw_tail": null,
+          "mean_energy_weight": null
+        }
+      },
+      "deterministic_theta_eval": {
+        "online_all": {
+          "stable": {
+            "energy": 0.5524544976065616,
+            "floor": 0.0,
+            "resource": 0.4751005903419619,
+            "harvest": 0.34,
+            "raw_tail": -3.075341732497246e-05,
+            "mean_energy_weight": -0.2688533801257512
+          },
+          "mild": {
+            "energy": 0.030960734434039138,
+            "floor": 0.34,
+            "resource": 0.43958236650817434,
+            "harvest": 0.36,
+            "raw_tail": -0.0009239961718704215,
+            "mean_energy_weight": -0.2688533801257512
+          }
+        },
+        "gate_scarcity": {
+          "stable": {
+            "energy": 0.6282071075971184,
+            "floor": 0.01,
+            "resource": 0.48228825721771096,
+            "harvest": 0.37,
+            "raw_tail": -2.9688329601249384e-05,
+            "mean_energy_weight": -0.2796521328078219
+          },
+          "mild": {
+            "energy": 0.07962276370039068,
+            "floor": 0.22,
+            "resource": 0.4414547872168148,
+            "harvest": 0.38,
+            "raw_tail": -0.0009632790934779171,
+            "mean_energy_weight": -0.2796521328078219
+          }
+        },
+        "gate_sham": {
+          "stable": {
+            "energy": 0.6067088001599537,
+            "floor": 0.0,
+            "resource": 0.4809011717905845,
+            "harvest": 0.33,
+            "raw_tail": 3.4244279138053425e-06,
+            "mean_energy_weight": -0.2542282484152299
+          },
+          "mild": {
+            "energy": 0.063736291533859,
+            "floor": 0.24,
+            "resource": 0.44526450092016717,
+            "harvest": 0.37,
+            "raw_tail": -0.0007144497592450438,
+            "mean_energy_weight": -0.2542282484152299
+          }
+        },
+        "gate_recovery": {
+          "stable": {
+            "energy": 0.6622549572287348,
+            "floor": 0.01,
+            "resource": 0.48314734491609684,
+            "harvest": 0.37,
+            "raw_tail": -6.408780395959067e-06,
+            "mean_energy_weight": -0.20517237821163742
+          },
+          "mild": {
+            "energy": 0.13316382608161714,
+            "floor": 0.2,
+            "resource": 0.4588950847052709,
+            "harvest": 0.31,
+            "raw_tail": -0.0006679019954160796,
+            "mean_energy_weight": -0.20517237821163742
+          }
+        },
+        "frozen_all": {
+          "stable": {
+            "energy": 0.6878640163914632,
+            "floor": 0.02,
+            "resource": 0.4901963489157377,
+            "harvest": 0.31,
+            "raw_tail": -6.257644741625595e-06,
+            "mean_energy_weight": -0.14364302901110723
+          },
+          "mild": {
+            "energy": 0.24403022550489126,
+            "floor": 0.14,
+            "resource": 0.4741277357957509,
+            "harvest": 0.36,
+            "raw_tail": -0.0003802927830358458,
+            "mean_energy_weight": -0.14364302901110723
+          }
+        }
+      }
+    },
+    {
+      "seed": 10205,
+      "matched_initial": true,
+      "checkpoints": {
+        "online_all": [
+          {
+            "tick": 1000,
+            "energy": 0.04723764496757954,
+            "floor": 0.19,
+            "resource": 0.4274716077719182,
+            "harvest": 0.41,
+            "raw_tail": null,
+            "mean_energy_weight": -0.240488003123826
+          },
+          {
+            "tick": 2000,
+            "energy": 0.025771696529097627,
+            "floor": 0.33,
+            "resource": 0.4250442189535373,
+            "harvest": 0.39,
+            "raw_tail": null,
+            "mean_energy_weight": -0.22342006343089957
+          },
+          {
+            "tick": 3000,
+            "energy": 0.04029781815677483,
+            "floor": 0.15,
+            "resource": 0.4226912119224497,
+            "harvest": 0.5,
+            "raw_tail": -0.0018181547068610757,
+            "mean_energy_weight": -0.2779615035555554
+          }
+        ],
+        "gate_scarcity": [
+          {
+            "tick": 1000,
+            "energy": 0.04723764496757954,
+            "floor": 0.19,
+            "resource": 0.4274716077719182,
+            "harvest": 0.41,
+            "raw_tail": null,
+            "mean_energy_weight": -0.240488003123826
+          },
+          {
+            "tick": 2000,
+            "energy": 0.02450146027660354,
+            "floor": 0.39,
+            "resource": 0.4234100187545477,
+            "harvest": 0.4,
+            "raw_tail": null,
+            "mean_energy_weight": -0.240488003123826
+          },
+          {
+            "tick": 3000,
+            "energy": 0.037608617601056965,
+            "floor": 0.16,
+            "resource": 0.4206379497431184,
+            "harvest": 0.48,
+            "raw_tail": -0.0019781533711988922,
+            "mean_energy_weight": -0.2910818592726022
+          }
+        ],
+        "gate_sham": [
+          {
+            "tick": 1000,
+            "energy": 0.057471978196241606,
+            "floor": 0.15,
+            "resource": 0.4361229465884759,
+            "harvest": 0.39,
+            "raw_tail": null,
+            "mean_energy_weight": -0.16710964181902357
+          },
+          {
+            "tick": 2000,
+            "energy": 0.027561071388350903,
+            "floor": 0.29,
+            "resource": 0.4317868261759304,
+            "harvest": 0.37,
+            "raw_tail": null,
+            "mean_energy_weight": -0.17781448128077848
+          },
+          {
+            "tick": 3000,
+            "energy": 0.04334949304037712,
+            "floor": 0.13,
+            "resource": 0.4242766596800544,
+            "harvest": 0.52,
+            "raw_tail": -0.001634670067645133,
+            "mean_energy_weight": -0.25757186945173627
+          }
+        ],
+        "gate_recovery": [
+          {
+            "tick": 1000,
+            "energy": 0.04723764496757954,
+            "floor": 0.19,
+            "resource": 0.4274716077719182,
+            "harvest": 0.41,
+            "raw_tail": null,
+            "mean_energy_weight": -0.240488003123826
+          },
+          {
+            "tick": 2000,
+            "energy": 0.025771696529097627,
+            "floor": 0.33,
+            "resource": 0.4250442189535373,
+            "harvest": 0.39,
+            "raw_tail": null,
+            "mean_energy_weight": -0.22342006343089957
+          },
+          {
+            "tick": 3000,
+            "energy": 0.04213453441896729,
+            "floor": 0.09,
+            "resource": 0.4299148291469772,
+            "harvest": 0.47,
+            "raw_tail": -0.0017567153843221295,
+            "mean_energy_weight": -0.22342006343089957
+          }
+        ],
+        "frozen_all": [
+          {
+            "tick": 1000,
+            "energy": 0.057471978196241606,
+            "floor": 0.15,
+            "resource": 0.4361229465884759,
+            "harvest": 0.39,
+            "raw_tail": null,
+            "mean_energy_weight": -0.16710964181902357
+          },
+          {
+            "tick": 2000,
+            "energy": 0.028066903183821643,
+            "floor": 0.3,
+            "resource": 0.43283902022856524,
+            "harvest": 0.37,
+            "raw_tail": null,
+            "mean_energy_weight": -0.16710964181902357
+          },
+          {
+            "tick": 3000,
+            "energy": 0.0489584434957182,
+            "floor": 0.08,
+            "resource": 0.4333616719745623,
+            "harvest": 0.51,
+            "raw_tail": -0.001526527513430153,
+            "mean_energy_weight": -0.16710964181902357
+          }
+        ],
+        "manual_reverse": [
+          {
+            "tick": 1000,
+            "energy": 0.6182510828804987,
+            "floor": 0.0,
+            "resource": 0.4817980050931213,
+            "harvest": 0.41,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 2000,
+            "energy": 0.06357344039807719,
+            "floor": 0.29,
+            "resource": 0.5090780115050495,
+            "harvest": 0.28,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 3000,
+            "energy": 0.2387714933103199,
+            "floor": 0.14,
+            "resource": 0.5096381679174372,
+            "harvest": 0.32,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          }
+        ]
+      },
+      "final": {
+        "online_all": {
+          "energy": 0.04029781815677483,
+          "floor": 0.15,
+          "resource": 0.4226912119224497,
+          "harvest": 0.5,
+          "raw_tail": -0.0018181547068610757,
+          "mean_energy_weight": -0.2779615035555554
+        },
+        "gate_scarcity": {
+          "energy": 0.037608617601056965,
+          "floor": 0.16,
+          "resource": 0.4206379497431184,
+          "harvest": 0.48,
+          "raw_tail": -0.0019781533711988922,
+          "mean_energy_weight": -0.2910818592726022
+        },
+        "gate_sham": {
+          "energy": 0.04334949304037712,
+          "floor": 0.13,
+          "resource": 0.4242766596800544,
+          "harvest": 0.52,
+          "raw_tail": -0.001634670067645133,
+          "mean_energy_weight": -0.25757186945173627
+        },
+        "gate_recovery": {
+          "energy": 0.04213453441896729,
+          "floor": 0.09,
+          "resource": 0.4299148291469772,
+          "harvest": 0.47,
+          "raw_tail": -0.0017567153843221295,
+          "mean_energy_weight": -0.22342006343089957
+        },
+        "frozen_all": {
+          "energy": 0.0489584434957182,
+          "floor": 0.08,
+          "resource": 0.4333616719745623,
+          "harvest": 0.51,
+          "raw_tail": -0.001526527513430153,
+          "mean_energy_weight": -0.16710964181902357
+        },
+        "manual_reverse": {
+          "energy": 0.2387714933103199,
+          "floor": 0.14,
+          "resource": 0.5096381679174372,
+          "harvest": 0.32,
+          "raw_tail": null,
+          "mean_energy_weight": null
+        }
+      },
+      "deterministic_theta_eval": {
+        "online_all": {
+          "stable": {
+            "energy": 0.5450629503778263,
+            "floor": 0.02,
+            "resource": 0.47008666949183064,
+            "harvest": 0.41,
+            "raw_tail": -5.850076837103466e-05,
+            "mean_energy_weight": -0.2779615035555554
+          },
+          "mild": {
+            "energy": 0.03721427318132167,
+            "floor": 0.29,
+            "resource": 0.43298942221535397,
+            "harvest": 0.45,
+            "raw_tail": -0.0010615873677057264,
+            "mean_energy_weight": -0.2779615035555554
+          }
+        },
+        "gate_scarcity": {
+          "stable": {
+            "energy": 0.6305907035153921,
+            "floor": 0.01,
+            "resource": 0.4817893899381352,
+            "harvest": 0.33,
+            "raw_tail": -4.0219404448913395e-05,
+            "mean_energy_weight": -0.2910818592726022
+          },
+          "mild": {
+            "energy": 0.0675404488668516,
+            "floor": 0.31,
+            "resource": 0.4365299690160511,
+            "harvest": 0.4,
+            "raw_tail": -0.001355184025969636,
+            "mean_energy_weight": -0.2910818592726022
+          }
+        },
+        "gate_sham": {
+          "stable": {
+            "energy": 0.5501962236373226,
+            "floor": 0.0,
+            "resource": 0.4776163511275259,
+            "harvest": 0.32,
+            "raw_tail": -4.509129311249124e-05,
+            "mean_energy_weight": -0.25757186945173627
+          },
+          "mild": {
+            "energy": 0.036626215484619314,
+            "floor": 0.24,
+            "resource": 0.43911540005896865,
+            "harvest": 0.39,
+            "raw_tail": -0.0007861607315748361,
+            "mean_energy_weight": -0.25757186945173627
+          }
+        },
+        "gate_recovery": {
+          "stable": {
+            "energy": 0.6430834558141382,
+            "floor": 0.0,
+            "resource": 0.4852619446535635,
+            "harvest": 0.3,
+            "raw_tail": -3.837674847511544e-05,
+            "mean_energy_weight": -0.22342006343089957
+          },
+          "mild": {
+            "energy": 0.08572496491574513,
+            "floor": 0.3,
+            "resource": 0.4478774749529213,
+            "harvest": 0.39,
+            "raw_tail": -0.0011030385889816278,
+            "mean_energy_weight": -0.22342006343089957
+          }
+        },
+        "frozen_all": {
+          "stable": {
+            "energy": 0.6642086120339364,
+            "floor": 0.01,
+            "resource": 0.48763386022668903,
+            "harvest": 0.32,
+            "raw_tail": -1.1865080948686938e-05,
+            "mean_energy_weight": -0.16710964181902357
+          },
+          "mild": {
+            "energy": 0.19125478249837113,
+            "floor": 0.19,
+            "resource": 0.46347663207156486,
+            "harvest": 0.39,
+            "raw_tail": -0.0005154382527190813,
+            "mean_energy_weight": -0.16710964181902357
+          }
+        }
+      }
+    },
+    {
+      "seed": 10206,
+      "matched_initial": true,
+      "checkpoints": {
+        "online_all": [
+          {
+            "tick": 1000,
+            "energy": 0.040989730472723876,
+            "floor": 0.22,
+            "resource": 0.431067592758543,
+            "harvest": 0.4,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2705884607127882
+          },
+          {
+            "tick": 2000,
+            "energy": 0.02476321543544143,
+            "floor": 0.35,
+            "resource": 0.41475398886742965,
+            "harvest": 0.47,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2573237422465275
+          },
+          {
+            "tick": 3000,
+            "energy": 0.039377665779429354,
+            "floor": 0.21,
+            "resource": 0.4210454954083827,
+            "harvest": 0.49,
+            "raw_tail": -0.0018899812300263812,
+            "mean_energy_weight": -0.2791739637192604
+          }
+        ],
+        "gate_scarcity": [
+          {
+            "tick": 1000,
+            "energy": 0.040989730472723876,
+            "floor": 0.22,
+            "resource": 0.431067592758543,
+            "harvest": 0.4,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2705884607127882
+          },
+          {
+            "tick": 2000,
+            "energy": 0.023270176799339456,
+            "floor": 0.39,
+            "resource": 0.4158724346081184,
+            "harvest": 0.45,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2705884607127882
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03858949520047292,
+            "floor": 0.24,
+            "resource": 0.42256004341741,
+            "harvest": 0.47,
+            "raw_tail": -0.0020323223301279506,
+            "mean_energy_weight": -0.28758586943121833
+          }
+        ],
+        "gate_sham": [
+          {
+            "tick": 1000,
+            "energy": 0.06529897203365052,
+            "floor": 0.21,
+            "resource": 0.4461227063503555,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.1578827123353358
+          },
+          {
+            "tick": 2000,
+            "energy": 0.026004885708634014,
+            "floor": 0.32,
+            "resource": 0.4246011323465098,
+            "harvest": 0.46,
+            "raw_tail": null,
+            "mean_energy_weight": -0.19172299202962834
+          },
+          {
+            "tick": 3000,
+            "energy": 0.0400643466315834,
+            "floor": 0.2,
+            "resource": 0.42287972548543856,
+            "harvest": 0.48,
+            "raw_tail": -0.0016952588111702714,
+            "mean_energy_weight": -0.254762747804012
+          }
+        ],
+        "gate_recovery": [
+          {
+            "tick": 1000,
+            "energy": 0.040989730472723876,
+            "floor": 0.22,
+            "resource": 0.431067592758543,
+            "harvest": 0.4,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2705884607127882
+          },
+          {
+            "tick": 2000,
+            "energy": 0.02476321543544143,
+            "floor": 0.35,
+            "resource": 0.41475398886742965,
+            "harvest": 0.47,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2573237422465275
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03978456797065364,
+            "floor": 0.24,
+            "resource": 0.4286387295729221,
+            "harvest": 0.45,
+            "raw_tail": -0.0019162975562579919,
+            "mean_energy_weight": -0.2573237422465275
+          }
+        ],
+        "frozen_all": [
+          {
+            "tick": 1000,
+            "energy": 0.06529897203365052,
+            "floor": 0.21,
+            "resource": 0.4461227063503555,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.1578827123353358
+          },
+          {
+            "tick": 2000,
+            "energy": 0.02771432200367343,
+            "floor": 0.31,
+            "resource": 0.4274862184366508,
+            "harvest": 0.47,
+            "raw_tail": null,
+            "mean_energy_weight": -0.1578827123353358
+          },
+          {
+            "tick": 3000,
+            "energy": 0.04652549157778504,
+            "floor": 0.21,
+            "resource": 0.43485347336567787,
+            "harvest": 0.46,
+            "raw_tail": -0.0015405344796594167,
+            "mean_energy_weight": -0.1578827123353358
+          }
+        ],
+        "manual_reverse": [
+          {
+            "tick": 1000,
+            "energy": 0.6265898217395395,
+            "floor": 0.0,
+            "resource": 0.4841113644575652,
+            "harvest": 0.35,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 2000,
+            "energy": 0.08075660104684196,
+            "floor": 0.27,
+            "resource": 0.5057697372659647,
+            "harvest": 0.33,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 3000,
+            "energy": 0.26822632499718785,
+            "floor": 0.08,
+            "resource": 0.5041910531814843,
+            "harvest": 0.36,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          }
+        ]
+      },
+      "final": {
+        "online_all": {
+          "energy": 0.039377665779429354,
+          "floor": 0.21,
+          "resource": 0.4210454954083827,
+          "harvest": 0.49,
+          "raw_tail": -0.0018899812300263812,
+          "mean_energy_weight": -0.2791739637192604
+        },
+        "gate_scarcity": {
+          "energy": 0.03858949520047292,
+          "floor": 0.24,
+          "resource": 0.42256004341741,
+          "harvest": 0.47,
+          "raw_tail": -0.0020323223301279506,
+          "mean_energy_weight": -0.28758586943121833
+        },
+        "gate_sham": {
+          "energy": 0.0400643466315834,
+          "floor": 0.2,
+          "resource": 0.42287972548543856,
+          "harvest": 0.48,
+          "raw_tail": -0.0016952588111702714,
+          "mean_energy_weight": -0.254762747804012
+        },
+        "gate_recovery": {
+          "energy": 0.03978456797065364,
+          "floor": 0.24,
+          "resource": 0.4286387295729221,
+          "harvest": 0.45,
+          "raw_tail": -0.0019162975562579919,
+          "mean_energy_weight": -0.2573237422465275
+        },
+        "frozen_all": {
+          "energy": 0.04652549157778504,
+          "floor": 0.21,
+          "resource": 0.43485347336567787,
+          "harvest": 0.46,
+          "raw_tail": -0.0015405344796594167,
+          "mean_energy_weight": -0.1578827123353358
+        },
+        "manual_reverse": {
+          "energy": 0.26822632499718785,
+          "floor": 0.08,
+          "resource": 0.5041910531814843,
+          "harvest": 0.36,
+          "raw_tail": null,
+          "mean_energy_weight": null
+        }
+      },
+      "deterministic_theta_eval": {
+        "online_all": {
+          "stable": {
+            "energy": 0.4391468731178737,
+            "floor": 0.02,
+            "resource": 0.4650955794054512,
+            "harvest": 0.36,
+            "raw_tail": -0.00014786862404492216,
+            "mean_energy_weight": -0.2791739637192604
+          },
+          "mild": {
+            "energy": 0.023102930513456812,
+            "floor": 0.3,
+            "resource": 0.43205904692083213,
+            "harvest": 0.42,
+            "raw_tail": -0.0010848719201306174,
+            "mean_energy_weight": -0.2791739637192604
+          }
+        },
+        "gate_scarcity": {
+          "stable": {
+            "energy": 0.5084458224151898,
+            "floor": 0.02,
+            "resource": 0.47119271980682725,
+            "harvest": 0.36,
+            "raw_tail": -7.637411057794276e-05,
+            "mean_energy_weight": -0.28758586943121833
+          },
+          "mild": {
+            "energy": 0.026085158978602876,
+            "floor": 0.36,
+            "resource": 0.43520113191459614,
+            "harvest": 0.33,
+            "raw_tail": -0.0013427015328433148,
+            "mean_energy_weight": -0.28758586943121833
+          }
+        },
+        "gate_sham": {
+          "stable": {
+            "energy": 0.50651362103751,
+            "floor": 0.01,
+            "resource": 0.47166185089312007,
+            "harvest": 0.39,
+            "raw_tail": -5.3569975461933337e-05,
+            "mean_energy_weight": -0.254762747804012
+          },
+          "mild": {
+            "energy": 0.04116878599590271,
+            "floor": 0.19,
+            "resource": 0.43584821186807615,
+            "harvest": 0.43,
+            "raw_tail": -0.000854864198579983,
+            "mean_energy_weight": -0.254762747804012
+          }
+        },
+        "gate_recovery": {
+          "stable": {
+            "energy": 0.5518639149188541,
+            "floor": 0.01,
+            "resource": 0.47928681578648524,
+            "harvest": 0.35,
+            "raw_tail": -3.6907386533790616e-05,
+            "mean_energy_weight": -0.2573237422465275
+          },
+          "mild": {
+            "energy": 0.057911740745106854,
+            "floor": 0.26,
+            "resource": 0.4364674249571804,
+            "harvest": 0.45,
+            "raw_tail": -0.0012561271725428443,
+            "mean_energy_weight": -0.2573237422465275
+          }
+        },
+        "frozen_all": {
+          "stable": {
+            "energy": 0.6654218050761405,
+            "floor": 0.01,
+            "resource": 0.48460415096289106,
+            "harvest": 0.39,
+            "raw_tail": -5.453946378548242e-06,
+            "mean_energy_weight": -0.1578827123353358
+          },
+          "mild": {
+            "energy": 0.2323268864704117,
+            "floor": 0.1,
+            "resource": 0.4665413493352335,
+            "harvest": 0.43,
+            "raw_tail": -0.0003967038189683153,
+            "mean_energy_weight": -0.1578827123353358
+          }
+        }
+      }
+    },
+    {
+      "seed": 10207,
+      "matched_initial": true,
+      "checkpoints": {
+        "online_all": [
+          {
+            "tick": 1000,
+            "energy": 0.04015527763381775,
+            "floor": 0.18,
+            "resource": 0.4287093868655096,
+            "harvest": 0.43,
+            "raw_tail": null,
+            "mean_energy_weight": -0.24213947593050056
+          },
+          {
+            "tick": 2000,
+            "energy": 0.02363620964128527,
+            "floor": 0.36,
+            "resource": 0.4207134396356572,
+            "harvest": 0.34,
+            "raw_tail": null,
+            "mean_energy_weight": -0.24794933702976502
+          },
+          {
+            "tick": 3000,
+            "energy": 0.037716527854647915,
+            "floor": 0.2,
+            "resource": 0.42414260877949744,
+            "harvest": 0.43,
+            "raw_tail": -0.0017743689285475094,
+            "mean_energy_weight": -0.2783119737479256
+          }
+        ],
+        "gate_scarcity": [
+          {
+            "tick": 1000,
+            "energy": 0.04015527763381775,
+            "floor": 0.18,
+            "resource": 0.4287093868655096,
+            "harvest": 0.43,
+            "raw_tail": null,
+            "mean_energy_weight": -0.24213947593050056
+          },
+          {
+            "tick": 2000,
+            "energy": 0.02592127825134821,
+            "floor": 0.33,
+            "resource": 0.41977454796667174,
+            "harvest": 0.34,
+            "raw_tail": null,
+            "mean_energy_weight": -0.24213947593050056
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03955061631613955,
+            "floor": 0.18,
+            "resource": 0.4259817361533402,
+            "harvest": 0.43,
+            "raw_tail": -0.001849407189060304,
+            "mean_energy_weight": -0.2752431474752726
+          }
+        ],
+        "gate_sham": [
+          {
+            "tick": 1000,
+            "energy": 0.06544173947715319,
+            "floor": 0.18,
+            "resource": 0.43620806573091087,
+            "harvest": 0.43,
+            "raw_tail": null,
+            "mean_energy_weight": -0.16699047552509394
+          },
+          {
+            "tick": 2000,
+            "energy": 0.027547804890191815,
+            "floor": 0.28,
+            "resource": 0.421509238117341,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.218378909568621
+          },
+          {
+            "tick": 3000,
+            "energy": 0.04053291506111544,
+            "floor": 0.14,
+            "resource": 0.4256565378595759,
+            "harvest": 0.42,
+            "raw_tail": -0.001665741268858826,
+            "mean_energy_weight": -0.27410208512250994
+          }
+        ],
+        "gate_recovery": [
+          {
+            "tick": 1000,
+            "energy": 0.04015527763381775,
+            "floor": 0.18,
+            "resource": 0.4287093868655096,
+            "harvest": 0.43,
+            "raw_tail": null,
+            "mean_energy_weight": -0.24213947593050056
+          },
+          {
+            "tick": 2000,
+            "energy": 0.02363620964128527,
+            "floor": 0.36,
+            "resource": 0.4207134396356572,
+            "harvest": 0.34,
+            "raw_tail": null,
+            "mean_energy_weight": -0.24794933702976502
+          },
+          {
+            "tick": 3000,
+            "energy": 0.040105002260354426,
+            "floor": 0.18,
+            "resource": 0.4281718283003325,
+            "harvest": 0.41,
+            "raw_tail": -0.0018200509674070999,
+            "mean_energy_weight": -0.24794933702976502
+          }
+        ],
+        "frozen_all": [
+          {
+            "tick": 1000,
+            "energy": 0.06544173947715319,
+            "floor": 0.18,
+            "resource": 0.43620806573091087,
+            "harvest": 0.43,
+            "raw_tail": null,
+            "mean_energy_weight": -0.16699047552509394
+          },
+          {
+            "tick": 2000,
+            "energy": 0.029054737832029214,
+            "floor": 0.3,
+            "resource": 0.42949247733063833,
+            "harvest": 0.35,
+            "raw_tail": null,
+            "mean_energy_weight": -0.16699047552509394
+          },
+          {
+            "tick": 3000,
+            "energy": 0.04993305794745691,
+            "floor": 0.13,
+            "resource": 0.4381264002154404,
+            "harvest": 0.39,
+            "raw_tail": -0.0014113471761879176,
+            "mean_energy_weight": -0.16699047552509394
+          }
+        ],
+        "manual_reverse": [
+          {
+            "tick": 1000,
+            "energy": 0.6105283505890364,
+            "floor": 0.0,
+            "resource": 0.4777934647629359,
+            "harvest": 0.4,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 2000,
+            "energy": 0.08841397126905598,
+            "floor": 0.27,
+            "resource": 0.5070397780809384,
+            "harvest": 0.28,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 3000,
+            "energy": 0.3251463992453947,
+            "floor": 0.08,
+            "resource": 0.5101840232373465,
+            "harvest": 0.25,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          }
+        ]
+      },
+      "final": {
+        "online_all": {
+          "energy": 0.037716527854647915,
+          "floor": 0.2,
+          "resource": 0.42414260877949744,
+          "harvest": 0.43,
+          "raw_tail": -0.0017743689285475094,
+          "mean_energy_weight": -0.2783119737479256
+        },
+        "gate_scarcity": {
+          "energy": 0.03955061631613955,
+          "floor": 0.18,
+          "resource": 0.4259817361533402,
+          "harvest": 0.43,
+          "raw_tail": -0.001849407189060304,
+          "mean_energy_weight": -0.2752431474752726
+        },
+        "gate_sham": {
+          "energy": 0.04053291506111544,
+          "floor": 0.14,
+          "resource": 0.4256565378595759,
+          "harvest": 0.42,
+          "raw_tail": -0.001665741268858826,
+          "mean_energy_weight": -0.27410208512250994
+        },
+        "gate_recovery": {
+          "energy": 0.040105002260354426,
+          "floor": 0.18,
+          "resource": 0.4281718283003325,
+          "harvest": 0.41,
+          "raw_tail": -0.0018200509674070999,
+          "mean_energy_weight": -0.24794933702976502
+        },
+        "frozen_all": {
+          "energy": 0.04993305794745691,
+          "floor": 0.13,
+          "resource": 0.4381264002154404,
+          "harvest": 0.39,
+          "raw_tail": -0.0014113471761879176,
+          "mean_energy_weight": -0.16699047552509394
+        },
+        "manual_reverse": {
+          "energy": 0.3251463992453947,
+          "floor": 0.08,
+          "resource": 0.5101840232373465,
+          "harvest": 0.25,
+          "raw_tail": null,
+          "mean_energy_weight": null
+        }
+      },
+      "deterministic_theta_eval": {
+        "online_all": {
+          "stable": {
+            "energy": 0.49924505119507956,
+            "floor": 0.02,
+            "resource": 0.4746900730842822,
+            "harvest": 0.34,
+            "raw_tail": -7.308524679279034e-05,
+            "mean_energy_weight": -0.2783119737479256
+          },
+          "mild": {
+            "energy": 0.03301947770954522,
+            "floor": 0.3,
+            "resource": 0.4344176991926529,
+            "harvest": 0.4,
+            "raw_tail": -0.0010625601924033022,
+            "mean_energy_weight": -0.2783119737479256
+          }
+        },
+        "gate_scarcity": {
+          "stable": {
+            "energy": 0.5931258819063744,
+            "floor": 0.02,
+            "resource": 0.48134055636036616,
+            "harvest": 0.31,
+            "raw_tail": -4.005777195121938e-05,
+            "mean_energy_weight": -0.2752431474752726
+          },
+          "mild": {
+            "energy": 0.07329716299712083,
+            "floor": 0.3,
+            "resource": 0.44105056416114374,
+            "harvest": 0.42,
+            "raw_tail": -0.00119146344997685,
+            "mean_energy_weight": -0.2752431474752726
+          }
+        },
+        "gate_sham": {
+          "stable": {
+            "energy": 0.5916221907365348,
+            "floor": 0.01,
+            "resource": 0.4810503689750105,
+            "harvest": 0.34,
+            "raw_tail": -7.728033635085866e-06,
+            "mean_energy_weight": -0.27410208512250994
+          },
+          "mild": {
+            "energy": 0.038320600850010364,
+            "floor": 0.29,
+            "resource": 0.44378386320477226,
+            "harvest": 0.31,
+            "raw_tail": -0.0007853292357082603,
+            "mean_energy_weight": -0.27410208512250994
+          }
+        },
+        "gate_recovery": {
+          "stable": {
+            "energy": 0.6031175731474453,
+            "floor": 0.01,
+            "resource": 0.48247457390260223,
+            "harvest": 0.35,
+            "raw_tail": -2.6980208371765052e-05,
+            "mean_energy_weight": -0.24794933702976502
+          },
+          "mild": {
+            "energy": 0.10240889926109709,
+            "floor": 0.21,
+            "resource": 0.44001870332368953,
+            "harvest": 0.43,
+            "raw_tail": -0.0011475072428687582,
+            "mean_energy_weight": -0.24794933702976502
+          }
+        },
+        "frozen_all": {
+          "stable": {
+            "energy": 0.671990551331806,
+            "floor": 0.01,
+            "resource": 0.4845870089568924,
+            "harvest": 0.37,
+            "raw_tail": -1.3031610008716211e-05,
+            "mean_energy_weight": -0.16699047552509394
+          },
+          "mild": {
+            "energy": 0.1856222147107447,
+            "floor": 0.15,
+            "resource": 0.46489640369891844,
+            "harvest": 0.43,
+            "raw_tail": -0.0004279571016132726,
+            "mean_energy_weight": -0.16699047552509394
+          }
+        }
+      }
+    },
+    {
+      "seed": 10208,
+      "matched_initial": true,
+      "checkpoints": {
+        "online_all": [
+          {
+            "tick": 1000,
+            "energy": 0.04394137404409494,
+            "floor": 0.22,
+            "resource": 0.43112927026759906,
+            "harvest": 0.4,
+            "raw_tail": null,
+            "mean_energy_weight": -0.24008843983098957
+          },
+          {
+            "tick": 2000,
+            "energy": 0.0281413964939706,
+            "floor": 0.31,
+            "resource": 0.41705395222104513,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.231733341687518
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03399593900979434,
+            "floor": 0.24,
+            "resource": 0.4313424928990041,
+            "harvest": 0.42,
+            "raw_tail": -0.0017952276936090753,
+            "mean_energy_weight": -0.2636387432181411
+          }
+        ],
+        "gate_scarcity": [
+          {
+            "tick": 1000,
+            "energy": 0.04394137404409494,
+            "floor": 0.22,
+            "resource": 0.43112927026759906,
+            "harvest": 0.4,
+            "raw_tail": null,
+            "mean_energy_weight": -0.24008843983098957
+          },
+          {
+            "tick": 2000,
+            "energy": 0.027922886331588508,
+            "floor": 0.3,
+            "resource": 0.4122262277860838,
+            "harvest": 0.39,
+            "raw_tail": null,
+            "mean_energy_weight": -0.24008843983098957
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03514888253318355,
+            "floor": 0.2,
+            "resource": 0.42885914354203225,
+            "harvest": 0.46,
+            "raw_tail": -0.001912570961000417,
+            "mean_energy_weight": -0.2717667228329057
+          }
+        ],
+        "gate_sham": [
+          {
+            "tick": 1000,
+            "energy": 0.07533834538486507,
+            "floor": 0.18,
+            "resource": 0.4395184854792674,
+            "harvest": 0.41,
+            "raw_tail": null,
+            "mean_energy_weight": -0.16129369798522067
+          },
+          {
+            "tick": 2000,
+            "energy": 0.03007193150749381,
+            "floor": 0.26,
+            "resource": 0.42355973244474215,
+            "harvest": 0.37,
+            "raw_tail": null,
+            "mean_energy_weight": -0.18358354117525025
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03733553841093157,
+            "floor": 0.16,
+            "resource": 0.4303887386503629,
+            "harvest": 0.43,
+            "raw_tail": -0.001653972482231961,
+            "mean_energy_weight": -0.25013247583631487
+          }
+        ],
+        "gate_recovery": [
+          {
+            "tick": 1000,
+            "energy": 0.04394137404409494,
+            "floor": 0.22,
+            "resource": 0.43112927026759906,
+            "harvest": 0.4,
+            "raw_tail": null,
+            "mean_energy_weight": -0.24008843983098957
+          },
+          {
+            "tick": 2000,
+            "energy": 0.0281413964939706,
+            "floor": 0.31,
+            "resource": 0.41705395222104513,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.231733341687518
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03751737836207734,
+            "floor": 0.19,
+            "resource": 0.43188416248100864,
+            "harvest": 0.45,
+            "raw_tail": -0.001781206166409985,
+            "mean_energy_weight": -0.231733341687518
+          }
+        ],
+        "frozen_all": [
+          {
+            "tick": 1000,
+            "energy": 0.07533834538486507,
+            "floor": 0.18,
+            "resource": 0.4395184854792674,
+            "harvest": 0.41,
+            "raw_tail": null,
+            "mean_energy_weight": -0.16129369798522067
+          },
+          {
+            "tick": 2000,
+            "energy": 0.031355972503332226,
+            "floor": 0.24,
+            "resource": 0.42834442215558804,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.16129369798522067
+          },
+          {
+            "tick": 3000,
+            "energy": 0.0457099432598338,
+            "floor": 0.15,
+            "resource": 0.44326241521956866,
+            "harvest": 0.38,
+            "raw_tail": -0.001539388250878266,
+            "mean_energy_weight": -0.16129369798522067
+          }
+        ],
+        "manual_reverse": [
+          {
+            "tick": 1000,
+            "energy": 0.5982906301478166,
+            "floor": 0.0,
+            "resource": 0.48823125315570676,
+            "harvest": 0.31,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 2000,
+            "energy": 0.08195545611860008,
+            "floor": 0.23,
+            "resource": 0.5015467054978412,
+            "harvest": 0.36,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 3000,
+            "energy": 0.27676062707092525,
+            "floor": 0.16,
+            "resource": 0.5140656092947624,
+            "harvest": 0.23,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          }
+        ]
+      },
+      "final": {
+        "online_all": {
+          "energy": 0.03399593900979434,
+          "floor": 0.24,
+          "resource": 0.4313424928990041,
+          "harvest": 0.42,
+          "raw_tail": -0.0017952276936090753,
+          "mean_energy_weight": -0.2636387432181411
+        },
+        "gate_scarcity": {
+          "energy": 0.03514888253318355,
+          "floor": 0.2,
+          "resource": 0.42885914354203225,
+          "harvest": 0.46,
+          "raw_tail": -0.001912570961000417,
+          "mean_energy_weight": -0.2717667228329057
+        },
+        "gate_sham": {
+          "energy": 0.03733553841093157,
+          "floor": 0.16,
+          "resource": 0.4303887386503629,
+          "harvest": 0.43,
+          "raw_tail": -0.001653972482231961,
+          "mean_energy_weight": -0.25013247583631487
+        },
+        "gate_recovery": {
+          "energy": 0.03751737836207734,
+          "floor": 0.19,
+          "resource": 0.43188416248100864,
+          "harvest": 0.45,
+          "raw_tail": -0.001781206166409985,
+          "mean_energy_weight": -0.231733341687518
+        },
+        "frozen_all": {
+          "energy": 0.0457099432598338,
+          "floor": 0.15,
+          "resource": 0.44326241521956866,
+          "harvest": 0.38,
+          "raw_tail": -0.001539388250878266,
+          "mean_energy_weight": -0.16129369798522067
+        },
+        "manual_reverse": {
+          "energy": 0.27676062707092525,
+          "floor": 0.16,
+          "resource": 0.5140656092947624,
+          "harvest": 0.23,
+          "raw_tail": null,
+          "mean_energy_weight": null
+        }
+      },
+      "deterministic_theta_eval": {
+        "online_all": {
+          "stable": {
+            "energy": 0.5396426754551126,
+            "floor": 0.03,
+            "resource": 0.47057539031136464,
+            "harvest": 0.4,
+            "raw_tail": -7.945900527933323e-05,
+            "mean_energy_weight": -0.2636387432181411
+          },
+          "mild": {
+            "energy": 0.031508735341219875,
+            "floor": 0.28,
+            "resource": 0.43294188291249747,
+            "harvest": 0.46,
+            "raw_tail": -0.000986715551650788,
+            "mean_energy_weight": -0.2636387432181411
+          }
+        },
+        "gate_scarcity": {
+          "stable": {
+            "energy": 0.6112416686832909,
+            "floor": 0.01,
+            "resource": 0.4822734992090741,
+            "harvest": 0.27,
+            "raw_tail": -6.423784270545487e-05,
+            "mean_energy_weight": -0.2717667228329057
+          },
+          "mild": {
+            "energy": 0.08091730565339914,
+            "floor": 0.31,
+            "resource": 0.43706653347583263,
+            "harvest": 0.48,
+            "raw_tail": -0.0010109806864158537,
+            "mean_energy_weight": -0.2717667228329057
+          }
+        },
+        "gate_sham": {
+          "stable": {
+            "energy": 0.5347608159025731,
+            "floor": 0.03,
+            "resource": 0.4760457002315994,
+            "harvest": 0.35,
+            "raw_tail": -3.755453666520773e-05,
+            "mean_energy_weight": -0.25013247583631487
+          },
+          "mild": {
+            "energy": 0.06868638716314783,
+            "floor": 0.27,
+            "resource": 0.4436908029591236,
+            "harvest": 0.4,
+            "raw_tail": -0.0007239996071528818,
+            "mean_energy_weight": -0.25013247583631487
+          }
+        },
+        "gate_recovery": {
+          "stable": {
+            "energy": 0.6200373593758071,
+            "floor": 0.05,
+            "resource": 0.4856125748971204,
+            "harvest": 0.28,
+            "raw_tail": -9.668027597284866e-05,
+            "mean_energy_weight": -0.231733341687518
+          },
+          "mild": {
+            "energy": 0.09676425038105217,
+            "floor": 0.24,
+            "resource": 0.44653612505175444,
+            "harvest": 0.37,
+            "raw_tail": -0.0009951429780012855,
+            "mean_energy_weight": -0.231733341687518
+          }
+        },
+        "frozen_all": {
+          "stable": {
+            "energy": 0.6831259784715601,
+            "floor": 0.04,
+            "resource": 0.48380431621831255,
+            "harvest": 0.4,
+            "raw_tail": -4.6779166863469196e-05,
+            "mean_energy_weight": -0.16129369798522067
+          },
+          "mild": {
+            "energy": 0.24172081222411224,
+            "floor": 0.21,
+            "resource": 0.47397279900586403,
+            "harvest": 0.32,
+            "raw_tail": -0.0005326543366118049,
+            "mean_energy_weight": -0.16129369798522067
+          }
+        }
+      }
+    },
+    {
+      "seed": 10209,
+      "matched_initial": true,
+      "checkpoints": {
+        "online_all": [
+          {
+            "tick": 1000,
+            "energy": 0.054898460893925145,
+            "floor": 0.22,
+            "resource": 0.4304701822508104,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2108068943153555
+          },
+          {
+            "tick": 2000,
+            "energy": 0.024143918362923796,
+            "floor": 0.4,
+            "resource": 0.4257633197592334,
+            "harvest": 0.39,
+            "raw_tail": null,
+            "mean_energy_weight": -0.21047790393615554
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03863684026166932,
+            "floor": 0.16,
+            "resource": 0.4193803936689758,
+            "harvest": 0.45,
+            "raw_tail": -0.001775927414159634,
+            "mean_energy_weight": -0.257584495544674
+          }
+        ],
+        "gate_scarcity": [
+          {
+            "tick": 1000,
+            "energy": 0.054898460893925145,
+            "floor": 0.22,
+            "resource": 0.4304701822508104,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2108068943153555
+          },
+          {
+            "tick": 2000,
+            "energy": 0.02317453463656528,
+            "floor": 0.43,
+            "resource": 0.4259027719468406,
+            "harvest": 0.37,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2108068943153555
+          },
+          {
+            "tick": 3000,
+            "energy": 0.04170670490623774,
+            "floor": 0.14,
+            "resource": 0.4208862222876877,
+            "harvest": 0.44,
+            "raw_tail": -0.0019077830320051827,
+            "mean_energy_weight": -0.2616997343674335
+          }
+        ],
+        "gate_sham": [
+          {
+            "tick": 1000,
+            "energy": 0.05990985504999151,
+            "floor": 0.13,
+            "resource": 0.43458889459780586,
+            "harvest": 0.41,
+            "raw_tail": null,
+            "mean_energy_weight": -0.1441126781193079
+          },
+          {
+            "tick": 2000,
+            "energy": 0.027840167648112257,
+            "floor": 0.33,
+            "resource": 0.43140995568106716,
+            "harvest": 0.4,
+            "raw_tail": null,
+            "mean_energy_weight": -0.16898954373435351
+          },
+          {
+            "tick": 3000,
+            "energy": 0.04184019989189441,
+            "floor": 0.13,
+            "resource": 0.42191474004726076,
+            "harvest": 0.46,
+            "raw_tail": -0.0016056516669078866,
+            "mean_energy_weight": -0.2473141683854611
+          }
+        ],
+        "gate_recovery": [
+          {
+            "tick": 1000,
+            "energy": 0.054898460893925145,
+            "floor": 0.22,
+            "resource": 0.4304701822508104,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2108068943153555
+          },
+          {
+            "tick": 2000,
+            "energy": 0.024143918362923796,
+            "floor": 0.4,
+            "resource": 0.4257633197592334,
+            "harvest": 0.39,
+            "raw_tail": null,
+            "mean_energy_weight": -0.21047790393615554
+          },
+          {
+            "tick": 3000,
+            "energy": 0.04029893596762634,
+            "floor": 0.14,
+            "resource": 0.4262561518951409,
+            "harvest": 0.44,
+            "raw_tail": -0.0017993787614297334,
+            "mean_energy_weight": -0.21047790393615554
+          }
+        ],
+        "frozen_all": [
+          {
+            "tick": 1000,
+            "energy": 0.05990985504999151,
+            "floor": 0.13,
+            "resource": 0.43458889459780586,
+            "harvest": 0.41,
+            "raw_tail": null,
+            "mean_energy_weight": -0.1441126781193079
+          },
+          {
+            "tick": 2000,
+            "energy": 0.028283679921935728,
+            "floor": 0.31,
+            "resource": 0.433549638371735,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.1441126781193079
+          },
+          {
+            "tick": 3000,
+            "energy": 0.05167028609345268,
+            "floor": 0.1,
+            "resource": 0.4319054326340633,
+            "harvest": 0.44,
+            "raw_tail": -0.0014331199543252309,
+            "mean_energy_weight": -0.1441126781193079
+          }
+        ],
+        "manual_reverse": [
+          {
+            "tick": 1000,
+            "energy": 0.625164515511507,
+            "floor": 0.0,
+            "resource": 0.48537755155893036,
+            "harvest": 0.32,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 2000,
+            "energy": 0.07550476571578148,
+            "floor": 0.26,
+            "resource": 0.507032676883959,
+            "harvest": 0.34,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 3000,
+            "energy": 0.2447765319452088,
+            "floor": 0.15,
+            "resource": 0.5135507521224203,
+            "harvest": 0.26,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          }
+        ]
+      },
+      "final": {
+        "online_all": {
+          "energy": 0.03863684026166932,
+          "floor": 0.16,
+          "resource": 0.4193803936689758,
+          "harvest": 0.45,
+          "raw_tail": -0.001775927414159634,
+          "mean_energy_weight": -0.257584495544674
+        },
+        "gate_scarcity": {
+          "energy": 0.04170670490623774,
+          "floor": 0.14,
+          "resource": 0.4208862222876877,
+          "harvest": 0.44,
+          "raw_tail": -0.0019077830320051827,
+          "mean_energy_weight": -0.2616997343674335
+        },
+        "gate_sham": {
+          "energy": 0.04184019989189441,
+          "floor": 0.13,
+          "resource": 0.42191474004726076,
+          "harvest": 0.46,
+          "raw_tail": -0.0016056516669078866,
+          "mean_energy_weight": -0.2473141683854611
+        },
+        "gate_recovery": {
+          "energy": 0.04029893596762634,
+          "floor": 0.14,
+          "resource": 0.4262561518951409,
+          "harvest": 0.44,
+          "raw_tail": -0.0017993787614297334,
+          "mean_energy_weight": -0.21047790393615554
+        },
+        "frozen_all": {
+          "energy": 0.05167028609345268,
+          "floor": 0.1,
+          "resource": 0.4319054326340633,
+          "harvest": 0.44,
+          "raw_tail": -0.0014331199543252309,
+          "mean_energy_weight": -0.1441126781193079
+        },
+        "manual_reverse": {
+          "energy": 0.2447765319452088,
+          "floor": 0.15,
+          "resource": 0.5135507521224203,
+          "harvest": 0.26,
+          "raw_tail": null,
+          "mean_energy_weight": null
+        }
+      },
+      "deterministic_theta_eval": {
+        "online_all": {
+          "stable": {
+            "energy": 0.5930631259433552,
+            "floor": 0.02,
+            "resource": 0.4827448255983517,
+            "harvest": 0.3,
+            "raw_tail": -2.191718309078663e-05,
+            "mean_energy_weight": -0.257584495544674
+          },
+          "mild": {
+            "energy": 0.08848609131578294,
+            "floor": 0.22,
+            "resource": 0.4388083296766255,
+            "harvest": 0.43,
+            "raw_tail": -0.0008959737612414319,
+            "mean_energy_weight": -0.257584495544674
+          }
+        },
+        "gate_scarcity": {
+          "stable": {
+            "energy": 0.6983292569279114,
+            "floor": 0.02,
+            "resource": 0.491442270732474,
+            "harvest": 0.33,
+            "raw_tail": -2.8929147602801536e-05,
+            "mean_energy_weight": -0.2616997343674335
+          },
+          "mild": {
+            "energy": 0.15099192407463063,
+            "floor": 0.17,
+            "resource": 0.4455262572186774,
+            "harvest": 0.39,
+            "raw_tail": -0.0011096001810416785,
+            "mean_energy_weight": -0.2616997343674335
+          }
+        },
+        "gate_sham": {
+          "stable": {
+            "energy": 0.5671246324056083,
+            "floor": 0.0,
+            "resource": 0.4760554568443677,
+            "harvest": 0.37,
+            "raw_tail": -1.1716400058305788e-06,
+            "mean_energy_weight": -0.2473141683854611
+          },
+          "mild": {
+            "energy": 0.05723947074571864,
+            "floor": 0.24,
+            "resource": 0.4458047477364667,
+            "harvest": 0.32,
+            "raw_tail": -0.0007034933794246131,
+            "mean_energy_weight": -0.2473141683854611
+          }
+        },
+        "gate_recovery": {
+          "stable": {
+            "energy": 0.7174578614531536,
+            "floor": 0.04,
+            "resource": 0.4916081220439541,
+            "harvest": 0.3,
+            "raw_tail": -3.326431033088902e-05,
+            "mean_energy_weight": -0.21047790393615554
+          },
+          "mild": {
+            "energy": 0.1987153528382047,
+            "floor": 0.21,
+            "resource": 0.45817539093421417,
+            "harvest": 0.4,
+            "raw_tail": -0.0009497243636564004,
+            "mean_energy_weight": -0.21047790393615554
+          }
+        },
+        "frozen_all": {
+          "stable": {
+            "energy": 0.674094107199224,
+            "floor": 0.0,
+            "resource": 0.48413459469179815,
+            "harvest": 0.37,
+            "raw_tail": -3.561176624345749e-06,
+            "mean_energy_weight": -0.1441126781193079
+          },
+          "mild": {
+            "energy": 0.2081740870757682,
+            "floor": 0.16,
+            "resource": 0.4690518609147676,
+            "harvest": 0.4,
+            "raw_tail": -0.0004333701586766965,
+            "mean_energy_weight": -0.1441126781193079
+          }
+        }
+      }
+    },
+    {
+      "seed": 10210,
+      "matched_initial": true,
+      "checkpoints": {
+        "online_all": [
+          {
+            "tick": 1000,
+            "energy": 0.03131938929119004,
+            "floor": 0.33,
+            "resource": 0.43070401315140144,
+            "harvest": 0.32,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2594595187663402
+          },
+          {
+            "tick": 2000,
+            "energy": 0.023866068823921168,
+            "floor": 0.35,
+            "resource": 0.41679474247105497,
+            "harvest": 0.39,
+            "raw_tail": null,
+            "mean_energy_weight": -0.24706070799026364
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03318259926572347,
+            "floor": 0.22,
+            "resource": 0.4241188851408909,
+            "harvest": 0.44,
+            "raw_tail": -0.0018240022971469723,
+            "mean_energy_weight": -0.27265060830963816
+          }
+        ],
+        "gate_scarcity": [
+          {
+            "tick": 1000,
+            "energy": 0.03131938929119004,
+            "floor": 0.33,
+            "resource": 0.43070401315140144,
+            "harvest": 0.32,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2594595187663402
+          },
+          {
+            "tick": 2000,
+            "energy": 0.02054518734234003,
+            "floor": 0.39,
+            "resource": 0.41937968605888754,
+            "harvest": 0.37,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2594595187663402
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03244900255240007,
+            "floor": 0.28,
+            "resource": 0.4255582955670084,
+            "harvest": 0.43,
+            "raw_tail": -0.001951394514543595,
+            "mean_energy_weight": -0.275436900680941
+          }
+        ],
+        "gate_sham": [
+          {
+            "tick": 1000,
+            "energy": 0.0687622622417442,
+            "floor": 0.21,
+            "resource": 0.44777127741484984,
+            "harvest": 0.29,
+            "raw_tail": null,
+            "mean_energy_weight": -0.14954442662344491
+          },
+          {
+            "tick": 2000,
+            "energy": 0.026381088266119294,
+            "floor": 0.32,
+            "resource": 0.42690157365968256,
+            "harvest": 0.36,
+            "raw_tail": null,
+            "mean_energy_weight": -0.19338462768403084
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03581945730564437,
+            "floor": 0.21,
+            "resource": 0.42783594626854055,
+            "harvest": 0.44,
+            "raw_tail": -0.0016411341692081885,
+            "mean_energy_weight": -0.25477489762015887
+          }
+        ],
+        "gate_recovery": [
+          {
+            "tick": 1000,
+            "energy": 0.03131938929119004,
+            "floor": 0.33,
+            "resource": 0.43070401315140144,
+            "harvest": 0.32,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2594595187663402
+          },
+          {
+            "tick": 2000,
+            "energy": 0.023866068823921168,
+            "floor": 0.35,
+            "resource": 0.41679474247105497,
+            "harvest": 0.39,
+            "raw_tail": null,
+            "mean_energy_weight": -0.24706070799026364
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03580275574191796,
+            "floor": 0.25,
+            "resource": 0.4244633237508297,
+            "harvest": 0.47,
+            "raw_tail": -0.001824776157849087,
+            "mean_energy_weight": -0.24706070799026364
+          }
+        ],
+        "frozen_all": [
+          {
+            "tick": 1000,
+            "energy": 0.0687622622417442,
+            "floor": 0.21,
+            "resource": 0.44777127741484984,
+            "harvest": 0.29,
+            "raw_tail": null,
+            "mean_energy_weight": -0.14954442662344491
+          },
+          {
+            "tick": 2000,
+            "energy": 0.028046691446630637,
+            "floor": 0.28,
+            "resource": 0.4347525023176053,
+            "harvest": 0.35,
+            "raw_tail": null,
+            "mean_energy_weight": -0.14954442662344491
+          },
+          {
+            "tick": 3000,
+            "energy": 0.046348627759679066,
+            "floor": 0.16,
+            "resource": 0.4401585213685938,
+            "harvest": 0.44,
+            "raw_tail": -0.0014291869469543104,
+            "mean_energy_weight": -0.14954442662344491
+          }
+        ],
+        "manual_reverse": [
+          {
+            "tick": 1000,
+            "energy": 0.6302997186190562,
+            "floor": 0.0,
+            "resource": 0.4847544764169259,
+            "harvest": 0.32,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 2000,
+            "energy": 0.0795363977281486,
+            "floor": 0.28,
+            "resource": 0.5067557645662198,
+            "harvest": 0.29,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 3000,
+            "energy": 0.29175684114710926,
+            "floor": 0.09,
+            "resource": 0.5052054705795141,
+            "harvest": 0.34,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          }
+        ]
+      },
+      "final": {
+        "online_all": {
+          "energy": 0.03318259926572347,
+          "floor": 0.22,
+          "resource": 0.4241188851408909,
+          "harvest": 0.44,
+          "raw_tail": -0.0018240022971469723,
+          "mean_energy_weight": -0.27265060830963816
+        },
+        "gate_scarcity": {
+          "energy": 0.03244900255240007,
+          "floor": 0.28,
+          "resource": 0.4255582955670084,
+          "harvest": 0.43,
+          "raw_tail": -0.001951394514543595,
+          "mean_energy_weight": -0.275436900680941
+        },
+        "gate_sham": {
+          "energy": 0.03581945730564437,
+          "floor": 0.21,
+          "resource": 0.42783594626854055,
+          "harvest": 0.44,
+          "raw_tail": -0.0016411341692081885,
+          "mean_energy_weight": -0.25477489762015887
+        },
+        "gate_recovery": {
+          "energy": 0.03580275574191796,
+          "floor": 0.25,
+          "resource": 0.4244633237508297,
+          "harvest": 0.47,
+          "raw_tail": -0.001824776157849087,
+          "mean_energy_weight": -0.24706070799026364
+        },
+        "frozen_all": {
+          "energy": 0.046348627759679066,
+          "floor": 0.16,
+          "resource": 0.4401585213685938,
+          "harvest": 0.44,
+          "raw_tail": -0.0014291869469543104,
+          "mean_energy_weight": -0.14954442662344491
+        },
+        "manual_reverse": {
+          "energy": 0.29175684114710926,
+          "floor": 0.09,
+          "resource": 0.5052054705795141,
+          "harvest": 0.34,
+          "raw_tail": null,
+          "mean_energy_weight": null
+        }
+      },
+      "deterministic_theta_eval": {
+        "online_all": {
+          "stable": {
+            "energy": 0.508033077818907,
+            "floor": 0.02,
+            "resource": 0.46822360184261086,
+            "harvest": 0.4,
+            "raw_tail": -8.70351771540828e-05,
+            "mean_energy_weight": -0.27265060830963816
+          },
+          "mild": {
+            "energy": 0.03594012208500545,
+            "floor": 0.29,
+            "resource": 0.4366656491358315,
+            "harvest": 0.35,
+            "raw_tail": -0.0009805657472968363,
+            "mean_energy_weight": -0.27265060830963816
+          }
+        },
+        "gate_scarcity": {
+          "stable": {
+            "energy": 0.5898122065017178,
+            "floor": 0.01,
+            "resource": 0.4805344872264965,
+            "harvest": 0.37,
+            "raw_tail": -3.491915854951228e-05,
+            "mean_energy_weight": -0.275436900680941
+          },
+          "mild": {
+            "energy": 0.046207173971846593,
+            "floor": 0.25,
+            "resource": 0.42910561659473045,
+            "harvest": 0.57,
+            "raw_tail": -0.001218264877386448,
+            "mean_energy_weight": -0.275436900680941
+          }
+        },
+        "gate_sham": {
+          "stable": {
+            "energy": 0.5485417194335833,
+            "floor": 0.0,
+            "resource": 0.4812093878859859,
+            "harvest": 0.29,
+            "raw_tail": -3.1724738184536504e-05,
+            "mean_energy_weight": -0.25477489762015887
+          },
+          "mild": {
+            "energy": 0.05576969843192483,
+            "floor": 0.17,
+            "resource": 0.4392254061013551,
+            "harvest": 0.45,
+            "raw_tail": -0.0007177211535639278,
+            "mean_energy_weight": -0.25477489762015887
+          }
+        },
+        "gate_recovery": {
+          "stable": {
+            "energy": 0.6080215907624842,
+            "floor": 0.01,
+            "resource": 0.4864850131971648,
+            "harvest": 0.23,
+            "raw_tail": -4.52717294623869e-05,
+            "mean_energy_weight": -0.24706070799026364
+          },
+          "mild": {
+            "energy": 0.06564807689123378,
+            "floor": 0.32,
+            "resource": 0.44282270271763713,
+            "harvest": 0.37,
+            "raw_tail": -0.0012008150938098083,
+            "mean_energy_weight": -0.24706070799026364
+          }
+        },
+        "frozen_all": {
+          "stable": {
+            "energy": 0.6504011213868334,
+            "floor": 0.01,
+            "resource": 0.4902568708948315,
+            "harvest": 0.28,
+            "raw_tail": -1.5598366557465305e-05,
+            "mean_energy_weight": -0.14954442662344491
+          },
+          "mild": {
+            "energy": 0.27457529127260755,
+            "floor": 0.18,
+            "resource": 0.47714783256445437,
+            "harvest": 0.34,
+            "raw_tail": -0.0003349735625067874,
+            "mean_energy_weight": -0.14954442662344491
+          }
+        }
+      }
+    },
+    {
+      "seed": 10211,
+      "matched_initial": true,
+      "checkpoints": {
+        "online_all": [
+          {
+            "tick": 1000,
+            "energy": 0.04108752849491868,
+            "floor": 0.29,
+            "resource": 0.4348051979352258,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2280877489732598
+          },
+          {
+            "tick": 2000,
+            "energy": 0.028051485331170745,
+            "floor": 0.27,
+            "resource": 0.41642308929371813,
+            "harvest": 0.47,
+            "raw_tail": null,
+            "mean_energy_weight": -0.24020965619450554
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03586286697791767,
+            "floor": 0.18,
+            "resource": 0.42680894404872755,
+            "harvest": 0.36,
+            "raw_tail": -0.0017943578402568794,
+            "mean_energy_weight": -0.2798539315884255
+          }
+        ],
+        "gate_scarcity": [
+          {
+            "tick": 1000,
+            "energy": 0.04108752849491868,
+            "floor": 0.29,
+            "resource": 0.4348051979352258,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2280877489732598
+          },
+          {
+            "tick": 2000,
+            "energy": 0.026946920730232228,
+            "floor": 0.27,
+            "resource": 0.4222354573684211,
+            "harvest": 0.43,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2280877489732598
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03683075730307849,
+            "floor": 0.18,
+            "resource": 0.42745261779782723,
+            "harvest": 0.38,
+            "raw_tail": -0.0018011909082005623,
+            "mean_energy_weight": -0.273225479840812
+          }
+        ],
+        "gate_sham": [
+          {
+            "tick": 1000,
+            "energy": 0.0797753712271363,
+            "floor": 0.24,
+            "resource": 0.4496983708732396,
+            "harvest": 0.34,
+            "raw_tail": null,
+            "mean_energy_weight": -0.1412312553056971
+          },
+          {
+            "tick": 2000,
+            "energy": 0.031176316460149338,
+            "floor": 0.2,
+            "resource": 0.42240350820770844,
+            "harvest": 0.45,
+            "raw_tail": null,
+            "mean_energy_weight": -0.18898068070737054
+          },
+          {
+            "tick": 3000,
+            "energy": 0.03781229579459077,
+            "floor": 0.17,
+            "resource": 0.43250425592383274,
+            "harvest": 0.36,
+            "raw_tail": -0.0016612885482080349,
+            "mean_energy_weight": -0.26777830068874064
+          }
+        ],
+        "gate_recovery": [
+          {
+            "tick": 1000,
+            "energy": 0.04108752849491868,
+            "floor": 0.29,
+            "resource": 0.4348051979352258,
+            "harvest": 0.38,
+            "raw_tail": null,
+            "mean_energy_weight": -0.2280877489732598
+          },
+          {
+            "tick": 2000,
+            "energy": 0.028051485331170745,
+            "floor": 0.27,
+            "resource": 0.41642308929371813,
+            "harvest": 0.47,
+            "raw_tail": null,
+            "mean_energy_weight": -0.24020965619450554
+          },
+          {
+            "tick": 3000,
+            "energy": 0.038317383929720575,
+            "floor": 0.17,
+            "resource": 0.4327422449744935,
+            "harvest": 0.39,
+            "raw_tail": -0.0018055183952067832,
+            "mean_energy_weight": -0.24020965619450554
+          }
+        ],
+        "frozen_all": [
+          {
+            "tick": 1000,
+            "energy": 0.0797753712271363,
+            "floor": 0.24,
+            "resource": 0.4496983708732396,
+            "harvest": 0.34,
+            "raw_tail": null,
+            "mean_energy_weight": -0.1412312553056971
+          },
+          {
+            "tick": 2000,
+            "energy": 0.03309332859381221,
+            "floor": 0.23,
+            "resource": 0.4294401344339353,
+            "harvest": 0.46,
+            "raw_tail": null,
+            "mean_energy_weight": -0.1412312553056971
+          },
+          {
+            "tick": 3000,
+            "energy": 0.05708062407397145,
+            "floor": 0.15,
+            "resource": 0.4441540362107878,
+            "harvest": 0.36,
+            "raw_tail": -0.0014100738936207386,
+            "mean_energy_weight": -0.1412312553056971
+          }
+        ],
+        "manual_reverse": [
+          {
+            "tick": 1000,
+            "energy": 0.6280777744243067,
+            "floor": 0.0,
+            "resource": 0.4840625378318741,
+            "harvest": 0.35,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 2000,
+            "energy": 0.08704182041684966,
+            "floor": 0.29,
+            "resource": 0.5049377342221423,
+            "harvest": 0.3,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          },
+          {
+            "tick": 3000,
+            "energy": 0.3037186281611762,
+            "floor": 0.09,
+            "resource": 0.5055156883319857,
+            "harvest": 0.29,
+            "raw_tail": null,
+            "mean_energy_weight": null
+          }
+        ]
+      },
+      "final": {
+        "online_all": {
+          "energy": 0.03586286697791767,
+          "floor": 0.18,
+          "resource": 0.42680894404872755,
+          "harvest": 0.36,
+          "raw_tail": -0.0017943578402568794,
+          "mean_energy_weight": -0.2798539315884255
+        },
+        "gate_scarcity": {
+          "energy": 0.03683075730307849,
+          "floor": 0.18,
+          "resource": 0.42745261779782723,
+          "harvest": 0.38,
+          "raw_tail": -0.0018011909082005623,
+          "mean_energy_weight": -0.273225479840812
+        },
+        "gate_sham": {
+          "energy": 0.03781229579459077,
+          "floor": 0.17,
+          "resource": 0.43250425592383274,
+          "harvest": 0.36,
+          "raw_tail": -0.0016612885482080349,
+          "mean_energy_weight": -0.26777830068874064
+        },
+        "gate_recovery": {
+          "energy": 0.038317383929720575,
+          "floor": 0.17,
+          "resource": 0.4327422449744935,
+          "harvest": 0.39,
+          "raw_tail": -0.0018055183952067832,
+          "mean_energy_weight": -0.24020965619450554
+        },
+        "frozen_all": {
+          "energy": 0.05708062407397145,
+          "floor": 0.15,
+          "resource": 0.4441540362107878,
+          "harvest": 0.36,
+          "raw_tail": -0.0014100738936207386,
+          "mean_energy_weight": -0.1412312553056971
+        },
+        "manual_reverse": {
+          "energy": 0.3037186281611762,
+          "floor": 0.09,
+          "resource": 0.5055156883319857,
+          "harvest": 0.29,
+          "raw_tail": null,
+          "mean_energy_weight": null
+        }
+      },
+      "deterministic_theta_eval": {
+        "online_all": {
+          "stable": {
+            "energy": 0.5286580656352471,
+            "floor": 0.01,
+            "resource": 0.4729103143315941,
+            "harvest": 0.35,
+            "raw_tail": -5.315510435453131e-05,
+            "mean_energy_weight": -0.2798539315884255
+          },
+          "mild": {
+            "energy": 0.029584111202668604,
+            "floor": 0.29,
+            "resource": 0.43292129174993926,
+            "harvest": 0.45,
+            "raw_tail": -0.0010667551107891272,
+            "mean_energy_weight": -0.2798539315884255
+          }
+        },
+        "gate_scarcity": {
+          "stable": {
+            "energy": 0.5752538425936696,
+            "floor": 0.01,
+            "resource": 0.48024525076197633,
+            "harvest": 0.3,
+            "raw_tail": -3.7903022864299503e-05,
+            "mean_energy_weight": -0.273225479840812
+          },
+          "mild": {
+            "energy": 0.057244364795080466,
+            "floor": 0.28,
+            "resource": 0.438373438962828,
+            "harvest": 0.39,
+            "raw_tail": -0.0010414362222895765,
+            "mean_energy_weight": -0.273225479840812
+          }
+        },
+        "gate_sham": {
+          "stable": {
+            "energy": 0.5772826607562344,
+            "floor": 0.0,
+            "resource": 0.48040957372077664,
+            "harvest": 0.33,
+            "raw_tail": -2.5079378292719847e-05,
+            "mean_energy_weight": -0.26777830068874064
+          },
+          "mild": {
+            "energy": 0.052445862737226435,
+            "floor": 0.29,
+            "resource": 0.44108519737828056,
+            "harvest": 0.35,
+            "raw_tail": -0.0009122592601696745,
+            "mean_energy_weight": -0.26777830068874064
+          }
+        },
+        "gate_recovery": {
+          "stable": {
+            "energy": 0.6098207478616708,
+            "floor": 0.01,
+            "resource": 0.4836277625556835,
+            "harvest": 0.31,
+            "raw_tail": -2.625767150649849e-05,
+            "mean_energy_weight": -0.24020965619450554
+          },
+          "mild": {
+            "energy": 0.10055890358997098,
+            "floor": 0.23,
+            "resource": 0.4487457784639529,
+            "harvest": 0.38,
+            "raw_tail": -0.0009004049495648584,
+            "mean_energy_weight": -0.24020965619450554
+          }
+        },
+        "frozen_all": {
+          "stable": {
+            "energy": 0.6806918221190038,
+            "floor": 0.05,
+            "resource": 0.48522498951860493,
+            "harvest": 0.38,
+            "raw_tail": -3.9116240081750144e-05,
+            "mean_energy_weight": -0.1412312553056971
+          },
+          "mild": {
+            "energy": 0.27588792130330164,
+            "floor": 0.1,
+            "resource": 0.4802814180024481,
+            "harvest": 0.32,
+            "raw_tail": -0.00023956561486732938,
+            "mean_energy_weight": -0.1412312553056971
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "online_all": {
+      "energy": 0.03760706990026816,
+      "floor": 0.18916666666666668,
+      "resource": 0.42296387717048384,
+      "harvest": 0.4516666666666667,
+      "raw_tail": -0.0018029327955541227,
+      "deterministic_theta_eval": {
+        "stable": {
+          "energy": 0.532217778364814,
+          "floor": 0.019166666666666665,
+          "resource": 0.47343207524869574
+        },
+        "mild": {
+          "energy": 0.042824925588150466,
+          "floor": 0.2833333333333334,
+          "resource": 0.43543231554931455
+        }
+      },
+      "paired_minus_sham_energy": -0.00219495858810325,
+      "paired_vs_sham_wins": 1
+    },
+    "gate_scarcity": {
+      "energy": 0.03783632073238584,
+      "floor": 0.19583333333333333,
+      "resource": 0.4239219818149606,
+      "harvest": 0.45249999999999996,
+      "raw_tail": -0.0019054685318661737,
+      "deterministic_theta_eval": {
+        "stable": {
+          "energy": 0.6041592713583082,
+          "floor": 0.015833333333333335,
+          "resource": 0.48154569391163937
+        },
+        "mild": {
+          "energy": 0.07560705225227632,
+          "floor": 0.27499999999999997,
+          "resource": 0.43875775804441924
+        }
+      },
+      "paired_minus_sham_energy": -0.001965707755985566,
+      "paired_vs_sham_wins": 1
+    },
+    "gate_sham": {
+      "energy": 0.03980202848837141,
+      "floor": 0.165,
+      "resource": 0.4250944126369151,
+      "harvest": 0.4575,
+      "raw_tail": -0.001651287403268498,
+      "deterministic_theta_eval": {
+        "stable": {
+          "energy": 0.5602221463104674,
+          "floor": 0.005833333333333334,
+          "resource": 0.47813746580710137
+        },
+        "mild": {
+          "energy": 0.048152581182321456,
+          "floor": 0.2525,
+          "resource": 0.4410539749824564
+        }
+      },
+      "paired_minus_sham_energy": 0.0,
+      "paired_vs_sham_wins": 0
+    },
+    "gate_recovery": {
+      "energy": 0.040525685427468795,
+      "floor": 0.1758333333333333,
+      "resource": 0.4285335654550036,
+      "harvest": 0.44416666666666665,
+      "raw_tail": -0.0017867499884984914,
+      "deterministic_theta_eval": {
+        "stable": {
+          "energy": 0.624955373594463,
+          "floor": 0.01916666666666667,
+          "resource": 0.48522494857002796
+        },
+        "mild": {
+          "energy": 0.10506957510855837,
+          "floor": 0.24666666666666667,
+          "resource": 0.4479646414585161
+        }
+      },
+      "paired_minus_sham_energy": 0.0007236569390973903,
+      "paired_vs_sham_wins": 7
+    },
+    "frozen_all": {
+      "energy": 0.0492423536179507,
+      "floor": 0.145,
+      "resource": 0.43666674292004126,
+      "harvest": 0.4400000000000001,
+      "raw_tail": -0.0014786514593146405,
+      "deterministic_theta_eval": {
+        "stable": {
+          "energy": 0.6667813225382573,
+          "floor": 0.018333333333333337,
+          "resource": 0.4859518301725608
+        },
+        "mild": {
+          "energy": 0.21685465700845896,
+          "floor": 0.15083333333333335,
+          "resource": 0.46945302709171455
+        }
+      },
+      "paired_minus_sham_energy": 0.009440325129579298,
+      "paired_vs_sham_wins": 12
+    },
+    "manual_reverse": {
+      "energy": 0.27829625622059984,
+      "floor": 0.10750000000000003,
+      "resource": 0.5092133840038484,
+      "harvest": 0.2825
+    }
+  },
+  "independent_audit": {
+    "reserved_seeds_used": [
+      10200,
+      10201,
+      10202,
+      10203,
+      10204,
+      10205,
+      10206,
+      10207,
+      10208,
+      10209,
+      10210,
+      10211
+    ],
+    "untouched_primary_seeds": [
+      10100,
+      10101,
+      10102,
+      10103,
+      10104,
+      10105,
+      10106,
+      10107,
+      10108,
+      10109,
+      10110,
+      10111
+    ],
+    "protocol": "NEXT_GATE_PLAN.md",
+    "source_sha256": {
+      "NEXT_GATE_PLAN.md": "d390d0570407348c48b71d0595bc796d38bbcf29a8ff94616969e5047e3db9a5",
+      "NEXT_GATE_garden.py": "e9d51d0627d46f324a28603bd477e16e94c8647ed2f81f83c6b1c489100a386f",
+      "NEXT_GATE_probe.py": "69f190409821774ea1497afb410ea7cd8dd8713dbb03f8bcfc8ed96a6eed906b",
+      "NEXT_CREDIT_garden.py": "8ba9ce0d6b6a16626850d13c0babdde9072ea61652b1820e3281ec1559413d15",
+      "NEXT_WELFARE_garden.py": "74b2293fce28df08fd6c065f337161412ebcec2bf623dfd19316b01e5ebd62a6",
+      "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1",
+      "NEXT_GATE_AUDIT_probe.py": "d6aabb78fd2fcad4581552546e93cc1876e023ccf157efc097587a944ab8b6a2"
+    },
+    "outcome_selection": false,
+    "platform": {
+      "python": "3.12.14"
+    }
+  }
+}
