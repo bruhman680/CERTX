@@ -1,0 +1,2016 @@
+{
+  "design": {
+    "seed_start": 10800,
+    "seeds": 12,
+    "train": 1500,
+    "eval": 2000,
+    "output": "SOCIAL2_ADVICE_results.json"
+  },
+  "arms": [
+    "own",
+    "local_mean",
+    "random_neighbor",
+    "global_shuffle",
+    "stale_local"
+  ],
+  "summary": {
+    "0.06": {
+      "own": {
+        "500": {
+          "mean_energy": 0.08025714142492595,
+          "floor": 0.18692129629629628,
+          "bottom_decile": 4.894123896562371e-06,
+          "mean_resource": 0.4735228565624534
+        },
+        "2000": {
+          "mean_energy": 0.16574171008099256,
+          "floor": 0.13020833333333334,
+          "bottom_decile": 0.005006786302497934,
+          "mean_resource": 0.4755128088034817
+        }
+      },
+      "local_mean": {
+        "500": {
+          "mean_energy": 0.12616523000096613,
+          "floor": 0.09837962962962964,
+          "bottom_decile": 0.010943296657644423,
+          "mean_resource": 0.47296777028172565,
+          "wins_vs_own": 12,
+          "wins_vs_shuffle": 11
+        },
+        "2000": {
+          "mean_energy": 0.2019201817443064,
+          "floor": 0.07581018518518519,
+          "bottom_decile": 0.018902838147185023,
+          "mean_resource": 0.4761249334401143,
+          "wins_vs_own": 12,
+          "wins_vs_shuffle": 9
+        }
+      },
+      "random_neighbor": {
+        "500": {
+          "mean_energy": 0.1285670885415021,
+          "floor": 0.11805555555555558,
+          "bottom_decile": 0.008972055329496383,
+          "mean_resource": 0.4756729599343656,
+          "wins_vs_own": 12,
+          "wins_vs_shuffle": 10
+        },
+        "2000": {
+          "mean_energy": 0.19643612753828732,
+          "floor": 0.11053240740740743,
+          "bottom_decile": 0.010729154932107979,
+          "mean_resource": 0.4790034661544636,
+          "wins_vs_own": 11,
+          "wins_vs_shuffle": 7
+        }
+      },
+      "global_shuffle": {
+        "500": {
+          "mean_energy": 0.11057853025694231,
+          "floor": 0.10590277777777778,
+          "bottom_decile": 0.010143613119844094,
+          "mean_resource": 0.47472776139010825,
+          "wins_vs_own": 12
+        },
+        "2000": {
+          "mean_energy": 0.18823949287802458,
+          "floor": 0.078125,
+          "bottom_decile": 0.016211795237493876,
+          "mean_resource": 0.4748387875162023,
+          "wins_vs_own": 11
+        }
+      },
+      "stale_local": {
+        "500": {
+          "mean_energy": 0.14322136052614867,
+          "floor": 0.07986111111111112,
+          "bottom_decile": 0.01600640588505865,
+          "mean_resource": 0.47668361578921076,
+          "wins_vs_own": 12,
+          "wins_vs_shuffle": 12
+        },
+        "2000": {
+          "mean_energy": 0.21696737041080497,
+          "floor": 0.06018518518518518,
+          "bottom_decile": 0.02186456490905361,
+          "mean_resource": 0.4782989650040102,
+          "wins_vs_own": 12,
+          "wins_vs_shuffle": 12
+        }
+      }
+    },
+    "0.055": {
+      "own": {
+        "500": {
+          "mean_energy": 0.017171926782677368,
+          "floor": 0.33796296296296297,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4642115973649485
+        },
+        "2000": {
+          "mean_energy": 0.017347944957930187,
+          "floor": 0.33391203703703703,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46397625715803703
+        }
+      },
+      "local_mean": {
+        "500": {
+          "mean_energy": 0.02242035309162259,
+          "floor": 0.34027777777777773,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46943934694442047,
+          "wins_vs_own": 10,
+          "wins_vs_shuffle": 7
+        },
+        "2000": {
+          "mean_energy": 0.02214292668831933,
+          "floor": 0.33391203703703703,
+          "bottom_decile": 8.60397814461558e-06,
+          "mean_resource": 0.4704282680202055,
+          "wins_vs_own": 11,
+          "wins_vs_shuffle": 6
+        }
+      },
+      "random_neighbor": {
+        "500": {
+          "mean_energy": 0.020001662046127227,
+          "floor": 0.3159722222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4631415482111771,
+          "wins_vs_own": 10,
+          "wins_vs_shuffle": 6
+        },
+        "2000": {
+          "mean_energy": 0.020281221256991392,
+          "floor": 0.32175925925925924,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46309924651115625,
+          "wins_vs_own": 10,
+          "wins_vs_shuffle": 5
+        }
+      },
+      "global_shuffle": {
+        "500": {
+          "mean_energy": 0.020111835005589457,
+          "floor": 0.34548611111111116,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46498171178464737,
+          "wins_vs_own": 10
+        },
+        "2000": {
+          "mean_energy": 0.020671063216465432,
+          "floor": 0.30613425925925924,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46393196733382197,
+          "wins_vs_own": 11
+        }
+      },
+      "stale_local": {
+        "500": {
+          "mean_energy": 0.027283053162795293,
+          "floor": 0.3200231481481482,
+          "bottom_decile": 1.6371744808363554e-05,
+          "mean_resource": 0.472153625372879,
+          "wins_vs_own": 12,
+          "wins_vs_shuffle": 11
+        },
+        "2000": {
+          "mean_energy": 0.03028002655689081,
+          "floor": 0.2945601851851852,
+          "bottom_decile": 1.454981199372104e-05,
+          "mean_resource": 0.47070783769687113,
+          "wins_vs_own": 12,
+          "wins_vs_shuffle": 11
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "seed": 10800,
+      "regrowth": 0.06,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.07818030448478397,
+            "floor": 0.18055555555555555,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4731427495583026
+          },
+          "2000": {
+            "mean_energy": 0.16003121092328765,
+            "floor": 0.14583333333333334,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4769153556806529
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.11529516859243401,
+            "floor": 0.1111111111111111,
+            "bottom_decile": 0.008036804606769567,
+            "mean_resource": 0.4783752901552549
+          },
+          "2000": {
+            "mean_energy": 0.19780842057311887,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.015499915760539832,
+            "mean_resource": 0.47262902408896285
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.12142005175803464,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.014595892263700644,
+            "mean_resource": 0.4723100942468407
+          },
+          "2000": {
+            "mean_energy": 0.18934449307611942,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.012359310445794025,
+            "mean_resource": 0.4725192504012992
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.12264284263523212,
+            "floor": 0.1111111111111111,
+            "bottom_decile": 0.00874088451704006,
+            "mean_resource": 0.4733590671512431
+          },
+          "2000": {
+            "mean_energy": 0.19708068643223683,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.012161174110712476,
+            "mean_resource": 0.47384045752264214
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.13885038715984777,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.010171705970660678,
+            "mean_resource": 0.47899357083740085
+          },
+          "2000": {
+            "mean_energy": 0.20708031472037933,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.012814105296749097,
+            "mean_resource": 0.4798841184240299
+          }
+        }
+      }
+    },
+    {
+      "seed": 10800,
+      "regrowth": 0.055,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.017437266618199096,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4637229436809037
+          },
+          "2000": {
+            "mean_energy": 0.017908280920030707,
+            "floor": 0.3055555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4625941835985613
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.024764795616443167,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46335704683307216
+          },
+          "2000": {
+            "mean_energy": 0.02217446712194489,
+            "floor": 0.2638888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4675908231736287
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.025957703062518225,
+            "floor": 0.2152777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.453859254923841
+          },
+          "2000": {
+            "mean_energy": 0.026195450630878993,
+            "floor": 0.2222222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.45294733298657974
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.021974553828906642,
+            "floor": 0.2916666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.463683242073089
+          },
+          "2000": {
+            "mean_energy": 0.019139644468794917,
+            "floor": 0.3680555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46543122760077993
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.032062234256847635,
+            "floor": 0.22916666666666666,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.466370004196803
+          },
+          "2000": {
+            "mean_energy": 0.03662440089292289,
+            "floor": 0.14583333333333334,
+            "bottom_decile": 0.00017459774392465248,
+            "mean_resource": 0.4632036030104397
+          }
+        }
+      }
+    },
+    {
+      "seed": 10801,
+      "regrowth": 0.06,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.08424414631302557,
+            "floor": 0.18055555555555555,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47153311893822786
+          },
+          "2000": {
+            "mean_energy": 0.16691832361746264,
+            "floor": 0.125,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.475809749949774
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.1314179908728471,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.017069533430663034,
+            "mean_resource": 0.47171210128013386
+          },
+          "2000": {
+            "mean_energy": 0.20497067026631785,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.02214036661954021,
+            "mean_resource": 0.4781291975201789
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.11836483760079115,
+            "floor": 0.13194444444444445,
+            "bottom_decile": 0.007669105129622965,
+            "mean_resource": 0.4761647029145056
+          },
+          "2000": {
+            "mean_energy": 0.1940099320566784,
+            "floor": 0.1597222222222222,
+            "bottom_decile": 0.0070451260607863955,
+            "mean_resource": 0.48181982611742963
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.11255113160915038,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.011540714342643659,
+            "mean_resource": 0.4713822348154215
+          },
+          "2000": {
+            "mean_energy": 0.20576156831196257,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.012877488498716491,
+            "mean_resource": 0.47341495298041636
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.14452263935683984,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.01210482146668231,
+            "mean_resource": 0.48199289629419817
+          },
+          "2000": {
+            "mean_energy": 0.2237195593016905,
+            "floor": 0.06944444444444445,
+            "bottom_decile": 0.01872444079300941,
+            "mean_resource": 0.4783019503179546
+          }
+        }
+      }
+    },
+    {
+      "seed": 10801,
+      "regrowth": 0.055,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.016912546000249704,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46421874925533085
+          },
+          "2000": {
+            "mean_energy": 0.017152424801421425,
+            "floor": 0.3125,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4645016734450062
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.02080856655968112,
+            "floor": 0.3611111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47307026071219266
+          },
+          "2000": {
+            "mean_energy": 0.023488752435956706,
+            "floor": 0.3194444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4679579887484182
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.019139526168982648,
+            "floor": 0.3541666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46326782554194385
+          },
+          "2000": {
+            "mean_energy": 0.019447832885813563,
+            "floor": 0.3333333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4630286786092897
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.022412784956440127,
+            "floor": 0.3055555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4624531416706914
+          },
+          "2000": {
+            "mean_energy": 0.019787932568943234,
+            "floor": 0.3402777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46500693951779226
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.028005919646586594,
+            "floor": 0.3055555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4711653298942981
+          },
+          "2000": {
+            "mean_energy": 0.03263743543632674,
+            "floor": 0.2777777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46776821313466826
+          }
+        }
+      }
+    },
+    {
+      "seed": 10802,
+      "regrowth": 0.06,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.07886725782116288,
+            "floor": 0.2013888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47193671910322316
+          },
+          "2000": {
+            "mean_energy": 0.1625136781037989,
+            "floor": 0.1736111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4778205586727196
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.1214020692686547,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.010691349416710341,
+            "mean_resource": 0.47198555105103435
+          },
+          "2000": {
+            "mean_energy": 0.1952714651973405,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.016483640154641984,
+            "mean_resource": 0.4811843673714219
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.12309316791120856,
+            "floor": 0.1527777777777778,
+            "bottom_decile": 0.0037362467683129813,
+            "mean_resource": 0.4779757037452402
+          },
+          "2000": {
+            "mean_energy": 0.16433952486939007,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.014510855396760359,
+            "mean_resource": 0.47802777679285985
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.1204519260268096,
+            "floor": 0.1111111111111111,
+            "bottom_decile": 0.00924198263708707,
+            "mean_resource": 0.47533258361790204
+          },
+          "2000": {
+            "mean_energy": 0.20505326591718184,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.017252672871003714,
+            "mean_resource": 0.4837030613791888
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.1390211806565938,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.011273061835548558,
+            "mean_resource": 0.47787693013677035
+          },
+          "2000": {
+            "mean_energy": 0.21774140712896362,
+            "floor": 0.041666666666666664,
+            "bottom_decile": 0.0264300409011358,
+            "mean_resource": 0.4763672463367387
+          }
+        }
+      }
+    },
+    {
+      "seed": 10802,
+      "regrowth": 0.055,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.016766797292555955,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46451140554374415
+          },
+          "2000": {
+            "mean_energy": 0.017211087753120177,
+            "floor": 0.3402777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46397635333480175
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.02663613560122784,
+            "floor": 0.2569444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46213365163958997
+          },
+          "2000": {
+            "mean_energy": 0.024112626676731256,
+            "floor": 0.2916666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4668392134722419
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.019204882593460416,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4638085888928906
+          },
+          "2000": {
+            "mean_energy": 0.020454883344959793,
+            "floor": 0.2777777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4608176165553023
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.016171837656011698,
+            "floor": 0.4305555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4690153909466135
+          },
+          "2000": {
+            "mean_energy": 0.019676986916899057,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46480686399451504
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.022078209490476133,
+            "floor": 0.4722222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47762109477918924
+          },
+          "2000": {
+            "mean_energy": 0.029949451950978884,
+            "floor": 0.3055555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4706971633654084
+          }
+        }
+      }
+    },
+    {
+      "seed": 10803,
+      "regrowth": 0.06,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.08137375826890557,
+            "floor": 0.2361111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4767284558761102
+          },
+          "2000": {
+            "mean_energy": 0.18090688146499964,
+            "floor": 0.16666666666666666,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47506502770852876
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.1283478526614375,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.010960814083973163,
+            "mean_resource": 0.4764107756740482
+          },
+          "2000": {
+            "mean_energy": 0.21955256523503644,
+            "floor": 0.06944444444444445,
+            "bottom_decile": 0.020710580622476604,
+            "mean_resource": 0.47955253537532094
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.1376939455994187,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.01775980121007476,
+            "mean_resource": 0.4774498295521031
+          },
+          "2000": {
+            "mean_energy": 0.21296983154260973,
+            "floor": 0.13194444444444445,
+            "bottom_decile": 0.005488643000118415,
+            "mean_resource": 0.47722662653806364
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.11105776063494892,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.009731118016692228,
+            "mean_resource": 0.47477130343441043
+          },
+          "2000": {
+            "mean_energy": 0.201376661880426,
+            "floor": 0.05555555555555555,
+            "bottom_decile": 0.027236767790193454,
+            "mean_resource": 0.4692795921842428
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.15003413353073536,
+            "floor": 0.0625,
+            "bottom_decile": 0.014013645274372655,
+            "mean_resource": 0.47839921831743104
+          },
+          "2000": {
+            "mean_energy": 0.2430568770388843,
+            "floor": 0.0625,
+            "bottom_decile": 0.02203999642292121,
+            "mean_resource": 0.47809817512993136
+          }
+        }
+      }
+    },
+    {
+      "seed": 10803,
+      "regrowth": 0.055,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.018584372096782775,
+            "floor": 0.3125,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46260107384968463
+          },
+          "2000": {
+            "mean_energy": 0.018267320680878583,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4631287859501353
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.015490275522601201,
+            "floor": 0.4513888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47770089871802945
+          },
+          "2000": {
+            "mean_energy": 0.021770986734197837,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4700323862685265
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.02016250586220915,
+            "floor": 0.3194444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46332478330517873
+          },
+          "2000": {
+            "mean_energy": 0.01964042416115093,
+            "floor": 0.3402777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4642725805041712
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.020036202168956265,
+            "floor": 0.375,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46595902199451383
+          },
+          "2000": {
+            "mean_energy": 0.016875560390201765,
+            "floor": 0.4444444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4715215124558861
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.02508222133467622,
+            "floor": 0.2777777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46997960982325687
+          },
+          "2000": {
+            "mean_energy": 0.024557875540920048,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47447966680229137
+          }
+        }
+      }
+    },
+    {
+      "seed": 10804,
+      "regrowth": 0.06,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.08855879841138034,
+            "floor": 0.13194444444444445,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4734793363370413
+          },
+          "2000": {
+            "mean_energy": 0.18070782897930368,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.012929378747311865,
+            "mean_resource": 0.4760510011353497
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.15144835081843244,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.008441193990606215,
+            "mean_resource": 0.4727259015577148
+          },
+          "2000": {
+            "mean_energy": 0.21587176737052305,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.016518699764732987,
+            "mean_resource": 0.47956849088542697
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.12989518460839541,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.008628357247372157,
+            "mean_resource": 0.47496074153164586
+          },
+          "2000": {
+            "mean_energy": 0.1967019920935832,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.00836135524223193,
+            "mean_resource": 0.48058380954028707
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.11543317113200703,
+            "floor": 0.14583333333333334,
+            "bottom_decile": 0.004751521089085716,
+            "mean_resource": 0.47854317260648455
+          },
+          "2000": {
+            "mean_energy": 0.19632166019145053,
+            "floor": 0.0625,
+            "bottom_decile": 0.02285839928052765,
+            "mean_resource": 0.4749685621308973
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.1724351117445559,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.02168864043558699,
+            "mean_resource": 0.4768069390848425
+          },
+          "2000": {
+            "mean_energy": 0.23589159132422635,
+            "floor": 0.04861111111111111,
+            "bottom_decile": 0.02687169523648651,
+            "mean_resource": 0.47600032239358037
+          }
+        }
+      }
+    },
+    {
+      "seed": 10804,
+      "regrowth": 0.055,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.014753820910651555,
+            "floor": 0.4166666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4680300892240956
+          },
+          "2000": {
+            "mean_energy": 0.015373838971462285,
+            "floor": 0.3958333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.467181884351579
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.031188082298393118,
+            "floor": 0.2708333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4678461399669638
+          },
+          "2000": {
+            "mean_energy": 0.02653267245219468,
+            "floor": 0.4305555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47815559698912274
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.016299361131123933,
+            "floor": 0.4027777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4678503439000261
+          },
+          "2000": {
+            "mean_energy": 0.015504854217642697,
+            "floor": 0.4375,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4689758347022037
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.024255738030806367,
+            "floor": 0.2708333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.45991832393537646
+          },
+          "2000": {
+            "mean_energy": 0.020571822314398452,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46507160807142367
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.040789953025395974,
+            "floor": 0.20833333333333334,
+            "bottom_decile": 0.00019646093770036264,
+            "mean_resource": 0.4658400307630805
+          },
+          "2000": {
+            "mean_energy": 0.049534980173512905,
+            "floor": 0.2013888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46612540176430944
+          }
+        }
+      }
+    },
+    {
+      "seed": 10805,
+      "regrowth": 0.06,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.07864441457066361,
+            "floor": 0.19444444444444445,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4716830600705444
+          },
+          "2000": {
+            "mean_energy": 0.1605135523303716,
+            "floor": 0.1388888888888889,
+            "bottom_decile": 0.00012606937330547036,
+            "mean_resource": 0.47578690096905807
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.11508694371587001,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.010085513113671995,
+            "mean_resource": 0.4683823988446147
+          },
+          "2000": {
+            "mean_energy": 0.1843999840431637,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.00977058119983199,
+            "mean_resource": 0.4781863508745095
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.1212795687870507,
+            "floor": 0.13194444444444445,
+            "bottom_decile": 0.008356223788838687,
+            "mean_resource": 0.4758780786247748
+          },
+          "2000": {
+            "mean_energy": 0.1791709644285172,
+            "floor": 0.13194444444444445,
+            "bottom_decile": 0.008368988918022773,
+            "mean_resource": 0.4799474157591405
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.10754120702043739,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.008902892327857122,
+            "mean_resource": 0.4746439587089978
+          },
+          "2000": {
+            "mean_energy": 0.1832593508218928,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.011281830847391608,
+            "mean_resource": 0.4755498601150507
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.1335221609699006,
+            "floor": 0.05555555555555555,
+            "bottom_decile": 0.02278084599075664,
+            "mean_resource": 0.4692624581205193
+          },
+          "2000": {
+            "mean_energy": 0.20242769192553048,
+            "floor": 0.041666666666666664,
+            "bottom_decile": 0.022520258705715862,
+            "mean_resource": 0.476065303632986
+          }
+        }
+      }
+    },
+    {
+      "seed": 10805,
+      "regrowth": 0.055,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.016704747519936988,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4649021300297197
+          },
+          "2000": {
+            "mean_energy": 0.016460589279912653,
+            "floor": 0.3541666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4653897759876659
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.023031354377376176,
+            "floor": 0.2777777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4659244712623145
+          },
+          "2000": {
+            "mean_energy": 0.01916665047702005,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4698327501977442
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.01879596871761939,
+            "floor": 0.3402777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4635678532934136
+          },
+          "2000": {
+            "mean_energy": 0.02036591675062456,
+            "floor": 0.3055555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4618884308743336
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.023733232629143668,
+            "floor": 0.2638888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4591002668225996
+          },
+          "2000": {
+            "mean_energy": 0.021780332036473782,
+            "floor": 0.2361111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46188945580739293
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.0226267023400953,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4733171106371786
+          },
+          "2000": {
+            "mean_energy": 0.021648441611175667,
+            "floor": 0.3611111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4748102483345732
+          }
+        }
+      }
+    },
+    {
+      "seed": 10806,
+      "regrowth": 0.06,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.07229007341487342,
+            "floor": 0.1597222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4743141912151356
+          },
+          "2000": {
+            "mean_energy": 0.1485499115073596,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.00854494863399486,
+            "mean_resource": 0.4739619143372021
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.11709350197848857,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.008392282191545416,
+            "mean_resource": 0.470165840730006
+          },
+          "2000": {
+            "mean_energy": 0.17720823635638086,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.008242817103053367,
+            "mean_resource": 0.4790083852616313
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.13346066146126997,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.010477357226715325,
+            "mean_resource": 0.47254423076697677
+          },
+          "2000": {
+            "mean_energy": 0.1944875616480704,
+            "floor": 0.1111111111111111,
+            "bottom_decile": 0.008605045015398842,
+            "mean_resource": 0.47784982246722824
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.09914483433359372,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.010332817706504115,
+            "mean_resource": 0.4723029760567742
+          },
+          "2000": {
+            "mean_energy": 0.1583642693060963,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.012203567064636588,
+            "mean_resource": 0.4774253284820759
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.12826413731224237,
+            "floor": 0.0625,
+            "bottom_decile": 0.015304118115435032,
+            "mean_resource": 0.4764025810110901
+          },
+          "2000": {
+            "mean_energy": 0.18999078529180563,
+            "floor": 0.0625,
+            "bottom_decile": 0.027489125169798297,
+            "mean_resource": 0.47877596144637874
+          }
+        }
+      }
+    },
+    {
+      "seed": 10806,
+      "regrowth": 0.055,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.018189178229726384,
+            "floor": 0.2777777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46198121884151555
+          },
+          "2000": {
+            "mean_energy": 0.018725100963252653,
+            "floor": 0.2638888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4610706540422209
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.01888730415889398,
+            "floor": 0.3958333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4713554936178999
+          },
+          "2000": {
+            "mean_energy": 0.018537079196223907,
+            "floor": 0.4027777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4717749856861502
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.017369245168448587,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46572257650368265
+          },
+          "2000": {
+            "mean_energy": 0.017675343549019708,
+            "floor": 0.3333333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46426397394256963
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.02098273685919267,
+            "floor": 0.22916666666666666,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46156647485105773
+          },
+          "2000": {
+            "mean_energy": 0.022379929730823023,
+            "floor": 0.18055555555555555,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4574262811474477
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.02771625250151878,
+            "floor": 0.2361111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46655246419705876
+          },
+          "2000": {
+            "mean_energy": 0.030199625017828365,
+            "floor": 0.2777777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4667484303213187
+          }
+        }
+      }
+    },
+    {
+      "seed": 10807,
+      "regrowth": 0.06,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.08269553702352662,
+            "floor": 0.2638888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47489905320557013
+          },
+          "2000": {
+            "mean_energy": 0.17435003050512327,
+            "floor": 0.1736111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47777088777975507
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.14678451684613344,
+            "floor": 0.1111111111111111,
+            "bottom_decile": 0.009624934202666576,
+            "mean_resource": 0.4656494153849893
+          },
+          "2000": {
+            "mean_energy": 0.22860620008888072,
+            "floor": 0.05555555555555555,
+            "bottom_decile": 0.01749815283507043,
+            "mean_resource": 0.4737180435924533
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.14191707543031873,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.0071134406755651676,
+            "mean_resource": 0.4770718125626122
+          },
+          "2000": {
+            "mean_energy": 0.24934015777941415,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.007095415533826812,
+            "mean_resource": 0.48077993660838
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.10415572149802398,
+            "floor": 0.125,
+            "bottom_decile": 0.007514609020649382,
+            "mean_resource": 0.47343761323769723
+          },
+          "2000": {
+            "mean_energy": 0.17947783965980987,
+            "floor": 0.05555555555555555,
+            "bottom_decile": 0.01778164715477887,
+            "mean_resource": 0.4738179994986063
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.16117781798200792,
+            "floor": 0.05555555555555555,
+            "bottom_decile": 0.02368845919379172,
+            "mean_resource": 0.4722886028558132
+          },
+          "2000": {
+            "mean_energy": 0.24277124845571757,
+            "floor": 0.041666666666666664,
+            "bottom_decile": 0.025432385178184393,
+            "mean_resource": 0.4774915890943238
+          }
+        }
+      }
+    },
+    {
+      "seed": 10807,
+      "regrowth": 0.055,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.016180054163999303,
+            "floor": 0.3819444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46608874479326484
+          },
+          "2000": {
+            "mean_energy": 0.016366448257942215,
+            "floor": 0.3819444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46575153349607235
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.02394975205559061,
+            "floor": 0.3125,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47068902454553846
+          },
+          "2000": {
+            "mean_energy": 0.028491534137774513,
+            "floor": 0.1875,
+            "bottom_decile": 0.00010324773773538698,
+            "mean_resource": 0.4643144692255736
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.02349524010316842,
+            "floor": 0.2361111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46033954357582435
+          },
+          "2000": {
+            "mean_energy": 0.02233715620906956,
+            "floor": 0.2569444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46033786154076484
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.017688624144992525,
+            "floor": 0.4166666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46805880040393444
+          },
+          "2000": {
+            "mean_energy": 0.01978440838766908,
+            "floor": 0.3194444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.466485137749708
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.02311186109482853,
+            "floor": 0.4236111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4774861018132388
+          },
+          "2000": {
+            "mean_energy": 0.03027458313298256,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47139866678106235
+          }
+        }
+      }
+    },
+    {
+      "seed": 10808,
+      "regrowth": 0.06,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.0859311843397294,
+            "floor": 0.18055555555555555,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4737714623051718
+          },
+          "2000": {
+            "mean_energy": 0.18112772058255933,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.01757592470473458,
+            "mean_resource": 0.4732726224989471
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.13798564245679554,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.014714298670848067,
+            "mean_resource": 0.47553149219193586
+          },
+          "2000": {
+            "mean_energy": 0.22620167071288255,
+            "floor": 0.06944444444444445,
+            "bottom_decile": 0.02564486775954531,
+            "mean_resource": 0.47283299640733023
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.11759403314935524,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.008567896834202882,
+            "mean_resource": 0.47721186479652405
+          },
+          "2000": {
+            "mean_energy": 0.1807966582300284,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.017951387259519943,
+            "mean_resource": 0.48378845479161964
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.12101608301120982,
+            "floor": 0.1388888888888889,
+            "bottom_decile": 0.006133034361743404,
+            "mean_resource": 0.48060100835076613
+          },
+          "2000": {
+            "mean_energy": 0.22734918897257433,
+            "floor": 0.0625,
+            "bottom_decile": 0.013442384209958184,
+            "mean_resource": 0.4814279873928824
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.15207226747371572,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.018820789994153916,
+            "mean_resource": 0.47705838839016423
+          },
+          "2000": {
+            "mean_energy": 0.23343094168587253,
+            "floor": 0.05555555555555555,
+            "bottom_decile": 0.027710810926962034,
+            "mean_resource": 0.47940461400255585
+          }
+        }
+      }
+    },
+    {
+      "seed": 10808,
+      "regrowth": 0.055,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.018166836994301046,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4631940710532568
+          },
+          "2000": {
+            "mean_energy": 0.01884487482512957,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46218318287597626
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.02088423766973347,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47145223905753464
+          },
+          "2000": {
+            "mean_energy": 0.021273136335600476,
+            "floor": 0.3055555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4712901210499301
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.018053865950515186,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4662513226909919
+          },
+          "2000": {
+            "mean_energy": 0.016251940816633108,
+            "floor": 0.3888888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4693054135249734
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.021774965009823292,
+            "floor": 0.3055555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46170256816477995
+          },
+          "2000": {
+            "mean_energy": 0.022935332413577245,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46170934327281166
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.029143445415883984,
+            "floor": 0.2708333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46883980746493964
+          },
+          "2000": {
+            "mean_energy": 0.02872096376110033,
+            "floor": 0.2638888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4708109847530111
+          }
+        }
+      }
+    },
+    {
+      "seed": 10809,
+      "regrowth": 0.06,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.08007218438706055,
+            "floor": 0.1597222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4720609087578964
+          },
+          "2000": {
+            "mean_energy": 0.160857636178702,
+            "floor": 0.125,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4775171487176484
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.11453845213988388,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.012113813929383281,
+            "mean_resource": 0.48014372515559994
+          },
+          "2000": {
+            "mean_energy": 0.19180494592854705,
+            "floor": 0.041666666666666664,
+            "bottom_decile": 0.029209053888650246,
+            "mean_resource": 0.4727195130860038
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.13525953283831424,
+            "floor": 0.1527777777777778,
+            "bottom_decile": 0.005173907002131677,
+            "mean_resource": 0.47863213768201596
+          },
+          "2000": {
+            "mean_energy": 0.20630733324898431,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.010912863192368477,
+            "mean_resource": 0.48037469377527664
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.10776151035980343,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.00953157616677102,
+            "mean_resource": 0.47638235021410275
+          },
+          "2000": {
+            "mean_energy": 0.18670316392272282,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.017682130014152742,
+            "mean_resource": 0.4715629210173268
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.13281557307013794,
+            "floor": 0.125,
+            "bottom_decile": 0.009565386201454824,
+            "mean_resource": 0.4812006139682248
+          },
+          "2000": {
+            "mean_energy": 0.2055445464247892,
+            "floor": 0.034722222222222224,
+            "bottom_decile": 0.024339500699638666,
+            "mean_resource": 0.47649330993999645
+          }
+        }
+      }
+    },
+    {
+      "seed": 10809,
+      "regrowth": 0.055,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.01817622746097938,
+            "floor": 0.3125,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4628546554006909
+          },
+          "2000": {
+            "mean_energy": 0.018006362668723373,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46282718083686814
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.023318248370134104,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46503935657903145
+          },
+          "2000": {
+            "mean_energy": 0.019346867866967286,
+            "floor": 0.3680555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47228897015828497
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.023664905992757494,
+            "floor": 0.2777777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4646968434123628
+          },
+          "2000": {
+            "mean_energy": 0.02667741825558541,
+            "floor": 0.3125,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4656932806497319
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.018749239964866136,
+            "floor": 0.3888888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46748915655926104
+          },
+          "2000": {
+            "mean_energy": 0.020194019138596107,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4634331709692749
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.026079825864949245,
+            "floor": 0.2847222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47292636755838896
+          },
+          "2000": {
+            "mean_energy": 0.02123792615588653,
+            "floor": 0.4236111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47762351013558063
+          }
+        }
+      }
+    },
+    {
+      "seed": 10810,
+      "regrowth": 0.06,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.07829203170402028,
+            "floor": 0.2152777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4768560249239434
+          },
+          "2000": {
+            "mean_energy": 0.16968857877026639,
+            "floor": 0.1388888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47420884783573236
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.12389805869888887,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.011987488256307412,
+            "mean_resource": 0.47365285811789143
+          },
+          "2000": {
+            "mean_energy": 0.2027005354905487,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.02221966002071256,
+            "mean_resource": 0.47661306039486206
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.12697767126797369,
+            "floor": 0.125,
+            "bottom_decile": 0.0076061786927748,
+            "mean_resource": 0.47407311622547305
+          },
+          "2000": {
+            "mean_energy": 0.19129595186186243,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.008345265095993273,
+            "mean_resource": 0.47882195388561233
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.09727419777054662,
+            "floor": 0.05555555555555555,
+            "bottom_decile": 0.01941448390103144,
+            "mean_resource": 0.4718166537687589
+          },
+          "2000": {
+            "mean_energy": 0.1527758125758091,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.010434046174827833,
+            "mean_resource": 0.4728941334552154
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.1445301666795365,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.014447276307380092,
+            "mean_resource": 0.4754627018450044
+          },
+          "2000": {
+            "mean_energy": 0.21103135007098078,
+            "floor": 0.13194444444444445,
+            "bottom_decile": 0.007141511950722545,
+            "mean_resource": 0.4879036671783727
+          }
+        }
+      }
+    },
+    {
+      "seed": 10810,
+      "regrowth": 0.055,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.01553994553315282,
+            "floor": 0.4027777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4670442177738572
+          },
+          "2000": {
+            "mean_energy": 0.015614770005017419,
+            "floor": 0.3888888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46691094853206266
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.02208555098343879,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4698387209467203
+          },
+          "2000": {
+            "mean_energy": 0.021335149030380522,
+            "floor": 0.3402777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4728860202044326
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.0173280820643457,
+            "floor": 0.3958333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46495494728386866
+          },
+          "2000": {
+            "mean_energy": 0.017977404979161483,
+            "floor": 0.3819444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46555954742062805
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.019638415969355023,
+            "floor": 0.3333333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4673209393370576
+          },
+          "2000": {
+            "mean_energy": 0.0218524112204503,
+            "floor": 0.2152777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4631197836116334
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.023908481344399126,
+            "floor": 0.4583333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.48147787301000633
+          },
+          "2000": {
+            "mean_energy": 0.030749144185254276,
+            "floor": 0.3055555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4735643541942378
+          }
+        }
+      }
+    },
+    {
+      "seed": 10811,
+      "regrowth": 0.06,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.07393600635997925,
+            "floor": 0.1388888888888889,
+            "bottom_decile": 5.8729486758748454e-05,
+            "mean_resource": 0.4718691984582741
+          },
+          "2000": {
+            "mean_energy": 0.14273516800867592,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.02090511417062843,
+            "mean_resource": 0.47197369035641196
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.11068421196172754,
+            "floor": 0.1111111111111111,
+            "bottom_decile": 0.009201533998588014,
+            "mean_resource": 0.4708778932374845
+          },
+          "2000": {
+            "mean_energy": 0.17864571966893644,
+            "floor": 0.04861111111111111,
+            "bottom_decile": 0.022895722037424796,
+            "mean_resource": 0.46935723642326976
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.13584933208589425,
+            "floor": 0.125,
+            "bottom_decile": 0.007980257114644547,
+            "mean_resource": 0.4738032065636738
+          },
+          "2000": {
+            "mean_energy": 0.19846912962419005,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.0197056040244745,
+            "mean_resource": 0.4763020271763669
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.10791197705154436,
+            "floor": 0.06944444444444445,
+            "bottom_decile": 0.015887723351023918,
+            "mean_resource": 0.47416021471873965
+          },
+          "2000": {
+            "mean_energy": 0.16535044654413195,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.01932943483302689,
+            "mean_resource": 0.47018059403588297
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.12141075037767063,
+            "floor": 0.04861111111111111,
+            "bottom_decile": 0.01821811983488033,
+            "mean_resource": 0.4744584886090699
+          },
+          "2000": {
+            "mean_energy": 0.19092213156081966,
+            "floor": 0.04861111111111111,
+            "bottom_decile": 0.020860907627319476,
+            "mean_resource": 0.4748013221512735
+          }
+        }
+      }
+    },
+    {
+      "seed": 10811,
+      "regrowth": 0.055,
+      "arms": {
+        "own": {
+          "500": {
+            "mean_energy": 0.018651328571593375,
+            "floor": 0.3055555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4613898689333166
+          },
+          "2000": {
+            "mean_energy": 0.01824424036827119,
+            "floor": 0.3125,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46219892944549495
+          }
+        },
+        "local_mean": {
+          "500": {
+            "mean_energy": 0.01799993388595751,
+            "floor": 0.4861111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47486485945415857
+          },
+          "2000": {
+            "mean_energy": 0.019485197794839825,
+            "floor": 0.4444444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4721758910684122
+          }
+        },
+        "random_neighbor": {
+          "500": {
+            "mean_energy": 0.020548657738377562,
+            "floor": 0.2777777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46005469521010056
+          },
+          "2000": {
+            "mean_energy": 0.02084602928335688,
+            "floor": 0.2708333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46010040682332703
+          }
+        },
+        "global_shuffle": {
+          "500": {
+            "mean_energy": 0.013923688848579089,
+            "floor": 0.5347222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4735132146567944
+          },
+          "2000": {
+            "mean_energy": 0.02307437901075821,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4612822838071977
+          }
+        },
+        "stale_local": {
+          "500": {
+            "mean_energy": 0.026791531637886015,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47426771033710946
+          },
+          "2000": {
+            "mean_energy": 0.027225490823800467,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4712638097655528
+          }
+        }
+      }
+    }
+  ]
+}
