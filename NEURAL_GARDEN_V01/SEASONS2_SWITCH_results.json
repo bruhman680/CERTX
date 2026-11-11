@@ -1,0 +1,609 @@
+{
+  "created_utc": "2026-11-11T17:09:42.999444+00:00",
+  "design": {
+    "seeds": [
+      41140,
+      41141,
+      41142,
+      41143,
+      41144,
+      41145,
+      41146,
+      41147,
+      41148,
+      41149,
+      41150,
+      41151
+    ],
+    "fork_ticks": [
+      3000,
+      9000
+    ],
+    "post_fork_ticks": 3000
+  },
+  "source_sha256": {
+    "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1",
+    "SEASONS2_SWITCH_PLAN.md": "8f578b6c610a49d54c20d66175db312cafbc1a5ce0647c736533baf6c17b5af9",
+    "SEASONS2_SWITCH_probe.py": "5079b35c5c7e7eb01768f01555bf04c0c4145899cf21daae5248404bfb63fba7"
+  },
+  "summary": {
+    "3000": {
+      "mean_delta_reverse_minus_fixed": -0.04960266939914621,
+      "reverse_wins": 0,
+      "paired_energy_deltas": [
+        -0.051640937671142514,
+        -0.04880617759050148,
+        -0.045201321739387665,
+        -0.050735370657538706,
+        -0.052559596913457046,
+        -0.04041606785943824,
+        -0.0527231818449934,
+        -0.04946814424201945,
+        -0.055161875095434604,
+        -0.04828226886461842,
+        -0.048486791327184545,
+        -0.05175029898403847
+      ],
+      "mean_parent_energy": 0.019964568286537036,
+      "mean_fixed_energy": 0.09685861541698498,
+      "mean_reverse_energy": 0.04725594601783877,
+      "mean_fixed_floor": 0.08528645833333333,
+      "mean_reverse_floor": 0.0546875,
+      "mean_reverse_branch_activation_rate": 0.22177430555555558
+    },
+    "9000": {
+      "mean_delta_reverse_minus_fixed": -0.048983604970400885,
+      "reverse_wins": 0,
+      "paired_energy_deltas": [
+        -0.04786002964479439,
+        -0.04668704063126579,
+        -0.041593335727534195,
+        -0.041738011930904276,
+        -0.04881309528859752,
+        -0.05175325058067663,
+        -0.054800963853165414,
+        -0.04699042317338644,
+        -0.05798621908993972,
+        -0.0505161969653021,
+        -0.042793290020166644,
+        -0.056271402739077464
+      ],
+      "mean_parent_energy": 0.019634192959578054,
+      "mean_fixed_energy": 0.09552074038785895,
+      "mean_reverse_energy": 0.046537135417458075,
+      "mean_fixed_floor": 0.08756510416666667,
+      "mean_reverse_floor": 0.06477864583333333,
+      "mean_reverse_branch_activation_rate": 0.22184071180555553
+    }
+  },
+  "rows": [
+    {
+      "seed": 41140,
+      "fork_tick": 3000,
+      "parent": {
+        "energy": 0.020091324332005812,
+        "floor": 0.453125
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.0948420716137825,
+          "resource": 0.48308777698910993,
+          "floor": 0.0703125,
+          "branch_activation_rate": 0.3015729166666667
+        },
+        "reverse": {
+          "energy": 0.04320113394263998,
+          "resource": 0.5102548004812673,
+          "floor": 0.046875,
+          "branch_activation_rate": 0.22211328125
+        }
+      }
+    },
+    {
+      "seed": 41140,
+      "fork_tick": 9000,
+      "parent": {
+        "energy": 0.019211799104570042,
+        "floor": 0.50390625
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09225080092369015,
+          "resource": 0.4843212896159439,
+          "floor": 0.0859375,
+          "branch_activation_rate": 0.30156770833333335
+        },
+        "reverse": {
+          "energy": 0.044390771278895756,
+          "resource": 0.5086197729387241,
+          "floor": 0.05078125,
+          "branch_activation_rate": 0.22203515625
+        }
+      }
+    },
+    {
+      "seed": 41141,
+      "fork_tick": 3000,
+      "parent": {
+        "energy": 0.018868434483165566,
+        "floor": 0.49609375
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09529095631011458,
+          "resource": 0.4835697731547826,
+          "floor": 0.11328125,
+          "branch_activation_rate": 0.2995625
+        },
+        "reverse": {
+          "energy": 0.0464847787196131,
+          "resource": 0.5073487980820812,
+          "floor": 0.0546875,
+          "branch_activation_rate": 0.22202734375
+        }
+      }
+    },
+    {
+      "seed": 41141,
+      "fork_tick": 9000,
+      "parent": {
+        "energy": 0.019763940652355788,
+        "floor": 0.4609375
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09678413364064345,
+          "resource": 0.4831522406302383,
+          "floor": 0.06640625,
+          "branch_activation_rate": 0.29935416666666664
+        },
+        "reverse": {
+          "energy": 0.05009709300937766,
+          "resource": 0.5046188349192584,
+          "floor": 0.046875,
+          "branch_activation_rate": 0.22157421875
+        }
+      }
+    },
+    {
+      "seed": 41142,
+      "fork_tick": 3000,
+      "parent": {
+        "energy": 0.02086531137305893,
+        "floor": 0.47265625
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09569469169598376,
+          "resource": 0.4826688160888827,
+          "floor": 0.078125,
+          "branch_activation_rate": 0.29881901041666664
+        },
+        "reverse": {
+          "energy": 0.05049336995659609,
+          "resource": 0.5055141309875113,
+          "floor": 0.0390625,
+          "branch_activation_rate": 0.2210703125
+        }
+      }
+    },
+    {
+      "seed": 41142,
+      "fork_tick": 9000,
+      "parent": {
+        "energy": 0.01888925397762889,
+        "floor": 0.5
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09239927464420172,
+          "resource": 0.48396194507028184,
+          "floor": 0.09375,
+          "branch_activation_rate": 0.302421875
+        },
+        "reverse": {
+          "energy": 0.05080593891666753,
+          "resource": 0.50898802713431,
+          "floor": 0.04296875,
+          "branch_activation_rate": 0.22136979166666668
+        }
+      }
+    },
+    {
+      "seed": 41143,
+      "fork_tick": 3000,
+      "parent": {
+        "energy": 0.01797813602617126,
+        "floor": 0.5390625
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09937237259891935,
+          "resource": 0.4839111631545713,
+          "floor": 0.109375,
+          "branch_activation_rate": 0.29666796875
+        },
+        "reverse": {
+          "energy": 0.04863700194138064,
+          "resource": 0.5082024991617542,
+          "floor": 0.046875,
+          "branch_activation_rate": 0.22149479166666666
+        }
+      }
+    },
+    {
+      "seed": 41143,
+      "fork_tick": 9000,
+      "parent": {
+        "energy": 0.021434694345805062,
+        "floor": 0.421875
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09389033340913297,
+          "resource": 0.48180043203523715,
+          "floor": 0.09375,
+          "branch_activation_rate": 0.298015625
+        },
+        "reverse": {
+          "energy": 0.052152321478228694,
+          "resource": 0.5009900666248757,
+          "floor": 0.00390625,
+          "branch_activation_rate": 0.22197916666666667
+        }
+      }
+    },
+    {
+      "seed": 41144,
+      "fork_tick": 3000,
+      "parent": {
+        "energy": 0.019013344358323345,
+        "floor": 0.51171875
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09412662460786651,
+          "resource": 0.4827071628481755,
+          "floor": 0.109375,
+          "branch_activation_rate": 0.30017317708333335
+        },
+        "reverse": {
+          "energy": 0.04156702769440947,
+          "resource": 0.5091317304866831,
+          "floor": 0.06640625,
+          "branch_activation_rate": 0.22230989583333333
+        }
+      }
+    },
+    {
+      "seed": 41144,
+      "fork_tick": 9000,
+      "parent": {
+        "energy": 0.02000373178479828,
+        "floor": 0.48046875
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09285227170386148,
+          "resource": 0.4838975872575555,
+          "floor": 0.10546875,
+          "branch_activation_rate": 0.3020833333333333
+        },
+        "reverse": {
+          "energy": 0.04403917641526396,
+          "resource": 0.5090012655631719,
+          "floor": 0.0703125,
+          "branch_activation_rate": 0.22221744791666667
+        }
+      }
+    },
+    {
+      "seed": 41145,
+      "fork_tick": 3000,
+      "parent": {
+        "energy": 0.01878198183088392,
+        "floor": 0.48828125
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09520779440769483,
+          "resource": 0.4837351192316684,
+          "floor": 0.08984375,
+          "branch_activation_rate": 0.2989453125
+        },
+        "reverse": {
+          "energy": 0.05479172654825659,
+          "resource": 0.5035742072584417,
+          "floor": 0.01171875,
+          "branch_activation_rate": 0.22169010416666668
+        }
+      }
+    },
+    {
+      "seed": 41145,
+      "fork_tick": 9000,
+      "parent": {
+        "energy": 0.02180871829905424,
+        "floor": 0.4375
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.10021715518865609,
+          "resource": 0.4804523602803994,
+          "floor": 0.0546875,
+          "branch_activation_rate": 0.29736979166666666
+        },
+        "reverse": {
+          "energy": 0.04846390460797946,
+          "resource": 0.5089522458573358,
+          "floor": 0.015625,
+          "branch_activation_rate": 0.22166666666666668
+        }
+      }
+    },
+    {
+      "seed": 41146,
+      "fork_tick": 3000,
+      "parent": {
+        "energy": 0.02171272187199389,
+        "floor": 0.41796875
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09859179871410464,
+          "resource": 0.48026004068669914,
+          "floor": 0.05078125,
+          "branch_activation_rate": 0.2989661458333333
+        },
+        "reverse": {
+          "energy": 0.04586861686911124,
+          "resource": 0.5072508004489957,
+          "floor": 0.01953125,
+          "branch_activation_rate": 0.2219921875
+        }
+      }
+    },
+    {
+      "seed": 41146,
+      "fork_tick": 9000,
+      "parent": {
+        "energy": 0.020059556013913134,
+        "floor": 0.46875
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09538095736980381,
+          "resource": 0.48359899654252214,
+          "floor": 0.07421875,
+          "branch_activation_rate": 0.30254036458333333
+        },
+        "reverse": {
+          "energy": 0.0405799935166384,
+          "resource": 0.5129542334349813,
+          "floor": 0.08203125,
+          "branch_activation_rate": 0.222046875
+        }
+      }
+    },
+    {
+      "seed": 41147,
+      "fork_tick": 3000,
+      "parent": {
+        "energy": 0.021280794157061543,
+        "floor": 0.43359375
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.10260384742021086,
+          "resource": 0.48195386952946173,
+          "floor": 0.09375,
+          "branch_activation_rate": 0.29510546875
+        },
+        "reverse": {
+          "energy": 0.05313570317819141,
+          "resource": 0.5071282203658268,
+          "floor": 0.03515625,
+          "branch_activation_rate": 0.22133463541666668
+        }
+      }
+    },
+    {
+      "seed": 41147,
+      "fork_tick": 9000,
+      "parent": {
+        "energy": 0.018454247538215618,
+        "floor": 0.4921875
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09399115521015074,
+          "resource": 0.48432613659719936,
+          "floor": 0.109375,
+          "branch_activation_rate": 0.29859765625
+        },
+        "reverse": {
+          "energy": 0.047000732036764296,
+          "resource": 0.5147700938974216,
+          "floor": 0.15625,
+          "branch_activation_rate": 0.22139973958333334
+        }
+      }
+    },
+    {
+      "seed": 41148,
+      "fork_tick": 3000,
+      "parent": {
+        "energy": 0.019733115399918497,
+        "floor": 0.48828125
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09527614062692866,
+          "resource": 0.48284728918962616,
+          "floor": 0.08203125,
+          "branch_activation_rate": 0.29983203125
+        },
+        "reverse": {
+          "energy": 0.04011426553149405,
+          "resource": 0.513753556152962,
+          "floor": 0.15234375,
+          "branch_activation_rate": 0.22197005208333334
+        }
+      }
+    },
+    {
+      "seed": 41148,
+      "fork_tick": 9000,
+      "parent": {
+        "energy": 0.019517591925222212,
+        "floor": 0.50390625
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.10027229866043927,
+          "resource": 0.4819190009653338,
+          "floor": 0.06640625,
+          "branch_activation_rate": 0.2965546875
+        },
+        "reverse": {
+          "energy": 0.04228607957049955,
+          "resource": 0.5119611362122126,
+          "floor": 0.1015625,
+          "branch_activation_rate": 0.22227473958333333
+        }
+      }
+    },
+    {
+      "seed": 41149,
+      "fork_tick": 3000,
+      "parent": {
+        "energy": 0.020483405686693882,
+        "floor": 0.44140625
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.10014205698210343,
+          "resource": 0.4815182726754619,
+          "floor": 0.06640625,
+          "branch_activation_rate": 0.29782552083333336
+        },
+        "reverse": {
+          "energy": 0.05185978811748501,
+          "resource": 0.5028511200117474,
+          "floor": 0.03125,
+          "branch_activation_rate": 0.22152994791666666
+        }
+      }
+    },
+    {
+      "seed": 41149,
+      "fork_tick": 9000,
+      "parent": {
+        "energy": 0.01874075345714889,
+        "floor": 0.515625
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09299371158413652,
+          "resource": 0.48465529087416204,
+          "floor": 0.11328125,
+          "branch_activation_rate": 0.3006796875
+        },
+        "reverse": {
+          "energy": 0.04247751461883442,
+          "resource": 0.5076345495369956,
+          "floor": 0.0546875,
+          "branch_activation_rate": 0.22215104166666666
+        }
+      }
+    },
+    {
+      "seed": 41150,
+      "fork_tick": 3000,
+      "parent": {
+        "energy": 0.01942082339800307,
+        "floor": 0.49609375
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09228682430030008,
+          "resource": 0.4831129889592176,
+          "floor": 0.078125,
+          "branch_activation_rate": 0.30098307291666665
+        },
+        "reverse": {
+          "energy": 0.043800032973115535,
+          "resource": 0.5091156796680736,
+          "floor": 0.08984375,
+          "branch_activation_rate": 0.22186067708333335
+        }
+      }
+    },
+    {
+      "seed": 41150,
+      "fork_tick": 9000,
+      "parent": {
+        "energy": 0.01844679013928445,
+        "floor": 0.5078125
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.0945598912297532,
+          "resource": 0.48409594098315556,
+          "floor": 0.10546875,
+          "branch_activation_rate": 0.2986015625
+        },
+        "reverse": {
+          "energy": 0.05176660120958655,
+          "resource": 0.505059474838879,
+          "floor": 0.02734375,
+          "branch_activation_rate": 0.2216640625
+        }
+      }
+    },
+    {
+      "seed": 41151,
+      "fork_tick": 3000,
+      "parent": {
+        "energy": 0.02134542652116469,
+        "floor": 0.4453125
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.09886820572581062,
+          "resource": 0.4815426566277049,
+          "floor": 0.08203125,
+          "branch_activation_rate": 0.30062239583333333
+        },
+        "reverse": {
+          "energy": 0.04711790674177215,
+          "resource": 0.5094203654983772,
+          "floor": 0.0625,
+          "branch_activation_rate": 0.2218984375
+        }
+      }
+    },
+    {
+      "seed": 41151,
+      "fork_tick": 9000,
+      "parent": {
+        "energy": 0.019279238276940072,
+        "floor": 0.49609375
+      },
+      "outcome": {
+        "fixed": {
+          "energy": 0.10065690108983802,
+          "resource": 0.48160514025656465,
+          "floor": 0.08203125,
+          "branch_activation_rate": 0.2961640625
+        },
+        "reverse": {
+          "energy": 0.044385498350760555,
+          "resource": 0.5094247471092882,
+          "floor": 0.125,
+          "branch_activation_rate": 0.22170963541666666
+        }
+      }
+    }
+  ]
+}
