@@ -52,6 +52,41 @@ def _directory(args):
     return Path(args.directory).expanduser().resolve()
 
 
+def _metric_log_health(directory: Path, checkpoint_tick: int):
+    """Non-mutating warning signal for crashes between a logged tick and save.
+
+    A replay after an abrupt kill can produce repeated tick numbers. They are
+    preserved as historical observations, not silently discarded here.
+    """
+    result = {"step_rows": 0, "last_logged_tick": None, "max_logged_tick": None,
+              "non_increasing_transitions": 0,
+              "logged_ahead_of_checkpoint": False,
+              "ignored_malformed_rows": 0}
+    path = directory / base.METRICS
+    if not path.exists():
+        return result
+    previous_tick = None
+    with path.open(encoding="utf-8") as stream:
+        for line in stream:
+            try:
+                record = json.loads(line)
+            except json.JSONDecodeError:
+                result["ignored_malformed_rows"] += 1
+                continue
+            if record.get("kind") != "step" or not isinstance(record.get("completed_steps"), int):
+                continue
+            tick = record["completed_steps"]
+            result["step_rows"] += 1
+            if previous_tick is not None and tick <= previous_tick:
+                result["non_increasing_transitions"] += 1
+            previous_tick = tick
+            result["last_logged_tick"] = tick
+            result["max_logged_tick"] = max(result["max_logged_tick"] or tick, tick)
+    result["logged_ahead_of_checkpoint"] = (result["max_logged_tick"] is not None
+                                            and result["max_logged_tick"] > checkpoint_tick)
+    return result
+
+
 def initialize(args):
     directory = _directory(args)
     if directory.exists() and any(directory.iterdir()):
@@ -147,6 +182,8 @@ def pause(args):
 
 def inspect(args):
     directory = _directory(args)
+    if args.tail < 0:
+        raise SystemExit("--tail must be nonnegative")
     garden, manifest = _open(directory)
     events = []
     if (directory / EVENTS).exists():
@@ -158,7 +195,8 @@ def inspect(args):
                       "paused": (directory / base.PAUSE).exists(),
                       "running_lock_present": (directory / base.LOCK).exists(),
                       "fingerprint": garden.fingerprint(),
-                      "recent_events": events[-args.tail:]}, indent=2))
+                      "metric_log_health": _metric_log_health(directory, garden.tick),
+                      "recent_events": events[-args.tail:] if args.tail else []}, indent=2))
 
 
 def intervene(args):
