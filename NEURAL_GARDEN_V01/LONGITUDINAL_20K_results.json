@@ -1,0 +1,1262 @@
+{
+  "canonical_source_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+  "canonical_source_tick": 100,
+  "canonical_source_unmodified": true,
+  "end_tick": 20000,
+  "experiment": "four_futures_one_historical_world",
+  "interpretation_warning": "One selected world, four matched counterfactuals; not independent replicated evidence; threshold controllers are handwritten; energy floor is clipped and low energy is not extinction.",
+  "numpy": "2.5.4",
+  "python": "3.12.14",
+  "runs": {
+    "original_neural_learning": {
+      "checkpoints": {
+        "100": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.02734375,
+          "harvest_rate": 0.5625,
+          "mean_energy": 0.24244253406405158,
+          "mean_resource": 0.36853030313538016,
+          "resource_action_covariance": -0.016969663706046405
+        },
+        "200": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.5078125,
+          "harvest_rate": 0.625,
+          "mean_energy": 0.019421370793263972,
+          "mean_resource": 0.36183063599502685,
+          "raw_drift_mean_last_1000_or_less": -0.00537120148032507,
+          "resource_action_covariance": -0.016615958860996524
+        },
+        "500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.73046875,
+          "harvest_rate": 0.59765625,
+          "mean_energy": 0.008395765028630497,
+          "mean_resource": 0.342797999538762,
+          "raw_drift_mean_last_1000_or_less": -0.006452302151232178,
+          "resource_action_covariance": -0.014207529449362558
+        },
+        "1000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.828125,
+          "harvest_rate": 0.73046875,
+          "mean_energy": 0.004797763193593894,
+          "mean_resource": 0.32126724157843434,
+          "raw_drift_mean_last_1000_or_less": -0.0076049318095638,
+          "resource_action_covariance": -0.010893178096103769
+        },
+        "2000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.89453125,
+          "harvest_rate": 0.7421875,
+          "mean_energy": 0.002752387247282312,
+          "mean_resource": 0.3118414614491007,
+          "raw_drift_mean_last_1000_or_less": -0.010396667164920145,
+          "resource_action_covariance": -0.011196560377193885
+        },
+        "3000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.9453125,
+          "harvest_rate": 0.7265625,
+          "mean_energy": 0.0014530789538432138,
+          "mean_resource": 0.30535673678764463,
+          "raw_drift_mean_last_1000_or_less": -0.01168926345284957,
+          "resource_action_covariance": -0.011355589765995995
+        },
+        "5000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.9765625,
+          "harvest_rate": 0.81640625,
+          "mean_energy": 0.0007109127971991956,
+          "mean_resource": 0.29329298703941964,
+          "raw_drift_mean_last_1000_or_less": -0.013162860589471602,
+          "resource_action_covariance": -0.009325530524629554
+        },
+        "7500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.9375,
+          "harvest_rate": 0.80859375,
+          "mean_energy": 0.0012573881102458872,
+          "mean_resource": 0.293371402795371,
+          "raw_drift_mean_last_1000_or_less": -0.014049484145554349,
+          "resource_action_covariance": -0.009084053154944247
+        },
+        "10000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.99609375,
+          "harvest_rate": 0.83203125,
+          "mean_energy": 0.00019206478931002184,
+          "mean_resource": 0.284979417100337,
+          "raw_drift_mean_last_1000_or_less": -0.014613333192064775,
+          "resource_action_covariance": -0.007410550278837292
+        },
+        "12500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.9921875,
+          "harvest_rate": 0.82421875,
+          "mean_energy": 0.00030535883305536,
+          "mean_resource": 0.28597344921964274,
+          "raw_drift_mean_last_1000_or_less": -0.015100586752691877,
+          "resource_action_covariance": -0.006969457244824659
+        },
+        "15000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.99609375,
+          "harvest_rate": 0.86328125,
+          "mean_energy": 0.000293850991915078,
+          "mean_resource": 0.28276829358947775,
+          "raw_drift_mean_last_1000_or_less": -0.01550448947189181,
+          "resource_action_covariance": -0.005520212473637697
+        },
+        "17500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.984375,
+          "harvest_rate": 0.84765625,
+          "mean_energy": 0.00046710163222772735,
+          "mean_resource": 0.2822608546918642,
+          "raw_drift_mean_last_1000_or_less": -0.015712597508543306,
+          "resource_action_covariance": -0.0065487364515065
+        },
+        "20000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.9921875,
+          "harvest_rate": 0.87109375,
+          "mean_energy": 0.00019109816297105942,
+          "mean_resource": 0.27948831963531184,
+          "raw_drift_mean_last_1000_or_less": -0.015958408298647198,
+          "resource_action_covariance": -0.005679443191226423
+        }
+      },
+      "config": {
+        "controller": "neural",
+        "shocks": []
+      },
+      "events": [],
+      "final_1000_mean_energy": 0.0003035350635068184,
+      "final_1000_mean_raw_drift": -0.015958408298647198,
+      "final_state_fingerprint": "54af4c8d44140a244fd3dfb1fac26658091d5fda73182e88819ba1911778e10a"
+    },
+    "threshold_049": {
+      "checkpoints": {
+        "100": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.02734375,
+          "harvest_rate": 0.5625,
+          "mean_energy": 0.24244253406405158,
+          "mean_resource": 0.36853030313538016,
+          "resource_action_covariance": -0.016969663706046405
+        },
+        "200": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.046875,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.17328201418422437,
+          "mean_resource": 0.4889048342893181,
+          "raw_drift_mean_last_1000_or_less": -0.0007384029332445883,
+          "resource_action_covariance": -0.008209513866226432
+        },
+        "500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.04296875,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.17784727835603303,
+          "mean_resource": 0.4889048651009026,
+          "raw_drift_mean_last_1000_or_less": -0.00017395429094329285,
+          "resource_action_covariance": -0.008209514379897122
+        },
+        "1000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.00390625,
+          "harvest_rate": 0.4296875,
+          "mean_energy": 0.19400169500015993,
+          "mean_resource": 0.4767530843039667,
+          "raw_drift_mean_last_1000_or_less": -6.0170358995887686e-05,
+          "resource_action_covariance": -0.011468244396556422
+        },
+        "2000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.08203125,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.20241392591813584,
+          "mean_resource": 0.4889048651009026,
+          "raw_drift_mean_last_1000_or_less": 5.864603255738412e-06,
+          "resource_action_covariance": -0.008209514379897122
+        },
+        "3000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0546875,
+          "harvest_rate": 0.36328125,
+          "mean_energy": 0.2230071834643088,
+          "mean_resource": 0.4858310186782481,
+          "raw_drift_mean_last_1000_or_less": 1.615490932764697e-05,
+          "resource_action_covariance": -0.013013899554453166
+        },
+        "5000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.125,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.26206956865019,
+          "mean_resource": 0.4889048651009026,
+          "raw_drift_mean_last_1000_or_less": 5.864603255738412e-06,
+          "resource_action_covariance": -0.008209514379897122
+        },
+        "7500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0859375,
+          "harvest_rate": 0.36328125,
+          "mean_energy": 0.3158730628215891,
+          "mean_resource": 0.4858310186782481,
+          "raw_drift_mean_last_1000_or_less": 1.615490932764697e-05,
+          "resource_action_covariance": -0.013013899554453166
+        },
+        "10000": {
+          "ceiling_fraction": 0.06640625,
+          "floor_fraction": 0.01953125,
+          "harvest_rate": 0.4296875,
+          "mean_energy": 0.3603430884000824,
+          "mean_resource": 0.4767530843039667,
+          "raw_drift_mean_last_1000_or_less": 2.0566480490127906e-05,
+          "resource_action_covariance": -0.011468244396556422
+        },
+        "12500": {
+          "ceiling_fraction": 0.0390625,
+          "floor_fraction": 0.16015625,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.3819854559790582,
+          "mean_resource": 0.4889048651009026,
+          "raw_drift_mean_last_1000_or_less": 5.864603255738412e-06,
+          "resource_action_covariance": -0.008209514379897122
+        },
+        "15000": {
+          "ceiling_fraction": 0.03515625,
+          "floor_fraction": 0.1015625,
+          "harvest_rate": 0.36328125,
+          "mean_energy": 0.41026376690536576,
+          "mean_resource": 0.4858310186782481,
+          "raw_drift_mean_last_1000_or_less": 1.615490932764697e-05,
+          "resource_action_covariance": -0.013013899554453166
+        },
+        "17500": {
+          "ceiling_fraction": 0.13671875,
+          "floor_fraction": 0.02734375,
+          "harvest_rate": 0.4296875,
+          "mean_energy": 0.4364811398683725,
+          "mean_resource": 0.4767530843039667,
+          "raw_drift_mean_last_1000_or_less": 2.0566480490127906e-05,
+          "resource_action_covariance": -0.011468244396556422
+        },
+        "20000": {
+          "ceiling_fraction": 0.09765625,
+          "floor_fraction": 0.171875,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.4385781452629294,
+          "mean_resource": 0.4889048651009026,
+          "raw_drift_mean_last_1000_or_less": 5.864603255738412e-06,
+          "resource_action_covariance": -0.008209514379897122
+        }
+      },
+      "config": {
+        "controller": "threshold",
+        "shocks": [],
+        "threshold": 0.49
+      },
+      "events": [
+        {
+          "kind": "handwritten_policy_graft",
+          "post_fingerprint": "63e87aa654ae7fdd6d2d56cfd1057e14f7a0ed9ae3b2340853ae677856f56e63",
+          "prior_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+          "threshold": 0.49,
+          "tick": 100
+        }
+      ],
+      "final_1000_mean_energy": 0.4403000323689955,
+      "final_1000_mean_raw_drift": 5.864603255738412e-06,
+      "final_state_fingerprint": "c36d8483c6f641ec5eeda705dd888efa21f6a47e44829c1c0f0167db3a2fe2f8"
+    },
+    "threshold_050": {
+      "checkpoints": {
+        "100": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.02734375,
+          "harvest_rate": 0.5625,
+          "mean_energy": 0.24244253406405158,
+          "mean_resource": 0.36853030313538016,
+          "resource_action_covariance": -0.016969663706046405
+        },
+        "200": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.03515625,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.1746619798871522,
+          "mean_resource": 0.48734194459379226,
+          "raw_drift_mean_last_1000_or_less": -0.0007246415847135455,
+          "resource_action_covariance": -0.00788310650473102
+        },
+        "500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.03515625,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.17909606659263608,
+          "mean_resource": 0.4873419481236487,
+          "raw_drift_mean_last_1000_or_less": -0.00017103733888122988,
+          "resource_action_covariance": -0.007883106641200139
+        },
+        "1000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0078125,
+          "harvest_rate": 0.48046875,
+          "mean_energy": 0.19501798687926447,
+          "mean_resource": 0.4750935928807395,
+          "raw_drift_mean_last_1000_or_less": -5.926706261501914e-05,
+          "resource_action_covariance": -0.01193841056703886
+        },
+        "2000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.05859375,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.20298163707531153,
+          "mean_resource": 0.4873419481236487,
+          "raw_drift_mean_last_1000_or_less": 5.171548160922872e-06,
+          "resource_action_covariance": -0.007883106641200139
+        },
+        "3000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.06640625,
+          "harvest_rate": 0.3125,
+          "mean_energy": 0.21922722349683058,
+          "mean_resource": 0.48907855193897376,
+          "raw_drift_mean_last_1000_or_less": 1.2105975401214102e-05,
+          "resource_action_covariance": -0.012253647626517532
+        },
+        "5000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.1015625,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.25979891441243297,
+          "mean_resource": 0.4873419481236487,
+          "raw_drift_mean_last_1000_or_less": 5.171548160922872e-06,
+          "resource_action_covariance": -0.007883106641200139
+        },
+        "7500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.12109375,
+          "harvest_rate": 0.3125,
+          "mean_energy": 0.31044243913199165,
+          "mean_resource": 0.48907855193897376,
+          "raw_drift_mean_last_1000_or_less": 1.2105975401214102e-05,
+          "resource_action_covariance": -0.012253647626517532
+        },
+        "10000": {
+          "ceiling_fraction": 0.03125,
+          "floor_fraction": 0.01953125,
+          "harvest_rate": 0.48046875,
+          "mean_energy": 0.3652303525723262,
+          "mean_resource": 0.4750935928807395,
+          "raw_drift_mean_last_1000_or_less": 2.3214731157658244e-05,
+          "resource_action_covariance": -0.01193841056703886
+        },
+        "12500": {
+          "ceiling_fraction": 0.046875,
+          "floor_fraction": 0.1328125,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.3942267257762716,
+          "mean_resource": 0.4873419481236487,
+          "raw_drift_mean_last_1000_or_less": 5.171548160922872e-06,
+          "resource_action_covariance": -0.007883106641200139
+        },
+        "15000": {
+          "ceiling_fraction": 0.02734375,
+          "floor_fraction": 0.140625,
+          "harvest_rate": 0.3125,
+          "mean_energy": 0.4247045384264033,
+          "mean_resource": 0.48907855193897376,
+          "raw_drift_mean_last_1000_or_less": 1.2105975401214102e-05,
+          "resource_action_covariance": -0.012253647626517532
+        },
+        "17500": {
+          "ceiling_fraction": 0.1328125,
+          "floor_fraction": 0.0234375,
+          "harvest_rate": 0.48046875,
+          "mean_energy": 0.4557045556323499,
+          "mean_resource": 0.4750935928807395,
+          "raw_drift_mean_last_1000_or_less": 2.3214731157658244e-05,
+          "resource_action_covariance": -0.01193841056703886
+        },
+        "20000": {
+          "ceiling_fraction": 0.11328125,
+          "floor_fraction": 0.1328125,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.4587517307668543,
+          "mean_resource": 0.4873419481236487,
+          "raw_drift_mean_last_1000_or_less": 5.171548160922872e-06,
+          "resource_action_covariance": -0.007883106641200139
+        }
+      },
+      "config": {
+        "controller": "threshold",
+        "shocks": [],
+        "threshold": 0.5
+      },
+      "events": [
+        {
+          "kind": "handwritten_policy_graft",
+          "post_fingerprint": "7b8c2eaae613d8a79a6356997c898339d81f737a08b401a3fe9e2cc5ff4361fe",
+          "prior_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+          "threshold": 0.5,
+          "tick": 100
+        }
+      ],
+      "final_1000_mean_energy": 0.4592812040947662,
+      "final_1000_mean_raw_drift": 5.171548160922872e-06,
+      "final_state_fingerprint": "ac22c9d0db562412c51715b5bb71efe8f0f3b507adb8c0a256d90a89a1f67724"
+    },
+    "threshold_050_shocked": {
+      "checkpoints": {
+        "100": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.02734375,
+          "harvest_rate": 0.5625,
+          "mean_energy": 0.24244253406405158,
+          "mean_resource": 0.36853030313538016,
+          "resource_action_covariance": -0.016969663706046405
+        },
+        "200": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.03515625,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.1746619798871522,
+          "mean_resource": 0.48734194459379226,
+          "raw_drift_mean_last_1000_or_less": -0.0007246415847135455,
+          "resource_action_covariance": -0.00788310650473102
+        },
+        "500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.03515625,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.17909606659263608,
+          "mean_resource": 0.4873419481236487,
+          "raw_drift_mean_last_1000_or_less": -0.00017103733888122988,
+          "resource_action_covariance": -0.007883106641200139
+        },
+        "1000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0078125,
+          "harvest_rate": 0.48046875,
+          "mean_energy": 0.19501798687926447,
+          "mean_resource": 0.4750935928807395,
+          "raw_drift_mean_last_1000_or_less": -5.926706261501914e-05,
+          "resource_action_covariance": -0.01193841056703886
+        },
+        "2000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.05859375,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.20298163707531153,
+          "mean_resource": 0.4873419481236487,
+          "raw_drift_mean_last_1000_or_less": 5.171548160922872e-06,
+          "resource_action_covariance": -0.007883106641200139
+        },
+        "3000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.06640625,
+          "harvest_rate": 0.3125,
+          "mean_energy": 0.21922722349683058,
+          "mean_resource": 0.48907855193897376,
+          "raw_drift_mean_last_1000_or_less": 1.2105975401214102e-05,
+          "resource_action_covariance": -0.012253647626517532
+        },
+        "5000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.1015625,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.25979891441243297,
+          "mean_resource": 0.4873419481236487,
+          "post_shock_mean_resource": 0.1949367792494595,
+          "raw_drift_mean_last_1000_or_less": 5.171548160922872e-06,
+          "resource_action_covariance": -0.007883106641200139
+        },
+        "7500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0,
+          "harvest_rate": 0.0,
+          "mean_energy": 0.126676934936286,
+          "mean_resource": 0.4848750548005263,
+          "raw_drift_mean_last_1000_or_less": -4.010258658482276e-05,
+          "resource_action_covariance": 0.0
+        },
+        "10000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.59765625,
+          "harvest_rate": 0.0,
+          "mean_energy": 0.08334734237358148,
+          "mean_resource": 0.5157825515124947,
+          "post_shock_mean_resource": 0.20631302060499787,
+          "raw_drift_mean_last_1000_or_less": -4.010258658482276e-05,
+          "resource_action_covariance": 0.0
+        },
+        "12500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0,
+          "harvest_rate": 0.0,
+          "mean_energy": 0.04280068187756095,
+          "mean_resource": 0.4848750548005263,
+          "raw_drift_mean_last_1000_or_less": -4.010258658482276e-05,
+          "resource_action_covariance": 0.0
+        },
+        "15000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.8828125,
+          "harvest_rate": 0.0,
+          "mean_energy": 0.014471022098023211,
+          "mean_resource": 0.5157825515124947,
+          "raw_drift_mean_last_1000_or_less": -4.010258658482276e-05,
+          "resource_action_covariance": 0.0
+        },
+        "17500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0,
+          "harvest_rate": 1.0,
+          "mean_energy": 0.05377964977008798,
+          "mean_resource": 0.45199473914949606,
+          "raw_drift_mean_last_1000_or_less": 2.584305129330091e-05,
+          "resource_action_covariance": 0.0
+        },
+        "20000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0,
+          "harvest_rate": 0.0,
+          "mean_energy": 0.028671569948986037,
+          "mean_resource": 0.4848750548005263,
+          "raw_drift_mean_last_1000_or_less": -4.010258658482276e-05,
+          "resource_action_covariance": 0.0
+        }
+      },
+      "config": {
+        "controller": "threshold",
+        "shocks": [
+          5000,
+          10000
+        ],
+        "threshold": 0.5
+      },
+      "events": [
+        {
+          "kind": "handwritten_policy_graft",
+          "post_fingerprint": "7b8c2eaae613d8a79a6356997c898339d81f737a08b401a3fe9e2cc5ff4361fe",
+          "prior_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+          "threshold": 0.5,
+          "tick": 100
+        },
+        {
+          "kind": "exogenous_resource_shock",
+          "post_fingerprint": "e9e8365aaf9ee34f1306ca49353d94417526e3ecdc7fa970025c96ca4516a62e",
+          "prior_fingerprint": "6a7a6a8d4cf2d13faa697d303cc2920209a12ae749216cf5ed21f2c6ea7849c8",
+          "resource_multiplier": 0.4,
+          "tick": 5000
+        },
+        {
+          "kind": "exogenous_resource_shock",
+          "post_fingerprint": "f7c8d898e8f5202ca8439f0d509948b2509b9609b6246b0275c8c1615ae1264d",
+          "prior_fingerprint": "855107e977e40f45157153b5a7e9659ed6eedca09b71c468b8c2f9d0c2266cde",
+          "resource_multiplier": 0.4,
+          "tick": 10000
+        }
+      ],
+      "final_1000_mean_energy": 0.029256637468890283,
+      "final_1000_mean_raw_drift": -4.010258658482276e-05,
+      "final_state_fingerprint": "eba1eba02271ad7eb7fc7f8c93c92bbf1174e39bf8f4cceca70debea5606dfe0"
+    },
+    "threshold_051": {
+      "checkpoints": {
+        "100": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.02734375,
+          "harvest_rate": 0.5625,
+          "mean_energy": 0.24244253406405158,
+          "mean_resource": 0.36853030313538016,
+          "resource_action_covariance": -0.016969663706046405
+        },
+        "200": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.01171875,
+          "harvest_rate": 0.28515625,
+          "mean_energy": 0.17779207680713718,
+          "mean_resource": 0.48426375198939264,
+          "raw_drift_mean_last_1000_or_less": -0.0007001009125000673,
+          "resource_action_covariance": -0.009905021507953776
+        },
+        "500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0078125,
+          "harvest_rate": 0.28515625,
+          "mean_energy": 0.18266172522314017,
+          "mean_resource": 0.48426372507836574,
+          "raw_drift_mean_last_1000_or_less": -0.0001633771359361366,
+          "resource_action_covariance": -0.009905020954174167
+        },
+        "1000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.01953125,
+          "harvest_rate": 0.41796875,
+          "mean_energy": 0.19403616100850987,
+          "mean_resource": 0.47954320303191234,
+          "raw_drift_mean_last_1000_or_less": -6.046692943195343e-05,
+          "resource_action_covariance": -0.012376047806772162
+        },
+        "2000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.015625,
+          "harvest_rate": 0.28515625,
+          "mean_energy": 0.20792729677497546,
+          "mean_resource": 0.48426372507836574,
+          "raw_drift_mean_last_1000_or_less": 1.2365469727965427e-05,
+          "resource_action_covariance": -0.009905020954174167
+        },
+        "3000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.046875,
+          "harvest_rate": 0.296875,
+          "mean_energy": 0.22357787520628025,
+          "mean_resource": 0.48763396578699464,
+          "raw_drift_mean_last_1000_or_less": 1.3109202387739368e-05,
+          "resource_action_covariance": -0.011221687643451366
+        },
+        "5000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0703125,
+          "harvest_rate": 0.28515625,
+          "mean_energy": 0.26624356841103414,
+          "mean_resource": 0.48426372507836574,
+          "raw_drift_mean_last_1000_or_less": 1.2365469727965427e-05,
+          "resource_action_covariance": -0.009905020954174167
+        },
+        "7500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.1015625,
+          "harvest_rate": 0.296875,
+          "mean_energy": 0.3195248389986899,
+          "mean_resource": 0.48763396578699464,
+          "raw_drift_mean_last_1000_or_less": 1.3109202387739368e-05,
+          "resource_action_covariance": -0.011221687643451366
+        },
+        "10000": {
+          "ceiling_fraction": 0.03125,
+          "floor_fraction": 0.04296875,
+          "harvest_rate": 0.41796875,
+          "mean_energy": 0.3717365847600004,
+          "mean_resource": 0.47954320303191234,
+          "raw_drift_mean_last_1000_or_less": 2.1117503111619112e-05,
+          "resource_action_covariance": -0.012376047806772162
+        },
+        "12500": {
+          "ceiling_fraction": 0.0625,
+          "floor_fraction": 0.10546875,
+          "harvest_rate": 0.28515625,
+          "mean_energy": 0.404924480334262,
+          "mean_resource": 0.48426372507836574,
+          "raw_drift_mean_last_1000_or_less": 1.2365469727965427e-05,
+          "resource_action_covariance": -0.009905020954174167
+        },
+        "15000": {
+          "ceiling_fraction": 0.02734375,
+          "floor_fraction": 0.11328125,
+          "harvest_rate": 0.296875,
+          "mean_energy": 0.4353319412411586,
+          "mean_resource": 0.48763396578699464,
+          "raw_drift_mean_last_1000_or_less": 1.3109202387739368e-05,
+          "resource_action_covariance": -0.011221687643451366
+        },
+        "17500": {
+          "ceiling_fraction": 0.09375,
+          "floor_fraction": 0.046875,
+          "harvest_rate": 0.41796875,
+          "mean_energy": 0.46554260483823184,
+          "mean_resource": 0.47954320303191234,
+          "raw_drift_mean_last_1000_or_less": 2.1117503111619112e-05,
+          "resource_action_covariance": -0.012376047806772162
+        },
+        "20000": {
+          "ceiling_fraction": 0.1640625,
+          "floor_fraction": 0.12109375,
+          "harvest_rate": 0.28515625,
+          "mean_energy": 0.4753274329337215,
+          "mean_resource": 0.48426372507836574,
+          "raw_drift_mean_last_1000_or_less": 1.2365469727965427e-05,
+          "resource_action_covariance": -0.009905020954174167
+        }
+      },
+      "config": {
+        "controller": "threshold",
+        "shocks": [],
+        "threshold": 0.51
+      },
+      "events": [
+        {
+          "kind": "handwritten_policy_graft",
+          "post_fingerprint": "834bfa3cb223a096e038273fa230da480656f3cae25b2bb8c1b0b5e2bb7148cd",
+          "prior_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+          "threshold": 0.51,
+          "tick": 100
+        }
+      ],
+      "final_1000_mean_energy": 0.47382668586879767,
+      "final_1000_mean_raw_drift": 1.2365469727965427e-05,
+      "final_state_fingerprint": "4b8a1457c2c52b906418b0f5b8953d0a4248c5567f36234151c33792ccde7040"
+    },
+    "threshold_052": {
+      "checkpoints": {
+        "100": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.02734375,
+          "harvest_rate": 0.5625,
+          "mean_energy": 0.24244253406405158,
+          "mean_resource": 0.36853030313538016,
+          "resource_action_covariance": -0.016969663706046405
+        },
+        "200": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.01171875,
+          "harvest_rate": 0.44140625,
+          "mean_energy": 0.17492085053420908,
+          "mean_resource": 0.48986743705878943,
+          "raw_drift_mean_last_1000_or_less": -0.0007500661783665076,
+          "resource_action_covariance": -0.014083363141474549
+        },
+        "500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.01171875,
+          "harvest_rate": 0.328125,
+          "mean_energy": 0.17343679218106514,
+          "mean_resource": 0.49601300871207743,
+          "raw_drift_mean_last_1000_or_less": -0.000193084480969833,
+          "resource_action_covariance": -0.012797664258505963
+        },
+        "1000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0078125,
+          "harvest_rate": 0.3046875,
+          "mean_energy": 0.17497215055447113,
+          "mean_resource": 0.4990691222586977,
+          "raw_drift_mean_last_1000_or_less": -8.45349575669127e-05,
+          "resource_action_covariance": -0.012604063737902677
+        },
+        "2000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0078125,
+          "harvest_rate": 0.24609375,
+          "mean_energy": 0.18168902668101672,
+          "mean_resource": 0.4990535516652609,
+          "raw_drift_mean_last_1000_or_less": 6.087880260609942e-06,
+          "resource_action_covariance": -0.010196612501601584
+        },
+        "3000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.00390625,
+          "harvest_rate": 0.26171875,
+          "mean_energy": 0.19262380020083703,
+          "mean_resource": 0.4929234290508958,
+          "raw_drift_mean_last_1000_or_less": 1.0596082858778529e-05,
+          "resource_action_covariance": -0.00921454020143467
+        },
+        "5000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.00390625,
+          "harvest_rate": 0.2421875,
+          "mean_energy": 0.20116264555534163,
+          "mean_resource": 0.5000417424576765,
+          "raw_drift_mean_last_1000_or_less": -1.7042755543135767e-06,
+          "resource_action_covariance": -0.010053377098725476
+        },
+        "7500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0,
+          "harvest_rate": 0.22265625,
+          "mean_energy": 0.22013599567077646,
+          "mean_resource": 0.49593224977327766,
+          "raw_drift_mean_last_1000_or_less": 1.0474597359166867e-05,
+          "resource_action_covariance": -0.008685316167540365
+        },
+        "10000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0,
+          "harvest_rate": 0.3046875,
+          "mean_energy": 0.23528108561981573,
+          "mean_resource": 0.4972204644637545,
+          "raw_drift_mean_last_1000_or_less": 1.9971696019269936e-06,
+          "resource_action_covariance": -0.011640589670446781
+        },
+        "12500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0,
+          "harvest_rate": 0.2421875,
+          "mean_energy": 0.25139646078379446,
+          "mean_resource": 0.49797436110383575,
+          "raw_drift_mean_last_1000_or_less": 2.8507065218541136e-06,
+          "resource_action_covariance": -0.009429525883414419
+        },
+        "15000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0,
+          "harvest_rate": 0.29296875,
+          "mean_energy": 0.2706989113703556,
+          "mean_resource": 0.4917213887321108,
+          "raw_drift_mean_last_1000_or_less": 6.779299908072765e-06,
+          "resource_action_covariance": -0.009422443551322452
+        },
+        "17500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0,
+          "harvest_rate": 0.30078125,
+          "mean_energy": 0.28646764921695644,
+          "mean_resource": 0.4917053322120613,
+          "raw_drift_mean_last_1000_or_less": 5.925063282203994e-06,
+          "resource_action_covariance": -0.0097181385142025
+        },
+        "20000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0,
+          "harvest_rate": 0.30078125,
+          "mean_energy": 0.30409132627820934,
+          "mean_resource": 0.4917053322120613,
+          "raw_drift_mean_last_1000_or_less": 5.925063282189346e-06,
+          "resource_action_covariance": -0.0097181385142025
+        }
+      },
+      "config": {
+        "controller": "threshold",
+        "shocks": [],
+        "threshold": 0.52
+      },
+      "events": [
+        {
+          "kind": "handwritten_policy_graft",
+          "post_fingerprint": "24a29717fa79073b2011a6c4dc6677e2965d9e5f4a53fa038cd811bed85ccaac",
+          "prior_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+          "threshold": 0.52,
+          "tick": 100
+        }
+      ],
+      "final_1000_mean_energy": 0.2986236416835152,
+      "final_1000_mean_raw_drift": 5.925063282189346e-06,
+      "final_state_fingerprint": "93ee6767adc0f8a10db162346d9721e01960013d0126b59464d0499f5fedf5ba"
+    },
+    "threshold_053": {
+      "checkpoints": {
+        "100": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.02734375,
+          "harvest_rate": 0.5625,
+          "mean_energy": 0.24244253406405158,
+          "mean_resource": 0.36853030313538016,
+          "resource_action_covariance": -0.016969663706046405
+        },
+        "200": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0,
+          "harvest_rate": 0.45703125,
+          "mean_energy": 0.17008106298583645,
+          "mean_resource": 0.49349191503037987,
+          "raw_drift_mean_last_1000_or_less": -0.00081177006974803,
+          "resource_action_covariance": -0.01206345675045244
+        },
+        "500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.015625,
+          "harvest_rate": 0.3828125,
+          "mean_energy": 0.15920928234000264,
+          "mean_resource": 0.4972702734347926,
+          "raw_drift_mean_last_1000_or_less": -0.00023622169654127334,
+          "resource_action_covariance": -0.011589530729320008
+        },
+        "1000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.01953125,
+          "harvest_rate": 0.3984375,
+          "mean_energy": 0.14533337719023667,
+          "mean_resource": 0.49727652386380433,
+          "raw_drift_mean_last_1000_or_less": -0.00012636781033897767,
+          "resource_action_covariance": -0.0119329396778311
+        },
+        "2000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0234375,
+          "harvest_rate": 0.3984375,
+          "mean_energy": 0.12347900680640055,
+          "mean_resource": 0.4970913357036503,
+          "raw_drift_mean_last_1000_or_less": -3.942151022191265e-05,
+          "resource_action_covariance": -0.011908231200348106
+        },
+        "3000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0234375,
+          "harvest_rate": 0.3984375,
+          "mean_energy": 0.11259941208726668,
+          "mean_resource": 0.4970913357036503,
+          "raw_drift_mean_last_1000_or_less": -3.973048803807324e-05,
+          "resource_action_covariance": -0.011908231200348106
+        },
+        "5000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.03515625,
+          "harvest_rate": 0.3984375,
+          "mean_energy": 0.11048784714429283,
+          "mean_resource": 0.4970913357036503,
+          "raw_drift_mean_last_1000_or_less": -3.973048803807324e-05,
+          "resource_action_covariance": -0.011908231200348106
+        },
+        "7500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.03515625,
+          "harvest_rate": 0.3984375,
+          "mean_energy": 0.12109002254430362,
+          "mean_resource": 0.4970913357036503,
+          "raw_drift_mean_last_1000_or_less": -3.973048803807324e-05,
+          "resource_action_covariance": -0.011908231200348106
+        },
+        "10000": {
+          "ceiling_fraction": 0.00390625,
+          "floor_fraction": 0.03515625,
+          "harvest_rate": 0.3984375,
+          "mean_energy": 0.13523717053810486,
+          "mean_resource": 0.4970913357036503,
+          "raw_drift_mean_last_1000_or_less": -3.973048803807324e-05,
+          "resource_action_covariance": -0.011908231200348106
+        },
+        "12500": {
+          "ceiling_fraction": 0.00390625,
+          "floor_fraction": 0.03515625,
+          "harvest_rate": 0.3984375,
+          "mean_energy": 0.14834916255436978,
+          "mean_resource": 0.4970913357036503,
+          "raw_drift_mean_last_1000_or_less": -3.973048803807324e-05,
+          "resource_action_covariance": -0.011908231200348106
+        },
+        "15000": {
+          "ceiling_fraction": 0.01953125,
+          "floor_fraction": 0.03515625,
+          "harvest_rate": 0.3984375,
+          "mean_energy": 0.15979436710566902,
+          "mean_resource": 0.4970913357036503,
+          "raw_drift_mean_last_1000_or_less": -3.973048803807324e-05,
+          "resource_action_covariance": -0.011908231200348106
+        },
+        "17500": {
+          "ceiling_fraction": 0.03125,
+          "floor_fraction": 0.03515625,
+          "harvest_rate": 0.3984375,
+          "mean_energy": 0.16959134247169338,
+          "mean_resource": 0.4970913357036503,
+          "raw_drift_mean_last_1000_or_less": -3.973048803807324e-05,
+          "resource_action_covariance": -0.011908231200348106
+        },
+        "20000": {
+          "ceiling_fraction": 0.0390625,
+          "floor_fraction": 0.03515625,
+          "harvest_rate": 0.3984375,
+          "mean_energy": 0.17741770309810384,
+          "mean_resource": 0.4970913357036503,
+          "raw_drift_mean_last_1000_or_less": -3.973048803807324e-05,
+          "resource_action_covariance": -0.011908231200348106
+        }
+      },
+      "config": {
+        "controller": "threshold",
+        "shocks": [],
+        "threshold": 0.53
+      },
+      "events": [
+        {
+          "kind": "handwritten_policy_graft",
+          "post_fingerprint": "6ca1c2000312996cb9ed1ecc60fc5762711567c6ecc4e58ab0aa77f91a3ef8e4",
+          "prior_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+          "threshold": 0.53,
+          "tick": 100
+        }
+      ],
+      "final_1000_mean_energy": 0.1669810829630029,
+      "final_1000_mean_raw_drift": -3.973048803807324e-05,
+      "final_state_fingerprint": "ad80e0f8538a1a4ff6588d0194e1e0aa677b77e4aa40045b7dcd78af67b92fe3"
+    },
+    "threshold_054": {
+      "checkpoints": {
+        "100": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.02734375,
+          "harvest_rate": 0.5625,
+          "mean_energy": 0.24244253406405158,
+          "mean_resource": 0.36853030313538016,
+          "resource_action_covariance": -0.016969663706046405
+        },
+        "200": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.01953125,
+          "harvest_rate": 0.24609375,
+          "mean_energy": 0.14314034824240954,
+          "mean_resource": 0.5240619165260505,
+          "raw_drift_mean_last_1000_or_less": -0.0011123810606345035,
+          "resource_action_covariance": -0.011443948661129157
+        },
+        "500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0078125,
+          "harvest_rate": 0.21484375,
+          "mean_energy": 0.11905227695357132,
+          "mean_resource": 0.5206423301804937,
+          "raw_drift_mean_last_1000_or_less": -0.00036264599288970257,
+          "resource_action_covariance": -0.007516181961696296
+        },
+        "1000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.015625,
+          "harvest_rate": 0.234375,
+          "mean_energy": 0.09082512320817812,
+          "mean_resource": 0.5105045068464824,
+          "raw_drift_mean_last_1000_or_less": -0.00022255792042762048,
+          "resource_action_covariance": -0.007822659219838497
+        },
+        "2000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.03515625,
+          "harvest_rate": 0.51171875,
+          "mean_energy": 0.06305981671541572,
+          "mean_resource": 0.5040807387072942,
+          "raw_drift_mean_last_1000_or_less": -0.00012211471147564938,
+          "resource_action_covariance": -0.014221483801826796
+        },
+        "3000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0078125,
+          "harvest_rate": 0.23046875,
+          "mean_energy": 0.039316253988939245,
+          "mean_resource": 0.5263331482677944,
+          "raw_drift_mean_last_1000_or_less": -0.000142615712345175,
+          "resource_action_covariance": -0.011184878649897785
+        },
+        "5000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.15625,
+          "harvest_rate": 0.54296875,
+          "mean_energy": 0.045009282988900744,
+          "mean_resource": 0.5135561476428734,
+          "raw_drift_mean_last_1000_or_less": -0.0001216281408061097,
+          "resource_action_covariance": -0.013970532582969158
+        },
+        "7500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.03125,
+          "harvest_rate": 0.21875,
+          "mean_energy": 0.03897545224663889,
+          "mean_resource": 0.5204704721279956,
+          "raw_drift_mean_last_1000_or_less": -0.00012177428855085407,
+          "resource_action_covariance": -0.007432618825866555
+        },
+        "10000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0078125,
+          "harvest_rate": 0.23046875,
+          "mean_energy": 0.033948673482652264,
+          "mean_resource": 0.5263331482677944,
+          "raw_drift_mean_last_1000_or_less": -0.000142615712345175,
+          "resource_action_covariance": -0.011184878649897785
+        },
+        "12500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0390625,
+          "harvest_rate": 0.51171875,
+          "mean_energy": 0.05011676684868292,
+          "mean_resource": 0.5040807387072942,
+          "raw_drift_mean_last_1000_or_less": -0.00012211471147564938,
+          "resource_action_covariance": -0.014221483801826796
+        },
+        "15000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0234375,
+          "harvest_rate": 0.234375,
+          "mean_energy": 0.04597948404640216,
+          "mean_resource": 0.5105045068464824,
+          "raw_drift_mean_last_1000_or_less": -0.00010864692270396378,
+          "resource_action_covariance": -0.007822659219838497
+        },
+        "17500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.19921875,
+          "harvest_rate": 0.0546875,
+          "mean_energy": 0.02875779882737556,
+          "mean_resource": 0.5343902818129331,
+          "raw_drift_mean_last_1000_or_less": -0.0001206671358641542,
+          "resource_action_covariance": -0.002969434657785509
+        },
+        "20000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.50390625,
+          "harvest_rate": 0.20703125,
+          "mean_energy": 0.023774361801994166,
+          "mean_resource": 0.5412780443060596,
+          "raw_drift_mean_last_1000_or_less": -0.00014699806420682786,
+          "resource_action_covariance": -0.011104940691709315
+        }
+      },
+      "config": {
+        "controller": "threshold",
+        "shocks": [],
+        "threshold": 0.54
+      },
+      "events": [
+        {
+          "kind": "handwritten_policy_graft",
+          "post_fingerprint": "2f939e382542732d3b49f4f9ac7b275a2fd4c257ce1b55a1f859d6503ac8e26c",
+          "prior_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+          "threshold": 0.54,
+          "tick": 100
+        }
+      ],
+      "final_1000_mean_energy": 0.038425531106128376,
+      "final_1000_mean_raw_drift": -0.00014699806420682786,
+      "final_state_fingerprint": "0ed137dbb9843d1a58a33fd0ca98b7eec044220c4afb2e913b841bfeefb947fa"
+    },
+    "threshold_055": {
+      "checkpoints": {
+        "100": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.02734375,
+          "harvest_rate": 0.5625,
+          "mean_energy": 0.24244253406405158,
+          "mean_resource": 0.36853030313538016,
+          "resource_action_covariance": -0.016969663706046405
+        },
+        "200": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0234375,
+          "harvest_rate": 0.265625,
+          "mean_energy": 0.14680318033451883,
+          "mean_resource": 0.5158141242279881,
+          "raw_drift_mean_last_1000_or_less": -0.0010937103010783627,
+          "resource_action_covariance": -0.008306999033990823
+        },
+        "500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.0703125,
+          "harvest_rate": 0.4140625,
+          "mean_energy": 0.11081109754682068,
+          "mean_resource": 0.5188306696494729,
+          "raw_drift_mean_last_1000_or_less": -0.0003962535691268495,
+          "resource_action_covariance": -0.014093225106122976
+        },
+        "1000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.04296875,
+          "harvest_rate": 0.23828125,
+          "mean_energy": 0.06853441756806311,
+          "mean_resource": 0.5220323692823778,
+          "raw_drift_mean_last_1000_or_less": -0.0002642349292893578,
+          "resource_action_covariance": -0.00897198010208249
+        },
+        "2000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.11328125,
+          "harvest_rate": 0.29296875,
+          "mean_energy": 0.039203604218080015,
+          "mean_resource": 0.5219181367303108,
+          "raw_drift_mean_last_1000_or_less": -0.0001538243310083956,
+          "resource_action_covariance": -0.011332214921068201
+        },
+        "3000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.140625,
+          "harvest_rate": 0.28125,
+          "mean_energy": 0.03445526672752371,
+          "mean_resource": 0.5255740713584165,
+          "raw_drift_mean_last_1000_or_less": -0.00015602316595144283,
+          "resource_action_covariance": -0.01185413381091191
+        },
+        "5000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.15625,
+          "harvest_rate": 0.2421875,
+          "mean_energy": 0.03384889749711049,
+          "mean_resource": 0.5257229561676182,
+          "raw_drift_mean_last_1000_or_less": -0.00015452940733395244,
+          "resource_action_covariance": -0.010713619144988666
+        },
+        "7500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.13671875,
+          "harvest_rate": 0.31640625,
+          "mean_energy": 0.03528310997517706,
+          "mean_resource": 0.5241002000814405,
+          "raw_drift_mean_last_1000_or_less": -0.00015702429599362413,
+          "resource_action_covariance": -0.011887251941718177
+        },
+        "10000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.1484375,
+          "harvest_rate": 0.3046875,
+          "mean_energy": 0.03599414801756019,
+          "mean_resource": 0.5229446613175694,
+          "raw_drift_mean_last_1000_or_less": -0.00015080115517984117,
+          "resource_action_covariance": -0.011394392264168735
+        },
+        "12500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.16015625,
+          "harvest_rate": 0.29296875,
+          "mean_energy": 0.03590069925605388,
+          "mean_resource": 0.5230065802157227,
+          "raw_drift_mean_last_1000_or_less": -0.00015455645251970923,
+          "resource_action_covariance": -0.011321002146555938
+        },
+        "15000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.06640625,
+          "harvest_rate": 0.3125,
+          "mean_energy": 0.039206745576279976,
+          "mean_resource": 0.5185909777767241,
+          "raw_drift_mean_last_1000_or_less": -0.00014808671514294935,
+          "resource_action_covariance": -0.011179220401793071
+        },
+        "17500": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.1484375,
+          "harvest_rate": 0.25390625,
+          "mean_energy": 0.03598180227465299,
+          "mean_resource": 0.523100006956476,
+          "raw_drift_mean_last_1000_or_less": -0.00014704879077929694,
+          "resource_action_covariance": -0.010513664240375531
+        },
+        "20000": {
+          "ceiling_fraction": 0.0,
+          "floor_fraction": 0.140625,
+          "harvest_rate": 0.3203125,
+          "mean_energy": 0.03747081420059797,
+          "mean_resource": 0.5206134366142764,
+          "raw_drift_mean_last_1000_or_less": -0.00015086616247849248,
+          "resource_action_covariance": -0.012063311878358013
+        }
+      },
+      "config": {
+        "controller": "threshold",
+        "shocks": [],
+        "threshold": 0.55
+      },
+      "events": [
+        {
+          "kind": "handwritten_policy_graft",
+          "post_fingerprint": "cf9c8ef62d8ae502379f464dc2cec7d0f5c1d89bc9afc8c9420e3d05bbe31c36",
+          "prior_fingerprint": "477bea9e3a7752ee0008910c158444f47a1779d15db300fee128ee4a2f97cfcb",
+          "threshold": 0.55,
+          "tick": 100
+        }
+      ],
+      "final_1000_mean_energy": 0.03522663179463234,
+      "final_1000_mean_raw_drift": -0.00015086616247849248,
+      "final_state_fingerprint": "32b661db489896bf14c68018580a09d470a8a65d52c69705d98ed788db4d32cc"
+    }
+  },
+  "size": 16,
+  "source_sha256": {
+    "LONGITUDINAL_20K_probe.py": "972c4b269fe95ee6620b33292f3d407998f25d20c39757120ea4ed50beec4293",
+    "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1",
+    "threshold_policy.py": "93230b8f5c3bb6a0ec28eca5e69f7fe99d3450905e8db9045e788216aaef2e12"
+  },
+  "status": "executed"
+}
