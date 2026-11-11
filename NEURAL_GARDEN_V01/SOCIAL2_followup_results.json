@@ -1,0 +1,1727 @@
+{
+  "design": {
+    "seeds": 12,
+    "seed_start": 10600,
+    "train_ticks": 1500,
+    "eval_ticks": 3000,
+    "period": 300,
+    "arms": [
+      "none",
+      "top_neighbor",
+      "bottom_neighbor",
+      "random_neighbor",
+      "global_shuffle",
+      "neighbor_mean"
+    ],
+    "regrowths": [
+      0.06,
+      0.055
+    ]
+  },
+  "summary": {
+    "0.06": {
+      "none": {
+        "mean_energy": 0.19931455445689214,
+        "floor": 0.1261574074074074,
+        "bottom_decile": 0.005074879410328782,
+        "mean_resource": 0.47681701570751317,
+        "mean_l2_change": 0.0,
+        "donor_energy_advantage": 0.0
+      },
+      "top_neighbor": {
+        "mean_energy": 0.06957099453919825,
+        "floor": 0.1568287037037037,
+        "bottom_decile": 0.0025035252733834027,
+        "mean_resource": 0.4585660180356912,
+        "mean_l2_change": 0.42680902127701686,
+        "donor_energy_advantage": 0.0313233922835039,
+        "paired_wins_vs_none": 0,
+        "paired_wins_vs_random_neighbor": 3
+      },
+      "bottom_neighbor": {
+        "mean_energy": 0.10924144522199992,
+        "floor": 0.04513888888888889,
+        "bottom_decile": 0.02511211565995247,
+        "mean_resource": 0.4818846979183536,
+        "mean_l2_change": 0.420535335464024,
+        "donor_energy_advantage": -0.03144429357662007,
+        "paired_wins_vs_none": 0,
+        "paired_wins_vs_random_neighbor": 12
+      },
+      "random_neighbor": {
+        "mean_energy": 0.089166269892694,
+        "floor": 0.10590277777777778,
+        "bottom_decile": 0.008655148591224859,
+        "mean_resource": 0.47118926754020435,
+        "mean_l2_change": 0.42638866976531303,
+        "donor_energy_advantage": -0.001131808834350863,
+        "paired_wins_vs_none": 0
+      },
+      "global_shuffle": {
+        "mean_energy": 0.1124871010536221,
+        "floor": 0.0908564814814815,
+        "bottom_decile": 0.014254484228316438,
+        "mean_resource": 0.4717099950711756,
+        "mean_l2_change": 0.41701612056473375,
+        "donor_energy_advantage": -1.5259141686833023e-19,
+        "paired_wins_vs_none": 0,
+        "paired_wins_vs_random_neighbor": 12
+      },
+      "neighbor_mean": {
+        "mean_energy": 0.04527052852001189,
+        "floor": 0.177662037037037,
+        "bottom_decile": 0.0035895052616157597,
+        "mean_resource": 0.47310289238218944,
+        "mean_l2_change": 0.3369568973046974,
+        "donor_energy_advantage": 1.124357808503486e-19,
+        "paired_wins_vs_none": 0,
+        "paired_wins_vs_random_neighbor": 0
+      }
+    },
+    "0.055": {
+      "none": {
+        "mean_energy": 0.017128341023122513,
+        "floor": 0.38483796296296297,
+        "bottom_decile": 0.0,
+        "mean_resource": 0.46442842233528664,
+        "mean_l2_change": 0.0,
+        "donor_energy_advantage": 0.0
+      },
+      "top_neighbor": {
+        "mean_energy": 0.017586162628111638,
+        "floor": 0.39004629629629634,
+        "bottom_decile": 0.0,
+        "mean_resource": 0.46548272383205863,
+        "mean_l2_change": 0.42680902127701686,
+        "donor_energy_advantage": 0.0313233922835039,
+        "paired_wins_vs_none": 9,
+        "paired_wins_vs_random_neighbor": 5
+      },
+      "bottom_neighbor": {
+        "mean_energy": 0.016546293297645474,
+        "floor": 0.3888888888888889,
+        "bottom_decile": 0.0,
+        "mean_resource": 0.4648355795187649,
+        "mean_l2_change": 0.420535335464024,
+        "donor_energy_advantage": -0.03144429357662007,
+        "paired_wins_vs_none": 4,
+        "paired_wins_vs_random_neighbor": 3
+      },
+      "random_neighbor": {
+        "mean_energy": 0.01754177875691336,
+        "floor": 0.3761574074074074,
+        "bottom_decile": 0.0,
+        "mean_resource": 0.463624427662559,
+        "mean_l2_change": 0.42638866976531303,
+        "donor_energy_advantage": -0.001131808834350863,
+        "paired_wins_vs_none": 8
+      },
+      "global_shuffle": {
+        "mean_energy": 0.01799380290863058,
+        "floor": 0.3506944444444444,
+        "bottom_decile": 0.0,
+        "mean_resource": 0.4628055047712168,
+        "mean_l2_change": 0.41701612056473375,
+        "donor_energy_advantage": -1.5259141686833023e-19,
+        "paired_wins_vs_none": 9,
+        "paired_wins_vs_random_neighbor": 8
+      },
+      "neighbor_mean": {
+        "mean_energy": 0.017537979888600622,
+        "floor": 0.38078703703703703,
+        "bottom_decile": 0.0,
+        "mean_resource": 0.46335757434467134,
+        "mean_l2_change": 0.3369568973046974,
+        "donor_energy_advantage": 1.124357808503486e-19,
+        "paired_wins_vs_none": 11,
+        "paired_wins_vs_random_neighbor": 6
+      }
+    }
+  },
+  "rows": [
+    {
+      "seed": 10600,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.20195078989440027,
+          "floor": 0.09027777777777778,
+          "bottom_decile": 0.015414655994753546,
+          "mean_resource": 0.47443632270073344,
+          "theta_dispersion": 0.15541288297980674,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.40302896645068476,
+          "donor_energy_advantage": 0.02964745610131088,
+          "mean_energy": 0.09524665700765939,
+          "floor": 0.1111111111111111,
+          "bottom_decile": 0.0037326978478380434,
+          "mean_resource": 0.45628370155368597,
+          "theta_dispersion": 0.11429476928161635,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4464234322286161,
+          "donor_energy_advantage": -0.029320506868453926,
+          "mean_energy": 0.10616244110098089,
+          "floor": 0.034722222222222224,
+          "bottom_decile": 0.023304643533185114,
+          "mean_resource": 0.4813421146070758,
+          "theta_dispersion": 0.10533232073085629,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4081620786882423,
+          "donor_energy_advantage": -0.0022969743191144833,
+          "mean_energy": 0.09007559300894477,
+          "floor": 0.13194444444444445,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4746297299117036,
+          "theta_dispersion": 0.12939490965204192,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.41206155115114623,
+          "donor_energy_advantage": -1.927470528863119e-19,
+          "mean_energy": 0.10611106783751525,
+          "floor": 0.06944444444444445,
+          "bottom_decile": 0.020324204685738468,
+          "mean_resource": 0.46674911915304684,
+          "theta_dispersion": 0.15541288297980674,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3370648944804995,
+          "donor_energy_advantage": -3.854941057726238e-19,
+          "mean_energy": 0.048142398666973646,
+          "floor": 0.24305555555555555,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4760835644598144,
+          "theta_dispersion": 0.022873091768189757,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10600,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.021120880472162946,
+          "floor": 0.2847222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.45788982529120265,
+          "theta_dispersion": 0.15541288297980674,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.40302896645068476,
+          "donor_energy_advantage": 0.02964745610131088,
+          "mean_energy": 0.018914690624323865,
+          "floor": 0.3472222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.465681477070849,
+          "theta_dispersion": 0.13271944805812744,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4464234322286161,
+          "donor_energy_advantage": -0.029320506868453926,
+          "mean_energy": 0.01912367219746776,
+          "floor": 0.3333333333333333,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4612535758930747,
+          "theta_dispersion": 0.1655364049407376,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4081620786882423,
+          "donor_energy_advantage": -0.0022969743191144833,
+          "mean_energy": 0.019010512856789934,
+          "floor": 0.3472222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46105953894021745,
+          "theta_dispersion": 0.12939490965204192,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.41206155115114623,
+          "donor_energy_advantage": -1.927470528863119e-19,
+          "mean_energy": 0.019598992043013425,
+          "floor": 0.2638888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.45961223199277984,
+          "theta_dispersion": 0.15541288297980674,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3370648944804995,
+          "donor_energy_advantage": -3.854941057726238e-19,
+          "mean_energy": 0.021425336240820256,
+          "floor": 0.2916666666666667,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4572795250574375,
+          "theta_dispersion": 0.022873091768189757,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10601,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.19644416823340816,
+          "floor": 0.1111111111111111,
+          "bottom_decile": 0.005176550467325678,
+          "mean_resource": 0.4748212363828187,
+          "theta_dispersion": 0.14982542108875643,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.396918807967346,
+          "donor_energy_advantage": 0.02911478076136003,
+          "mean_energy": 0.08201676575845357,
+          "floor": 0.10416666666666667,
+          "bottom_decile": 0.009886638279907267,
+          "mean_resource": 0.4584120579083835,
+          "theta_dispersion": 0.10212632475327232,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.41022195760927516,
+          "donor_energy_advantage": -0.03033559010499709,
+          "mean_energy": 0.10032144665429918,
+          "floor": 0.14583333333333334,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4875438813911056,
+          "theta_dispersion": 0.12892851569506855,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.40489592485585946,
+          "donor_energy_advantage": -0.0015872571451847,
+          "mean_energy": 0.09457609650080805,
+          "floor": 0.09027777777777778,
+          "bottom_decile": 0.014585561862660683,
+          "mean_resource": 0.47185145754302543,
+          "theta_dispersion": 0.1687837865940209,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4279051520081872,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.1156767302142814,
+          "floor": 0.09722222222222222,
+          "bottom_decile": 0.01458471971523809,
+          "mean_resource": 0.4702539208764742,
+          "theta_dispersion": 0.14982542108875643,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3135940782840021,
+          "donor_energy_advantage": -4.818676322157798e-19,
+          "mean_energy": 0.03562864090241512,
+          "floor": 0.20833333333333334,
+          "bottom_decile": 0.0005818452180844638,
+          "mean_resource": 0.4717354275523533,
+          "theta_dispersion": 0.024360509920894335,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10601,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.016982067520132153,
+          "floor": 0.3680555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46461146049148183,
+          "theta_dispersion": 0.14982542108875643,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.396918807967346,
+          "donor_energy_advantage": 0.02911478076136003,
+          "mean_energy": 0.017715270152983967,
+          "floor": 0.375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46330732894163024,
+          "theta_dispersion": 0.1823702312365867,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.41022195760927516,
+          "donor_energy_advantage": -0.03033559010499709,
+          "mean_energy": 0.01591694588020193,
+          "floor": 0.4027777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46545843009648674,
+          "theta_dispersion": 0.14536835809255186,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.40489592485585946,
+          "donor_energy_advantage": -0.0015872571451847,
+          "mean_energy": 0.01895828597872409,
+          "floor": 0.3472222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.462672518572066,
+          "theta_dispersion": 0.1687837865940209,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4279051520081872,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.017271303519816858,
+          "floor": 0.3680555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.463926480952559,
+          "theta_dispersion": 0.14982542108875643,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3135940782840021,
+          "donor_energy_advantage": -4.818676322157798e-19,
+          "mean_energy": 0.0171160199246059,
+          "floor": 0.3888888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46399173051814063,
+          "theta_dispersion": 0.024360509920894335,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10602,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.21782002600440312,
+          "floor": 0.1527777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.47811520570519545,
+          "theta_dispersion": 0.163919986076614,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.48455894256265597,
+          "donor_energy_advantage": 0.03256922532465975,
+          "mean_energy": 0.04718266212445107,
+          "floor": 0.16666666666666666,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.45416297400461336,
+          "theta_dispersion": 0.16951735222045705,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.47457456993441355,
+          "donor_energy_advantage": -0.03157356309325535,
+          "mean_energy": 0.1108865321196972,
+          "floor": 0.020833333333333332,
+          "bottom_decile": 0.0327844513106313,
+          "mean_resource": 0.4819984058471023,
+          "theta_dispersion": 0.1106558125511627,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4686036485197772,
+          "donor_energy_advantage": 0.0003502924589869949,
+          "mean_energy": 0.08988653151515301,
+          "floor": 0.11805555555555555,
+          "bottom_decile": 0.0005896712341097196,
+          "mean_resource": 0.4713337567992576,
+          "theta_dispersion": 0.14657599677773672,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4303268669301537,
+          "donor_energy_advantage": -2.8912057932946783e-19,
+          "mean_energy": 0.11766268922573309,
+          "floor": 0.09722222222222222,
+          "bottom_decile": 0.011146159538863927,
+          "mean_resource": 0.47316618845018055,
+          "theta_dispersion": 0.16391998607661404,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3743066613887178,
+          "donor_energy_advantage": 3.854941057726238e-19,
+          "mean_energy": 0.04520578803396745,
+          "floor": 0.13194444444444445,
+          "bottom_decile": 0.0041952345236241015,
+          "mean_resource": 0.47153626396661275,
+          "theta_dispersion": 0.025218176387119023,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10602,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.017351351333681535,
+          "floor": 0.3819444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46347962025546013,
+          "theta_dispersion": 0.163919986076614,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.48455894256265597,
+          "donor_energy_advantage": 0.03256922532465975,
+          "mean_energy": 0.017876048921949658,
+          "floor": 0.3680555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46509493039297684,
+          "theta_dispersion": 0.1396530905827705,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.47457456993441355,
+          "donor_energy_advantage": -0.03157356309325535,
+          "mean_energy": 0.01529689596522494,
+          "floor": 0.4166666666666667,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.466797529973235,
+          "theta_dispersion": 0.13559733508186753,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4686036485197772,
+          "donor_energy_advantage": 0.0003502924589869949,
+          "mean_energy": 0.016937179369504285,
+          "floor": 0.3819444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46401627039489274,
+          "theta_dispersion": 0.14657599677773672,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4303268669301537,
+          "donor_energy_advantage": -2.8912057932946783e-19,
+          "mean_energy": 0.0153437700752177,
+          "floor": 0.4444444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4666500422543738,
+          "theta_dispersion": 0.16391998607661404,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3743066613887178,
+          "donor_energy_advantage": 3.854941057726238e-19,
+          "mean_energy": 0.015492370405606517,
+          "floor": 0.4513888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46676537472582386,
+          "theta_dispersion": 0.025218176387119023,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10603,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.17703809284106595,
+          "floor": 0.1388888888888889,
+          "bottom_decile": 0.0030043480121621766,
+          "mean_resource": 0.4779648905605358,
+          "theta_dispersion": 0.1499110572165725,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4525977039493637,
+          "donor_energy_advantage": 0.030272671581614483,
+          "mean_energy": 0.08906596072485609,
+          "floor": 0.1527777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4626274334895915,
+          "theta_dispersion": 0.1056248109561801,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.3991439810830625,
+          "donor_energy_advantage": -0.03082334159215859,
+          "mean_energy": 0.11210335253452532,
+          "floor": 0.013888888888888888,
+          "bottom_decile": 0.02793000949035269,
+          "mean_resource": 0.4773716853283585,
+          "theta_dispersion": 0.1329269357845755,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.441159038808479,
+          "donor_energy_advantage": -0.00017109501474817356,
+          "mean_energy": 0.08410895749972043,
+          "floor": 0.10416666666666667,
+          "bottom_decile": 0.0038348748225026327,
+          "mean_resource": 0.474296565011997,
+          "theta_dispersion": 0.12965966553150948,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4389368840296581,
+          "donor_energy_advantage": -3.854941057726238e-19,
+          "mean_energy": 0.11121889588586094,
+          "floor": 0.10416666666666667,
+          "bottom_decile": 0.012518655248184312,
+          "mean_resource": 0.471335648122793,
+          "theta_dispersion": 0.1499110572165725,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3418620079208732,
+          "donor_energy_advantage": 4.818676322157798e-19,
+          "mean_energy": 0.07253734245393895,
+          "floor": 0.13194444444444445,
+          "bottom_decile": 0.0007589866286343853,
+          "mean_resource": 0.47276904429631983,
+          "theta_dispersion": 0.024684686309170256,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10603,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.01737534107984504,
+          "floor": 0.3958333333333333,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46396408936999656,
+          "theta_dispersion": 0.1499110572165725,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4525977039493637,
+          "donor_energy_advantage": 0.030272671581614483,
+          "mean_energy": 0.016301571643016995,
+          "floor": 0.4444444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46933867359902287,
+          "theta_dispersion": 0.1574077437799705,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.3991439810830625,
+          "donor_energy_advantage": -0.03082334159215859,
+          "mean_energy": 0.01711741112914827,
+          "floor": 0.3888888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46400774325877353,
+          "theta_dispersion": 0.13775529671271144,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.441159038808479,
+          "donor_energy_advantage": -0.00017109501474817356,
+          "mean_energy": 0.01779140403525714,
+          "floor": 0.375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4629631728232256,
+          "theta_dispersion": 0.12965966553150948,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4389368840296581,
+          "donor_energy_advantage": -3.854941057726238e-19,
+          "mean_energy": 0.017119815541699432,
+          "floor": 0.3958333333333333,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46422073787737794,
+          "theta_dispersion": 0.1499110572165725,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3418620079208732,
+          "donor_energy_advantage": 4.818676322157798e-19,
+          "mean_energy": 0.01823694975532391,
+          "floor": 0.375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4623158672338666,
+          "theta_dispersion": 0.024684686309170256,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10604,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.21028653652472887,
+          "floor": 0.10416666666666667,
+          "bottom_decile": 0.011832932428440742,
+          "mean_resource": 0.47336735017627557,
+          "theta_dispersion": 0.14594235326157348,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4052705308647292,
+          "donor_energy_advantage": 0.03004758319034785,
+          "mean_energy": 0.056659217221156584,
+          "floor": 0.1875,
+          "bottom_decile": 0.004066194452781451,
+          "mean_resource": 0.4559676353927922,
+          "theta_dispersion": 0.10489782258889602,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.3938710480528851,
+          "donor_energy_advantage": -0.029734278807422593,
+          "mean_energy": 0.09944881746082308,
+          "floor": 0.05555555555555555,
+          "bottom_decile": 0.023711010685868124,
+          "mean_resource": 0.4855724340141115,
+          "theta_dispersion": 0.1264996063932132,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4045876706962906,
+          "donor_energy_advantage": -0.0018037851587246944,
+          "mean_energy": 0.08206856707994671,
+          "floor": 0.09722222222222222,
+          "bottom_decile": 0.012810762794066191,
+          "mean_resource": 0.4660564803596095,
+          "theta_dispersion": 0.15598134699290148,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.38318325752022514,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.10699787125602388,
+          "floor": 0.034722222222222224,
+          "bottom_decile": 0.020616921873700275,
+          "mean_resource": 0.46919079313690876,
+          "theta_dispersion": 0.14594235326157348,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.32582907021161733,
+          "donor_energy_advantage": -6.746146851020917e-19,
+          "mean_energy": 0.028901056967011778,
+          "floor": 0.2361111111111111,
+          "bottom_decile": 0.0015190988265192903,
+          "mean_resource": 0.47204601519311,
+          "theta_dispersion": 0.019047394056175976,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10604,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.017003979682327877,
+          "floor": 0.375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46447231853117127,
+          "theta_dispersion": 0.14594235326157348,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4052705308647292,
+          "donor_energy_advantage": 0.03004758319034785,
+          "mean_energy": 0.018059629347620385,
+          "floor": 0.4027777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46767860859136234,
+          "theta_dispersion": 0.12641269338130676,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.3938710480528851,
+          "donor_energy_advantage": -0.029734278807422593,
+          "mean_energy": 0.01737911129101678,
+          "floor": 0.3541666666666667,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.463392765318025,
+          "theta_dispersion": 0.14521513120689825,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4045876706962906,
+          "donor_energy_advantage": -0.0018037851587246944,
+          "mean_energy": 0.017898894166466763,
+          "floor": 0.3402777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46245156724417197,
+          "theta_dispersion": 0.15598134699290148,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.38318325752022514,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.018034393429967974,
+          "floor": 0.3611111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46263731770520206,
+          "theta_dispersion": 0.14594235326157348,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.32582907021161733,
+          "donor_energy_advantage": -6.746146851020917e-19,
+          "mean_energy": 0.01806625207739462,
+          "floor": 0.3402777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.462315999608207,
+          "theta_dispersion": 0.019047394056175976,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10605,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.21374349458304231,
+          "floor": 0.16666666666666666,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4796392073884637,
+          "theta_dispersion": 0.15728201526403987,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.43573317462280203,
+          "donor_energy_advantage": 0.03436368097303001,
+          "mean_energy": 0.08316296962218113,
+          "floor": 0.13194444444444445,
+          "bottom_decile": 0.005427170179189873,
+          "mean_resource": 0.46200680576449343,
+          "theta_dispersion": 0.1138967906248942,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4534294185017076,
+          "donor_energy_advantage": -0.03181791315629315,
+          "mean_energy": 0.11523671900996685,
+          "floor": 0.05555555555555555,
+          "bottom_decile": 0.02192147493677342,
+          "mean_resource": 0.4855683839230238,
+          "theta_dispersion": 0.14932239684380083,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4549168552921594,
+          "donor_energy_advantage": -0.00034799259992643176,
+          "mean_energy": 0.0936901419996622,
+          "floor": 0.08333333333333333,
+          "bottom_decile": 0.019105673636532976,
+          "mean_resource": 0.4656719596446213,
+          "theta_dispersion": 0.1689258660301655,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.43996397840063245,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.11048874054781958,
+          "floor": 0.06944444444444445,
+          "bottom_decile": 0.01995593490188376,
+          "mean_resource": 0.47398553521410947,
+          "theta_dispersion": 0.15728201526403987,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3569472379014711,
+          "donor_energy_advantage": -3.854941057726238e-19,
+          "mean_energy": 0.048187714003505466,
+          "floor": 0.034722222222222224,
+          "bottom_decile": 0.020912320193012333,
+          "mean_resource": 0.47021745584464686,
+          "theta_dispersion": 0.027019107513767685,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10605,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.017174195641476195,
+          "floor": 0.3958333333333333,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46473061367285456,
+          "theta_dispersion": 0.15728201526403987,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.43573317462280203,
+          "donor_energy_advantage": 0.03436368097303001,
+          "mean_energy": 0.0181785375582371,
+          "floor": 0.3611111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46231831221873776,
+          "theta_dispersion": 0.16318796456808626,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4534294185017076,
+          "donor_energy_advantage": -0.03181791315629315,
+          "mean_energy": 0.016022750107986303,
+          "floor": 0.4097222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4656928823167261,
+          "theta_dispersion": 0.15468610392790855,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4549168552921594,
+          "donor_energy_advantage": -0.00034799259992643176,
+          "mean_energy": 0.018969679977467957,
+          "floor": 0.3194444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4604785505318336,
+          "theta_dispersion": 0.1689258660301655,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.43996397840063245,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.019630176982494103,
+          "floor": 0.3402777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4603389422635755,
+          "theta_dispersion": 0.15728201526403987,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3569472379014711,
+          "donor_energy_advantage": -3.854941057726238e-19,
+          "mean_energy": 0.01726876674832364,
+          "floor": 0.3888888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46379018376322256,
+          "theta_dispersion": 0.027019107513767685,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10606,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.1921135474932621,
+          "floor": 0.13194444444444445,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4797034681905392,
+          "theta_dispersion": 0.15924095392225213,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4580612987815679,
+          "donor_energy_advantage": 0.03080871188138425,
+          "mean_energy": 0.08199666555292684,
+          "floor": 0.125,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.45410097641497327,
+          "theta_dispersion": 0.1278566022562366,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4975679127419704,
+          "donor_energy_advantage": -0.034152968025211235,
+          "mean_energy": 0.10428928028370629,
+          "floor": 0.0625,
+          "bottom_decile": 0.025008772460523594,
+          "mean_resource": 0.4828422222647251,
+          "theta_dispersion": 0.16177787119380307,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4744045466509987,
+          "donor_energy_advantage": -0.0019775426769749875,
+          "mean_energy": 0.08414582482816876,
+          "floor": 0.10416666666666667,
+          "bottom_decile": 0.007098690981747804,
+          "mean_resource": 0.4763797162143218,
+          "theta_dispersion": 0.14209409602422124,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4658783832084022,
+          "donor_energy_advantage": 7.709882115452476e-19,
+          "mean_energy": 0.11524878416792791,
+          "floor": 0.125,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4713106854011573,
+          "theta_dispersion": 0.15924095392225215,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.36997620974666395,
+          "donor_energy_advantage": 9.637352644315595e-19,
+          "mean_energy": 0.038726229518626476,
+          "floor": 0.2361111111111111,
+          "bottom_decile": 0.003903001922069689,
+          "mean_resource": 0.47451078156618465,
+          "theta_dispersion": 0.03946554284678426,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10606,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.013762618838002857,
+          "floor": 0.4861111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4692931007960215,
+          "theta_dispersion": 0.15924095392225213,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4580612987815679,
+          "donor_energy_advantage": 0.03080871188138425,
+          "mean_energy": 0.018625264070572994,
+          "floor": 0.375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4666151403595557,
+          "theta_dispersion": 0.16485681244837416,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4975679127419704,
+          "donor_energy_advantage": -0.034152968025211235,
+          "mean_energy": 0.014512630388984303,
+          "floor": 0.4375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4680498152223702,
+          "theta_dispersion": 0.17229979666646222,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4744045466509987,
+          "donor_energy_advantage": -0.0019775426769749875,
+          "mean_energy": 0.014825055776961452,
+          "floor": 0.5,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4678650081286325,
+          "theta_dispersion": 0.14209409602422124,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4658783832084022,
+          "donor_energy_advantage": 7.709882115452476e-19,
+          "mean_energy": 0.016990531305853415,
+          "floor": 0.3819444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46463359709467134,
+          "theta_dispersion": 0.15924095392225215,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.36997620974666395,
+          "donor_energy_advantage": 9.637352644315595e-19,
+          "mean_energy": 0.015801291901149466,
+          "floor": 0.4513888888888889,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4662770910324379,
+          "theta_dispersion": 0.03946554284678426,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10607,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.1980684778388143,
+          "floor": 0.0763888888888889,
+          "bottom_decile": 0.020552298289776057,
+          "mean_resource": 0.4751131657121289,
+          "theta_dispersion": 0.14915536936767557,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.42328997127257867,
+          "donor_energy_advantage": 0.03113625449950143,
+          "mean_energy": 0.036705349588189336,
+          "floor": 0.2569444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4604368812983467,
+          "theta_dispersion": 0.126818395249254,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4259353671072233,
+          "donor_energy_advantage": -0.030751022765975952,
+          "mean_energy": 0.10601950025119433,
+          "floor": 0.034722222222222224,
+          "bottom_decile": 0.03410303230861463,
+          "mean_resource": 0.480908874815299,
+          "theta_dispersion": 0.10990384110630859,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.3966111169392057,
+          "donor_energy_advantage": -0.0033258034659409508,
+          "mean_energy": 0.08520399086918146,
+          "floor": 0.125,
+          "bottom_decile": 0.006996900446505375,
+          "mean_resource": 0.4709288270064042,
+          "theta_dispersion": 0.13838628401808487,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.3832606232383092,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.11250760707470607,
+          "floor": 0.08333333333333333,
+          "bottom_decile": 0.020548147380424743,
+          "mean_resource": 0.47308926776786503,
+          "theta_dispersion": 0.1491553693676755,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.33534584339872325,
+          "donor_energy_advantage": 4.818676322157797e-20,
+          "mean_energy": 0.04935745729499109,
+          "floor": 0.1597222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4741011093282866,
+          "theta_dispersion": 0.028095239861369737,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10607,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.016812327285718846,
+          "floor": 0.3819444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4646656758812726,
+          "theta_dispersion": 0.14915536936767557,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.42328997127257867,
+          "donor_energy_advantage": 0.03113625449950143,
+          "mean_energy": 0.016846591936585012,
+          "floor": 0.3958333333333333,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4644359724917579,
+          "theta_dispersion": 0.12072790214204869,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4259353671072233,
+          "donor_energy_advantage": -0.030751022765975952,
+          "mean_energy": 0.0165810941801298,
+          "floor": 0.375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46469665470312127,
+          "theta_dispersion": 0.1616416854826533,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.3966111169392057,
+          "donor_energy_advantage": -0.0033258034659409508,
+          "mean_energy": 0.016210889749434115,
+          "floor": 0.4236111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4663499175781545,
+          "theta_dispersion": 0.13838628401808487,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.3832606232383092,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.017766101621912563,
+          "floor": 0.3611111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4630732024322897,
+          "theta_dispersion": 0.1491553693676755,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.33534584339872325,
+          "donor_energy_advantage": 4.818676322157797e-20,
+          "mean_energy": 0.017309369532321896,
+          "floor": 0.3680555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4636067409804917,
+          "theta_dispersion": 0.028095239861369737,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10608,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.19223450163647285,
+          "floor": 0.125,
+          "bottom_decile": 0.003538581055810168,
+          "mean_resource": 0.47640816883482656,
+          "theta_dispersion": 0.14397553746753056,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.39134478702475944,
+          "donor_energy_advantage": 0.03236164726071055,
+          "mean_energy": 0.050531102676448926,
+          "floor": 0.14583333333333334,
+          "bottom_decile": 0.0066873762723374435,
+          "mean_resource": 0.457550568305211,
+          "theta_dispersion": 0.10216203721008439,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.36613508192737076,
+          "donor_energy_advantage": -0.03240517865761614,
+          "mean_energy": 0.10354909207830598,
+          "floor": 0.08333333333333333,
+          "bottom_decile": 0.019892718637647033,
+          "mean_resource": 0.48051681222182485,
+          "theta_dispersion": 0.1305153341184389,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4068521590540427,
+          "donor_energy_advantage": -0.005574773155479961,
+          "mean_energy": 0.08930360097242492,
+          "floor": 0.11805555555555555,
+          "bottom_decile": 0.00453559732549282,
+          "mean_resource": 0.473166690888731,
+          "theta_dispersion": 0.1523159322082993,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.37015531327634354,
+          "donor_energy_advantage": -7.709882115452476e-19,
+          "mean_energy": 0.11175409710247036,
+          "floor": 0.09722222222222222,
+          "bottom_decile": 0.017544880516522553,
+          "mean_resource": 0.471226007202802,
+          "theta_dispersion": 0.1439755374675306,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.31460455489994,
+          "donor_energy_advantage": 7.228014483236697e-19,
+          "mean_energy": 0.0492011481036837,
+          "floor": 0.14583333333333334,
+          "bottom_decile": 0.0036123401721996047,
+          "mean_resource": 0.46948941394736365,
+          "theta_dispersion": 0.01579093904647953,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10608,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.01816385411509217,
+          "floor": 0.3611111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46326849050635005,
+          "theta_dispersion": 0.14397553746753056,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.39134478702475944,
+          "donor_energy_advantage": 0.03236164726071055,
+          "mean_energy": 0.01671508143203974,
+          "floor": 0.3958333333333333,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46479196452182975,
+          "theta_dispersion": 0.13237834029879936,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.36613508192737076,
+          "donor_energy_advantage": -0.03240517865761614,
+          "mean_energy": 0.01901655280162523,
+          "floor": 0.3472222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46106328588225487,
+          "theta_dispersion": 0.13083386055163385,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4068521590540427,
+          "donor_energy_advantage": -0.005574773155479961,
+          "mean_energy": 0.019383576087609766,
+          "floor": 0.3333333333333333,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46040305660888176,
+          "theta_dispersion": 0.1523159322082993,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.37015531327634354,
+          "donor_energy_advantage": -7.709882115452476e-19,
+          "mean_energy": 0.018423722190351884,
+          "floor": 0.3333333333333333,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46229092861169224,
+          "theta_dispersion": 0.1439755374675306,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.31460455489994,
+          "donor_energy_advantage": 7.228014483236697e-19,
+          "mean_energy": 0.018408294999215463,
+          "floor": 0.3472222222222222,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4618957757397062,
+          "theta_dispersion": 0.01579093904647953,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10609,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.1959886070719077,
+          "floor": 0.14583333333333334,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4766359078187883,
+          "theta_dispersion": 0.15756047113585972,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.45535013107931493,
+          "donor_energy_advantage": 0.030325671750772547,
+          "mean_energy": 0.04177012491071593,
+          "floor": 0.20833333333333334,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4602454418699924,
+          "theta_dispersion": 0.1197687879080821,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.3948973101719747,
+          "donor_energy_advantage": -0.03479844446843461,
+          "mean_energy": 0.12029615784596226,
+          "floor": 0.006944444444444444,
+          "bottom_decile": 0.0439103253937269,
+          "mean_resource": 0.48039418358553504,
+          "theta_dispersion": 0.12167729881551516,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4388788596486218,
+          "donor_energy_advantage": 0.0023026487603144134,
+          "mean_energy": 0.09666897103804144,
+          "floor": 0.10416666666666667,
+          "bottom_decile": 0.006812743781341922,
+          "mean_resource": 0.46933089975202613,
+          "theta_dispersion": 0.15192153145447237,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4136280186472275,
+          "donor_energy_advantage": 3.854941057726238e-19,
+          "mean_energy": 0.11685301976412237,
+          "floor": 0.09027777777777778,
+          "bottom_decile": 0.019949001513761465,
+          "mean_resource": 0.47186093739554497,
+          "theta_dispersion": 0.1575604711358597,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.32764720219337007,
+          "donor_energy_advantage": -3.854941057726238e-19,
+          "mean_energy": 0.03873321250051484,
+          "floor": 0.1736111111111111,
+          "bottom_decile": 0.003419348511736113,
+          "mean_resource": 0.47302310263343206,
+          "theta_dispersion": 0.02257568262009915,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10609,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.01740142116638411,
+          "floor": 0.4375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4648649575737845,
+          "theta_dispersion": 0.15756047113585972,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.45535013107931493,
+          "donor_energy_advantage": 0.030325671750772547,
+          "mean_energy": 0.01776881963137856,
+          "floor": 0.4305555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46411566547345867,
+          "theta_dispersion": 0.17234733126289004,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.3948973101719747,
+          "donor_energy_advantage": -0.03479844446843461,
+          "mean_energy": 0.016208806453641547,
+          "floor": 0.4444444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46566196762448325,
+          "theta_dispersion": 0.13161267880640962,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4388788596486218,
+          "donor_energy_advantage": 0.0023026487603144134,
+          "mean_energy": 0.015471124211588907,
+          "floor": 0.4236111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46646690682990144,
+          "theta_dispersion": 0.15192153145447237,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4136280186472275,
+          "donor_energy_advantage": 3.854941057726238e-19,
+          "mean_energy": 0.017994741637039388,
+          "floor": 0.3402777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46290288631455706,
+          "theta_dispersion": 0.1575604711358597,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.32764720219337007,
+          "donor_energy_advantage": -3.854941057726238e-19,
+          "mean_energy": 0.018015702971027243,
+          "floor": 0.4166666666666667,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46291414661750213,
+          "theta_dispersion": 0.02257568262009915,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10610,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.1916904078103693,
+          "floor": 0.14583333333333334,
+          "bottom_decile": 3.556227067012816e-07,
+          "mean_resource": 0.4780787936980053,
+          "theta_dispersion": 0.1475211577761344,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.3734312398231086,
+          "donor_energy_advantage": 0.033247494383446916,
+          "mean_energy": 0.06675925427023562,
+          "floor": 0.14583333333333334,
+          "bottom_decile": 0.00024222624854675803,
+          "mean_resource": 0.4617757294954795,
+          "theta_dispersion": 0.09001394033793127,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.3715061737816642,
+          "donor_energy_advantage": -0.031550499297021535,
+          "mean_energy": 0.11638163504858785,
+          "floor": 0.020833333333333332,
+          "bottom_decile": 0.02599750281384226,
+          "mean_resource": 0.4815752070853407,
+          "theta_dispersion": 0.1454083044254257,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.38601355848918806,
+          "donor_energy_advantage": -0.0007115135060387708,
+          "mean_energy": 0.08944083833441709,
+          "floor": 0.08333333333333333,
+          "bottom_decile": 0.02001022039058338,
+          "mean_resource": 0.470506287140359,
+          "theta_dispersion": 0.13281838181673317,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.40300401971233024,
+          "donor_energy_advantage": -7.709882115452476e-19,
+          "mean_energy": 0.10842282137804952,
+          "floor": 0.11805555555555555,
+          "bottom_decile": 0.004845977020192989,
+          "mean_resource": 0.4762050751856967,
+          "theta_dispersion": 0.14752115777613437,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.30217118857572955,
+          "donor_energy_advantage": -9.637352644315594e-20,
+          "mean_energy": 0.04413483790218714,
+          "floor": 0.1527777777777778,
+          "bottom_decile": 0.004171887143509127,
+          "mean_resource": 0.47208195201125236,
+          "theta_dispersion": 0.023443695624545517,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10610,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.017088936864512676,
+          "floor": 0.375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.465123891721709,
+          "theta_dispersion": 0.1475211577761344,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.3734312398231086,
+          "donor_energy_advantage": 0.033247494383446916,
+          "mean_energy": 0.017791948716770544,
+          "floor": 0.4166666666666667,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4672815862848757,
+          "theta_dispersion": 0.16122904018525672,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.3715061737816642,
+          "donor_energy_advantage": -0.031550499297021535,
+          "mean_energy": 0.015519524867471053,
+          "floor": 0.4027777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4663697112452345,
+          "theta_dispersion": 0.12022330692297649,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.38601355848918806,
+          "donor_energy_advantage": -0.0007115135060387708,
+          "mean_energy": 0.0181307643176393,
+          "floor": 0.3611111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4635452286157583,
+          "theta_dispersion": 0.13281838181673317,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.40300401971233024,
+          "donor_energy_advantage": -7.709882115452476e-19,
+          "mean_energy": 0.018920291858245144,
+          "floor": 0.3194444444444444,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46194428639244683,
+          "theta_dispersion": 0.14752115777613437,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.30217118857572955,
+          "donor_energy_advantage": -9.637352644315594e-20,
+          "mean_energy": 0.01749629771441361,
+          "floor": 0.375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4633671433556629,
+          "theta_dispersion": 0.023443695624545517,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10611,
+      "regrowth": 0.06,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.20439600355083068,
+          "floor": 0.125,
+          "bottom_decile": 0.00137883105297032,
+          "mean_resource": 0.47752047132184877,
+          "theta_dispersion": 0.15632342130419083,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4421227009252913,
+          "donor_energy_advantage": 0.0319855296939081,
+          "mean_energy": 0.10375520501310456,
+          "floor": 0.14583333333333334,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.45922201093073134,
+          "theta_dispersion": 0.13288966209287487,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4127177724281257,
+          "donor_energy_advantage": -0.030068216082600623,
+          "mean_energy": 0.11620236827594985,
+          "floor": 0.006944444444444444,
+          "bottom_decile": 0.022781446348264543,
+          "mean_resource": 0.47698216993674136,
+          "theta_dispersion": 0.11520545291376877,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4315785795408914,
+          "donor_energy_advantage": 0.0015620898106213908,
+          "mean_energy": 0.09082612506585912,
+          "floor": 0.1111111111111111,
+          "bottom_decile": 0.007481085819154809,
+          "mean_resource": 0.4701188402103966,
+          "theta_dispersion": 0.1465144398769288,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4358893986541896,
+          "donor_energy_advantage": -5.782411586589357e-19,
+          "mean_energy": 0.11690288818895464,
+          "floor": 0.10416666666666667,
+          "bottom_decile": 0.009019208345286652,
+          "mean_resource": 0.47214676294752894,
+          "theta_dispersion": 0.1563234213041908,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3441338186547614,
+          "donor_energy_advantage": 1.1564823173178713e-18,
+          "mean_energy": 0.04449051589232708,
+          "floor": 0.2777777777777778,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4796405777868969,
+          "theta_dispersion": 0.03021945603929561,
+          "transfer_events": 10
+        }
+      }
+    },
+    {
+      "seed": 10611,
+      "regrowth": 0.055,
+      "arms": {
+        "none": {
+          "mean_l2_change": 0.0,
+          "donor_energy_advantage": 0.0,
+          "mean_energy": 0.015303118278133755,
+          "floor": 0.375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46677702393213505,
+          "theta_dispersion": 0.15632342130419083,
+          "transfer_events": 0
+        },
+        "top_neighbor": {
+          "mean_l2_change": 0.4421227009252913,
+          "donor_energy_advantage": 0.0319855296939081,
+          "mean_energy": 0.016240497501860858,
+          "floor": 0.3680555555555556,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4651330260386462,
+          "theta_dispersion": 0.16947504281272016,
+          "transfer_events": 10
+        },
+        "bottom_neighbor": {
+          "mean_l2_change": 0.4127177724281257,
+          "donor_energy_advantage": -0.030068216082600623,
+          "mean_energy": 0.015860124308847794,
+          "floor": 0.3541666666666667,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4655825926913941,
+          "theta_dispersion": 0.12919405267388365,
+          "transfer_events": 10
+        },
+        "random_neighbor": {
+          "mean_l2_change": 0.4315785795408914,
+          "donor_energy_advantage": 0.0015620898106213908,
+          "mean_energy": 0.016913978555516615,
+          "floor": 0.3611111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46522139568297327,
+          "theta_dispersion": 0.1465144398769288,
+          "transfer_events": 10
+        },
+        "global_shuffle": {
+          "mean_l2_change": 0.4358893986541896,
+          "donor_energy_advantage": -5.782411586589357e-19,
+          "mean_energy": 0.018831794697955068,
+          "floor": 0.2986111111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46143540336307587,
+          "theta_dispersion": 0.1563234213041908,
+          "transfer_events": 10
+        },
+        "neighbor_mean": {
+          "mean_l2_change": 0.3441338186547614,
+          "donor_energy_advantage": 1.1564823173178713e-18,
+          "mean_energy": 0.015819106393004972,
+          "floor": 0.375,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4657713135035566,
+          "theta_dispersion": 0.03021945603929561,
+          "transfer_events": 10
+        }
+      }
+    }
+  ]
+}
