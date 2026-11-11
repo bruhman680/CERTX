@@ -1,5 +1,11 @@
 # Neural Garden — experimental record and continuation point
 
+## New continuation: research loops 100–119 (2026-11-11)
+
+`TRANCHE_100_LEDGER.md` documents **20 completed, evidence-backed conceptual loops** from the latest 200-loop authorization. The cumulative documented total is **119**, with **180 of the newly authorized 200 still unexecuted**. The new `TRANCHE_100_CHARTER.md` and six `*_PLAN.md` society plans were committed before results. Agents explored stability, protected neural memory, neighbor transfer, persistent seasonal ecology, exact energy budgets, and adversarial replication. All experiments are synthetic counterfactual worlds; canonical Living Garden is still paused at tick100.
+
+**Strongest distinctions:** weight-distance constraints improve online behavior but do not beat frozen weights on reference-world held-out seeds (`STABILITY2_REPORT.md`); apparent benefits from new weight consolidation fail independent safety replication (`MEMORY2_SAFETY_REPORT.md`); wholesale neighbor weight copying damages the Garden, whereas non-destructive one-step-old *neighbor observations* outperform same-age own and distant observations under stable laws (`SOCIAL2_LAG_REPORT.md`). Under mild scarcity, temporal phase competes with neighbor spatial signal. Seasonal exact-state forks expose an energy/welfare tradeoff and unusually large sensitivity to external resource laws (`SEASONS2_*REPORT.md`). Exact raw energy conservation reveals clipped-energy plateaus hiding genuine deficits (`THEORY2_REPORT.md`). Online/frozen rankings reverse under resource abundance but ceiling saturation prevents a general adaptive-learning claim (`AUDIT2_REPORT.md`).
+
 ## Latest continuation: strict research loops 070–099
 
 The user authorized another tranche of **200 research loops**. Six parallel societies completed **30 independently reviewed conceptual loops** so far; `NEXT_TRANCHE_LEDGER.md` documents all 30 orientation→probe→result→revision movements, with nested trials recorded separately. Cumulative documented loops are **99**, while **170 of this new 200-loop tranche remain unexecuted**. `NEXT_TRANCHE_CHARTER.md` and the time-stamped `NEXT_BENCHMARK_PLAN.md`, `NEXT_ONLINE_PLAN.md`, `NEXT_CREDIT_PLAN.md`, and `NEXT_GATE_PLAN.md` preserve pre-outcome designs and strong manual controls.
