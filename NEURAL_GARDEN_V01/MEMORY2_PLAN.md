@@ -1,0 +1,9 @@
+# Dual-memory and validation-gated consolidation — pre-outcome plan
+
+Hypothesis M2: retaining the best **validated historical** neural policy will resist harmful online updates better than adopting the latest updates. This is a *designer-created global gate*, not self-awareness or autonomous learned gating.
+
+The tested controller has two banks: (a) protected prior weights and (b) a mutable candidate trained online in a separate, fixed synthetic Garden. Every 400 ticks up to 1600, snapshot candidate weights. A paired validation set on fresh seeds, using *identical deterministic actions and identical initial worlds*, ranks frozen baseline and candidate checkpoints by `mean final energy - .5 * floor fraction`. Select the best only if improvement over baseline exceeds `.005`, otherwise retain baseline. All candidate selection uses validation worlds only.
+
+Independently evaluate baseline, blindly latest candidate, gated-selected candidate, and an oracle best-of-candidates on *held-out* seeds; oracle is clearly non-deployable hindsight and measures opportunity, not a fair competitor. Compare stable (`.06` regrowth) and mild changed (`.06`, `.055`, `.06` thirds) worlds, 1,800 ticks. Metrics: final mean energy, floor fraction, score, selection identities, per-cohort wins. Six training cohorts (seeds 11000–11005), grid 8×8, 800 initial training ticks. Validation seeds `seed+30000, seed+30001`; held-out seeds `seed+40000,seed+40001`. Objective `reserve_resource`, penalty `.3`, no teacher, no changes to source environment. No source tuning based on outcomes. Preserve all failures.
+
+Interpretation limits: selection is an off-world engineered evaluation privilege, not practical per-cell memory; the candidate training world never receives updates from held-out worlds; six training cohorts are independent units, not 64 cells each; no persistent ecological learning proven.
