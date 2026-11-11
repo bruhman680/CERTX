@@ -1,0 +1,275 @@
+{
+  "arms": [
+    "v01_learning",
+    "v01_frozen",
+    "v02_stewardship",
+    "threshold_055"
+  ],
+  "checkpoints": [
+    0,
+    100,
+    200,
+    400,
+    600
+  ],
+  "count_per_arm": 250,
+  "experiment": "garden-matched-1000-v1",
+  "limitations": "Matched seeds and same world laws, but stochastic controllers diverge. Threshold selected after earlier exploration. No reproduction or mutation. Within-simulator evidence only.",
+  "note": "Synthetic toy world; four controllers under identical original environmental laws. Existing models unchanged.",
+  "paired_contrasts": {
+    "threshold_055_minus_v01_learning": {
+      "mean": 0.47738414763599385,
+      "n": 250,
+      "sd": 0.006793983201339512
+    },
+    "threshold_055_minus_v02_stewardship": {
+      "mean": 0.4267231629217946,
+      "n": 250,
+      "sd": 0.007609135832433171
+    },
+    "v01_learning_minus_v01_frozen": {
+      "mean": -0.023931028344140532,
+      "n": 250,
+      "sd": 0.0022555253410493337
+    },
+    "v02_stewardship_minus_v01_learning": {
+      "mean": 0.05066098471419919,
+      "n": 250,
+      "sd": 0.0033675066346907406
+    }
+  },
+  "runs_sha256": "e900765d70738d6e8dcaab13ca53710410ac7eb300b6e6edff69664669ff3000",
+  "runtime": {
+    "numpy": "2.5.4",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "seeds": [
+    300,
+    549
+  ],
+  "size": 16,
+  "source_sha256": {
+    "THOUSAND_RUN_SWEEP.py": "de8b8d5ab23bf08cbaf76d281f6aafc29bb6dab5a255de3d048494c73b2f1561",
+    "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1",
+    "stewardship_garden.py": "6c9f07b9eec448a47061013c254c5651d6a86be25867160d5045131b1742d89c",
+    "threshold_policy.py": "93230b8f5c3bb6a0ec28eca5e69f7fe99d3450905e8db9045e788216aaef2e12"
+  },
+  "status": "completed",
+  "steps": 600,
+  "summary": {
+    "threshold_055": {
+      "n": 250,
+      "values": {
+        "fraction_ceiling": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "sd": 0.0
+        },
+        "fraction_floor": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "sd": 0.0
+        },
+        "harvest_rate": {
+          "max": 0.421875,
+          "mean": 0.3235625,
+          "min": 0.2265625,
+          "sd": 0.03860562386444951
+        },
+        "mean_energy": {
+          "max": 0.5048300296831147,
+          "mean": 0.48556785720515033,
+          "min": 0.4651686681471584,
+          "sd": 0.006675927504580124
+        },
+        "mean_resource": {
+          "max": 0.5283998579493441,
+          "mean": 0.5208815722205336,
+          "min": 0.5126083608933389,
+          "sd": 0.0028324924534014265
+        },
+        "raw_drift_mean": {
+          "max": -7.66637855705676e-05,
+          "mean": -0.00010756723282482186,
+          "min": -0.00013298393053505958,
+          "sd": 1.0125340667850795e-05
+        },
+        "resource_action_covariance_mean": {
+          "max": 0.010504562232640431,
+          "mean": 0.010333701684993878,
+          "min": 0.009860958285083326,
+          "sd": 0.00010420021595223867
+        },
+        "tail_100_raw_drift_mean": {
+          "max": -4.954116608230754e-05,
+          "mean": -0.00011957902452394279,
+          "min": -0.00018232921540001692,
+          "sd": 2.719297955575423e-05
+        }
+      }
+    },
+    "v01_frozen": {
+      "n": 250,
+      "values": {
+        "fraction_ceiling": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "sd": 0.0
+        },
+        "fraction_floor": {
+          "max": 0.40234375,
+          "mean": 0.3041875,
+          "min": 0.20703125,
+          "sd": 0.03319542234361213
+        },
+        "harvest_rate": {
+          "max": 0.5859375,
+          "mean": 0.5028125,
+          "min": 0.375,
+          "sd": 0.0321016145417524
+        },
+        "mean_energy": {
+          "max": 0.04124963443769661,
+          "mean": 0.03211473791329704,
+          "min": 0.025750841983429903,
+          "sd": 0.0025338384204804726
+        },
+        "mean_resource": {
+          "max": 0.4152441365846351,
+          "mean": 0.4002548869949004,
+          "min": 0.38807797283025225,
+          "sd": 0.004579605904903008
+        },
+        "raw_drift_mean": {
+          "max": -0.0031596416957280445,
+          "mean": -0.0033657935887133174,
+          "min": -0.00354630929208089,
+          "sd": 7.271744251156632e-05
+        },
+        "resource_action_covariance_mean": {
+          "max": -0.0003337183964764803,
+          "mean": -0.0006064861173487516,
+          "min": -0.0008882863339670216,
+          "sd": 0.0001061974657928844
+        },
+        "tail_100_raw_drift_mean": {
+          "max": -0.00332542388512506,
+          "mean": -0.0035683128787888834,
+          "min": -0.003858624426328583,
+          "sd": 0.00010417693684374456
+        }
+      }
+    },
+    "v01_learning": {
+      "n": 250,
+      "values": {
+        "fraction_ceiling": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "sd": 0.0
+        },
+        "fraction_floor": {
+          "max": 0.80078125,
+          "mean": 0.713046875,
+          "min": 0.62109375,
+          "sd": 0.031630174457279184
+        },
+        "harvest_rate": {
+          "max": 0.72265625,
+          "mean": 0.651578125,
+          "min": 0.56640625,
+          "sd": 0.029663913592006045
+        },
+        "mean_energy": {
+          "max": 0.011470440121956487,
+          "mean": 0.008183709569156513,
+          "min": 0.0057015027691861096,
+          "sd": 0.000967377508529046
+        },
+        "mean_resource": {
+          "max": 0.3477422355286326,
+          "mean": 0.33954822955168856,
+          "min": 0.33072242801834306,
+          "sd": 0.0032688600620954062
+        },
+        "raw_drift_mean": {
+          "max": -0.005739642059380001,
+          "mean": -0.005909807376398509,
+          "min": -0.006042783555704509,
+          "sd": 6.287737145487306e-05
+        },
+        "resource_action_covariance_mean": {
+          "max": -0.00024373825719006408,
+          "mean": -0.0004581828156328001,
+          "min": -0.0006585095098164791,
+          "sd": 8.060504475940116e-05
+        },
+        "tail_100_raw_drift_mean": {
+          "max": -0.007281778326208397,
+          "mean": -0.007630221250120196,
+          "min": -0.00797571484096661,
+          "sd": 0.00010602718346624013
+        }
+      }
+    },
+    "v02_stewardship": {
+      "n": 250,
+      "values": {
+        "fraction_ceiling": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "sd": 0.0
+        },
+        "fraction_floor": {
+          "max": 0.2265625,
+          "mean": 0.160140625,
+          "min": 0.09765625,
+          "sd": 0.025360131422494436
+        },
+        "harvest_rate": {
+          "max": 0.50390625,
+          "mean": 0.421640625,
+          "min": 0.328125,
+          "sd": 0.031063247984224746
+        },
+        "mean_energy": {
+          "max": 0.07030894886725862,
+          "mean": 0.05884469428335571,
+          "min": 0.05036516638362301,
+          "sd": 0.0033971241843067566
+        },
+        "mean_resource": {
+          "max": 0.4555750350526298,
+          "mean": 0.44234435845038333,
+          "min": 0.4297145405518955,
+          "sd": 0.004788496018535435
+        },
+        "raw_drift_mean": {
+          "max": -0.002449526065888138,
+          "mean": -0.002569618752396383,
+          "min": -0.0026860515832399785,
+          "sd": 4.437820624199017e-05
+        },
+        "resource_action_covariance_mean": {
+          "max": -4.668121936027466e-05,
+          "mean": -0.00035095186588533723,
+          "min": -0.0005715362166366704,
+          "sd": 9.716073763115224e-05
+        },
+        "tail_100_raw_drift_mean": {
+          "max": -0.0019541520216474484,
+          "mean": -0.0021341710405978647,
+          "min": -0.0023162927772728283,
+          "sd": 6.745677125154794e-05
+        }
+      }
+    }
+  },
+  "total_runs": 1000
+}
