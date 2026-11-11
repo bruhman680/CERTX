@@ -1,0 +1,1531 @@
+{
+  "question": "Does energy feature itself matter after holding learned resource and bias weights fixed?",
+  "status": "executed independent feature ablation",
+  "design": {
+    "seeds": {
+      "stable": [
+        19000,
+        19001,
+        19002,
+        19003,
+        19004,
+        19005,
+        19006,
+        19007,
+        19008,
+        19009,
+        19010,
+        19011
+      ],
+      "mild": [
+        20000,
+        20001,
+        20002,
+        20003,
+        20004,
+        20005,
+        20006,
+        20007,
+        20008,
+        20009,
+        20010,
+        20011
+      ]
+    },
+    "train_ticks": 1200,
+    "test_ticks": 3000,
+    "size": 16,
+    "same_learned_theta_in_both_ablations": true,
+    "difference": "mask energy observation only at frozen deterministic deployment",
+    "regime_shift": "mild regrowth .06\u2192.055 at t1001\u20132000, restored thereafter"
+  },
+  "source_sha256": {
+    "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1",
+    "SOC_ENERGY_AWARE_policy.py": "3a33d80f8bb58758a80117464a54656f3080784acb07f5d8c812937e0d5d91ef",
+    "SOC_ENERGY_AWARE_deployment.py": "ed3b690ab241a28e9dbf98efd00dcfc885138ecb27221f71af255f04f90cc724",
+    "SOC_ENERGY_AWARE_AUDIT_probe.py": "bd336631d080dd4187f3d65805ef548aa92aa9f4048fc393addb30defdbf4ef5"
+  },
+  "summary": {
+    "stable": {
+      "full_energy": {
+        "energy": 0.5884475226189768,
+        "floor": 0.0048828125,
+        "ceiling": 0.020833333333333332
+      },
+      "masked_energy": {
+        "energy": 0.4841024301142917,
+        "floor": 0.039388020833333336,
+        "ceiling": 0.0478515625
+      },
+      "fixed50": {
+        "energy": 0.6517115035830092,
+        "floor": 0.0,
+        "ceiling": 0.005859375
+      }
+    },
+    "mild": {
+      "full_energy": {
+        "energy": 0.11736631526138568,
+        "floor": 0.19270833333333334,
+        "ceiling": 0.0003255208333333333
+      },
+      "masked_energy": {
+        "energy": 0.09324019792698436,
+        "floor": 0.2685546875,
+        "ceiling": 0.0006510416666666666
+      },
+      "fixed50": {
+        "energy": 0.04356898337248957,
+        "floor": 0.2275390625,
+        "ceiling": 0.0
+      }
+    }
+  },
+  "paired": {
+    "stable": {
+      "energy_input_on_minus_masked": {
+        "mean": 0.1043450925046852,
+        "wins": 12,
+        "losses": 0,
+        "sd": 0.018293906707988597
+      },
+      "full_minus_fixed50": {
+        "mean": -0.06326398096403246,
+        "wins": 0,
+        "losses": 12
+      }
+    },
+    "mild": {
+      "energy_input_on_minus_masked": {
+        "mean": 0.024126117334401304,
+        "wins": 12,
+        "losses": 0,
+        "sd": 0.00396514878849777
+      },
+      "full_minus_fixed50": {
+        "mean": 0.07379733188889609,
+        "wins": 12,
+        "losses": 0
+      }
+    }
+  },
+  "rows": [
+    {
+      "seed": 19000,
+      "regime": "stable",
+      "trained_energy_weight_abs_mean": 0.07047174940839236,
+      "trained_energy_weight_positive_fraction": 0.00390625,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6054691915696604,
+            "floor": 0.0,
+            "ceiling": 0.01953125
+          },
+          "masked_energy": {
+            "energy": 0.5840400745352516,
+            "floor": 0.0,
+            "ceiling": 0.05078125
+          },
+          "fixed50": {
+            "energy": 0.6239102420680124,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.5923243434218215,
+            "floor": 0.0,
+            "ceiling": 0.015625
+          },
+          "masked_energy": {
+            "energy": 0.5264946633800553,
+            "floor": 0.015625,
+            "ceiling": 0.046875
+          },
+          "fixed50": {
+            "energy": 0.6353024266496955,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.583381651188901,
+            "floor": 0.0078125,
+            "ceiling": 0.01953125
+          },
+          "masked_energy": {
+            "energy": 0.4870221200853932,
+            "floor": 0.04296875,
+            "ceiling": 0.0546875
+          },
+          "fixed50": {
+            "energy": 0.6525077693761508,
+            "floor": 0.0,
+            "ceiling": 0.0078125
+          }
+        }
+      }
+    },
+    {
+      "seed": 19001,
+      "regime": "stable",
+      "trained_energy_weight_abs_mean": 0.07152211056543607,
+      "trained_energy_weight_positive_fraction": 0.0,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6108674297229717,
+            "floor": 0.0,
+            "ceiling": 0.02734375
+          },
+          "masked_energy": {
+            "energy": 0.5868091044648169,
+            "floor": 0.0,
+            "ceiling": 0.04296875
+          },
+          "fixed50": {
+            "energy": 0.6236026041282827,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.6029702367017357,
+            "floor": 0.0,
+            "ceiling": 0.01171875
+          },
+          "masked_energy": {
+            "energy": 0.5237971292893273,
+            "floor": 0.00390625,
+            "ceiling": 0.06640625
+          },
+          "fixed50": {
+            "energy": 0.6328428091391478,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.6012284931799401,
+            "floor": 0.00390625,
+            "ceiling": 0.0390625
+          },
+          "masked_energy": {
+            "energy": 0.47913164602512814,
+            "floor": 0.03125,
+            "ceiling": 0.0546875
+          },
+          "fixed50": {
+            "energy": 0.647868521676159,
+            "floor": 0.0,
+            "ceiling": 0.00390625
+          }
+        }
+      }
+    },
+    {
+      "seed": 19002,
+      "regime": "stable",
+      "trained_energy_weight_abs_mean": 0.0707480253841087,
+      "trained_energy_weight_positive_fraction": 0.00390625,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.5990523767130843,
+            "floor": 0.0,
+            "ceiling": 0.01953125
+          },
+          "masked_energy": {
+            "energy": 0.5809280798649386,
+            "floor": 0.0,
+            "ceiling": 0.04296875
+          },
+          "fixed50": {
+            "energy": 0.6152469505264634,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.5847734974881251,
+            "floor": 0.00390625,
+            "ceiling": 0.015625
+          },
+          "masked_energy": {
+            "energy": 0.5202899395817357,
+            "floor": 0.0078125,
+            "ceiling": 0.05078125
+          },
+          "fixed50": {
+            "energy": 0.6303585166854901,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.5773109171535734,
+            "floor": 0.0,
+            "ceiling": 0.04296875
+          },
+          "masked_energy": {
+            "energy": 0.4831226694998203,
+            "floor": 0.0390625,
+            "ceiling": 0.04296875
+          },
+          "fixed50": {
+            "energy": 0.6498938968645572,
+            "floor": 0.0,
+            "ceiling": 0.00390625
+          }
+        }
+      }
+    },
+    {
+      "seed": 19003,
+      "regime": "stable",
+      "trained_energy_weight_abs_mean": 0.0698306136817492,
+      "trained_energy_weight_positive_fraction": 0.00390625,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.5985602210511787,
+            "floor": 0.0,
+            "ceiling": 0.015625
+          },
+          "masked_energy": {
+            "energy": 0.5853824963168152,
+            "floor": 0.0,
+            "ceiling": 0.03125
+          },
+          "fixed50": {
+            "energy": 0.6249381841521094,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.5759879441774223,
+            "floor": 0.0,
+            "ceiling": 0.01171875
+          },
+          "masked_energy": {
+            "energy": 0.5243423744380074,
+            "floor": 0.02734375,
+            "ceiling": 0.03125
+          },
+          "fixed50": {
+            "energy": 0.6371007839125329,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.5642072420041743,
+            "floor": 0.015625,
+            "ceiling": 0.015625
+          },
+          "masked_energy": {
+            "energy": 0.48579448207556475,
+            "floor": 0.0390625,
+            "ceiling": 0.03515625
+          },
+          "fixed50": {
+            "energy": 0.6563433844247107,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 19004,
+      "regime": "stable",
+      "trained_energy_weight_abs_mean": 0.07240060794844883,
+      "trained_energy_weight_positive_fraction": 0.0,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6078130454734924,
+            "floor": 0.0,
+            "ceiling": 0.00390625
+          },
+          "masked_energy": {
+            "energy": 0.5849591241437502,
+            "floor": 0.00390625,
+            "ceiling": 0.02734375
+          },
+          "fixed50": {
+            "energy": 0.6214191021795608,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.6039430333413744,
+            "floor": 0.0,
+            "ceiling": 0.01953125
+          },
+          "masked_energy": {
+            "energy": 0.5210963021029459,
+            "floor": 0.02734375,
+            "ceiling": 0.0625
+          },
+          "fixed50": {
+            "energy": 0.635634935235837,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.6032884539863834,
+            "floor": 0.00390625,
+            "ceiling": 0.00390625
+          },
+          "masked_energy": {
+            "energy": 0.4743263585042228,
+            "floor": 0.04296875,
+            "ceiling": 0.046875
+          },
+          "fixed50": {
+            "energy": 0.651183583422362,
+            "floor": 0.0,
+            "ceiling": 0.00390625
+          }
+        }
+      }
+    },
+    {
+      "seed": 19005,
+      "regime": "stable",
+      "trained_energy_weight_abs_mean": 0.06998679252286338,
+      "trained_energy_weight_positive_fraction": 0.0,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6008230486057551,
+            "floor": 0.0,
+            "ceiling": 0.0078125
+          },
+          "masked_energy": {
+            "energy": 0.5818412994608255,
+            "floor": 0.0,
+            "ceiling": 0.01953125
+          },
+          "fixed50": {
+            "energy": 0.6136750375225593,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.5999364517608217,
+            "floor": 0.0,
+            "ceiling": 0.0078125
+          },
+          "masked_energy": {
+            "energy": 0.544776076087946,
+            "floor": 0.01171875,
+            "ceiling": 0.02734375
+          },
+          "fixed50": {
+            "energy": 0.6298457752971734,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.6038759256652373,
+            "floor": 0.00390625,
+            "ceiling": 0.0234375
+          },
+          "masked_energy": {
+            "energy": 0.5240253914625608,
+            "floor": 0.0390625,
+            "ceiling": 0.03125
+          },
+          "fixed50": {
+            "energy": 0.6461463096346107,
+            "floor": 0.0,
+            "ceiling": 0.00390625
+          }
+        }
+      }
+    },
+    {
+      "seed": 19006,
+      "regime": "stable",
+      "trained_energy_weight_abs_mean": 0.06950989330014151,
+      "trained_energy_weight_positive_fraction": 0.0,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6068390916896303,
+            "floor": 0.0,
+            "ceiling": 0.0234375
+          },
+          "masked_energy": {
+            "energy": 0.584710598871828,
+            "floor": 0.0,
+            "ceiling": 0.04296875
+          },
+          "fixed50": {
+            "energy": 0.6225376701934076,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.5889561210042351,
+            "floor": 0.00390625,
+            "ceiling": 0.01953125
+          },
+          "masked_energy": {
+            "energy": 0.5223388726062603,
+            "floor": 0.01171875,
+            "ceiling": 0.0234375
+          },
+          "fixed50": {
+            "energy": 0.6335704952664174,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.5827134403688639,
+            "floor": 0.0,
+            "ceiling": 0.01171875
+          },
+          "masked_energy": {
+            "energy": 0.4772167247131881,
+            "floor": 0.0234375,
+            "ceiling": 0.05859375
+          },
+          "fixed50": {
+            "energy": 0.6504313897825725,
+            "floor": 0.0,
+            "ceiling": 0.00390625
+          }
+        }
+      }
+    },
+    {
+      "seed": 19007,
+      "regime": "stable",
+      "trained_energy_weight_abs_mean": 0.06946367497079337,
+      "trained_energy_weight_positive_fraction": 0.0,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6028166855623367,
+            "floor": 0.0,
+            "ceiling": 0.00390625
+          },
+          "masked_energy": {
+            "energy": 0.5855341953372252,
+            "floor": 0.0,
+            "ceiling": 0.0390625
+          },
+          "fixed50": {
+            "energy": 0.620305217230931,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.5962059552017343,
+            "floor": 0.00390625,
+            "ceiling": 0.00390625
+          },
+          "masked_energy": {
+            "energy": 0.5347365967168932,
+            "floor": 0.01171875,
+            "ceiling": 0.06640625
+          },
+          "fixed50": {
+            "energy": 0.6340958239277523,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.5958892769124402,
+            "floor": 0.00390625,
+            "ceiling": 0.0078125
+          },
+          "masked_energy": {
+            "energy": 0.5011025999893122,
+            "floor": 0.03515625,
+            "ceiling": 0.0546875
+          },
+          "fixed50": {
+            "energy": 0.6481164875619646,
+            "floor": 0.0,
+            "ceiling": 0.00390625
+          }
+        }
+      }
+    },
+    {
+      "seed": 19008,
+      "regime": "stable",
+      "trained_energy_weight_abs_mean": 0.0693928969343407,
+      "trained_energy_weight_positive_fraction": 0.0,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6066033081450924,
+            "floor": 0.0,
+            "ceiling": 0.0234375
+          },
+          "masked_energy": {
+            "energy": 0.5844650073295095,
+            "floor": 0.00390625,
+            "ceiling": 0.0625
+          },
+          "fixed50": {
+            "energy": 0.6251373295159042,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.5918684791025648,
+            "floor": 0.00390625,
+            "ceiling": 0.01953125
+          },
+          "masked_energy": {
+            "energy": 0.5149840580488638,
+            "floor": 0.01171875,
+            "ceiling": 0.046875
+          },
+          "fixed50": {
+            "energy": 0.636986799610673,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.5828544832877309,
+            "floor": 0.00390625,
+            "ceiling": 0.0078125
+          },
+          "masked_energy": {
+            "energy": 0.463228587038073,
+            "floor": 0.04296875,
+            "ceiling": 0.05078125
+          },
+          "fixed50": {
+            "energy": 0.6500021893671151,
+            "floor": 0.0,
+            "ceiling": 0.00390625
+          }
+        }
+      }
+    },
+    {
+      "seed": 19009,
+      "regime": "stable",
+      "trained_energy_weight_abs_mean": 0.06988720284080625,
+      "trained_energy_weight_positive_fraction": 0.00390625,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6134475359190472,
+            "floor": 0.0,
+            "ceiling": 0.015625
+          },
+          "masked_energy": {
+            "energy": 0.5865611041351625,
+            "floor": 0.0,
+            "ceiling": 0.02734375
+          },
+          "fixed50": {
+            "energy": 0.631459107590465,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.5997973390762108,
+            "floor": 0.0,
+            "ceiling": 0.01953125
+          },
+          "masked_energy": {
+            "energy": 0.520900984491387,
+            "floor": 0.01953125,
+            "ceiling": 0.0390625
+          },
+          "fixed50": {
+            "energy": 0.6433858719216794,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.5964229395474678,
+            "floor": 0.00390625,
+            "ceiling": 0.0234375
+          },
+          "masked_energy": {
+            "energy": 0.47981167126671215,
+            "floor": 0.03515625,
+            "ceiling": 0.0390625
+          },
+          "fixed50": {
+            "energy": 0.6605946789637969,
+            "floor": 0.0,
+            "ceiling": 0.015625
+          }
+        }
+      }
+    },
+    {
+      "seed": 19010,
+      "regime": "stable",
+      "trained_energy_weight_abs_mean": 0.07052529739610525,
+      "trained_energy_weight_positive_fraction": 0.00390625,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.5978424261304798,
+            "floor": 0.0,
+            "ceiling": 0.0078125
+          },
+          "masked_energy": {
+            "energy": 0.5728618710735556,
+            "floor": 0.0,
+            "ceiling": 0.03515625
+          },
+          "fixed50": {
+            "energy": 0.6226662097464977,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.5861858345899816,
+            "floor": 0.0,
+            "ceiling": 0.01953125
+          },
+          "masked_energy": {
+            "energy": 0.4981973582137804,
+            "floor": 0.00390625,
+            "ceiling": 0.06640625
+          },
+          "fixed50": {
+            "energy": 0.6384428908510094,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.5772607432162619,
+            "floor": 0.0078125,
+            "ceiling": 0.03125
+          },
+          "masked_energy": {
+            "energy": 0.4491464057378427,
+            "floor": 0.0703125,
+            "ceiling": 0.0625
+          },
+          "fixed50": {
+            "energy": 0.6506161503297807,
+            "floor": 0.0,
+            "ceiling": 0.00390625
+          }
+        }
+      }
+    },
+    {
+      "seed": 19011,
+      "regime": "stable",
+      "trained_energy_weight_abs_mean": 0.07232739030860286,
+      "trained_energy_weight_positive_fraction": 0.00390625,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.610563686500843,
+            "floor": 0.0,
+            "ceiling": 0.00390625
+          },
+          "masked_energy": {
+            "energy": 0.5951603788865247,
+            "floor": 0.00390625,
+            "ceiling": 0.04296875
+          },
+          "fixed50": {
+            "energy": 0.6283652941786817,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.5998119724816858,
+            "floor": 0.0,
+            "ceiling": 0.01171875
+          },
+          "masked_energy": {
+            "energy": 0.5425563355484837,
+            "floor": 0.01171875,
+            "ceiling": 0.0390625
+          },
+          "fixed50": {
+            "energy": 0.6404756517233829,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.5929367049167478,
+            "floor": 0.00390625,
+            "ceiling": 0.0234375
+          },
+          "masked_energy": {
+            "energy": 0.5053005049736814,
+            "floor": 0.03125,
+            "ceiling": 0.04296875
+          },
+          "fixed50": {
+            "energy": 0.656833681592331,
+            "floor": 0.0,
+            "ceiling": 0.015625
+          }
+        }
+      }
+    },
+    {
+      "seed": 20000,
+      "regime": "mild",
+      "trained_energy_weight_abs_mean": 0.07210658309936838,
+      "trained_energy_weight_positive_fraction": 0.0,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.5969350014594559,
+            "floor": 0.0,
+            "ceiling": 0.0078125
+          },
+          "masked_energy": {
+            "energy": 0.5769656703107332,
+            "floor": 0.0,
+            "ceiling": 0.01953125
+          },
+          "fixed50": {
+            "energy": 0.6121894218854252,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.01787023235447107,
+            "floor": 0.33984375,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.01818574813321378,
+            "floor": 0.37890625,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.02066325778176003,
+            "floor": 0.359375,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.11365414167001206,
+            "floor": 0.19921875,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.08803320529294241,
+            "floor": 0.25,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.045708649024745175,
+            "floor": 0.2265625,
+            "ceiling": 0.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20001,
+      "regime": "mild",
+      "trained_energy_weight_abs_mean": 0.07117834824245699,
+      "trained_energy_weight_positive_fraction": 0.00390625,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.604625741696299,
+            "floor": 0.0,
+            "ceiling": 0.01953125
+          },
+          "masked_energy": {
+            "energy": 0.5763954229463015,
+            "floor": 0.0,
+            "ceiling": 0.03125
+          },
+          "fixed50": {
+            "energy": 0.6220287496758365,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.0185543545331762,
+            "floor": 0.328125,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.01730442917725275,
+            "floor": 0.39453125,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.019305486288476698,
+            "floor": 0.38671875,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.11365118816633082,
+            "floor": 0.1875,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.09257491856504535,
+            "floor": 0.2734375,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.04306524925465252,
+            "floor": 0.2265625,
+            "ceiling": 0.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20002,
+      "regime": "mild",
+      "trained_energy_weight_abs_mean": 0.06956039372495731,
+      "trained_energy_weight_positive_fraction": 0.00390625,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.5924254705571241,
+            "floor": 0.0,
+            "ceiling": 0.00390625
+          },
+          "masked_energy": {
+            "energy": 0.5671351578377153,
+            "floor": 0.0,
+            "ceiling": 0.03515625
+          },
+          "fixed50": {
+            "energy": 0.6090083495982819,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.01965580919460261,
+            "floor": 0.296875,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.02016312901878107,
+            "floor": 0.3125,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.020573022988655255,
+            "floor": 0.36328125,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.1166729412216275,
+            "floor": 0.1875,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.09420749653258947,
+            "floor": 0.27734375,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.042399962883514844,
+            "floor": 0.21875,
+            "ceiling": 0.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20003,
+      "regime": "mild",
+      "trained_energy_weight_abs_mean": 0.07056835816613762,
+      "trained_energy_weight_positive_fraction": 0.00390625,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6135514431523932,
+            "floor": 0.0,
+            "ceiling": 0.01171875
+          },
+          "masked_energy": {
+            "energy": 0.5958677592875083,
+            "floor": 0.0,
+            "ceiling": 0.0390625
+          },
+          "fixed50": {
+            "energy": 0.6300124085520211,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.01828529739848323,
+            "floor": 0.3203125,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.01754219466546228,
+            "floor": 0.36328125,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.018235806943299022,
+            "floor": 0.40234375,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.11842412963863067,
+            "floor": 0.18359375,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.08389524216139144,
+            "floor": 0.28515625,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.04259361942657554,
+            "floor": 0.2265625,
+            "ceiling": 0.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20004,
+      "regime": "mild",
+      "trained_energy_weight_abs_mean": 0.07187826971880987,
+      "trained_energy_weight_positive_fraction": 0.0,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6013584176223619,
+            "floor": 0.0,
+            "ceiling": 0.0078125
+          },
+          "masked_energy": {
+            "energy": 0.5808265929050553,
+            "floor": 0.0,
+            "ceiling": 0.05078125
+          },
+          "fixed50": {
+            "energy": 0.6267438611467216,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.018003359506256762,
+            "floor": 0.34375,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.019163025403490498,
+            "floor": 0.3515625,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.02250319666138007,
+            "floor": 0.31640625,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.11482866834876992,
+            "floor": 0.19921875,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.09579557430687334,
+            "floor": 0.25,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.04245818830201768,
+            "floor": 0.2421875,
+            "ceiling": 0.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20005,
+      "regime": "mild",
+      "trained_energy_weight_abs_mean": 0.07185894068072736,
+      "trained_energy_weight_positive_fraction": 0.0,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6111919350284649,
+            "floor": 0.0,
+            "ceiling": 0.015625
+          },
+          "masked_energy": {
+            "energy": 0.5863845501022444,
+            "floor": 0.0,
+            "ceiling": 0.03125
+          },
+          "fixed50": {
+            "energy": 0.6255426205728544,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.01767010252132298,
+            "floor": 0.359375,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.019562419455578278,
+            "floor": 0.33984375,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.018914318761367507,
+            "floor": 0.3984375,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.11517419638036222,
+            "floor": 0.1875,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.09316557343040352,
+            "floor": 0.28125,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.04516472114636916,
+            "floor": 0.2109375,
+            "ceiling": 0.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20006,
+      "regime": "mild",
+      "trained_energy_weight_abs_mean": 0.06913623061638127,
+      "trained_energy_weight_positive_fraction": 0.0,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6046183678055934,
+            "floor": 0.0,
+            "ceiling": 0.015625
+          },
+          "masked_energy": {
+            "energy": 0.587557374944972,
+            "floor": 0.00390625,
+            "ceiling": 0.02734375
+          },
+          "fixed50": {
+            "energy": 0.6194519378319367,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.01758319881579576,
+            "floor": 0.3515625,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.016832209004028292,
+            "floor": 0.40234375,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.02155353708378656,
+            "floor": 0.35546875,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.10969766120762492,
+            "floor": 0.1875,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.08448746704404611,
+            "floor": 0.296875,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.04409428557464056,
+            "floor": 0.19140625,
+            "ceiling": 0.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20007,
+      "regime": "mild",
+      "trained_energy_weight_abs_mean": 0.07130152008375615,
+      "trained_energy_weight_positive_fraction": 0.0,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6053489214428521,
+            "floor": 0.0,
+            "ceiling": 0.03125
+          },
+          "masked_energy": {
+            "energy": 0.5829897045409201,
+            "floor": 0.00390625,
+            "ceiling": 0.046875
+          },
+          "fixed50": {
+            "energy": 0.629397226548976,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.017272726564548972,
+            "floor": 0.33984375,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.018783694992765533,
+            "floor": 0.34765625,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.019272244296433427,
+            "floor": 0.37890625,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.12544076653327793,
+            "floor": 0.1953125,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.10109816455668749,
+            "floor": 0.26171875,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.04441941770248904,
+            "floor": 0.23046875,
+            "ceiling": 0.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20008,
+      "regime": "mild",
+      "trained_energy_weight_abs_mean": 0.07018091255048445,
+      "trained_energy_weight_positive_fraction": 0.0,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6076712641317146,
+            "floor": 0.0,
+            "ceiling": 0.03125
+          },
+          "masked_energy": {
+            "energy": 0.5895428267871686,
+            "floor": 0.0,
+            "ceiling": 0.05078125
+          },
+          "fixed50": {
+            "energy": 0.6256341171124428,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.017308512068054185,
+            "floor": 0.3515625,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.015888598753409533,
+            "floor": 0.4375,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.02077426818347565,
+            "floor": 0.37109375,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.11427293060879015,
+            "floor": 0.19921875,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.08978109931863137,
+            "floor": 0.21484375,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.04421474743460523,
+            "floor": 0.21875,
+            "ceiling": 0.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20009,
+      "regime": "mild",
+      "trained_energy_weight_abs_mean": 0.0689293534844564,
+      "trained_energy_weight_positive_fraction": 0.00390625,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6043556501031966,
+            "floor": 0.0,
+            "ceiling": 0.02734375
+          },
+          "masked_energy": {
+            "energy": 0.5786920599508377,
+            "floor": 0.0,
+            "ceiling": 0.0390625
+          },
+          "fixed50": {
+            "energy": 0.6358181022330176,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.018412900448124072,
+            "floor": 0.328125,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.019440822664575967,
+            "floor": 0.36328125,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.01971079484670725,
+            "floor": 0.39453125,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.1257264026096344,
+            "floor": 0.203125,
+            "ceiling": 0.00390625
+          },
+          "masked_energy": {
+            "energy": 0.10331655001384735,
+            "floor": 0.2890625,
+            "ceiling": 0.00390625
+          },
+          "fixed50": {
+            "energy": 0.044846589681790554,
+            "floor": 0.20703125,
+            "ceiling": 0.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20010,
+      "regime": "mild",
+      "trained_energy_weight_abs_mean": 0.06964142004678026,
+      "trained_energy_weight_positive_fraction": 0.0,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6022306487612491,
+            "floor": 0.0,
+            "ceiling": 0.015625
+          },
+          "masked_energy": {
+            "energy": 0.576687461096077,
+            "floor": 0.0,
+            "ceiling": 0.03515625
+          },
+          "fixed50": {
+            "energy": 0.6254815737764496,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.016732672737031697,
+            "floor": 0.3515625,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.01678912440626488,
+            "floor": 0.3984375,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.021232066892858087,
+            "floor": 0.30859375,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.12352821018800753,
+            "floor": 0.203125,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.09656285937514236,
+            "floor": 0.23046875,
+            "ceiling": 0.00390625
+          },
+          "fixed50": {
+            "energy": 0.04010037503458912,
+            "floor": 0.296875,
+            "ceiling": 0.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20011,
+      "regime": "mild",
+      "trained_energy_weight_abs_mean": 0.0688899912480033,
+      "trained_energy_weight_positive_fraction": 0.01171875,
+      "milestones": {
+        "1000": {
+          "full_energy": {
+            "energy": 0.6133704022789112,
+            "floor": 0.0,
+            "ceiling": 0.01953125
+          },
+          "masked_energy": {
+            "energy": 0.5838815948672595,
+            "floor": 0.00390625,
+            "ceiling": 0.04296875
+          },
+          "fixed50": {
+            "energy": 0.6318735282837887,
+            "floor": 0.0,
+            "ceiling": 0.0
+          }
+        },
+        "2000": {
+          "full_energy": {
+            "energy": 0.018016756797008305,
+            "floor": 0.3203125,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.016228114020618984,
+            "floor": 0.375,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.020765104081897745,
+            "floor": 0.34375,
+            "ceiling": 0.0
+          }
+        },
+        "3000": {
+          "full_energy": {
+            "energy": 0.1173245465635599,
+            "floor": 0.1796875,
+            "ceiling": 0.0
+          },
+          "masked_energy": {
+            "energy": 0.09596422452621217,
+            "floor": 0.3125,
+            "ceiling": 0.0
+          },
+          "fixed50": {
+            "energy": 0.043761995003885445,
+            "floor": 0.234375,
+            "ceiling": 0.0
+          }
+        }
+      }
+    }
+  ],
+  "limits": "Same simulator, posthoc model family, policy frozen during test; does not show within-shift learning or indefinite viability."
+}
