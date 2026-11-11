@@ -1,0 +1,140 @@
+{
+  "orientation": "Does history-enhanced macro prediction trained only in an unchanged world transfer to changed resource-regrowth physics?",
+  "train_laws": "original baseline only",
+  "test_laws": "baseline or labeled regrowth .055 ticks161\u2013320",
+  "seeds_train": [
+    22300,
+    22301,
+    22302,
+    22303,
+    22304,
+    22305,
+    22306,
+    22307
+  ],
+  "seeds_test": [
+    23300,
+    23301,
+    23302,
+    23303,
+    23304,
+    23305,
+    23306,
+    23307
+  ],
+  "results": {
+    "full8": {
+      "baseline": {
+        "overall_nll": 0.47462725974486925,
+        "pre_shift": 0.4705184817505578,
+        "during_shift": 0.463764557225013,
+        "post_shift": 0.46388555253298647,
+        "per_seed_nll": [
+          0.4767651241137899,
+          0.4749697240563901,
+          0.47384091100353576,
+          0.4743953743036923,
+          0.4742246259662092,
+          0.47502386635494587,
+          0.4741457382385634,
+          0.4736527139218274
+        ]
+      },
+      "shifted": {
+        "overall_nll": 1.1237847489934474,
+        "pre_shift": 0.4705184817505578,
+        "during_shift": 2.0462727838070753,
+        "post_shift": 0.6457196567570916,
+        "per_seed_nll": [
+          1.1024250677463396,
+          1.1427630502952502,
+          1.151481707233616,
+          1.0866736783353237,
+          1.1476115131269558,
+          1.111967049938535,
+          1.1196509549262146,
+          1.127704970345344
+        ]
+      }
+    },
+    "coarse3": {
+      "baseline": {
+        "overall_nll": 0.4799564565103358,
+        "pre_shift": 0.4702635944631665,
+        "during_shift": 0.46499875062886,
+        "post_shift": 0.46511949220988547,
+        "per_seed_nll": [
+          0.48274709501502355,
+          0.47982894673292287,
+          0.4787214295720076,
+          0.4792639931331879,
+          0.47932557624774513,
+          0.4810282327442975,
+          0.48022045217583653,
+          0.47851592646166524
+        ]
+      },
+      "shifted": {
+        "overall_nll": 1.001862658258174,
+        "pre_shift": 0.4702635944631665,
+        "during_shift": 1.7211151342355397,
+        "post_shift": 0.637489370223249,
+        "per_seed_nll": [
+          0.9809896157667225,
+          1.0197032835988264,
+          1.029724745752769,
+          0.9643048781963194,
+          1.026363503645872,
+          0.9903007387600266,
+          0.9983792010464104,
+          1.0051352992984453
+        ]
+      }
+    },
+    "coarse3_history3": {
+      "baseline": {
+        "overall_nll": 0.0026178787963926915,
+        "pre_shift": 0.006572188641909389,
+        "during_shift": 0.00025431713033133833,
+        "post_shift": 0.0002543832565436299,
+        "per_seed_nll": [
+          0.0037139491616868642,
+          0.0028500746306543982,
+          0.001988153313657211,
+          0.001552486896805604,
+          0.002673065491905296,
+          0.003600577735700239,
+          0.002485850390350048,
+          0.002078872750381872
+        ]
+      },
+      "shifted": {
+        "overall_nll": 0.546521942765388,
+        "pre_shift": 0.006572188641909389,
+        "during_shift": 1.3631762774462928,
+        "post_shift": 0.07742679438174525,
+        "per_seed_nll": [
+          0.53851524008035,
+          0.5552450069551,
+          0.5606673023578641,
+          0.5303453732122565,
+          0.5580847984184594,
+          0.541473128785413,
+          0.5440606940883541,
+          0.5437839982253065
+        ]
+      }
+    }
+  },
+  "source_sha256": {
+    "NEXT_MEMORY_probe.py": "37396b7d4c3be1d8434871c6c996bb6fb70088b2dcb530edeb9bde5744374983",
+    "NEXT_MEMORY_transfer.py": "06e2be04d3e92aa364fbf97e71cb071d2ebff15135d225a52b7689878b4e3f32",
+    "SOC_MACRO_probe.py": "1ba258254a9171c14d9f6ecfba5b7b44c5ffdc59b3b6b044a39a60fe46381a7c"
+  },
+  "cautions": [
+    "The original world is stationary in its laws but contains transients.",
+    "Model trained on baseline regime only; no adaptation or retraining during shifted test.",
+    "History reduces uncertainty but transfer can worsen when phase changes.",
+    "Same synthetic simulator family, small seed set."
+  ]
+}
