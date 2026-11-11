@@ -1,0 +1,582 @@
+{
+  "design": {
+    "seeds": [
+      10400,
+      10401,
+      10402,
+      10403,
+      10404,
+      10405,
+      10406,
+      10407
+    ],
+    "training": 1000,
+    "ticks": 3000,
+    "size": 10,
+    "radius": [
+      0.025,
+      0.1,
+      0.4,
+      1.0
+    ],
+    "status": "holdout",
+    "holdout_reserved": [
+      10400,
+      10401,
+      10402,
+      10403,
+      10404,
+      10405,
+      10406,
+      10407
+    ]
+  },
+  "sources_sha256": {
+    "STABILITY2_PLAN.md": "506a19dad65b94b1f21ec1487ddead11c8f1501621e0c5dc35781d329e7492d0",
+    "STABILITY2_probe.py": "544a8f1b418e2d1a4d94a083e9c1e015b971a49afa720c6036230b51108d528b",
+    "NEXT_WELFARE_garden.py": "74b2293fce28df08fd6c065f337161412ebcec2bf623dfd19316b01e5ebd62a6",
+    "NEXT_WELFARE_study.py": "441e36a60451b69289b3295993198868f35149488eb853cad961f34be708bd39"
+  },
+  "rows": [
+    {
+      "seed": 10400,
+      "conditions": {
+        "frozen": {
+          "energy": 0.059530793973387466,
+          "floor": 0.14,
+          "resource": 0.4438277331327425,
+          "harvest": 0.39,
+          "raw_tail": -0.0014479764070418621,
+          "theta_mean_distance": 0.0,
+          "theta_max_distance": 0.0
+        },
+        "online": {
+          "energy": 0.03778290815615649,
+          "floor": 0.18,
+          "resource": 0.4238738400302312,
+          "harvest": 0.41,
+          "raw_tail": -0.001829854589533136,
+          "theta_mean_distance": 0.3088423049439155,
+          "theta_max_distance": 1.1866694073656423
+        },
+        "radius_0.025": {
+          "energy": 0.056891422503450834,
+          "floor": 0.14,
+          "resource": 0.4419215113294895,
+          "harvest": 0.4,
+          "raw_tail": -0.0014601152549928277,
+          "theta_mean_distance": 0.0157583384777654,
+          "theta_max_distance": 0.02500000000000002
+        },
+        "radius_0.1": {
+          "energy": 0.04652488649504163,
+          "floor": 0.16,
+          "resource": 0.43998890597204665,
+          "harvest": 0.38,
+          "raw_tail": -0.0015040767392306839,
+          "theta_mean_distance": 0.07472933091189593,
+          "theta_max_distance": 0.10000000000000005
+        },
+        "radius_0.4": {
+          "energy": 0.03834671259576322,
+          "floor": 0.19,
+          "resource": 0.4309430968919525,
+          "harvest": 0.38,
+          "raw_tail": -0.0016490231844803597,
+          "theta_mean_distance": 0.22658952839280677,
+          "theta_max_distance": 0.4
+        },
+        "radius_1": {
+          "energy": 0.03685351362705333,
+          "floor": 0.2,
+          "resource": 0.42550129693267,
+          "harvest": 0.39,
+          "raw_tail": -0.0018244251330157525,
+          "theta_mean_distance": 0.3070281576871786,
+          "theta_max_distance": 0.9970375168024054
+        }
+      }
+    },
+    {
+      "seed": 10401,
+      "conditions": {
+        "frozen": {
+          "energy": 0.045004899381972316,
+          "floor": 0.16,
+          "resource": 0.43985416390973936,
+          "harvest": 0.41,
+          "raw_tail": -0.001415570036866913,
+          "theta_mean_distance": 0.0,
+          "theta_max_distance": 0.0
+        },
+        "online": {
+          "energy": 0.036939515094312966,
+          "floor": 0.18,
+          "resource": 0.42207100189933605,
+          "harvest": 0.45,
+          "raw_tail": -0.0017645624056064613,
+          "theta_mean_distance": 0.27893661270730463,
+          "theta_max_distance": 0.9835882519535691
+        },
+        "radius_0.025": {
+          "energy": 0.043996466708262544,
+          "floor": 0.15,
+          "resource": 0.43752078858749804,
+          "harvest": 0.41,
+          "raw_tail": -0.0014342737567819834,
+          "theta_mean_distance": 0.016430655041196767,
+          "theta_max_distance": 0.025000000000000095
+        },
+        "radius_0.1": {
+          "energy": 0.04394003570346682,
+          "floor": 0.14,
+          "resource": 0.42959525280952027,
+          "harvest": 0.45,
+          "raw_tail": -0.0014860634298287645,
+          "theta_mean_distance": 0.07718830636979301,
+          "theta_max_distance": 0.10000000000000005
+        },
+        "radius_0.4": {
+          "energy": 0.04062359428581133,
+          "floor": 0.17,
+          "resource": 0.4222837762920086,
+          "harvest": 0.45,
+          "raw_tail": -0.0016286659823359128,
+          "theta_mean_distance": 0.21283785248583062,
+          "theta_max_distance": 0.39844277536397943
+        },
+        "radius_1": {
+          "energy": 0.03863596937608325,
+          "floor": 0.15,
+          "resource": 0.42106358757030543,
+          "harvest": 0.45,
+          "raw_tail": -0.0017678929400576978,
+          "theta_mean_distance": 0.28387530614693746,
+          "theta_max_distance": 0.968367005208881
+        }
+      }
+    },
+    {
+      "seed": 10402,
+      "conditions": {
+        "frozen": {
+          "energy": 0.052417556549302295,
+          "floor": 0.12,
+          "resource": 0.42599364932635325,
+          "harvest": 0.44,
+          "raw_tail": -0.0015515513026380986,
+          "theta_mean_distance": 0.0,
+          "theta_max_distance": 0.0
+        },
+        "online": {
+          "energy": 0.039132801165168894,
+          "floor": 0.18,
+          "resource": 0.4136501191477952,
+          "harvest": 0.46,
+          "raw_tail": -0.0018667723506142519,
+          "theta_mean_distance": 0.2934403233999829,
+          "theta_max_distance": 0.895383270725329
+        },
+        "radius_0.025": {
+          "energy": 0.05140700395895963,
+          "floor": 0.12,
+          "resource": 0.425656447667852,
+          "harvest": 0.43,
+          "raw_tail": -0.0015599788913514118,
+          "theta_mean_distance": 0.01582219693044353,
+          "theta_max_distance": 0.025000000000000046
+        },
+        "radius_0.1": {
+          "energy": 0.04727715766187221,
+          "floor": 0.12,
+          "resource": 0.4219562427906301,
+          "harvest": 0.45,
+          "raw_tail": -0.0016029338072285776,
+          "theta_mean_distance": 0.07602149228940752,
+          "theta_max_distance": 0.10000000000000002
+        },
+        "radius_0.4": {
+          "energy": 0.04019599038480628,
+          "floor": 0.16,
+          "resource": 0.4176213570013057,
+          "harvest": 0.45,
+          "raw_tail": -0.0017340487693592354,
+          "theta_mean_distance": 0.22047299764444997,
+          "theta_max_distance": 0.4
+        },
+        "radius_1": {
+          "energy": 0.03977688621258657,
+          "floor": 0.16,
+          "resource": 0.4145320438117473,
+          "harvest": 0.46,
+          "raw_tail": -0.0018229940019998327,
+          "theta_mean_distance": 0.28447825824865236,
+          "theta_max_distance": 0.9307698446917219
+        }
+      }
+    },
+    {
+      "seed": 10403,
+      "conditions": {
+        "frozen": {
+          "energy": 0.050545895984350525,
+          "floor": 0.13,
+          "resource": 0.4381840163491002,
+          "harvest": 0.52,
+          "raw_tail": -0.0014650579300468714,
+          "theta_mean_distance": 0.0,
+          "theta_max_distance": 0.0
+        },
+        "online": {
+          "energy": 0.04063506148449748,
+          "floor": 0.14,
+          "resource": 0.4267392133405832,
+          "harvest": 0.51,
+          "raw_tail": -0.001769680831667817,
+          "theta_mean_distance": 0.3022651426718972,
+          "theta_max_distance": 0.8918768764113926
+        },
+        "radius_0.025": {
+          "energy": 0.04872268710302635,
+          "floor": 0.12,
+          "resource": 0.4373198019573418,
+          "harvest": 0.52,
+          "raw_tail": -0.0014770122094338997,
+          "theta_mean_distance": 0.015610215518929538,
+          "theta_max_distance": 0.02500000000000006
+        },
+        "radius_0.1": {
+          "energy": 0.045986361613173134,
+          "floor": 0.12,
+          "resource": 0.43486432533336916,
+          "harvest": 0.52,
+          "raw_tail": -0.0015191670153369343,
+          "theta_mean_distance": 0.07350804901914101,
+          "theta_max_distance": 0.10000000000000006
+        },
+        "radius_0.4": {
+          "energy": 0.04088375397422388,
+          "floor": 0.17,
+          "resource": 0.431767724434917,
+          "harvest": 0.5,
+          "raw_tail": -0.0016264347903075693,
+          "theta_mean_distance": 0.22166214006092694,
+          "theta_max_distance": 0.39723747271936355
+        },
+        "radius_1": {
+          "energy": 0.041278244473586,
+          "floor": 0.13,
+          "resource": 0.42554214853030176,
+          "harvest": 0.51,
+          "raw_tail": -0.0017652010323838975,
+          "theta_mean_distance": 0.30006798285135977,
+          "theta_max_distance": 0.8879693651302633
+        }
+      }
+    },
+    {
+      "seed": 10404,
+      "conditions": {
+        "frozen": {
+          "energy": 0.043205392764396854,
+          "floor": 0.16,
+          "resource": 0.4467386255110547,
+          "harvest": 0.31,
+          "raw_tail": -0.0014554992970237652,
+          "theta_mean_distance": 0.0,
+          "theta_max_distance": 0.0
+        },
+        "online": {
+          "energy": 0.03171450066102897,
+          "floor": 0.22,
+          "resource": 0.42673309717339386,
+          "harvest": 0.34,
+          "raw_tail": -0.0018965913728193904,
+          "theta_mean_distance": 0.2880753851731718,
+          "theta_max_distance": 0.795373509129079
+        },
+        "radius_0.025": {
+          "energy": 0.04116908298383801,
+          "floor": 0.16,
+          "resource": 0.44698658361039667,
+          "harvest": 0.31,
+          "raw_tail": -0.0014681571976427027,
+          "theta_mean_distance": 0.01667826224857831,
+          "theta_max_distance": 0.025000000000000085
+        },
+        "radius_0.1": {
+          "energy": 0.03533004753102756,
+          "floor": 0.24,
+          "resource": 0.4417430956697397,
+          "harvest": 0.31,
+          "raw_tail": -0.001546130511806492,
+          "theta_mean_distance": 0.07533743267952267,
+          "theta_max_distance": 0.10000000000000007
+        },
+        "radius_0.4": {
+          "energy": 0.03151063786874044,
+          "floor": 0.22,
+          "resource": 0.4310339619139235,
+          "harvest": 0.34,
+          "raw_tail": -0.001750779004845592,
+          "theta_mean_distance": 0.2117468730013331,
+          "theta_max_distance": 0.3986557618983767
+        },
+        "radius_1": {
+          "energy": 0.03283556149557283,
+          "floor": 0.2,
+          "resource": 0.42648611989791957,
+          "harvest": 0.35,
+          "raw_tail": -0.0018786304119988416,
+          "theta_mean_distance": 0.28652622860532917,
+          "theta_max_distance": 0.8006588686947573
+        }
+      }
+    },
+    {
+      "seed": 10405,
+      "conditions": {
+        "frozen": {
+          "energy": 0.04584519132094811,
+          "floor": 0.17,
+          "resource": 0.4369777982671643,
+          "harvest": 0.43,
+          "raw_tail": -0.0015797086903939475,
+          "theta_mean_distance": 0.0,
+          "theta_max_distance": 0.0
+        },
+        "online": {
+          "energy": 0.03736914642085052,
+          "floor": 0.21,
+          "resource": 0.42454129697459947,
+          "harvest": 0.43,
+          "raw_tail": -0.0018273246954663104,
+          "theta_mean_distance": 0.25634672774342904,
+          "theta_max_distance": 0.9354961277725687
+        },
+        "radius_0.025": {
+          "energy": 0.04493301982723205,
+          "floor": 0.17,
+          "resource": 0.4349474574238307,
+          "harvest": 0.43,
+          "raw_tail": -0.0015888517999301497,
+          "theta_mean_distance": 0.015591325181632283,
+          "theta_max_distance": 0.025000000000000057
+        },
+        "radius_0.1": {
+          "energy": 0.04527548563446619,
+          "floor": 0.16,
+          "resource": 0.4268087597377162,
+          "harvest": 0.46,
+          "raw_tail": -0.001611041452230771,
+          "theta_mean_distance": 0.07226853925801127,
+          "theta_max_distance": 0.10000000000000012
+        },
+        "radius_0.4": {
+          "energy": 0.04150556149400937,
+          "floor": 0.13,
+          "resource": 0.42449722864690614,
+          "harvest": 0.45,
+          "raw_tail": -0.0017147184909702114,
+          "theta_mean_distance": 0.2076346415992064,
+          "theta_max_distance": 0.40000000000000013
+        },
+        "radius_1": {
+          "energy": 0.03809924734499708,
+          "floor": 0.2,
+          "resource": 0.42361391238762525,
+          "harvest": 0.45,
+          "raw_tail": -0.0018287752064843922,
+          "theta_mean_distance": 0.25696894547658417,
+          "theta_max_distance": 0.9056807197597991
+        }
+      }
+    },
+    {
+      "seed": 10406,
+      "conditions": {
+        "frozen": {
+          "energy": 0.04947679461923899,
+          "floor": 0.09,
+          "resource": 0.4359291449887915,
+          "harvest": 0.45,
+          "raw_tail": -0.0013801592343724294,
+          "theta_mean_distance": 0.0,
+          "theta_max_distance": 0.0
+        },
+        "online": {
+          "energy": 0.0394846132994582,
+          "floor": 0.17,
+          "resource": 0.42432443797770253,
+          "harvest": 0.46,
+          "raw_tail": -0.001789885694769291,
+          "theta_mean_distance": 0.272674622980592,
+          "theta_max_distance": 0.7814441564421231
+        },
+        "radius_0.025": {
+          "energy": 0.0485521099389802,
+          "floor": 0.1,
+          "resource": 0.43489440887964087,
+          "harvest": 0.44,
+          "raw_tail": -0.0013988083857117786,
+          "theta_mean_distance": 0.016119733675404875,
+          "theta_max_distance": 0.025000000000000033
+        },
+        "radius_0.1": {
+          "energy": 0.04571178497313275,
+          "floor": 0.12,
+          "resource": 0.43125901311722104,
+          "harvest": 0.46,
+          "raw_tail": -0.0014706181546675905,
+          "theta_mean_distance": 0.0710927491787299,
+          "theta_max_distance": 0.09999999999999999
+        },
+        "radius_0.4": {
+          "energy": 0.04140349255777091,
+          "floor": 0.16,
+          "resource": 0.42500160516975954,
+          "harvest": 0.45,
+          "raw_tail": -0.0016813622735722756,
+          "theta_mean_distance": 0.22162011459299433,
+          "theta_max_distance": 0.39999999999999997
+        },
+        "radius_1": {
+          "energy": 0.03923510922812741,
+          "floor": 0.18,
+          "resource": 0.4236678479960473,
+          "harvest": 0.46,
+          "raw_tail": -0.0017862520327503702,
+          "theta_mean_distance": 0.2727273036504599,
+          "theta_max_distance": 0.7789659761318266
+        }
+      }
+    },
+    {
+      "seed": 10407,
+      "conditions": {
+        "frozen": {
+          "energy": 0.04561112750059987,
+          "floor": 0.18,
+          "resource": 0.447318718554592,
+          "harvest": 0.35,
+          "raw_tail": -0.0013861044667028808,
+          "theta_mean_distance": 0.0,
+          "theta_max_distance": 0.0
+        },
+        "online": {
+          "energy": 0.03439975409796329,
+          "floor": 0.23,
+          "resource": 0.4212989363810273,
+          "harvest": 0.4,
+          "raw_tail": -0.0019087054344257576,
+          "theta_mean_distance": 0.3218891715578809,
+          "theta_max_distance": 0.8523575801986619
+        },
+        "radius_0.025": {
+          "energy": 0.04465837112549462,
+          "floor": 0.2,
+          "resource": 0.44669751572016586,
+          "harvest": 0.34,
+          "raw_tail": -0.001403877013303363,
+          "theta_mean_distance": 0.015690888294344348,
+          "theta_max_distance": 0.02500000000000002
+        },
+        "radius_0.1": {
+          "energy": 0.042268804336448404,
+          "floor": 0.18,
+          "resource": 0.4420094797634883,
+          "harvest": 0.34,
+          "raw_tail": -0.0014417869433144275,
+          "theta_mean_distance": 0.0791755487121891,
+          "theta_max_distance": 0.10000000000000006
+        },
+        "radius_0.4": {
+          "energy": 0.037694513885997455,
+          "floor": 0.16,
+          "resource": 0.427747383933988,
+          "harvest": 0.41,
+          "raw_tail": -0.0016656745330248873,
+          "theta_mean_distance": 0.24177535001264394,
+          "theta_max_distance": 0.4
+        },
+        "radius_1": {
+          "energy": 0.034973302042306774,
+          "floor": 0.24,
+          "resource": 0.4216344456572727,
+          "harvest": 0.4,
+          "raw_tail": -0.0018921825842526934,
+          "theta_mean_distance": 0.31878477746632017,
+          "theta_max_distance": 0.857460390230496
+        }
+      }
+    }
+  ],
+  "summary": {
+    "frozen": {
+      "energy": 0.048954706511774554,
+      "floor": 0.14375000000000002,
+      "resource": 0.4393529812549422,
+      "harvest": 0.4125,
+      "raw_tail": -0.001460203420635846,
+      "theta_mean_distance": 0.0,
+      "theta_max_distance": 0.0,
+      "wins_vs_frozen": 0,
+      "wins_vs_online": 8
+    },
+    "online": {
+      "energy": 0.037182287547429596,
+      "floor": 0.18875,
+      "resource": 0.42290399286558356,
+      "harvest": 0.4325,
+      "raw_tail": -0.001831672171862802,
+      "theta_mean_distance": 0.29030878639727176,
+      "theta_max_distance": 0.9152736474997958,
+      "wins_vs_frozen": 0,
+      "wins_vs_online": 0
+    },
+    "radius_0.025": {
+      "energy": 0.04754127051865553,
+      "floor": 0.14500000000000002,
+      "resource": 0.4382430643970269,
+      "harvest": 0.41000000000000003,
+      "raw_tail": -0.0014738843136435145,
+      "theta_mean_distance": 0.01596270192103688,
+      "theta_max_distance": 0.025000000000000053,
+      "wins_vs_frozen": 0,
+      "wins_vs_online": 8
+    },
+    "radius_0.1": {
+      "energy": 0.04403932049357859,
+      "floor": 0.155,
+      "resource": 0.43352813439921645,
+      "harvest": 0.42125,
+      "raw_tail": -0.0015227272567055303,
+      "theta_mean_distance": 0.0749151810523363,
+      "theta_max_distance": 0.10000000000000005,
+      "wins_vs_frozen": 0,
+      "wins_vs_online": 8
+    },
+    "radius_0.4": {
+      "energy": 0.039020532130890365,
+      "floor": 0.16999999999999998,
+      "resource": 0.42636201678559515,
+      "harvest": 0.42874999999999996,
+      "raw_tail": -0.0016813383786120056,
+      "theta_mean_distance": 0.22054243722377403,
+      "theta_max_distance": 0.39929200124771497,
+      "wins_vs_frozen": 0,
+      "wins_vs_online": 7
+    },
+    "radius_1": {
+      "energy": 0.03771097922503915,
+      "floor": 0.1825,
+      "resource": 0.4227551753479862,
+      "harvest": 0.43375,
+      "raw_tail": -0.0018207941678679345,
+      "theta_mean_distance": 0.2888071200166027,
+      "theta_max_distance": 0.8908637108312688,
+      "wins_vs_frozen": 0,
+      "wins_vs_online": 6
+    }
+  }
+}
