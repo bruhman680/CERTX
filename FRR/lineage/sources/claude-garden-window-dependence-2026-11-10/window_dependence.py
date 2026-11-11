@@ -1,5 +1,5 @@
 # Post-hoc exploratory reading of saved garden events 851-1550 (final-garden-contract-v1/run/events).
-# Usage: python3 window_dependence.py <path to .../final-garden-contract-v1/run/events>
+# Usage: python3 window_dependence.py <path to .../final-garden-contract-v1/run/events>  (events live on Codex branch codex/frr-progress-2026-10-07, not on this branch)
 import json,glob,collections,sys
 p=sorted(glob.glob(sys.argv[1].rstrip('/')+'/*.json'))
 T=[json.load(open(f))['text'] for f in p]

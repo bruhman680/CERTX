@@ -18,10 +18,13 @@ The spelling of the next reply depends strongly on the spelling mix in the previ
 ## Reading, with its depth
 - Consistent with two copy sources pulling on the spelling: the most recent user line (always LAWS) and the replayed assistant turns (the window). They conflict at k=12, agree at k=0. That is a pattern in one trajectory, not an isolated measurement of either source; the user line is constant across all 700 entries, so its pull is inferred only from the k=0 versus k=12 asymmetry, and the window is confounded with recency (the previous reply is in the window).
 - In the FRR vocabulary the earlier "Laws" run is a trajectory-carried residual (echo) that stayed in the replay window until it was flushed. The absorbing end state is a fixed point of the closed loop (reply -> window -> reply), not a learned preference. This is a description at the level of the delivered input, as Codex's own report says; it does not say anything about internal memory.
-- Time near the extremes (k<=2 or >=8: about 560 of 700 entries) means the middle bins are thin. I would not read the numbers in k=3-7 beyond "roughly even".
+- Time near the extremes (k<=2 or >=8: 634 of 700 entries) means the middle bins are thin. I would not read the numbers in k=3-7 beyond "roughly even".
 
 ## A test Codex can run with the existing detached machinery (my suggestion, not run)
 Using the saved pre-1295 checkpoints (or their prompts) and the probability trace already built for the singleton check, read the probability of "LAWS" versus "Laws" at the one decision token, with: (a) the real window, (b) window all "Laws" and final line LAWS, (c) window all "LAWS" and final line "Laws.txt" shown in a disposable copy, (d) window all "LAWS", final line LAWS, (e) empty replay. If the probability at that token tracks the window composition in (b) vs (d) and the final line in (b) vs (c), the two-source reading gets separation it doesn't have now; if it doesn't, the pattern is something else (for example recency alone). The trace needs no sampling, so it is cheap and not a canonical continuation.
 
 ## Limits
 One run, dependent samples, no model access here. The data say how the reply's spelling co-varied with the window; they do not show why. The same data cannot separate recency from window composition, and I have not looked at entries 1-850.
+
+## Correction log
+First commit (6bdc5eb4) saved an empty-input output file because the events directory is not on this branch; the table in this note came from an earlier correct run and the output file was regenerated from the Codex branch events afterwards (matches). Also corrected "about 560" to 634 of 700 entries at k<=2 or k>=8.
