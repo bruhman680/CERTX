@@ -34,3 +34,15 @@ Analytically, all homogeneous constant-probability harvesting policies have nega
 - The privately archived demonstration checkpoint and HTML replay were intentionally **not** committed to the repository; the source and tabular raw experimental records were.
 
 **Next experiment, before claiming adaptive intelligence:** Compare a genuinely action-aware neural cell with the frozen .55 threshold under **identical original-world seeds, durations, observations, and metrics**, then test both under held-out environmental shifts, scarcity shocks, and longer horizons. Track pre-clipping energy budgets, resource recovery, and lineage of any newly introduced mutations. Keep birth/death/reproduction as a separate, labeled extension.
+
+## Subsequent research loops and living-world operations
+
+**The user clarified that 1,000 means research *loops*, each containing as many reasoning passes, simulations, and tests as needed.** See `EXPLORATION_LEDGER.md` for actual completed loops, unanswered questions, and how evidence changed the plan. The 1,000-run batch below is only one experiment within that allowance.
+
+- `THOUSAND_RUN_SWEEP.py`, `THOUSAND_RUN_META.json`, `THOUSAND_RUN_RESULTS.json`, `THOUSAND_RUN_REPORT.md`: **1,000 matched simulations** = four same-world conditions ×250 fresh seeds ×600 ticks. Final mean energy: original neural learned .00818, frozen .03211, stewardship learned .05884, fixed threshold .55 **.48557**. Crucially the .55 policy has slightly *negative* mean raw energy drift over the final 100 ticks; do not call it indefinitely viable. Original row-level data are privately retained and available on this branch as `THOUSAND_RUN_ROWS.jsonl.gz.b64`; decode with `base64 -d THOUSAND_RUN_ROWS.jsonl.gz.b64 | gzip -d > THOUSAND_RUN_ROWS.jsonl`. Archive SHA-256 and source provenance are in `THOUSAND_RUN_META.json`.
+- `PERTURBATION_SHOCK_REPORT.md`, `PERTURBATION_LONGHORIZON_REPORT.md` and accompanying scripts/data: separate 200-run shocked/control test and 120-run 2,000-tick stability probe. Fixed threshold .55 without shocks declines from ~.483 energy at tick600 to ~.269 at tick2000, **disproving any inference of stability from the shorter horizon**. With shocks it falls toward .042. Resource recovery and energy recovery are distinct.
+- `IMITATION_CAPACITY_REPORT.md`: teacher-supervised neural cells learn a useful resource-sensitive behavior; this is evidence of representational capacity, **not autonomous policy discovery**.
+- `EVOLUTION_REPORT.md`: a separate explicitly demographic extension with birth, death, inheritance, and mutation; no demonstrated benefit from mutation over clonal neural controls.
+- `LIVING_GARDEN.py`, `LIVING_GARDEN_GUIDE.md`: the new preferred **single persistent Garden**, with exact-state checkpoints, pause/resume, tick delay, logged interventions, and forks. Its canonical checkpoint is stored privately rather than publicly uploading neural weights and detailed history. This is an on-demand foreground process, not unattended hosting between sessions.
+
+All new research is confined to `codex/frr-v05-explorations`; unrelated branches and the original historical Garden have not been changed.
