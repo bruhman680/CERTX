@@ -28,3 +28,5 @@ One run, dependent samples, no model access here. The data say how the reply's s
 
 ## Correction log
 First commit (6bdc5eb4) saved an empty-input output file because the events directory is not on this branch; the table in this note came from an earlier correct run and the output file was regenerated from the Codex branch events afterwards (matches). Also corrected "about 560" to 634 of 700 entries at k<=2 or k>=8.
+
+> Correction: see CORRECTION_AND_VIEW_2026-11-10.md. The "depends strongly on window composition" reading is not supported beyond co-variation with the previous reply.
