@@ -1,0 +1,3630 @@
+{
+  "design": {
+    "burden": "NEXT_ONLINE_PLAN.md",
+    "train_seeds": [
+      9800,
+      9801,
+      9802,
+      9803,
+      9804,
+      9805,
+      9806,
+      9807,
+      9808,
+      9809,
+      9810,
+      9811
+    ],
+    "independent_audit_seeds_reserved": [
+      9800,
+      9801,
+      9802,
+      9803,
+      9804,
+      9805,
+      9806,
+      9807,
+      9808,
+      9809,
+      9810,
+      9811
+    ],
+    "size": 10,
+    "train_steps": 1000,
+    "test_steps": 3000,
+    "diagnostic_eval_steps": 1500,
+    "objective": "reserve_resource",
+    "penalty": 0.3,
+    "test_regrowth": "0.06 first third, 0.055 middle third, 0.06 final third",
+    "learning_modes": "online and frozen both stochastic; deterministic only secondary diagnostic",
+    "predeclared_checkpoints": [
+      0,
+      1000,
+      2000,
+      3000
+    ],
+    "mode_distinction": "deterministic theta transfer uses separate equal initial worlds"
+  },
+  "platform": {
+    "python": "3.12.14",
+    "numpy": "2.5.4"
+  },
+  "source_sha256": {
+    "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1",
+    "NEXT_WELFARE_garden.py": "74b2293fce28df08fd6c065f337161412ebcec2bf623dfd19316b01e5ebd62a6",
+    "NEXT_WELFARE_study.py": "441e36a60451b69289b3295993198868f35149488eb853cad961f34be708bd39",
+    "NEXT_ONLINE_probe.py": "17612678e4bd7d5f48957b41ab50086b9bd2195dcfa33461788c02a4fb5c00a4"
+  },
+  "rows": [
+    {
+      "seed": 9800,
+      "same_initial_physics_rng": true,
+      "trajectory": [
+        {
+          "tick": 1000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.05261481751107943,
+            "floor": 0.21,
+            "ceiling": 0.0,
+            "resource": 0.42830532390524395,
+            "harvest_rate": 0.45,
+            "mean_energy_weight": -0.21702102715318566,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.10016442885381485,
+            "floor": 0.11,
+            "ceiling": 0.0,
+            "resource": 0.44528480881271293,
+            "harvest_rate": 0.41,
+            "mean_energy_weight": -0.11521380529289228,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 2000,
+          "regrowth": 0.055,
+          "online": {
+            "energy": 0.029713780911287183,
+            "floor": 0.26,
+            "ceiling": 0.0,
+            "resource": 0.41785692158814625,
+            "harvest_rate": 0.45,
+            "mean_energy_weight": -0.2177283197495007,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.033934301902796976,
+            "floor": 0.23,
+            "ceiling": 0.0,
+            "resource": 0.4313579685137568,
+            "harvest_rate": 0.44,
+            "mean_energy_weight": -0.11521380529289228,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 3000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.04365180004025655,
+            "floor": 0.12,
+            "ceiling": 0.0,
+            "resource": 0.41628042678894517,
+            "harvest_rate": 0.48,
+            "mean_energy_weight": -0.2634201668348235,
+            "raw_tail": -0.0017205178401716442
+          },
+          "frozen": {
+            "energy": 0.0631547883980679,
+            "floor": 0.1,
+            "ceiling": 0.0,
+            "resource": 0.43808785891807445,
+            "harvest_rate": 0.46,
+            "mean_energy_weight": -0.11521380529289228,
+            "raw_tail": -0.0012839642886328015
+          }
+        }
+      ],
+      "online_final": {
+        "energy": 0.04365180004025655,
+        "floor": 0.12,
+        "ceiling": 0.0,
+        "resource": 0.41628042678894517,
+        "harvest_rate": 0.48,
+        "mean_energy_weight": -0.2634201668348235,
+        "raw_tail": -0.0017205178401716442
+      },
+      "frozen_final": {
+        "energy": 0.0631547883980679,
+        "floor": 0.1,
+        "ceiling": 0.0,
+        "resource": 0.43808785891807445,
+        "harvest_rate": 0.46,
+        "mean_energy_weight": -0.11521380529289228,
+        "raw_tail": -0.0012839642886328015
+      },
+      "paired_online_minus_frozen_energy": -0.01950298835781135,
+      "paired_online_minus_frozen_floor": 0.01999999999999999,
+      "theta_evaluations": [
+        {
+          "checkpoint": 0,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.7184371550236722,
+            "floor": 0.05,
+            "ceiling": 0.1,
+            "resource": 0.49381238374672753,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.11521380529289228,
+            "raw_tail": -4.639696388432859e-05
+          },
+          "frozen_theta": {
+            "energy": 0.7184371550236722,
+            "floor": 0.05,
+            "ceiling": 0.1,
+            "resource": 0.49381238374672753,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.11521380529289228,
+            "raw_tail": -4.639696388432859e-05
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 0,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.2980176920655928,
+            "floor": 0.15,
+            "ceiling": 0.0,
+            "resource": 0.48143099273302475,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.11521380529289228,
+            "raw_tail": -0.00027885987356266514
+          },
+          "frozen_theta": {
+            "energy": 0.2980176920655928,
+            "floor": 0.15,
+            "ceiling": 0.0,
+            "resource": 0.48143099273302475,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.11521380529289228,
+            "raw_tail": -0.00027885987356266514
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.651636153768458,
+            "floor": 0.03,
+            "ceiling": 0.08,
+            "resource": 0.4893665391061777,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.21702102715318566,
+            "raw_tail": -2.5773711285430368e-05
+          },
+          "frozen_theta": {
+            "energy": 0.7184371550236722,
+            "floor": 0.05,
+            "ceiling": 0.1,
+            "resource": 0.49381238374672753,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.11521380529289228,
+            "raw_tail": -4.639696388432859e-05
+          },
+          "energy_update_advantage": -0.06680100125521427,
+          "floor_update_advantage": 0.020000000000000004
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.1819134576653882,
+            "floor": 0.16,
+            "ceiling": 0.01,
+            "resource": 0.4537735133003676,
+            "harvest_rate": 0.42,
+            "mean_energy_weight": -0.21702102715318566,
+            "raw_tail": -0.0008396283685910489
+          },
+          "frozen_theta": {
+            "energy": 0.2980176920655928,
+            "floor": 0.15,
+            "ceiling": 0.0,
+            "resource": 0.48143099273302475,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.11521380529289228,
+            "raw_tail": -0.00027885987356266514
+          },
+          "energy_update_advantage": -0.11610423440020462,
+          "floor_update_advantage": -0.010000000000000009
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.5957680831281961,
+            "floor": 0.02,
+            "ceiling": 0.02,
+            "resource": 0.48250127908826057,
+            "harvest_rate": 0.37,
+            "mean_energy_weight": -0.2177283197495007,
+            "raw_tail": -2.05151651312817e-05
+          },
+          "frozen_theta": {
+            "energy": 0.7184371550236722,
+            "floor": 0.05,
+            "ceiling": 0.1,
+            "resource": 0.49381238374672753,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.11521380529289228,
+            "raw_tail": -4.639696388432859e-05
+          },
+          "energy_update_advantage": -0.12266907189547616,
+          "floor_update_advantage": 0.030000000000000002
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.11842283941191088,
+            "floor": 0.24,
+            "ceiling": 0.0,
+            "resource": 0.4530609043249114,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.2177283197495007,
+            "raw_tail": -0.0007675432110507241
+          },
+          "frozen_theta": {
+            "energy": 0.2980176920655928,
+            "floor": 0.15,
+            "ceiling": 0.0,
+            "resource": 0.48143099273302475,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.11521380529289228,
+            "raw_tail": -0.00027885987356266514
+          },
+          "energy_update_advantage": -0.1795948526536819,
+          "floor_update_advantage": -0.09
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.5163816109201629,
+            "floor": 0.0,
+            "ceiling": 0.0,
+            "resource": 0.4725448979169945,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.2634201668348235,
+            "raw_tail": -5.4740970624544905e-05
+          },
+          "frozen_theta": {
+            "energy": 0.7184371550236722,
+            "floor": 0.05,
+            "ceiling": 0.1,
+            "resource": 0.49381238374672753,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.11521380529289228,
+            "raw_tail": -4.639696388432859e-05
+          },
+          "energy_update_advantage": -0.20205554410350934,
+          "floor_update_advantage": 0.05
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.04731709564491897,
+            "floor": 0.33,
+            "ceiling": 0.0,
+            "resource": 0.43789728542692663,
+            "harvest_rate": 0.42,
+            "mean_energy_weight": -0.2634201668348235,
+            "raw_tail": -0.0008629901004492696
+          },
+          "frozen_theta": {
+            "energy": 0.2980176920655928,
+            "floor": 0.15,
+            "ceiling": 0.0,
+            "resource": 0.48143099273302475,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.11521380529289228,
+            "raw_tail": -0.00027885987356266514
+          },
+          "energy_update_advantage": -0.2507005964206738,
+          "floor_update_advantage": -0.18000000000000002
+        }
+      ]
+    },
+    {
+      "seed": 9801,
+      "same_initial_physics_rng": true,
+      "trajectory": [
+        {
+          "tick": 1000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.037910968777614934,
+            "floor": 0.25,
+            "ceiling": 0.0,
+            "resource": 0.4290603968207211,
+            "harvest_rate": 0.41,
+            "mean_energy_weight": -0.2863454640088605,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.056914838939987264,
+            "floor": 0.23,
+            "ceiling": 0.0,
+            "resource": 0.4406361227811195,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.17783070301569898,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 2000,
+          "regrowth": 0.055,
+          "online": {
+            "energy": 0.028163123247352866,
+            "floor": 0.27,
+            "ceiling": 0.0,
+            "resource": 0.41493290163338237,
+            "harvest_rate": 0.45,
+            "mean_energy_weight": -0.26503286450643504,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.03131359110855804,
+            "floor": 0.25,
+            "ceiling": 0.0,
+            "resource": 0.42525888787819643,
+            "harvest_rate": 0.41,
+            "mean_energy_weight": -0.17783070301569898,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 3000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.03329420527251675,
+            "floor": 0.24,
+            "ceiling": 0.0,
+            "resource": 0.42129418874403285,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.3053755366099808,
+            "raw_tail": -0.0018946842044455887
+          },
+          "frozen": {
+            "energy": 0.04585807595600386,
+            "floor": 0.17,
+            "ceiling": 0.0,
+            "resource": 0.4345740052933435,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.17783070301569898,
+            "raw_tail": -0.001553582761851721
+          }
+        }
+      ],
+      "online_final": {
+        "energy": 0.03329420527251675,
+        "floor": 0.24,
+        "ceiling": 0.0,
+        "resource": 0.42129418874403285,
+        "harvest_rate": 0.4,
+        "mean_energy_weight": -0.3053755366099808,
+        "raw_tail": -0.0018946842044455887
+      },
+      "frozen_final": {
+        "energy": 0.04585807595600386,
+        "floor": 0.17,
+        "ceiling": 0.0,
+        "resource": 0.4345740052933435,
+        "harvest_rate": 0.4,
+        "mean_energy_weight": -0.17783070301569898,
+        "raw_tail": -0.001553582761851721
+      },
+      "paired_online_minus_frozen_energy": -0.012563870683487105,
+      "paired_online_minus_frozen_floor": 0.06999999999999998,
+      "theta_evaluations": [
+        {
+          "checkpoint": 0,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6444888952837592,
+            "floor": 0.02,
+            "ceiling": 0.03,
+            "resource": 0.48682751711642885,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.17783070301569898,
+            "raw_tail": -1.7643522879399796e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6444888952837592,
+            "floor": 0.02,
+            "ceiling": 0.03,
+            "resource": 0.48682751711642885,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.17783070301569898,
+            "raw_tail": -1.7643522879399796e-05
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 0,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.16917407270119886,
+            "floor": 0.17,
+            "ceiling": 0.0,
+            "resource": 0.4654487024396083,
+            "harvest_rate": 0.43,
+            "mean_energy_weight": -0.17783070301569898,
+            "raw_tail": -0.0005918283900553348
+          },
+          "frozen_theta": {
+            "energy": 0.16917407270119886,
+            "floor": 0.17,
+            "ceiling": 0.0,
+            "resource": 0.4654487024396083,
+            "harvest_rate": 0.43,
+            "mean_energy_weight": -0.17783070301569898,
+            "raw_tail": -0.0005918283900553348
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6858660784971251,
+            "floor": 0.02,
+            "ceiling": 0.09,
+            "resource": 0.48629617568288935,
+            "harvest_rate": 0.35,
+            "mean_energy_weight": -0.2863454640088605,
+            "raw_tail": -5.543880810611537e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6444888952837592,
+            "floor": 0.02,
+            "ceiling": 0.03,
+            "resource": 0.48682751711642885,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.17783070301569898,
+            "raw_tail": -1.7643522879399796e-05
+          },
+          "energy_update_advantage": 0.04137718321336592,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.09849383967658089,
+            "floor": 0.35,
+            "ceiling": 0.0,
+            "resource": 0.43953856637868055,
+            "harvest_rate": 0.42,
+            "mean_energy_weight": -0.2863454640088605,
+            "raw_tail": -0.0016388696864578286
+          },
+          "frozen_theta": {
+            "energy": 0.16917407270119886,
+            "floor": 0.17,
+            "ceiling": 0.0,
+            "resource": 0.4654487024396083,
+            "harvest_rate": 0.43,
+            "mean_energy_weight": -0.17783070301569898,
+            "raw_tail": -0.0005918283900553348
+          },
+          "energy_update_advantage": -0.07068023302461797,
+          "floor_update_advantage": -0.17999999999999997
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6473673820845809,
+            "floor": 0.01,
+            "ceiling": 0.09,
+            "resource": 0.4825499942449275,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.26503286450643504,
+            "raw_tail": -1.8439179066606487e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6444888952837592,
+            "floor": 0.02,
+            "ceiling": 0.03,
+            "resource": 0.48682751711642885,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.17783070301569898,
+            "raw_tail": -1.7643522879399796e-05
+          },
+          "energy_update_advantage": 0.0028784868008217,
+          "floor_update_advantage": 0.01
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.0790674680241952,
+            "floor": 0.31,
+            "ceiling": 0.0,
+            "resource": 0.4439308086111193,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.26503286450643504,
+            "raw_tail": -0.0011606849552008365
+          },
+          "frozen_theta": {
+            "energy": 0.16917407270119886,
+            "floor": 0.17,
+            "ceiling": 0.0,
+            "resource": 0.4654487024396083,
+            "harvest_rate": 0.43,
+            "mean_energy_weight": -0.17783070301569898,
+            "raw_tail": -0.0005918283900553348
+          },
+          "energy_update_advantage": -0.09010660467700365,
+          "floor_update_advantage": -0.13999999999999999
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.5548819935861095,
+            "floor": 0.0,
+            "ceiling": 0.02,
+            "resource": 0.4709845137230346,
+            "harvest_rate": 0.43,
+            "mean_energy_weight": -0.3053755366099808,
+            "raw_tail": -4.8446206996454086e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6444888952837592,
+            "floor": 0.02,
+            "ceiling": 0.03,
+            "resource": 0.48682751711642885,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.17783070301569898,
+            "raw_tail": -1.7643522879399796e-05
+          },
+          "energy_update_advantage": -0.08960690169764973,
+          "floor_update_advantage": 0.02
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.03685166236591631,
+            "floor": 0.27,
+            "ceiling": 0.0,
+            "resource": 0.4312467095324226,
+            "harvest_rate": 0.43,
+            "mean_energy_weight": -0.3053755366099808,
+            "raw_tail": -0.001143087703935351
+          },
+          "frozen_theta": {
+            "energy": 0.16917407270119886,
+            "floor": 0.17,
+            "ceiling": 0.0,
+            "resource": 0.4654487024396083,
+            "harvest_rate": 0.43,
+            "mean_energy_weight": -0.17783070301569898,
+            "raw_tail": -0.0005918283900553348
+          },
+          "energy_update_advantage": -0.13232241033528255,
+          "floor_update_advantage": -0.1
+        }
+      ]
+    },
+    {
+      "seed": 9802,
+      "same_initial_physics_rng": true,
+      "trajectory": [
+        {
+          "tick": 1000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.04596971353317686,
+            "floor": 0.19,
+            "ceiling": 0.0,
+            "resource": 0.4270510062044536,
+            "harvest_rate": 0.51,
+            "mean_energy_weight": -0.2558659222275445,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.06397262783586984,
+            "floor": 0.12,
+            "ceiling": 0.0,
+            "resource": 0.44126955723484373,
+            "harvest_rate": 0.46,
+            "mean_energy_weight": -0.1525773929496884,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 2000,
+          "regrowth": 0.055,
+          "online": {
+            "energy": 0.027911018240783778,
+            "floor": 0.33,
+            "ceiling": 0.0,
+            "resource": 0.4178815655911156,
+            "harvest_rate": 0.43,
+            "mean_energy_weight": -0.2499296814485496,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.03150677879596622,
+            "floor": 0.26,
+            "ceiling": 0.0,
+            "resource": 0.4292816914687077,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.1525773929496884,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 3000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.03210368541108856,
+            "floor": 0.28,
+            "ceiling": 0.0,
+            "resource": 0.4334001287796401,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.27668046220584674,
+            "raw_tail": -0.0018147366327598967
+          },
+          "frozen": {
+            "energy": 0.040167077231716745,
+            "floor": 0.28,
+            "ceiling": 0.0,
+            "resource": 0.4511666292826408,
+            "harvest_rate": 0.39,
+            "mean_energy_weight": -0.1525773929496884,
+            "raw_tail": -0.0014307611873204263
+          }
+        }
+      ],
+      "online_final": {
+        "energy": 0.03210368541108856,
+        "floor": 0.28,
+        "ceiling": 0.0,
+        "resource": 0.4334001287796401,
+        "harvest_rate": 0.4,
+        "mean_energy_weight": -0.27668046220584674,
+        "raw_tail": -0.0018147366327598967
+      },
+      "frozen_final": {
+        "energy": 0.040167077231716745,
+        "floor": 0.28,
+        "ceiling": 0.0,
+        "resource": 0.4511666292826408,
+        "harvest_rate": 0.39,
+        "mean_energy_weight": -0.1525773929496884,
+        "raw_tail": -0.0014307611873204263
+      },
+      "paired_online_minus_frozen_energy": -0.008063391820628187,
+      "paired_online_minus_frozen_floor": 0.0,
+      "theta_evaluations": [
+        {
+          "checkpoint": 0,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6298374367975584,
+            "floor": 0.02,
+            "ceiling": 0.03,
+            "resource": 0.487122467631701,
+            "harvest_rate": 0.34,
+            "mean_energy_weight": -0.1525773929496884,
+            "raw_tail": -2.703840873467528e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6298374367975584,
+            "floor": 0.02,
+            "ceiling": 0.03,
+            "resource": 0.487122467631701,
+            "harvest_rate": 0.34,
+            "mean_energy_weight": -0.1525773929496884,
+            "raw_tail": -2.703840873467528e-05
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 0,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.20872672345896148,
+            "floor": 0.18,
+            "ceiling": 0.0,
+            "resource": 0.4751717276124057,
+            "harvest_rate": 0.29,
+            "mean_energy_weight": -0.1525773929496884,
+            "raw_tail": -0.0003351215683667864
+          },
+          "frozen_theta": {
+            "energy": 0.20872672345896148,
+            "floor": 0.18,
+            "ceiling": 0.0,
+            "resource": 0.4751717276124057,
+            "harvest_rate": 0.29,
+            "mean_energy_weight": -0.1525773929496884,
+            "raw_tail": -0.0003351215683667864
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.7107415895167033,
+            "floor": 0.04,
+            "ceiling": 0.04,
+            "resource": 0.492239893637283,
+            "harvest_rate": 0.28,
+            "mean_energy_weight": -0.2558659222275445,
+            "raw_tail": -5.698552659040961e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6298374367975584,
+            "floor": 0.02,
+            "ceiling": 0.03,
+            "resource": 0.487122467631701,
+            "harvest_rate": 0.34,
+            "mean_energy_weight": -0.1525773929496884,
+            "raw_tail": -2.703840873467528e-05
+          },
+          "energy_update_advantage": 0.08090415271914486,
+          "floor_update_advantage": -0.02
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.16977950390595864,
+            "floor": 0.27,
+            "ceiling": 0.0,
+            "resource": 0.4553237302585786,
+            "harvest_rate": 0.34,
+            "mean_energy_weight": -0.2558659222275445,
+            "raw_tail": -0.001184664996146477
+          },
+          "frozen_theta": {
+            "energy": 0.20872672345896148,
+            "floor": 0.18,
+            "ceiling": 0.0,
+            "resource": 0.4751717276124057,
+            "harvest_rate": 0.29,
+            "mean_energy_weight": -0.1525773929496884,
+            "raw_tail": -0.0003351215683667864
+          },
+          "energy_update_advantage": -0.03894721955300284,
+          "floor_update_advantage": -0.09000000000000002
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6231063684685523,
+            "floor": 0.01,
+            "ceiling": 0.03,
+            "resource": 0.48657833308045106,
+            "harvest_rate": 0.27,
+            "mean_energy_weight": -0.2499296814485496,
+            "raw_tail": -2.2874772082404088e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6298374367975584,
+            "floor": 0.02,
+            "ceiling": 0.03,
+            "resource": 0.487122467631701,
+            "harvest_rate": 0.34,
+            "mean_energy_weight": -0.1525773929496884,
+            "raw_tail": -2.703840873467528e-05
+          },
+          "energy_update_advantage": -0.006731068329006162,
+          "floor_update_advantage": 0.01
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.11538301858315904,
+            "floor": 0.24,
+            "ceiling": 0.0,
+            "resource": 0.449898284996144,
+            "harvest_rate": 0.39,
+            "mean_energy_weight": -0.2499296814485496,
+            "raw_tail": -0.000903543589809652
+          },
+          "frozen_theta": {
+            "energy": 0.20872672345896148,
+            "floor": 0.18,
+            "ceiling": 0.0,
+            "resource": 0.4751717276124057,
+            "harvest_rate": 0.29,
+            "mean_energy_weight": -0.1525773929496884,
+            "raw_tail": -0.0003351215683667864
+          },
+          "energy_update_advantage": -0.09334370487580244,
+          "floor_update_advantage": -0.06
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.5748731081007474,
+            "floor": 0.0,
+            "ceiling": 0.02,
+            "resource": 0.4728584912247473,
+            "harvest_rate": 0.41,
+            "mean_energy_weight": -0.27668046220584674,
+            "raw_tail": -3.18360322478104e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6298374367975584,
+            "floor": 0.02,
+            "ceiling": 0.03,
+            "resource": 0.487122467631701,
+            "harvest_rate": 0.34,
+            "mean_energy_weight": -0.1525773929496884,
+            "raw_tail": -2.703840873467528e-05
+          },
+          "energy_update_advantage": -0.054964328696811005,
+          "floor_update_advantage": 0.02
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.044358379863712216,
+            "floor": 0.35,
+            "ceiling": 0.0,
+            "resource": 0.43917190550911284,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.27668046220584674,
+            "raw_tail": -0.0009623652361876456
+          },
+          "frozen_theta": {
+            "energy": 0.20872672345896148,
+            "floor": 0.18,
+            "ceiling": 0.0,
+            "resource": 0.4751717276124057,
+            "harvest_rate": 0.29,
+            "mean_energy_weight": -0.1525773929496884,
+            "raw_tail": -0.0003351215683667864
+          },
+          "energy_update_advantage": -0.16436834359524927,
+          "floor_update_advantage": -0.16999999999999998
+        }
+      ]
+    },
+    {
+      "seed": 9803,
+      "same_initial_physics_rng": true,
+      "trajectory": [
+        {
+          "tick": 1000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.044348388692942775,
+            "floor": 0.24,
+            "ceiling": 0.0,
+            "resource": 0.42733070462949757,
+            "harvest_rate": 0.42,
+            "mean_energy_weight": -0.27858946621892444,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.0718672503612688,
+            "floor": 0.17,
+            "ceiling": 0.0,
+            "resource": 0.4427596430136147,
+            "harvest_rate": 0.33,
+            "mean_energy_weight": -0.16134040386212903,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 2000,
+          "regrowth": 0.055,
+          "online": {
+            "energy": 0.025180579667538762,
+            "floor": 0.35,
+            "ceiling": 0.0,
+            "resource": 0.41679500465887265,
+            "harvest_rate": 0.45,
+            "mean_energy_weight": -0.2568661188081599,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.02907104022921263,
+            "floor": 0.28,
+            "ceiling": 0.0,
+            "resource": 0.43231513815531725,
+            "harvest_rate": 0.41,
+            "mean_energy_weight": -0.16134040386212903,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 3000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.035314443166931525,
+            "floor": 0.23,
+            "ceiling": 0.0,
+            "resource": 0.4308375607482905,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.28532436186849425,
+            "raw_tail": -0.001951625163906543
+          },
+          "frozen": {
+            "energy": 0.046227104735424615,
+            "floor": 0.19,
+            "ceiling": 0.0,
+            "resource": 0.4470812169360292,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.16134040386212903,
+            "raw_tail": -0.0015054184895228135
+          }
+        }
+      ],
+      "online_final": {
+        "energy": 0.035314443166931525,
+        "floor": 0.23,
+        "ceiling": 0.0,
+        "resource": 0.4308375607482905,
+        "harvest_rate": 0.38,
+        "mean_energy_weight": -0.28532436186849425,
+        "raw_tail": -0.001951625163906543
+      },
+      "frozen_final": {
+        "energy": 0.046227104735424615,
+        "floor": 0.19,
+        "ceiling": 0.0,
+        "resource": 0.4470812169360292,
+        "harvest_rate": 0.38,
+        "mean_energy_weight": -0.16134040386212903,
+        "raw_tail": -0.0015054184895228135
+      },
+      "paired_online_minus_frozen_energy": -0.01091266156849309,
+      "paired_online_minus_frozen_floor": 0.04000000000000001,
+      "theta_evaluations": [
+        {
+          "checkpoint": 0,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6564156677891998,
+            "floor": 0.0,
+            "ceiling": 0.02,
+            "resource": 0.4896132060435352,
+            "harvest_rate": 0.27,
+            "mean_energy_weight": -0.16134040386212903,
+            "raw_tail": -2.5036928255509312e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6564156677891998,
+            "floor": 0.0,
+            "ceiling": 0.02,
+            "resource": 0.4896132060435352,
+            "harvest_rate": 0.27,
+            "mean_energy_weight": -0.16134040386212903,
+            "raw_tail": -2.5036928255509312e-05
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 0,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.19974031063433093,
+            "floor": 0.23,
+            "ceiling": 0.02,
+            "resource": 0.4726128137304208,
+            "harvest_rate": 0.28,
+            "mean_energy_weight": -0.16134040386212903,
+            "raw_tail": -0.0005656732047381039
+          },
+          "frozen_theta": {
+            "energy": 0.19974031063433093,
+            "floor": 0.23,
+            "ceiling": 0.02,
+            "resource": 0.4726128137304208,
+            "harvest_rate": 0.28,
+            "mean_energy_weight": -0.16134040386212903,
+            "raw_tail": -0.0005656732047381039
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6689516474490236,
+            "floor": 0.05,
+            "ceiling": 0.05,
+            "resource": 0.49084140578137736,
+            "harvest_rate": 0.25,
+            "mean_energy_weight": -0.27858946621892444,
+            "raw_tail": -6.468558586989564e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6564156677891998,
+            "floor": 0.0,
+            "ceiling": 0.02,
+            "resource": 0.4896132060435352,
+            "harvest_rate": 0.27,
+            "mean_energy_weight": -0.16134040386212903,
+            "raw_tail": -2.5036928255509312e-05
+          },
+          "energy_update_advantage": 0.012535979659823782,
+          "floor_update_advantage": -0.05
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.146964063278514,
+            "floor": 0.35,
+            "ceiling": 0.0,
+            "resource": 0.4475369942533506,
+            "harvest_rate": 0.35,
+            "mean_energy_weight": -0.27858946621892444,
+            "raw_tail": -0.001699800994379439
+          },
+          "frozen_theta": {
+            "energy": 0.19974031063433093,
+            "floor": 0.23,
+            "ceiling": 0.02,
+            "resource": 0.4726128137304208,
+            "harvest_rate": 0.28,
+            "mean_energy_weight": -0.16134040386212903,
+            "raw_tail": -0.0005656732047381039
+          },
+          "energy_update_advantage": -0.05277624735581693,
+          "floor_update_advantage": -0.11999999999999997
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6165783731145171,
+            "floor": 0.04,
+            "ceiling": 0.03,
+            "resource": 0.4831054774344688,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.2568661188081599,
+            "raw_tail": -4.306996509748985e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6564156677891998,
+            "floor": 0.0,
+            "ceiling": 0.02,
+            "resource": 0.4896132060435352,
+            "harvest_rate": 0.27,
+            "mean_energy_weight": -0.16134040386212903,
+            "raw_tail": -2.5036928255509312e-05
+          },
+          "energy_update_advantage": -0.039837294674682666,
+          "floor_update_advantage": -0.04
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.10052967058282407,
+            "floor": 0.29,
+            "ceiling": 0.0,
+            "resource": 0.4439372692866387,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.2568661188081599,
+            "raw_tail": -0.0013776894737371587
+          },
+          "frozen_theta": {
+            "energy": 0.19974031063433093,
+            "floor": 0.23,
+            "ceiling": 0.02,
+            "resource": 0.4726128137304208,
+            "harvest_rate": 0.28,
+            "mean_energy_weight": -0.16134040386212903,
+            "raw_tail": -0.0005656732047381039
+          },
+          "energy_update_advantage": -0.09921064005150686,
+          "floor_update_advantage": -0.05999999999999997
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.5405227985236661,
+            "floor": 0.02,
+            "ceiling": 0.02,
+            "resource": 0.47344871055740734,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.28532436186849425,
+            "raw_tail": -8.509985883615037e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6564156677891998,
+            "floor": 0.0,
+            "ceiling": 0.02,
+            "resource": 0.4896132060435352,
+            "harvest_rate": 0.27,
+            "mean_energy_weight": -0.16134040386212903,
+            "raw_tail": -2.5036928255509312e-05
+          },
+          "energy_update_advantage": -0.11589286926553366,
+          "floor_update_advantage": -0.02
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.05022672854659561,
+            "floor": 0.3,
+            "ceiling": 0.0,
+            "resource": 0.4341005560187056,
+            "harvest_rate": 0.39,
+            "mean_energy_weight": -0.28532436186849425,
+            "raw_tail": -0.001174709710709393
+          },
+          "frozen_theta": {
+            "energy": 0.19974031063433093,
+            "floor": 0.23,
+            "ceiling": 0.02,
+            "resource": 0.4726128137304208,
+            "harvest_rate": 0.28,
+            "mean_energy_weight": -0.16134040386212903,
+            "raw_tail": -0.0005656732047381039
+          },
+          "energy_update_advantage": -0.14951358208773532,
+          "floor_update_advantage": -0.06999999999999998
+        }
+      ]
+    },
+    {
+      "seed": 9804,
+      "same_initial_physics_rng": true,
+      "trajectory": [
+        {
+          "tick": 1000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.07173307023820406,
+            "floor": 0.23,
+            "ceiling": 0.0,
+            "resource": 0.4298438464700527,
+            "harvest_rate": 0.39,
+            "mean_energy_weight": -0.21862576657162489,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.07446942105171313,
+            "floor": 0.15,
+            "ceiling": 0.0,
+            "resource": 0.44170343664140865,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.14348915717804103,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 2000,
+          "regrowth": 0.055,
+          "online": {
+            "energy": 0.024408740668847337,
+            "floor": 0.31,
+            "ceiling": 0.0,
+            "resource": 0.4239017637007194,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.2115079842687338,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.027073596767733923,
+            "floor": 0.28,
+            "ceiling": 0.0,
+            "resource": 0.43149326420746237,
+            "harvest_rate": 0.37,
+            "mean_energy_weight": -0.14348915717804103,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 3000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.036909800613279385,
+            "floor": 0.17,
+            "ceiling": 0.0,
+            "resource": 0.4245090140399308,
+            "harvest_rate": 0.48,
+            "mean_energy_weight": -0.27460261195681945,
+            "raw_tail": -0.0017800342806361697
+          },
+          "frozen": {
+            "energy": 0.05993478407727298,
+            "floor": 0.17,
+            "ceiling": 0.0,
+            "resource": 0.44193763853721263,
+            "harvest_rate": 0.43,
+            "mean_energy_weight": -0.14348915717804103,
+            "raw_tail": -0.0014240346754552547
+          }
+        }
+      ],
+      "online_final": {
+        "energy": 0.036909800613279385,
+        "floor": 0.17,
+        "ceiling": 0.0,
+        "resource": 0.4245090140399308,
+        "harvest_rate": 0.48,
+        "mean_energy_weight": -0.27460261195681945,
+        "raw_tail": -0.0017800342806361697
+      },
+      "frozen_final": {
+        "energy": 0.05993478407727298,
+        "floor": 0.17,
+        "ceiling": 0.0,
+        "resource": 0.44193763853721263,
+        "harvest_rate": 0.43,
+        "mean_energy_weight": -0.14348915717804103,
+        "raw_tail": -0.0014240346754552547
+      },
+      "paired_online_minus_frozen_energy": -0.023024983463993592,
+      "paired_online_minus_frozen_floor": 0.0,
+      "theta_evaluations": [
+        {
+          "checkpoint": 0,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6895603993586519,
+            "floor": 0.03,
+            "ceiling": 0.07,
+            "resource": 0.48910268694262066,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.14348915717804103,
+            "raw_tail": -2.5366511372980064e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6895603993586519,
+            "floor": 0.03,
+            "ceiling": 0.07,
+            "resource": 0.48910268694262066,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.14348915717804103,
+            "raw_tail": -2.5366511372980064e-05
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 0,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.228005846766422,
+            "floor": 0.19,
+            "ceiling": 0.02,
+            "resource": 0.4707685509309146,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.14348915717804103,
+            "raw_tail": -0.0006685251807018878
+          },
+          "frozen_theta": {
+            "energy": 0.228005846766422,
+            "floor": 0.19,
+            "ceiling": 0.02,
+            "resource": 0.4707685509309146,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.14348915717804103,
+            "raw_tail": -0.0006685251807018878
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.7137670476470201,
+            "floor": 0.04,
+            "ceiling": 0.08,
+            "resource": 0.48752615132983634,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.21862576657162489,
+            "raw_tail": -7.371798515283385e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6895603993586519,
+            "floor": 0.03,
+            "ceiling": 0.07,
+            "resource": 0.48910268694262066,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.14348915717804103,
+            "raw_tail": -2.5366511372980064e-05
+          },
+          "energy_update_advantage": 0.02420664828836827,
+          "floor_update_advantage": -0.010000000000000002
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.20801974023605524,
+            "floor": 0.3,
+            "ceiling": 0.02,
+            "resource": 0.45996813558036,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.21862576657162489,
+            "raw_tail": -0.0012179353920354157
+          },
+          "frozen_theta": {
+            "energy": 0.228005846766422,
+            "floor": 0.19,
+            "ceiling": 0.02,
+            "resource": 0.4707685509309146,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.14348915717804103,
+            "raw_tail": -0.0006685251807018878
+          },
+          "energy_update_advantage": -0.019986106530366754,
+          "floor_update_advantage": -0.10999999999999999
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6399293528044749,
+            "floor": 0.01,
+            "ceiling": 0.03,
+            "resource": 0.4875748019460458,
+            "harvest_rate": 0.29,
+            "mean_energy_weight": -0.2115079842687338,
+            "raw_tail": -2.8166115876560386e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6895603993586519,
+            "floor": 0.03,
+            "ceiling": 0.07,
+            "resource": 0.48910268694262066,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.14348915717804103,
+            "raw_tail": -2.5366511372980064e-05
+          },
+          "energy_update_advantage": -0.04963104655417694,
+          "floor_update_advantage": 0.019999999999999997
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.14482233297839409,
+            "floor": 0.15,
+            "ceiling": 0.01,
+            "resource": 0.45086143578865,
+            "harvest_rate": 0.44,
+            "mean_energy_weight": -0.2115079842687338,
+            "raw_tail": -0.000874215354411894
+          },
+          "frozen_theta": {
+            "energy": 0.228005846766422,
+            "floor": 0.19,
+            "ceiling": 0.02,
+            "resource": 0.4707685509309146,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.14348915717804103,
+            "raw_tail": -0.0006685251807018878
+          },
+          "energy_update_advantage": -0.08318351378802791,
+          "floor_update_advantage": 0.04000000000000001
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.5813364115636129,
+            "floor": 0.0,
+            "ceiling": 0.0,
+            "resource": 0.4818080539352125,
+            "harvest_rate": 0.26,
+            "mean_energy_weight": -0.27460261195681945,
+            "raw_tail": -1.8924543285581863e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6895603993586519,
+            "floor": 0.03,
+            "ceiling": 0.07,
+            "resource": 0.48910268694262066,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.14348915717804103,
+            "raw_tail": -2.5366511372980064e-05
+          },
+          "energy_update_advantage": -0.10822398779503895,
+          "floor_update_advantage": 0.03
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.06469844243579419,
+            "floor": 0.23,
+            "ceiling": 0.0,
+            "resource": 0.43814425918789746,
+            "harvest_rate": 0.43,
+            "mean_energy_weight": -0.27460261195681945,
+            "raw_tail": -0.0010089011366855082
+          },
+          "frozen_theta": {
+            "energy": 0.228005846766422,
+            "floor": 0.19,
+            "ceiling": 0.02,
+            "resource": 0.4707685509309146,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.14348915717804103,
+            "raw_tail": -0.0006685251807018878
+          },
+          "energy_update_advantage": -0.1633074043306278,
+          "floor_update_advantage": -0.04000000000000001
+        }
+      ]
+    },
+    {
+      "seed": 9805,
+      "same_initial_physics_rng": true,
+      "trajectory": [
+        {
+          "tick": 1000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.04486733094912108,
+            "floor": 0.19,
+            "ceiling": 0.0,
+            "resource": 0.42104364840199293,
+            "harvest_rate": 0.47,
+            "mean_energy_weight": -0.2616921457950754,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.08314654907998474,
+            "floor": 0.12,
+            "ceiling": 0.0,
+            "resource": 0.4327213796989799,
+            "harvest_rate": 0.43,
+            "mean_energy_weight": -0.1484543941623051,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 2000,
+          "regrowth": 0.055,
+          "online": {
+            "energy": 0.024402433532022327,
+            "floor": 0.35,
+            "ceiling": 0.0,
+            "resource": 0.415085095388469,
+            "harvest_rate": 0.42,
+            "mean_energy_weight": -0.2624783140158647,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.030035085623736472,
+            "floor": 0.31,
+            "ceiling": 0.0,
+            "resource": 0.4278940749042024,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.1484543941623051,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 3000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.03505211024283313,
+            "floor": 0.22,
+            "ceiling": 0.0,
+            "resource": 0.41903215918506803,
+            "harvest_rate": 0.43,
+            "mean_energy_weight": -0.2895061244485846,
+            "raw_tail": -0.0018949380962711574
+          },
+          "frozen": {
+            "energy": 0.04539056933739291,
+            "floor": 0.2,
+            "ceiling": 0.0,
+            "resource": 0.4391554848400879,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.1484543941623051,
+            "raw_tail": -0.0015406904128382375
+          }
+        }
+      ],
+      "online_final": {
+        "energy": 0.03505211024283313,
+        "floor": 0.22,
+        "ceiling": 0.0,
+        "resource": 0.41903215918506803,
+        "harvest_rate": 0.43,
+        "mean_energy_weight": -0.2895061244485846,
+        "raw_tail": -0.0018949380962711574
+      },
+      "frozen_final": {
+        "energy": 0.04539056933739291,
+        "floor": 0.2,
+        "ceiling": 0.0,
+        "resource": 0.4391554848400879,
+        "harvest_rate": 0.4,
+        "mean_energy_weight": -0.1484543941623051,
+        "raw_tail": -0.0015406904128382375
+      },
+      "paired_online_minus_frozen_energy": -0.010338459094559778,
+      "paired_online_minus_frozen_floor": 0.01999999999999999,
+      "theta_evaluations": [
+        {
+          "checkpoint": 0,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6825000016195548,
+            "floor": 0.02,
+            "ceiling": 0.1,
+            "resource": 0.487500385120268,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.1484543941623051,
+            "raw_tail": -4.456831918283866e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6825000016195548,
+            "floor": 0.02,
+            "ceiling": 0.1,
+            "resource": 0.487500385120268,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.1484543941623051,
+            "raw_tail": -4.456831918283866e-05
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 0,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.2798729686863416,
+            "floor": 0.1,
+            "ceiling": 0.0,
+            "resource": 0.4750026999530347,
+            "harvest_rate": 0.41,
+            "mean_energy_weight": -0.1484543941623051,
+            "raw_tail": -0.0004083061709500641
+          },
+          "frozen_theta": {
+            "energy": 0.2798729686863416,
+            "floor": 0.1,
+            "ceiling": 0.0,
+            "resource": 0.4750026999530347,
+            "harvest_rate": 0.41,
+            "mean_energy_weight": -0.1484543941623051,
+            "raw_tail": -0.0004083061709500641
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6539890863588966,
+            "floor": 0.04,
+            "ceiling": 0.06,
+            "resource": 0.4888533080859459,
+            "harvest_rate": 0.29,
+            "mean_energy_weight": -0.2616921457950754,
+            "raw_tail": -1.7464982596628206e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6825000016195548,
+            "floor": 0.02,
+            "ceiling": 0.1,
+            "resource": 0.487500385120268,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.1484543941623051,
+            "raw_tail": -4.456831918283866e-05
+          },
+          "energy_update_advantage": -0.028510915260658187,
+          "floor_update_advantage": -0.02
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.1442634024724114,
+            "floor": 0.36,
+            "ceiling": 0.0,
+            "resource": 0.45207255138120944,
+            "harvest_rate": 0.35,
+            "mean_energy_weight": -0.2616921457950754,
+            "raw_tail": -0.0012865153522715416
+          },
+          "frozen_theta": {
+            "energy": 0.2798729686863416,
+            "floor": 0.1,
+            "ceiling": 0.0,
+            "resource": 0.4750026999530347,
+            "harvest_rate": 0.41,
+            "mean_energy_weight": -0.1484543941623051,
+            "raw_tail": -0.0004083061709500641
+          },
+          "energy_update_advantage": -0.1356095662139302,
+          "floor_update_advantage": -0.26
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.5925238748959235,
+            "floor": 0.01,
+            "ceiling": 0.03,
+            "resource": 0.4771010787177174,
+            "harvest_rate": 0.42,
+            "mean_energy_weight": -0.2624783140158647,
+            "raw_tail": -7.418549977532066e-06
+          },
+          "frozen_theta": {
+            "energy": 0.6825000016195548,
+            "floor": 0.02,
+            "ceiling": 0.1,
+            "resource": 0.487500385120268,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.1484543941623051,
+            "raw_tail": -4.456831918283866e-05
+          },
+          "energy_update_advantage": -0.08997612672363131,
+          "floor_update_advantage": 0.01
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.09201459903052477,
+            "floor": 0.29,
+            "ceiling": 0.0,
+            "resource": 0.44256803330886585,
+            "harvest_rate": 0.39,
+            "mean_energy_weight": -0.2624783140158647,
+            "raw_tail": -0.0012194633157086012
+          },
+          "frozen_theta": {
+            "energy": 0.2798729686863416,
+            "floor": 0.1,
+            "ceiling": 0.0,
+            "resource": 0.4750026999530347,
+            "harvest_rate": 0.41,
+            "mean_energy_weight": -0.1484543941623051,
+            "raw_tail": -0.0004083061709500641
+          },
+          "energy_update_advantage": -0.18785836965581681,
+          "floor_update_advantage": -0.18999999999999997
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.4970434513967361,
+            "floor": 0.04,
+            "ceiling": 0.0,
+            "resource": 0.47204665943898255,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.2895061244485846,
+            "raw_tail": -9.550423653198725e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6825000016195548,
+            "floor": 0.02,
+            "ceiling": 0.1,
+            "resource": 0.487500385120268,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.1484543941623051,
+            "raw_tail": -4.456831918283866e-05
+          },
+          "energy_update_advantage": -0.1854565502228187,
+          "floor_update_advantage": -0.02
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.04440011139378314,
+            "floor": 0.3,
+            "ceiling": 0.0,
+            "resource": 0.433281219755613,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.2895061244485846,
+            "raw_tail": -0.0011288051593630515
+          },
+          "frozen_theta": {
+            "energy": 0.2798729686863416,
+            "floor": 0.1,
+            "ceiling": 0.0,
+            "resource": 0.4750026999530347,
+            "harvest_rate": 0.41,
+            "mean_energy_weight": -0.1484543941623051,
+            "raw_tail": -0.0004083061709500641
+          },
+          "energy_update_advantage": -0.23547285729255846,
+          "floor_update_advantage": -0.19999999999999998
+        }
+      ]
+    },
+    {
+      "seed": 9806,
+      "same_initial_physics_rng": true,
+      "trajectory": [
+        {
+          "tick": 1000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.04071993011275988,
+            "floor": 0.2,
+            "ceiling": 0.0,
+            "resource": 0.4267418572462198,
+            "harvest_rate": 0.42,
+            "mean_energy_weight": -0.2542726906715435,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.06630508076703129,
+            "floor": 0.12,
+            "ceiling": 0.0,
+            "resource": 0.43339132899356886,
+            "harvest_rate": 0.42,
+            "mean_energy_weight": -0.19783415366500656,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 2000,
+          "regrowth": 0.055,
+          "online": {
+            "energy": 0.02898049689690925,
+            "floor": 0.27,
+            "ceiling": 0.0,
+            "resource": 0.4134123114803259,
+            "harvest_rate": 0.49,
+            "mean_energy_weight": -0.261345575884321,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.032194210963807486,
+            "floor": 0.23,
+            "ceiling": 0.0,
+            "resource": 0.4214950620592639,
+            "harvest_rate": 0.43,
+            "mean_energy_weight": -0.19783415366500656,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 3000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.035613850617314646,
+            "floor": 0.25,
+            "ceiling": 0.0,
+            "resource": 0.42705961149099103,
+            "harvest_rate": 0.45,
+            "mean_energy_weight": -0.2800296244159801,
+            "raw_tail": -0.0018938858784791441
+          },
+          "frozen": {
+            "energy": 0.043112416733024635,
+            "floor": 0.22,
+            "ceiling": 0.0,
+            "resource": 0.43814026574697446,
+            "harvest_rate": 0.44,
+            "mean_energy_weight": -0.19783415366500656,
+            "raw_tail": -0.001678966158180558
+          }
+        }
+      ],
+      "online_final": {
+        "energy": 0.035613850617314646,
+        "floor": 0.25,
+        "ceiling": 0.0,
+        "resource": 0.42705961149099103,
+        "harvest_rate": 0.45,
+        "mean_energy_weight": -0.2800296244159801,
+        "raw_tail": -0.0018938858784791441
+      },
+      "frozen_final": {
+        "energy": 0.043112416733024635,
+        "floor": 0.22,
+        "ceiling": 0.0,
+        "resource": 0.43814026574697446,
+        "harvest_rate": 0.44,
+        "mean_energy_weight": -0.19783415366500656,
+        "raw_tail": -0.001678966158180558
+      },
+      "paired_online_minus_frozen_energy": -0.007498566115709988,
+      "paired_online_minus_frozen_floor": 0.03,
+      "theta_evaluations": [
+        {
+          "checkpoint": 0,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6345077561723432,
+            "floor": 0.01,
+            "ceiling": 0.03,
+            "resource": 0.4884435110273182,
+            "harvest_rate": 0.27,
+            "mean_energy_weight": -0.19783415366500656,
+            "raw_tail": -2.7235024538547558e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6345077561723432,
+            "floor": 0.01,
+            "ceiling": 0.03,
+            "resource": 0.4884435110273182,
+            "harvest_rate": 0.27,
+            "mean_energy_weight": -0.19783415366500656,
+            "raw_tail": -2.7235024538547558e-05
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 0,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.17299984359207088,
+            "floor": 0.16,
+            "ceiling": 0.0,
+            "resource": 0.4582527000468255,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.19783415366500656,
+            "raw_tail": -0.0006231405969024467
+          },
+          "frozen_theta": {
+            "energy": 0.17299984359207088,
+            "floor": 0.16,
+            "ceiling": 0.0,
+            "resource": 0.4582527000468255,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.19783415366500656,
+            "raw_tail": -0.0006231405969024467
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6517860407112592,
+            "floor": 0.01,
+            "ceiling": 0.11,
+            "resource": 0.4843083933256541,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.2542726906715435,
+            "raw_tail": -3.0204705976822772e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6345077561723432,
+            "floor": 0.01,
+            "ceiling": 0.03,
+            "resource": 0.4884435110273182,
+            "harvest_rate": 0.27,
+            "mean_energy_weight": -0.19783415366500656,
+            "raw_tail": -2.7235024538547558e-05
+          },
+          "energy_update_advantage": 0.017278284538916,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.1651096602627686,
+            "floor": 0.24,
+            "ceiling": 0.0,
+            "resource": 0.45024743500652564,
+            "harvest_rate": 0.45,
+            "mean_energy_weight": -0.2542726906715435,
+            "raw_tail": -0.0012051961099786804
+          },
+          "frozen_theta": {
+            "energy": 0.17299984359207088,
+            "floor": 0.16,
+            "ceiling": 0.0,
+            "resource": 0.4582527000468255,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.19783415366500656,
+            "raw_tail": -0.0006231405969024467
+          },
+          "energy_update_advantage": -0.007890183329302275,
+          "floor_update_advantage": -0.07999999999999999
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.5948153132094444,
+            "floor": 0.03,
+            "ceiling": 0.04,
+            "resource": 0.4812022635764376,
+            "harvest_rate": 0.37,
+            "mean_energy_weight": -0.261345575884321,
+            "raw_tail": -7.086362366941484e-06
+          },
+          "frozen_theta": {
+            "energy": 0.6345077561723432,
+            "floor": 0.01,
+            "ceiling": 0.03,
+            "resource": 0.4884435110273182,
+            "harvest_rate": 0.27,
+            "mean_energy_weight": -0.19783415366500656,
+            "raw_tail": -2.7235024538547558e-05
+          },
+          "energy_update_advantage": -0.039692442962898866,
+          "floor_update_advantage": -0.019999999999999997
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.09658060627769016,
+            "floor": 0.32,
+            "ceiling": 0.0,
+            "resource": 0.444296980486345,
+            "harvest_rate": 0.34,
+            "mean_energy_weight": -0.261345575884321,
+            "raw_tail": -0.0011461659388995516
+          },
+          "frozen_theta": {
+            "energy": 0.17299984359207088,
+            "floor": 0.16,
+            "ceiling": 0.0,
+            "resource": 0.4582527000468255,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.19783415366500656,
+            "raw_tail": -0.0006231405969024467
+          },
+          "energy_update_advantage": -0.07641923731438072,
+          "floor_update_advantage": -0.16
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.5251970267893002,
+            "floor": 0.02,
+            "ceiling": 0.0,
+            "resource": 0.46976123564445516,
+            "harvest_rate": 0.39,
+            "mean_energy_weight": -0.2800296244159801,
+            "raw_tail": -6.165005244756743e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6345077561723432,
+            "floor": 0.01,
+            "ceiling": 0.03,
+            "resource": 0.4884435110273182,
+            "harvest_rate": 0.27,
+            "mean_energy_weight": -0.19783415366500656,
+            "raw_tail": -2.7235024538547558e-05
+          },
+          "energy_update_advantage": -0.10931072938304298,
+          "floor_update_advantage": -0.01
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.05171369119523674,
+            "floor": 0.28,
+            "ceiling": 0.0,
+            "resource": 0.4328102152870825,
+            "harvest_rate": 0.44,
+            "mean_energy_weight": -0.2800296244159801,
+            "raw_tail": -0.001060440701835155
+          },
+          "frozen_theta": {
+            "energy": 0.17299984359207088,
+            "floor": 0.16,
+            "ceiling": 0.0,
+            "resource": 0.4582527000468255,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.19783415366500656,
+            "raw_tail": -0.0006231405969024467
+          },
+          "energy_update_advantage": -0.12128615239683413,
+          "floor_update_advantage": -0.12000000000000002
+        }
+      ]
+    },
+    {
+      "seed": 9807,
+      "same_initial_physics_rng": true,
+      "trajectory": [
+        {
+          "tick": 1000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.0369852171797555,
+            "floor": 0.2,
+            "ceiling": 0.0,
+            "resource": 0.42763163789802894,
+            "harvest_rate": 0.46,
+            "mean_energy_weight": -0.25459630760169305,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.05458450215080826,
+            "floor": 0.16,
+            "ceiling": 0.0,
+            "resource": 0.44098057780883776,
+            "harvest_rate": 0.41,
+            "mean_energy_weight": -0.1463650591323218,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 2000,
+          "regrowth": 0.055,
+          "online": {
+            "energy": 0.020486438197091162,
+            "floor": 0.39,
+            "ceiling": 0.0,
+            "resource": 0.41834614463337005,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.2513229089209687,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.024173381601651823,
+            "floor": 0.36,
+            "ceiling": 0.0,
+            "resource": 0.43313719819060004,
+            "harvest_rate": 0.33,
+            "mean_energy_weight": -0.1463650591323218,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 3000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.03016084629466226,
+            "floor": 0.27,
+            "ceiling": 0.0,
+            "resource": 0.4280601551374518,
+            "harvest_rate": 0.39,
+            "mean_energy_weight": -0.2720620670741669,
+            "raw_tail": -0.0018498362321859765
+          },
+          "frozen": {
+            "energy": 0.043004302899342546,
+            "floor": 0.19,
+            "ceiling": 0.0,
+            "resource": 0.44439772977681263,
+            "harvest_rate": 0.39,
+            "mean_energy_weight": -0.1463650591323218,
+            "raw_tail": -0.0014628315289871622
+          }
+        }
+      ],
+      "online_final": {
+        "energy": 0.03016084629466226,
+        "floor": 0.27,
+        "ceiling": 0.0,
+        "resource": 0.4280601551374518,
+        "harvest_rate": 0.39,
+        "mean_energy_weight": -0.2720620670741669,
+        "raw_tail": -0.0018498362321859765
+      },
+      "frozen_final": {
+        "energy": 0.043004302899342546,
+        "floor": 0.19,
+        "ceiling": 0.0,
+        "resource": 0.44439772977681263,
+        "harvest_rate": 0.39,
+        "mean_energy_weight": -0.1463650591323218,
+        "raw_tail": -0.0014628315289871622
+      },
+      "paired_online_minus_frozen_energy": -0.012843456604680285,
+      "paired_online_minus_frozen_floor": 0.08000000000000002,
+      "theta_evaluations": [
+        {
+          "checkpoint": 0,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6566622489170588,
+            "floor": 0.01,
+            "ceiling": 0.03,
+            "resource": 0.4913115665167197,
+            "harvest_rate": 0.27,
+            "mean_energy_weight": -0.1463650591323218,
+            "raw_tail": -2.1465779650979016e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6566622489170588,
+            "floor": 0.01,
+            "ceiling": 0.03,
+            "resource": 0.4913115665167197,
+            "harvest_rate": 0.27,
+            "mean_energy_weight": -0.1463650591323218,
+            "raw_tail": -2.1465779650979016e-05
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 0,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.1855650905051181,
+            "floor": 0.22,
+            "ceiling": 0.01,
+            "resource": 0.470476537447925,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.1463650591323218,
+            "raw_tail": -0.0004608034162211322
+          },
+          "frozen_theta": {
+            "energy": 0.1855650905051181,
+            "floor": 0.22,
+            "ceiling": 0.01,
+            "resource": 0.470476537447925,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.1463650591323218,
+            "raw_tail": -0.0004608034162211322
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6773638437442007,
+            "floor": 0.01,
+            "ceiling": 0.04,
+            "resource": 0.48481920065274836,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.25459630760169305,
+            "raw_tail": -2.143700631427074e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6566622489170588,
+            "floor": 0.01,
+            "ceiling": 0.03,
+            "resource": 0.4913115665167197,
+            "harvest_rate": 0.27,
+            "mean_energy_weight": -0.1463650591323218,
+            "raw_tail": -2.1465779650979016e-05
+          },
+          "energy_update_advantage": 0.020701594827141845,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.0953276500932632,
+            "floor": 0.25,
+            "ceiling": 0.0,
+            "resource": 0.44223395620000594,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.25459630760169305,
+            "raw_tail": -0.0014525031155374786
+          },
+          "frozen_theta": {
+            "energy": 0.1855650905051181,
+            "floor": 0.22,
+            "ceiling": 0.01,
+            "resource": 0.470476537447925,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.1463650591323218,
+            "raw_tail": -0.0004608034162211322
+          },
+          "energy_update_advantage": -0.0902374404118549,
+          "floor_update_advantage": -0.03
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.620990905125632,
+            "floor": 0.01,
+            "ceiling": 0.02,
+            "resource": 0.48210741272533497,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.2513229089209687,
+            "raw_tail": -7.423602313406975e-06
+          },
+          "frozen_theta": {
+            "energy": 0.6566622489170588,
+            "floor": 0.01,
+            "ceiling": 0.03,
+            "resource": 0.4913115665167197,
+            "harvest_rate": 0.27,
+            "mean_energy_weight": -0.1463650591323218,
+            "raw_tail": -2.1465779650979016e-05
+          },
+          "energy_update_advantage": -0.03567134379142678,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.06146357349688941,
+            "floor": 0.26,
+            "ceiling": 0.0,
+            "resource": 0.43818591311875293,
+            "harvest_rate": 0.42,
+            "mean_energy_weight": -0.2513229089209687,
+            "raw_tail": -0.0011965691975162943
+          },
+          "frozen_theta": {
+            "energy": 0.1855650905051181,
+            "floor": 0.22,
+            "ceiling": 0.01,
+            "resource": 0.470476537447925,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.1463650591323218,
+            "raw_tail": -0.0004608034162211322
+          },
+          "energy_update_advantage": -0.12410151700822869,
+          "floor_update_advantage": -0.04000000000000001
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.5511529620453683,
+            "floor": 0.01,
+            "ceiling": 0.0,
+            "resource": 0.47638092808734606,
+            "harvest_rate": 0.32,
+            "mean_energy_weight": -0.2720620670741669,
+            "raw_tail": -6.125528160188335e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6566622489170588,
+            "floor": 0.01,
+            "ceiling": 0.03,
+            "resource": 0.4913115665167197,
+            "harvest_rate": 0.27,
+            "mean_energy_weight": -0.1463650591323218,
+            "raw_tail": -2.1465779650979016e-05
+          },
+          "energy_update_advantage": -0.10550928687169048,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.023971255648578688,
+            "floor": 0.4,
+            "ceiling": 0.0,
+            "resource": 0.4392720664334344,
+            "harvest_rate": 0.33,
+            "mean_energy_weight": -0.2720620670741669,
+            "raw_tail": -0.0010627261385717354
+          },
+          "frozen_theta": {
+            "energy": 0.1855650905051181,
+            "floor": 0.22,
+            "ceiling": 0.01,
+            "resource": 0.470476537447925,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.1463650591323218,
+            "raw_tail": -0.0004608034162211322
+          },
+          "energy_update_advantage": -0.16159383485653941,
+          "floor_update_advantage": -0.18000000000000002
+        }
+      ]
+    },
+    {
+      "seed": 9808,
+      "same_initial_physics_rng": true,
+      "trajectory": [
+        {
+          "tick": 1000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.05246782723042743,
+            "floor": 0.14,
+            "ceiling": 0.0,
+            "resource": 0.4159737738699687,
+            "harvest_rate": 0.53,
+            "mean_energy_weight": -0.25130189226207156,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.05872907089445242,
+            "floor": 0.14,
+            "ceiling": 0.0,
+            "resource": 0.4324088076969288,
+            "harvest_rate": 0.48,
+            "mean_energy_weight": -0.14846980297538076,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 2000,
+          "regrowth": 0.055,
+          "online": {
+            "energy": 0.021905872173797903,
+            "floor": 0.44,
+            "ceiling": 0.0,
+            "resource": 0.42725857292321606,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.23082353962275218,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.02576730264346974,
+            "floor": 0.35,
+            "ceiling": 0.0,
+            "resource": 0.4362276214448596,
+            "harvest_rate": 0.37,
+            "mean_energy_weight": -0.14846980297538076,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 3000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.03227120545461451,
+            "floor": 0.25,
+            "ceiling": 0.0,
+            "resource": 0.4278938589458508,
+            "harvest_rate": 0.48,
+            "mean_energy_weight": -0.27653749421917123,
+            "raw_tail": -0.001794088809596919
+          },
+          "frozen": {
+            "energy": 0.044612407427135514,
+            "floor": 0.17,
+            "ceiling": 0.0,
+            "resource": 0.4424145256005901,
+            "harvest_rate": 0.46,
+            "mean_energy_weight": -0.14846980297538076,
+            "raw_tail": -0.0013996184588387112
+          }
+        }
+      ],
+      "online_final": {
+        "energy": 0.03227120545461451,
+        "floor": 0.25,
+        "ceiling": 0.0,
+        "resource": 0.4278938589458508,
+        "harvest_rate": 0.48,
+        "mean_energy_weight": -0.27653749421917123,
+        "raw_tail": -0.001794088809596919
+      },
+      "frozen_final": {
+        "energy": 0.044612407427135514,
+        "floor": 0.17,
+        "ceiling": 0.0,
+        "resource": 0.4424145256005901,
+        "harvest_rate": 0.46,
+        "mean_energy_weight": -0.14846980297538076,
+        "raw_tail": -0.0013996184588387112
+      },
+      "paired_online_minus_frozen_energy": -0.012341201972521004,
+      "paired_online_minus_frozen_floor": 0.07999999999999999,
+      "theta_evaluations": [
+        {
+          "checkpoint": 0,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6704992421793118,
+            "floor": 0.0,
+            "ceiling": 0.06,
+            "resource": 0.4834142248274591,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.14846980297538076,
+            "raw_tail": -6.395982514576242e-07
+          },
+          "frozen_theta": {
+            "energy": 0.6704992421793118,
+            "floor": 0.0,
+            "ceiling": 0.06,
+            "resource": 0.4834142248274591,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.14846980297538076,
+            "raw_tail": -6.395982514576242e-07
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 0,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.1747489773902147,
+            "floor": 0.18,
+            "ceiling": 0.01,
+            "resource": 0.46809300342713606,
+            "harvest_rate": 0.34,
+            "mean_energy_weight": -0.14846980297538076,
+            "raw_tail": -0.00048508405984373337
+          },
+          "frozen_theta": {
+            "energy": 0.1747489773902147,
+            "floor": 0.18,
+            "ceiling": 0.01,
+            "resource": 0.46809300342713606,
+            "harvest_rate": 0.34,
+            "mean_energy_weight": -0.14846980297538076,
+            "raw_tail": -0.00048508405984373337
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6881207231109012,
+            "floor": 0.03,
+            "ceiling": 0.07,
+            "resource": 0.4831359817483454,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.25130189226207156,
+            "raw_tail": -6.947387944810306e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6704992421793118,
+            "floor": 0.0,
+            "ceiling": 0.06,
+            "resource": 0.4834142248274591,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.14846980297538076,
+            "raw_tail": -6.395982514576242e-07
+          },
+          "energy_update_advantage": 0.01762148093158944,
+          "floor_update_advantage": -0.03
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.13047262301851337,
+            "floor": 0.37,
+            "ceiling": 0.01,
+            "resource": 0.4552159045968407,
+            "harvest_rate": 0.35,
+            "mean_energy_weight": -0.25130189226207156,
+            "raw_tail": -0.0015305697837254125
+          },
+          "frozen_theta": {
+            "energy": 0.1747489773902147,
+            "floor": 0.18,
+            "ceiling": 0.01,
+            "resource": 0.46809300342713606,
+            "harvest_rate": 0.34,
+            "mean_energy_weight": -0.14846980297538076,
+            "raw_tail": -0.00048508405984373337
+          },
+          "energy_update_advantage": -0.044276354371701326,
+          "floor_update_advantage": -0.19
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6224744239667885,
+            "floor": 0.01,
+            "ceiling": 0.01,
+            "resource": 0.4820042873737361,
+            "harvest_rate": 0.34,
+            "mean_energy_weight": -0.23082353962275218,
+            "raw_tail": -3.659133945440626e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6704992421793118,
+            "floor": 0.0,
+            "ceiling": 0.06,
+            "resource": 0.4834142248274591,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.14846980297538076,
+            "raw_tail": -6.395982514576242e-07
+          },
+          "energy_update_advantage": -0.048024818212523246,
+          "floor_update_advantage": -0.01
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.09530887177648541,
+            "floor": 0.33,
+            "ceiling": 0.01,
+            "resource": 0.45185900760008546,
+            "harvest_rate": 0.39,
+            "mean_energy_weight": -0.23082353962275218,
+            "raw_tail": -0.0010464260822545183
+          },
+          "frozen_theta": {
+            "energy": 0.1747489773902147,
+            "floor": 0.18,
+            "ceiling": 0.01,
+            "resource": 0.46809300342713606,
+            "harvest_rate": 0.34,
+            "mean_energy_weight": -0.14846980297538076,
+            "raw_tail": -0.00048508405984373337
+          },
+          "energy_update_advantage": -0.07944010561372929,
+          "floor_update_advantage": -0.15000000000000002
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.5133522471559684,
+            "floor": 0.03,
+            "ceiling": 0.01,
+            "resource": 0.4741564742593306,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.27653749421917123,
+            "raw_tail": -7.988333653986192e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6704992421793118,
+            "floor": 0.0,
+            "ceiling": 0.06,
+            "resource": 0.4834142248274591,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.14846980297538076,
+            "raw_tail": -6.395982514576242e-07
+          },
+          "energy_update_advantage": -0.1571469950233434,
+          "floor_update_advantage": -0.03
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.03686778927129332,
+            "floor": 0.32,
+            "ceiling": 0.0,
+            "resource": 0.4368665541439214,
+            "harvest_rate": 0.39,
+            "mean_energy_weight": -0.27653749421917123,
+            "raw_tail": -0.0010012261369844613
+          },
+          "frozen_theta": {
+            "energy": 0.1747489773902147,
+            "floor": 0.18,
+            "ceiling": 0.01,
+            "resource": 0.46809300342713606,
+            "harvest_rate": 0.34,
+            "mean_energy_weight": -0.14846980297538076,
+            "raw_tail": -0.00048508405984373337
+          },
+          "energy_update_advantage": -0.13788118811892136,
+          "floor_update_advantage": -0.14
+        }
+      ]
+    },
+    {
+      "seed": 9809,
+      "same_initial_physics_rng": true,
+      "trajectory": [
+        {
+          "tick": 1000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.06208624228984504,
+            "floor": 0.18,
+            "ceiling": 0.0,
+            "resource": 0.43504123950343127,
+            "harvest_rate": 0.44,
+            "mean_energy_weight": -0.22925036474580263,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.07932709756317591,
+            "floor": 0.15,
+            "ceiling": 0.0,
+            "resource": 0.44548631695533913,
+            "harvest_rate": 0.37,
+            "mean_energy_weight": -0.12208199720301216,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 2000,
+          "regrowth": 0.055,
+          "online": {
+            "energy": 0.02336592807384076,
+            "floor": 0.41,
+            "ceiling": 0.0,
+            "resource": 0.4183163527738067,
+            "harvest_rate": 0.41,
+            "mean_energy_weight": -0.23055657157658505,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.029848206151766195,
+            "floor": 0.3,
+            "ceiling": 0.0,
+            "resource": 0.43078781248866543,
+            "harvest_rate": 0.37,
+            "mean_energy_weight": -0.12208199720301216,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 3000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.037921309928807156,
+            "floor": 0.17,
+            "ceiling": 0.0,
+            "resource": 0.42327109202456287,
+            "harvest_rate": 0.43,
+            "mean_energy_weight": -0.27685780455475145,
+            "raw_tail": -0.0018044505538002049
+          },
+          "frozen": {
+            "energy": 0.04850754134248849,
+            "floor": 0.15,
+            "ceiling": 0.0,
+            "resource": 0.444421026513025,
+            "harvest_rate": 0.39,
+            "mean_energy_weight": -0.12208199720301216,
+            "raw_tail": -0.0012948278018712794
+          }
+        }
+      ],
+      "online_final": {
+        "energy": 0.037921309928807156,
+        "floor": 0.17,
+        "ceiling": 0.0,
+        "resource": 0.42327109202456287,
+        "harvest_rate": 0.43,
+        "mean_energy_weight": -0.27685780455475145,
+        "raw_tail": -0.0018044505538002049
+      },
+      "frozen_final": {
+        "energy": 0.04850754134248849,
+        "floor": 0.15,
+        "ceiling": 0.0,
+        "resource": 0.444421026513025,
+        "harvest_rate": 0.39,
+        "mean_energy_weight": -0.12208199720301216,
+        "raw_tail": -0.0012948278018712794
+      },
+      "paired_online_minus_frozen_energy": -0.010586231413681334,
+      "paired_online_minus_frozen_floor": 0.020000000000000018,
+      "theta_evaluations": [
+        {
+          "checkpoint": 0,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6638581908049691,
+            "floor": 0.0,
+            "ceiling": 0.04,
+            "resource": 0.4787671214323912,
+            "harvest_rate": 0.47,
+            "mean_energy_weight": -0.12208199720301216,
+            "raw_tail": -1.0568993707032234e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6638581908049691,
+            "floor": 0.0,
+            "ceiling": 0.04,
+            "resource": 0.4787671214323912,
+            "harvest_rate": 0.47,
+            "mean_energy_weight": -0.12208199720301216,
+            "raw_tail": -1.0568993707032234e-05
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 0,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.23502341862269094,
+            "floor": 0.14,
+            "ceiling": 0.0,
+            "resource": 0.4743746895752794,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.12208199720301216,
+            "raw_tail": -0.0002522061116923346
+          },
+          "frozen_theta": {
+            "energy": 0.23502341862269094,
+            "floor": 0.14,
+            "ceiling": 0.0,
+            "resource": 0.4743746895752794,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.12208199720301216,
+            "raw_tail": -0.0002522061116923346
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6899929245157513,
+            "floor": 0.01,
+            "ceiling": 0.05,
+            "resource": 0.48789502281379826,
+            "harvest_rate": 0.32,
+            "mean_energy_weight": -0.22925036474580263,
+            "raw_tail": -6.709988643434338e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6638581908049691,
+            "floor": 0.0,
+            "ceiling": 0.04,
+            "resource": 0.4787671214323912,
+            "harvest_rate": 0.47,
+            "mean_energy_weight": -0.12208199720301216,
+            "raw_tail": -1.0568993707032234e-05
+          },
+          "energy_update_advantage": 0.026134733710782232,
+          "floor_update_advantage": -0.01
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.19592034312068982,
+            "floor": 0.27,
+            "ceiling": 0.01,
+            "resource": 0.46000861601389836,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.22925036474580263,
+            "raw_tail": -0.0010341708365885877
+          },
+          "frozen_theta": {
+            "energy": 0.23502341862269094,
+            "floor": 0.14,
+            "ceiling": 0.0,
+            "resource": 0.4743746895752794,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.12208199720301216,
+            "raw_tail": -0.0002522061116923346
+          },
+          "energy_update_advantage": -0.03910307550200112,
+          "floor_update_advantage": -0.13
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6521362243848999,
+            "floor": 0.03,
+            "ceiling": 0.05,
+            "resource": 0.48689913718982586,
+            "harvest_rate": 0.34,
+            "mean_energy_weight": -0.23055657157658505,
+            "raw_tail": -3.599406166311311e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6638581908049691,
+            "floor": 0.0,
+            "ceiling": 0.04,
+            "resource": 0.4787671214323912,
+            "harvest_rate": 0.47,
+            "mean_energy_weight": -0.12208199720301216,
+            "raw_tail": -1.0568993707032234e-05
+          },
+          "energy_update_advantage": -0.011721966420069174,
+          "floor_update_advantage": -0.03
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.15877543274189695,
+            "floor": 0.27,
+            "ceiling": 0.0,
+            "resource": 0.45704233758745466,
+            "harvest_rate": 0.39,
+            "mean_energy_weight": -0.23055657157658505,
+            "raw_tail": -0.0008596898563367272
+          },
+          "frozen_theta": {
+            "energy": 0.23502341862269094,
+            "floor": 0.14,
+            "ceiling": 0.0,
+            "resource": 0.4743746895752794,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.12208199720301216,
+            "raw_tail": -0.0002522061116923346
+          },
+          "energy_update_advantage": -0.07624798588079398,
+          "floor_update_advantage": -0.13
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.5886286206382239,
+            "floor": 0.01,
+            "ceiling": 0.0,
+            "resource": 0.4751773958472363,
+            "harvest_rate": 0.39,
+            "mean_energy_weight": -0.27685780455475145,
+            "raw_tail": -2.8726280432868115e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6638581908049691,
+            "floor": 0.0,
+            "ceiling": 0.04,
+            "resource": 0.4787671214323912,
+            "harvest_rate": 0.47,
+            "mean_energy_weight": -0.12208199720301216,
+            "raw_tail": -1.0568993707032234e-05
+          },
+          "energy_update_advantage": -0.07522957016674525,
+          "floor_update_advantage": -0.01
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.051014633451096546,
+            "floor": 0.28,
+            "ceiling": 0.0,
+            "resource": 0.4353163827503285,
+            "harvest_rate": 0.44,
+            "mean_energy_weight": -0.27685780455475145,
+            "raw_tail": -0.0011022428487448726
+          },
+          "frozen_theta": {
+            "energy": 0.23502341862269094,
+            "floor": 0.14,
+            "ceiling": 0.0,
+            "resource": 0.4743746895752794,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.12208199720301216,
+            "raw_tail": -0.0002522061116923346
+          },
+          "energy_update_advantage": -0.18400878517159439,
+          "floor_update_advantage": -0.14
+        }
+      ]
+    },
+    {
+      "seed": 9810,
+      "same_initial_physics_rng": true,
+      "trajectory": [
+        {
+          "tick": 1000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.057694737321965006,
+            "floor": 0.14,
+            "ceiling": 0.0,
+            "resource": 0.41909976225012374,
+            "harvest_rate": 0.46,
+            "mean_energy_weight": -0.2434115132745519,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.06921656844512558,
+            "floor": 0.13,
+            "ceiling": 0.0,
+            "resource": 0.4285617887629971,
+            "harvest_rate": 0.44,
+            "mean_energy_weight": -0.19516968926005615,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 2000,
+          "regrowth": 0.055,
+          "online": {
+            "energy": 0.02664560242166328,
+            "floor": 0.38,
+            "ceiling": 0.0,
+            "resource": 0.4195658023270813,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.23074124574577443,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.02848395710420416,
+            "floor": 0.34,
+            "ceiling": 0.0,
+            "resource": 0.4277469376365252,
+            "harvest_rate": 0.39,
+            "mean_energy_weight": -0.19516968926005615,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 3000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.03909131950805662,
+            "floor": 0.19,
+            "ceiling": 0.0,
+            "resource": 0.42250638650122363,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.267565507672981,
+            "raw_tail": -0.0017088886992439878
+          },
+          "frozen": {
+            "energy": 0.05233633076375468,
+            "floor": 0.13,
+            "ceiling": 0.0,
+            "resource": 0.429617365660636,
+            "harvest_rate": 0.42,
+            "mean_energy_weight": -0.19516968926005615,
+            "raw_tail": -0.001591818515634753
+          }
+        }
+      ],
+      "online_final": {
+        "energy": 0.03909131950805662,
+        "floor": 0.19,
+        "ceiling": 0.0,
+        "resource": 0.42250638650122363,
+        "harvest_rate": 0.4,
+        "mean_energy_weight": -0.267565507672981,
+        "raw_tail": -0.0017088886992439878
+      },
+      "frozen_final": {
+        "energy": 0.05233633076375468,
+        "floor": 0.13,
+        "ceiling": 0.0,
+        "resource": 0.429617365660636,
+        "harvest_rate": 0.42,
+        "mean_energy_weight": -0.19516968926005615,
+        "raw_tail": -0.001591818515634753
+      },
+      "paired_online_minus_frozen_energy": -0.013245011255698061,
+      "paired_online_minus_frozen_floor": 0.06,
+      "theta_evaluations": [
+        {
+          "checkpoint": 0,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6687393408150898,
+            "floor": 0.01,
+            "ceiling": 0.04,
+            "resource": 0.48710138696831634,
+            "harvest_rate": 0.35,
+            "mean_energy_weight": -0.19516968926005615,
+            "raw_tail": -5.1892410082896674e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6687393408150898,
+            "floor": 0.01,
+            "ceiling": 0.04,
+            "resource": 0.48710138696831634,
+            "harvest_rate": 0.35,
+            "mean_energy_weight": -0.19516968926005615,
+            "raw_tail": -5.1892410082896674e-05
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 0,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.19387532839755336,
+            "floor": 0.19,
+            "ceiling": 0.02,
+            "resource": 0.46129719835389593,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.19516968926005615,
+            "raw_tail": -0.0005423833324347316
+          },
+          "frozen_theta": {
+            "energy": 0.19387532839755336,
+            "floor": 0.19,
+            "ceiling": 0.02,
+            "resource": 0.46129719835389593,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.19516968926005615,
+            "raw_tail": -0.0005423833324347316
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6645885181611177,
+            "floor": 0.02,
+            "ceiling": 0.06,
+            "resource": 0.482915310970292,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.2434115132745519,
+            "raw_tail": -4.766262536714355e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6687393408150898,
+            "floor": 0.01,
+            "ceiling": 0.04,
+            "resource": 0.48710138696831634,
+            "harvest_rate": 0.35,
+            "mean_energy_weight": -0.19516968926005615,
+            "raw_tail": -5.1892410082896674e-05
+          },
+          "energy_update_advantage": -0.004150822653972042,
+          "floor_update_advantage": -0.01
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.1832585109983885,
+            "floor": 0.2,
+            "ceiling": 0.01,
+            "resource": 0.4543414606236479,
+            "harvest_rate": 0.35,
+            "mean_energy_weight": -0.2434115132745519,
+            "raw_tail": -0.000826797482040244
+          },
+          "frozen_theta": {
+            "energy": 0.19387532839755336,
+            "floor": 0.19,
+            "ceiling": 0.02,
+            "resource": 0.46129719835389593,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.19516968926005615,
+            "raw_tail": -0.0005423833324347316
+          },
+          "energy_update_advantage": -0.010616817399164868,
+          "floor_update_advantage": -0.010000000000000009
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6160854058722894,
+            "floor": 0.02,
+            "ceiling": 0.04,
+            "resource": 0.481518317134652,
+            "harvest_rate": 0.35,
+            "mean_energy_weight": -0.23074124574577443,
+            "raw_tail": -2.6486573381388176e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6687393408150898,
+            "floor": 0.01,
+            "ceiling": 0.04,
+            "resource": 0.48710138696831634,
+            "harvest_rate": 0.35,
+            "mean_energy_weight": -0.19516968926005615,
+            "raw_tail": -5.1892410082896674e-05
+          },
+          "energy_update_advantage": -0.05265393494280035,
+          "floor_update_advantage": -0.01
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.09359275230936057,
+            "floor": 0.25,
+            "ceiling": 0.0,
+            "resource": 0.4518625568657791,
+            "harvest_rate": 0.33,
+            "mean_energy_weight": -0.23074124574577443,
+            "raw_tail": -0.000772652784097833
+          },
+          "frozen_theta": {
+            "energy": 0.19387532839755336,
+            "floor": 0.19,
+            "ceiling": 0.02,
+            "resource": 0.46129719835389593,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.19516968926005615,
+            "raw_tail": -0.0005423833324347316
+          },
+          "energy_update_advantage": -0.1002825760881928,
+          "floor_update_advantage": -0.06
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.5203773979210066,
+            "floor": 0.0,
+            "ceiling": 0.01,
+            "resource": 0.4726508824468986,
+            "harvest_rate": 0.35,
+            "mean_energy_weight": -0.267565507672981,
+            "raw_tail": -7.624358032742681e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6687393408150898,
+            "floor": 0.01,
+            "ceiling": 0.04,
+            "resource": 0.48710138696831634,
+            "harvest_rate": 0.35,
+            "mean_energy_weight": -0.19516968926005615,
+            "raw_tail": -5.1892410082896674e-05
+          },
+          "energy_update_advantage": -0.14836194289408322,
+          "floor_update_advantage": 0.01
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.03549321030828691,
+            "floor": 0.35,
+            "ceiling": 0.0,
+            "resource": 0.4401727577349897,
+            "harvest_rate": 0.31,
+            "mean_energy_weight": -0.267565507672981,
+            "raw_tail": -0.0008954995293463538
+          },
+          "frozen_theta": {
+            "energy": 0.19387532839755336,
+            "floor": 0.19,
+            "ceiling": 0.02,
+            "resource": 0.46129719835389593,
+            "harvest_rate": 0.4,
+            "mean_energy_weight": -0.19516968926005615,
+            "raw_tail": -0.0005423833324347316
+          },
+          "energy_update_advantage": -0.15838211808926644,
+          "floor_update_advantage": -0.15999999999999998
+        }
+      ]
+    },
+    {
+      "seed": 9811,
+      "same_initial_physics_rng": true,
+      "trajectory": [
+        {
+          "tick": 1000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.04938203032197923,
+            "floor": 0.23,
+            "ceiling": 0.0,
+            "resource": 0.42923409151013997,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.26390164300508334,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.079861638922982,
+            "floor": 0.13,
+            "ceiling": 0.0,
+            "resource": 0.4444067048233606,
+            "harvest_rate": 0.35,
+            "mean_energy_weight": -0.13849346699622456,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 2000,
+          "regrowth": 0.055,
+          "online": {
+            "energy": 0.02454672766884813,
+            "floor": 0.38,
+            "ceiling": 0.0,
+            "resource": 0.4203611839745966,
+            "harvest_rate": 0.37,
+            "mean_energy_weight": -0.25078401779658344,
+            "raw_tail": null
+          },
+          "frozen": {
+            "energy": 0.030306835904401766,
+            "floor": 0.34,
+            "ceiling": 0.0,
+            "resource": 0.4340321197804365,
+            "harvest_rate": 0.37,
+            "mean_energy_weight": -0.13849346699622456,
+            "raw_tail": null
+          }
+        },
+        {
+          "tick": 3000,
+          "regrowth": 0.06,
+          "online": {
+            "energy": 0.04167434503270095,
+            "floor": 0.11,
+            "ceiling": 0.0,
+            "resource": 0.4132413636765094,
+            "harvest_rate": 0.54,
+            "mean_energy_weight": -0.2863070977935618,
+            "raw_tail": -0.0018328868664800062
+          },
+          "frozen": {
+            "energy": 0.054410391860000205,
+            "floor": 0.11,
+            "ceiling": 0.0,
+            "resource": 0.43314742551650665,
+            "harvest_rate": 0.5,
+            "mean_energy_weight": -0.13849346699622456,
+            "raw_tail": -0.001397428999330208
+          }
+        }
+      ],
+      "online_final": {
+        "energy": 0.04167434503270095,
+        "floor": 0.11,
+        "ceiling": 0.0,
+        "resource": 0.4132413636765094,
+        "harvest_rate": 0.54,
+        "mean_energy_weight": -0.2863070977935618,
+        "raw_tail": -0.0018328868664800062
+      },
+      "frozen_final": {
+        "energy": 0.054410391860000205,
+        "floor": 0.11,
+        "ceiling": 0.0,
+        "resource": 0.43314742551650665,
+        "harvest_rate": 0.5,
+        "mean_energy_weight": -0.13849346699622456,
+        "raw_tail": -0.001397428999330208
+      },
+      "paired_online_minus_frozen_energy": -0.012736046827299258,
+      "paired_online_minus_frozen_floor": 0.0,
+      "theta_evaluations": [
+        {
+          "checkpoint": 0,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6685871260813435,
+            "floor": 0.01,
+            "ceiling": 0.06,
+            "resource": 0.49146168849791655,
+            "harvest_rate": 0.25,
+            "mean_energy_weight": -0.13849346699622456,
+            "raw_tail": -5.479965182520965e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6685871260813435,
+            "floor": 0.01,
+            "ceiling": 0.06,
+            "resource": 0.49146168849791655,
+            "harvest_rate": 0.25,
+            "mean_energy_weight": -0.13849346699622456,
+            "raw_tail": -5.479965182520965e-05
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 0,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.2411607659221833,
+            "floor": 0.11,
+            "ceiling": 0.0,
+            "resource": 0.47223670862496847,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.13849346699622456,
+            "raw_tail": -0.00034992754904971833
+          },
+          "frozen_theta": {
+            "energy": 0.2411607659221833,
+            "floor": 0.11,
+            "ceiling": 0.0,
+            "resource": 0.47223670862496847,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.13849346699622456,
+            "raw_tail": -0.00034992754904971833
+          },
+          "energy_update_advantage": 0.0,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.6222602170350711,
+            "floor": 0.02,
+            "ceiling": 0.05,
+            "resource": 0.485209143882712,
+            "harvest_rate": 0.32,
+            "mean_energy_weight": -0.26390164300508334,
+            "raw_tail": -3.144626809586425e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6685871260813435,
+            "floor": 0.01,
+            "ceiling": 0.06,
+            "resource": 0.49146168849791655,
+            "harvest_rate": 0.25,
+            "mean_energy_weight": -0.13849346699622456,
+            "raw_tail": -5.479965182520965e-05
+          },
+          "energy_update_advantage": -0.04632690904627246,
+          "floor_update_advantage": -0.01
+        },
+        {
+          "checkpoint": 1000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.11218971394593255,
+            "floor": 0.28,
+            "ceiling": 0.0,
+            "resource": 0.44300078928745634,
+            "harvest_rate": 0.47,
+            "mean_energy_weight": -0.26390164300508334,
+            "raw_tail": -0.001333286226682849
+          },
+          "frozen_theta": {
+            "energy": 0.2411607659221833,
+            "floor": 0.11,
+            "ceiling": 0.0,
+            "resource": 0.47223670862496847,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.13849346699622456,
+            "raw_tail": -0.00034992754904971833
+          },
+          "energy_update_advantage": -0.12897105197625075,
+          "floor_update_advantage": -0.17000000000000004
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.56206652334721,
+            "floor": 0.01,
+            "ceiling": 0.03,
+            "resource": 0.4775524967142921,
+            "harvest_rate": 0.35,
+            "mean_energy_weight": -0.25078401779658344,
+            "raw_tail": -5.775718462989875e-05
+          },
+          "frozen_theta": {
+            "energy": 0.6685871260813435,
+            "floor": 0.01,
+            "ceiling": 0.06,
+            "resource": 0.49146168849791655,
+            "harvest_rate": 0.25,
+            "mean_energy_weight": -0.13849346699622456,
+            "raw_tail": -5.479965182520965e-05
+          },
+          "energy_update_advantage": -0.10652060273413355,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 2000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.07338131282919808,
+            "floor": 0.26,
+            "ceiling": 0.0,
+            "resource": 0.44286846478764674,
+            "harvest_rate": 0.38,
+            "mean_energy_weight": -0.25078401779658344,
+            "raw_tail": -0.0009433716316773877
+          },
+          "frozen_theta": {
+            "energy": 0.2411607659221833,
+            "floor": 0.11,
+            "ceiling": 0.0,
+            "resource": 0.47223670862496847,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.13849346699622456,
+            "raw_tail": -0.00034992754904971833
+          },
+          "energy_update_advantage": -0.16777945309298523,
+          "floor_update_advantage": -0.15000000000000002
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "stable",
+          "online_trained_theta": {
+            "energy": 0.45273552341402956,
+            "floor": 0.01,
+            "ceiling": 0.0,
+            "resource": 0.4650515050187705,
+            "harvest_rate": 0.39,
+            "mean_energy_weight": -0.2863070977935618,
+            "raw_tail": -0.0001449364533244531
+          },
+          "frozen_theta": {
+            "energy": 0.6685871260813435,
+            "floor": 0.01,
+            "ceiling": 0.06,
+            "resource": 0.49146168849791655,
+            "harvest_rate": 0.25,
+            "mean_energy_weight": -0.13849346699622456,
+            "raw_tail": -5.479965182520965e-05
+          },
+          "energy_update_advantage": -0.21585160266731396,
+          "floor_update_advantage": 0.0
+        },
+        {
+          "checkpoint": 3000,
+          "eval_regime": "mild",
+          "online_trained_theta": {
+            "energy": 0.029646769882479086,
+            "floor": 0.28,
+            "ceiling": 0.0,
+            "resource": 0.43182951473106423,
+            "harvest_rate": 0.43,
+            "mean_energy_weight": -0.2863070977935618,
+            "raw_tail": -0.0010089282829693416
+          },
+          "frozen_theta": {
+            "energy": 0.2411607659221833,
+            "floor": 0.11,
+            "ceiling": 0.0,
+            "resource": 0.47223670862496847,
+            "harvest_rate": 0.36,
+            "mean_energy_weight": -0.13849346699622456,
+            "raw_tail": -0.00034992754904971833
+          },
+          "energy_update_advantage": -0.21151399603970422,
+          "floor_update_advantage": -0.17000000000000004
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "online_final": {
+      "energy": 0.036088243465255174,
+      "floor": 0.20833333333333334,
+      "ceiling": 0.0,
+      "resource": 0.4239488288385414,
+      "harvest_rate": 0.4383333333333334,
+      "mean_energy_weight": -0.27952240497126346,
+      "raw_tail": -0.0018283811048314365
+    },
+    "frozen_final": {
+      "energy": 0.04889298256346875,
+      "floor": 0.1733333333333333,
+      "ceiling": 0.0,
+      "resource": 0.44034509771849445,
+      "harvest_rate": 0.42166666666666663,
+      "mean_energy_weight": -0.1539433354743964,
+      "raw_tail": -0.001463661939871994
+    },
+    "online_minus_frozen_energy_mean": -0.012804739098213587,
+    "online_minus_frozen_energy_seed_sd": 0.004421157767478155,
+    "online_energy_paired_wins": 0,
+    "online_minus_frozen_floor_mean": 0.034999999999999996,
+    "deterministic_eval": {
+      "0/stable": {
+        "online_weight_energy": 0.665341121736876,
+        "frozen_weight_energy": 0.665341121736876,
+        "mean_delta_energy": 0.0,
+        "seed_wins": 0,
+        "online_weight_floor": 0.015000000000000005,
+        "frozen_weight_floor": 0.015000000000000005
+      },
+      "0/mild": {
+        "online_weight_energy": 0.21557591989522326,
+        "frozen_weight_energy": 0.21557591989522326,
+        "mean_delta_energy": 0.0,
+        "seed_wins": 0,
+        "online_weight_floor": 0.1683333333333333,
+        "frozen_weight_floor": 0.1683333333333333
+      },
+      "1000/stable": {
+        "online_weight_energy": 0.6732553225429606,
+        "frozen_weight_energy": 0.665341121736876,
+        "mean_delta_energy": 0.007914200806084617,
+        "seed_wins": 8,
+        "online_weight_floor": 0.026666666666666672,
+        "frozen_weight_floor": 0.015000000000000005
+      },
+      "1000/mild": {
+        "online_weight_energy": 0.15264270905620533,
+        "frozen_weight_energy": 0.21557591989522326,
+        "mean_delta_energy": -0.06293321083901787,
+        "seed_wins": 0,
+        "online_weight_floor": 0.2833333333333334,
+        "frozen_weight_floor": 0.1683333333333333
+      },
+      "2000/stable": {
+        "online_weight_energy": 0.6153201858668758,
+        "frozen_weight_energy": 0.665341121736876,
+        "mean_delta_energy": -0.05002093587000029,
+        "seed_wins": 1,
+        "online_weight_floor": 0.0175,
+        "frozen_weight_floor": 0.015000000000000005
+      },
+      "2000/mild": {
+        "online_weight_energy": 0.10244520650354404,
+        "frozen_weight_energy": 0.21557591989522326,
+        "mean_delta_energy": -0.1131307133916792,
+        "seed_wins": 0,
+        "online_weight_floor": 0.2675,
+        "frozen_weight_floor": 0.1683333333333333
+      },
+      "3000/stable": {
+        "online_weight_energy": 0.5347069293379109,
+        "frozen_weight_energy": 0.665341121736876,
+        "mean_delta_energy": -0.13063419239896504,
+        "seed_wins": 0,
+        "online_weight_floor": 0.011666666666666667,
+        "frozen_weight_floor": 0.015000000000000005
+      },
+      "3000/mild": {
+        "online_weight_energy": 0.043046647500640974,
+        "frozen_weight_energy": 0.21557591989522326,
+        "mean_delta_energy": -0.17252927239458224,
+        "seed_wins": 0,
+        "online_weight_floor": 0.30749999999999994,
+        "frozen_weight_floor": 0.1683333333333333
+      }
+    }
+  },
+  "audit": {
+    "status": "executed",
+    "reserved_independent_seeds": [
+      9800,
+      9801,
+      9802,
+      9803,
+      9804,
+      9805,
+      9806,
+      9807,
+      9808,
+      9809,
+      9810,
+      9811
+    ],
+    "main_study_seeds": [
+      9600,
+      9601,
+      9602,
+      9603,
+      9604,
+      9605,
+      9606,
+      9607,
+      9608,
+      9609,
+      9610,
+      9611
+    ],
+    "source_sha256": {
+      "NEXT_ONLINE_PLAN.md": "e655fbd3e036b00267fa38a1b9ebb488ccd68cfe64724a4db87b45f2f78bd9a0",
+      "NEXT_ONLINE_AUDIT_PLAN.md": "9c81913c8905a7bcc870c930be06a1f3b45660f8e4fa7ed7ed049e1398c88104",
+      "NEXT_ONLINE_probe.py": "17612678e4bd7d5f48957b41ab50086b9bd2195dcfa33461788c02a4fb5c00a4",
+      "NEXT_ONLINE_AUDIT_run.py": "ba02e12e38de0d27f8730049f3a14cc0f1e55f572509032ee9b0582204a0b631",
+      "NEXT_WELFARE_study.py": "441e36a60451b69289b3295993198868f35149488eb853cad961f34be708bd39",
+      "NEXT_WELFARE_garden.py": "74b2293fce28df08fd6c065f337161412ebcec2bf623dfd19316b01e5ebd62a6",
+      "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1"
+    },
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "same_initial_physical_and_action_rng": true,
+    "separate_deterministic_eval_regimes": [
+      "stable",
+      "mild"
+    ],
+    "caveat": "stochastic action streams may diverge because policy weights change; matched RNG draws and initial state isolate the update treatment, not identical realized actions"
+  }
+}
