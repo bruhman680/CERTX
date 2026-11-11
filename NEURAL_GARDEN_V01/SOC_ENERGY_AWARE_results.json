@@ -1,0 +1,3631 @@
+{
+  "question": "Does locally observed energy improve teacher-free resource policy decisions?",
+  "design": {
+    "seeds_stable": [
+      15000,
+      15001,
+      15002,
+      15003,
+      15004,
+      15005,
+      15006,
+      15007,
+      15008,
+      15009,
+      15010,
+      15011
+    ],
+    "seeds_mild": [
+      16000,
+      16001,
+      16002,
+      16003,
+      16004,
+      16005,
+      16006,
+      16007,
+      16008,
+      16009,
+      16010,
+      16011
+    ],
+    "train_ticks": 1200,
+    "eval_ticks": 3000,
+    "size": 16,
+    "mild_regrowth": "0.06 until tick1000; 0.055 until tick2000; 0.06 thereafter",
+    "action_rescue_rule": "resource>.48 when energy<.18 else >.50, explicit hand comparator only",
+    "no_teacher": true,
+    "no_reward_shaping": true,
+    "initial_resource_weight_bias": 4.0,
+    "comparability": "same seeds and world laws within regime, pretrained weights transferred to fresh worlds"
+  },
+  "source_sha256": {
+    "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1",
+    "SOC_ENERGY_AWARE_policy.py": "3a33d80f8bb58758a80117464a54656f3080784acb07f5d8c812937e0d5d91ef",
+    "SOC_ENERGY_AWARE_study.py": "fb24559a97442016cf518849b969ac2aa8f3c4fe6deadb4f2c4dfc882e37a598"
+  },
+  "means": {
+    "stable": {
+      "energy_raw_online": {
+        "energy": 0.04063527045609111,
+        "floor": 0.16341145833333334,
+        "resource": 0.42690962420441986,
+        "harvest": 0.4361979166666667
+      },
+      "resource_raw_online": {
+        "energy": 0.049989591747149835,
+        "floor": 0.1279296875,
+        "resource": 0.44317290163742457,
+        "harvest": 0.4069010416666667
+      },
+      "energy_raw_frozen": {
+        "energy": 0.052765003933847476,
+        "floor": 0.11555989583333333,
+        "resource": 0.44771351752122085,
+        "harvest": 0.4000651041666667
+      },
+      "energy_clipped_online": {
+        "energy": 0.05052535187708404,
+        "floor": 0.12174479166666667,
+        "resource": 0.44417377042953454,
+        "harvest": 0.4049479166666667
+      },
+      "fixed50": {
+        "energy": 0.6508544992836249,
+        "floor": 0.0,
+        "resource": 0.48432797816419293,
+        "harvest": 0.34765625
+      },
+      "energy_rescue_rule": {
+        "energy": 0.6508544992836249,
+        "floor": 0.0,
+        "resource": 0.48432797816419293,
+        "harvest": 0.34765625
+      }
+    },
+    "mild": {
+      "energy_raw_online": {
+        "energy": 0.04087347893777621,
+        "floor": 0.15559895833333334,
+        "resource": 0.4272434377932443,
+        "harvest": 0.4456380208333333
+      },
+      "resource_raw_online": {
+        "energy": 0.050698678954450856,
+        "floor": 0.12044270833333333,
+        "resource": 0.44257359179274314,
+        "harvest": 0.4208984375
+      },
+      "energy_raw_frozen": {
+        "energy": 0.05320474061590458,
+        "floor": 0.11263020833333333,
+        "resource": 0.44715575025723836,
+        "harvest": 0.41015625
+      },
+      "energy_clipped_online": {
+        "energy": 0.05204611052264874,
+        "floor": 0.119140625,
+        "resource": 0.4456306347432291,
+        "harvest": 0.4127604166666667
+      },
+      "fixed50": {
+        "energy": 0.04415052795508731,
+        "floor": 0.20442708333333334,
+        "resource": 0.48496805847290053,
+        "harvest": 0.3264973958333333
+      },
+      "energy_rescue_rule": {
+        "energy": 0.026970537051464422,
+        "floor": 0.23763020833333334,
+        "resource": 0.46980753692130733,
+        "harvest": 0.353515625
+      }
+    }
+  },
+  "rows": [
+    {
+      "seed": 15000,
+      "regime": "stable",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.05215550348521619,
+            "resource": 0.4337688054914057,
+            "floor": 0.109375,
+            "harvest": 0.4375,
+            "energy_weight_mean": -0.11873801634005005
+          },
+          "resource_raw_online": {
+            "energy": 0.059539616708182794,
+            "resource": 0.44215020922639403,
+            "floor": 0.08984375,
+            "harvest": 0.41796875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.057597264823710914,
+            "resource": 0.4403676097010503,
+            "floor": 0.09375,
+            "harvest": 0.42578125,
+            "energy_weight_mean": -0.07017670191750154
+          },
+          "energy_clipped_online": {
+            "energy": 0.058291869990731375,
+            "resource": 0.44224055034858023,
+            "floor": 0.1015625,
+            "harvest": 0.41015625,
+            "energy_weight_mean": -0.056478793724624665
+          },
+          "fixed50": {
+            "energy": 0.635348924622798,
+            "resource": 0.48047028579124434,
+            "floor": 0.0,
+            "harvest": 0.36328125,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.635348924622798,
+            "resource": 0.48047028579124434,
+            "floor": 0.0,
+            "harvest": 0.36328125,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.04567840824902539,
+            "resource": 0.4318720606494762,
+            "floor": 0.13671875,
+            "harvest": 0.42578125,
+            "energy_weight_mean": -0.18861396779354422
+          },
+          "resource_raw_online": {
+            "energy": 0.055691806421819715,
+            "resource": 0.44348470997632716,
+            "floor": 0.0859375,
+            "harvest": 0.40234375,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05585905666176431,
+            "resource": 0.4457556043719713,
+            "floor": 0.08203125,
+            "harvest": 0.390625,
+            "energy_weight_mean": -0.07017670191750154
+          },
+          "energy_clipped_online": {
+            "energy": 0.055510158310551505,
+            "resource": 0.44301503233465805,
+            "floor": 0.08203125,
+            "harvest": 0.40234375,
+            "energy_weight_mean": -0.0730899718575997
+          },
+          "fixed50": {
+            "energy": 0.6474344574954267,
+            "resource": 0.487682221244699,
+            "floor": 0.0,
+            "harvest": 0.2578125,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6474344574954267,
+            "resource": 0.487682221244699,
+            "floor": 0.0,
+            "harvest": 0.2578125,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.04106863790192469,
+            "resource": 0.42804098103535093,
+            "floor": 0.18359375,
+            "harvest": 0.40625,
+            "energy_weight_mean": -0.24942308085819145
+          },
+          "resource_raw_online": {
+            "energy": 0.049415653817628774,
+            "resource": 0.4442270851657335,
+            "floor": 0.12109375,
+            "harvest": 0.359375,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05187133323244257,
+            "resource": 0.44804236320689117,
+            "floor": 0.1171875,
+            "harvest": 0.36328125,
+            "energy_weight_mean": -0.07017670191750154
+          },
+          "energy_clipped_online": {
+            "energy": 0.04985402522078166,
+            "resource": 0.4444783386085307,
+            "floor": 0.125,
+            "harvest": 0.3671875,
+            "energy_weight_mean": -0.0909791724034192
+          },
+          "fixed50": {
+            "energy": 0.6667172951776972,
+            "resource": 0.4832292601927203,
+            "floor": 0.0,
+            "harvest": 0.37890625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6667172951776972,
+            "resource": 0.4832292601927203,
+            "floor": 0.0,
+            "harvest": 0.37890625,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0015429750259577982,
+        "resource_raw_online": -0.0011472474725475793,
+        "energy_raw_frozen": -0.0010445531693775566,
+        "energy_clipped_online": -0.001117163590611434,
+        "fixed50": 4.7068627285324396e-05,
+        "energy_rescue_rule": 4.7068627285324396e-05
+      }
+    },
+    {
+      "seed": 15001,
+      "regime": "stable",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.05069845700845013,
+            "resource": 0.44136708037866357,
+            "floor": 0.1171875,
+            "harvest": 0.390625,
+            "energy_weight_mean": -0.11957553867948525
+          },
+          "resource_raw_online": {
+            "energy": 0.05818147339021534,
+            "resource": 0.4497340035021727,
+            "floor": 0.1015625,
+            "harvest": 0.37890625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05580446514266922,
+            "resource": 0.4488521416428942,
+            "floor": 0.1015625,
+            "harvest": 0.3828125,
+            "energy_weight_mean": -0.07038983308990972
+          },
+          "energy_clipped_online": {
+            "energy": 0.055732488883696904,
+            "resource": 0.4491609603394695,
+            "floor": 0.109375,
+            "harvest": 0.37890625,
+            "energy_weight_mean": -0.055716790688962556
+          },
+          "fixed50": {
+            "energy": 0.6280442349180719,
+            "resource": 0.47874647211384613,
+            "floor": 0.0,
+            "harvest": 0.3828125,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6280442349180719,
+            "resource": 0.47874647211384613,
+            "floor": 0.0,
+            "harvest": 0.3828125,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.04131037104829398,
+            "resource": 0.4365071306820272,
+            "floor": 0.16015625,
+            "harvest": 0.4140625,
+            "energy_weight_mean": -0.1899161072088484
+          },
+          "resource_raw_online": {
+            "energy": 0.04921897683695116,
+            "resource": 0.448505559410195,
+            "floor": 0.15234375,
+            "harvest": 0.40625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05086230668180944,
+            "resource": 0.4501365238617698,
+            "floor": 0.14453125,
+            "harvest": 0.41015625,
+            "energy_weight_mean": -0.07038983308990972
+          },
+          "energy_clipped_online": {
+            "energy": 0.048781330134440776,
+            "resource": 0.4481647780891891,
+            "floor": 0.16015625,
+            "harvest": 0.40625,
+            "energy_weight_mean": -0.07533743278526711
+          },
+          "fixed50": {
+            "energy": 0.6369906793757125,
+            "resource": 0.48932968570074276,
+            "floor": 0.0,
+            "harvest": 0.22265625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6369906793757125,
+            "resource": 0.48932968570074276,
+            "floor": 0.0,
+            "harvest": 0.22265625,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.04038530791690411,
+            "resource": 0.4301459932344615,
+            "floor": 0.1796875,
+            "harvest": 0.4140625,
+            "energy_weight_mean": -0.24919246024707947
+          },
+          "resource_raw_online": {
+            "energy": 0.049712751412949265,
+            "resource": 0.44605032399446565,
+            "floor": 0.15625,
+            "harvest": 0.3828125,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05226627879300509,
+            "resource": 0.450244374675657,
+            "floor": 0.15234375,
+            "harvest": 0.37890625,
+            "energy_weight_mean": -0.07038983308990972
+          },
+          "energy_clipped_online": {
+            "energy": 0.049667702512400325,
+            "resource": 0.44687582897595896,
+            "floor": 0.140625,
+            "harvest": 0.3828125,
+            "energy_weight_mean": -0.09044083773713872
+          },
+          "fixed50": {
+            "energy": 0.6546037553950256,
+            "resource": 0.483327941324021,
+            "floor": 0.0,
+            "harvest": 0.39453125,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6546037553950256,
+            "resource": 0.483327941324021,
+            "floor": 0.0,
+            "harvest": 0.39453125,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.001554503152758643,
+        "resource_raw_online": -0.001146908560834173,
+        "energy_raw_frozen": -0.0010414940885125905,
+        "energy_clipped_online": -0.001119249958562688,
+        "fixed50": 5.674874222539942e-05,
+        "energy_rescue_rule": 5.674874222539942e-05
+      }
+    },
+    {
+      "seed": 15002,
+      "regime": "stable",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.04873571021386301,
+            "resource": 0.4406643342879353,
+            "floor": 0.1328125,
+            "harvest": 0.390625,
+            "energy_weight_mean": -0.12317102696919607
+          },
+          "resource_raw_online": {
+            "energy": 0.05613670072939785,
+            "resource": 0.4490584983142951,
+            "floor": 0.09765625,
+            "harvest": 0.37109375,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.054940659126335036,
+            "resource": 0.4474589437828105,
+            "floor": 0.109375,
+            "harvest": 0.375,
+            "energy_weight_mean": -0.07305206161217413
+          },
+          "energy_clipped_online": {
+            "energy": 0.05614517432350247,
+            "resource": 0.4473612775699618,
+            "floor": 0.10546875,
+            "harvest": 0.3828125,
+            "energy_weight_mean": -0.05672702999751661
+          },
+          "fixed50": {
+            "energy": 0.6173668275017239,
+            "resource": 0.4820511374340417,
+            "floor": 0.0,
+            "harvest": 0.359375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6173668275017239,
+            "resource": 0.4820511374340417,
+            "floor": 0.0,
+            "harvest": 0.359375,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.0435805464003676,
+            "resource": 0.4302988973830558,
+            "floor": 0.15625,
+            "harvest": 0.47265625,
+            "energy_weight_mean": -0.19285195554714116
+          },
+          "resource_raw_online": {
+            "energy": 0.052968795974330185,
+            "resource": 0.44215240862315086,
+            "floor": 0.125,
+            "harvest": 0.42578125,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.052699879087180525,
+            "resource": 0.4443998009796678,
+            "floor": 0.12890625,
+            "harvest": 0.421875,
+            "energy_weight_mean": -0.07305206161217413
+          },
+          "energy_clipped_online": {
+            "energy": 0.052109541810410435,
+            "resource": 0.4427755109999868,
+            "floor": 0.1328125,
+            "harvest": 0.42578125,
+            "energy_weight_mean": -0.07298105320800952
+          },
+          "fixed50": {
+            "energy": 0.6326418402537504,
+            "resource": 0.48481263779705447,
+            "floor": 0.0,
+            "harvest": 0.3046875,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6326418402537504,
+            "resource": 0.48481263779705447,
+            "floor": 0.0,
+            "harvest": 0.3046875,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.04192562762669315,
+            "resource": 0.42759931104738713,
+            "floor": 0.1484375,
+            "harvest": 0.421875,
+            "energy_weight_mean": -0.2523562066375604
+          },
+          "resource_raw_online": {
+            "energy": 0.05206776464667802,
+            "resource": 0.4437149177515283,
+            "floor": 0.09765625,
+            "harvest": 0.390625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05399730665651335,
+            "resource": 0.44839196437408513,
+            "floor": 0.09375,
+            "harvest": 0.390625,
+            "energy_weight_mean": -0.07305206161217413
+          },
+          "energy_clipped_online": {
+            "energy": 0.05258023136567484,
+            "resource": 0.44558790029899387,
+            "floor": 0.09765625,
+            "harvest": 0.390625,
+            "energy_weight_mean": -0.08803008909605019
+          },
+          "fixed50": {
+            "energy": 0.6487219189199238,
+            "resource": 0.4845184468514603,
+            "floor": 0.0,
+            "harvest": 0.3359375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6487219189199238,
+            "resource": 0.4845184468514603,
+            "floor": 0.0,
+            "harvest": 0.3359375,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0015629645662687882,
+        "resource_raw_online": -0.0011378843811080507,
+        "energy_raw_frozen": -0.0010446027026719006,
+        "energy_clipped_online": -0.0011007593207230377,
+        "fixed50": 1.8757054920966067e-05,
+        "energy_rescue_rule": 1.8757054920966067e-05
+      }
+    },
+    {
+      "seed": 15003,
+      "regime": "stable",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.04942492955465722,
+            "resource": 0.4414891314887384,
+            "floor": 0.13671875,
+            "harvest": 0.44921875,
+            "energy_weight_mean": -0.12246995009323593
+          },
+          "resource_raw_online": {
+            "energy": 0.057897682658602706,
+            "resource": 0.4508176671061092,
+            "floor": 0.109375,
+            "harvest": 0.4296875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.0536138063391445,
+            "resource": 0.4498027481312268,
+            "floor": 0.1328125,
+            "harvest": 0.4296875,
+            "energy_weight_mean": -0.0715140908854079
+          },
+          "energy_clipped_online": {
+            "energy": 0.05572568260755018,
+            "resource": 0.4501492139119609,
+            "floor": 0.11328125,
+            "harvest": 0.421875,
+            "energy_weight_mean": -0.05889307486063642
+          },
+          "fixed50": {
+            "energy": 0.6327592675627212,
+            "resource": 0.48130712483419846,
+            "floor": 0.0,
+            "harvest": 0.37890625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6327592675627212,
+            "resource": 0.48130712483419846,
+            "floor": 0.0,
+            "harvest": 0.37890625,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.045303490281730335,
+            "resource": 0.43431286801735125,
+            "floor": 0.16796875,
+            "harvest": 0.42578125,
+            "energy_weight_mean": -0.19114571453717422
+          },
+          "resource_raw_online": {
+            "energy": 0.053214637794578995,
+            "resource": 0.4480011017962551,
+            "floor": 0.125,
+            "harvest": 0.3828125,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.053597011778946366,
+            "resource": 0.4506341157646015,
+            "floor": 0.125,
+            "harvest": 0.36328125,
+            "energy_weight_mean": -0.0715140908854079
+          },
+          "energy_clipped_online": {
+            "energy": 0.05325731838726542,
+            "resource": 0.44732122795478707,
+            "floor": 0.12890625,
+            "harvest": 0.3984375,
+            "energy_weight_mean": -0.07446755812763389
+          },
+          "fixed50": {
+            "energy": 0.6463397128429781,
+            "resource": 0.4844749041069327,
+            "floor": 0.0,
+            "harvest": 0.30078125,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6463397128429781,
+            "resource": 0.4844749041069327,
+            "floor": 0.0,
+            "harvest": 0.30078125,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.04053777949355496,
+            "resource": 0.4238074907580832,
+            "floor": 0.15625,
+            "harvest": 0.46875,
+            "energy_weight_mean": -0.24957821287005094
+          },
+          "resource_raw_online": {
+            "energy": 0.051501192479359366,
+            "resource": 0.4404599713987782,
+            "floor": 0.125,
+            "harvest": 0.44140625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05470574431899287,
+            "resource": 0.4440002920598727,
+            "floor": 0.125,
+            "harvest": 0.4375,
+            "energy_weight_mean": -0.0715140908854079
+          },
+          "energy_clipped_online": {
+            "energy": 0.052638823745547174,
+            "resource": 0.4410537510799878,
+            "floor": 0.12109375,
+            "harvest": 0.44921875,
+            "energy_weight_mean": -0.0877466325059518
+          },
+          "fixed50": {
+            "energy": 0.6605372617302984,
+            "resource": 0.48565202687145226,
+            "floor": 0.0,
+            "harvest": 0.3203125,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6605372617302984,
+            "resource": 0.48565202687145226,
+            "floor": 0.0,
+            "harvest": 0.3203125,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0015673373540685605,
+        "resource_raw_online": -0.0011402381397306411,
+        "energy_raw_frozen": -0.0010301569007358188,
+        "energy_clipped_online": -0.0011202277362151658,
+        "fixed50": 7.021909446519486e-06,
+        "energy_rescue_rule": 7.021909446519486e-06
+      }
+    },
+    {
+      "seed": 15004,
+      "regime": "stable",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.05178117827860314,
+            "resource": 0.4399732063357747,
+            "floor": 0.109375,
+            "harvest": 0.4140625,
+            "energy_weight_mean": -0.11715015111297467
+          },
+          "resource_raw_online": {
+            "energy": 0.0596870179592704,
+            "resource": 0.446222395871383,
+            "floor": 0.07421875,
+            "harvest": 0.40625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05664775487605939,
+            "resource": 0.44576277366767947,
+            "floor": 0.08203125,
+            "harvest": 0.40625,
+            "energy_weight_mean": -0.06771817976192449
+          },
+          "energy_clipped_online": {
+            "energy": 0.05930433876433297,
+            "resource": 0.44581764187340767,
+            "floor": 0.078125,
+            "harvest": 0.41015625,
+            "energy_weight_mean": -0.054076756448651245
+          },
+          "fixed50": {
+            "energy": 0.6215806624618037,
+            "resource": 0.4845852110027604,
+            "floor": 0.0,
+            "harvest": 0.3125,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6215806624618037,
+            "resource": 0.4845852110027604,
+            "floor": 0.0,
+            "harvest": 0.3125,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.045327966969076525,
+            "resource": 0.4337492173911649,
+            "floor": 0.16015625,
+            "harvest": 0.46484375,
+            "energy_weight_mean": -0.18685217640388047
+          },
+          "resource_raw_online": {
+            "energy": 0.0525805697172585,
+            "resource": 0.44677871599146685,
+            "floor": 0.12890625,
+            "harvest": 0.4375,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05347595875992761,
+            "resource": 0.4492561291727716,
+            "floor": 0.12109375,
+            "harvest": 0.4375,
+            "energy_weight_mean": -0.06771817976192449
+          },
+          "energy_clipped_online": {
+            "energy": 0.053100471505125105,
+            "resource": 0.44635369636988637,
+            "floor": 0.12109375,
+            "harvest": 0.44140625,
+            "energy_weight_mean": -0.07243922279403704
+          },
+          "fixed50": {
+            "energy": 0.6364626087470928,
+            "resource": 0.4842988580416317,
+            "floor": 0.0,
+            "harvest": 0.3359375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6364626087470928,
+            "resource": 0.4842988580416317,
+            "floor": 0.0,
+            "harvest": 0.3359375,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.038635993704657964,
+            "resource": 0.43090676232734915,
+            "floor": 0.17578125,
+            "harvest": 0.40625,
+            "energy_weight_mean": -0.24751705275776353
+          },
+          "resource_raw_online": {
+            "energy": 0.04846533439631211,
+            "resource": 0.44458871129133504,
+            "floor": 0.15234375,
+            "harvest": 0.39453125,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05135211982861024,
+            "resource": 0.45027343220428295,
+            "floor": 0.11328125,
+            "harvest": 0.37109375,
+            "energy_weight_mean": -0.06771817976192449
+          },
+          "energy_clipped_online": {
+            "energy": 0.04910821955438027,
+            "resource": 0.4460286417988468,
+            "floor": 0.14453125,
+            "harvest": 0.39453125,
+            "energy_weight_mean": -0.08795000529439534
+          },
+          "fixed50": {
+            "energy": 0.6513110083983844,
+            "resource": 0.48257836957178857,
+            "floor": 0.0,
+            "harvest": 0.3515625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6513110083983844,
+            "resource": 0.48257836957178857,
+            "floor": 0.0,
+            "harvest": 0.3515625,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0015521469525398737,
+        "resource_raw_online": -0.0011080891282064388,
+        "energy_raw_frozen": -0.0010155800428756953,
+        "energy_clipped_online": -0.0011108215496755925,
+        "fixed50": 2.6945187879282363e-05,
+        "energy_rescue_rule": 2.6945187879282363e-05
+      }
+    },
+    {
+      "seed": 15005,
+      "regime": "stable",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.04580342097666061,
+            "resource": 0.44655160684541245,
+            "floor": 0.13671875,
+            "harvest": 0.41015625,
+            "energy_weight_mean": -0.11942402689526713
+          },
+          "resource_raw_online": {
+            "energy": 0.052664741316444524,
+            "resource": 0.453017820120555,
+            "floor": 0.11328125,
+            "harvest": 0.40625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.0503778978019855,
+            "resource": 0.4516021836957183,
+            "floor": 0.125,
+            "harvest": 0.40234375,
+            "energy_weight_mean": -0.07081926924305931
+          },
+          "energy_clipped_online": {
+            "energy": 0.05215094886439029,
+            "resource": 0.45109358347117917,
+            "floor": 0.10546875,
+            "harvest": 0.3984375,
+            "energy_weight_mean": -0.054735592864600675
+          },
+          "fixed50": {
+            "energy": 0.6228501993750273,
+            "resource": 0.4803700732298888,
+            "floor": 0.0,
+            "harvest": 0.359375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6228501993750273,
+            "resource": 0.4803700732298888,
+            "floor": 0.0,
+            "harvest": 0.359375,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.040563505085962404,
+            "resource": 0.43469154959995343,
+            "floor": 0.14453125,
+            "harvest": 0.359375,
+            "energy_weight_mean": -0.18985793110188348
+          },
+          "resource_raw_online": {
+            "energy": 0.050182459359381745,
+            "resource": 0.44634534158348643,
+            "floor": 0.125,
+            "harvest": 0.3515625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.051909140547868216,
+            "resource": 0.4477460383464149,
+            "floor": 0.109375,
+            "harvest": 0.35546875,
+            "energy_weight_mean": -0.07081926924305931
+          },
+          "energy_clipped_online": {
+            "energy": 0.04945410823801154,
+            "resource": 0.4468900640645299,
+            "floor": 0.12890625,
+            "harvest": 0.34375,
+            "energy_weight_mean": -0.0714918137488427
+          },
+          "fixed50": {
+            "energy": 0.6334806671175488,
+            "resource": 0.4883135077996601,
+            "floor": 0.0,
+            "harvest": 0.25,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6334806671175488,
+            "resource": 0.4883135077996601,
+            "floor": 0.0,
+            "harvest": 0.25,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.04027689749435276,
+            "resource": 0.4253254218680274,
+            "floor": 0.140625,
+            "harvest": 0.453125,
+            "energy_weight_mean": -0.24936428761096166
+          },
+          "resource_raw_online": {
+            "energy": 0.050639409926802346,
+            "resource": 0.44016039820661157,
+            "floor": 0.10546875,
+            "harvest": 0.4375,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05374855800634657,
+            "resource": 0.44456942854910353,
+            "floor": 0.1015625,
+            "harvest": 0.43359375,
+            "energy_weight_mean": -0.07081926924305931
+          },
+          "energy_clipped_online": {
+            "energy": 0.05090426169107023,
+            "resource": 0.4417123462475952,
+            "floor": 0.10546875,
+            "harvest": 0.4296875,
+            "energy_weight_mean": -0.0861904121976668
+          },
+          "fixed50": {
+            "energy": 0.6522012894865037,
+            "resource": 0.48273475972530533,
+            "floor": 0.0,
+            "harvest": 0.390625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6522012894865037,
+            "resource": 0.48273475972530533,
+            "floor": 0.0,
+            "harvest": 0.390625,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0015394737975350928,
+        "resource_raw_online": -0.0011117373551999313,
+        "energy_raw_frozen": -0.0010105165113612228,
+        "energy_clipped_online": -0.0010821408233467862,
+        "fixed50": 5.3789901552282715e-05,
+        "energy_rescue_rule": 5.3789901552282715e-05
+      }
+    },
+    {
+      "seed": 15006,
+      "regime": "stable",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.04413340755285933,
+            "resource": 0.4486135258955664,
+            "floor": 0.16796875,
+            "harvest": 0.390625,
+            "energy_weight_mean": -0.12119156049250877
+          },
+          "resource_raw_online": {
+            "energy": 0.05176771696831366,
+            "resource": 0.45488276963547236,
+            "floor": 0.15625,
+            "harvest": 0.3671875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.04905983102621847,
+            "resource": 0.4548261792299925,
+            "floor": 0.15234375,
+            "harvest": 0.37109375,
+            "energy_weight_mean": -0.069798366048839
+          },
+          "energy_clipped_online": {
+            "energy": 0.04979248415544734,
+            "resource": 0.45421417095001365,
+            "floor": 0.15234375,
+            "harvest": 0.37109375,
+            "energy_weight_mean": -0.056539609889391544
+          },
+          "fixed50": {
+            "energy": 0.6145804169695561,
+            "resource": 0.4808407479809716,
+            "floor": 0.0,
+            "harvest": 0.359375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6145804169695561,
+            "resource": 0.4808407479809716,
+            "floor": 0.0,
+            "harvest": 0.359375,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.047234027865905234,
+            "resource": 0.4314963154498554,
+            "floor": 0.12890625,
+            "harvest": 0.42578125,
+            "energy_weight_mean": -0.1886857051463535
+          },
+          "resource_raw_online": {
+            "energy": 0.05378937825467448,
+            "resource": 0.4424221158239492,
+            "floor": 0.09375,
+            "harvest": 0.41015625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05513092946954782,
+            "resource": 0.4442344534352539,
+            "floor": 0.1015625,
+            "harvest": 0.4140625,
+            "energy_weight_mean": -0.069798366048839
+          },
+          "energy_clipped_online": {
+            "energy": 0.053421334539077533,
+            "resource": 0.4427221536413586,
+            "floor": 0.1015625,
+            "harvest": 0.41015625,
+            "energy_weight_mean": -0.07246133648242106
+          },
+          "fixed50": {
+            "energy": 0.6272606664501996,
+            "resource": 0.48730732239206076,
+            "floor": 0.0,
+            "harvest": 0.265625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6272606664501996,
+            "resource": 0.48730732239206076,
+            "floor": 0.0,
+            "harvest": 0.265625,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.041189020354124584,
+            "resource": 0.4254108341562731,
+            "floor": 0.15625,
+            "harvest": 0.45703125,
+            "energy_weight_mean": -0.2471685604046018
+          },
+          "resource_raw_online": {
+            "energy": 0.04991417510628888,
+            "resource": 0.443142554872639,
+            "floor": 0.1484375,
+            "harvest": 0.4296875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05280942250903059,
+            "resource": 0.4480870970398011,
+            "floor": 0.125,
+            "harvest": 0.40625,
+            "energy_weight_mean": -0.069798366048839
+          },
+          "energy_clipped_online": {
+            "energy": 0.051319148526938606,
+            "resource": 0.4431584938980893,
+            "floor": 0.1171875,
+            "harvest": 0.41796875,
+            "energy_weight_mean": -0.08603668178937177
+          },
+          "fixed50": {
+            "energy": 0.6442138324275575,
+            "resource": 0.48323427191715995,
+            "floor": 0.0,
+            "harvest": 0.375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6442138324275575,
+            "resource": 0.48323427191715995,
+            "floor": 0.0,
+            "harvest": 0.375,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.001575032278039479,
+        "resource_raw_online": -0.0011836622706802068,
+        "energy_raw_frozen": -0.0010718722946742882,
+        "energy_clipped_online": -0.0011324524939463909,
+        "fixed50": 4.454963051105716e-05,
+        "energy_rescue_rule": 4.454963051105716e-05
+      }
+    },
+    {
+      "seed": 15007,
+      "regime": "stable",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.048140970752890186,
+            "resource": 0.4419039014104372,
+            "floor": 0.1328125,
+            "harvest": 0.41796875,
+            "energy_weight_mean": -0.12147851461308574
+          },
+          "resource_raw_online": {
+            "energy": 0.05457818706238182,
+            "resource": 0.4508148481086116,
+            "floor": 0.09375,
+            "harvest": 0.39453125,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05258408506432249,
+            "resource": 0.44875468063878166,
+            "floor": 0.10546875,
+            "harvest": 0.3984375,
+            "energy_weight_mean": -0.070249974955127
+          },
+          "energy_clipped_online": {
+            "energy": 0.0519514420695243,
+            "resource": 0.4498400888316969,
+            "floor": 0.12890625,
+            "harvest": 0.390625,
+            "energy_weight_mean": -0.05789203126538556
+          },
+          "fixed50": {
+            "energy": 0.6171696502970955,
+            "resource": 0.4836447230590452,
+            "floor": 0.0,
+            "harvest": 0.35546875,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6171696502970955,
+            "resource": 0.4836447230590452,
+            "floor": 0.0,
+            "harvest": 0.35546875,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.04363119999595144,
+            "resource": 0.4375261488141126,
+            "floor": 0.15625,
+            "harvest": 0.40234375,
+            "energy_weight_mean": -0.1917929688646186
+          },
+          "resource_raw_online": {
+            "energy": 0.05178895958258842,
+            "resource": 0.4506136115452755,
+            "floor": 0.12109375,
+            "harvest": 0.37109375,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05309877266351042,
+            "resource": 0.45199166753883746,
+            "floor": 0.109375,
+            "harvest": 0.375,
+            "energy_weight_mean": -0.070249974955127
+          },
+          "energy_clipped_online": {
+            "energy": 0.05186790671550508,
+            "resource": 0.450384906125055,
+            "floor": 0.1171875,
+            "harvest": 0.37890625,
+            "energy_weight_mean": -0.07481337274437652
+          },
+          "fixed50": {
+            "energy": 0.6346340398781112,
+            "resource": 0.48195598112744537,
+            "floor": 0.0,
+            "harvest": 0.3515625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6346340398781112,
+            "resource": 0.48195598112744537,
+            "floor": 0.0,
+            "harvest": 0.3515625,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.04083052384727083,
+            "resource": 0.4256334736651653,
+            "floor": 0.171875,
+            "harvest": 0.47265625,
+            "energy_weight_mean": -0.2508884799247856
+          },
+          "resource_raw_online": {
+            "energy": 0.04955051161707458,
+            "resource": 0.44148799467889777,
+            "floor": 0.1328125,
+            "harvest": 0.4375,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.052894185897259326,
+            "resource": 0.44496261483345906,
+            "floor": 0.1015625,
+            "harvest": 0.4375,
+            "energy_weight_mean": -0.070249974955127
+          },
+          "energy_clipped_online": {
+            "energy": 0.04956975562372899,
+            "resource": 0.4431874339699249,
+            "floor": 0.12109375,
+            "harvest": 0.42578125,
+            "energy_weight_mean": -0.08968863425829345
+          },
+          "fixed50": {
+            "energy": 0.6480172090355036,
+            "resource": 0.48581415182200405,
+            "floor": 0.0,
+            "harvest": 0.29296875,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6480172090355036,
+            "resource": 0.48581415182200405,
+            "floor": 0.0,
+            "harvest": 0.29296875,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0015303884584412927,
+        "resource_raw_online": -0.0011355022968003612,
+        "energy_raw_frozen": -0.001035782204989182,
+        "energy_clipped_online": -0.001111600637119767,
+        "fixed50": -1.0361207764218625e-05,
+        "energy_rescue_rule": -1.0361207764218625e-05
+      }
+    },
+    {
+      "seed": 15008,
+      "regime": "stable",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.04494766806557331,
+            "resource": 0.44380828481973456,
+            "floor": 0.16796875,
+            "harvest": 0.359375,
+            "energy_weight_mean": -0.11773745491154222
+          },
+          "resource_raw_online": {
+            "energy": 0.053789538311155634,
+            "resource": 0.4528283678569086,
+            "floor": 0.1328125,
+            "harvest": 0.3359375,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05073664597794467,
+            "resource": 0.45163282521905795,
+            "floor": 0.12890625,
+            "harvest": 0.33203125,
+            "energy_weight_mean": -0.06809813235233766
+          },
+          "energy_clipped_online": {
+            "energy": 0.05192813030877173,
+            "resource": 0.45266686148034585,
+            "floor": 0.125,
+            "harvest": 0.328125,
+            "energy_weight_mean": -0.05498149030883169
+          },
+          "fixed50": {
+            "energy": 0.621586501245644,
+            "resource": 0.4809616611573795,
+            "floor": 0.0,
+            "harvest": 0.3671875,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.621586501245644,
+            "resource": 0.4809616611573795,
+            "floor": 0.0,
+            "harvest": 0.3671875,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.04788681917522613,
+            "resource": 0.42888436413975295,
+            "floor": 0.10546875,
+            "harvest": 0.48046875,
+            "energy_weight_mean": -0.18715400358142553
+          },
+          "resource_raw_online": {
+            "energy": 0.05741635843301324,
+            "resource": 0.4407130945700609,
+            "floor": 0.0703125,
+            "harvest": 0.45703125,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.0586416814345736,
+            "resource": 0.44261072351977854,
+            "floor": 0.07421875,
+            "harvest": 0.453125,
+            "energy_weight_mean": -0.06809813235233766
+          },
+          "energy_clipped_online": {
+            "energy": 0.05687338947551182,
+            "resource": 0.44126186530204403,
+            "floor": 0.07421875,
+            "harvest": 0.453125,
+            "energy_weight_mean": -0.07166518874740249
+          },
+          "fixed50": {
+            "energy": 0.6334037628157383,
+            "resource": 0.48633210873306343,
+            "floor": 0.0,
+            "harvest": 0.27734375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6334037628157383,
+            "resource": 0.48633210873306343,
+            "floor": 0.0,
+            "harvest": 0.27734375,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.041814872249929316,
+            "resource": 0.4219197932145126,
+            "floor": 0.13671875,
+            "harvest": 0.42578125,
+            "energy_weight_mean": -0.24862027991475924
+          },
+          "resource_raw_online": {
+            "energy": 0.053029022174790774,
+            "resource": 0.4379334238047679,
+            "floor": 0.078125,
+            "harvest": 0.3984375,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.055256486491494713,
+            "resource": 0.44366390422919577,
+            "floor": 0.078125,
+            "harvest": 0.39453125,
+            "energy_weight_mean": -0.06809813235233766
+          },
+          "energy_clipped_online": {
+            "energy": 0.05218470207268605,
+            "resource": 0.43975964763362346,
+            "floor": 0.07421875,
+            "harvest": 0.390625,
+            "energy_weight_mean": -0.08722072020620328
+          },
+          "fixed50": {
+            "energy": 0.6495132439074119,
+            "resource": 0.4841355305562589,
+            "floor": 0.0,
+            "harvest": 0.35546875,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6495132439074119,
+            "resource": 0.4841355305562589,
+            "floor": 0.0,
+            "harvest": 0.35546875,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0014987782318248513,
+        "resource_raw_online": -0.0010824355923420362,
+        "energy_raw_frozen": -0.0009909563526952232,
+        "energy_clipped_online": -0.001052457235338815,
+        "fixed50": 3.0313531504883307e-05,
+        "energy_rescue_rule": 3.0313531504883307e-05
+      }
+    },
+    {
+      "seed": 15009,
+      "regime": "stable",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.0488363757321008,
+            "resource": 0.44048962262237035,
+            "floor": 0.1328125,
+            "harvest": 0.4140625,
+            "energy_weight_mean": -0.11858545189896758
+          },
+          "resource_raw_online": {
+            "energy": 0.05451874493288071,
+            "resource": 0.44986363173578925,
+            "floor": 0.11328125,
+            "harvest": 0.39453125,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.053300980866560946,
+            "resource": 0.44874160832647986,
+            "floor": 0.1171875,
+            "harvest": 0.39453125,
+            "energy_weight_mean": -0.0681534296499339
+          },
+          "energy_clipped_online": {
+            "energy": 0.053688522372385104,
+            "resource": 0.44760369096525854,
+            "floor": 0.1171875,
+            "harvest": 0.39453125,
+            "energy_weight_mean": -0.05661117877664776
+          },
+          "fixed50": {
+            "energy": 0.6140879849134303,
+            "resource": 0.48186497223037017,
+            "floor": 0.0,
+            "harvest": 0.40625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6140879849134303,
+            "resource": 0.48186497223037017,
+            "floor": 0.0,
+            "harvest": 0.40625,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.04538120153483653,
+            "resource": 0.4328837721491291,
+            "floor": 0.1328125,
+            "harvest": 0.45703125,
+            "energy_weight_mean": -0.1876206440681766
+          },
+          "resource_raw_online": {
+            "energy": 0.05122808020313577,
+            "resource": 0.4452160220043885,
+            "floor": 0.140625,
+            "harvest": 0.4140625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05297497746671824,
+            "resource": 0.4472202889611636,
+            "floor": 0.12890625,
+            "harvest": 0.421875,
+            "energy_weight_mean": -0.0681534296499339
+          },
+          "energy_clipped_online": {
+            "energy": 0.0523231816625367,
+            "resource": 0.44465049449376315,
+            "floor": 0.125,
+            "harvest": 0.421875,
+            "energy_weight_mean": -0.07302110459393799
+          },
+          "fixed50": {
+            "energy": 0.6303107480304075,
+            "resource": 0.4806444479723519,
+            "floor": 0.0,
+            "harvest": 0.34765625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6303107480304075,
+            "resource": 0.4806444479723519,
+            "floor": 0.0,
+            "harvest": 0.34765625,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.039011441121944886,
+            "resource": 0.42774048307487184,
+            "floor": 0.19140625,
+            "harvest": 0.43359375,
+            "energy_weight_mean": -0.2480407527674125
+          },
+          "resource_raw_online": {
+            "energy": 0.04855117264504956,
+            "resource": 0.44625067957250997,
+            "floor": 0.12109375,
+            "harvest": 0.3984375,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05117586018100487,
+            "resource": 0.45134103484330806,
+            "floor": 0.125,
+            "harvest": 0.38671875,
+            "energy_weight_mean": -0.0681534296499339
+          },
+          "energy_clipped_online": {
+            "energy": 0.0489136058113559,
+            "resource": 0.44587054022851547,
+            "floor": 0.125,
+            "harvest": 0.40625,
+            "energy_weight_mean": -0.08864619693726963
+          },
+          "fixed50": {
+            "energy": 0.6390097142691233,
+            "resource": 0.48893864333121817,
+            "floor": 0.0,
+            "harvest": 0.24609375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6390097142691233,
+            "resource": 0.48893864333121817,
+            "floor": 0.0,
+            "harvest": 0.24609375,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0015115513148218531,
+        "resource_raw_online": -0.0011274444678670025,
+        "energy_raw_frozen": -0.0010303022076871811,
+        "energy_clipped_online": -0.0010918803624651316,
+        "fixed50": -4.226167408901325e-05,
+        "energy_rescue_rule": -4.226167408901325e-05
+      }
+    },
+    {
+      "seed": 15010,
+      "regime": "stable",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.046362983630082885,
+            "resource": 0.4428760361245925,
+            "floor": 0.16015625,
+            "harvest": 0.4140625,
+            "energy_weight_mean": -0.1198703505054472
+          },
+          "resource_raw_online": {
+            "energy": 0.053382472969206805,
+            "resource": 0.45015363453407214,
+            "floor": 0.125,
+            "harvest": 0.40625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05173756291866905,
+            "resource": 0.44858619513360265,
+            "floor": 0.1171875,
+            "harvest": 0.3984375,
+            "energy_weight_mean": -0.0717952826297429
+          },
+          "energy_clipped_online": {
+            "energy": 0.052103126412035794,
+            "resource": 0.4489608486411847,
+            "floor": 0.12890625,
+            "harvest": 0.41015625,
+            "energy_weight_mean": -0.055812659869967064
+          },
+          "fixed50": {
+            "energy": 0.6292506156632767,
+            "resource": 0.4816101169656706,
+            "floor": 0.0,
+            "harvest": 0.34765625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6292506156632767,
+            "resource": 0.4816101169656706,
+            "floor": 0.0,
+            "harvest": 0.34765625,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.04212507765960449,
+            "resource": 0.4321306621957476,
+            "floor": 0.16015625,
+            "harvest": 0.41015625,
+            "energy_weight_mean": -0.18996919258486256
+          },
+          "resource_raw_online": {
+            "energy": 0.051292883856810925,
+            "resource": 0.44411119885281936,
+            "floor": 0.109375,
+            "harvest": 0.38671875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05235845645665772,
+            "resource": 0.44575464383501073,
+            "floor": 0.1015625,
+            "harvest": 0.3828125,
+            "energy_weight_mean": -0.0717952826297429
+          },
+          "energy_clipped_online": {
+            "energy": 0.05098049678608871,
+            "resource": 0.4430224590123386,
+            "floor": 0.10546875,
+            "harvest": 0.390625,
+            "energy_weight_mean": -0.07497359551171562
+          },
+          "fixed50": {
+            "energy": 0.6408743371556914,
+            "resource": 0.4869434846189852,
+            "floor": 0.0,
+            "harvest": 0.27734375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6408743371556914,
+            "resource": 0.4869434846189852,
+            "floor": 0.0,
+            "harvest": 0.27734375,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.0411090331096033,
+            "resource": 0.4289363966241914,
+            "floor": 0.16796875,
+            "harvest": 0.46875,
+            "energy_weight_mean": -0.24820720569682025
+          },
+          "resource_raw_online": {
+            "energy": 0.049088336025326945,
+            "resource": 0.44379065338158447,
+            "floor": 0.14453125,
+            "harvest": 0.4453125,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05150034205305618,
+            "resource": 0.4492424818062484,
+            "floor": 0.1171875,
+            "harvest": 0.43359375,
+            "energy_weight_mean": -0.0717952826297429
+          },
+          "energy_clipped_online": {
+            "energy": 0.049803543789687724,
+            "resource": 0.4450553206867475,
+            "floor": 0.1328125,
+            "harvest": 0.4375,
+            "energy_weight_mean": -0.08722381464809006
+          },
+          "fixed50": {
+            "energy": 0.6577663829735255,
+            "resource": 0.4828937833020869,
+            "floor": 0.0,
+            "harvest": 0.375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6577663829735255,
+            "resource": 0.4828937833020869,
+            "floor": 0.0,
+            "harvest": 0.375,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.001603963220286001,
+        "resource_raw_online": -0.0011772131000906071,
+        "energy_raw_frozen": -0.0010724165264956278,
+        "energy_clipped_online": -0.001144397160916939,
+        "fixed50": 4.273986338902771e-05,
+        "energy_rescue_rule": 4.273986338902771e-05
+      }
+    },
+    {
+      "seed": 15011,
+      "regime": "stable",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.04660054307776316,
+            "resource": 0.4441361390989531,
+            "floor": 0.1484375,
+            "harvest": 0.375,
+            "energy_weight_mean": -0.11922492848141084
+          },
+          "resource_raw_online": {
+            "energy": 0.05328737972703683,
+            "resource": 0.45022328051384125,
+            "floor": 0.125,
+            "harvest": 0.3515625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05240358283364657,
+            "resource": 0.4483662093706402,
+            "floor": 0.1171875,
+            "harvest": 0.3515625,
+            "energy_weight_mean": -0.06876837016581216
+          },
+          "energy_clipped_online": {
+            "energy": 0.051876728777337344,
+            "resource": 0.44866009039134724,
+            "floor": 0.12109375,
+            "harvest": 0.34765625,
+            "energy_weight_mean": -0.05470998338675523
+          },
+          "fixed50": {
+            "energy": 0.6143205598249362,
+            "resource": 0.4794869350619848,
+            "floor": 0.0,
+            "harvest": 0.390625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6143205598249362,
+            "resource": 0.4794869350619848,
+            "floor": 0.0,
+            "harvest": 0.390625,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.042764972553752695,
+            "resource": 0.4337467983552997,
+            "floor": 0.125,
+            "harvest": 0.4140625,
+            "energy_weight_mean": -0.1864460382544117
+          },
+          "resource_raw_online": {
+            "energy": 0.0499302625516691,
+            "resource": 0.44586393588717055,
+            "floor": 0.125,
+            "harvest": 0.390625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05112775049788477,
+            "resource": 0.44823062559642335,
+            "floor": 0.125,
+            "harvest": 0.3828125,
+            "energy_weight_mean": -0.06876837016581216
+          },
+          "energy_clipped_online": {
+            "energy": 0.04972886549350851,
+            "resource": 0.4455798197277054,
+            "floor": 0.11328125,
+            "harvest": 0.375,
+            "energy_weight_mean": -0.06868921754919696
+          },
+          "fixed50": {
+            "energy": 0.622944707274244,
+            "resource": 0.487122717531613,
+            "floor": 0.0,
+            "harvest": 0.25390625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.622944707274244,
+            "resource": 0.487122717531613,
+            "floor": 0.0,
+            "harvest": 0.25390625,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.04083811065213276,
+            "resource": 0.4274485494473639,
+            "floor": 0.15234375,
+            "harvest": 0.40625,
+            "energy_weight_mean": -0.24380292827763633
+          },
+          "resource_raw_online": {
+            "energy": 0.047939776717537394,
+            "resource": 0.44626810553024354,
+            "floor": 0.15234375,
+            "harvest": 0.3671875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.051602409238413305,
+            "resource": 0.44974322243274695,
+            "floor": 0.13671875,
+            "harvest": 0.3671875,
+            "energy_weight_mean": -0.06876837016581216
+          },
+          "energy_clipped_online": {
+            "energy": 0.04976020261075667,
+            "resource": 0.4473170017276,
+            "floor": 0.15625,
+            "harvest": 0.3671875,
+            "energy_weight_mean": -0.08211093781322303
+          },
+          "fixed50": {
+            "energy": 0.6376410796825434,
+            "resource": 0.48487855250483936,
+            "floor": 0.0,
+            "harvest": 0.35546875,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6376410796825434,
+            "resource": 0.48487855250483936,
+            "floor": 0.0,
+            "harvest": 0.35546875,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.001520555570805501,
+        "resource_raw_online": -0.0011449129193815267,
+        "energy_raw_frozen": -0.001046647607172085,
+        "energy_clipped_online": -0.0011143104839626578,
+        "fixed50": 2.8695741388480805e-05,
+        "energy_rescue_rule": 2.8695741388480805e-05
+      }
+    },
+    {
+      "seed": 16000,
+      "regime": "mild",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.046706770424078434,
+            "resource": 0.44385874504211487,
+            "floor": 0.12890625,
+            "harvest": 0.37890625,
+            "energy_weight_mean": -0.12151408521618404
+          },
+          "resource_raw_online": {
+            "energy": 0.05385191944973148,
+            "resource": 0.4508940966846457,
+            "floor": 0.09375,
+            "harvest": 0.375,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05145744425385812,
+            "resource": 0.4500424456618303,
+            "floor": 0.109375,
+            "harvest": 0.37890625,
+            "energy_weight_mean": -0.07107917959578586
+          },
+          "energy_clipped_online": {
+            "energy": 0.052997236646306366,
+            "resource": 0.4500526773863507,
+            "floor": 0.109375,
+            "harvest": 0.37109375,
+            "energy_weight_mean": -0.05655971802820289
+          },
+          "fixed50": {
+            "energy": 0.619948523263433,
+            "resource": 0.4783436208120563,
+            "floor": 0.0,
+            "harvest": 0.41015625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.619948523263433,
+            "resource": 0.4783436208120563,
+            "floor": 0.0,
+            "harvest": 0.41015625,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.024923594747865832,
+            "resource": 0.4272116127277298,
+            "floor": 0.3359375,
+            "harvest": 0.39453125,
+            "energy_weight_mean": -0.18731333444407672
+          },
+          "resource_raw_online": {
+            "energy": 0.028379647676527564,
+            "resource": 0.44185134542377213,
+            "floor": 0.29296875,
+            "harvest": 0.3671875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.029095483582978407,
+            "resource": 0.44263112979589225,
+            "floor": 0.2890625,
+            "harvest": 0.3671875,
+            "energy_weight_mean": -0.07107917959578586
+          },
+          "energy_clipped_online": {
+            "energy": 0.02892919264909505,
+            "resource": 0.4422341956145168,
+            "floor": 0.296875,
+            "harvest": 0.36328125,
+            "energy_weight_mean": -0.05659832347375801
+          },
+          "fixed50": {
+            "energy": 0.019961817417838243,
+            "resource": 0.4765423295041142,
+            "floor": 0.375,
+            "harvest": 0.3046875,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.017483231957091405,
+            "resource": 0.4632040189654532,
+            "floor": 0.34765625,
+            "harvest": 0.3125,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.04177162344693634,
+            "resource": 0.4217268149350505,
+            "floor": 0.140625,
+            "harvest": 0.47265625,
+            "energy_weight_mean": -0.24936512160854943
+          },
+          "resource_raw_online": {
+            "energy": 0.05264007788491775,
+            "resource": 0.4367087204331935,
+            "floor": 0.1171875,
+            "harvest": 0.453125,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05431983511910689,
+            "resource": 0.4414190876508224,
+            "floor": 0.10546875,
+            "harvest": 0.4375,
+            "energy_weight_mean": -0.07107917959578586
+          },
+          "energy_clipped_online": {
+            "energy": 0.05314152242923363,
+            "resource": 0.44054484652543546,
+            "floor": 0.125,
+            "harvest": 0.44140625,
+            "energy_weight_mean": -0.07279308401962883
+          },
+          "fixed50": {
+            "energy": 0.04393458522543021,
+            "resource": 0.4848266076356819,
+            "floor": 0.20703125,
+            "harvest": 0.33203125,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.025637664853430952,
+            "resource": 0.47179531319307744,
+            "floor": 0.27734375,
+            "harvest": 0.2890625,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.00157167133599588,
+        "resource_raw_online": -0.0011428164184619236,
+        "energy_raw_frozen": -0.0010258822982037123,
+        "energy_clipped_online": -0.0010752307725536278,
+        "fixed50": 1.1136918637462508e-05,
+        "energy_rescue_rule": -0.00010443160254626876
+      }
+    },
+    {
+      "seed": 16001,
+      "regime": "mild",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.053337574402191876,
+            "resource": 0.439515676286796,
+            "floor": 0.109375,
+            "harvest": 0.421875,
+            "energy_weight_mean": -0.11765681485326467
+          },
+          "resource_raw_online": {
+            "energy": 0.06078024337445638,
+            "resource": 0.44674467582345895,
+            "floor": 0.078125,
+            "harvest": 0.41796875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05928977019337747,
+            "resource": 0.44504804148864674,
+            "floor": 0.08203125,
+            "harvest": 0.4140625,
+            "energy_weight_mean": -0.06908806633690823
+          },
+          "energy_clipped_online": {
+            "energy": 0.05864351017563415,
+            "resource": 0.4446634440649411,
+            "floor": 0.09375,
+            "harvest": 0.41796875,
+            "energy_weight_mean": -0.05679124678203861
+          },
+          "fixed50": {
+            "energy": 0.6308635373212818,
+            "resource": 0.4796921701109061,
+            "floor": 0.0,
+            "harvest": 0.3984375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6308635373212818,
+            "resource": 0.4796921701109061,
+            "floor": 0.0,
+            "harvest": 0.3984375,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.02733706484797458,
+            "resource": 0.42980689240276465,
+            "floor": 0.3203125,
+            "harvest": 0.35546875,
+            "energy_weight_mean": -0.1854106676015121
+          },
+          "resource_raw_online": {
+            "energy": 0.031067801455883386,
+            "resource": 0.4431776267909535,
+            "floor": 0.2734375,
+            "harvest": 0.328125,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.03125039027439565,
+            "resource": 0.44540846412700286,
+            "floor": 0.2734375,
+            "harvest": 0.328125,
+            "energy_weight_mean": -0.06908806633690823
+          },
+          "energy_clipped_online": {
+            "energy": 0.031218848504126644,
+            "resource": 0.44573232194004253,
+            "floor": 0.28125,
+            "harvest": 0.328125,
+            "energy_weight_mean": -0.058458456461759255
+          },
+          "fixed50": {
+            "energy": 0.020456124439868318,
+            "resource": 0.47727814303704597,
+            "floor": 0.37890625,
+            "harvest": 0.3203125,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.016681302703318395,
+            "resource": 0.4645118690264697,
+            "floor": 0.37109375,
+            "harvest": 0.29296875,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.038077974315930865,
+            "resource": 0.4318003658257971,
+            "floor": 0.15625,
+            "harvest": 0.41015625,
+            "energy_weight_mean": -0.2477425400255969
+          },
+          "resource_raw_online": {
+            "energy": 0.049362898017686424,
+            "resource": 0.44532818484603964,
+            "floor": 0.12890625,
+            "harvest": 0.3984375,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05146320098345055,
+            "resource": 0.45154714452779443,
+            "floor": 0.12109375,
+            "harvest": 0.375,
+            "energy_weight_mean": -0.06908806633690823
+          },
+          "energy_clipped_online": {
+            "energy": 0.049944675126410626,
+            "resource": 0.4497090353322352,
+            "floor": 0.12890625,
+            "harvest": 0.37890625,
+            "energy_weight_mean": -0.07605968871129956
+          },
+          "fixed50": {
+            "energy": 0.044626939444942934,
+            "resource": 0.4838325001810304,
+            "floor": 0.20703125,
+            "harvest": 0.33984375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.028001967648745095,
+            "resource": 0.4683453649319914,
+            "floor": 0.18359375,
+            "harvest": 0.37890625,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0014835874205267362,
+        "resource_raw_online": -0.0010852090837906465,
+        "energy_raw_frozen": -0.0009779986169543794,
+        "energy_clipped_online": -0.001041502960302752,
+        "fixed50": 1.7126716619880426e-05,
+        "energy_rescue_rule": -4.575445656966758e-05
+      }
+    },
+    {
+      "seed": 16002,
+      "regime": "mild",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.04796909843596115,
+            "resource": 0.4488788418607865,
+            "floor": 0.16015625,
+            "harvest": 0.390625,
+            "energy_weight_mean": -0.12143575720990413
+          },
+          "resource_raw_online": {
+            "energy": 0.05288370264422146,
+            "resource": 0.45738207782828977,
+            "floor": 0.15625,
+            "harvest": 0.37890625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.050966296030351715,
+            "resource": 0.45568702667569483,
+            "floor": 0.15234375,
+            "harvest": 0.3671875,
+            "energy_weight_mean": -0.07201940307418297
+          },
+          "energy_clipped_online": {
+            "energy": 0.0524719614913633,
+            "resource": 0.4560597498825727,
+            "floor": 0.12890625,
+            "harvest": 0.37890625,
+            "energy_weight_mean": -0.05501585142128014
+          },
+          "fixed50": {
+            "energy": 0.6184486931708781,
+            "resource": 0.4806927830377511,
+            "floor": 0.0,
+            "harvest": 0.38671875,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6184486931708781,
+            "resource": 0.4806927830377511,
+            "floor": 0.0,
+            "harvest": 0.38671875,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.027377035380272603,
+            "resource": 0.4285180601742079,
+            "floor": 0.31640625,
+            "harvest": 0.359375,
+            "energy_weight_mean": -0.18780359675554528
+          },
+          "resource_raw_online": {
+            "energy": 0.03298200239977855,
+            "resource": 0.440191540699598,
+            "floor": 0.24609375,
+            "harvest": 0.32421875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.03347651721400032,
+            "resource": 0.4418284922246763,
+            "floor": 0.25,
+            "harvest": 0.328125,
+            "energy_weight_mean": -0.07201940307418297
+          },
+          "energy_clipped_online": {
+            "energy": 0.033495538579862184,
+            "resource": 0.4417068667367943,
+            "floor": 0.23828125,
+            "harvest": 0.328125,
+            "energy_weight_mean": -0.05537310728384339
+          },
+          "fixed50": {
+            "energy": 0.020814098722171957,
+            "resource": 0.47501900150649456,
+            "floor": 0.34765625,
+            "harvest": 0.32421875,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.01858945787530675,
+            "resource": 0.46153416596069524,
+            "floor": 0.33203125,
+            "harvest": 0.3515625,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.04089747216300167,
+            "resource": 0.4265304667479899,
+            "floor": 0.1640625,
+            "harvest": 0.41796875,
+            "energy_weight_mean": -0.24706710706045876
+          },
+          "resource_raw_online": {
+            "energy": 0.04914049531490809,
+            "resource": 0.4430103254792424,
+            "floor": 0.1328125,
+            "harvest": 0.375,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05173930816501283,
+            "resource": 0.4484065245041165,
+            "floor": 0.12109375,
+            "harvest": 0.36328125,
+            "energy_weight_mean": -0.07201940307418297
+          },
+          "energy_clipped_online": {
+            "energy": 0.05031493536637256,
+            "resource": 0.4474983642942104,
+            "floor": 0.125,
+            "harvest": 0.3671875,
+            "energy_weight_mean": -0.07184273512999141
+          },
+          "fixed50": {
+            "energy": 0.04297824708725065,
+            "resource": 0.4869609321644891,
+            "floor": 0.2421875,
+            "harvest": 0.2890625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.028545874534216982,
+            "resource": 0.46747100547589693,
+            "floor": 0.1796875,
+            "harvest": 0.43359375,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.001554038303009941,
+        "resource_raw_online": -0.0011556092135834501,
+        "energy_raw_frozen": -0.0010462053545828064,
+        "energy_clipped_online": -0.0010959515454645047,
+        "fixed50": -1.7217749459528673e-05,
+        "energy_rescue_rule": -2.5935409144290596e-05
+      }
+    },
+    {
+      "seed": 16003,
+      "regime": "mild",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.04995239068740183,
+            "resource": 0.44152378192059794,
+            "floor": 0.125,
+            "harvest": 0.4609375,
+            "energy_weight_mean": -0.12136190973156867
+          },
+          "resource_raw_online": {
+            "energy": 0.056965505866949345,
+            "resource": 0.44868405576691395,
+            "floor": 0.12109375,
+            "harvest": 0.44140625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05387594559559643,
+            "resource": 0.44797698104015576,
+            "floor": 0.1171875,
+            "harvest": 0.44140625,
+            "energy_weight_mean": -0.07124280940912511
+          },
+          "energy_clipped_online": {
+            "energy": 0.05591926747027593,
+            "resource": 0.44792620207224687,
+            "floor": 0.12109375,
+            "harvest": 0.4375,
+            "energy_weight_mean": -0.05885571127197223
+          },
+          "fixed50": {
+            "energy": 0.6243287310416539,
+            "resource": 0.48018655200467986,
+            "floor": 0.0,
+            "harvest": 0.3984375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6243287310416539,
+            "resource": 0.48018655200467986,
+            "floor": 0.0,
+            "harvest": 0.3984375,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.0250585590816437,
+            "resource": 0.4283432646040132,
+            "floor": 0.37109375,
+            "harvest": 0.35546875,
+            "energy_weight_mean": -0.1881608089916949
+          },
+          "resource_raw_online": {
+            "energy": 0.029057553178979473,
+            "resource": 0.44116950506665253,
+            "floor": 0.296875,
+            "harvest": 0.33984375,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.029859328204532756,
+            "resource": 0.44163062461539154,
+            "floor": 0.29296875,
+            "harvest": 0.33203125,
+            "energy_weight_mean": -0.07124280940912511
+          },
+          "energy_clipped_online": {
+            "energy": 0.029449635435079065,
+            "resource": 0.44213172991313615,
+            "floor": 0.30078125,
+            "harvest": 0.33984375,
+            "energy_weight_mean": -0.06119286901631049
+          },
+          "fixed50": {
+            "energy": 0.018533869105238916,
+            "resource": 0.4786377620528496,
+            "floor": 0.4140625,
+            "harvest": 0.27734375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.017762206670544164,
+            "resource": 0.46275546473596546,
+            "floor": 0.3359375,
+            "harvest": 0.31640625,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.046076960097899675,
+            "resource": 0.4206987615669863,
+            "floor": 0.08984375,
+            "harvest": 0.47265625,
+            "energy_weight_mean": -0.24791094412471987
+          },
+          "resource_raw_online": {
+            "energy": 0.053002288066256065,
+            "resource": 0.4402512732748828,
+            "floor": 0.09765625,
+            "harvest": 0.421875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05595093186448962,
+            "resource": 0.44526470620506575,
+            "floor": 0.08203125,
+            "harvest": 0.39453125,
+            "energy_weight_mean": -0.07124280940912511
+          },
+          "energy_clipped_online": {
+            "energy": 0.05560359137861312,
+            "resource": 0.44195166397330077,
+            "floor": 0.09375,
+            "harvest": 0.41796875,
+            "energy_weight_mean": -0.07844068217757443
+          },
+          "fixed50": {
+            "energy": 0.044719166283019376,
+            "resource": 0.48391637201782634,
+            "floor": 0.16015625,
+            "harvest": 0.359375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.02695799536423976,
+            "resource": 0.46983244262738433,
+            "floor": 0.23046875,
+            "harvest": 0.3359375,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0015024434608237685,
+        "resource_raw_online": -0.0011376196679985108,
+        "energy_raw_frozen": -0.0010443645982475271,
+        "energy_clipped_online": -0.0010846106118910061,
+        "fixed50": 3.031147659856832e-05,
+        "energy_rescue_rule": -8.131057558513124e-05
+      }
+    },
+    {
+      "seed": 16004,
+      "regime": "mild",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.0489283895410692,
+            "resource": 0.4404787756504953,
+            "floor": 0.11328125,
+            "harvest": 0.390625,
+            "energy_weight_mean": -0.11866567309534784
+          },
+          "resource_raw_online": {
+            "energy": 0.05582929796130566,
+            "resource": 0.4475941459769209,
+            "floor": 0.09375,
+            "harvest": 0.3671875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05397238087474488,
+            "resource": 0.445820504377095,
+            "floor": 0.09375,
+            "harvest": 0.375,
+            "energy_weight_mean": -0.06726324427049334
+          },
+          "energy_clipped_online": {
+            "energy": 0.05432922736276083,
+            "resource": 0.4461315554636802,
+            "floor": 0.08984375,
+            "harvest": 0.3671875,
+            "energy_weight_mean": -0.055368149518203534
+          },
+          "fixed50": {
+            "energy": 0.6220990994626638,
+            "resource": 0.4820670787866619,
+            "floor": 0.0,
+            "harvest": 0.36328125,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6220990994626638,
+            "resource": 0.4820670787866619,
+            "floor": 0.0,
+            "harvest": 0.36328125,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.029444455598467853,
+            "resource": 0.4183116979817865,
+            "floor": 0.2578125,
+            "harvest": 0.42578125,
+            "energy_weight_mean": -0.18483074375350556
+          },
+          "resource_raw_online": {
+            "energy": 0.0335434817903978,
+            "resource": 0.4332329255077318,
+            "floor": 0.2265625,
+            "harvest": 0.41015625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.03432880379046681,
+            "resource": 0.4345285083832986,
+            "floor": 0.2265625,
+            "harvest": 0.421875,
+            "energy_weight_mean": -0.06726324427049334
+          },
+          "energy_clipped_online": {
+            "energy": 0.0341258102803239,
+            "resource": 0.4341574667268443,
+            "floor": 0.2265625,
+            "harvest": 0.41796875,
+            "energy_weight_mean": -0.0573575007937426
+          },
+          "fixed50": {
+            "energy": 0.022144710162499623,
+            "resource": 0.47345094749852534,
+            "floor": 0.34765625,
+            "harvest": 0.3828125,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.019266905351804278,
+            "resource": 0.4603695893709463,
+            "floor": 0.30078125,
+            "harvest": 0.359375,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.04042533095314067,
+            "resource": 0.42485841231085875,
+            "floor": 0.16796875,
+            "harvest": 0.4375,
+            "energy_weight_mean": -0.2434158927126368
+          },
+          "resource_raw_online": {
+            "energy": 0.04990757780774889,
+            "resource": 0.4399876296641029,
+            "floor": 0.125,
+            "harvest": 0.41015625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05286593079709673,
+            "resource": 0.44365150162025185,
+            "floor": 0.12109375,
+            "harvest": 0.41796875,
+            "energy_weight_mean": -0.06726324427049334
+          },
+          "energy_clipped_online": {
+            "energy": 0.05252420079888956,
+            "resource": 0.4423335970373405,
+            "floor": 0.12890625,
+            "harvest": 0.41015625,
+            "energy_weight_mean": -0.07354242380786047
+          },
+          "fixed50": {
+            "energy": 0.04505425283016216,
+            "resource": 0.4841347719976226,
+            "floor": 0.2109375,
+            "harvest": 0.3046875,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.02904439345589717,
+            "resource": 0.4667192152221179,
+            "floor": 0.16796875,
+            "harvest": 0.421875,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0014966485530817219,
+        "resource_raw_online": -0.0011031936381847754,
+        "energy_raw_frozen": -0.0009996947517123941,
+        "energy_clipped_online": -0.0010534154679801811,
+        "fixed50": -5.594707055624161e-06,
+        "energy_rescue_rule": -3.3638470796584794e-05
+      }
+    },
+    {
+      "seed": 16005,
+      "regime": "mild",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.04566803777223537,
+            "resource": 0.4491274883023521,
+            "floor": 0.1328125,
+            "harvest": 0.37109375,
+            "energy_weight_mean": -0.11948650163050073
+          },
+          "resource_raw_online": {
+            "energy": 0.052858119017579544,
+            "resource": 0.4581893759364036,
+            "floor": 0.12109375,
+            "harvest": 0.35546875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.04951535694382807,
+            "resource": 0.45672804176590875,
+            "floor": 0.1171875,
+            "harvest": 0.3515625,
+            "energy_weight_mean": -0.0714449619809592
+          },
+          "energy_clipped_online": {
+            "energy": 0.052593541157297544,
+            "resource": 0.45585678857979406,
+            "floor": 0.1015625,
+            "harvest": 0.35546875,
+            "energy_weight_mean": -0.05732621722026872
+          },
+          "fixed50": {
+            "energy": 0.6322032648724851,
+            "resource": 0.4795055154378782,
+            "floor": 0.0,
+            "harvest": 0.375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6322032648724851,
+            "resource": 0.4795055154378782,
+            "floor": 0.0,
+            "harvest": 0.375,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.03253072360843757,
+            "resource": 0.42538472088087453,
+            "floor": 0.234375,
+            "harvest": 0.44921875,
+            "energy_weight_mean": -0.1876280043463796
+          },
+          "resource_raw_online": {
+            "energy": 0.035309136280775644,
+            "resource": 0.440437435124739,
+            "floor": 0.19921875,
+            "harvest": 0.38671875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.03541064457229594,
+            "resource": 0.44141554702143715,
+            "floor": 0.203125,
+            "harvest": 0.37890625,
+            "energy_weight_mean": -0.0714449619809592
+          },
+          "energy_clipped_online": {
+            "energy": 0.03510006975032545,
+            "resource": 0.440479203211234,
+            "floor": 0.19921875,
+            "harvest": 0.3828125,
+            "energy_weight_mean": -0.06165350397155738
+          },
+          "fixed50": {
+            "energy": 0.01876918194164219,
+            "resource": 0.47907496751927015,
+            "floor": 0.40625,
+            "harvest": 0.27734375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.017926388966264147,
+            "resource": 0.4623899667014373,
+            "floor": 0.3203125,
+            "harvest": 0.3125,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.039495746656899124,
+            "resource": 0.4302034880814775,
+            "floor": 0.18359375,
+            "harvest": 0.41015625,
+            "energy_weight_mean": -0.24944431009205661
+          },
+          "resource_raw_online": {
+            "energy": 0.048955645248471395,
+            "resource": 0.44641026558756264,
+            "floor": 0.140625,
+            "harvest": 0.39453125,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05107731488906975,
+            "resource": 0.45058379346497657,
+            "floor": 0.1328125,
+            "harvest": 0.38671875,
+            "energy_weight_mean": -0.0714449619809592
+          },
+          "energy_clipped_online": {
+            "energy": 0.049397444511303096,
+            "resource": 0.44990892959853346,
+            "floor": 0.1484375,
+            "harvest": 0.38671875,
+            "energy_weight_mean": -0.08001145876417085
+          },
+          "fixed50": {
+            "energy": 0.04519244468348796,
+            "resource": 0.4844432144642495,
+            "floor": 0.16796875,
+            "harvest": 0.3515625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.027736078825810397,
+            "resource": 0.46859539381205684,
+            "floor": 0.25,
+            "harvest": 0.41015625,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0015595153314547222,
+        "resource_raw_online": -0.001180094804647425,
+        "energy_raw_frozen": -0.001084675557965426,
+        "energy_clipped_online": -0.0011382801971185662,
+        "fixed50": 2.2780215168553085e-05,
+        "energy_rescue_rule": -5.0387483346735226e-05
+      }
+    },
+    {
+      "seed": 16006,
+      "regime": "mild",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.05012381672276947,
+            "resource": 0.4401164789271722,
+            "floor": 0.07421875,
+            "harvest": 0.3828125,
+            "energy_weight_mean": -0.11939412125589907
+          },
+          "resource_raw_online": {
+            "energy": 0.05726190839931231,
+            "resource": 0.4466464615064949,
+            "floor": 0.06640625,
+            "harvest": 0.38671875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.0543080027153455,
+            "resource": 0.4456568049320563,
+            "floor": 0.078125,
+            "harvest": 0.38671875,
+            "energy_weight_mean": -0.07151071245848203
+          },
+          "energy_clipped_online": {
+            "energy": 0.055810969189798415,
+            "resource": 0.4465587353933073,
+            "floor": 0.08203125,
+            "harvest": 0.390625,
+            "energy_weight_mean": -0.05421709479011462
+          },
+          "fixed50": {
+            "energy": 0.6297141909462393,
+            "resource": 0.48233032726333375,
+            "floor": 0.0,
+            "harvest": 0.34375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6297141909462393,
+            "resource": 0.48233032726333375,
+            "floor": 0.0,
+            "harvest": 0.34375,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.02772343161624427,
+            "resource": 0.42564225619801255,
+            "floor": 0.31640625,
+            "harvest": 0.40625,
+            "energy_weight_mean": -0.18238058080822855
+          },
+          "resource_raw_online": {
+            "energy": 0.03169750762768163,
+            "resource": 0.437767221270165,
+            "floor": 0.28515625,
+            "harvest": 0.3828125,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.03198810374389224,
+            "resource": 0.43981027433177877,
+            "floor": 0.2734375,
+            "harvest": 0.39453125,
+            "energy_weight_mean": -0.07151071245848203
+          },
+          "energy_clipped_online": {
+            "energy": 0.031761994821564776,
+            "resource": 0.43957751507937115,
+            "floor": 0.2734375,
+            "harvest": 0.3828125,
+            "energy_weight_mean": -0.055999218013100566
+          },
+          "fixed50": {
+            "energy": 0.020890024234021393,
+            "resource": 0.4758427837093848,
+            "floor": 0.35546875,
+            "harvest": 0.32421875,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.018061934367561865,
+            "resource": 0.46237122680572873,
+            "floor": 0.34375,
+            "harvest": 0.3359375,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.04012039067446435,
+            "resource": 0.42789372981926854,
+            "floor": 0.16796875,
+            "harvest": 0.44140625,
+            "energy_weight_mean": -0.2449260772878851
+          },
+          "resource_raw_online": {
+            "energy": 0.05079786595913518,
+            "resource": 0.44377873010349755,
+            "floor": 0.12109375,
+            "harvest": 0.4296875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05470959031920852,
+            "resource": 0.4459851375826181,
+            "floor": 0.10546875,
+            "harvest": 0.43359375,
+            "energy_weight_mean": -0.07151071245848203
+          },
+          "energy_clipped_online": {
+            "energy": 0.05255798751133578,
+            "resource": 0.4463281393456795,
+            "floor": 0.11328125,
+            "harvest": 0.42578125,
+            "energy_weight_mean": -0.07437957124313649
+          },
+          "fixed50": {
+            "energy": 0.044409086917600676,
+            "resource": 0.4857075520103412,
+            "floor": 0.19921875,
+            "harvest": 0.30859375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.02758923408597818,
+            "resource": 0.46899014649146387,
+            "floor": 0.21484375,
+            "harvest": 0.3359375,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0015197219496144827,
+        "resource_raw_online": -0.0011309781227912701,
+        "energy_raw_frozen": -0.0009993511694844019,
+        "energy_clipped_online": -0.0010632295254490484,
+        "fixed50": -3.645392360210652e-06,
+        "energy_rescue_rule": -7.072205887772802e-05
+      }
+    },
+    {
+      "seed": 16007,
+      "regime": "mild",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.04483408378107384,
+            "resource": 0.4461578488212705,
+            "floor": 0.1328125,
+            "harvest": 0.37890625,
+            "energy_weight_mean": -0.11895935831308584
+          },
+          "resource_raw_online": {
+            "energy": 0.052427487448905116,
+            "resource": 0.45318802156401666,
+            "floor": 0.125,
+            "harvest": 0.37890625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.04967330576351674,
+            "resource": 0.45243869010632076,
+            "floor": 0.14453125,
+            "harvest": 0.375,
+            "energy_weight_mean": -0.07013374241582104
+          },
+          "energy_clipped_online": {
+            "energy": 0.05182743453881769,
+            "resource": 0.45099369784730103,
+            "floor": 0.12109375,
+            "harvest": 0.375,
+            "energy_weight_mean": -0.05579126821667173
+          },
+          "fixed50": {
+            "energy": 0.6379010567524919,
+            "resource": 0.4808094482099769,
+            "floor": 0.0,
+            "harvest": 0.38671875,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6379010567524919,
+            "resource": 0.4808094482099769,
+            "floor": 0.0,
+            "harvest": 0.38671875,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.02936100902562848,
+            "resource": 0.41828600200409194,
+            "floor": 0.26953125,
+            "harvest": 0.45703125,
+            "energy_weight_mean": -0.18371634870141723
+          },
+          "resource_raw_online": {
+            "energy": 0.03485125826175721,
+            "resource": 0.4307627054968963,
+            "floor": 0.23046875,
+            "harvest": 0.4296875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.03568397620553572,
+            "resource": 0.4319001632320732,
+            "floor": 0.23046875,
+            "harvest": 0.4296875,
+            "energy_weight_mean": -0.07013374241582104
+          },
+          "energy_clipped_online": {
+            "energy": 0.0353466414034363,
+            "resource": 0.4319117890772245,
+            "floor": 0.21875,
+            "harvest": 0.4375,
+            "energy_weight_mean": -0.058016059753070406
+          },
+          "fixed50": {
+            "energy": 0.021865761885592992,
+            "resource": 0.47346312657969614,
+            "floor": 0.30078125,
+            "harvest": 0.32421875,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.018867095578077954,
+            "resource": 0.46116291991043756,
+            "floor": 0.3359375,
+            "harvest": 0.3671875,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.03854720696957012,
+            "resource": 0.4315091983113608,
+            "floor": 0.21484375,
+            "harvest": 0.43359375,
+            "energy_weight_mean": -0.24553973169004428
+          },
+          "resource_raw_online": {
+            "energy": 0.048532970720454094,
+            "resource": 0.4456120337497791,
+            "floor": 0.15234375,
+            "harvest": 0.40234375,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05050566674625346,
+            "resource": 0.4520218967936017,
+            "floor": 0.1484375,
+            "harvest": 0.3828125,
+            "energy_weight_mean": -0.07013374241582104
+          },
+          "energy_clipped_online": {
+            "energy": 0.04874960135251999,
+            "resource": 0.44982555145735326,
+            "floor": 0.16015625,
+            "harvest": 0.390625,
+            "energy_weight_mean": -0.07559640335808546
+          },
+          "fixed50": {
+            "energy": 0.04061460177174233,
+            "resource": 0.4901945161156259,
+            "floor": 0.26953125,
+            "harvest": 0.23828125,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.024284884874159085,
+            "resource": 0.47388449312403574,
+            "floor": 0.3046875,
+            "harvest": 0.2734375,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0015926929571592544,
+        "resource_raw_online": -0.0011607005014666702,
+        "energy_raw_frozen": -0.0010800186022764278,
+        "energy_clipped_online": -0.0011332380693301657,
+        "fixed50": -5.016578267426727e-05,
+        "energy_rescue_rule": -0.00012513915861824345
+      }
+    },
+    {
+      "seed": 16008,
+      "regime": "mild",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.04939137823034427,
+            "resource": 0.4424241729834608,
+            "floor": 0.14453125,
+            "harvest": 0.44140625,
+            "energy_weight_mean": -0.12050205309346688
+          },
+          "resource_raw_online": {
+            "energy": 0.055325713027599865,
+            "resource": 0.4516590715347569,
+            "floor": 0.12890625,
+            "harvest": 0.4296875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.053823268034797096,
+            "resource": 0.4500984671849301,
+            "floor": 0.125,
+            "harvest": 0.4375,
+            "energy_weight_mean": -0.06982091230194579
+          },
+          "energy_clipped_online": {
+            "energy": 0.05474679406086008,
+            "resource": 0.44922021819936864,
+            "floor": 0.125,
+            "harvest": 0.4296875,
+            "energy_weight_mean": -0.056930659919901996
+          },
+          "fixed50": {
+            "energy": 0.6138456785386441,
+            "resource": 0.4825310451749546,
+            "floor": 0.0,
+            "harvest": 0.35546875,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6138456785386441,
+            "resource": 0.4825310451749546,
+            "floor": 0.0,
+            "harvest": 0.35546875,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.02804696230774811,
+            "resource": 0.42799912315101796,
+            "floor": 0.328125,
+            "harvest": 0.40234375,
+            "energy_weight_mean": -0.18792383814126917
+          },
+          "resource_raw_online": {
+            "energy": 0.03167009685509468,
+            "resource": 0.4414600616482033,
+            "floor": 0.26171875,
+            "harvest": 0.37890625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.03185774888976681,
+            "resource": 0.4415160081448212,
+            "floor": 0.26953125,
+            "harvest": 0.37890625,
+            "energy_weight_mean": -0.06982091230194579
+          },
+          "energy_clipped_online": {
+            "energy": 0.031681398862830355,
+            "resource": 0.4413044429121872,
+            "floor": 0.28125,
+            "harvest": 0.37890625,
+            "energy_weight_mean": -0.05981402498785481
+          },
+          "fixed50": {
+            "energy": 0.018388115095606367,
+            "resource": 0.47895043972280843,
+            "floor": 0.43359375,
+            "harvest": 0.28515625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.018825426649997437,
+            "resource": 0.46108111261977236,
+            "floor": 0.3125,
+            "harvest": 0.34765625,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.04111328976609438,
+            "resource": 0.4302863935856983,
+            "floor": 0.16796875,
+            "harvest": 0.4609375,
+            "energy_weight_mean": -0.24719722448421286
+          },
+          "resource_raw_online": {
+            "energy": 0.051818012127608774,
+            "resource": 0.4435120567349895,
+            "floor": 0.12890625,
+            "harvest": 0.44921875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05398437869708905,
+            "resource": 0.4486087311751855,
+            "floor": 0.1328125,
+            "harvest": 0.43359375,
+            "energy_weight_mean": -0.06982091230194579
+          },
+          "energy_clipped_online": {
+            "energy": 0.054234793399195194,
+            "resource": 0.4457916653576724,
+            "floor": 0.1171875,
+            "harvest": 0.4375,
+            "energy_weight_mean": -0.07464279344866809
+          },
+          "fixed50": {
+            "energy": 0.04500927841462182,
+            "resource": 0.4829299049374898,
+            "floor": 0.1875,
+            "harvest": 0.37109375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.02671530352175631,
+            "resource": 0.47009730146673384,
+            "floor": 0.27734375,
+            "harvest": 0.328125,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0015809605350350841,
+        "resource_raw_online": -0.0011570182471390088,
+        "energy_raw_frozen": -0.0010679610256162015,
+        "energy_clipped_online": -0.0010997779120768322,
+        "fixed50": 3.75738868423999e-05,
+        "energy_rescue_rule": -9.695713749525147e-05
+      }
+    },
+    {
+      "seed": 16009,
+      "regime": "mild",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.05372257891353546,
+            "resource": 0.43542439387045345,
+            "floor": 0.1171875,
+            "harvest": 0.4375,
+            "energy_weight_mean": -0.11919090010417445
+          },
+          "resource_raw_online": {
+            "energy": 0.061176966994084814,
+            "resource": 0.44172688436115637,
+            "floor": 0.0859375,
+            "harvest": 0.42578125,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05912380088693561,
+            "resource": 0.440110334550766,
+            "floor": 0.08203125,
+            "harvest": 0.43359375,
+            "energy_weight_mean": -0.06857948435819315
+          },
+          "energy_clipped_online": {
+            "energy": 0.06028297066506509,
+            "resource": 0.4420863631439684,
+            "floor": 0.09375,
+            "harvest": 0.41796875,
+            "energy_weight_mean": -0.05348921323736753
+          },
+          "fixed50": {
+            "energy": 0.6093104082255947,
+            "resource": 0.4858677863188545,
+            "floor": 0.0,
+            "harvest": 0.31640625,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6093104082255947,
+            "resource": 0.4858677863188545,
+            "floor": 0.0,
+            "harvest": 0.31640625,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.02734997501526482,
+            "resource": 0.42946384150218164,
+            "floor": 0.359375,
+            "harvest": 0.3828125,
+            "energy_weight_mean": -0.1831751098059272
+          },
+          "resource_raw_online": {
+            "energy": 0.032993890597775424,
+            "resource": 0.44200101456322527,
+            "floor": 0.27734375,
+            "harvest": 0.375,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.032651559529672275,
+            "resource": 0.4432094744439383,
+            "floor": 0.27734375,
+            "harvest": 0.36328125,
+            "energy_weight_mean": -0.06857948435819315
+          },
+          "energy_clipped_online": {
+            "energy": 0.03234868097197417,
+            "resource": 0.4438987657810215,
+            "floor": 0.2890625,
+            "harvest": 0.35546875,
+            "energy_weight_mean": -0.05678809884715874
+          },
+          "fixed50": {
+            "energy": 0.01995473509792385,
+            "resource": 0.4773436435257484,
+            "floor": 0.38671875,
+            "harvest": 0.30859375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.01935937178073191,
+            "resource": 0.4602278120353943,
+            "floor": 0.30078125,
+            "harvest": 0.36328125,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.043064554996632726,
+            "resource": 0.4267137591894682,
+            "floor": 0.11328125,
+            "harvest": 0.48046875,
+            "energy_weight_mean": -0.24141435916552215
+          },
+          "resource_raw_online": {
+            "energy": 0.0518406993049567,
+            "resource": 0.44235378801716374,
+            "floor": 0.109375,
+            "harvest": 0.4453125,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05484076265812385,
+            "resource": 0.44632449019941284,
+            "floor": 0.10546875,
+            "harvest": 0.44921875,
+            "energy_weight_mean": -0.06857948435819315
+          },
+          "energy_clipped_online": {
+            "energy": 0.05400542502467698,
+            "resource": 0.4447815766871146,
+            "floor": 0.08984375,
+            "harvest": 0.43359375,
+            "energy_weight_mean": -0.07137887390196287
+          },
+          "fixed50": {
+            "energy": 0.04456445352777153,
+            "resource": 0.4839197162143571,
+            "floor": 0.1796875,
+            "harvest": 0.34375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.025417148458431033,
+            "resource": 0.47208681995067653,
+            "floor": 0.24609375,
+            "harvest": 0.3203125,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0015728948607242172,
+        "resource_raw_online": -0.0011832458025921447,
+        "energy_raw_frozen": -0.0010628698732929487,
+        "energy_clipped_online": -0.00112287980885414,
+        "fixed50": 2.1954415479833833e-05,
+        "energy_rescue_rule": -8.202587606502967e-05
+      }
+    },
+    {
+      "seed": 16010,
+      "regime": "mild",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.04631475986473159,
+            "resource": 0.4468332692637046,
+            "floor": 0.18359375,
+            "harvest": 0.38671875,
+            "energy_weight_mean": -0.11807942389085754
+          },
+          "resource_raw_online": {
+            "energy": 0.05254205602317365,
+            "resource": 0.455038263762009,
+            "floor": 0.15234375,
+            "harvest": 0.3671875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05048481871918032,
+            "resource": 0.4550478935280148,
+            "floor": 0.1484375,
+            "harvest": 0.359375,
+            "energy_weight_mean": -0.06647294631253099
+          },
+          "energy_clipped_online": {
+            "energy": 0.05172299503233816,
+            "resource": 0.4552761839291861,
+            "floor": 0.15234375,
+            "harvest": 0.35546875,
+            "energy_weight_mean": -0.05300142553367402
+          },
+          "fixed50": {
+            "energy": 0.62502558323586,
+            "resource": 0.4818221862154902,
+            "floor": 0.0,
+            "harvest": 0.359375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.62502558323586,
+            "resource": 0.4818221862154902,
+            "floor": 0.0,
+            "harvest": 0.359375,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.027408405022141345,
+            "resource": 0.4254774819428323,
+            "floor": 0.2890625,
+            "harvest": 0.40234375,
+            "energy_weight_mean": -0.1869359131025436
+          },
+          "resource_raw_online": {
+            "energy": 0.031374796359382395,
+            "resource": 0.4374313216658151,
+            "floor": 0.22265625,
+            "harvest": 0.390625,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.032253666686122215,
+            "resource": 0.43911504135856166,
+            "floor": 0.22265625,
+            "harvest": 0.38671875,
+            "energy_weight_mean": -0.06647294631253099
+          },
+          "energy_clipped_online": {
+            "energy": 0.03339333831690165,
+            "resource": 0.43893605990051,
+            "floor": 0.2109375,
+            "harvest": 0.40234375,
+            "energy_weight_mean": -0.055010977395152136
+          },
+          "fixed50": {
+            "energy": 0.019476364424377342,
+            "resource": 0.4771126142693303,
+            "floor": 0.3984375,
+            "harvest": 0.30859375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.017787075376531077,
+            "resource": 0.46262250874819477,
+            "floor": 0.32421875,
+            "harvest": 0.30859375,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.04080830770634246,
+            "resource": 0.424419846235721,
+            "floor": 0.140625,
+            "harvest": 0.4765625,
+            "energy_weight_mean": -0.24581797289518464
+          },
+          "resource_raw_online": {
+            "energy": 0.0510580309448088,
+            "resource": 0.43937495469610865,
+            "floor": 0.078125,
+            "harvest": 0.44921875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.05372736026130419,
+            "resource": 0.4440235471524008,
+            "floor": 0.0703125,
+            "harvest": 0.43359375,
+            "energy_weight_mean": -0.06647294631253099
+          },
+          "energy_clipped_online": {
+            "energy": 0.052583942885145195,
+            "resource": 0.442206154247574,
+            "floor": 0.078125,
+            "harvest": 0.4453125,
+            "energy_weight_mean": -0.07157963976375237
+          },
+          "fixed50": {
+            "energy": 0.04412693526678022,
+            "resource": 0.483943373034875,
+            "floor": 0.20703125,
+            "harvest": 0.34375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.027334377263677476,
+            "resource": 0.4692197717596868,
+            "floor": 0.23046875,
+            "harvest": 0.3515625,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0016331138472398985,
+        "resource_raw_online": -0.0012010405278260687,
+        "energy_raw_frozen": -0.0010766072389799943,
+        "energy_clipped_online": -0.0011361960677116801,
+        "fixed50": 1.9912061025533007e-05,
+        "energy_rescue_rule": -6.69572692853393e-05
+      }
+    },
+    {
+      "seed": 16011,
+      "regime": "mild",
+      "checkpoints": {
+        "1000": {
+          "energy_raw_online": {
+            "energy": 0.04799172875267965,
+            "resource": 0.4383537315915277,
+            "floor": 0.12890625,
+            "harvest": 0.41796875,
+            "energy_weight_mean": -0.12128880544910073
+          },
+          "resource_raw_online": {
+            "energy": 0.056750361672753144,
+            "resource": 0.4452548245200264,
+            "floor": 0.08984375,
+            "harvest": 0.4296875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.054410614707839346,
+            "resource": 0.44319241574813684,
+            "floor": 0.1015625,
+            "harvest": 0.42578125,
+            "energy_weight_mean": -0.07148306947731788
+          },
+          "energy_clipped_online": {
+            "energy": 0.054986867652764046,
+            "resource": 0.4444368906039825,
+            "floor": 0.08984375,
+            "harvest": 0.42578125,
+            "energy_weight_mean": -0.05676816234981984
+          },
+          "fixed50": {
+            "energy": 0.6241390548444566,
+            "resource": 0.4789138978031198,
+            "floor": 0.0,
+            "harvest": 0.421875,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.6241390548444566,
+            "resource": 0.4789138978031198,
+            "floor": 0.0,
+            "harvest": 0.421875,
+            "energy_weight_mean": null
+          }
+        },
+        "2000": {
+          "energy_raw_online": {
+            "energy": 0.028949547682159467,
+            "resource": 0.42067629596613565,
+            "floor": 0.28125,
+            "harvest": 0.3984375,
+            "energy_weight_mean": -0.18776290203713258
+          },
+          "resource_raw_online": {
+            "energy": 0.033855578521099036,
+            "resource": 0.4336019570409841,
+            "floor": 0.234375,
+            "harvest": 0.36328125,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.03425390310702326,
+            "resource": 0.4355207667289447,
+            "floor": 0.2421875,
+            "harvest": 0.375,
+            "energy_weight_mean": -0.07148306947731788
+          },
+          "energy_clipped_online": {
+            "energy": 0.03405912979937488,
+            "resource": 0.4344934026492394,
+            "floor": 0.23828125,
+            "harvest": 0.36328125,
+            "energy_weight_mean": -0.05961438374670777
+          },
+          "fixed50": {
+            "energy": 0.019584972169288846,
+            "resource": 0.4773014998891574,
+            "floor": 0.37890625,
+            "harvest": 0.296875,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.019081431162002317,
+            "resource": 0.46080158290298556,
+            "floor": 0.328125,
+            "harvest": 0.37109375,
+            "energy_weight_mean": null
+          }
+        },
+        "3000": {
+          "energy_raw_online": {
+            "energy": 0.04008288950640207,
+            "resource": 0.4302800169092538,
+            "floor": 0.16015625,
+            "harvest": 0.43359375,
+            "energy_weight_mean": -0.2471689023141103
+          },
+          "resource_raw_online": {
+            "energy": 0.05132758605645815,
+            "resource": 0.44455513892635545,
+            "floor": 0.11328125,
+            "harvest": 0.421875,
+            "energy_weight_mean": 0.0
+          },
+          "energy_raw_frozen": {
+            "energy": 0.053272606890649506,
+            "resource": 0.4480324422106139,
+            "floor": 0.10546875,
+            "harvest": 0.4140625,
+            "energy_weight_mean": -0.07148306947731788
+          },
+          "energy_clipped_online": {
+            "energy": 0.05149520648808915,
+            "resource": 0.44668809306229945,
+            "floor": 0.12109375,
+            "harvest": 0.41796875,
+            "energy_weight_mean": -0.07544927845700453
+          },
+          "fixed50": {
+            "energy": 0.04457634400823775,
+            "resource": 0.484807240901217,
+            "floor": 0.21484375,
+            "harvest": 0.3359375,
+            "energy_weight_mean": null
+          },
+          "energy_rescue_rule": {
+            "energy": 0.02638152173123067,
+            "resource": 0.47065317500056614,
+            "floor": 0.2890625,
+            "harvest": 0.36328125,
+            "energy_weight_mean": null
+          }
+        }
+      },
+      "final_raw_drift_last100": {
+        "energy_raw_online": -0.0016578607893885564,
+        "resource_raw_online": -0.0012263740819677639,
+        "energy_raw_frozen": -0.0011182009879811686,
+        "energy_clipped_online": -0.0011792216910268558,
+        "fixed50": 1.449926899743651e-05,
+        "energy_rescue_rule": -9.110532704773539e-05
+      }
+    }
+  ]
+}
