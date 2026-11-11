@@ -1,0 +1,82 @@
+{
+  "status": "completed",
+  "purpose": "coupled resource-energy budget identity",
+  "formula": "raw=(.25/.18)*(alpha*(1-r_before)-delta_resource)-.063*p-.022",
+  "conditional_stationary_bound": "if delta_resource\u22480, raw\u2264(.25/.18)*alpha*(1-r_before)-.022 (since p\u22650)",
+  "rows": [
+    {
+      "cohort": "online",
+      "phase": "stable_early",
+      "mean_harvest_rate": 0.4073836336336336,
+      "mean_resource_before": 0.4440672846500506,
+      "mean_resource_delta": -0.00011992927221937533,
+      "raw_observed": -0.0011708742061184428,
+      "raw_eliminated_action_predicted": -0.0011708742061184475,
+      "residual": 4.7704895589362195e-18,
+      "capacity_upper_bound_if_resource_stationary": 0.024327726279162444,
+      "stationary_viability_would_require_raw_cost_frequency_not_exceed_capacity": false
+    },
+    {
+      "cohort": "online",
+      "phase": "scarcity",
+      "mean_harvest_rate": 0.40705125,
+      "mean_resource_before": 0.42359276793682327,
+      "mean_resource_delta": -1.1401852511730419e-05,
+      "raw_observed": -0.0035972848389076995,
+      "raw_eliminated_action_predicted": -0.0035972848389077064,
+      "residual": 6.938893903907228e-18,
+      "capacity_upper_bound_if_resource_stationary": 0.022031108004826,
+      "stationary_viability_would_require_raw_cost_frequency_not_exceed_capacity": false
+    },
+    {
+      "cohort": "online",
+      "phase": "recovery",
+      "mean_harvest_rate": 0.43480519480519486,
+      "mean_resource_before": 0.4276451051661585,
+      "mean_resource_delta": 5.961060093115431e-07,
+      "raw_observed": -0.0016973139615867458,
+      "raw_eliminated_action_predicted": -0.0016973139615867536,
+      "residual": 7.806255641895632e-18,
+      "capacity_upper_bound_if_resource_stationary": 0.02569624123615346,
+      "stationary_viability_would_require_raw_cost_frequency_not_exceed_capacity": false
+    },
+    {
+      "cohort": "frozen",
+      "phase": "stable_early",
+      "mean_harvest_rate": 0.3949386886886887,
+      "mean_resource_before": 0.45052870126169436,
+      "mean_resource_delta": -0.00010728619609551625,
+      "raw_observed": -0.0009428538868403635,
+      "raw_eliminated_action_predicted": -0.000942853886840362,
+      "residual": -1.5178830414797062e-18,
+      "capacity_upper_bound_if_resource_stationary": 0.023789274894858804,
+      "stationary_viability_would_require_raw_cost_frequency_not_exceed_capacity": false
+    },
+    {
+      "cohort": "frozen",
+      "phase": "scarcity",
+      "mean_harvest_rate": 0.378555,
+      "mean_resource_before": 0.43910575189234846,
+      "mean_resource_delta": -8.029960103336385e-06,
+      "raw_observed": -0.002991723880521979,
+      "raw_eliminated_action_predicted": -0.0029917238805219834,
+      "residual": 4.336808689942018e-18,
+      "capacity_upper_bound_if_resource_stationary": 0.020846088397112265,
+      "stationary_viability_would_require_raw_cost_frequency_not_exceed_capacity": false
+    },
+    {
+      "cohort": "frozen",
+      "phase": "recovery",
+      "mean_harvest_rate": 0.39984390609390613,
+      "mean_resource_before": 0.44711296364874775,
+      "mean_resource_delta": 7.904000900637794e-06,
+      "raw_observed": -0.0011272241670070566,
+      "raw_eliminated_action_predicted": -0.0011272241670070605,
+      "residual": 3.903127820947816e-18,
+      "capacity_upper_bound_if_resource_stationary": 0.02407391969593769,
+      "stationary_viability_would_require_raw_cost_frequency_not_exceed_capacity": false
+    }
+  ],
+  "max_abs_residual": 7.806255641895632e-18,
+  "caveat": "Stationary viability requires phase stationarity, non-clipped resource dynamics and this synthetic model; an upper bound does not guarantee stable viability."
+}
