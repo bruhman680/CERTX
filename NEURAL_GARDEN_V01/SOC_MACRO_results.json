@@ -1,0 +1,489 @@
+{
+  "study": "Neural Garden local eight-state coarse-graining, 13 adaptive research loops",
+  "limitations": [
+    "The greedy merge path is selected on training data; test observations are held out by seed.",
+    "The 13 steps are distinct changes in representation or memory burden, not new natural discoveries.",
+    "Binary categories deliberately erase continuous resources and energy and all neighbor and neural hidden-state information.",
+    "Temporal observations from the same cell and run are dependent; seeds, not cells, are independent runs.",
+    "Target remains the original eight-state micro category, preventing trivial target coarsening.",
+    "Within-fibre TV defect measures coarse next-label inconsistency; test NLL measures next microstate predictive retention."
+  ],
+  "world": {
+    "size": 10,
+    "ticks": 420,
+    "r_cut": 0.48,
+    "e_cut": 0.12,
+    "train_seeds": [
+      4100,
+      4101,
+      4102,
+      4103,
+      4104,
+      4105,
+      4106,
+      4107
+    ],
+    "test_seeds": [
+      5100,
+      5101,
+      5102,
+      5103,
+      5104,
+      5105,
+      5106,
+      5107
+    ],
+    "learning": true,
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "garden_source_sha256": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1",
+    "script_sha256": "1ba258254a9171c14d9f6ecfba5b7b44c5ffdc59b3b6b044a39a60fe46381a7c"
+  },
+  "loops": [
+    {
+      "loop": 1,
+      "orientation": "Establish full eight-category one-step reference",
+      "partition": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "macro_count": 8,
+      "memory_lags": 0,
+      "metrics": {
+        "test_micro_nll": 0.7919817257419138,
+        "target_entropy_nats": 1.4387509438423352,
+        "micro_information_nats": 0.6467692181004213,
+        "train_obs": 336000,
+        "test_obs": 336000,
+        "parameter_rows": 8
+      },
+      "defect": {
+        "weighted_tv_defect": 0.0,
+        "max_tv_defect": 0.0,
+        "active_member_pairs": 0,
+        "supported_microstates": 8
+      },
+      "next_pressure": "Measure how much information a first merge erases; target remains eight micro categories."
+    },
+    {
+      "loop": 2,
+      "orientation": "Merge one current-category fibre: 8 to 7 labels, based on training loss",
+      "partition": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        4,
+        5,
+        6
+      ],
+      "macro_count": 7,
+      "memory_lags": 0,
+      "metrics": {
+        "test_micro_nll": 0.7919746959224649,
+        "target_entropy_nats": 1.4387509438423352,
+        "micro_information_nats": 0.6467762479198702,
+        "train_obs": 336000,
+        "test_obs": 336000,
+        "parameter_rows": 7
+      },
+      "defect": {
+        "weighted_tv_defect": 0.019071769770596228,
+        "max_tv_defect": 0.019071769770596228,
+        "active_member_pairs": 1,
+        "supported_microstates": 8
+      },
+      "next_pressure": "Assess heldout micro prediction and within-fibre macro transition defect before next merge.",
+      "selection_basis": {
+        "merged_training_labels": [
+          4,
+          5
+        ],
+        "train_nll": 0.7928426761097769
+      }
+    },
+    {
+      "loop": 3,
+      "orientation": "Merge one current-category fibre: 7 to 6 labels, based on training loss",
+      "partition": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        4,
+        5,
+        5
+      ],
+      "macro_count": 6,
+      "memory_lags": 0,
+      "metrics": {
+        "test_micro_nll": 0.7919791322111444,
+        "target_entropy_nats": 1.4387509438423352,
+        "micro_information_nats": 0.6467718116311908,
+        "train_obs": 336000,
+        "test_obs": 336000,
+        "parameter_rows": 6
+      },
+      "defect": {
+        "weighted_tv_defect": 0.010064029718601543,
+        "max_tv_defect": 0.019071769770596228,
+        "active_member_pairs": 2,
+        "supported_microstates": 8
+      },
+      "next_pressure": "Assess heldout micro prediction and within-fibre macro transition defect before next merge.",
+      "selection_basis": {
+        "merged_training_labels": [
+          5,
+          6
+        ],
+        "train_nll": 0.7928489805451391
+      }
+    },
+    {
+      "loop": 4,
+      "orientation": "Merge one current-category fibre: 6 to 5 labels, based on training loss",
+      "partition": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4
+      ],
+      "macro_count": 5,
+      "memory_lags": 0,
+      "metrics": {
+        "test_micro_nll": 0.7963103593904234,
+        "target_entropy_nats": 1.4387509438423352,
+        "micro_information_nats": 0.6424405844519118,
+        "train_obs": 336000,
+        "test_obs": 336000,
+        "parameter_rows": 5
+      },
+      "defect": {
+        "weighted_tv_defect": 0.06371575269106593,
+        "max_tv_defect": 0.06506780857031663,
+        "active_member_pairs": 3,
+        "supported_microstates": 8
+      },
+      "next_pressure": "Assess heldout micro prediction and within-fibre macro transition defect before next merge.",
+      "selection_basis": {
+        "merged_training_labels": [
+          2,
+          3
+        ],
+        "train_nll": 0.7973740691585682
+      }
+    },
+    {
+      "loop": 5,
+      "orientation": "Merge one current-category fibre: 5 to 4 labels, based on training loss",
+      "partition": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "macro_count": 4,
+      "memory_lags": 0,
+      "metrics": {
+        "test_micro_nll": 0.8032187083219017,
+        "target_entropy_nats": 1.4387509438423352,
+        "micro_information_nats": 0.6355322355204335,
+        "train_obs": 336000,
+        "test_obs": 336000,
+        "parameter_rows": 4
+      },
+      "defect": {
+        "weighted_tv_defect": 0.0441422805080088,
+        "max_tv_defect": 0.06506780857031663,
+        "active_member_pairs": 4,
+        "supported_microstates": 8
+      },
+      "next_pressure": "Assess heldout micro prediction and within-fibre macro transition defect before next merge.",
+      "selection_basis": {
+        "merged_training_labels": [
+          0,
+          1
+        ],
+        "train_nll": 0.8043352448354001
+      }
+    },
+    {
+      "loop": 6,
+      "orientation": "Merge one current-category fibre: 4 to 3 labels, based on training loss",
+      "partition": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2
+      ],
+      "macro_count": 3,
+      "memory_lags": 0,
+      "metrics": {
+        "test_micro_nll": 0.8267685833520961,
+        "target_entropy_nats": 1.4387509438423352,
+        "micro_information_nats": 0.611982360490239,
+        "train_obs": 336000,
+        "test_obs": 336000,
+        "parameter_rows": 3
+      },
+      "defect": {
+        "weighted_tv_defect": 0.02316259493351035,
+        "max_tv_defect": 0.06271923048204572,
+        "active_member_pairs": 8,
+        "supported_microstates": 8
+      },
+      "next_pressure": "Assess heldout micro prediction and within-fibre macro transition defect before next merge.",
+      "selection_basis": {
+        "merged_training_labels": [
+          0,
+          2
+        ],
+        "train_nll": 0.8273887503833548
+      }
+    },
+    {
+      "loop": 7,
+      "orientation": "Merge one current-category fibre: 3 to 2 labels, based on training loss",
+      "partition": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "macro_count": 2,
+      "memory_lags": 0,
+      "metrics": {
+        "test_micro_nll": 0.8614015124093681,
+        "target_entropy_nats": 1.4387509438423352,
+        "micro_information_nats": 0.577349431432967,
+        "train_obs": 336000,
+        "test_obs": 336000,
+        "parameter_rows": 2
+      },
+      "defect": {
+        "weighted_tv_defect": 0.006524787858611706,
+        "max_tv_defect": 0.033733443134991645,
+        "active_member_pairs": 12,
+        "supported_microstates": 8
+      },
+      "next_pressure": "Assess heldout micro prediction and within-fibre macro transition defect before next merge.",
+      "selection_basis": {
+        "merged_training_labels": [
+          1,
+          2
+        ],
+        "train_nll": 0.8648019290941638
+      }
+    },
+    {
+      "loop": 8,
+      "orientation": "Test whether 1 previous coarse state(s) repair lost predictive history",
+      "partition": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2
+      ],
+      "macro_count": 3,
+      "memory_lags": 1,
+      "metrics": {
+        "test_micro_nll": 0.8107821200199561,
+        "target_entropy_nats": 1.4334294777368446,
+        "micro_information_nats": 0.6226473577168885,
+        "train_obs": 335200,
+        "test_obs": 335200,
+        "parameter_rows": 9
+      },
+      "defect": {
+        "weighted_tv_defect": 0.02316259493351035,
+        "max_tv_defect": 0.06271923048204572,
+        "active_member_pairs": 8,
+        "supported_microstates": 8
+      },
+      "next_pressure": "Check heldout target micro-NLL relative to history zero, controlling parameter growth."
+    },
+    {
+      "loop": 9,
+      "orientation": "Test whether 2 previous coarse state(s) repair lost predictive history",
+      "partition": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2
+      ],
+      "macro_count": 3,
+      "memory_lags": 2,
+      "metrics": {
+        "test_micro_nll": 0.8027202031672007,
+        "target_entropy_nats": 1.4287072994059502,
+        "micro_information_nats": 0.6259870962387495,
+        "train_obs": 334400,
+        "test_obs": 334400,
+        "parameter_rows": 27
+      },
+      "defect": {
+        "weighted_tv_defect": 0.02316259493351035,
+        "max_tv_defect": 0.06271923048204572,
+        "active_member_pairs": 8,
+        "supported_microstates": 8
+      },
+      "next_pressure": "Check heldout target micro-NLL relative to history zero, controlling parameter growth."
+    },
+    {
+      "loop": 10,
+      "orientation": "Test whether 3 previous coarse state(s) repair lost predictive history",
+      "partition": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2
+      ],
+      "macro_count": 3,
+      "memory_lags": 3,
+      "metrics": {
+        "test_micro_nll": 0.7993853195032452,
+        "target_entropy_nats": 1.4244003412884887,
+        "micro_information_nats": 0.6250150217852435,
+        "train_obs": 333600,
+        "test_obs": 333600,
+        "parameter_rows": 81
+      },
+      "defect": {
+        "weighted_tv_defect": 0.02316259493351035,
+        "max_tv_defect": 0.06271923048204572,
+        "active_member_pairs": 8,
+        "supported_microstates": 8
+      },
+      "next_pressure": "Check heldout target micro-NLL relative to history zero, controlling parameter growth."
+    },
+    {
+      "loop": 11,
+      "orientation": "Compare alternative observable projection: resource alone",
+      "partition": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "macro_count": 2,
+      "memory_lags": 0,
+      "metrics": {
+        "test_micro_nll": 1.371151081423138,
+        "target_entropy_nats": 1.4387509438423352,
+        "micro_information_nats": 0.06759986241919713,
+        "train_obs": 336000,
+        "test_obs": 336000,
+        "parameter_rows": 2
+      },
+      "defect": {
+        "weighted_tv_defect": 0.0388881727513734,
+        "max_tv_defect": 0.16455302413469955,
+        "active_member_pairs": 12,
+        "supported_microstates": 8
+      },
+      "next_pressure": "Compare against learned two-way merge; do not relabel as C_num/C_struct/C_symb."
+    },
+    {
+      "loop": 12,
+      "orientation": "Compare alternative observable projection: energy alone",
+      "partition": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "macro_count": 2,
+      "memory_lags": 0,
+      "metrics": {
+        "test_micro_nll": 0.8614015124093681,
+        "target_entropy_nats": 1.4387509438423352,
+        "micro_information_nats": 0.577349431432967,
+        "train_obs": 336000,
+        "test_obs": 336000,
+        "parameter_rows": 2
+      },
+      "defect": {
+        "weighted_tv_defect": 0.006524787858611706,
+        "max_tv_defect": 0.033733443134991645,
+        "active_member_pairs": 12,
+        "supported_microstates": 8
+      },
+      "next_pressure": "Compare against learned two-way merge; do not relabel as C_num/C_struct/C_symb."
+    },
+    {
+      "loop": 13,
+      "orientation": "Compare alternative observable projection: action alone",
+      "partition": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "macro_count": 2,
+      "memory_lags": 0,
+      "metrics": {
+        "test_micro_nll": 1.4137134955449495,
+        "target_entropy_nats": 1.4387509438423352,
+        "micro_information_nats": 0.025037448297385634,
+        "train_obs": 336000,
+        "test_obs": 336000,
+        "parameter_rows": 2
+      },
+      "defect": {
+        "weighted_tv_defect": 0.05525922814166973,
+        "max_tv_defect": 0.09145005015362725,
+        "active_member_pairs": 12,
+        "supported_microstates": 8
+      },
+      "next_pressure": "Compare against learned two-way merge; do not relabel as C_num/C_struct/C_symb."
+    }
+  ]
+}
