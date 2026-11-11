@@ -1,5 +1,20 @@
 # Neural Garden — experimental record and continuation point
 
+## Latest society continuation (loops 032–069)
+
+Six specialized research societies completed **38 adjudicated conceptual research loops**, supported by many additional iterative optimizer changes, simulation trials, and independent audits. See [`SOCIETIES_LEDGER.md`](SOCIETIES_LEDGER.md) for each numbered question, evidence, and revision; [`SOCIETIES_CHARTER.md`](SOCIETIES_CHARTER.md) defines what counts. The user-authorized next 183 research loops are **not** all exhausted: 145 remain, and the total documented across the project is 69.
+
+**Strongest new evidence:**
+
+- **Targeting beats quantity:** `SOC_PHYSICS_REPORT.md` compares an energy-aware policy with a shuffled policy harvesting exactly the same number of cells each tick. At 10,000 ticks, mean energy was .6820 vs .1149. The resource–action covariance, not harvest frequency, differentiates them.
+- **Simple rules still provide hard controls:** `SOC_LONGITUDINAL_REPORT.md` records a hand-designed energy-sensitive rescue rule that beats fixed .50 on fresh long horizons and resource shocks. Independent adversarial `SOC_RESCUE_AUDIT_REPORT.md` finds a *reversed* rescue rule yielding higher average energy but more cells at the energy floor. Thus no universal 'harvest sooner if depleted' principle or single welfare objective follows.
+- **Learning a useful new input:** `SOC_ENERGY_AWARE_REPORT.md` and independent `SOC_ENERGY_AWARE_AUDIT.md` show teacher-free neural cells learn a functionally useful dependence on their own energy. With identical learned weights, disabling just the energy feature reduced final mean energy (stable .588→.484; mild changing .117→.093 on 12 matched seeds). Successful evaluation was frozen deterministic deployment, not proof of continual online adaptation or indefinite viability. Stable fixed policies remain strong.
+- **Eight-state memory is representation-sensitive:** `SOC_MACRO_REPORT.md` and `SOC_MACRO_TRANSFER_REPORT.md` show how macro-state history repairs predictive distinctions erased by compression, especially under a periodic fixed-rule world (NLL .465→.0026). The compressed labels are *not* measurements of `C_num/C_struct/C_symb`.
+- **Inheritance is implemented, not proven adaptive:** `SOC_INHERITANCE_REPORT.md` verifies first-birth transfer of acquired neural thresholds, yet inheritance/mutation do not consistently improve descendants over clonal or nonlearning controls.
+- **Cross-society correction:** `SOC_ADAPTIVE_REPORT.md`, `SOC_DYNAMICS_REPORT.md`, `SOC_LEARNING_REPORT.md`, and `SOC_REVIEW_CROSS_SOCIETY_AUDIT.md` preserve negative controls, scale/horizon reversals, and strict evidence accounting. Do not call 40 hyperparameter proposals 40 separate discoveries.
+
+All society source, raw row-level synthetic data, reports and independent audits were added to `codex/frr-v05-explorations` (the same dedicated Garden branch). The primary original checkpoint remains privately preserved at tick100; these experiments do not silently modify it.
+
 **Branch:** `codex/frr-v05-explorations` in `bruhman680/CERTX`.
 
 The Garden is a bounded, replayable cellular experiment with separate small recurrent neural controllers in each of 256 cells (at 16×16), original resource and energy rules, and checkpointable model state. This is a synthetic research testbed, not demonstrated open-ended evolution or intelligence. The original 1,550-entry historical Garden is untouched.
