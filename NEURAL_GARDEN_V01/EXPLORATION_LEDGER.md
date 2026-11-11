@@ -1,12 +1,12 @@
 # Open research-loop ledger — FRR v0.5 Neural Garden
 
-**Authorization interpretation (user clarification):** The user granted up to **1,000 exploratory reasoning/experimental cycles** of continuation, not exactly 1,000 simulation runs. A research cycle is a genuinely new *orientation → artifact/probe → evidence → criticism → next orientation* movement. One experiment can contain many seeded simulation runs; those are not individual research cycles. This ledger counts only cycles actually performed and documented. Nothing here implies autonomous execution between sessions or permanent background agents.
+**Authorization interpretation (user clarification):** The user granted up to **1,000 exploratory research loops**, not 1,000 simulation runs. A *loop* is a genuinely new *orientation → artifact/probe → evidence → criticism → next orientation* movement. There is no user-imposed limit on the number of simulation cycles, tests, probes, or revisions **within** a loop. One experiment can contain many seeded simulation runs; those are not independent research loops. This ledger counts only loops actually performed and documented. Nothing here implies autonomous execution between sessions or permanent background agents.
 
 **Repository:** `codex/frr-v05-explorations`; preserve original historical Garden and prior experimental baselines. Use new files for variants. Record failed hypotheses, configuration changes, and mismatched comparisons, not just positive outcomes.
 
 ## Actual completed movements
 
-| Cycle | Orientation / question | Probe / artifact | Observed outcome | Next pressure |
+| Loop | Orientation / question | Probe / artifact | Observed outcome | Next pressure |
 | --- | --- | --- | --- | --- |
 | 001 | Can independent neural cells learn a local predictor? | v0.1 `garden.py`, learning/frozen trials | On-policy MSE improves, but resource management and energy degrade | Separate prediction from ecological success |
 | 002 | Can reward shaping redirect harvesting without changing the world? | v0.2 `stewardship_garden.py`, fresh-seed comparison | Higher energy than v0.1, still poor long-run health | Contrast against simple conditional policies |
@@ -19,7 +19,7 @@
 
 ## Active branches of inquiry
 
-- **Matched neural baseline:** same original world, 4 policies ×250 matched seeds ×600 ticks; this is one experimental cycle with 1,000 simulation runs, not 1,000 conceptual cycles.
+- **Matched neural baseline:** same original world, 4 policies ×250 matched seeds ×600 ticks; this is one experimental loop with 1,000 simulation runs, not 1,000 research loops.
 - **Action-aware adaptive neural policy:** can cells learn timing of harvest rather than a purely one-step policy?
 - **Changing conditions:** test seasonality and scarcity shocks; keep these distinct from standard-world sweeps.
 - **Explicit evolution:** separate birth/death, mutation, inheritance, genealogy from ordinary weight updates.
@@ -27,4 +27,4 @@
 
 ## Boundaries / continuation contract
 
-Open questions and promising intuitions can trigger additional cycles without asking for fresh approval every time **within this user's broad research authorization**. Yet evidence outranks enthusiasm, and tool permissions, security restrictions, available runtime, compute budgets, and transparent reporting still apply. Work can be paused/restarted from artifacts; it is not guaranteed to execute while this chat is idle. Do not claim that all 1,000 conceptual cycles have happened. Only advance the numeric count when a substantive loop finishes, and append its lineage in the ledger.
+Open questions and promising intuitions can trigger additional loops without asking for fresh approval every time **within this user's broad research authorization**. Yet evidence outranks enthusiasm, and tool permissions, security restrictions, available runtime, compute budgets, and transparent reporting still apply. Work can be paused/restarted from artifacts; it is not guaranteed to execute while this chat is idle. Do not claim that all 1,000 research loops have happened. Only advance the numeric count when a substantive loop finishes, and append its lineage in the ledger.
