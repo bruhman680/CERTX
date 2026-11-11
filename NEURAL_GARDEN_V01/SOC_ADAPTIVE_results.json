@@ -1,0 +1,2655 @@
+{
+  "design": {
+    "optimizer_iterations_within_one_research_loop": 40,
+    "training_seeds": [
+      6100,
+      6101,
+      6102,
+      6103
+    ],
+    "sealed_holdout_seeds": [
+      7100,
+      7101,
+      7102,
+      7103,
+      7104,
+      7105,
+      7106,
+      7107,
+      7108,
+      7109,
+      7110,
+      7111
+    ],
+    "train_steps_per_seed": 500,
+    "evaluation_steps_per_seed": 800,
+    "size": 8,
+    "not_counted_as_loops": [
+      "ticks",
+      "seeds",
+      "cells"
+    ],
+    "selection_rule": "accept if dev energy improves by >0.0001",
+    "full_train_eval_separation": "different initial worlds at eval; identical distribution, not distribution shift"
+  },
+  "platform": {
+    "python": "3.12.14",
+    "numpy": "2.5.4"
+  },
+  "source_sha256": {
+    "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1",
+    "ADAPTIVE_threshold.py": "ad5003aee67640efc831b35865dd506d4212236b0af9dda5ed62fed30e8ac59b",
+    "threshold_policy.py": "93230b8f5c3bb6a0ec28eca5e69f7fe99d3450905e8db9045e788216aaef2e12",
+    "SOC_ADAPTIVE_sequential.py": "9cbe42638959955c7bb32c09c6cd157db3d42535342ecf37d5b283f36bf38777"
+  },
+  "development_start": {
+    "mean_learner": 0.32736964154225373,
+    "mean_untrained": 0.31552994000269713,
+    "mean_advantage": 0.011839701539556616,
+    "mean_floor": 0.39453125,
+    "per_seed": [
+      {
+        "seed": 6100,
+        "learner": 0.36239127367929963,
+        "untrained": 0.34745877610234255,
+        "learner_floor": 0.328125,
+        "untrained_floor": 0.453125,
+        "threshold_mean": 0.4918471931869358
+      },
+      {
+        "seed": 6101,
+        "learner": 0.3794910169535125,
+        "untrained": 0.37804697472931104,
+        "learner_floor": 0.4375,
+        "untrained_floor": 0.375,
+        "threshold_mean": 0.504517220003487
+      },
+      {
+        "seed": 6102,
+        "learner": 0.2900144923525527,
+        "untrained": 0.2710471810267855,
+        "learner_floor": 0.3125,
+        "untrained_floor": 0.484375,
+        "threshold_mean": 0.5049617433218558
+      },
+      {
+        "seed": 6103,
+        "learner": 0.27758178318365007,
+        "untrained": 0.2655668281523494,
+        "learner_floor": 0.5,
+        "untrained_floor": 0.46875,
+        "threshold_mean": 0.49940595626487294
+      }
+    ]
+  },
+  "optimizer_iterations": [
+    {
+      "loop": 1,
+      "orientation": "Changing trace_decay by +1.0 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "trace_decay",
+      "candidate": {
+        "trace_decay": 0.999,
+        "lr": 0.001,
+        "slope": 14.0,
+        "start_low": 0.25,
+        "start_high": 0.75
+      },
+      "predecessor_score": 0.32736964154225373,
+      "observed_energy_delta": -0.009524345064855055,
+      "evidence": {
+        "mean_learner": 0.3178452964773987,
+        "mean_untrained": 0.31552994000269713,
+        "mean_advantage": 0.0023153564747015604,
+        "mean_floor": 0.41796875,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.3289643815509638,
+            "untrained": 0.34745877610234255,
+            "learner_floor": 0.359375,
+            "untrained_floor": 0.453125,
+            "threshold_mean": 0.49698538348191307
+          },
+          {
+            "seed": 6101,
+            "learner": 0.37110233436780043,
+            "untrained": 0.37804697472931104,
+            "learner_floor": 0.390625,
+            "untrained_floor": 0.375,
+            "threshold_mean": 0.5070650617882121
+          },
+          {
+            "seed": 6102,
+            "learner": 0.28945207825701535,
+            "untrained": 0.2710471810267855,
+            "learner_floor": 0.4375,
+            "untrained_floor": 0.484375,
+            "threshold_mean": 0.5117572098806651
+          },
+          {
+            "seed": 6103,
+            "learner": 0.2818623917338151,
+            "untrained": 0.2655668281523494,
+            "learner_floor": 0.484375,
+            "untrained_floor": 0.46875,
+            "threshold_mean": 0.49886366652163
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 2,
+      "orientation": "Changing lr by +1.0 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "lr",
+      "candidate": {
+        "trace_decay": 0.97,
+        "lr": 0.0017000000000000001,
+        "slope": 14.0,
+        "start_low": 0.25,
+        "start_high": 0.75
+      },
+      "predecessor_score": 0.32736964154225373,
+      "observed_energy_delta": 0.016808990524251055,
+      "evidence": {
+        "mean_learner": 0.3441786320665048,
+        "mean_untrained": 0.31552994000269713,
+        "mean_advantage": 0.0286486920638077,
+        "mean_floor": 0.40625,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.357872611282402,
+            "untrained": 0.34745877610234255,
+            "learner_floor": 0.4375,
+            "untrained_floor": 0.453125,
+            "threshold_mean": 0.49010580770919787
+          },
+          {
+            "seed": 6101,
+            "learner": 0.39754885847897514,
+            "untrained": 0.37804697472931104,
+            "learner_floor": 0.375,
+            "untrained_floor": 0.375,
+            "threshold_mean": 0.5020582142175414
+          },
+          {
+            "seed": 6102,
+            "learner": 0.3213852987567436,
+            "untrained": 0.2710471810267855,
+            "learner_floor": 0.359375,
+            "untrained_floor": 0.484375,
+            "threshold_mean": 0.5026768963749866
+          },
+          {
+            "seed": 6103,
+            "learner": 0.2999077597478985,
+            "untrained": 0.2655668281523494,
+            "learner_floor": 0.453125,
+            "untrained_floor": 0.46875,
+            "threshold_mean": 0.4981177130555049
+          }
+        ]
+      },
+      "accepted": true,
+      "next_orientation": "keep candidate and test a distinct variable"
+    },
+    {
+      "loop": 3,
+      "orientation": "Changing slope by +1.0 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "slope",
+      "candidate": {
+        "trace_decay": 0.97,
+        "lr": 0.0017000000000000001,
+        "slope": 20.0,
+        "start_low": 0.25,
+        "start_high": 0.75
+      },
+      "predecessor_score": 0.3441786320665048,
+      "observed_energy_delta": 0.01078343724084696,
+      "evidence": {
+        "mean_learner": 0.35496206930735175,
+        "mean_untrained": 0.31552994000269713,
+        "mean_advantage": 0.0394321293046546,
+        "mean_floor": 0.3984375,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.3628329757281801,
+            "untrained": 0.34745877610234255,
+            "learner_floor": 0.390625,
+            "untrained_floor": 0.453125,
+            "threshold_mean": 0.48927252672735444
+          },
+          {
+            "seed": 6101,
+            "learner": 0.420310997169527,
+            "untrained": 0.37804697472931104,
+            "learner_floor": 0.375,
+            "untrained_floor": 0.375,
+            "threshold_mean": 0.5017143627714633
+          },
+          {
+            "seed": 6102,
+            "learner": 0.3324454808973475,
+            "untrained": 0.2710471810267855,
+            "learner_floor": 0.375,
+            "untrained_floor": 0.484375,
+            "threshold_mean": 0.502400799313925
+          },
+          {
+            "seed": 6103,
+            "learner": 0.3042588234343523,
+            "untrained": 0.2655668281523494,
+            "learner_floor": 0.453125,
+            "untrained_floor": 0.46875,
+            "threshold_mean": 0.49766212672111737
+          }
+        ]
+      },
+      "accepted": true,
+      "next_orientation": "keep candidate and test a distinct variable"
+    },
+    {
+      "loop": 4,
+      "orientation": "Changing start_low by +1.0 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "start_low",
+      "candidate": {
+        "trace_decay": 0.97,
+        "lr": 0.0017000000000000001,
+        "slope": 20.0,
+        "start_low": 0.33999999999999997,
+        "start_high": 0.75
+      },
+      "predecessor_score": 0.35496206930735175,
+      "observed_energy_delta": 0.16499450438509677,
+      "evidence": {
+        "mean_learner": 0.5199565736924485,
+        "mean_untrained": 0.48648244361318205,
+        "mean_advantage": 0.0334741300792665,
+        "mean_floor": 0.27734375,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5331389116964149,
+            "untrained": 0.49764143128300764,
+            "learner_floor": 0.265625,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.5297454719889683
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5319145166824486,
+            "untrained": 0.533171870609146,
+            "learner_floor": 0.234375,
+            "untrained_floor": 0.21875,
+            "threshold_mean": 0.5392297280099272
+          },
+          {
+            "seed": 6102,
+            "learner": 0.4878352186644245,
+            "untrained": 0.44005428464487706,
+            "learner_floor": 0.3125,
+            "untrained_floor": 0.21875,
+            "threshold_mean": 0.5390815923839258
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5269376477265062,
+            "untrained": 0.47506218791569754,
+            "learner_floor": 0.296875,
+            "untrained_floor": 0.265625,
+            "threshold_mean": 0.5373406378862688
+          }
+        ]
+      },
+      "accepted": true,
+      "next_orientation": "keep candidate and test a distinct variable"
+    },
+    {
+      "loop": 5,
+      "orientation": "Changing start_high by +1.0 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "start_high",
+      "candidate": {
+        "trace_decay": 0.97,
+        "lr": 0.0017000000000000001,
+        "slope": 20.0,
+        "start_low": 0.33999999999999997,
+        "start_high": 0.84
+      },
+      "predecessor_score": 0.5199565736924485,
+      "observed_energy_delta": 0.005432306225856998,
+      "evidence": {
+        "mean_learner": 0.5253888799183055,
+        "mean_untrained": 0.46442138019801543,
+        "mean_advantage": 0.06096749972029014,
+        "mean_floor": 0.30859375,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5084056205542908,
+            "untrained": 0.4682023190271189,
+            "learner_floor": 0.296875,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.5751251269372717
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5532634210929774,
+            "untrained": 0.5133870203869345,
+            "learner_floor": 0.296875,
+            "untrained_floor": 0.359375,
+            "threshold_mean": 0.5867863334038427
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5024309796302864,
+            "untrained": 0.43283706169152864,
+            "learner_floor": 0.28125,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.5871388259411139
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5374554983956676,
+            "untrained": 0.4432591196864797,
+            "learner_floor": 0.359375,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.5805563464053581
+          }
+        ]
+      },
+      "accepted": true,
+      "next_orientation": "keep candidate and test a distinct variable"
+    },
+    {
+      "loop": 6,
+      "orientation": "Changing trace_decay by -1.0 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "trace_decay",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.0017000000000000001,
+        "slope": 20.0,
+        "start_low": 0.33999999999999997,
+        "start_high": 0.84
+      },
+      "predecessor_score": 0.5253888799183055,
+      "observed_energy_delta": 0.006796619539882975,
+      "evidence": {
+        "mean_learner": 0.5321854994581885,
+        "mean_untrained": 0.46442138019801543,
+        "mean_advantage": 0.06776411926017303,
+        "mean_floor": 0.31640625,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5390133014313477,
+            "untrained": 0.4682023190271189,
+            "learner_floor": 0.3125,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.5592021831878058
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5468086170799653,
+            "untrained": 0.5133870203869345,
+            "learner_floor": 0.296875,
+            "untrained_floor": 0.359375,
+            "threshold_mean": 0.5711190708946079
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5072337005557463,
+            "untrained": 0.43283706169152864,
+            "learner_floor": 0.3125,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.5724353261918498
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5356863787656945,
+            "untrained": 0.4432591196864797,
+            "learner_floor": 0.34375,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.566960074783418
+          }
+        ]
+      },
+      "accepted": true,
+      "next_orientation": "keep candidate and test a distinct variable"
+    },
+    {
+      "loop": 7,
+      "orientation": "Changing lr by -1.0 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "lr",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.001,
+        "slope": 20.0,
+        "start_low": 0.33999999999999997,
+        "start_high": 0.84
+      },
+      "predecessor_score": 0.5321854994581885,
+      "observed_energy_delta": -0.017214243743456037,
+      "evidence": {
+        "mean_learner": 0.5149712557147325,
+        "mean_untrained": 0.46442138019801543,
+        "mean_advantage": 0.05054987551671705,
+        "mean_floor": 0.3046875,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5094124057389575,
+            "untrained": 0.4682023190271189,
+            "learner_floor": 0.28125,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.5703788467575042
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5474037609496157,
+            "untrained": 0.5133870203869345,
+            "learner_floor": 0.375,
+            "untrained_floor": 0.359375,
+            "threshold_mean": 0.5816976167530712
+          },
+          {
+            "seed": 6102,
+            "learner": 0.4763436148064518,
+            "untrained": 0.43283706169152864,
+            "learner_floor": 0.265625,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.582877161270127
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5267252413639049,
+            "untrained": 0.4432591196864797,
+            "learner_floor": 0.296875,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.5766791534161767
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 8,
+      "orientation": "Changing slope by -1.0 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "slope",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.0017000000000000001,
+        "slope": 14.0,
+        "start_low": 0.33999999999999997,
+        "start_high": 0.84
+      },
+      "predecessor_score": 0.5321854994581885,
+      "observed_energy_delta": -0.0037706217059203517,
+      "evidence": {
+        "mean_learner": 0.5284148777522681,
+        "mean_untrained": 0.46442138019801543,
+        "mean_advantage": 0.06399349755425263,
+        "mean_floor": 0.28125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5224875634413039,
+            "untrained": 0.4682023190271189,
+            "learner_floor": 0.28125,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.5617694395146895
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5523751328472072,
+            "untrained": 0.5133870203869345,
+            "learner_floor": 0.265625,
+            "untrained_floor": 0.359375,
+            "threshold_mean": 0.5736478981190246
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5001310819731223,
+            "untrained": 0.43283706169152864,
+            "learner_floor": 0.34375,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.5750154066571984
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5386657327474389,
+            "untrained": 0.4432591196864797,
+            "learner_floor": 0.234375,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.5692495581133702
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 9,
+      "orientation": "Changing start_low by -1.0 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "start_low",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.0017000000000000001,
+        "slope": 20.0,
+        "start_low": 0.24999999999999997,
+        "start_high": 0.84
+      },
+      "predecessor_score": 0.5321854994581885,
+      "observed_energy_delta": -0.11422397085433922,
+      "evidence": {
+        "mean_learner": 0.4179615286038493,
+        "mean_untrained": 0.36186836712300996,
+        "mean_advantage": 0.05609316148083933,
+        "mean_floor": 0.39453125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.4200557407954796,
+            "untrained": 0.36243366317949355,
+            "learner_floor": 0.375,
+            "untrained_floor": 0.46875,
+            "threshold_mean": 0.5198482639713621
+          },
+          {
+            "seed": 6101,
+            "learner": 0.48232301655893384,
+            "untrained": 0.45594896918830136,
+            "learner_floor": 0.34375,
+            "untrained_floor": 0.375,
+            "threshold_mean": 0.5349767508275953
+          },
+          {
+            "seed": 6102,
+            "learner": 0.40824725148766494,
+            "untrained": 0.3326180152311909,
+            "learner_floor": 0.375,
+            "untrained_floor": 0.4375,
+            "threshold_mean": 0.5365841878118209
+          },
+          {
+            "seed": 6103,
+            "learner": 0.3612201055733189,
+            "untrained": 0.29647282089305416,
+            "learner_floor": 0.484375,
+            "untrained_floor": 0.4375,
+            "threshold_mean": 0.5294927105744927
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 10,
+      "orientation": "Changing start_high by -1.0 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "start_high",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.0017000000000000001,
+        "slope": 20.0,
+        "start_low": 0.33999999999999997,
+        "start_high": 0.75
+      },
+      "predecessor_score": 0.5321854994581885,
+      "observed_energy_delta": -0.0064807143128019495,
+      "evidence": {
+        "mean_learner": 0.5257047851453865,
+        "mean_untrained": 0.48648244361318205,
+        "mean_advantage": 0.0392223415322045,
+        "mean_floor": 0.24609375,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5163470376037446,
+            "untrained": 0.49764143128300764,
+            "learner_floor": 0.28125,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.5162123153446361
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5378122946867371,
+            "untrained": 0.533171870609146,
+            "learner_floor": 0.234375,
+            "untrained_floor": 0.21875,
+            "threshold_mean": 0.5243531674368341
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5170053075667094,
+            "untrained": 0.44005428464487706,
+            "learner_floor": 0.21875,
+            "untrained_floor": 0.21875,
+            "threshold_mean": 0.5254983584958499
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5316545007243552,
+            "untrained": 0.47506218791569754,
+            "learner_floor": 0.25,
+            "untrained_floor": 0.265625,
+            "threshold_mean": 0.5239216993555271
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 11,
+      "orientation": "Changing trace_decay by +0.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "trace_decay",
+      "candidate": {
+        "trace_decay": 0.94,
+        "lr": 0.0017000000000000001,
+        "slope": 20.0,
+        "start_low": 0.33999999999999997,
+        "start_high": 0.84
+      },
+      "predecessor_score": 0.5321854994581885,
+      "observed_energy_delta": -0.0006392519171390942,
+      "evidence": {
+        "mean_learner": 0.5315462475410494,
+        "mean_untrained": 0.46442138019801543,
+        "mean_advantage": 0.06712486734303397,
+        "mean_floor": 0.28515625,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5205861480392229,
+            "untrained": 0.4682023190271189,
+            "learner_floor": 0.28125,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.5670598412648973
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5575712147317327,
+            "untrained": 0.5133870203869345,
+            "learner_floor": 0.28125,
+            "untrained_floor": 0.359375,
+            "threshold_mean": 0.5787682938989914
+          },
+          {
+            "seed": 6102,
+            "learner": 0.506171122806335,
+            "untrained": 0.43283706169152864,
+            "learner_floor": 0.28125,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.5799875857643977
+          },
+          {
+            "seed": 6103,
+            "learner": 0.541856504586907,
+            "untrained": 0.4432591196864797,
+            "learner_floor": 0.296875,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.573550605507483
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 12,
+      "orientation": "Changing lr by +0.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "lr",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.00205,
+        "slope": 20.0,
+        "start_low": 0.33999999999999997,
+        "start_high": 0.84
+      },
+      "predecessor_score": 0.5321854994581885,
+      "observed_energy_delta": 0.002805917533345248,
+      "evidence": {
+        "mean_learner": 0.5349914169915337,
+        "mean_untrained": 0.46442138019801543,
+        "mean_advantage": 0.07057003679351834,
+        "mean_floor": 0.28515625,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.546062522229378,
+            "untrained": 0.4682023190271189,
+            "learner_floor": 0.203125,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.5544064502025204
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5593942388205373,
+            "untrained": 0.5133870203869345,
+            "learner_floor": 0.3125,
+            "untrained_floor": 0.359375,
+            "threshold_mean": 0.5660067014731047
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5021912053592846,
+            "untrained": 0.43283706169152864,
+            "learner_floor": 0.3125,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.5674646420244136
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5323177015569351,
+            "untrained": 0.4432591196864797,
+            "learner_floor": 0.3125,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.5625924835815521
+          }
+        ]
+      },
+      "accepted": true,
+      "next_orientation": "keep candidate and test a distinct variable"
+    },
+    {
+      "loop": 13,
+      "orientation": "Changing slope by +0.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "slope",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.00205,
+        "slope": 23.0,
+        "start_low": 0.33999999999999997,
+        "start_high": 0.84
+      },
+      "predecessor_score": 0.5349914169915337,
+      "observed_energy_delta": 0.009204835939132239,
+      "evidence": {
+        "mean_learner": 0.544196252930666,
+        "mean_untrained": 0.46442138019801543,
+        "mean_advantage": 0.07977487273265058,
+        "mean_floor": 0.2578125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5550551877882504,
+            "untrained": 0.4682023190271189,
+            "learner_floor": 0.203125,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.553752095502718
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5598374849983787,
+            "untrained": 0.5133870203869345,
+            "learner_floor": 0.25,
+            "untrained_floor": 0.359375,
+            "threshold_mean": 0.5656954276385373
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5256931998753059,
+            "untrained": 0.43283706169152864,
+            "learner_floor": 0.265625,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.5670668430178724
+          },
+          {
+            "seed": 6103,
+            "learner": 0.536199139060729,
+            "untrained": 0.4432591196864797,
+            "learner_floor": 0.3125,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.562922179009526
+          }
+        ]
+      },
+      "accepted": true,
+      "next_orientation": "keep candidate and test a distinct variable"
+    },
+    {
+      "loop": 14,
+      "orientation": "Changing start_low by +0.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "start_low",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.00205,
+        "slope": 23.0,
+        "start_low": 0.38499999999999995,
+        "start_high": 0.84
+      },
+      "predecessor_score": 0.544196252930666,
+      "observed_energy_delta": 0.02235952745427805,
+      "evidence": {
+        "mean_learner": 0.566555780384944,
+        "mean_untrained": 0.45997368378745773,
+        "mean_advantage": 0.1065820965974864,
+        "mean_floor": 0.28125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5743367613523322,
+            "untrained": 0.4779769663159913,
+            "learner_floor": 0.21875,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.5723792304097042
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5794519252998069,
+            "untrained": 0.48895845142067557,
+            "learner_floor": 0.25,
+            "untrained_floor": 0.375,
+            "threshold_mean": 0.5841605050200462
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5413144335896665,
+            "untrained": 0.44162473388982615,
+            "learner_floor": 0.328125,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.5850745932917714
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5711200012979706,
+            "untrained": 0.43133458352333764,
+            "learner_floor": 0.328125,
+            "untrained_floor": 0.375,
+            "threshold_mean": 0.5817796924132747
+          }
+        ]
+      },
+      "accepted": true,
+      "next_orientation": "keep candidate and test a distinct variable"
+    },
+    {
+      "loop": 15,
+      "orientation": "Changing start_high by +0.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "start_high",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.00205,
+        "slope": 23.0,
+        "start_low": 0.38499999999999995,
+        "start_high": 0.885
+      },
+      "predecessor_score": 0.566555780384944,
+      "observed_energy_delta": -0.0071036692315721295,
+      "evidence": {
+        "mean_learner": 0.5594521111533719,
+        "mean_untrained": 0.44139416167143697,
+        "mean_advantage": 0.11805794948193499,
+        "mean_floor": 0.33203125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5631054922851276,
+            "untrained": 0.41900144844884346,
+            "learner_floor": 0.34375,
+            "untrained_floor": 0.34375,
+            "threshold_mean": 0.5957038257773103
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5572666252969665,
+            "untrained": 0.4885499593811393,
+            "learner_floor": 0.3125,
+            "untrained_floor": 0.40625,
+            "threshold_mean": 0.6083754963078594
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5439563196127384,
+            "untrained": 0.4563481562715751,
+            "learner_floor": 0.34375,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.6083898973249802
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5734800074186555,
+            "untrained": 0.4016770825841901,
+            "learner_floor": 0.328125,
+            "untrained_floor": 0.34375,
+            "threshold_mean": 0.6040170495684952
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 16,
+      "orientation": "Changing trace_decay by -0.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "trace_decay",
+      "candidate": {
+        "trace_decay": 0.8799999999999999,
+        "lr": 0.00205,
+        "slope": 23.0,
+        "start_low": 0.38499999999999995,
+        "start_high": 0.84
+      },
+      "predecessor_score": 0.566555780384944,
+      "observed_energy_delta": -0.001640976807594563,
+      "evidence": {
+        "mean_learner": 0.5649148035773495,
+        "mean_untrained": 0.45997368378745773,
+        "mean_advantage": 0.1049411197898918,
+        "mean_floor": 0.265625,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5748345110351678,
+            "untrained": 0.4779769663159913,
+            "learner_floor": 0.234375,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.5644772428615886
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5747421380348287,
+            "untrained": 0.48895845142067557,
+            "learner_floor": 0.203125,
+            "untrained_floor": 0.375,
+            "threshold_mean": 0.5745547234755407
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5371192983969921,
+            "untrained": 0.44162473388982615,
+            "learner_floor": 0.328125,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.5768516125397006
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5729632668424093,
+            "untrained": 0.43133458352333764,
+            "learner_floor": 0.296875,
+            "untrained_floor": 0.375,
+            "threshold_mean": 0.5726511738230965
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 17,
+      "orientation": "Changing lr by -0.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "lr",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.0017000000000000001,
+        "slope": 23.0,
+        "start_low": 0.38499999999999995,
+        "start_high": 0.84
+      },
+      "predecessor_score": 0.566555780384944,
+      "observed_energy_delta": -0.011823118180134484,
+      "evidence": {
+        "mean_learner": 0.5547326622048095,
+        "mean_untrained": 0.45997368378745773,
+        "mean_advantage": 0.09475897841735188,
+        "mean_floor": 0.28125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5497271577802154,
+            "untrained": 0.4779769663159913,
+            "learner_floor": 0.25,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.5791563553952963
+          },
+          {
+            "seed": 6101,
+            "learner": 0.568002554624972,
+            "untrained": 0.48895845142067557,
+            "learner_floor": 0.28125,
+            "untrained_floor": 0.375,
+            "threshold_mean": 0.5904481212161614
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5420891118386264,
+            "untrained": 0.44162473388982615,
+            "learner_floor": 0.25,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.5913423784656815
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5591118245754244,
+            "untrained": 0.43133458352333764,
+            "learner_floor": 0.34375,
+            "untrained_floor": 0.375,
+            "threshold_mean": 0.5865526553710261
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 18,
+      "orientation": "Changing slope by -0.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "slope",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.00205,
+        "slope": 20.0,
+        "start_low": 0.38499999999999995,
+        "start_high": 0.84
+      },
+      "predecessor_score": 0.566555780384944,
+      "observed_energy_delta": -0.003347566022836479,
+      "evidence": {
+        "mean_learner": 0.5632082143621076,
+        "mean_untrained": 0.45997368378745773,
+        "mean_advantage": 0.10323453057464983,
+        "mean_floor": 0.296875,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5775922894151797,
+            "untrained": 0.4779769663159913,
+            "learner_floor": 0.28125,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.5741403125038766
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5623175300963946,
+            "untrained": 0.48895845142067557,
+            "learner_floor": 0.296875,
+            "untrained_floor": 0.375,
+            "threshold_mean": 0.5851914247463847
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5472631943093732,
+            "untrained": 0.44162473388982615,
+            "learner_floor": 0.3125,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.5862753520379151
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5656598436274825,
+            "untrained": 0.43133458352333764,
+            "learner_floor": 0.296875,
+            "untrained_floor": 0.375,
+            "threshold_mean": 0.5826586762082722
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 19,
+      "orientation": "Changing start_low by -0.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "start_low",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.00205,
+        "slope": 23.0,
+        "start_low": 0.33999999999999997,
+        "start_high": 0.84
+      },
+      "predecessor_score": 0.566555780384944,
+      "observed_energy_delta": -0.02235952745427805,
+      "evidence": {
+        "mean_learner": 0.544196252930666,
+        "mean_untrained": 0.46442138019801543,
+        "mean_advantage": 0.07977487273265058,
+        "mean_floor": 0.2578125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5550551877882504,
+            "untrained": 0.4682023190271189,
+            "learner_floor": 0.203125,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.553752095502718
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5598374849983787,
+            "untrained": 0.5133870203869345,
+            "learner_floor": 0.25,
+            "untrained_floor": 0.359375,
+            "threshold_mean": 0.5656954276385373
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5256931998753059,
+            "untrained": 0.43283706169152864,
+            "learner_floor": 0.265625,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.5670668430178724
+          },
+          {
+            "seed": 6103,
+            "learner": 0.536199139060729,
+            "untrained": 0.4432591196864797,
+            "learner_floor": 0.3125,
+            "untrained_floor": 0.3125,
+            "threshold_mean": 0.562922179009526
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 20,
+      "orientation": "Changing start_high by -0.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "start_high",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.00205,
+        "slope": 23.0,
+        "start_low": 0.38499999999999995,
+        "start_high": 0.7949999999999999
+      },
+      "predecessor_score": 0.566555780384944,
+      "observed_energy_delta": 0.007421481125578722,
+      "evidence": {
+        "mean_learner": 0.5739772615105228,
+        "mean_untrained": 0.4803013300646336,
+        "mean_advantage": 0.09367593144588919,
+        "mean_floor": 0.2578125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5931750858063052,
+            "untrained": 0.4926754301010653,
+            "learner_floor": 0.234375,
+            "untrained_floor": 0.234375,
+            "threshold_mean": 0.5505276204327032
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5642657421766193,
+            "untrained": 0.5069290173846733,
+            "learner_floor": 0.265625,
+            "untrained_floor": 0.28125,
+            "threshold_mean": 0.560083510287438
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5620150080764577,
+            "untrained": 0.4580139513861832,
+            "learner_floor": 0.234375,
+            "untrained_floor": 0.265625,
+            "threshold_mean": 0.561181203988073
+          },
+          {
+            "seed": 6103,
+            "learner": 0.576453209982709,
+            "untrained": 0.4635869213866125,
+            "learner_floor": 0.296875,
+            "untrained_floor": 0.296875,
+            "threshold_mean": 0.5582635552781545
+          }
+        ]
+      },
+      "accepted": true,
+      "next_orientation": "keep candidate and test a distinct variable"
+    },
+    {
+      "loop": 21,
+      "orientation": "Changing trace_decay by +1.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "trace_decay",
+      "candidate": {
+        "trace_decay": 0.999,
+        "lr": 0.00205,
+        "slope": 23.0,
+        "start_low": 0.38499999999999995,
+        "start_high": 0.7949999999999999
+      },
+      "predecessor_score": 0.5739772615105228,
+      "observed_energy_delta": -0.14103692484596825,
+      "evidence": {
+        "mean_learner": 0.4329403366645545,
+        "mean_untrained": 0.4803013300646336,
+        "mean_advantage": -0.047360993400079085,
+        "mean_floor": 0.45703125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.4324770756428439,
+            "untrained": 0.4926754301010653,
+            "learner_floor": 0.46875,
+            "untrained_floor": 0.234375,
+            "threshold_mean": 0.6651729453079879
+          },
+          {
+            "seed": 6101,
+            "learner": 0.43801127591306765,
+            "untrained": 0.5069290173846733,
+            "learner_floor": 0.484375,
+            "untrained_floor": 0.28125,
+            "threshold_mean": 0.6316857370717881
+          },
+          {
+            "seed": 6102,
+            "learner": 0.43503313084745565,
+            "untrained": 0.4580139513861832,
+            "learner_floor": 0.453125,
+            "untrained_floor": 0.265625,
+            "threshold_mean": 0.6708344743133308
+          },
+          {
+            "seed": 6103,
+            "learner": 0.42623986425485083,
+            "untrained": 0.4635869213866125,
+            "learner_floor": 0.421875,
+            "untrained_floor": 0.296875,
+            "threshold_mean": 0.5971562182142669
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 22,
+      "orientation": "Changing lr by +1.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "lr",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.0031000000000000003,
+        "slope": 23.0,
+        "start_low": 0.38499999999999995,
+        "start_high": 0.7949999999999999
+      },
+      "predecessor_score": 0.5739772615105228,
+      "observed_energy_delta": 0.004355481013460061,
+      "evidence": {
+        "mean_learner": 0.5783327425239828,
+        "mean_untrained": 0.4803013300646336,
+        "mean_advantage": 0.09803141245934917,
+        "mean_floor": 0.2578125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5951677257617227,
+            "untrained": 0.4926754301010653,
+            "learner_floor": 0.203125,
+            "untrained_floor": 0.234375,
+            "threshold_mean": 0.5340329034288314
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5864495612806672,
+            "untrained": 0.5069290173846733,
+            "learner_floor": 0.3125,
+            "untrained_floor": 0.28125,
+            "threshold_mean": 0.541831528399343
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5653051497651195,
+            "untrained": 0.4580139513861832,
+            "learner_floor": 0.265625,
+            "untrained_floor": 0.265625,
+            "threshold_mean": 0.5439014658392172
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5664085332884217,
+            "untrained": 0.4635869213866125,
+            "learner_floor": 0.25,
+            "untrained_floor": 0.296875,
+            "threshold_mean": 0.5407330325511628
+          }
+        ]
+      },
+      "accepted": true,
+      "next_orientation": "keep candidate and test a distinct variable"
+    },
+    {
+      "loop": 23,
+      "orientation": "Changing slope by +1.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "slope",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.0031000000000000003,
+        "slope": 32.0,
+        "start_low": 0.38499999999999995,
+        "start_high": 0.7949999999999999
+      },
+      "predecessor_score": 0.5783327425239828,
+      "observed_energy_delta": -0.00014309904635623205,
+      "evidence": {
+        "mean_learner": 0.5781896434776266,
+        "mean_untrained": 0.4803013300646336,
+        "mean_advantage": 0.09788831341299302,
+        "mean_floor": 0.23046875,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5901667877762841,
+            "untrained": 0.4926754301010653,
+            "learner_floor": 0.203125,
+            "untrained_floor": 0.234375,
+            "threshold_mean": 0.5236154182119882
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5744569930741804,
+            "untrained": 0.5069290173846733,
+            "learner_floor": 0.265625,
+            "untrained_floor": 0.28125,
+            "threshold_mean": 0.5331045119251994
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5760450183907416,
+            "untrained": 0.4580139513861832,
+            "learner_floor": 0.1875,
+            "untrained_floor": 0.265625,
+            "threshold_mean": 0.5365705390227292
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5720897746693003,
+            "untrained": 0.4635869213866125,
+            "learner_floor": 0.265625,
+            "untrained_floor": 0.296875,
+            "threshold_mean": 0.5370795726978091
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 24,
+      "orientation": "Changing start_low by +1.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "start_low",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.0031000000000000003,
+        "slope": 23.0,
+        "start_low": 0.52,
+        "start_high": 0.7949999999999999
+      },
+      "predecessor_score": 0.5783327425239828,
+      "observed_energy_delta": 0.02327945825314237,
+      "evidence": {
+        "mean_learner": 0.6016122007771252,
+        "mean_untrained": 0.3666365728723192,
+        "mean_advantage": 0.2349756279048059,
+        "mean_floor": 0.20703125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.6317917086269973,
+            "untrained": 0.3841636495006251,
+            "learner_floor": 0.234375,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.5805540560047716
+          },
+          {
+            "seed": 6101,
+            "learner": 0.6022484895283517,
+            "untrained": 0.38582773872890685,
+            "learner_floor": 0.15625,
+            "untrained_floor": 0.265625,
+            "threshold_mean": 0.585560342569546
+          },
+          {
+            "seed": 6102,
+            "learner": 0.6118590375165552,
+            "untrained": 0.35118992781308744,
+            "learner_floor": 0.203125,
+            "untrained_floor": 0.21875,
+            "threshold_mean": 0.5859047719437908
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5605495674365961,
+            "untrained": 0.34536497544665745,
+            "learner_floor": 0.234375,
+            "untrained_floor": 0.34375,
+            "threshold_mean": 0.5915974738224143
+          }
+        ]
+      },
+      "accepted": true,
+      "next_orientation": "keep candidate and test a distinct variable"
+    },
+    {
+      "loop": 25,
+      "orientation": "Changing start_high by +1.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "start_high",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.0031000000000000003,
+        "slope": 23.0,
+        "start_low": 0.52,
+        "start_high": 0.9
+      },
+      "predecessor_score": 0.6016122007771252,
+      "observed_energy_delta": -0.0599259421647782,
+      "evidence": {
+        "mean_learner": 0.541686258612347,
+        "mean_untrained": 0.35800359200413756,
+        "mean_advantage": 0.18368266660820937,
+        "mean_floor": 0.375,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5612797907892958,
+            "untrained": 0.37521409965508046,
+            "learner_floor": 0.359375,
+            "untrained_floor": 0.4375,
+            "threshold_mean": 0.6383502408374073
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5435852001054388,
+            "untrained": 0.38476291134795837,
+            "learner_floor": 0.359375,
+            "untrained_floor": 0.375,
+            "threshold_mean": 0.6493199478997262
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5092186141699243,
+            "untrained": 0.33854707838675324,
+            "learner_floor": 0.375,
+            "untrained_floor": 0.484375,
+            "threshold_mean": 0.6476755533043992
+          },
+          {
+            "seed": 6103,
+            "learner": 0.552661429384729,
+            "untrained": 0.3334902786267583,
+            "learner_floor": 0.40625,
+            "untrained_floor": 0.453125,
+            "threshold_mean": 0.647773927568774
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 26,
+      "orientation": "Changing trace_decay by +1.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "trace_decay",
+      "candidate": {
+        "trace_decay": 0.999,
+        "lr": 0.0031000000000000003,
+        "slope": 23.0,
+        "start_low": 0.52,
+        "start_high": 0.7949999999999999
+      },
+      "predecessor_score": 0.6016122007771252,
+      "observed_energy_delta": -0.22350203240559507,
+      "evidence": {
+        "mean_learner": 0.3781101683715301,
+        "mean_untrained": 0.3666365728723192,
+        "mean_advantage": 0.011473595499210884,
+        "mean_floor": 0.5859375,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.3607893519927887,
+            "untrained": 0.3841636495006251,
+            "learner_floor": 0.609375,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.7160330147453161
+          },
+          {
+            "seed": 6101,
+            "learner": 0.39713705131947513,
+            "untrained": 0.38582773872890685,
+            "learner_floor": 0.59375,
+            "untrained_floor": 0.265625,
+            "threshold_mean": 0.6834862723785302
+          },
+          {
+            "seed": 6102,
+            "learner": 0.35753099212331874,
+            "untrained": 0.35118992781308744,
+            "learner_floor": 0.609375,
+            "untrained_floor": 0.21875,
+            "threshold_mean": 0.7362373527138433
+          },
+          {
+            "seed": 6103,
+            "learner": 0.3969832780505378,
+            "untrained": 0.34536497544665745,
+            "learner_floor": 0.53125,
+            "untrained_floor": 0.34375,
+            "threshold_mean": 0.7004931644995323
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 27,
+      "orientation": "Changing lr by -1.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "lr",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.0020500000000000006,
+        "slope": 23.0,
+        "start_low": 0.52,
+        "start_high": 0.7949999999999999
+      },
+      "predecessor_score": 0.6016122007771252,
+      "observed_energy_delta": -0.049521409631766655,
+      "evidence": {
+        "mean_learner": 0.5520907911453585,
+        "mean_untrained": 0.3666365728723192,
+        "mean_advantage": 0.1854542182730393,
+        "mean_floor": 0.23828125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5440321833918811,
+            "untrained": 0.3841636495006251,
+            "learner_floor": 0.265625,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.607557551713237
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5648124247852855,
+            "untrained": 0.38582773872890685,
+            "learner_floor": 0.203125,
+            "untrained_floor": 0.265625,
+            "threshold_mean": 0.6117333470814238
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5517303800141459,
+            "untrained": 0.35118992781308744,
+            "learner_floor": 0.234375,
+            "untrained_floor": 0.21875,
+            "threshold_mean": 0.6140945795749473
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5477881763901216,
+            "untrained": 0.34536497544665745,
+            "learner_floor": 0.25,
+            "untrained_floor": 0.34375,
+            "threshold_mean": 0.6146353456463503
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 28,
+      "orientation": "Changing slope by -1.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "slope",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.0031000000000000003,
+        "slope": 14.0,
+        "start_low": 0.52,
+        "start_high": 0.7949999999999999
+      },
+      "predecessor_score": 0.6016122007771252,
+      "observed_energy_delta": -0.024612606531531966,
+      "evidence": {
+        "mean_learner": 0.5769995942455932,
+        "mean_untrained": 0.3666365728723192,
+        "mean_advantage": 0.21036302137327395,
+        "mean_floor": 0.20703125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5831226892411341,
+            "untrained": 0.3841636495006251,
+            "learner_floor": 0.125,
+            "untrained_floor": 0.328125,
+            "threshold_mean": 0.5929041102242874
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5642391507239062,
+            "untrained": 0.38582773872890685,
+            "learner_floor": 0.234375,
+            "untrained_floor": 0.265625,
+            "threshold_mean": 0.5954904036878405
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5882938540080662,
+            "untrained": 0.35118992781308744,
+            "learner_floor": 0.171875,
+            "untrained_floor": 0.21875,
+            "threshold_mean": 0.5995577661277375
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5723426830092662,
+            "untrained": 0.34536497544665745,
+            "learner_floor": 0.296875,
+            "untrained_floor": 0.34375,
+            "threshold_mean": 0.6010470998138481
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 29,
+      "orientation": "Changing start_low by -1.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "start_low",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.0031000000000000003,
+        "slope": 23.0,
+        "start_low": 0.385,
+        "start_high": 0.7949999999999999
+      },
+      "predecessor_score": 0.6016122007771252,
+      "observed_energy_delta": -0.02327945825314237,
+      "evidence": {
+        "mean_learner": 0.5783327425239828,
+        "mean_untrained": 0.4803013300646336,
+        "mean_advantage": 0.09803141245934917,
+        "mean_floor": 0.2578125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.5951677257617227,
+            "untrained": 0.4926754301010653,
+            "learner_floor": 0.203125,
+            "untrained_floor": 0.234375,
+            "threshold_mean": 0.5340329034288314
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5864495612806672,
+            "untrained": 0.5069290173846733,
+            "learner_floor": 0.3125,
+            "untrained_floor": 0.28125,
+            "threshold_mean": 0.5418315283993431
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5653051497651195,
+            "untrained": 0.4580139513861832,
+            "learner_floor": 0.265625,
+            "untrained_floor": 0.265625,
+            "threshold_mean": 0.5439014658392172
+          },
+          {
+            "seed": 6103,
+            "learner": 0.5664085332884217,
+            "untrained": 0.4635869213866125,
+            "learner_floor": 0.25,
+            "untrained_floor": 0.296875,
+            "threshold_mean": 0.5407330325511628
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 30,
+      "orientation": "Changing start_high by -1.5 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "start_high",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.0031000000000000003,
+        "slope": 23.0,
+        "start_low": 0.52,
+        "start_high": 0.6599999999999999
+      },
+      "predecessor_score": 0.6016122007771252,
+      "observed_energy_delta": 0.00931633697200751,
+      "evidence": {
+        "mean_learner": 0.6109285377491327,
+        "mean_untrained": 0.4072146675054154,
+        "mean_advantage": 0.2037138702437173,
+        "mean_floor": 0.10546875,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.6185692278671009,
+            "untrained": 0.42428002871259013,
+            "learner_floor": 0.109375,
+            "untrained_floor": 0.203125,
+            "threshold_mean": 0.5058642985220767
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5898790816898565,
+            "untrained": 0.43794660909751576,
+            "learner_floor": 0.0625,
+            "untrained_floor": 0.171875,
+            "threshold_mean": 0.5027475422979315
+          },
+          {
+            "seed": 6102,
+            "learner": 0.6134550170978188,
+            "untrained": 0.37552928116655726,
+            "learner_floor": 0.09375,
+            "untrained_floor": 0.1875,
+            "threshold_mean": 0.5050168750160705
+          },
+          {
+            "seed": 6103,
+            "learner": 0.6218108243417546,
+            "untrained": 0.3911027510449985,
+            "learner_floor": 0.15625,
+            "untrained_floor": 0.171875,
+            "threshold_mean": 0.5076564590142054
+          }
+        ]
+      },
+      "accepted": true,
+      "next_orientation": "keep candidate and test a distinct variable"
+    },
+    {
+      "loop": 31,
+      "orientation": "Changing trace_decay by +0.25 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "trace_decay",
+      "candidate": {
+        "trace_decay": 0.9249999999999999,
+        "lr": 0.0031000000000000003,
+        "slope": 23.0,
+        "start_low": 0.52,
+        "start_high": 0.6599999999999999
+      },
+      "predecessor_score": 0.6109285377491327,
+      "observed_energy_delta": 0.011751674920882582,
+      "evidence": {
+        "mean_learner": 0.6226802126700153,
+        "mean_untrained": 0.4072146675054154,
+        "mean_advantage": 0.21546554516459984,
+        "mean_floor": 0.1015625,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.6520902458452482,
+            "untrained": 0.42428002871259013,
+            "learner_floor": 0.09375,
+            "untrained_floor": 0.203125,
+            "threshold_mean": 0.5112542445954289
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5918657351199941,
+            "untrained": 0.43794660909751576,
+            "learner_floor": 0.125,
+            "untrained_floor": 0.171875,
+            "threshold_mean": 0.5090246162217941
+          },
+          {
+            "seed": 6102,
+            "learner": 0.5968438755331232,
+            "untrained": 0.37552928116655726,
+            "learner_floor": 0.125,
+            "untrained_floor": 0.1875,
+            "threshold_mean": 0.5125967501197577
+          },
+          {
+            "seed": 6103,
+            "learner": 0.6499209941816955,
+            "untrained": 0.3911027510449985,
+            "learner_floor": 0.0625,
+            "untrained_floor": 0.171875,
+            "threshold_mean": 0.5138008257696882
+          }
+        ]
+      },
+      "accepted": true,
+      "next_orientation": "keep candidate and test a distinct variable"
+    },
+    {
+      "loop": 32,
+      "orientation": "Changing lr by +0.25 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "lr",
+      "candidate": {
+        "trace_decay": 0.9249999999999999,
+        "lr": 0.003275,
+        "slope": 23.0,
+        "start_low": 0.52,
+        "start_high": 0.6599999999999999
+      },
+      "predecessor_score": 0.6226802126700153,
+      "observed_energy_delta": -0.014586150520744301,
+      "evidence": {
+        "mean_learner": 0.608094062149271,
+        "mean_untrained": 0.4072146675054154,
+        "mean_advantage": 0.20087939464385557,
+        "mean_floor": 0.078125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.632465330041059,
+            "untrained": 0.42428002871259013,
+            "learner_floor": 0.09375,
+            "untrained_floor": 0.203125,
+            "threshold_mean": 0.5067533728895889
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5705569994195301,
+            "untrained": 0.43794660909751576,
+            "learner_floor": 0.078125,
+            "untrained_floor": 0.171875,
+            "threshold_mean": 0.5043930613814983
+          },
+          {
+            "seed": 6102,
+            "learner": 0.6047030644045299,
+            "untrained": 0.37552928116655726,
+            "learner_floor": 0.09375,
+            "untrained_floor": 0.1875,
+            "threshold_mean": 0.5060986943601437
+          },
+          {
+            "seed": 6103,
+            "learner": 0.6246508547319649,
+            "untrained": 0.3911027510449985,
+            "learner_floor": 0.046875,
+            "untrained_floor": 0.171875,
+            "threshold_mean": 0.5100981881299296
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 33,
+      "orientation": "Changing slope by +0.25 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "slope",
+      "candidate": {
+        "trace_decay": 0.9249999999999999,
+        "lr": 0.0031000000000000003,
+        "slope": 24.5,
+        "start_low": 0.52,
+        "start_high": 0.6599999999999999
+      },
+      "predecessor_score": 0.6226802126700153,
+      "observed_energy_delta": 0.0004611991812567551,
+      "evidence": {
+        "mean_learner": 0.623141411851272,
+        "mean_untrained": 0.4072146675054154,
+        "mean_advantage": 0.21592674434585657,
+        "mean_floor": 0.09375,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.653340819049639,
+            "untrained": 0.42428002871259013,
+            "learner_floor": 0.078125,
+            "untrained_floor": 0.203125,
+            "threshold_mean": 0.5089036127957294
+          },
+          {
+            "seed": 6101,
+            "learner": 0.5933665811756655,
+            "untrained": 0.43794660909751576,
+            "learner_floor": 0.109375,
+            "untrained_floor": 0.171875,
+            "threshold_mean": 0.5073155078135919
+          },
+          {
+            "seed": 6102,
+            "learner": 0.6178713936621234,
+            "untrained": 0.37552928116655726,
+            "learner_floor": 0.109375,
+            "untrained_floor": 0.1875,
+            "threshold_mean": 0.5109991690161806
+          },
+          {
+            "seed": 6103,
+            "learner": 0.6279868535176599,
+            "untrained": 0.3911027510449985,
+            "learner_floor": 0.078125,
+            "untrained_floor": 0.171875,
+            "threshold_mean": 0.5127485986251583
+          }
+        ]
+      },
+      "accepted": true,
+      "next_orientation": "keep candidate and test a distinct variable"
+    },
+    {
+      "loop": 34,
+      "orientation": "Changing start_low by +0.25 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "start_low",
+      "candidate": {
+        "trace_decay": 0.9249999999999999,
+        "lr": 0.0031000000000000003,
+        "slope": 24.5,
+        "start_low": 0.5425,
+        "start_high": 0.6599999999999999
+      },
+      "predecessor_score": 0.623141411851272,
+      "observed_energy_delta": 0.024116776676117224,
+      "evidence": {
+        "mean_learner": 0.6472581885273893,
+        "mean_untrained": 0.37647059674614347,
+        "mean_advantage": 0.2707875917812458,
+        "mean_floor": 0.08203125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.6602539294599168,
+            "untrained": 0.39085873769542007,
+            "learner_floor": 0.109375,
+            "untrained_floor": 0.171875,
+            "threshold_mean": 0.5135993311310976
+          },
+          {
+            "seed": 6101,
+            "learner": 0.6300250202250486,
+            "untrained": 0.3877017599854629,
+            "learner_floor": 0.046875,
+            "untrained_floor": 0.125,
+            "threshold_mean": 0.513268485501007
+          },
+          {
+            "seed": 6102,
+            "learner": 0.6616782748251853,
+            "untrained": 0.3658144228940874,
+            "learner_floor": 0.078125,
+            "untrained_floor": 0.1875,
+            "threshold_mean": 0.512596885036976
+          },
+          {
+            "seed": 6103,
+            "learner": 0.6370755295994064,
+            "untrained": 0.3615074664096034,
+            "learner_floor": 0.09375,
+            "untrained_floor": 0.203125,
+            "threshold_mean": 0.5172683820093554
+          }
+        ]
+      },
+      "accepted": true,
+      "next_orientation": "keep candidate and test a distinct variable"
+    },
+    {
+      "loop": 35,
+      "orientation": "Changing start_high by +0.25 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "start_high",
+      "candidate": {
+        "trace_decay": 0.9249999999999999,
+        "lr": 0.0031000000000000003,
+        "slope": 24.5,
+        "start_low": 0.5425,
+        "start_high": 0.6824999999999999
+      },
+      "predecessor_score": 0.6472581885273893,
+      "observed_energy_delta": 0.0020143521073280324,
+      "evidence": {
+        "mean_learner": 0.6492725406347173,
+        "mean_untrained": 0.3719009844038687,
+        "mean_advantage": 0.2773715562308485,
+        "mean_floor": 0.11328125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.6529988301963687,
+            "untrained": 0.39253302873298734,
+            "learner_floor": 0.109375,
+            "untrained_floor": 0.15625,
+            "threshold_mean": 0.5262811294304689
+          },
+          {
+            "seed": 6101,
+            "learner": 0.6377075584845932,
+            "untrained": 0.385629291546767,
+            "learner_floor": 0.125,
+            "untrained_floor": 0.171875,
+            "threshold_mean": 0.5248966049241398
+          },
+          {
+            "seed": 6102,
+            "learner": 0.6663563899827326,
+            "untrained": 0.36110864747608934,
+            "learner_floor": 0.125,
+            "untrained_floor": 0.25,
+            "threshold_mean": 0.5277035938778103
+          },
+          {
+            "seed": 6103,
+            "learner": 0.6400273838751744,
+            "untrained": 0.3483329698596312,
+            "learner_floor": 0.09375,
+            "untrained_floor": 0.203125,
+            "threshold_mean": 0.5329898497213902
+          }
+        ]
+      },
+      "accepted": true,
+      "next_orientation": "keep candidate and test a distinct variable"
+    },
+    {
+      "loop": 36,
+      "orientation": "Changing trace_decay by -0.25 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "trace_decay",
+      "candidate": {
+        "trace_decay": 0.9099999999999999,
+        "lr": 0.0031000000000000003,
+        "slope": 24.5,
+        "start_low": 0.5425,
+        "start_high": 0.6824999999999999
+      },
+      "predecessor_score": 0.6492725406347173,
+      "observed_energy_delta": -0.007812216665809113,
+      "evidence": {
+        "mean_learner": 0.6414603239689082,
+        "mean_untrained": 0.3719009844038687,
+        "mean_advantage": 0.2695593395650394,
+        "mean_floor": 0.1015625,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.6383596831947734,
+            "untrained": 0.39253302873298734,
+            "learner_floor": 0.078125,
+            "untrained_floor": 0.15625,
+            "threshold_mean": 0.5211374076375662
+          },
+          {
+            "seed": 6101,
+            "learner": 0.635263875705836,
+            "untrained": 0.385629291546767,
+            "learner_floor": 0.09375,
+            "untrained_floor": 0.171875,
+            "threshold_mean": 0.5181525781775138
+          },
+          {
+            "seed": 6102,
+            "learner": 0.6528634564510771,
+            "untrained": 0.36110864747608934,
+            "learner_floor": 0.140625,
+            "untrained_floor": 0.25,
+            "threshold_mean": 0.5223883163408353
+          },
+          {
+            "seed": 6103,
+            "learner": 0.639354280523946,
+            "untrained": 0.3483329698596312,
+            "learner_floor": 0.09375,
+            "untrained_floor": 0.203125,
+            "threshold_mean": 0.5272839613531605
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 37,
+      "orientation": "Changing lr by -0.25 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "lr",
+      "candidate": {
+        "trace_decay": 0.9249999999999999,
+        "lr": 0.0029250000000000005,
+        "slope": 24.5,
+        "start_low": 0.5425,
+        "start_high": 0.6824999999999999
+      },
+      "predecessor_score": 0.6492725406347173,
+      "observed_energy_delta": -0.004960830403127003,
+      "evidence": {
+        "mean_learner": 0.6443117102315903,
+        "mean_untrained": 0.3719009844038687,
+        "mean_advantage": 0.27241072582772163,
+        "mean_floor": 0.11328125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.6576681105882616,
+            "untrained": 0.39253302873298734,
+            "learner_floor": 0.046875,
+            "untrained_floor": 0.15625,
+            "threshold_mean": 0.5321425478336796
+          },
+          {
+            "seed": 6101,
+            "learner": 0.6282595320564348,
+            "untrained": 0.385629291546767,
+            "learner_floor": 0.125,
+            "untrained_floor": 0.171875,
+            "threshold_mean": 0.5310548649672836
+          },
+          {
+            "seed": 6102,
+            "learner": 0.6458334082866141,
+            "untrained": 0.36110864747608934,
+            "learner_floor": 0.1875,
+            "untrained_floor": 0.25,
+            "threshold_mean": 0.5341523662421372
+          },
+          {
+            "seed": 6103,
+            "learner": 0.6454857899950508,
+            "untrained": 0.3483329698596312,
+            "learner_floor": 0.09375,
+            "untrained_floor": 0.203125,
+            "threshold_mean": 0.5395750625754325
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 38,
+      "orientation": "Changing slope by -0.25 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "slope",
+      "candidate": {
+        "trace_decay": 0.9249999999999999,
+        "lr": 0.0031000000000000003,
+        "slope": 23.0,
+        "start_low": 0.5425,
+        "start_high": 0.6824999999999999
+      },
+      "predecessor_score": 0.6492725406347173,
+      "observed_energy_delta": -0.005705363790279527,
+      "evidence": {
+        "mean_learner": 0.6435671768444378,
+        "mean_untrained": 0.3719009844038687,
+        "mean_advantage": 0.27166619244056905,
+        "mean_floor": 0.09765625,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.6442615406373218,
+            "untrained": 0.39253302873298734,
+            "learner_floor": 0.09375,
+            "untrained_floor": 0.15625,
+            "threshold_mean": 0.5302025604423837
+          },
+          {
+            "seed": 6101,
+            "learner": 0.6416689535558081,
+            "untrained": 0.385629291546767,
+            "learner_floor": 0.078125,
+            "untrained_floor": 0.171875,
+            "threshold_mean": 0.5261045250142846
+          },
+          {
+            "seed": 6102,
+            "learner": 0.632123857212395,
+            "untrained": 0.36110864747608934,
+            "learner_floor": 0.109375,
+            "untrained_floor": 0.25,
+            "threshold_mean": 0.5325930492820379
+          },
+          {
+            "seed": 6103,
+            "learner": 0.6562143559722263,
+            "untrained": 0.3483329698596312,
+            "learner_floor": 0.109375,
+            "untrained_floor": 0.203125,
+            "threshold_mean": 0.5362417806009852
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 39,
+      "orientation": "Changing start_low by -0.25 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "start_low",
+      "candidate": {
+        "trace_decay": 0.9249999999999999,
+        "lr": 0.0031000000000000003,
+        "slope": 24.5,
+        "start_low": 0.52,
+        "start_high": 0.6824999999999999
+      },
+      "predecessor_score": 0.6492725406347173,
+      "observed_energy_delta": -0.0050144787771532195,
+      "evidence": {
+        "mean_learner": 0.6442580618575641,
+        "mean_untrained": 0.40093772556763885,
+        "mean_advantage": 0.2433203362899252,
+        "mean_floor": 0.12890625,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.6891066021896234,
+            "untrained": 0.411852516130413,
+            "learner_floor": 0.125,
+            "untrained_floor": 0.1875,
+            "threshold_mean": 0.5198365808120617
+          },
+          {
+            "seed": 6101,
+            "learner": 0.6287520417033502,
+            "untrained": 0.41202615617083105,
+            "learner_floor": 0.171875,
+            "untrained_floor": 0.21875,
+            "threshold_mean": 0.5197339678527717
+          },
+          {
+            "seed": 6102,
+            "learner": 0.6376694892464975,
+            "untrained": 0.3881951058272575,
+            "learner_floor": 0.109375,
+            "untrained_floor": 0.21875,
+            "threshold_mean": 0.5244621381179224
+          },
+          {
+            "seed": 6103,
+            "learner": 0.621504114290785,
+            "untrained": 0.3916771241420537,
+            "learner_floor": 0.109375,
+            "untrained_floor": 0.1875,
+            "threshold_mean": 0.528017223364027
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    },
+    {
+      "loop": 40,
+      "orientation": "Changing start_high by -0.25 scale will improve energy at t800 compared with champion",
+      "changed_parameter": "start_high",
+      "candidate": {
+        "trace_decay": 0.9249999999999999,
+        "lr": 0.0031000000000000003,
+        "slope": 24.5,
+        "start_low": 0.5425,
+        "start_high": 0.6599999999999999
+      },
+      "predecessor_score": 0.6492725406347173,
+      "observed_energy_delta": -0.0020143521073280324,
+      "evidence": {
+        "mean_learner": 0.6472581885273893,
+        "mean_untrained": 0.37647059674614347,
+        "mean_advantage": 0.2707875917812458,
+        "mean_floor": 0.08203125,
+        "per_seed": [
+          {
+            "seed": 6100,
+            "learner": 0.6602539294599168,
+            "untrained": 0.39085873769542007,
+            "learner_floor": 0.109375,
+            "untrained_floor": 0.171875,
+            "threshold_mean": 0.5135993311310976
+          },
+          {
+            "seed": 6101,
+            "learner": 0.6300250202250486,
+            "untrained": 0.3877017599854629,
+            "learner_floor": 0.046875,
+            "untrained_floor": 0.125,
+            "threshold_mean": 0.513268485501007
+          },
+          {
+            "seed": 6102,
+            "learner": 0.6616782748251853,
+            "untrained": 0.3658144228940874,
+            "learner_floor": 0.078125,
+            "untrained_floor": 0.1875,
+            "threshold_mean": 0.512596885036976
+          },
+          {
+            "seed": 6103,
+            "learner": 0.6370755295994064,
+            "untrained": 0.3615074664096034,
+            "learner_floor": 0.09375,
+            "untrained_floor": 0.203125,
+            "threshold_mean": 0.5172683820093554
+          }
+        ]
+      },
+      "accepted": false,
+      "next_orientation": "reject move; test a different parameter or reversal"
+    }
+  ],
+  "selected_champion": {
+    "config": {
+      "trace_decay": 0.9249999999999999,
+      "lr": 0.0031000000000000003,
+      "slope": 24.5,
+      "start_low": 0.5425,
+      "start_high": 0.6824999999999999
+    },
+    "score": 0.6492725406347173,
+    "trial": {
+      "mean_learner": 0.6492725406347173,
+      "mean_untrained": 0.3719009844038687,
+      "mean_advantage": 0.2773715562308485,
+      "mean_floor": 0.11328125,
+      "per_seed": [
+        {
+          "seed": 6100,
+          "learner": 0.6529988301963687,
+          "untrained": 0.39253302873298734,
+          "learner_floor": 0.109375,
+          "untrained_floor": 0.15625,
+          "threshold_mean": 0.5262811294304689
+        },
+        {
+          "seed": 6101,
+          "learner": 0.6377075584845932,
+          "untrained": 0.385629291546767,
+          "learner_floor": 0.125,
+          "untrained_floor": 0.171875,
+          "threshold_mean": 0.5248966049241398
+        },
+        {
+          "seed": 6102,
+          "learner": 0.6663563899827326,
+          "untrained": 0.36110864747608934,
+          "learner_floor": 0.125,
+          "untrained_floor": 0.25,
+          "threshold_mean": 0.5277035938778103
+        },
+        {
+          "seed": 6103,
+          "learner": 0.6400273838751744,
+          "untrained": 0.3483329698596312,
+          "learner_floor": 0.09375,
+          "untrained_floor": 0.203125,
+          "threshold_mean": 0.5329898497213902
+        }
+      ]
+    },
+    "loop": 35
+  },
+  "sealed_holdout": {
+    "selected": {
+      "mean_learner": 0.646177872201542,
+      "mean_untrained": 0.3898899468217021,
+      "mean_advantage": 0.2562879253798398,
+      "mean_floor": 0.09114583333333333,
+      "per_seed": [
+        {
+          "seed": 7100,
+          "learner": 0.6012946463901722,
+          "untrained": 0.35450821527405085,
+          "learner_floor": 0.125,
+          "untrained_floor": 0.15625,
+          "threshold_mean": 0.5346972166837337
+        },
+        {
+          "seed": 7101,
+          "learner": 0.6607537249793352,
+          "untrained": 0.4272722033890439,
+          "learner_floor": 0.09375,
+          "untrained_floor": 0.125,
+          "threshold_mean": 0.5272978906491715
+        },
+        {
+          "seed": 7102,
+          "learner": 0.6963000498138074,
+          "untrained": 0.3940614056374513,
+          "learner_floor": 0.0625,
+          "untrained_floor": 0.125,
+          "threshold_mean": 0.5270197160872964
+        },
+        {
+          "seed": 7103,
+          "learner": 0.6224613640147894,
+          "untrained": 0.38895600712792633,
+          "learner_floor": 0.046875,
+          "untrained_floor": 0.140625,
+          "threshold_mean": 0.5301249548943401
+        },
+        {
+          "seed": 7104,
+          "learner": 0.6679001952978739,
+          "untrained": 0.3708915499209412,
+          "learner_floor": 0.0625,
+          "untrained_floor": 0.21875,
+          "threshold_mean": 0.5298098532552626
+        },
+        {
+          "seed": 7105,
+          "learner": 0.625018525948541,
+          "untrained": 0.3551481744825552,
+          "learner_floor": 0.125,
+          "untrained_floor": 0.140625,
+          "threshold_mean": 0.5279293075672584
+        },
+        {
+          "seed": 7106,
+          "learner": 0.6514338416864285,
+          "untrained": 0.38454857385363367,
+          "learner_floor": 0.125,
+          "untrained_floor": 0.265625,
+          "threshold_mean": 0.5369950195145533
+        },
+        {
+          "seed": 7107,
+          "learner": 0.6666340587310424,
+          "untrained": 0.38757657136081763,
+          "learner_floor": 0.0625,
+          "untrained_floor": 0.171875,
+          "threshold_mean": 0.5308658216075094
+        },
+        {
+          "seed": 7108,
+          "learner": 0.6087436397876376,
+          "untrained": 0.3936116027136817,
+          "learner_floor": 0.125,
+          "untrained_floor": 0.171875,
+          "threshold_mean": 0.5224061414617749
+        },
+        {
+          "seed": 7109,
+          "learner": 0.6759873586549916,
+          "untrained": 0.3922631256356293,
+          "learner_floor": 0.0625,
+          "untrained_floor": 0.171875,
+          "threshold_mean": 0.5304566175363901
+        },
+        {
+          "seed": 7110,
+          "learner": 0.6583277666480913,
+          "untrained": 0.41747281290936034,
+          "learner_floor": 0.09375,
+          "untrained_floor": 0.125,
+          "threshold_mean": 0.5246816903814637
+        },
+        {
+          "seed": 7111,
+          "learner": 0.6192792944657928,
+          "untrained": 0.4123691195553346,
+          "learner_floor": 0.109375,
+          "untrained_floor": 0.203125,
+          "threshold_mean": 0.536661223582171
+        }
+      ]
+    },
+    "initial": {
+      "mean_learner": 0.30357896659093814,
+      "mean_untrained": 0.2882972944317366,
+      "mean_advantage": 0.01528167215920167,
+      "mean_floor": 0.44140625,
+      "per_seed": [
+        {
+          "seed": 7100,
+          "learner": 0.2619675329156793,
+          "untrained": 0.26137572460609393,
+          "learner_floor": 0.421875,
+          "untrained_floor": 0.484375,
+          "threshold_mean": 0.5179880720046177
+        },
+        {
+          "seed": 7101,
+          "learner": 0.32783892770064516,
+          "untrained": 0.319350547564474,
+          "learner_floor": 0.390625,
+          "untrained_floor": 0.40625,
+          "threshold_mean": 0.4935052460354161
+        },
+        {
+          "seed": 7102,
+          "learner": 0.3537110026251215,
+          "untrained": 0.33991020493711244,
+          "learner_floor": 0.40625,
+          "untrained_floor": 0.4375,
+          "threshold_mean": 0.4950752513274314
+        },
+        {
+          "seed": 7103,
+          "learner": 0.24873989477316824,
+          "untrained": 0.23927273152003084,
+          "learner_floor": 0.421875,
+          "untrained_floor": 0.40625,
+          "threshold_mean": 0.49666408381414495
+        },
+        {
+          "seed": 7104,
+          "learner": 0.33336948111621223,
+          "untrained": 0.30720109508667526,
+          "learner_floor": 0.4375,
+          "untrained_floor": 0.40625,
+          "threshold_mean": 0.5171505302504192
+        },
+        {
+          "seed": 7105,
+          "learner": 0.30870257795439243,
+          "untrained": 0.2809783920534015,
+          "learner_floor": 0.40625,
+          "untrained_floor": 0.359375,
+          "threshold_mean": 0.5120791085871668
+        },
+        {
+          "seed": 7106,
+          "learner": 0.3762820522941281,
+          "untrained": 0.34728423951670706,
+          "learner_floor": 0.359375,
+          "untrained_floor": 0.390625,
+          "threshold_mean": 0.5241754810507128
+        },
+        {
+          "seed": 7107,
+          "learner": 0.30928491174657724,
+          "untrained": 0.30668967670203834,
+          "learner_floor": 0.453125,
+          "untrained_floor": 0.4375,
+          "threshold_mean": 0.5010621282580664
+        },
+        {
+          "seed": 7108,
+          "learner": 0.275738933814894,
+          "untrained": 0.2606459474719498,
+          "learner_floor": 0.5625,
+          "untrained_floor": 0.421875,
+          "threshold_mean": 0.4847206383741469
+        },
+        {
+          "seed": 7109,
+          "learner": 0.3150181292724692,
+          "untrained": 0.2912955279876168,
+          "learner_floor": 0.40625,
+          "untrained_floor": 0.4375,
+          "threshold_mean": 0.5050378711511367
+        },
+        {
+          "seed": 7110,
+          "learner": 0.25480362116800437,
+          "untrained": 0.24954006472716717,
+          "learner_floor": 0.53125,
+          "untrained_floor": 0.4375,
+          "threshold_mean": 0.47162597715635357
+        },
+        {
+          "seed": 7111,
+          "learner": 0.27749053370996685,
+          "untrained": 0.2560233810075714,
+          "learner_floor": 0.5,
+          "untrained_floor": 0.515625,
+          "threshold_mean": 0.5124946567577727
+        }
+      ]
+    },
+    "fixed50": {
+      "energy": 0.6148033912082631,
+      "floor": 0.0,
+      "per_seed": [
+        {
+          "seed": 7100,
+          "energy": 0.625990870738154,
+          "floor": 0.0
+        },
+        {
+          "seed": 7101,
+          "energy": 0.6247472814149313,
+          "floor": 0.0
+        },
+        {
+          "seed": 7102,
+          "energy": 0.6154162985401437,
+          "floor": 0.0
+        },
+        {
+          "seed": 7103,
+          "energy": 0.6035358350436627,
+          "floor": 0.0
+        },
+        {
+          "seed": 7104,
+          "energy": 0.6014450914364196,
+          "floor": 0.0
+        },
+        {
+          "seed": 7105,
+          "energy": 0.6031009630137896,
+          "floor": 0.0
+        },
+        {
+          "seed": 7106,
+          "energy": 0.6277776845645597,
+          "floor": 0.0
+        },
+        {
+          "seed": 7107,
+          "energy": 0.6178036450474826,
+          "floor": 0.0
+        },
+        {
+          "seed": 7108,
+          "energy": 0.6251857360798296,
+          "floor": 0.0
+        },
+        {
+          "seed": 7109,
+          "energy": 0.6170159000215882,
+          "floor": 0.0
+        },
+        {
+          "seed": 7110,
+          "energy": 0.6251978068206507,
+          "floor": 0.0
+        },
+        {
+          "seed": 7111,
+          "energy": 0.5904235817779453,
+          "floor": 0.0
+        }
+      ]
+    }
+  },
+  "caveat": "One research loop with 40 sequential hyperparameter-design iterations, not 40 independent research loops or discoveries; repeated developer-seed reuse creates selection bias. New holdout is same generator and not ecological generality."
+}
