@@ -1,0 +1,386 @@
+{
+  "status": "executed two independent conceptual probes",
+  "train_seeds": [
+    22300,
+    22301,
+    22302,
+    22303,
+    22304,
+    22305,
+    22306,
+    22307
+  ],
+  "test_seeds": [
+    23300,
+    23301,
+    23302,
+    23303,
+    23304,
+    23305,
+    23306,
+    23307
+  ],
+  "size": 10,
+  "horizon": 420,
+  "eight_categories": "resource>=.48, energy>=.12, last action",
+  "frozen_mapping": [
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    2,
+    2
+  ],
+  "macro_memory_regimes": {
+    "baseline": {
+      "current3": {
+        "test_micro_nll": 0.46493190958091696,
+        "target_entropy_nats": 0.6399383319961083,
+        "micro_information_nats": 0.17500642241519132,
+        "train_obs": 333600,
+        "test_obs": 333600,
+        "parameter_rows": 3
+      },
+      "history3": {
+        "test_micro_nll": 0.0026178787963926915,
+        "target_entropy_nats": 0.6399383319961083,
+        "micro_information_nats": 0.6373204531997156,
+        "train_obs": 333600,
+        "test_obs": 333600,
+        "parameter_rows": 81
+      },
+      "full8": {
+        "test_micro_nll": 0.46494026045541065,
+        "target_entropy_nats": 0.6399383319961083,
+        "micro_information_nats": 0.17499807154069763,
+        "train_obs": 333600,
+        "test_obs": 333600,
+        "parameter_rows": 8
+      },
+      "memory_gain_nats": 0.46231403078452427,
+      "final_worlds": [
+        {
+          "seed": 23300,
+          "energy": 0.5977531807299507,
+          "floor": 0.0
+        },
+        {
+          "seed": 23301,
+          "energy": 0.6124967871114237,
+          "floor": 0.0
+        },
+        {
+          "seed": 23302,
+          "energy": 0.596146311112934,
+          "floor": 0.0
+        },
+        {
+          "seed": 23303,
+          "energy": 0.6136479698096441,
+          "floor": 0.0
+        },
+        {
+          "seed": 23304,
+          "energy": 0.6090938856976549,
+          "floor": 0.0
+        },
+        {
+          "seed": 23305,
+          "energy": 0.5963742717906636,
+          "floor": 0.0
+        },
+        {
+          "seed": 23306,
+          "energy": 0.5858022755915949,
+          "floor": 0.0
+        },
+        {
+          "seed": 23307,
+          "energy": 0.6105875365397392,
+          "floor": 0.0
+        }
+      ],
+      "test_occupancy": [
+        0,
+        0,
+        723,
+        111820,
+        0,
+        0,
+        223751,
+        506
+      ],
+      "intervention": "unchanged original world"
+    },
+    "seasonal_regrowth_reduced": {
+      "current3": {
+        "test_micro_nll": 0.6409779487049829,
+        "target_entropy_nats": 0.9363770128858913,
+        "micro_information_nats": 0.29539906418090833,
+        "train_obs": 333600,
+        "test_obs": 333600,
+        "parameter_rows": 3
+      },
+      "history3": {
+        "test_micro_nll": 0.14148578365878664,
+        "target_entropy_nats": 0.9363770128858913,
+        "micro_information_nats": 0.7948912292271046,
+        "train_obs": 333600,
+        "test_obs": 333600,
+        "parameter_rows": 81
+      },
+      "full8": {
+        "test_micro_nll": 0.6092828061774316,
+        "target_entropy_nats": 0.9363770128858913,
+        "micro_information_nats": 0.3270942067084597,
+        "train_obs": 333600,
+        "test_obs": 333600,
+        "parameter_rows": 8
+      },
+      "memory_gain_nats": 0.4994921650461963,
+      "final_worlds": [
+        {
+          "seed": 23300,
+          "energy": 0.30092171646216953,
+          "floor": 0.0
+        },
+        {
+          "seed": 23301,
+          "energy": 0.31482841239329074,
+          "floor": 0.0
+        },
+        {
+          "seed": 23302,
+          "energy": 0.29636421032940874,
+          "floor": 0.0
+        },
+        {
+          "seed": 23303,
+          "energy": 0.3169201748801604,
+          "floor": 0.0
+        },
+        {
+          "seed": 23304,
+          "energy": 0.31163248034222474,
+          "floor": 0.0
+        },
+        {
+          "seed": 23305,
+          "energy": 0.30507098609542926,
+          "floor": 0.0
+        },
+        {
+          "seed": 23306,
+          "energy": 0.29165555512421887,
+          "floor": 0.0
+        },
+        {
+          "seed": 23307,
+          "energy": 0.31087273554666406,
+          "floor": 0.0
+        }
+      ],
+      "test_occupancy": [
+        5,
+        34,
+        34116,
+        109385,
+        1082,
+        0,
+        191672,
+        506
+      ],
+      "intervention": "regrowth .06\u2192.055 only at ticks161\u2013320"
+    }
+  },
+  "acquired_action": {
+    "sampled_resource_domain": [
+      0.25,
+      0.75
+    ],
+    "slope": 14.0,
+    "first_births": [
+      {
+        "seed": 24300,
+        "first_birth_tick": 8,
+        "threshold_shift": -0.0005735663719919071,
+        "max_abs_propensity_change": 0.0020074789105090085,
+        "mean_abs_propensity_change": 0.0009225755235662121,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24301,
+        "first_birth_tick": 2,
+        "threshold_shift": -0.00029844155802460914,
+        "max_abs_propensity_change": 0.001044535244565492,
+        "mean_abs_propensity_change": 0.000556820869684993,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24302,
+        "first_birth_tick": 2,
+        "threshold_shift": -8.657757064323146e-05,
+        "max_abs_propensity_change": 0.0003030184835153271,
+        "mean_abs_propensity_change": 0.00015601174563613178,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24303,
+        "first_birth_tick": 1,
+        "threshold_shift": -0.0004919674892398529,
+        "max_abs_propensity_change": 0.0017218783881759459,
+        "mean_abs_propensity_change": 0.0006656560572097407,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24304,
+        "first_birth_tick": 3,
+        "threshold_shift": -0.00018259690079214241,
+        "max_abs_propensity_change": 0.0006390887849181404,
+        "mean_abs_propensity_change": 0.0003168434483067978,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24305,
+        "first_birth_tick": 4,
+        "threshold_shift": -0.00022507726176518306,
+        "max_abs_propensity_change": 0.0007877702532154696,
+        "mean_abs_propensity_change": 0.0003414696939532232,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24306,
+        "first_birth_tick": 1,
+        "threshold_shift": -1.627858451103137e-05,
+        "max_abs_propensity_change": 5.6974923682617806e-05,
+        "mean_abs_propensity_change": 2.8681410206986328e-05,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24307,
+        "first_birth_tick": 2,
+        "threshold_shift": -0.00028457431578443604,
+        "max_abs_propensity_change": 0.000996009546366472,
+        "mean_abs_propensity_change": 0.0005242150232190793,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24308,
+        "first_birth_tick": 1,
+        "threshold_shift": -3.890795280370174e-05,
+        "max_abs_propensity_change": 0.0001361773096797414,
+        "mean_abs_propensity_change": 6.87403601774914e-05,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24309,
+        "first_birth_tick": 4,
+        "threshold_shift": -0.001013426155356545,
+        "max_abs_propensity_change": 0.003546950209255606,
+        "mean_abs_propensity_change": 0.0018987051739372156,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24310,
+        "first_birth_tick": 1,
+        "threshold_shift": -7.629999593739001e-05,
+        "max_abs_propensity_change": 0.0002670480831297173,
+        "mean_abs_propensity_change": 0.00014309616230678536,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24311,
+        "first_birth_tick": 2,
+        "threshold_shift": -0.00037753041985666425,
+        "max_abs_propensity_change": 0.0013213481973093355,
+        "mean_abs_propensity_change": 0.0006052499674118109,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24312,
+        "first_birth_tick": 2,
+        "threshold_shift": -2.2089003682501662e-05,
+        "max_abs_propensity_change": 7.73113620583521e-05,
+        "mean_abs_propensity_change": 4.123379745468632e-05,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24313,
+        "first_birth_tick": 2,
+        "threshold_shift": 0.0003384660083827762,
+        "max_abs_propensity_change": 0.001184627894180612,
+        "mean_abs_propensity_change": 0.0006361480395919402,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24314,
+        "first_birth_tick": 3,
+        "threshold_shift": -0.00015025561348985805,
+        "max_abs_propensity_change": 0.000525894572143748,
+        "mean_abs_propensity_change": 0.00021613735714377843,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24315,
+        "first_birth_tick": 1,
+        "threshold_shift": -5.0964274754816685e-06,
+        "max_abs_propensity_change": 1.7837385829777563e-05,
+        "mean_abs_propensity_change": 7.55921099419613e-06,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24316,
+        "first_birth_tick": 1,
+        "threshold_shift": -1.8395728708653358e-06,
+        "max_abs_propensity_change": 6.438489211557652e-06,
+        "mean_abs_propensity_change": 2.0903586672088745e-06,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24317,
+        "first_birth_tick": 1,
+        "threshold_shift": -0.00018862772026129182,
+        "max_abs_propensity_change": 0.000660196924828993,
+        "mean_abs_propensity_change": 0.00035185136815296,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24318,
+        "first_birth_tick": 2,
+        "threshold_shift": -0.0011019821906324,
+        "max_abs_propensity_change": 0.003856889348078929,
+        "mean_abs_propensity_change": 0.001951430623664401,
+        "matched_physical_state": true
+      },
+      {
+        "seed": 24319,
+        "first_birth_tick": 3,
+        "threshold_shift": -0.00034185275040604646,
+        "max_abs_propensity_change": 0.0011964705390370423,
+        "mean_abs_propensity_change": 0.0006295411783874734,
+        "matched_physical_state": true
+      }
+    ],
+    "mean_max_abs_propensity_change": 0.0010176972424845942,
+    "mean_abs_threshold_shift": 0.0002907726931953958,
+    "qualifier": "Mechanistic child action-propensity comparison only; no demonstrated fitness gain."
+  },
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "source_sha256": {
+    "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1",
+    "threshold_policy.py": "93230b8f5c3bb6a0ec28eca5e69f7fe99d3450905e8db9045e788216aaef2e12",
+    "SOC_MACRO_probe.py": "1ba258254a9171c14d9f6ecfba5b7b44c5ffdc59b3b6b044a39a60fe46381a7c",
+    "SOC_INHERITANCE_garden.py": "0469a00e78630a3f4dc4a6d166124e291c35bfb28a558db702d5bcddc3bfdb86",
+    "SOC_INHERITANCE_causal.py": "7a9218b9cf946b6a2b8cb6604c4067ac9bb97a26d4dfc16337e188e5743fbb62",
+    "NEXT_MEMORY_probe.py": "37396b7d4c3be1d8434871c6c996bb6fb70088b2dcb530edeb9bde5744374983"
+  },
+  "limits": [
+    "Not continuous world-state recovery or an intelligence measure.",
+    "Macro-memory reference labels were selected on earlier experiments; no optimization on these test worlds.",
+    "Seasonal regrowth changes external physics by design.",
+    "Same simulator generator, synthetic seeds not real-world replication."
+  ]
+}
