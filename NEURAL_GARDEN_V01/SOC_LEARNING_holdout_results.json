@@ -1,0 +1,3391 @@
+{
+  "changed_world": "EvolutionGarden demographic rules are identical across arms, but threshold control bypasses neural phenotype",
+  "hypothesis": "At fixed manually tuned bias and recurrent gain, does mutation improve descendants? And how does it compare to a non-genetic resource rule?",
+  "interpretation": "preselected bias evaluated once on untouched 40 seeds; candidate originally selected via six-seed development search",
+  "next": "Never attribute hand-tuned initial phenotype advantages to heritable selection without mutation and lineage fitness gains",
+  "paired": {
+    "hand_tuned_mutating_neural": {
+      "losses": 13,
+      "mean_clonal_minus_reference": 2.075,
+      "sd": 6.7496913509680825,
+      "ties": 7,
+      "wins": 20
+    },
+    "handcoded_threshold55": {
+      "losses": 17,
+      "mean_clonal_minus_reference": -0.725,
+      "sd": 7.929133234228938,
+      "ties": 3,
+      "wins": 20
+    }
+  },
+  "reference": {
+    "hand_tuned_clonal_neural": {
+      "mean_energy": 0.3610473622987014,
+      "mean_generation": 13.475,
+      "mean_population": 84.925,
+      "mean_sensitivity": 0.01060965204369486,
+      "parameters": {
+        "action_bias": -0.45,
+        "mutation_std": 0.0,
+        "recurrent_gain": 1.0
+      },
+      "score": 1.2102973622987014,
+      "seeds": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031,
+        2032,
+        2033,
+        2034,
+        2035,
+        2036,
+        2037,
+        2038,
+        2039,
+        2040,
+        2041,
+        2042,
+        2043,
+        2044,
+        2045,
+        2046,
+        2047,
+        2048,
+        2049
+      ],
+      "trials": [
+        {
+          "births": 455,
+          "deaths": 432,
+          "energy": 0.3698778937983501,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.47479617448969547,
+          "mean_policy_p_low": 0.4648197903784702,
+          "policy_resource_sensitivity": 0.00997638411122536,
+          "population": 90,
+          "seed": 2010,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.30540906890360536,
+              "mean_resource": 0.4958709582405198,
+              "population": 87
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.2978910481286134,
+              "mean_resource": 0.5626456098997646,
+              "population": 67
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.3043180154623833,
+              "mean_resource": 0.6119786837421354,
+              "population": 64
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.3698778937983501,
+              "mean_resource": 0.4674860876874359,
+              "population": 90
+            }
+          }
+        },
+        {
+          "births": 454,
+          "deaths": 442,
+          "energy": 0.3124038621791307,
+          "max_generation": 12,
+          "mean_policy_p_high": 0.4602919227656627,
+          "mean_policy_p_low": 0.4428851279985486,
+          "policy_resource_sensitivity": 0.01740679476711404,
+          "population": 79,
+          "seed": 2011,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.2992802080880872,
+              "mean_resource": 0.493639850676406,
+              "population": 86
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.1861169622607161,
+              "mean_resource": 0.6344594033054167,
+              "population": 47
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.3096984574341829,
+              "mean_resource": 0.6310036018668014,
+              "population": 54
+            },
+            "1500": {
+              "max_generation": 12,
+              "mean_energy_all": 0.3124038621791307,
+              "mean_resource": 0.5267423907765219,
+              "population": 79
+            }
+          }
+        },
+        {
+          "births": 455,
+          "deaths": 435,
+          "energy": 0.3617910208100984,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.44409412579471325,
+          "mean_policy_p_low": 0.4394862965411882,
+          "policy_resource_sensitivity": 0.004607829253524953,
+          "population": 86,
+          "seed": 2012,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.32530483303919333,
+              "mean_resource": 0.48321198434516105,
+              "population": 91
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.21270598394129742,
+              "mean_resource": 0.605742770271479,
+              "population": 52
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2547781815170614,
+              "mean_resource": 0.6650129283792616,
+              "population": 53
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.3617910208100984,
+              "mean_resource": 0.47327636524911626,
+              "population": 86
+            }
+          }
+        },
+        {
+          "births": 454,
+          "deaths": 439,
+          "energy": 0.4243734769598484,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.4088682628996313,
+          "mean_policy_p_low": 0.40271221779103855,
+          "policy_resource_sensitivity": 0.006156045108592631,
+          "population": 85,
+          "seed": 2013,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.29765079802793215,
+              "mean_resource": 0.5278550115616926,
+              "population": 85
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.30392032655336637,
+              "mean_resource": 0.5463280508461552,
+              "population": 77
+            },
+            "1000": {
+              "max_generation": 8,
+              "mean_energy_all": 0.2680098740894953,
+              "mean_resource": 0.6034886192343417,
+              "population": 66
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.4243734769598484,
+              "mean_resource": 0.5151967953247809,
+              "population": 85
+            }
+          }
+        },
+        {
+          "births": 457,
+          "deaths": 441,
+          "energy": 0.3559078107952924,
+          "max_generation": 15,
+          "mean_policy_p_high": 0.4305116187137304,
+          "mean_policy_p_low": 0.4197790642768319,
+          "policy_resource_sensitivity": 0.010732554436898405,
+          "population": 88,
+          "seed": 2014,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.2814733169052702,
+              "mean_resource": 0.48869102201560105,
+              "population": 88
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.21120763792213126,
+              "mean_resource": 0.6461042554334625,
+              "population": 52
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.27769345195061945,
+              "mean_resource": 0.6558406822669809,
+              "population": 56
+            },
+            "1500": {
+              "max_generation": 15,
+              "mean_energy_all": 0.3559078107952924,
+              "mean_resource": 0.4815185939404564,
+              "population": 88
+            }
+          }
+        },
+        {
+          "births": 475,
+          "deaths": 451,
+          "energy": 0.35288208715663666,
+          "max_generation": 15,
+          "mean_policy_p_high": 0.4262688585557587,
+          "mean_policy_p_low": 0.4152839025162078,
+          "policy_resource_sensitivity": 0.010984956039550938,
+          "population": 89,
+          "seed": 2015,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3280996144512905,
+              "mean_resource": 0.514033493608309,
+              "population": 85
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.22501524755614558,
+              "mean_resource": 0.6263189138415454,
+              "population": 53
+            },
+            "1000": {
+              "max_generation": 8,
+              "mean_energy_all": 0.3040992108655887,
+              "mean_resource": 0.6800042334760913,
+              "population": 54
+            },
+            "1500": {
+              "max_generation": 15,
+              "mean_energy_all": 0.35288208715663666,
+              "mean_resource": 0.4962334816020897,
+              "population": 89
+            }
+          }
+        },
+        {
+          "births": 453,
+          "deaths": 438,
+          "energy": 0.3841900731735081,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.4168925968114931,
+          "mean_policy_p_low": 0.4016508941020403,
+          "policy_resource_sensitivity": 0.01524170270945271,
+          "population": 85,
+          "seed": 2016,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.31833739290303753,
+              "mean_resource": 0.49989095321334354,
+              "population": 91
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.22268317403234814,
+              "mean_resource": 0.586956182468104,
+              "population": 60
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.23830269110478877,
+              "mean_resource": 0.6495400463609873,
+              "population": 50
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.3841900731735081,
+              "mean_resource": 0.5295559640345346,
+              "population": 85
+            }
+          }
+        },
+        {
+          "births": 449,
+          "deaths": 430,
+          "energy": 0.42641994213248435,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.46579446311634337,
+          "mean_policy_p_low": 0.4485200513245163,
+          "policy_resource_sensitivity": 0.017274411791827076,
+          "population": 88,
+          "seed": 2017,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.2984377049390589,
+              "mean_resource": 0.49455098521615976,
+              "population": 87
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.26655357540659336,
+              "mean_resource": 0.5423603894119127,
+              "population": 74
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.22212140498396274,
+              "mean_resource": 0.710644956607985,
+              "population": 44
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.42641994213248435,
+              "mean_resource": 0.4995311200935509,
+              "population": 88
+            }
+          }
+        },
+        {
+          "births": 447,
+          "deaths": 444,
+          "energy": 0.3027432119225059,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.47285443597708576,
+          "mean_policy_p_low": 0.4551147456653034,
+          "policy_resource_sensitivity": 0.017739690311782533,
+          "population": 75,
+          "seed": 2018,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.29634014392621616,
+              "mean_resource": 0.5100911624474945,
+              "population": 84
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.276478485649556,
+              "mean_resource": 0.5701942464812402,
+              "population": 64
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.25523801188138945,
+              "mean_resource": 0.6951042127442717,
+              "population": 45
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.3027432119225059,
+              "mean_resource": 0.5127149646303509,
+              "population": 75
+            }
+          }
+        },
+        {
+          "births": 468,
+          "deaths": 443,
+          "energy": 0.40140055427750065,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.44949237852410484,
+          "mean_policy_p_low": 0.44596273438286493,
+          "policy_resource_sensitivity": 0.003529644141239982,
+          "population": 87,
+          "seed": 2019,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.30221588064127475,
+              "mean_resource": 0.506679935942453,
+              "population": 91
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.27114578079343293,
+              "mean_resource": 0.5618741542716404,
+              "population": 65
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.28418333101765414,
+              "mean_resource": 0.656704539936321,
+              "population": 52
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.40140055427750065,
+              "mean_resource": 0.47274786385271755,
+              "population": 87
+            }
+          }
+        },
+        {
+          "births": 462,
+          "deaths": 437,
+          "energy": 0.3869290297699176,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.4407444896983446,
+          "mean_policy_p_low": 0.4226340292919125,
+          "policy_resource_sensitivity": 0.018110460406432268,
+          "population": 90,
+          "seed": 2020,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3053399422091684,
+              "mean_resource": 0.4913088315540282,
+              "population": 90
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.28035762639644246,
+              "mean_resource": 0.5410977455189616,
+              "population": 70
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2660131645640739,
+              "mean_resource": 0.651780590979756,
+              "population": 52
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.3869290297699176,
+              "mean_resource": 0.4722604293248858,
+              "population": 90
+            }
+          }
+        },
+        {
+          "births": 457,
+          "deaths": 427,
+          "energy": 0.35876411289121335,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.468332057569221,
+          "mean_policy_p_low": 0.4478845807764165,
+          "policy_resource_sensitivity": 0.020447476792804568,
+          "population": 91,
+          "seed": 2021,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3145682426113861,
+              "mean_resource": 0.4699984375609485,
+              "population": 92
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.2694623368600402,
+              "mean_resource": 0.5499687123057726,
+              "population": 71
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.26102943194150896,
+              "mean_resource": 0.6632037261334206,
+              "population": 54
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.35876411289121335,
+              "mean_resource": 0.4597352957990448,
+              "population": 91
+            }
+          }
+        },
+        {
+          "births": 459,
+          "deaths": 447,
+          "energy": 0.3040220010521638,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.43910302538459883,
+          "mean_policy_p_low": 0.43229302403831066,
+          "policy_resource_sensitivity": 0.006810001346288179,
+          "population": 74,
+          "seed": 2022,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3617444888294857,
+              "mean_resource": 0.4979484782066537,
+              "population": 93
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.23763067347535516,
+              "mean_resource": 0.6194477691762686,
+              "population": 54
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.286345799386697,
+              "mean_resource": 0.6473759574631459,
+              "population": 53
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.3040220010521638,
+              "mean_resource": 0.5210702543737186,
+              "population": 74
+            }
+          }
+        },
+        {
+          "births": 469,
+          "deaths": 436,
+          "energy": 0.41922419502771674,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.4136964078839979,
+          "mean_policy_p_low": 0.4036991930949813,
+          "policy_resource_sensitivity": 0.00999721478901651,
+          "population": 90,
+          "seed": 2023,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3424741483294998,
+              "mean_resource": 0.4930525013602734,
+              "population": 91
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.2261454758733096,
+              "mean_resource": 0.5793791105304577,
+              "population": 64
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.24853915487734196,
+              "mean_resource": 0.6799216457913438,
+              "population": 51
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.41922419502771674,
+              "mean_resource": 0.4806794984783106,
+              "population": 90
+            }
+          }
+        },
+        {
+          "births": 446,
+          "deaths": 438,
+          "energy": 0.3034640760611788,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.4836929160688049,
+          "mean_policy_p_low": 0.4714347318281207,
+          "policy_resource_sensitivity": 0.012258184240683999,
+          "population": 76,
+          "seed": 2024,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3172656046250909,
+              "mean_resource": 0.48249997867531824,
+              "population": 91
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.22582932923185972,
+              "mean_resource": 0.633438199713927,
+              "population": 55
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.2647960219460146,
+              "mean_resource": 0.6698608166974536,
+              "population": 52
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.3034640760611788,
+              "mean_resource": 0.5042626329480459,
+              "population": 76
+            }
+          }
+        },
+        {
+          "births": 467,
+          "deaths": 450,
+          "energy": 0.29539599850530757,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.4618983960993103,
+          "mean_policy_p_low": 0.44870398512447907,
+          "policy_resource_sensitivity": 0.013194410974831088,
+          "population": 80,
+          "seed": 2025,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.36196085903118635,
+              "mean_resource": 0.48207982556751827,
+              "population": 89
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.16462371073276238,
+              "mean_resource": 0.7342634032954817,
+              "population": 32
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.31843476290974004,
+              "mean_resource": 0.6192747435947485,
+              "population": 61
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.29539599850530757,
+              "mean_resource": 0.4883595497161217,
+              "population": 80
+            }
+          }
+        },
+        {
+          "births": 455,
+          "deaths": 434,
+          "energy": 0.33969540029232226,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.4541596759987834,
+          "mean_policy_p_low": 0.4408905269554795,
+          "policy_resource_sensitivity": 0.013269149043303858,
+          "population": 87,
+          "seed": 2026,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3486463704892334,
+              "mean_resource": 0.5096680728310603,
+              "population": 89
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.19873720118816235,
+              "mean_resource": 0.6779637834569634,
+              "population": 44
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.29230176105124756,
+              "mean_resource": 0.6528875283706006,
+              "population": 56
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.33969540029232226,
+              "mean_resource": 0.4723549564506071,
+              "population": 87
+            }
+          }
+        },
+        {
+          "births": 462,
+          "deaths": 435,
+          "energy": 0.4009427628747477,
+          "max_generation": 12,
+          "mean_policy_p_high": 0.42476067159855163,
+          "mean_policy_p_low": 0.4138333909657726,
+          "policy_resource_sensitivity": 0.010927280632779212,
+          "population": 88,
+          "seed": 2027,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.2973535753751805,
+              "mean_resource": 0.49070833216447485,
+              "population": 88
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.2040704218168602,
+              "mean_resource": 0.5896182798098631,
+              "population": 57
+            },
+            "1000": {
+              "max_generation": 8,
+              "mean_energy_all": 0.22330780534725675,
+              "mean_resource": 0.6806594401723903,
+              "population": 45
+            },
+            "1500": {
+              "max_generation": 12,
+              "mean_energy_all": 0.4009427628747477,
+              "mean_resource": 0.4844088397789947,
+              "population": 88
+            }
+          }
+        },
+        {
+          "births": 447,
+          "deaths": 431,
+          "energy": 0.2926665076179315,
+          "max_generation": 12,
+          "mean_policy_p_high": 0.4550685962009394,
+          "mean_policy_p_low": 0.4514422261701967,
+          "policy_resource_sensitivity": 0.0036263700307427905,
+          "population": 82,
+          "seed": 2028,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.334036073572193,
+              "mean_resource": 0.497694815621911,
+              "population": 88
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.2796333972636162,
+              "mean_resource": 0.6070810819696403,
+              "population": 62
+            },
+            "1000": {
+              "max_generation": 8,
+              "mean_energy_all": 0.2842873672213846,
+              "mean_resource": 0.6768021805059832,
+              "population": 47
+            },
+            "1500": {
+              "max_generation": 12,
+              "mean_energy_all": 0.2926665076179315,
+              "mean_resource": 0.4762560192316866,
+              "population": 82
+            }
+          }
+        },
+        {
+          "births": 453,
+          "deaths": 429,
+          "energy": 0.40178553081818186,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.43958163598970457,
+          "mean_policy_p_low": 0.43285056838952957,
+          "policy_resource_sensitivity": 0.0067310676001749205,
+          "population": 88,
+          "seed": 2029,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.2939250235285414,
+              "mean_resource": 0.5139672120502383,
+              "population": 84
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.13968587857010858,
+              "mean_resource": 0.7268047164101071,
+              "population": 34
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2380808543421545,
+              "mean_resource": 0.6859601796498153,
+              "population": 45
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.40178553081818186,
+              "mean_resource": 0.48163261980953137,
+              "population": 88
+            }
+          }
+        },
+        {
+          "births": 460,
+          "deaths": 438,
+          "energy": 0.327918331637809,
+          "max_generation": 12,
+          "mean_policy_p_high": 0.4422942299481145,
+          "mean_policy_p_low": 0.4378366825784073,
+          "policy_resource_sensitivity": 0.004457547369707206,
+          "population": 81,
+          "seed": 2030,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.28876499103659925,
+              "mean_resource": 0.5041415908353544,
+              "population": 85
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.2642067540248451,
+              "mean_resource": 0.5588357033494702,
+              "population": 64
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2583073487484193,
+              "mean_resource": 0.6886963164579495,
+              "population": 46
+            },
+            "1500": {
+              "max_generation": 12,
+              "mean_energy_all": 0.327918331637809,
+              "mean_resource": 0.4927193571085822,
+              "population": 81
+            }
+          }
+        },
+        {
+          "births": 459,
+          "deaths": 440,
+          "energy": 0.36599413491028676,
+          "max_generation": 12,
+          "mean_policy_p_high": 0.44182502889698183,
+          "mean_policy_p_low": 0.42585976575107337,
+          "policy_resource_sensitivity": 0.015965263145908452,
+          "population": 84,
+          "seed": 2031,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.3188689290858595,
+              "mean_resource": 0.4908162534943469,
+              "population": 91
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.24890344616898716,
+              "mean_resource": 0.5642262657422159,
+              "population": 64
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2683632656620583,
+              "mean_resource": 0.5807573720231926,
+              "population": 61
+            },
+            "1500": {
+              "max_generation": 12,
+              "mean_energy_all": 0.36599413491028676,
+              "mean_resource": 0.5002551797910829,
+              "population": 84
+            }
+          }
+        },
+        {
+          "births": 449,
+          "deaths": 437,
+          "energy": 0.37905084578896187,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.43592586775868497,
+          "mean_policy_p_low": 0.43198967057873666,
+          "policy_resource_sensitivity": 0.003936197179948125,
+          "population": 79,
+          "seed": 2032,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.29503941312251314,
+              "mean_resource": 0.49268705270029334,
+              "population": 89
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.26863285789853,
+              "mean_resource": 0.5591974055081863,
+              "population": 70
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2654947224436992,
+              "mean_resource": 0.6305900083599717,
+              "population": 55
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.37905084578896187,
+              "mean_resource": 0.510288280550446,
+              "population": 79
+            }
+          }
+        },
+        {
+          "births": 453,
+          "deaths": 428,
+          "energy": 0.368759080310936,
+          "max_generation": 15,
+          "mean_policy_p_high": 0.4530449800737466,
+          "mean_policy_p_low": 0.43783554109622375,
+          "policy_resource_sensitivity": 0.015209438977522917,
+          "population": 89,
+          "seed": 2033,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.29087151568130415,
+              "mean_resource": 0.49517062356892977,
+              "population": 92
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.25225941710661093,
+              "mean_resource": 0.5667667383262549,
+              "population": 66
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.20333550741652962,
+              "mean_resource": 0.7031922230161514,
+              "population": 40
+            },
+            "1500": {
+              "max_generation": 15,
+              "mean_energy_all": 0.368759080310936,
+              "mean_resource": 0.4770022950693994,
+              "population": 89
+            }
+          }
+        },
+        {
+          "births": 451,
+          "deaths": 421,
+          "energy": 0.39984310041702,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.4523687389142903,
+          "mean_policy_p_low": 0.4242696778374764,
+          "policy_resource_sensitivity": 0.028099061076813966,
+          "population": 89,
+          "seed": 2034,
+          "trajectory": {
+            "200": {
+              "max_generation": 3,
+              "mean_energy_all": 0.31943590243026526,
+              "mean_resource": 0.48674228609035575,
+              "population": 91
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.28835519770407086,
+              "mean_resource": 0.583258653593707,
+              "population": 67
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.26689708904003145,
+              "mean_resource": 0.6339872293455897,
+              "population": 54
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.39984310041702,
+              "mean_resource": 0.4820729996367398,
+              "population": 89
+            }
+          }
+        },
+        {
+          "births": 453,
+          "deaths": 441,
+          "energy": 0.4075533364902402,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.4193908966593801,
+          "mean_policy_p_low": 0.41638347640407636,
+          "policy_resource_sensitivity": 0.0030074202553037406,
+          "population": 85,
+          "seed": 2035,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.32592010509989744,
+              "mean_resource": 0.49122151790727075,
+              "population": 91
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.21568110868963328,
+              "mean_resource": 0.6207117391471146,
+              "population": 52
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.25400277653543607,
+              "mean_resource": 0.6454330236345406,
+              "population": 51
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.4075533364902402,
+              "mean_resource": 0.5190439678725393,
+              "population": 85
+            }
+          }
+        },
+        {
+          "births": 463,
+          "deaths": 443,
+          "energy": 0.32991170062791153,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.42824329215275725,
+          "mean_policy_p_low": 0.422434445307225,
+          "policy_resource_sensitivity": 0.005808846845532238,
+          "population": 81,
+          "seed": 2036,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.33597268511628753,
+              "mean_resource": 0.4941969518883114,
+              "population": 91
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.2206269257242387,
+              "mean_resource": 0.6437345976243891,
+              "population": 50
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2816584191874059,
+              "mean_resource": 0.6853575246631703,
+              "population": 49
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.32991170062791153,
+              "mean_resource": 0.4971227682557247,
+              "population": 81
+            }
+          }
+        },
+        {
+          "births": 459,
+          "deaths": 434,
+          "energy": 0.4068259877597018,
+          "max_generation": 15,
+          "mean_policy_p_high": 0.4460247655214012,
+          "mean_policy_p_low": 0.4345140460073438,
+          "policy_resource_sensitivity": 0.011510719514057403,
+          "population": 88,
+          "seed": 2037,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.3276553361521132,
+              "mean_resource": 0.4718520588659876,
+              "population": 91
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.21960935467506734,
+              "mean_resource": 0.5934619886347651,
+              "population": 61
+            },
+            "1000": {
+              "max_generation": 11,
+              "mean_energy_all": 0.24632617061249237,
+              "mean_resource": 0.6690319239201423,
+              "population": 46
+            },
+            "1500": {
+              "max_generation": 15,
+              "mean_energy_all": 0.4068259877597018,
+              "mean_resource": 0.48660060120225723,
+              "population": 88
+            }
+          }
+        },
+        {
+          "births": 452,
+          "deaths": 426,
+          "energy": 0.396570119045608,
+          "max_generation": 15,
+          "mean_policy_p_high": 0.4693881848006917,
+          "mean_policy_p_low": 0.457370057791887,
+          "policy_resource_sensitivity": 0.012018127008804523,
+          "population": 94,
+          "seed": 2038,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.3282484526029538,
+              "mean_resource": 0.4878513105111496,
+              "population": 92
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.19333321165330414,
+              "mean_resource": 0.6397967659166772,
+              "population": 49
+            },
+            "1000": {
+              "max_generation": 8,
+              "mean_energy_all": 0.23101956296848516,
+              "mean_resource": 0.7171640302105557,
+              "population": 40
+            },
+            "1500": {
+              "max_generation": 15,
+              "mean_energy_all": 0.396570119045608,
+              "mean_resource": 0.44652515879163857,
+              "population": 94
+            }
+          }
+        },
+        {
+          "births": 457,
+          "deaths": 439,
+          "energy": 0.32678988964245415,
+          "max_generation": 12,
+          "mean_policy_p_high": 0.43813149206781354,
+          "mean_policy_p_low": 0.43390209762519966,
+          "policy_resource_sensitivity": 0.004229394442613788,
+          "population": 81,
+          "seed": 2039,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.2913022254531107,
+              "mean_resource": 0.493470617574399,
+              "population": 87
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.2222711063711572,
+              "mean_resource": 0.6302944320618221,
+              "population": 52
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.26198550436065415,
+              "mean_resource": 0.6882204487282574,
+              "population": 45
+            },
+            "1500": {
+              "max_generation": 12,
+              "mean_energy_all": 0.32678988964245415,
+              "mean_resource": 0.512284884361273,
+              "population": 81
+            }
+          }
+        },
+        {
+          "births": 457,
+          "deaths": 439,
+          "energy": 0.349862173370892,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.4658069903934587,
+          "mean_policy_p_low": 0.44708019812670197,
+          "policy_resource_sensitivity": 0.018726792266756852,
+          "population": 86,
+          "seed": 2040,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3154685721496244,
+              "mean_resource": 0.5127156927215537,
+              "population": 86
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.21246460847740292,
+              "mean_resource": 0.631062842325054,
+              "population": 48
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.251179987619513,
+              "mean_resource": 0.682640426380493,
+              "population": 48
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.349862173370892,
+              "mean_resource": 0.46874250571934917,
+              "population": 86
+            }
+          }
+        },
+        {
+          "births": 461,
+          "deaths": 445,
+          "energy": 0.3356162948959687,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.4520617733029115,
+          "mean_policy_p_low": 0.4395320486711152,
+          "policy_resource_sensitivity": 0.01252972463179614,
+          "population": 82,
+          "seed": 2041,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.323296190194881,
+              "mean_resource": 0.49353634623173454,
+              "population": 88
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.20925377873965068,
+              "mean_resource": 0.6640103191371938,
+              "population": 45
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.3083924516064763,
+              "mean_resource": 0.6267252380971162,
+              "population": 59
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.3356162948959687,
+              "mean_resource": 0.49133928000081234,
+              "population": 82
+            }
+          }
+        },
+        {
+          "births": 456,
+          "deaths": 439,
+          "energy": 0.39184890233233055,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.4402378440364956,
+          "mean_policy_p_low": 0.43076874808593146,
+          "policy_resource_sensitivity": 0.009469095950564275,
+          "population": 85,
+          "seed": 2042,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3465428496988636,
+              "mean_resource": 0.4898286664428164,
+              "population": 87
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.200532902726558,
+              "mean_resource": 0.6004349219634579,
+              "population": 59
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.22452984941027332,
+              "mean_resource": 0.6750625428198288,
+              "population": 47
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.39184890233233055,
+              "mean_resource": 0.513417218149379,
+              "population": 85
+            }
+          }
+        },
+        {
+          "births": 466,
+          "deaths": 441,
+          "energy": 0.3365466196998711,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.4126853509240961,
+          "mean_policy_p_low": 0.4226633694283652,
+          "policy_resource_sensitivity": -0.009978018504269165,
+          "population": 88,
+          "seed": 2043,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.362009407016955,
+              "mean_resource": 0.49844879875579723,
+              "population": 92
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.23846567389357406,
+              "mean_resource": 0.606161044525601,
+              "population": 62
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2785050114420046,
+              "mean_resource": 0.6525852004254544,
+              "population": 54
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.3365466196998711,
+              "mean_resource": 0.47215405646922576,
+              "population": 88
+            }
+          }
+        },
+        {
+          "births": 458,
+          "deaths": 432,
+          "energy": 0.3842834551155127,
+          "max_generation": 16,
+          "mean_policy_p_high": 0.4529903784982283,
+          "mean_policy_p_low": 0.44203128780217943,
+          "policy_resource_sensitivity": 0.01095909069604875,
+          "population": 88,
+          "seed": 2044,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3001679806462683,
+              "mean_resource": 0.4921996499395782,
+              "population": 90
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.25248080611158946,
+              "mean_resource": 0.5334445126429865,
+              "population": 72
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.27557827767515886,
+              "mean_resource": 0.6017903922292767,
+              "population": 59
+            },
+            "1500": {
+              "max_generation": 16,
+              "mean_energy_all": 0.3842834551155127,
+              "mean_resource": 0.47894779550233624,
+              "population": 88
+            }
+          }
+        },
+        {
+          "births": 473,
+          "deaths": 459,
+          "energy": 0.30009495882407533,
+          "max_generation": 12,
+          "mean_policy_p_high": 0.4407532120209535,
+          "mean_policy_p_low": 0.4297481335569879,
+          "policy_resource_sensitivity": 0.011005078463965598,
+          "population": 78,
+          "seed": 2045,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3178177000156657,
+              "mean_resource": 0.503611188274129,
+              "population": 88
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.24835072634598288,
+              "mean_resource": 0.6244375170470665,
+              "population": 50
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2914505226195618,
+              "mean_resource": 0.6586387461756182,
+              "population": 54
+            },
+            "1500": {
+              "max_generation": 12,
+              "mean_energy_all": 0.30009495882407533,
+              "mean_resource": 0.5076788320349791,
+              "population": 78
+            }
+          }
+        },
+        {
+          "births": 460,
+          "deaths": 460,
+          "energy": 0.2731729298895315,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.4550355581109457,
+          "mean_policy_p_low": 0.44328835779878806,
+          "policy_resource_sensitivity": 0.011747200312157686,
+          "population": 68,
+          "seed": 2046,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3606764662526507,
+              "mean_resource": 0.49667846299975293,
+              "population": 90
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.26436458026997534,
+              "mean_resource": 0.6099803777905626,
+              "population": 57
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.29178557373702335,
+              "mean_resource": 0.6260408540003376,
+              "population": 60
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.2731729298895315,
+              "mean_resource": 0.5582916087924807,
+              "population": 68
+            }
+          }
+        },
+        {
+          "births": 458,
+          "deaths": 438,
+          "energy": 0.3768826500348211,
+          "max_generation": 12,
+          "mean_policy_p_high": 0.43057856777242187,
+          "mean_policy_p_low": 0.42377773829430654,
+          "policy_resource_sensitivity": 0.006800829478115533,
+          "population": 88,
+          "seed": 2047,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.30898062070126825,
+              "mean_resource": 0.5048986914628254,
+              "population": 88
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.2130969110515543,
+              "mean_resource": 0.6420045442007676,
+              "population": 49
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2757598071304211,
+              "mean_resource": 0.6542393636879794,
+              "population": 52
+            },
+            "1500": {
+              "max_generation": 12,
+              "mean_energy_all": 0.3768826500348211,
+              "mean_resource": 0.48827269396698325,
+              "population": 88
+            }
+          }
+        },
+        {
+          "births": 464,
+          "deaths": 437,
+          "energy": 0.3636138117194985,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.44983650994237623,
+          "mean_policy_p_low": 0.4419692966313946,
+          "policy_resource_sensitivity": 0.007867213310981452,
+          "population": 91,
+          "seed": 2048,
+          "trajectory": {
+            "200": {
+              "max_generation": 3,
+              "mean_energy_all": 0.34922914504043506,
+              "mean_resource": 0.47536308794983806,
+              "population": 92
+            },
+            "600": {
+              "max_generation": 8,
+              "mean_energy_all": 0.2441614134218314,
+              "mean_resource": 0.6034133467919426,
+              "population": 59
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.22469877823448406,
+              "mean_resource": 0.6806317197114679,
+              "population": 46
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.3636138117194985,
+              "mean_resource": 0.48404208384137065,
+              "population": 91
+            }
+          }
+        },
+        {
+          "births": 459,
+          "deaths": 430,
+          "energy": 0.4258766213185853,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.4558057606191666,
+          "mean_policy_p_low": 0.44381032982196783,
+          "policy_resource_sensitivity": 0.011995430797198857,
+          "population": 94,
+          "seed": 2049,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.340333364159789,
+              "mean_resource": 0.5005673977665718,
+              "population": 90
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.21356803898052107,
+              "mean_resource": 0.5992114969546305,
+              "population": 57
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2134398127906905,
+              "mean_resource": 0.7074448861937839,
+              "population": 39
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.4258766213185853,
+              "mean_resource": 0.4563476950403501,
+              "population": 94
+            }
+          }
+        }
+      ]
+    },
+    "hand_tuned_mutating_neural": {
+      "mean_energy": 0.34312766682313617,
+      "mean_generation": 13.35,
+      "mean_population": 82.85,
+      "mean_sensitivity": 0.009249745504626788,
+      "parameters": {
+        "action_bias": -0.45,
+        "mutation_std": 0.025,
+        "recurrent_gain": 1.0
+      },
+      "score": 1.171627666823136,
+      "seeds": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031,
+        2032,
+        2033,
+        2034,
+        2035,
+        2036,
+        2037,
+        2038,
+        2039,
+        2040,
+        2041,
+        2042,
+        2043,
+        2044,
+        2045,
+        2046,
+        2047,
+        2048,
+        2049
+      ],
+      "trials": [
+        {
+          "births": 450,
+          "deaths": 430,
+          "energy": 0.3538642466768072,
+          "max_generation": 12,
+          "mean_policy_p_high": 0.4922928302933242,
+          "mean_policy_p_low": 0.47826885600929786,
+          "policy_resource_sensitivity": 0.014023974284026469,
+          "population": 87,
+          "seed": 2010,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.30020550135401847,
+              "mean_resource": 0.4992581514877353,
+              "population": 86
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.2923353985401378,
+              "mean_resource": 0.5276171325193243,
+              "population": 71
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.26780408322569715,
+              "mean_resource": 0.646472770337283,
+              "population": 50
+            },
+            "1500": {
+              "max_generation": 12,
+              "mean_energy_all": 0.3538642466768072,
+              "mean_resource": 0.47586815235035507,
+              "population": 87
+            }
+          }
+        },
+        {
+          "births": 460,
+          "deaths": 446,
+          "energy": 0.2876988283778789,
+          "max_generation": 15,
+          "mean_policy_p_high": 0.45649536878425423,
+          "mean_policy_p_low": 0.4458824072548085,
+          "policy_resource_sensitivity": 0.01061296152944578,
+          "population": 81,
+          "seed": 2011,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.30916203356913974,
+              "mean_resource": 0.5129893886498718,
+              "population": 83
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.22748354652383576,
+              "mean_resource": 0.6181603227834386,
+              "population": 53
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.2943071279750301,
+              "mean_resource": 0.6495478904819459,
+              "population": 52
+            },
+            "1500": {
+              "max_generation": 15,
+              "mean_energy_all": 0.2876988283778789,
+              "mean_resource": 0.5014057657745499,
+              "population": 81
+            }
+          }
+        },
+        {
+          "births": 452,
+          "deaths": 442,
+          "energy": 0.33429121390301314,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.47543569829670995,
+          "mean_policy_p_low": 0.4615913906950593,
+          "policy_resource_sensitivity": 0.013844307601650688,
+          "population": 76,
+          "seed": 2012,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.31798079550334135,
+              "mean_resource": 0.492443209705553,
+              "population": 89
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.19857693589180087,
+              "mean_resource": 0.6092089083613985,
+              "population": 48
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.23434850165162882,
+              "mean_resource": 0.6755621142277792,
+              "population": 45
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.33429121390301314,
+              "mean_resource": 0.5024445551014713,
+              "population": 76
+            }
+          }
+        },
+        {
+          "births": 453,
+          "deaths": 432,
+          "energy": 0.37064514508765917,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.450924438806284,
+          "mean_policy_p_low": 0.4441562067481364,
+          "policy_resource_sensitivity": 0.0067682320581476,
+          "population": 91,
+          "seed": 2013,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.3048770015536888,
+              "mean_resource": 0.5290945898252473,
+              "population": 84
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.25321314352051133,
+              "mean_resource": 0.6375069457664797,
+              "population": 54
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.2435502884078626,
+              "mean_resource": 0.7259193007872959,
+              "population": 43
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.37064514508765917,
+              "mean_resource": 0.46516350673404744,
+              "population": 91
+            }
+          }
+        },
+        {
+          "births": 458,
+          "deaths": 439,
+          "energy": 0.4028924042773517,
+          "max_generation": 15,
+          "mean_policy_p_high": 0.4222357639144005,
+          "mean_policy_p_low": 0.4283836249311241,
+          "policy_resource_sensitivity": -0.0061478610167234925,
+          "population": 91,
+          "seed": 2014,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.2945642041676254,
+              "mean_resource": 0.5019075281366506,
+              "population": 84
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.24363441546136783,
+              "mean_resource": 0.6118309887948122,
+              "population": 56
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.23482748028627334,
+              "mean_resource": 0.7184139613215589,
+              "population": 39
+            },
+            "1500": {
+              "max_generation": 15,
+              "mean_energy_all": 0.4028924042773517,
+              "mean_resource": 0.4701723996503213,
+              "population": 91
+            }
+          }
+        },
+        {
+          "births": 453,
+          "deaths": 434,
+          "energy": 0.40592031418758323,
+          "max_generation": 15,
+          "mean_policy_p_high": 0.4411669471619384,
+          "mean_policy_p_low": 0.4395549009873489,
+          "policy_resource_sensitivity": 0.0016120461745894755,
+          "population": 84,
+          "seed": 2015,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.28935356990155303,
+              "mean_resource": 0.5051606689951589,
+              "population": 86
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.22266787704217653,
+              "mean_resource": 0.5851818190354,
+              "population": 58
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.18783830067552884,
+              "mean_resource": 0.7355982431744641,
+              "population": 35
+            },
+            "1500": {
+              "max_generation": 15,
+              "mean_energy_all": 0.40592031418758323,
+              "mean_resource": 0.5074742033019369,
+              "population": 84
+            }
+          }
+        },
+        {
+          "births": 453,
+          "deaths": 432,
+          "energy": 0.3891607881965544,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.44474122281800077,
+          "mean_policy_p_low": 0.43399516143352784,
+          "policy_resource_sensitivity": 0.010746061384472934,
+          "population": 91,
+          "seed": 2016,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3067636646577874,
+              "mean_resource": 0.4889318225287571,
+              "population": 92
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.2619434311018803,
+              "mean_resource": 0.5849965068421408,
+              "population": 59
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.246329904427804,
+              "mean_resource": 0.6828898127940184,
+              "population": 46
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.3891607881965544,
+              "mean_resource": 0.4733824176041962,
+              "population": 91
+            }
+          }
+        },
+        {
+          "births": 451,
+          "deaths": 430,
+          "energy": 0.3697831391466738,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.4480663610266404,
+          "mean_policy_p_low": 0.43744283616486046,
+          "policy_resource_sensitivity": 0.010623524861780009,
+          "population": 90,
+          "seed": 2017,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.29930069506351403,
+              "mean_resource": 0.5058493413601376,
+              "population": 85
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.2294348993839486,
+              "mean_resource": 0.5988517619582784,
+              "population": 56
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.22173829295221348,
+              "mean_resource": 0.7282936573992004,
+              "population": 40
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.3697831391466738,
+              "mean_resource": 0.4818094830679154,
+              "population": 90
+            }
+          }
+        },
+        {
+          "births": 444,
+          "deaths": 430,
+          "energy": 0.3801050095853186,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.4630510872196634,
+          "mean_policy_p_low": 0.45148179049270176,
+          "policy_resource_sensitivity": 0.011569296726961758,
+          "population": 86,
+          "seed": 2018,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.329443324124852,
+              "mean_resource": 0.49909931085190457,
+              "population": 84
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.28192376726992896,
+              "mean_resource": 0.549344949032129,
+              "population": 67
+            },
+            "1000": {
+              "max_generation": 8,
+              "mean_energy_all": 0.23145429303368317,
+              "mean_resource": 0.6730207070730622,
+              "population": 45
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.3801050095853186,
+              "mean_resource": 0.4945506296420271,
+              "population": 86
+            }
+          }
+        },
+        {
+          "births": 465,
+          "deaths": 451,
+          "energy": 0.31119720430305475,
+          "max_generation": 11,
+          "mean_policy_p_high": 0.4559307816504195,
+          "mean_policy_p_low": 0.4550157023625719,
+          "policy_resource_sensitivity": 0.0009150792878477187,
+          "population": 76,
+          "seed": 2019,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.32967706787183415,
+              "mean_resource": 0.5090782591596789,
+              "population": 91
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.2412646104144551,
+              "mean_resource": 0.6141588228263223,
+              "population": 52
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.3362485148293308,
+              "mean_resource": 0.6023467018998985,
+              "population": 62
+            },
+            "1500": {
+              "max_generation": 11,
+              "mean_energy_all": 0.31119720430305475,
+              "mean_resource": 0.5104280308266433,
+              "population": 76
+            }
+          }
+        },
+        {
+          "births": 468,
+          "deaths": 446,
+          "energy": 0.3754174996504004,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.4391076865945782,
+          "mean_policy_p_low": 0.43297412690630105,
+          "policy_resource_sensitivity": 0.006133559688277201,
+          "population": 87,
+          "seed": 2020,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3055916528568287,
+              "mean_resource": 0.49910557795582267,
+              "population": 89
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.2762896906124119,
+              "mean_resource": 0.5702656185391711,
+              "population": 64
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.28997991254672106,
+              "mean_resource": 0.6377690650694248,
+              "population": 56
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.3754174996504004,
+              "mean_resource": 0.4885793699867788,
+              "population": 87
+            }
+          }
+        },
+        {
+          "births": 455,
+          "deaths": 432,
+          "energy": 0.35070103836891947,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.48502141392797893,
+          "mean_policy_p_low": 0.47082341882178147,
+          "policy_resource_sensitivity": 0.014197995106197401,
+          "population": 84,
+          "seed": 2021,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.2867446641606523,
+              "mean_resource": 0.4830569368294998,
+              "population": 90
+            },
+            "600": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2875640255254582,
+              "mean_resource": 0.5364304284035439,
+              "population": 76
+            },
+            "1000": {
+              "max_generation": 11,
+              "mean_energy_all": 0.2515255234594229,
+              "mean_resource": 0.6214806461603026,
+              "population": 56
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.35070103836891947,
+              "mean_resource": 0.475538929493644,
+              "population": 84
+            }
+          }
+        },
+        {
+          "births": 463,
+          "deaths": 441,
+          "energy": 0.33544190666090645,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.4274782932191817,
+          "mean_policy_p_low": 0.4175946172408066,
+          "policy_resource_sensitivity": 0.00988367597837509,
+          "population": 84,
+          "seed": 2022,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.34694064289886145,
+              "mean_resource": 0.49858211263843794,
+              "population": 92
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.22483079451016316,
+              "mean_resource": 0.6080508090999357,
+              "population": 54
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.25557921800997097,
+              "mean_resource": 0.6583477885998492,
+              "population": 50
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.33544190666090645,
+              "mean_resource": 0.5099703250955319,
+              "population": 84
+            }
+          }
+        },
+        {
+          "births": 472,
+          "deaths": 450,
+          "energy": 0.32016108987986264,
+          "max_generation": 12,
+          "mean_policy_p_high": 0.4400503203951561,
+          "mean_policy_p_low": 0.4248224088663355,
+          "policy_resource_sensitivity": 0.015227911528820703,
+          "population": 79,
+          "seed": 2023,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3413865742222204,
+              "mean_resource": 0.49051374910475526,
+              "population": 92
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.2655596667395118,
+              "mean_resource": 0.5679184094833498,
+              "population": 69
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.2982768437462091,
+              "mean_resource": 0.6524388399638962,
+              "population": 59
+            },
+            "1500": {
+              "max_generation": 12,
+              "mean_energy_all": 0.32016108987986264,
+              "mean_resource": 0.5124176573350089,
+              "population": 79
+            }
+          }
+        },
+        {
+          "births": 465,
+          "deaths": 457,
+          "energy": 0.3294402979441255,
+          "max_generation": 12,
+          "mean_policy_p_high": 0.446695955666206,
+          "mean_policy_p_low": 0.4358263414959185,
+          "policy_resource_sensitivity": 0.010869614170287567,
+          "population": 76,
+          "seed": 2024,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3201456618074397,
+              "mean_resource": 0.48064981369493814,
+              "population": 92
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.25501165306779344,
+              "mean_resource": 0.6239212830210996,
+              "population": 55
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.31300884822624897,
+              "mean_resource": 0.6413078139118835,
+              "population": 59
+            },
+            "1500": {
+              "max_generation": 12,
+              "mean_energy_all": 0.3294402979441255,
+              "mean_resource": 0.5113144496115729,
+              "population": 76
+            }
+          }
+        },
+        {
+          "births": 469,
+          "deaths": 451,
+          "energy": 0.291558196898263,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.46285629512608245,
+          "mean_policy_p_low": 0.45490818091888285,
+          "policy_resource_sensitivity": 0.007948114207199663,
+          "population": 81,
+          "seed": 2025,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.35700875832961054,
+              "mean_resource": 0.4802699004946306,
+              "population": 90
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.24265990619533867,
+              "mean_resource": 0.5913563673565229,
+              "population": 59
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.28833205533195927,
+              "mean_resource": 0.6146301260525746,
+              "population": 62
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.291558196898263,
+              "mean_resource": 0.4836628806375133,
+              "population": 81
+            }
+          }
+        },
+        {
+          "births": 455,
+          "deaths": 436,
+          "energy": 0.3674596179805201,
+          "max_generation": 12,
+          "mean_policy_p_high": 0.4376979528969525,
+          "mean_policy_p_low": 0.4290746424219921,
+          "policy_resource_sensitivity": 0.008623310474960377,
+          "population": 85,
+          "seed": 2026,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.36311522551165415,
+              "mean_resource": 0.5057084773898077,
+              "population": 91
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.20114499359809979,
+              "mean_resource": 0.6353229046701118,
+              "population": 48
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2505746852242742,
+              "mean_resource": 0.6499892939802672,
+              "population": 50
+            },
+            "1500": {
+              "max_generation": 12,
+              "mean_energy_all": 0.3674596179805201,
+              "mean_resource": 0.48772753684271164,
+              "population": 85
+            }
+          }
+        },
+        {
+          "births": 462,
+          "deaths": 434,
+          "energy": 0.380337091611387,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.4360163206700009,
+          "mean_policy_p_low": 0.418268220926462,
+          "policy_resource_sensitivity": 0.01774809974353889,
+          "population": 89,
+          "seed": 2027,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.2887229597583556,
+              "mean_resource": 0.50323246254614,
+              "population": 86
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.26136725066959277,
+              "mean_resource": 0.5959781062296654,
+              "population": 65
+            },
+            "1000": {
+              "max_generation": 8,
+              "mean_energy_all": 0.28594105827719374,
+              "mean_resource": 0.6459596588632537,
+              "population": 54
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.380337091611387,
+              "mean_resource": 0.4703695953146751,
+              "population": 89
+            }
+          }
+        },
+        {
+          "births": 454,
+          "deaths": 436,
+          "energy": 0.3182619280523081,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.4558683393364398,
+          "mean_policy_p_low": 0.4546687099213106,
+          "policy_resource_sensitivity": 0.001199629415129333,
+          "population": 84,
+          "seed": 2028,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.3660789461690504,
+              "mean_resource": 0.5004555935226415,
+              "population": 86
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.21460443005120122,
+              "mean_resource": 0.6481986702886577,
+              "population": 52
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.29961960567250395,
+              "mean_resource": 0.6664396252139255,
+              "population": 52
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.3182619280523081,
+              "mean_resource": 0.4801459958862891,
+              "population": 84
+            }
+          }
+        },
+        {
+          "births": 461,
+          "deaths": 442,
+          "energy": 0.33930245816148036,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.4122036205521419,
+          "mean_policy_p_low": 0.4013705544106109,
+          "policy_resource_sensitivity": 0.010833066141530871,
+          "population": 83,
+          "seed": 2029,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.32346658762505315,
+              "mean_resource": 0.49950705585696625,
+              "population": 88
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.23508312524597075,
+              "mean_resource": 0.5828702028468418,
+              "population": 65
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.23811940346971167,
+              "mean_resource": 0.6732421958473715,
+              "population": 45
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.33930245816148036,
+              "mean_resource": 0.5219701054727226,
+              "population": 83
+            }
+          }
+        },
+        {
+          "births": 459,
+          "deaths": 431,
+          "energy": 0.3683086977330337,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.45198456498021033,
+          "mean_policy_p_low": 0.4447295083448257,
+          "policy_resource_sensitivity": 0.007255056635384569,
+          "population": 87,
+          "seed": 2030,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.30935093166999705,
+              "mean_resource": 0.48504099462634853,
+              "population": 91
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.21168221385184846,
+              "mean_resource": 0.6135579513744821,
+              "population": 53
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2511584029566263,
+              "mean_resource": 0.6560672830298363,
+              "population": 45
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.3683086977330337,
+              "mean_resource": 0.4705256968792834,
+              "population": 87
+            }
+          }
+        },
+        {
+          "births": 451,
+          "deaths": 436,
+          "energy": 0.350042473929348,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.4587596119719642,
+          "mean_policy_p_low": 0.4453969417934527,
+          "policy_resource_sensitivity": 0.013362670178511407,
+          "population": 80,
+          "seed": 2031,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.31594084271051925,
+              "mean_resource": 0.49136263970422717,
+              "population": 90
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.21763398452309693,
+              "mean_resource": 0.5920221552633902,
+              "population": 58
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.24829275428525746,
+              "mean_resource": 0.6425902083516951,
+              "population": 50
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.350042473929348,
+              "mean_resource": 0.4879092657415887,
+              "population": 80
+            }
+          }
+        },
+        {
+          "births": 441,
+          "deaths": 431,
+          "energy": 0.30357635012636236,
+          "max_generation": 12,
+          "mean_policy_p_high": 0.45671792602135164,
+          "mean_policy_p_low": 0.45883994465807015,
+          "policy_resource_sensitivity": -0.0021220186367184785,
+          "population": 77,
+          "seed": 2032,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3224014341440543,
+              "mean_resource": 0.4818980908550401,
+              "population": 91
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.2643469437076267,
+              "mean_resource": 0.5695565984548321,
+              "population": 66
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.3165621560268881,
+              "mean_resource": 0.588858671605316,
+              "population": 66
+            },
+            "1500": {
+              "max_generation": 12,
+              "mean_energy_all": 0.30357635012636236,
+              "mean_resource": 0.504115778333742,
+              "population": 77
+            }
+          }
+        },
+        {
+          "births": 458,
+          "deaths": 440,
+          "energy": 0.3259101369470067,
+          "max_generation": 15,
+          "mean_policy_p_high": 0.4472055914278983,
+          "mean_policy_p_low": 0.43952097085141095,
+          "policy_resource_sensitivity": 0.007684620576487353,
+          "population": 82,
+          "seed": 2033,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.29679914947871977,
+              "mean_resource": 0.5125709450540579,
+              "population": 88
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.2640872346653511,
+              "mean_resource": 0.5720858188737211,
+              "population": 63
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.22520861055509817,
+              "mean_resource": 0.662673149997964,
+              "population": 44
+            },
+            "1500": {
+              "max_generation": 15,
+              "mean_energy_all": 0.3259101369470067,
+              "mean_resource": 0.5028489627340742,
+              "population": 82
+            }
+          }
+        },
+        {
+          "births": 451,
+          "deaths": 421,
+          "energy": 0.3765508998893129,
+          "max_generation": 15,
+          "mean_policy_p_high": 0.4848038972713303,
+          "mean_policy_p_low": 0.4683789186594738,
+          "policy_resource_sensitivity": 0.016424978611856596,
+          "population": 89,
+          "seed": 2034,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.32144129098266033,
+              "mean_resource": 0.48466974710202737,
+              "population": 90
+            },
+            "600": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2613938329766686,
+              "mean_resource": 0.5443951384872853,
+              "population": 71
+            },
+            "1000": {
+              "max_generation": 11,
+              "mean_energy_all": 0.23730614857164373,
+              "mean_resource": 0.6340814935700545,
+              "population": 48
+            },
+            "1500": {
+              "max_generation": 15,
+              "mean_energy_all": 0.3765508998893129,
+              "mean_resource": 0.46514897917856013,
+              "population": 89
+            }
+          }
+        },
+        {
+          "births": 436,
+          "deaths": 424,
+          "energy": 0.32848184252017126,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.45785766412098455,
+          "mean_policy_p_low": 0.45855922270661026,
+          "policy_resource_sensitivity": -0.0007015585856257506,
+          "population": 85,
+          "seed": 2035,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.3135439173900831,
+              "mean_resource": 0.49428123855844286,
+              "population": 91
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.1958127860256589,
+              "mean_resource": 0.5906830206622375,
+              "population": 54
+            },
+            "1000": {
+              "max_generation": 8,
+              "mean_energy_all": 0.2560140685061632,
+              "mean_resource": 0.6395687184707308,
+              "population": 54
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.32848184252017126,
+              "mean_resource": 0.4848846278801349,
+              "population": 85
+            }
+          }
+        },
+        {
+          "births": 468,
+          "deaths": 448,
+          "energy": 0.33946046629623905,
+          "max_generation": 15,
+          "mean_policy_p_high": 0.45282467200820514,
+          "mean_policy_p_low": 0.43932335089778946,
+          "policy_resource_sensitivity": 0.013501321110415718,
+          "population": 81,
+          "seed": 2036,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3397882987320162,
+              "mean_resource": 0.4886710927922359,
+              "population": 92
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.22072804037128846,
+              "mean_resource": 0.6408401023155599,
+              "population": 52
+            },
+            "1000": {
+              "max_generation": 11,
+              "mean_energy_all": 0.27503920017411493,
+              "mean_resource": 0.6440640781283666,
+              "population": 57
+            },
+            "1500": {
+              "max_generation": 15,
+              "mean_energy_all": 0.33946046629623905,
+              "mean_resource": 0.48207158724801347,
+              "population": 81
+            }
+          }
+        },
+        {
+          "births": 457,
+          "deaths": 438,
+          "energy": 0.3255643483685955,
+          "max_generation": 12,
+          "mean_policy_p_high": 0.4706191947249512,
+          "mean_policy_p_low": 0.4569509696047103,
+          "policy_resource_sensitivity": 0.013668225120240858,
+          "population": 82,
+          "seed": 2037,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3381955483790747,
+              "mean_resource": 0.4739479179405402,
+              "population": 90
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.2580151373170028,
+              "mean_resource": 0.557968255115055,
+              "population": 65
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2540512006569036,
+              "mean_resource": 0.6452752839367936,
+              "population": 51
+            },
+            "1500": {
+              "max_generation": 12,
+              "mean_energy_all": 0.3255643483685955,
+              "mean_resource": 0.48779324723815504,
+              "population": 82
+            }
+          }
+        },
+        {
+          "births": 451,
+          "deaths": 432,
+          "energy": 0.36986216144764666,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.48042756027902045,
+          "mean_policy_p_low": 0.4697427397780584,
+          "policy_resource_sensitivity": 0.010684820500962035,
+          "population": 87,
+          "seed": 2038,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3357741919792811,
+              "mean_resource": 0.4786977964438375,
+              "population": 94
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.2119749452336953,
+              "mean_resource": 0.6376911712064051,
+              "population": 57
+            },
+            "1000": {
+              "max_generation": 8,
+              "mean_energy_all": 0.23983267534161562,
+              "mean_resource": 0.7241050404661904,
+              "population": 38
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.36986216144764666,
+              "mean_resource": 0.4731974598329206,
+              "population": 87
+            }
+          }
+        },
+        {
+          "births": 458,
+          "deaths": 434,
+          "energy": 0.39108610342759964,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.4277549048961383,
+          "mean_policy_p_low": 0.4282842718464668,
+          "policy_resource_sensitivity": -0.0005293669503283882,
+          "population": 87,
+          "seed": 2039,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.28659999926464486,
+              "mean_resource": 0.49850083512607063,
+              "population": 86
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.261694907835128,
+              "mean_resource": 0.6010080672379691,
+              "population": 61
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2775132294799086,
+              "mean_resource": 0.6575187508900595,
+              "population": 51
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.39108610342759964,
+              "mean_resource": 0.5017317305466824,
+              "population": 87
+            }
+          }
+        },
+        {
+          "births": 449,
+          "deaths": 434,
+          "energy": 0.31284884102429705,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.47138926643364953,
+          "mean_policy_p_low": 0.45847184109711514,
+          "policy_resource_sensitivity": 0.012917425336534442,
+          "population": 83,
+          "seed": 2040,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.29847407869352127,
+              "mean_resource": 0.5053428782624232,
+              "population": 86
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.19500889433616628,
+              "mean_resource": 0.6803136637712158,
+              "population": 41
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.2626516346549909,
+              "mean_resource": 0.6629800564646281,
+              "population": 49
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.31284884102429705,
+              "mean_resource": 0.45373145494426503,
+              "population": 83
+            }
+          }
+        },
+        {
+          "births": 460,
+          "deaths": 444,
+          "energy": 0.2519426931077765,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.4605039948789622,
+          "mean_policy_p_low": 0.4388138342487082,
+          "policy_resource_sensitivity": 0.021690160630254043,
+          "population": 82,
+          "seed": 2041,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.3315623988141343,
+              "mean_resource": 0.501636340019816,
+              "population": 89
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.2049046623931859,
+              "mean_resource": 0.6332808152555771,
+              "population": 51
+            },
+            "1000": {
+              "max_generation": 8,
+              "mean_energy_all": 0.2649722087357788,
+              "mean_resource": 0.7096538113322333,
+              "population": 42
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.2519426931077765,
+              "mean_resource": 0.4732359013695814,
+              "population": 82
+            }
+          }
+        },
+        {
+          "births": 456,
+          "deaths": 446,
+          "energy": 0.27256167802312575,
+          "max_generation": 12,
+          "mean_policy_p_high": 0.46733537391793634,
+          "mean_policy_p_low": 0.4583001569392987,
+          "policy_resource_sensitivity": 0.009035216978637567,
+          "population": 78,
+          "seed": 2042,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3331413447297335,
+              "mean_resource": 0.5045419288211552,
+              "population": 84
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.19299538530864432,
+              "mean_resource": 0.6792770474203594,
+              "population": 45
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.3251665980760321,
+              "mean_resource": 0.6322190314611901,
+              "population": 58
+            },
+            "1500": {
+              "max_generation": 12,
+              "mean_energy_all": 0.27256167802312575,
+              "mean_resource": 0.5122911568298576,
+              "population": 78
+            }
+          }
+        },
+        {
+          "births": 455,
+          "deaths": 442,
+          "energy": 0.37183162914130263,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.4100956033245571,
+          "mean_policy_p_low": 0.41367114421941376,
+          "policy_resource_sensitivity": -0.003575540894856712,
+          "population": 76,
+          "seed": 2043,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.35240542925041274,
+              "mean_resource": 0.49306049614927105,
+              "population": 93
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.22223949019014988,
+              "mean_resource": 0.6123165658173595,
+              "population": 60
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.23859075685188508,
+              "mean_resource": 0.6614312132316507,
+              "population": 46
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.37183162914130263,
+              "mean_resource": 0.5318223168728557,
+              "population": 76
+            }
+          }
+        },
+        {
+          "births": 460,
+          "deaths": 450,
+          "energy": 0.33003217296879095,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.44311371589482784,
+          "mean_policy_p_low": 0.42585748861760664,
+          "policy_resource_sensitivity": 0.017256227277221148,
+          "population": 72,
+          "seed": 2044,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3139447696355394,
+              "mean_resource": 0.4963877780547531,
+              "population": 89
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.29126539750453617,
+              "mean_resource": 0.5406528824568756,
+              "population": 72
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.23146277054221018,
+              "mean_resource": 0.6098427079499003,
+              "population": 52
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.33003217296879095,
+              "mean_resource": 0.535080738268133,
+              "population": 72
+            }
+          }
+        },
+        {
+          "births": 454,
+          "deaths": 431,
+          "energy": 0.37349900647795387,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.45863517400292975,
+          "mean_policy_p_low": 0.45419564347109687,
+          "policy_resource_sensitivity": 0.004439530531832844,
+          "population": 87,
+          "seed": 2045,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.33178402801972673,
+              "mean_resource": 0.5000267387158792,
+              "population": 91
+            },
+            "600": {
+              "max_generation": 5,
+              "mean_energy_all": 0.18626056251171094,
+              "mean_resource": 0.6395013397646123,
+              "population": 47
+            },
+            "1000": {
+              "max_generation": 8,
+              "mean_energy_all": 0.23887326721553417,
+              "mean_resource": 0.6802971726464141,
+              "population": 47
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.37349900647795387,
+              "mean_resource": 0.4767790185766638,
+              "population": 87
+            }
+          }
+        },
+        {
+          "births": 444,
+          "deaths": 444,
+          "energy": 0.2677783541402189,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.47184210269146726,
+          "mean_policy_p_low": 0.45642684590968435,
+          "policy_resource_sensitivity": 0.01541525678178295,
+          "population": 68,
+          "seed": 2046,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3638733313857403,
+              "mean_resource": 0.48697556485838545,
+              "population": 92
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.22176474506113306,
+              "mean_resource": 0.613970449848669,
+              "population": 52
+            },
+            "1000": {
+              "max_generation": 10,
+              "mean_energy_all": 0.30552659293198514,
+              "mean_resource": 0.64786170237959,
+              "population": 54
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.2677783541402189,
+              "mean_resource": 0.5376665442204812,
+              "population": 68
+            }
+          }
+        },
+        {
+          "births": 454,
+          "deaths": 452,
+          "energy": 0.3227800046828161,
+          "max_generation": 12,
+          "mean_policy_p_high": 0.4418914753451826,
+          "mean_policy_p_low": 0.42805131725829504,
+          "policy_resource_sensitivity": 0.013840158086887565,
+          "population": 70,
+          "seed": 2047,
+          "trajectory": {
+            "200": {
+              "max_generation": 1,
+              "mean_energy_all": 0.30825476643666216,
+              "mean_resource": 0.5096236509415674,
+              "population": 87
+            },
+            "600": {
+              "max_generation": 4,
+              "mean_energy_all": 0.1993338156882515,
+              "mean_resource": 0.6446200074160869,
+              "population": 47
+            },
+            "1000": {
+              "max_generation": 8,
+              "mean_energy_all": 0.30859417291224917,
+              "mean_resource": 0.6294056376043985,
+              "population": 57
+            },
+            "1500": {
+              "max_generation": 12,
+              "mean_energy_all": 0.3227800046828161,
+              "mean_resource": 0.5531743233698909,
+              "population": 70
+            }
+          }
+        },
+        {
+          "births": 462,
+          "deaths": 435,
+          "energy": 0.36482312228925656,
+          "max_generation": 13,
+          "mean_policy_p_high": 0.44122969388336747,
+          "mean_policy_p_low": 0.4344717757209621,
+          "policy_resource_sensitivity": 0.006757918162405329,
+          "population": 91,
+          "seed": 2048,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.3268689327045608,
+              "mean_resource": 0.4661804417652318,
+              "population": 94
+            },
+            "600": {
+              "max_generation": 6,
+              "mean_energy_all": 0.3019961974842877,
+              "mean_resource": 0.5200185923889648,
+              "population": 73
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.23191610634917023,
+              "mean_resource": 0.6568392602025664,
+              "population": 49
+            },
+            "1500": {
+              "max_generation": 13,
+              "mean_energy_all": 0.36482312228925656,
+              "mean_resource": 0.487375239220437,
+              "population": 91
+            }
+          }
+        },
+        {
+          "births": 449,
+          "deaths": 429,
+          "energy": 0.36452627143452515,
+          "max_generation": 14,
+          "mean_policy_p_high": 0.4946793062950094,
+          "mean_policy_p_low": 0.4789271869083391,
+          "policy_resource_sensitivity": 0.01575211938667038,
+          "population": 85,
+          "seed": 2049,
+          "trajectory": {
+            "200": {
+              "max_generation": 2,
+              "mean_energy_all": 0.32353739225165185,
+              "mean_resource": 0.499234514120769,
+              "population": 92
+            },
+            "600": {
+              "max_generation": 7,
+              "mean_energy_all": 0.25729965927836407,
+              "mean_resource": 0.5800408736067317,
+              "population": 63
+            },
+            "1000": {
+              "max_generation": 9,
+              "mean_energy_all": 0.25549733426408006,
+              "mean_resource": 0.6452403390773176,
+              "population": 47
+            },
+            "1500": {
+              "max_generation": 14,
+              "mean_energy_all": 0.36452627143452515,
+              "mean_resource": 0.48380734767145683,
+              "population": 85
+            }
+          }
+        }
+      ]
+    },
+    "handcoded_threshold55": {
+      "mean_energy": 0.41874492941038693,
+      "mean_population": 85.65,
+      "trials": [
+        {
+          "energy": 0.41542184430297574,
+          "max_generation": 16,
+          "population": 84,
+          "seed": 2010
+        },
+        {
+          "energy": 0.44162451633343813,
+          "max_generation": 15,
+          "population": 89,
+          "seed": 2011
+        },
+        {
+          "energy": 0.42910232567340634,
+          "max_generation": 14,
+          "population": 86,
+          "seed": 2012
+        },
+        {
+          "energy": 0.46361763209631557,
+          "max_generation": 16,
+          "population": 91,
+          "seed": 2013
+        },
+        {
+          "energy": 0.41452136207653156,
+          "max_generation": 14,
+          "population": 85,
+          "seed": 2014
+        },
+        {
+          "energy": 0.3823009341211059,
+          "max_generation": 14,
+          "population": 80,
+          "seed": 2015
+        },
+        {
+          "energy": 0.43669821114015606,
+          "max_generation": 13,
+          "population": 92,
+          "seed": 2016
+        },
+        {
+          "energy": 0.4287642448987807,
+          "max_generation": 14,
+          "population": 90,
+          "seed": 2017
+        },
+        {
+          "energy": 0.43600260136627933,
+          "max_generation": 14,
+          "population": 87,
+          "seed": 2018
+        },
+        {
+          "energy": 0.43074658984788244,
+          "max_generation": 14,
+          "population": 86,
+          "seed": 2019
+        },
+        {
+          "energy": 0.3579203949278723,
+          "max_generation": 14,
+          "population": 81,
+          "seed": 2020
+        },
+        {
+          "energy": 0.4463970992199904,
+          "max_generation": 16,
+          "population": 87,
+          "seed": 2021
+        },
+        {
+          "energy": 0.4041489510209714,
+          "max_generation": 13,
+          "population": 88,
+          "seed": 2022
+        },
+        {
+          "energy": 0.4525567803786108,
+          "max_generation": 14,
+          "population": 88,
+          "seed": 2023
+        },
+        {
+          "energy": 0.4452080019911365,
+          "max_generation": 14,
+          "population": 86,
+          "seed": 2024
+        },
+        {
+          "energy": 0.39649533895066014,
+          "max_generation": 15,
+          "population": 79,
+          "seed": 2025
+        },
+        {
+          "energy": 0.44886428149923285,
+          "max_generation": 14,
+          "population": 92,
+          "seed": 2026
+        },
+        {
+          "energy": 0.43042826923698174,
+          "max_generation": 14,
+          "population": 83,
+          "seed": 2027
+        },
+        {
+          "energy": 0.41382368638465744,
+          "max_generation": 14,
+          "population": 83,
+          "seed": 2028
+        },
+        {
+          "energy": 0.35696474567812464,
+          "max_generation": 14,
+          "population": 73,
+          "seed": 2029
+        },
+        {
+          "energy": 0.3965322666880288,
+          "max_generation": 13,
+          "population": 77,
+          "seed": 2030
+        },
+        {
+          "energy": 0.3827961752171011,
+          "max_generation": 16,
+          "population": 79,
+          "seed": 2031
+        },
+        {
+          "energy": 0.40475296140351213,
+          "max_generation": 15,
+          "population": 84,
+          "seed": 2032
+        },
+        {
+          "energy": 0.4282295709923342,
+          "max_generation": 16,
+          "population": 83,
+          "seed": 2033
+        },
+        {
+          "energy": 0.38386740831197036,
+          "max_generation": 13,
+          "population": 78,
+          "seed": 2034
+        },
+        {
+          "energy": 0.4094711243467756,
+          "max_generation": 14,
+          "population": 83,
+          "seed": 2035
+        },
+        {
+          "energy": 0.4200746487799237,
+          "max_generation": 15,
+          "population": 86,
+          "seed": 2036
+        },
+        {
+          "energy": 0.41502909166929747,
+          "max_generation": 17,
+          "population": 88,
+          "seed": 2037
+        },
+        {
+          "energy": 0.42006318824068584,
+          "max_generation": 15,
+          "population": 87,
+          "seed": 2038
+        },
+        {
+          "energy": 0.4324133145614811,
+          "max_generation": 15,
+          "population": 90,
+          "seed": 2039
+        },
+        {
+          "energy": 0.4130155042656676,
+          "max_generation": 17,
+          "population": 86,
+          "seed": 2040
+        },
+        {
+          "energy": 0.42943248954297486,
+          "max_generation": 14,
+          "population": 91,
+          "seed": 2041
+        },
+        {
+          "energy": 0.4186086040665809,
+          "max_generation": 13,
+          "population": 87,
+          "seed": 2042
+        },
+        {
+          "energy": 0.4093839766772333,
+          "max_generation": 15,
+          "population": 85,
+          "seed": 2043
+        },
+        {
+          "energy": 0.41002702341466646,
+          "max_generation": 15,
+          "population": 86,
+          "seed": 2044
+        },
+        {
+          "energy": 0.4212147138713728,
+          "max_generation": 16,
+          "population": 91,
+          "seed": 2045
+        },
+        {
+          "energy": 0.455056088440219,
+          "max_generation": 15,
+          "population": 92,
+          "seed": 2046
+        },
+        {
+          "energy": 0.4503553537046573,
+          "max_generation": 14,
+          "population": 92,
+          "seed": 2047
+        },
+        {
+          "energy": 0.39968751470662667,
+          "max_generation": 14,
+          "population": 84,
+          "seed": 2048
+        },
+        {
+          "energy": 0.4181783463692595,
+          "max_generation": 14,
+          "population": 87,
+          "seed": 2049
+        }
+      ]
+    }
+  },
+  "seeds": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040,
+    2041,
+    2042,
+    2043,
+    2044,
+    2045,
+    2046,
+    2047,
+    2048,
+    2049
+  ],
+  "size": 10,
+  "source_sha256": {
+    "EVOLUTION_garden.py": "a833fe780e8237dc542233fd0fabb45f47e0b41753ed11a952ea483b8a6647f9",
+    "SOC_LEARNING_holdout.py": "9adcee184fd6d1f19e7beace376ec2c4d6d7579f4d6440410277a1ea9f993ccc",
+    "SOC_LEARNING_search.py": "8caf9e06b92b023dbad6d79bc8f611d3adc81c153e5c830360c244d23c032873"
+  },
+  "steps": 1500
+}
