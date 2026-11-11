@@ -51,17 +51,17 @@ def trial(seed, policy, regime, learned_theta):
     floor_curve = []
     raw_curve = []
     covariance = []
-    shock_start = 1500
-    shock_end = 2500
+    shift_start = 1500
+    shift_end = 2500
     pre = None
     recovery = None
     for t in range(TICKS):
         r, e = g.resource.copy(), g.energy.copy()
-        if t == shock_start:
+        if regime == 'mild' and t == shift_start:
             pre = float(np.mean(energy_curve[-100:]))
         action = deterministic_action(g, policy, learned_theta,
                                       masked=(policy == 'energy_masked')).astype(float)
-        regrowth = .055 if regime == 'mild' and shock_start <= t < shock_end else .06
+        regrowth = .055 if regime == 'mild' and shift_start <= t < shift_end else .06
         raw = .25*r*action - .03 - .055*action + .008*(1.-action)
         g.energy = np.clip(e+raw, 0., 1.)
         g.resource = np.clip(r + .08*(g._neighbors(r)-r)
@@ -71,9 +71,9 @@ def trial(seed, policy, regime, learned_theta):
         floor_curve.append(float(np.mean(g.energy <= .01)))
         raw_curve.append(float(raw.mean()))
         covariance.append(float((r*action).mean()-r.mean()*action.mean()))
-        if t >= shock_end and recovery is None and pre is not None:
+        if regime == 'mild' and t >= shift_end and recovery is None and pre is not None:
             if energy_curve[-1] >= .8 * pre:
-                recovery = t - shock_end + 1
+                recovery = t - shift_end + 1
     last = slice(TICKS-500, TICKS)
     e_sorted = np.sort(g.energy)
     return {
