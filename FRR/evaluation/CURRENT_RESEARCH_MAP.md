@@ -1,3 +1,21 @@
+# Current research map: main garden paused at 1567
+
+13 November 2026, America/Chicago. The main garden has resumed under its unchanged contract; current state is **1567**, not a diagnostic branch count. Original reference1550 remains preserved.
+
+| Area | Latest record | Supported finding |
+|---|---|---|
+| Actual main continuation | [1562→1567 report](live-continuation-1562-to-1567-v1/REPORT.md) | Five actual replies, five notebook appends, zero executable cells; exact repeated prior text; clean pause and verification; nextinput4633/7936 |
+| Three consecutive detached loops | [Report](feedback-continuity-three-loop-v1/REPORT.md) | World/transcript/RNG continuity audited; unfinished writing only; no branch promotion |
+| Detailed-error feedback | [Report](error-feedback-contact-v1/REPORT.md) | Six one-step replies; one executable cell per condition; both repeated semaphore error; no observed repair |
+| Decoder and exact continuation | [Report](decoder-context-contact-v1/REPORT.md) | Seeded sampling changes some output; exact-token/cache continuation tested; runtime limits and syntax separated |
+| Neural ecology and operator studies | [Intake](neural-garden-v01-intake-v1/REPORT.md), [carryover](learning-state-carryover-v1/REPORT.md), [lock design](operator-lock-recovery-design-v1/DESIGN.md) | Distinct numerical worlds; no ecology/reward/lock proposal deployed into live garden |
+
+Next: bounded unchanged main continuation, respecting real resource/context stops and inspecting actual new actions/errors if present. Neither success nor a preferred behavior is an admission requirement. Future setting changes require a declared new condition; no automatic adoption of sampled outputs or diagnostic worlds.
+
+The complete previous map is archived byte-for-byte in [before/CURRENT_RESEARCH_MAP.md](live-continuation-1562-to-1567-v1/before/CURRENT_RESEARCH_MAP.md) and retained below as historical context. Its previous current-status headings refer to earlier contacts.
+
+---
+
 # Current research: Neural Garden cross-reading; notebook version paused1562
 
 12 November2026, America/Chicago. [Pinned-source intake and bounded reproductions](neural-garden-v01-intake-v1/REPORT.md). The neural ecology on codex/frr-v05-explorations is distinct from our notebook garden; neither canonical world changed in this intake. Selected physics identities, policy rows, social comparisons and compressed-history results reproduced. Several later tests use a3-featurelogisticpolicy andtheta-onlytransfer with other state reset, not the original recurrent model or full-state continuation.

@@ -1,3 +1,15 @@
+# Current: actual main garden paused at entry 1567 after unchanged five-reply block
+
+13 November 2026, America/Chicago. [Main continuation report](../evaluation/live-continuation-1562-to-1567-v1/REPORT.md), [saved state/result](../evaluation/live-continuation-1562-to-1567-v1/SUMMARY.json). The selected computational-notebook garden resumed from1562 through1567 using its original greedy256 decoder, complete actual conversation, world laws and bounds. Five actual model replies were saved; five notebook appends, no code dispatched. All five texts exactly match an earlier reply. No boundary or unknown operation was reported.
+
+The runner paused cleanly with verificationPASS, worldstep18, nextinput4633 within7936 input tokens, zero training updates. Source/contract/pointer unchanged; every pre-existing candidate file except the two current-state pointers remains byte-identical. Reference1550 and all prior records are retained. Independent read-only audit is in the report directory. No sampled diagnostic file, transcript, RNG or decoder was imported.
+
+Resume from1567 with the same runner and existing capacity/unknown-outcome stops. A further small bounded block is operationally supported; no performance threshold or hint is required. Writing remains lawful. This block does not demonstrate new competence or error repair. Detached decoder/error/three-loop studies remain separate research evidence.
+
+Prior orientation is archived byte-exact in live-continuation-1562-to-1567-v1/before/CURRENT_ORIENTATION.md. The text below is that historical orientation, whose old paused count is superseded by1567 above.
+
+---
+
 # Current: three consecutive sampled loops audited; ready for bounded unchanged live continuation
 
 13 November 2026, America/Chicago. [Report](../evaluation/feedback-continuity-three-loop-v1/REPORT.md), [audit](../evaluation/feedback-continuity-three-loop-v1/AUDIT.json), [outcome reading](../evaluation/feedback-continuity-three-loop-v1/OBSERVATIONS.md). Three new replies in one detached world continued the first predeclared full-traceback branch. World, complete conversation and actual receipt projection persisted; a newly declared sampling stream was then retained across all three loops. Original prior RNG was not retained, so it is not claimed continuous across that session boundary.
