@@ -1,3 +1,23 @@
+# Current research map: main garden paused at 1580, input capacity boundary
+
+13 November 2026, America/Chicago. [Current report](live-50-request-from-1567-v1/REPORT.md), [garden report](live-50-request-from-1567-v1/GARDEN_REPORT.md), [next-session orientation](live-50-request-from-1567-v1/NEXT_SESSION.md).
+
+Requested50 replies; actual13 advanced1567→1580, then the unchanged full-history runner paused normally. The next input is8104 tokens against7936 allowance; lastgeneratedinput7837. The remaining37 were not generated. All13 replies exactly repeated prior capped unfinished writing, with13 notebook appends and0code operations. Records and filesystem remain intact. No source/model/view-policy change or diagnostic import occurred.
+
+| Area | Current record | Evidence / limits |
+|---|---|---|
+| Actual main continuation | [1567→1580](live-50-request-from-1567-v1/REPORT.md), [audit](live-50-request-from-1567-v1/AUDIT.json) | Requested vsactual counts explicit; clean capacity pause; source/history preserved; no new behavior or repair |
+| Earlier actual continuation | [1562→1567](live-continuation-1562-to-1567-v1/REPORT.md) | Five actual replies, notebook-only; historical earlier pause |
+| Detached continuity/error work | [Three loops](feedback-continuity-three-loop-v1/REPORT.md), [one-step error study](error-feedback-contact-v1/REPORT.md) | Separate sampled worlds/transcripts; no live promotion or demonstrated repair |
+| Decoder and token continuation | [Report](decoder-context-contact-v1/REPORT.md) | Exact token/cache equivalence tested narrowly; does not extend positional capacity |
+| Numerical ecology/operator work | [Neural intake](neural-garden-v01-intake-v1/REPORT.md), [lock proposal](operator-lock-recovery-design-v1/DESIGN.md) | Distinct numerical systems and unadopted operator design |
+
+**Next:** settle the context/view design question before another main block. Preserve this paused full-history run and archive; any smaller view is a separately declared condition to test, not an assumed improvement. No additional model call or background continuation is scheduled for the usage reset. World failure and model maturation are not explanations of this configured input boundary.
+
+The complete previous map is archived byte-exact in [before/CURRENT_RESEARCH_MAP.md](live-50-request-from-1567-v1/before/CURRENT_RESEARCH_MAP.md) and below as historical context. Older current-count headings refer to their own contacts.
+
+---
+
 # Current research map: main garden paused at 1567
 
 13 November 2026, America/Chicago. The main garden has resumed under its unchanged contract; current state is **1567**, not a diagnostic branch count. Original reference1550 remains preserved.

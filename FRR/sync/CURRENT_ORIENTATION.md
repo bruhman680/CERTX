@@ -1,3 +1,17 @@
+# Current: main garden paused at 1580, context capacity reached
+
+13 November 2026, America/Chicago. [Report](../evaluation/live-50-request-from-1567-v1/REPORT.md), [garden report](../evaluation/live-50-request-from-1567-v1/GARDEN_REPORT.md), [audit](../evaluation/live-50-request-from-1567-v1/AUDIT.json), [next-session notes](../evaluation/live-50-request-from-1567-v1/NEXT_SESSION.md).
+
+Requested50 actual main replies from1567; completed13, reaching1580. Remaining37 are uncompleted and are not scheduled. All13 were exact repeats of earlier unfinished writing, capped256, notebook-only; no executable cells or new code errors. Same source, greedy256 decoder, full actual history, world laws, bounds and model; no diagnostic import, training or new hint.
+
+The runner paused normally before over-limit generation. Last generated input7837<=7936; nextinput8104>7936. VerificationPASS and independent auditPASS, worldstep31, no unknown pending or owned locks. All old candidate files except the two mutable STATE pointers are unchanged; original reference1550 and all prior histories retained. Notebook124576 bytes; captured ordinary world files280038 bytes. Archive storage and input-view allowance are separate constraints.
+
+An unchanged resume cannot advance from this pause. After usage reset, consider an explicitly declared bounded-view/context policy while preserving the full archive and world as a reference. Nothing is trimmed, summarized, restarted or silently adopted today. This session is wound down; no unattended execution continues.
+
+Previous orientation is archived exactly in live-50-request-from-1567-v1/before/CURRENT_ORIENTATION.md. Its text below is historical and its older current-count/resume guidance is superseded by this capacity pause.
+
+---
+
 # Current: actual main garden paused at entry 1567 after unchanged five-reply block
 
 13 November 2026, America/Chicago. [Main continuation report](../evaluation/live-continuation-1562-to-1567-v1/REPORT.md), [saved state/result](../evaluation/live-continuation-1562-to-1567-v1/SUMMARY.json). The selected computational-notebook garden resumed from1562 through1567 using its original greedy256 decoder, complete actual conversation, world laws and bounds. Five actual model replies were saved; five notebook appends, no code dispatched. All five texts exactly match an earlier reply. No boundary or unknown operation was reported.
