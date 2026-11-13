@@ -1,3 +1,13 @@
+# Current research: output limits, learner-state carryover, and interruption recovery
+
+13 November 2026, America/Chicago. [Three-contact summary](../evaluation/output-cap-contact-v1/SESSION_SUMMARY.md). The live notebook remains paused at entry 1562, reference 1550 preserved. Detached exact-input length probes found no complete cell in three contexts: first input unfinished at 1024 tokens, turn 12 and prospective turn 13 EOS at 257 with unfinished fences. Both saved 256-token prefixes match. No weights, live state, or model-facing rules changed.
+
+A separate four-seed numerical factorial shows retained baseline/trace changes trajectories but does not consistently rescue online final energy in this protocol. Seven exception-boundary guard tests passed; an actual abrupt child exit exposed stale-lock recovery blockage. The guard remains unadopted. Details, raw evidence, scripts, and limits are in the linked reports.
+
+Next: detached context/decoder or explicitly designed continuation comparison; specify dead-owner recovery before guard deployment; larger reserved-seed carryover protocol if needed. No live continuation or condition change was performed. Earlier orientation is preserved byte-for-byte in output-cap-contact-v1/before/CURRENT_ORIENTATION.md and below.
+
+---
+
 # Current research: Neural Garden cross-reading; notebook version paused1562
 
 12 November2026, America/Chicago. [Pinned-source intake and bounded reproductions](../evaluation/neural-garden-v01-intake-v1/REPORT.md). The neural ecology on codex/frr-v05-explorations is distinct from our notebook garden; neither canonical world changed in this intake. Selected physics identities, policy rows, social comparisons and compressed-history results reproduced. Several later tests use a3-featurelogisticpolicy andtheta-onlytransfer with other state reset, not the original recurrent model or full-state continuation.

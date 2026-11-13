@@ -1,0 +1,120 @@
+{
+  "status": "pass",
+  "method": "Injected Python exceptions, seven interruption boundaries; fresh 4x4 worlds, three ticks each",
+  "rows": [
+    {
+      "point": "before_pending",
+      "pending": false,
+      "state_changed": false,
+      "actual_learning": true,
+      "manifest_learning": true,
+      "blocked": {},
+      "state_preserved_during_block_checks": true,
+      "retry_backup_collision": true,
+      "exact_recovery_fork": true,
+      "original_pending_preserved": true
+    },
+    {
+      "point": "after_pending",
+      "pending": true,
+      "state_changed": false,
+      "actual_learning": true,
+      "manifest_learning": true,
+      "blocked": {
+        "advance": true,
+        "intervene": true,
+        "fork": true
+      },
+      "state_preserved_during_block_checks": true,
+      "exact_recovery_fork": true,
+      "original_pending_preserved": true
+    },
+    {
+      "point": "checkpoint_state_only",
+      "pending": true,
+      "state_changed": true,
+      "actual_learning": false,
+      "manifest_learning": true,
+      "blocked": {
+        "advance": true,
+        "intervene": true,
+        "fork": true
+      },
+      "state_preserved_during_block_checks": true,
+      "exact_recovery_fork": true,
+      "original_pending_preserved": true
+    },
+    {
+      "point": "after_checkpoint",
+      "pending": true,
+      "state_changed": true,
+      "actual_learning": false,
+      "manifest_learning": true,
+      "blocked": {
+        "advance": true,
+        "intervene": true,
+        "fork": true
+      },
+      "state_preserved_during_block_checks": true,
+      "exact_recovery_fork": true,
+      "original_pending_preserved": true
+    },
+    {
+      "point": "after_snapshot",
+      "pending": true,
+      "state_changed": true,
+      "actual_learning": false,
+      "manifest_learning": true,
+      "blocked": {
+        "advance": true,
+        "intervene": true,
+        "fork": true
+      },
+      "state_preserved_during_block_checks": true,
+      "exact_recovery_fork": true,
+      "original_pending_preserved": true
+    },
+    {
+      "point": "after_final_manifest",
+      "pending": true,
+      "state_changed": true,
+      "actual_learning": false,
+      "manifest_learning": false,
+      "blocked": {
+        "advance": true,
+        "intervene": true,
+        "fork": true
+      },
+      "state_preserved_during_block_checks": true,
+      "exact_recovery_fork": true,
+      "original_pending_preserved": true
+    },
+    {
+      "point": "after_applied_event",
+      "pending": true,
+      "state_changed": true,
+      "actual_learning": false,
+      "manifest_learning": false,
+      "blocked": {
+        "advance": true,
+        "intervene": true,
+        "fork": true
+      },
+      "state_preserved_during_block_checks": true,
+      "exact_recovery_fork": true,
+      "original_pending_preserved": true
+    }
+  ],
+  "clean_success_clears_marker": true,
+  "code_sha256": {
+    "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1",
+    "run_garden.py": "d8adc268f8f118ca3e932fea55e5d02e185d368115ca669ce515c5ffbb94581c",
+    "LIVING_GARDEN.py": "c0158b6ecb0170d096cd73b00f8b575ecdfbdd566982af7387a141e31b5f013e"
+  },
+  "limits": [
+    "No hard kill or power loss",
+    "No filesystem directory fsync guarantee",
+    "No deployment or canonical-state change",
+    "Lock finally cleanup remains active under Python exceptions"
+  ]
+}

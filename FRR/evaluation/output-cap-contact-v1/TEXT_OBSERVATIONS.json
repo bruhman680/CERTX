@@ -1,0 +1,32 @@
+[
+  {
+    "label": "retained_01",
+    "nonempty_lines": 74,
+    "distinct_nonempty_lines": 66,
+    "repeated_definition_headers": {
+      "def create_connection(host, port):": 2,
+      "def create_node(host, port):": 2
+    },
+    "last_600_characters": "2373)\n    node30 = create_node(\"localhost\", 12374)\n    node31 = create_node(\"localhost\", 12375)\n    node32 = create_node(\"localhost\", 12376)\n    node33 = create_node(\"localhost\", 12377)\n    node34 = create_node(\"localhost\", 12378)\n    node35 = create_node(\"localhost\", 12379)\n    node36 = create_node(\"localhost\", 12380)\n    node37 = create_node(\"localhost\", 12381)\n    node38 = create_node(\"localhost\", 12382)\n    node39 = create_node(\"localhost\", 12383)\n    node40 = create_node(\"localhost\", 12384)\n    node41 = create_node(\"localhost\", 12385)\n    node42 = create_node(\"localhost\", 12386)\n    node4"
+  },
+  {
+    "label": "retained_12",
+    "nonempty_lines": 30,
+    "distinct_nonempty_lines": 23,
+    "repeated_definition_headers": {
+      "def create_connection(host, port):": 2,
+      "def create_node(host, port):": 2
+    },
+    "last_600_characters": "ttimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+  },
+  {
+    "label": "prospective_13",
+    "nonempty_lines": 30,
+    "distinct_nonempty_lines": 23,
+    "repeated_definition_headers": {
+      "def create_connection(host, port):": 2,
+      "def create_node(host, port):": 2
+    },
+    "last_600_characters": "ttimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+  }
+]

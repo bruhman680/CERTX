@@ -1,0 +1,2973 @@
+{
+  "plan": {
+    "date": "2026-11-13 America/Chicago",
+    "status": "exploratory new protocol, not published-cohort reproduction",
+    "seeds": [
+      12400,
+      12401,
+      12402,
+      12403
+    ],
+    "size": 6,
+    "train_steps": 300,
+    "test_steps": 1000,
+    "physical_contexts": [
+      "fresh physical test world",
+      "trained physical continuation"
+    ],
+    "factorial": "baseline retained/reset x trace retained/reset x online/frozen",
+    "objective": "reserve_resource",
+    "penalty": 0.3,
+    "regrowth": ".06 first/final thirds, .055 middle third",
+    "primary_metric": "final mean energy; report every seed and contrast, no general-learning claim",
+    "source_sha256": {
+      "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1",
+      "SOC_ENERGY_AWARE_policy.py": "3a33d80f8bb58758a80117464a54656f3080784acb07f5d8c812937e0d5d91ef",
+      "NEXT_WELFARE_garden.py": "74b2293fce28df08fd6c065f337161412ebcec2bf623dfd19316b01e5ebd62a6"
+    },
+    "model_inference": false,
+    "canonical_mutation": false
+  },
+  "platform": {
+    "python": "3.12.14",
+    "numpy": "2.5.4"
+  },
+  "rows": [
+    {
+      "seed": 12400,
+      "context": "fresh",
+      "train_end": {
+        "energy": 0.3520323925109697,
+        "resource": 0.46833610442536766,
+        "floor": 0.0,
+        "baseline_rms": 0.002477452641103038,
+        "trace_rms": 1.0553061464632372,
+        "theta_rms": 2.342001643928143
+      },
+      "initial_physics_theta_hash": {
+        "resource": "8786b38ce21815ed4b378f696f6b9015cc481646c2c684e70584011842f9f038",
+        "energy": "b88a62a63c94c99a638eab30e7fa9757e768cdae5356a116279bfc20797fd774",
+        "theta": "918f09c81a65819a5e4a45597a639619f0c4200b7f4012a38b4a04ec12dc8baa"
+      },
+      "initial_rng_sha256": "cee43daf11195ad242adeddb98a3c23077e6de73ff68e4b7968e2e0c860a36a0",
+      "matched_initial_physics_theta_rng": true,
+      "matched_first_actions_physics": true,
+      "matched_final_rng": true,
+      "frozen_factorial_identical": true,
+      "snapshots": {
+        "1": {
+          "b0t0_frozen": {
+            "energy": 0.5998996297399657,
+            "resource": 0.5268272736031236,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.342001643928143
+          },
+          "b0t0_online": {
+            "energy": 0.5998996297399657,
+            "resource": 0.5268272736031236,
+            "floor": 0.0,
+            "baseline_rms": 0.000182298413984912,
+            "trace_rms": 0.23857538945581308,
+            "theta_rms": 2.3420377430163355
+          },
+          "b0t1_frozen": {
+            "energy": 0.5998996297399657,
+            "resource": 0.5268272736031236,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.0553061464632372,
+            "theta_rms": 2.342001643928143
+          },
+          "b0t1_online": {
+            "energy": 0.5998996297399657,
+            "resource": 0.5268272736031236,
+            "floor": 0.0,
+            "baseline_rms": 0.000182298413984912,
+            "trace_rms": 1.076183115811925,
+            "theta_rms": 2.3420585636765883
+          },
+          "b1t0_frozen": {
+            "energy": 0.5998996297399657,
+            "resource": 0.5268272736031236,
+            "floor": 0.0,
+            "baseline_rms": 0.002477452641103038,
+            "trace_rms": 0.0,
+            "theta_rms": 2.342001643928143
+          },
+          "b1t0_online": {
+            "energy": 0.5998996297399657,
+            "resource": 0.5268272736031236,
+            "floor": 0.0,
+            "baseline_rms": 0.002409628963729566,
+            "trace_rms": 0.23857538945581308,
+            "theta_rms": 2.3420382423562844
+          },
+          "b1t1_frozen": {
+            "energy": 0.5998996297399657,
+            "resource": 0.5268272736031236,
+            "floor": 0.0,
+            "baseline_rms": 0.002477452641103038,
+            "trace_rms": 1.0553061464632372,
+            "theta_rms": 2.342001643928143
+          },
+          "b1t1_online": {
+            "energy": 0.5998996297399657,
+            "resource": 0.5268272736031236,
+            "floor": 0.0,
+            "baseline_rms": 0.002409628963729566,
+            "trace_rms": 1.076183115811925,
+            "theta_rms": 2.342053642386362
+          }
+        },
+        "100": {
+          "b0t0_frozen": {
+            "energy": 0.5762744034543941,
+            "resource": 0.4442167797777166,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.342001643928143
+          },
+          "b0t0_online": {
+            "energy": 0.5758191438012654,
+            "resource": 0.4442166864375301,
+            "floor": 0.0,
+            "baseline_rms": 0.00022231151885786373,
+            "trace_rms": 1.188824963922441,
+            "theta_rms": 2.34189794949314
+          },
+          "b0t1_frozen": {
+            "energy": 0.5762744034543941,
+            "resource": 0.4442167797777166,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.0553061464632372,
+            "theta_rms": 2.342001643928143
+          },
+          "b0t1_online": {
+            "energy": 0.5758191438012654,
+            "resource": 0.4442166864375301,
+            "floor": 0.0,
+            "baseline_rms": 0.00022231151885786373,
+            "trace_rms": 1.1964784137560585,
+            "theta_rms": 2.341908809988412
+          },
+          "b1t0_frozen": {
+            "energy": 0.5762744034543941,
+            "resource": 0.4442167797777166,
+            "floor": 0.0,
+            "baseline_rms": 0.002477452641103038,
+            "trace_rms": 0.0,
+            "theta_rms": 2.342001643928143
+          },
+          "b1t0_online": {
+            "energy": 0.5758191438012654,
+            "resource": 0.4442166864375301,
+            "floor": 0.0,
+            "baseline_rms": 0.0015770457154920842,
+            "trace_rms": 1.1811486994000058,
+            "theta_rms": 2.3418996788340785
+          },
+          "b1t1_frozen": {
+            "energy": 0.5762744034543941,
+            "resource": 0.4442167797777166,
+            "floor": 0.0,
+            "baseline_rms": 0.002477452641103038,
+            "trace_rms": 1.0553061464632372,
+            "theta_rms": 2.342001643928143
+          },
+          "b1t1_online": {
+            "energy": 0.5757529254554704,
+            "resource": 0.44420670780262866,
+            "floor": 0.0,
+            "baseline_rms": 0.0015777328752374694,
+            "trace_rms": 1.188251917292082,
+            "theta_rms": 2.3417585723533563
+          }
+        },
+        "500": {
+          "b0t0_frozen": {
+            "energy": 0.04855875046858742,
+            "resource": 0.44842761555217386,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.342001643928143
+          },
+          "b0t0_online": {
+            "energy": 0.04361184127419937,
+            "resource": 0.4481708223407219,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.016583221421001028,
+            "trace_rms": 1.495818370957802,
+            "theta_rms": 2.34913650745886
+          },
+          "b0t1_frozen": {
+            "energy": 0.04855875046858742,
+            "resource": 0.44842761555217386,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.0553061464632372,
+            "theta_rms": 2.342001643928143
+          },
+          "b0t1_online": {
+            "energy": 0.04344278705376106,
+            "resource": 0.44687674520844506,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.01658729209327813,
+            "trace_rms": 1.5436680224776176,
+            "theta_rms": 2.349238364962497
+          },
+          "b1t0_frozen": {
+            "energy": 0.04855875046858742,
+            "resource": 0.44842761555217386,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.002477452641103038,
+            "trace_rms": 0.0,
+            "theta_rms": 2.342001643928143
+          },
+          "b1t0_online": {
+            "energy": 0.043100215054732466,
+            "resource": 0.45099458528830383,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.016639591892709533,
+            "trace_rms": 1.533947527072113,
+            "theta_rms": 2.348862263323356
+          },
+          "b1t1_frozen": {
+            "energy": 0.04855875046858742,
+            "resource": 0.44842761555217386,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.002477452641103038,
+            "trace_rms": 1.0553061464632372,
+            "theta_rms": 2.342001643928143
+          },
+          "b1t1_online": {
+            "energy": 0.04282892451098229,
+            "resource": 0.4494706432897097,
+            "floor": 0.16666666666666666,
+            "baseline_rms": 0.016675124754159408,
+            "trace_rms": 1.5429024746702735,
+            "theta_rms": 2.3488651126453077
+          }
+        },
+        "1000": {
+          "b0t0_frozen": {
+            "energy": 0.05917757478394831,
+            "resource": 0.46441840156688385,
+            "floor": 0.08333333333333333,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.342001643928143
+          },
+          "b0t0_online": {
+            "energy": 0.05531167230880346,
+            "resource": 0.4630204726323077,
+            "floor": 0.1388888888888889,
+            "baseline_rms": 0.03793182041425771,
+            "trace_rms": 2.403864077622067,
+            "theta_rms": 2.3440209255939064
+          },
+          "b0t1_frozen": {
+            "energy": 0.05917757478394831,
+            "resource": 0.46441840156688385,
+            "floor": 0.08333333333333333,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.0553061464632372,
+            "theta_rms": 2.342001643928143
+          },
+          "b0t1_online": {
+            "energy": 0.057382890545258435,
+            "resource": 0.46016141934237226,
+            "floor": 0.1111111111111111,
+            "baseline_rms": 0.037739807457123194,
+            "trace_rms": 2.3415073153151855,
+            "theta_rms": 2.345019985225655
+          },
+          "b1t0_frozen": {
+            "energy": 0.05917757478394831,
+            "resource": 0.46441840156688385,
+            "floor": 0.08333333333333333,
+            "baseline_rms": 0.002477452641103038,
+            "trace_rms": 0.0,
+            "theta_rms": 2.342001643928143
+          },
+          "b1t0_online": {
+            "energy": 0.056168432197272,
+            "resource": 0.4641464468395457,
+            "floor": 0.1388888888888889,
+            "baseline_rms": 0.037986695697741796,
+            "trace_rms": 2.4627383414137065,
+            "theta_rms": 2.344313948812587
+          },
+          "b1t1_frozen": {
+            "energy": 0.05917757478394831,
+            "resource": 0.46441840156688385,
+            "floor": 0.08333333333333333,
+            "baseline_rms": 0.002477452641103038,
+            "trace_rms": 1.0553061464632372,
+            "theta_rms": 2.342001643928143
+          },
+          "b1t1_online": {
+            "energy": 0.058754762288442675,
+            "resource": 0.4621050288995079,
+            "floor": 0.16666666666666666,
+            "baseline_rms": 0.03770044008932474,
+            "trace_rms": 2.4254968090419644,
+            "theta_rms": 2.344540604050683
+          }
+        }
+      },
+      "final": {
+        "b0t0_frozen": {
+          "energy": 0.05917757478394831,
+          "resource": 0.46441840156688385,
+          "floor": 0.08333333333333333,
+          "baseline_rms": 0.0,
+          "trace_rms": 0.0,
+          "theta_rms": 2.342001643928143
+        },
+        "b0t0_online": {
+          "energy": 0.05531167230880346,
+          "resource": 0.4630204726323077,
+          "floor": 0.1388888888888889,
+          "baseline_rms": 0.03793182041425771,
+          "trace_rms": 2.403864077622067,
+          "theta_rms": 2.3440209255939064
+        },
+        "b0t1_frozen": {
+          "energy": 0.05917757478394831,
+          "resource": 0.46441840156688385,
+          "floor": 0.08333333333333333,
+          "baseline_rms": 0.0,
+          "trace_rms": 1.0553061464632372,
+          "theta_rms": 2.342001643928143
+        },
+        "b0t1_online": {
+          "energy": 0.057382890545258435,
+          "resource": 0.46016141934237226,
+          "floor": 0.1111111111111111,
+          "baseline_rms": 0.037739807457123194,
+          "trace_rms": 2.3415073153151855,
+          "theta_rms": 2.345019985225655
+        },
+        "b1t0_frozen": {
+          "energy": 0.05917757478394831,
+          "resource": 0.46441840156688385,
+          "floor": 0.08333333333333333,
+          "baseline_rms": 0.002477452641103038,
+          "trace_rms": 0.0,
+          "theta_rms": 2.342001643928143
+        },
+        "b1t0_online": {
+          "energy": 0.056168432197272,
+          "resource": 0.4641464468395457,
+          "floor": 0.1388888888888889,
+          "baseline_rms": 0.037986695697741796,
+          "trace_rms": 2.4627383414137065,
+          "theta_rms": 2.344313948812587
+        },
+        "b1t1_frozen": {
+          "energy": 0.05917757478394831,
+          "resource": 0.46441840156688385,
+          "floor": 0.08333333333333333,
+          "baseline_rms": 0.002477452641103038,
+          "trace_rms": 1.0553061464632372,
+          "theta_rms": 2.342001643928143
+        },
+        "b1t1_online": {
+          "energy": 0.058754762288442675,
+          "resource": 0.4621050288995079,
+          "floor": 0.16666666666666666,
+          "baseline_rms": 0.03770044008932474,
+          "trace_rms": 2.4254968090419644,
+          "theta_rms": 2.344540604050683
+        }
+      },
+      "online_minus_frozen_energy": {
+        "b0t0": -0.0038659024751448515,
+        "b0t1": -0.0017946842386898781,
+        "b1t0": -0.003009142586676311,
+        "b1t1": -0.0004228124955056381
+      },
+      "both_retained_minus_both_reset_online_energy": 0.0034430899796392134
+    },
+    {
+      "seed": 12400,
+      "context": "continuation",
+      "train_end": {
+        "energy": 0.3520323925109697,
+        "resource": 0.46833610442536766,
+        "floor": 0.0,
+        "baseline_rms": 0.002477452641103038,
+        "trace_rms": 1.0553061464632372,
+        "theta_rms": 2.342001643928143
+      },
+      "initial_physics_theta_hash": {
+        "resource": "9ec2844b76406172ab3d0ab19be7b4449840c382e6ccbadda5249c10d82faabd",
+        "energy": "2c2b315edbe6b0d79f87caba4bda9469ff01ec539baa09ef87a347348f68b9d7",
+        "theta": "918f09c81a65819a5e4a45597a639619f0c4200b7f4012a38b4a04ec12dc8baa"
+      },
+      "initial_rng_sha256": "0d39497d590ba351747a4121f93f875e06b90b5995c0fbc3567132cf95b53296",
+      "matched_initial_physics_theta_rng": true,
+      "matched_first_actions_physics": true,
+      "matched_final_rng": true,
+      "frozen_factorial_identical": true,
+      "snapshots": {
+        "1": {
+          "b0t0_frozen": {
+            "energy": 0.35999877009659476,
+            "resource": 0.4547201462981957,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.342001643928143
+          },
+          "b0t0_online": {
+            "energy": 0.35999877009659476,
+            "resource": 0.4547201462981957,
+            "floor": 0.0,
+            "baseline_rms": 9.658763331702591e-05,
+            "trace_rms": 0.3314770425931438,
+            "theta_rms": 2.341993739763326
+          },
+          "b0t1_frozen": {
+            "energy": 0.35999877009659476,
+            "resource": 0.4547201462981957,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.0553061464632372,
+            "theta_rms": 2.342001643928143
+          },
+          "b0t1_online": {
+            "energy": 0.35999877009659476,
+            "resource": 0.4547201462981957,
+            "floor": 0.0,
+            "baseline_rms": 9.658763331702591e-05,
+            "trace_rms": 1.0511835695517893,
+            "theta_rms": 2.341982164863406
+          },
+          "b1t0_frozen": {
+            "energy": 0.35999877009659476,
+            "resource": 0.4547201462981957,
+            "floor": 0.0,
+            "baseline_rms": 0.002477452641103038,
+            "trace_rms": 0.0,
+            "theta_rms": 2.342001643928143
+          },
+          "b1t0_online": {
+            "energy": 0.35999877009659476,
+            "resource": 0.4547201462981957,
+            "floor": 0.0,
+            "baseline_rms": 0.0024922986152404757,
+            "trace_rms": 0.3314770425931438,
+            "theta_rms": 2.341993833015057
+          },
+          "b1t1_frozen": {
+            "energy": 0.35999877009659476,
+            "resource": 0.4547201462981957,
+            "floor": 0.0,
+            "baseline_rms": 0.002477452641103038,
+            "trace_rms": 1.0553061464632372,
+            "theta_rms": 2.342001643928143
+          },
+          "b1t1_online": {
+            "energy": 0.35999877009659476,
+            "resource": 0.4547201462981957,
+            "floor": 0.0,
+            "baseline_rms": 0.0024922986152404757,
+            "trace_rms": 1.0511835695517893,
+            "theta_rms": 2.3419767609168414
+          }
+        },
+        "100": {
+          "b0t0_frozen": {
+            "energy": 0.2809356703788375,
+            "resource": 0.45237647975713396,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.342001643928143
+          },
+          "b0t0_online": {
+            "energy": 0.2804979647882555,
+            "resource": 0.44374886815188536,
+            "floor": 0.0,
+            "baseline_rms": 0.004668767820276142,
+            "trace_rms": 1.121202992528304,
+            "theta_rms": 2.3413254194698143
+          },
+          "b0t1_frozen": {
+            "energy": 0.2809356703788375,
+            "resource": 0.45237647975713396,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.0553061464632372,
+            "theta_rms": 2.342001643928143
+          },
+          "b0t1_online": {
+            "energy": 0.2784286745501865,
+            "resource": 0.44417979863696144,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.004686894194946833,
+            "trace_rms": 1.1119958462720958,
+            "theta_rms": 2.3424373184362013
+          },
+          "b1t0_frozen": {
+            "energy": 0.2809356703788375,
+            "resource": 0.45237647975713396,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.002477452641103038,
+            "trace_rms": 0.0,
+            "theta_rms": 2.342001643928143
+          },
+          "b1t0_online": {
+            "energy": 0.2796987818896985,
+            "resource": 0.4466799214903879,
+            "floor": 0.05555555555555555,
+            "baseline_rms": 0.0060031480925533025,
+            "trace_rms": 1.1008256220300738,
+            "theta_rms": 2.341489090242999
+          },
+          "b1t1_frozen": {
+            "energy": 0.2809356703788375,
+            "resource": 0.45237647975713396,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.002477452641103038,
+            "trace_rms": 1.0553061464632372,
+            "theta_rms": 2.342001643928143
+          },
+          "b1t1_online": {
+            "energy": 0.2772994400046769,
+            "resource": 0.44666348612789236,
+            "floor": 0.05555555555555555,
+            "baseline_rms": 0.005988863864823057,
+            "trace_rms": 1.1538918669222389,
+            "theta_rms": 2.3422052070834294
+          }
+        },
+        "500": {
+          "b0t0_frozen": {
+            "energy": 0.030075157127106084,
+            "resource": 0.4579697151588873,
+            "floor": 0.3333333333333333,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.342001643928143
+          },
+          "b0t0_online": {
+            "energy": 0.02644540462682775,
+            "resource": 0.45086202547890014,
+            "floor": 0.3888888888888889,
+            "baseline_rms": 0.03223023341333547,
+            "trace_rms": 1.8761986299142768,
+            "theta_rms": 2.34942653359974
+          },
+          "b0t1_frozen": {
+            "energy": 0.030075157127106084,
+            "resource": 0.4579697151588873,
+            "floor": 0.3333333333333333,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.0553061464632372,
+            "theta_rms": 2.342001643928143
+          },
+          "b0t1_online": {
+            "energy": 0.025856466958001527,
+            "resource": 0.4502518920633538,
+            "floor": 0.3888888888888889,
+            "baseline_rms": 0.032881717027527436,
+            "trace_rms": 1.9091990086697903,
+            "theta_rms": 2.350148891245595
+          },
+          "b1t0_frozen": {
+            "energy": 0.030075157127106084,
+            "resource": 0.4579697151588873,
+            "floor": 0.3333333333333333,
+            "baseline_rms": 0.002477452641103038,
+            "trace_rms": 0.0,
+            "theta_rms": 2.342001643928143
+          },
+          "b1t0_online": {
+            "energy": 0.02757206659447276,
+            "resource": 0.4500296506475323,
+            "floor": 0.3888888888888889,
+            "baseline_rms": 0.03218835477677666,
+            "trace_rms": 1.9200886507892072,
+            "theta_rms": 2.3513215556057996
+          },
+          "b1t1_frozen": {
+            "energy": 0.030075157127106084,
+            "resource": 0.4579697151588873,
+            "floor": 0.3333333333333333,
+            "baseline_rms": 0.002477452641103038,
+            "trace_rms": 1.0553061464632372,
+            "theta_rms": 2.342001643928143
+          },
+          "b1t1_online": {
+            "energy": 0.025382079163934132,
+            "resource": 0.4494041200529239,
+            "floor": 0.3888888888888889,
+            "baseline_rms": 0.03287732557597345,
+            "trace_rms": 1.833729388591644,
+            "theta_rms": 2.3499980423962774
+          }
+        },
+        "1000": {
+          "b0t0_frozen": {
+            "energy": 0.04126998492817246,
+            "resource": 0.46542550691355444,
+            "floor": 0.25,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.342001643928143
+          },
+          "b0t0_online": {
+            "energy": 0.02897251077583364,
+            "resource": 0.4498112166662441,
+            "floor": 0.3611111111111111,
+            "baseline_rms": 0.04210304176608629,
+            "trace_rms": 1.9734507298530448,
+            "theta_rms": 2.3454336627505494
+          },
+          "b0t1_frozen": {
+            "energy": 0.04126998492817246,
+            "resource": 0.46542550691355444,
+            "floor": 0.25,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.0553061464632372,
+            "theta_rms": 2.342001643928143
+          },
+          "b0t1_online": {
+            "energy": 0.030970202190193044,
+            "resource": 0.45041493891439505,
+            "floor": 0.3055555555555556,
+            "baseline_rms": 0.04221041346480477,
+            "trace_rms": 2.0404937713111924,
+            "theta_rms": 2.3469201253945986
+          },
+          "b1t0_frozen": {
+            "energy": 0.04126998492817246,
+            "resource": 0.46542550691355444,
+            "floor": 0.25,
+            "baseline_rms": 0.002477452641103038,
+            "trace_rms": 0.0,
+            "theta_rms": 2.342001643928143
+          },
+          "b1t0_online": {
+            "energy": 0.03206422967097263,
+            "resource": 0.457165393904173,
+            "floor": 0.3055555555555556,
+            "baseline_rms": 0.04176561780212855,
+            "trace_rms": 1.8935540507105089,
+            "theta_rms": 2.3484645993735755
+          },
+          "b1t1_frozen": {
+            "energy": 0.04126998492817246,
+            "resource": 0.46542550691355444,
+            "floor": 0.25,
+            "baseline_rms": 0.002477452641103038,
+            "trace_rms": 1.0553061464632372,
+            "theta_rms": 2.342001643928143
+          },
+          "b1t1_online": {
+            "energy": 0.032619632299396316,
+            "resource": 0.4522968357982386,
+            "floor": 0.2777777777777778,
+            "baseline_rms": 0.041995510403869875,
+            "trace_rms": 1.8798500828152744,
+            "theta_rms": 2.3462746577938423
+          }
+        }
+      },
+      "final": {
+        "b0t0_frozen": {
+          "energy": 0.04126998492817246,
+          "resource": 0.46542550691355444,
+          "floor": 0.25,
+          "baseline_rms": 0.0,
+          "trace_rms": 0.0,
+          "theta_rms": 2.342001643928143
+        },
+        "b0t0_online": {
+          "energy": 0.02897251077583364,
+          "resource": 0.4498112166662441,
+          "floor": 0.3611111111111111,
+          "baseline_rms": 0.04210304176608629,
+          "trace_rms": 1.9734507298530448,
+          "theta_rms": 2.3454336627505494
+        },
+        "b0t1_frozen": {
+          "energy": 0.04126998492817246,
+          "resource": 0.46542550691355444,
+          "floor": 0.25,
+          "baseline_rms": 0.0,
+          "trace_rms": 1.0553061464632372,
+          "theta_rms": 2.342001643928143
+        },
+        "b0t1_online": {
+          "energy": 0.030970202190193044,
+          "resource": 0.45041493891439505,
+          "floor": 0.3055555555555556,
+          "baseline_rms": 0.04221041346480477,
+          "trace_rms": 2.0404937713111924,
+          "theta_rms": 2.3469201253945986
+        },
+        "b1t0_frozen": {
+          "energy": 0.04126998492817246,
+          "resource": 0.46542550691355444,
+          "floor": 0.25,
+          "baseline_rms": 0.002477452641103038,
+          "trace_rms": 0.0,
+          "theta_rms": 2.342001643928143
+        },
+        "b1t0_online": {
+          "energy": 0.03206422967097263,
+          "resource": 0.457165393904173,
+          "floor": 0.3055555555555556,
+          "baseline_rms": 0.04176561780212855,
+          "trace_rms": 1.8935540507105089,
+          "theta_rms": 2.3484645993735755
+        },
+        "b1t1_frozen": {
+          "energy": 0.04126998492817246,
+          "resource": 0.46542550691355444,
+          "floor": 0.25,
+          "baseline_rms": 0.002477452641103038,
+          "trace_rms": 1.0553061464632372,
+          "theta_rms": 2.342001643928143
+        },
+        "b1t1_online": {
+          "energy": 0.032619632299396316,
+          "resource": 0.4522968357982386,
+          "floor": 0.2777777777777778,
+          "baseline_rms": 0.041995510403869875,
+          "trace_rms": 1.8798500828152744,
+          "theta_rms": 2.3462746577938423
+        }
+      },
+      "online_minus_frozen_energy": {
+        "b0t0": -0.012297474152338818,
+        "b0t1": -0.010299782737979414,
+        "b1t0": -0.009205755257199827,
+        "b1t1": -0.008650352628776142
+      },
+      "both_retained_minus_both_reset_online_energy": 0.0036471215235626755
+    },
+    {
+      "seed": 12401,
+      "context": "fresh",
+      "train_end": {
+        "energy": 0.338535618067982,
+        "resource": 0.4473031087811788,
+        "floor": 0.0,
+        "baseline_rms": 0.001659596406606416,
+        "trace_rms": 1.5046488271450158,
+        "theta_rms": 2.3236678498621384
+      },
+      "initial_physics_theta_hash": {
+        "resource": "312fbd7d5c5fec66854492a32588c12a6c8d632772099b773062db2ab8c8a2f5",
+        "energy": "6f4a1389b56954ae1e390e90f08da6a480fa06b74497b452528e93a7e1a51e5d",
+        "theta": "12937be43682bb684da5e1e25be12a21bbc4ecc637adf8202db427770951adbf"
+      },
+      "initial_rng_sha256": "f5ec301831314d6bc23778437927fe6a03ec7f8abce4fdb3aeafaec648f9771c",
+      "matched_initial_physics_theta_rng": true,
+      "matched_first_actions_physics": true,
+      "matched_final_rng": true,
+      "frozen_factorial_identical": true,
+      "snapshots": {
+        "1": {
+          "b0t0_frozen": {
+            "energy": 0.5890144808577623,
+            "resource": 0.5215929721788185,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3236678498621384
+          },
+          "b0t0_online": {
+            "energy": 0.5890144808577623,
+            "resource": 0.5215929721788185,
+            "floor": 0.0,
+            "baseline_rms": 0.00019490540369908075,
+            "trace_rms": 0.2265099809900382,
+            "theta_rms": 2.3237104658151986
+          },
+          "b0t1_frozen": {
+            "energy": 0.5890144808577623,
+            "resource": 0.5215929721788185,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.5046488271450158,
+            "theta_rms": 2.3236678498621384
+          },
+          "b0t1_online": {
+            "energy": 0.5890144808577623,
+            "resource": 0.5215929721788185,
+            "floor": 0.0,
+            "baseline_rms": 0.00019490540369908075,
+            "trace_rms": 1.4846223632843296,
+            "theta_rms": 2.323651525769955
+          },
+          "b1t0_frozen": {
+            "energy": 0.5890144808577623,
+            "resource": 0.5215929721788185,
+            "floor": 0.0,
+            "baseline_rms": 0.001659596406606416,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3236678498621384
+          },
+          "b1t0_online": {
+            "energy": 0.5890144808577623,
+            "resource": 0.5215929721788185,
+            "floor": 0.0,
+            "baseline_rms": 0.0015558469597851802,
+            "trace_rms": 0.2265099809900382,
+            "theta_rms": 2.323711114850038
+          },
+          "b1t1_frozen": {
+            "energy": 0.5890144808577623,
+            "resource": 0.5215929721788185,
+            "floor": 0.0,
+            "baseline_rms": 0.001659596406606416,
+            "trace_rms": 1.5046488271450158,
+            "theta_rms": 2.3236678498621384
+          },
+          "b1t1_online": {
+            "energy": 0.5890144808577623,
+            "resource": 0.5215929721788185,
+            "floor": 0.0,
+            "baseline_rms": 0.0015558469597851802,
+            "trace_rms": 1.4846223632843296,
+            "theta_rms": 2.3236454267187296
+          }
+        },
+        "100": {
+          "b0t0_frozen": {
+            "energy": 0.545891490671399,
+            "resource": 0.45318909753535613,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3236678498621384
+          },
+          "b0t0_online": {
+            "energy": 0.5465507225820242,
+            "resource": 0.45116542899520734,
+            "floor": 0.0,
+            "baseline_rms": 0.0002889426468088104,
+            "trace_rms": 1.3908114202063315,
+            "theta_rms": 2.3235530298447467
+          },
+          "b0t1_frozen": {
+            "energy": 0.545891490671399,
+            "resource": 0.45318909753535613,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.5046488271450158,
+            "theta_rms": 2.3236678498621384
+          },
+          "b0t1_online": {
+            "energy": 0.5463317735046558,
+            "resource": 0.4511653620057221,
+            "floor": 0.0,
+            "baseline_rms": 0.0002926820287704368,
+            "trace_rms": 1.377855097400701,
+            "theta_rms": 2.3235134144365657
+          },
+          "b1t0_frozen": {
+            "energy": 0.545891490671399,
+            "resource": 0.45318909753535613,
+            "floor": 0.0,
+            "baseline_rms": 0.001659596406606416,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3236678498621384
+          },
+          "b1t0_online": {
+            "energy": 0.5469498861718924,
+            "resource": 0.451171085011739,
+            "floor": 0.0,
+            "baseline_rms": 0.0011345642382329791,
+            "trace_rms": 1.370721110610914,
+            "theta_rms": 2.32344890660945
+          },
+          "b1t1_frozen": {
+            "energy": 0.545891490671399,
+            "resource": 0.45318909753535613,
+            "floor": 0.0,
+            "baseline_rms": 0.001659596406606416,
+            "trace_rms": 1.5046488271450158,
+            "theta_rms": 2.3236678498621384
+          },
+          "b1t1_online": {
+            "energy": 0.5469729091848569,
+            "resource": 0.4511719775236662,
+            "floor": 0.0,
+            "baseline_rms": 0.0011332807798707441,
+            "trace_rms": 1.3486255357396877,
+            "theta_rms": 2.323219807584109
+          }
+        },
+        "500": {
+          "b0t0_frozen": {
+            "energy": 0.04169657452328674,
+            "resource": 0.450596256888453,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3236678498621384
+          },
+          "b0t0_online": {
+            "energy": 0.03363595962986545,
+            "resource": 0.433820552570189,
+            "floor": 0.3055555555555556,
+            "baseline_rms": 0.018052556462718215,
+            "trace_rms": 1.7208151001213707,
+            "theta_rms": 2.3233376452808767
+          },
+          "b0t1_frozen": {
+            "energy": 0.04169657452328674,
+            "resource": 0.450596256888453,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.5046488271450158,
+            "theta_rms": 2.3236678498621384
+          },
+          "b0t1_online": {
+            "energy": 0.03713720103811389,
+            "resource": 0.431479336811493,
+            "floor": 0.2777777777777778,
+            "baseline_rms": 0.018146942074201308,
+            "trace_rms": 1.6814478345713988,
+            "theta_rms": 2.323676636106713
+          },
+          "b1t0_frozen": {
+            "energy": 0.04169657452328674,
+            "resource": 0.450596256888453,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.001659596406606416,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3236678498621384
+          },
+          "b1t0_online": {
+            "energy": 0.03329394581198838,
+            "resource": 0.4323384293570107,
+            "floor": 0.2777777777777778,
+            "baseline_rms": 0.01811578011560455,
+            "trace_rms": 1.6093697944177827,
+            "theta_rms": 2.324130943078083
+          },
+          "b1t1_frozen": {
+            "energy": 0.04169657452328674,
+            "resource": 0.450596256888453,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.001659596406606416,
+            "trace_rms": 1.5046488271450158,
+            "theta_rms": 2.3236678498621384
+          },
+          "b1t1_online": {
+            "energy": 0.0343951877784173,
+            "resource": 0.43447992007589825,
+            "floor": 0.3055555555555556,
+            "baseline_rms": 0.018120242471378434,
+            "trace_rms": 1.713625421912863,
+            "theta_rms": 2.3229478637518617
+          }
+        },
+        "1000": {
+          "b0t0_frozen": {
+            "energy": 0.04928905974845297,
+            "resource": 0.4687405175143497,
+            "floor": 0.1111111111111111,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3236678498621384
+          },
+          "b0t0_online": {
+            "energy": 0.047130363943695054,
+            "resource": 0.4433916662109729,
+            "floor": 0.1388888888888889,
+            "baseline_rms": 0.039951988852258306,
+            "trace_rms": 1.9102358279420577,
+            "theta_rms": 2.3226810883563425
+          },
+          "b0t1_frozen": {
+            "energy": 0.04928905974845297,
+            "resource": 0.4687405175143497,
+            "floor": 0.1111111111111111,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.5046488271450158,
+            "theta_rms": 2.3236678498621384
+          },
+          "b0t1_online": {
+            "energy": 0.04765452953086329,
+            "resource": 0.44518904619296035,
+            "floor": 0.16666666666666666,
+            "baseline_rms": 0.04015043139632069,
+            "trace_rms": 1.7565015263057386,
+            "theta_rms": 2.3238459456802336
+          },
+          "b1t0_frozen": {
+            "energy": 0.04928905974845297,
+            "resource": 0.4687405175143497,
+            "floor": 0.1111111111111111,
+            "baseline_rms": 0.001659596406606416,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3236678498621384
+          },
+          "b1t0_online": {
+            "energy": 0.04562889108709765,
+            "resource": 0.44682526436805425,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.039904213951440656,
+            "trace_rms": 1.7871042153354948,
+            "theta_rms": 2.3243646970505845
+          },
+          "b1t1_frozen": {
+            "energy": 0.04928905974845297,
+            "resource": 0.4687405175143497,
+            "floor": 0.1111111111111111,
+            "baseline_rms": 0.001659596406606416,
+            "trace_rms": 1.5046488271450158,
+            "theta_rms": 2.3236678498621384
+          },
+          "b1t1_online": {
+            "energy": 0.042553827973013325,
+            "resource": 0.44690167423709465,
+            "floor": 0.16666666666666666,
+            "baseline_rms": 0.04043962831234652,
+            "trace_rms": 1.848590581541416,
+            "theta_rms": 2.321680649202233
+          }
+        }
+      },
+      "final": {
+        "b0t0_frozen": {
+          "energy": 0.04928905974845297,
+          "resource": 0.4687405175143497,
+          "floor": 0.1111111111111111,
+          "baseline_rms": 0.0,
+          "trace_rms": 0.0,
+          "theta_rms": 2.3236678498621384
+        },
+        "b0t0_online": {
+          "energy": 0.047130363943695054,
+          "resource": 0.4433916662109729,
+          "floor": 0.1388888888888889,
+          "baseline_rms": 0.039951988852258306,
+          "trace_rms": 1.9102358279420577,
+          "theta_rms": 2.3226810883563425
+        },
+        "b0t1_frozen": {
+          "energy": 0.04928905974845297,
+          "resource": 0.4687405175143497,
+          "floor": 0.1111111111111111,
+          "baseline_rms": 0.0,
+          "trace_rms": 1.5046488271450158,
+          "theta_rms": 2.3236678498621384
+        },
+        "b0t1_online": {
+          "energy": 0.04765452953086329,
+          "resource": 0.44518904619296035,
+          "floor": 0.16666666666666666,
+          "baseline_rms": 0.04015043139632069,
+          "trace_rms": 1.7565015263057386,
+          "theta_rms": 2.3238459456802336
+        },
+        "b1t0_frozen": {
+          "energy": 0.04928905974845297,
+          "resource": 0.4687405175143497,
+          "floor": 0.1111111111111111,
+          "baseline_rms": 0.001659596406606416,
+          "trace_rms": 0.0,
+          "theta_rms": 2.3236678498621384
+        },
+        "b1t0_online": {
+          "energy": 0.04562889108709765,
+          "resource": 0.44682526436805425,
+          "floor": 0.19444444444444445,
+          "baseline_rms": 0.039904213951440656,
+          "trace_rms": 1.7871042153354948,
+          "theta_rms": 2.3243646970505845
+        },
+        "b1t1_frozen": {
+          "energy": 0.04928905974845297,
+          "resource": 0.4687405175143497,
+          "floor": 0.1111111111111111,
+          "baseline_rms": 0.001659596406606416,
+          "trace_rms": 1.5046488271450158,
+          "theta_rms": 2.3236678498621384
+        },
+        "b1t1_online": {
+          "energy": 0.042553827973013325,
+          "resource": 0.44690167423709465,
+          "floor": 0.16666666666666666,
+          "baseline_rms": 0.04043962831234652,
+          "trace_rms": 1.848590581541416,
+          "theta_rms": 2.321680649202233
+        }
+      },
+      "online_minus_frozen_energy": {
+        "b0t0": -0.0021586958047579152,
+        "b0t1": -0.0016345302175896775,
+        "b1t0": -0.003660168661355316,
+        "b1t1": -0.006735231775439644
+      },
+      "both_retained_minus_both_reset_online_energy": -0.004576535970681729
+    },
+    {
+      "seed": 12401,
+      "context": "continuation",
+      "train_end": {
+        "energy": 0.338535618067982,
+        "resource": 0.4473031087811788,
+        "floor": 0.0,
+        "baseline_rms": 0.001659596406606416,
+        "trace_rms": 1.5046488271450158,
+        "theta_rms": 2.3236678498621384
+      },
+      "initial_physics_theta_hash": {
+        "resource": "13f6102e2361b381c68c77e7e904c7e73a4c4656a37dfed0a1b159bc1509bee6",
+        "energy": "ee3b00240eb7acece22daf51b76089897e64717a9eb1a8863cf67516685c4bc9",
+        "theta": "12937be43682bb684da5e1e25be12a21bbc4ecc637adf8202db427770951adbf"
+      },
+      "initial_rng_sha256": "0a6d1306e12331ec4503d7465a7e2d1f6067f1c5182ba7e2e5f5b472331f3289",
+      "matched_initial_physics_theta_rng": true,
+      "matched_first_actions_physics": true,
+      "matched_final_rng": true,
+      "frozen_factorial_identical": true,
+      "snapshots": {
+        "1": {
+          "b0t0_frozen": {
+            "energy": 0.32769810860963844,
+            "resource": 0.46486792906431545,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3236678498621384
+          },
+          "b0t0_online": {
+            "energy": 0.32769810860963844,
+            "resource": 0.46486792906431545,
+            "floor": 0.0,
+            "baseline_rms": 8.08531939776202e-05,
+            "trace_rms": 0.25052305270104436,
+            "theta_rms": 2.323659055171624
+          },
+          "b0t1_frozen": {
+            "energy": 0.32769810860963844,
+            "resource": 0.46486792906431545,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.5046488271450158,
+            "theta_rms": 2.3236678498621384
+          },
+          "b0t1_online": {
+            "energy": 0.32769810860963844,
+            "resource": 0.46486792906431545,
+            "floor": 0.0,
+            "baseline_rms": 8.08531939776202e-05,
+            "trace_rms": 1.4707933736865433,
+            "theta_rms": 2.3236971922034693
+          },
+          "b1t0_frozen": {
+            "energy": 0.32769810860963844,
+            "resource": 0.46486792906431545,
+            "floor": 0.0,
+            "baseline_rms": 0.001659596406606416,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3236678498621384
+          },
+          "b1t0_online": {
+            "energy": 0.32769810860963844,
+            "resource": 0.46486792906431545,
+            "floor": 0.0,
+            "baseline_rms": 0.0016948828600527842,
+            "trace_rms": 0.25052305270104436,
+            "theta_rms": 2.3236600710044124
+          },
+          "b1t1_frozen": {
+            "energy": 0.32769810860963844,
+            "resource": 0.46486792906431545,
+            "floor": 0.0,
+            "baseline_rms": 0.001659596406606416,
+            "trace_rms": 1.5046488271450158,
+            "theta_rms": 2.3236678498621384
+          },
+          "b1t1_online": {
+            "energy": 0.32769810860963844,
+            "resource": 0.46486792906431545,
+            "floor": 0.0,
+            "baseline_rms": 0.0016948828600527842,
+            "trace_rms": 1.4707933736865433,
+            "theta_rms": 2.3236910483752964
+          }
+        },
+        "100": {
+          "b0t0_frozen": {
+            "energy": 0.24733178745400222,
+            "resource": 0.4454975210872126,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3236678498621384
+          },
+          "b0t0_online": {
+            "energy": 0.24891374746120976,
+            "resource": 0.4436107356211805,
+            "floor": 0.0,
+            "baseline_rms": 0.0032578784271485714,
+            "trace_rms": 1.2000525399365571,
+            "theta_rms": 2.3236199867159337
+          },
+          "b0t1_frozen": {
+            "energy": 0.24733178745400222,
+            "resource": 0.4454975210872126,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.5046488271450158,
+            "theta_rms": 2.3236678498621384
+          },
+          "b0t1_online": {
+            "energy": 0.24565525305392294,
+            "resource": 0.44544969559979364,
+            "floor": 0.0,
+            "baseline_rms": 0.0033345343180819545,
+            "trace_rms": 1.2732408100583699,
+            "theta_rms": 2.324803217878707
+          },
+          "b1t0_frozen": {
+            "energy": 0.24733178745400222,
+            "resource": 0.4454975210872126,
+            "floor": 0.0,
+            "baseline_rms": 0.001659596406606416,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3236678498621384
+          },
+          "b1t0_online": {
+            "energy": 0.24892303720587103,
+            "resource": 0.443673977300093,
+            "floor": 0.0,
+            "baseline_rms": 0.004196757234072917,
+            "trace_rms": 1.1760032065809185,
+            "theta_rms": 2.3234928547034364
+          },
+          "b1t1_frozen": {
+            "energy": 0.24733178745400222,
+            "resource": 0.4454975210872126,
+            "floor": 0.0,
+            "baseline_rms": 0.001659596406606416,
+            "trace_rms": 1.5046488271450158,
+            "theta_rms": 2.3236678498621384
+          },
+          "b1t1_online": {
+            "energy": 0.24661671174858135,
+            "resource": 0.443872381068841,
+            "floor": 0.0,
+            "baseline_rms": 0.0042763309828512085,
+            "trace_rms": 1.264140542740988,
+            "theta_rms": 2.3245450526403224
+          }
+        },
+        "500": {
+          "b0t0_frozen": {
+            "energy": 0.03569667444847618,
+            "resource": 0.43826704819428125,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3236678498621384
+          },
+          "b0t0_online": {
+            "energy": 0.037129274353676536,
+            "resource": 0.4350906974800396,
+            "floor": 0.2222222222222222,
+            "baseline_rms": 0.033131960168546144,
+            "trace_rms": 1.6487091753089764,
+            "theta_rms": 2.3278066074341814
+          },
+          "b0t1_frozen": {
+            "energy": 0.03569667444847618,
+            "resource": 0.43826704819428125,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.5046488271450158,
+            "theta_rms": 2.3236678498621384
+          },
+          "b0t1_online": {
+            "energy": 0.036334950697131566,
+            "resource": 0.43645922246715624,
+            "floor": 0.2222222222222222,
+            "baseline_rms": 0.03345576536771465,
+            "trace_rms": 1.7423526842872412,
+            "theta_rms": 2.3301008741863254
+          },
+          "b1t0_frozen": {
+            "energy": 0.03569667444847618,
+            "resource": 0.43826704819428125,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.001659596406606416,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3236678498621384
+          },
+          "b1t0_online": {
+            "energy": 0.03705900915995595,
+            "resource": 0.4325363108361475,
+            "floor": 0.2222222222222222,
+            "baseline_rms": 0.03341098935710022,
+            "trace_rms": 1.7679631056760643,
+            "theta_rms": 2.327204957507471
+          },
+          "b1t1_frozen": {
+            "energy": 0.03569667444847618,
+            "resource": 0.43826704819428125,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.001659596406606416,
+            "trace_rms": 1.5046488271450158,
+            "theta_rms": 2.3236678498621384
+          },
+          "b1t1_online": {
+            "energy": 0.03798989001017129,
+            "resource": 0.4297926064206554,
+            "floor": 0.2222222222222222,
+            "baseline_rms": 0.03353127105359611,
+            "trace_rms": 1.765197014551366,
+            "theta_rms": 2.3281243270664653
+          }
+        },
+        "1000": {
+          "b0t0_frozen": {
+            "energy": 0.05485309080311951,
+            "resource": 0.4644362565984148,
+            "floor": 0.1388888888888889,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3236678498621384
+          },
+          "b0t0_online": {
+            "energy": 0.060909762572879805,
+            "resource": 0.44521525489960834,
+            "floor": 0.08333333333333333,
+            "baseline_rms": 0.038678422853605066,
+            "trace_rms": 2.030989680878623,
+            "theta_rms": 2.324458134857084
+          },
+          "b0t1_frozen": {
+            "energy": 0.05485309080311951,
+            "resource": 0.4644362565984148,
+            "floor": 0.1388888888888889,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.5046488271450158,
+            "theta_rms": 2.3236678498621384
+          },
+          "b0t1_online": {
+            "energy": 0.0629256879256844,
+            "resource": 0.448518002565227,
+            "floor": 0.1111111111111111,
+            "baseline_rms": 0.03837339830956521,
+            "trace_rms": 2.1079885197769186,
+            "theta_rms": 2.325373588050182
+          },
+          "b1t0_frozen": {
+            "energy": 0.05485309080311951,
+            "resource": 0.4644362565984148,
+            "floor": 0.1388888888888889,
+            "baseline_rms": 0.001659596406606416,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3236678498621384
+          },
+          "b1t0_online": {
+            "energy": 0.059127670292625195,
+            "resource": 0.4495564540303935,
+            "floor": 0.1111111111111111,
+            "baseline_rms": 0.03872633182465918,
+            "trace_rms": 1.9924659923650117,
+            "theta_rms": 2.3245163667194824
+          },
+          "b1t1_frozen": {
+            "energy": 0.05485309080311951,
+            "resource": 0.4644362565984148,
+            "floor": 0.1388888888888889,
+            "baseline_rms": 0.001659596406606416,
+            "trace_rms": 1.5046488271450158,
+            "theta_rms": 2.3236678498621384
+          },
+          "b1t1_online": {
+            "energy": 0.05671193910375697,
+            "resource": 0.4513591831434041,
+            "floor": 0.16666666666666666,
+            "baseline_rms": 0.03875788885241185,
+            "trace_rms": 2.064232852137007,
+            "theta_rms": 2.3252096667669364
+          }
+        }
+      },
+      "final": {
+        "b0t0_frozen": {
+          "energy": 0.05485309080311951,
+          "resource": 0.4644362565984148,
+          "floor": 0.1388888888888889,
+          "baseline_rms": 0.0,
+          "trace_rms": 0.0,
+          "theta_rms": 2.3236678498621384
+        },
+        "b0t0_online": {
+          "energy": 0.060909762572879805,
+          "resource": 0.44521525489960834,
+          "floor": 0.08333333333333333,
+          "baseline_rms": 0.038678422853605066,
+          "trace_rms": 2.030989680878623,
+          "theta_rms": 2.324458134857084
+        },
+        "b0t1_frozen": {
+          "energy": 0.05485309080311951,
+          "resource": 0.4644362565984148,
+          "floor": 0.1388888888888889,
+          "baseline_rms": 0.0,
+          "trace_rms": 1.5046488271450158,
+          "theta_rms": 2.3236678498621384
+        },
+        "b0t1_online": {
+          "energy": 0.0629256879256844,
+          "resource": 0.448518002565227,
+          "floor": 0.1111111111111111,
+          "baseline_rms": 0.03837339830956521,
+          "trace_rms": 2.1079885197769186,
+          "theta_rms": 2.325373588050182
+        },
+        "b1t0_frozen": {
+          "energy": 0.05485309080311951,
+          "resource": 0.4644362565984148,
+          "floor": 0.1388888888888889,
+          "baseline_rms": 0.001659596406606416,
+          "trace_rms": 0.0,
+          "theta_rms": 2.3236678498621384
+        },
+        "b1t0_online": {
+          "energy": 0.059127670292625195,
+          "resource": 0.4495564540303935,
+          "floor": 0.1111111111111111,
+          "baseline_rms": 0.03872633182465918,
+          "trace_rms": 1.9924659923650117,
+          "theta_rms": 2.3245163667194824
+        },
+        "b1t1_frozen": {
+          "energy": 0.05485309080311951,
+          "resource": 0.4644362565984148,
+          "floor": 0.1388888888888889,
+          "baseline_rms": 0.001659596406606416,
+          "trace_rms": 1.5046488271450158,
+          "theta_rms": 2.3236678498621384
+        },
+        "b1t1_online": {
+          "energy": 0.05671193910375697,
+          "resource": 0.4513591831434041,
+          "floor": 0.16666666666666666,
+          "baseline_rms": 0.03875788885241185,
+          "trace_rms": 2.064232852137007,
+          "theta_rms": 2.3252096667669364
+        }
+      },
+      "online_minus_frozen_energy": {
+        "b0t0": 0.006056671769760297,
+        "b0t1": 0.00807259712256489,
+        "b1t0": 0.0042745794895056866,
+        "b1t1": 0.0018588483006374626
+      },
+      "both_retained_minus_both_reset_online_energy": -0.004197823469122834
+    },
+    {
+      "seed": 12402,
+      "context": "fresh",
+      "train_end": {
+        "energy": 0.335844977189624,
+        "resource": 0.4717319823340937,
+        "floor": 0.0,
+        "baseline_rms": 0.0022970590339559927,
+        "trace_rms": 1.1948016010471938,
+        "theta_rms": 2.3137398003496745
+      },
+      "initial_physics_theta_hash": {
+        "resource": "92991a2da3bdfe53fabaec55cbd693e2b20bdf176cb277026d1b3710901bb075",
+        "energy": "9b2b9fe4e239c07e014727e3aa3ef77a2e9b1875803901b697d4c6df8552aa43",
+        "theta": "889d1c79f5de651973cba45c757fb8053bcd38bec84706d71da907c90ee6a24b"
+      },
+      "initial_rng_sha256": "bb41fb5edbe3ec9df73f57689ed44a88d214953c86bc78c785cb0471a1dac4f8",
+      "matched_initial_physics_theta_rng": true,
+      "matched_first_actions_physics": true,
+      "matched_final_rng": true,
+      "frozen_factorial_identical": true,
+      "snapshots": {
+        "1": {
+          "b0t0_frozen": {
+            "energy": 0.5675960053171689,
+            "resource": 0.4942666330335725,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3137398003496745
+          },
+          "b0t0_online": {
+            "energy": 0.5675960053171689,
+            "resource": 0.4942666330335725,
+            "floor": 0.0,
+            "baseline_rms": 0.000141126131690494,
+            "trace_rms": 0.2684050715964171,
+            "theta_rms": 2.3137537160254356
+          },
+          "b0t1_frozen": {
+            "energy": 0.5675960053171689,
+            "resource": 0.4942666330335725,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.1948016010471938,
+            "theta_rms": 2.3137398003496745
+          },
+          "b0t1_online": {
+            "energy": 0.5675960053171689,
+            "resource": 0.4942666330335725,
+            "floor": 0.0,
+            "baseline_rms": 0.000141126131690494,
+            "trace_rms": 1.1794792519125366,
+            "theta_rms": 2.313768200034127
+          },
+          "b1t0_frozen": {
+            "energy": 0.5675960053171689,
+            "resource": 0.4942666330335725,
+            "floor": 0.0,
+            "baseline_rms": 0.0022970590339559927,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3137398003496745
+          },
+          "b1t0_online": {
+            "energy": 0.5675960053171689,
+            "resource": 0.4942666330335725,
+            "floor": 0.0,
+            "baseline_rms": 0.0022738657217218038,
+            "trace_rms": 0.2684050715964171,
+            "theta_rms": 2.3137528904837295
+          },
+          "b1t1_frozen": {
+            "energy": 0.5675960053171689,
+            "resource": 0.4942666330335725,
+            "floor": 0.0,
+            "baseline_rms": 0.0022970590339559927,
+            "trace_rms": 1.1948016010471938,
+            "theta_rms": 2.3137398003496745
+          },
+          "b1t1_online": {
+            "energy": 0.5675960053171689,
+            "resource": 0.4942666330335725,
+            "floor": 0.0,
+            "baseline_rms": 0.0022738657217218038,
+            "trace_rms": 1.1794792519125366,
+            "theta_rms": 2.3137718098475526
+          }
+        },
+        "100": {
+          "b0t0_frozen": {
+            "energy": 0.4977812580800638,
+            "resource": 0.4721887159954743,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3137398003496745
+          },
+          "b0t0_online": {
+            "energy": 0.4969331302306308,
+            "resource": 0.47310423260829637,
+            "floor": 0.0,
+            "baseline_rms": 0.00039565751043879545,
+            "trace_rms": 1.2392999359025851,
+            "theta_rms": 2.3136740945625647
+          },
+          "b0t1_frozen": {
+            "energy": 0.4977812580800638,
+            "resource": 0.4721887159954743,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.1948016010471938,
+            "theta_rms": 2.3137398003496745
+          },
+          "b0t1_online": {
+            "energy": 0.4982076875952324,
+            "resource": 0.47050912287975716,
+            "floor": 0.0,
+            "baseline_rms": 0.0003943484906767931,
+            "trace_rms": 1.2708962262318864,
+            "theta_rms": 2.313702247871589
+          },
+          "b1t0_frozen": {
+            "energy": 0.4977812580800638,
+            "resource": 0.4721887159954743,
+            "floor": 0.0,
+            "baseline_rms": 0.0022970590339559927,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3137398003496745
+          },
+          "b1t0_online": {
+            "energy": 0.4982315283977041,
+            "resource": 0.47125496086823904,
+            "floor": 0.0,
+            "baseline_rms": 0.0016333219677707022,
+            "trace_rms": 1.2570503668784787,
+            "theta_rms": 2.313534747206844
+          },
+          "b1t1_frozen": {
+            "energy": 0.4977812580800638,
+            "resource": 0.4721887159954743,
+            "floor": 0.0,
+            "baseline_rms": 0.0022970590339559927,
+            "trace_rms": 1.1948016010471938,
+            "theta_rms": 2.3137398003496745
+          },
+          "b1t1_online": {
+            "energy": 0.49818341871685096,
+            "resource": 0.47115362475968986,
+            "floor": 0.0,
+            "baseline_rms": 0.0016339228912244808,
+            "trace_rms": 1.294144854235176,
+            "theta_rms": 2.313699275993312
+          }
+        },
+        "500": {
+          "b0t0_frozen": {
+            "energy": 0.04795582397057248,
+            "resource": 0.4419373190347961,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3137398003496745
+          },
+          "b0t0_online": {
+            "energy": 0.04021938860918945,
+            "resource": 0.4432742808249156,
+            "floor": 0.25,
+            "baseline_rms": 0.018546385913653714,
+            "trace_rms": 2.264020534856493,
+            "theta_rms": 2.324597763494398
+          },
+          "b0t1_frozen": {
+            "energy": 0.04795582397057248,
+            "resource": 0.4419373190347961,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.1948016010471938,
+            "theta_rms": 2.3137398003496745
+          },
+          "b0t1_online": {
+            "energy": 0.03772061129327579,
+            "resource": 0.44776378552645135,
+            "floor": 0.25,
+            "baseline_rms": 0.01851163681789225,
+            "trace_rms": 1.9983208292740944,
+            "theta_rms": 2.325089571816566
+          },
+          "b1t0_frozen": {
+            "energy": 0.04795582397057248,
+            "resource": 0.4419373190347961,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.0022970590339559927,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3137398003496745
+          },
+          "b1t0_online": {
+            "energy": 0.039643421021987674,
+            "resource": 0.4470736402844402,
+            "floor": 0.25,
+            "baseline_rms": 0.018744344160870865,
+            "trace_rms": 2.2604822756568708,
+            "theta_rms": 2.3250766829800518
+          },
+          "b1t1_frozen": {
+            "energy": 0.04795582397057248,
+            "resource": 0.4419373190347961,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.0022970590339559927,
+            "trace_rms": 1.1948016010471938,
+            "theta_rms": 2.3137398003496745
+          },
+          "b1t1_online": {
+            "energy": 0.03977645423702589,
+            "resource": 0.44364524466057004,
+            "floor": 0.25,
+            "baseline_rms": 0.018641398063399914,
+            "trace_rms": 2.095861768198613,
+            "theta_rms": 2.324878456673808
+          }
+        },
+        "1000": {
+          "b0t0_frozen": {
+            "energy": 0.0646869672858751,
+            "resource": 0.4431522491005722,
+            "floor": 0.05555555555555555,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3137398003496745
+          },
+          "b0t0_online": {
+            "energy": 0.07334082541349622,
+            "resource": 0.45109183010085047,
+            "floor": 0.08333333333333333,
+            "baseline_rms": 0.03603097191644358,
+            "trace_rms": 1.7318019091813615,
+            "theta_rms": 2.3243835526931833
+          },
+          "b0t1_frozen": {
+            "energy": 0.0646869672858751,
+            "resource": 0.4431522491005722,
+            "floor": 0.05555555555555555,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.1948016010471938,
+            "theta_rms": 2.3137398003496745
+          },
+          "b0t1_online": {
+            "energy": 0.06669592672505505,
+            "resource": 0.4495881919035918,
+            "floor": 0.1388888888888889,
+            "baseline_rms": 0.03645264530281915,
+            "trace_rms": 1.6459809497004416,
+            "theta_rms": 2.321168895702951
+          },
+          "b1t0_frozen": {
+            "energy": 0.0646869672858751,
+            "resource": 0.4431522491005722,
+            "floor": 0.05555555555555555,
+            "baseline_rms": 0.0022970590339559927,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3137398003496745
+          },
+          "b1t0_online": {
+            "energy": 0.07545554586097424,
+            "resource": 0.4531335098866649,
+            "floor": 0.05555555555555555,
+            "baseline_rms": 0.03561590185128168,
+            "trace_rms": 1.8479282407905595,
+            "theta_rms": 2.3225746027693956
+          },
+          "b1t1_frozen": {
+            "energy": 0.0646869672858751,
+            "resource": 0.4431522491005722,
+            "floor": 0.05555555555555555,
+            "baseline_rms": 0.0022970590339559927,
+            "trace_rms": 1.1948016010471938,
+            "theta_rms": 2.3137398003496745
+          },
+          "b1t1_online": {
+            "energy": 0.06963733198067222,
+            "resource": 0.4516690123511491,
+            "floor": 0.1111111111111111,
+            "baseline_rms": 0.036281497238420994,
+            "trace_rms": 1.6929382158148945,
+            "theta_rms": 2.322966763232236
+          }
+        }
+      },
+      "final": {
+        "b0t0_frozen": {
+          "energy": 0.0646869672858751,
+          "resource": 0.4431522491005722,
+          "floor": 0.05555555555555555,
+          "baseline_rms": 0.0,
+          "trace_rms": 0.0,
+          "theta_rms": 2.3137398003496745
+        },
+        "b0t0_online": {
+          "energy": 0.07334082541349622,
+          "resource": 0.45109183010085047,
+          "floor": 0.08333333333333333,
+          "baseline_rms": 0.03603097191644358,
+          "trace_rms": 1.7318019091813615,
+          "theta_rms": 2.3243835526931833
+        },
+        "b0t1_frozen": {
+          "energy": 0.0646869672858751,
+          "resource": 0.4431522491005722,
+          "floor": 0.05555555555555555,
+          "baseline_rms": 0.0,
+          "trace_rms": 1.1948016010471938,
+          "theta_rms": 2.3137398003496745
+        },
+        "b0t1_online": {
+          "energy": 0.06669592672505505,
+          "resource": 0.4495881919035918,
+          "floor": 0.1388888888888889,
+          "baseline_rms": 0.03645264530281915,
+          "trace_rms": 1.6459809497004416,
+          "theta_rms": 2.321168895702951
+        },
+        "b1t0_frozen": {
+          "energy": 0.0646869672858751,
+          "resource": 0.4431522491005722,
+          "floor": 0.05555555555555555,
+          "baseline_rms": 0.0022970590339559927,
+          "trace_rms": 0.0,
+          "theta_rms": 2.3137398003496745
+        },
+        "b1t0_online": {
+          "energy": 0.07545554586097424,
+          "resource": 0.4531335098866649,
+          "floor": 0.05555555555555555,
+          "baseline_rms": 0.03561590185128168,
+          "trace_rms": 1.8479282407905595,
+          "theta_rms": 2.3225746027693956
+        },
+        "b1t1_frozen": {
+          "energy": 0.0646869672858751,
+          "resource": 0.4431522491005722,
+          "floor": 0.05555555555555555,
+          "baseline_rms": 0.0022970590339559927,
+          "trace_rms": 1.1948016010471938,
+          "theta_rms": 2.3137398003496745
+        },
+        "b1t1_online": {
+          "energy": 0.06963733198067222,
+          "resource": 0.4516690123511491,
+          "floor": 0.1111111111111111,
+          "baseline_rms": 0.036281497238420994,
+          "trace_rms": 1.6929382158148945,
+          "theta_rms": 2.322966763232236
+        }
+      },
+      "online_minus_frozen_energy": {
+        "b0t0": 0.008653858127621122,
+        "b0t1": 0.002008959439179947,
+        "b1t0": 0.010768578575099136,
+        "b1t1": 0.004950364694797121
+      },
+      "both_retained_minus_both_reset_online_energy": -0.003703493432824001
+    },
+    {
+      "seed": 12402,
+      "context": "continuation",
+      "train_end": {
+        "energy": 0.335844977189624,
+        "resource": 0.4717319823340937,
+        "floor": 0.0,
+        "baseline_rms": 0.0022970590339559927,
+        "trace_rms": 1.1948016010471938,
+        "theta_rms": 2.3137398003496745
+      },
+      "initial_physics_theta_hash": {
+        "resource": "1c84df02bba22db8667338c47c6326fb69a5ffa9318f12443269a59140076ad7",
+        "energy": "65df09488b5d6e58123c56c629da51b0cd6a4280c2ae5e89234c81eff7005f31",
+        "theta": "889d1c79f5de651973cba45c757fb8053bcd38bec84706d71da907c90ee6a24b"
+      },
+      "initial_rng_sha256": "62410f7b3a49696fdf00298065f03e3fa5c5b9c5aa9728dbd5331487acc5d0ad",
+      "matched_initial_physics_theta_rng": true,
+      "matched_first_actions_physics": true,
+      "matched_final_rng": true,
+      "frozen_factorial_identical": true,
+      "snapshots": {
+        "1": {
+          "b0t0_frozen": {
+            "energy": 0.33322589060637947,
+            "resource": 0.4743538057339841,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3137398003496745
+          },
+          "b0t0_online": {
+            "energy": 0.33322589060637947,
+            "resource": 0.4743538057339841,
+            "floor": 0.0,
+            "baseline_rms": 9.314046081706152e-05,
+            "trace_rms": 0.3312390561050979,
+            "theta_rms": 2.3137342800666025
+          },
+          "b0t1_frozen": {
+            "energy": 0.33322589060637947,
+            "resource": 0.4743538057339841,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.1948016010471938,
+            "theta_rms": 2.3137398003496745
+          },
+          "b0t1_online": {
+            "energy": 0.33322589060637947,
+            "resource": 0.4743538057339841,
+            "floor": 0.0,
+            "baseline_rms": 9.314046081706152e-05,
+            "trace_rms": 1.2145311134891588,
+            "theta_rms": 2.3137229119937675
+          },
+          "b1t0_frozen": {
+            "energy": 0.33322589060637947,
+            "resource": 0.4743538057339841,
+            "floor": 0.0,
+            "baseline_rms": 0.0022970590339559927,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3137398003496745
+          },
+          "b1t0_online": {
+            "energy": 0.33322589060637947,
+            "resource": 0.4743538057339841,
+            "floor": 0.0,
+            "baseline_rms": 0.002329624199714352,
+            "trace_rms": 0.3312390561050979,
+            "theta_rms": 2.3137345328818655
+          },
+          "b1t1_frozen": {
+            "energy": 0.33322589060637947,
+            "resource": 0.4743538057339841,
+            "floor": 0.0,
+            "baseline_rms": 0.0022970590339559927,
+            "trace_rms": 1.1948016010471938,
+            "theta_rms": 2.3137398003496745
+          },
+          "b1t1_online": {
+            "energy": 0.33322589060637947,
+            "resource": 0.4743538057339841,
+            "floor": 0.0,
+            "baseline_rms": 0.002329624199714352,
+            "trace_rms": 1.2145311134891588,
+            "theta_rms": 2.31372755937218
+          }
+        },
+        "100": {
+          "b0t0_frozen": {
+            "energy": 0.2638741710814061,
+            "resource": 0.4537999760431308,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3137398003496745
+          },
+          "b0t0_online": {
+            "energy": 0.2656332325329414,
+            "resource": 0.4477979753132806,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.004788545916005254,
+            "trace_rms": 1.8377516152856106,
+            "theta_rms": 2.313371623264942
+          },
+          "b0t1_frozen": {
+            "energy": 0.2638741710814061,
+            "resource": 0.4537999760431308,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.1948016010471938,
+            "theta_rms": 2.3137398003496745
+          },
+          "b0t1_online": {
+            "energy": 0.2641398959282084,
+            "resource": 0.4478872240337938,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.004721540408128843,
+            "trace_rms": 1.8008960857246339,
+            "theta_rms": 2.3133498130059382
+          },
+          "b1t0_frozen": {
+            "energy": 0.2638741710814061,
+            "resource": 0.4537999760431308,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.0022970590339559927,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3137398003496745
+          },
+          "b1t0_online": {
+            "energy": 0.2637746160836103,
+            "resource": 0.4497306411740346,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.006025860791685784,
+            "trace_rms": 1.8934760147715082,
+            "theta_rms": 2.313240692683136
+          },
+          "b1t1_frozen": {
+            "energy": 0.2638741710814061,
+            "resource": 0.4537999760431308,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.0022970590339559927,
+            "trace_rms": 1.1948016010471938,
+            "theta_rms": 2.3137398003496745
+          },
+          "b1t1_online": {
+            "energy": 0.2649197422753999,
+            "resource": 0.44777194001985393,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.0059728434516414745,
+            "trace_rms": 1.8383964106842554,
+            "theta_rms": 2.3127658967381155
+          }
+        },
+        "500": {
+          "b0t0_frozen": {
+            "energy": 0.0460734932772651,
+            "resource": 0.45387168175278725,
+            "floor": 0.16666666666666666,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3137398003496745
+          },
+          "b0t0_online": {
+            "energy": 0.03558938372243134,
+            "resource": 0.43998489207333136,
+            "floor": 0.2222222222222222,
+            "baseline_rms": 0.03350479000339474,
+            "trace_rms": 2.014904913125657,
+            "theta_rms": 2.327476504183305
+          },
+          "b0t1_frozen": {
+            "energy": 0.0460734932772651,
+            "resource": 0.45387168175278725,
+            "floor": 0.16666666666666666,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.1948016010471938,
+            "theta_rms": 2.3137398003496745
+          },
+          "b0t1_online": {
+            "energy": 0.03614854755678887,
+            "resource": 0.43472390899592583,
+            "floor": 0.16666666666666666,
+            "baseline_rms": 0.03369017018608329,
+            "trace_rms": 1.975333384404177,
+            "theta_rms": 2.326353054019493
+          },
+          "b1t0_frozen": {
+            "energy": 0.0460734932772651,
+            "resource": 0.45387168175278725,
+            "floor": 0.16666666666666666,
+            "baseline_rms": 0.0022970590339559927,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3137398003496745
+          },
+          "b1t0_online": {
+            "energy": 0.03545870270759814,
+            "resource": 0.44347966530691607,
+            "floor": 0.2222222222222222,
+            "baseline_rms": 0.033527134095124,
+            "trace_rms": 1.8911095249457452,
+            "theta_rms": 2.325913845355253
+          },
+          "b1t1_frozen": {
+            "energy": 0.0460734932772651,
+            "resource": 0.45387168175278725,
+            "floor": 0.16666666666666666,
+            "baseline_rms": 0.0022970590339559927,
+            "trace_rms": 1.1948016010471938,
+            "theta_rms": 2.3137398003496745
+          },
+          "b1t1_online": {
+            "energy": 0.03600895951483386,
+            "resource": 0.44317318186386356,
+            "floor": 0.25,
+            "baseline_rms": 0.033730255997447715,
+            "trace_rms": 1.8691698859185928,
+            "theta_rms": 2.3256758910496322
+          }
+        },
+        "1000": {
+          "b0t0_frozen": {
+            "energy": 0.05627733510098971,
+            "resource": 0.45418406625716634,
+            "floor": 0.05555555555555555,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3137398003496745
+          },
+          "b0t0_online": {
+            "energy": 0.05249817691341999,
+            "resource": 0.4354980938009726,
+            "floor": 0.16666666666666666,
+            "baseline_rms": 0.04231772917035194,
+            "trace_rms": 1.9800700150208745,
+            "theta_rms": 2.3242767839619196
+          },
+          "b0t1_frozen": {
+            "energy": 0.05627733510098971,
+            "resource": 0.45418406625716634,
+            "floor": 0.05555555555555555,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.1948016010471938,
+            "theta_rms": 2.3137398003496745
+          },
+          "b0t1_online": {
+            "energy": 0.048723826731860785,
+            "resource": 0.43291808506770313,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.042398828032122665,
+            "trace_rms": 1.894903594943585,
+            "theta_rms": 2.3226702949828986
+          },
+          "b1t0_frozen": {
+            "energy": 0.05627733510098971,
+            "resource": 0.45418406625716634,
+            "floor": 0.05555555555555555,
+            "baseline_rms": 0.0022970590339559927,
+            "trace_rms": 0.0,
+            "theta_rms": 2.3137398003496745
+          },
+          "b1t0_online": {
+            "energy": 0.0530152455921272,
+            "resource": 0.4325906594035343,
+            "floor": 0.1388888888888889,
+            "baseline_rms": 0.04208237957311277,
+            "trace_rms": 1.7932537967229099,
+            "theta_rms": 2.320873593674511
+          },
+          "b1t1_frozen": {
+            "energy": 0.05627733510098971,
+            "resource": 0.45418406625716634,
+            "floor": 0.05555555555555555,
+            "baseline_rms": 0.0022970590339559927,
+            "trace_rms": 1.1948016010471938,
+            "theta_rms": 2.3137398003496745
+          },
+          "b1t1_online": {
+            "energy": 0.04735453307600099,
+            "resource": 0.4338006943913731,
+            "floor": 0.1111111111111111,
+            "baseline_rms": 0.04230687304619649,
+            "trace_rms": 1.7894923853946294,
+            "theta_rms": 2.321524263730919
+          }
+        }
+      },
+      "final": {
+        "b0t0_frozen": {
+          "energy": 0.05627733510098971,
+          "resource": 0.45418406625716634,
+          "floor": 0.05555555555555555,
+          "baseline_rms": 0.0,
+          "trace_rms": 0.0,
+          "theta_rms": 2.3137398003496745
+        },
+        "b0t0_online": {
+          "energy": 0.05249817691341999,
+          "resource": 0.4354980938009726,
+          "floor": 0.16666666666666666,
+          "baseline_rms": 0.04231772917035194,
+          "trace_rms": 1.9800700150208745,
+          "theta_rms": 2.3242767839619196
+        },
+        "b0t1_frozen": {
+          "energy": 0.05627733510098971,
+          "resource": 0.45418406625716634,
+          "floor": 0.05555555555555555,
+          "baseline_rms": 0.0,
+          "trace_rms": 1.1948016010471938,
+          "theta_rms": 2.3137398003496745
+        },
+        "b0t1_online": {
+          "energy": 0.048723826731860785,
+          "resource": 0.43291808506770313,
+          "floor": 0.19444444444444445,
+          "baseline_rms": 0.042398828032122665,
+          "trace_rms": 1.894903594943585,
+          "theta_rms": 2.3226702949828986
+        },
+        "b1t0_frozen": {
+          "energy": 0.05627733510098971,
+          "resource": 0.45418406625716634,
+          "floor": 0.05555555555555555,
+          "baseline_rms": 0.0022970590339559927,
+          "trace_rms": 0.0,
+          "theta_rms": 2.3137398003496745
+        },
+        "b1t0_online": {
+          "energy": 0.0530152455921272,
+          "resource": 0.4325906594035343,
+          "floor": 0.1388888888888889,
+          "baseline_rms": 0.04208237957311277,
+          "trace_rms": 1.7932537967229099,
+          "theta_rms": 2.320873593674511
+        },
+        "b1t1_frozen": {
+          "energy": 0.05627733510098971,
+          "resource": 0.45418406625716634,
+          "floor": 0.05555555555555555,
+          "baseline_rms": 0.0022970590339559927,
+          "trace_rms": 1.1948016010471938,
+          "theta_rms": 2.3137398003496745
+        },
+        "b1t1_online": {
+          "energy": 0.04735453307600099,
+          "resource": 0.4338006943913731,
+          "floor": 0.1111111111111111,
+          "baseline_rms": 0.04230687304619649,
+          "trace_rms": 1.7894923853946294,
+          "theta_rms": 2.321524263730919
+        }
+      },
+      "online_minus_frozen_energy": {
+        "b0t0": -0.0037791581875697144,
+        "b0t1": -0.007553508369128922,
+        "b1t0": -0.0032620895088625104,
+        "b1t1": -0.00892280202498872
+      },
+      "both_retained_minus_both_reset_online_energy": -0.0051436438374190055
+    },
+    {
+      "seed": 12403,
+      "context": "fresh",
+      "train_end": {
+        "energy": 0.36721256502546434,
+        "resource": 0.471022939336685,
+        "floor": 0.0,
+        "baseline_rms": 0.0012809033685846612,
+        "trace_rms": 1.1997388558849094,
+        "theta_rms": 2.295692636904138
+      },
+      "initial_physics_theta_hash": {
+        "resource": "33792e6caee20223af33ff1cc29897afeef422d8373c466bae7b1bf0757f3fdf",
+        "energy": "7d6f78157a1a4bcc1430597bf8a59d3266e3db43b7af677c5a9759783f1f98f4",
+        "theta": "a8a80ac6edd705bf4997829770cba74437f2e31c84a48045f196a68b567146c5"
+      },
+      "initial_rng_sha256": "4ed6c9edd53f5529d7035a973893b95752a989c1897a200dd7ea994d632e4038",
+      "matched_initial_physics_theta_rng": true,
+      "matched_first_actions_physics": true,
+      "matched_final_rng": true,
+      "frozen_factorial_identical": true,
+      "snapshots": {
+        "1": {
+          "b0t0_frozen": {
+            "energy": 0.55688368079899,
+            "resource": 0.5064528362944262,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.295692636904138
+          },
+          "b0t0_online": {
+            "energy": 0.55688368079899,
+            "resource": 0.5064528362944262,
+            "floor": 0.0,
+            "baseline_rms": 0.00015189082675688115,
+            "trace_rms": 0.26229231893048144,
+            "theta_rms": 2.2957217060935298
+          },
+          "b0t1_frozen": {
+            "energy": 0.55688368079899,
+            "resource": 0.5064528362944262,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.1997388558849094,
+            "theta_rms": 2.295692636904138
+          },
+          "b0t1_online": {
+            "energy": 0.55688368079899,
+            "resource": 0.5064528362944262,
+            "floor": 0.0,
+            "baseline_rms": 0.00015189082675688115,
+            "trace_rms": 1.2374617178327016,
+            "theta_rms": 2.2956873523446384
+          },
+          "b1t0_frozen": {
+            "energy": 0.55688368079899,
+            "resource": 0.5064528362944262,
+            "floor": 0.0,
+            "baseline_rms": 0.0012809033685846612,
+            "trace_rms": 0.0,
+            "theta_rms": 2.295692636904138
+          },
+          "b1t0_online": {
+            "energy": 0.55688368079899,
+            "resource": 0.5064528362944262,
+            "floor": 0.0,
+            "baseline_rms": 0.0012197137288116092,
+            "trace_rms": 0.26229231893048144,
+            "theta_rms": 2.2957216949543073
+          },
+          "b1t1_frozen": {
+            "energy": 0.55688368079899,
+            "resource": 0.5064528362944262,
+            "floor": 0.0,
+            "baseline_rms": 0.0012809033685846612,
+            "trace_rms": 1.1997388558849094,
+            "theta_rms": 2.295692636904138
+          },
+          "b1t1_online": {
+            "energy": 0.55688368079899,
+            "resource": 0.5064528362944262,
+            "floor": 0.0,
+            "baseline_rms": 0.0012197137288116092,
+            "trace_rms": 1.2374617178327016,
+            "theta_rms": 2.2956871805393924
+          }
+        },
+        "100": {
+          "b0t0_frozen": {
+            "energy": 0.5051388883294328,
+            "resource": 0.44604594860850266,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.295692636904138
+          },
+          "b0t0_online": {
+            "energy": 0.5049781487926277,
+            "resource": 0.4459971495018275,
+            "floor": 0.0,
+            "baseline_rms": 0.0003289446896447062,
+            "trace_rms": 1.303911271515946,
+            "theta_rms": 2.2957300293742486
+          },
+          "b0t1_frozen": {
+            "energy": 0.5051388883294328,
+            "resource": 0.44604594860850266,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.1997388558849094,
+            "theta_rms": 2.295692636904138
+          },
+          "b0t1_online": {
+            "energy": 0.5052411727320492,
+            "resource": 0.44598584494342475,
+            "floor": 0.0,
+            "baseline_rms": 0.0003270256612863824,
+            "trace_rms": 1.292059093579439,
+            "theta_rms": 2.2957172418450105
+          },
+          "b1t0_frozen": {
+            "energy": 0.5051388883294328,
+            "resource": 0.44604594860850266,
+            "floor": 0.0,
+            "baseline_rms": 0.0012809033685846612,
+            "trace_rms": 0.0,
+            "theta_rms": 2.295692636904138
+          },
+          "b1t0_online": {
+            "energy": 0.5045592397990941,
+            "resource": 0.44598470396432016,
+            "floor": 0.0,
+            "baseline_rms": 0.000984937805135906,
+            "trace_rms": 1.3141361786409786,
+            "theta_rms": 2.295632416013576
+          },
+          "b1t1_frozen": {
+            "energy": 0.5051388883294328,
+            "resource": 0.44604594860850266,
+            "floor": 0.0,
+            "baseline_rms": 0.0012809033685846612,
+            "trace_rms": 1.1997388558849094,
+            "theta_rms": 2.295692636904138
+          },
+          "b1t1_online": {
+            "energy": 0.5055372726559462,
+            "resource": 0.44604703835194315,
+            "floor": 0.0,
+            "baseline_rms": 0.0009812765376161956,
+            "trace_rms": 1.2930258991201857,
+            "theta_rms": 2.2956198320167966
+          }
+        },
+        "500": {
+          "b0t0_frozen": {
+            "energy": 0.039351532879503305,
+            "resource": 0.4530997486413869,
+            "floor": 0.2222222222222222,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.295692636904138
+          },
+          "b0t0_online": {
+            "energy": 0.04357324093957184,
+            "resource": 0.44442869992267603,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.019386676418289003,
+            "trace_rms": 2.120034208772932,
+            "theta_rms": 2.2999432381135714
+          },
+          "b0t1_frozen": {
+            "energy": 0.039351532879503305,
+            "resource": 0.4530997486413869,
+            "floor": 0.2222222222222222,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.1997388558849094,
+            "theta_rms": 2.295692636904138
+          },
+          "b0t1_online": {
+            "energy": 0.04244136644222802,
+            "resource": 0.443717554954832,
+            "floor": 0.16666666666666666,
+            "baseline_rms": 0.019279173891186517,
+            "trace_rms": 2.1351178933458783,
+            "theta_rms": 2.29969787172154
+          },
+          "b1t0_frozen": {
+            "energy": 0.039351532879503305,
+            "resource": 0.4530997486413869,
+            "floor": 0.2222222222222222,
+            "baseline_rms": 0.0012809033685846612,
+            "trace_rms": 0.0,
+            "theta_rms": 2.295692636904138
+          },
+          "b1t0_online": {
+            "energy": 0.04369920062354646,
+            "resource": 0.4438506644625295,
+            "floor": 0.16666666666666666,
+            "baseline_rms": 0.019436451484364535,
+            "trace_rms": 2.0627169025415584,
+            "theta_rms": 2.2984552003736196
+          },
+          "b1t1_frozen": {
+            "energy": 0.039351532879503305,
+            "resource": 0.4530997486413869,
+            "floor": 0.2222222222222222,
+            "baseline_rms": 0.0012809033685846612,
+            "trace_rms": 1.1997388558849094,
+            "theta_rms": 2.295692636904138
+          },
+          "b1t1_online": {
+            "energy": 0.04267289552577383,
+            "resource": 0.4440658369337258,
+            "floor": 0.16666666666666666,
+            "baseline_rms": 0.019357022266627257,
+            "trace_rms": 2.1191561487623205,
+            "theta_rms": 2.29775510558722
+          }
+        },
+        "1000": {
+          "b0t0_frozen": {
+            "energy": 0.06674876125261428,
+            "resource": 0.4504113973169966,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.295692636904138
+          },
+          "b0t0_online": {
+            "energy": 0.05947950599036284,
+            "resource": 0.4312822149538729,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.03940878680613304,
+            "trace_rms": 2.073651747084066,
+            "theta_rms": 2.2985066514858565
+          },
+          "b0t1_frozen": {
+            "energy": 0.06674876125261428,
+            "resource": 0.4504113973169966,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.1997388558849094,
+            "theta_rms": 2.295692636904138
+          },
+          "b0t1_online": {
+            "energy": 0.06249657587884047,
+            "resource": 0.4284585377962432,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.03938166723338155,
+            "trace_rms": 1.9446424143835868,
+            "theta_rms": 2.2992419209531527
+          },
+          "b1t0_frozen": {
+            "energy": 0.06674876125261428,
+            "resource": 0.4504113973169966,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.0012809033685846612,
+            "trace_rms": 0.0,
+            "theta_rms": 2.295692636904138
+          },
+          "b1t0_online": {
+            "energy": 0.060586516621824744,
+            "resource": 0.4331061132259962,
+            "floor": 0.05555555555555555,
+            "baseline_rms": 0.039117650786983885,
+            "trace_rms": 1.9492822913186985,
+            "theta_rms": 2.297521688926521
+          },
+          "b1t1_frozen": {
+            "energy": 0.06674876125261428,
+            "resource": 0.4504113973169966,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.0012809033685846612,
+            "trace_rms": 1.1997388558849094,
+            "theta_rms": 2.295692636904138
+          },
+          "b1t1_online": {
+            "energy": 0.06178116553674204,
+            "resource": 0.4299542159735606,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.039446424592429016,
+            "trace_rms": 2.1653014179942027,
+            "theta_rms": 2.296998389926097
+          }
+        }
+      },
+      "final": {
+        "b0t0_frozen": {
+          "energy": 0.06674876125261428,
+          "resource": 0.4504113973169966,
+          "floor": 0.027777777777777776,
+          "baseline_rms": 0.0,
+          "trace_rms": 0.0,
+          "theta_rms": 2.295692636904138
+        },
+        "b0t0_online": {
+          "energy": 0.05947950599036284,
+          "resource": 0.4312822149538729,
+          "floor": 0.027777777777777776,
+          "baseline_rms": 0.03940878680613304,
+          "trace_rms": 2.073651747084066,
+          "theta_rms": 2.2985066514858565
+        },
+        "b0t1_frozen": {
+          "energy": 0.06674876125261428,
+          "resource": 0.4504113973169966,
+          "floor": 0.027777777777777776,
+          "baseline_rms": 0.0,
+          "trace_rms": 1.1997388558849094,
+          "theta_rms": 2.295692636904138
+        },
+        "b0t1_online": {
+          "energy": 0.06249657587884047,
+          "resource": 0.4284585377962432,
+          "floor": 0.027777777777777776,
+          "baseline_rms": 0.03938166723338155,
+          "trace_rms": 1.9446424143835868,
+          "theta_rms": 2.2992419209531527
+        },
+        "b1t0_frozen": {
+          "energy": 0.06674876125261428,
+          "resource": 0.4504113973169966,
+          "floor": 0.027777777777777776,
+          "baseline_rms": 0.0012809033685846612,
+          "trace_rms": 0.0,
+          "theta_rms": 2.295692636904138
+        },
+        "b1t0_online": {
+          "energy": 0.060586516621824744,
+          "resource": 0.4331061132259962,
+          "floor": 0.05555555555555555,
+          "baseline_rms": 0.039117650786983885,
+          "trace_rms": 1.9492822913186985,
+          "theta_rms": 2.297521688926521
+        },
+        "b1t1_frozen": {
+          "energy": 0.06674876125261428,
+          "resource": 0.4504113973169966,
+          "floor": 0.027777777777777776,
+          "baseline_rms": 0.0012809033685846612,
+          "trace_rms": 1.1997388558849094,
+          "theta_rms": 2.295692636904138
+        },
+        "b1t1_online": {
+          "energy": 0.06178116553674204,
+          "resource": 0.4299542159735606,
+          "floor": 0.027777777777777776,
+          "baseline_rms": 0.039446424592429016,
+          "trace_rms": 2.1653014179942027,
+          "theta_rms": 2.296998389926097
+        }
+      },
+      "online_minus_frozen_energy": {
+        "b0t0": -0.007269255262251438,
+        "b0t1": -0.004252185373773809,
+        "b1t0": -0.006162244630789536,
+        "b1t1": -0.004967595715872242
+      },
+      "both_retained_minus_both_reset_online_energy": 0.0023016595463791964
+    },
+    {
+      "seed": 12403,
+      "context": "continuation",
+      "train_end": {
+        "energy": 0.36721256502546434,
+        "resource": 0.471022939336685,
+        "floor": 0.0,
+        "baseline_rms": 0.0012809033685846612,
+        "trace_rms": 1.1997388558849094,
+        "theta_rms": 2.295692636904138
+      },
+      "initial_physics_theta_hash": {
+        "resource": "60babd0cc09a585cb901cc2a6f79bfbc8ab02dccad262d4f3cd3f7195720a25c",
+        "energy": "97296ee9443e837568c76af7e333936534b6d160036cbb2c82a2a3611571ce33",
+        "theta": "a8a80ac6edd705bf4997829770cba74437f2e31c84a48045f196a68b567146c5"
+      },
+      "initial_rng_sha256": "e3d855dc6663b0feaae368ed5a27a6872ffa1ab9b5e2fec3ee737a5d6433244e",
+      "matched_initial_physics_theta_rng": true,
+      "matched_first_actions_physics": true,
+      "matched_final_rng": true,
+      "frozen_factorial_identical": true,
+      "snapshots": {
+        "1": {
+          "b0t0_frozen": {
+            "energy": 0.378179162251959,
+            "resource": 0.4538256129734077,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.295692636904138
+          },
+          "b0t0_online": {
+            "energy": 0.378179162251959,
+            "resource": 0.4538256129734077,
+            "floor": 0.0,
+            "baseline_rms": 8.908708265062564e-05,
+            "trace_rms": 0.30892318763801185,
+            "theta_rms": 2.295686062737136
+          },
+          "b0t1_frozen": {
+            "energy": 0.378179162251959,
+            "resource": 0.4538256129734077,
+            "floor": 0.0,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.1997388558849094,
+            "theta_rms": 2.295692636904138
+          },
+          "b0t1_online": {
+            "energy": 0.378179162251959,
+            "resource": 0.4538256129734077,
+            "floor": 0.0,
+            "baseline_rms": 8.908708265062564e-05,
+            "trace_rms": 1.1837213346308844,
+            "theta_rms": 2.2957016199010054
+          },
+          "b1t0_frozen": {
+            "energy": 0.378179162251959,
+            "resource": 0.4538256129734077,
+            "floor": 0.0,
+            "baseline_rms": 0.0012809033685846612,
+            "trace_rms": 0.0,
+            "theta_rms": 2.295692636904138
+          },
+          "b1t0_online": {
+            "energy": 0.378179162251959,
+            "resource": 0.4538256129734077,
+            "floor": 0.0,
+            "baseline_rms": 0.001280208833206737,
+            "trace_rms": 0.30892318763801185,
+            "theta_rms": 2.2956864152174723
+          },
+          "b1t1_frozen": {
+            "energy": 0.378179162251959,
+            "resource": 0.4538256129734077,
+            "floor": 0.0,
+            "baseline_rms": 0.0012809033685846612,
+            "trace_rms": 1.1997388558849094,
+            "theta_rms": 2.295692636904138
+          },
+          "b1t1_online": {
+            "energy": 0.378179162251959,
+            "resource": 0.4538256129734077,
+            "floor": 0.0,
+            "baseline_rms": 0.001280208833206737,
+            "trace_rms": 1.1837213346308844,
+            "theta_rms": 2.2957018167145926
+          }
+        },
+        "100": {
+          "b0t0_frozen": {
+            "energy": 0.2836140197536265,
+            "resource": 0.4633272649448739,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.295692636904138
+          },
+          "b0t0_online": {
+            "energy": 0.28497302468927055,
+            "resource": 0.45621752271757793,
+            "floor": 0.0,
+            "baseline_rms": 0.003774059649933231,
+            "trace_rms": 1.3784525593984316,
+            "theta_rms": 2.2951851871986495
+          },
+          "b0t1_frozen": {
+            "energy": 0.2836140197536265,
+            "resource": 0.4633272649448739,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.1997388558849094,
+            "theta_rms": 2.295692636904138
+          },
+          "b0t1_online": {
+            "energy": 0.2835753451686871,
+            "resource": 0.45539274020280796,
+            "floor": 0.0,
+            "baseline_rms": 0.003782830226014875,
+            "trace_rms": 1.3890141361391606,
+            "theta_rms": 2.295650790456611
+          },
+          "b1t0_frozen": {
+            "energy": 0.2836140197536265,
+            "resource": 0.4633272649448739,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.0012809033685846612,
+            "trace_rms": 0.0,
+            "theta_rms": 2.295692636904138
+          },
+          "b1t0_online": {
+            "energy": 0.2850424901042846,
+            "resource": 0.45557008229506646,
+            "floor": 0.0,
+            "baseline_rms": 0.004413823430167058,
+            "trace_rms": 1.3334122416958674,
+            "theta_rms": 2.295340468229324
+          },
+          "b1t1_frozen": {
+            "energy": 0.2836140197536265,
+            "resource": 0.4633272649448739,
+            "floor": 0.027777777777777776,
+            "baseline_rms": 0.0012809033685846612,
+            "trace_rms": 1.1997388558849094,
+            "theta_rms": 2.295692636904138
+          },
+          "b1t1_online": {
+            "energy": 0.2836490129465713,
+            "resource": 0.45525859932655777,
+            "floor": 0.0,
+            "baseline_rms": 0.004453598269385314,
+            "trace_rms": 1.3286940519471,
+            "theta_rms": 2.295523014692545
+          }
+        },
+        "500": {
+          "b0t0_frozen": {
+            "energy": 0.03131683042536244,
+            "resource": 0.4642303048039698,
+            "floor": 0.3333333333333333,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.295692636904138
+          },
+          "b0t0_online": {
+            "energy": 0.0254646199351861,
+            "resource": 0.4525732944318766,
+            "floor": 0.4166666666666667,
+            "baseline_rms": 0.03200662241484399,
+            "trace_rms": 2.620052701579865,
+            "theta_rms": 2.303972729025103
+          },
+          "b0t1_frozen": {
+            "energy": 0.03131683042536244,
+            "resource": 0.4642303048039698,
+            "floor": 0.3333333333333333,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.1997388558849094,
+            "theta_rms": 2.295692636904138
+          },
+          "b0t1_online": {
+            "energy": 0.02441227998394882,
+            "resource": 0.4532041244897241,
+            "floor": 0.4166666666666667,
+            "baseline_rms": 0.03245365285256124,
+            "trace_rms": 2.4297475321895994,
+            "theta_rms": 2.3044300678013427
+          },
+          "b1t0_frozen": {
+            "energy": 0.03131683042536244,
+            "resource": 0.4642303048039698,
+            "floor": 0.3333333333333333,
+            "baseline_rms": 0.0012809033685846612,
+            "trace_rms": 0.0,
+            "theta_rms": 2.295692636904138
+          },
+          "b1t0_online": {
+            "energy": 0.02460406700411736,
+            "resource": 0.45234191536589274,
+            "floor": 0.4444444444444444,
+            "baseline_rms": 0.03211625538627818,
+            "trace_rms": 2.613166741501275,
+            "theta_rms": 2.3026137401583617
+          },
+          "b1t1_frozen": {
+            "energy": 0.03131683042536244,
+            "resource": 0.4642303048039698,
+            "floor": 0.3333333333333333,
+            "baseline_rms": 0.0012809033685846612,
+            "trace_rms": 1.1997388558849094,
+            "theta_rms": 2.295692636904138
+          },
+          "b1t1_online": {
+            "energy": 0.023629898809908637,
+            "resource": 0.44865350003548854,
+            "floor": 0.4166666666666667,
+            "baseline_rms": 0.03246840290205967,
+            "trace_rms": 2.5682076904989337,
+            "theta_rms": 2.3022109269461897
+          }
+        },
+        "1000": {
+          "b0t0_frozen": {
+            "energy": 0.051088615845867345,
+            "resource": 0.4656766801158916,
+            "floor": 0.1111111111111111,
+            "baseline_rms": 0.0,
+            "trace_rms": 0.0,
+            "theta_rms": 2.295692636904138
+          },
+          "b0t0_online": {
+            "energy": 0.04659054586726369,
+            "resource": 0.4453743512991088,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.042484289737268636,
+            "trace_rms": 1.9266223098475417,
+            "theta_rms": 2.3024003690405865
+          },
+          "b0t1_frozen": {
+            "energy": 0.051088615845867345,
+            "resource": 0.4656766801158916,
+            "floor": 0.1111111111111111,
+            "baseline_rms": 0.0,
+            "trace_rms": 1.1997388558849094,
+            "theta_rms": 2.295692636904138
+          },
+          "b0t1_online": {
+            "energy": 0.04475223190569552,
+            "resource": 0.44373009910688643,
+            "floor": 0.2222222222222222,
+            "baseline_rms": 0.04263085734789933,
+            "trace_rms": 1.8826118600675603,
+            "theta_rms": 2.3012980171143465
+          },
+          "b1t0_frozen": {
+            "energy": 0.051088615845867345,
+            "resource": 0.4656766801158916,
+            "floor": 0.1111111111111111,
+            "baseline_rms": 0.0012809033685846612,
+            "trace_rms": 0.0,
+            "theta_rms": 2.295692636904138
+          },
+          "b1t0_online": {
+            "energy": 0.04516081571715333,
+            "resource": 0.4469025102327627,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.04214209836851607,
+            "trace_rms": 1.8412262055310225,
+            "theta_rms": 2.2996677649976585
+          },
+          "b1t1_frozen": {
+            "energy": 0.051088615845867345,
+            "resource": 0.4656766801158916,
+            "floor": 0.1111111111111111,
+            "baseline_rms": 0.0012809033685846612,
+            "trace_rms": 1.1997388558849094,
+            "theta_rms": 2.295692636904138
+          },
+          "b1t1_online": {
+            "energy": 0.04447824677095167,
+            "resource": 0.43540392148040774,
+            "floor": 0.19444444444444445,
+            "baseline_rms": 0.04318231709069106,
+            "trace_rms": 1.757693996276524,
+            "theta_rms": 2.2990920763020117
+          }
+        }
+      },
+      "final": {
+        "b0t0_frozen": {
+          "energy": 0.051088615845867345,
+          "resource": 0.4656766801158916,
+          "floor": 0.1111111111111111,
+          "baseline_rms": 0.0,
+          "trace_rms": 0.0,
+          "theta_rms": 2.295692636904138
+        },
+        "b0t0_online": {
+          "energy": 0.04659054586726369,
+          "resource": 0.4453743512991088,
+          "floor": 0.19444444444444445,
+          "baseline_rms": 0.042484289737268636,
+          "trace_rms": 1.9266223098475417,
+          "theta_rms": 2.3024003690405865
+        },
+        "b0t1_frozen": {
+          "energy": 0.051088615845867345,
+          "resource": 0.4656766801158916,
+          "floor": 0.1111111111111111,
+          "baseline_rms": 0.0,
+          "trace_rms": 1.1997388558849094,
+          "theta_rms": 2.295692636904138
+        },
+        "b0t1_online": {
+          "energy": 0.04475223190569552,
+          "resource": 0.44373009910688643,
+          "floor": 0.2222222222222222,
+          "baseline_rms": 0.04263085734789933,
+          "trace_rms": 1.8826118600675603,
+          "theta_rms": 2.3012980171143465
+        },
+        "b1t0_frozen": {
+          "energy": 0.051088615845867345,
+          "resource": 0.4656766801158916,
+          "floor": 0.1111111111111111,
+          "baseline_rms": 0.0012809033685846612,
+          "trace_rms": 0.0,
+          "theta_rms": 2.295692636904138
+        },
+        "b1t0_online": {
+          "energy": 0.04516081571715333,
+          "resource": 0.4469025102327627,
+          "floor": 0.19444444444444445,
+          "baseline_rms": 0.04214209836851607,
+          "trace_rms": 1.8412262055310225,
+          "theta_rms": 2.2996677649976585
+        },
+        "b1t1_frozen": {
+          "energy": 0.051088615845867345,
+          "resource": 0.4656766801158916,
+          "floor": 0.1111111111111111,
+          "baseline_rms": 0.0012809033685846612,
+          "trace_rms": 1.1997388558849094,
+          "theta_rms": 2.295692636904138
+        },
+        "b1t1_online": {
+          "energy": 0.04447824677095167,
+          "resource": 0.43540392148040774,
+          "floor": 0.19444444444444445,
+          "baseline_rms": 0.04318231709069106,
+          "trace_rms": 1.757693996276524,
+          "theta_rms": 2.2990920763020117
+        }
+      },
+      "online_minus_frozen_energy": {
+        "b0t0": -0.004498069978603657,
+        "b0t1": -0.006336383940171823,
+        "b1t0": -0.005927800128714016,
+        "b1t1": -0.006610369074915676
+      },
+      "both_retained_minus_both_reset_online_energy": -0.002112299096312019
+    }
+  ],
+  "summary": {
+    "fresh": {
+      "online_minus_frozen": {
+        "b0t0": {
+          "mean_energy_delta": -0.0011599988536332706,
+          "seed_wins": 1
+        },
+        "b0t1": {
+          "mean_energy_delta": -0.0014181100977183544,
+          "seed_wins": 1
+        },
+        "b1t0": {
+          "mean_energy_delta": -0.0005157443259305068,
+          "seed_wins": 1
+        },
+        "b1t1": {
+          "mean_energy_delta": -0.0017938188230051007,
+          "seed_wins": 1
+        }
+      },
+      "both_retained_minus_both_reset_online_energy_mean": -0.0006338199693718301
+    },
+    "continuation": {
+      "online_minus_frozen": {
+        "b0t0": {
+          "mean_energy_delta": -0.003629507637187973,
+          "seed_wins": 1
+        },
+        "b0t1": {
+          "mean_energy_delta": -0.0040292694811788175,
+          "seed_wins": 1
+        },
+        "b1t0": {
+          "mean_energy_delta": -0.0035302663513176666,
+          "seed_wins": 1
+        },
+        "b1t1": {
+          "mean_energy_delta": -0.005581168857010769,
+          "seed_wins": 1
+        }
+      },
+      "both_retained_minus_both_reset_online_energy_mean": -0.0019516612198227958
+    }
+  },
+  "source_unchanged": true,
+  "test_worlds": 64,
+  "test_ticks": 64000,
+  "training_ticks": 1200
+}
