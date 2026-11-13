@@ -1,3 +1,15 @@
+# Current: three consecutive sampled loops audited; ready for bounded unchanged live continuation
+
+13 November 2026, America/Chicago. [Report](../evaluation/feedback-continuity-three-loop-v1/REPORT.md), [audit](../evaluation/feedback-continuity-three-loop-v1/AUDIT.json), [outcome reading](../evaluation/feedback-continuity-three-loop-v1/OBSERVATIONS.md). Three new replies in one detached world continued the first predeclared full-traceback branch. World, complete conversation and actual receipt projection persisted; a newly declared sampling stream was then retained across all three loops. Original prior RNG was not retained, so it is not claimed continuous across that session boundary.
+
+All three replies reached512 with unfinished Python fences. Notebook updates persisted, no code dispatched, and subsequent feedback was empty under the existing projection. These are three writing loops with the original error in history, not three fresh failed execution/retry episodes. Independent token/transcript/RNG/record/bundle/receipt audit passed; canonical, parent diagnostic and weights unchanged. No unknown pending remains.
+
+Main garden remains paused1562, reference1550. Operational confidence supports a small unchanged live block; useful code is not a prerequisite for continuation. Suggested next block: five replies under original greedy256, complete actual history and existing mechanics, respecting capacity/unknown-outcome stops. Do not import sampled files, transcript, decoder or RNG into the live lineage. No new model-facing setting or world law adopted.
+
+This is the settling point after the requested three loops. No successful self-repair, new competence, maturation or general emergence is claimed. Prior orientation is archived byte-exact in feedback-continuity-three-loop-v1/before/CURRENT_ORIENTATION.md and retained below.
+
+---
+
 # Current: one-step detailed-error versus status-only feedback
 
 13 November 2026, America/Chicago. [Report](../evaluation/error-feedback-contact-v1/REPORT.md), [outcome reading](../evaluation/error-feedback-contact-v1/OBSERVATIONS.md). Six detached sampled replies, three paired seeds, one selected actual failed parent. Full feedback is the exact actual projected receipt; status-only removes only stderr. Both use identical post-error world copies, original context/sample and same sampling settings.
