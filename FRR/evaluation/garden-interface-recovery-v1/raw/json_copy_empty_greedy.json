@@ -1,0 +1,74 @@
+{
+  "condition": {
+    "id": "json_copy_empty_greedy",
+    "task": "json_copy",
+    "frame": "empty",
+    "decode": "greedy",
+    "seed": null
+  },
+  "messages": [
+    {
+      "role": "system",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "Return exactly this JSON object and nothing else:\n{\"action\":\"shell\",\"source\":\"pwd\"}"
+    }
+  ],
+  "rendered": "<|im_start|>system\n<|im_end|>\n<|im_start|>user\nReturn exactly this JSON object and nothing else:\n{\"action\":\"shell\",\"source\":\"pwd\"}<|im_end|>\n<|im_start|>assistant\n",
+  "input_token_ids": [
+    1,
+    9690,
+    198,
+    2,
+    198,
+    1,
+    4093,
+    198,
+    14362,
+    3869,
+    451,
+    20110,
+    1569,
+    284,
+    3878,
+    1745,
+    42,
+    198,
+    39428,
+    4667,
+    25535,
+    19738,
+    14460,
+    7032,
+    25535,
+    96,
+    13393,
+    23597,
+    2,
+    198,
+    1,
+    520,
+    9531,
+    198
+  ],
+  "generated_token_ids": [
+    107,
+    3805,
+    476,
+    4667,
+    25535,
+    19738,
+    14460,
+    7032,
+    25535,
+    96,
+    13393,
+    23597,
+    2
+  ],
+  "text": "{\n  \"action\":\"shell\",\"source\":\"pwd\"}",
+  "stop": "eos",
+  "seconds": 0.8656440860000316
+}

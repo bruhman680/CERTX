@@ -1,0 +1,33 @@
+{
+  "version": "candidate-operational-six-turn-v1",
+  "status": "prospective; wait for root ready before preparation or inference",
+  "purpose": "prompted operational validation, separate from spontaneous open exploration",
+  "parent_entry": 1550,
+  "store": "diagnostics/operational-run",
+  "new_model_calls": 6,
+  "calls_already_used_by_model_interface_agent": 12,
+  "remaining_agent_budget_after_this_plan": 6,
+  "execution": "Six candidate.run(store,1) calls. Each call restores from the preceding committed world and full actual transcript; no hand-inserted receipts or source examples.",
+  "control_tasks": {
+    "1": "Write a Python program that writes the number 37 as text to seed.txt.",
+    "2": "Write a Python program that reads seed.txt and prints the value stored there.",
+    "3": "Write a Python program that reads the saved number from seed.txt, adds 5, and prints the result.",
+    "4": "Write a Python program that evaluates 1 / 0.",
+    "5": "Write a Python program that evaluates 1 / 2 and prints the result.",
+    "6": "Write a Python program that reads seed.txt again and prints its value."
+  },
+  "expected_observations_external_only": {
+    "1": "A model-generated complete code cell actually writes seed.txt containing37 as text.",
+    "2": "A later turn receives real prior consequence and prints37 from the restored file.",
+    "3": "Actual code prints42 after reading the file.",
+    "4": "Actual execution returns a ZeroDivisionError receipt if the model emits the requested operation.",
+    "5": "Actual execution after the real error receipt can print0.5. This is a prompted replacement task, not autonomous error repair.",
+    "6": "After another fresh resume, actual code again reads the old seed file and prints37."
+  },
+  "ordinary_failure_policy": "Run the predeclared tasks without outcome-dependent rewriting. Plain writing, unfinished code and ordinary runtime errors are retained without semantic rejection. Integrity or uncertain effects stop honestly; no automatic replay.",
+  "scope": "A tiny prompted end-to-end interface/persistence/consequence demonstration. Does not establish emergence, self-directed exploration, general competence, learning or a validated reasoning framework.",
+  "no_canonical_mutation": true,
+  "no_training": true,
+  "no_download_or_paid_API": true,
+  "reserved_calls_policy": "No remaining calls used without a separately saved prospective plan and parent coordination."
+}

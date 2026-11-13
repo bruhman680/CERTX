@@ -1,0 +1,464 @@
+{
+  "status": "pass",
+  "calls": 12,
+  "canonical_calls": 0,
+  "canonical_unchanged": true,
+  "results": [
+    {
+      "condition": "json_copy_empty_greedy",
+      "task": "json_copy",
+      "frame": "empty",
+      "decode": "greedy",
+      "text": "{\n  \"action\":\"shell\",\"source\":\"pwd\"}",
+      "stop": "eos",
+      "dispatch": "shell",
+      "receipt": {
+        "stdout": "/world\n",
+        "stderr": "",
+        "exit_code": 0,
+        "boundary": null,
+        "seconds": 0.00174061199999187
+      },
+      "printed_actual_cwd": true,
+      "after": {
+        "id": "63e58405f967eb014a1ce6827ada129dae45be4c4c5f296819ddde41da60b47f",
+        "entries": [
+          [
+            "LAWS.txt",
+            "file",
+            384,
+            "316d8e627e4ad4b5c1dfbd9f357660fac1b89277e9145dff646028ea92d7fe66",
+            276
+          ],
+          [
+            "notebook.txt",
+            "file",
+            384,
+            "b4ab516f37ee20936496c544becd2656e319cb4fa592daa0d84ae78e5c7a249a",
+            97967
+          ],
+          [
+            "prior_replies.jsonl",
+            "file",
+            384,
+            "7e919a664a4950f49f2100e5d09f0528fb2bffc4b6c31a01f86926a485abf171",
+            150350
+          ],
+          [
+            "transitions.json",
+            "file",
+            384,
+            "56c45362a0ae586685ea214cedbf28e6f6562f89a89cce403ed2d6bad46673e5",
+            1091
+          ]
+        ],
+        "root_mode": 493
+      }
+    },
+    {
+      "condition": "json_copy_factory_greedy",
+      "task": "json_copy",
+      "frame": "factory",
+      "decode": "greedy",
+      "text": "{\"action\":\"shell\",\"source\":\"pwd\"}",
+      "stop": "eos",
+      "dispatch": "shell",
+      "receipt": {
+        "stdout": "/world\n",
+        "stderr": "",
+        "exit_code": 0,
+        "boundary": null,
+        "seconds": 0.0017282329999943613
+      },
+      "printed_actual_cwd": true,
+      "after": {
+        "id": "63e58405f967eb014a1ce6827ada129dae45be4c4c5f296819ddde41da60b47f",
+        "entries": [
+          [
+            "LAWS.txt",
+            "file",
+            384,
+            "316d8e627e4ad4b5c1dfbd9f357660fac1b89277e9145dff646028ea92d7fe66",
+            276
+          ],
+          [
+            "notebook.txt",
+            "file",
+            384,
+            "b4ab516f37ee20936496c544becd2656e319cb4fa592daa0d84ae78e5c7a249a",
+            97967
+          ],
+          [
+            "prior_replies.jsonl",
+            "file",
+            384,
+            "7e919a664a4950f49f2100e5d09f0528fb2bffc4b6c31a01f86926a485abf171",
+            150350
+          ],
+          [
+            "transitions.json",
+            "file",
+            384,
+            "56c45362a0ae586685ea214cedbf28e6f6562f89a89cce403ed2d6bad46673e5",
+            1091
+          ]
+        ],
+        "root_mode": 493
+      }
+    },
+    {
+      "condition": "json_formulate_empty_greedy",
+      "task": "json_formulate",
+      "frame": "empty",
+      "decode": "greedy",
+      "text": "#!/bin/bash\n\n# Set up the command\n\n# Set up the command\n\n# Set up the source set\n\n# Set up the action\n\n# Set up the action\n\n# Set up the action\n\n# Set up the action\n\n# Set up the action\n\n# Set up the action\n\n# Set up the action\n\n# Set up the action\n\n# Set up the action\n\n# Set up the action",
+      "stop": "token_limit",
+      "dispatch": null,
+      "receipt": null,
+      "printed_actual_cwd": false,
+      "after": null
+    },
+    {
+      "condition": "json_formulate_factory_greedy",
+      "task": "json_formulate",
+      "frame": "factory",
+      "decode": "greedy",
+      "text": "#!/bin/bash\n\n# Set up the command\n\n# Set up the command\n\n# Set up the source set\n\n# Set up the action\n\n# Set up the action\n\n# Set up the action\n\n# Set up the action\n\n# Set up the action\n\n# Set up the action\n\n# Set up the action\n\n# Set up the action\n\n# Set up the action\n\n# Set up the action",
+      "stop": "token_limit",
+      "dispatch": null,
+      "receipt": null,
+      "printed_actual_cwd": false,
+      "after": null
+    },
+    {
+      "condition": "shell_source_empty_greedy",
+      "task": "shell_source",
+      "frame": "empty",
+      "decode": "greedy",
+      "text": "#!/bin/bash\n\n# Get current working directory\ncurrent_dir = \"/home/user/Documents\"\n\n# Print current working directory\necho \"$current_dir\"\n\n# Example usage:\necho \"Current working directory: $current_dir\"\n```",
+      "stop": "eos",
+      "dispatch": "shell",
+      "receipt": {
+        "stdout": "\nCurrent working directory: \n",
+        "stderr": "/bin/sh: 4: current_dir: not found\n/bin/sh: 11: Syntax error: EOF in backquote substitution\n",
+        "exit_code": 2,
+        "boundary": null,
+        "seconds": 0.0019925909999756186
+      },
+      "printed_actual_cwd": false,
+      "after": {
+        "id": "63e58405f967eb014a1ce6827ada129dae45be4c4c5f296819ddde41da60b47f",
+        "entries": [
+          [
+            "LAWS.txt",
+            "file",
+            384,
+            "316d8e627e4ad4b5c1dfbd9f357660fac1b89277e9145dff646028ea92d7fe66",
+            276
+          ],
+          [
+            "notebook.txt",
+            "file",
+            384,
+            "b4ab516f37ee20936496c544becd2656e319cb4fa592daa0d84ae78e5c7a249a",
+            97967
+          ],
+          [
+            "prior_replies.jsonl",
+            "file",
+            384,
+            "7e919a664a4950f49f2100e5d09f0528fb2bffc4b6c31a01f86926a485abf171",
+            150350
+          ],
+          [
+            "transitions.json",
+            "file",
+            384,
+            "56c45362a0ae586685ea214cedbf28e6f6562f89a89cce403ed2d6bad46673e5",
+            1091
+          ]
+        ],
+        "root_mode": 493
+      }
+    },
+    {
+      "condition": "shell_source_factory_greedy",
+      "task": "shell_source",
+      "frame": "factory",
+      "decode": "greedy",
+      "text": "#!/bin/bash\n\ncurrent_dir=\"$1\"\n\necho \"${current_dir}\"\n\n# or\n\necho \"${current_dir}\"\n\n# or\n\necho \"${current_dir}\"\n\n# or\n\necho \"${current_dir}\"\n\n# or\n\necho \"${current_dir}\"\n\n# or\n\necho \"${current_dir}\"\n\n# or\n\necho \"${",
+      "stop": "token_limit",
+      "dispatch": "shell",
+      "receipt": {
+        "stdout": "\n\n\n\n\n\n",
+        "stderr": "/bin/sh: 29: Syntax error: Unterminated quoted string\n",
+        "exit_code": 2,
+        "boundary": null,
+        "seconds": 0.0018723399999771573
+      },
+      "printed_actual_cwd": false,
+      "after": {
+        "id": "63e58405f967eb014a1ce6827ada129dae45be4c4c5f296819ddde41da60b47f",
+        "entries": [
+          [
+            "LAWS.txt",
+            "file",
+            384,
+            "316d8e627e4ad4b5c1dfbd9f357660fac1b89277e9145dff646028ea92d7fe66",
+            276
+          ],
+          [
+            "notebook.txt",
+            "file",
+            384,
+            "b4ab516f37ee20936496c544becd2656e319cb4fa592daa0d84ae78e5c7a249a",
+            97967
+          ],
+          [
+            "prior_replies.jsonl",
+            "file",
+            384,
+            "7e919a664a4950f49f2100e5d09f0528fb2bffc4b6c31a01f86926a485abf171",
+            150350
+          ],
+          [
+            "transitions.json",
+            "file",
+            384,
+            "56c45362a0ae586685ea214cedbf28e6f6562f89a89cce403ed2d6bad46673e5",
+            1091
+          ]
+        ],
+        "root_mode": 493
+      }
+    },
+    {
+      "condition": "python_source_empty_greedy",
+      "task": "python_source",
+      "frame": "empty",
+      "decode": "greedy",
+      "text": "```python\nimport os\n\ncurrent_dir = os.getcwd()\nprint(current_dir)\n```\n\nThis code uses the `os.getcwd()` function to get the current working directory. The `os.getcwd()` function returns the path of the current working directory, which is the directory that Python is currently running in.",
+      "stop": "eos",
+      "dispatch": "python",
+      "receipt": {
+        "stdout": "",
+        "stderr": "  File \"<string>\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n",
+        "exit_code": 1,
+        "boundary": null,
+        "seconds": 0.019668271999989884
+      },
+      "printed_actual_cwd": false,
+      "after": {
+        "id": "63e58405f967eb014a1ce6827ada129dae45be4c4c5f296819ddde41da60b47f",
+        "entries": [
+          [
+            "LAWS.txt",
+            "file",
+            384,
+            "316d8e627e4ad4b5c1dfbd9f357660fac1b89277e9145dff646028ea92d7fe66",
+            276
+          ],
+          [
+            "notebook.txt",
+            "file",
+            384,
+            "b4ab516f37ee20936496c544becd2656e319cb4fa592daa0d84ae78e5c7a249a",
+            97967
+          ],
+          [
+            "prior_replies.jsonl",
+            "file",
+            384,
+            "7e919a664a4950f49f2100e5d09f0528fb2bffc4b6c31a01f86926a485abf171",
+            150350
+          ],
+          [
+            "transitions.json",
+            "file",
+            384,
+            "56c45362a0ae586685ea214cedbf28e6f6562f89a89cce403ed2d6bad46673e5",
+            1091
+          ]
+        ],
+        "root_mode": 493
+      }
+    },
+    {
+      "condition": "python_source_factory_greedy",
+      "task": "python_source",
+      "frame": "factory",
+      "decode": "greedy",
+      "text": "```python\nimport os\n\ncurrent_dir = os.getcwd()\nprint(current_dir)\n```\n\nThis code uses the `os.getcwd()` function to get the current working directory. The `os.getcwd()` function returns the current working directory as a string, which is then printed to the console.",
+      "stop": "eos",
+      "dispatch": "python",
+      "receipt": {
+        "stdout": "",
+        "stderr": "  File \"<string>\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n",
+        "exit_code": 1,
+        "boundary": null,
+        "seconds": 0.016980358000012075
+      },
+      "printed_actual_cwd": false,
+      "after": {
+        "id": "63e58405f967eb014a1ce6827ada129dae45be4c4c5f296819ddde41da60b47f",
+        "entries": [
+          [
+            "LAWS.txt",
+            "file",
+            384,
+            "316d8e627e4ad4b5c1dfbd9f357660fac1b89277e9145dff646028ea92d7fe66",
+            276
+          ],
+          [
+            "notebook.txt",
+            "file",
+            384,
+            "b4ab516f37ee20936496c544becd2656e319cb4fa592daa0d84ae78e5c7a249a",
+            97967
+          ],
+          [
+            "prior_replies.jsonl",
+            "file",
+            384,
+            "7e919a664a4950f49f2100e5d09f0528fb2bffc4b6c31a01f86926a485abf171",
+            150350
+          ],
+          [
+            "transitions.json",
+            "file",
+            384,
+            "56c45362a0ae586685ea214cedbf28e6f6562f89a89cce403ed2d6bad46673e5",
+            1091
+          ]
+        ],
+        "root_mode": 493
+      }
+    },
+    {
+      "condition": "word_copy_empty_greedy",
+      "task": "word_copy",
+      "frame": "empty",
+      "decode": "greedy",
+      "text": "pwd",
+      "stop": "eos",
+      "dispatch": "shell",
+      "receipt": {
+        "stdout": "/world\n",
+        "stderr": "",
+        "exit_code": 0,
+        "boundary": null,
+        "seconds": 0.0019457410000427444
+      },
+      "printed_actual_cwd": true,
+      "after": {
+        "id": "63e58405f967eb014a1ce6827ada129dae45be4c4c5f296819ddde41da60b47f",
+        "entries": [
+          [
+            "LAWS.txt",
+            "file",
+            384,
+            "316d8e627e4ad4b5c1dfbd9f357660fac1b89277e9145dff646028ea92d7fe66",
+            276
+          ],
+          [
+            "notebook.txt",
+            "file",
+            384,
+            "b4ab516f37ee20936496c544becd2656e319cb4fa592daa0d84ae78e5c7a249a",
+            97967
+          ],
+          [
+            "prior_replies.jsonl",
+            "file",
+            384,
+            "7e919a664a4950f49f2100e5d09f0528fb2bffc4b6c31a01f86926a485abf171",
+            150350
+          ],
+          [
+            "transitions.json",
+            "file",
+            384,
+            "56c45362a0ae586685ea214cedbf28e6f6562f89a89cce403ed2d6bad46673e5",
+            1091
+          ]
+        ],
+        "root_mode": 493
+      }
+    },
+    {
+      "condition": "word_copy_factory_greedy",
+      "task": "word_copy",
+      "frame": "factory",
+      "decode": "greedy",
+      "text": "pwd",
+      "stop": "eos",
+      "dispatch": "shell",
+      "receipt": {
+        "stdout": "/world\n",
+        "stderr": "",
+        "exit_code": 0,
+        "boundary": null,
+        "seconds": 0.001481692999959705
+      },
+      "printed_actual_cwd": true,
+      "after": {
+        "id": "63e58405f967eb014a1ce6827ada129dae45be4c4c5f296819ddde41da60b47f",
+        "entries": [
+          [
+            "LAWS.txt",
+            "file",
+            384,
+            "316d8e627e4ad4b5c1dfbd9f357660fac1b89277e9145dff646028ea92d7fe66",
+            276
+          ],
+          [
+            "notebook.txt",
+            "file",
+            384,
+            "b4ab516f37ee20936496c544becd2656e319cb4fa592daa0d84ae78e5c7a249a",
+            97967
+          ],
+          [
+            "prior_replies.jsonl",
+            "file",
+            384,
+            "7e919a664a4950f49f2100e5d09f0528fb2bffc4b6c31a01f86926a485abf171",
+            150350
+          ],
+          [
+            "transitions.json",
+            "file",
+            384,
+            "56c45362a0ae586685ea214cedbf28e6f6562f89a89cce403ed2d6bad46673e5",
+            1091
+          ]
+        ],
+        "root_mode": 493
+      }
+    },
+    {
+      "condition": "json_copy_empty_sampled",
+      "task": "json_copy",
+      "frame": "empty",
+      "decode": "full_softmax",
+      "text": "Here's how you can use `json.dump` to send the JSON object to the console:\n\n```python\nimport json\n\njson_object = [json.dumps(item) for item in [('name', 'John'), ('age', 30)], ('age', 25)]\njson_obj = json.loads(json_object)\n\nprint(json_obj)\n```\n\nIn this example, the JSON object is",
+      "stop": "token_limit",
+      "dispatch": null,
+      "receipt": null,
+      "printed_actual_cwd": false,
+      "after": null
+    },
+    {
+      "condition": "json_copy_factory_sampled",
+      "task": "json_copy",
+      "frame": "factory",
+      "decode": "full_softmax",
+      "text": "The JSON object with the `action`, `source`, and `source` key-value pairs is as follows:\n\n```json\n{\n  \"action\": \"shell\",\n  \"source\": \"pwd\"\n}\n```",
+      "stop": "eos",
+      "dispatch": null,
+      "receipt": null,
+      "printed_actual_cwd": false,
+      "after": null
+    }
+  ]
+}

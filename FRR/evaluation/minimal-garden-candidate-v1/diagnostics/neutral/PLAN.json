@@ -1,0 +1,23 @@
+{
+  "version": "neutral-wording-operational-six-turn-v1",
+  "status": "prospective; saved before new preparation/inference",
+  "date_client": "2026-11-09 America/Chicago",
+  "purpose": "neutral wording operational diagnostic",
+  "parent_entry": 1550,
+  "new_model_calls": 6,
+  "store": "diagnostics/neutral/run",
+  "execution": "Six fresh CLI subprocess calls to candidate.py resume --steps 1, each using exact prior candidate transcript and committed filesystem.",
+  "control_tasks": {
+    "1": "Write a one-line Python program to write the text 37 into memory.txt.",
+    "2": "Write a one-line Python program to print the contents of memory.txt.",
+    "3": "Write a one-line Python program to read the integer in memory.txt, add 5, and print it.",
+    "4": "Write a one-line Python program that divides 1 by 0.",
+    "5": "Write a one-line Python program to print 1 divided by 2.",
+    "6": "Write a one-line Python program to print the contents of memory.txt."
+  },
+  "fixed": "Candidate world laws, source, model, decoder, bounds and original1550 reference remain unchanged.",
+  "changed_condition": "Task filename and concise one-line wording differ from preceding seed.txt diagnostic. This is not an isolated test of the lexical seed hypothesis.",
+  "external_observations": "Retain actual model cell sources and receipts, literal memory.txt bytes from checkpoint objects, other created artifacts, actual errors and delivery into later raw messages. Correct-looking stdout alone is not proof of retrieval; inspect whether source accesses the file rather than printing a constant.",
+  "ordinary_failures": "All six tasks remain unchanged despite ordinary errors, no cell, cap, or wrong operations. An integrity interruption stops without automatic replay.",
+  "limits": "At most six new model calls, no adaptive prompt or source repair, no canonical continuation, no training, downloads or paid API. Prompted controls do not establish spontaneous exploration or emergence."
+}

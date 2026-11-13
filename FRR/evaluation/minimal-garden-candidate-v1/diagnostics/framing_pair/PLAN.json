@@ -1,0 +1,26 @@
+{
+  "version": "familiar-file-question-framing-pair-v1",
+  "date_client": "2026-11-09 America/Chicago",
+  "status": "prospective; saved before preparation or inference",
+  "new_model_calls": 6,
+  "parent_entry": 1550,
+  "arms": ["minimal", "standard"],
+  "arm_order": "minimal three turns, then standard three turns",
+  "initial_messages_minimal": [{"role":"system","content":""},{"role":"user","content":""}],
+  "initial_messages_standard": "Default candidate mechanics and broad invitation, explicit empty system",
+  "control_tasks": {
+    "1": "How do I write the string \"37\" into a file called memory.txt in Python?",
+    "2": "How do I open memory.txt and print what is in the file using Python?",
+    "3": "Read the number from memory.txt, add five, and print the result using Python."
+  },
+  "execution": "Two new stores, three candidate.py resume --steps1 fresh subprocesses per store, with full actual transcript and real effects retained within each store",
+  "fixed": "Candidate world physics, cell parser, initial1550 filesystem plus WORLD_RULES addition, model, tokenizer, greedy decoder, limits and source pins",
+  "comparison_scope": "Initial mechanics-plus-invitation framing as one joint delivery-policy difference. It does not isolate individual words or effects of invitation versus mechanics separately.",
+  "observations": "Actual file bytes, all complete cell sources and receipts, real feedback delivery, new paths and integrity after each pause. Check sources reach file operations before claiming retrieval; stdout alone is insufficient.",
+  "no_exact_source_examples": true,
+  "no_code_stripping_or_repair": true,
+  "no_extra_program_arguments": true,
+  "no_adaptive_tasks_or_extra_calls": true,
+  "no_training_downloads_paidAPI_or_canonical_mutation": true,
+  "ordinary_failures": "Retain all prescribed turns without semantic rejection. Integrity/unknown-outcome interruption stops without automatic replay."
+}

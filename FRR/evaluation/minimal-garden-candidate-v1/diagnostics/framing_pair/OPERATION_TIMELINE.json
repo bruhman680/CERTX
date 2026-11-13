@@ -1,0 +1,272 @@
+{
+  "model_calls": 0,
+  "timelines": {
+    "minimal": [
+      {
+        "turn": 1,
+        "world_step": 3,
+        "channel": "python",
+        "source": "with open(\"memory.txt\", \"r\") as file:\n    contents = file.read()\n    print(contents)\n",
+        "receipt": {
+          "boundary": null,
+          "exit_code": 1,
+          "seconds": 0.020897702997899614,
+          "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    with open(\"memory.txt\", \"r\") as file:\n         ~~~~^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'memory.txt'\n",
+          "stdout": ""
+        },
+        "memory_after": null
+      },
+      {
+        "turn": 1,
+        "world_step": 4,
+        "channel": "python",
+        "source": "with open(\"memory.txt\", \"w\") as file:\n    file.write(\"37\")\n",
+        "receipt": {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.008643696000945056,
+          "stderr": "",
+          "stdout": ""
+        },
+        "memory_after": {
+          "bytes": 2,
+          "sha256": "7a61b53701befdae0eeeffaecc73f14e20b537bb0f8b91ad7c2936dc63562b25",
+          "utf8": "37"
+        }
+      },
+      {
+        "turn": 2,
+        "world_step": 6,
+        "channel": "python",
+        "source": "with open(\"memory.txt\", \"r\") as file:\n    contents = file.read()\n    print(contents)\n",
+        "receipt": {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.00956445799965877,
+          "stderr": "",
+          "stdout": "37\n"
+        },
+        "memory_after": {
+          "bytes": 2,
+          "sha256": "7a61b53701befdae0eeeffaecc73f14e20b537bb0f8b91ad7c2936dc63562b25",
+          "utf8": "37"
+        }
+      },
+      {
+        "turn": 2,
+        "world_step": 7,
+        "channel": "python",
+        "source": "with open(\"memory.txt\", \"w\") as file:\n    file.write(\"37\")\n",
+        "receipt": {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.008837176999804797,
+          "stderr": "",
+          "stdout": ""
+        },
+        "memory_after": {
+          "bytes": 2,
+          "sha256": "7a61b53701befdae0eeeffaecc73f14e20b537bb0f8b91ad7c2936dc63562b25",
+          "utf8": "37"
+        }
+      },
+      {
+        "turn": 3,
+        "world_step": 9,
+        "channel": "python",
+        "source": "with open(\"memory.txt\", \"r\") as file:\n    contents = file.read()\n    print(contents)\n",
+        "receipt": {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.008451837999018608,
+          "stderr": "",
+          "stdout": "37\n"
+        },
+        "memory_after": {
+          "bytes": 2,
+          "sha256": "7a61b53701befdae0eeeffaecc73f14e20b537bb0f8b91ad7c2936dc63562b25",
+          "utf8": "37"
+        }
+      },
+      {
+        "turn": 3,
+        "world_step": 10,
+        "channel": "python",
+        "source": "with open(\"memory.txt\", \"w\") as file:\n    file.write(\"37\")\n",
+        "receipt": {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.008503625002049375,
+          "stderr": "",
+          "stdout": ""
+        },
+        "memory_after": {
+          "bytes": 2,
+          "sha256": "7a61b53701befdae0eeeffaecc73f14e20b537bb0f8b91ad7c2936dc63562b25",
+          "utf8": "37"
+        }
+      }
+    ],
+    "standard": [
+      {
+        "turn": 1,
+        "world_step": 3,
+        "channel": "python",
+        "source": "with open(\"memory.txt\", \"r\") as file:\n    contents = file.read()\n",
+        "receipt": {
+          "boundary": null,
+          "exit_code": 1,
+          "seconds": 0.020891311000013957,
+          "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    with open(\"memory.txt\", \"r\") as file:\n         ~~~~^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'memory.txt'\n",
+          "stdout": ""
+        },
+        "memory_after": null
+      },
+      {
+        "turn": 1,
+        "world_step": 4,
+        "channel": "python",
+        "source": "with open(\"memory.txt\", \"w\") as file:\n    file.write(\"37\")\n",
+        "receipt": {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.009522473999822978,
+          "stderr": "",
+          "stdout": ""
+        },
+        "memory_after": {
+          "bytes": 2,
+          "sha256": "7a61b53701befdae0eeeffaecc73f14e20b537bb0f8b91ad7c2936dc63562b25",
+          "utf8": "37"
+        }
+      },
+      {
+        "turn": 1,
+        "world_step": 5,
+        "channel": "python",
+        "source": "with open(\"memory.txt\", \"w\") as file1, \"memory.txt\", \"memory.txt\" as file2:\n    file1.write(\"37\")\n    file2.write(\"37\")\n",
+        "receipt": {
+          "boundary": null,
+          "exit_code": 1,
+          "seconds": 0.020934775999194244,
+          "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    with open(\"memory.txt\", \"w\") as file1, \"memory.txt\", \"memory.txt\" as file2:\n                                           ^^^^^^^^^^^^\nTypeError: 'str' object does not support the context manager protocol\n",
+          "stdout": ""
+        },
+        "memory_after": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      },
+      {
+        "turn": 2,
+        "world_step": 7,
+        "channel": "python",
+        "source": "with open(\"memory.txt\", \"r\") as file:\n    contents = file.read()\n",
+        "receipt": {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.008522763000655686,
+          "stderr": "",
+          "stdout": ""
+        },
+        "memory_after": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      },
+      {
+        "turn": 2,
+        "world_step": 8,
+        "channel": "python",
+        "source": "with open(\"memory.txt\", \"w\") as file:\n    file.write(\"37\")\n",
+        "receipt": {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.00893081600224832,
+          "stderr": "",
+          "stdout": ""
+        },
+        "memory_after": {
+          "bytes": 2,
+          "sha256": "7a61b53701befdae0eeeffaecc73f14e20b537bb0f8b91ad7c2936dc63562b25",
+          "utf8": "37"
+        }
+      },
+      {
+        "turn": 2,
+        "world_step": 9,
+        "channel": "python",
+        "source": "with open(\"memory.txt\", \"w\") as file1, \"memory.txt\", \"memory.txt\" as file2:\n    file1.write(\"37\")\n    file2.write(\"37\")\n",
+        "receipt": {
+          "boundary": null,
+          "exit_code": 1,
+          "seconds": 0.02139485099905869,
+          "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    with open(\"memory.txt\", \"w\") as file1, \"memory.txt\", \"memory.txt\" as file2:\n                                           ^^^^^^^^^^^^\nTypeError: 'str' object does not support the context manager protocol\n",
+          "stdout": ""
+        },
+        "memory_after": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      },
+      {
+        "turn": 3,
+        "world_step": 11,
+        "channel": "python",
+        "source": "with open(\"memory.txt\", \"r\") as file:\n    contents = file.read()\n",
+        "receipt": {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.009416615997906774,
+          "stderr": "",
+          "stdout": ""
+        },
+        "memory_after": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      },
+      {
+        "turn": 3,
+        "world_step": 12,
+        "channel": "python",
+        "source": "with open(\"memory.txt\", \"w\") as file:\n    file.write(\"5\")\n",
+        "receipt": {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.0089526299998397,
+          "stderr": "",
+          "stdout": ""
+        },
+        "memory_after": {
+          "bytes": 1,
+          "sha256": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+          "utf8": "5"
+        }
+      },
+      {
+        "turn": 3,
+        "world_step": 13,
+        "channel": "python",
+        "source": "with open(\"memory.txt\", \"w\") as file1, \"memory.txt\", \"memory.txt\" as file2:\n    file1.write(\"5\")\n    file2.write(\"5\")\n",
+        "receipt": {
+          "boundary": null,
+          "exit_code": 1,
+          "seconds": 0.021153254001546884,
+          "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    with open(\"memory.txt\", \"w\") as file1, \"memory.txt\", \"memory.txt\" as file2:\n                                           ^^^^^^^^^^^^\nTypeError: 'str' object does not support the context manager protocol\n",
+          "stdout": ""
+        },
+        "memory_after": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    ]
+  },
+  "scope": "Observer reads of retained per-operation snapshots; no new effects."
+}

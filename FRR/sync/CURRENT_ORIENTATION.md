@@ -1,3 +1,17 @@
+# Current: computational garden version, paused at1562
+
+12 November2026, America/Chicago. [Build evidence](../evaluation/minimal-garden-candidate-v1/REPORT.md) and [resume instructions](../evaluation/minimal-garden-candidate-v1/RESUME.md). ACTIVE_GARDEN_PHASE.json now selects the explicitly declared computational-notebook version. Original reference1550 and all4467phasefiles remain unchanged; its old pointer/navigation are archived in activation_before/.
+
+The bounded operational foundation is supported:18sandbox tests,5contact checks, new model-generated code execution, real error feedback, and prompted persistent file write/read after restoration. Failed diagnostics and erroneous partial file truncations remain recorded. This is not robust general competence, autonomous recovery, training or emergence.
+
+The separate open pilot completed12replies (1551–1562new-condition lineage):12token caps,2distinct unfinished texts,0complete code cells; onlynotebook changed. No test tasks or judgments entered it. All exact messages, sources, receipts, checkpoints and pause/resume checks pass. The next input is3298tokens against7936; memory is bounded and pauses honestly rather than silently pruning.
+
+Rules govern world consequences, not desired model behavior. Keep source/body/laws/contact unchanged for ordinary continuation; read CONTRACT and ENVIRONMENT. Do not replay pending actions, automatically repair source, promote old examples, or count writing as execution. Candidate diagnostics are separate stores, not extra open entries. No further block is scheduled. A longer-output/chunk-continuation study is a separate prospective question.
+
+New chatside/Claude relays are being located; no unseen claims have been adopted. Earlier records below retain their original status and chronology.
+
+---
+
 # Current: wound down; original garden paused at 1550
 
 9 November 2026 UTC. [Settling sync, results and next-session orientation](../evaluation/detached-action-interface-control-v1/REST_SYNC.md). The requested action-interface diagnostic is complete. No further model run, redesign or canonical continuation is scheduled by this work. The original world, model, sampler, invitation and memory policy remain unchanged.

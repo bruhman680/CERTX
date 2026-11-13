@@ -1,0 +1,51 @@
+{
+  "condition": "python_source_empty_greedy",
+  "task": "python_source",
+  "frame": "empty",
+  "decode": "greedy",
+  "text": "```python\nimport os\n\ncurrent_dir = os.getcwd()\nprint(current_dir)\n```\n\nThis code uses the `os.getcwd()` function to get the current working directory. The `os.getcwd()` function returns the path of the current working directory, which is the directory that Python is currently running in.",
+  "stop": "eos",
+  "dispatch": "python",
+  "receipt": {
+    "stdout": "",
+    "stderr": "  File \"<string>\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n",
+    "exit_code": 1,
+    "boundary": null,
+    "seconds": 0.019668271999989884
+  },
+  "printed_actual_cwd": false,
+  "after": {
+    "id": "63e58405f967eb014a1ce6827ada129dae45be4c4c5f296819ddde41da60b47f",
+    "entries": [
+      [
+        "LAWS.txt",
+        "file",
+        384,
+        "316d8e627e4ad4b5c1dfbd9f357660fac1b89277e9145dff646028ea92d7fe66",
+        276
+      ],
+      [
+        "notebook.txt",
+        "file",
+        384,
+        "b4ab516f37ee20936496c544becd2656e319cb4fa592daa0d84ae78e5c7a249a",
+        97967
+      ],
+      [
+        "prior_replies.jsonl",
+        "file",
+        384,
+        "7e919a664a4950f49f2100e5d09f0528fb2bffc4b6c31a01f86926a485abf171",
+        150350
+      ],
+      [
+        "transitions.json",
+        "file",
+        384,
+        "56c45362a0ae586685ea214cedbf28e6f6562f89a89cce403ed2d6bad46673e5",
+        1091
+      ]
+    ],
+    "root_mode": 493
+  }
+}

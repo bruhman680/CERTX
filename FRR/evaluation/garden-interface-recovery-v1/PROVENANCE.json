@@ -1,0 +1,196 @@
+{
+  "model_weights_sha256": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c",
+  "tensor_digest": "68981b7ddb65122751502a8ddee3e260a03abd59242ed338761dc4e6949b715e",
+  "config": {
+    "architectures": [
+      "LlamaForCausalLM"
+    ],
+    "attention_bias": false,
+    "attention_dropout": 0.0,
+    "bos_token_id": 1,
+    "eos_token_id": 2,
+    "hidden_act": "silu",
+    "hidden_size": 576,
+    "initializer_range": 0.041666666666666664,
+    "intermediate_size": 1536,
+    "is_llama_config": true,
+    "max_position_embeddings": 8192,
+    "mlp_bias": false,
+    "model_type": "llama",
+    "num_attention_heads": 9,
+    "num_hidden_layers": 30,
+    "num_key_value_heads": 3,
+    "pad_token_id": 2,
+    "pretraining_tp": 1,
+    "rms_norm_eps": 1e-05,
+    "rope_interleaved": false,
+    "rope_scaling": null,
+    "rope_theta": 100000,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16",
+    "transformers_version": "4.42.3",
+    "transformers.js_config": {
+      "kv_cache_dtype": {
+        "q4f16": "float16",
+        "fp16": "float16"
+      }
+    },
+    "use_cache": true,
+    "vocab_size": 49152
+  },
+  "tokenizer_sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+  "tokenizer_config": {
+    "add_prefix_space": false,
+    "added_tokens_decoder": {
+      "0": {
+        "content": "<|endoftext|>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      },
+      "1": {
+        "content": "<|im_start|>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      },
+      "2": {
+        "content": "<|im_end|>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      },
+      "3": {
+        "content": "<repo_name>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      },
+      "4": {
+        "content": "<reponame>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      },
+      "5": {
+        "content": "<file_sep>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      },
+      "6": {
+        "content": "<filename>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      },
+      "7": {
+        "content": "<gh_stars>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      },
+      "8": {
+        "content": "<issue_start>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      },
+      "9": {
+        "content": "<issue_comment>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      },
+      "10": {
+        "content": "<issue_closed>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      },
+      "11": {
+        "content": "<jupyter_start>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      },
+      "12": {
+        "content": "<jupyter_text>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      },
+      "13": {
+        "content": "<jupyter_code>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      },
+      "14": {
+        "content": "<jupyter_output>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      },
+      "15": {
+        "content": "<jupyter_script>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      },
+      "16": {
+        "content": "<empty_output>",
+        "lstrip": false,
+        "normalized": false,
+        "rstrip": false,
+        "single_word": false,
+        "special": true
+      }
+    },
+    "additional_special_tokens": [
+      "<|im_start|>",
+      "<|im_end|>"
+    ],
+    "bos_token": "<|im_start|>",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ '<|im_start|>system\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face<|im_end|>\n' }}{% endif %}{{'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'}}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}",
+    "clean_up_tokenization_spaces": false,
+    "eos_token": "<|im_end|>",
+    "model_max_length": 8192,
+    "pad_token": "<|im_end|>",
+    "tokenizer_class": "GPT2Tokenizer",
+    "unk_token": "<|endoftext|>",
+    "vocab_size": 49152
+  }
+}
