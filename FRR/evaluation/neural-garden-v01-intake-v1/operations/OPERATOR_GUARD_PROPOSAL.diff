@@ -1,0 +1,46 @@
+--- pinned/LIVING_GARDEN.py
++++ proposal/LIVING_GARDEN.py
+@@ -117,6 +117,8 @@
+     if args.delay_ms < 0 or args.checkpoint_every < 1 or args.snapshot_every < 1 or args.report_every < 1:
+         raise SystemExit("delay must be >= 0; checkpoint/snapshot/report intervals must be positive")
+     with base._run_lock(directory):
++        if (directory / "INTERVENTION_PENDING.json").exists():
++            raise SystemExit("Unfinished intervention; inspect backup/events before continuing")
+         garden, manifest = _open(directory)
+         if garden.tick != manifest["completed_steps"]:
+             raise SystemExit("Checkpoint tick and manifest differ; manual audit needed")
+@@ -208,6 +210,8 @@
+         if value is not None and not 0. <= value <= 2.:
+             raise SystemExit(f"{key} must be between 0 and 2")
+     with base._run_lock(directory):
++        if (directory / "INTERVENTION_PENDING.json").exists():
++            raise SystemExit("Unfinished intervention; inspect backup/events before continuing")
+         garden, manifest = _open(directory)
+         if not (directory / base.PAUSE).exists():
+             raise SystemExit("Intervention requires paused world; run `pause` first")
+@@ -249,6 +253,8 @@
+                            "previous_fingerprint": previous,
+                            "reason": args.reason, "change": change,
+                            "pre_intervention_checkpoint": backup_name})
++        pending_path = directory / "INTERVENTION_PENDING.json"
++        base._atomic_json(pending_path, {"tick":garden.tick,"before":previous,"backup":backup_name,"change":change})
+         if args.learning is not None:
+             garden.learning = args.learning == "on"
+         if args.resource_multiplier is not None:
+@@ -264,6 +270,7 @@
+                            "reason": args.reason, "change": change,
+                            "previous_fingerprint": previous,
+                            "new_fingerprint": garden.fingerprint()})
++        pending_path.unlink()
+     print(json.dumps({"status": "intervention_applied", "tick": garden.tick,
+                       "change": change, "fingerprint": garden.fingerprint(),
+                       "pre_intervention_checkpoint": backup_name}, indent=2))
+@@ -325,6 +332,8 @@
+     if destination.exists() and any(destination.iterdir()):
+         raise SystemExit("Fork destination must be empty; refusing overwrite")
+     with base._run_lock(source):
++        if (source / "INTERVENTION_PENDING.json").exists():
++            raise SystemExit("Unfinished intervention; use explicit backup recovery, not an ordinary fork")
+         parent, manifest = _open(source)
+         if not (source / base.PAUSE).exists():
+             raise SystemExit("Pause parent before forking to preserve exact lineage")

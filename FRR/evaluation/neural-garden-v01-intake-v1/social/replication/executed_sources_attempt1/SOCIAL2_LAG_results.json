@@ -1,0 +1,3168 @@
+{
+  "design": {
+    "seed_start": 11000,
+    "seeds": 12,
+    "train": 1500,
+    "eval": 2000,
+    "output": "SOCIAL2_LAG_results.json"
+  },
+  "arms": [
+    "own_only",
+    "own_previous",
+    "neighbor_previous",
+    "neighbor_current",
+    "global_previous",
+    "neighbor_older",
+    "own_older",
+    "neighbor_time_scramble"
+  ],
+  "summary": {
+    "0.06": {
+      "own_only": {
+        "500": {
+          "mean_energy": 0.08049320652738591,
+          "floor": 0.16203703703703703,
+          "bottom_decile": 0.00042320265411084217,
+          "mean_resource": 0.4726067458328514,
+          "wins_vs_own_previous": 12,
+          "wins_vs_global_previous": 0
+        },
+        "2000": {
+          "mean_energy": 0.16528536064801647,
+          "floor": 0.13020833333333334,
+          "bottom_decile": 0.005056433103438442,
+          "mean_resource": 0.4762673850281571,
+          "wins_vs_own_previous": 12,
+          "wins_vs_global_previous": 3
+        }
+      },
+      "own_previous": {
+        "500": {
+          "mean_energy": 0.06472530615411988,
+          "floor": 0.2280092592592593,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4753659783075559,
+          "wins_vs_own_only": 0,
+          "wins_vs_global_previous": 0
+        },
+        "2000": {
+          "mean_energy": 0.10800630139787937,
+          "floor": 0.19675925925925927,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4760727416357376,
+          "wins_vs_own_only": 0,
+          "wins_vs_global_previous": 0
+        }
+      },
+      "neighbor_previous": {
+        "500": {
+          "mean_energy": 0.13639977477036902,
+          "floor": 0.08912037037037036,
+          "bottom_decile": 0.013433284900005641,
+          "mean_resource": 0.47777627328495575,
+          "wins_vs_own_only": 12,
+          "wins_vs_own_previous": 12,
+          "wins_vs_global_previous": 12
+        },
+        "2000": {
+          "mean_energy": 0.20795712469540525,
+          "floor": 0.06539351851851852,
+          "bottom_decile": 0.019414566594384425,
+          "mean_resource": 0.47937967698372597,
+          "wins_vs_own_only": 12,
+          "wins_vs_own_previous": 12,
+          "wins_vs_global_previous": 12
+        }
+      },
+      "neighbor_current": {
+        "500": {
+          "mean_energy": 0.1214956377524725,
+          "floor": 0.09722222222222222,
+          "bottom_decile": 0.01263420433059794,
+          "mean_resource": 0.47289886915964346,
+          "wins_vs_own_only": 12,
+          "wins_vs_own_previous": 12,
+          "wins_vs_global_previous": 11
+        },
+        "2000": {
+          "mean_energy": 0.195229758991603,
+          "floor": 0.08449074074074074,
+          "bottom_decile": 0.01461607356101259,
+          "mean_resource": 0.47552984501222423,
+          "wins_vs_own_only": 12,
+          "wins_vs_own_previous": 12,
+          "wins_vs_global_previous": 9
+        }
+      },
+      "global_previous": {
+        "500": {
+          "mean_energy": 0.10529296583444646,
+          "floor": 0.10069444444444443,
+          "bottom_decile": 0.010419311339355712,
+          "mean_resource": 0.47359997672066184,
+          "wins_vs_own_only": 12,
+          "wins_vs_own_previous": 12
+        },
+        "2000": {
+          "mean_energy": 0.1743291696823195,
+          "floor": 0.0787037037037037,
+          "bottom_decile": 0.015948607552249576,
+          "mean_resource": 0.4740083713207406,
+          "wins_vs_own_only": 9,
+          "wins_vs_own_previous": 12
+        }
+      },
+      "neighbor_older": {
+        "500": {
+          "mean_energy": 0.08498972541067205,
+          "floor": 0.16782407407407407,
+          "bottom_decile": 0.0007876344194992437,
+          "mean_resource": 0.4776306380534849,
+          "wins_vs_own_only": 10,
+          "wins_vs_own_previous": 12,
+          "wins_vs_global_previous": 0
+        },
+        "2000": {
+          "mean_energy": 0.14344856275049447,
+          "floor": 0.1261574074074074,
+          "bottom_decile": 0.005876510032716539,
+          "mean_resource": 0.48058360997340294,
+          "wins_vs_own_only": 0,
+          "wins_vs_own_previous": 12,
+          "wins_vs_global_previous": 0
+        }
+      },
+      "own_older": {
+        "500": {
+          "mean_energy": 0.06884508475537074,
+          "floor": 0.08969907407407407,
+          "bottom_decile": 0.012487146744998836,
+          "mean_resource": 0.473763605545656,
+          "wins_vs_own_only": 0,
+          "wins_vs_own_previous": 10,
+          "wins_vs_global_previous": 0
+        },
+        "2000": {
+          "mean_energy": 0.11412348622315575,
+          "floor": 0.06655092592592593,
+          "bottom_decile": 0.0204296809998857,
+          "mean_resource": 0.4704940983917201,
+          "wins_vs_own_only": 0,
+          "wins_vs_own_previous": 12,
+          "wins_vs_global_previous": 0
+        }
+      },
+      "neighbor_time_scramble": {
+        "500": {
+          "mean_energy": 0.12748849114464075,
+          "floor": 0.08159722222222222,
+          "bottom_decile": 0.015144127608255434,
+          "mean_resource": 0.47519535363037174,
+          "wins_vs_own_only": 12,
+          "wins_vs_own_previous": 12,
+          "wins_vs_global_previous": 12
+        },
+        "2000": {
+          "mean_energy": 0.20531539229914972,
+          "floor": 0.05034722222222222,
+          "bottom_decile": 0.025385920568883585,
+          "mean_resource": 0.4758745534152027,
+          "wins_vs_own_only": 12,
+          "wins_vs_own_previous": 12,
+          "wins_vs_global_previous": 11
+        }
+      }
+    },
+    "0.055": {
+      "own_only": {
+        "500": {
+          "mean_energy": 0.017465167668859968,
+          "floor": 0.3298611111111111,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46348671460401314,
+          "wins_vs_own_previous": 0,
+          "wins_vs_global_previous": 1
+        },
+        "2000": {
+          "mean_energy": 0.017648990396021892,
+          "floor": 0.32523148148148145,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.463182857832991,
+          "wins_vs_own_previous": 0,
+          "wins_vs_global_previous": 2
+        }
+      },
+      "own_previous": {
+        "500": {
+          "mean_energy": 0.02168008635076649,
+          "floor": 0.3518518518518518,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.469321754040332,
+          "wins_vs_own_only": 12,
+          "wins_vs_global_previous": 10
+        },
+        "2000": {
+          "mean_energy": 0.02210922988942206,
+          "floor": 0.3443287037037037,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46852811416833196,
+          "wins_vs_own_only": 12,
+          "wins_vs_global_previous": 11
+        }
+      },
+      "neighbor_previous": {
+        "500": {
+          "mean_energy": 0.02697081746117833,
+          "floor": 0.3113425925925926,
+          "bottom_decile": 0.0003639195413406547,
+          "mean_resource": 0.47184504082748274,
+          "wins_vs_own_only": 12,
+          "wins_vs_own_previous": 12,
+          "wins_vs_global_previous": 12
+        },
+        "2000": {
+          "mean_energy": 0.028445568311962568,
+          "floor": 0.3287037037037037,
+          "bottom_decile": 0.00013689444412489434,
+          "mean_resource": 0.47268060341551016,
+          "wins_vs_own_only": 12,
+          "wins_vs_own_previous": 11,
+          "wins_vs_global_previous": 12
+        }
+      },
+      "neighbor_current": {
+        "500": {
+          "mean_energy": 0.022429873595902,
+          "floor": 0.33564814814814814,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4688908981568569,
+          "wins_vs_own_only": 11,
+          "wins_vs_own_previous": 7,
+          "wins_vs_global_previous": 10
+        },
+        "2000": {
+          "mean_energy": 0.023471642552440632,
+          "floor": 0.3136574074074074,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46836865385362886,
+          "wins_vs_own_only": 11,
+          "wins_vs_own_previous": 8,
+          "wins_vs_global_previous": 10
+        }
+      },
+      "global_previous": {
+        "500": {
+          "mean_energy": 0.01957429202312236,
+          "floor": 0.33275462962962965,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4645611021151668,
+          "wins_vs_own_only": 11,
+          "wins_vs_own_previous": 2
+        },
+        "2000": {
+          "mean_energy": 0.019372155139899008,
+          "floor": 0.3321759259259259,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4645262269181903,
+          "wins_vs_own_only": 10,
+          "wins_vs_own_previous": 1
+        }
+      },
+      "neighbor_older": {
+        "500": {
+          "mean_energy": 0.02013783826445773,
+          "floor": 0.3344907407407407,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.4664799727531361,
+          "wins_vs_own_only": 10,
+          "wins_vs_own_previous": 3,
+          "wins_vs_global_previous": 9
+        },
+        "2000": {
+          "mean_energy": 0.019918059312958925,
+          "floor": 0.3396990740740741,
+          "bottom_decile": 0.0,
+          "mean_resource": 0.46665460812478793,
+          "wins_vs_own_only": 9,
+          "wins_vs_own_previous": 3,
+          "wins_vs_global_previous": 7
+        }
+      },
+      "own_older": {
+        "500": {
+          "mean_energy": 0.028939666610459772,
+          "floor": 0.22916666666666666,
+          "bottom_decile": 7.528252872208322e-05,
+          "mean_resource": 0.4702294973566474,
+          "wins_vs_own_only": 12,
+          "wins_vs_own_previous": 12,
+          "wins_vs_global_previous": 12
+        },
+        "2000": {
+          "mean_energy": 0.029878189550440925,
+          "floor": 0.21527777777777776,
+          "bottom_decile": 0.00010416649167622288,
+          "mean_resource": 0.46732175457552416,
+          "wins_vs_own_only": 12,
+          "wins_vs_own_previous": 12,
+          "wins_vs_global_previous": 12
+        }
+      },
+      "neighbor_time_scramble": {
+        "500": {
+          "mean_energy": 0.025599558485567848,
+          "floor": 0.31365740740740744,
+          "bottom_decile": 0.00024483606361430486,
+          "mean_resource": 0.4721551298390032,
+          "wins_vs_own_only": 11,
+          "wins_vs_own_previous": 10,
+          "wins_vs_global_previous": 11
+        },
+        "2000": {
+          "mean_energy": 0.02810765513222926,
+          "floor": 0.2945601851851852,
+          "bottom_decile": 0.0005095464022966178,
+          "mean_resource": 0.46969907552656526,
+          "wins_vs_own_only": 12,
+          "wins_vs_own_previous": 11,
+          "wins_vs_global_previous": 11
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "seed": 11000,
+      "regrowth": 0.06,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.07584285471832512,
+            "floor": 0.16666666666666666,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4742102212035493
+          },
+          "2000": {
+            "mean_energy": 0.1647670700684938,
+            "floor": 0.1111111111111111,
+            "bottom_decile": 0.005939228981116264,
+            "mean_resource": 0.4741153443341657
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.060953685780732486,
+            "floor": 0.19444444444444445,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47528553372914295
+          },
+          "2000": {
+            "mean_energy": 0.10239466153932678,
+            "floor": 0.19444444444444445,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4792368293287198
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.14876866002623007,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.01198988583581724,
+            "mean_resource": 0.47573711922355283
+          },
+          "2000": {
+            "mean_energy": 0.22475777198787833,
+            "floor": 0.06944444444444445,
+            "bottom_decile": 0.023055475586367318,
+            "mean_resource": 0.47702778689108144
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.126593507003656,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.010774920724940658,
+            "mean_resource": 0.4739869550056256
+          },
+          "2000": {
+            "mean_energy": 0.2106069080155765,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.013712719314875515,
+            "mean_resource": 0.47329666543549453
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.10167973772787,
+            "floor": 0.1736111111111111,
+            "bottom_decile": 0.0038473566448020626,
+            "mean_resource": 0.47798885795834817
+          },
+          "2000": {
+            "mean_energy": 0.16645613950175414,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.009102026927491383,
+            "mean_resource": 0.47931013171529124
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.0833836317737014,
+            "floor": 0.1736111111111111,
+            "bottom_decile": 1.2240240855325464e-06,
+            "mean_resource": 0.47791238235925093
+          },
+          "2000": {
+            "mean_energy": 0.13784420177094037,
+            "floor": 0.1388888888888889,
+            "bottom_decile": 0.00581304811978602,
+            "mean_resource": 0.48261538362805706
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.06681317394099254,
+            "floor": 0.05555555555555555,
+            "bottom_decile": 0.01926321576144656,
+            "mean_resource": 0.4726405662124529
+          },
+          "2000": {
+            "mean_energy": 0.10855831951432662,
+            "floor": 0.05555555555555555,
+            "bottom_decile": 0.023235859881881784,
+            "mean_resource": 0.46742589805851215
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.13075032234404668,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.01377395298071625,
+            "mean_resource": 0.4748424121360362
+          },
+          "2000": {
+            "mean_energy": 0.22098648922964592,
+            "floor": 0.04861111111111111,
+            "bottom_decile": 0.028063303642313797,
+            "mean_resource": 0.47343552271518125
+          }
+        }
+      }
+    },
+    {
+      "seed": 11000,
+      "regrowth": 0.055,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.016122628567945635,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.465420850914293
+          },
+          "2000": {
+            "mean_energy": 0.016467953573284025,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46510150991379656
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.021880241657011416,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46930484253594407
+          },
+          "2000": {
+            "mean_energy": 0.023209770631194244,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46750233128819496
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.023846298642610984,
+            "floor": 0.3611111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47434121648013217
+          },
+          "2000": {
+            "mean_energy": 0.031069063621700404,
+            "floor": 0.2638888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4677152221183671
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.01989301444117222,
+            "floor": 0.3541666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47140220146809636
+          },
+          "2000": {
+            "mean_energy": 0.02329221233621054,
+            "floor": 0.2569444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4645360163592777
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.01842173888016015,
+            "floor": 0.3194444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46404392142957046
+          },
+          "2000": {
+            "mean_energy": 0.018284622525242503,
+            "floor": 0.3402777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46431507516871995
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.019675359213296956,
+            "floor": 0.3402777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46620736238573485
+          },
+          "2000": {
+            "mean_energy": 0.018221540257711062,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4681142396088656
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.027825001392709357,
+            "floor": 0.2569444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4741717221436701
+          },
+          "2000": {
+            "mean_energy": 0.029040075375739598,
+            "floor": 0.2361111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4715521271524224
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.03284292806304522,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.002938032763371658,
+            "mean_resource": 0.46052510140418257
+          },
+          "2000": {
+            "mean_energy": 0.02870294773207987,
+            "floor": 0.18055555555555555,
+            "bottom_decile": 0.005580501130011727,
+            "mean_resource": 0.46142405360345623
+          }
+        }
+      }
+    },
+    {
+      "seed": 11001,
+      "regrowth": 0.06,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.08547675693272784,
+            "floor": 0.1736111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47330824900334
+          },
+          "2000": {
+            "mean_energy": 0.18082821318464637,
+            "floor": 0.1388888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47677218058858944
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.07148222966634267,
+            "floor": 0.22916666666666666,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47587485977046157
+          },
+          "2000": {
+            "mean_energy": 0.12178335044022953,
+            "floor": 0.22916666666666666,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47797838509066004
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.15118177301608196,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.012156310644666678,
+            "mean_resource": 0.47869310488614303
+          },
+          "2000": {
+            "mean_energy": 0.22862823989938455,
+            "floor": 0.05555555555555555,
+            "bottom_decile": 0.0215200003306117,
+            "mean_resource": 0.4784100858310896
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.1344556463765421,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.010497914348588027,
+            "mean_resource": 0.4746524560921234
+          },
+          "2000": {
+            "mean_energy": 0.21352182543761888,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.014731667302508532,
+            "mean_resource": 0.471278790622234
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.10752871015587415,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.01140263030826386,
+            "mean_resource": 0.47236626893867023
+          },
+          "2000": {
+            "mean_energy": 0.19038869403267927,
+            "floor": 0.041666666666666664,
+            "bottom_decile": 0.024079165761098642,
+            "mean_resource": 0.4706824688971061
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.09704993784699233,
+            "floor": 0.19444444444444445,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4760285563290039
+          },
+          "2000": {
+            "mean_energy": 0.16258540571295851,
+            "floor": 0.14583333333333334,
+            "bottom_decile": 0.0035140375323668583,
+            "mean_resource": 0.47790000152074275
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.06782088265817306,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.004173602205707193,
+            "mean_resource": 0.4818410704963791
+          },
+          "2000": {
+            "mean_energy": 0.12768619811443166,
+            "floor": 0.04861111111111111,
+            "bottom_decile": 0.023180934038700897,
+            "mean_resource": 0.4717331988910048
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.14006268075323355,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.008066709610726431,
+            "mean_resource": 0.4724652557907611
+          },
+          "2000": {
+            "mean_energy": 0.22206380549643878,
+            "floor": 0.020833333333333332,
+            "bottom_decile": 0.03652663941397511,
+            "mean_resource": 0.4700828144028836
+          }
+        }
+      }
+    },
+    {
+      "seed": 11001,
+      "regrowth": 0.055,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.015772191446323993,
+            "floor": 0.3541666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46621387623996813
+          },
+          "2000": {
+            "mean_energy": 0.016119303757906475,
+            "floor": 0.3541666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46588399141345566
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.022689132738859325,
+            "floor": 0.3125,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46755493169386103
+          },
+          "2000": {
+            "mean_energy": 0.019663401287620466,
+            "floor": 0.3611111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4719927680950775
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.02570972447716919,
+            "floor": 0.4166666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47959664558945886
+          },
+          "2000": {
+            "mean_energy": 0.03640329000972555,
+            "floor": 0.2638888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4698786314885951
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.026993761794390857,
+            "floor": 0.2708333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46459102951007913
+          },
+          "2000": {
+            "mean_energy": 0.026091386076320052,
+            "floor": 0.3194444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4681282502656497
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.01964692072835703,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46470044847825115
+          },
+          "2000": {
+            "mean_energy": 0.01916804460750754,
+            "floor": 0.3402777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46361334563342893
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.02124125180434695,
+            "floor": 0.3333333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46747747110179677
+          },
+          "2000": {
+            "mean_energy": 0.02047202803295582,
+            "floor": 0.3125,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4640640630786619
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.03040405961059249,
+            "floor": 0.1875,
+            "bottom_decile": 0.0003431228031978055,
+            "mean_resource": 0.4671009543840349
+          },
+          "2000": {
+            "mean_energy": 0.030209434227241698,
+            "floor": 0.19444444444444445,
+            "bottom_decile": 7.527600098814983e-05,
+            "mean_resource": 0.4657025977800382
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.026319345977141965,
+            "floor": 0.3541666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4739665395965229
+          },
+          "2000": {
+            "mean_energy": 0.024886360643522606,
+            "floor": 0.375,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4747096003700116
+          }
+        }
+      }
+    },
+    {
+      "seed": 11002,
+      "regrowth": 0.06,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.0866933460936884,
+            "floor": 0.1388888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4731622451087037
+          },
+          "2000": {
+            "mean_energy": 0.18091180191394873,
+            "floor": 0.1527777777777778,
+            "bottom_decile": 0.0014824370175859764,
+            "mean_resource": 0.4752664900584878
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.07379049361631146,
+            "floor": 0.2361111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47323565930447387
+          },
+          "2000": {
+            "mean_energy": 0.120076311014491,
+            "floor": 0.24305555555555555,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4802359121642891
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.14899490447520083,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.012709488037184025,
+            "mean_resource": 0.47991720185240105
+          },
+          "2000": {
+            "mean_energy": 0.23330100602520876,
+            "floor": 0.0625,
+            "bottom_decile": 0.027787605853836394,
+            "mean_resource": 0.4781106221267684
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.13552675584882937,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.016469199022349133,
+            "mean_resource": 0.47360691082664136
+          },
+          "2000": {
+            "mean_energy": 0.21781819191174298,
+            "floor": 0.1111111111111111,
+            "bottom_decile": 0.009483431970432856,
+            "mean_resource": 0.4777368819175691
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.12237393932470805,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.006850071038338645,
+            "mean_resource": 0.4699897734697143
+          },
+          "2000": {
+            "mean_energy": 0.20567934136977586,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.011396613746834925,
+            "mean_resource": 0.4770344337841243
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.09559865320580986,
+            "floor": 0.1388888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4778188619864418
+          },
+          "2000": {
+            "mean_energy": 0.15971749141205527,
+            "floor": 0.1597222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.48164609711768797
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.07990821167198994,
+            "floor": 0.1111111111111111,
+            "bottom_decile": 0.004205382896135361,
+            "mean_resource": 0.4664714379446015
+          },
+          "2000": {
+            "mean_energy": 0.12572900022458444,
+            "floor": 0.06944444444444445,
+            "bottom_decile": 0.01849604792271285,
+            "mean_resource": 0.471784603563808
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.1376869275161788,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.008709709613147137,
+            "mean_resource": 0.47424391460720905
+          },
+          "2000": {
+            "mean_energy": 0.22063111617840306,
+            "floor": 0.05555555555555555,
+            "bottom_decile": 0.02365318348816699,
+            "mean_resource": 0.48196880461880326
+          }
+        }
+      }
+    },
+    {
+      "seed": 11002,
+      "regrowth": 0.055,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.015928821187857822,
+            "floor": 0.3402777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4653716197245694
+          },
+          "2000": {
+            "mean_energy": 0.015439392429784609,
+            "floor": 0.3541666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46615022368336195
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.022549228714899047,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46863840450637834
+          },
+          "2000": {
+            "mean_energy": 0.022532869275545764,
+            "floor": 0.3194444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4674213885685765
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.025044540053480495,
+            "floor": 0.4166666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4787387276863098
+          },
+          "2000": {
+            "mean_energy": 0.027640397217131532,
+            "floor": 0.5,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4835074178512444
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.026004548789294445,
+            "floor": 0.3333333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4691050649362823
+          },
+          "2000": {
+            "mean_energy": 0.030287408686028233,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4703093410445391
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.018601269918607936,
+            "floor": 0.3680555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4663418972758755
+          },
+          "2000": {
+            "mean_energy": 0.018667340889286694,
+            "floor": 0.375,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.466400817628271
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.022701433190316138,
+            "floor": 0.2916666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4649361758201298
+          },
+          "2000": {
+            "mean_energy": 0.023564868718697948,
+            "floor": 0.3541666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46642978869689533
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.027207742815516314,
+            "floor": 0.2569444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4752245827799047
+          },
+          "2000": {
+            "mean_energy": 0.02980902186306767,
+            "floor": 0.2222222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46878510367192366
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.029257216121986458,
+            "floor": 0.2708333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4684233775339568
+          },
+          "2000": {
+            "mean_energy": 0.03444632860034204,
+            "floor": 0.3194444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4710696346166166
+          }
+        }
+      }
+    },
+    {
+      "seed": 11003,
+      "regrowth": 0.06,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.08266358980664248,
+            "floor": 0.125,
+            "bottom_decile": 0.004155367257728897,
+            "mean_resource": 0.4703610992066129
+          },
+          "2000": {
+            "mean_energy": 0.16805228119381344,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.020682769959301066,
+            "mean_resource": 0.4767284523705617
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.0649955402953825,
+            "floor": 0.2013888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47693940669325513
+          },
+          "2000": {
+            "mean_energy": 0.10988197129200743,
+            "floor": 0.18055555555555555,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4781087212526011
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.13817705053107976,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.011424488480530591,
+            "mean_resource": 0.4756719201500166
+          },
+          "2000": {
+            "mean_energy": 0.21104346631551624,
+            "floor": 0.041666666666666664,
+            "bottom_decile": 0.016639922590741953,
+            "mean_resource": 0.4812620193081496
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.1235559941673542,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.016059676759977756,
+            "mean_resource": 0.473201710490238
+          },
+          "2000": {
+            "mean_energy": 0.20198488685552513,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.016633996459221125,
+            "mean_resource": 0.47642322748354243
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.11495084107720085,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.012180688770299535,
+            "mean_resource": 0.47154893923349994
+          },
+          "2000": {
+            "mean_energy": 0.1778790138492529,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.018101690753229878,
+            "mean_resource": 0.47306342191261536
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.08775786657128407,
+            "floor": 0.13194444444444445,
+            "bottom_decile": 0.004200039060803006,
+            "mean_resource": 0.47594677027870663
+          },
+          "2000": {
+            "mean_energy": 0.1495384507900999,
+            "floor": 0.125,
+            "bottom_decile": 0.005587675896600865,
+            "mean_resource": 0.4795904199820813
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.07238692771036898,
+            "floor": 0.04861111111111111,
+            "bottom_decile": 0.019274713066355937,
+            "mean_resource": 0.47058767608204416
+          },
+          "2000": {
+            "mean_energy": 0.11641620877094952,
+            "floor": 0.041666666666666664,
+            "bottom_decile": 0.023361202319321664,
+            "mean_resource": 0.4702978012276695
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.12815287335328637,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.011832422898192148,
+            "mean_resource": 0.4729929480703407
+          },
+          "2000": {
+            "mean_energy": 0.20398827972441536,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.02421749775087361,
+            "mean_resource": 0.4839092651392488
+          }
+        }
+      }
+    },
+    {
+      "seed": 11003,
+      "regrowth": 0.055,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.020446264379780865,
+            "floor": 0.2777777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4590555040637317
+          },
+          "2000": {
+            "mean_energy": 0.020083604866107115,
+            "floor": 0.2777777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46006187983663005
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.02317136269307897,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46717652754493444
+          },
+          "2000": {
+            "mean_energy": 0.023722524709261273,
+            "floor": 0.2777777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46492914799487284
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.029074581153187364,
+            "floor": 0.22916666666666666,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4681744435368491
+          },
+          "2000": {
+            "mean_energy": 0.027577428710049232,
+            "floor": 0.2777777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4691924188452769
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.023956707283002147,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4652183548663257
+          },
+          "2000": {
+            "mean_energy": 0.020551536577546235,
+            "floor": 0.3819444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.470853808745963
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.01921046138250443,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4660359583830892
+          },
+          "2000": {
+            "mean_energy": 0.020930112055733394,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.462841378919877
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.019238399173971635,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46715165992473573
+          },
+          "2000": {
+            "mean_energy": 0.01826536540060778,
+            "floor": 0.3611111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46806996374313076
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.030782611761852305,
+            "floor": 0.1597222222222222,
+            "bottom_decile": 0.0001273489599731573,
+            "mean_resource": 0.4676622217749374
+          },
+          "2000": {
+            "mean_energy": 0.03240719379969094,
+            "floor": 0.1388888888888889,
+            "bottom_decile": 0.0008764800372514554,
+            "mean_resource": 0.4624668165311745
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.024495755982078773,
+            "floor": 0.3541666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46976125449498163
+          },
+          "2000": {
+            "mean_energy": 0.026202496924151844,
+            "floor": 0.2638888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46915857517358917
+          }
+        }
+      }
+    },
+    {
+      "seed": 11004,
+      "regrowth": 0.06,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.07629793407676329,
+            "floor": 0.1527777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4712890819751774
+          },
+          "2000": {
+            "mean_energy": 0.16079100610808084,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.02005405717770029,
+            "mean_resource": 0.4740882626830061
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.058261740275663144,
+            "floor": 0.24305555555555555,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47854345214004496
+          },
+          "2000": {
+            "mean_energy": 0.1036595231370592,
+            "floor": 0.19444444444444445,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4739713780535307
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.12403283958116479,
+            "floor": 0.0625,
+            "bottom_decile": 0.013436083354759718,
+            "mean_resource": 0.4796555226968427
+          },
+          "2000": {
+            "mean_energy": 0.19807045778544563,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.01186448134699171,
+            "mean_resource": 0.48579860678152603
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.11682563591596207,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.02462003235432265,
+            "mean_resource": 0.4677525616311741
+          },
+          "2000": {
+            "mean_energy": 0.184611356190085,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.012755639358115422,
+            "mean_resource": 0.481170330098697
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.10082628450348073,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.012621878615741685,
+            "mean_resource": 0.476993321611217
+          },
+          "2000": {
+            "mean_energy": 0.19056435646607206,
+            "floor": 0.05555555555555555,
+            "bottom_decile": 0.017184127692139485,
+            "mean_resource": 0.47144448495754837
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.07616860243493113,
+            "floor": 0.19444444444444445,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4783142658318936
+          },
+          "2000": {
+            "mean_energy": 0.13570914968154113,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.015066933019318912,
+            "mean_resource": 0.47974875678309975
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.06466105726622727,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.004943358435365507,
+            "mean_resource": 0.476963032231593
+          },
+          "2000": {
+            "mean_energy": 0.10714411682754271,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.018125354693327368,
+            "mean_resource": 0.47378539783888285
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.11927179464861555,
+            "floor": 0.04861111111111111,
+            "bottom_decile": 0.01663578004093998,
+            "mean_resource": 0.4799111129919776
+          },
+          "2000": {
+            "mean_energy": 0.20462888408534477,
+            "floor": 0.020833333333333332,
+            "bottom_decile": 0.030115142246932552,
+            "mean_resource": 0.4682831737470332
+          }
+        }
+      }
+    },
+    {
+      "seed": 11004,
+      "regrowth": 0.055,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.018246133443644893,
+            "floor": 0.3611111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46288789466191577
+          },
+          "2000": {
+            "mean_energy": 0.019704998178607148,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4608267535049932
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.018938664656367288,
+            "floor": 0.4236111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47381240624904486
+          },
+          "2000": {
+            "mean_energy": 0.021621197463105212,
+            "floor": 0.3819444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4706602371869629
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.026022801755101552,
+            "floor": 0.24305555555555555,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4689381463309547
+          },
+          "2000": {
+            "mean_energy": 0.03339507192958082,
+            "floor": 0.14583333333333334,
+            "bottom_decile": 0.0012908605265052322,
+            "mean_resource": 0.4613256529205325
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.018331587930854074,
+            "floor": 0.3888888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.472385645733575
+          },
+          "2000": {
+            "mean_energy": 0.01435118182415073,
+            "floor": 0.5069444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47828876106193047
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.019604988018161573,
+            "floor": 0.3333333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46431469800304115
+          },
+          "2000": {
+            "mean_energy": 0.018670969602093246,
+            "floor": 0.3333333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4659377429202457
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.019690854232870366,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46660549757197445
+          },
+          "2000": {
+            "mean_energy": 0.018248579021593436,
+            "floor": 0.375,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4678153724973549
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.03190985174095148,
+            "floor": 0.19444444444444445,
+            "bottom_decile": 0.00015959367841667207,
+            "mean_resource": 0.46613237630392756
+          },
+          "2000": {
+            "mean_energy": 0.030935738495693754,
+            "floor": 0.2013888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4660043682418997
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.01678990089694895,
+            "floor": 0.4583333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.48751357876477086
+          },
+          "2000": {
+            "mean_energy": 0.03147728171722622,
+            "floor": 0.1736111111111111,
+            "bottom_decile": 0.0005340556975476868,
+            "mean_resource": 0.46358698944067595
+          }
+        }
+      }
+    },
+    {
+      "seed": 11005,
+      "regrowth": 0.06,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.0810250934653992,
+            "floor": 0.2013888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47406167396806864
+          },
+          "2000": {
+            "mean_energy": 0.16137252858520618,
+            "floor": 0.1597222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4769039666240739
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.0650632027453459,
+            "floor": 0.2916666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47743589147106075
+          },
+          "2000": {
+            "mean_energy": 0.10678749909380929,
+            "floor": 0.20833333333333334,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4782320929190607
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.1394077031427785,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.018082670272886278,
+            "mean_resource": 0.4764586180885797
+          },
+          "2000": {
+            "mean_energy": 0.20750791994736995,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.021948235421572985,
+            "mean_resource": 0.47904219992194336
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.12391635803466065,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.010346282945535445,
+            "mean_resource": 0.47378808491239766
+          },
+          "2000": {
+            "mean_energy": 0.1935889323062301,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.008667137741637047,
+            "mean_resource": 0.47814794247735015
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.11089655062041065,
+            "floor": 0.1111111111111111,
+            "bottom_decile": 0.00844974022032475,
+            "mean_resource": 0.47368379857565884
+          },
+          "2000": {
+            "mean_energy": 0.17474740201501754,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.010014777670225777,
+            "mean_resource": 0.4786194399977993
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.08648464211369494,
+            "floor": 0.1875,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4795118020432858
+          },
+          "2000": {
+            "mean_energy": 0.14238965269325052,
+            "floor": 0.1527777777777778,
+            "bottom_decile": 0.0019431599701274244,
+            "mean_resource": 0.4822791322152974
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.07416131978178774,
+            "floor": 0.0625,
+            "bottom_decile": 0.01855822904625631,
+            "mean_resource": 0.467923519004984
+          },
+          "2000": {
+            "mean_energy": 0.11648235995392581,
+            "floor": 0.041666666666666664,
+            "bottom_decile": 0.025923889554422475,
+            "mean_resource": 0.4668653224800596
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.1265763245417751,
+            "floor": 0.13194444444444445,
+            "bottom_decile": 0.004020306241070872,
+            "mean_resource": 0.4819820776618231
+          },
+          "2000": {
+            "mean_energy": 0.21307788946610703,
+            "floor": 0.027777777777777776,
+            "bottom_decile": 0.027866069064032946,
+            "mean_resource": 0.47258717187888305
+          }
+        }
+      }
+    },
+    {
+      "seed": 11005,
+      "regrowth": 0.055,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.015599141940031487,
+            "floor": 0.3958333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46657210200275284
+          },
+          "2000": {
+            "mean_energy": 0.015354210040569062,
+            "floor": 0.4027777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4668281958718409
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.021420812293532803,
+            "floor": 0.3680555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47032743051414827
+          },
+          "2000": {
+            "mean_energy": 0.02118399589546135,
+            "floor": 0.375,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4705324446130585
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.02451551528458481,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47172412871923874
+          },
+          "2000": {
+            "mean_energy": 0.026447889044119197,
+            "floor": 0.4375,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4756308171674686
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.02354444028469004,
+            "floor": 0.2847222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4677672882192737
+          },
+          "2000": {
+            "mean_energy": 0.021869367953980933,
+            "floor": 0.3333333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4730850875294412
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.019064810346407297,
+            "floor": 0.3333333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4662156575669187
+          },
+          "2000": {
+            "mean_energy": 0.01899743797123167,
+            "floor": 0.3402777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46507158121590564
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.018793300243835104,
+            "floor": 0.3402777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4674572700689787
+          },
+          "2000": {
+            "mean_energy": 0.019880107515819645,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46514273284291174
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.028330494401991462,
+            "floor": 0.2222222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46946848618991194
+          },
+          "2000": {
+            "mean_energy": 0.027188910432210087,
+            "floor": 0.20833333333333334,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4697744633381803
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.0285789786343496,
+            "floor": 0.2916666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4691393032967647
+          },
+          "2000": {
+            "mean_energy": 0.029596389510252244,
+            "floor": 0.2777777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4690686812569473
+          }
+        }
+      }
+    },
+    {
+      "seed": 11006,
+      "regrowth": 0.06,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.07955917921166446,
+            "floor": 0.18055555555555555,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47450587061244864
+          },
+          "2000": {
+            "mean_energy": 0.16171356317166408,
+            "floor": 0.1388888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4767710177574508
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.06298454566755944,
+            "floor": 0.24305555555555555,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47643385171412234
+          },
+          "2000": {
+            "mean_energy": 0.10542597762251354,
+            "floor": 0.1875,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4759376799464068
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.13458411608487517,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.020740121555165532,
+            "mean_resource": 0.47665174811256134
+          },
+          "2000": {
+            "mean_energy": 0.20319361840339312,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.01470691138393995,
+            "mean_resource": 0.47881102392264513
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.11643647330100884,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.015582112863776167,
+            "mean_resource": 0.4760442205471292
+          },
+          "2000": {
+            "mean_energy": 0.1906312495298678,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.018012501482345344,
+            "mean_resource": 0.4739129702768516
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.0960841621969258,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.012000801174194367,
+            "mean_resource": 0.47179863892997775
+          },
+          "2000": {
+            "mean_energy": 0.15873072647113734,
+            "floor": 0.0625,
+            "bottom_decile": 0.019605090382093456,
+            "mean_resource": 0.4736443086013643
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.08298251854076609,
+            "floor": 0.2152777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.479960291480437
+          },
+          "2000": {
+            "mean_energy": 0.13908649339938933,
+            "floor": 0.125,
+            "bottom_decile": 0.00016620688049291842,
+            "mean_resource": 0.48366473475116695
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.06463502484589727,
+            "floor": 0.1388888888888889,
+            "bottom_decile": 0.0044180825386246,
+            "mean_resource": 0.4771261473583739
+          },
+          "2000": {
+            "mean_energy": 0.11709865544108305,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.009633754628839376,
+            "mean_resource": 0.4698182700233933
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.1276519963829354,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.015445980304601014,
+            "mean_resource": 0.47632404927518857
+          },
+          "2000": {
+            "mean_energy": 0.2027426526387073,
+            "floor": 0.06944444444444445,
+            "bottom_decile": 0.023372336515088903,
+            "mean_resource": 0.48115891107132985
+          }
+        }
+      }
+    },
+    {
+      "seed": 11006,
+      "regrowth": 0.055,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.017532038951825497,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4637573476228813
+          },
+          "2000": {
+            "mean_energy": 0.018016047197580112,
+            "floor": 0.2847222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4626766543210581
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.0213281959881831,
+            "floor": 0.3402777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4706219760089891
+          },
+          "2000": {
+            "mean_energy": 0.022774487614545542,
+            "floor": 0.3194444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4688736277212164
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.028346119160272736,
+            "floor": 0.2847222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46982566396153913
+          },
+          "2000": {
+            "mean_energy": 0.025544013473452854,
+            "floor": 0.3333333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4726640301745031
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.023358427528284834,
+            "floor": 0.2777777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4683868495780536
+          },
+          "2000": {
+            "mean_energy": 0.024028983298003882,
+            "floor": 0.2777777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4663382134113952
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.019873016831691796,
+            "floor": 0.3194444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46456086103000377
+          },
+          "2000": {
+            "mean_energy": 0.01870759916352973,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4643743690922623
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.021128137808556796,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46576470563950345
+          },
+          "2000": {
+            "mean_energy": 0.021339415845365268,
+            "floor": 0.3125,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46718721781653183
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.02911020120896557,
+            "floor": 0.2222222222222222,
+            "bottom_decile": 0.00020639615314599222,
+            "mean_resource": 0.47054924755117494
+          },
+          "2000": {
+            "mean_energy": 0.03094032913100035,
+            "floor": 0.19444444444444445,
+            "bottom_decile": 0.0002982418618750693,
+            "mean_resource": 0.46693367256897467
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.021619279249835796,
+            "floor": 0.375,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4768621373755289
+          },
+          "2000": {
+            "mean_energy": 0.033420170715296335,
+            "floor": 0.18055555555555555,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4628162614437724
+          }
+        }
+      }
+    },
+    {
+      "seed": 11007,
+      "regrowth": 0.06,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.08107432835278423,
+            "floor": 0.1736111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47367816925018613
+          },
+          "2000": {
+            "mean_energy": 0.1646869943712677,
+            "floor": 0.13194444444444445,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4795326669674452
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.06225554953522044,
+            "floor": 0.2152777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4753199565932385
+          },
+          "2000": {
+            "mean_energy": 0.10448050451360681,
+            "floor": 0.18055555555555555,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47405025346880614
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.13198043190224773,
+            "floor": 0.06944444444444445,
+            "bottom_decile": 0.020622421791216785,
+            "mean_resource": 0.47550623909596823
+          },
+          "2000": {
+            "mean_energy": 0.18739825628720178,
+            "floor": 0.0625,
+            "bottom_decile": 0.014640521198986406,
+            "mean_resource": 0.4812447097318895
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.11586152561404917,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.010896599535552397,
+            "mean_resource": 0.47474232317492987
+          },
+          "2000": {
+            "mean_energy": 0.1845177304899503,
+            "floor": 0.05555555555555555,
+            "bottom_decile": 0.02190619478475577,
+            "mean_resource": 0.4737233714555427
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.12191877081531727,
+            "floor": 0.0625,
+            "bottom_decile": 0.017376067015097658,
+            "mean_resource": 0.47067276627442595
+          },
+          "2000": {
+            "mean_energy": 0.18715651637884773,
+            "floor": 0.06944444444444445,
+            "bottom_decile": 0.01651725167699687,
+            "mean_resource": 0.47263035145202004
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.08275633965903156,
+            "floor": 0.1597222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47586703807040576
+          },
+          "2000": {
+            "mean_energy": 0.1356132520951509,
+            "floor": 0.1388888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.48331405319572557
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.07060829737063012,
+            "floor": 0.04861111111111111,
+            "bottom_decile": 0.02208222178067855,
+            "mean_resource": 0.46938401128287705
+          },
+          "2000": {
+            "mean_energy": 0.11552358491693088,
+            "floor": 0.027777777777777776,
+            "bottom_decile": 0.026825622636575275,
+            "mean_resource": 0.4690634029783374
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.12492309334867392,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.020184470479832087,
+            "mean_resource": 0.4735122829004259
+          },
+          "2000": {
+            "mean_energy": 0.18387061292277296,
+            "floor": 0.06944444444444445,
+            "bottom_decile": 0.018092284234473614,
+            "mean_resource": 0.48397581776586474
+          }
+        }
+      }
+    },
+    {
+      "seed": 11007,
+      "regrowth": 0.055,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.0173316106934609,
+            "floor": 0.3680555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.463398827114873
+          },
+          "2000": {
+            "mean_energy": 0.01697232638341964,
+            "floor": 0.3680555555555556,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46400443521159396
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.019553044133501285,
+            "floor": 0.4444444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4730837375109418
+          },
+          "2000": {
+            "mean_energy": 0.024170171970425362,
+            "floor": 0.3611111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4661946464869072
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.02915176453820549,
+            "floor": 0.2847222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4677720701877121
+          },
+          "2000": {
+            "mean_energy": 0.02890106042688151,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4736974389759225
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.019288785381853565,
+            "floor": 0.3541666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47313397190115125
+          },
+          "2000": {
+            "mean_energy": 0.02171380018617426,
+            "floor": 0.2847222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46704349930675587
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.019191613511211028,
+            "floor": 0.3611111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46655689773137815
+          },
+          "2000": {
+            "mean_energy": 0.021601023744370635,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4645538096633517
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.02105925641623292,
+            "floor": 0.2916666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4647880087299144
+          },
+          "2000": {
+            "mean_energy": 0.01806417667252855,
+            "floor": 0.3333333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46746525813539413
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.029412942320085275,
+            "floor": 0.20833333333333334,
+            "bottom_decile": 6.692874993137146e-05,
+            "mean_resource": 0.47021396954534467
+          },
+          "2000": {
+            "mean_energy": 0.03041584798731977,
+            "floor": 0.2152777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4680664207467251
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.026514303031479274,
+            "floor": 0.2152777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4707425175177873
+          },
+          "2000": {
+            "mean_energy": 0.020745459066903307,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.478416819365107
+          }
+        }
+      }
+    },
+    {
+      "seed": 11008,
+      "regrowth": 0.06,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.07434170605530784,
+            "floor": 0.16666666666666666,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47192844446904814
+          },
+          "2000": {
+            "mean_energy": 0.15245883312213981,
+            "floor": 0.1597222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47432437333062283
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.06359886077345671,
+            "floor": 0.1875,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47195106788712393
+          },
+          "2000": {
+            "mean_energy": 0.10256055816924664,
+            "floor": 0.1875,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47096052649609077
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.12362374164231785,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.009065760123712728,
+            "mean_resource": 0.4770821647504005
+          },
+          "2000": {
+            "mean_energy": 0.19949163330198638,
+            "floor": 0.041666666666666664,
+            "bottom_decile": 0.027103566931050874,
+            "mean_resource": 0.4758319125453452
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.10633899912271912,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.011961393479758489,
+            "mean_resource": 0.470851237137187
+          },
+          "2000": {
+            "mean_energy": 0.18227444356930259,
+            "floor": 0.05555555555555555,
+            "bottom_decile": 0.021146499489823087,
+            "mean_resource": 0.47111040799837844
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.09303840591910378,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.011929375667226363,
+            "mean_resource": 0.47131488881394623
+          },
+          "2000": {
+            "mean_energy": 0.14483407022559971,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.01502300361498825,
+            "mean_resource": 0.4746239023966161
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.07802911251914572,
+            "floor": 0.1527777777777778,
+            "bottom_decile": 0.00399337989507493,
+            "mean_resource": 0.4759719404266578
+          },
+          "2000": {
+            "mean_energy": 0.13696145388656986,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.006668764393483616,
+            "mean_resource": 0.47811120509964283
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.0650863689988044,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.009259581608927397,
+            "mean_resource": 0.4747620162388571
+          },
+          "2000": {
+            "mean_energy": 0.10393576892485742,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.016159673193153513,
+            "mean_resource": 0.4685626757277842
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.11254494374285799,
+            "floor": 0.1111111111111111,
+            "bottom_decile": 0.009119821605856506,
+            "mean_resource": 0.47927288014532404
+          },
+          "2000": {
+            "mean_energy": 0.1988874176019901,
+            "floor": 0.027777777777777776,
+            "bottom_decile": 0.02931263547095846,
+            "mean_resource": 0.4676197541319325
+          }
+        }
+      }
+    },
+    {
+      "seed": 11008,
+      "regrowth": 0.055,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.018881662474585895,
+            "floor": 0.2847222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46144164820642114
+          },
+          "2000": {
+            "mean_energy": 0.018673654397940505,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4615150427325278
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.022364931023258854,
+            "floor": 0.3125,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46647149426331286
+          },
+          "2000": {
+            "mean_energy": 0.02308492609691569,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.465549846294912
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.024995626315707904,
+            "floor": 0.3402777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4714986840834463
+          },
+          "2000": {
+            "mean_energy": 0.024470402039572167,
+            "floor": 0.3194444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47193884463679986
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.025416635891001786,
+            "floor": 0.2847222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46078570447892175
+          },
+          "2000": {
+            "mean_energy": 0.02273678413226185,
+            "floor": 0.2569444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46512957609860156
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.02242870953617754,
+            "floor": 0.2847222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4611334600233003
+          },
+          "2000": {
+            "mean_energy": 0.02048803289263561,
+            "floor": 0.3125,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4638810573800732
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.01790848196915221,
+            "floor": 0.3888888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4694548544173267
+          },
+          "2000": {
+            "mean_energy": 0.018299052322059965,
+            "floor": 0.375,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46844228341244176
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.027592181926913224,
+            "floor": 0.2569444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47299125939899966
+          },
+          "2000": {
+            "mean_energy": 0.02889375484628445,
+            "floor": 0.2708333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4705517324998058
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.023273064710627265,
+            "floor": 0.3194444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47363703953938735
+          },
+          "2000": {
+            "mean_energy": 0.02844307381107246,
+            "floor": 0.3125,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4623800404336629
+          }
+        }
+      }
+    },
+    {
+      "seed": 11009,
+      "regrowth": 0.06,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.08105198813865541,
+            "floor": 0.1388888888888889,
+            "bottom_decile": 0.0006708912893161814,
+            "mean_resource": 0.46959073497842535
+          },
+          "2000": {
+            "mean_energy": 0.15379057809618069,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.012518704105557703,
+            "mean_resource": 0.47546735183349337
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.06602500350395474,
+            "floor": 0.22916666666666666,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47435363929114605
+          },
+          "2000": {
+            "mean_energy": 0.10559170181369172,
+            "floor": 0.19444444444444445,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47470553758507283
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.1241357612243485,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.010496884005577928,
+            "mean_resource": 0.4772559439433124
+          },
+          "2000": {
+            "mean_energy": 0.18246847653525164,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.015295865990091721,
+            "mean_resource": 0.4815991327062912
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.11415782181245504,
+            "floor": 0.1111111111111111,
+            "bottom_decile": 0.008185299215330604,
+            "mean_resource": 0.4704106853163961
+          },
+          "2000": {
+            "mean_energy": 0.17201039864421108,
+            "floor": 0.0625,
+            "bottom_decile": 0.018001940842652504,
+            "mean_resource": 0.472233560336248
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.08724426442124257,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.009987878106589151,
+            "mean_resource": 0.47689049645708437
+          },
+          "2000": {
+            "mean_energy": 0.13176869374199932,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.01089895233098136,
+            "mean_resource": 0.4726856525940616
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.07702364252123918,
+            "floor": 0.14583333333333334,
+            "bottom_decile": 0.0008989425892344324,
+            "mean_resource": 0.4800318170378387
+          },
+          "2000": {
+            "mean_energy": 0.12978315159337578,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.010526542773941059,
+            "mean_resource": 0.47980380075498275
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.06992398535176972,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.01801497309009852,
+            "mean_resource": 0.47717508539718917
+          },
+          "2000": {
+            "mean_energy": 0.11029783097807895,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.01959769995489505,
+            "mean_resource": 0.47561412504618095
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.1229268918671696,
+            "floor": 0.027777777777777776,
+            "bottom_decile": 0.027661012515197113,
+            "mean_resource": 0.46592420315654937
+          },
+          "2000": {
+            "mean_energy": 0.17714827713699172,
+            "floor": 0.06944444444444445,
+            "bottom_decile": 0.013615430331222728,
+            "mean_resource": 0.4850498796730975
+          }
+        }
+      }
+    },
+    {
+      "seed": 11009,
+      "regrowth": 0.055,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.01858232582723513,
+            "floor": 0.2847222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4615061011462459
+          },
+          "2000": {
+            "mean_energy": 0.019302254970690366,
+            "floor": 0.2708333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46033913073648386
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.02315872623280403,
+            "floor": 0.3194444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4659326267347661
+          },
+          "2000": {
+            "mean_energy": 0.023286986647382896,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46703897616486206
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.03325398683618584,
+            "floor": 0.13194444444444445,
+            "bottom_decile": 0.004367034496087856,
+            "mean_resource": 0.4648568801033014
+          },
+          "2000": {
+            "mean_energy": 0.02281436312525213,
+            "floor": 0.4097222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4793526734718863
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.021387735911251562,
+            "floor": 0.4027777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46902901734080843
+          },
+          "2000": {
+            "mean_energy": 0.023615262658714015,
+            "floor": 0.24305555555555555,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4662513148507295
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.01926947558172172,
+            "floor": 0.3402777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46444037835996177
+          },
+          "2000": {
+            "mean_energy": 0.019449700168891002,
+            "floor": 0.3541666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4644726012170557
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.019407883920613028,
+            "floor": 0.3194444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4649307510371757
+          },
+          "2000": {
+            "mean_energy": 0.020258977391069008,
+            "floor": 0.3194444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4641179028076022
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.028749390670558744,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47021428507643726
+          },
+          "2000": {
+            "mean_energy": 0.029618247331452033,
+            "floor": 0.2222222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.466293007986641
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.026770763515482045,
+            "floor": 0.3333333333333333,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4725749499055644
+          },
+          "2000": {
+            "mean_energy": 0.02992511987153844,
+            "floor": 0.3125,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.468566421444826
+          }
+        }
+      }
+    },
+    {
+      "seed": 11010,
+      "regrowth": 0.06,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.0796525626258674,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.0002521733022850274,
+            "mean_resource": 0.4719240662446449
+          },
+          "2000": {
+            "mean_energy": 0.1634451879704684,
+            "floor": 0.11805555555555555,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4756919363781551
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.060141335711425464,
+            "floor": 0.20833333333333334,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4755522183252001
+          },
+          "2000": {
+            "mean_energy": 0.09867994108948436,
+            "floor": 0.13194444444444445,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47639055177499173
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.13534813559049785,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.01106221040623175,
+            "mean_resource": 0.4810786631630519
+          },
+          "2000": {
+            "mean_energy": 0.20508013283587193,
+            "floor": 0.027777777777777776,
+            "bottom_decile": 0.027302665697895172,
+            "mean_resource": 0.4728990000571598
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.12127991224660711,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.009169163576685745,
+            "mean_resource": 0.4712670685991252
+          },
+          "2000": {
+            "mean_energy": 0.183989831003041,
+            "floor": 0.09722222222222222,
+            "bottom_decile": 0.010774574234817808,
+            "mean_resource": 0.4803711714378632
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.10677527098893944,
+            "floor": 0.1111111111111111,
+            "bottom_decile": 0.006987975020435721,
+            "mean_resource": 0.4776084867655937
+          },
+          "2000": {
+            "mean_energy": 0.1888503042393883,
+            "floor": 0.04861111111111111,
+            "bottom_decile": 0.02573635043473579,
+            "mean_resource": 0.4708704722353654
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.08733161123324791,
+            "floor": 0.1597222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4790203848203585
+          },
+          "2000": {
+            "mean_energy": 0.14361574814276812,
+            "floor": 0.06944444444444445,
+            "bottom_decile": 0.021177100572519238,
+            "mean_resource": 0.47871632912439793
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.06570961602843042,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.01605900114646604,
+            "mean_resource": 0.47471409078229126
+          },
+          "2000": {
+            "mean_energy": 0.10358478689609828,
+            "floor": 0.06944444444444445,
+            "bottom_decile": 0.023296693291261265,
+            "mean_resource": 0.4717234653973198
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.13085759895610727,
+            "floor": 0.013888888888888888,
+            "bottom_decile": 0.02883190405659463,
+            "mean_resource": 0.4731076671484335
+          },
+          "2000": {
+            "mean_energy": 0.19002245412992297,
+            "floor": 0.0763888888888889,
+            "bottom_decile": 0.021430879181858285,
+            "mean_resource": 0.48095389874316474
+          }
+        }
+      }
+    },
+    {
+      "seed": 11010,
+      "regrowth": 0.055,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.017278987766264645,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46362599725807957
+          },
+          "2000": {
+            "mean_energy": 0.017715943784024683,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4625756921309928
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.021667370074812807,
+            "floor": 0.3541666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46868212262829456
+          },
+          "2000": {
+            "mean_energy": 0.018989733225952155,
+            "floor": 0.4097222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47182887849937594
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.030167135779669778,
+            "floor": 0.2916666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4706747061715341
+          },
+          "2000": {
+            "mean_energy": 0.0334726398107288,
+            "floor": 0.2569444444444444,
+            "bottom_decile": 0.0003518728029934999,
+            "mean_resource": 0.46957164562590886
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.023259019124450043,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4701275914125715
+          },
+          "2000": {
+            "mean_energy": 0.027504258442632133,
+            "floor": 0.3611111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4676959843491285
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.021305394960718663,
+            "floor": 0.2916666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46272490385223464
+          },
+          "2000": {
+            "mean_energy": 0.019822486886404395,
+            "floor": 0.3194444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4643947062828977
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.020694156255573207,
+            "floor": 0.3611111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46768907596547904
+          },
+          "2000": {
+            "mean_energy": 0.022964661574262905,
+            "floor": 0.3402777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46813246379286866
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.028117280360714463,
+            "floor": 0.2361111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47024969884295664
+          },
+          "2000": {
+            "mean_energy": 0.029772291035579268,
+            "floor": 0.24305555555555555,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4668475221557562
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.02956818227290849,
+            "floor": 0.25,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4649739161466901
+          },
+          "2000": {
+            "mean_energy": 0.024967696259925114,
+            "floor": 0.4513888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.48222432306738955
+          }
+        }
+      }
+    },
+    {
+      "seed": 11011,
+      "regrowth": 0.06,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.08223913885080511,
+            "floor": 0.20833333333333334,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4732610939740128
+          },
+          "2000": {
+            "mean_energy": 0.17060626999028766,
+            "floor": 0.16666666666666666,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47954657741183326
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.06715148627804364,
+            "floor": 0.2569444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47346620277140083
+          },
+          "2000": {
+            "mean_energy": 0.11475361704908618,
+            "floor": 0.22916666666666666,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4730650315486222
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.136562180027605,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.009413094292318399,
+            "mean_resource": 0.4796070334566394
+          },
+          "2000": {
+            "mean_energy": 0.2145445170203544,
+            "floor": 0.08333333333333333,
+            "bottom_decile": 0.011109546800526953,
+            "mean_resource": 0.4825190239808228
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.12299902358582646,
+            "floor": 0.1111111111111111,
+            "bottom_decile": 0.007047857140358215,
+            "mean_resource": 0.4744822161827543
+          },
+          "2000": {
+            "mean_energy": 0.20720135394608424,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.009566579750966092,
+            "mean_resource": 0.47695282060692
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.10019865226228417,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.01139727349095476,
+            "mean_resource": 0.47234348361980605
+          },
+          "2000": {
+            "mean_energy": 0.17489477789631028,
+            "floor": 0.09027777777777778,
+            "bottom_decile": 0.013724239636179079,
+            "mean_resource": 0.47349138730497525
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.08531014650822027,
+            "floor": 0.1597222222222222,
+            "bottom_decile": 0.0003580274647930233,
+            "mean_resource": 0.4751835459775372
+          },
+          "2000": {
+            "mean_energy": 0.14853830182783412,
+            "floor": 0.1388888888888889,
+            "bottom_decile": 5.465123396156345e-05,
+            "mean_resource": 0.4796134055079533
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.06442615143937751,
+            "floor": 0.10416666666666667,
+            "bottom_decile": 0.009593399363924055,
+            "mean_resource": 0.475574613516229
+          },
+          "2000": {
+            "mean_energy": 0.11702500411505971,
+            "floor": 0.06944444444444445,
+            "bottom_decile": 0.017319439883536902,
+            "mean_resource": 0.46925501946768855
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.12845644628080874,
+            "floor": 0.05555555555555555,
+            "bottom_decile": 0.01744746095219105,
+            "mean_resource": 0.4777654396803924
+          },
+          "2000": {
+            "mean_energy": 0.2257368289790563,
+            "floor": 0.034722222222222224,
+            "bottom_decile": 0.028365645486706066,
+            "mean_resource": 0.46146962709501005
+          }
+        }
+      }
+    },
+    {
+      "seed": 11011,
+      "regrowth": 0.055,
+      "arms": {
+        "own_only": {
+          "500": {
+            "mean_energy": 0.017860205347362837,
+            "floor": 0.2986111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4625888062924268
+          },
+          "2000": {
+            "mean_energy": 0.01793819517234892,
+            "floor": 0.2916666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4622307846391575
+          }
+        },
+        "own_previous": {
+          "500": {
+            "mean_energy": 0.021439326002888955,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4702545482933689
+          },
+          "2000": {
+            "mean_energy": 0.021070693855654767,
+            "floor": 0.3541666666666667,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4698130771059659
+          }
+        },
+        "neighbor_previous": {
+          "500": {
+            "mean_energy": 0.023521715537963814,
+            "floor": 0.3888888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47599917707931577
+          },
+          "2000": {
+            "mean_energy": 0.0236112003353566,
+            "floor": 0.4097222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47769244770961666
+          }
+        },
+        "neighbor_current": {
+          "500": {
+            "mean_energy": 0.017723818790578424,
+            "floor": 0.4513888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47475805843714436
+          },
+          "2000": {
+            "mean_energy": 0.025617528457264668,
+            "floor": 0.24305555555555555,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4627639932201341
+          }
+        },
+        "global_previous": {
+          "500": {
+            "mean_energy": 0.018273104581749196,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46366414324837746
+          },
+          "2000": {
+            "mean_energy": 0.01767849117186164,
+            "floor": 0.3472222222222222,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46445823789619556
+          }
+        },
+        "neighbor_older": {
+          "500": {
+            "mean_energy": 0.020115544944727476,
+            "floor": 0.3263888888888889,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46529684037488295
+          },
+          "2000": {
+            "mean_energy": 0.01943793900283568,
+            "floor": 0.3194444444444444,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4648740110647965
+          }
+        },
+        "own_older": {
+          "500": {
+            "mean_energy": 0.027834241114666605,
+            "floor": 0.25,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4687751642884682
+          },
+          "2000": {
+            "mean_energy": 0.02930743008001152,
+            "floor": 0.2361111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.46488322223274775
+          }
+        },
+        "neighbor_time_scramble": {
+          "500": {
+            "mean_energy": 0.02116498337093035,
+            "floor": 0.4236111111111111,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.4777418424919008
+          },
+          "2000": {
+            "mean_energy": 0.02447853673444062,
+            "floor": 0.3402777777777778,
+            "bottom_decile": 0.0,
+            "mean_resource": 0.47296750610272803
+          }
+        }
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,620 @@
+{
+  "study": "Four conceptual transfer probes from collapsing v0.1 to fixed .50 policy",
+  "train_seeds": [
+    7200,
+    7201,
+    7202,
+    7203,
+    7204,
+    7205,
+    7206,
+    7207
+  ],
+  "test_seeds": [
+    8200,
+    8201,
+    8202,
+    8203,
+    8204,
+    8205,
+    8206,
+    8207
+  ],
+  "size": 10,
+  "steps": 420,
+  "category": "resource>=.48, energy>=.12, last_action harvest",
+  "frozen_three_macro_labels": [
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    2,
+    2
+  ],
+  "source_sha256": {
+    "garden.py": "ab49fddf1a61744e3f2e11d9eca95ac4f73b774446ee17480bd13237a24e7ea1",
+    "threshold_policy.py": "93230b8f5c3bb6a0ec28eca5e69f7fe99d3450905e8db9045e788216aaef2e12",
+    "SOC_MACRO_probe.py": "1ba258254a9171c14d9f6ecfba5b7b44c5ffdc59b3b6b044a39a60fe46381a7c",
+    "SOC_MACRO_TRANSFER_probe.py": "1b25e66b858da4de2b998085d20605b8a259af8d5aaa7b675f3da125dd85394f"
+  },
+  "experiments": {
+    "learned_original": {
+      "train_occupancy": {
+        "counts": [
+          88635,
+          134979,
+          40326,
+          57406,
+          5192,
+          31,
+          9249,
+          982
+        ],
+        "fractions": [
+          0.26316805225653206,
+          0.4007690023752969,
+          0.11973277909738718,
+          0.17044536817102138,
+          0.015415676959619953,
+          9.204275534441805e-05,
+          0.027461401425178146,
+          0.0029156769596199524
+        ],
+        "supported": 8,
+        "energy_high_frac": 0.32055522565320665
+      },
+      "test_occupancy": {
+        "counts": [
+          88981,
+          136249,
+          39788,
+          56608,
+          5276,
+          30,
+          8967,
+          901
+        ],
+        "fractions": [
+          0.2641953681710214,
+          0.4045397862232779,
+          0.1181353919239905,
+          0.16807600950118765,
+          0.015665083135391923,
+          8.907363420427554e-05,
+          0.026624109263657957,
+          0.0026751781472684087
+        ],
+        "supported": 8,
+        "energy_high_frac": 0.3155106888361045
+      },
+      "final_train_worlds": [
+        {
+          "seed": 7200,
+          "energy": 0.010848324601413908,
+          "resource": 0.35037273404861785,
+          "floor_frac": 0.65
+        },
+        {
+          "seed": 7201,
+          "energy": 0.01181333516647329,
+          "resource": 0.3512581541696517,
+          "floor_frac": 0.63
+        },
+        {
+          "seed": 7202,
+          "energy": 0.01115969927585585,
+          "resource": 0.34852107479472705,
+          "floor_frac": 0.6
+        },
+        {
+          "seed": 7203,
+          "energy": 0.01277618867729994,
+          "resource": 0.353717548915124,
+          "floor_frac": 0.6
+        },
+        {
+          "seed": 7204,
+          "energy": 0.010534724871899442,
+          "resource": 0.34651670300763837,
+          "floor_frac": 0.65
+        },
+        {
+          "seed": 7205,
+          "energy": 0.011837428440073038,
+          "resource": 0.34905947097765094,
+          "floor_frac": 0.65
+        },
+        {
+          "seed": 7206,
+          "energy": 0.012498249601878831,
+          "resource": 0.34451456394158414,
+          "floor_frac": 0.63
+        },
+        {
+          "seed": 7207,
+          "energy": 0.010326662187266996,
+          "resource": 0.33750432246925366,
+          "floor_frac": 0.66
+        }
+      ],
+      "final_test_worlds": [
+        {
+          "seed": 8200,
+          "energy": 0.009403382276063832,
+          "resource": 0.3464426352629655,
+          "floor_frac": 0.69
+        },
+        {
+          "seed": 8201,
+          "energy": 0.008921021248546818,
+          "resource": 0.35363045791151065,
+          "floor_frac": 0.7
+        },
+        {
+          "seed": 8202,
+          "energy": 0.010610377679909175,
+          "resource": 0.36350730531728154,
+          "floor_frac": 0.6
+        },
+        {
+          "seed": 8203,
+          "energy": 0.008776770557964171,
+          "resource": 0.35086137291871133,
+          "floor_frac": 0.68
+        },
+        {
+          "seed": 8204,
+          "energy": 0.010697317208173747,
+          "resource": 0.3406922654061239,
+          "floor_frac": 0.65
+        },
+        {
+          "seed": 8205,
+          "energy": 0.009619855718013466,
+          "resource": 0.356252266434148,
+          "floor_frac": 0.66
+        },
+        {
+          "seed": 8206,
+          "energy": 0.009884606194300025,
+          "resource": 0.35500173108119254,
+          "floor_frac": 0.7
+        },
+        {
+          "seed": 8207,
+          "energy": 0.010077298507173846,
+          "resource": 0.3489266098468118,
+          "floor_frac": 0.63
+        }
+      ],
+      "frozen_mapping": {
+        "micro8_current": {
+          "test_micro_nll": 0.790805343642454,
+          "target_entropy_nats": 1.4441074427918879,
+          "micro_information_nats": 0.6533020991494338,
+          "train_obs": 336000,
+          "test_obs": 336000,
+          "parameter_rows": 8
+        },
+        "coarse3_current": {
+          "test_micro_nll": 0.82455567780514,
+          "target_entropy_nats": 1.4441074427918879,
+          "micro_information_nats": 0.6195517649867478,
+          "train_obs": 336000,
+          "test_obs": 336000,
+          "parameter_rows": 3
+        },
+        "coarse3_current_aligned": {
+          "test_micro_nll": 0.8214709753432056,
+          "target_entropy_nats": 1.4301503182155044,
+          "micro_information_nats": 0.6086793428722989,
+          "train_obs": 333600,
+          "test_obs": 333600,
+          "parameter_rows": 3
+        },
+        "coarse3_memory3": {
+          "test_micro_nll": 0.7988269000712298,
+          "target_entropy_nats": 1.4301503182155044,
+          "micro_information_nats": 0.6313234181442746,
+          "train_obs": 333600,
+          "test_obs": 333600,
+          "parameter_rows": 81
+        },
+        "within_fibre_defect": {
+          "weighted_tv_defect": 0.02406177885504672,
+          "max_tv_defect": 0.0646203954787608,
+          "active_member_pairs": 8,
+          "supported_microstates": 8
+        },
+        "memory_gain_nats": 0.02264407527197576
+      },
+      "reoptimized_mapping": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2
+      ],
+      "reoptimized_values": {
+        "micro8_current": {
+          "test_micro_nll": 0.790805343642454,
+          "target_entropy_nats": 1.4441074427918879,
+          "micro_information_nats": 0.6533020991494338,
+          "train_obs": 336000,
+          "test_obs": 336000,
+          "parameter_rows": 8
+        },
+        "coarse3_current": {
+          "test_micro_nll": 0.82455567780514,
+          "target_entropy_nats": 1.4441074427918879,
+          "micro_information_nats": 0.6195517649867478,
+          "train_obs": 336000,
+          "test_obs": 336000,
+          "parameter_rows": 3
+        },
+        "coarse3_current_aligned": {
+          "test_micro_nll": 0.8214709753432056,
+          "target_entropy_nats": 1.4301503182155044,
+          "micro_information_nats": 0.6086793428722989,
+          "train_obs": 333600,
+          "test_obs": 333600,
+          "parameter_rows": 3
+        },
+        "coarse3_memory3": {
+          "test_micro_nll": 0.7988269000712298,
+          "target_entropy_nats": 1.4301503182155044,
+          "micro_information_nats": 0.6313234181442746,
+          "train_obs": 333600,
+          "test_obs": 333600,
+          "parameter_rows": 81
+        },
+        "within_fibre_defect": {
+          "weighted_tv_defect": 0.02406177885504672,
+          "max_tv_defect": 0.0646203954787608,
+          "active_member_pairs": 8,
+          "supported_microstates": 8
+        },
+        "memory_gain_nats": 0.02264407527197576
+      },
+      "train_only_merge_path": [
+        {
+          "k": 7,
+          "merge": [
+            4,
+            5
+          ],
+          "train_loss": 0.792394814021404
+        },
+        {
+          "k": 6,
+          "merge": [
+            5,
+            6
+          ],
+          "train_loss": 0.7924329076860879
+        },
+        {
+          "k": 5,
+          "merge": [
+            2,
+            3
+          ],
+          "train_loss": 0.7970638314825742
+        },
+        {
+          "k": 4,
+          "merge": [
+            0,
+            1
+          ],
+          "train_loss": 0.803657301081641
+        },
+        {
+          "k": 3,
+          "merge": [
+            0,
+            2
+          ],
+          "train_loss": 0.8260137436417933
+        }
+      ]
+    },
+    "fixed_50": {
+      "train_occupancy": {
+        "counts": [
+          0,
+          0,
+          689,
+          111805,
+          0,
+          0,
+          223683,
+          623
+        ],
+        "fractions": [
+          0.0,
+          0.0,
+          0.002045724465558195,
+          0.3319625890736342,
+          0.0,
+          0.0,
+          0.6641419239904988,
+          0.0018497624703087887
+        ],
+        "supported": 4,
+        "energy_high_frac": 1.0
+      },
+      "test_occupancy": {
+        "counts": [
+          0,
+          0,
+          713,
+          111817,
+          0,
+          0,
+          223731,
+          539
+        ],
+        "fractions": [
+          0.0,
+          0.0,
+          0.0021169833729216153,
+          0.3319982185273159,
+          0.0,
+          0.0,
+          0.6642844418052256,
+          0.001600356294536817
+        ],
+        "supported": 4,
+        "energy_high_frac": 1.0
+      },
+      "final_train_worlds": [
+        {
+          "seed": 7200,
+          "energy": 0.6060752633761234,
+          "resource": 0.47923818451468725,
+          "floor_frac": 0.0
+        },
+        {
+          "seed": 7201,
+          "energy": 0.6124144649173995,
+          "resource": 0.4847604004284186,
+          "floor_frac": 0.0
+        },
+        {
+          "seed": 7202,
+          "energy": 0.6190306206993839,
+          "resource": 0.4841196820795192,
+          "floor_frac": 0.0
+        },
+        {
+          "seed": 7203,
+          "energy": 0.6132514667903842,
+          "resource": 0.4809038352113513,
+          "floor_frac": 0.0
+        },
+        {
+          "seed": 7204,
+          "energy": 0.6173421074418534,
+          "resource": 0.4837750466685912,
+          "floor_frac": 0.0
+        },
+        {
+          "seed": 7205,
+          "energy": 0.6155414279151645,
+          "resource": 0.48245826972084715,
+          "floor_frac": 0.0
+        },
+        {
+          "seed": 7206,
+          "energy": 0.6145024562222676,
+          "resource": 0.4831194911176524,
+          "floor_frac": 0.0
+        },
+        {
+          "seed": 7207,
+          "energy": 0.6376443216308131,
+          "resource": 0.4894763375490291,
+          "floor_frac": 0.0
+        }
+      ],
+      "final_test_worlds": [
+        {
+          "seed": 8200,
+          "energy": 0.6142823508892341,
+          "resource": 0.4844092335850933,
+          "floor_frac": 0.0
+        },
+        {
+          "seed": 8201,
+          "energy": 0.6124149338212189,
+          "resource": 0.48661352929032864,
+          "floor_frac": 0.0
+        },
+        {
+          "seed": 8202,
+          "energy": 0.6047536869870234,
+          "resource": 0.48478985739410846,
+          "floor_frac": 0.0
+        },
+        {
+          "seed": 8203,
+          "energy": 0.6161557356243664,
+          "resource": 0.4860188548783192,
+          "floor_frac": 0.0
+        },
+        {
+          "seed": 8204,
+          "energy": 0.6090652625559962,
+          "resource": 0.48596805718917774,
+          "floor_frac": 0.0
+        },
+        {
+          "seed": 8205,
+          "energy": 0.6111421281232571,
+          "resource": 0.48257851589471285,
+          "floor_frac": 0.0
+        },
+        {
+          "seed": 8206,
+          "energy": 0.5959727583390355,
+          "resource": 0.4863723322112413,
+          "floor_frac": 0.0
+        },
+        {
+          "seed": 8207,
+          "energy": 0.6023701915753342,
+          "resource": 0.4830503424543515,
+          "floor_frac": 0.0
+        }
+      ],
+      "frozen_mapping": {
+        "micro8_current": {
+          "test_micro_nll": 0.4750146682727352,
+          "target_entropy_nats": 0.657009682517776,
+          "micro_information_nats": 0.18199501424504083,
+          "train_obs": 336000,
+          "test_obs": 336000,
+          "parameter_rows": 8
+        },
+        "coarse3_current": {
+          "test_micro_nll": 0.48042319206890066,
+          "target_entropy_nats": 0.657009682517776,
+          "micro_information_nats": 0.17658649044887537,
+          "train_obs": 336000,
+          "test_obs": 336000,
+          "parameter_rows": 3
+        },
+        "coarse3_current_aligned": {
+          "test_micro_nll": 0.4650057589828851,
+          "target_entropy_nats": 0.6400489554055643,
+          "micro_information_nats": 0.17504319642267918,
+          "train_obs": 333600,
+          "test_obs": 333600,
+          "parameter_rows": 3
+        },
+        "coarse3_memory3": {
+          "test_micro_nll": 0.0025850528224942173,
+          "target_entropy_nats": 0.6400489554055643,
+          "micro_information_nats": 0.6374639025830701,
+          "train_obs": 333600,
+          "test_obs": 333600,
+          "parameter_rows": 81
+        },
+        "within_fibre_defect": {
+          "weighted_tv_defect": 0.23650360215035687,
+          "max_tv_defect": 0.3699567488776261,
+          "active_member_pairs": 2,
+          "supported_microstates": 4
+        },
+        "memory_gain_nats": 0.4624207061603909
+      },
+      "reoptimized_mapping": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "reoptimized_values": {
+        "micro8_current": {
+          "test_micro_nll": 0.4750146682727352,
+          "target_entropy_nats": 0.657009682517776,
+          "micro_information_nats": 0.18199501424504083,
+          "train_obs": 336000,
+          "test_obs": 336000,
+          "parameter_rows": 8
+        },
+        "coarse3_current": {
+          "test_micro_nll": 0.4766089400059493,
+          "target_entropy_nats": 0.657009682517776,
+          "micro_information_nats": 0.18040074251182675,
+          "train_obs": 336000,
+          "test_obs": 336000,
+          "parameter_rows": 3
+        },
+        "coarse3_current_aligned": {
+          "test_micro_nll": 0.4650152914870305,
+          "target_entropy_nats": 0.6400489554055643,
+          "micro_information_nats": 0.17503366391853376,
+          "train_obs": 333600,
+          "test_obs": 333600,
+          "parameter_rows": 3
+        },
+        "coarse3_memory3": {
+          "test_micro_nll": 0.0016036128216330133,
+          "target_entropy_nats": 0.6400489554055643,
+          "micro_information_nats": 0.6384453425839313,
+          "train_obs": 333600,
+          "test_obs": 333600,
+          "parameter_rows": 81
+        },
+        "within_fibre_defect": {
+          "weighted_tv_defect": 0.4109149277688603,
+          "max_tv_defect": 0.4109149277688603,
+          "active_member_pairs": 1,
+          "supported_microstates": 4
+        },
+        "memory_gain_nats": 0.4634116786653975
+      },
+      "train_only_merge_path": [
+        {
+          "k": 7,
+          "merge": [
+            0,
+            1
+          ],
+          "train_loss": 0.47586864582611416
+        },
+        {
+          "k": 6,
+          "merge": [
+            0,
+            1
+          ],
+          "train_loss": 0.47586864582611416
+        },
+        {
+          "k": 5,
+          "merge": [
+            0,
+            2
+          ],
+          "train_loss": 0.47586864582611416
+        },
+        {
+          "k": 4,
+          "merge": [
+            0,
+            2
+          ],
+          "train_loss": 0.47586864582611416
+        },
+        {
+          "k": 3,
+          "merge": [
+            0,
+            3
+          ],
+          "train_loss": 0.4775347619603792
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Eight-bit categories omit continuous state, neighbors, and recurrent neural states.",
+    "Learned and deterministic fixed-policy worlds have different state-occupancy and target entropy; compare relative losses within each policy.",
+    "Fixed .50 action largely covaries with current resource, so some eight categories are rare or impossible; smoothing affects NLL.",
+    "Threshold policies are fixed by design, not autonomously discovered.",
+    "Eight worlds per split are simulator seeds, not real-world replications."
+  ]
+}
+

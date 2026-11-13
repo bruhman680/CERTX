@@ -1,3 +1,15 @@
+# Current research: Neural Garden cross-reading; notebook version paused1562
+
+12 November2026, America/Chicago. [Pinned-source intake and bounded reproductions](evaluation/neural-garden-v01-intake-v1/REPORT.md). The neural ecology on codex/frr-v05-explorations is distinct from our notebook garden; neither canonical world changed in this intake. Selected physics identities, policy rows, social comparisons and compressed-history results reproduced. Several later tests use a3-featurelogisticpolicy andtheta-onlytransfer with other state reset, not the original recurrent model or full-state continuation.
+
+Observer lessons: distinguish raw/clipped budgets, prediction targets, available vsused information, complete state vsweight-onlymemory, actiontiming vsactioncount, and promptedtaskaccuracy vsopenemergence. These are external research checks, not new behavior requirements for our model. No ecological reward or threshold was added to it.
+
+A disposable intervention test exposed a same-tick state/manifestcommitgap. A separate proposed operator guard was tested; it is not merged/deployed, changes no neuralphysics, and is not a fullpower-lossdurabilityclaim. Sources, all outcomes, exact-byte corrections and limitations are retained. Locally generated binarypicklecheckpoints are excluded from publication; scripts regenerate trustedteststates.
+
+ACTIVE_GARDEN_PHASE remains computational-notebook version paused1562; reference1550 intact. Its12openreplies were cappedunfinishedwriting with0completecells. Strongest direct next experiment is output-length/chunkcontinuation in a declared detached condition. The neural ecology cannot answer this by analogy. No modelrun or liveworldchange was initiated by this intake. The separate newestClaude relay is stillunidentified.
+
+---
+
 # Current: computational garden version, paused at1562
 
 12 November2026, America/Chicago. [Build evidence](evaluation/minimal-garden-candidate-v1/REPORT.md) and [resume instructions](evaluation/minimal-garden-candidate-v1/RESUME.md). ACTIVE_GARDEN_PHASE.json now selects the explicitly declared computational-notebook version. Original reference1550 and all4467phasefiles remain unchanged; its old pointer/navigation are archived in activation_before/.

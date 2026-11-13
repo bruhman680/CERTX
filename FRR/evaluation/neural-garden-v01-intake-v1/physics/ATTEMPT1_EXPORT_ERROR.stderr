@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/frr/evaluation/neural-garden-v01-intake-v1/physics/reproduce.py", line 76, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/frr/evaluation/neural-garden-v01-intake-v1/physics/reproduce.py", line 69, in main
+    'source_sha256':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (H/'sources').iterdir()},
+                                           ^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: '/workspace/frr/evaluation/neural-garden-v01-intake-v1/physics/sources/__pycache__'
