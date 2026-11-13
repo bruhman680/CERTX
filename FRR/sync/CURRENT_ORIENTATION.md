@@ -1,3 +1,15 @@
+# Current: one-step detailed-error versus status-only feedback
+
+13 November 2026, America/Chicago. [Report](../evaluation/error-feedback-contact-v1/REPORT.md), [outcome reading](../evaluation/error-feedback-contact-v1/OBSERVATIONS.md). Six detached sampled replies, three paired seeds, one selected actual failed parent. Full feedback is the exact actual projected receipt; status-only removes only stderr. Both use identical post-error world copies, original context/sample and same sampling settings.
+
+Each condition produced one complete code cell in three replies. Both cells reproduced the semaphore/read-only-filesystem failure; no code-created file or successful repair. Other replies stayed prose or unfinished code. Some visible text reused traceback helper names or misdescribed receipt schema as program features. Textual uptake, code dispatch and demonstrated repair are distinct. Feedback length/content differ, so semantic understanding of the error is not isolated.
+
+All six raw outputs and consequences, independent authenticity/text review, immutable diagnostic artifacts and verifications are retained. Active garden remains paused1562, reference1550, parent diagnostic and weights unchanged. No new feedback cycle beyond one reply, no training, no paid endpoint, no deployment or silent active change.
+
+Next strongest: a fixed small multi-turn detached actual-feedback branch to observe repeated attempts; separately compare feedback representations/content-length controls. Retain every event and avoid hints or retrospective winning-sample promotion. Earlier orientation is archived byte-exact in error-feedback-contact-v1/before/CURRENT_ORIENTATION.md and below.
+
+---
+
 # Current: decoder variation, actual runtime limits, and faithful continuation
 
 13 November 2026, America/Chicago. [Session summary](../evaluation/decoder-context-contact-v1/SESSION_SUMMARY.md). Live notebook remains paused at 1562, original reference 1550 intact. No active condition changed.

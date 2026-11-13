@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-13 America/Chicago",
+  "question": "one-step response to actual detailed error vs failure status only",
+  "seeds": [
+    27201,
+    27202,
+    27203
+  ],
+  "conditions": [
+    "full_traceback",
+    "status_only"
+  ],
+  "decoder": {
+    "temperature": 0.8,
+    "top_p": 0.9,
+    "cap": 512
+  },
+  "parent_sample": "retained_01_27103",
+  "parent_reply_was_capped": true,
+  "feedback": "full uses unchanged canonical project_feedback; status-only changes only stderr to empty",
+  "control_is_counterfactual": true,
+  "tokens_not_length_matched": true,
+  "world_parent": "/workspace/frr/evaluation/decoder-consequence-contact-v1/worlds/retained_01_27103/bundles/000002.json",
+  "world_parent_sha256": "218f667945272fa537238063dafaaf5fb9b287ed7844fa82fb2cbae8c6f344c0",
+  "world_state_same_for_all_cases": true,
+  "followup_depth": 1,
+  "planned_model_replies": 6,
+  "primary": "record every reply and its actual notebook/cell consequences; no automatic success rubric",
+  "diagnostic_only": true,
+  "training": false,
+  "canonical_mutation": false,
+  "scope": "selected single parent; context length and error-content effects not separated; seed pairs are not six environments"
+}

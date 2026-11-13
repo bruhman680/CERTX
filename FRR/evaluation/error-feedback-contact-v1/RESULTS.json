@@ -1,0 +1,214 @@
+{
+  "plan": {
+    "date": "2026-11-13 America/Chicago",
+    "question": "one-step response to actual detailed error vs failure status only",
+    "seeds": [
+      27201,
+      27202,
+      27203
+    ],
+    "conditions": [
+      "full_traceback",
+      "status_only"
+    ],
+    "decoder": {
+      "temperature": 0.8,
+      "top_p": 0.9,
+      "cap": 512
+    },
+    "parent_sample": "retained_01_27103",
+    "parent_reply_was_capped": true,
+    "feedback": "full uses unchanged canonical project_feedback; status-only changes only stderr to empty",
+    "control_is_counterfactual": true,
+    "tokens_not_length_matched": true,
+    "world_parent": "/workspace/frr/evaluation/decoder-consequence-contact-v1/worlds/retained_01_27103/bundles/000002.json",
+    "world_parent_sha256": "218f667945272fa537238063dafaaf5fb9b287ed7844fa82fb2cbae8c6f344c0",
+    "world_state_same_for_all_cases": true,
+    "followup_depth": 1,
+    "planned_model_replies": 6,
+    "primary": "record every reply and its actual notebook/cell consequences; no automatic success rubric",
+    "diagnostic_only": true,
+    "training": false,
+    "canonical_mutation": false,
+    "scope": "selected single parent; context length and error-content effects not separated; seed pairs are not six environments"
+  },
+  "rows": [
+    {
+      "condition": "full_traceback",
+      "seed": 27201,
+      "input_tokens": 1208,
+      "output_tokens": 512,
+      "stop": "token_limit",
+      "complete_executable_cells": 0,
+      "incomplete_fences": 1,
+      "operations": [
+        {
+          "channel": "note",
+          "changed_paths": [
+            "notebook.txt"
+          ],
+          "feedback": null
+        }
+      ],
+      "store_verification": {
+        "status": "pass",
+        "step": 1,
+        "parent_entry": 1550,
+        "bundle_id": "0e4106d0992c12a6e79311c60937478848c8b1a355822da2e034c806749ad94f",
+        "objects": 6
+      }
+    },
+    {
+      "condition": "status_only",
+      "seed": 27201,
+      "input_tokens": 658,
+      "output_tokens": 404,
+      "stop": "eos",
+      "complete_executable_cells": 1,
+      "incomplete_fences": 0,
+      "operations": [
+        {
+          "channel": "note",
+          "changed_paths": [
+            "notebook.txt"
+          ],
+          "feedback": null
+        },
+        {
+          "channel": "python",
+          "changed_paths": [],
+          "feedback": {
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 18, in <module>\n    pool = multiprocessing.Pool(processes=4)\n  File \"/usr/lib/python3.13/multiprocessing/context.py\", line 119, in Pool\n    return Pool(processes, initializer, initargs, maxtasksperchild,\n                context=self.get_context())\n  File \"/usr/lib/python3.13/multiprocessing/pool.py\", line 191, in __init__\n    self._setup_queues()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/lib/python3.13/multiprocessing/pool.py\", line 346, in _setup_queues\n    self._inqueue = self._ctx.SimpleQueue()\n                    ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/lib/python3.13/multiprocessing/context.py\", line 113, in SimpleQueue\n    return SimpleQueue(ctx=self.get_context())\n  File \"/usr/lib/python3.13/multiprocessing/queues.py\", line 361, in __init__\n    self._rlock = ctx.Lock()\n                  ~~~~~~~~^^\n  File \"/usr/lib/python3.13/multiprocessing/context.py\", line 68, in Lock\n    return Lock(ctx=self.get_context())\n  File \"/usr/lib/python3.13/multiprocessing/synchronize.py\", line 169, in __init__\n    SemLock.__init__(self, SEMAPHORE, 1, 1, ctx=ctx)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.13/multiprocessing/synchronize.py\", line 57, in __init__\n    sl = self._semlock = _multiprocessing.SemLock(\n                         ~~~~~~~~~~~~~~~~~~~~~~~~^\n        kind, value, maxvalue, self._make_name(),\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        unlink_now)\n        ^^^^^^^^^^^\nOSError: [Errno 30] Read-only file system\n",
+            "exit_code": 1,
+            "boundary": null,
+            "seconds": 0.049123380000310135
+          }
+        }
+      ],
+      "store_verification": {
+        "status": "pass",
+        "step": 2,
+        "parent_entry": 1550,
+        "bundle_id": "03cd5371ee8fe26cde5aa467dc2af63a53974302e0aeef92b9522f986e39d216",
+        "objects": 6
+      }
+    },
+    {
+      "condition": "full_traceback",
+      "seed": 27202,
+      "input_tokens": 1208,
+      "output_tokens": 456,
+      "stop": "eos",
+      "complete_executable_cells": 1,
+      "incomplete_fences": 0,
+      "operations": [
+        {
+          "channel": "note",
+          "changed_paths": [
+            "notebook.txt"
+          ],
+          "feedback": null
+        },
+        {
+          "channel": "python",
+          "changed_paths": [],
+          "feedback": {
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 22, in <module>\n    pool = multiprocessing.Pool()\n  File \"/usr/lib/python3.13/multiprocessing/context.py\", line 119, in Pool\n    return Pool(processes, initializer, initargs, maxtasksperchild,\n                context=self.get_context())\n  File \"/usr/lib/python3.13/multiprocessing/pool.py\", line 191, in __init__\n    self._setup_queues()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/lib/python3.13/multiprocessing/pool.py\", line 346, in _setup_queues\n    self._inqueue = self._ctx.SimpleQueue()\n                    ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/lib/python3.13/multiprocessing/context.py\", line 113, in SimpleQueue\n    return SimpleQueue(ctx=self.get_context())\n  File \"/usr/lib/python3.13/multiprocessing/queues.py\", line 361, in __init__\n    self._rlock = ctx.Lock()\n                  ~~~~~~~~^^\n  File \"/usr/lib/python3.13/multiprocessing/context.py\", line 68, in Lock\n    return Lock(ctx=self.get_context())\n  File \"/usr/lib/python3.13/multiprocessing/synchronize.py\", line 169, in __init__\n    SemLock.__init__(self, SEMAPHORE, 1, 1, ctx=ctx)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.13/multiprocessing/synchronize.py\", line 57, in __init__\n    sl = self._semlock = _multiprocessing.SemLock(\n                         ~~~~~~~~~~~~~~~~~~~~~~~~^\n        kind, value, maxvalue, self._make_name(),\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        unlink_now)\n        ^^^^^^^^^^^\nOSError: [Errno 30] Read-only file system\n",
+            "exit_code": 1,
+            "boundary": null,
+            "seconds": 0.06287792199964315
+          }
+        }
+      ],
+      "store_verification": {
+        "status": "pass",
+        "step": 2,
+        "parent_entry": 1550,
+        "bundle_id": "b6941589caf8cbd9cc957fb69153241900641fda6858a52ff780530e723ec477",
+        "objects": 6
+      }
+    },
+    {
+      "condition": "status_only",
+      "seed": 27202,
+      "input_tokens": 658,
+      "output_tokens": 512,
+      "stop": "token_limit",
+      "complete_executable_cells": 0,
+      "incomplete_fences": 0,
+      "operations": [
+        {
+          "channel": "note",
+          "changed_paths": [
+            "notebook.txt"
+          ],
+          "feedback": null
+        }
+      ],
+      "store_verification": {
+        "status": "pass",
+        "step": 1,
+        "parent_entry": 1550,
+        "bundle_id": "32ddf1ad2a9853fe22099a5358c089c1d82628c470abc066605330069b2d5b2f",
+        "objects": 6
+      }
+    },
+    {
+      "condition": "full_traceback",
+      "seed": 27203,
+      "input_tokens": 1208,
+      "output_tokens": 512,
+      "stop": "token_limit",
+      "complete_executable_cells": 0,
+      "incomplete_fences": 0,
+      "operations": [
+        {
+          "channel": "note",
+          "changed_paths": [
+            "notebook.txt"
+          ],
+          "feedback": null
+        }
+      ],
+      "store_verification": {
+        "status": "pass",
+        "step": 1,
+        "parent_entry": 1550,
+        "bundle_id": "bba7a8e744f78e00b3357c08b43098b84c59f1e8d84fc722ac43a22d60f8405a",
+        "objects": 6
+      }
+    },
+    {
+      "condition": "status_only",
+      "seed": 27203,
+      "input_tokens": 658,
+      "output_tokens": 230,
+      "stop": "eos",
+      "complete_executable_cells": 0,
+      "incomplete_fences": 0,
+      "operations": [
+        {
+          "channel": "note",
+          "changed_paths": [
+            "notebook.txt"
+          ],
+          "feedback": null
+        }
+      ],
+      "store_verification": {
+        "status": "pass",
+        "step": 1,
+        "parent_entry": 1550,
+        "bundle_id": "aa483757e46fcdf7a3c077d1631e2c45e05323736148c531a87a7aeb9ee00df1",
+        "objects": 6
+      }
+    }
+  ],
+  "canonical_run_unchanged": true,
+  "parent_diagnostic_unchanged": true,
+  "weights_unchanged": true,
+  "actual_model_replies": 6,
+  "extra_feedback_cycles": 0
+}
