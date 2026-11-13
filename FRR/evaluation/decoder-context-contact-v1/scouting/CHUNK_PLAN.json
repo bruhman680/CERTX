@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-13 America/Chicago",
+  "prefix_tokens": 256,
+  "suffix_tokens": 64,
+  "model": "cached SmolLM2-135M-Instruct",
+  "condition": "CPU float32 eager greedy",
+  "cache_test": "in-memory only; no serialized KV or cross-process resume",
+  "prefix_source": "output-cap-contact-v1/retained_01.json",
+  "fresh_prefill": "exact IDs, no retemplating",
+  "logits_tolerance_atol": 0.0001,
+  "logits_tolerance_rtol": 0.0001,
+  "canonical_mutation": false
+}

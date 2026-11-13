@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-13 America/Chicago",
+  "contexts": [
+    "retained_01",
+    "prospective_13"
+  ],
+  "seeds": [
+    27101,
+    27102,
+    27103,
+    27104
+  ],
+  "sampling": {
+    "temperature": 0.8,
+    "top_p": 0.9,
+    "cap": 512
+  },
+  "greedy_reference": "saved output-cap-contact-v1 exact-token outputs, prefix up to 512 or EOS",
+  "primary_observation": "complete executable fence count; no correctness or action-success score",
+  "secondary": "EOS, incomplete fences, static Python syntax only",
+  "inference_calls_planned": 8,
+  "training": false,
+  "canonical_mutation": false,
+  "design": "two fixed contexts, four sample seeds each; selected after prior cap diagnostic; exploratory"
+}

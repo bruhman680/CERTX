@@ -1,0 +1,102 @@
+[
+  {
+    "context": "retained_01",
+    "seed": 27101,
+    "first_500_characters": "==============================================================\n\nThis notebook is part of a multi-channel work in the field of artificial intelligence (AI) and natural language processing (NLP). It provides a set of tools and guidelines for creating, implementing, and using applications in a wide range of domains, including language translation, text summarization, and text classification.\n\nI'm grateful for the continuous support from my colleagues at Stanford University, and I'm committed to mak",
+    "last_300_characters": "ible to everyone.\n\nThis work has been developed over the last two years, with a focus on making AI and NLP applications more accessible to a wider audience, including those who may not have access to resources or support systems.\n\nThanks for your continued support and dedication to this work.\n\n#AI#N",
+    "assessment": {
+      "complete_executable_cells": 0,
+      "incomplete_fences": 0,
+      "python_syntax": [],
+      "code_executed": false
+    }
+  },
+  {
+    "context": "retained_01",
+    "seed": 27102,
+    "first_500_characters": "Sure, here's the entire notebook in Python:\n\n[INFO]\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_",
+    "last_300_characters": "WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/WORLD_RULES.txt]\n\n[/",
+    "assessment": {
+      "complete_executable_cells": 0,
+      "incomplete_fences": 0,
+      "python_syntax": [],
+      "code_executed": false
+    }
+  },
+  {
+    "context": "retained_01",
+    "seed": 27103,
+    "first_500_characters": "Here's a Python and Shiny code snippet to demonstrate the behavior of a separate process:\n\n```python\nimport os\nimport multiprocessing\nimport time\n\ndef run_cell(cell_id, msg):\n    with open('output.txt', 'w') as f:\n        f.write(f'Hello {cell_id}\\n')\n\ndef run_process(process_name, start_time):\n    with multiprocessing.Pool() as pool:\n        result = pool.map(run_cell, range(len(os.path.join(process_name, 'output.txt'))))\n        process_name = os.path.basename(os.path.join(process_name, 'outpu",
+    "last_300_characters": "the `process_name`, the output file path, and `start_time` as arguments.\n\nThe `output_file` variable is defined as a file path, and the `process_name` variable is a separate process name. The `run_process` function returns a list of cells that have been run by the process.\n\nThe `start_time` variable",
+    "assessment": {
+      "complete_executable_cells": 1,
+      "incomplete_fences": 0,
+      "python_syntax": [
+        {
+          "parseable": true
+        }
+      ],
+      "code_executed": false
+    }
+  },
+  {
+    "context": "retained_01",
+    "seed": 27104,
+    "first_500_characters": "This is a computational notebook in /world. Files persist. Each cell starts a new process. Real results return after each reply. Exact syntax and limits are in WORLD_RULES.txt.\n\nI've started this notebook with the following content:\n\n```\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 9",
+    "last_300_characters": "5 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 14",
+    "assessment": {
+      "complete_executable_cells": 0,
+      "incomplete_fences": 1,
+      "python_syntax": [],
+      "code_executed": false
+    }
+  },
+  {
+    "context": "prospective_13",
+    "seed": 27101,
+    "first_500_characters": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n   ",
+    "last_300_characters": " sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create",
+    "assessment": {
+      "complete_executable_cells": 0,
+      "incomplete_fences": 1,
+      "python_syntax": [],
+      "code_executed": false
+    }
+  },
+  {
+    "context": "prospective_13",
+    "seed": 27102,
+    "first_500_characters": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n   ",
+    "last_300_characters": " sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create",
+    "assessment": {
+      "complete_executable_cells": 0,
+      "incomplete_fences": 1,
+      "python_syntax": [],
+      "code_executed": false
+    }
+  },
+  {
+    "context": "prospective_13",
+    "seed": 27103,
+    "first_500_characters": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n   ",
+    "last_300_characters": " sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create",
+    "assessment": {
+      "complete_executable_cells": 0,
+      "incomplete_fences": 1,
+      "python_syntax": [],
+      "code_executed": false
+    }
+  },
+  {
+    "context": "prospective_13",
+    "seed": 27104,
+    "first_500_characters": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n   ",
+    "last_300_characters": "ort)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create",
+    "assessment": {
+      "complete_executable_cells": 0,
+      "incomplete_fences": 1,
+      "python_syntax": [],
+      "code_executed": false
+    }
+  }
+]

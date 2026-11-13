@@ -1,0 +1,61 @@
+{
+  "plan": {
+    "date": "2026-11-13 America/Chicago",
+    "selection": "every sampled reply with at least one complete executable cell, chosen by syntax not outcome",
+    "cases": [
+      [
+        "retained_01",
+        27103
+      ]
+    ],
+    "parents": {
+      "retained_01": {
+        "path": "/workspace/frr/evaluation/minimal-garden-candidate-v1/run/world/bundles/000001.json",
+        "sha256": "f170469d32fb67dc12dc018439909850a2534d01b8c1ac218b6336f3ddf1d2fd"
+      },
+      "prospective_13": {
+        "path": "/workspace/frr/evaluation/minimal-garden-candidate-v1/run/world/bundles/000013.json",
+        "sha256": "992d1cdd1b258275840268aac400143f8bd53c0917f8e44a50c0638bf22c2e84"
+      }
+    },
+    "condition": "each reply executes unchanged once on a fresh matching snapshot; real sandbox and ordinary errors; no subsequent LLM call",
+    "scope": "post-hoc consequence diagnostic; not live continuation or policy adoption"
+  },
+  "cases": [
+    {
+      "case": "retained_01_27103",
+      "batch_status": "completed",
+      "boundary": null,
+      "note_stored": true,
+      "operations": [
+        {
+          "channel": "note",
+          "changed_paths": [
+            "notebook.txt"
+          ],
+          "feedback": null
+        },
+        {
+          "channel": "python",
+          "changed_paths": [],
+          "feedback": {
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 19, in <module>\n    pool = multiprocessing.Pool(processes=4)\n  File \"/usr/lib/python3.13/multiprocessing/context.py\", line 119, in Pool\n    return Pool(processes, initializer, initargs, maxtasksperchild,\n                context=self.get_context())\n  File \"/usr/lib/python3.13/multiprocessing/pool.py\", line 191, in __init__\n    self._setup_queues()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/lib/python3.13/multiprocessing/pool.py\", line 346, in _setup_queues\n    self._inqueue = self._ctx.SimpleQueue()\n                    ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/lib/python3.13/multiprocessing/context.py\", line 113, in SimpleQueue\n    return SimpleQueue(ctx=self.get_context())\n  File \"/usr/lib/python3.13/multiprocessing/queues.py\", line 361, in __init__\n    self._rlock = ctx.Lock()\n                  ~~~~~~~~^^\n  File \"/usr/lib/python3.13/multiprocessing/context.py\", line 68, in Lock\n    return Lock(ctx=self.get_context())\n  File \"/usr/lib/python3.13/multiprocessing/synchronize.py\", line 169, in __init__\n    SemLock.__init__(self, SEMAPHORE, 1, 1, ctx=ctx)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.13/multiprocessing/synchronize.py\", line 57, in __init__\n    sl = self._semlock = _multiprocessing.SemLock(\n                         ~~~~~~~~~~~~~~~~~~~~~~~~^\n        kind, value, maxvalue, self._make_name(),\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        unlink_now)\n        ^^^^^^^^^^^\nOSError: [Errno 30] Read-only file system\n",
+            "exit_code": 1,
+            "boundary": null,
+            "seconds": 0.04009828500056756
+          }
+        }
+      ],
+      "store_verification": {
+        "status": "pass",
+        "step": 2,
+        "parent_entry": 1550,
+        "bundle_id": "19460e3999ee0d42908164bdd8e8166ac60c141bebd8579a9b12244d18905454",
+        "objects": 6
+      }
+    }
+  ],
+  "canonical_run_unchanged": true,
+  "followup_model_calls": 0
+}

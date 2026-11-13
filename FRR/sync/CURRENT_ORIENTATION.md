@@ -1,3 +1,15 @@
+# Current: decoder variation, actual runtime limits, and faithful continuation
+
+13 November 2026, America/Chicago. [Session summary](../evaluation/decoder-context-contact-v1/SESSION_SUMMARY.md). Live notebook remains paused at 1562, original reference 1550 intact. No active condition changed.
+
+Eight detached sampled replies produced one complete cell on the early input (1/4) and none on the current-history input (0/4). The eligible cell ran unchanged on a matching snapshot and failed at semaphore creation on a read-only filesystem; separate probes show basic Python/subprocess work. This identifies a specific runtime-facility limit without establishing correct code or successful adaptation.
+
+A 64-token continuation matched saved uninterrupted output exactly using either in-memory KV or fresh exact-token prefill. Text retemplating can change token IDs. This is not a durable cache runner or additional context capacity. Parallel source scouting and local flock tests support separating live ownership from transaction history, but legacy migration and recovery integration remain unimplemented.
+
+Next strongest: detached actual-error feedback branch; controlled history comparison; explicit durable chunk protocol if warranted; recovery integration on copies. All evidence and caveats are linked in the summary. Prior orientation is archived byte-for-byte in decoder-context-contact-v1/before/CURRENT_ORIENTATION.md and retained below.
+
+---
+
 # Current research: output limits, learner-state carryover, and interruption recovery
 
 13 November 2026, America/Chicago. [Three-contact summary](../evaluation/output-cap-contact-v1/SESSION_SUMMARY.md). The live notebook remains paused at entry 1562, reference 1550 preserved. Detached exact-input length probes found no complete cell in three contexts: first input unfinished at 1024 tokens, turn 12 and prospective turn 13 EOS at 257 with unfinished fences. Both saved 256-token prefixes match. No weights, live state, or model-facing rules changed.

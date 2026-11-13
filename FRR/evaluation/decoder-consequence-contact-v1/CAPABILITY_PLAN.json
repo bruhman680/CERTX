@@ -1,0 +1,19 @@
+{
+  "role": "operator diagnostic only; never model-facing",
+  "reason": "isolate sandbox IPC limitation from general Python availability after sampled Pool failed",
+  "cells": [
+    [
+      "pure_python",
+      "print(sum(range(10)))"
+    ],
+    [
+      "semaphore",
+      "import multiprocessing\ns = multiprocessing.Semaphore(1)\nprint(\"semaphore created\")"
+    ],
+    [
+      "subprocess",
+      "import subprocess, sys\nr = subprocess.run([sys.executable, \"-c\", \"print(45)\"], capture_output=True, text=True)\nprint(r.returncode, r.stdout.strip())"
+    ]
+  ],
+  "parent": "canonical initial world checkpoint 000001; independent copy"
+}

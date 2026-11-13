@@ -1,0 +1,49 @@
+{
+  "rows": [
+    {
+      "label": "pure_python",
+      "source": "print(sum(range(10)))",
+      "feedback": {
+        "stdout": "45\n",
+        "stderr": "",
+        "exit_code": 0,
+        "boundary": null,
+        "seconds": 0.013166658000045572
+      },
+      "changed_paths": []
+    },
+    {
+      "label": "semaphore",
+      "source": "import multiprocessing\ns = multiprocessing.Semaphore(1)\nprint(\"semaphore created\")",
+      "feedback": {
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 2, in <module>\n    s = multiprocessing.Semaphore(1)\n  File \"/usr/lib/python3.13/multiprocessing/context.py\", line 83, in Semaphore\n    return Semaphore(value, ctx=self.get_context())\n  File \"/usr/lib/python3.13/multiprocessing/synchronize.py\", line 133, in __init__\n    SemLock.__init__(self, SEMAPHORE, value, SEM_VALUE_MAX, ctx=ctx)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.13/multiprocessing/synchronize.py\", line 57, in __init__\n    sl = self._semlock = _multiprocessing.SemLock(\n                         ~~~~~~~~~~~~~~~~~~~~~~~~^\n        kind, value, maxvalue, self._make_name(),\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        unlink_now)\n        ^^^^^^^^^^^\nOSError: [Errno 30] Read-only file system\n",
+        "exit_code": 1,
+        "boundary": null,
+        "seconds": 0.03573369500008994
+      },
+      "changed_paths": []
+    },
+    {
+      "label": "subprocess",
+      "source": "import subprocess, sys\nr = subprocess.run([sys.executable, \"-c\", \"print(45)\"], capture_output=True, text=True)\nprint(r.returncode, r.stdout.strip())",
+      "feedback": {
+        "stdout": "0 45\n",
+        "stderr": "",
+        "exit_code": 0,
+        "boundary": null,
+        "seconds": 0.042346941000687366
+      },
+      "changed_paths": []
+    }
+  ],
+  "canonical_run_unchanged": true,
+  "verification": {
+    "status": "pass",
+    "step": 3,
+    "parent_entry": 1550,
+    "bundle_id": "9f2bdbaf2386ead45883ca7d14a2c3864294343b39b999b8a27deee5591d5865",
+    "objects": 5
+  },
+  "model_calls": 0
+}
