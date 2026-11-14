@@ -1,0 +1,27 @@
+{
+  "sampling": {
+    "0.9": {
+      "replies": 3,
+      "distinct_output_texts": 1,
+      "complete_cells": 0,
+      "eos": 0,
+      "model_code_operations": 0
+    },
+    "1.0": {
+      "replies": 3,
+      "distinct_output_texts": 3,
+      "complete_cells": 0,
+      "eos": 1,
+      "model_code_operations": 0
+    }
+  },
+  "profile": {
+    "scope": "one teacher-forced saved greedy path; parallel prefill may differ numerically from incremental decoding",
+    "all_argmax_match_reference": true,
+    "positions_with_more_than_one_p90_choice": 1,
+    "min_p90_size": 1,
+    "max_p90_size": 2,
+    "model_generations": 0,
+    "extra_teacher_forced_forward_passes": 1
+  }
+}

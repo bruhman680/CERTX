@@ -1,3 +1,17 @@
+# Current: three observability contacts completed; main remains 1580
+
+14 November 2026, America/Chicago. [Experiment report](../evaluation/observability-three-contact-v1/REPORT.md), [audit](../evaluation/observability-three-contact-v1/AUDIT.json), [retrieval readout](../evaluation/observability-three-contact-v1/retrieval/REPORT.md). All15 planned replies and one teacher-forced profile were retained through the chat usage interruption; no completed action was replayed after reset. No main entry or setting changed.
+
+Three observation/control inputs differed but gave the same unfinished output. This does not prove absent perception. At temperature0.8, top-p0.9 produced three repeats; top-p1.0 produced three distinct texts, all without complete cells. On the saved greedy path the default nucleus had one choice at255/256 positions and two at one position. This is a path-specific profile.
+
+Six prompted retrieval replies tested two valid hidden-value files and an authentic supplied-read control. Four cells exited0 but parsed the filename as JSON text, caught the error and printed invalid-JSON/None. No target retrieval/use was observed. Process completion, access, supplied information and task success remain distinct. These selected contexts do not establish a general inability.
+
+Independent auditPASS: exact15 message/token/receipt/world chains; all823 main files unchanged at1580; no pending operation, activation, training or paid endpoint. New source scouting examines direct matches, upstream/lateral mechanisms and counterexamples without adopting methods. A fresh/repeated/length-matched history control is the strongest emerging followup.
+
+Previous orientation is archived byte-for-byte in observability-three-contact-v1/before/CURRENT_ORIENTATION.md and follows below as historical context.
+
+---
+
 # Current: bounded-view prototype tested; main remains paused at 1580
 
 13 November 2026, America/Chicago. [View comparison](../evaluation/bounded-view-contact-v1/REPORT.md), [integrated detached prototype](../evaluation/bounded-view-continuation-prototype-v1/REPORT.md), [conditional repeat-loop finding](../evaluation/bounded-view-contact-v1/FIXED_POINT.md).

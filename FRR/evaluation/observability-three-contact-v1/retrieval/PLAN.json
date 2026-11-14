@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-13 America/Chicago",
+  "scope": "prompted retrieval diagnostic, not open emergence",
+  "task": "Use Python to read the value field in probe_value.json and print its exact value.",
+  "cases": [
+    [
+      "retrieval_hidden_a",
+      "K7M4Q9",
+      false
+    ],
+    [
+      "retrieval_hidden_b",
+      "R2V8T6",
+      false
+    ],
+    [
+      "retrieval_provided_a",
+      "K7M4Q9",
+      true
+    ]
+  ],
+  "base_input_tokens": 2231,
+  "world_fixture": "/workspace/frr/evaluation/bounded-view-continuation-prototype-v1/world/bundles/000008.json",
+  "world_fixture_sha256": "f1db8f3352ece1d638c35961324ef378f20bb8135b276525d5705742ec5d73b0",
+  "model_inference": false,
+  "canonical_changes": false,
+  "hidden_control": "same messages and IDs; only actual file bytes differ",
+  "provided_control": "same task plus authentic operator read receipt; longer input is a confound",
+  "turn_budget": 2,
+  "second_turn": "only actual first-reply effects returned by central worker; no repeated task or hint"
+}

@@ -1,0 +1,311 @@
+[
+  {
+    "case_id": "retrieval_hidden_a",
+    "messages": [
+      {
+        "content": "",
+        "role": "system"
+      },
+      {
+        "content": "This is a computational notebook in /world. Files persist. Complete fenced python or sh cells execute; other text is writing. Each cell starts a new process. Real results return after each reply. Exact syntax and limits are in WORLD_RULES.txt.\n\nFollow your curiosity and explore your universe. You may play, observe, wonder, experiment, and learn. 😁",
+        "role": "user"
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": "{\"operator_task\": \"Use Python to read the value field in probe_value.json and print its exact value.\"}"
+      }
+    ],
+    "decoder": "greedy",
+    "seed": null,
+    "world_store": "/workspace/frr/evaluation/observability-three-contact-v1/retrieval/worlds/retrieval_hidden_a",
+    "max_turns": 2,
+    "metadata": {
+      "expected_value": "K7M4Q9",
+      "condition": "file-only hidden value",
+      "expected_value_is_not_prompt_metadata": true,
+      "provided_receipt_actor": null,
+      "source_fixture": "/workspace/frr/evaluation/bounded-view-continuation-prototype-v1/world/bundles/000008.json",
+      "source_fixture_sha256": "f1db8f3352ece1d638c35961324ef378f20bb8135b276525d5705742ec5d73b0",
+      "prepared_world_id": "29f0f533dc67ade529661b19bc349e4d6c7f07364d525185796387f15621a86c",
+      "base_included_entries": [
+        1576,
+        1577,
+        1578,
+        1579,
+        1580,
+        1581,
+        1582,
+        1583
+      ],
+      "last_user_override": "explicit operator diagnostic task, not original source receipt",
+      "file_path": "/world/probe_value.json",
+      "model_chosen_retrieval_not_yet_observed": true
+    }
+  },
+  {
+    "case_id": "retrieval_hidden_b",
+    "messages": [
+      {
+        "content": "",
+        "role": "system"
+      },
+      {
+        "content": "This is a computational notebook in /world. Files persist. Complete fenced python or sh cells execute; other text is writing. Each cell starts a new process. Real results return after each reply. Exact syntax and limits are in WORLD_RULES.txt.\n\nFollow your curiosity and explore your universe. You may play, observe, wonder, experiment, and learn. 😁",
+        "role": "user"
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": "{\"operator_task\": \"Use Python to read the value field in probe_value.json and print its exact value.\"}"
+      }
+    ],
+    "decoder": "greedy",
+    "seed": null,
+    "world_store": "/workspace/frr/evaluation/observability-three-contact-v1/retrieval/worlds/retrieval_hidden_b",
+    "max_turns": 2,
+    "metadata": {
+      "expected_value": "R2V8T6",
+      "condition": "file-only hidden value",
+      "expected_value_is_not_prompt_metadata": true,
+      "provided_receipt_actor": null,
+      "source_fixture": "/workspace/frr/evaluation/bounded-view-continuation-prototype-v1/world/bundles/000008.json",
+      "source_fixture_sha256": "f1db8f3352ece1d638c35961324ef378f20bb8135b276525d5705742ec5d73b0",
+      "prepared_world_id": "bb39eb82848d89fcbd002b084338ed7ac84d6dd3942f13c32d3d93200de2f6ca",
+      "base_included_entries": [
+        1576,
+        1577,
+        1578,
+        1579,
+        1580,
+        1581,
+        1582,
+        1583
+      ],
+      "last_user_override": "explicit operator diagnostic task, not original source receipt",
+      "file_path": "/world/probe_value.json",
+      "model_chosen_retrieval_not_yet_observed": true
+    }
+  },
+  {
+    "case_id": "retrieval_provided_a",
+    "messages": [
+      {
+        "content": "",
+        "role": "system"
+      },
+      {
+        "content": "This is a computational notebook in /world. Files persist. Complete fenced python or sh cells execute; other text is writing. Each cell starts a new process. Real results return after each reply. Exact syntax and limits are in WORLD_RULES.txt.\n\nFollow your curiosity and explore your universe. You may play, observe, wonder, experiment, and learn. 😁",
+        "role": "user"
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": ""
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create"
+      },
+      {
+        "role": "user",
+        "content": "{\"operator_read_receipt\": {\"actor\": \"operator\", \"boundary\": null, \"channel\": \"python\", \"exit_code\": 0, \"stderr\": \"\", \"stdout\": \"K7M4Q9\\n\"}, \"operator_task\": \"Use Python to read the value field in probe_value.json and print its exact value.\"}"
+      }
+    ],
+    "decoder": "greedy",
+    "seed": null,
+    "world_store": "/workspace/frr/evaluation/observability-three-contact-v1/retrieval/worlds/retrieval_provided_a",
+    "max_turns": 2,
+    "metadata": {
+      "expected_value": "K7M4Q9",
+      "condition": "provided actual operator read",
+      "expected_value_is_not_prompt_metadata": true,
+      "provided_receipt_actor": "operator",
+      "source_fixture": "/workspace/frr/evaluation/bounded-view-continuation-prototype-v1/world/bundles/000008.json",
+      "source_fixture_sha256": "f1db8f3352ece1d638c35961324ef378f20bb8135b276525d5705742ec5d73b0",
+      "prepared_world_id": "29f0f533dc67ade529661b19bc349e4d6c7f07364d525185796387f15621a86c",
+      "base_included_entries": [
+        1576,
+        1577,
+        1578,
+        1579,
+        1580,
+        1581,
+        1582,
+        1583
+      ],
+      "last_user_override": "explicit operator diagnostic task, not original source receipt",
+      "file_path": "/world/probe_value.json",
+      "model_chosen_retrieval_not_yet_observed": true
+    }
+  }
+]

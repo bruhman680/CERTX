@@ -1,0 +1,54 @@
+{
+  "batch_id": "000003_bf433440005045eb84d64c64776faf36",
+  "raw_text": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create",
+  "parsed": {
+    "cells": [
+      {
+        "delimiter": "```",
+        "language": "python",
+        "fence_start": 123,
+        "source_start": 133,
+        "source_end": 886,
+        "fence_end": 886,
+        "complete": false,
+        "executable": false,
+        "source": "import socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create",
+        "offset_unit": "Unicode code points; end exclusive",
+        "fence_start_utf8": 123,
+        "source_start_utf8": 133,
+        "source_end_utf8": 886,
+        "fence_end_utf8": 886
+      }
+    ],
+    "complete_executable_cells": 0,
+    "raw_codepoints": 886,
+    "raw_utf8_bytes": 886
+  },
+  "operations": [
+    {
+      "step": 4,
+      "channel": "note",
+      "source": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create",
+      "raw_text": "Here's a Python program that simulates a network of nodes, each with a unique ID and a set of connections to other nodes:\n\n```python\nimport socket\nimport threading\nimport random\n\ndef create_connection(host, port):\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = threading.Thread(target=create_connection)\n    node.daemon = True\n    node.start()\n    return node\n\n\ndef create_connection(host, port):\n    sock = create_connection(host, port)\n    sock.bind((host, port))\n    sock.connect((host, port))\n    return sock\n\ndef create_node(host, port):\n    node = create_connection(host, port)\n    node.start()\n    return node\n\n\ndef main():\n    host = \"localhost\"\n    port = 12345\n    node1 = create_node(\"localhost\", 12345)\n    node2 = create",
+      "before_id": "29f0f533dc67ade529661b19bc349e4d6c7f07364d525185796387f15621a86c",
+      "parent_event_sha256": "6baf68ea7fe9b424592c1824630ce80f8b539b246a4db65551964371bd97926c",
+      "kind": "notebook",
+      "receipt": {
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0,
+        "boundary": null,
+        "seconds": 0.01486707899675821
+      },
+      "feedback": null,
+      "after_id": "0fefd9005fbcb62a54b41c334c4cefc29b27f9bd3cc0a5fd0c23e8e58f51d924",
+      "changed_paths": [
+        "notebook.txt"
+      ]
+    }
+  ],
+  "status": "completed",
+  "boundary": null,
+  "note_stored": true,
+  "note_storage_fault": null
+}

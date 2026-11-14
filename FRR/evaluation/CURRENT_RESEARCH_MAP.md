@@ -1,3 +1,21 @@
+# Current research map: observation, decoder and retrieval contacts
+
+14 November 2026, America/Chicago. [Report](observability-three-contact-v1/REPORT.md), [audit](observability-three-contact-v1/AUDIT.json).
+
+| Contact | Evidence | Narrow finding |
+|---|---|---|
+| Actual observations | [Report](observability-three-contact-v1/observation/REPORT.md) | Three inputs differ; same output; no task-accuracy or absent-perception conclusion |
+| Decoder | [Report](observability-three-contact-v1/decoder/REPORT.md) | Untruncated sampling changes two texts; no complete cells; default support mostly singleton on saved path |
+| Prompted retrieval | [Report](observability-three-contact-v1/retrieval/REPORT.md) | Filename parsed as JSON; exit0 without target retrieval; supplied value not used in these replies |
+| Selected main | [1580 pause](live-50-request-from-1567-v1/REPORT.md) | Still unchanged; full-history next input8104/7936 |
+| Bounded-view prototype | [Report](bounded-view-continuation-prototype-v1/REPORT.md) | Separate candidate1581–83; no promotion or generic resume service |
+
+All15 planned copied-world replies completed and were audited; no replay after the usage interruption. Main823 files remain unchanged. Source scouting is now seeking useful methods and challenges. Compare fresh/repeated/length-matched history before assigning failures to the body alone. Use read depths and task/model differences when interpreting literature.
+
+The previous map is archived exactly in [before/CURRENT_RESEARCH_MAP.md](observability-three-contact-v1/before/CURRENT_RESEARCH_MAP.md) and follows below as historical context.
+
+---
+
 # Current research map: bounded views; selected main remains at 1580
 
 13 November 2026, America/Chicago.

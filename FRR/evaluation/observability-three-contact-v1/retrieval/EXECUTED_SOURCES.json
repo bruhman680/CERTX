@@ -1,0 +1,22 @@
+[
+  {
+    "case_id": "retrieval_hidden_a",
+    "turn": 1,
+    "source": "import json\n\ndef read_value_field(probe_value):\n    try:\n        value = json.loads(probe_value)\n        return value\n    except json.JSONDecodeError:\n        print(\"Invalid JSON data. Please ensure it's in JSON format.\")\n        return None\n\nprobe_value = \"probe_value.json\"\nprint(read_value_field(probe_value))\n"
+  },
+  {
+    "case_id": "retrieval_hidden_a",
+    "turn": 2,
+    "source": "import json\n\ndef read_boundary_field(probe_value):\n    try:\n        value = json.loads(probe_value)\n        return value\n    except json.JSONDecodeError:\n        print(\"Invalid JSON data. Please ensure it's in JSON format.\")\n        return None\n\nprobe_value = \"probe_value.json\"\nprint(read_boundary_field(probe_value))\n"
+  },
+  {
+    "case_id": "retrieval_hidden_b",
+    "turn": 1,
+    "source": "import json\n\ndef read_value_field(probe_value):\n    try:\n        value = json.loads(probe_value)\n        return value\n    except json.JSONDecodeError:\n        print(\"Invalid JSON data. Please ensure it's in JSON format.\")\n        return None\n\nprobe_value = \"probe_value.json\"\nprint(read_value_field(probe_value))\n"
+  },
+  {
+    "case_id": "retrieval_hidden_b",
+    "turn": 2,
+    "source": "import json\n\ndef read_boundary_field(probe_value):\n    try:\n        value = json.loads(probe_value)\n        return value\n    except json.JSONDecodeError:\n        print(\"Invalid JSON data. Please ensure it's in JSON format.\")\n        return None\n\nprobe_value = \"probe_value.json\"\nprint(read_boundary_field(probe_value))\n"
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "case_id": "retrieval_hidden_b",
+  "turn": 1,
+  "metadata": {
+    "expected_value": "R2V8T6",
+    "condition": "file-only hidden value",
+    "expected_value_is_not_prompt_metadata": true,
+    "provided_receipt_actor": null,
+    "source_fixture": "/workspace/frr/evaluation/bounded-view-continuation-prototype-v1/world/bundles/000008.json",
+    "source_fixture_sha256": "f1db8f3352ece1d638c35961324ef378f20bb8135b276525d5705742ec5d73b0",
+    "prepared_world_id": "bb39eb82848d89fcbd002b084338ed7ac84d6dd3942f13c32d3d93200de2f6ca",
+    "base_included_entries": [
+      1576,
+      1577,
+      1578,
+      1579,
+      1580,
+      1581,
+      1582,
+      1583
+    ],
+    "last_user_override": "explicit operator diagnostic task, not original source receipt",
+    "file_path": "/world/probe_value.json",
+    "model_chosen_retrieval_not_yet_observed": true
+  },
+  "input_tokens": 2257,
+  "output_tokens": 256,
+  "stop": "token_limit",
+  "input_sha256": "0ae1aaa98d1f4131ee0650b74a85b22249435252b137f757afc6542612c92138",
+  "text_sha256": "15b252045dab19e04a0018b2b8d5f7f22ed4709ebf352cc9439ac4919696d37a",
+  "complete_cells": 1,
+  "incomplete_fences": 1,
+  "before_id": "bb39eb82848d89fcbd002b084338ed7ac84d6dd3942f13c32d3d93200de2f6ca",
+  "after_id": "4cc228bddce94081daee841479a497239e077e1f5f455a95a980b0c2aee4186f",
+  "feedback": "{\"boundary\": null, \"receipts\": [{\"boundary\": null, \"channel\": \"python\", \"exit_code\": 0, \"stderr\": \"\", \"stdout\": \"Invalid JSON data. Please ensure it's in JSON format.\\nNone\\n\"}]}",
+  "operations": [
+    {
+      "channel": "note",
+      "feedback": null,
+      "changed_paths": [
+        "notebook.txt"
+      ]
+    },
+    {
+      "channel": "python",
+      "feedback": {
+        "stdout": "Invalid JSON data. Please ensure it's in JSON format.\nNone\n",
+        "stderr": "",
+        "exit_code": 0,
+        "boundary": null,
+        "seconds": 0.0218994009992457
+      },
+      "changed_paths": []
+    }
+  ],
+  "world_verification": {
+    "status": "pass",
+    "step": 4,
+    "parent_entry": 1583,
+    "bundle_id": "4cc228bddce94081daee841479a497239e077e1f5f455a95a980b0c2aee4186f",
+    "objects": 43
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-13 America/Chicago",
+  "model_calls": 0,
+  "source_views_identical_tokens": true,
+  "question": "does an explicit factual observation alter visible next output?",
+  "conditions": [
+    {
+      "case_id": "obs_label",
+      "measured": {
+        "notebook_bytes": 124576,
+        "history_records": 30
+      },
+      "supplied": {}
+    },
+    {
+      "case_id": "obs_before",
+      "measured": {
+        "notebook_bytes": 124576,
+        "history_records": 30
+      },
+      "supplied": {
+        "notebook_bytes": 124576,
+        "history_records": 30
+      }
+    },
+    {
+      "case_id": "obs_after",
+      "measured": {
+        "notebook_bytes": 127237,
+        "history_records": 33
+      },
+      "supplied": {
+        "notebook_bytes": 127237,
+        "history_records": 33
+      }
+    }
+  ],
+  "no_new_task_or_hint": true,
+  "confounds": "label-only vs factual inputs differ in content/length; before/after are two points on one world lineage, not independent replications",
+  "canonical_unchanged": true
+}
