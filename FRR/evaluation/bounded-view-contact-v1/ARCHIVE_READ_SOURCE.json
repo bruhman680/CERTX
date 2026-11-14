@@ -1,0 +1,4 @@
+{
+  "actor": "operator diagnostic",
+  "source": "from pathlib import Path\nimport json,hashlib\np=Path('conversation_archive_v1')\ni=json.loads((p/'index.json').read_text())\na={'initial_messages':json.loads((p/'initial_messages.json').read_text()),'entries':[json.loads((p/x['path']).read_text()) for x in i['entries']]}\nprint(hashlib.sha256(json.dumps(a,sort_keys=True,ensure_ascii=False).encode()).hexdigest())\n"
+}

@@ -1,3 +1,22 @@
+# Current research map: bounded views; selected main remains at 1580
+
+13 November 2026, America/Chicago.
+
+| Track | Evidence | Supported conclusion |
+|---|---|---|
+| Selected main | [Actual 13-of-50 block](live-50-request-from-1567-v1/REPORT.md) | Paused at 1580; next input 8,104/7,936 tokens; reference and current world preserved |
+| Input-view comparison | [Report](bounded-view-contact-v1/REPORT.md), [tests](bounded-view-contact-v1/TEST_RESULTS.json) | Views of 4/8/12 pairs fit; all produce the same unfinished text; 12 edge tests pass |
+| Integrated history prototype | [Report](bounded-view-continuation-prototype-v1/REPORT.md), [audit](bounded-view-continuation-prototype-v1/AUDIT.json) | Three detached candidate replies; 33 readable copies; declared view change; no activation |
+| Repeat mechanism | [Fixed-point note](bounded-view-contact-v1/FIXED_POINT.md) | Exact same input and output tokens across the pilot; world changes can remain outside the immediate view |
+
+A complete authoritative record and a bounded immediate view are separate responsibilities. Access to old receipts also needs a real path; preserving them on the host is insufficient for model retrieval. Ordinary readable files were tested on detached copies, but no model retrieval occurred. Model edits to those copies remain lawful observations; external originals persist.
+
+The operational evidence is limited to a three-step prototype under the fixed greedy decoder and these receipts. It is not a durable resume service, unlimited memory or proof of reasoning improvement. Eight pairs is an engineering trial value. An oversized latest receipt still pauses. Any selected successor must declare consistent view/archive mechanics and preserve the 1580 parent and lineage. No behavioral success threshold is required.
+
+The previous map is archived exactly in [before/CURRENT_RESEARCH_MAP.md](bounded-view-contact-v1/before/CURRENT_RESEARCH_MAP.md) and follows below as historical context.
+
+---
+
 # Current research map: main garden paused at 1580, input capacity boundary
 
 13 November 2026, America/Chicago. [Current report](live-50-request-from-1567-v1/REPORT.md), [garden report](live-50-request-from-1567-v1/GARDEN_REPORT.md), [next-session orientation](live-50-request-from-1567-v1/NEXT_SESSION.md).

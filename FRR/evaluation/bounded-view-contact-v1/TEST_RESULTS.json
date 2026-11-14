@@ -1,0 +1,122 @@
+{
+  "date": "2026-11-13 America/Chicago",
+  "tests": [
+    {
+      "name": "actual contiguous 4/8/12 pairs with unchanged roles/text",
+      "passed": true,
+      "detail": {
+        "4": {
+          "input_tokens": 1163,
+          "included": [
+            1577,
+            1578,
+            1579,
+            1580
+          ]
+        },
+        "8": {
+          "input_tokens": 2231,
+          "included": [
+            1573,
+            1574,
+            1575,
+            1576,
+            1577,
+            1578,
+            1579,
+            1580
+          ]
+        },
+        "12": {
+          "input_tokens": 3299,
+          "included": [
+            1569,
+            1570,
+            1571,
+            1572,
+            1573,
+            1574,
+            1575,
+            1576,
+            1577,
+            1578,
+            1579,
+            1580
+          ]
+        }
+      }
+    },
+    {
+      "name": "no input mutation or returned-initial alias",
+      "passed": true,
+      "detail": "Initial framing is copied; source archive unchanged"
+    },
+    {
+      "name": "zero-exchange input retains exact initial framing",
+      "passed": true,
+      "detail": 95
+    },
+    {
+      "name": "short archive smaller than pair limit",
+      "passed": true,
+      "detail": "No unnecessary omissions"
+    },
+    {
+      "name": "token budget drops complete oldest pairs only",
+      "passed": true,
+      "detail": {
+        "budget": 249,
+        "included": [
+          3,
+          4
+        ],
+        "receipt_verbatim": true
+      }
+    },
+    {
+      "name": "oversized newest receipt pauses instead of discarding latest",
+      "passed": true,
+      "detail": "Latest pair is never omitted or truncated to force a fit"
+    },
+    {
+      "name": "exact input boundary and one-token-short capacity",
+      "passed": true,
+      "detail": {
+        "fits_at": 172,
+        "pauses_at": 171
+      }
+    },
+    {
+      "name": "initial framing too large pauses",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "archive order checked before omitting old records",
+      "passed": true,
+      "detail": "Out-of-order/duplicate entries rejected even outside retained suffix"
+    },
+    {
+      "name": "malformed exchange cannot silently lose a receipt",
+      "passed": true,
+      "detail": "Incomplete, non-text, boolean-identifier and unknown-field records rejected"
+    },
+    {
+      "name": "invalid limits rejected",
+      "passed": true,
+      "detail": "Nonpositive and non-integer/bool limits rejected"
+    },
+    {
+      "name": "initial framing validation",
+      "passed": true,
+      "detail": "Unexpected role framing/text/length rejected"
+    }
+  ],
+  "passed": 12,
+  "total": 12,
+  "canonical_candidate_unchanged": true,
+  "tokenizer_only": true,
+  "weights_loaded": false,
+  "model_generations": 0,
+  "synthetic_receipts_are_test_fixtures_not_model_outputs": true
+}

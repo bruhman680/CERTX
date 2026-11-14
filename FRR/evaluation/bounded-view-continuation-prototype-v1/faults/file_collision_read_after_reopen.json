@@ -1,0 +1,25 @@
+{
+  "step": 5,
+  "channel": "python",
+  "source": "from pathlib import Path\nassert Path('conversation_archive_v1/entries/001581.json').read_text()=='model-owned collision'\nassert Path('following_cell.txt').read_text()=='5'\nprint('collision retained')\n",
+  "raw_text": null,
+  "before_id": "055bc0b4cd754597522f6642528b5bd7e63f930e00205fa28ec5d3a50ef3f14f",
+  "parent_event_sha256": "2215530c8ecd70cc7cb5de49bbe39f0e99b59bf1345859f8ac8727e718dcd382",
+  "kind": "python",
+  "receipt": {
+    "stdout": "collision retained\n",
+    "stderr": "",
+    "exit_code": 0,
+    "boundary": null,
+    "seconds": 0.017790654001146322
+  },
+  "feedback": {
+    "stdout": "collision retained\n",
+    "stderr": "",
+    "exit_code": 0,
+    "boundary": null,
+    "seconds": 0.017790654001146322
+  },
+  "after_id": "055bc0b4cd754597522f6642528b5bd7e63f930e00205fa28ec5d3a50ef3f14f",
+  "changed_paths": []
+}

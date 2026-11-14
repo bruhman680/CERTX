@@ -1,3 +1,19 @@
+# Current: bounded-view prototype tested; main remains paused at 1580
+
+13 November 2026, America/Chicago. [View comparison](../evaluation/bounded-view-contact-v1/REPORT.md), [integrated detached prototype](../evaluation/bounded-view-continuation-prototype-v1/REPORT.md), [conditional repeat-loop finding](../evaluation/bounded-view-contact-v1/FIXED_POINT.md).
+
+The selected main run, phase pointer and 823 candidate files remain unchanged at 1580. Its next full input is still 8,104 tokens against the 7,936-token allowance. No new policy is selected. Detached views of 4, 8 and 12 complete pairs fit at 1,163, 2,231 and 3,299 tokens, but all produced the same earlier unfinished reply. The selector passed 12 edge tests and independent review. No optimal pair count or reasoning improvement was established.
+
+The integrated eight-pair prototype completed three candidate replies, labelled 1581–1583, separately from main. It preserves the exact 1580 parent files except its declared rules update and added ordinary history copies. The initial invitation, model, decoder and execution laws remain fixed. Thirty-three copied records were readable after reopening. Collision and symlink tests preserved existing files and allowed a following cell. The audit passed. This is a scoped three-loop prototype, not a general resume service or a fifty-turn test; model-chosen retrieval was not observed.
+
+All three prototype input token sequences and output token sequences are identical. With the same recent pairs, fixed greedy body and silent successful bookkeeping, the immediate observation repeats while world files grow. Actual errors, actions, observations or changed conditions can break that relationship. No variation cue or new decoder was adopted.
+
+Keep activation and lineage explicit before any selected continuation. Do not blindly rerun the prototype or import it into main. Archive copies remain ordinary writable files, with authoritative originals outside the world. Edits are recorded, not silently restored or treated as behavioral failures. No work continues unattended.
+
+The previous orientation is archived byte-for-byte in bounded-view-contact-v1/before/CURRENT_ORIENTATION.md and follows below as historical context.
+
+---
+
 # Current: main garden paused at 1580, context capacity reached
 
 13 November 2026, America/Chicago. [Report](../evaluation/live-50-request-from-1567-v1/REPORT.md), [garden report](../evaluation/live-50-request-from-1567-v1/GARDEN_REPORT.md), [audit](../evaluation/live-50-request-from-1567-v1/AUDIT.json), [next-session notes](../evaluation/live-50-request-from-1567-v1/NEXT_SESSION.md).
