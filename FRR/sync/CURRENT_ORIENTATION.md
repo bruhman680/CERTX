@@ -1,3 +1,19 @@
+# Current: three adaptive source-weave passes completed; main remains 1580
+
+14 November 2026, America/Chicago. [Source synthesis](../evaluation/source-weave-three-pass-v1/REPORT.md), [next contact](../evaluation/source-weave-three-pass-v1/NEXT_CONTACT.md), [source method](../evaluation/source-weave-three-pass-v1/METHOD.md). Six roles worked through direct matches, upstream/lateral mechanisms, and counterexamples across arXiv, Hugging Face and official GitHub sources. Read depths, versions and access limits are retained. Repeated sources and agent agreement are not new replications.
+
+The preceding15 garden-model replies are complete and audited in [the experiment report](../evaluation/observability-three-contact-v1/REPORT.md). No completed action was rerun after the quota reset. Source scouting added no local garden-model calls, training, package installation, body replacement or main-world change.
+
+Strongest next control: the same file task/world/body/decoder under inherited repeated and fresh framing, then role/token-length-matched counterfactual histories with more than one filler. Neutral filler is not guaranteed inert. Separate actual file acquisition from supplied document text, parsed-value use, process status and requested effect. Keep evaluation outside the free garden rather than imposing preferred paths or success gates.
+
+Source-specific limits matter: the pinned SmolLM2 card advertises function calling for1.7B, not evidence for135M; specialized TinyAgent/CodeAct training does not transfer automatically. TinyAgent80K/40K count provenance remains unresolved. BFCL code checks both state and returned results; CAREFUL's broad abstract wording needs its detailed qualification, and selected numerical/release claims remain unverified. Tiny recursive/trained-state architectures challenge parameter-count-only explanations but are different bodies with different training/reset rules.
+
+Observer practice refined: layer evidence, distinguish host/modelPython3.12 from guestPython3.13.5, pin source versions, retain source/unit conflicts, and test context confounds before attributing failure to the body. No memory or decoder policy is selected. Main remains paused1580 with823 files unchanged. No local model process or unattended continuation remains.
+
+The prior orientation is archived exactly in source-weave-three-pass-v1/before/CURRENT_ORIENTATION.md and follows below as historical context.
+
+---
+
 # Current: three observability contacts completed; main remains 1580
 
 14 November 2026, America/Chicago. [Experiment report](../evaluation/observability-three-contact-v1/REPORT.md), [audit](../evaluation/observability-three-contact-v1/AUDIT.json), [retrieval readout](../evaluation/observability-three-contact-v1/retrieval/REPORT.md). All15 planned replies and one teacher-forced profile were retained through the chat usage interruption; no completed action was replayed after reset. No main entry or setting changed.

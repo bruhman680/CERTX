@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-14",
+  "pass": 1,
+  "scope": "Direct task-state/tool-use contacts; documentation research only",
+  "main_entry_unchanged": 1580,
+  "searches": [
+    {
+      "query": "site.arxiv.org tau-bench benchmark tool agent user interaction 2024",
+      "status": "success"
+    },
+    {
+      "query": "site.arxiv.org CodeAct executable code actions language agents 2402",
+      "status": "success"
+    },
+    {
+      "query": "site.arxiv.org Berkeley Function Calling Leaderboard executable evaluation multi turn",
+      "status": "success"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "tau",
+      "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+      "arxiv": "2406.12045v1",
+      "submitted": "2024-06-17",
+      "urls": [
+        "https://arxiv.org/abs/2406.12045",
+        "https://arxiv.org/html/2406.12045v1",
+        "https://github.com/sierra-research/tau-bench/blob/59a200c6d575d595120f1cb70fea53cef0632f6b/tau_bench/envs/base.py"
+      ],
+      "read_depth": "Abstract and metadata; HTML selected section3 and reward/pass^k paragraphs, lines78-90 and173-180; official README; complete base.py source read, not executed",
+      "repo_commit": "59a200c6d575d595120f1cb70fea53cef0632f6b",
+      "code_modified_date": "2024-11-11T02:16:14Z",
+      "claim": "Outcome database and necessary response information are independently compared; paper acknowledges reward1 need not satisfy every policy.",
+      "limit": "Benchmark domains and explicit tasks are unlike unprompted135M garden; pass^k is all-k consistency, not at-least-one pass@k."
+    },
+    {
+      "id": "bfcl",
+      "title": "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models",
+      "publication": "ICML/PMLR267,13–19July2025",
+      "urls": [
+        "https://proceedings.mlr.press/v267/patil25a.html",
+        "https://gorilla.cs.berkeley.edu/blogs/13_bfcl_v3_multi_turn.html",
+        "https://github.com/ShishirPatil/gorilla/blob/main/berkeley-function-call-leaderboard/TEST_CATEGORIES.md"
+      ],
+      "blog_release": "2024-09-19",
+      "blog_updated": "2024-12-10",
+      "read_depth": "PMLR abstract+metadata; V3 official blog introduction, categories, inference and evaluation sections plus error examples; official current test-category docs and directory listing; no scorer implementation audit",
+      "claim": "Multi-turn uses state and response-path subset checks, including read-only request coverage. Long-context augmentation and filesystem/current-directory failures are documented.",
+      "limit": "Ground-truth minimum paths may miss alternatives or costs; current repository docs and V3 blog are different snapshots, not a pinned replication. No arXiv ID claimed for BFCL."
+    },
+    {
+      "id": "codeact",
+      "title": "Executable Code Actions Elicit Better LLM Agents",
+      "arxiv": "2402.01030v4",
+      "submitted": "2024-02-01",
+      "revised": "2024-06-07",
+      "urls": [
+        "https://arxiv.org/abs/2402.01030",
+        "https://arxiv.org/html/2402.01030v4",
+        "https://github.com/xingyaoww/code-act/blob/main/README.md",
+        "https://huggingface.co/datasets/xingyaoww/code-act"
+      ],
+      "read_depth": "Abstract+metadata; HTML selected sections2.3–3.2 lines137–200; official full README; Hugging Face card/viewer header and preview rows, not full dataset",
+      "claim": "Executable code plus real execution feedback is paired with task verification; interaction training includes recovery trajectories. Released trained agents are7B; HF codeact split shows7.14k rows.",
+      "limit": "Interpreter access is not evidence that an untrained-for-this135M model can discover APIs or recover; training/body/task differences dominate transfer."
+    },
+    {
+      "id": "lostmiddle",
+      "title": "Lost in the Middle: How Language Models Use Long Contexts",
+      "arxiv": "2307.03172v3",
+      "submitted": "2023-07-06",
+      "revised": "2023-11-20",
+      "urls": [
+        "https://arxiv.org/abs/2307.03172",
+        "https://arxiv.org/html/2307.03172v3",
+        "https://github.com/nelson-liu/lost-in-the-middle/blob/main/README.md"
+      ],
+      "read_depth": "Abstract+metadata; HTML sections3–4.3 selected lines130–179; official README including oracle/distractor data schemas and prompting paths, not executed",
+      "claim": "Controlled position/distractor manipulations separate input availability from use; query placement benefits syntheticKV but not uniformlyQA; scale affects positional trend.",
+      "limit": "Not file execution, not repeated self-generated history, and not135M. Fresh-vs-old-history proposal is our derived control, not an already replicated paper result."
+    }
+  ],
+  "referrals": [
+    {
+      "title": "CAREFUL-Bench: Effect-Aware, Judge-Free Evaluation of Multi-Turn LLM Function Calling",
+      "url": "https://arxiv.org/abs/2611.02978",
+      "submitted": "2026-11-02",
+      "revised": "2026-11-03",
+      "read_depth": "Abstract+metadata only",
+      "status": "Forwarded to root for independent counterexample pass; not counted as adopted contact",
+      "caution": "Its broad final-state-only description needs reconciliation with BFCLV3 response-based subset checks."
+    }
+  ],
+  "access_failures": [
+    {
+      "status": "Tool navigation mismatch, not access denial",
+      "detail": "find on arXiv HTML refs resolved to abstract versions; CodeAct section string not found. Recovered by opening explicit versioned HTML URLs with line positions."
+    },
+    {
+      "status": "Output truncation",
+      "detail": "Combined large GitHub README/web output truncated in assistant tool output. Subsequent focused reads used for key claims; no claim of full-paper reading."
+    }
+  ],
+  "not_done": [
+    "No package/model/data downloads",
+    "No untrusted code execution",
+    "No paid APIs",
+    "No garden changes",
+    "No model inference",
+    "No full BFCL scorer audit"
+  ],
+  "candidate_contacts": [
+    "Fresh context vs inherited repeated history, same file task/world/model/decoder/output cap; add token-length-matched neutral history to isolate content from length.",
+    "Supplied value vs actual file read paired with two hidden nonce files; separate source access, correct value use, parse error and process status.",
+    "Replay captured action traces externally for requested effect and extra state differences; do not feed score/rubric into open garden."
+  ]
+}

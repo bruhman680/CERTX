@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-14",
+  "scope": "Selected primary source audit; no external code execution, model inference, dataset download or main-world change.",
+  "sources": [
+    {
+      "id": "careful-v2",
+      "urls": [
+        "https://arxiv.org/abs/2611.02978v2",
+        "https://arxiv.org/html/2611.02978v2"
+      ],
+      "title": "CAREFUL-Bench: Effect-Aware, Judge-Free Evaluation of Multi-Turn LLM Function Calling",
+      "authors": [
+        "Alexander Kovalenko",
+        "Artem Redchych"
+      ],
+      "version": "v2, revised 2026-11-03; v1 submitted 2026-11-02",
+      "read_depth": "Metadata, abstract, selected full sections 2-6 and 8; numerical headlines not reproduced. HTML via web and standard-library HTTP/text extraction.",
+      "findings": [
+        "Detailed section3 acknowledges response-result checks despite abstract final-state-only wording.",
+        "Pins bfcl-eval2026.3.23.",
+        "Sampled effect and idempotence tests not proofs; simulator and confirmation-script blind spots acknowledged."
+      ],
+      "unresolved": [
+        "Landing abstract rho=.99/loss14.0 vs HTML abstract rho=.98/loss14.5 for same v2.",
+        "No author release URL found in inspected HTML links/metadata or focused search; release and 800-reference reproduction claims unverified."
+      ]
+    },
+    {
+      "id": "bfcl-code",
+      "urls": [
+        "https://gorilla.cs.berkeley.edu/blogs/13_bfcl_v3_multi_turn.html",
+        "https://api.github.com/repos/ShishirPatil/gorilla/commits/main",
+        "https://github.com/ShishirPatil/gorilla/blob/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/eval_checker/multi_turn_eval/multi_turn_checker.py",
+        "https://github.com/ShishirPatil/gorilla/blob/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/pyproject.toml"
+      ],
+      "version": "V3 methodology released2024-09-19 updated2024-12-10; repository commit6ea57973c7a6097fd7c5915698c54c17c5b1b6c8 dated2026-03-23T11:40:47Z",
+      "checker_blob_sha": "34b36715cdfaa4464ba1be137af4d30e85da8efb",
+      "checker_modified": "2025-06-09T07:18:19Z",
+      "read_depth": "Official blog selected evaluation sections; complete multi_turn_checker.py; versioning section pyproject. GitHub connector reads including pinned raw file.",
+      "findings": [
+        "State checker skips underscore attributes.",
+        "Actual response checker enforces unordered reference-result submultiset across accumulated model results.",
+        "Invocation-order check commented out."
+      ],
+      "unresolved": [
+        "Exact wheel2026.3.23-to-commit identity unproved; dynamic setuptools-scm version.",
+        "No executor/decoder-wide audit or replay execution."
+      ]
+    },
+    {
+      "id": "tau-v1",
+      "urls": [
+        "https://arxiv.org/html/2406.12045v1"
+      ],
+      "title": "tau-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+      "authors": [
+        "Shunyu Yao",
+        "Noah Shinn",
+        "Pedram Razavi",
+        "Karthik Narasimhan"
+      ],
+      "version": "v1,2024-06-17",
+      "read_depth": "Focused section3 reward definition and necessary-not-sufficient caveat, not whole paper/appendix/implementation.",
+      "findings": [
+        "Final database and required output-information reward may miss policy violation such as absent confirmation."
+      ]
+    }
+  ],
+  "access_log": [
+    {
+      "action": "Read CAREFUL metadata and HTML via web",
+      "result": "success"
+    },
+    {
+      "action": "Extract primary HTML using bs4",
+      "result": "ModuleNotFoundError; no installation; corrected using standard library"
+    },
+    {
+      "action": "Fetch official BFCL directory/main commit/main and pinned checker,pyproject via GitHub connector",
+      "result": "success"
+    },
+    {
+      "action": "Focused web search query CAREFUL-Bench github Kovalenko Redchych",
+      "result": "Primary arxiv and secondary listings; no verified author code release located. Search absence not nonexistence evidence."
+    },
+    {
+      "action": "Focused tau reward/BFCL methodology extraction via standard-library urllib",
+      "result": "success"
+    }
+  ]
+}

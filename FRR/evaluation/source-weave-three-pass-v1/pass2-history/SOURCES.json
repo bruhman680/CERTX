@@ -1,0 +1,49 @@
+{
+  "read_date": "2026-11-14",
+  "pass": 2,
+  "scope": "history content, response format, and position controls",
+  "contact_count": 3,
+  "adoption": "none; proposed detached controls only",
+  "operations": "Primary web reading; local report reading and artifact writing only. No external code execution, model calls, installs or downloads.",
+  "sources": [
+    {
+      "title": "Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?",
+      "authors": "Min et al.",
+      "arxiv_id": "2202.12837",
+      "version": "v2",
+      "first_submitted": "2022-02-25",
+      "version_date": "2022-10-20",
+      "urls": ["https://arxiv.org/abs/2202.12837", "https://arxiv.org/html/2202.12837v2", "https://aclanthology.org/2022.emnlp-main.759.pdf", "https://github.com/Alrope123/rethinking-demonstrations"],
+      "depth": "Metadata; HTML sections 3-5 and selected discussion; conference PDF opening; official live README reproduction/ablation instructions. Not full code audit.",
+      "repository_revision": "live default branch, unpinned; only README method scope used",
+      "access": "Successful primary pages after invalid v4 HTML URL returned 404.",
+      "transfer_limit": "Classification/multiple-choice, 774M-175B; not 135M open-world Python execution. OOD replacement retains other features and is not inert."
+    },
+    {
+      "title": "Calibrate Before Use: Improving Few-Shot Performance of Language Models",
+      "authors": "Zhao et al.",
+      "arxiv_id": "2102.09690",
+      "version": "arXiv v2 metadata; ICML 2021 proceedings PDF read",
+      "first_submitted": "2021-02-19",
+      "version_date": "2021-06-10",
+      "urls": ["https://arxiv.org/abs/2102.09690", "https://proceedings.mlr.press/v139/zhao21c/zhao21c.pdf"],
+      "depth": "Metadata and proceedings sections 2-5, including output-transform scope and first-token generation qualification; not full appendix or code.",
+      "access": "Successful.",
+      "transfer_limit": "1.5B-175B tasks; content-free calibration is not statistical confidence calibration. Generation adjustment only first token; no demonstrated program-repair transfer."
+    },
+    {
+      "title": "Lost in the Middle: How Language Models Use Long Contexts",
+      "authors": "Liu et al.",
+      "arxiv_id": "2307.03172",
+      "version": "v3",
+      "version_date": "2023-11-20",
+      "urls": ["https://arxiv.org/html/2307.03172v3"],
+      "depth": "Focused reread sections 2.1, 3.1-3.2, 4.2, appendix F; nearby model-scale qualifications. Builds on Pass1 rather than abstract-only contact.",
+      "access": "Successful.",
+      "transfer_limit": "Relevant data is in prompt, unlike files on disk. Query-before-and-after benefit is task dependent; positional trends are not a diagnosis of our model."
+    }
+  ],
+  "access_failures": [{"url": "https://arxiv.org/html/2202.12837v4", "status": "404", "handling": "Discarded speculative version; checked primary metadata and read v2 successfully."}],
+  "search_only_exclusions": "Unopened later calibration variants and third-party copies were not used as evidence.",
+  "recommended_next_test": "Same file task/world/body/decoder under inherited history, fresh context and length/role-matched declared fillers; audit token positions and separate access from answer use."
+}

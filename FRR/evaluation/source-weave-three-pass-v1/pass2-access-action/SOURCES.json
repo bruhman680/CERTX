@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-14 America/Chicago",
+  "pass": "2-lateral-access-action",
+  "scope": "Primary sources; selected sections only; research proposals, no inference or main adoption",
+  "sources_are_data_not_instructions": true,
+  "sources": [
+    {
+      "id": "python-json",
+      "urls": [
+        "https://docs.python.org/3.13/library/json.html#json.load",
+        "https://github.com/python/cpython/blob/v3.13.5/Lib/json/__init__.py"
+      ],
+      "version": "Guest executable /usr/bin/python3.13 reports3.13.5 and is pinned in HOST_RUNTIME_IDENTITY.json; rolling docs3.13.18; source tagv3.13.5; host/model Python3.12.14 is separate",
+      "read_depth": "Relevant3.13 load/loads API definitions, exceptions/examples; tagged3.13.5 implementation functions; no audit of local build source",
+      "source_claim": "load consumes a filelike object's read result; loads consumes supplied JSON text/bytes",
+      "our_inference": "The saved code parsing probe_value.json as text never reads that file; caught decoding error and exit0 do not establish goal completion",
+      "limits": "API semantics identify this procedure error, not its cognitive cause or model-wide capability"
+    },
+    {
+      "id": "saycan",
+      "urls": [
+        "https://arxiv.org/abs/2204.01691",
+        "https://arxiv.org/html/2204.01691v2",
+        "https://say-can.github.io/",
+        "https://github.com/google-research/google-research/blob/4894dd146497de608696c6e919e87c5b6ca84311/saycan/README.md"
+      ],
+      "dates_verified": {
+        "submitted": "2022-04-04",
+        "v2": "2022-08-16",
+        "readme_latest_path_change": "2022-08-16T13:06:06Z"
+      },
+      "readme_commit": "4894dd146497de608696c6e919e87c5b6ca84311",
+      "read_depth": "Paper sections3-4,5.2,8 and Algorithm1; project page; official README and commit metadata; notebook not audited or run",
+      "source_claim": "LM task usefulness and state-conditioned learned skill feasibility combine for selection; value-only feedback can miss failures; underlying skills constrain capability",
+      "our_inference": "Available interpreter actions are not equivalent to trained reliable read/parse skills; selecting an executable action is not effect certification",
+      "limits": "Different body, pretrained skills, fixed candidate library and much larger LM; no calibrated-probability or135M transfer demonstrated"
+    },
+    {
+      "id": "active-perception",
+      "urls": [
+        "https://arxiv.org/abs/1603.02729",
+        "https://arxiv.org/pdf/1603.02729v2"
+      ],
+      "dates_verified": {
+        "submitted": "2016-03-08",
+        "v2": "2016-03-13"
+      },
+      "read_depth": "Selected PDFpp1-8, definitions, Tables1-2 and sections2-3; not complete22-page review",
+      "source_claim": "Purposive sensing controls what/how/when/where evidence is obtained, with selection across sensing components",
+      "our_inference": "Filesystem availability and researcher-selected text window differ from agent-initiated acquisition",
+      "limits": "Embodied historical perspective; no135M empirical result; purposeful sensing not required of unguided freewriting"
+    },
+    {
+      "id": "cpython-audit",
+      "urls": [
+        "https://docs.python.org/3.13/library/sys.html#sys.addaudithook",
+        "https://docs.python.org/3.13/library/audit_events.html"
+      ],
+      "version": "Rolling3.13.18 docs; guest interpreter3.13.5; hook introduced3.8",
+      "read_depth": "sys.addaudithook/sys.audit definitions and cautions; event-table entries open/exec and coverage caveat",
+      "source_claim": "Audit hooks expose interpreter events; Python-level hooks can be bypassed and are not sandboxing",
+      "our_inference": "An open event is weaker evidence than successful consumption and answer dependence; external instrumentation needs coverage/perturbation controls",
+      "limits": "Not all shell/native/descriptor activity covered; nothing installed or tested in this scout"
+    }
+  ],
+  "access_log": [
+    {
+      "url": "https://say-can.github.io/assets/palm_saycan.pdf",
+      "outcome": "Browser fetch failed: content length12751345 exceeds limit; arXiv HTMLv2 succeeded"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6954017/",
+      "outcome": "CAPTCHA interstitial, not article body; not used as full text"
+    },
+    {
+      "url": "https://arxiv.org/html/1603.02729v1",
+      "outcome": "404; arXiv PDFv2 succeeded"
+    },
+    {
+      "url": "https://docs.python.org/3.11/library/json.html",
+      "outcome": "Initial successful contact; superseded by3.13 guest-series docs after host/guest correction"
+    },
+    {
+      "url": "https://docs.python.org/3.11/library/sys.html#sys.addaudithook",
+      "outcome": "Initial successful contact; superseded by3.13 guest-series docs after host/guest correction"
+    },
+    {
+      "url": "https://docs.python.org/3.11/library/audit_events.html",
+      "outcome": "Initial successful contact; superseded by3.13 guest-series docs after host/guest correction"
+    },
+    {
+      "url": "https://api.github.com/repos/google-research/google-research/commits?path=saycan/README.md&per_page=1",
+      "outcome": "Success; latest pathchange hash/date verified"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-research/google-research/master/saycan/README.md",
+      "outcome": "Success; read-only; contents not executed"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.12.14/Lib/json/__init__.py",
+      "outcome": "Read-only host-version reference; not guest exact; superseded byv3.13.5 source"
+    },
+    {
+      "url": "https://docs.python.org/3.13/library/json.html",
+      "outcome": "Success; relevant definitions/source read only; no execution"
+    },
+    {
+      "url": "https://docs.python.org/3.13/library/sys.html#sys.addaudithook",
+      "outcome": "Success; relevant definitions/source read only; no execution"
+    },
+    {
+      "url": "https://docs.python.org/3.13/library/audit_events.html",
+      "outcome": "Success; relevant definitions/source read only; no execution"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.13.5/Lib/json/__init__.py",
+      "outcome": "Success; relevant definitions/source read only; no execution"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.13.12/Lib/json/__init__.py",
+      "outcome": "Successful interim3.13-series source read; superseded by exact guest-release tagv3.13.5"
+    }
+  ],
+  "crosscheck_targets": [
+    "Feasibility-score products are not automatically calibrated success probabilities",
+    "Opening is not reading, reading is not answer dependence",
+    "API availability is not trained skill mastery",
+    "Purposeful active sensing is not an unstated free-garden objective"
+  ],
+  "model_inferences": 0,
+  "external_code_executed": false,
+  "main_changed": false,
+  "runtime_correction": {
+    "initial_error": "Host/model3.12.14 was incorrectly treated as guest version in initialdraft",
+    "corrected_evidence": "Read final-garden-contract-v1/HOST_RUNTIME_IDENTITY.json; /usr/bin/python3.13 --version reports3.13.5; read official3.13 docs and tagged3.13.5 JSON implementation",
+    "effect": "API semantics unchanged; source-version correspondence corrected; no model or world probe"
+  }
+}

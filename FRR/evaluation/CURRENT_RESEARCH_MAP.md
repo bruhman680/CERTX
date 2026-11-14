@@ -1,3 +1,21 @@
+# Current research map: experiments settled; three source-weave passes complete
+
+14 November 2026, America/Chicago. [Source synthesis](source-weave-three-pass-v1/REPORT.md), [staged next contact](source-weave-three-pass-v1/NEXT_CONTACT.md).
+
+| Area | Evidence | Current conclusion |
+|---|---|---|
+| Observability experiments | [Three-contact report](observability-three-contact-v1/REPORT.md), [audit](observability-three-contact-v1/AUDIT.json) |15 actual replies retained; process success is not retrieval success; input changes or variation do not establish improved action |
+| Direct-source pass | [Verification](source-weave-three-pass-v1/pass1-verification/REPORT.md), [small models](source-weave-three-pass-v1/pass1-small-models/REPORT.md) | Versioned capabilities and training/evaluator differences; fresh-history control needed |
+| Upstream/lateral pass | [History](source-weave-three-pass-v1/pass2-history/REPORT.md), [access/action](source-weave-three-pass-v1/pass2-access-action/REPORT.md) | Filler/position/format can matter; access, parsing, use and effect are separate |
+| Challenge pass | [Evaluation](source-weave-three-pass-v1/pass3-evaluation-challenge/REPORT.md), [body/state](source-weave-three-pass-v1/pass3-body-challenge/REPORT.md) | Reconciled benchmark scope; unresolved counts/releases retained; tiny trained recurrent bodies are not drop-in transfer |
+| Selected main | [1580 pause](live-50-request-from-1567-v1/REPORT.md) | Still unchanged; next full input8104/7936; no new activation |
+
+The next proposed small diagnostic compares identical retrieval tasks on pre-model fixtures under inherited and fresh views, followed by role/length/information controls as warranted. It is not run or adopted. The source passes add no local garden-model inference. All823 main files remain unchanged. Current bounded-view prototype remains a separate three-step research candidate.
+
+The previous map is archived byte-exact in [before/CURRENT_RESEARCH_MAP.md](source-weave-three-pass-v1/before/CURRENT_RESEARCH_MAP.md) and follows below as historical context.
+
+---
+
 # Current research map: observation, decoder and retrieval contacts
 
 14 November 2026, America/Chicago. [Report](observability-three-contact-v1/REPORT.md), [audit](observability-three-contact-v1/AUDIT.json).

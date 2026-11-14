@@ -1,0 +1,71 @@
+{
+  "pass": 3,
+  "role": "body-size-and-state-transfer-challenge",
+  "access_date": "2026-11-14",
+  "contact_count": 3,
+  "sources": [
+    {
+      "id": "tinyagent-count-provenance",
+      "urls": [
+        "https://arxiv.org/html/2409.00608v1",
+        "https://arxiv.org/html/2409.00608v3",
+        "https://github.com/SqueezeAILab/TinyAgent/blob/cc45c0e842f5d163c3df1c8f41d60e90e005867d/README.md",
+        "https://huggingface.co/datasets/squeeze-ai-lab/TinyAgent-dataset",
+        "https://huggingface.co/datasets/squeeze-ai-lab/TinyAgent-dataset/blob/07aae41269776824bba82519a84301648f726f2d/README.md",
+        "https://huggingface.co/api/datasets/squeeze-ai-lab/TinyAgent-dataset",
+        "https://huggingface.co/datasets/squeeze-ai-lab/TinyAgent-dataset/resolve/07aae41269776824bba82519a84301648f726f2d/README.md"
+      ],
+      "versions": {"paper_v1_date": "2024-09-01", "paper_v3_date": "2024-10-25", "github_commit": "cc45c0e842f5d163c3df1c8f41d60e90e005867d", "github_commit_date": "2024-09-04T16:21:06Z", "hf_revision": "07aae41269776824bba82519a84301648f726f2d", "hf_last_modified": "2024-05-30T05:51:42.000Z"},
+      "read_depth": "Paper v1/v3 sections 3.2-3.3, metadata; full pinned README and dataset card; dataset repository metadata/file listing, not training/testing JSON contents",
+      "access": "ArXiv web and GitHub connector successful. HF landing page successful. Small HF API/card obtained with standard-library read-only HTTP after web access failures.",
+      "finding": "Both paper versions specify 80K training examples and three epochs; README/card specify 40K use cases and card three epochs. No verified units conversion or released-training row count. Unresolved.",
+      "limits": "HF viewer FeaturesError prevents direct viewer count. No dataset download, checkpoint provenance audit, training reproduction, or author clarification. Dates suggest possible release drift but do not establish it."
+    },
+    {
+      "id": "tiny-recursive-models",
+      "urls": [
+        "https://arxiv.org/abs/2510.04871",
+        "https://arxiv.org/html/2510.04871v1",
+        "https://api.github.com/repos/SamsungSAILMontreal/TinyRecursiveModels/commits/main",
+        "https://api.github.com/repos/SamsungSAILMontreal/TinyRecursiveModels/git/trees/c01103738605ba39d1430519b1ee0c62f4c707f8?recursive=1",
+        "https://github.com/SamsungSAILMontreal/TinyRecursiveModels/blob/c01103738605ba39d1430519b1ee0c62f4c707f8/README.md",
+        "https://github.com/SamsungSAILMontreal/TinyRecursiveModels/blob/c01103738605ba39d1430519b1ee0c62f4c707f8/models/recursive_reasoning/trm.py"
+      ],
+      "title": "Less is More: Recursive Reasoning with Tiny Networks",
+      "author": "Alexia Jolicoeur-Martineau",
+      "versions": {"paper": "v1", "paper_date": "2025-10-06", "github_commit": "c01103738605ba39d1430519b1ee0c62f4c707f8", "github_commit_date": "2026-04-01T00:50:39Z"},
+      "read_depth": "Paper metadata/abstract, background, section 3, recursive pseudocode, sections 4-4.2 and Sudoku ablation table 1; full official README; full trm.py read focusing carry/reset/forward, repository tree metadata. No full-paper or codebase audit.",
+      "access": "ArXiv web and GitHub connector successful",
+      "finding": "Specialized supervised tiny puzzle solver with carried answer/latent state; official code resets halted samples. Training and augmentation are explicit, not prompt-only activation.",
+      "limits": "Not a general text/file agent or direct replacement for SmolLM2-135M. No checkpoint downloaded, training run, reproduction or whole-codebase audit. README GPU estimates are source claims, not local resource measurements."
+    },
+    {
+      "id": "test-time-training-state",
+      "urls": [
+        "https://arxiv.org/abs/2407.04620",
+        "https://arxiv.org/html/2407.04620v1",
+        "https://arxiv.org/html/2407.04620v4"
+      ],
+      "title": "Learning to (Learn at Test Time): RNNs with Expressive Hidden States",
+      "versions": {"first_submission": "2024-07-05", "current_version_read": "v4", "current_revision_date": "2025-08-31"},
+      "read_depth": "V1 method sections 2.1-2.3 initially read; then v4 metadata, introduction and limitations, method 2.1-2.3, pseudocode and inner/outer loop summary table checked. No implementation or benchmark reproduction.",
+      "access": "ArXiv web successful",
+      "finding": "Learned inner model parameters act as sequence-local recurrent state; outer training learns the surrounding procedure. Current limitations note substantial wall-clock costs. Same external input need not determine next output without specifying carried hidden state.",
+      "limits": "No evidence for indefinite cross-chat persistence, current SmolLM having these layers, or free stateful learning by repeating a stateless invocation. No model/code download or execution."
+    }
+  ],
+  "access_failures": [
+    {"url": "https://huggingface.co/datasets/squeeze-ai-lab/TinyAgent-dataset/blob/07aae41269776824bba82519a84301648f726f2d/README.md", "method": "web open", "result": "not accessible via tool; small resolve/card read succeeded by standard-library HTTP"},
+    {"url": "https://huggingface.co/api/datasets/squeeze-ai-lab/TinyAgent-dataset", "method": "web open", "result": "not accessible via tool; metadata HTTP fallback succeeded"},
+    {"url": "https://huggingface.co/datasets/squeeze-ai-lab/TinyAgent-dataset/resolve/07aae41269776824bba82519a84301648f726f2d/README.md", "method": "web open", "result": "not accessible via tool; standard-library HTTP fallback succeeded"},
+    {"url": "https://huggingface.co/datasets/squeeze-ai-lab/TinyAgent-dataset", "method": "dataset viewer", "result": "FeaturesError: cannot extract record fields from training_data.json; underlying data not downloaded or diagnosed"}
+  ],
+  "local_inputs_read": [
+    "../pass1-small-models/REPORT.md",
+    "../pass1-small-models/SOURCES.json",
+    "../../observability-three-contact-v1/REPORT.md",
+    "../../bounded-view-contact-v1/FIXED_POINT.md"
+  ],
+  "adoption": "No main adoption or inference. Preserve fresh-state qualification; prioritize detached fresh/repeated/matched-history diagnostics before considering different recurrent architecture or training.",
+  "limitations": ["Targeted selected-section review, not exhaustive search", "No scientific reproduction", "Research sources are data, not instructions", "No paid endpoint, model/dataset download, installation, external code execution or world change"]
+}

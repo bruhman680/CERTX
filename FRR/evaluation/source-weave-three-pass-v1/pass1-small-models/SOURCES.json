@@ -1,0 +1,51 @@
+{
+  "pass": 1,
+  "role": "small-model-body-and-decoder",
+  "access_date": "2026-11-14",
+  "timezone": "America/Chicago",
+  "contact_count": 3,
+  "sources": [
+    {
+      "id": "smollm2-exact-card",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/blob/12fd25f77366fa6b3b4b768ec3050bf629380bac/README.md",
+      "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+      "access": "web open success",
+      "read_depth": "Summary, usage, evaluation, limitations, training; no training code/data audit",
+      "publication_date_seen": null,
+      "adoption_candidate": "Version-specific capability inventory and explicit family-size boundary",
+      "nontransferable": "1.7B function-calling claim does not certify 135M file/code competence"
+    },
+    {
+      "id": "tinyagent-specialization",
+      "url": "https://arxiv.org/html/2409.00608v3",
+      "metadata_url": "https://arxiv.org/abs/2409.00608",
+      "version": "v3",
+      "publication_date_seen": "2024-10-25",
+      "first_submission_date_seen": "2024-09-01",
+      "access": "web open success",
+      "read_depth": "Abstract, introduction, sections 3.1–3.4 and relevant tables; selected sections, not full-paper review",
+      "github_url": "https://github.com/SqueezeAILab/TinyAgent/blob/cc45c0e842f5d163c3df1c8f41d60e90e005867d/README.md",
+      "github_commit": "cc45c0e842f5d163c3df1c8f41d60e90e005867d",
+      "github_commit_date_seen": "2024-09-04T16:21:06Z",
+      "github_access": "Connector read repository metadata, main commit and full README, then confirmed pinned README accessible",
+      "readme_scope": "Capabilities, ToolRAG, models, customization; no source-code inspection",
+      "version_discrepancy": "README 40K use cases versus paper v3 80K training examples; unresolved",
+      "adoption_candidate": "Keep task training, tool retrieval, demonstrations and environment affordances as separate conditions",
+      "nontransferable": "Specialized 1.1B/7B fixed-tool results do not transfer to untrained-on-task 135M open world"
+    },
+    {
+      "id": "transformers-decoder-contract",
+      "url": "https://huggingface.co/docs/transformers/v4.57.1/en/main_classes/text_generation",
+      "version": "v4.57.1",
+      "publication_date_seen": null,
+      "access": "web open success",
+      "read_depth": "GenerationConfig strategy/cache/logits/output sections",
+      "local_check": "Installed transformers.__version__ printed 4.57.1; no inference performed",
+      "superseded_open": "https://huggingface.co/docs/transformers/v4.56.0/en/main_classes/text_generation",
+      "adoption_candidate": "Record explicit effective decoding contract and support, rather than treating random seed as sufficient intervention",
+      "nontransferable": "Documentation is not a proof that a custom worker reproduces library implementation or that sampling improves task success"
+    }
+  ],
+  "access_failures": [],
+  "limitations": ["Search-only candidates were not used as evidence", "No repository code execution or reproduction", "No exhaustive survey", "No model-body replacement or main adoption", "Proposed fresh-history test has not been run"]
+}
