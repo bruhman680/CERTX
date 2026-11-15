@@ -1,3 +1,17 @@
+# Paused — resume the newer pretrained-model + FRR world design
+
+15 November2026 UTC. User corrected scope away from old retrieval diagnostics, explicitly selected **Pretrained model + FRR world**, and requested one small review then wind-down. [Design note](../evaluation/new-garden-design-return-v1/NOTE.md), [next-session handoff](../evaluation/new-garden-design-return-v1/NEXT_SESSION.md). Active research scope is recorded in sync/ACTIVE_RESEARCH_SCOPE.json (relative to FRR root), distinct from the unchanged ACTIVE_GARDEN_PHASE pointer.
+
+Small read-only design/source cycle: originating FRR-world plan and retained neural/interface reports revisited. Proposed simplification: external observer retains all raw history, while the model chooses what to persist in its world; automatic reply-to-notebook storage is an operator mechanism, not chosen artifact creation. Candidate only, NOT implemented/activated. Next construction-oriented R&D: detached coupling prototype separating observer log/storage/actuation, mechanics checks for inert text, real effects/errors, persistence and pause/recovery; then one explicit FRR/perception/continuity setup.
+
+Old retrieval/label/error-ablation queues are parked, preserved as history and optional sources, not the default next session. NEURAL_GARDEN_V01 contributes methodological distinctions, not imported goals/rewards/policy or the target garden. No new papers/reproductions claimed in this small review.
+
+Model calls0, world actions0, parameter updates0. Main bounded-main-continuation-v1 remains1630,paused; original/main/ACTIVE unchanged, no instructions modified, no model run queued. All source history retained; old navigation copied under this review's before/. Resume on the user's return; decompression is chat only.
+
+Previous navigation follows unchanged.
+
+---
+
 # Current R&D — actual-error receipt contact complete
 
 15 November2026 UTC. [Report](../evaluation/error-receipt-contact-v1/REPORT.md), [readout](../evaluation/error-receipt-contact-v1/READOUT.json), [handoff](../evaluation/error-receipt-contact-v1/NEXT_SESSION.md).
