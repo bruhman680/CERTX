@@ -1,0 +1,77 @@
+{
+  "date_utc": "2026-11-15",
+  "scope": "Three-source read-only scout on correction and repeated-error behavior; no model inference or external code execution",
+  "model_calls": 0,
+  "sandbox_actions": 0,
+  "installs": 0,
+  "sources": [
+    {
+      "title": "Large Language Models Cannot Self-Correct Reasoning Yet",
+      "authors_short": "Huang et al.",
+      "arxiv": "2310.01798v2",
+      "version_date": "2024-03-14",
+      "landing_url": "https://arxiv.org/abs/2310.01798",
+      "versioned_fulltext_url": "https://arxiv.org/html/2310.01798v2",
+      "read_depth": "Landing metadata/abstract; selected HTML sections2,3.1-3.3,5,6,7; setup/results and prompt-design discussion; not all appendices",
+      "relevant_claim": "Intrinsic and external-feedback correction differ; initial-prompt information and inference budgets require controls.",
+      "local_limit": "Our external tool feedback/operator correction on135M is not a replication of their intrinsic larger-model reasoning study.",
+      "not_done": [
+        "No repository audit",
+        "No reproduction",
+        "No full-paper line-by-line read"
+      ]
+    },
+    {
+      "title": "Teaching Large Language Models to Self-Debug",
+      "authors_short": "Chen et al.",
+      "arxiv": "2304.05128v2",
+      "version_date": "2023-10-05",
+      "landing_url": "https://arxiv.org/abs/2304.05128",
+      "versioned_fulltext_url": "https://arxiv.org/html/2304.05128v2",
+      "read_depth": "Landing metadata/abstract; selected HTML introduction, sections3,4.2-4.3,5.2.1-5.2.3; not detailed prompt appendices",
+      "relevant_claim": "Prompted debugging with execution information can help in studied settings; generated explanation traces are not captured internal execution states.",
+      "local_limit": "Different larger models, demonstrations, tasks and budgets; not the method run in our six attempts.",
+      "not_done": [
+        "No code execution",
+        "No repository audit",
+        "No benchmark reproduction"
+      ]
+    },
+    {
+      "title": "Self-Refine: Iterative Refinement with Self-Feedback",
+      "authors_short": "Madaan et al.",
+      "arxiv": "2303.17651v2",
+      "version_date": "2023-05-25",
+      "landing_url": "https://arxiv.org/abs/2303.17651",
+      "versioned_fulltext_url": "https://arxiv.org/html/2303.17651v2",
+      "read_depth": "Landing metadata/abstract; selected HTML introduction describing method, section4 weaker-model and feedback analyses; AppendixG narrative/examples and H.1 opening; not full1799-line HTML or implementation",
+      "relevant_claim": "Refinement can succeed under studied prompting but Vicuna13B also repeats or fabricates conversation despite feedback; offered causal explanation is hypothetical.",
+      "local_limit": "Qualitative analogy, not a135M replication or evidence that size alone explains our behavior.",
+      "not_done": [
+        "No official repository audit",
+        "No model inference",
+        "No reproduced results"
+      ]
+    }
+  ],
+  "local_evidence": {
+    "root": "../",
+    "files_read": [
+      "PLAN.json",
+      "RESULTS.json",
+      "AUDIT.json",
+      "results/*_raw.json",
+      "results/*_batch.json",
+      "../retrieval-task-transfer-v1/results/*_raw.json"
+    ],
+    "actual_local_model_replies": 6,
+    "extra_local_artifact_executions": 6,
+    "new_model_calls_by_scout": 0,
+    "strict_or_semantic_retrieval_repairs_observed": 0
+  },
+  "inferences_not_source_findings": [
+    "Test the same correction initially versus after a failed example to separate instruction information from correction-history effects.",
+    "Keep available feedback, changed text, procedure selection and actual verified effect distinct.",
+    "Do not infer hidden understanding or general impossibility from exact-output repetition."
+  ]
+}

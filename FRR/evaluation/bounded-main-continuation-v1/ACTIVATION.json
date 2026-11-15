@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-15 UTC",
+  "user_authorization": "run several cycles to explore and mend the failures and go ahead and run the 50 block... if the token limit is exceeded then you may limit it if confident",
+  "before_pointer": {
+    "version": "minimal-garden-candidate-v1",
+    "phase": "evaluation/minimal-garden-candidate-v1",
+    "runner": "/workspace/frr/evaluation/minimal-garden-candidate-v1/candidate.py",
+    "state": "evaluation/minimal-garden-candidate-v1/run/STATE.json",
+    "parent_phase": "evaluation/final-garden-contract-v1",
+    "parent_entry": 1550,
+    "prior_stage_preserved": true,
+    "operator_design_frozen": true,
+    "contract_sha256": "42baa4841510d6e8d65bf42c8b987dd5b0d6a1d66bfdb270166c876d4575ca29",
+    "activation_record": "evaluation/minimal-garden-candidate-v1/ACTIVATION.json"
+  },
+  "new_pointer": {
+    "version": "bounded-main-continuation-v1",
+    "phase": "evaluation/bounded-main-continuation-v1",
+    "runner": "/workspace/frr/evaluation/bounded-main-continuation-v1/runner.py",
+    "state": "evaluation/bounded-main-continuation-v1/run/STATE.json",
+    "parent_phase": "evaluation/minimal-garden-candidate-v1",
+    "parent_entry": 1580,
+    "prior_stage_preserved": true,
+    "operator_design_frozen": true,
+    "contract_sha256": "89232ccd50802ad9d9e132b6def9cb79e778e09569600442b75d9af1545361ce",
+    "activation_record": "evaluation/bounded-main-continuation-v1/ACTIVATION.json"
+  },
+  "preflight": {
+    "status": "pass",
+    "human_entry": 1580,
+    "turns": 0,
+    "world": {
+      "status": "pass",
+      "step": 1,
+      "parent_entry": 1580,
+      "bundle_id": "f871a78e72c875c77eb53818e980444a267814e1646e350e755a3959c47290f0",
+      "objects": 6
+    },
+    "next_view": {
+      "next_input_tokens": 2231,
+      "included_entries": [
+        1573,
+        1574,
+        1575,
+        1576,
+        1577,
+        1578,
+        1579,
+        1580
+      ],
+      "omitted_entries": [
+        1551,
+        1552,
+        1553,
+        1554,
+        1555,
+        1556,
+        1557,
+        1558,
+        1559,
+        1560,
+        1561,
+        1562,
+        1563,
+        1564,
+        1565,
+        1566,
+        1567,
+        1568,
+        1569,
+        1570,
+        1571,
+        1572
+      ],
+      "within_capacity": true
+    },
+    "parent_files_unchanged": 823,
+    "pending": false,
+    "training_updates": 0
+  },
+  "tests": "tests-v2/RESULTS.json",
+  "continuity_delta": "full current-phase history input becomes initial framing+latest8 wholepairs; omitted records preserved externally; exact ruleappend inside new clonedworld only",
+  "diagnostic_prompts_not_imported": true,
+  "model_inference_before_activation": 0,
+  "selected_source_parent_entry": 1580,
+  "detached_prototype_not_promoted": true
+}

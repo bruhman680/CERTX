@@ -1,3 +1,25 @@
+# Current orientation — selected main1630, paused
+
+15 November2026 UTC. [Settled main50 report](bounded-main-continuation-v1/REPORT.md).
+
+User explicitly authorized limiting input when over capacity and requested50 more main entries. Selected phase is now **bounded-main-continuation-v1**, parent **minimal-garden-candidate-v1 at1580**. Original1580 and all823 non-cache source files remain unchanged. ACTIVE pointer and ACTIVATION.json identify the new version; detached prototype1581–1583 was not promoted.
+
+**Actual main progress:1581–1630,50 new local model calls.** Five ten-entry checkpoints pass; no pending or lock remains. Same cached135M model/weights, greedy256/freshKV, parser and physical limits. Immediate input retains original framing +latest8 whole pairs, with declared oldest-pair budget fallback/latest-pair preservation. Full current-phase external history is80 exchanges. Next selected input2231 tokens from1623–1630; full unselected input21454 tokens. One mechanical WORLD_RULES appendix in cloned world; no new archive-copy machinery or behavioral correction in main.
+
+All50 replies repeat the prior unfinished program. One exact input sequence, one output sequence,0 complete executable cells,50 incomplete Python fences,0 nonempty feedback. Notebook124576→168926 bytes. This repairs context capacity, not observed reasoning/retrieval. Do not label repetition/file growth as learning or emergence. Full environment still changes despite stable conversational projection; ACCUMULATION_NOTE.md gives a conditional future file-limit calculation, not observed events beyond1630.
+
+Detached repair contact:6 replies,6 paired artifact executions across actual-feedback and explicitly coached branches;0 correct requested values. Original errors/incomplete fences persist. Three version-pinned primary-paper scouts add methodological contrasts; no method replicated. See retrieval-repair-three-cycle-v1/REPORT.md.
+
+Detached completion contact:1 model reply with512 allowance and exact same main input/prefix. Token257 is EOS; decoded text remains exactly unfinished,0 complete cells. More allowance did not close this fence. Main stays1630/greedy256. See generation-completion-contact-v1/REPORT.md.
+
+Total this contact:57 new model replies (6 diagnostic repair +50 main +1 detached completion),6 additional artifact executions; zero training updates. All studies preserve actual raw text/token IDs, errors, receipts, checkpoints and audits. No paid model endpoint used.
+
+Next strongest small diagnostic: give the same correction with fresh task framing before a failed example, versus after the failed example; keep the body fixed and retain failures. This tests placement/history dependence, not learned repair. Another identical greedy main block is operationally possible on explicit request but not independent evidence of variation. Do not silently alter sampler, body, memory window or parser.
+
+Resume source: evaluation/bounded-main-continuation-v1/RESUME.md. Verify before a new requested block; never clear unknown pending/locks to force progress. Earlier prepared/proposal entries below are chronological records, superseded by this selected1630 status. Byte-exact previous navigation is archived under this study's before/.
+
+---
+
 # Current orientation — retrieval transfer and main50 continuity choice
 
 2026-11-15 UTC. Selected main remains **1580**, paused; all823 non-cache canonical files unchanged. No main replies added by this contact.

@@ -1,0 +1,54 @@
+{
+  "batch_id": "000001_ca6e671ccc914f0c95c7da6f713d1280",
+  "raw_text": "Here's a Python function that reads the signal field in sample_record.json and prints its field value:\n\n```python\nimport json\n\ndef read_signal_field(record):\n    with open(\"sample_record.json\", \"r\") as f:\n        data = json.load(f)\n    return data[\"signal\"]\n\ndef print_signal_field(record):\n    print(read_signal_field(record))\n\n# Example usage:\nrecord = {\n    \"record\": {\n        \"name\": \"sample_record.json\",\n        \"data\": {\n            \"signal\": \"1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567",
+  "parsed": {
+    "cells": [
+      {
+        "delimiter": "```",
+        "language": "python",
+        "fence_start": 104,
+        "source_start": 114,
+        "source_end": 580,
+        "fence_end": 580,
+        "complete": false,
+        "executable": false,
+        "source": "import json\n\ndef read_signal_field(record):\n    with open(\"sample_record.json\", \"r\") as f:\n        data = json.load(f)\n    return data[\"signal\"]\n\ndef print_signal_field(record):\n    print(read_signal_field(record))\n\n# Example usage:\nrecord = {\n    \"record\": {\n        \"name\": \"sample_record.json\",\n        \"data\": {\n            \"signal\": \"1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567",
+        "offset_unit": "Unicode code points; end exclusive",
+        "fence_start_utf8": 104,
+        "source_start_utf8": 114,
+        "source_end_utf8": 580,
+        "fence_end_utf8": 580
+      }
+    ],
+    "complete_executable_cells": 0,
+    "raw_codepoints": 580,
+    "raw_utf8_bytes": 580
+  },
+  "operations": [
+    {
+      "step": 2,
+      "channel": "note",
+      "source": "Here's a Python function that reads the signal field in sample_record.json and prints its field value:\n\n```python\nimport json\n\ndef read_signal_field(record):\n    with open(\"sample_record.json\", \"r\") as f:\n        data = json.load(f)\n    return data[\"signal\"]\n\ndef print_signal_field(record):\n    print(read_signal_field(record))\n\n# Example usage:\nrecord = {\n    \"record\": {\n        \"name\": \"sample_record.json\",\n        \"data\": {\n            \"signal\": \"1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567",
+      "raw_text": "Here's a Python function that reads the signal field in sample_record.json and prints its field value:\n\n```python\nimport json\n\ndef read_signal_field(record):\n    with open(\"sample_record.json\", \"r\") as f:\n        data = json.load(f)\n    return data[\"signal\"]\n\ndef print_signal_field(record):\n    print(read_signal_field(record))\n\n# Example usage:\nrecord = {\n    \"record\": {\n        \"name\": \"sample_record.json\",\n        \"data\": {\n            \"signal\": \"1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567",
+      "before_id": "a84aa49d316b65582612c24287e6dc4dbb17626ffebd2b516606a9278af2435c",
+      "parent_event_sha256": "483b6ca9df422b3efb720379e0ed39437eef4ba6790b026578a79eaad1a4353b",
+      "kind": "notebook",
+      "receipt": {
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0,
+        "boundary": null,
+        "seconds": 0.013279450002301019
+      },
+      "feedback": null,
+      "after_id": "c6966d7518b79971af9942d6ec58b4bc4f6e9acde1bd30b02b1f1a0dd6dd2078",
+      "changed_paths": [
+        "notebook.txt"
+      ]
+    }
+  ],
+  "status": "completed",
+  "boundary": null,
+  "note_stored": true,
+  "note_storage_fault": null
+}

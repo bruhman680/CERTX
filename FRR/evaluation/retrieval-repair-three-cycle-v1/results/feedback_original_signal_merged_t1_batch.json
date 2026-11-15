@@ -1,0 +1,82 @@
+{
+  "batch_id": "000001_ce3e9f0d028243ff9a17fcd03d6ebd2c",
+  "raw_text": "Here's the same script with the `boundary` parameter set to `null` and the `receipts` parameter set to a list of dictionaries:\n\n```python\nimport json\n\ndef read_signal_field(file_path):\n    with open(file_path, 'r') as f:\n        data = json.load(f)\n    return data['boundary']\n\ndef print_exact_value(data):\n    for key, value in data.items():\n        print(f\"{key}: {value}\")\n\ndef main():\n    file_path = '/world.json'\n    print(\"Reading signal field...\")\n    with open(file_path, 'r') as f:\n        data = json.load(f)\n    print(\"Printing exact value...\")\n    print_exact_value(data)\n\nif __name__ == \"__main__\":\n    main()\n```\n\nThis script reads the signal field in the probe_value.json file and prints its exact value. It uses the `json` module to load the data from the file and iterate over the key-value pairs. The `print_exact_value` function prints the exact value of each key-value pair.\n\nNote",
+  "parsed": {
+    "cells": [
+      {
+        "delimiter": "```",
+        "language": "python",
+        "fence_start": 128,
+        "source_start": 138,
+        "source_end": 624,
+        "fence_end": 628,
+        "complete": true,
+        "source": "import json\n\ndef read_signal_field(file_path):\n    with open(file_path, 'r') as f:\n        data = json.load(f)\n    return data['boundary']\n\ndef print_exact_value(data):\n    for key, value in data.items():\n        print(f\"{key}: {value}\")\n\ndef main():\n    file_path = '/world.json'\n    print(\"Reading signal field...\")\n    with open(file_path, 'r') as f:\n        data = json.load(f)\n    print(\"Printing exact value...\")\n    print_exact_value(data)\n\nif __name__ == \"__main__\":\n    main()\n",
+        "executable": true,
+        "offset_unit": "Unicode code points; end exclusive",
+        "fence_start_utf8": 128,
+        "source_start_utf8": 138,
+        "source_end_utf8": 624,
+        "fence_end_utf8": 628
+      }
+    ],
+    "complete_executable_cells": 1,
+    "raw_codepoints": 901,
+    "raw_utf8_bytes": 901
+  },
+  "operations": [
+    {
+      "step": 2,
+      "channel": "note",
+      "source": "Here's the same script with the `boundary` parameter set to `null` and the `receipts` parameter set to a list of dictionaries:\n\n```python\nimport json\n\ndef read_signal_field(file_path):\n    with open(file_path, 'r') as f:\n        data = json.load(f)\n    return data['boundary']\n\ndef print_exact_value(data):\n    for key, value in data.items():\n        print(f\"{key}: {value}\")\n\ndef main():\n    file_path = '/world.json'\n    print(\"Reading signal field...\")\n    with open(file_path, 'r') as f:\n        data = json.load(f)\n    print(\"Printing exact value...\")\n    print_exact_value(data)\n\nif __name__ == \"__main__\":\n    main()\n```\n\nThis script reads the signal field in the probe_value.json file and prints its exact value. It uses the `json` module to load the data from the file and iterate over the key-value pairs. The `print_exact_value` function prints the exact value of each key-value pair.\n\nNote",
+      "raw_text": "Here's the same script with the `boundary` parameter set to `null` and the `receipts` parameter set to a list of dictionaries:\n\n```python\nimport json\n\ndef read_signal_field(file_path):\n    with open(file_path, 'r') as f:\n        data = json.load(f)\n    return data['boundary']\n\ndef print_exact_value(data):\n    for key, value in data.items():\n        print(f\"{key}: {value}\")\n\ndef main():\n    file_path = '/world.json'\n    print(\"Reading signal field...\")\n    with open(file_path, 'r') as f:\n        data = json.load(f)\n    print(\"Printing exact value...\")\n    print_exact_value(data)\n\nif __name__ == \"__main__\":\n    main()\n```\n\nThis script reads the signal field in the probe_value.json file and prints its exact value. It uses the `json` module to load the data from the file and iterate over the key-value pairs. The `print_exact_value` function prints the exact value of each key-value pair.\n\nNote",
+      "before_id": "65d2b3035ed7812ecd833c46e0e0b36aab6541d3f1bfcefd9a0034770cc43522",
+      "parent_event_sha256": "54d2ffa62d045d3b7bd17116c05bc2638997b0427d7905e361cd7e2eda18872c",
+      "kind": "notebook",
+      "receipt": {
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0,
+        "boundary": null,
+        "seconds": 0.009308672000770457
+      },
+      "feedback": null,
+      "after_id": "b4cba5f2cec3aae4c5522f2b601bdab23c29c99db2e13bcd264f5cc0a8b786cf",
+      "changed_paths": [
+        "notebook.txt"
+      ]
+    },
+    {
+      "step": 3,
+      "channel": "python",
+      "source": "import json\n\ndef read_signal_field(file_path):\n    with open(file_path, 'r') as f:\n        data = json.load(f)\n    return data['boundary']\n\ndef print_exact_value(data):\n    for key, value in data.items():\n        print(f\"{key}: {value}\")\n\ndef main():\n    file_path = '/world.json'\n    print(\"Reading signal field...\")\n    with open(file_path, 'r') as f:\n        data = json.load(f)\n    print(\"Printing exact value...\")\n    print_exact_value(data)\n\nif __name__ == \"__main__\":\n    main()\n",
+      "raw_text": null,
+      "before_id": "b4cba5f2cec3aae4c5522f2b601bdab23c29c99db2e13bcd264f5cc0a8b786cf",
+      "parent_event_sha256": "5345c1efacdddf3af8ed73a14d6c8fb7e941cda173174a2d3eae1181a544e7f1",
+      "kind": "python",
+      "receipt": {
+        "stdout": "Reading signal field...\n",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 21, in <module>\n    main()\n    ~~~~^^\n  File \"<string>\", line 15, in main\n    with open(file_path, 'r') as f:\n         ~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/world.json'\n",
+        "exit_code": 1,
+        "boundary": null,
+        "seconds": 0.023149501997977495
+      },
+      "feedback": {
+        "stdout": "Reading signal field...\n",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 21, in <module>\n    main()\n    ~~~~^^\n  File \"<string>\", line 15, in main\n    with open(file_path, 'r') as f:\n         ~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/world.json'\n",
+        "exit_code": 1,
+        "boundary": null,
+        "seconds": 0.023149501997977495
+      },
+      "after_id": "b4cba5f2cec3aae4c5522f2b601bdab23c29c99db2e13bcd264f5cc0a8b786cf",
+      "changed_paths": [],
+      "cell_index": 0,
+      "source_start": 138,
+      "source_end": 624
+    }
+  ],
+  "status": "completed",
+  "boundary": null,
+  "note_stored": true,
+  "note_storage_fault": null
+}

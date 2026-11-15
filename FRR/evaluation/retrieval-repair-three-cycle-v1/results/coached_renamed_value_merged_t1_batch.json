@@ -1,0 +1,82 @@
+{
+  "batch_id": "000001_c761fcab67284a1ebba3c7d72098fae8",
+  "raw_text": "Here's a Python function that reads the value field in sample_record.json and prints its exact value:\n\n```python\nimport json\n\ndef read_value_field(record):\n    try:\n        return json.load(record)['value']\n    except json.JSONDecodeError:\n        print(\"Invalid JSON data.\")\n        return None\n\nsample_record = \"\"\"\n{\n  \"record\": {\n    \"name\": \"John Doe\",\n    \"age\": 30,\n    \"city\": \"New York\"\n  },\n  \"address\": {\n    \"street\": \"123 Main St\",\n    \"city\": \"Anytown\"\n  }\n}\n\"\"\"\n\nprint(read_value_field(sample_record))\n```\n\nThis function uses the `json` module to load the sample_record.json file into a Python dictionary. It then attempts to parse the JSON data using the `json.load()` function. If the parsing fails, it prints an error message and returns `None`. If the parsing succeeds, it prints the parsed value.\n\nNote that this function assumes that the sample_record.json file is in the same directory as the Python script. If the file is",
+  "parsed": {
+    "cells": [
+      {
+        "delimiter": "```",
+        "language": "python",
+        "fence_start": 103,
+        "source_start": 113,
+        "source_end": 516,
+        "fence_end": 520,
+        "complete": true,
+        "source": "import json\n\ndef read_value_field(record):\n    try:\n        return json.load(record)['value']\n    except json.JSONDecodeError:\n        print(\"Invalid JSON data.\")\n        return None\n\nsample_record = \"\"\"\n{\n  \"record\": {\n    \"name\": \"John Doe\",\n    \"age\": 30,\n    \"city\": \"New York\"\n  },\n  \"address\": {\n    \"street\": \"123 Main St\",\n    \"city\": \"Anytown\"\n  }\n}\n\"\"\"\n\nprint(read_value_field(sample_record))\n",
+        "executable": true,
+        "offset_unit": "Unicode code points; end exclusive",
+        "fence_start_utf8": 103,
+        "source_start_utf8": 113,
+        "source_end_utf8": 516,
+        "fence_end_utf8": 520
+      }
+    ],
+    "complete_executable_cells": 1,
+    "raw_codepoints": 943,
+    "raw_utf8_bytes": 943
+  },
+  "operations": [
+    {
+      "step": 2,
+      "channel": "note",
+      "source": "Here's a Python function that reads the value field in sample_record.json and prints its exact value:\n\n```python\nimport json\n\ndef read_value_field(record):\n    try:\n        return json.load(record)['value']\n    except json.JSONDecodeError:\n        print(\"Invalid JSON data.\")\n        return None\n\nsample_record = \"\"\"\n{\n  \"record\": {\n    \"name\": \"John Doe\",\n    \"age\": 30,\n    \"city\": \"New York\"\n  },\n  \"address\": {\n    \"street\": \"123 Main St\",\n    \"city\": \"Anytown\"\n  }\n}\n\"\"\"\n\nprint(read_value_field(sample_record))\n```\n\nThis function uses the `json` module to load the sample_record.json file into a Python dictionary. It then attempts to parse the JSON data using the `json.load()` function. If the parsing fails, it prints an error message and returns `None`. If the parsing succeeds, it prints the parsed value.\n\nNote that this function assumes that the sample_record.json file is in the same directory as the Python script. If the file is",
+      "raw_text": "Here's a Python function that reads the value field in sample_record.json and prints its exact value:\n\n```python\nimport json\n\ndef read_value_field(record):\n    try:\n        return json.load(record)['value']\n    except json.JSONDecodeError:\n        print(\"Invalid JSON data.\")\n        return None\n\nsample_record = \"\"\"\n{\n  \"record\": {\n    \"name\": \"John Doe\",\n    \"age\": 30,\n    \"city\": \"New York\"\n  },\n  \"address\": {\n    \"street\": \"123 Main St\",\n    \"city\": \"Anytown\"\n  }\n}\n\"\"\"\n\nprint(read_value_field(sample_record))\n```\n\nThis function uses the `json` module to load the sample_record.json file into a Python dictionary. It then attempts to parse the JSON data using the `json.load()` function. If the parsing fails, it prints an error message and returns `None`. If the parsing succeeds, it prints the parsed value.\n\nNote that this function assumes that the sample_record.json file is in the same directory as the Python script. If the file is",
+      "before_id": "d8b3edddc6afc13d2d6862340bffe31f40a1acb5111aac5ea54010c46e1d79ac",
+      "parent_event_sha256": "bd4ba29fbe26a5eaea22d714cc98237383d61b40366c2f2e184cbfd08c8a84e8",
+      "kind": "notebook",
+      "receipt": {
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0,
+        "boundary": null,
+        "seconds": 0.008793689994490705
+      },
+      "feedback": null,
+      "after_id": "987a837c6af029eb545e58e4c9e6e131b68ec6a9e1e4857e13adf37a3de55211",
+      "changed_paths": [
+        "notebook.txt"
+      ]
+    },
+    {
+      "step": 3,
+      "channel": "python",
+      "source": "import json\n\ndef read_value_field(record):\n    try:\n        return json.load(record)['value']\n    except json.JSONDecodeError:\n        print(\"Invalid JSON data.\")\n        return None\n\nsample_record = \"\"\"\n{\n  \"record\": {\n    \"name\": \"John Doe\",\n    \"age\": 30,\n    \"city\": \"New York\"\n  },\n  \"address\": {\n    \"street\": \"123 Main St\",\n    \"city\": \"Anytown\"\n  }\n}\n\"\"\"\n\nprint(read_value_field(sample_record))\n",
+      "raw_text": null,
+      "before_id": "987a837c6af029eb545e58e4c9e6e131b68ec6a9e1e4857e13adf37a3de55211",
+      "parent_event_sha256": "89f5b935fcc03a0a00fd7bace2305dd75a2f43cdc37aee1a2c2c458b6c4c0838",
+      "kind": "python",
+      "receipt": {
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 24, in <module>\n    print(read_value_field(sample_record))\n          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^\n  File \"<string>\", line 5, in read_value_field\n    return json.load(record)['value']\n           ~~~~~~~~~^^^^^^^^\n  File \"/usr/lib/python3.13/json/__init__.py\", line 293, in load\n    return loads(fp.read(),\n                 ^^^^^^^\nAttributeError: 'str' object has no attribute 'read'\n",
+        "exit_code": 1,
+        "boundary": null,
+        "seconds": 0.023553729995910544
+      },
+      "feedback": {
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 24, in <module>\n    print(read_value_field(sample_record))\n          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^\n  File \"<string>\", line 5, in read_value_field\n    return json.load(record)['value']\n           ~~~~~~~~~^^^^^^^^\n  File \"/usr/lib/python3.13/json/__init__.py\", line 293, in load\n    return loads(fp.read(),\n                 ^^^^^^^\nAttributeError: 'str' object has no attribute 'read'\n",
+        "exit_code": 1,
+        "boundary": null,
+        "seconds": 0.023553729995910544
+      },
+      "after_id": "987a837c6af029eb545e58e4c9e6e131b68ec6a9e1e4857e13adf37a3de55211",
+      "changed_paths": [],
+      "cell_index": 0,
+      "source_start": 113,
+      "source_end": 516
+    }
+  ],
+  "status": "completed",
+  "boundary": null,
+  "note_stored": true,
+  "note_storage_fault": null
+}
