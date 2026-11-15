@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "real_snapshot_checks": [
+    {
+      "timing": "initial",
+      "source_bundle_id": "b8745473569f145c4e5aa6d3974bcd5b5435edab55bf3ff7bc70dead8bef836e",
+      "entry_count": 5,
+      "packet_bytes": 369
+    },
+    {
+      "timing": "after_reply",
+      "source_bundle_id": "30b6f27fda50bd47787837fa1e009fe347ca4120e10f137a1312099987089172",
+      "entry_count": 5,
+      "packet_bytes": 370
+    }
+  ],
+  "real_regular_file_bytes_match_decoded_CAS": true,
+  "synthetic_added_six_deleted_four_entries": true,
+  "special_name_json_roundtrip": true,
+  "link_types_and_no_target_following": true,
+  "representative_malformed_metadata_rejected": 3,
+  "exact_budget_and_overflow_no_partial_packet": true,
+  "CLI_stdout_packet_only": true,
+  "metadata_fixtures_are_not_world_captures": true,
+  "source_assumption": "caller provides verified committed bundle; instrument does not verify source hash/ancestry/CAS",
+  "model_calls": 0,
+  "sandbox_opens": 0,
+  "wired_into_pilots": false,
+  "M2_run": false,
+  "capture_mode_contract": {
+    "source": "/workspace/frr/evaluation/final-garden-contract-v1/world.py",
+    "sha256": "60d6c18cd045e5c16eab2e98e91bcbd9d887d1250ac92bdb03baa6dd4dfb7f35",
+    "capture_mask": "st_mode & 0o777",
+    "scope": "matches captured metadata; does not observe native sticky/setuid/setgid bits"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-14",
+  "timezone": "America/Chicago",
+  "scope": "targetedprimarysource scout, not exhaustive",
+  "sources": [
+    {
+      "id": "react",
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "arxiv": "2210.03629",
+      "version": "v3",
+      "version_date": "2023-03-10",
+      "url": "https://arxiv.org/html/2210.03629v3",
+      "landing_url": "https://arxiv.org/abs/2210.03629v3",
+      "primary": true,
+      "read_depth": [
+        "abstract/introduction",
+        "section2",
+        "selected3.2-3.3",
+        "selectedsection4setup"
+      ],
+      "facts_used": [
+        "main frozenPaLM540B prompting with humanexampletrajectories",
+        "language/context versusenvironment action distinction",
+        "sparse thoughts in decisionmaking setup",
+        "promptedReAct worstof4 onPaLM8B/62B HotpotQA beforefinetuning3000trajectories"
+      ],
+      "not_verified": [
+        "code",
+        "fullappendixprompts",
+        "benchmarkreproduction",
+        "transfer to135M"
+      ]
+    },
+    {
+      "id": "voyager",
+      "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+      "arxiv": "2305.16291",
+      "version": "v2",
+      "version_date": "2023-10-19",
+      "url": "https://arxiv.org/html/2305.16291v2",
+      "landing_url": "https://arxiv.org/abs/2305.16291v2",
+      "primary": true,
+      "read_depth": [
+        "abstract/introduction",
+        "2.1-2.3",
+        "3.1",
+        "selected3.4",
+        "section4",
+        "selectedappendixprompt/ablationdescriptions"
+      ],
+      "facts_used": [
+        "no parameterfinetuning butGPT4curriculum/skilllibrary/iterativeprompting",
+        "explicitexplorationdirectives",
+        "state/errors/critic arepromptinputs",
+        "limitations include stuckcode/verificationerrors/hallucinateditemsandAPIs"
+      ],
+      "not_verified": [
+        "code",
+        "completelargeappendix",
+        "benchmarkreproduction",
+        "135M applicability"
+      ]
+    },
+    {
+      "id": "formatspread",
+      "title": "Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design or: How I learned to start worrying about prompt formatting",
+      "arxiv": "2310.11324",
+      "version": "v2",
+      "version_date": "2024-07-01",
+      "url": "https://arxiv.org/html/2310.11324v2",
+      "landing_url": "https://arxiv.org/abs/2310.11324v2",
+      "primary": true,
+      "read_depth": [
+        "abstract/introduction",
+        "selectedsections3-4.3",
+        "appendixCopeninggrammar-limitation"
+      ],
+      "facts_used": [
+        "fewshotformatvariationswithfixedexamplechoice/order",
+        "testedLLaMA2/Falcon/GPT3.5families",
+        "rankingversusexactprefixmetrics",
+        "formatdependentcomparisonreversals",
+        "humansemantic-equivalenceassumption"
+      ],
+      "not_verified": [
+        "code",
+        "fullappendix",
+        "numericreproduction",
+        "effect sizeforFRR/135M",
+        "neutralpadding"
+      ]
+    }
+  ],
+  "access": {
+    "landing_and_selected_html": "successful for all3",
+    "full_pdfs_read": false,
+    "code_audited_or_executed": false,
+    "search_only_material_promoted_to_evidence": false,
+    "third_party_summaries_as_evidence": false
+  },
+  "local_actions": {
+    "model_calls": 0,
+    "sandbox_actions": 0,
+    "main_changes": 0,
+    "installs": 0,
+    "paid_services": 0
+  },
+  "inference_boundary": "protocol recommendations are our proposed design, not a replicated result or a claim that FRR improves135M reasoning."
+}

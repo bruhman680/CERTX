@@ -1,0 +1,121 @@
+{
+  "version": "interface-M0-proposal-v1",
+  "status": "R&D specification, no world or main changes",
+  "date": "2026-11-14 America/Chicago",
+  "scope": "First matched no-FRR/FRR exposure pilot under an explicitly simplified descriptive interface; not a new minimal-physics claim or main continuation.",
+  "starting_world": {
+    "source_phase": "bounded-main-continuation-v1",
+    "source_entry": 1630,
+    "source_paused": true,
+    "all_arms_same_supported_parent": true,
+    "only_common_descriptive_file_replacement": "WORLD_RULES.txt",
+    "original_rule_bytes_preserved_externally": true,
+    "other_inherited_files_retained": [
+      "LAWS.txt",
+      "transitions.json",
+      "notebook.txt",
+      "prior_replies.jsonl"
+    ],
+    "pristine_world": false,
+    "autonomous_world_ticks": false
+  },
+  "initial_chat": {
+    "history": "fresh in EVERY arm; no inherited assistant examples or empty assistant placeholder",
+    "system_slot": "empty for control; exact frozen FRR text for exposure arms, supplied by FRR design",
+    "common_user_text": "Environment: /world, with Python 3 and /bin/sh in a read-only runtime. Files in /world persist. Each completed cell starts a new process; variables, processes and /tmp do not persist between cells.\n\nFor replies within the cell-count bound, a literal append to notebook.txt is attempted. A column-zero line exactly ```python or ```sh opens an executable cell; a column-zero line exactly ``` closes it. Complete cells execute once in text order. Other text, including unfinished cells, is writing only.\n\nAfter a reply, actual cell stdout, stderr, exit status and resource-boundary information return. Successful notebook storage is silent. Exact resource limits are in WORLD_RULES.txt.",
+    "extra_behavioral_invitation": null,
+    "puzzle_question": null,
+    "demonstration": null,
+    "automatic_file_listing": false,
+    "automatic_task_highlight": false
+  },
+  "common_world_rules_text": "# Computational world: mechanics\n\n/world contains persistent supported files, file modes and symbolic links. A read-only runtime provides Python 3 and /bin/sh. Host research files and the network are unavailable. Each cell starts a new process. Process variables, running processes and /tmp contents do not persist between cells. Files in /world can retain programs, data and writing.\n\nFor a reply within the cell-count bound, a literal notebook append is attempted before its complete code cells. Complete cells execute once in textual order. An executable cell opens with a column-zero line exactly ```python or ```sh and closes with a column-zero line exactly ```. Python uses python3 -I -S; shell uses /bin/sh. Other writing, unknown-label or differently delimited fences, and incomplete cells have no executable effect. Source text is not repaired, dedented or semantically extracted. This file describes the execution implementation; editing this file does not change that implementation.\n\nAt most eight complete executable cells occur in one reply. More than eight returns the actual cell-count boundary before guest operations. Otherwise notebook storage is attempted before cells. A known notebook-write error returns its actual consequence and does not prevent independent complete cells. Known ordinary cell errors do not prevent later cells or later replies. Unknown action effects or unsupported checkpoint state pause execution with evidence retained and without automatic replay.\n\nActual stdout, stderr, exit status and resource-boundary information return after each reply. Successful notebook storage is silent. A silent append is still a filesystem change. The transition matrices and LAWS.txt are stored material; no Markov simulation or other world dynamics advances automatically.\n\nPer cell: three seconds wall time, two CPU seconds, 32 MiB address space, 64 open descriptors, 256 KiB per file, and 8192 captured output bytes. Shared-user processes are bounded at128. Writable world data is bounded at8 MiB and temporary data at8 MiB. These limits do not describe every kernel/host allocation.\n\n## Body and input continuity\n\nThe pretrained body and decoder are fixed for this condition: SmolLM2-135M-Instruct, CPU float32/eager/two threads, greedy argmax, up to256 output tokens, and7936 input tokens within8192 total positions. Attention cache starts fresh for each reply. No weight update or adapter is applied.\n\nA branch begins with its declared initial system and mechanical user messages. Earlier conversations are not inserted into that initial input; inherited writing remains in world files. Later input retains those exact initial messages and all actual assistant/receipt pairs from this branch. No pair is summarized, omitted or truncated. Generation pauses before the input exceeds7936 tokens. Complete authoritative records remain outside /world and are not automatically copied into it.\n",
+  "actuator": {
+    "implementation": "unchanged existing parse_notebook/receive_notebook and isolated Python/shell runtime",
+    "action_law_change": false,
+    "automatic_action": "literal notebook append",
+    "model_initiated_actions": "only complete explicitly labeled code cells",
+    "incomplete_or_other_text": "writing only, not repaired/executed",
+    "semantic_success_gate": false
+  },
+  "perception": {
+    "first_call": "declared initial messages only",
+    "later_calls": "same initial messages plus actual assistant/receipt pairs under fixed selector",
+    "world_files": "available through lawful code action, not silently injected into prompt",
+    "automatic_note_success": "empty model-facing receipt",
+    "cell_receipts": "actual candidate.project_feedback format, unchanged across arms",
+    "observer_rubric_injected": false
+  },
+  "persistence": {
+    "retained": "supported filesystem; full external model/action histories per branch",
+    "reset": "per-cell process/variables/tmp and per-generation KV",
+    "weights": "same frozen pretrained weights; no updates"
+  },
+  "body": {
+    "max_input_tokens": 7936,
+    "max_output_tokens": 256,
+    "context_positions": 8192,
+    "decoder": "greedy_argmax",
+    "dtype": "float32",
+    "attention": "eager",
+    "threads": 2,
+    "selector": "initial messages plus all actual branch pairs; hard capacity pause before7936; no pruning in this3replypilot"
+  },
+  "observations_external": [
+    "initial source and supported-world hashes",
+    "exact messages, roles and token IDs",
+    "raw generated tokens/text and stop status",
+    "parsed complete and incomplete cells",
+    "actual attempted operations and receipts",
+    "automatic notebook effects separately from model-initiated actions",
+    "checkpoint ancestry and included/omitted entries",
+    "errors, repetition, non-actions and regressions"
+  ],
+  "stop_basis": [
+    "predeclared bounded pilot budget",
+    "user pause",
+    "declared operational capacity/resource condition",
+    "unknown effects or dependency drift"
+  ],
+  "not_stop_basis": [
+    "unproductive output",
+    "wrong result",
+    "no code",
+    "repetition",
+    "lack of improvement"
+  ],
+  "minimality_limits": [
+    "Python/shell/OS semantics are rich; this is a small coupling surface, not Conway-sized world physics.",
+    "The fixed prompt/action grammar/history/decoder are causal design choices.",
+    "Fresh chat does not erase old writing in inherited files.",
+    "A successful automatic note append does not demonstrate model-initiated artifact creation or learned retention."
+  ],
+  "optional_M1_not_in_M0": {
+    "change": "a one-time ordinary initial directory manifest, provided identically in all arms",
+    "reason": "makes a coarse world observation available without telling an action",
+    "interpretation": "additional perception intervention, not assumed neutral or silently included with FRR; compare separately if needed"
+  },
+  "validation_before_model_calls": [
+    "compare all initial supported paths/bytes/modes across arms",
+    "verify only WORLD_RULES changed versus parent and saved old rule bytes match source",
+    "check clean rules agree with unchanged parser/runtime limits",
+    "verify exact common user text and no task/curiosity/solution additions",
+    "record FRR source/role/token counts and capacity separately",
+    "reuse prior mechanical persistence/error/pending/capacity evidence, with targeted checks only for new assembly differences"
+  ],
+  "source_sha256": {
+    "/workspace/frr/evaluation/frr-small-model-baseline-plan-v1/PLAN.md": "0e31bc2c8fb61ecf4e84ef0b5712e401e1275e089577a71226ecb43393e3723a",
+    "/workspace/frr/evaluation/bounded-main-continuation-v1/CONTRACT.json": "89232ccd50802ad9d9e132b6def9cb79e778e09569600442b75d9af1545361ce",
+    "/workspace/frr/evaluation/bounded-main-continuation-v1/runner.py": "34fc54b6f3f4184cb195ac89a8d2146cf52315eaf05d0d449acbc525b8fa38c6",
+    "/workspace/frr/evaluation/bounded-view-contact-v1/view.py": "5aa2a34019d56403ac25c95aa93136f4718d207b8cf8526f5f363a10ddf45f12",
+    "/workspace/frr/evaluation/minimal-garden-candidate-v1/world/garden_world.py": "526a44146041a4caae206ad836c49c5cada3ab4697a77e8f74ae8b1656332474",
+    "/workspace/frr/evaluation/minimal-garden-candidate-v1/ENVIRONMENT.md": "12ff617326b280eab4028d500d3f620608bc0d74db1bb9dc768f04e103c331f4",
+    "/workspace/frr/evaluation/bounded-main-continuation-v1/BLOCK_AUDIT.json": "04b232e938bec5747c18afca724ac81084ad9604eed9a4f644d5f521469730e8"
+  },
+  "read_only_preservation": {
+    "main_state_sha256": "60796c0a22446712d23a7615597c2937c80ccbf46bda94438fff0102ba4a3971",
+    "active_pointer_sha256": "f33b8514c499ccec964fb5d426e32bc01b67b1283c2edc26975e1a8e04fa38dc",
+    "model_calls": 0,
+    "sandbox_opens": 0
+  }
+}

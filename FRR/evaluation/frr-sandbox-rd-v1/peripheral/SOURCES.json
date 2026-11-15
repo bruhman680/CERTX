@@ -1,0 +1,53 @@
+{
+  "scope": "bounded peripheral primary-source scout for open exploration, designed drives and external observation",
+  "retrieved_client_date": "2026-11-14",
+  "timezone": "America/Chicago",
+  "model_calls": 0,
+  "sandbox_actions": 0,
+  "external_code_executed": false,
+  "installs": 0,
+  "main_world_opened": false,
+  "sources": [
+    {
+      "title": "Abandoning Objectives: Evolution Through the Search for Novelty Alone",
+      "authors": ["Joel Lehman", "Kenneth O. Stanley"],
+      "version": "published2011 journal article; institutional bibliographic abstract, not version-pinned full text",
+      "url": "https://stars.library.ucf.edu/facultybib2010/1530/",
+      "doi": "10.1162/EVCO_a_00025",
+      "primary_source_kind": "authors' institutional publication record",
+      "read_depth": "bibliographic metadata and full institutional abstract",
+      "supported_facts": ["objective-directed fitness is contrasted with behavioral novelty search", "reported domains include maze navigation and biped walking", "abstract explicitly describes alternative guidance of search"],
+      "not_verified": ["exact novelty metric and archive rules", "full experimental protocol", "reported performance replication", "code"],
+      "failed_fulltext_attempts": [
+        {"url": "https://www.cs.ucf.edu/~kstanley/ecj2011.pdf", "result": "web tool internal access error"},
+        {"url": "https://direct.mit.edu/evco/article/19/2/189/1356/Abandoning-Objectives-Evolution-Through-the-Search", "result": "web tool internal access error; guessed publisher article path, not a verified final URL"}
+      ],
+      "search_only_not_relied_on": ["third-party mirrored PDF and secondary technical summaries"]
+    },
+    {
+      "title": "Intrinsically Motivated Goal Exploration Processes with Automatic Curriculum Learning",
+      "authors": ["Sébastien Forestier", "Rémy Portelas", "Yoan Mollard", "Pierre-Yves Oudeyer"],
+      "version": "arXiv1708.02190v3,5May2022",
+      "url": "https://arxiv.org/html/1708.02190v3",
+      "primary_source_kind": "versioned authors' paper",
+      "read_depth": "abstract/introduction, §2.1–2.4 architecture and assumptions, selected description of modular mechanisms, §4.3.1 exploration measure and selected §4.3.2 context",
+      "supported_facts": ["goals represented as parameterized fitness functions", "goal and exploration policies updated with collected experience", "cross-goal experience reuse", "experimental intrinsic reward based on competence progress", "coverage measured in chosen discretized outcome spaces"],
+      "not_verified": ["full paper", "all figures/appendices", "implementation source", "numerical result reproduction", "transfer to pretrained135M model"]
+    },
+    {
+      "title": "Large-Scale Study of Curiosity-Driven Learning",
+      "authors": ["Yuri Burda", "Harri Edwards", "Deepak Pathak", "Amos Storkey", "Trevor Darrell", "Alexei A. Efros"],
+      "version": "arXiv1808.04355v1,13August2018",
+      "url": "https://arxiv.org/html/1808.04355v1",
+      "primary_source_kind": "versioned authors' paper",
+      "read_depth": "abstract/introduction, §2 prediction-error reward and feature representations, §2.2 PPO/normalization choices, §2.3 episode-end signal, §5 stochasticity/noisy-TV discussion",
+      "supported_facts": ["prediction error implements intrinsic reward", "PPO updates policy", "observation feature choice affects objective", "episode-end information can leak task structure", "stochastic distractors can attract prediction-error reward without useful progress"],
+      "not_verified": ["full paper/appendices", "code audit", "benchmark reproduction", "later versions", "transfer to FRR or fixed-weight135M model"]
+    }
+  ],
+  "inferences_not_source_results": [
+    "Stratify automatic notebook growth from model-initiated effects in our readout.",
+    "Do not import novelty/curiosity rewards or policy-learning machinery into the first FRR context comparison without declaring a new condition.",
+    "State diversity alone does not establish useful exploration, control, retention or improvement."
+  ]
+}

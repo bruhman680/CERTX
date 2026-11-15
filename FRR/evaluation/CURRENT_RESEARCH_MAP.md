@@ -1,3 +1,21 @@
+# Current R&D — FRR exposure and world perception, main1630 preserved
+
+14 November2026, America/Chicago. [R&D report](frr-sandbox-rd-v1/REPORT.md). Five parallel design/review/scout trajectories convened. Targeted and peripheral scouts record six primary contacts with versions/read-depth/access limits; not method replications.
+
+Actual new small-model calls:18, across six detached3-turn trajectories. M0 compares empty/compact/full FRR system context with common mechanics-only fresh framing and identical1630 supported world. M1 adds the same truthful initial directory snapshot to all three arms; same prepared world/FRR/physics. No tasks, solution hints, scores, curiosity commands, new rewards or training. Exact exposure and full histories preserved.
+
+Observed: different text,18 automatic notebook appends,0 complete executable cells/attempted model programs,0 actual action-error opportunities. Control produces unfinished wrapper code or a repeated release sentence; compact makes unsupported boundary/permission claims; full describes mechanics or copies FRR language. Do not label no execution zero semantic activity or intrinsic inability. Repair, reuse, transfer, beneficial reasoning or neural learning not demonstrated. Model-card scores remain profiles, not ceilings or our local test results.
+
+All two-stage and combined audits pass. Main ACTIVE pointer unchanged: bounded-main-continuation-v1 at1630,paused; original823-file source preserved. No experimental branch promoted. Runners refuse existingPLAN rather than replay; continuing an experimental branch needs separately prepared append-only continuation.
+
+Built inactive observer-only snapshot instrument under interface/instrument/: real CAS-byte checks, added/deleted entries, escaping/links, full packet or explicit byte-capacity failure pass. No model calls or sandbox opens for these tests; no M2/live-sensing run. Complete over supported snapshot fields, not all native OS metadata. Byte/token limits and caller timing/verification duties remain separate.
+
+Next strongest design: a matched no-FRR initial-only versus truthful post-reply state channel, with no judgment or suggested action. Next neighboring control: identical explicitly scoped facts (writable/world vsreadonlyruntime) in prose versus structureddata. Each new interface gets its own baseline; no automatic hints, longer blocks, sampler switch, forcedrawPython or reward. See interface/FUTURE_INTERFACE_PLAN.md. Main remainspaused pending user's next direction.
+
+Previous navigation follows unchanged, with exact copies in the new study's before/.
+
+---
+
 # Current orientation — selected main1630, paused
 
 15 November2026 UTC. [Settled main50 report](bounded-main-continuation-v1/REPORT.md).
