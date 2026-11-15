@@ -1,3 +1,19 @@
+# Current R&D — three generation-only label-binding cycles complete
+
+15 November2026 UTC. [Report](label-binding-three-cycle-v1/REPORT.md), [analysis](label-binding-three-cycle-v1/ANALYSIS.json), [external claim ledger](label-binding-three-cycle-v1/CLAIM_LEDGER.md), [handoff](label-binding-three-cycle-v1/NEXT_SESSION.md).
+
+Eight actual cached135M calls, six distinct tokenized contexts, no world execution or notebook appends BY DESIGN. These are saved-context interventions, not live garden continuations or action-ability tests. Cycle1 renames latest runtime_feedback→cell_results with authentic null/equal846tokens: invented filename follows. Cycle2 renames initial world_snapshot→directory_state with exact data/equal572tokens: answer-file prose becomes heading plus repeated /world/ lines in unfinished UNLABELLED fence. Cycle3 four-way prior noun×receipt name, all846tokens: named fictional file follows latest receipt key while prior nouns change wording; all four full outputs differ. General recency/internal binding/FRR benefit not established.
+
+All run/additional/final artifact audits, source pins, predecessor-result hashes and repeated controls pass. Previous source snapshots have no label-named files. Operator-edited prior assistant nouns are explicitly synthetic research inputs, not model-authored history. Observer-only claim ledger separates supplied type/value, quoted assertion and actual evidence; no new behavioral gate or hidden correction. Original sentence-extraction display bug/script preserved under observer-revisions, no model replay.
+
+Main bounded-main-continuation-v1 stays1630,paused; original/source/ACTIVE/weights unchanged. No training/promotion/pending/lock/background inference. Recent interface/FRR-series subtotal64calls, not total historical inference or independent sampling. No automatic fourth cycle; single-attempt studies preserve guards/history. Old navigation archived exactly under this study's before/.
+
+Next possible generalization: predeclared held-out receipt aliases, same payload/roles/prior history and source controls, with vocabulary/tokenization disclosed rather than neutral-name claims. Not built/run/queued. Native-default context, longitudinal FRR/main continuation, action/world-clock/capture/adaptation/body queue remains preserved in earlier handoffs. External ledger can improve our reporting immediately without touching main.
+
+Previous navigation follows unchanged.
+
+---
+
 # Current R&D — three role/coupling cycles completed
 
 15 November2026 UTC. [Report](role-coupling-three-cycle-v1/REPORT.md), [handoff](role-coupling-three-cycle-v1/NEXT_SESSION.md), [cross-cycle checks](role-coupling-three-cycle-v1/CROSS_CYCLE_CHECKS.json).

@@ -1,0 +1,94 @@
+{
+  "actual_model_calls": 8,
+  "cycle1_to_cycle3_exact_output_repeats": {
+    "native": true,
+    "renamed": true
+  },
+  "cycles": 3,
+  "distinct_input_token_sequences": 6,
+  "factorial_output_equalities": {
+    "prior_change_under_native_receipt_outputs_equal": false,
+    "prior_change_under_renamed_receipt_outputs_equal": false,
+    "receipt_change_under_directory_prior_outputs_equal": false,
+    "receipt_change_under_world_prior_outputs_equal": false
+  },
+  "literal_patterns": [
+    {
+      "case": "native",
+      "cycle": 1,
+      "first_sentence": "The runtime feedback file contains a list of all the responses to a given question",
+      "literal_named_file_strings": [
+        "runtime_feedback"
+      ],
+      "scope": "literal extraction, not verified object existence or semantic scoring"
+    },
+    {
+      "case": "renamed",
+      "cycle": 1,
+      "first_sentence": "The cell-results file contains a list of all the results of a given question",
+      "literal_named_file_strings": [
+        "cell_results"
+      ],
+      "scope": "literal extraction, not verified object existence or semantic scoring"
+    },
+    {
+      "case": "native",
+      "cycle": 2,
+      "first_sentence": "The world-snapshot file contains a list of all the responses to a given question",
+      "literal_named_file_strings": [
+        "world_snapshot"
+      ],
+      "scope": "literal extraction, not verified object existence or semantic scoring"
+    },
+    {
+      "case": "renamed",
+      "cycle": 2,
+      "first_sentence": "The following is a list of files in the world directory, with their respective file names and descriptions.\n\n```\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n/world/\n",
+      "literal_named_file_strings": [],
+      "scope": "literal extraction, not verified object existence or semantic scoring"
+    },
+    {
+      "case": "world_native",
+      "cycle": 3,
+      "first_sentence": "The runtime feedback file contains a list of all the responses to a given question",
+      "literal_named_file_strings": [
+        "runtime_feedback"
+      ],
+      "scope": "literal extraction, not verified object existence or semantic scoring"
+    },
+    {
+      "case": "world_renamed",
+      "cycle": 3,
+      "first_sentence": "The cell-results file contains a list of all the results of a given question",
+      "literal_named_file_strings": [
+        "cell_results"
+      ],
+      "scope": "literal extraction, not verified object existence or semantic scoring"
+    },
+    {
+      "case": "directory_native",
+      "cycle": 3,
+      "first_sentence": "The file is named \"runtime_feedback\" and contains a list of responses to each question",
+      "literal_named_file_strings": [
+        "runtime_feedback"
+      ],
+      "scope": "literal extraction, not verified object existence or semantic scoring"
+    },
+    {
+      "case": "directory_renamed",
+      "cycle": 3,
+      "first_sentence": "The cell results file contains a list of all the responses to a given question",
+      "literal_named_file_strings": [
+        "cell_results"
+      ],
+      "scope": "literal extraction, not verified object existence or semantic scoring"
+    }
+  ],
+  "main_entry": 1630,
+  "main_unchanged": true,
+  "scope": "pointwise deterministic context effects, not population estimates, internal mechanism identification, world learning or independent replications",
+  "status": "pass",
+  "training_updates": 0,
+  "weights_unchanged": true,
+  "world_actions": 0
+}

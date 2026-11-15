@@ -1,0 +1,5 @@
+# Root-agent review before generation
+
+Generation-only driver uses unchanged cached body and literal parser for observation only. No GardenWorld create/open/apply/receive call is used. Main/source/pointer inventories and all current plan source pins are checked. Raw original archive copied verbatim; all counterfactual messages remain explicitly labeled in job metadata. Null receipts retain null; initial observation payload retains exact object; edited assistant text is synthetic, not model-originated history. Six previous field/role experiments are not imported as new live state. Driver freezes exact IDs/messages before calls and checks original control equality, source digest, weights, no automatic replay and unresolved pending state. Only generated text/raw IDs are saved, never executed or appended.
+
+Cycle1 and2 two outputs each, cycle3 four factorial outputs; eight maximum. Counts are literal string measurements, not semantic scores. No task, repair/correction, reward or decoder change. No independent reviewer/replication claimed. Load-time memory peak not measured. Driver SHA256: `8a00bb59bc034e8f38100517d570cde8195f38c96285a6fa3688d5ea8fcddfde`
