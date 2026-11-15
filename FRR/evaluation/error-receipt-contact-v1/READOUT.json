@@ -1,0 +1,54 @@
+{
+  "actual_model_calls": 4,
+  "actual_model_program_executions": 3,
+  "automatic_note_appends": 4,
+  "conditional_changed_nonce_checks_triggered": false,
+  "parser_native_alias_output_ids_equal": true,
+  "rows": [
+    {
+      "actual_action_errors": [
+        "FileNotFoundError: [Errno 2] No such file or directory: '/world.json'"
+      ],
+      "complete_cells": 1,
+      "historical_control_output_equal": true,
+      "input_tokens": 537,
+      "name": "path_native",
+      "output_tokens": 256,
+      "target_in_stdout": false
+    },
+    {
+      "actual_action_errors": [],
+      "complete_cells": 0,
+      "historical_control_output_equal": null,
+      "input_tokens": 537,
+      "name": "path_alias",
+      "output_tokens": 256,
+      "target_in_stdout": false
+    },
+    {
+      "actual_action_errors": [
+        "AttributeError: 'str' object has no attribute 'read'"
+      ],
+      "complete_cells": 1,
+      "historical_control_output_equal": true,
+      "input_tokens": 583,
+      "name": "parser_native",
+      "output_tokens": 256,
+      "target_in_stdout": false
+    },
+    {
+      "actual_action_errors": [
+        "AttributeError: 'str' object has no attribute 'read'"
+      ],
+      "complete_cells": 1,
+      "historical_control_output_equal": null,
+      "input_tokens": 583,
+      "name": "parser_alias",
+      "output_tokens": 256,
+      "target_in_stdout": false
+    }
+  ],
+  "scope": "one-step repair after authentic error, two source failures; no durable learning or broad capability estimate",
+  "status": "pass",
+  "target_successes": 0
+}

@@ -1,3 +1,19 @@
+# Current R&D — actual-error receipt contact complete
+
+15 November2026 UTC. [Report](error-receipt-contact-v1/REPORT.md), [readout](error-receipt-contact-v1/READOUT.json), [handoff](error-receipt-contact-v1/NEXT_SESSION.md).
+
+Four actual cached135M calls, three actual Python programs and four successful automatic notes in detached post-failure copies. Two authentic previous errors, same worlds/failed source/task/error values; only receipt boundary keys renamed limit. Equal inputs537tokens path,583parser. Native controls reproduce old generated IDs. Path native repeats wrong-path FileNotFoundError; alias produces prose/no executable cell, NOT repair. Parser native/alias outputs and actual cells identical, repeat AttributeError. Hidden target retrieval0/4; no conditional changed-nonce check triggered. This is an explicit inherited-task diagnostic, not primary task-free exploration or FRR efficacy test.
+
+Run/artifact/supplemental/final audits pass. Main bounded-main-continuation-v1 stays1630,paused; original/source/ACTIVE/old source stores/weights unchanged. No training/promotion/pending/lock/background run. Related interface-series subtotal68calls is not all historical inference or independent sampling. Old navigation archived exactly under this study's before/.
+
+Supplemental observer check initially read exit_code from silent model-facing note feedback:null; corrected to authoritative note receipt plus batch storage status. Original script/error preserved, no model/action replay. Distinguish actual repair, changed action/no-action, changed helper/prose and absent error opportunity.
+
+Next proposed discrimination: genuine same error/current state, failed assistant code retained versus explicitly ablated immediate history, with all original records external. Not built/run/queued. Prior held-out-label/native-default/longitudinal FRR/main/world-body queue remains in handoffs. No positive result is a behavior gate for future main exploration.
+
+Previous navigation follows unchanged.
+
+---
+
 # Current R&D — three generation-only label-binding cycles complete
 
 15 November2026 UTC. [Report](label-binding-three-cycle-v1/REPORT.md), [analysis](label-binding-three-cycle-v1/ANALYSIS.json), [external claim ledger](label-binding-three-cycle-v1/CLAIM_LEDGER.md), [handoff](label-binding-three-cycle-v1/NEXT_SESSION.md).
