@@ -1,0 +1,61 @@
+{
+  "arm": "initial_only",
+  "turn": 2,
+  "label": "initial_only_t2",
+  "model_generation": false,
+  "text": "```python\nfrom pathlib import Path\nprint(Path(\"coupling_probe.txt\").read_text())\n```",
+  "stop": "eos",
+  "input_tokens": 398,
+  "output_tokens": 27,
+  "before_id": "bde78b9620d9794d18053e86f464f22168d787d607d4664711d6143bc6161b38",
+  "after_id": "8dbeee0797b3cf5e4869d493e40414620e73c50311e96cdc636e47f058908937",
+  "world_step": 5,
+  "parent_record_sha256": "c182948719598651a553c46a90102bbcd653de916b23341b5a88d69de08bd18c",
+  "source_main_last_event_sha256": "326a81c8a919070ed0372cf30a3cd6b52b661ccf417fc02bb2de18917c6f8b55",
+  "raw_sha256": "33070efcdfa63862daaab41c474949fb59e4075e44dcf73d088e68c8f4edb1d6",
+  "batch_sha256": "b3c2337def6e7011afa353e2765d18407da48ab17247e21b43e6722d413bc0ca",
+  "snapshot_sha256": "2a63a74e14e432247656207f3c53346fb4fd2cb972617164f5c5bf88be35dc7c",
+  "observation_status": "complete",
+  "observation_capacity_event": null,
+  "runtime_feedback_raw": "{\"boundary\": null, \"receipts\": [{\"boundary\": null, \"channel\": \"python\", \"exit_code\": 0, \"stderr\": \"\", \"stdout\": \"retained\\n\"}]}",
+  "feedback_for_next_input": "{\"runtime_feedback\":{\"boundary\":null,\"receipts\":[{\"boundary\":null,\"channel\":\"python\",\"exit_code\":0,\"stderr\":\"\",\"stdout\":\"retained\\n\"}]}}",
+  "observation_selected_for_next_input": false,
+  "next_input_tokens": 477,
+  "whole_input_limit_used": 7936,
+  "packet_byte_limit_used": 8192,
+  "fixture_limit_override": false,
+  "pause_reason": null,
+  "boundary": null,
+  "complete_cells": 1,
+  "incomplete_fences": 0,
+  "model_initiated_actions": [
+    {
+      "channel": "python",
+      "source": "from pathlib import Path\nprint(Path(\"coupling_probe.txt\").read_text())\n",
+      "feedback": {
+        "stdout": "retained\n",
+        "stderr": "",
+        "exit_code": 0,
+        "boundary": null,
+        "seconds": 0.01810151200334076
+      },
+      "changed_paths": []
+    }
+  ],
+  "automatic_note_operations": [
+    {
+      "feedback": null,
+      "changed_paths": [
+        "notebook.txt"
+      ]
+    }
+  ],
+  "world_verification": {
+    "status": "pass",
+    "step": 5,
+    "parent_entry": 1630,
+    "bundle_id": "8dbeee0797b3cf5e4869d493e40414620e73c50311e96cdc636e47f058908937",
+    "objects": 9
+  },
+  "known_action_committed": true
+}

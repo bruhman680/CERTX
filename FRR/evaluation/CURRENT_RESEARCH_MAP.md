@@ -1,3 +1,21 @@
+# Settled — main1630, live-sensing comparison completed
+
+15 November2026, America/Chicago. User requested wind-down near usage limit and preservation of all remaining plans. [Read next-session handoff](frr-sandbox-live-sensing-v1/NEXT_SESSION.md), [report](frr-sandbox-live-sensing-v1/REPORT.md), SETTLED.json.
+
+Selected main unchanged: bounded-main-continuation-v1 at1630,paused. No new main entry/FRR promotion/training. Latest detached comparison completed8/8actual calls: two no-FRR branches,4continuousreplies each, same310-token initial input and sameworld; livealone adds truthful post-reply directory observations. Three post-reply packets are proven consumed by actual later generations; reply4packet remains unconsumed. All8effects are automaticnote storage,0 executablemodelprograms/actualactionerrors; repair/reuse notelicited. Initialpairinputs+outputs match; latertext differs underdifferentfeedback. No beneficiallearning or FRRefficacy established.
+
+Preflight,targetedcouplingtests andcompletedstudy auditpass. Knownaction/snapshot preserved atcapacity; controlnotpausedforundeliveredauxoverflow; actualreceipts separatefromobserverdata. Userpause request recorded duringfinalpair; plannedbudgetcompleted, no RUN.lock/PENDING/backgroundmodelrun orqueuednextcalls. Existingrun is single-attempt; do notclear RUN_STARTED/pause/unknownmarkers to force replay. Continue only via reviewedappend-onlysession or separatelydeclaredcomparison.
+
+Read-onlyaliaswitness:43-entry metadata packets3393bytes identical acrossdifferentpresentfilecontents, witholdverifiedreadconsequencesdifferent.0newmodelcalls/actions/opens. Directorymetadata ispartial, notfullstate orbrainview; actualreadreceipts canresolvealias. Sourceclockmetadatarevision preserved explicitly.
+
+Series total26newsmall-model replies:18FRR/context/perceptionR&D +8no-FRRlive-sensingbaseline. Earlier five role trajectories and six primary-source contacts, fullrawrecords andinactive-at-that-stageinstrument remain at frr-sandbox-rd-v1 unchanged.
+
+Unexecutedplans recorded: reviewperception/actioncoupling; equivalent explicitlyscopedprose/datafacts; FRRunderaselectedobservationlawwithmatchedcontrol; alternateactionports; autonomousworldticks; adaptation/retention/transferopportunities; capturefidelityscope; separatelydeclaredbody/decoder/trainingchanges. No automaticgoals/hints/rewards/rawPythonforcing/longblock/rescue escalation. Positivepilotperformance is not a prerequisite for choosing an experiment, but does constrain claims of provenimprovement.
+
+Previousnavigation follows unchanged; exactcopies under newstudy/before/.
+
+---
+
 # Current R&D — FRR exposure and world perception, main1630 preserved
 
 14 November2026, America/Chicago. [R&D report](frr-sandbox-rd-v1/REPORT.md). Five parallel design/review/scout trajectories convened. Targeted and peripheral scouts record six primary contacts with versions/read-depth/access limits; not method replications.

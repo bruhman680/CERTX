@@ -1,0 +1,61 @@
+{
+  "arm": "live",
+  "turn": 1,
+  "label": "live_t1",
+  "model_generation": false,
+  "text": "```python\nraise ValueError(\"actual fixture error\")\n```",
+  "stop": "eos",
+  "input_tokens": 310,
+  "output_tokens": 13,
+  "before_id": "abf480f4275ccff8dc94e1aed85fb861538cd9a4ced9aad58861032770c364c2",
+  "after_id": "aaf4061a971451a9abc2a1ef9ba9f3c5e09f724c89953abe4bc36ca2f005db3d",
+  "world_step": 3,
+  "parent_record_sha256": null,
+  "source_main_last_event_sha256": "326a81c8a919070ed0372cf30a3cd6b52b661ccf417fc02bb2de18917c6f8b55",
+  "raw_sha256": "83671ec79bf8875647e2b0670eec2ed3b82e6c147aa0a903ef07ec40e0708a60",
+  "batch_sha256": "65ba94463749a1493f995579edb229588c1b9fcd222b227dffee9136fc28e7f3",
+  "snapshot_sha256": "0814d96f8ea946199997456547c37786b1ec2779c63a09f688ab229a507a22f1",
+  "observation_status": "complete",
+  "observation_capacity_event": null,
+  "runtime_feedback_raw": "{\"boundary\": null, \"receipts\": [{\"boundary\": null, \"channel\": \"python\", \"exit_code\": 1, \"stderr\": \"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 1, in <module>\\n    raise ValueError(\\\"actual fixture error\\\")\\nValueError: actual fixture error\\n\", \"stdout\": \"\"}]}",
+  "feedback_for_next_input": "{\"runtime_feedback\":{\"boundary\":null,\"receipts\":[{\"boundary\":null,\"channel\":\"python\",\"exit_code\":1,\"stderr\":\"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 1, in <module>\\n    raise ValueError(\\\"actual fixture error\\\")\\nValueError: actual fixture error\\n\",\"stdout\":\"\"}]},\"world_observation\":{\"entries\":[{\"bytes\":276,\"name\":\"LAWS.txt\",\"type\":\"file\"},{\"bytes\":4213,\"name\":\"WORLD_RULES.txt\",\"type\":\"file\"},{\"bytes\":168981,\"name\":\"notebook.txt\",\"type\":\"file\"},{\"bytes\":150350,\"name\":\"prior_replies.jsonl\",\"type\":\"file\"},{\"bytes\":1091,\"name\":\"transitions.json\",\"type\":\"file\"}],\"path\":\"/world\",\"reply_index\":1,\"timing\":\"after_reply\",\"world_step\":3}}",
+  "observation_selected_for_next_input": true,
+  "next_input_tokens": 557,
+  "whole_input_limit_used": 7936,
+  "packet_byte_limit_used": 8192,
+  "fixture_limit_override": false,
+  "pause_reason": null,
+  "boundary": null,
+  "complete_cells": 1,
+  "incomplete_fences": 0,
+  "model_initiated_actions": [
+    {
+      "channel": "python",
+      "source": "raise ValueError(\"actual fixture error\")\n",
+      "feedback": {
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    raise ValueError(\"actual fixture error\")\nValueError: actual fixture error\n",
+        "exit_code": 1,
+        "boundary": null,
+        "seconds": 0.022878639996633865
+      },
+      "changed_paths": []
+    }
+  ],
+  "automatic_note_operations": [
+    {
+      "feedback": null,
+      "changed_paths": [
+        "notebook.txt"
+      ]
+    }
+  ],
+  "world_verification": {
+    "status": "pass",
+    "step": 3,
+    "parent_entry": 1630,
+    "bundle_id": "aaf4061a971451a9abc2a1ef9ba9f3c5e09f724c89953abe4bc36ca2f005db3d",
+    "objects": 7
+  },
+  "known_action_committed": true
+}

@@ -1,0 +1,82 @@
+{
+  "batch_id": "000001_498eb41b029d4d45879e83f81aad7f82",
+  "raw_text": "```python\nraise ValueError(\"actual fixture error\")\n```",
+  "parsed": {
+    "cells": [
+      {
+        "delimiter": "```",
+        "language": "python",
+        "fence_start": 0,
+        "source_start": 10,
+        "source_end": 51,
+        "fence_end": 54,
+        "complete": true,
+        "source": "raise ValueError(\"actual fixture error\")\n",
+        "executable": true,
+        "offset_unit": "Unicode code points; end exclusive",
+        "fence_start_utf8": 0,
+        "source_start_utf8": 10,
+        "source_end_utf8": 51,
+        "fence_end_utf8": 54
+      }
+    ],
+    "complete_executable_cells": 1,
+    "raw_codepoints": 54,
+    "raw_utf8_bytes": 54
+  },
+  "operations": [
+    {
+      "step": 2,
+      "channel": "note",
+      "source": "```python\nraise ValueError(\"actual fixture error\")\n```",
+      "raw_text": "```python\nraise ValueError(\"actual fixture error\")\n```",
+      "before_id": "abf480f4275ccff8dc94e1aed85fb861538cd9a4ced9aad58861032770c364c2",
+      "parent_event_sha256": "cecd2b7cf950f5b52202de711397397f1ddcfafc03de7a6fb55330a8908cbb8f",
+      "kind": "notebook",
+      "receipt": {
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0,
+        "boundary": null,
+        "seconds": 0.009029259003000334
+      },
+      "feedback": null,
+      "after_id": "aaf4061a971451a9abc2a1ef9ba9f3c5e09f724c89953abe4bc36ca2f005db3d",
+      "changed_paths": [
+        "notebook.txt"
+      ]
+    },
+    {
+      "step": 3,
+      "channel": "python",
+      "source": "raise ValueError(\"actual fixture error\")\n",
+      "raw_text": null,
+      "before_id": "aaf4061a971451a9abc2a1ef9ba9f3c5e09f724c89953abe4bc36ca2f005db3d",
+      "parent_event_sha256": "a56bccb99cfbb46a665544515dbab37f5e4a363c4ffcedccec27112534bcf893",
+      "kind": "python",
+      "receipt": {
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    raise ValueError(\"actual fixture error\")\nValueError: actual fixture error\n",
+        "exit_code": 1,
+        "boundary": null,
+        "seconds": 0.022878639996633865
+      },
+      "feedback": {
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    raise ValueError(\"actual fixture error\")\nValueError: actual fixture error\n",
+        "exit_code": 1,
+        "boundary": null,
+        "seconds": 0.022878639996633865
+      },
+      "after_id": "aaf4061a971451a9abc2a1ef9ba9f3c5e09f724c89953abe4bc36ca2f005db3d",
+      "changed_paths": [],
+      "cell_index": 0,
+      "source_start": 10,
+      "source_end": 51
+    }
+  ],
+  "status": "completed",
+  "boundary": null,
+  "note_stored": true,
+  "note_storage_fault": null
+}

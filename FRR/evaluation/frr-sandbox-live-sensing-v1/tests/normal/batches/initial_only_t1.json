@@ -1,0 +1,84 @@
+{
+  "batch_id": "000001_785c458adcb14fa3a369e07e073396ed",
+  "raw_text": "```python\nfrom pathlib import Path\nPath(\"coupling_probe.txt\").write_text(\"retained\")\nprint(\"actual runtime output\")\n```",
+  "parsed": {
+    "cells": [
+      {
+        "delimiter": "```",
+        "language": "python",
+        "fence_start": 0,
+        "source_start": 10,
+        "source_end": 116,
+        "fence_end": 119,
+        "complete": true,
+        "source": "from pathlib import Path\nPath(\"coupling_probe.txt\").write_text(\"retained\")\nprint(\"actual runtime output\")\n",
+        "executable": true,
+        "offset_unit": "Unicode code points; end exclusive",
+        "fence_start_utf8": 0,
+        "source_start_utf8": 10,
+        "source_end_utf8": 116,
+        "fence_end_utf8": 119
+      }
+    ],
+    "complete_executable_cells": 1,
+    "raw_codepoints": 119,
+    "raw_utf8_bytes": 119
+  },
+  "operations": [
+    {
+      "step": 2,
+      "channel": "note",
+      "source": "```python\nfrom pathlib import Path\nPath(\"coupling_probe.txt\").write_text(\"retained\")\nprint(\"actual runtime output\")\n```",
+      "raw_text": "```python\nfrom pathlib import Path\nPath(\"coupling_probe.txt\").write_text(\"retained\")\nprint(\"actual runtime output\")\n```",
+      "before_id": "abf480f4275ccff8dc94e1aed85fb861538cd9a4ced9aad58861032770c364c2",
+      "parent_event_sha256": "c52ab143b289deae0e796d9d4b9dbf9b75a380c4d0fb265fd8be0b841015cb1f",
+      "kind": "notebook",
+      "receipt": {
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0,
+        "boundary": null,
+        "seconds": 0.009785965004994068
+      },
+      "feedback": null,
+      "after_id": "d2fa1c808948c8795e0b398bffbb16a0805fece4e6c4a97f021760aa24d10dbc",
+      "changed_paths": [
+        "notebook.txt"
+      ]
+    },
+    {
+      "step": 3,
+      "channel": "python",
+      "source": "from pathlib import Path\nPath(\"coupling_probe.txt\").write_text(\"retained\")\nprint(\"actual runtime output\")\n",
+      "raw_text": null,
+      "before_id": "d2fa1c808948c8795e0b398bffbb16a0805fece4e6c4a97f021760aa24d10dbc",
+      "parent_event_sha256": "37b4d4be11c5ccfd0d74cfcae32128adb727acea525b2e7707ea8d1c204efa0e",
+      "kind": "python",
+      "receipt": {
+        "stdout": "actual runtime output\n",
+        "stderr": "",
+        "exit_code": 0,
+        "boundary": null,
+        "seconds": 0.019455717003438622
+      },
+      "feedback": {
+        "stdout": "actual runtime output\n",
+        "stderr": "",
+        "exit_code": 0,
+        "boundary": null,
+        "seconds": 0.019455717003438622
+      },
+      "after_id": "bde78b9620d9794d18053e86f464f22168d787d607d4664711d6143bc6161b38",
+      "changed_paths": [
+        "coupling_probe.txt"
+      ],
+      "cell_index": 0,
+      "source_start": 10,
+      "source_end": 116
+    }
+  ],
+  "status": "completed",
+  "boundary": null,
+  "note_stored": true,
+  "note_storage_fault": null
+}
