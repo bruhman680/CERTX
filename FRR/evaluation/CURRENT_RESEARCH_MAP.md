@@ -1,3 +1,19 @@
+# Current R&D — three role/coupling cycles completed
+
+15 November2026 UTC. [Report](role-coupling-three-cycle-v1/REPORT.md), [handoff](role-coupling-three-cycle-v1/NEXT_SESSION.md), [cross-cycle checks](role-coupling-three-cycle-v1/CROSS_CYCLE_CHECKS.json).
+
+Three cycles,18 actual cached135M calls, six detached three-reply trajectories. Cycle1 moves identical initial information user↔system: equal314-token starts yield mechanics prose versus unfinished code. Cycle2 partitions mechanics/system and metadata/user: split invents a world_snapshot file and equates read-only with non-persistence. Cycle3 compact FRR under split changes the invented answer-file label from world_snapshot to runtime_feedback after receipt arrival; replies2–3 repeat. That last branch has two distinct outputs, not one. Role/position/length/history remain declared confounds; no causal recency or FRR benefit established.
+
+All18 outputs cap256. Eighteen automatic notes (19023 aggregatebytes across six worlds), zero executed model programs, six unfinished fences in the two system_all trajectories. Actual action-error/repair and artifact reuse notelicited. Writing is a real effect, not proof of operational exploration. All three run audits, additional artifact audits, frozen-design hashes and exact repeated-control joins pass. Root-agent reviews are not independent replications. Recent interface/FRR-series subtotal56calls is not total historical inference or independent sampling.
+
+Main bounded-main-continuation-v1 stays1630,paused; original1580/source/ACTIVE/weights unchanged. No training/promotion/PENDING/lock/background inference. No automatic fourth cycle. Three studies are single-attempt; preserve histories/guards. Prior navigation archived exactly under this study's before/.
+
+Closest next design: matched label-to-object/context forks, separating recent transport labels from prior assistant history, with factual receipts and unchanged world facts. Neighboring source contact: cached tokenizer inserts native SmolLM identity only when first system message is absent; explicit-system trials suppress that default. This is an untested context alternative, not a bug/cause proven here. Detailed longitudinal/actuator/world-clock/capture/adaptation/body queue preserved in handoff.
+
+Previous navigation follows unchanged.
+
+---
+
 # Current R&D — matched compact-FRR context contact complete
 
 15 November2026 UTC. [Report](frr-scoped-context-v1/REPORT.md), [readout](frr-scoped-context-v1/READOUT.json), [handoff](frr-scoped-context-v1/NEXT_SESSION.md), [observer coupling map](frr-scoped-context-v1/COUPLING_MAP.md).

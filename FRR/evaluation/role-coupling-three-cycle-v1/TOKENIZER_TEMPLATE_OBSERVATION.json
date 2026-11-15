@@ -1,0 +1,7 @@
+{
+  "source": "/workspace/cache_backend_models/smollm2-135m/tokenizer_config.json",
+  "source_sha256": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df",
+  "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ '<|im_start|>system\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face<|im_end|>\n' }}{% endif %}{{'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'}}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}",
+  "scope": "read-only inspection of cached tokenizer; no model or world operations; all studies pass an explicit first system message, so any template default for missing-system is not automatically inserted",
+  "inference_limit": "does not establish training distribution or optimal prompting"
+}
