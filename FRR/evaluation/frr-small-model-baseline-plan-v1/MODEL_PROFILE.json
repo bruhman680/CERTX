@@ -1,0 +1,54 @@
+{
+  "status": "design record, not a new evaluation",
+  "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "weights_sha256": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c",
+  "documented_training": {
+    "pretraining_tokens": "2T",
+    "instruction_tuning": "SFT followed by DPO",
+    "documented_dataset_families": [
+      "FineWeb-Edu",
+      "DCLM",
+      "The Stack",
+      "smol-smoltalk",
+      "UltraFeedback"
+    ]
+  },
+  "selected_instruct_model_card_values": {
+    "IFEval_average_prompt_inst": 29.9,
+    "ARC_average": 37.3,
+    "PIQA": 66.3,
+    "MMLU_cloze": 29.3,
+    "BBH_3shot": 28.2,
+    "GSM8K_5shot": 1.4
+  },
+  "score_scope": "Reported model-card values under its evaluation methods; not IQ, a capability ceiling, guaranteed sandbox competence, or our measured local baseline. Do not compare with newly measured values unless task/metric/protocol are matched.",
+  "function_calling_scope": "Model-card function-calling statement specifically qualifies1.7B, not proof135M has that proficiency.",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/blob/12fd25f77366fa6b3b4b768ec3050bf629380bac/README.md",
+  "read_depth": "summary/training/evaluation/limitations, exact revision; no new benchmark reproduction",
+  "local_eval_results_warning": "eval_rewards/accuracies in cached training files is a preference-training metric, not general intelligence or sandbox task accuracy.",
+  "current_cpu_condition": {
+    "dtype": "float32",
+    "decoder": "greedy argmax",
+    "output_tokens": 256,
+    "input_limit": 7936,
+    "fresh_KV_per_reply": true,
+    "new_training_updates": 0
+  },
+  "frr_candidate": {
+    "origin": "FRR/prompts/runtime.md",
+    "version_heading": "# FRR runtime 0.2 \u2014 derived from v0.5",
+    "sha256": "47190e95a1a73d11a0c90ee83c6335a2c11ed88f77fb939b036fef3048ee5ac0",
+    "bytes": 6990,
+    "frozen_copy": "FRR_SOURCE_CANDIDATE.md",
+    "selection_status": "reference candidate only; experimental wording/presentation not finalized",
+    "limitation": "This operational text addresses human research workflows and may need an explicitly labeled adaptation; do not silently equate a shortened version with the full source."
+  },
+  "main_state_preserved": {
+    "version": "bounded-main-continuation-v1",
+    "entry": 1630,
+    "paused": true
+  },
+  "model_calls_this_contact": 0,
+  "activation": false
+}

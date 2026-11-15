@@ -1,3 +1,13 @@
+# Next session — design the FRR baseline comparison
+
+15 November2026 UTC. User paused experimentation near usage limit and requested a planning record. [Read the plan](../evaluation/frr-small-model-baseline-plan-v1/PLAN.md) and MODEL_PROFILE.json first. No new model calls, training, activation or garden changes occurred. Selected main remains bounded-main-continuation-v1,1630,paused.
+
+Next: agree the minimal perception/action/world connection, freeze one exact FRR presentation, establish matched local no-FRR and FRR conditions, then build missing pieces and begin only the planned pilot when experimentation resumes. Published model scores are context, not intelligence ceilings or substitutes for local controls. Preserve failures/regressions, keep observer judgments and solutions outside the primary world, and distinguish context-conditioned behavior from weight learning. Frozen runtime0.2/v0.5-derived text is a reference candidate, not a silently chosen small-model adaptation.
+
+The previous orientation follows unchanged; a byte-exact copy is retained under the new plan's before/.
+
+---
+
 # Current orientation — selected main1630, paused
 
 15 November2026 UTC. [Settled main50 report](../evaluation/bounded-main-continuation-v1/REPORT.md).
