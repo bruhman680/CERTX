@@ -1,0 +1,7 @@
+{"world":{"path":"/world","storage":"writable"},"supplied_runtime":{"programs":["Python 3","/bin/sh"],"access":"read-only"}}
+
+Files in /world persist. Each completed cell starts a new process; variables, processes and /tmp do not persist between cells.
+
+For replies within the cell-count bound, a literal append to notebook.txt is attempted. A column-zero line exactly ```python or ```sh opens an executable cell; a column-zero line exactly ``` closes it. Complete cells execute once in text order. Other text, including unfinished cells, is writing only.
+
+After a reply, actual cell stdout, stderr, exit status and resource-boundary information return. Successful notebook storage is silent. Exact resource limits are in WORLD_RULES.txt.

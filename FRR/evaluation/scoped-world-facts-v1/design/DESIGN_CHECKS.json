@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "model_calls": 0,
+  "world_opens": 0,
+  "common_suffix_bytes_match": true,
+  "json_payload_matches_canonical": true,
+  "tokenizer_only": true,
+  "counts": {
+    "prose": {
+      "bytes": 697,
+      "mechanics_text_tokens": 159,
+      "opening_span": "/world is writable storage. The supplied Python 3 and /bin/sh runtime is read-only.",
+      "opening_tokens": 23
+    },
+    "json": {
+      "bytes": 738,
+      "mechanics_text_tokens": 177,
+      "opening_span": "{\"world\":{\"path\":\"/world\",\"storage\":\"writable\"},\"supplied_runtime\":{\"programs\":[\"Python 3\",\"/bin/sh\"],\"access\":\"read-only\"}}",
+      "opening_tokens": 41
+    }
+  },
+  "scope": "Design text consistency only; does not verify future prepared worlds/snapshots/runner or model interpretation."
+}

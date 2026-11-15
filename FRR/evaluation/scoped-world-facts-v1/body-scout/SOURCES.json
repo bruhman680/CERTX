@@ -1,0 +1,48 @@
+{
+  "scout": "body_scope_scout",
+  "date": "2026-11-15",
+  "primary_source_count": 2,
+  "new_model_calls": 0,
+  "main_modified": false,
+  "sources": [
+    {
+      "id": "smollm2",
+      "arxiv": "2502.02737v1",
+      "version_date": "2025-02-04",
+      "url": "https://arxiv.org/html/2502.02737v1",
+      "read_depth": [
+        "abstract",
+        "section 2",
+        "section 3.1",
+        "sections 4.7 and 5.2-5.4 for scope",
+        "section 6 complete"
+      ],
+      "limits": [
+        "selected sections only",
+        "no reproduction",
+        "main evaluation tables concern 1.7B",
+        "no ambient-world agency measurement for 135M"
+      ]
+    },
+    {
+      "id": "tinystories",
+      "arxiv": "2305.07759v2",
+      "version_date": "2023-05-24",
+      "url": "https://arxiv.org/html/2305.07759v2",
+      "read_depth": [
+        "abstract and introduction",
+        "sections 2 and 2.1",
+        "section 3 evaluation method",
+        "section 4.2 and adjacent examples"
+      ],
+      "limits": [
+        "selected sections only",
+        "no reproduction",
+        "different trained models/distribution",
+        "story continuations not sandbox agency",
+        "GPT-4 ratings are not direct environmental evidence"
+      ]
+    }
+  ],
+  "baseline_implication": "Pretraining establishes prior text experience; no spontaneous action in task-free short runs is not a matched capability failure or a weight-learning result."
+}

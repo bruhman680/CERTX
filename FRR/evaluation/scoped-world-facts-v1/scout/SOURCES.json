@@ -1,0 +1,55 @@
+{
+  "schema": "scoped-world-facts-primary-scout-v1",
+  "date": "2026-11-15",
+  "timezone": "America/Chicago",
+  "status": "selected-primary-passages-read-not-reproduced",
+  "model_calls": 0,
+  "sandbox_opens": 0,
+  "external_code_executed": false,
+  "sources": [
+    {
+      "id": "S1",
+      "title": "ScoNe: Benchmarking Negation Reasoning in Language Models With Fine-Tuning and In-Context Learning",
+      "authors": ["Jingyuan Selena She", "Christopher Potts", "Samuel R. Bowman", "Atticus Geiger"],
+      "version": "ACL 2023 proceedings authoritative PDF, pages 1803–1821",
+      "landing_url": "https://aclanthology.org/2023.acl-short.154/",
+      "read_url": "https://aclanthology.org/2023.acl-short.154.pdf",
+      "doi": "10.18653/v1/2023.acl-short.154",
+      "read_depth": ["abstract and introduction", "contrast-set table", "sections 3 and 4", "Figure 1 algorithm comparison"],
+      "not_read": ["complete appendix audit", "repository code"],
+      "access": "selected PDF passages accessible",
+      "methodological_use": "Separate scoped assertions from word counts; aggregate performance can hide diagnostic conditions.",
+      "transfer_limit": "NLI/narrative tasks and other model bodies do not diagnose local filesystem scope or 135M behavior."
+    },
+    {
+      "id": "S2",
+      "title": "IHEval: Evaluating Language Models on Following the Instruction Hierarchy",
+      "authors_short": "Zhihan Zhang et al.",
+      "version": "NAACL 2025 proceedings authoritative PDF, pages 8374–8398",
+      "landing_url": "https://aclanthology.org/2025.naacl-long.425/",
+      "read_url": "https://aclanthology.org/2025.naacl-long.425.pdf",
+      "doi": "10.18653/v1/2025.naacl-long.425",
+      "read_depth": ["abstract and introduction", "section 3 definitions/settings", "selected section 4 model and strictness results", "Table 2"],
+      "not_read": ["every task appendix", "repository code"],
+      "access": "selected PDF passages accessible",
+      "methodological_use": "Keep message role, instruction force and placement fixed across serialization treatments.",
+      "transfer_limit": "Hierarchy/security benchmark goals are not garden goals; no 135M extrapolation or causal diagnosis."
+    },
+    {
+      "id": "S3",
+      "title": "An Incomplete Loop: Deductive, Inductive, and Abductive Reasoning in Language Models",
+      "authors": ["Emmy Liu", "Graham Neubig", "Jacob Andreas"],
+      "version": "arXiv:2404.03028v4, 2026-09-14",
+      "landing_url": "https://arxiv.org/abs/2404.03028v4",
+      "read_url": "https://arxiv.org/html/2404.03028v4",
+      "version_note": "Unversioned landing page identified v4; search result retained an older title. Claims use v4 selected passages.",
+      "read_depth": ["sections 1–5 selected passages", "Appendix A model settings", "Appendix B prompt notes", "Appendix E opening representation note"],
+      "not_read": ["complete appendices", "linked rule_induction repository"],
+      "access": "selected HTML passages and version metadata accessible",
+      "methodological_use": "Separate generated verbal rules from their application; formal representations have no universal advantage.",
+      "transfer_limit": "GPT/Llama-2 directed tasks and hypothesis reranking are not a task-free 135M world."
+    }
+  ],
+  "prior_sources_not_recounted_as_new": ["ReAct", "Voyager", "FormatSpread"],
+  "recommendation": "Small initial-only same-facts prose-versus-JSON serialization pilot; no main adoption implied."
+}

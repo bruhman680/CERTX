@@ -1,3 +1,17 @@
+# Current R&D — scoped-fact comparison complete; main1630 preserved
+
+15 November 2026. [Report](scoped-world-facts-v1/REPORT.md), [readout](scoped-world-facts-v1/READOUT.json), [next-session handoff](scoped-world-facts-v1/NEXT_SESSION.md). Four parallel design/review/source/body scout roles convened; five primary-source contacts with explicit read-depth and transfer limits. These are role contributions, not independent scientific replications.
+
+Six actual cached135M calls: two detached three-reply no-FRR trajectories, equivalent writable-world/read-only-runtime facts encoded as prose versus JSON. All other mechanics, initial sensor, supported starting world, body and history policy matched. JSON18tokens longer; presentation bundles syntax/wording/positions. Each arm repeats its own256-token output across three growing inputs. Prose recites mechanics and initial metadata; JSON describes nonexistent supplied code. Six successful automatic note appends, zero executable model programs or actual action errors. Repair/reuse and operational scope understanding not elicited; no universal format winner or FRR benefit established.
+
+Preparation, driver review, raw/effect/state audits pass. Main bounded-main-continuation-v1 remains at1630,paused; original1580 source and ACTIVE pointer unchanged. Weights unchanged; no training, promotion, PENDING, RUN.lock or background inference. Series total32small-model replies across M0/M1/M2 and this contact. Detached studies are single-attempt; preserve their history rather than clearing guards to replay.
+
+Training-source contact: smaller SmolLM2 SFT omitted complex function-calling examples. This limits assumptions about inherited interface proficiency, not proof of incapacity; earlier prompted file-read success remains a positive local witness. Strongest next is a matched no-FRR/compact-FRR comparison on one fixed scoped-prose initial-only interface, selected for clarity/continuity rather than superiority. Observer-only coupling map and separate actuator/world-clock designs remain lateral paths. No next calls scheduled.
+
+Previous navigation follows unchanged; exact copies under this study's before/.
+
+---
+
 # Settled — main1630, live-sensing comparison completed
 
 15 November2026, America/Chicago. User requested wind-down near usage limit and preservation of all remaining plans. [Read next-session handoff](frr-sandbox-live-sensing-v1/NEXT_SESSION.md), [report](frr-sandbox-live-sensing-v1/REPORT.md), SETTLED.json.
