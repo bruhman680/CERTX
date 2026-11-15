@@ -1,0 +1,29 @@
+{
+  "actor": "operator",
+  "source": "from pathlib import Path\nimport json\nprint(json.loads(Path('probe_value.json').read_text())['value'])",
+  "event": {
+    "step": 2,
+    "channel": "python",
+    "source": "from pathlib import Path\nimport json\nprint(json.loads(Path('probe_value.json').read_text())['value'])",
+    "raw_text": null,
+    "before_id": "a79d57d6ddd3359a15da437be87728ef6a077d6964ead091de80516693bb66ba",
+    "parent_event_sha256": "e8b98d6ced33d349e92dda49f665cda4db99e3a604d5d46b026f35021758a8e6",
+    "kind": "python",
+    "receipt": {
+      "stdout": "K7M4Q9\n",
+      "stderr": "",
+      "exit_code": 0,
+      "boundary": null,
+      "seconds": 0.021269051998388022
+    },
+    "feedback": {
+      "stdout": "K7M4Q9\n",
+      "stderr": "",
+      "exit_code": 0,
+      "boundary": null,
+      "seconds": 0.021269051998388022
+    },
+    "after_id": "a79d57d6ddd3359a15da437be87728ef6a077d6964ead091de80516693bb66ba",
+    "changed_paths": []
+  }
+}

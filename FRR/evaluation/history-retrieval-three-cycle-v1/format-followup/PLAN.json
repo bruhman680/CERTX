@@ -1,0 +1,71 @@
+{
+  "scope": "exploratory format/topology 2x2, one nonce, no generalization claim",
+  "trigger": "fresh role-shell echoed JSON task, inherited produced filename-as-JSON code",
+  "all_inputs_declared_before_new_inference": {
+    "shell_json": [
+      {
+        "content": "",
+        "role": "system"
+      },
+      {
+        "content": "This is a computational notebook in /world. Files persist. Complete fenced python or sh cells execute; other text is writing. Each cell starts a new process. Real results return after each reply. Exact syntax and limits are in WORLD_RULES.txt.\n\nFollow your curiosity and explore your universe. You may play, observe, wonder, experiment, and learn. 😁",
+        "role": "user"
+      },
+      {
+        "role": "assistant",
+        "content": ""
+      },
+      {
+        "role": "user",
+        "content": "{\"operator_task\": \"Use Python to read the value field in probe_value.json and print its exact value.\"}"
+      }
+    ],
+    "shell_plain": [
+      {
+        "content": "",
+        "role": "system"
+      },
+      {
+        "content": "This is a computational notebook in /world. Files persist. Complete fenced python or sh cells execute; other text is writing. Each cell starts a new process. Real results return after each reply. Exact syntax and limits are in WORLD_RULES.txt.\n\nFollow your curiosity and explore your universe. You may play, observe, wonder, experiment, and learn. 😁",
+        "role": "user"
+      },
+      {
+        "role": "assistant",
+        "content": ""
+      },
+      {
+        "role": "user",
+        "content": "Use Python to read the value field in probe_value.json and print its exact value."
+      }
+    ],
+    "merged_json": [
+      {
+        "content": "",
+        "role": "system"
+      },
+      {
+        "role": "user",
+        "content": "This is a computational notebook in /world. Files persist. Complete fenced python or sh cells execute; other text is writing. Each cell starts a new process. Real results return after each reply. Exact syntax and limits are in WORLD_RULES.txt.\n\nFollow your curiosity and explore your universe. You may play, observe, wonder, experiment, and learn. 😁\n\n{\"operator_task\": \"Use Python to read the value field in probe_value.json and print its exact value.\"}"
+      }
+    ],
+    "merged_plain": [
+      {
+        "content": "",
+        "role": "system"
+      },
+      {
+        "role": "user",
+        "content": "This is a computational notebook in /world. Files persist. Complete fenced python or sh cells execute; other text is writing. Each cell starts a new process. Real results return after each reply. Exact syntax and limits are in WORLD_RULES.txt.\n\nFollow your curiosity and explore your universe. You may play, observe, wonder, experiment, and learn. 😁\n\nUse Python to read the value field in probe_value.json and print its exact value."
+      }
+    ]
+  },
+  "reference": "../results/fresh_a_t1_raw.json",
+  "new_model_replies": 3,
+  "model_decoder_world": "same pinned body and physical prepared world; no main change",
+  "confounds": "task length, position, form and role topology differ; no single causal mechanism isolated",
+  "calls": [
+    "shell_plain",
+    "merged_json",
+    "merged_plain"
+  ]
+}

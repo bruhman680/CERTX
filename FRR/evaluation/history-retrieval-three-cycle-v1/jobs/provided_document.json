@@ -1,0 +1,27 @@
+{
+  "case_id": "provided_document",
+  "messages": [
+    {
+      "content": "",
+      "role": "system"
+    },
+    {
+      "content": "This is a computational notebook in /world. Files persist. Complete fenced python or sh cells execute; other text is writing. Each cell starts a new process. Real results return after each reply. Exact syntax and limits are in WORLD_RULES.txt.\n\nFollow your curiosity and explore your universe. You may play, observe, wonder, experiment, and learn. 😁",
+      "role": "user"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "{\"operator_read_receipt\": {\"actor\": \"operator\", \"boundary\": null, \"channel\": \"python\", \"exit_code\": 0, \"stderr\": \"\", \"stdout\": \"{\\\"value\\\": \\\"K7M4Q9\\\"}\\n\"}, \"operator_task\": \"Use Python to read the value field in probe_value.json and print its exact value.\"}"
+    }
+  ],
+  "max_turns": 1,
+  "decoder": "greedy",
+  "seed": null,
+  "world_store": "/workspace/frr/evaluation/history-retrieval-three-cycle-v1/worlds/provided_document",
+  "expected_value": "K7M4Q9",
+  "prepared_world_id": "a79d57d6ddd3359a15da437be87728ef6a077d6964ead091de80516693bb66ba"
+}

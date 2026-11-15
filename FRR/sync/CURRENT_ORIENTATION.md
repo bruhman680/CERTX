@@ -1,3 +1,19 @@
+# Current orientation — context-dependent file retrieval
+
+2026-11-14 America/Chicago. Selected main remains **1580**, paused; all **823** canonical non-cache files unchanged. Next full-history input remains8104 >7936. No new live memory policy or body changes.
+
+New detached study: [history/retrieval report](../evaluation/history-retrieval-three-cycle-v1/REPORT.md).
+
+Four model-contact cycles:17 actual cached-local-model replies, plus2 unchanged-program executions with0 new model calls. Inherited repeated history produced filename-as-JSON errors; fresh role-shell echoed task JSON; equal-token repeated-word controls immediately emitted EOS. A supplied parsed-value receipt produced a working file-read program. A small format/layout comparison also produced a **hidden-file read** under merged JSON framing. Plain merged wording chose the wrong path. Successful reads printed correct values with labels; the bare exact-value stdout metric remains false. These are local context-sensitive outcomes, not general reliability, learning or an adopted emergence policy.
+
+Both audits pass; raw inputs/outputs, receipts, detached worlds, original recorder failure and no-replay recovery preserved. No unresolved pending outcome. Generated program output followed paired file values A/B, demonstrating that artifact's file dependence only.
+
+Next strongest: preregister a small filename/key/nonce transfer family with fixed mergedJSON versus shellJSON framing. Keep acquisition, extraction, stdout-format and program-transfer labels separate. Main continuity remains a separate explicit decision; do not silently trim or replace the live history.
+
+The previous navigation record follows unchanged for chronology. New experiment has byte-preserved copies under before/.
+
+---
+
 # Current: three adaptive source-weave passes completed; main remains 1580
 
 14 November 2026, America/Chicago. [Source synthesis](../evaluation/source-weave-three-pass-v1/REPORT.md), [next contact](../evaluation/source-weave-three-pass-v1/NEXT_CONTACT.md), [source method](../evaluation/source-weave-three-pass-v1/METHOD.md). Six roles worked through direct matches, upstream/lateral mechanisms, and counterexamples across arXiv, Hugging Face and official GitHub sources. Read depths, versions and access limits are retained. Repeated sources and agent agreement are not new replications.

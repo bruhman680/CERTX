@@ -1,0 +1,170 @@
+{
+  "checks": {
+    "actual_replies_14": true,
+    "main_inventory_unchanged": true,
+    "no_unresolved_pending": true,
+    "jobs_10": true,
+    "inherited_a_b_same_initial_messages": true,
+    "fresh_a_b_same_initial_messages": true,
+    "control_stone_a_b_same_initial_messages": true,
+    "control_river_a_b_same_initial_messages": true,
+    "a_same_prepared_world_all_hidden": true,
+    "b_same_prepared_world_all_hidden": true,
+    "all_checks_pass": true
+  },
+  "canonical_files_checked": 823,
+  "call_details": [
+    {
+      "case": "control_river_a_t1",
+      "cells": [],
+      "process_receipts": []
+    },
+    {
+      "case": "control_river_b_t1",
+      "cells": [],
+      "process_receipts": []
+    },
+    {
+      "case": "control_stone_a_t1",
+      "cells": [],
+      "process_receipts": []
+    },
+    {
+      "case": "control_stone_b_t1",
+      "cells": [],
+      "process_receipts": []
+    },
+    {
+      "case": "fresh_a_t1",
+      "cells": [],
+      "process_receipts": []
+    },
+    {
+      "case": "fresh_a_t2",
+      "cells": [],
+      "process_receipts": []
+    },
+    {
+      "case": "fresh_b_t1",
+      "cells": [],
+      "process_receipts": []
+    },
+    {
+      "case": "fresh_b_t2",
+      "cells": [],
+      "process_receipts": []
+    },
+    {
+      "case": "inherited_a_t1",
+      "cells": [
+        {
+          "language": "python",
+          "source": "import json\n\ndef read_value_field(probe_value):\n    try:\n        value = json.loads(probe_value)\n        return value\n    except json.JSONDecodeError:\n        print(\"Invalid JSON data. Please ensure it's in JSON format.\")\n        return None\n\nprobe_value = \"probe_value.json\"\nprint(read_value_field(probe_value))\n"
+        }
+      ],
+      "process_receipts": [
+        {
+          "channel": "python",
+          "feedback": {
+            "stdout": "Invalid JSON data. Please ensure it's in JSON format.\nNone\n",
+            "stderr": "",
+            "exit_code": 0,
+            "boundary": null,
+            "seconds": 0.0218116390024079
+          }
+        }
+      ]
+    },
+    {
+      "case": "inherited_a_t2",
+      "cells": [
+        {
+          "language": "python",
+          "source": "import json\n\ndef read_boundary_field(probe_value):\n    try:\n        value = json.loads(probe_value)\n        return value\n    except json.JSONDecodeError:\n        print(\"Invalid JSON data. Please ensure it's in JSON format.\")\n        return None\n\nprobe_value = \"probe_value.json\"\nprint(read_boundary_field(probe_value))\n"
+        }
+      ],
+      "process_receipts": [
+        {
+          "channel": "python",
+          "feedback": {
+            "stdout": "Invalid JSON data. Please ensure it's in JSON format.\nNone\n",
+            "stderr": "",
+            "exit_code": 0,
+            "boundary": null,
+            "seconds": 0.018125375998351956
+          }
+        }
+      ]
+    },
+    {
+      "case": "inherited_b_t1",
+      "cells": [
+        {
+          "language": "python",
+          "source": "import json\n\ndef read_value_field(probe_value):\n    try:\n        value = json.loads(probe_value)\n        return value\n    except json.JSONDecodeError:\n        print(\"Invalid JSON data. Please ensure it's in JSON format.\")\n        return None\n\nprobe_value = \"probe_value.json\"\nprint(read_value_field(probe_value))\n"
+        }
+      ],
+      "process_receipts": [
+        {
+          "channel": "python",
+          "feedback": {
+            "stdout": "Invalid JSON data. Please ensure it's in JSON format.\nNone\n",
+            "stderr": "",
+            "exit_code": 0,
+            "boundary": null,
+            "seconds": 0.016858715000125812
+          }
+        }
+      ]
+    },
+    {
+      "case": "inherited_b_t2",
+      "cells": [
+        {
+          "language": "python",
+          "source": "import json\n\ndef read_boundary_field(probe_value):\n    try:\n        value = json.loads(probe_value)\n        return value\n    except json.JSONDecodeError:\n        print(\"Invalid JSON data. Please ensure it's in JSON format.\")\n        return None\n\nprobe_value = \"probe_value.json\"\nprint(read_boundary_field(probe_value))\n"
+        }
+      ],
+      "process_receipts": [
+        {
+          "channel": "python",
+          "feedback": {
+            "stdout": "Invalid JSON data. Please ensure it's in JSON format.\nNone\n",
+            "stderr": "",
+            "exit_code": 0,
+            "boundary": null,
+            "seconds": 0.018122412999218795
+          }
+        }
+      ]
+    },
+    {
+      "case": "provided_document_t1",
+      "cells": [],
+      "process_receipts": []
+    },
+    {
+      "case": "provided_value_t1",
+      "cells": [
+        {
+          "language": "python",
+          "source": "import json\n\ndef read_value_field(file_path):\n    with open(file_path, \"r\") as f:\n        json_data = json.load(f)\n        value = json_data[\"value\"]\n        return value\n\ndef print_value_field(value):\n    print(f\"Value: {value}\")\n\ndef main():\n    file_path = \"probe_value.json\"\n    value_field = read_value_field(file_path)\n    print_value_field(value_field)\n\nif __name__ == \"__main__\":\n    main()\n"
+        }
+      ],
+      "process_receipts": [
+        {
+          "channel": "python",
+          "feedback": {
+            "stdout": "Value: K7M4Q9\n",
+            "stderr": "",
+            "exit_code": 0,
+            "boundary": null,
+            "seconds": 0.01736797400008072
+          }
+        }
+      ]
+    }
+  ],
+  "no_model_calls": true,
+  "recovered_known_first_result_without_replay": true
+}
