@@ -1,3 +1,19 @@
+# Current R&D — matched compact-FRR context contact complete
+
+15 November2026 UTC. [Report](../evaluation/frr-scoped-context-v1/REPORT.md), [readout](../evaluation/frr-scoped-context-v1/READOUT.json), [handoff](../evaluation/frr-scoped-context-v1/NEXT_SESSION.md), [observer coupling map](../evaluation/frr-scoped-context-v1/COUPLING_MAP.md).
+
+Six actual cached135M calls, two three-reply trajectories. Same scoped-prose mechanical user message, initial-only directory packet, supported starting world, body/decoder and action law; only system context differs: empty control versus exact archived compact FRR. Added258tokens and shifted positions remain confounds. Compact is context orientation, not full-source exposure or neural installation. No extra task/solution/correction/reward.
+
+Control exactly reproduces archived scoped-prose outputs. Compact repeats the same read-only-runtime sentence14 complete times within each256-token reply. Both arms repeat their own output across three growing inputs. Six automatic note appends, zero executed model programs or actual action errors; repair/reuse notelicited. No operational FRR benefit or general harm/inability established. No role, action-port or world-clock redesign is bundled into this result.
+
+Preflight, frozen-source validation, root-agent driver review and raw/effect/state audits pass. Observer adapter now directly pins protocol and asserts purpose; no main physics changed. Main bounded-main-continuation-v1 remains1630,paused; ACTIVE/source/weights unchanged, no training/promotion/pending/lock/backgroundinference. Series total38calls, not independentreplications. Exact prior navigation archived under this study's before/.
+
+Strongest next design: a concurrent task-free role-placement comparison of identical mechanics/metadata with world/body/action law fixed, testing a possible continuation cue without requiring action. Not built/executed/queued. Detailed lateral queue preserved in handoff. Earlier actual file-read and failure witnesses remain counterweights to single-cause explanations.
+
+Previous navigation follows unchanged.
+
+---
+
 # Current R&D — scoped-fact comparison complete; main1630 preserved
 
 15 November 2026. [Report](../evaluation/scoped-world-facts-v1/REPORT.md), [readout](../evaluation/scoped-world-facts-v1/READOUT.json), [next-session handoff](../evaluation/scoped-world-facts-v1/NEXT_SESSION.md). Four parallel design/review/source/body scout roles convened; five primary-source contacts with explicit read-depth and transfer limits. These are role contributions, not independent scientific replications.

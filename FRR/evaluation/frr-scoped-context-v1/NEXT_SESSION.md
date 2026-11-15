@@ -1,0 +1,11 @@
+# Handoff: compact-FRR contact complete, main1630 paused
+
+Read REPORT.md, READOUT.json, run/RESULTS.json, run/AUDIT.json and COUPLING_MAP.md. Six actual calls completed, control/compact three replies each. Both repeated their own256-token output across growing histories. Compact repeated a single runtime sentence14 complete times per reply; control recited the longer mechanics. Six automatic note appends, zero executed model programs, no actual action-error/repair or artifact-reuse opportunity. No operational FRR benefit demonstrated, no general inability or harm established.
+
+Main remains1630 paused, original1580 and all history retained. Fixed weights, zero training, no promotion, pending outcome, RUN.lock or background inference. The current detached experiment is single-attempt: never erase guards/history to replay. Series total38small-model calls across M0/M1/M2, scoped encoding and scoped FRR contacts; these are not38 independent replications.
+
+Next strongest design: task-free role-placement contact with identical mechanics and initial metadata, fixed world/body/action law, concurrently matched control and declared role shell. No new instruction demanding an action, no reward/example/hint, no mid-run rescue. Exact mechanics may move between system/user; freeze wording, role topology, ordering and token differences before inference. Distinguish a local role/position effect from proven internal parsing or agency. This comparison has NOT been built, run or queued.
+
+Observer coupling map now ties saved positive file-read capability to failed neighboring transfers, metadata aliasing, incomplete code and exact-budget EOS witness. It adds no runtime mechanism. Use it to choose one unresolved link rather than redesign several at once. A future longitudinal FRR world remains possible as an explicitly chosen condition; exposure is context, not neural installation or proven uptake.
+
+Preserved lateral queue: alternate explicit action ports; autonomous world-clock design; capture scope; contextual adaptation/retention/transfer when opportunities arise; distinct body/decoder/training conditions. Previous detailed handoffs: ../scoped-world-facts-v1/NEXT_SESSION.md and ../frr-sandbox-live-sensing-v1/NEXT_SESSION.md. No automatic next calls scheduled.
