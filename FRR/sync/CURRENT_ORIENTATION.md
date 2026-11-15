@@ -1,3 +1,17 @@
+# Current orientation — retrieval transfer and main50 continuity choice
+
+2026-11-15 UTC. Selected main remains **1580**, paused; all823 non-cache canonical files unchanged. No main replies added by this contact.
+
+[New report](../evaluation/retrieval-task-transfer-v1/REPORT.md):8 new cached-local-model replies,8 additional unchanged-text executions on paired nonce worlds.2filenames×2keys×2layouts declared before outputs. Only originalfile/key mergedJSON retrieves correctly with new hiddennonce; paired artifact follows changednonce. Four role-shell cases echo request. Changedkey chooseswrongpath; changedfilename passesstringtojson.load; bothchanged leavesunfinishedfence. Strictbarestdout0/8. These are distinct outcomes, not a broad performance estimate. No modelwrites exceptnotebookappend; all16storesverify; weights unchanged; no pending.
+
+User requested these tests then50 furthermain entries. **Main50 is prepared as a proposal, not run.** Current frozen continuity contract requires allhistory/no selectedreplay; next8104>7936. Exact reviewed alternative retainsinitialframing +latest8completepairs1573–1580,2231tokens, olderrecords preserved. Proposednewlinkedphase would preserve1580, appendoneexplicitmechanicalcontinuitynote, addnoarchivecopy machinery, keepbody/parser/seed/physicalbounds, and eventually run1581–1630 with checks/reports every10. No detachedcandidate1581–83 promoted. Reusablelinkedrunner notyetbuilt; mustimplement/verifyafter explicitcontinuitychoice. See main50-proposal/PLAN.json, EXACT_NEXT_VIEW.json and exact proposedworldruleappend.
+
+Next action: obtain user's narrow input-continuity choice; then implement and verify declared linked continuation before requested50calls. No silent trimming, windowpromotion, or outputrepair. Furtherdiagnostics should keep pathbinding, fieldbinding and fencecompletion separate ratherthan tune failures into answers.
+
+Previous navigation follows unchanged; byte-exact copies under newstudy/before/.
+
+---
+
 # Current orientation — context-dependent file retrieval
 
 2026-11-14 America/Chicago. Selected main remains **1580**, paused; all **823** canonical non-cache files unchanged. Next full-history input remains8104 >7936. No new live memory policy or body changes.

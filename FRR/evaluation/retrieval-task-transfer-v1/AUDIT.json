@@ -1,0 +1,131 @@
+{
+  "status": "pass",
+  "cases": [
+    {
+      "case": "original_signal_merged",
+      "input_tokens": 123,
+      "output_tokens": 256,
+      "stop": "token_limit",
+      "complete_cells": 1,
+      "target_literal_in_generated_text": false,
+      "receipts": [
+        {
+          "stdout": "Reading signal field...\n",
+          "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 21, in <module>\n    main()\n    ~~~~^^\n  File \"<string>\", line 15, in main\n    with open(file_path, 'r') as f:\n         ~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/world.json'\n",
+          "exit_code": 1,
+          "boundary": null,
+          "seconds": 0.024574598999606678
+        }
+      ],
+      "paired_fixture_differences": [
+        "probe_value.json"
+      ]
+    },
+    {
+      "case": "original_signal_shell",
+      "input_tokens": 132,
+      "output_tokens": 27,
+      "stop": "eos",
+      "complete_cells": 0,
+      "target_literal_in_generated_text": false,
+      "receipts": [],
+      "paired_fixture_differences": [
+        "probe_value.json"
+      ]
+    },
+    {
+      "case": "original_value_merged",
+      "input_tokens": 123,
+      "output_tokens": 256,
+      "stop": "token_limit",
+      "complete_cells": 1,
+      "target_literal_in_generated_text": false,
+      "receipts": [
+        {
+          "stdout": "The value field in probe_value.json is: N4C8P2\n",
+          "stderr": "",
+          "exit_code": 0,
+          "boundary": null,
+          "seconds": 0.016611544000625145
+        }
+      ],
+      "paired_fixture_differences": [
+        "probe_value.json"
+      ]
+    },
+    {
+      "case": "original_value_shell",
+      "input_tokens": 132,
+      "output_tokens": 27,
+      "stop": "eos",
+      "complete_cells": 0,
+      "target_literal_in_generated_text": false,
+      "receipts": [],
+      "paired_fixture_differences": [
+        "probe_value.json"
+      ]
+    },
+    {
+      "case": "renamed_signal_merged",
+      "input_tokens": 123,
+      "output_tokens": 256,
+      "stop": "token_limit",
+      "complete_cells": 0,
+      "target_literal_in_generated_text": false,
+      "receipts": [],
+      "paired_fixture_differences": [
+        "sample_record.json"
+      ]
+    },
+    {
+      "case": "renamed_signal_shell",
+      "input_tokens": 132,
+      "output_tokens": 27,
+      "stop": "eos",
+      "complete_cells": 0,
+      "target_literal_in_generated_text": false,
+      "receipts": [],
+      "paired_fixture_differences": [
+        "sample_record.json"
+      ]
+    },
+    {
+      "case": "renamed_value_merged",
+      "input_tokens": 123,
+      "output_tokens": 256,
+      "stop": "token_limit",
+      "complete_cells": 1,
+      "target_literal_in_generated_text": false,
+      "receipts": [
+        {
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 24, in <module>\n    print(read_value_field(sample_record))\n          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^\n  File \"<string>\", line 5, in read_value_field\n    return json.load(record)['value']\n           ~~~~~~~~~^^^^^^^^\n  File \"/usr/lib/python3.13/json/__init__.py\", line 293, in load\n    return loads(fp.read(),\n                 ^^^^^^^\nAttributeError: 'str' object has no attribute 'read'\n",
+          "exit_code": 1,
+          "boundary": null,
+          "seconds": 0.031242736000422155
+        }
+      ],
+      "paired_fixture_differences": [
+        "sample_record.json"
+      ]
+    },
+    {
+      "case": "renamed_value_shell",
+      "input_tokens": 132,
+      "output_tokens": 27,
+      "stop": "eos",
+      "complete_cells": 0,
+      "target_literal_in_generated_text": false,
+      "receipts": [],
+      "paired_fixture_differences": [
+        "sample_record.json"
+      ]
+    }
+  ],
+  "model_replies": 8,
+  "extra_artifact_executions": 8,
+  "main_files_unchanged": 823,
+  "main_entry": 1580,
+  "pending": false,
+  "proposal_only_no_main_calls": true
+}

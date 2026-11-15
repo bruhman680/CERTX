@@ -1,0 +1,40 @@
+{
+  "case_id": "original_value_shell",
+  "messages": [
+    {
+      "content": "",
+      "role": "system"
+    },
+    {
+      "content": "This is a computational notebook in /world. Files persist. Complete fenced python or sh cells execute; other text is writing. Each cell starts a new process. Real results return after each reply. Exact syntax and limits are in WORLD_RULES.txt.\n\nFollow your curiosity and explore your universe. You may play, observe, wonder, experiment, and learn. 😁",
+      "role": "user"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "{\"operator_task\": \"Use Python to read the value field in probe_value.json and print its exact value.\"}"
+    }
+  ],
+  "max_turns": 1,
+  "decoder": "greedy",
+  "seed": null,
+  "world_store": "/workspace/frr/evaluation/retrieval-task-transfer-v1/worlds/original_value_shell_a",
+  "expected_value": "N4C8P2",
+  "prepared_world_id": "41a5ec4f282a20f7cc26586d4a3fcda7ba8ad3648d6cf8ec90d80ac4e9b1603f",
+  "pair": {
+    "a": {
+      "store": "/workspace/frr/evaluation/retrieval-task-transfer-v1/worlds/original_value_shell_a",
+      "id": "41a5ec4f282a20f7cc26586d4a3fcda7ba8ad3648d6cf8ec90d80ac4e9b1603f"
+    },
+    "b": {
+      "store": "/workspace/frr/evaluation/retrieval-task-transfer-v1/worlds/original_value_shell_b",
+      "id": "208c852663608f9387362f54ca2fd351687de6dd571d5ec4b0067a6874f8ce79"
+    }
+  },
+  "filename": "probe_value.json",
+  "key": "value",
+  "layout": "shell"
+}

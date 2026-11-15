@@ -1,0 +1,32 @@
+{
+  "case_id": "original_signal_merged",
+  "messages": [
+    {
+      "content": "",
+      "role": "system"
+    },
+    {
+      "role": "user",
+      "content": "This is a computational notebook in /world. Files persist. Complete fenced python or sh cells execute; other text is writing. Each cell starts a new process. Real results return after each reply. Exact syntax and limits are in WORLD_RULES.txt.\n\nFollow your curiosity and explore your universe. You may play, observe, wonder, experiment, and learn. 😁\n\n{\"operator_task\": \"Use Python to read the signal field in probe_value.json and print its exact value.\"}"
+    }
+  ],
+  "max_turns": 1,
+  "decoder": "greedy",
+  "seed": null,
+  "world_store": "/workspace/frr/evaluation/retrieval-task-transfer-v1/worlds/original_signal_merged_a",
+  "expected_value": "N4C8P2",
+  "prepared_world_id": "2cafce432dd0e2842cbbdd19db5c95e44d8fde2058851b6cca7028e343f20797",
+  "pair": {
+    "a": {
+      "store": "/workspace/frr/evaluation/retrieval-task-transfer-v1/worlds/original_signal_merged_a",
+      "id": "2cafce432dd0e2842cbbdd19db5c95e44d8fde2058851b6cca7028e343f20797"
+    },
+    "b": {
+      "store": "/workspace/frr/evaluation/retrieval-task-transfer-v1/worlds/original_signal_merged_b",
+      "id": "2baf28a133a7c417b6c002bb776abf0e304f672adefc82c08db89f08c9bcfcf3"
+    }
+  },
+  "filename": "probe_value.json",
+  "key": "signal",
+  "layout": "merged"
+}

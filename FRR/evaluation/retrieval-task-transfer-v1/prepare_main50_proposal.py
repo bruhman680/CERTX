@@ -1,0 +1,16 @@
+"""Read-only main capacity/view preview, no activation or world changes."""
+from pathlib import Path
+import sys
+H=Path(__file__).resolve().parent
+sys.path.insert(0,str(H.parent/'observability-three-contact-v1'))
+import common as c
+p=H/'main50-proposal';p.mkdir(exist_ok=True)
+state=c.read(c.C/'run/STATE.json');initial=c.read(c.C/'run/INITIAL_MESSAGES.json')
+exchanges=[{'entry':x['human_entry'],'assistant':x['text'],'receipt':x['feedback']} for x in c.candidate.rows(c.C/'run')]
+tok=c.tokenizer();full=c.candidate.messages(c.C/'run');view=c.select_view(initial,exchanges,tok,max_pairs=8,max_input=7936)
+c.save(p/'EXACT_NEXT_VIEW.json',view)
+c.save(p/'FULL_HISTORY_CAPACITY.json',{'main_state':state,'next_input_tokens':len(tok.apply_chat_template(full,tokenize=True,add_generation_prompt=True)),'input_limit':7936,'model_calls':0,'unchanged_main':True})
+rules='\n\n## Proposed versioned input continuity law (supersedes earlier full-history input clauses)\nModel input retains the original initial framing and the latest eight complete assistant/actual-receipt pairs in chronological order. If needed for the7936-token input bound, the oldest whole pair is removed first; the latest whole pair is never truncated. If initial framing plus latest pair does not fit, execution pauses. Full authoritative records remain outside this world and existing notebook files persist. This policy does not summarize history or change physical execution laws. No additional archive files or operator observations are injected into the world by this proposal.\n'
+(p/'PROPOSED_WORLD_RULE_APPEND.txt').write_text(rules)
+c.save(p/'PLAN.json',{'status':'prepared proposal only; not activated or executed','request':'50 further main entries','start_entry':1580,'target_entry':1630,'blocked_under_current_contract':'CONTRACT.json continuity requires all chronological conversation and explicitly forbids selected replay; next8104>7936','proposed_policy':'original initial framing + latest8 complete pairs; oldest-first wholepair fallback; latestpair mandatory','selected_next_entries':view['included_entries'],'omitted_next_entries':view['omitted_entries'],'selected_next_input_tokens':len(view['input_token_ids']),'history_scope':'current phase1551–1580, not all historical seasons','physical_delta_if_approved':['append exact PROPOSED_WORLD_RULE_APPEND.txt to inherited WORLD_RULES.txt in a new linked phase'],'no_archive_copy_addition':True,'preserve_old_phase':True,'new_phase_parent':'minimal-garden-candidate-v1 at1580','detached1581_1583_not_promoted':True,'proposed_checks_every':10,'reports_every':10,'model_body_decoder_parser_execution_limits':'unchanged','behavior':'same original open invitation, no diagnostic task, target, success grade or coaching','required_next_step':'explicit user choice of changed input continuity, then implement and verify new linked runner before main calls','implementation_status':'selector tested previously; exact main input preview validated here; reusable linked main runner not yet built','model_calls':0,'activation':False})
+print({'full_input':len(tok.apply_chat_template(full,tokenize=True,add_generation_prompt=True)),'selected_input':len(view['input_token_ids']),'included':view['included_entries'],'omitted_count':len(view['omitted_entries']),'main_entry':state['human_entry']})
