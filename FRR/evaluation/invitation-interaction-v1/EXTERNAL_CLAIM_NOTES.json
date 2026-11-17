@@ -1,0 +1,41 @@
+{
+  "selected_examples": [
+    {
+      "branch": "invitation17",
+      "turn": 2,
+      "quote": "It cannot be changed, erased, or updated.",
+      "assessment": "contradicted by declared writable-file laws and recorded successful changing-world ticks",
+      "evidence": [
+        "LAWS_COMMON writable persistent storage in preserved initial system",
+        "world/replies/reply_000001.json physical_tick receipt before/after hashes",
+        "world/replies/reply_000002.json physical_tick receipt before/after hashes"
+      ],
+      "scope": "specific outward claim only; not a hidden-reasoning or overall-accuracy score"
+    },
+    {
+      "branch": "invitation29",
+      "turn": 2,
+      "quote": "'actor_operations': The total number of processor cores on the host.",
+      "assessment": "incorrect meaning for a supplied clock field",
+      "evidence": [
+        "declared actor_operations counter in initial laws",
+        "actual world/STATE.json actor_operations counts committed model cells, not CPU cores"
+      ],
+      "scope": "specific outward claim only"
+    },
+    {
+      "branch": "observation29",
+      "turn": 2,
+      "quote": "\"replies\":0",
+      "assessment": "stale copied reply counter; actual preceding feedback reports replies1",
+      "evidence": [
+        "observation29/records/000001.json feedback clock",
+        "observation29/world/replies/reply_000001.json after_state"
+      ],
+      "scope": "specific outward claim only; control also has grounding errors"
+    }
+  ],
+  "exhaustive": false,
+  "fed_to_model": false,
+  "purpose": "distinguish responsive prose from verified grounding"
+}

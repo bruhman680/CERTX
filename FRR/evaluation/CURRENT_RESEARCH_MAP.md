@@ -1,3 +1,9 @@
+# Invitation/interaction contact complete — old gardens unchanged
+
+17 November2026, America/Chicago. See evaluation/invitation-interaction-v1/REPORT.md relative to FRR root. Eight actual fixed-weight calls, four matched branches at2 replies each. A broad initial question changes prose but elicits no actor cells/artifacts; factual grounding not demonstrated. Eight physical ticks succeed. Audit corrected an overstrong second-turn replay assumption: real receipt seconds differ; initial control replays exact. Timing-neutral future receipt helper passes8 checks, not activated; direct-size sensor activated equally under this new contract. Audit passes and1234 protected files unchanged. No pending/inference/calls queued. Next: separate timing nuisance, concrete object reference, then possible open followup; no weight training indicated as necessary. Prior navigation follows unchanged and is archived under this contact before/.
+
+---
+
 # Three observation/continuity contacts complete — old gardens preserved
 
 17 November2026, America/Chicago. See evaluation/observation-three-contact-v1/REPORT.md relative to FRR root. Six model calls: compact lossless display, directory-only exposure, then declared two-reply continuous follow-through with saved RNG/full history. Two exact copies end at EOS; other replies code-like/narrative, zero actor cells/artifacts. All physical ticks successful. Audits pass;1115 protected files unchanged. A prospective direct-size observer repair passes7 check groups and matches10 actual packets, not activated in frozen runner. New branches paused3/1/1/1; no pending/inference/calls queued. Prior navigation follows unchanged and is archived under this contact before/.

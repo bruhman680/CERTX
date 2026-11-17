@@ -1,0 +1,28 @@
+{
+  "observations": [
+    {
+      "turn": 1,
+      "input_ids_equal": true,
+      "generated_tokens_equal": true,
+      "rng_state_after_equal": true,
+      "input_differences": []
+    },
+    {
+      "turn": 2,
+      "input_ids_equal": false,
+      "generated_tokens_equal": false,
+      "rng_state_after_equal": true,
+      "input_differences": [
+        {
+          "message_index": 3,
+          "only_differing_key": "physical_feedback.seconds",
+          "new_seconds": 0.03390094699898327,
+          "previous_seconds": 0.059106552000230295
+        }
+      ]
+    }
+  ],
+  "model_feedback_edited": false,
+  "model_calls_repeated": 0,
+  "scope": "cross-study baseline replay; later trajectories include actual runtime timing"
+}
