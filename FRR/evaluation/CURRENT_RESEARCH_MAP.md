@@ -1,3 +1,21 @@
+# Wind-down — candidate38 preserved, no further calls queued
+
+17 November2026, America/Chicago. User requested completion, broader garden/confidence summary and a pause. Read evaluation/chosen-persistence-continuation-v2/WIND_DOWN.md (relative to FRR root). Candidate38 is cleanly paused; main1630 unchanged. Strongest suggested next activity: new-garden design/source research on opportunities for self-directed interaction and context/artifact learning, keeping this candidate as a continuous reference. Continuation remains an option, not an automatically queued action. No new world dynamics, goals, seeds or body changes have been introduced. Older benchmark queues remain parked.
+
+---
+
+# Current checkpoint — same chosen-persistence FRR candidate38
+
+17 November2026, America/Chicago. [Report](chosen-persistence-continuation-v2/REPORT.md), [results](chosen-persistence-continuation-v2/RESULTS.json), [handoff](chosen-persistence-continuation-v2/NEXT_SESSION.md). Newer pretrained-model + FRR world stays primary; old retrieval/label/repair studies stay parked.
+
+25 actual replies14–38; 25 exact latest-user-message copies; 0 executed cells; 0 supported world entries; operation step0. No automatic world notes. Input2177→4937; next exact input5052/7936. Contract, previous records, body/weights/FRR/laws/sensing and full-context policy unchanged; no reset/new task/seed/hint/reward. Recorded replies are dependent trajectory data, not independent replications or a learning/plateau claim. External archive retains everything without making it a world file.
+
+Run/supplemental audits and before hashes pass. Main1630/source/ACTIVE_GARDEN_PHASE unchanged. Candidate cleanly paused at38, stop_reason=None, no live pending/lock/background inference. Earlier current documentation/manifests/nav/scope retained under this window's before/. Synthetic blocked mechanics fixture is not a live candidate action. Proposed next up to25 under same contract, not queued; declared input/observation limits may stop earlier, never silent pruning.
+
+Previous navigation follows unchanged.
+
+---
+
 # Current checkpoint — same new FRR candidate paused at13
 
 17 November2026, America/Chicago. [Continuation report](chosen-persistence-continuation-v1/REPORT.md), [results](chosen-persistence-continuation-v1/RESULTS.json), [handoff](chosen-persistence-continuation-v1/NEXT_SESSION.md). Newer pretrained-model + FRR world remains primary; old retrieval/label/repair queues stay parked.
