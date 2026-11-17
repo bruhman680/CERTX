@@ -1,0 +1,53 @@
+{
+  "method": "Split decoded text after .!? followed by whitespace; count exact sentence strings. Descriptive, not a semantic or internal-state score.",
+  "conditions": [
+    {
+      "condition": "static",
+      "distinct_output_texts": 1,
+      "rows": [
+        {
+          "turn": 1,
+          "dominant_exact_sentence": "The world observation and field.bin files contain the physical ticks of the world.",
+          "occurrences": 16,
+          "characters": 1327
+        },
+        {
+          "turn": 2,
+          "dominant_exact_sentence": "The world observation and field.bin files contain the physical ticks of the world.",
+          "occurrences": 16,
+          "characters": 1327
+        },
+        {
+          "turn": 3,
+          "dominant_exact_sentence": "The world observation and field.bin files contain the physical ticks of the world.",
+          "occurrences": 16,
+          "characters": 1327
+        }
+      ]
+    },
+    {
+      "condition": "changing",
+      "distinct_output_texts": 1,
+      "rows": [
+        {
+          "turn": 1,
+          "dominant_exact_sentence": "The world.bin file is a file containing the world observation and field.bin bytes.",
+          "occurrences": 13,
+          "characters": 1173
+        },
+        {
+          "turn": 2,
+          "dominant_exact_sentence": "The world.bin file is a file containing the world observation and field.bin bytes.",
+          "occurrences": 13,
+          "characters": 1173
+        },
+        {
+          "turn": 3,
+          "dominant_exact_sentence": "The world.bin file is a file containing the world observation and field.bin bytes.",
+          "occurrences": 13,
+          "characters": 1173
+        }
+      ]
+    }
+  ]
+}

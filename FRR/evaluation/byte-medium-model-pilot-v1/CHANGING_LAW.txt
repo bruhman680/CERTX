@@ -1,0 +1,1 @@
+Changing physical law: group field.bin bytes into adjacent pairs (a_i,b_i), with periodic neighbors. Each tick simultaneously sets a_i'=b_i and b_i'=a_i XOR b_(i-1) XOR b_(i+1). XOR is bitwise exclusive-or. An unpaired final byte stays unchanged. No pairs means no byte changes.

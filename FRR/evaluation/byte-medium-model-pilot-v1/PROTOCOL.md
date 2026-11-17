@@ -1,0 +1,11 @@
+# Prospective pilot protocol
+
+17 November2026, America/Chicago. Freeze before model generation. Fresh detached static and changing candidates; neither continues nor rewrites candidate38/main1630. Same cached SmolLM2-135M-Instruct body, exact archived FRR_COMPACT.md, literal actuator, initial62-byte material and observation sensor. Condition-specific physical law text differs necessarily. No no-FRR control; no isolation of motion from its law description. Current candidate38 is an historical reference, not a matched control.
+
+Budget exactly three actual replies per condition, six total, static then changing, greedy argmax, max256 output tokens, CPUfloat32/eager/two threads. Fresh conversation per declared candidate; all native-role history retained within each. No instruction or source repairs, rewards, hints, chosen tasks, output-dependent reruns or selection among seeds. Any early context/observation/resource/unknown-outcome boundary pauses with evidence and unused budget. Do not replace a failed call or uncertain action automatically. Ordinary wrong/inert output is retained.
+
+Preflight:16-check adapter integration passed; same seed/world ID and initial observation across both conditions; exact initial token IDs saved; local implementation/runtime/body pins frozen; protected inventory matches; context <=7936 and packet <=8192bytes. Same observation includes full supported directory packet, regular material hex and external factual operation clocks. Sensor is declared, not model-discovered. No analyst evaluation in feedback. Model calls do not alter source or world laws.
+
+External descriptions: executable cell count, genuine receipts/errors, exact packet copying, material effect attributable to actor vs physical tick, artifacts and any subsequent access. These are descriptions rather than success rewards or independent samples. Three greedy replies per condition cannot establish learning, FRR efficacy, general emergence or causal benefit. Freeze/stability refers to implementation and source, not proof of model development.
+
+Recovery of any model-session PENDING marker requires explicit inspection. Adapter recovery tests alone do not establish complete model-session crash reconciliation. No automatic continuation beyond this small pilot is queued.

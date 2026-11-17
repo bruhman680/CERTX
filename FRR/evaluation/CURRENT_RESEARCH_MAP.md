@@ -1,3 +1,9 @@
+# Byte-world model pilot complete — references preserved
+
+17 November2026, America/Chicago. See evaluation/byte-medium-model-pilot-v1/REPORT.md relative to FRR root. Six actual cached135M model calls, three each in static/changing alternate worlds, fixed FRR/body and full histories. Repetitive prose in both; zero actor cells/artifacts; all six physical ticks successful, only changing material moves. External replay audit passes. Both alternates paused at3, no live pending/lock/inference. Reference38/main1630 and943 protected files unchanged. Next proposed diagnostic: detached decoding-sensitivity comparison without coaching or world redesign. No calls queued. Prior navigation follows unchanged and is archived under this contact before/.
+
+---
+
 # Byte-medium execution adapter checked — candidate38 preserved
 
 17 November2026, America/Chicago. See evaluation/byte-medium-execution-v1/REPORT.md relative to FRR root. Sixteen integration checks pass with real disposable Python/shell worlds: actor effects precede physical tick attempts; pause, errors, links, deletion and known-prefix interruption recovery tested. No model inference/session integration yet. Next: declared alternate-candidate laws/contract and initial-context audit, then a small pilot. Candidate38/main1630/pointer and943 protected files unchanged. Earlier navigation is retained below and archived under this contact before/.
