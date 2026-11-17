@@ -1,3 +1,9 @@
+# Decoder diagnostic complete — protected gardens unchanged
+
+17 November2026, America/Chicago. See evaluation/byte-medium-decoding-v1/REPORT.md relative to FRR root. Three actual one-shot calls from identical initial changing-world context/body/FRR/material: greedy exactly reproduces prior tokens; two sampled seeds vary text but execute no cells. One sample invents a delimiter; the other repeats zeros beyond the actual byte string. All physical ticks succeed. Audit passes;1040 protected files unchanged, including reference38/main1630 and both prior turn3 pilots. New branches paused at1; no pending/inference/calls queued. Next proposed diagnostic: lossless observation-format sensitivity with physics fixed. Prior navigation follows unchanged and is archived under this contact before/.
+
+---
+
 # Byte-world model pilot complete — references preserved
 
 17 November2026, America/Chicago. See evaluation/byte-medium-model-pilot-v1/REPORT.md relative to FRR root. Six actual cached135M model calls, three each in static/changing alternate worlds, fixed FRR/body and full histories. Repetitive prose in both; zero actor cells/artifacts; all six physical ticks successful, only changing material moves. External replay audit passes. Both alternates paused at3, no live pending/lock/inference. Reference38/main1630 and943 protected files unchanged. Next proposed diagnostic: detached decoding-sensitivity comparison without coaching or world redesign. No calls queued. Prior navigation follows unchanged and is archived under this contact before/.
