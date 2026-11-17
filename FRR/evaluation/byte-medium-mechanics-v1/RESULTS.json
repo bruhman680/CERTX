@@ -1,0 +1,47 @@
+{
+  "checks_passed": 21,
+  "checks": [
+    "all 65536 two-byte states invert both ways",
+    "136 seeded variable-length inverse/length/tail cases",
+    "absence is not recreated",
+    "local causal effect agrees with declared XOR rule",
+    "matched initial material",
+    "reads/paused wall time do not tick",
+    "no-action completion ticks once in both conditions",
+    "only declared dynamic law changes idle material",
+    "identical retry does not replay or tick",
+    "conflicting identity refuses unchanged",
+    "ordinary error allows later write/append",
+    "deleted material stays absent across ticks",
+    "empty material is valid",
+    "capacity error preserves material but completion ticks",
+    "pre-replace interruption leaves committed state intact",
+    "unknown pending refuses automatic overwrite",
+    "explicit pending recovery commits one recomputed tick",
+    "recovery retry is idempotent",
+    "post-replace process interruption does not duplicate tick",
+    "reopen retains exact material and counters",
+    "altered pending proposal refuses with evidence retained"
+  ],
+  "orbit_samples": {
+    "single_perturbation_31_pairs": {
+      "return_tick": 62,
+      "search_limit": 4096
+    },
+    "seeded_bytes_31_pairs": {
+      "return_tick": 62,
+      "search_limit": 4096
+    },
+    "all_zero_31_pairs": {
+      "return_tick": 1,
+      "search_limit": 4096
+    },
+    "uniform_pair_31_pairs": {
+      "return_tick": 2,
+      "search_limit": 4096
+    }
+  },
+  "model_calls": 0,
+  "candidate_world_actions": 0,
+  "scope": "pure material and single-writer atomic state fixture; not subprocess execution integration or OS power-loss coverage"
+}

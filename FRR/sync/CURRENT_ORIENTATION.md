@@ -1,3 +1,9 @@
+# Byte-material mechanics contact — detached, candidate38 preserved
+
+17 November2026, America/Chicago. See evaluation/byte-medium-mechanics-v1/REPORT.md relative to FRR root. Built a pure reversible byte-material and static counterpart, with21 passing mechanics checks. Two named31-pair nonuniform closed traces return after62ticks; no richness or learning claim. No sandbox adapter or inference yet. Next: disposable adapter preserving literal Python/shell execution, with separate operation/tick receipts and interruption checks. Candidate38/main1630/pointer and943 protected files unchanged. Prior navigation follows unchanged and is archived under this contact before/.
+
+---
+
 # New-garden source/design contact — candidate38 preserved
 
 17 November2026, America/Chicago. See evaluation/new-garden-substrate-rd-v1/REPORT.md relative to FRR root. Algorithm Distillation, symbolic Alchemy and Lenia distinguish learning carriers from world motion. Detached exact enumeration: 8-bit periodic Rule90 collapses by4 ticks; its reversible second-order form has maximum period8 across65536 states. Neither integrated. Next: action-coupled substrate selection and disposable clock/recovery fixture. Zero model calls/world actions; candidate38/main1630 and active garden pointer unchanged. Full prior navigation archived under this study before/ and retained below.
