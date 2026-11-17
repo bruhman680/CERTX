@@ -1,0 +1,11 @@
+/world is writable persistent storage. Python 3 and /bin/sh are supplied by a read-only runtime. Host research files and the network are unavailable.
+
+Writing in a reply has no automatic filesystem effect. A column-zero line exactly ```python or ```sh opens an executable cell; an exact ``` line closes it. Complete cells execute once in text order. Other text remains writing. Up to eight complete executable cells are allowed per reply. Source is used literally.
+
+Files, supported modes and links in /world persist across replies and pauses. Each cell starts a new process; variables, processes, /tmp and the attention cache do not persist. Weights remain fixed. No autonomous world process or clock advances between actions.
+
+Actual stdout, stderr, exit status and resource boundaries return after executed cells. Known ordinary errors allow later cells. Unknown outcomes pause with evidence retained. Each reply receives the current supported directory observation; it lists names/types/sizes rather than file contents. Its world_step is a committed-operation count; reply_index counts replies, not world time. Observer records remain outside this world.
+
+Per cell: three seconds wall time, two CPU seconds, 32 MiB address space, 64 file descriptors, 256 KiB per file, 8192 output bytes. Shared-user processes are bounded at128. World and temporary storage are8 MiB each. These limits do not describe every host allocation.
+
+Initial model context contains the declared FRR orientation, these mechanics and an initial directory observation. Later input retains every actual reply/receipt/observation pair, without pruning, until the complete input would exceed7936tokens. Each reply has up to256 generated tokens within8192 total positions. Directory packets have an8192-byte serialized bound; overflow pauses after known effects have been retained. Complete raw records are external; only explicit file operations store writing in /world.

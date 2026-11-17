@@ -1,3 +1,17 @@
+# Current target — new chosen-persistence FRR candidate, paused at turn3
+
+16 November2026, America/Chicago. [Report](../evaluation/chosen-persistence-prototype-v1/REPORT.md), [readme](../evaluation/chosen-persistence-prototype-v1/README.md), [pilot summary](../evaluation/chosen-persistence-prototype-v1/PILOT_SUMMARY.json), [handoff](../evaluation/chosen-persistence-prototype-v1/NEXT_SESSION.md).
+
+User returned to newer pretrained-model + FRR world R&D. Built detached coupling with exact existing Python/shell parser/runtime, external raw-expression retention, no automatic world notebook append. Only explicit complete code can change world files. Ten operator-only mechanical checks pass: writes/errors/persistence/shielding/count bound/duplicate refusal and tested interruption/finalization windows without action replay. Synthetic unknown-operation fixture remains intentionally blocked outside candidate; it is not a live pending action. Tests do not prove all host power-loss cases.
+
+Fresh candidate begins empty, exact archived compact FRR+mechanics, truthful full directory observations and actual cell receipts, fixed135M CPUgreedy256/freshKV, all actual context pairs until7936inputtokens (no pruning), no task/reward/solution/autonomous clock. Three actual replies split1 then2 verify SAME candidate's clean pause/resume. Inputs719/814/927; outputs34/52/52 allEOS and exact latest-user-message copies. No executable cells/model-created files/automatic world notes; world step0; external history retained. Not evidence of behavioral benefit, learning, plateau or FRR efficacy.
+
+All source/main/world/model/context/effect/observation audits pass. Candidate paused atturn3 with no stop reason/PENDING/lock/background run. Main remains1630,paused and unchanged; fresh candidate is not main1631 or a reset. ACTIVE_GARDEN_PHASE unchanged; research-scope file points to candidate/handoff. Older retrieval/alias/repair queues remain parked. No model is queued. Proposed next: audit and continue this same candidate for10replies with contract unchanged, observe quiet periods without coaching. Prior navigation/scope archived exactly under this prototype's before/.
+
+Previous navigation follows unchanged.
+
+---
+
 # Paused — resume the newer pretrained-model + FRR world design
 
 15 November2026 UTC. User corrected scope away from old retrieval diagnostics, explicitly selected **Pretrained model + FRR world**, and requested one small review then wind-down. [Design note](../evaluation/new-garden-design-return-v1/NOTE.md), [next-session handoff](../evaluation/new-garden-design-return-v1/NEXT_SESSION.md). Active research scope is recorded in sync/ACTIVE_RESEARCH_SCOPE.json (relative to FRR root), distinct from the unchanged ACTIVE_GARDEN_PHASE pointer.
