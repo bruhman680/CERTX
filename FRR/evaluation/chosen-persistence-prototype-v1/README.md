@@ -1,3 +1,11 @@
+# Current checkpoint: candidate turn13
+
+17 November2026, America/Chicago. The same candidate completed ten further replies4–13 with contract unchanged. All copied the latest supplied packet and ended at EOS. World remains empty/step0; no code or automatic world notes. Main1630 remains preserved. [Continuation report](../chosen-persistence-continuation-v1/REPORT.md), [current handoff](NEXT_SESSION.md). Exact next input2177/7936tokens; a proposed next window up to25 is not queued.
+
+Original build and initial-pilot documentation follows; its three-reply observations refer to turns1–3.
+
+---
+
 # Chosen-persistence computational garden prototype
 
 Built16 November2026, America/Chicago. Target: the user's newer **pretrained model + FRR world**. Main1630 and all prior history remain unchanged. This is a fresh detached candidate with its own turn count, not main entry1631 or a reset of the original run.
@@ -32,6 +40,6 @@ Audit is read-only apart from its new external audit record. Run advances from t
 
 Do not rerun prepare against candidate, clear pending markers to force replay, or call legacy receive_notebook on this engine. The authoritative coupling is coupling.py plus world/COUPLING.json. It uses pinned engine transaction internals; it is not a generic unversioned API. The underlying engine manifest retains legacy capability descriptions, while the outer coupling specifies which interface is used here.
 
-The intentionally blocked unknown-marker fixture is at checks/attempt001/unknown_marker. Its synthetic marker represents no actual attempted action and is retained as test evidence. It is not an unresolved live candidate transaction. Candidate itself is cleanly paused at turn3 with no pending marker or lock.
+The intentionally blocked unknown-marker fixture is at checks/attempt001/unknown_marker. Its synthetic marker represents no actual attempted action and is retained as test evidence. It is not an unresolved live candidate transaction. Candidate is currently cleanly paused at turn13 with no pending marker or lock; the initial pilot below remains historical.
 
 World-level prefix recovery does not by itself reconcile an interrupted model-session transaction. session.py intentionally blocks unknown session outcomes for explicit forensic review; it does not automatically regenerate a reply or replay an action. Complete external records and preserved raw outputs make that distinction inspectable. No blanket completeness claim is made for uncheckpointable OS state.

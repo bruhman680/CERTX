@@ -1,3 +1,17 @@
+# Current checkpoint — same new FRR candidate paused at13
+
+17 November2026, America/Chicago. [Continuation report](chosen-persistence-continuation-v1/REPORT.md), [results](chosen-persistence-continuation-v1/RESULTS.json), [handoff](chosen-persistence-continuation-v1/NEXT_SESSION.md). Newer pretrained-model + FRR world remains primary; old retrieval/label/repair queues stay parked.
+
+Authorized ten replies4–13 completed in the SAME chosen-persistence candidate; total13. No reset, new task/seed/hint/reward, source/model/FRR/law/history/sensing change or automatic notebook write. All ten exact latest-user-message copies, allEOS; outputs52tokens through10 then53 as copied reply_index reaches two digits. No cell/world operation/file creation; world step0 and empty-world ID unchanged while external conversation grows. No action-error/reuse opportunity or behavioral-learning/FRR benefit claim.
+
+Run/additional/readout audits pass; first3 records/raw/plans/observations/snapshots and contract hash unchanged. Main1630/source/ACTIVE_GARDEN_PHASE/weights unchanged. Candidate cleanly paused13, no stop reason/PENDING/lock/background inference. Source scope points to current handoff; original pilot/build evidence retained, previous README/status/manifest/navigation/scope copied exactly under continuation/before/.
+
+Exact next input2177/7936tokens. Proposed next bounded window up to25 under same contract, not queued. Capacity limits remain honest, no hidden pruning or success gate. Quiet data summarized externally without changing the inhabitant. Synthetic blocked mechanics fixture remains outside live candidate.
+
+Previous navigation follows unchanged.
+
+---
+
 # Current target — new chosen-persistence FRR candidate, paused at turn3
 
 16 November2026, America/Chicago. [Report](chosen-persistence-prototype-v1/REPORT.md), [readme](chosen-persistence-prototype-v1/README.md), [pilot summary](chosen-persistence-prototype-v1/PILOT_SUMMARY.json), [handoff](chosen-persistence-prototype-v1/NEXT_SESSION.md).
