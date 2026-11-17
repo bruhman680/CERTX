@@ -1,3 +1,9 @@
+# Three observation/continuity contacts complete — old gardens preserved
+
+17 November2026, America/Chicago. See evaluation/observation-three-contact-v1/REPORT.md relative to FRR root. Six model calls: compact lossless display, directory-only exposure, then declared two-reply continuous follow-through with saved RNG/full history. Two exact copies end at EOS; other replies code-like/narrative, zero actor cells/artifacts. All physical ticks successful. Audits pass;1115 protected files unchanged. A prospective direct-size observer repair passes7 check groups and matches10 actual packets, not activated in frozen runner. New branches paused3/1/1/1; no pending/inference/calls queued. Prior navigation follows unchanged and is archived under this contact before/.
+
+---
+
 # Decoder diagnostic complete — protected gardens unchanged
 
 17 November2026, America/Chicago. See evaluation/byte-medium-decoding-v1/REPORT.md relative to FRR root. Three actual one-shot calls from identical initial changing-world context/body/FRR/material: greedy exactly reproduces prior tokens; two sampled seeds vary text but execute no cells. One sample invents a delimiter; the other repeats zeros beyond the actual byte string. All physical ticks succeed. Audit passes;1040 protected files unchanged, including reference38/main1630 and both prior turn3 pilots. New branches paused at1; no pending/inference/calls queued. Next proposed diagnostic: lossless observation-format sensitivity with physics fixed. Prior navigation follows unchanged and is archived under this contact before/.

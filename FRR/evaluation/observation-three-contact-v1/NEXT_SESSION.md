@@ -1,0 +1,9 @@
+# Handoff — three consequential contacts complete
+
+Read REPORT.md, RESULTS.json, frozen PROTOCOL.md and stage review/selection records. Six model calls total: compact run-length display2; directory-only exposure2; continuous fallback compact-seed17 continuation2. Compact seed29 and directory seed17 exactly copied their observations and stopped at EOS96/70 tokens. Other four replies hit256 tokens. All actor counts zero; all physical ticks succeed. No artifacts, reuse or learning demonstrated.
+
+Compact seed17 first produced13 unfenced function definitions in a syntax-only analyst extraction. They were never executed or repaired into actions. Subsequent replies carry algorithm-themed prose. The continuation preserved actual world/full history and private RNG state; no reset. Selected branch at3, other branches at1 each. No background inference/pending/lock.1115 protected files unchanged, including reference38/main1630 and all previous pilots.
+
+A source-only observer repair is ready in sensor_v2.py, with7 check groups and exact equivalence on all10 actual packets here. It checks final encoded size directly; directory mode never reads byte objects. It is NOT wired into frozen run.py. KNOWN_LIMITS.md explains the older intermediate-hex capacity coupling, which did not trigger here. Future activation requires a declared new implementation pin, no overwritten history. No physical-law repair is indicated by these results.
+
+Next practical step: use the tested observer version under a declared future diagnostic contract before widening blocks. Research uncertainty: distinguish formal text, transport-format capability and chosen real action. Any external capability/transport probe must stay separate from preserved free-world trajectories; never silently execute unfenced code, provide repaired source or grade the live garden's writing. No new calls queued. Old retrieval/label/repair queues stay parked.
