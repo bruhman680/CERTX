@@ -1,0 +1,48 @@
+{
+  "model_feedback": false,
+  "method": "task-scoped analyst annotations against actual snapshots; not an aggregate intelligence score",
+  "annotations": [
+    {
+      "branch": "count17",
+      "task": "byte count",
+      "judgment": "correct pattern implies62; no explicit numeric count; extra irrelevant commentary",
+      "evidence": "The bytes in field.bin are 01 followed by 61 zeros.",
+      "interpretation_limit": "Accept the equivalent byte pattern; do not call it a wrong numeric answer just for omitting62. Does not show addition skill or a file read."
+    },
+    {
+      "branch": "count29",
+      "task": "byte count",
+      "judgment": "explicit correct62-byte field.bin fact, plus unsupported external-state arithmetic",
+      "evidence": "62 bytes (field.bin) + 1 byte (bytes) = 63 bytes.",
+      "interpretation_limit": "The added63 concerns a different invented external-state total, not an explicit claim that field.bin itself is63 bytes. Not a clean globally reliable answer."
+    },
+    {
+      "branch": "change17",
+      "task": "observed change",
+      "judgment": "does not identify actual nonzero-byte movement; invents model action before the first model call",
+      "evidence": "followed by the first actual model action",
+      "interpretation_limit": "The setup tick was an operator preparation expression with zero actor cells, disclosed in the input."
+    },
+    {
+      "branch": "change29",
+      "task": "observed change",
+      "judgment": "vague change statement plus unrelated narrative; no correct specific byte transition identified",
+      "evidence": "the bytes of field.bin changed in the time.",
+      "interpretation_limit": "Vague change acknowledgement is partial at most, not the requested concrete comparison."
+    },
+    {
+      "branch": "action17",
+      "task": "actuator use",
+      "judgment": "no executed cell or note.txt; narrative describes supposed program/file activity",
+      "evidence": "The program reads 62 bytes from field.bin, and stores it in a location named note.txt.",
+      "interpretation_limit": "A described program is not actual execution. No repair or inferred command was supplied."
+    },
+    {
+      "branch": "action29",
+      "task": "actuator use",
+      "judgment": "observation-like JSON only; no executed cell or note.txt",
+      "evidence": "\"actor_operations\":0",
+      "interpretation_limit": "The exact decoded input/output and actual filesystem are retained; no hidden behavioral grade fed back."
+    }
+  ]
+}

@@ -1,3 +1,9 @@
+# Prerequisite calibration complete — all prior gardens preserved
+
+17 November2026, America/Chicago. See evaluation/prerequisite-calibration-v1/REPORT.md relative to FRR root. Six sampled one-shot calls test byte count, actual observed change and clear file-creation request. Correct supplied byte facts coexist with confused prose; neither change probe identifies the transition, neither action probe emits a cell or creates note.txt. Six model-reply ticks plus2 explicitly disclosed operator setup ticks succeed. Audit passes;1585 protected files unchanged, all cases paused, no pending/inference/calls queued. Next: exact-input greedy controls before blaming weights or changing more world/context factors. Prior navigation follows unchanged and is archived under this contact before/.
+
+---
+
 # Object reference and evidence followup complete — old gardens preserved
 
 17 November2026, America/Chicago. See evaluation/object-evidence-contact-v1/REPORT.md relative to FRR root. Eight actual fixed-weight calls: four initial object-wording branches, four followups from matching copied checkpoints/history/RNG. Naming file changes topic; evidence question changes response format but reliable checking/actions not demonstrated. Zero actor cells/artifacts; eight new physical ticks succeed. Four copied first replies are ancestry, not extra calls. Timing-neutral view activated only under new contract, raw receipts retained. Historical-clock audit correction documented; final audit passes.1365 protected files unchanged, roots1/forks2 paused, no pending/inference/calls queued. Next: separate prerequisite calibration, not more broad prompts or weight changes by default. Prior navigation follows unchanged and is archived under this contact before/.

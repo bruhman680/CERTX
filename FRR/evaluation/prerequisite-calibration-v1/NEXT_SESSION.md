@@ -1,0 +1,9 @@
+# Handoff — prerequisite calibration complete
+
+Read REPORT.md, RESULTS.json, EXTERNAL_ANNOTATIONS.json and frozen PROTOCOL.md. Six actual one-shot calls, seeds17/29 for count/change/action. Count replies contain correct pattern/62-byte fact plus confused extra prose; accept equivalent pattern and avoid miscalling an unrelated63-total claim the file size. Neither change reply identifies the true transition [1,0,...] -> [0,1,...] at constant62 bytes. Neither clear request creates note.txt or emits an executable cell. Zero actor operations; no artifact.
+
+Actual setup: two change worlds each receive one empty OPERATOR expression/physical tick before their first model call, with real before/after snapshots and explicit disclosure. Thus6 model calls,2 preparation ticks,6 model-reply ticks. No fabricated transition or prior model action. All physical ticks successful. No source repair, answer/correction feedback, weight update or replacement call. Full FRR/mechanics and run-length sensor remain the tested context, so failures do not isolate body ability from decoding/context/representation.
+
+Audit passes;1585 prior protected files unchanged (reference38/main1630 and every earlier recent study). All copies paused after1 model call; change ledgers additionally include preparation. No pending/lock/inference. No input pruning. No ongoing garden was taught these probe questions or solutions.
+
+Next strongest: fresh GREEDY controls for the same3 tasks using exact saved initial inputs and equivalent real prepared worlds, to isolate decoder effects (current probes sampled0.8/top_p0.95). If needed afterward, separate mechanics-only/no-FRR or plain-byte-display controls. Do not combine changes or attribute failures to weights/FRR without controls. No new call, training or physical-law change queued. Old retrieval/label/repair queues stay parked.
