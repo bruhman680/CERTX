@@ -1,3 +1,9 @@
+# New-garden source/design contact — candidate38 preserved
+
+17 November2026, America/Chicago. See evaluation/new-garden-substrate-rd-v1/REPORT.md relative to FRR root. Algorithm Distillation, symbolic Alchemy and Lenia distinguish learning carriers from world motion. Detached exact enumeration: 8-bit periodic Rule90 collapses by4 ticks; its reversible second-order form has maximum period8 across65536 states. Neither integrated. Next: action-coupled substrate selection and disposable clock/recovery fixture. Zero model calls/world actions; candidate38/main1630 and active garden pointer unchanged. Full prior navigation archived under this study before/ and retained below.
+
+---
+
 # Wind-down — candidate38 preserved, no further calls queued
 
 17 November2026, America/Chicago. User requested completion, broader garden/confidence summary and a pause. Read evaluation/chosen-persistence-continuation-v2/WIND_DOWN.md (relative to FRR root). Candidate38 is cleanly paused; main1630 unchanged. Strongest suggested next activity: new-garden design/source research on opportunities for self-directed interaction and context/artifact learning, keeping this candidate as a continuous reference. Continuation remains an option, not an automatically queued action. No new world dynamics, goals, seeds or body changes have been introduced. Older benchmark queues remain parked.
