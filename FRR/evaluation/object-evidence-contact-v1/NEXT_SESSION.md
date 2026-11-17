@@ -1,0 +1,9 @@
+# Handoff — object reference and sibling evidence question complete
+
+Read REPORT.md, RESULTS.json, GROUND_TRUTH.json and frozen PROTOCOL.md. Eight actual calls: four initial ambiguous/named object references at seeds17/29; then four followups from copied actual named histories. Copied first records are inherited, NOT four extra calls. Roots paused1, siblings paused2. Private RNG/full history/counters preserved. Only the followup question differs within sibling pairs.
+
+Naming field.bin increases topical specificity but gives mixed/incorrect facts. Open support/challenge question elicits unsupported evaluation-like prose or justification of earlier wrong sizes. Zero actor cells/artifacts; all eight new physical ticks succeed. Some correct facts occur; no reliable verification or learning demonstrated. Answering without tools can be valid, so action count alone is not an answer-quality metric.
+
+Timing-neutral receipt policy and direct-size sensor are now prospectively pinned in this new contract. Raw seconds remain external; model receipt metadata excludes them. No old context was edited. The audit initially used final counters to reconstruct an inherited historical receipt; failed audit source/note retained. Fixed historical reconstruction passes, with no runner/input/output/world/call edits or reruns.
+
+All1365 prior protected files unchanged (reference38/main1630 and every earlier recent study). No pending/lock/inference. Next strongest is separate prerequisite calibration under present context: actual byte-count reading, one observed state-change identification and deliberate use of the existing action syntax under a clear request. Do not insert solutions or repaired code into preserved free-world histories. Keep capabilities, grounding, elicitation and learning distinct; no inference or training queued. Old retrieval/label/repair queues stay parked.

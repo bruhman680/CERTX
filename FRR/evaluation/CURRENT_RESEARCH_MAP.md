@@ -1,3 +1,9 @@
+# Object reference and evidence followup complete — old gardens preserved
+
+17 November2026, America/Chicago. See evaluation/object-evidence-contact-v1/REPORT.md relative to FRR root. Eight actual fixed-weight calls: four initial object-wording branches, four followups from matching copied checkpoints/history/RNG. Naming file changes topic; evidence question changes response format but reliable checking/actions not demonstrated. Zero actor cells/artifacts; eight new physical ticks succeed. Four copied first replies are ancestry, not extra calls. Timing-neutral view activated only under new contract, raw receipts retained. Historical-clock audit correction documented; final audit passes.1365 protected files unchanged, roots1/forks2 paused, no pending/inference/calls queued. Next: separate prerequisite calibration, not more broad prompts or weight changes by default. Prior navigation follows unchanged and is archived under this contact before/.
+
+---
+
 # Invitation/interaction contact complete — old gardens unchanged
 
 17 November2026, America/Chicago. See evaluation/invitation-interaction-v1/REPORT.md relative to FRR root. Eight actual fixed-weight calls, four matched branches at2 replies each. A broad initial question changes prose but elicits no actor cells/artifacts; factual grounding not demonstrated. Eight physical ticks succeed. Audit corrected an overstrong second-turn replay assumption: real receipt seconds differ; initial control replays exact. Timing-neutral future receipt helper passes8 checks, not activated; direct-size sensor activated equally under this new contract. Audit passes and1234 protected files unchanged. No pending/inference/calls queued. Next: separate timing nuisance, concrete object reference, then possible open followup; no weight training indicated as necessary. Prior navigation follows unchanged and is archived under this contact before/.
