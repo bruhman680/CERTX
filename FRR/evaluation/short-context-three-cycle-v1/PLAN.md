@@ -1,0 +1,5 @@
+# Three sequential diagnostic rounds
+
+17 November 2026, America/Chicago. User authorized three sequential strongest steps. Round1: shorter200-token matched prefixes of FRR/geology/textiles under fixed native framing and original packet/task. Rounds2 and3 will be specified after prior audited outcomes, each with a separate prospective protocol. Maximum9 calls total (at most3 per round), no automatic extra calls or retries. This is an adaptive diagnostic sequence, not a preregistered confirmatory comparison across all selected prompts. Keep actual handoff, process result and task correctness separate.
+
+Same verified cached fixed-weight CPU model/decoder/256-output budget and detached literal verification worlds unless a later protocol explicitly changes a diagnostic factor. No training, downloads, paid endpoints, source repair, hints/code solutions or changes to live garden. All prior histories stay intact. Freeze each round before inference, retain every failure, audit after completion, and stop after round3 for consolidated report/sync. Preserve previous rounds when later rounds start. No inference is queued after the completed sequence.

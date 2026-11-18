@@ -1,0 +1,217 @@
+{
+  "status": "pass",
+  "actual_model_calls": 9,
+  "separate_protocol_budgets": [
+    3,
+    3,
+    3
+  ],
+  "failed_preparation_actual_calls": 0,
+  "round1_requested_tokens": 200,
+  "round1_actual_common_tokens": 199,
+  "actual_actor_cells": 10,
+  "physical_ticks": 9,
+  "exact_task_successes": 1,
+  "native_positive_reproduced_identical_ids": true,
+  "training_updates": 0,
+  "prior_files_unchanged": 2443,
+  "overlapping_stage_protected_counts": [
+    2443,
+    2529,
+    2605
+  ],
+  "all_paused": true,
+  "pending_actions": false,
+  "background_inference": false,
+  "autonomous_action_claim": false,
+  "continuous_garden_entries_advanced": 0,
+  "branches": [
+    {
+      "round": 1,
+      "context": "frr_native",
+      "input_tokens": 199,
+      "output_tokens": 164,
+      "stop": "eos",
+      "actual_cells": 1,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.01540645600107382,
+          "stderr": "",
+          "stdout": "Usage: python program.py <number>\n"
+        }
+      ],
+      "strict_target": "1",
+      "exact_task_met": false,
+      "raw_sha256": "216c6a5de34032f357f59cbaed1cd1da3e177cb275ed0acd70e455fff3d4c4c1"
+    },
+    {
+      "round": 1,
+      "context": "geology_native",
+      "input_tokens": 199,
+      "output_tokens": 178,
+      "stop": "eos",
+      "actual_cells": 1,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 1,
+          "seconds": 0.018021127001702553,
+          "stderr": "",
+          "stdout": "Usage: python test.py <number>\n"
+        }
+      ],
+      "strict_target": "1",
+      "exact_task_met": false,
+      "raw_sha256": "e1507e579c5f30574f0a2970e9de2459f08d32ca40e2afb5349f45ddc43409ab"
+    },
+    {
+      "round": 1,
+      "context": "textiles_native",
+      "input_tokens": 199,
+      "output_tokens": 174,
+      "stop": "eos",
+      "actual_cells": 1,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 1,
+          "seconds": 0.020846465999056818,
+          "stderr": "",
+          "stdout": "Usage: python print_digit.py <number>\n"
+        }
+      ],
+      "strict_target": "1",
+      "exact_task_met": false,
+      "raw_sha256": "70ec423f14e3b0face389a4e8df55724806d9d8f7333d132f28935abf8dfa0bb"
+    },
+    {
+      "round": 2,
+      "context": "native_repeat",
+      "input_tokens": 141,
+      "output_tokens": 120,
+      "stop": "eos",
+      "actual_cells": 1,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.01774690499951248,
+          "stderr": "",
+          "stdout": "1\n"
+        }
+      ],
+      "strict_target": "1",
+      "exact_task_met": true,
+      "raw_sha256": "30b2331eede19688e774905a0c73e4c2635e9aaadc07443c9018523c9ab24509"
+    },
+    {
+      "round": 2,
+      "context": "native_letter",
+      "input_tokens": 142,
+      "output_tokens": 132,
+      "stop": "eos",
+      "actual_cells": 1,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.013293643998622429,
+          "stderr": "",
+          "stdout": "A\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\n"
+        }
+      ],
+      "strict_target": "A",
+      "exact_task_met": false,
+      "raw_sha256": "94500b22ab51d1db5b5f405fe13a83c06c70c43ff3a335b4b16197e6eb1897b1"
+    },
+    {
+      "round": 2,
+      "context": "frr_letter",
+      "input_tokens": 200,
+      "output_tokens": 256,
+      "stop": "token_limit",
+      "actual_cells": 1,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 1,
+          "seconds": 0.04184891200202401,
+          "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 8, in <module>\n    print_a('/world')\n    ~~~~~~~^^^^^^^^^^\n  File \"<string>\", line 4, in print_a\n    with open(path, 'rb') as f:\n         ~~~~^^^^^^^^^^^^\nIsADirectoryError: [Errno 21] Is a directory: '/world'\n",
+          "stdout": ""
+        }
+      ],
+      "strict_target": "A",
+      "exact_task_met": false,
+      "raw_sha256": "43e929cb06d2f9e118bfc8abe0ef81497fb5afe7e35cf8a918ad121081dee363"
+    },
+    {
+      "round": 3,
+      "context": "native_once",
+      "input_tokens": 144,
+      "output_tokens": 232,
+      "stop": "eos",
+      "actual_cells": 2,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.01995836200148915,
+          "stderr": "",
+          "stdout": "A \n"
+        },
+        {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.015200420002656756,
+          "stderr": "",
+          "stdout": "A \n"
+        }
+      ],
+      "strict_target": "A",
+      "exact_task_met": false,
+      "raw_sha256": "eccd2044734675522571d4963044b4a69baf3ca54442a0c239be57e22a25cf07"
+    },
+    {
+      "round": 3,
+      "context": "frr_once",
+      "input_tokens": 202,
+      "output_tokens": 158,
+      "stop": "eos",
+      "actual_cells": 1,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 1,
+          "seconds": 0.043820031998620834,
+          "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 9, in <module>\n    print_a('/path/to/your/file.bin')\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 4, in print_a\n    with open(path, 'r') as file:\n         ~~~~^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/path/to/your/file.bin'\n",
+          "stdout": ""
+        }
+      ],
+      "strict_target": "A",
+      "exact_task_met": false,
+      "raw_sha256": "59fa7c921e28e0c63eb238edd0c9fc383f172511b6e04a0df65c837b7f70398c"
+    },
+    {
+      "round": 3,
+      "context": "geology_once",
+      "input_tokens": 202,
+      "output_tokens": 191,
+      "stop": "eos",
+      "actual_cells": 1,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 1,
+          "seconds": 0.022266202999162488,
+          "stderr": "",
+          "stdout": "Usage: python a.py <file_name>\n"
+        }
+      ],
+      "strict_target": "A",
+      "exact_task_met": false,
+      "raw_sha256": "f6218aa8ce9ac33553774f92e40323a616fd40492174f2b08a5a80dca8fc938a"
+    }
+  ]
+}
