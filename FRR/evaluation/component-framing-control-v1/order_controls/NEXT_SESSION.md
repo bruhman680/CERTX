@@ -1,0 +1,9 @@
+# Handoff: component and order contact
+
+17 November 2026, America/Chicago. Four actual calls, separate frozen budgets [2,2]. Original print1 question and same initial packet throughout. FRR-only: one closed cell, actual usage stdout and exit0, task false. Mechanics-only: open comment-list Python fence, 256 limit, no execution. Reverse full-system section order: open comment-list fence, no execution. Question before packet: unsupported triple quote/comment list, no execution. Both order inputs are exactly1063 tokens, matching preserved original full baseline, and preserve per-message character inventories/lengths. Both completed audits pass.
+
+Preserve all negative outcomes. No source/fence repair, arguments supplied, training, paid inference, downloads or changed live prompt. Main entry1630/reference38 remain paused. 2255 prior files unchanged; follow-up also protects50 parent files (2305 total, overlapping). All four diagnostics paused after one response; no pending or queued call.
+
+Current confidence: receipts/preservation high; semantic-vs-length causal attribution unresolved. FRR-only demonstrates that exit0 is insufficient for exact task success. Native+packet remains a preserved positive reference; none of this contact's four cases achieved the task. See REPORT.md, both RESULTS.json files and OUTCOME_LAYERS.json. New scorecard is external, not a gate in the model's world.
+
+Next strongest: prospectively compare FRR content against independently specified task-irrelevant control text at matched input length under identical native helpful framing, packet/question/model/decoder/budget. Any new preface is a declared change, not an invisible fix. A control passage is not assumed neutral; choose/freeze before generation, consider an independent second passage. Do not adopt a garden prompt change from these single-task trajectories. No new inference is queued.

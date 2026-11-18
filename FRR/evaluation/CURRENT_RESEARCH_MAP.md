@@ -1,3 +1,9 @@
+# Components and order: no task-success improvement
+
+17 November 2026, America/Chicago. Four actual calls under separate frozen [2,2] budgets. FRR-only emits a complete cell but wrong usage stdout with exit0; mechanics-only emits an unclosed comment-list fence. Reversing full-system sections and moving the question before the packet preserve original content and 1063-token input length, but neither yields a supported executable cell. Distinguish handoff, runtime status and exact task result. No prompt change promoted. Audits pass;2255 earlier files plus50 parent-contact files preserved. Main1630/reference38 and all diagnostics paused, no pending/background inference or queued calls. Next: matched-length content controls under fixed native helpful framing. Report: evaluation/component-framing-control-v1/order_controls/REPORT.md relative to FRR root. Earlier navigation follows unchanged and is archived under this contact's order_controls/before/.
+
+---
+
 # Context corners: separate handoff from task correctness
 
 17 November 2026, America/Chicago. Four new calls, separately frozen [2,2]. Native+packet prints 1; full/no-packet emits a closed cell but prints a usage line and exits 1. Stating that no command-line arguments are supplied does not fix the full cases. Prior records remain unchanged. Both completed audits pass; 2,144 prior files and 53 parent-contact files preserved. Main entry 1630 and reference turn 38 remain paused. No pending actions, training or background inference. Next: verbatim FRR-only versus mechanics-only controls with the packet and original question; no calls queued. Report: evaluation/context-corners-control-v1/no_argument/REPORT.md relative to FRR root. Prior navigation follows unchanged and is archived under this contact's no_argument/before/.

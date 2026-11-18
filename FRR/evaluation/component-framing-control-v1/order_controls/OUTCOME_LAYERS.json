@@ -1,0 +1,87 @@
+{
+  "scope": "four new cases and two preserved packet references; no inferred inner states",
+  "cases": [
+    {
+      "context": "frr_only",
+      "preserved_reference_not_new_call": false,
+      "source": "evaluation/component-framing-control-v1/RESULTS.json",
+      "source_sha256": "0615f299a4fb72f54c99e26f43150f40cac099a89351310facb37f13c867e873",
+      "handoff_complete": true,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.020268203999876278,
+          "stderr": "",
+          "stdout": "Usage: python program.py <num>\n"
+        }
+      ],
+      "exact_task_met": false,
+      "observed_outcome": "completed_wrong_output",
+      "model_narrative_not_used_for_task_score": true
+    },
+    {
+      "context": "mechanics_only",
+      "preserved_reference_not_new_call": false,
+      "source": "evaluation/component-framing-control-v1/RESULTS.json",
+      "source_sha256": "0615f299a4fb72f54c99e26f43150f40cac099a89351310facb37f13c867e873",
+      "handoff_complete": false,
+      "runtime_receipts": [],
+      "exact_task_met": false,
+      "observed_outcome": "no_complete_cell",
+      "model_narrative_not_used_for_task_score": true
+    },
+    {
+      "context": "reversed_system",
+      "preserved_reference_not_new_call": false,
+      "source": "evaluation/component-framing-control-v1/order_controls/RESULTS.json",
+      "source_sha256": "c03de72200c1a8f754964673c91ad2c0e456619b55d4dbafc38e4b80da50fe7d",
+      "handoff_complete": false,
+      "runtime_receipts": [],
+      "exact_task_met": false,
+      "observed_outcome": "no_complete_cell",
+      "model_narrative_not_used_for_task_score": true
+    },
+    {
+      "context": "question_first",
+      "preserved_reference_not_new_call": false,
+      "source": "evaluation/component-framing-control-v1/order_controls/RESULTS.json",
+      "source_sha256": "c03de72200c1a8f754964673c91ad2c0e456619b55d4dbafc38e4b80da50fe7d",
+      "handoff_complete": false,
+      "runtime_receipts": [],
+      "exact_task_met": false,
+      "observed_outcome": "no_complete_cell",
+      "model_narrative_not_used_for_task_score": true
+    },
+    {
+      "context": "full",
+      "preserved_reference_not_new_call": true,
+      "source": "evaluation/minimal-cell-control-v1/RESULTS.json",
+      "source_sha256": "61b41fa916e6c226c6547c0ad6757475f2f8ef73f419404babcc68a3b6f3071c",
+      "handoff_complete": false,
+      "runtime_receipts": [],
+      "exact_task_met": false,
+      "observed_outcome": "no_complete_cell",
+      "model_narrative_not_used_for_task_score": true
+    },
+    {
+      "context": "native_packet",
+      "preserved_reference_not_new_call": true,
+      "source": "evaluation/context-corners-control-v1/RESULTS.json",
+      "source_sha256": "24a6da7fb32a4c30284ec122e5b3658354daaadb6524ec0ea7f7f1ceca68a1ed",
+      "handoff_complete": true,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.017008453996822936,
+          "stderr": "",
+          "stdout": "1\n"
+        }
+      ],
+      "exact_task_met": true,
+      "observed_outcome": "task_success",
+      "model_narrative_not_used_for_task_score": true
+    }
+  ]
+}

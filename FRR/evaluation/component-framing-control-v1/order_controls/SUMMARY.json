@@ -1,0 +1,72 @@
+{
+  "status": "pass",
+  "actual_model_calls": 4,
+  "separate_protocol_budgets": [
+    2,
+    2
+  ],
+  "actual_actor_cells": 1,
+  "task_successes": 0,
+  "physical_ticks": 4,
+  "training_updates": 0,
+  "prior_files_unchanged": 2255,
+  "prior_plus_parent_contact_files_unchanged": 2305,
+  "all_paused": true,
+  "pending_actions": false,
+  "background_inference": false,
+  "autonomous_action_claim": false,
+  "branches": [
+    {
+      "protocol": "component",
+      "context": "frr_only",
+      "input_tokens": 382,
+      "output_tokens": 176,
+      "stop": "eos",
+      "actual_cells": 1,
+      "task_met": false,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.020268203999876278,
+          "stderr": "",
+          "stdout": "Usage: python program.py <num>\n"
+        }
+      ],
+      "incomplete_fences": 0
+    },
+    {
+      "protocol": "component",
+      "context": "mechanics_only",
+      "input_tokens": 802,
+      "output_tokens": 256,
+      "stop": "token_limit",
+      "actual_cells": 0,
+      "task_met": false,
+      "runtime_receipts": [],
+      "incomplete_fences": 1
+    },
+    {
+      "protocol": "order",
+      "context": "reversed_system",
+      "input_tokens": 1063,
+      "output_tokens": 256,
+      "stop": "token_limit",
+      "actual_cells": 0,
+      "task_met": false,
+      "runtime_receipts": [],
+      "incomplete_fences": 1
+    },
+    {
+      "protocol": "order",
+      "context": "question_first",
+      "input_tokens": 1063,
+      "output_tokens": 256,
+      "stop": "token_limit",
+      "actual_cells": 0,
+      "task_met": false,
+      "runtime_receipts": [],
+      "incomplete_fences": 0
+    }
+  ]
+}
