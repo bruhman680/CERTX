@@ -1,0 +1,89 @@
+{
+  "status": "pass",
+  "actual_model_calls": 4,
+  "separate_protocol_budgets": [
+    2,
+    2
+  ],
+  "actual_actor_cells": 3,
+  "task_successes": 1,
+  "physical_ticks": 4,
+  "training_updates": 0,
+  "prior_files_unchanged": 2144,
+  "prior_plus_parent_contact_files_unchanged": 2197,
+  "all_paused": true,
+  "pending_actions": false,
+  "background_inference": false,
+  "autonomous_action_claim": false,
+  "observation_grounding_tested": false,
+  "branches": [
+    {
+      "protocol": "original_question",
+      "context": "native_packet",
+      "input_tokens": 141,
+      "output_tokens": 120,
+      "stop": "eos",
+      "actual_cells": 1,
+      "task_met": true,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.017008453996822936,
+          "stderr": "",
+          "stdout": "1\n"
+        }
+      ],
+      "observed_outcome": "task_success"
+    },
+    {
+      "protocol": "original_question",
+      "context": "full_no_packet",
+      "input_tokens": 969,
+      "output_tokens": 256,
+      "stop": "token_limit",
+      "actual_cells": 1,
+      "task_met": false,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 1,
+          "seconds": 0.017590359999303473,
+          "stderr": "",
+          "stdout": "Usage: python program.py <number>\n"
+        }
+      ],
+      "observed_outcome": "runtime_interface_error"
+    },
+    {
+      "protocol": "no_argument_clarification",
+      "context": "full_no_packet",
+      "input_tokens": 980,
+      "output_tokens": 256,
+      "stop": "token_limit",
+      "actual_cells": 1,
+      "task_met": false,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 1,
+          "seconds": 0.02324377499826369,
+          "stderr": "",
+          "stdout": "Usage: python program.py <number>\n"
+        }
+      ],
+      "observed_outcome": "runtime_interface_error"
+    },
+    {
+      "protocol": "no_argument_clarification",
+      "context": "full_packet",
+      "input_tokens": 1074,
+      "output_tokens": 256,
+      "stop": "token_limit",
+      "actual_cells": 0,
+      "task_met": false,
+      "runtime_receipts": [],
+      "observed_outcome": "no_executable_cell"
+    }
+  ]
+}

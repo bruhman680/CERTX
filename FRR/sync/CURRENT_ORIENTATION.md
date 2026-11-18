@@ -1,3 +1,9 @@
+# Context corners: separate handoff from task correctness
+
+17 November 2026, America/Chicago. Four new calls, separately frozen [2,2]. Native+packet prints 1; full/no-packet emits a closed cell but prints a usage line and exits 1. Stating that no command-line arguments are supplied does not fix the full cases. Prior records remain unchanged. Both completed audits pass; 2,144 prior files and 53 parent-contact files preserved. Main entry 1630 and reference turn 38 remain paused. No pending actions, training or background inference. Next: verbatim FRR-only versus mechanics-only controls with the packet and original question; no calls queued. Report: evaluation/context-corners-control-v1/no_argument/REPORT.md relative to FRR root. Prior navigation follows unchanged and is archived under this contact's no_argument/before/.
+
+---
+
 # Minimal handoff verified — old gardens preserved
 
 17 November2026, America/Chicago. See evaluation/minimal-cell-control-v1/REPORT.md relative to FRR root. Three actual calls under separately frozen2+1 protocols. Native default chat produces a closed Python cell and verified stdout1/exit0. Full FRR/world+observation and native-prefaced full produce no supported cells. No output/source repair or training. Audits pass;2060 prior protected files and41 parent-case files preserved, all cases paused, no pending/inference/calls queued. Next: native+observation and full-system-without-packet controls to locate context-package differences. This is conditional code capability, not autonomous cultivation. Prior navigation follows unchanged and is archived under this contact before/.
