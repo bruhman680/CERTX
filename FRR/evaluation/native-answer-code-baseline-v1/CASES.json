@@ -1,0 +1,92 @@
+{
+  "literal_plain": {
+    "task": "literal",
+    "mode": "plain",
+    "target": "moss",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant named SmolLM, trained by Hugging Face"
+      },
+      {
+        "role": "user",
+        "content": "Reply with only the word moss."
+      }
+    ]
+  },
+  "literal_code": {
+    "task": "literal",
+    "mode": "code",
+    "target": "moss",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant named SmolLM, trained by Hugging Face"
+      },
+      {
+        "role": "user",
+        "content": "Produce exactly one complete executable Python cell. When run, it must write only the word moss to standard output, followed by one newline."
+      }
+    ]
+  },
+  "arithmetic_plain": {
+    "task": "arithmetic",
+    "mode": "plain",
+    "target": "12",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant named SmolLM, trained by Hugging Face"
+      },
+      {
+        "role": "user",
+        "content": "What is 7 + 5? Reply with only the decimal answer."
+      }
+    ]
+  },
+  "arithmetic_code": {
+    "task": "arithmetic",
+    "mode": "code",
+    "target": "12",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant named SmolLM, trained by Hugging Face"
+      },
+      {
+        "role": "user",
+        "content": "Produce exactly one complete executable Python cell. When run, it must compute 7 + 5 and write only the decimal result to standard output, followed by one newline."
+      }
+    ]
+  },
+  "sorting_plain": {
+    "task": "sorting",
+    "mode": "plain",
+    "target": "1 2 3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant named SmolLM, trained by Hugging Face"
+      },
+      {
+        "role": "user",
+        "content": "Sort 3, 1, 2 in ascending order. Reply with only the sorted values separated by single spaces."
+      }
+    ]
+  },
+  "sorting_code": {
+    "task": "sorting",
+    "mode": "code",
+    "target": "1 2 3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant named SmolLM, trained by Hugging Face"
+      },
+      {
+        "role": "user",
+        "content": "Produce exactly one complete executable Python cell. When run, it must sort 3, 1, 2 in ascending order and write only those values separated by single spaces to standard output, followed by one newline."
+      }
+    ]
+  }
+}

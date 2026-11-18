@@ -1,0 +1,30 @@
+{
+  "case_order": [
+    "literal_plain",
+    "literal_code",
+    "arithmetic_plain",
+    "arithmetic_code",
+    "sorting_plain",
+    "sorting_code"
+  ],
+  "system": "You are a helpful AI assistant named SmolLM, trained by Hugging Face",
+  "world_packet_supplied": false,
+  "frr_supplied": false,
+  "plain_questions": {
+    "literal": "Reply with only the word moss.",
+    "arithmetic": "What is 7 + 5? Reply with only the decimal answer.",
+    "sorting": "Sort 3, 1, 2 in ascending order. Reply with only the sorted values separated by single spaces."
+  },
+  "code_questions": {
+    "literal": "Produce exactly one complete executable Python cell. When run, it must write only the word moss to standard output, followed by one newline.",
+    "arithmetic": "Produce exactly one complete executable Python cell. When run, it must compute 7 + 5 and write only the decimal result to standard output, followed by one newline.",
+    "sorting": "Produce exactly one complete executable Python cell. When run, it must sort 3, 1, 2 in ascending order and write only those values separated by single spaces to standard output, followed by one newline."
+  },
+  "targets": {
+    "literal": "moss",
+    "arithmetic": "12",
+    "sorting": "1 2 3"
+  },
+  "plain_normalization": "strip only leading/trailing CR and LF; no spaces or other extraction",
+  "code_reference": "minimal-task-panel-v1 native questions, verbatim; initial packet removed"
+}

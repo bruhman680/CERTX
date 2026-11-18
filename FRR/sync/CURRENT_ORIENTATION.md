@@ -1,3 +1,9 @@
+# Native plain/code baseline: partial content and a verified file effect
+
+17 November2026, America/Chicago. Six calls without packet/FRR. Plain arithmetic includes7+5=12, all3 strict answer-only checks fail. Code literal actually writes4byte moss to detached/world/test.txt rather than stdout; arithmetic asks stdin and getsEOFError; sorting fence remains open. Two actor cells/three ticks, zero exact task successes. Audit and independent file-content check pass;2823 prior files preserved. Main1630/reference38 and all diagnostics paused, no pending/background/queued inference or live prompt change. Next: bounded forked actual-error feedback/control continuation with no solution teaching. Report: evaluation/native-answer-code-baseline-v1/REPORT.md relative to FRR root. Prior navigation follows unchanged and is archived under this contact's before/.
+
+---
+
 # Paired task panel: missing executable handoff
 
 17 November2026, America/Chicago. Six calls, three tasks under native/fixed coherent first-paragraph FRR. Native replies paraphrase task and end; FRR replies reach256 with open task-divergent fences. Zero actor cells/exact successes; six separate successful physical ticks. Audit passes;2691 prior files preserved. This is not a direct arithmetic/sorting knowledge test or a general FRR effect. Main1630/reference38 and all diagnostics paused, no pending/background/queued inference or live prompt change. Next: plain-answer vs code-generation native baselines, then separately world packet. Report: evaluation/minimal-task-panel-v1/REPORT.md relative to FRR root. Prior navigation follows unchanged and is archived under this contact's before/.

@@ -1,0 +1,115 @@
+{
+  "status": "pass",
+  "actual_model_calls": 6,
+  "protocol_budget": 6,
+  "plain_cases": 3,
+  "code_cases": 3,
+  "actual_actor_cells": 2,
+  "physical_ticks": 3,
+  "exact_task_successes": 0,
+  "verified_off_target_artifact": "/world/test.txt containing moss",
+  "correct_sum_visible_in_plain_reply": true,
+  "training_updates": 0,
+  "protected_prior_files_unchanged": 2823,
+  "all_paused": true,
+  "pending_actions": false,
+  "background_inference": false,
+  "autonomous_action_claim": false,
+  "continuous_garden_entries_advanced": 0,
+  "branches": [
+    {
+      "context": "literal_plain",
+      "mode": "plain",
+      "input_tokens": 38,
+      "output_tokens": 13,
+      "stop": "eos",
+      "actual_cells": 0,
+      "exact_task_met": false,
+      "runtime_submitted": false,
+      "physical_ticks": 0,
+      "runtime_receipts": [],
+      "plain_text": "Moss is a plant that grows on rocks and soil."
+    },
+    {
+      "context": "literal_code",
+      "mode": "code",
+      "input_tokens": 59,
+      "output_tokens": 106,
+      "stop": "eos",
+      "actual_cells": 1,
+      "exact_task_met": false,
+      "runtime_submitted": true,
+      "physical_ticks": 1,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 0,
+          "seconds": 0.0220303399983095,
+          "stderr": "",
+          "stdout": ""
+        }
+      ],
+      "plain_text": null
+    },
+    {
+      "context": "arithmetic_plain",
+      "mode": "plain",
+      "input_tokens": 46,
+      "output_tokens": 10,
+      "stop": "eos",
+      "actual_cells": 0,
+      "exact_task_met": false,
+      "runtime_submitted": false,
+      "physical_ticks": 0,
+      "runtime_receipts": [],
+      "plain_text": "7 + 5 = 12."
+    },
+    {
+      "context": "arithmetic_code",
+      "mode": "code",
+      "input_tokens": 66,
+      "output_tokens": 168,
+      "stop": "eos",
+      "actual_cells": 1,
+      "exact_task_met": false,
+      "runtime_submitted": true,
+      "physical_ticks": 1,
+      "runtime_receipts": [
+        {
+          "boundary": null,
+          "exit_code": 1,
+          "seconds": 0.04517249799755518,
+          "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 11, in <module>\n    main()\n    ~~~~^^\n  File \"<string>\", line 6, in main\n    num = int(input(\"Enter a number: \"))\n              ~~~~~^^^^^^^^^^^^^^^^^^^^\nEOFError: EOF when reading a line\n",
+          "stdout": "Enter a number: "
+        }
+      ],
+      "plain_text": null
+    },
+    {
+      "context": "sorting_plain",
+      "mode": "plain",
+      "input_tokens": 55,
+      "output_tokens": 38,
+      "stop": "eos",
+      "actual_cells": 0,
+      "exact_task_met": false,
+      "runtime_submitted": false,
+      "physical_ticks": 0,
+      "runtime_receipts": [],
+      "plain_text": "Here are the sorted values in ascending order:\n\n1. 2\n2. 3\n\nSo, the sorted values are: 1, 2, 3."
+    },
+    {
+      "context": "sorting_code",
+      "mode": "code",
+      "input_tokens": 75,
+      "output_tokens": 256,
+      "stop": "token_limit",
+      "actual_cells": 0,
+      "exact_task_met": false,
+      "runtime_submitted": true,
+      "physical_ticks": 1,
+      "runtime_receipts": [],
+      "plain_text": null
+    }
+  ]
+}
