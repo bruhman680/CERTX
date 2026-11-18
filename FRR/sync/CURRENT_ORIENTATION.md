@@ -1,3 +1,9 @@
+# Minimal handoff verified — old gardens preserved
+
+17 November2026, America/Chicago. See evaluation/minimal-cell-control-v1/REPORT.md relative to FRR root. Three actual calls under separately frozen2+1 protocols. Native default chat produces a closed Python cell and verified stdout1/exit0. Full FRR/world+observation and native-prefaced full produce no supported cells. No output/source repair or training. Audits pass;2060 prior protected files and41 parent-case files preserved, all cases paused, no pending/inference/calls queued. Next: native+observation and full-system-without-packet controls to locate context-package differences. This is conditional code capability, not autonomous cultivation. Prior navigation follows unchanged and is archived under this contact before/.
+
+---
+
 # Bridge and native sanity contacts complete — prior gardens preserved
 
 17 November2026, America/Chicago. See evaluation/representation-actuator-controls-v1/REPORT.md relative to FRR root. Seven actual calls in separately frozen4+2+1 protocols. Byte-list and explicit Python-cell cues do not elicit comparison/action. Official pinned instruct weights/tokenizer identity verified. Native code starts a fence;512-token control preserves prefix and yields valid Python fragment syntax but no closure/execution. Zero actor code cells; a mistaken native operator flag is corrected by append-only erratum, originals retained.1888 prior protected files unchanged, all cases paused, no pending/inference/calls queued. Next: minimal complete-cell control, not automatic fence repair or weight training. Prior navigation follows unchanged and is archived under this contact before/.
