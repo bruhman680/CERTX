@@ -1,3 +1,9 @@
+# Paired task panel: missing executable handoff
+
+17 November2026, America/Chicago. Six calls, three tasks under native/fixed coherent first-paragraph FRR. Native replies paraphrase task and end; FRR replies reach256 with open task-divergent fences. Zero actor cells/exact successes; six separate successful physical ticks. Audit passes;2691 prior files preserved. This is not a direct arithmetic/sorting knowledge test or a general FRR effect. Main1630/reference38 and all diagnostics paused, no pending/background/queued inference or live prompt change. Next: plain-answer vs code-generation native baselines, then separately world packet. Report: evaluation/minimal-task-panel-v1/REPORT.md relative to FRR root. Prior navigation follows unchanged and is archived under this contact's before/.
+
+---
+
 # Three sequential rounds: actions occurred, exact outcomes remain brittle
 
 17 November2026, America/Chicago. Nine actual calls under frozen[3,3,3], ten cells/nine physical ticks. Short199-token FRR/geology/textiles still fail print1. Native repeat reproduces known1 positive; nativeA emits11 copies; short-FRR A opens/world as a file. Exactly-onceA then yields two native alternatives, an FRR missing-file error and geology usage. All3 completed audits pass. Exact200 preflight failed before generation and is archived (zero calls); revised common-target rule selected199 before inference.2443 prior files plus earlier current-stage evidence preserved. Main1630/reference38 and all diagnostics paused, no pending/background/queued inference. No live prompt change. Next: predeclared varied task panel and separate strict/partial results; do not infer recovery from one-reply errors. Report: evaluation/short-context-three-cycle-v1/REPORT.md relative to FRR root. Prior navigation follows unchanged and is archived under this contact's before/.

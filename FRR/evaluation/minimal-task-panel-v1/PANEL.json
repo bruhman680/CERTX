@@ -1,0 +1,32 @@
+{
+  "tasks": {
+    "literal": {
+      "question": "Produce exactly one complete executable Python cell. When run, it must write only the word moss to standard output, followed by one newline.",
+      "target": "moss"
+    },
+    "arithmetic": {
+      "question": "Produce exactly one complete executable Python cell. When run, it must compute 7 + 5 and write only the decimal result to standard output, followed by one newline.",
+      "target": "12"
+    },
+    "sorting": {
+      "question": "Produce exactly one complete executable Python cell. When run, it must sort 3, 1, 2 in ascending order and write only those values separated by single spaces to standard output, followed by one newline.",
+      "target": "1 2 3"
+    }
+  },
+  "contexts": {
+    "native": "You are a helpful AI assistant named SmolLM, trained by Hugging Face",
+    "frr": "You are a helpful AI assistant named SmolLM, trained by Hugging Face\n\nAn idea can have several related representations. Changes of form, scale, order, perspective, or composition can reveal different dependencies and consequences. Similar patterns need not have the same mechanism. A relation useful in one setting may fail in another."
+  },
+  "observation_packet": "{\"clock\":{\"actor_operations\":0,\"replies\":0,\"ticks\":0},\"material\":{\"bytes\":62,\"kind\":\"regular\",\"runs\":[[1,1],[0,61]]},\"world_observation\":{\"entries\":[{\"bytes\":62,\"name\":\"field.bin\",\"type\":\"file\"}],\"path\":\"/world\",\"reply_index\":null,\"timing\":\"initial\",\"world_step\":0}}",
+  "case_order": [
+    "literal_native",
+    "literal_frr",
+    "arithmetic_native",
+    "arithmetic_frr",
+    "sorting_native",
+    "sorting_frr"
+  ],
+  "frr_scope": "verbatim first complete paragraph only; not full FRR",
+  "strict_stdout": "target plus exactly one newline",
+  "observable_only": "correct output does not prove arithmetic/sorting procedure or generalization"
+}
