@@ -1,3 +1,9 @@
+# Matched-length content: complete cells, wrong outcomes
+
+17 November 2026, America/Chicago. Three calls under one frozen budget3. Same native preface, packet and original question; FRR/geology/textiles each400 input tokens. All close and execute one cell, stop at EOS before256, and fail exact task: usage/exit0, empty stdout/exit0, usage/exit1. FRR text and generated IDs match earlier FRR-only output. Independent control failures do not establish a unique FRR failure or a length cause. Audit passes;2360 prior files preserved. Main1630/reference38 and all diagnostics paused, no pending/background/queued inference. Next: shorter matched source prefixes with explicit truncation/coherence policy frozen before calls. Report: evaluation/matched-length-framing-v1/REPORT.md relative to FRR root. Prior navigation follows unchanged and is archived under this contact's before/.
+
+---
+
 # Components and order: no task-success improvement
 
 17 November 2026, America/Chicago. Four actual calls under separate frozen [2,2] budgets. FRR-only emits a complete cell but wrong usage stdout with exit0; mechanics-only emits an unclosed comment-list fence. Reversing full-system sections and moving the question before the packet preserve original content and 1063-token input length, but neither yields a supported executable cell. Distinguish handoff, runtime status and exact task result. No prompt change promoted. Audits pass;2255 earlier files plus50 parent-contact files preserved. Main1630/reference38 and all diagnostics paused, no pending/background inference or queued calls. Next: matched-length content controls under fixed native helpful framing. Report: evaluation/component-framing-control-v1/order_controls/REPORT.md relative to FRR root. Earlier navigation follows unchanged and is archived under this contact's order_controls/before/.
