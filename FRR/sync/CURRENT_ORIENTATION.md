@@ -1,3 +1,9 @@
+# Bridge and native sanity contacts complete — prior gardens preserved
+
+17 November2026, America/Chicago. See evaluation/representation-actuator-controls-v1/REPORT.md relative to FRR root. Seven actual calls in separately frozen4+2+1 protocols. Byte-list and explicit Python-cell cues do not elicit comparison/action. Official pinned instruct weights/tokenizer identity verified. Native code starts a fence;512-token control preserves prefix and yields valid Python fragment syntax but no closure/execution. Zero actor code cells; a mistaken native operator flag is corrected by append-only erratum, originals retained.1888 prior protected files unchanged, all cases paused, no pending/inference/calls queued. Next: minimal complete-cell control, not automatic fence repair or weight training. Prior navigation follows unchanged and is archived under this contact before/.
+
+---
+
 # Greedy and mechanics-only controls complete — prior gardens preserved
 
 17 November2026, America/Chicago. See evaluation/decoder-context-controls-v1/REPORT.md relative to FRR root. Six actual greedy controls, exact previous full inputs then compact-prefix omission with truthful self-description correction. Both give clean62-byte answers; neither identifies the observed change or creates note.txt. No actor cells. Six response ticks plus2 preparation ticks succeed. Audits pass;1735 protected files unchanged, all cases paused, no pending/inference/calls queued. Next: separate sensor-interpretation and execution-format elicitation controls, not automatic weight/world redesign. Prior navigation follows unchanged and is archived under this contact before/.

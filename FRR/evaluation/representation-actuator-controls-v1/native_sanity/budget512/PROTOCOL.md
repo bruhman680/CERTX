@@ -1,0 +1,5 @@
+# Separate one-call output-ceiling check
+
+17 November2026, America/Chicago. New followon protocol after the two-call native-chat sanity baseline completed. One new call, exact same saved native CODE messages/token IDs, verified same cached fixed-weight model, native default system, greedy float32/eager/two threads. Only output ceiling changes256->512; copied generation loop differs ONLY in that constant. Assert input+512 fits8192 and shared256-token prefix matches the actual earlier raw generation before verification. No retries, source repairs, hints, note-content example, sampling or training.
+
+Use a new isolated operator verification world with the same real62-byte seed. Submit the complete raw response once to unchanged literal-cell execution; execute only complete supported cells, no invented fence/source. Keep code generation, syntactic validity, operator execution and functional artifact distinct. A longer program is not learning or autonomous action. Keep original native cases and parent four probes unchanged. One new model call and one operator code-verification physical tick maximum. No further inference queued.
