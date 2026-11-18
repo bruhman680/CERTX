@@ -1,3 +1,9 @@
+# Greedy and mechanics-only controls complete — prior gardens preserved
+
+17 November2026, America/Chicago. See evaluation/decoder-context-controls-v1/REPORT.md relative to FRR root. Six actual greedy controls, exact previous full inputs then compact-prefix omission with truthful self-description correction. Both give clean62-byte answers; neither identifies the observed change or creates note.txt. No actor cells. Six response ticks plus2 preparation ticks succeed. Audits pass;1735 protected files unchanged, all cases paused, no pending/inference/calls queued. Next: separate sensor-interpretation and execution-format elicitation controls, not automatic weight/world redesign. Prior navigation follows unchanged and is archived under this contact before/.
+
+---
+
 # Prerequisite calibration complete — all prior gardens preserved
 
 17 November2026, America/Chicago. See evaluation/prerequisite-calibration-v1/REPORT.md relative to FRR root. Six sampled one-shot calls test byte count, actual observed change and clear file-creation request. Correct supplied byte facts coexist with confused prose; neither change probe identifies the transition, neither action probe emits a cell or creates note.txt. Six model-reply ticks plus2 explicitly disclosed operator setup ticks succeed. Audit passes;1585 protected files unchanged, all cases paused, no pending/inference/calls queued. Next: exact-input greedy controls before blaming weights or changing more world/context factors. Prior navigation follows unchanged and is archived under this contact before/.
