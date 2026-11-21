@@ -1,3 +1,9 @@
+# Language garden planning and FRR research lab
+
+20 November 2026, America/Chicago. Six specialist roles in three paired departments completed source research, paired communication, root synthesis and cross-department reviews. FRR compact0.2 is working guidance for the research team, not a resident-model or weight change. Recommended first option: durable authored text record, full visible history in a short window, pause before context overflow; no automatic semantic canon, curriculum, retrieval or training. Independent-world consequences remain a live design choice. Language-to-other-systems transfer is a hypothesis requiring a specified bridge, not a universal finding. No small-model calls, new runtime or training this session.2917 prior protected files and main1630/reference38 remain unchanged/paused. Prior code-feedback proposal is parked. Start: explorations/language-garden-v1/README.md and DESIGN.md relative to FRR root. Prior navigation follows unchanged and is archived under this section's before/.
+
+---
+
 # Native plain/code baseline: partial content and a verified file effect
 
 17 November2026, America/Chicago. Six calls without packet/FRR. Plain arithmetic includes7+5=12, all3 strict answer-only checks fail. Code literal actually writes4byte moss to detached/world/test.txt rather than stdout; arithmetic asks stdin and getsEOFError; sorting fence remains open. Two actor cells/three ticks, zero exact task successes. Audit and independent file-content check pass;2823 prior files preserved. Main1630/reference38 and all diagnostics paused, no pending/background/queued inference or live prompt change. Next: bounded forked actual-error feedback/control continuation with no solution teaching. Report: evaluation/native-answer-code-baseline-v1/REPORT.md relative to FRR root. Prior navigation follows unchanged and is archived under this contact's before/.

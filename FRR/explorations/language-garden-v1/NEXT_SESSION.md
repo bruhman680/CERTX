@@ -1,0 +1,15 @@
+# Language garden continuation plan
+
+20 November 2026, America/Chicago. Completed planning/source-research lab round with six roles and paired/cross-department review. Compact FRR0.2 applied as researcher guidance, exact source hash in LAB_BRIEF.json. No hidden activation or weights change; small-model context not modified. No new language pilot, code build, inference or training in this session.
+
+Read README.md, DESIGN.md, RESEARCH_SYNTHESIS.md, CONVENING.json and CLAIMS.json. Memos preserve alternatives and source scopes; root synthesis records selected recommendations. Main garden1630/reference38 and all prior studies remain paused/preserved. Old arithmetic EOF feedback contact remains parked while user explores the language design; it was not run or silently cancelled.
+
+Current recommendation: first world is an append-only authored language/symbol record. Candidate seed: “Explore symbols and their relationships. Learn to predict and understand them as best you can.” The actual record/order/provenance is real substrate; propositions and fictional events do not automatically become canonical external truth. No semantic approver or mandatory output schema. An independent symbolic substrate is an optional distinct design if needed for independently determined predictions.
+
+Root chose FULL exact history within a short first window, with measured serialized native-template input and reserved generation capacity; pause before any overflow. Earlier recent-window/recall proposals remain later options. No summary, recall, branch engine or semantic retrieval is implicitly selected. Native instruction-model framing is declared, not a blank body. Compact/full FRR in the small model would require a separately labeled condition, not an assumed improvement.
+
+Next concrete work: define a reviewable minimal blueprint with exact turn-advance cue, stop handling, visible mechanics, fixed short observation window/output budget and pause rule. A host “Continue.” cue is an authored intervention; EOS is not evidence of chosen rest. Keep observer interpretations/grades outside inhabitant dialogue. Preserve all output including repetition/contradictions, and allow unresolved interpretations. Do not silently turn early patterns into curriculum or world redesign.
+
+Before claiming transfer, identify preserved structure and a discriminating changed-operation rival; optional contacts must retain participation/missing-data limits. Fixed-context behavior, archive use and parameter learning are different. Adapter training is a later route requiring actual optimizer steps/saved tensors plus controls; CPU feasibility unmeasured. Training-domain metadata supports English accessibility only, not language superiority or universal transfer.
+
+Live unresolved question for discussion: is a continuing inscription space sufficient initially, or must the world evolve independently of narration? Root recommends inscription first, with that limitation explicit. No compulsory answer or runtime activation follows from this note. No background work/model calls queued.
