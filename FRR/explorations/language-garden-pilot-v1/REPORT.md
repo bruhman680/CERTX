@@ -1,0 +1,13 @@
+# First language garden observation
+
+The recorder passed eight authored fixtures using the cached tokenizer. The first model reply then reached the 256-token output cap. The session paused with the returned text and token IDs saved.
+
+The opening input had 47 tokens. It used the model's native helpful-assistant frame and the exact user seed: “Explore symbols and their relationships. Learn to predict and understand them as best you can.” The explicit native system message rendered to the same token IDs as the tokenizer's automatically inserted default. There was no previous reply, observation packet or turn cue in the model's input.
+
+The model opened by offering to help the user understand symbols. It asked about their context, listed characteristics to look for and began an example passage. It associated symbols with order, context and meaning. Those were general descriptions. The returned passage ends mid-sentence and provides no specific symbolic relation to carry into a transfer test. The tutor-like framing is visible in the reply. One opening cannot tell us whether supplying material, changing the conversation, or increasing the output allowance would change that behavior.
+
+The fixture audit covers full decoded history with exact raw IDs retained separately, the four-opportunity ceiling, exclusive event publication, unresolved interruption, post-return verification failure, EOS-only output, token-cap termination, input capacity and native role marker safety. One overflow fixture initially used inconsistent mock bounds for recording and audit. Both now use the same fixture bound. Before generation we pinned model files, source and runtime versions. The session audit verifies the exact rendered input and returned output and the post-call parameter digest.
+
+The recording policy preserves returned replies even when later verification fails. A started call with no returned reply has an unknown partial trace. The first observed cap was a normal return, so its full generated prefix is available. The output completed no later turn and yielded no test of context reuse or symbol transfer.
+
+A useful follow-up is a separate opening that keeps the same seed and introduces a small piece of symbolic material with no interpretation or target answer. Compare its opening to this preserved seed-only reply. Keeping the native frame and generation settings fixed would let us ask whether material gives the model something to work with. The change would still mix the presence and content of the material with input length. The computational histories and the reviewed research proposal remain separate from this pilot.
