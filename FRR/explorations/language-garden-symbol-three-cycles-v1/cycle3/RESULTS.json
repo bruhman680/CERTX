@@ -1,0 +1,51 @@
+{
+  "calls": 4,
+  "correct": 1,
+  "valid": 2,
+  "rows": [
+    {
+      "case": "familiar_match",
+      "row": "First: ka\nMiddle: mi\nLast: ka",
+      "expected": "yes",
+      "reply": "The first and last symbols in this row are ka and mi.\n\nTo predict and understand these symbols, follow these steps:\n\n1. Read the first row:\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\nMiy\n\nKa\n\n",
+      "parsed": null,
+      "correct": false,
+      "input_tokens": 80,
+      "output_tokens": 256,
+      "stop": "token_limit"
+    },
+    {
+      "case": "familiar_near_miss",
+      "row": "First: ka\nMiddle: mi\nLast: su",
+      "expected": "no",
+      "reply": "The first and last symbols in this row are ka and mi.\n\nTo predict and understand these symbols, we can use a combination of logical reasoning and pattern recognition.\n\nFirst, let's look at the first symbol in the row: ka.\n\nThe first symbol in a row is often used to indicate a specific event, action, or situation. In this case, the first symbol in the row is ka, which means \"to be\".\n\nNext, let's look at the second symbol in the row: mi.\n\nThe second symbol in a row is often used to indicate a specific event, action, or situation. In this case, the second symbol in the row is mi, which means \"to be\".\n\nNow, let's look at the third symbol in the row: su.\n\nThe third symbol in a row is often used to indicate a specific event, action, or situation. In this case, the third symbol in the row is su, which means \"to be\".\n\nBased on these patterns, we can predict that the first symbol in the row is ka, and the second symbol is mi. The third symbol is su.\n\nSo, the first and last symbols in this row are ka and",
+      "parsed": null,
+      "correct": false,
+      "input_tokens": 80,
+      "output_tokens": 256,
+      "stop": "token_limit"
+    },
+    {
+      "case": "fresh_near_miss",
+      "row": "First: ve\nMiddle: tu\nLast: zo",
+      "expected": "no",
+      "reply": "Yes",
+      "parsed": "yes",
+      "correct": false,
+      "input_tokens": 80,
+      "output_tokens": 2,
+      "stop": "eos"
+    },
+    {
+      "case": "fresh_match",
+      "row": "First: ve\nMiddle: tu\nLast: ve",
+      "expected": "yes",
+      "reply": "Yes",
+      "parsed": "yes",
+      "correct": true,
+      "input_tokens": 80,
+      "output_tokens": 2,
+      "stop": "eos"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "question": "What is the last symbol in this row? Reply with the symbol only.",
+  "cases": {
+    "familiar_match": {
+      "row": "First: ka\nMiddle: mi\nLast: ka",
+      "expected": "ka"
+    },
+    "familiar_near_miss": {
+      "row": "First: ka\nMiddle: mi\nLast: su",
+      "expected": "su"
+    },
+    "fresh_near_miss": {
+      "row": "First: ve\nMiddle: tu\nLast: zo",
+      "expected": "zo"
+    },
+    "fresh_match": {
+      "row": "First: ve\nMiddle: tu\nLast: ve",
+      "expected": "ve"
+    }
+  },
+  "label_regex": "ka|su|zo|ve"
+}

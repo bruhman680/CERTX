@@ -1,0 +1,3 @@
+# Cycle 2. Labeled positions
+
+Cycle 1 returned zero of four exact symbols and gave identical text within each pair. This cycle retains the rows, literal question, seed, target labels and scoring. It changes the row representation to three separate lines labeled First, Middle and Last. Labels and line breaks change together. Assess the exact answer and any correct symbol inside longer text separately. Each case has one fresh greedy call with the same pinned runtime and cap. Cycle 1 results are pinned before these calls. A gain would show a response difference under this representation. It would leave open the relative contributions of position labels, layout and token count.

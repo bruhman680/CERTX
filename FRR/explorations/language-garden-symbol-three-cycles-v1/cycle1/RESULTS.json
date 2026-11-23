@@ -1,0 +1,51 @@
+{
+  "calls": 4,
+  "correct": 0,
+  "valid": 0,
+  "rows": [
+    {
+      "case": "familiar_match",
+      "row": "ka mi ka",
+      "expected": "ka",
+      "reply": "The last symbol in this row is the \"K\" symbol.",
+      "parsed": null,
+      "correct": false,
+      "input_tokens": 70,
+      "output_tokens": 14,
+      "stop": "eos"
+    },
+    {
+      "case": "familiar_near_miss",
+      "row": "ka mi su",
+      "expected": "su",
+      "reply": "The last symbol in this row is the \"K\" symbol.",
+      "parsed": null,
+      "correct": false,
+      "input_tokens": 70,
+      "output_tokens": 14,
+      "stop": "eos"
+    },
+    {
+      "case": "fresh_near_miss",
+      "row": "ve tu zo",
+      "expected": "zo",
+      "reply": "The last symbol in this row is **** (the symbol for ****).",
+      "parsed": null,
+      "correct": false,
+      "input_tokens": 70,
+      "output_tokens": 17,
+      "stop": "eos"
+    },
+    {
+      "case": "fresh_match",
+      "row": "ve tu ve",
+      "expected": "ve",
+      "reply": "The last symbol in this row is **** (the symbol for ****).",
+      "parsed": null,
+      "correct": false,
+      "input_tokens": 70,
+      "output_tokens": 17,
+      "stop": "eos"
+    }
+  ]
+}

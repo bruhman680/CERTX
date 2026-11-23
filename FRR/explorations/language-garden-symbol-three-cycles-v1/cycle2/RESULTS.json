@@ -1,0 +1,51 @@
+{
+  "calls": 4,
+  "correct": 0,
+  "valid": 0,
+  "rows": [
+    {
+      "case": "familiar_match",
+      "row": "First: ka\nMiddle: mi\nLast: ka",
+      "expected": "ka",
+      "reply": "The last symbol in this row is ka.",
+      "parsed": null,
+      "correct": false,
+      "input_tokens": 78,
+      "output_tokens": 10,
+      "stop": "eos"
+    },
+    {
+      "case": "familiar_near_miss",
+      "row": "First: ka\nMiddle: mi\nLast: su",
+      "expected": "su",
+      "reply": "The last symbol in this row is \"su\".",
+      "parsed": null,
+      "correct": false,
+      "input_tokens": 78,
+      "output_tokens": 11,
+      "stop": "eos"
+    },
+    {
+      "case": "fresh_near_miss",
+      "row": "First: ve\nMiddle: tu\nLast: zo",
+      "expected": "zo",
+      "reply": "The last symbol in this row is \"zo\".",
+      "parsed": null,
+      "correct": false,
+      "input_tokens": 78,
+      "output_tokens": 11,
+      "stop": "eos"
+    },
+    {
+      "case": "fresh_match",
+      "row": "First: ve\nMiddle: tu\nLast: ve",
+      "expected": "ve",
+      "reply": "The last symbol in this row is \"ve\".",
+      "parsed": null,
+      "correct": false,
+      "input_tokens": 78,
+      "output_tokens": 11,
+      "stop": "eos"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Cycle 1. Last-symbol readout
+
+Ask for the last symbol in each of the four previous endpoint rows. Preserve the original seed, native framing, weights and greedy output cap of 256. Each case is fresh and receives one call. Freeze exact prompts and targets before generation. Strict scoring uses case folding, outer whitespace removal and one optional final period, then exact equality. Score longer or partial answers separately in the report. The four targets are distinct, so a constant label scores at most one. This test establishes whether the final symbol can be reported under this question. It supplies no evidence that the earlier equality response used that position. Choose the next cycle after the results.

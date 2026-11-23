@@ -1,0 +1,22 @@
+{
+  "question": "Do the first and last symbols in this row match? Reply with Yes or No.",
+  "cases": {
+    "familiar_match": {
+      "row": "First: ka\nMiddle: mi\nLast: ka",
+      "expected": "yes"
+    },
+    "familiar_near_miss": {
+      "row": "First: ka\nMiddle: mi\nLast: su",
+      "expected": "no"
+    },
+    "fresh_near_miss": {
+      "row": "First: ve\nMiddle: tu\nLast: zo",
+      "expected": "no"
+    },
+    "fresh_match": {
+      "row": "First: ve\nMiddle: tu\nLast: ve",
+      "expected": "yes"
+    }
+  },
+  "label_regex": "yes|no"
+}
