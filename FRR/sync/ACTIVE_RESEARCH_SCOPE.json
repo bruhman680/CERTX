@@ -2,10 +2,10 @@
   "date": "2026-11-23 America/Chicago",
   "user_clarification": "Pretrained model + FRR world",
   "primary_goal": "Plan a persistent language/symbol exploration space alongside the preserved pretrained-model computational garden",
-  "status": "ten repeat-readout cycles complete; reserved word panel scored 5/12 versus 8/12 fixed-position controls",
-  "handoff": "explorations/language-garden-repeat-ten-cycles-v1/REPORT.md",
+  "status": "word-versus-symbol replay complete; frozen score gain was sensitive to incidental mention of row labels",
+  "handoff": "explorations/language-garden-word-wording-v1/REPORT.md",
   "design_note": "evaluation/chosen-persistence-prototype-v1/REPORT.md",
-  "next_direction": "matched word-versus-symbol question wording on balanced repeat rows",
+  "next_direction": "cross question noun and response instruction with a frozen direct-answer scorer",
   "parked": [
     "old retrieval benchmarks",
     "receipt-label studies",
@@ -20,7 +20,7 @@
   "candidate_turn": 38,
   "activation_scope": "research guidance, source inspection and design only; no resident-model or old-world change",
   "candidate_started": true,
-  "latest_report": "explorations/language-garden-repeat-ten-cycles-v1/REPORT.md",
+  "latest_report": "explorations/language-garden-word-wording-v1/REPORT.md",
   "wind_down_note": "evaluation/chosen-persistence-continuation-v2/WIND_DOWN.md",
   "alternate_candidates": [
     {
@@ -278,6 +278,20 @@
     "reserved_named_repeat_correct": 5,
     "reserved_rows": 12,
     "each_fixed_position_control_correct": 8,
+    "training_steps": 0,
+    "paused": true
+  },
+  "language_garden_word_wording": {
+    "path": "explorations/language-garden-word-wording-v1",
+    "fresh_generations": 12,
+    "frozen_correct": {
+      "symbol": 5,
+      "word": 6
+    },
+    "direct_content_correct": {
+      "symbol": 5,
+      "word": 2
+    },
     "training_steps": 0,
     "paused": true
   }

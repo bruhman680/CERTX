@@ -1,0 +1,183 @@
+{
+  "method": "Post-run direct-answer review. Count a reply only when it identifies an actual row item as the repeated item. Naming a word inside a claim about that word's symbol, including an initial, is insufficient.",
+  "direct_correct": {
+    "symbol": 5,
+    "word": 2
+  },
+  "word_reply_categories": {
+    "direct repetition claim": 3,
+    "defines an initial instead of naming the repeated word": 3,
+    "claims the repetition of an absent letter": 3,
+    "claims repetition of an unspecified symbol for a word": 3
+  },
+  "review": [
+    {
+      "key": "reserve-1-aab",
+      "values": [
+        "cloud",
+        "cloud",
+        "rock"
+      ],
+      "gold": "cloud",
+      "symbol_direct": "cloud",
+      "word_direct": "rock",
+      "word_review": "direct repetition claim",
+      "symbol_evidence": "the symbol that appears twice in this row is the \"cloud.\"",
+      "word_evidence": "the word that appears twice in this row is rock."
+    },
+    {
+      "key": "reserve-1-aba",
+      "values": [
+        "cloud",
+        "rock",
+        "cloud"
+      ],
+      "gold": "cloud",
+      "symbol_direct": "cloud",
+      "word_direct": "cloud",
+      "word_review": "direct repetition claim",
+      "symbol_evidence": "the symbol that appears twice in this row is the \"cloud.\"",
+      "word_evidence": "the word that appears twice in this row is \"cloud.\""
+    },
+    {
+      "key": "reserve-1-abb",
+      "values": [
+        "cloud",
+        "rock",
+        "rock"
+      ],
+      "gold": "rock",
+      "symbol_direct": null,
+      "word_direct": "rock",
+      "word_review": "direct repetition claim",
+      "symbol_evidence": "the symbol that appears twice in this row is the cross.",
+      "word_evidence": "the word that appears twice in this row is rock."
+    },
+    {
+      "key": "reserve-2-aab",
+      "values": [
+        "duck",
+        "duck",
+        "goat"
+      ],
+      "gold": "duck",
+      "symbol_direct": "duck",
+      "word_direct": null,
+      "word_review": "defines an initial instead of naming the repeated word",
+      "symbol_evidence": "the symbol that appears twice in this row is the \"duck.\"",
+      "word_evidence": "the symbol for \"duck\" is \"d\"."
+    },
+    {
+      "key": "reserve-2-aba",
+      "values": [
+        "duck",
+        "goat",
+        "duck"
+      ],
+      "gold": "duck",
+      "symbol_direct": "duck",
+      "word_direct": null,
+      "word_review": "defines an initial instead of naming the repeated word",
+      "symbol_evidence": "the symbol that appears twice in this row is the \"duck.\"",
+      "word_evidence": "the symbol for \"duck\" is \"d\"."
+    },
+    {
+      "key": "reserve-2-abb",
+      "values": [
+        "duck",
+        "goat",
+        "goat"
+      ],
+      "gold": "goat",
+      "symbol_direct": "duck",
+      "word_direct": null,
+      "word_review": "defines an initial instead of naming the repeated word",
+      "symbol_evidence": "the symbol that appears twice in this row is the \"duck.\"",
+      "word_evidence": "the symbol for \"duck\" is \"d\"."
+    },
+    {
+      "key": "reserve-3-aab",
+      "values": [
+        "thread",
+        "thread",
+        "paper"
+      ],
+      "gold": "thread",
+      "symbol_direct": null,
+      "word_direct": null,
+      "word_review": "claims the repetition of an absent letter",
+      "symbol_evidence": "the symbol that appears twice in this row is the cross.",
+      "word_evidence": "the symbol that appears twice in this row is \"p\"."
+    },
+    {
+      "key": "reserve-3-aba",
+      "values": [
+        "thread",
+        "paper",
+        "thread"
+      ],
+      "gold": "thread",
+      "symbol_direct": null,
+      "word_direct": null,
+      "word_review": "claims the repetition of an absent letter",
+      "symbol_evidence": "the symbol that appears twice in this row is the cross.",
+      "word_evidence": "the symbol that appears twice in this row is \"p\"."
+    },
+    {
+      "key": "reserve-3-abb",
+      "values": [
+        "thread",
+        "paper",
+        "paper"
+      ],
+      "gold": "paper",
+      "symbol_direct": null,
+      "word_direct": null,
+      "word_review": "claims the repetition of an absent letter",
+      "symbol_evidence": "the symbol that appears twice in this row is the cross.",
+      "word_evidence": "the symbol that appears twice in this row is \"p\"."
+    },
+    {
+      "key": "reserve-4-aab",
+      "values": [
+        "lake",
+        "lake",
+        "grove"
+      ],
+      "gold": "lake",
+      "symbol_direct": "grove",
+      "word_direct": null,
+      "word_review": "claims repetition of an unspecified symbol for a word",
+      "symbol_evidence": "the symbol that appears twice in this row is the \"grove.\"",
+      "word_evidence": "the symbol for the word \"lake\" appears twice in this row."
+    },
+    {
+      "key": "reserve-4-aba",
+      "values": [
+        "lake",
+        "grove",
+        "lake"
+      ],
+      "gold": "lake",
+      "symbol_direct": "grove",
+      "word_direct": null,
+      "word_review": "claims repetition of an unspecified symbol for a word",
+      "symbol_evidence": "the symbol that appears twice in this row is the \"grove\" symbol.",
+      "word_evidence": "the symbol for the word \"lake\" appears twice in this row."
+    },
+    {
+      "key": "reserve-4-abb",
+      "values": [
+        "lake",
+        "grove",
+        "grove"
+      ],
+      "gold": "grove",
+      "symbol_direct": "grove",
+      "word_direct": null,
+      "word_review": "claims repetition of an unspecified symbol for a word",
+      "symbol_evidence": "the symbol that appears twice in this row is the \"grove.\"",
+      "word_evidence": "the symbol for the word \"lake\" appears twice in this row."
+    }
+  ]
+}
