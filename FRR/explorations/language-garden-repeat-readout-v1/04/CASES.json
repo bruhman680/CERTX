@@ -1,0 +1,174 @@
+{
+  "goal": "Can a direct symbol answer recover an observable readout and distinguish it from repetition?",
+  "comparison": "The same labeled row is reused for both questions. AAB breaks the heuristic of always returning Last. ABA and ABB connect to the original position probe.",
+  "cases": [
+    {
+      "id": "s1-abb-repeated_symbol",
+      "item": "s1-abb",
+      "relation": "ABB",
+      "prompt": "repeated_symbol",
+      "gold": "zav",
+      "values": [
+        "mip",
+        "zav",
+        "zav"
+      ],
+      "seed_style": "garden",
+      "text": "First: mip\nMiddle: zav\nLast: zav\n\nWhich symbol appears twice in this row? Reply with the symbol only."
+    },
+    {
+      "id": "s2-abb-repeated_symbol",
+      "item": "s2-abb",
+      "relation": "ABB",
+      "prompt": "repeated_symbol",
+      "gold": "ful",
+      "values": [
+        "ket",
+        "ful",
+        "ful"
+      ],
+      "seed_style": "garden",
+      "text": "First: ket\nMiddle: ful\nLast: ful\n\nWhich symbol appears twice in this row? Reply with the symbol only."
+    },
+    {
+      "id": "s1-abb-visible_last",
+      "item": "s1-abb",
+      "relation": "ABB",
+      "prompt": "visible_last",
+      "gold": "zav",
+      "values": [
+        "mip",
+        "zav",
+        "zav"
+      ],
+      "seed_style": "garden",
+      "text": "First: mip\nMiddle: zav\nLast: zav\n\nWhat is the last symbol in this row? Reply with the symbol only."
+    },
+    {
+      "id": "s2-aba-repeated_symbol",
+      "item": "s2-aba",
+      "relation": "ABA",
+      "prompt": "repeated_symbol",
+      "gold": "ket",
+      "values": [
+        "ket",
+        "ful",
+        "ket"
+      ],
+      "seed_style": "garden",
+      "text": "First: ket\nMiddle: ful\nLast: ket\n\nWhich symbol appears twice in this row? Reply with the symbol only."
+    },
+    {
+      "id": "s2-aba-visible_last",
+      "item": "s2-aba",
+      "relation": "ABA",
+      "prompt": "visible_last",
+      "gold": "ket",
+      "values": [
+        "ket",
+        "ful",
+        "ket"
+      ],
+      "seed_style": "garden",
+      "text": "First: ket\nMiddle: ful\nLast: ket\n\nWhat is the last symbol in this row? Reply with the symbol only."
+    },
+    {
+      "id": "s1-aba-repeated_symbol",
+      "item": "s1-aba",
+      "relation": "ABA",
+      "prompt": "repeated_symbol",
+      "gold": "mip",
+      "values": [
+        "mip",
+        "zav",
+        "mip"
+      ],
+      "seed_style": "garden",
+      "text": "First: mip\nMiddle: zav\nLast: mip\n\nWhich symbol appears twice in this row? Reply with the symbol only."
+    },
+    {
+      "id": "s1-aab-repeated_symbol",
+      "item": "s1-aab",
+      "relation": "AAB",
+      "prompt": "repeated_symbol",
+      "gold": "mip",
+      "values": [
+        "mip",
+        "mip",
+        "zav"
+      ],
+      "seed_style": "garden",
+      "text": "First: mip\nMiddle: mip\nLast: zav\n\nWhich symbol appears twice in this row? Reply with the symbol only."
+    },
+    {
+      "id": "s1-aab-visible_last",
+      "item": "s1-aab",
+      "relation": "AAB",
+      "prompt": "visible_last",
+      "gold": "zav",
+      "values": [
+        "mip",
+        "mip",
+        "zav"
+      ],
+      "seed_style": "garden",
+      "text": "First: mip\nMiddle: mip\nLast: zav\n\nWhat is the last symbol in this row? Reply with the symbol only."
+    },
+    {
+      "id": "s2-aab-repeated_symbol",
+      "item": "s2-aab",
+      "relation": "AAB",
+      "prompt": "repeated_symbol",
+      "gold": "ket",
+      "values": [
+        "ket",
+        "ket",
+        "ful"
+      ],
+      "seed_style": "garden",
+      "text": "First: ket\nMiddle: ket\nLast: ful\n\nWhich symbol appears twice in this row? Reply with the symbol only."
+    },
+    {
+      "id": "s1-aba-visible_last",
+      "item": "s1-aba",
+      "relation": "ABA",
+      "prompt": "visible_last",
+      "gold": "mip",
+      "values": [
+        "mip",
+        "zav",
+        "mip"
+      ],
+      "seed_style": "garden",
+      "text": "First: mip\nMiddle: zav\nLast: mip\n\nWhat is the last symbol in this row? Reply with the symbol only."
+    },
+    {
+      "id": "s2-abb-visible_last",
+      "item": "s2-abb",
+      "relation": "ABB",
+      "prompt": "visible_last",
+      "gold": "ful",
+      "values": [
+        "ket",
+        "ful",
+        "ful"
+      ],
+      "seed_style": "garden",
+      "text": "First: ket\nMiddle: ful\nLast: ful\n\nWhat is the last symbol in this row? Reply with the symbol only."
+    },
+    {
+      "id": "s2-aab-visible_last",
+      "item": "s2-aab",
+      "relation": "AAB",
+      "prompt": "visible_last",
+      "gold": "ful",
+      "values": [
+        "ket",
+        "ket",
+        "ful"
+      ],
+      "seed_style": "garden",
+      "text": "First: ket\nMiddle: ket\nLast: ful\n\nWhat is the last symbol in this row? Reply with the symbol only."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "goal": "Can the menu channel copy an explicitly supplied answer into A/B without solving a relation?",
+  "comparison": "Use the original positional answers and a concrete-symbol control. Each value is supplied in the Value field and appears as both choices across its two prompts.",
+  "cases": [
+    {
+      "id": "positions-2-forward",
+      "item": "positions-2",
+      "order": "forward",
+      "correct_option": "Second and third",
+      "choices": {
+        "A": "First and third",
+        "B": "Second and third"
+      },
+      "gold": "B",
+      "text": "Value: Second and third\n\nWhich choice exactly matches the Value field?\nA. First and third\nB. Second and third\n\nReply with A or B only.",
+      "seed_style": "garden"
+    },
+    {
+      "id": "symbols-1-reverse",
+      "item": "symbols-1",
+      "order": "reverse",
+      "correct_option": "mip",
+      "choices": {
+        "A": "zav",
+        "B": "mip"
+      },
+      "gold": "B",
+      "text": "Value: mip\n\nWhich choice exactly matches the Value field?\nA. zav\nB. mip\n\nReply with A or B only.",
+      "seed_style": "garden"
+    },
+    {
+      "id": "positions-2-reverse",
+      "item": "positions-2",
+      "order": "reverse",
+      "correct_option": "Second and third",
+      "choices": {
+        "A": "Second and third",
+        "B": "First and third"
+      },
+      "gold": "A",
+      "text": "Value: Second and third\n\nWhich choice exactly matches the Value field?\nA. Second and third\nB. First and third\n\nReply with A or B only.",
+      "seed_style": "garden"
+    },
+    {
+      "id": "positions-1-forward",
+      "item": "positions-1",
+      "order": "forward",
+      "correct_option": "First and third",
+      "choices": {
+        "A": "First and third",
+        "B": "Second and third"
+      },
+      "gold": "A",
+      "text": "Value: First and third\n\nWhich choice exactly matches the Value field?\nA. First and third\nB. Second and third\n\nReply with A or B only.",
+      "seed_style": "garden"
+    },
+    {
+      "id": "symbols-2-forward",
+      "item": "symbols-2",
+      "order": "forward",
+      "correct_option": "zav",
+      "choices": {
+        "A": "mip",
+        "B": "zav"
+      },
+      "gold": "B",
+      "text": "Value: zav\n\nWhich choice exactly matches the Value field?\nA. mip\nB. zav\n\nReply with A or B only.",
+      "seed_style": "garden"
+    },
+    {
+      "id": "symbols-2-reverse",
+      "item": "symbols-2",
+      "order": "reverse",
+      "correct_option": "zav",
+      "choices": {
+        "A": "zav",
+        "B": "mip"
+      },
+      "gold": "A",
+      "text": "Value: zav\n\nWhich choice exactly matches the Value field?\nA. zav\nB. mip\n\nReply with A or B only.",
+      "seed_style": "garden"
+    },
+    {
+      "id": "symbols-1-forward",
+      "item": "symbols-1",
+      "order": "forward",
+      "correct_option": "mip",
+      "choices": {
+        "A": "mip",
+        "B": "zav"
+      },
+      "gold": "A",
+      "text": "Value: mip\n\nWhich choice exactly matches the Value field?\nA. mip\nB. zav\n\nReply with A or B only.",
+      "seed_style": "garden"
+    },
+    {
+      "id": "positions-1-reverse",
+      "item": "positions-1",
+      "order": "reverse",
+      "correct_option": "First and third",
+      "choices": {
+        "A": "Second and third",
+        "B": "First and third"
+      },
+      "gold": "B",
+      "text": "Value: First and third\n\nWhich choice exactly matches the Value field?\nA. Second and third\nB. First and third\n\nReply with A or B only.",
+      "seed_style": "garden"
+    }
+  ]
+}
