@@ -1,0 +1,281 @@
+{
+  "question": "Test the selected direct-readout setup on a reserved panel where First, Middle and Last each fail on four rows.",
+  "sha256": {
+    "language-garden-repeat-ten-cycles-v1/design.py": "314e2cd0cf7e651a91bb05cc2bcd5104d888cef4996cb342e0920fc3f1a9bdb1",
+    "language-garden-repeat-ten-cycles-v1/run_cycles.py": "cbd0d9a23f39315f1c1951d2b354a0bffc00ba40f24dc01ece2386d8ee96d7ee",
+    "language-garden-repeat-ten-cycles-v1/PROTOCOL.md": "f1e27b4135545e3052acb30d0098d77c890448235a2a2dbbba08baf9aacda60a",
+    "language-garden-invariance-seed-v1/run_study.py": "c73bc6aab96be62b0995dc0bb34902cf65c15a5d8a98e4e98030468b8135ba4f",
+    "language-garden-invariance-seed-v1/score.py": "4e5c2199bd74c94c0f9615d26e57afddc9d1ede89d2978574ffb334e803c5fc6",
+    "language-garden-invariance-seed-v1/fixtures.py": "3d227a134643467379e24591ee3b10065dd0d5804b608dca8bc0bfb8acc5354c",
+    "language-garden-pilot-v1/CONTRACT.json": "d526984fe11067fb4d106e0a25396a343216d07d428d9dc5bfa150493eefbb24",
+    "language-garden-repeat-ten-cycles-v1/09/RESULTS.json": "76aba31da534ff45e1f203a61779e66dc6f80aa9b6a684248bbbf6ee589250fd"
+  },
+  "input_lengths": {
+    "reserve-4-aab-repeat-garden-fields": 78,
+    "reserve-4-aba-repeat-garden-fields": 78,
+    "reserve-2-aab-repeat-garden-fields": 77,
+    "reserve-2-aba-repeat-garden-fields": 77,
+    "reserve-1-aba-repeat-garden-fields": 77,
+    "reserve-4-abb-repeat-garden-fields": 79,
+    "reserve-3-aba-repeat-garden-fields": 77,
+    "reserve-1-abb-repeat-garden-fields": 77,
+    "reserve-2-abb-repeat-garden-fields": 77,
+    "reserve-3-abb-repeat-garden-fields": 77,
+    "reserve-1-aab-repeat-garden-fields": 77,
+    "reserve-3-aab-repeat-garden-fields": 77
+  },
+  "cases": [
+    {
+      "key": "reserve-4-aab",
+      "values": [
+        "lake",
+        "lake",
+        "grove"
+      ],
+      "shape": "AAB",
+      "id": "reserve-4-aab-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "lake",
+      "options": [
+        "grove",
+        "lake"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: lake\nMiddle: lake\nLast: grove\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "reserve-4-aba",
+      "values": [
+        "lake",
+        "grove",
+        "lake"
+      ],
+      "shape": "ABA",
+      "id": "reserve-4-aba-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "lake",
+      "options": [
+        "grove",
+        "lake"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: lake\nMiddle: grove\nLast: lake\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "reserve-2-aab",
+      "values": [
+        "duck",
+        "duck",
+        "goat"
+      ],
+      "shape": "AAB",
+      "id": "reserve-2-aab-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "duck",
+      "options": [
+        "duck",
+        "goat"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: duck\nMiddle: duck\nLast: goat\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "reserve-2-aba",
+      "values": [
+        "duck",
+        "goat",
+        "duck"
+      ],
+      "shape": "ABA",
+      "id": "reserve-2-aba-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "duck",
+      "options": [
+        "duck",
+        "goat"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: duck\nMiddle: goat\nLast: duck\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "reserve-1-aba",
+      "values": [
+        "cloud",
+        "rock",
+        "cloud"
+      ],
+      "shape": "ABA",
+      "id": "reserve-1-aba-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "cloud",
+      "options": [
+        "cloud",
+        "rock"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: cloud\nMiddle: rock\nLast: cloud\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "reserve-4-abb",
+      "values": [
+        "lake",
+        "grove",
+        "grove"
+      ],
+      "shape": "ABB",
+      "id": "reserve-4-abb-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "grove",
+      "options": [
+        "grove",
+        "lake"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: lake\nMiddle: grove\nLast: grove\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "reserve-3-aba",
+      "values": [
+        "thread",
+        "paper",
+        "thread"
+      ],
+      "shape": "ABA",
+      "id": "reserve-3-aba-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "thread",
+      "options": [
+        "paper",
+        "thread"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: thread\nMiddle: paper\nLast: thread\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "reserve-1-abb",
+      "values": [
+        "cloud",
+        "rock",
+        "rock"
+      ],
+      "shape": "ABB",
+      "id": "reserve-1-abb-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "rock",
+      "options": [
+        "cloud",
+        "rock"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: cloud\nMiddle: rock\nLast: rock\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "reserve-2-abb",
+      "values": [
+        "duck",
+        "goat",
+        "goat"
+      ],
+      "shape": "ABB",
+      "id": "reserve-2-abb-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "goat",
+      "options": [
+        "duck",
+        "goat"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: duck\nMiddle: goat\nLast: goat\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "reserve-3-abb",
+      "values": [
+        "thread",
+        "paper",
+        "paper"
+      ],
+      "shape": "ABB",
+      "id": "reserve-3-abb-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "paper",
+      "options": [
+        "paper",
+        "thread"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: thread\nMiddle: paper\nLast: paper\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "reserve-1-aab",
+      "values": [
+        "cloud",
+        "cloud",
+        "rock"
+      ],
+      "shape": "AAB",
+      "id": "reserve-1-aab-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "cloud",
+      "options": [
+        "cloud",
+        "rock"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: cloud\nMiddle: cloud\nLast: rock\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "reserve-3-aab",
+      "values": [
+        "thread",
+        "thread",
+        "paper"
+      ],
+      "shape": "AAB",
+      "id": "reserve-3-aab-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "thread",
+      "options": [
+        "paper",
+        "thread"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: thread\nMiddle: thread\nLast: paper\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    }
+  ]
+}

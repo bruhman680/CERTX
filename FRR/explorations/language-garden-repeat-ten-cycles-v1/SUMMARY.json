@@ -1,0 +1,315 @@
+{
+  "fresh_calls": 64,
+  "distinct_rendered_user_inputs": 57,
+  "cycles": [
+    {
+      "cycle": 1,
+      "goal": "Repeat versus Last on four fresh rows where they differ.",
+      "tasks": {
+        "last": {
+          "n": 4,
+          "content": 3,
+          "exact": 0,
+          "invalid": 0
+        },
+        "repeat": {
+          "n": 4,
+          "content": 2,
+          "exact": 0,
+          "invalid": 1
+        }
+      },
+      "stops": {
+        "eos": 8
+      },
+      "distinct_chat_inputs": 8,
+      "repeat_baselines": {
+        "first": 4,
+        "middle": 4,
+        "last": 0
+      }
+    },
+    {
+      "cycle": 2,
+      "goal": "Replace opaque labels with familiar digits on the same AAB structure.",
+      "tasks": {
+        "repeat": {
+          "n": 4,
+          "content": 0,
+          "exact": 0,
+          "invalid": 4
+        }
+      },
+      "stops": {
+        "eos": 4
+      },
+      "distinct_chat_inputs": 4,
+      "repeat_baselines": {
+        "first": 4,
+        "middle": 4,
+        "last": 0
+      }
+    },
+    {
+      "cycle": 3,
+      "goal": "Replay cycle 2 exactly except for removing the broad garden preface.",
+      "tasks": {
+        "repeat": {
+          "n": 4,
+          "content": 0,
+          "exact": 0,
+          "invalid": 4
+        }
+      },
+      "stops": {
+        "eos": 4
+      },
+      "distinct_chat_inputs": 4,
+      "repeat_baselines": {
+        "first": 4,
+        "middle": 4,
+        "last": 0
+      }
+    },
+    {
+      "cycle": 4,
+      "goal": "Cross all three repetition positions. Include every shape twice.",
+      "tasks": {
+        "repeat": {
+          "n": 6,
+          "content": 1,
+          "exact": 0,
+          "invalid": 2
+        }
+      },
+      "stops": {
+        "eos": 6
+      },
+      "distinct_chat_inputs": 4,
+      "repeat_baselines": {
+        "first": 4,
+        "middle": 4,
+        "last": 4
+      }
+    },
+    {
+      "cycle": 5,
+      "goal": "Ask for the count of one named symbol, testing both candidates on each selected row.",
+      "tasks": {
+        "count": {
+          "n": 6,
+          "content": 1,
+          "exact": 0,
+          "invalid": 3
+        }
+      },
+      "stops": {
+        "token_limit": 3,
+        "eos": 3
+      },
+      "distinct_chat_inputs": 6,
+      "repeat_baselines": {
+        "first": 0,
+        "middle": 0,
+        "last": 0
+      }
+    },
+    {
+      "cycle": 6,
+      "goal": "Flatten cycle 5 from labeled fields to a plain row, keeping every question fixed.",
+      "tasks": {
+        "count": {
+          "n": 6,
+          "content": 0,
+          "exact": 0,
+          "invalid": 6
+        }
+      },
+      "stops": {
+        "eos": 2,
+        "token_limit": 4
+      },
+      "distinct_chat_inputs": 6,
+      "repeat_baselines": {
+        "first": 0,
+        "middle": 0,
+        "last": 0
+      }
+    },
+    {
+      "cycle": 7,
+      "goal": "Use everyday words instead of the earlier vocabulary with each repetition shape preserved.",
+      "tasks": {
+        "repeat": {
+          "n": 6,
+          "content": 4,
+          "exact": 0,
+          "invalid": 2
+        }
+      },
+      "stops": {
+        "eos": 6
+      },
+      "distinct_chat_inputs": 4,
+      "repeat_baselines": {
+        "first": 4,
+        "middle": 4,
+        "last": 4
+      }
+    },
+    {
+      "cycle": 8,
+      "goal": "Supply the relevant pair of fields and test whether the model can read the reported match.",
+      "tasks": {
+        "hint": {
+          "n": 6,
+          "content": 1,
+          "exact": 0,
+          "invalid": 2
+        }
+      },
+      "stops": {
+        "eos": 6
+      },
+      "distinct_chat_inputs": 4,
+      "repeat_baselines": {
+        "first": 0,
+        "middle": 0,
+        "last": 0
+      }
+    },
+    {
+      "cycle": 9,
+      "goal": "Perturb the last cell. Contrast an edit that keeps the answer with edits that switch it.",
+      "tasks": {
+        "repeat": {
+          "n": 6,
+          "content": 0,
+          "exact": 0,
+          "invalid": 6
+        }
+      },
+      "stops": {
+        "eos": 6
+      },
+      "distinct_chat_inputs": 6,
+      "repeat_baselines": {
+        "first": 4,
+        "middle": 4,
+        "last": 4
+      }
+    },
+    {
+      "cycle": 10,
+      "goal": "Test the selected direct-readout setup on a reserved panel where First, Middle and Last each fail on four rows.",
+      "tasks": {
+        "repeat": {
+          "n": 12,
+          "content": 5,
+          "exact": 0,
+          "invalid": 4
+        }
+      },
+      "stops": {
+        "eos": 12
+      },
+      "distinct_chat_inputs": 12,
+      "repeat_baselines": {
+        "first": 8,
+        "middle": 8,
+        "last": 8
+      }
+    }
+  ],
+  "paired": {
+    "last_to_repeat": {
+      "pairs": 4,
+      "same_reply_label": 2,
+      "gains": [
+        "opaque-3-aab"
+      ],
+      "losses": [
+        "opaque-2-aab",
+        "opaque-1-aab"
+      ],
+      "both_correct": [
+        "opaque-4-aab"
+      ]
+    },
+    "garden_to_native": {
+      "pairs": 4,
+      "same_reply_label": 4,
+      "gains": [],
+      "losses": [],
+      "both_correct": []
+    },
+    "labeled_to_flat": {
+      "pairs": 6,
+      "same_reply_label": 3,
+      "gains": [],
+      "losses": [
+        "opaque-3-abb-count-garden-fields-taz"
+      ],
+      "both_correct": []
+    }
+  },
+  "both_counts_correct": 0,
+  "count_pairs": 3,
+  "last_edits": [
+    {
+      "should_change": false,
+      "gold": [
+        "7",
+        "7"
+      ],
+      "picked": [
+        null,
+        null
+      ],
+      "both_correct": false
+    },
+    {
+      "should_change": true,
+      "gold": [
+        "7",
+        "9"
+      ],
+      "picked": [
+        null,
+        null
+      ],
+      "both_correct": false
+    },
+    {
+      "should_change": true,
+      "gold": [
+        "9",
+        "7"
+      ],
+      "picked": [
+        null,
+        null
+      ],
+      "both_correct": false
+    }
+  ],
+  "final_by_shape": {
+    "AAB": {
+      "correct": 2,
+      "total": 4
+    },
+    "ABA": {
+      "correct": 2,
+      "total": 4
+    },
+    "ABB": {
+      "correct": 1,
+      "total": 4
+    }
+  },
+  "final_copy_baselines": {
+    "first": 8,
+    "middle": 8,
+    "last": 8
+  }
+}

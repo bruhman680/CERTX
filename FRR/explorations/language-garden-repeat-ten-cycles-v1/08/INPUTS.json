@@ -1,0 +1,179 @@
+{
+  "question": "Supply the relevant pair of fields and test whether the model can read the reported match.",
+  "sha256": {
+    "language-garden-repeat-ten-cycles-v1/design.py": "314e2cd0cf7e651a91bb05cc2bcd5104d888cef4996cb342e0920fc3f1a9bdb1",
+    "language-garden-repeat-ten-cycles-v1/run_cycles.py": "cbd0d9a23f39315f1c1951d2b354a0bffc00ba40f24dc01ece2386d8ee96d7ee",
+    "language-garden-repeat-ten-cycles-v1/PROTOCOL.md": "f1e27b4135545e3052acb30d0098d77c890448235a2a2dbbba08baf9aacda60a",
+    "language-garden-invariance-seed-v1/run_study.py": "c73bc6aab96be62b0995dc0bb34902cf65c15a5d8a98e4e98030468b8135ba4f",
+    "language-garden-invariance-seed-v1/score.py": "4e5c2199bd74c94c0f9615d26e57afddc9d1ede89d2978574ffb334e803c5fc6",
+    "language-garden-invariance-seed-v1/fixtures.py": "3d227a134643467379e24591ee3b10065dd0d5804b608dca8bc0bfb8acc5354c",
+    "language-garden-pilot-v1/CONTRACT.json": "d526984fe11067fb4d106e0a25396a343216d07d428d9dc5bfa150493eefbb24",
+    "language-garden-repeat-ten-cycles-v1/07/RESULTS.json": "8307e6144c3a8bb7981d85db9a12ca7fe3bfd0fd61d6c2ff1cc657931a777dbd"
+  },
+  "input_lengths": {
+    "opaque-2-aba-hint-garden-fields": 82,
+    "opaque-3-abb-hint-garden-fields": 82,
+    "opaque-5-aab-hint-garden-fields": 84,
+    "opaque-1-aab-hint-garden-fields": 84,
+    "opaque-6-aba-hint-garden-fields": 82,
+    "opaque-4-abb-hint-garden-fields": 84
+  },
+  "cases": [
+    {
+      "key": "opaque-2-aba",
+      "values": [
+        "rud",
+        "bem",
+        "rud"
+      ],
+      "shape": "ABA",
+      "id": "opaque-2-aba-hint-garden-fields",
+      "task": "hint",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "rud",
+      "options": [
+        "bem",
+        "rud"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: rud\nMiddle: bem\nLast: rud\n\nWhich symbol is written in both the First and Last fields? Reply with the symbol only.",
+      "contrast": "opaque-2-aba-repeat-garden-fields",
+      "picked": "bem",
+      "content_correct": false,
+      "exact_correct": false,
+      "evidence": "the symbol that appears twice in this row is \"bem\".",
+      "stop": "eos"
+    },
+    {
+      "key": "opaque-3-abb",
+      "values": [
+        "taz",
+        "wip",
+        "wip"
+      ],
+      "shape": "ABB",
+      "id": "opaque-3-abb-hint-garden-fields",
+      "task": "hint",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "wip",
+      "options": [
+        "taz",
+        "wip"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: taz\nMiddle: wip\nLast: wip\n\nWhich symbol is written in both the Middle and Last fields? Reply with the symbol only.",
+      "contrast": "opaque-3-abb-repeat-garden-fields",
+      "picked": "taz",
+      "content_correct": false,
+      "exact_correct": false,
+      "evidence": "the symbol that appears twice in this row is the \"taz\".",
+      "stop": "eos"
+    },
+    {
+      "key": "opaque-5-aab",
+      "values": [
+        "nef",
+        "nef",
+        "zol"
+      ],
+      "shape": "AAB",
+      "id": "opaque-5-aab-hint-garden-fields",
+      "task": "hint",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "nef",
+      "options": [
+        "nef",
+        "zol"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: nef\nMiddle: nef\nLast: zol\n\nWhich symbol is written in both the First and Middle fields? Reply with the symbol only.",
+      "contrast": "opaque-5-aab-repeat-garden-fields",
+      "picked": null,
+      "content_correct": false,
+      "exact_correct": false,
+      "evidence": "the symbol that appears twice in this row is the \"z\".",
+      "stop": "eos"
+    },
+    {
+      "key": "opaque-1-aab",
+      "values": [
+        "nef",
+        "nef",
+        "zol"
+      ],
+      "shape": "AAB",
+      "id": "opaque-1-aab-hint-garden-fields",
+      "task": "hint",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "nef",
+      "options": [
+        "nef",
+        "zol"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: nef\nMiddle: nef\nLast: zol\n\nWhich symbol is written in both the First and Middle fields? Reply with the symbol only.",
+      "contrast": "opaque-1-aab-repeat-garden-fields",
+      "picked": null,
+      "content_correct": false,
+      "exact_correct": false,
+      "evidence": "the symbol that appears twice in this row is the \"z\".",
+      "stop": "eos"
+    },
+    {
+      "key": "opaque-6-aba",
+      "values": [
+        "rud",
+        "bem",
+        "rud"
+      ],
+      "shape": "ABA",
+      "id": "opaque-6-aba-hint-garden-fields",
+      "task": "hint",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "rud",
+      "options": [
+        "bem",
+        "rud"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: rud\nMiddle: bem\nLast: rud\n\nWhich symbol is written in both the First and Last fields? Reply with the symbol only.",
+      "contrast": "opaque-6-aba-repeat-garden-fields",
+      "picked": "bem",
+      "content_correct": false,
+      "exact_correct": false,
+      "evidence": "the symbol that appears twice in this row is \"bem\".",
+      "stop": "eos"
+    },
+    {
+      "key": "opaque-4-abb",
+      "values": [
+        "kef",
+        "dov",
+        "dov"
+      ],
+      "shape": "ABB",
+      "id": "opaque-4-abb-hint-garden-fields",
+      "task": "hint",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "dov",
+      "options": [
+        "dov",
+        "kef"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: kef\nMiddle: dov\nLast: dov\n\nWhich symbol is written in both the Middle and Last fields? Reply with the symbol only.",
+      "contrast": "opaque-4-abb-repeat-garden-fields",
+      "picked": "dov",
+      "content_correct": true,
+      "exact_correct": false,
+      "evidence": "the symbol that appears twice in this row is dov.",
+      "stop": "eos"
+    }
+  ]
+}

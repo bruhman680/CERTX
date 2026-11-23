@@ -1,0 +1,105 @@
+{
+  "question": "Replace opaque labels with familiar digits on the same AAB structure.",
+  "sha256": {
+    "language-garden-repeat-ten-cycles-v1/design.py": "314e2cd0cf7e651a91bb05cc2bcd5104d888cef4996cb342e0920fc3f1a9bdb1",
+    "language-garden-repeat-ten-cycles-v1/run_cycles.py": "cbd0d9a23f39315f1c1951d2b354a0bffc00ba40f24dc01ece2386d8ee96d7ee",
+    "language-garden-repeat-ten-cycles-v1/PROTOCOL.md": "f1e27b4135545e3052acb30d0098d77c890448235a2a2dbbba08baf9aacda60a",
+    "language-garden-invariance-seed-v1/run_study.py": "c73bc6aab96be62b0995dc0bb34902cf65c15a5d8a98e4e98030468b8135ba4f",
+    "language-garden-invariance-seed-v1/score.py": "4e5c2199bd74c94c0f9615d26e57afddc9d1ede89d2978574ffb334e803c5fc6",
+    "language-garden-invariance-seed-v1/fixtures.py": "3d227a134643467379e24591ee3b10065dd0d5804b608dca8bc0bfb8acc5354c",
+    "language-garden-pilot-v1/CONTRACT.json": "d526984fe11067fb4d106e0a25396a343216d07d428d9dc5bfa150493eefbb24",
+    "language-garden-repeat-ten-cycles-v1/01/RESULTS.json": "9a80b08355b273d189da20a84a562a602c0b11974fba158e7bafee7e37039dae"
+  },
+  "input_lengths": {
+    "digits-2-aab-repeat-garden-fields": 80,
+    "digits-3-aab-repeat-garden-fields": 80,
+    "digits-1-aab-repeat-garden-fields": 80,
+    "digits-4-aab-repeat-garden-fields": 80
+  },
+  "cases": [
+    {
+      "key": "digits-2-aab",
+      "values": [
+        "6",
+        "6",
+        "2"
+      ],
+      "shape": "AAB",
+      "id": "digits-2-aab-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "6",
+      "options": [
+        "2",
+        "6"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: 6\nMiddle: 6\nLast: 2\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "digits-3-aab",
+      "values": [
+        "8",
+        "8",
+        "3"
+      ],
+      "shape": "AAB",
+      "id": "digits-3-aab-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "8",
+      "options": [
+        "3",
+        "8"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: 8\nMiddle: 8\nLast: 3\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "digits-1-aab",
+      "values": [
+        "4",
+        "4",
+        "7"
+      ],
+      "shape": "AAB",
+      "id": "digits-1-aab-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "4",
+      "options": [
+        "4",
+        "7"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: 4\nMiddle: 4\nLast: 7\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "digits-4-aab",
+      "values": [
+        "5",
+        "5",
+        "9"
+      ],
+      "shape": "AAB",
+      "id": "digits-4-aab-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "5",
+      "options": [
+        "5",
+        "9"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: 5\nMiddle: 5\nLast: 9\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    }
+  ]
+}

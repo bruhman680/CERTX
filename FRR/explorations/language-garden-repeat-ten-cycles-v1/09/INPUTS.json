@@ -1,0 +1,149 @@
+{
+  "question": "Perturb the last cell. Contrast an edit that keeps the answer with edits that switch it.",
+  "sha256": {
+    "language-garden-repeat-ten-cycles-v1/design.py": "314e2cd0cf7e651a91bb05cc2bcd5104d888cef4996cb342e0920fc3f1a9bdb1",
+    "language-garden-repeat-ten-cycles-v1/run_cycles.py": "cbd0d9a23f39315f1c1951d2b354a0bffc00ba40f24dc01ece2386d8ee96d7ee",
+    "language-garden-repeat-ten-cycles-v1/PROTOCOL.md": "f1e27b4135545e3052acb30d0098d77c890448235a2a2dbbba08baf9aacda60a",
+    "language-garden-invariance-seed-v1/run_study.py": "c73bc6aab96be62b0995dc0bb34902cf65c15a5d8a98e4e98030468b8135ba4f",
+    "language-garden-invariance-seed-v1/score.py": "4e5c2199bd74c94c0f9615d26e57afddc9d1ede89d2978574ffb334e803c5fc6",
+    "language-garden-invariance-seed-v1/fixtures.py": "3d227a134643467379e24591ee3b10065dd0d5804b608dca8bc0bfb8acc5354c",
+    "language-garden-pilot-v1/CONTRACT.json": "d526984fe11067fb4d106e0a25396a343216d07d428d9dc5bfa150493eefbb24",
+    "language-garden-repeat-ten-cycles-v1/08/RESULTS.json": "f62d800a6fbf832fd51a2899dab0ce1fce43fce5b2b20bb69d208d9c25bf6cb0"
+  },
+  "input_lengths": {
+    "edit-3-repeat-garden-fields": 80,
+    "edit-1-repeat-garden-fields": 80,
+    "edit-6-repeat-garden-fields": 80,
+    "edit-5-repeat-garden-fields": 80,
+    "edit-2-repeat-garden-fields": 80,
+    "edit-4-repeat-garden-fields": 80
+  },
+  "cases": [
+    {
+      "key": "edit-3",
+      "values": [
+        "7",
+        "9",
+        "7"
+      ],
+      "shape": "ABA",
+      "id": "edit-3-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "7",
+      "options": [
+        "7",
+        "9"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: 7\nMiddle: 9\nLast: 7\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "edit-1",
+      "values": [
+        "7",
+        "7",
+        "9"
+      ],
+      "shape": "AAB",
+      "id": "edit-1-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "7",
+      "options": [
+        "7",
+        "9"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: 7\nMiddle: 7\nLast: 9\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "edit-6",
+      "values": [
+        "9",
+        "7",
+        "7"
+      ],
+      "shape": "ABB",
+      "id": "edit-6-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "7",
+      "options": [
+        "7",
+        "9"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: 9\nMiddle: 7\nLast: 7\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "edit-5",
+      "values": [
+        "9",
+        "7",
+        "9"
+      ],
+      "shape": "ABA",
+      "id": "edit-5-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "9",
+      "options": [
+        "7",
+        "9"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: 9\nMiddle: 7\nLast: 9\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "edit-2",
+      "values": [
+        "7",
+        "7",
+        "2"
+      ],
+      "shape": "AAB",
+      "id": "edit-2-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "7",
+      "options": [
+        "2",
+        "7"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: 7\nMiddle: 7\nLast: 2\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "edit-4",
+      "values": [
+        "7",
+        "9",
+        "9"
+      ],
+      "shape": "ABB",
+      "id": "edit-4-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "9",
+      "options": [
+        "7",
+        "9"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: 7\nMiddle: 9\nLast: 9\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    }
+  ]
+}

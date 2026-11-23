@@ -1,0 +1,193 @@
+{
+  "question": "Repeat versus Last on four fresh rows where they differ.",
+  "sha256": {
+    "language-garden-repeat-ten-cycles-v1/design.py": "314e2cd0cf7e651a91bb05cc2bcd5104d888cef4996cb342e0920fc3f1a9bdb1",
+    "language-garden-repeat-ten-cycles-v1/run_cycles.py": "cbd0d9a23f39315f1c1951d2b354a0bffc00ba40f24dc01ece2386d8ee96d7ee",
+    "language-garden-repeat-ten-cycles-v1/PROTOCOL.md": "f1e27b4135545e3052acb30d0098d77c890448235a2a2dbbba08baf9aacda60a",
+    "language-garden-invariance-seed-v1/run_study.py": "c73bc6aab96be62b0995dc0bb34902cf65c15a5d8a98e4e98030468b8135ba4f",
+    "language-garden-invariance-seed-v1/score.py": "4e5c2199bd74c94c0f9615d26e57afddc9d1ede89d2978574ffb334e803c5fc6",
+    "language-garden-invariance-seed-v1/fixtures.py": "3d227a134643467379e24591ee3b10065dd0d5804b608dca8bc0bfb8acc5354c",
+    "language-garden-pilot-v1/CONTRACT.json": "d526984fe11067fb4d106e0a25396a343216d07d428d9dc5bfa150493eefbb24",
+    "language-garden-repeat-readout-v1/REPORT.md": "9fe5a7014b34cad41f5544bed1077f8750f37941cb9dc7f6ad02b34fa738e460"
+  },
+  "input_lengths": {
+    "opaque-3-aab-last-garden-fields": 80,
+    "opaque-4-aab-last-garden-fields": 81,
+    "opaque-2-aab-repeat-garden-fields": 78,
+    "opaque-3-aab-repeat-garden-fields": 79,
+    "opaque-2-aab-last-garden-fields": 79,
+    "opaque-4-aab-repeat-garden-fields": 80,
+    "opaque-1-aab-last-garden-fields": 81,
+    "opaque-1-aab-repeat-garden-fields": 80
+  },
+  "cases": [
+    {
+      "key": "opaque-3-aab",
+      "values": [
+        "taz",
+        "taz",
+        "wip"
+      ],
+      "shape": "AAB",
+      "id": "opaque-3-aab-last-garden-fields",
+      "task": "last",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "wip",
+      "options": [
+        "taz",
+        "wip"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: taz\nMiddle: taz\nLast: wip\n\nWhat is the last symbol in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "opaque-4-aab",
+      "values": [
+        "kef",
+        "kef",
+        "dov"
+      ],
+      "shape": "AAB",
+      "id": "opaque-4-aab-last-garden-fields",
+      "task": "last",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "dov",
+      "options": [
+        "dov",
+        "kef"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: kef\nMiddle: kef\nLast: dov\n\nWhat is the last symbol in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "opaque-2-aab",
+      "values": [
+        "rud",
+        "rud",
+        "bem"
+      ],
+      "shape": "AAB",
+      "id": "opaque-2-aab-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "rud",
+      "options": [
+        "bem",
+        "rud"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: rud\nMiddle: rud\nLast: bem\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "opaque-3-aab",
+      "values": [
+        "taz",
+        "taz",
+        "wip"
+      ],
+      "shape": "AAB",
+      "id": "opaque-3-aab-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "taz",
+      "options": [
+        "taz",
+        "wip"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: taz\nMiddle: taz\nLast: wip\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "opaque-2-aab",
+      "values": [
+        "rud",
+        "rud",
+        "bem"
+      ],
+      "shape": "AAB",
+      "id": "opaque-2-aab-last-garden-fields",
+      "task": "last",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "bem",
+      "options": [
+        "bem",
+        "rud"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: rud\nMiddle: rud\nLast: bem\n\nWhat is the last symbol in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "opaque-4-aab",
+      "values": [
+        "kef",
+        "kef",
+        "dov"
+      ],
+      "shape": "AAB",
+      "id": "opaque-4-aab-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "kef",
+      "options": [
+        "dov",
+        "kef"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: kef\nMiddle: kef\nLast: dov\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "opaque-1-aab",
+      "values": [
+        "nef",
+        "nef",
+        "zol"
+      ],
+      "shape": "AAB",
+      "id": "opaque-1-aab-last-garden-fields",
+      "task": "last",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "zol",
+      "options": [
+        "nef",
+        "zol"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: nef\nMiddle: nef\nLast: zol\n\nWhat is the last symbol in this row? Reply with the symbol only.",
+      "contrast": null
+    },
+    {
+      "key": "opaque-1-aab",
+      "values": [
+        "nef",
+        "nef",
+        "zol"
+      ],
+      "shape": "AAB",
+      "id": "opaque-1-aab-repeat-garden-fields",
+      "task": "repeat",
+      "seed": "garden",
+      "layout": "fields",
+      "target": null,
+      "gold": "nef",
+      "options": [
+        "nef",
+        "zol"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nFirst: nef\nMiddle: nef\nLast: zol\n\nWhich symbol appears twice in this row? Reply with the symbol only.",
+      "contrast": null
+    }
+  ]
+}

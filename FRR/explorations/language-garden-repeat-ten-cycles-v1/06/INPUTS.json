@@ -1,0 +1,179 @@
+{
+  "question": "Flatten cycle 5 from labeled fields to a plain row, keeping every question fixed.",
+  "sha256": {
+    "language-garden-repeat-ten-cycles-v1/design.py": "314e2cd0cf7e651a91bb05cc2bcd5104d888cef4996cb342e0920fc3f1a9bdb1",
+    "language-garden-repeat-ten-cycles-v1/run_cycles.py": "cbd0d9a23f39315f1c1951d2b354a0bffc00ba40f24dc01ece2386d8ee96d7ee",
+    "language-garden-repeat-ten-cycles-v1/PROTOCOL.md": "f1e27b4135545e3052acb30d0098d77c890448235a2a2dbbba08baf9aacda60a",
+    "language-garden-invariance-seed-v1/run_study.py": "c73bc6aab96be62b0995dc0bb34902cf65c15a5d8a98e4e98030468b8135ba4f",
+    "language-garden-invariance-seed-v1/score.py": "4e5c2199bd74c94c0f9615d26e57afddc9d1ede89d2978574ffb334e803c5fc6",
+    "language-garden-invariance-seed-v1/fixtures.py": "3d227a134643467379e24591ee3b10065dd0d5804b608dca8bc0bfb8acc5354c",
+    "language-garden-pilot-v1/CONTRACT.json": "d526984fe11067fb4d106e0a25396a343216d07d428d9dc5bfa150493eefbb24",
+    "language-garden-repeat-ten-cycles-v1/05/RESULTS.json": "fdd330c742dd0e8c5c79bbabce94130f61b03d0bd85f3c2bd9bd9c7ddda6a41a"
+  },
+  "input_lengths": {
+    "opaque-1-aab-count-garden-flat-nef": 81,
+    "opaque-1-aab-count-garden-flat-zol": 81,
+    "opaque-2-aba-count-garden-flat-bem": 79,
+    "opaque-2-aba-count-garden-flat-rud": 78,
+    "opaque-3-abb-count-garden-flat-wip": 78,
+    "opaque-3-abb-count-garden-flat-taz": 79
+  },
+  "cases": [
+    {
+      "key": "opaque-1-aab",
+      "values": [
+        "nef",
+        "nef",
+        "zol"
+      ],
+      "shape": "AAB",
+      "id": "opaque-1-aab-count-garden-flat-nef",
+      "task": "count",
+      "seed": "garden",
+      "layout": "flat",
+      "target": "nef",
+      "gold": "2",
+      "options": [
+        "nef",
+        "zol"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nRow: nef nef zol\n\nHow many times does the exact symbol nef appear in the row? Reply with one or two only.",
+      "contrast": "opaque-1-aab-count-garden-fields-nef",
+      "picked": null,
+      "content_correct": false,
+      "exact_correct": false,
+      "evidence": "the exact symbol nef appears in the row 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64,",
+      "stop": "token_limit"
+    },
+    {
+      "key": "opaque-1-aab",
+      "values": [
+        "nef",
+        "nef",
+        "zol"
+      ],
+      "shape": "AAB",
+      "id": "opaque-1-aab-count-garden-flat-zol",
+      "task": "count",
+      "seed": "garden",
+      "layout": "flat",
+      "target": "zol",
+      "gold": "1",
+      "options": [
+        "nef",
+        "zol"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nRow: nef nef zol\n\nHow many times does the exact symbol zol appear in the row? Reply with one or two only.",
+      "contrast": "opaque-1-aab-count-garden-fields-zol",
+      "picked": null,
+      "content_correct": false,
+      "exact_correct": false,
+      "evidence": "the exact symbol zol appears in the row 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64,",
+      "stop": "token_limit"
+    },
+    {
+      "key": "opaque-2-aba",
+      "values": [
+        "rud",
+        "bem",
+        "rud"
+      ],
+      "shape": "ABA",
+      "id": "opaque-2-aba-count-garden-flat-bem",
+      "task": "count",
+      "seed": "garden",
+      "layout": "flat",
+      "target": "bem",
+      "gold": "1",
+      "options": [
+        "bem",
+        "rud"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nRow: rud bem rud\n\nHow many times does the exact symbol bem appear in the row? Reply with one or two only.",
+      "contrast": "opaque-2-aba-count-garden-fields-bem",
+      "picked": "2",
+      "content_correct": false,
+      "exact_correct": false,
+      "evidence": "the exact symbol bem appears 2 times in the row.",
+      "stop": "eos"
+    },
+    {
+      "key": "opaque-2-aba",
+      "values": [
+        "rud",
+        "bem",
+        "rud"
+      ],
+      "shape": "ABA",
+      "id": "opaque-2-aba-count-garden-flat-rud",
+      "task": "count",
+      "seed": "garden",
+      "layout": "flat",
+      "target": "rud",
+      "gold": "2",
+      "options": [
+        "bem",
+        "rud"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nRow: rud bem rud\n\nHow many times does the exact symbol rud appear in the row? Reply with one or two only.",
+      "contrast": "opaque-2-aba-count-garden-fields-rud",
+      "picked": "1",
+      "content_correct": false,
+      "exact_correct": false,
+      "evidence": "the exact symbol rud appears 1 time in the row.",
+      "stop": "eos"
+    },
+    {
+      "key": "opaque-3-abb",
+      "values": [
+        "taz",
+        "wip",
+        "wip"
+      ],
+      "shape": "ABB",
+      "id": "opaque-3-abb-count-garden-flat-wip",
+      "task": "count",
+      "seed": "garden",
+      "layout": "flat",
+      "target": "wip",
+      "gold": "2",
+      "options": [
+        "taz",
+        "wip"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nRow: taz wip wip\n\nHow many times does the exact symbol wip appear in the row? Reply with one or two only.",
+      "contrast": "opaque-3-abb-count-garden-fields-wip",
+      "picked": null,
+      "content_correct": false,
+      "exact_correct": false,
+      "evidence": "the exact symbol wip appears in the row 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64,",
+      "stop": "token_limit"
+    },
+    {
+      "key": "opaque-3-abb",
+      "values": [
+        "taz",
+        "wip",
+        "wip"
+      ],
+      "shape": "ABB",
+      "id": "opaque-3-abb-count-garden-flat-taz",
+      "task": "count",
+      "seed": "garden",
+      "layout": "flat",
+      "target": "taz",
+      "gold": "1",
+      "options": [
+        "taz",
+        "wip"
+      ],
+      "text": "Explore symbols and their relationships. Learn to predict and understand them as best you can.\n\nRow: taz wip wip\n\nHow many times does the exact symbol taz appear in the row? Reply with one or two only.",
+      "contrast": "opaque-3-abb-count-garden-fields-taz",
+      "picked": "1",
+      "content_correct": true,
+      "exact_correct": false,
+      "evidence": "the exact symbol taz appears 1 time in the row.",
+      "stop": "eos"
+    }
+  ]
+}
