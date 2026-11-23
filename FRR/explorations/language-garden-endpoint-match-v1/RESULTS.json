@@ -1,0 +1,51 @@
+{
+  "model_calls": 4,
+  "exact_correct": 2,
+  "always_yes_correct": 2,
+  "cases": [
+    {
+      "case": "familiar_match",
+      "row": "ka mi ka",
+      "expected": "yes",
+      "reply": "Yes.",
+      "parsed_label": "yes",
+      "correct": true,
+      "input_tokens": 72,
+      "generated_tokens": 3,
+      "stop": "eos"
+    },
+    {
+      "case": "familiar_near_miss",
+      "row": "ka mi su",
+      "expected": "no",
+      "reply": "Yes",
+      "parsed_label": "yes",
+      "correct": false,
+      "input_tokens": 72,
+      "generated_tokens": 2,
+      "stop": "eos"
+    },
+    {
+      "case": "fresh_near_miss",
+      "row": "ve tu zo",
+      "expected": "no",
+      "reply": "Yes",
+      "parsed_label": "yes",
+      "correct": false,
+      "input_tokens": 72,
+      "generated_tokens": 2,
+      "stop": "eos"
+    },
+    {
+      "case": "fresh_match",
+      "row": "ve tu ve",
+      "expected": "yes",
+      "reply": "Yes",
+      "parsed_label": "yes",
+      "correct": true,
+      "input_tokens": 72,
+      "generated_tokens": 2,
+      "stop": "eos"
+    }
+  ]
+}

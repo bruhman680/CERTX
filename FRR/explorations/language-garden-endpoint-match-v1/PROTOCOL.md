@@ -1,0 +1,7 @@
+# Direct endpoint comparison
+
+Freeze before generation. Four detached openings use the same native assistant framing and exact user seed as the preceding symbol probes. Append a blank line, one case row, another blank line and the shared question. Each call starts fresh. The rows and call order are fixed in CASES.json. Only the final symbol changes within each pair. The second pair uses labels absent from the earlier symbol opening and reverses the match-first order. Fresh here refers to the project prompts.
+
+Use the pinned cached body, tokenizer, greedy decoder and inherited cap of 256. Retain every reply, including caps. No feedback or retries. Each opportunity is recorded once. Audit the archived prompt and reply in the inherited recorder.
+
+Primary success is whole decoded text whose case-folded, trimmed form equals the expected yes or no, allowing one terminal period. Also describe explicit semantic answers in longer replies separately. A bare yes or no that is followed by a contradiction cannot count as semantic success. A wrong answer, no answer and conflicting answer are different observations. Score the returned text even when capped and show the stop reason. The fixed control always saying either label scores two of four. These four cases can show local discrimination if both matching and near-miss cases are answered correctly. The fresh pair is a small label change with the comparison stated in the prompt. This does not measure spontaneous pattern discovery or effects of feedback.
