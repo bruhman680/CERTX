@@ -1,0 +1,5 @@
+# Symbol material opening
+
+One detached opening with the fixed SmolLM2-135M-Instruct runtime from the first language garden pilot. Keep the native system framing, seed, greedy decoder and 256-token output budget. Append two newlines and the exact contents of MATERIAL.txt to the seed's user message. Preserve the terminal newline. Supply no label, question, interpretation, example answer or feedback. Save one return and pause.
+
+The chosen artifact contains three rows with different labels and the same positional relationship. Before reading the reply, record three descriptive observations to look for. Does the response cite the supplied symbols? Does it state or use the repeated outer pair with a different middle? Does it continue in the tutor voice seen in the seed-only reply? These descriptions can coexist. If interpretation is ambiguous, preserve the relevant quote. No code in the reply is executed. The seed-only reply is a previously recorded reference. This is one greedy comparison, and adding material changes both content and length.
