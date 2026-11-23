@@ -1,0 +1,9 @@
+# Direct question about symbol order
+
+22 November 2026, America/Chicago. One fresh opening appended a direct question about the order of symbols to the preserved seed and three rows. The cached checkpoint, native system message, greedy decoder and 256-token cap matched the earlier free-expression opening. The new input had 82 tokens, compared with 61 in the earlier opening. The audit verified the exact input, returned token IDs and text, stop reason and tensor receipt.
+
+The three rows were `ka mi ka`, `su lo su` and `ne pa ne`. The earlier unguided reply quoted each of them and assigned invented meanings. With the direct question, the reply called the pattern “a repeating sequence of 1, 2, 3” and continued counting through 62 before the cap. The supplied rows contain no such numerical sequence. The returned reply did not report equality of the first and last symbols, give an ABA schema, or identify a palindrome. It also did not complete the requested single sentence.
+
+The first-call condition for the planned transfer comparison was unmet. The branch paused with its entire returned prefix. The match and near-miss cases were not run. These observations concern one question under one decoding configuration. They leave open whether the model can recognize the relation with different wording or a smaller comparison. They supply no measurement of what the model would have generated past the cap.
+
+The next candidate diagnostic is a single grounded comparison between two positions in a supplied row. Asking whether the first and last symbols match is a narrower test than asking the model to extract a shared rule. Any later inference about transfer should distinguish a correct match from an equally plausible near miss. Keep such diagnostics in their own records beside free expression.

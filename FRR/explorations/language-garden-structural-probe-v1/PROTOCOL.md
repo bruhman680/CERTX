@@ -1,0 +1,7 @@
+# Prompted symbol relation
+
+22 November 2026, America/Chicago. Freeze before the first call. Make one fresh opening. Reuse the cached native SmolLM2-135M-Instruct and inherited recorder, fixed weights, greedy decoding and 256-token output cap. Keep the entire previous symbol-opening user message and append one blank line and QUESTION.txt without its file terminator. Supply no answer, error or feedback. Run each call only once. The previous symbol-only opening is the preserved comparison.
+
+Primary criterion is visible identification of the shared arrangement across rows, explicitly stating the outer-symbol equality with a different middle, giving a clear ABA-style schema for all rows, or identifying all rows as palindromes (a valid description of the supplied data). Report outer equality alone as partial. Mere repetition, citing examples, thematic interpretation or a contradictory account does not pass. Report whether there is one sentence separately. Score the text actually returned even if capped, and flag ambiguity. A cap without a pass leaves prompted recognition unsettled beyond this reply.
+
+If the first recorded reply meets the criterion, freeze a separate transfer comparison before further calls. A fresh-symbol match and near miss should vary the relevant relation while keeping useful alternative cues matched. Record all planned outcomes. If this opening falls short, stop this branch and preserve the finding. Scores remain external to the free-play garden.
